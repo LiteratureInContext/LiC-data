@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Work on Extent and Taxonomy
+-->
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>            
+        <fileDesc>
+            <titleStmt>
+                <title type="statusBar">A Modest Proposal</title>
+                
+                <author>
+                    <trait type="gender"><desc>Male</desc></trait>
+                    <forename>Jonathan</forename>
+                    <surname>Swift</surname>
+                    <date when="1667-11-30">Birth: 1667 November 30</date>
+                    <date when="1745-10-19">Death: 1745 October 19</date>           
+                    <roleName>Priest, Writer, and Political Pamphleteer</roleName>
+                    <affiliation>"Single, but rumored to have secretly married"</affiliation>
+                    <country>Ireland</country>       
+                </author>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Staff and Research Assistants at The University of Virginia</name>
+                    <name>John O'Brien</name>
+                    <name>Sara Brunstetter</name>                  
+                </respStmt>
+            </titleStmt>
+            
+            <publicationStmt>               
+                <publisher>Literature in Context</publisher>
+                <distributor>
+                    <orgName>Literature in Context</orgName>
+                    <address>
+                        <addrLine>Department of English, The University of Virginia</addrLine>
+                        <addrLine>P. O. Box 400121</addrLine>
+                        <addrLine>Charlottesville, VA </addrLine>
+                        <addrLine>22904-4121</addrLine>
+                    </address>
+                    <email>jobrien@virginia.edu</email>
+                </distributor>
+                <authority>
+                    <idno>swift-aModest</idno> 
+                </authority>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported License 
+                    </licence>
+                    <p>While free, this text is still incomplete and requires standardization of its annotation scheme.
+                    </p>
+                </availability>           
+                <date>2018</date>
+            </publicationStmt>    
+            
+            <sourceDesc>
+                <bibl>This edition has been prepared from the Project Gutenberg online e-text. We have added annotations, and also restored the capitalization and italics present in the first edition, here sourced from the copy on the Eighteenth-Century Collection Online.
+                    <extent></extent>
+                </bibl>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName type="lastFirst" key="swiftJ"> Swift, Johnathan, 1667-1745</persName>
+                        </author>
+                        <title type="main">A Modest Proposal</title>
+                        <title type="sub">For preventing the Children of Poor People From being a Burthen to Their Parents or Country, and For making them Beneficial to the Publick</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="country" key="ire">Ireland</placeName>
+                            </pubPlace>                           
+                            <date when="1729">1729</date>
+                        </imprint>                    
+                    </monogr>
+                </biblStruct>    
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc>
+            <projectDesc> <p>
+                This text is prepared as part of the <hi>Literature in Context</hi> project, which provides an accessible, curated, edited, and marked-up selection of primary sources relevant to the study and the teaching of British and American literature of the 17th, 18th, and 19th centuries. This project is funded by the National Endowment for the Humanities and developed by faculty at The University of Virginia and Marymount University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation><p>Research informing these annotations draws on publicly-accessible resources, with links provided where possible. Annotations have also included common knowledge, defined as information that can be found in multiple reliable sources. If you notice an error in these annotations, please contact lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization><p>Original spelling and capitalization is retained, though the long s has been silently modernized and ligatured forms are not encoded.</p></normalization>
+                <hyphenation><p>Hyphenation has not been retained, except where necessary for the sense of the word.</p></hyphenation>
+                <segmentation><p>Page breaks have been retained. Catchwords, signatures, and running headers have not.</p></segmentation>
+                <correction><p>Materials have been transcribed from and checked against first editions, where possible. See the Sources section.</p></correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="PLACEHOLDER">
+                    <bibl></bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <text>
+        <body>
+            <div>
+                <head>
+                    A MODEST PROPOSAL <lb/> <lb/>
+                    For preventing the children of poor people in <ref target="a001" corresp="n001">Ireland</ref><note xml:id="n001" target="a001" type="gloss">In the late seventeenth and early eighteenth centuries Ireland was dominated by a minority of wealthy English absentee landowners who rarely if ever set foot in Ireland itself. Politically, the English government in London put strict restrictions on the majority Catholic population, denying them the right to vote, for example. Ireland was in a sense of colony of England, its resources exploited by the land-owning Protestant minority, and its economy underdeveloped, with much of its population left deeply impoverished.</note>
+                    from being a burden on their parents or country, and for making them beneficial to the publick.
+                    <lb/> <lb/>
+                    by Dr. Swift 
+                    <lb/> <lb/>
+                    1729
+                    <lb/> <lb/>
+                </head>
+                <p>
+                    It is a melancholly Object to those, who walk through this great Town, or travel in the Country, when they see the <hi rend="italic">Streets</hi>, the <hi rend="italic">Roads</hi> and <hi rend="italic">Cabbin-Doors</hi> crowded with <hi rend="italic">Beggars</hi> of the female Sex, followed by three, four, or six Children, <hi rend="italic">all in Rags</hi>, and <ref target="a002" corresp="n002">importuning</ref><note xml:id="n002" target="a002" type="gloss">begging (Oxford English Dictionary)</note> every Passenger for an <ref target="a003" corresp="n003">Alms</ref><note xml:id="n003" target="a003" type="gloss">Charitable givings such as food and money.(OED)</note> These <hi rend="italic">Mothers</hi> instead of being able to work for their honest lively-hood, are forced to employ all their time in <ref target="a004" corresp="n004">Stroling</ref><note xml:id="n004" target="a004" type="gloss">Streetwalking; soliciting customers for prostitution on the streets (slang).</note> to beg Sustenance for their helpless infants who, as they grow up, either turn <hi rend="italic">Thieves</hi> for want of work, or leave their <ref target="a005" corresp="n005"><hi rend="italic">dear native Country, to fight for the Pretender in Spain</hi></ref><note xml:id="n005" target="a005" type="gloss">The "Pretender" referred to here is James Frances Edward Stuart (1701-1766). His father was King James II who was deposed of in the Glorious Revolution. The Pretender, living in exile on the European continent, continued to claim that he was the rightful heir to the British throne after his father's death.</note>, or <ref target="a005" corresp="n005">sell themselves to the <hi rend="italic">Barbadoes</hi></ref><note xml:id="n006" target="a006" type="gloss">Sell themselves into servitude in Barbadoes, which was in fact widely resorted to by indigent people in the British Isles in this period</note>.
+                        <lb/> <lb/>
+                </p>
+                <p>
+                    I think it is agreed by all Parties, that this prodigious number of Children in the Arms, or on the Backs, or at the <hi rend="italic">heels of their Mothers</hi>, and frequently of their Fathers, is <hi rend="italic">in the present deplorable state of the Kingdom</hi>, a very great additional grievance; and therefore whoever could find out a fair, cheap and easy method of making these Children sound and useful Members of the common-wealth, would deserve so well of the publick, as to have his Statue set up for a preserver of the Nation.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    But my Intention is very far from being confined to provide only for the Children of <hi rend="italic">professed Beggars</hi>: it is of a much greater extent, and shall take in the whole number of infants at a certain Age, who are born of Parents in effect as little able to support them, as those who demand our Charity in the Streets.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    As to my own part, having turned my thoughts for many Years, upon this important Subject, and maturely weighed the several <hi rend="italic">Schemes of our Projectors</hi>, I have always found them grossly mistaken in their computation. It is true, a Child <hi rend="italic">just dropt from its <ref target="a007" corresp="n007">Dam</ref></hi><note xml:id="n007" target="a007" type="gloss">mother, but this is a term only applied to animals</note> may be supported by her Milk, for a Solar year, with little other Nourishment: at most not above the Value of two Shillings, which the Mother may certainly get, or the Value in <hi rend="italic">Scraps</hi>, by her lawful Occupation of begging; and it is exactly at one year Old that I propose to provide for them in such a manner, as, instead of being a Charge upon their <hi rend="italic">Parents</hi>, or the <hi rend="italic">Parish</hi>, or <hi rend="italic">wanting Food and Raiment</hi> for the rest of their Lives, they shall, on the Contrary, contribute to the Feeding, and partly to the Cloathing of many Thousands.               
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    There is likewise another great Advantage in my Scheme, that it will prevent those <hi rend="italic">voluntary Abortions</hi>, and that horrid practice of <hi rend="italic">Women murdering their Bastard Children</hi>, alas! too frequent among us, Sacrificing the <hi rend="italic">poor innocent Babes</hi>, I doubt, more to avoid the Expence than the Shame, which would move Tears and Pity in the most Savage and inhuman breast.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    The number of Souls in this Kingdom being usually reckoned one Million and a half, of these I calculate there may be about two hundred thousand Couple whose Wives are Breeders; from which number I Substract thirty Thousand Couples, who are able to maintain their own Children, although I apprehend there cannot be so many, under <hi rend="italic">the present distresses of the Kingdom</hi> but this being granted, there will remain an hundred and seventy thousand Breeders. I again Substract fifty Thousand, for those Women who miscarry, or whose Children dye by accident or disease within the Year. There only remain an hundred and twenty thousand Children of poor Parents annually born. The question therefore is, How this number shall be reared, and provided for? which, as I have already said, under the present Situation of Affairs, is utterly impossible by all the methods hitherto proposed. For we can <hi rend="italic">neither employ them in Handicraft</hi> or <hi rend="italic">Agriculture</hi>; they neither build Houses, (I mean in the Country) nor cultivate Land: they can very seldom pick up a Lively-hood <hi rend="italic">by Stealing</hi> till they arrive at six years Old; except where they are of <ref target="a008" corresp="n008">towardly parts,</ref><note xml:id="n008" target="a008" type="gloss">particularly smart or ambitious</note> although I confess they learn the Rudiments much earlier; during which time they can however be properly looked upon only as <hi rend="italic">Probationers</hi>: As I have been informed by a principal Gentleman in the County of <hi rend="italic">Cavan</hi>, who protested to me, that he never knew above one or two Instances under the Age of six, even in a part of the Kingdom <hi rend="italic">so renowned for the quickest proficiency in that Art</hi>.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I am assured by our Merchants, that a Boy or a Girl before twelve years Old, is no saleable Commodity, and even when they come to this Age, they will not yield above three Pounds, or three Pounds and half a Crown at most, on the Exchange; which cannot turn to Account either to the Parents or Kingdom, the Charge of Nutriments and Rags having been at least four times that Value.                   
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I shall now therefore humbly propose my own thoughts, which I hope will not be lyable to the least Objection.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I have been assured by a very knowing <ref target="a009" corresp="n009"><hi rend="italic">American</hi></ref><note xml:id="n009" target="a009" type="gloss">Probably referring to a native American, still in the time of Swift sometimes wrongly associated with cannibalism.</note>of my acquaintance in <hi rend="italic">London</hi>, that a young healthy Child well Nursed, is, at a year Old, a most delicious nourishing and wholesome Food, whether <hi rend="italic">Stewed, Roasted, Baked</hi>, or <hi rend="italic">Boyled</hi>; and I make no doubt that it will equally serve in a <ref target="a010" corresp="n010"><hi rend="italic">Fricasie</hi>, or a <hi rend="italic">Ragoust</hi></ref><note xml:id="n010" target="a010" type="gloss">Two different ways of cooking meat. And yes, there's something very weird about even writing such a note, which is part of the joke here; Swift provides no escape route from contemplating these horrifying scenarios.</note>.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I do therefore humbly offer it to <hi rend="italic">publick consideration</hi>, that of the hundred and twenty thousand Children, already computed, twenty thousand may be reserved for Breed, whereof only one fourth part to be Males; which is more than we allow to <hi rend="italic">Sheep, black Cattle</hi>, or <hi rend="italic">Swine</hi>, and my reason is, that these Children are seldom the Fruits of Mrriage, <hi rend="italic">a Circumstance not much regarded by our Savages</hi>, therefore, <hi rend="italic">one Male</hi> will be sufficient to serve <hi rend="italic">four Females</hi>. That the remaining hundred thousand may, at a year Old, be offered in Sale to the <hi rend="italic">persons of Quality</hi> and <hi rend="italic">Fortune</hi>, through the Kingdom, always advising the Mother to let them Suck plentifully in the last Month, so as to render them Plump, and Fat for a good Table. A Child will make two Dishes at an Entertainment for Friends, and when the Family dines alone, the fore or hind Quarter will make a reasonable Dish, and seasoned with a little Pepper or Salt, will be very good Boiled on the fourth Day, especially in <hi rend="italic">Winter</hi>.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I have reckoned upon a Medium, that a Child just born will weigh 12 pounds, and in a solar Year, if tollerably nursed, encreaseth to 28 Pound.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I grant this food will be somewhat dear, and therefore very <hi rend="italic">proper for Landlords</hi>, who, as they have already devoured most of the Parents, seem to have the best Title to the Children.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    Infant's flesh will be in Season throughout the Year, but more plentiful in <hi rend="italic">March</hi>, and a little before and after; for we are told by a grave Author, an eminent French Physician, that <hi rend="italic">Fish being a prolifick Dyet</hi>, there are more Children born in <hi rend="italic">Roman Catholick Countries</hi> about nine Months after <hi rend="italic">Lent</hi>, than at any other Season, therefore reckoning a Year after <hi rend="italic">Lent</hi>, the Markets will be more glutted than usual, because the Number of <hi rend="italic">Popish Infants</hi>, is at least three to one in this Kingdom, and therefore it will have one other Collateral advantage, by lessening the Number of Papists among us.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I have already computed the Charge of nursing a Beggars Child (in which list I reckon all <hi rend="italic">Cottagers, Labourers</hi>, and four fifths of the <hi rend="italic">Farmers</hi>) to be about two Shillings <hi rend="italic">per Annum</hi>, Rags Included; and I believe no Gentleman would repine to give Ten Shillings for the <hi rend="italic">Carcass of a good fat Child</hi>, which, as I have said, will make four Dishes of excellent Nutritive Meat, when he hath only some particular friend, or his own Family to Dine with him. Thus the Squire will learn to be a good Landlord, and grow popular among his Tenants, the Mother will have Eight Shillings neat profit, and be fit for Work till she produces another Child.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    Those who are more thrifty (<hi rend="italic">as I must confess the Times require</hi>) may stay the Carcass; the Skin of which, Artificially dressed, will make admirable <hi rend="italic">Gloves for Ladies</hi>, and <hi rend="italic">Summer Boots for fine Gentlemen</hi>.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    As to our City of <hi rend="italic">Dublin</hi>, Shambles may be appointed for this purpose, in the most convenient parts of it, and Butchers we may be assured will not be wanting; although I rather recommend buying the Children alive, and dressing them hot from the Knife, as we do <hi rend="italic">roasting Pigs</hi>.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    A very worthy Person, <hi rend="italic">a true Lover of his Country</hi>, and whose Virtues I highly esteem, was lately pleased, in discoursing on this matter, to offer a refinement upon my Scheme. He said, that many Gentlemen of this Kingdom, having of late destroyed their Deer, he conceived that the want of Venison might be well supplyed by the Bodies of young Lads and Maidens, not exceeding fourteen Years of Age, nor under twelve; so great a Number of both Sexes in every Country being now ready to Starve for want of Work and Service: And these to be disposed of by their Parents if alive, or otherwise by their nearest Relations. But with due deference to so excellent a friend, and so deserving a Patriot, I cannot be altogether in his Sentiments; for as to the Males, my <hi rend="italic">American</hi> acquaintance assured me from frequent Experience, that their flesh was generally Tough and Lean, like that of our School-boys, by continual exercise, and their Taste disagreeable, and to Fatten them would not answer the Charge. Then as to the Females, it would, I think, with humble Submission, <hi rend="italic">be a loss to the Publick</hi>, because they soon would become Breeders themselves: And besides, it is not improbable that some scrupulous People might be apt to Censure such a Practice, (although indeed very unjustly) as a little bordering upon Cruelty, which, I confess, hath always been with me the strongest objection against any Project, however so well intended.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    But in order to justify my friend, he confessed, that this expedient was put into his head by the famous <ref target="a011" corresp="n011"><hi rend="italic">Sallmanaazor</hi></ref><note xml:id="n011" target="a011" type="gloss">George Psalmanazar (1679-1763;this was probably not his real name), was a French man who passed himself off as having been born in Formosa, now Taiwan. Having never met actual people from east Asia, many English people believed him, and he wrote a bestselling book describing his native land. Even after he confessed to his imposture around 1706, he continued to live and work in London as a writer, and was a familiar figure in the London literary world. The reference to him here may be a way of signalling quietly to the reader that this pamphlet too is a hoax.</note>, a Native of the Island <hi rend="italic">Formosa</hi>, who came from thence to <hi rend="italic">London</hi>, above twenty Years ago, and in Conversation told my friend, that in his Country, when any young Person happened to be put to Death, the Executioner sold the Carcass to <hi rend="italic">Persons of Quality</hi>, as a prime Dainty; and that, in his Time, the Body of a plump Girl of fifteen, who was crucified for an attempt to Poison the Emperor, was sold to his Imperial <hi rend="italic">Majesty's prime Minister of State</hi>, and other great <hi rend="italic">Mandarins</hi> of the Court <hi rend="italic">in Joints from the Gibbet</hi>, at four hundred Crowns. Neither indeed can I deny, that if the same use were made of several plump young Girls in this Town, who, without one single Groat to their Fortunes, cannot stir abroad without a Chair, and appear at a <hi rend="italic">Play-House</hi> and <hi rend="italic">Assemblies</hi> in Foreign fineries which they never will Pay for; the Kingdom would not be the worse.                  
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    Some Persons of a desponding Spirit are in great concern about that vast Number of poor People, who are aged, diseased, or maimed; and I have been desired to imploy my thoughts what Course may be taken, to ease the Nation of so grievous an Incumbrance. But I am not in the least pain upon that matter, because it is very well known, that they are every Day <hi rend="italic">dying</hi>, and <hi rend="italic">rotting</hi>, by <hi rend="italic">cold</hi> and <hi rend="italic">famine</hi>, and <hi rend="italic">filth</hi>, and <hi rend="italic">vermin</hi>, as fast as can be reasonably expected. And as to the young Labourers, they are now in almost as hopeful a Condition. They cannot get Work, and consequently pine away from want of Nourishment, to a degree, that if at any time they are accidentally hired to common Labour, they have not strength to perform it, and thus the Country and themselves are happily delivered from the Evils to come.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I have too long degressed, and therefore shall return to my subject. I think the advantages by the Proposal which I have made are obvious and many, as well as of the highest importance.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    For first, as I have already observed, it would greatly lessen <hi rend="italic">the Number of Papists</hi>, with whom we are Yearly over-run, being the principal Breeders of the nation, as well as our most dangerous Enemies, and who stay at home on purpose with a design <hi rend="italic">to deliver the Kingdom to the Pretender</hi>, hoping to take their Advantage by the absence <hi rend="italic">of so many good Protestants</hi>, who have chosen rather to leave their Country, than stay at home, and pay Tythes against their Conscience to an <hi rend="italic">Episcopal Curate</hi>.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    <hi rend="italic">Secondly</hi>, the poorer Tenants will have something valuable of their own, which by Law may be made lyable to a Distress, and help to pay their Landlord's Rent, their Corn and Cattle being already seazed, and <hi rend="italic">Money a thing unknown</hi>.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    <hi rend="italic">Thirdly</hi>, Whereas the Maintainance of an hundred thousand Children, from two Years old, and upwards, cannot be computed at less than Ten Shillings a piece <hi rend="italic">per Annum</hi>, the Nation's Stock will be thereby encreased fifty thousand pounds <hi rend="italic">per Annum</hi>, besides the profit of a new Dish, introduced to the Tables of all <hi rend="italic">Gentlemen of Fortune</hi> in the Kingdom, who have any refinement in Taste, and the Money will circulate among our selves, the Goods being entirely of our own Growth and Manufacture.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    <hi rend="italic">Fourthly</hi>, The constant Breeders, besides the gain of Eight Shillings ster. <hi rend="italic">per Annum</hi>, by the Sale of their Children, will be rid of the Charge of maintaining them after the first Year.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    <hi rend="italic">Fifthly</hi>, This food would likewise bring great <hi rend="italic">Custom to Taverns</hi>, where the Vintners will certainly be so prudent as to procure the best receipts for dressing it to perfection; and consequently have their Houses frequented by all the <hi rend="italic">fine Gentlemen</hi>, who justly value themselves upon their knowledge in good Eating; and a skilful Cook, who understands how to oblige his Guests, will contrive to make it as expensive as they please.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    <hi rend="italic">Sixthly</hi>, This would be a great Inducement to Marriage, which all wise Nations have either encouraged by Rewards, or enforced by Laws and Penalties. It would encrease the care and tenderness of Mothers towards their Children, when they were sure of a Settlement for Life to the poor Babes, provided in some sort by the Publick, to their Annual profit instead of Expence, we should soon see an honest Emulation among the married Women, <hi rend="italic">which of them could bring the fattest Child to the Market</hi>. Men would become as fond of their <hi rend="italic">Wives</hi>, during the Time of their Pregnancy, as they are now of their <hi rend="italic">Mares</hi> in Foal, their <hi rend="italic">Cows</hi> in Calf, or <hi rend="italic">Sows</hi> when they are ready to Farrow, nor offer to Beat or Kick them (as is too frequent a practice) for fear of a Miscarriage.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    Many other advantages might be enumerated: For instance, the addition of some thousand Carcases in our exportation of Barreled Beef. The Propagation of <hi rend="italic">Swines Flesh</hi>, and Improvement in the Art of making good <hi rend="italic">Bacon</hi>, so much wanted among us by the great destruction of <hi rend="italic">Pigs</hi>, too frequent at our Tables, which are no way comparable in Taste, or Magnificence to a well grown, fat Yearling Child, which Roasted whole will make a considerable Figure at a <hi rend="italic">Lord Mayor's Feast</hi>, or any other Publick Entertainment. But this, and many others, I omit, being studious of Brevity.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    Supposing that one thousand Families in this City, would be constant Customers for Infants Flesh, besides others who might have it at <hi rend="italic">Merry meetings</hi>, particularly at <hi rend="italic">Weddings</hi> and <hi rend="italic">Christenings</hi>, I compute that <hi rend="italic">Dublin</hi> would take off Annually about twenty thousand Carcases, and the rest of the Kingdom (where probably they will be Sold somewhat Cheaper) the remaining eighty thousand.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I can think of no one Objection, that will possibly be raised against this Proposal, unless it should be urged, that the Number of People will be thereby much lessened in the Kingdom. This I freely own, and 'twas indeed one Principal design in offering it to the World. I desire the Reader will observe, that I Calculate my Remedy <hi rend="italic">for this one individual Kingdom of IRELAND, and for no other that ever was, is, or, I think, ever can be upon Earth</hi>. Therefore let no Man talk to me of <ref target="a012" corresp="n012">other Expedients</ref><note xml:id="n012" target="a012" type="gloss">What follows is a list of ideas that Swift and others had actually offered for improving the financial situation of Ireland, but that had gained no political traction, thereby forcing the publication of this outrageous pamphlet.</note>: Of taxing our Absentees at five shillings a pound: <hi rend="italic">Of using neither Cloaths, nor houshold Furniture, except what is of our own Growth and Manufacture: Of utterly rejecting the Materials and Instruments that promote Foreign Luxury: Of curing the Expenciveness of Pride, Vanity, Idleness, and Gaming in our Women: Of introducing a Vein of Parsimony, Prudence and Temperance: Of learning to Love our Country, wherein we differ even from LAPLANDERS, and the inhabitants of TOPINAMBOO: Of quitting our Animosities and Factions, nor Act any longer like the Jews, who were Murdering one another at the very moment their City was taken: Of being a little Cautious not to Sell our Country and Consciences for nothing: Of teaching Landlords to have at least one degree of Mercy towards their Tenants. Lastly, of putting a Spirit of Honesty, Industry and Skill into our Shopkeepers, who, if a Resolution could now be taken to Buy only our Native Goods, would immediatly unite to Cheat and Exact upon us in the Price, the Measure, and the Goodness, nor could ever yet be brought to make one fair Proposal of just dealing, though often and earnestly invited to it</hi>.                 
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    Therefore I repeat, let no Man talk to me of these and the like Expedients, 'till he hath at least some Glimpse of Hope, that there will ever be some hearty and sincere Attempt to put them into pPractice.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    But, as to my self, having been wearied out for many Years with offering vain, idle, visionary thoughts, and at length utterly despairing of Success, I fortunately fell upon this Proposal, which, as it is wholly new, so it hath something Solid and Real, of no Expence and little Trouble, full in our own Power, and whereby we can incur no Danger in <hi rend="italic">disoblinging England</hi>. For this kind of Commodity will not bear Exportation, and Flesh being of too tender a Consistance, to admit a long continuance in Salt, <hi rend="italic">although perhaps I could name a <ref target="a013" corresp="n013">Country</ref><note xml:id="n013" target="a013" type="gloss">England</note>, which would be glad to Eat up our whole Nation without it</hi>.                  
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    After all I am not so violently bent upon my own Opinion, as to reject any Offer, proposed by wise Men, which shall be found equally Innocent, Cheap, Easy and Effectual. But before something of that kind shall be advanced in Contradiction to my Scheme, and offering a better, I desire the Author or Authors will be pleased maturely to consider two points. <hi rend="italic">First</hi>, as things now stand, how they will be able to find Food and Raiment for a hundred thousand useless Mouths and Backs. And <hi rend="italic">Secondly</hi>, there being a round Million of Creatures in humane Figure, throughout this Kingdom, whose whole Subsi-stance put into a common Stock, would leave them in Debt two Million of Pounds <hi rend="italic">Sterl</hi>, adding those who are Beggars by Profession, to the Bulk of Farmers, Cottagers and Labourers, with their Wives and Children, who are Beggars in Effect; I desire those <hi rend="italic">Politicians</hi> who dislike my Overture, and may perhaps be so bold to attempt an Answer, that they will first ask the Parents of these Mortals, whether they would not at this Day think it a great Happiness to have been sold for Food at a year Old, in the manner I prescribe, and thereby have avoided such a perpetual Scene of Misfortunes, as they have since gone through, by the <hi rend="italic">oppression of Land-lords</hi>, the impossibility of paying Rent without Money or Trade, the want of common Sustenance, with neither House nor Cloaths to cover them from the Inclemencies of the Weather, and the most inevitable Prospect of intailing the like, or greater Miseries, upon their Breed for ever.
+                    <lb/> <lb/>
+                </p>
+                <p>
+                    I Profess, in the sincerity of my Heart, that I have not the least personal Interest in endeavouring to promote this necessary Work, having no other Motive than the <hi rend="italic">publick Good of my Country</hi>, by <hi rend="italic">advancing our Trade, providing for Infants, relieving the Poor, and giving some Pleasure to the Rich</hi>. I have no Children, by which I can propose to get a single Penny; the youngest being nine Years old, and my Wife past Child bearing.
+                    <lb/> <lb/>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
+
