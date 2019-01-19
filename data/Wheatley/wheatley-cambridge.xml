@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="whe-cam">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-cambridge">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -10,13 +10,13 @@
                </persName>
             </author>
             <editor>
-               <persName type="orcid" key="0000-0002-7400-4093">Tonya Howe</persName>
+               <persName type="orcid" key="0000-0002-7400-4093"><name ref="editors.xml#TH">Tonya Howe</name></persName>
             </editor>
             <respStmt>
                <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name>Students of Marymount University</name>
-               <name>James West</name>
-               <name>Amy Ridderhof</name>
+               <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+               <name ref="editors.xml#JW">James West</name>
+               <name ref="editors.xml#AR">Amy Ridderhof</name>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -31,10 +31,6 @@
                </address>
                <email>thowe@marymount.edu</email>
             </distributor>
-            <authority>
-               <idno>wheatley-poems</idno>
-               <!-- we need to develop a plan for these identifications -->
-            </authority>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
                   Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
@@ -123,6 +119,14 @@
             </taxonomy>
          </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change when="2018-07-01" who="editors.xml#JW">First pass XML file</change>
+         <change when="2018-07-01" who="editors.xml#AR">First pass XML file</change>
+         <change when="2018-07-05" who="editors.xml#TH">XML updates; updated teiHeader</change>
+         <change when="2018-07-10" who="editors.xml#JW">Added annotations</change>
+         <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
+         <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <front>
@@ -153,7 +157,7 @@
       <body>
          <pb n="15" facs="images/WP-0015.jpg"/>
          <div type="poem">
-            <head>TO THE UNIVERSITY OF CAMBRIDGE,<ref target="a001" corresp="n001"/>               <note xml:id="n001" target="a001" type="editorial" resp="JW"><p><graphic url="http://www.courses.fas.harvard.edu/~hsb41/slides/revere_harvard_engraving.jpg" width="300" style="float:right"/>After describing her own
+            <head>TO THE UNIVERSITY OF CAMBRIDGE,<ref target="a001" corresp="n001"/>               <note xml:id="n001" target="a001" type="editorial" resp="editors.xml#JW"><p><graphic url="http://www.courses.fas.harvard.edu/~hsb41/slides/revere_harvard_engraving.jpg" width="300" style="float:right"/>After describing her own
                educational journey, Wheatley advises students at the University of Cambridge
                in New England to appreciate and "[i]mprove" (21) the privilege of their
                education by "shunn[ing]" (25) the "transient sweetness" (29) of sin using a
@@ -166,14 +170,14 @@
                fourteen years old (41). The engraving included here is by Paul Revere and shows "A Westerly View of The Colledges in Cambridge New England" (1767), <ref target="http://sites.fas.harvard.edu/%7Ehsb41/Inventing_Harvard/colonial_harvard.html">via the President and Fellows of Harvard College</ref>.<ptr target="#cambridgeA"/></p></note> IN NEW-ENGLAND.</head>
 
             <lg type="heroic couplets">
-               <l n="1">WHILE an intrinsic ardor<ref target="a002" corresp="n002" xml:id="ardorA"/><note xml:id="n002" target="a002" type="editorial" resp="JW"><p>Wheatley works from the premise,
+               <l n="1">WHILE an intrinsic ardor<ref target="a002" corresp="n002" xml:id="ardorA"/><note xml:id="n002" target="a002" type="editorial" resp="editors.xml#JW"><p>Wheatley works from the premise,
                   commonly used among early women writers and the enslaved who were restricted
                   from intellectual pursuits like writing, that her desire to write is
                   "intrinsic" (1) or God-given, and therefore appropriate. The word "ardor" also
                   connotes physical desire and flame-like passion, according to the OED (n.3).
                   <ptr target="#ardorA"/>
                </p></note> prompts to write,</l>
-               <l n="2">The muses<ref target="a003" corresp="n003" xml:id="museA"/><note xml:id="n003" target="a003" type="editorial" resp="JW"><p>According to <ref
+               <l n="2">The muses<ref target="a003" corresp="n003" xml:id="museA"/><note xml:id="n003" target="a003" type="editorial" resp="editors.xml#JW"><p>According to <ref
                   target="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0104%3Aalphabetic+letter%3DM%3Aentry+group%3D31%3Aentry%3Dmusae-bio-1"
                   ><hi rend="italic">A Dictionary of Greek and Roman Biography and
                      Mythology</hi></ref>, the Muses are “inspiring goddesses of song" who
@@ -190,7 +194,7 @@
                   (<ref target="https://www.jstor.org/stable/468067">“Unprecedented Liberties” 75</ref>). <ptr target="#museA"
                   /></p></note> promise to assist my pen;</l>
                <l n="3">'Twas not long since I left my native shore</l>
-               <l n="4">The land of errors, and <hi rend="italic">Egyptian</hi> gloom:<ref target="a004" corresp="n004" xml:id="egyptA"/><note xml:id="n004" target="a004" type="editorial" resp="JW"><p>Wheatley here alludes to <ref
+               <l n="4">The land of errors, and <hi rend="italic">Egyptian</hi> gloom:<ref target="a004" corresp="n004" xml:id="egyptA"/><note xml:id="n004" target="a004" type="editorial" resp="editors.xml#JW"><p>Wheatley here alludes to <ref
                   target="https://www.kingjamesbibleonline.org/Exodus-Chapter-10/">Exodus 10:21-22</ref>, wherein the ninth plague of darkness is
                   visited upon Egypt. This reference is also in line with contemporary
                   Orientalist notions about Egypt and Egyptian religiosity, which was believed to
@@ -208,7 +212,7 @@
             <lg type="heroic couplets">
                <l rend="indent">Students, to you 'tis giv'n to scan the heights</l>
                <l n="7">Above, to traverse the ethereal space,</l>
-               <l n="8">And mark the systems of revolving worlds.<ref target="a005" corresp="n005" xml:id="systemsA"/><note xml:id="n005" target="a005" type="editorial" resp="JW"><p><graphic url="http://s3.amazonaws.com/ourheritagemedia%2Foriginal%2F2bab3e89ed86399fa4795f0459931566.jpg" width="300" style="float:right"/>The sixteenth- and
+               <l n="8">And mark the systems of revolving worlds.<ref target="a005" corresp="n005" xml:id="systemsA"/><note xml:id="n005" target="a005" type="editorial" resp="editors.xml#JW"><p><graphic url="http://s3.amazonaws.com/ourheritagemedia%2Foriginal%2F2bab3e89ed86399fa4795f0459931566.jpg" width="300" style="float:right"/>The sixteenth- and
                   seventeenth-century development of the microscope and the telescope had made
                   great scientific advancements possible, especially in astronomy; in the title page and pull-out image represented here, you can see an eighteenth-century orrery--a scientific clockwork instrument used to dramatize the motion of the planets in the solar system (via the University of Otago). Possibly an
                   allusion to Alexander Pope's 1733-34 <ref
@@ -225,7 +229,7 @@
                <l n="15">What matchless mercy in the Son of God!</l>
                <l n="16">When the whole human race by sin had fall'n,</l>
                <pb n="16" facs="WP-0016.jpg"/>
-               <l n="17">He deign'd<ref target="a006" corresp="n006" xml:id="deignA"/><note xml:id="n006" target="a006" type="editorial" resp="JW"><p> According to the Oxford English
+               <l n="17">He deign'd<ref target="a006" corresp="n006" xml:id="deignA"/><note xml:id="n006" target="a006" type="editorial" resp="editors.xml#JW"><p> According to the Oxford English
                   Dictionary <ref target="http://www.oed.com/view/Entry/49189">deign</ref> means
                   "to think it worthy of oneself" or "to think fit" (n.1a). Today, it typically
                   has a negative connotation, though it does not here. <ptr target="#deignA"
@@ -241,14 +245,14 @@
                <l n="24">By you be shunn'd, nor once remit your guard;</l>
                <l n="25">Suppress the deadly serpent in its egg.</l>
                <l n="26">Ye blooming plants of human race divine,</l>
-               <l n="27">An <hi rend="italic">Ethiop</hi><ref target="a007" corresp="n007" xml:id="ethiopA"/><note xml:id="n007" trget="a007" type="editorial" resp="JW">
+               <l n="27">An <hi rend="italic">Ethiop</hi><ref target="a007" corresp="n007" xml:id="ethiopA"/><note xml:id="n007" target="a007" type="editorial" resp="editors.xml#JW">
                   <p><graphic url="https://stacks.stanford.edu/image/iiif/hj384dy5623%2FAM_0241/full/!1000,1000/0/default.jpg" width="300" style="float:right"/>According to the OED, the word <ref target="http://www.oed.com">Ethiop</ref>
                      would have been used during Wheatley's time most often to refer to "[a] black
                      or dark-skinned person; a black African," and only occasionally to the country
                      of Ethiopia, specifically (n.A). Included here, <ref target="https://exhibits.stanford.edu/maps-of-africa/catalog/hj384dy5623">via the Norwich Collection at Stanford University</ref>, is a 1666 map of Africa and the surrounding oceans, embellished with a variety of images. <ptr target="#ethiopA"/></p></note> tells you 'tis
                   your greatest foe;</l>
                <l n="28">Its transient sweetness turns to endless pain,</l>
-               <l n="29">And in immense perdition<ref target="a008" corresp="n008" xml:id="perditionA"/><note xml:id="n008" target="a008" type="editorial" resp="JW"><p>In theological discussion, the
+               <l n="29">And in immense perdition<ref target="a008" corresp="n008" xml:id="perditionA"/><note xml:id="n008" target="a008" type="editorial" resp="editors.xml#JW"><p>In theological discussion, the
                   word <ref target="http://www.oed.com/view/Entry/140642">perdition</ref> means
                   "the state of final spiritual ruin or damnation; the consignment of the
                   unredeemed or wicked and impenitent soul to hell; the fate of those in hell;

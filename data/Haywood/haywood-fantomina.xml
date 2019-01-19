@@ -4,13 +4,13 @@
          <titleStmt>
             <title type="main">"Fantomina; or, Love in a Maze"</title>
             <author>
-               <persName xml:id="xxx" type="lccn" key="n79008228"><forename>Eliza</forename> <surname>Haywood</surname></persName>
+               <persName type="lccn" key="n79008228"><name xml:id="TH"><forename>Eliza</forename> <surname>Haywood</surname></name></persName>
             </author>
-            <editor xml:id="TH"><persName type="orcid" key="0000-0002-7400-4093">Howe, Tonya</persName>                
+            <editor><persName type="orcid" key="0000-0002-7400-4093"><name ref="editors.xml#TH">Howe, Tonya</name></persName>                
             </editor>
             <respStmt>
                <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name xml:id="MUstudstaff">Students and Staff of Marymount University</name>
+               <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
             </respStmt>
             <sponsor></sponsor>
             <funder>National Endowment for the Humanities</funder>
@@ -150,11 +150,12 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change when="2018-10-02" who="TH">First pass XML file</change>
-         <change when="2019-01-02" who="TH">Added note placeholders</change>
-         <change when="2019-01-05" who="TH">Finished notes; updated teiHeader</change>
-         <change when="2019-01-07" who="TH">Added profileDesc to teiHeader</change>
-         <change when="2019-01-08" who="TH">For distribution purposes, deleted @facs page images</change>
+         <change when="2018-10-02" who="editors.xml#TH">First pass XML file</change>
+         <change when="2019-01-02" who="editors.xml#TH">Added note placeholders</change>
+         <change when="2019-01-05" who="editors.xml#TH">Finished notes; updated teiHeader</change>
+         <change when="2019-01-07" who="editors.xml#TH">Added profileDesc to teiHeader</change>
+         <change when="2019-01-08" who="editors.xml#TH">For distribution purposes, deleted @facs page images</change>
+         <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -166,13 +167,13 @@
             <titlePart>LOVE in a Maze.<lb/></titlePart>
             <titlePart>BEING A<lb/></titlePart>
             <titlePart>Secret History<ref target="a001" corresp="n001"/><note xml:id="n001"
-               target="a001" type="editorial" resp="TH">While there are many critical understandings of the secret history in literature, <ref target="https://books.google.com/books?id=h3iJDgAAQBAJ">as the essays in <hi rend="italic">The Secret History in Literature: 1660-1820</hi> (2017)</ref>, the genre usually offers a glimpse into the secret lives of public individuals. In the amatory tradition of <hi rend="italic">Fantomina</hi>, this "private" side is typically filled with sexual or political intrigue.</note><lb/></titlePart>
+               target="a001" type="editorial" resp="editors.xml#TH">While there are many critical understandings of the secret history in literature, <ref target="https://books.google.com/books?id=h3iJDgAAQBAJ">as the essays in <hi rend="italic">The Secret History in Literature: 1660-1820</hi> (2017)</ref>, the genre usually offers a glimpse into the secret lives of public individuals. In the amatory tradition of <hi rend="italic">Fantomina</hi>, this "private" side is typically filled with sexual or political intrigue.</note><lb/></titlePart>
             <titlePart>OF AN<lb/></titlePart>
             <titlePart>AMOUR<lb/></titlePart>
             <titlePart>Between Two<lb/></titlePart>
             <titlePart>PERSONS OF CONDITION.<lb/></titlePart>
             <titlePart>By Mrs. ELIZA HAYWOOD.<ref target="a002" corresp="n002"/><note xml:id="n002"
-               target="a002" type="editorial" resp="TH"><graphic style="float:right"
+               target="a002" type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      url="https://upload.wikimedia.org/wikipedia/commons/2/25/Eliza-haywood.jpg"/>Eliza Haywood (c.1693-1756) was a prolific author, actor, and publisher of the
                   early- to mid-eighteenth century. She is most famous, today, for her novels and
                   novellas, among which <hi rend="italic">Fantomina</hi>is numbered. The image
@@ -188,7 +189,7 @@
                      <l><hi rend="italic">They fly that wound, and they pursue that dye.</hi></l>
                   </lg></quote>
                <bibl><persName>WALLER.</persName><ref target="a003" corresp="n003"/><note
-                     xml:id="n003" target="a003" type="editorial" resp="TH">This epigraph is
+                     xml:id="n003" target="a003" type="editorial" resp="editors.xml#TH">This epigraph is
                      composed of the last couplet from <ref
                         target="https://quod.lib.umich.edu/e/eebo/A67331.0001.001/1:2.71?rgn=div2;vid=62068;view=fulltext"
                         >"To A. H: Of the Different Successe of Their Loves," a poem by Edmund
@@ -218,7 +219,7 @@
             <head>FANTOMINA:<lb/> OR,<lb/> LOVE in a Maze.<lb/></head>
             <p> A YOUNG Lady of distinguished Birth, Beauty, Wit, and Spirit, happened to be in a
                   Box<ref target="a005" corresp="n005"/><note xml:id="n005" target="a005"
-                  type="editorial" resp="TH"><graphic style="float:right"
+                  type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      url="http://www.vam.ac.uk/__data/assets/image/0008/183473/2006ac5629_the_rio_during_artaxerxes.jpg"
                   />Playhouses during the seventeenth and eighteenth centuries in England organized
                   seating according to price and social status. Boxes were the most expensive of
@@ -231,12 +232,12 @@
                      >Andrew Dickson's introduction at the British Library</ref>.</note> one Night
                at the Playhouse; where, though there were a great Number of celebrated Toasts<ref
                   target="a006" corresp="n006"/><note xml:id="n006" target="a006" type="editorial"
-                  resp="TH">According to the OED, a "toast" is a "[a] lady who is named as the
+                  resp="editors.xml#TH">According to the OED, a "toast" is a "[a] lady who is named as the
                   person to whom a company is requested to drink; often one who is the reigning
                   belle of the season" (n2.1).</note>, she perceived several Gentlemen extremely
                pleased themselves with entertaining a Woman who sat in a Corner of the Pit<ref
                   target="a007" corresp="n007"/><note xml:id="n007" target="a007" type="editorial"
-                  resp="TH">The "pit" was a mixed-sex seating area in the eighteenth-century,
+                  resp="editors.xml#TH">The "pit" was a mixed-sex seating area in the eighteenth-century,
                   notable for its energy and activity. According to <hi rend="italic">The Oxford
                      Companion to Theatre and Performance</hi>, the "pit occupied the floor of the
                   theatre at a lower level than the stage and, unlike the standing pit of earlier
@@ -268,7 +269,7 @@
                one, having at that Time no other Aim, than the Gratification of an innocent
                Curiosity.— She had no sooner design'd this Frolick, than she put it in Execution;
                and muffling her Hoods<ref target="a008" corresp="n008"/><note xml:id="n008"
-                  target="a008" type="editorial" resp="TH">Throughout the seventeenth and early
+                  target="a008" type="editorial" resp="editors.xml#TH">Throughout the seventeenth and early
                   eighteenth centuries, <ref
                      target="https://www.metmuseum.org/art/collection/search/90514?img=1">hoods and
                      hooded cloaks</ref> were both practical and fashionable garments for women. In
@@ -279,7 +280,7 @@
                      >this article from the BBC's <hi rend="italic">History
                   Magazine</hi></ref>.</note> over her Face, went the next Night into the
                   Gallery-Box<ref target="a009" corresp="n009"/><note xml:id="n009" target="a009"
-                  type="editorial" resp="TH">The gallery-box or middle gallery is a seating area in
+                  type="editorial" resp="editors.xml#TH">The gallery-box or middle gallery is a seating area in
                   cost between pit and box seats. Servants often sat in the inexpensive upper
                   gallery seats. When Fantomina goes again tho the playhouse on her "frolick," she
                   sits in the gallery areas that signify her sexual availability. Often, sex workers
@@ -297,12 +298,12 @@
                of another, and a suppos'd Prostitute; but she dispatch'd as soon as she cou'd all
                that had hitherto attack'd her, when she saw the accomplish'd Beauplaisir<ref
                   target="a010" corresp="n010"/><note xml:id="n010" target="a010" type="editorial"
-                  resp="TH">Beauplaisir is a French portmanteau word meaning "beautiful pleasure."
+                  resp="editors.xml#TH">Beauplaisir is a French portmanteau word meaning "beautiful pleasure."
                   Beau was also a generic term in the eighteenth century for a lady's suitor or
                   sweetheart, according to the OED.</note> was making his Way thro' the Crowd as
                fast as he was able, to reach the Bench she sat on. She had often seen him in the
                   Drawing-Room<ref target="a011" corresp="n011"/><note xml:id="n011" target="a011"
-                  type="editorial" resp="TH">The drawing or "withdrawing" room was a room in the
+                  type="editorial" resp="editors.xml#TH">The drawing or "withdrawing" room was a room in the
                   home of a wealthier class of people to which women would "withdraw" after dinner,
                   to brew tea and converse. Later, the male contingent would join the women in the
                   drawing room for polite conversation and mingling. For more information on the
@@ -318,20 +319,20 @@
                really was; but the vast Disparity there appear'd between their Characters, prevented
                him from entertaining even the most distant Thought that they cou'd be the same. – He
                address'd her at first with the usual Salutations<ref target="a012" corresp="n012"
-                  /><note xml:id="n012" target="a012" type="editorial" resp="TH">Salutations refer
+                  /><note xml:id="n012" target="a012" type="editorial" resp="editors.xml#TH">Salutations refer
                   to customary greetings.</note> of her pretended Profession, as, A<said>re you
                   engag'd, Madam? – Will you permit me to wait on you home after the Play? – By
                   Heaven, you are a fine Girl! – How long have you us'd this House?</said> – And
                such like Questions; but perceiving she had a Turn of Wit, and a genteel<ref
                   target="a013" corresp="n013"/><note xml:id="n013" target="a013" type="editorial"
-                  resp="TH">Used here as an adjective, "genteel" refers to a quality of polite
+                  resp="editors.xml#TH">Used here as an adjective, "genteel" refers to a quality of polite
                   refinement thought to be possessed by those of the gentry class. According to <ref
                      target="https://www.history.ac.uk/reviews/review/402">this review of Peter
                      Cross's <hi rend="italic">The Origins of the English Gentry</hi>, the gentry
                      class is "a type of lesser nobility, based on landholding," that often
                      dispensed justice in the locality and wielded great social power.</ref></note>
                Manner in her Raillery<ref target="a014" corresp="n014"/><note xml:id="n014"
-                  target="a014" type="editorial" resp="TH">According to the OED, raillery refers to
+                  target="a014" type="editorial" resp="editors.xml#TH">According to the OED, raillery refers to
                   "[g]ood-humoured ridicule or banter," which can sometimes be more satirical or
                   mocking.</note>, beyond what is frequently to be found among those Wretches, who
                are for the most part Gentlewomen but by Necessity, few of 'em having had an
@@ -351,7 +352,7 @@
                on her to her own <pb n="260" /> Lodgings. – Never had she
                been in such a Dilemma: Three or four Times did she open her Mouth to confess her
                real Quality;<ref target="a015" corresp="n015"/><note xml:id="n015" target="a015"
-                  type="editorial" resp="TH">"Quality" is a difficult concept to grasp; in the
+                  type="editorial" resp="editors.xml#TH">"Quality" is a difficult concept to grasp; in the
                   eighteenth century, it typically referred to rank or social position, and more
                   particularly, noble or high social position, as indicated by senses 4 and 5 in the
                   OED.</note> but the influence of her ill Stars prevented it, by putting an Excuse
@@ -366,7 +367,7 @@
                not to render him unhappy the next. She gave a solemn Promise to be in the same Box
                on the Morrow Evening; and they took Leave of each other; he to the Tavern to drown
                the Remembrance of his Disappointment; she in a Hackney-Chair<ref target="a016"
-                  corresp="n016"/><note xml:id="n016" target="a016" type="editorial" resp="TH"
+                  corresp="n016"/><note xml:id="n016" target="a016" type="editorial" resp="editors.xml#TH"
                      ><graphic style="float:right" width="300px"
                      url="https://media.vam.ac.uk/media/thira/collection_images/2014GW/2014GW5284_jpg_ds.jpg"
                   />A hackney or sedan chair was a hireable mode of transportation that consisted of
@@ -384,7 +385,7 @@
                undiscover'd.</p>
 
             <p> But these Cogitations<ref target="a017" corresp="n017"/><note xml:id="n017"
-                  target="a017" type="editorial" resp="TH">"Cogitations" are thoughts; often, the
+                  target="a017" type="editorial" resp="editors.xml#TH">"Cogitations" are thoughts; often, the
                   word contains a humourously exaggerated connotation.</note> were but of a short
                Continuance, they vanish'd with the Hurry of her Spirits, and were succeeded by
                others vastly different and ruinous: – All the Charms of Beauplaisir came fresh into
@@ -394,7 +395,7 @@
                Strength of her Virtue, to bear her fate thro' Tryals more dangerous than she
                apprehended this to be, and never having been address'd by him as Lady, — was
                resolv'd to receive his Devoirs<ref target="a018" corresp="n018"/><note xml:id="n018"
-                  target="a018" type="editorial" resp="TH">From the French word for duty, "devoirs"
+                  target="a018" type="editorial" resp="editors.xml#TH">From the French word for duty, "devoirs"
                   are dutiful addresses paid to someone out of respect or courtesy. See sense 4 in
                   the OED.</note> as a Town-Mistress, imagining a world of Satisfaction to herself
                in engaging him in the Character <pb n="261" /> of such a
@@ -407,7 +408,7 @@
                in the last Extremity she wou'd do so. – Bent, however, on meeting him, whatever
                shou'd be the Consequence, she went out some Hours before the Time of going to the
                Playhouse, and took lodgings<ref target="a019" corresp="n019"/><note xml:id="n019"
-                  target="a019" type="editorial" resp="TH">Fantomina explains that she rented rooms
+                  target="a019" type="editorial" resp="editors.xml#TH">Fantomina explains that she rented rooms
                   near the playhouse, which were centrally located and more expensive than houses or
                   rooms in houses further afield. She would likely have rented the furnished first
                   floor for between 2 and 4 guineas per week, according to <ref
@@ -434,13 +435,13 @@
                – Having told him she wou'd admit of his accompanying her home, he seem'd perfectly
                satisfy'd; and leading her to the Place, which was not above twenty Houses distant,
                wou'd have order'd a Collation<ref target="a020" corresp="n020"/><note xml:id="n020"
-                  target="a020" type="editorial" resp="TH">A "collation," according to the OED, is a
+                  target="a020" type="editorial" resp="editors.xml#TH">A "collation," according to the OED, is a
                   light, often cold meal of meats, fruits, and wine that has little to no need of
                   preparation.</note> to be brought after them. But she wou'd not permit it, telling
                him she was not one of those who suffer'd themselves to be treated at their own
                Lodgings; and as soon as she was come in, sent a Servant, belonging to the House<ref
                   target="a021" corresp="n021"/><note xml:id="n021" target="a021" type="editorial"
-                  resp="TH">When renting furnished rooms, a lodger might bring their own servant or
+                  resp="editors.xml#TH">When renting furnished rooms, a lodger might bring their own servant or
                   use the servants who work consistently at the house. Here, we learn that Fantomina
                   did not bring her own servant, but drew on the services of those from whom she
                   rented.</note>, to provide a very handsome Supper, and Wine, and every Thing was
@@ -464,7 +465,7 @@
                fearful, – confus'd, altogether unprepar'd to resist in such Encounters, and rendered
                more so, by the extreme Liking she had to him. – Shock'd, however, at the
                Apprehension of really losing her Honour<ref target="a022" corresp="n022"/><note
-                  xml:id="n022" target="a022" type="editorial" resp="TH">Honor, in this sense, is
+                  xml:id="n022" target="a022" type="editorial" resp="editors.xml#TH">Honor, in this sense, is
                   being used to refer to Fantomina's "virtue as regards sexual morality," according
                   to sense 7 in the OED--or, "a reputation for this, one's good name."</note>, she
                struggled all she could, and was just going to reveal the whole Secret of her Name
@@ -520,7 +521,7 @@
                before, resolving, if he boasted of this Affair, he should not have it in his Power
                to touch her Character: She therefore said she was the Daughter of a Country
                   Gentleman<ref target="a023" corresp="n023"/><note xml:id="n023" target="a023"
-                  type="editorial" resp="TH">A country gentleman would be a member of the landed
+                  type="editorial" resp="editors.xml#TH">A country gentleman would be a member of the landed
                   gentry, residing most likely in a country house or mansion where the business of
                   the locality was often conducted. The country gentleman would likely have also had
                   a town house in London. To read more about the country house, see <ref
@@ -540,7 +541,7 @@
                sent for the Woman of the House to come up to her; and easily perceiving, by her
                Manner, that she was a Woman who might be influenced by Gifts, made her a Present of
                a Couple of Broad Pieces<ref target="a024" corresp="n024"/><note xml:id="n024"
-                  target="a024" type="editorial" resp="TH">A broad piece is a coin approximately the
+                  target="a024" type="editorial" resp="editors.xml#TH">A broad piece is a coin approximately the
                   same as a pound, worth 20 shillings. It was called a "broad piece" because it was
                   thicker and and bigger than newer coins, minted after 1663. See <ref
                      target="https://books.google.com/books?id=klvjJDtpllwC">"A Note on British
@@ -560,7 +561,7 @@
                repaired to the other, where she easily excused to an unsuspecting Aunt, with whom
                she boarded, her having been abroad all Night, saying, she went with a Gentleman and
                his Lady in a Barge<ref target="a025" corresp="n025"/><note xml:id="n025"
-                  target="a025" type="editorial" resp="TH"><graphic style="float:right" width="300px"
+                  target="a025" type="editorial" resp="editors.xml#TH"><graphic style="float:right" width="300px"
                      url="https://www.rct.uk/sites/default/files/styles/rctr-scale-1300-500/public/collection-online/e/3/255748-1330621559.jpg"
                   />The river Thames was a source of work, pleasure, and transportation in the
                   eighteenth century; it connected many significant country towns to London, and
@@ -589,7 +590,7 @@
                   Amour? – And if he should be false, grow satiated, like other Men, I shall but, at
                   the worst, have the private Vexation of knowing I have lost him; – the
                      Intreague<ref target="a026" corresp="n026"/><note xml:id="n026" target="a026"
-                     type="editorial" resp="TH">According to the OED, an "intrigue" is at once a
+                     type="editorial" resp="editors.xml#TH">According to the OED, an "intrigue" is at once a
                      secret intimacy between lovers, as well as an intricate or maze-like
                      contrivance, perhaps enabling the clandestine romance.</note> being a Secret,
                   my Disgrace will be so too: – I shall hear no Whispers as I pass, – She is
@@ -607,19 +608,19 @@
                employ'd her Time and Thoughts, she was never miss'd from any Assembly she had been
                accustomed to frequent. – The Business of her Love has engross'd her till Six in the
                Evening, and before Seven she has been dress'd in a different Habit<ref target="a027"
-                  corresp="n027"/><note xml:id="n027" target="a027" type="editorial" resp="TH">A
+                  corresp="n027"/><note xml:id="n027" target="a027" type="editorial" resp="editors.xml#TH">A
                   habit used in this sense refers to a particular garment or mode of dress, often
                   specific to a profession or activity. See the OED senses 1 and 2.</note>, and in
                another Place. – Slippers, and a Nightgown loosely flowing, has been the Garb in
                which he has left the languishing Fantomina; – Lac'd, and <pb n="267"
                   /> adorn'd with all the Blaze of Jewels, has he, in less
                than an Hour after, beheld at the Royal Chapel<ref target="a028" corresp="n028"
-                  /><note xml:id="n028" target="a028" type="editorial" resp="TH">Fantomina here
+                  /><note xml:id="n028" target="a028" type="editorial" resp="editors.xml#TH">Fantomina here
                   likely refers to the Chapel Royal at St. James's Palace. During the Georgian period,
                   the Chapel Royal became "a significant cultural centre." For more information on
                   the Chapel Royal, see <ref target="http://www.royalhistorian.com/the-chapel-royal-at-st-jamess-palace-from-king-henry-viii-to-prince-george-of-cambridge/">this article by Carolyn Harris.</ref></note>,
                the Palace Gardens<ref target="a029" corresp="n029"/><note xml:id="n029"
-                  target="a029" type="editorial" resp="TH"><graphic style="float:right" width="300px"
+                  target="a029" type="editorial" resp="editors.xml#TH"><graphic style="float:right" width="300px"
                      url="https://upload.wikimedia.org/wikipedia/commons/2/2f/Kip_St_James%27s_Palace_and_Park.jpg"
                   />The palace gardens at St. James's Palace, which was the primary royal residence
                   until early nineteenth century, are pictured in the bird's eye plan by Jan Kip
@@ -628,7 +629,7 @@
                      target="http://twonerdyhistorygirls.blogspot.com/2014/04/an-afternoon-in-st-jamess-park-c-1745.html"
                      >the 1745 painting of St. James's Park and the Mall, by Joseph Nickolls,
                      discussed here.</ref></note>, Drawing-Room, Opera<ref target="a030"
-                  corresp="n030"/><note xml:id="n030" target="a030" type="editorial" resp="TH"
+                  corresp="n030"/><note xml:id="n030" target="a030" type="editorial" resp="editors.xml#TH"
                      ><graphic style="float:right" width="300px"
                      url="http://www.vam.ac.uk/__data/assets/image/0008/183473/2006ac5629_the_rio_during_artaxerxes.jpg"
                   />Opera became extraordinarily fashionable during the eighteenth century. Read
@@ -647,13 +648,13 @@
             <p> BUT he varied not so much from his Sex as to be able to prolong Desire, to any great
                Length after Possession: The rifled Charms of Fantomina soon lost their Poinancy<ref
                   target="a031" corresp="n031"/><note xml:id="n031" target="a031" type="editorial"
-                  resp="TH">According to the OED, "poingnancy" refers to the sharpness or piquancy
+                  resp="editors.xml#TH">According to the OED, "poingnancy" refers to the sharpness or piquancy
                   of a feeling.</note>, and grew tastless and insipid; and when the Season of the
                Year inviting the Company to the Bath, she offer'd to accompany him, he made an
                Excuse to go without her. She easily perceiv'd his Coldness, and the Reason why he
                pretended her going would be inconvenient, and endur'd as much from the Discovery as
                any of her Sex could do: She dissembled<ref target="a032" corresp="n032"/><note
-                  xml:id="n032" target="a032" type="editorial" resp="TH">To "dissemble" is to
+                  xml:id="n032" target="a032" type="editorial" resp="editors.xml#TH">To "dissemble" is to
                   disguise or feign--to appear otherwise (OED).</note> it, however, before him, and
                took her Leave of him with the Shew of no other Concern than his Absence occasion'd:
                But this she did to take from him all Suspicion of her following him, as she
@@ -680,7 +681,7 @@
 
             <p> SHE no sooner heard he had left the Town, than making a Pretence to her Aunt, that
                she was going to visit a Relation in the Country, went towards Bath<ref target="a033"
-                  corresp="n033"/><note xml:id="n033" target="a033" type="editorial" resp="TH">Bath
+                  corresp="n033"/><note xml:id="n033" target="a033" type="editorial" resp="editors.xml#TH">Bath
                   is a fashionable resort and thermal spa town located in the south west of England,
                   near Bristol. In the eighteenth century, it became a destination and, according to
                   the UNESCO World Heritage Convention, <ref
@@ -690,12 +691,12 @@
                Servants, who she found Reasons to quarrel with on the Road and discharg'd: Clothing
                herself in a Habit she had brought with her, she forsook the Coach, and went into a
                   Wagon<ref target="a034" corresp="n034"/><note xml:id="n034" target="a034"
-                  type="editorial" resp="TH">A wagon is a much ruder form of transportation than the
+                  type="editorial" resp="editors.xml#TH">A wagon is a much ruder form of transportation than the
                   elegant coach, befitting Fantomina's new character. Travel by stage coach from
                   London to Bath during this period would have taken at least two days. </note>, in
                which Equipage she arriv'd at Bath. The Dress she was in, was a round-ear'd Cap<ref
                   target="a035" corresp="n035"/><note xml:id="n035" target="a035" type="editorial"
-                  resp="TH"><graphic style="float:right" width="300px"
+                  resp="editors.xml#TH"><graphic style="float:right" width="300px"
                      url="https://media.vam.ac.uk/media/thira/collection_images/2006AV/2006AV6330_jpg_l.jpg"
                   />According to <ref
                      target="https://www.bloomsburyfashioncentral.com/products/berg-fashion-library/dictionary/the-dictionary-of-fashion-history/round-eared-cap"
@@ -708,7 +709,7 @@
                      >from the Victoria and Albert Museum, shows a mannequin in a quilted green
                      petticoat and round-eared cap</ref>.</note>, a short Red Petticoat, and a
                little Jacket of Grey Stuff<ref target="a036" corresp="n036"/><note xml:id="n036"
-                  target="a036" type="editorial" resp="TH">"Stuff" here refers to a type of woven
+                  target="a036" type="editorial" resp="editors.xml#TH">"Stuff" here refers to a type of woven
                   material made of worsted woollen cloth. See OED sense 5c.</note>; all the rest of
                her Accoutrements were answerable to these, and join'd with a broad Country Dialect,
                a rude unpolish'd Air, which she, having been bred in these Parts, knew very well how
@@ -718,7 +719,7 @@
                to find out immediately where he was. Notwithstanding this Metamorphosis <pb n="269"
                   /> she was still extremely pretty; and the Mistress of the
                House happening at that Time to want a Maid<ref target="a037" corresp="n037"/><note
-                  xml:id="n037" target="a037" type="editorial" resp="TH">A maidservant was one of
+                  xml:id="n037" target="a037" type="editorial" resp="editors.xml#TH">A maidservant was one of
                   the lowest-paid members of a domestic household, though others--like scullery
                   maids, who were responsible for scrubbing kitchen pans--earned much less. A
                   housemaid was typically responsible for airing rooms, emptying chamber pots,
@@ -733,7 +734,7 @@
                Exploit was extremely on her side; there were no others of the Male-Sex in the House,
                than an old Gentleman, who had lost the Use of his Limbs with the Rheumatism, and had
                come thither for the Benefit of the Waters<ref target="a038" corresp="n038"/><note
-                  xml:id="n038" target="a038" type="editorial" resp="TH"><graphic style="float:right" width="300px"
+                  xml:id="n038" target="a038" type="editorial" resp="editors.xml#TH"><graphic style="float:right" width="300px"
                      url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Thomas_Rowlandson_-_Comforts_of_Bath-_The_Pump_Room_-_Google_Art_Project.jpg/1600px-Thomas_Rowlandson_-_Comforts_of_Bath-_The_Pump_Room_-_Google_Art_Project.jpg"
                   />Througout the eighteenth century, Bath--known for its thermal springs--became a
                   fashionable place to relax and "take the waters." <ref
@@ -763,7 +764,7 @@
                half-reluctant Body, nor suffered her to get loose, <pb n="270"
                   /> till he had ravaged all, and glutted each rapacious
                Sense with the sweet Beauties of the pretty Celia<ref target="a039" corresp="n039"
-                  /><note xml:id="n039" target="a039" type="editorial" resp="TH">Celia is a generic
+                  /><note xml:id="n039" target="a039" type="editorial" resp="editors.xml#TH">Celia is a generic
                   pastoral female name.</note>, for that was the Name she bore in this second
                Expedition. – Generous as Liberality itself to all who gave him Joy this way, he gave
                her a handsome Sum of Gold, which she durst not now refuse, for fear of creating some
@@ -779,13 +780,13 @@
                which he first enjoy'd her, he was at last grown more weary of her, than he had been
                of Fantomina; which she perceiving, would not be troublesome, but quitting her
                   Service<ref target="a040" corresp="n040"/><note xml:id="n040" target="a040"
-                  type="editorial" resp="TH">"Service" in this sense refers to the position of
+                  type="editorial" resp="editors.xml#TH">"Service" in this sense refers to the position of
                   domestic servitude she has acquired (OED).</note>, remained privately in the Town
                till she heard he was on his Return; and in that Time provided herself of another
                Disguise to carry on a third Plot, which her inventing Brain had furnished her with,
                once more to renew his twice-decay'd Ardours. The Dress she had order'd to be made,
                was such as Widows wear in their first Mourning<ref target="a041" corresp="n041"
-                  /><note xml:id="n041" target="a041" type="editorial" resp="TH"><graphic style="float:right"
+                  /><note xml:id="n041" target="a041" type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      width="300px"
                      url="http://www.historicalportraits.co.uk/Artworkimages/Zincke%20Lady%20Strange%203188%20Z.jpg"
                   />In this enamel miniature portrait c.1710, via Philip Mould and Company,<ref
@@ -799,7 +800,7 @@
                to seem all Gaiety. – To add to this, her Hair, which she was accustom'd to wear very
                loose, both when Fantomina and Celia, was now ty'd back so straight, and her
                   Pinners<ref target="a042" corresp="n042"/><note xml:id="n042" target="a042"
-                  type="editorial" resp="TH">A pinner is, according to the OED, a cap with long
+                  type="editorial" resp="editors.xml#TH">A pinner is, according to the OED, a cap with long
                   flaps on either side that fits more tightly around the head; it is often worn by
                   women of higher social standing. "Pinners" also refers to the flaps on either side
                   of the cap.</note> coming so very forward, that there was none of it to be seen.
@@ -836,7 +837,7 @@
                   Brother of his in London, will be all carried off to Holland, where he is going to
                   settle; if I reach not the Town before <pb n="272" />he
                   leaves it, I am undone for ever. – To which End I left Bristol<ref target="a043"
-                     corresp="n043"/><note xml:id="n043" target="a043" type="editorial" resp="TH"
+                     corresp="n043"/><note xml:id="n043" target="a043" type="editorial" resp="editors.xml#TH"
                      >Bristol is a port town about 15 miles west of Bath.</note>, the Place where we
                   liv'd, hoping to get a Place in the Stage at Bath, but they were all taken up
                   before I came; and being, by a Hurt I got in a Fall, render'd incapable of
@@ -859,7 +860,7 @@
                of one who seem'd so obstinately devoted to the Memory of her dead Husband, that
                there was no getting a Word from her on any other Theme: – But bethinking himself of
                the celebrated Story of the Ephesian Matron<ref target="a044" corresp="n044"/><note
-                  xml:id="n044" target="a044" type="editorial" resp="TH">In the story of the
+                  xml:id="n044" target="a044" type="editorial" resp="editors.xml#TH">In the story of the
                   Ephesian matron, first told in Petronius' <hi rend="italic">Satyricon</hi>, a new
                   widow in deep mourning for her husband and known for her chastity is seduced by a
                   soldier tasked with guarding the crucified bodies of three theives. While the
@@ -913,7 +914,7 @@
 
             <p> IT may, perhaps, seem strange that Beauplaisir should in such near Intimacies
                continue still deceiv'd: I<ref target="a045" corresp="n045"/><note xml:id="n045"
-                  target="a045" type="editorial" resp="TH">While "Fantomina" appears to be told in
+                  target="a045" type="editorial" resp="editors.xml#TH">While "Fantomina" appears to be told in
                   the third person omniscient, there is a first-person narrator who interjects at
                   points with her own thoughts, as she does here.</note> know there are Men who will
                swear it is an Impossibility, and that no Disguise could hinder them from knowing a
@@ -944,12 +945,12 @@
                not home, but into private Lodgings, whence she wrote to him to visit her the first
                Opportunity, and enquire for the Widow Bloomer. – She had no sooner dispatched this
                   Billet<ref target="a046" corresp="n046"/><note xml:id="n046" target="a046"
-                  type="editorial" resp="TH">A "billet" is the French word for letter; a billet doux
+                  type="editorial" resp="editors.xml#TH">A "billet" is the French word for letter; a billet doux
                   is a love letter. </note>, than she repair'd to the House where she had lodg'd as
                Fantomina, charging the People if Beauplaisir should come there, not to let him know
                she had been out of Town. From thence she wrote to him, in a different Hand<ref
                   target="a047" corresp="n047"/><note xml:id="n047" target="a047" type="editorial"
-                  resp="TH">"Hand" here refers to the style of handwriting used in the
+                  resp="editors.xml#TH">"Hand" here refers to the style of handwriting used in the
                   letter.</note>, a long Letter of Complaint, that he had been so cruel in not
                sending one Letter to her all the Time he had been absent, entreated to see him, and
                concluded with subscribing herself his unalterably Affectionate Fantomina. She
@@ -1021,7 +1022,7 @@
                the Means of gratifying the Inclination she had for his agreeable Person, in as full
                a Manner as she could wish. She had all the Sweets of Love, but as yet had tasted
                none of the Gall<ref target="a048" corresp="n048"/><note xml:id="n048" target="a048"
-                  type="editorial" resp="TH">Gall is another word for bile; figuratively, it refers
+                  type="editorial" resp="editors.xml#TH">Gall is another word for bile; figuratively, it refers
                   to bitterness, a feature of bile.</note>, and was in a State of Contentment, which
                might be envy'd by the more Delicate.</p>
 
@@ -1036,7 +1037,7 @@
                   /> greater Share of good Nature than most of his Sex, who,
                for the most part, when they are weary of an Intreague, break it entirely off,
                without any Regard to the Despair of the abandon'd Nymph<ref target="a049"
-                  corresp="n049"/><note xml:id="n049" target="a049" type="editorial" resp="TH"
+                  corresp="n049"/><note xml:id="n049" target="a049" type="editorial" resp="editors.xml#TH"
                      ><graphic style="float:right" width="300px"
                      url="https://images.metmuseum.org/CRDImages/dp/original/DP826799.jpg"/>A
                   "nymph" is a mythological nature spirit, usually depicted as a young woman
@@ -1056,7 +1057,7 @@
                presently perceiv'd it, but bore it as she had always done; it being but what she
                expected, she had prepar'd herself for it, and had another Project in embrio<ref
                   target="a050" corresp="n050"/><note xml:id="n050" target="a050" type="editorial"
-                  resp="TH">This is an archaic spelling of <hi rend="italic">embryo</hi>.</note>,
+                  resp="editors.xml#TH">This is an archaic spelling of <hi rend="italic">embryo</hi>.</note>,
                which she soon ripen'd into Action. She did not, indeed, compleat it altogether so
                suddenly as she had done the others, by reason there must be Persons employ'd in it;
                and the Aversion she had to any Confidents in her Affairs, and the Caution with which
@@ -1065,7 +1066,7 @@
                what she wish'd. – She got over the Difficulty at last, however, by proceeding in a
                Manner, if possible, more extraordinary than all her former Behaviour: – Muffling
                herself up in her Hood one Day, she went into the Park<ref target="a051"
-                  corresp="n051"/><note xml:id="n051" target="a051" type="editorial" resp="TH">St.
+                  corresp="n051"/><note xml:id="n051" target="a051" type="editorial" resp="editors.xml#TH">St.
                   James's Park was radically redeveloped by Charles II after his return to the
                   throne as a public space associated with the court. Here, Fantomina recounts
                   visiting the park to acquire the services of some young men down on their luck and
@@ -1084,7 +1085,7 @@
                      Restoration Views of St James Park"</ref>.</note> about the Hour when there are
                a great many necessitous Gentlemen, who think themselves above doing what they call
                little Things for a Maintenance, walking in the Mall<ref target="a052" corresp="n052"
-                  /><note xml:id="n052" target="a052" type="editorial" resp="TH"><graphic style="float:right"
+                  /><note xml:id="n052" target="a052" type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      width="300px"
                      url="https://upload.wikimedia.org/wikipedia/commons/f/f6/St_James%27s_Park_mall1745.jpg"
                   />The Mall here refers not to a shopping center but a wide path for walking or
@@ -1093,7 +1094,7 @@
                      target="https://commons.wikimedia.org/wiki/File:St_James%27s_Park_mall1745.jpg"
                      >Via Wikimedia Commons</ref>). </note>, to take a Camelion Treat<ref
                   target="a053" corresp="n053"/><note xml:id="n053" target="a053" type="editorial"
-                  resp="TH">Chameleons were long thought to subsist on air. According to Pliny the
+                  resp="editors.xml#TH">Chameleons were long thought to subsist on air. According to Pliny the
                   Elder's <hi rend="italic">The Natural History</hi>, the chameleon "always holds
                   the head upright and the mouth open, and is the only animal which receives
                   nourishment neither by meat nor drink, nor anything else, but from the air alone"
@@ -1106,7 +1107,7 @@
                   whatever object is nearest, with the exception of white and red."</note>, and fill
                their Stomachs with Air instead of Meat. Two of those, who by their Physiognomy<ref
                   target="a054" corresp="n054"/><note xml:id="n054" target="a054" type="editorial"
-                  resp="TH">Physiognomy refers to a pseudoscience that assessed the moral character
+                  resp="editors.xml#TH">Physiognomy refers to a pseudoscience that assessed the moral character
                   of an individual--or a group of people--by their physical appearance. For more
                   information on physiognomy in the seventeenth and eighteenth centuries, see Sarah
                   Waldorf's essay for <hi rend="italic">The Iris</hi>, <ref
@@ -1152,7 +1153,7 @@
                sooner left her new-engag'd Emissaries, than she went in search of a House for the
                compleating her Project. – She pitch'd on one very large, and magnificently
                furnished, which she hir'd by the Week<ref target="a055" corresp="n055"/><note
-                  xml:id="n055" target="a055" type="editorial" resp="TH"><graphic style="float:right" width="300px"
+                  xml:id="n055" target="a055" type="editorial" resp="editors.xml#TH"><graphic style="float:right" width="300px"
                      url="https://i.ytimg.com/vi/Ps4lGG0I9zw/maxresdefault.jpg"/>As Incognita,
                   Fantomina would have rented what <ref
                      target="https://quod.lib.umich.edu/e/ecco/004859210.0001.000/1:7?rgn=div1;view=fulltext"
@@ -1173,7 +1174,7 @@
                repaired to the Park, where she met the punctual 'Squires of low Degree; and ordering
                them to follow her to the House she had taken, told them they must condescend to
                appear like Servants, and gave each of them a very rich Livery<ref target="a056"
-                  corresp="n056"/><note xml:id="n056" target="a056" type="editorial" resp="TH"><graphic style="float:right" url="https://www.history.org/history/clothing/designcenter/timeline/photos/2002-1.jpg" width="300px"/>Livery is the term given to the uniform worn by a household servant. In this image, showing a formal ball entrance reconstructed at Colonial Williamsburg, the two flanking servants are wearing the livery of the house (via <ref target="https://www.history.org/history/clothing/designcenter/timeline/">Colonial Williamsburg Foundation</ref>).</note>. Then writing a Letter to Beauplaisir, in a Character vastly
+                  corresp="n056"/><note xml:id="n056" target="a056" type="editorial" resp="editors.xml#TH"><graphic style="float:right" url="https://www.history.org/history/clothing/designcenter/timeline/photos/2002-1.jpg" width="300px"/>Livery is the term given to the uniform worn by a household servant. In this image, showing a formal ball entrance reconstructed at Colonial Williamsburg, the two flanking servants are wearing the livery of the house (via <ref target="https://www.history.org/history/clothing/designcenter/timeline/">Colonial Williamsburg Foundation</ref>).</note>. Then writing a Letter to Beauplaisir, in a Character vastly
                different from either of those she had made use of, as Fantomina, or the fair Widow
                Bloomer, order'd one of them to deliver it into his own Hands, to bring back an
                Answer, and to be careful that he sifted out nothing of the Truth. – <said>I do not
@@ -1218,7 +1219,7 @@
 
                   <closer>Yours, 
                      <signed>INCOGNITA.</signed><ref target="a057" corresp="n057"/><note xml:id="n057"
-                           target="a057" type="editorial" resp="TH">Incognita is a feminine form of the Italian "incognito," meaning one who is unknown or in disguise (OED).</note></closer>
+                           target="a057" type="editorial" resp="editors.xml#TH">Incognita is a feminine form of the Italian "incognito," meaning one who is unknown or in disguise (OED).</note></closer>
                </body>
             </floatingText>
 
@@ -1288,7 +1289,7 @@
                drawing near in which he was to come, she dress'd herself in as magnificent a Manner,
                as if she were to be that Night <pb n="284" /> at a Ball at
                   Court<ref target="a058" corresp="n058"/><note xml:id="n058" target="a058"
-                  type="editorial" resp="TH"><graphic style="float:right"
+                  type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      url="https://collections.museumoflondon.org.uk/mol/mediaLib/236/617/83_531_va.jpg"
                      width="300px"/>Court dress for both women and men was both political and
                   sumptuous, some of which can be seen in the accompanying image, showing an
@@ -1303,7 +1304,7 @@
                      "Faction and Fashion : The Politics of Court Dress in Eighteenth-Century
                      England."</ref></note>, endeavouring to repair the want of those Beauties which
                the Vizard<ref target="a059" corresp="n059"/><note xml:id="n059" target="a059"
-                  type="editorial" resp="TH"><graphic style="float:right"
+                  type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      url="https://neiljeffares.files.wordpress.com/2018/02/nattier-mme-royer.jpg"
                      width="300px"/>A "vizard" is a black velvet mask worn by elite women in the
                   Renaissance to protect the skin from sunburn. It became a fashionable accoutrement
@@ -1362,7 +1363,7 @@
                with more Impatience than he did. At last it came; but how great was his
                Disappointment, when by the Noises he heard in the Street, the hurry of the Coaches,
                and the Cries of Penny-Merchants<ref target="a060" corresp="n060"/><note
-                  xml:id="n060" target="a060" type="editorial" resp="TH">Penny merchants were street
+                  xml:id="n060" target="a060" type="editorial" resp="editors.xml#TH">Penny merchants were street
                   vendors or hawkers; their cries would fill the streets. To learn more about the
                   history of street hawking in London, see <ref
                      target="https://www.theguardian.com/cities/2015/nov/24/lost-cries-of-london-liberty-vagabonds-street-theatre"
@@ -1417,7 +1418,7 @@
                herself, as she did before the coming of her Mother, yet now all her Invention was at
                a Loss for a Stratagem to impose on a Woman of her Penetration: – By eating little,
                lacing prodigious strait<ref target="a061" corresp="n061"/><note xml:id="n061"
-                  target="a061" type="editorial" resp="TH"><graphic style="float:right"
+                  target="a061" type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      url="https://media.vam.ac.uk/media/thira/collection_images/2006BB/2006BB0967_jpg_l.jpg"
                      width="300px"/>Lacing here refers to the lacing up of the stays, a shaping
                   undergarment <ref
@@ -1428,7 +1429,7 @@
                      target="https://books.google.com/books?id=uk6I0-MDXVQC">were the visible sign
                      of strict morality" (26)</ref>.</note>, and the Advantage of a great
                   Hoop-Petticoat<ref target="a062" corresp="n062"/><note xml:id="n062" target="a062"
-                  type="editorial" resp="TH"><graphic style="float:right"
+                  type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      url="https://images.metmuseum.org/CRDImages/ci/original/CI65.13.1a%E2%80%93c_Fv2.jpg"
                      width="300px"/>Throughout the seventeenth and eighteenth centuries, women's
                   formal fashion was characterized by the exaggerated bell shape created by the hoop
@@ -1455,7 +1456,7 @@
                sent for: But he was presently perceiving what was her Distemper, call'd the old Lady
                aside, and told her, it was not a Doctor of his Sex, but one of her own<ref
                   target="a063" corresp="n063"/><note xml:id="n063" target="a063" type="editorial"
-                  resp="TH">Until the mid to late eighteenth century, childbirth was an almost
+                  resp="editors.xml#TH">Until the mid to late eighteenth century, childbirth was an almost
                   exclusively female domain. Midwives were women who had experience in both giving
                   birth and attending at other births. During the eighteenth century, midwifery was
                   becoming professionalized and as a result masculinized into obsetetric science.
@@ -1482,7 +1483,7 @@
                Accident to be at home, and immediately obey'd the Summons, though prodigiously <pb
                   n="289" /> surpris'd what Business a Lady so much a
                Stranger to him could have to impart. – But how much greater was his Amazement, when
-               taking him into her Closet<ref target="a063a" corresp="n063a"/><note xml:id="n063a" target="a063a" resp="TH"><graphic style="float:right" url="https://english.illinoisstate.edu/digitaldefoe/teaching/bobker/1GreenCloset.png" width="300px"/>In the eighteenth century, a "closet" was a small office or private room leading off of a bedroom; here, individuals would conduct business, write letters, read, or converse with close acquaintances. It was not used to store clothes. For more information, see <hi rend="italic">Daily Life in 18th-Century England</hi> (85-86), or <ref target="https://english.illinoisstate.edu/digitaldefoe/teaching/bobker/overview.html">Danielle Bobker's "Literature and Culture of the Closet in the Eighteenth Century,"</ref> from which site the accompanying image, showing the Green Closet at Frogmore, has been drawn.</note>, she there acquainted him with her Daughter's Misfortune,
+               taking him into her Closet<ref target="a063a" corresp="n063a"/><note xml:id="n063a" target="a063a" resp="editors.xml#TH"><graphic style="float:right" url="https://english.illinoisstate.edu/digitaldefoe/teaching/bobker/1GreenCloset.png" width="300px"/>In the eighteenth century, a "closet" was a small office or private room leading off of a bedroom; here, individuals would conduct business, write letters, read, or converse with close acquaintances. It was not used to store clothes. For more information, see <hi rend="italic">Daily Life in 18th-Century England</hi> (85-86), or <ref target="https://english.illinoisstate.edu/digitaldefoe/teaching/bobker/overview.html">Danielle Bobker's "Literature and Culture of the Closet in the Eighteenth Century,"</ref> from which site the accompanying image, showing the Green Closet at Frogmore, has been drawn.</note>, she there acquainted him with her Daughter's Misfortune,
                of the Discovery she had made, and how far he was concern'd in it? – All the Idea one
                can form of wild Astonishment, was mean to what he felt: – He assur'd her, that the
                young Lady her Daughter was a Person who he had never, more than at a Distance,
@@ -1530,7 +1531,7 @@
                   /> her Daughter was in a Condition, sent her to a
                Monastery in France, the Abbess of which had been her particular Friend<ref
                   target="a064" corresp="n064"/><note xml:id="n064" target="a064" type="editorial"
-                  resp="TH">The role of the French convent in English literary and cultural
+                  resp="editors.xml#TH">The role of the French convent in English literary and cultural
                   imagination is complex. Elite young women might be educated in a convent before
                   their marriage; the convent might also be a house of reformation; for some women,
                   the convent offered an intellectual alternative alternative to marriage in the

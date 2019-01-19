@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="whe-bro">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-brought">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -10,13 +10,13 @@
                </persName>
             </author>
             <editor>
-               <persName type="orcid" key="0000-0002-7400-4093">Tonya Howe</persName>
+               <persName type="orcid" key="0000-0002-7400-4093"><name ref="editors.xml#TH">Tonya Howe</name></persName>
             </editor>
             <respStmt>
                <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name>Students of Marymount University</name>
-               <name>James West</name>
-               <name>Amy Ridderhof</name>
+               <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+               <name ref="editors.xml#JW">James West</name>
+               <name ref="editors.xml#AR">Amy Ridderhof</name>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -31,10 +31,6 @@
                </address>
                <email>thowe@marymount.edu</email>
             </distributor>
-            <authority>
-               <idno>wheatley-poems</idno>
-               <!-- we need to develop a plan for these identifications -->
-            </authority>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
                   Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
@@ -83,7 +79,7 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc> <p>This text is prepared as part of the <i>Literature in Context</i> project,
+         <projectDesc> <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi> project,
             which provides an accessible, curated, and marked-up selection of primary sources
             relevant to the study and the teaching of British and American literature of the 18th
             century. This project is funded by the National Endowment for the Humanities and
@@ -123,6 +119,14 @@
             </taxonomy>
          </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change when="2018-07-01" who="editors.xml#JW">First pass XML file</change>
+         <change when="2018-07-01" who="editors.xml#AR">First pass XML file</change>
+         <change when="2018-07-05" who="editors.xml#TH">XML updates; updated teiHeader</change>
+         <change when="2018-07-10" who="editors.xml#JW">Added annotations</change>
+         <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
+         <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <front>
@@ -155,7 +159,7 @@
             
             <pb n="18" facs="WP-0018.jpg"/>
             <head>On being
-               brought from AFRICA to AMERICA.<ref target="a001" corresp="n001"/><note xml:id="n001" target="a001" type="editorial" resp="TH"><p>Wheatley's description of those who
+               brought from AFRICA to AMERICA.<ref target="a001" corresp="n001"/><note xml:id="n001" target="a001" type="editorial" resp="editors.xml#TH"><p>Wheatley's description of those who
                   "view our sable race with scornful eye" (5) is a clear rejection of what <ref
                      target="https://books.google.com/books?id=pxaTAgAAQBAJ">Lena Hill describes
                      as "ignorant" interpretations of "visual blackness" (37-38)</ref>, as is her
@@ -175,7 +179,7 @@
             <l n="3">That there's a God, that there's a <hi rend="italic">Saviour</hi> too:</l>
             <l n="4">Once I redemption neither sought nor knew.</l>
             <l n="5">Some
-               view<ref target="a002" corresp="n002"/><note xml:id="n002" target="a002" type="editorial" resp="JW"><p><graphic url="http://www.bl.uk/learning/timeline/external/brooksslaveship-tl.jpg" width="300" style="float:right"/>The title of one Wheatley's most
+               view<ref target="a002" corresp="n002"/><note xml:id="n002" target="a002" type="editorial" resp="editors.xml#JW"><p><graphic url="http://www.bl.uk/learning/timeline/external/brooksslaveship-tl.jpg" width="300" style="float:right"/>The title of one Wheatley's most
                   (in)famous poems, "On being brought from AFRICA to AMERICA" alludes to the
                   experiences of many Africans who became subject to the <ref
                      target="http://www.unesco.org/new/en/social-and-human-sciences/themes/slave-route/transatlantic-slave-trade/"
@@ -198,7 +202,7 @@
             <l n="6">"Their colour is a diabolic die."</l>
             <l n="7">Remember, <hi rend="italic">Christians</hi>, <hi rend="italic"
                >Negros</hi>, black
-               as <hi rend="italic">Cain</hi>,<ref target="a003" corresp="n003"/><note xml:id="n003" target="a003" type="editorial" resp="JW"><p>The phrase "black as Cain" is a
+               as <hi rend="italic">Cain</hi>,<ref target="a003" corresp="n003"/><note xml:id="n003" target="a003" type="editorial" resp="editors.xml#JW"><p>The phrase "black as Cain" is a
                   distortion of the biblical idea of the mark of Cain <ref
                      target="https://www.kingjamesbibleonline.org/Genesis-4-15/">(Genesis
                      4:15)</ref> and was used as justification for the enslavement of people of
