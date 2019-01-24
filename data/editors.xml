@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Literature in Context Editors and Contributors</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal ref="editors.xml#JOB">John O'Brien</principal>
+                <principal ref="editors.xml#TH">Tonya Howe</principal>
+                <principal ref="editors.xml#CR">Christine Ruotolo</principal>
+               <respStmt>
+                    <resp>List compiled by</resp>
+                    <name ref="editors.xml#TH">Tonya Howe</name>
+                </respStmt>               
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+               <publisher></publisher>
+                <date>2019-01-18</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>A list of editors and contributors for Literature in Context, in no particular order.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change type="reminder">Please be sure to update the publication date when changes are made here!</change>
+            <change when="2019-01-18" who="editors.xml#TH">ADDED: Tonya Howe, John O'Brien, Christine Ruotolo, Winona Salesky, Ally Freeland, Amy Ridderhof, James West, Sabrina Koumoin, Sara Brunstetter</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPerson>
+                <person xml:id="TH">
+                    <persName xml:lang="en">
+                        <forename>Tonya</forename>
+                        <surname>Howe</surname>
+                    </persName>
+                   <affiliation>Professor of Literature and Languages at Marymount University</affiliation>
+                </person>
+                <person xml:id="JOB">
+                    <persName xml:lang="en">
+                        <forename>John</forename>
+                        <surname>O'Brien</surname>
+                    </persName>
+                   <affiliation>Professor of English at The University of Virgina</affiliation>
+                </person>
+                <person xml:id="CR">
+                    <persName xml:lang="en">
+                        <forename>Christine</forename>
+                        <surname>Ruotolo</surname>
+                    </persName>
+                </person>
+                <person xml:id="WS">
+                    <persName xml:lang="en">
+                        <forename>Winona</forename>
+                        <surname>Salesky</surname>
+                    </persName>
+                   <affiliation>Digital Services Manager, The University of Virginia Library </affiliation>
+                </person>
+                <person xml:id="MUstudstaff">
+                   <persName xml:lang="en">
+                      Students and Staff at Marymount University
+                   </persName>
+                   <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="AF">
+                    <persName xml:lang="en">
+                        <forename>Allyson</forename>
+                        <surname>Freeland</surname>
+                    </persName>
+                   <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="AR">
+                    <persName xml:lang="en">
+                        <forename>Amy</forename>
+                        <surname>Ridderhof</surname>
+                    </persName>
+                   <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="JW">
+                    <persName xml:lang="en">
+                        <forename>James</forename>
+                        <surname>West</surname>
+                    </persName>
+                   <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="SK">
+                    <persName xml:lang="en">
+                        <forename>Sabrina</forename>
+                        <surname>Koumoin</surname>
+                    </persName>
+                   <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="SB">
+                    <persName xml:lang="en">
+                        <forename>Sara</forename>
+                        <surname>Brunstetter</surname>
+                    </persName>
+                   <affiliation>The University of Virginia</affiliation>
+                </person>
+                
+            </listPerson>
+        </body>
+    </text>
+</TEI>
