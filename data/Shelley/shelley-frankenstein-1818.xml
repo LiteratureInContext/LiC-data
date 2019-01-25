@@ -150,11 +150,11 @@
          <change when="2018-08-20" who="#AF">Added Vol 1 annotations and page images.</change>
          <change when="2018-12-06" who="#AF">Fixed all of the pages in V1 to reflect the volume
             number. Changed annotations to numerical.</change>
-         <change when="2019-01-05" who="#TH">Updated teiHeader, eliminated archaic notes format,
-            updated idno from shelley-frankenstein to she-fra.</change>
+         <change when="2019-01-05" who="#TH">Updated teiHeader, eliminated archaic notes format</change>
          <change when="2019-01-06" who="#TH">Updated references to current practice and moved
             inline. Volume II annotations not present.</change>
          <change when="2019-01-18" who="#TH">Updated resonsibility and contribution XML</change>
+         <change when="2019-01-25" who="#TH">In the process of wrapping annotated text in ref tags, instead of using empty elements</change>
       </revisionDesc>
    </teiHeader>
 
@@ -168,7 +168,7 @@
             <docTitle>
                <titlePart type="main">FRANKENSTEIN;</titlePart>
                <titlePart type="sub">
-                  <lb/>OR, <lb/>THE MODERN PROMETHEUS<ref target="a001" corresp="n001"/><note
+                  <lb/>OR, <lb/>THE MODERN <ref target="a001" corresp="n001">PROMETHEUS</ref><note
                      xml:id="n001" corresp="a001" type="editorial" resp="#AF">
                      <graphic
                         url="https://visualpursuits.files.wordpress.com/2014/06/1959-5621-mf1-prometheus.jpeg"
@@ -207,11 +207,12 @@
             <titlePart type="desc">IN THREE VOLUMES</titlePart>
             <epigraph>
                <quote>
-                  <lg>
+                  <ref target="a002" corresp="n002"><lg>
                      <l>Did I request thee, Maker, from my clay</l>
                      <l>To mould me man? Did I solicit thee</l>
-                     <l>From darkness to promote me?<ref target="a002" corresp="n002"/>
-                        <note xml:id="n002" target="a002" type="editorial" resp="#AF"><p>This
+                     <l>From darkness to promote me?</l> 
+                  </lg>
+                  </ref><note xml:id="n002" target="a002" type="editorial" resp="#AF"><p>This
                               epigraph quotes <ref
                                  target="http://www.gutenberg.org/ebooks/26?msg=welcome_stranger"
                                     ><hi rend="italic">Paradise Lost</hi></ref> (X.743-745), where
@@ -231,9 +232,7 @@
                                  "Romantics and Victorians" exhibit at the British Library</ref>.
                            </p>
                         </note>
-                     </l>
-                  </lg>
-                  <lb/><bibl>PARADISE LOST.<ref target="a003" corresp="n003"/><note xml:id="n003"
+                  <lb/><bibl><ref target="a003" corresp="n003">PARADISE LOST.</ref><note xml:id="n003"
                         target="a003" type="editorial" resp="#AF"><p><ref
                               target="https://www.poets.org/poetsorg/poet/john-milton">John
                               Milton</ref> (1608-1674) was an English poet most notably known for
@@ -279,8 +278,8 @@
             <docImprint>
                <pubPlace><placeName type="tgn" key="7011781">London</placeName></pubPlace>: <lb/>
                PRINTED FOR <lb/>
-               <publisher rend="caps">LACKINGTON, HUGHES, HARDING, MAVOR, &amp;
-                  JONES</publisher><ref target="a004" corresp="n004"/>
+               <publisher rend="caps"><ref target="a004" corresp="n004">LACKINGTON, HUGHES, HARDING, MAVOR, &amp;
+                  JONES</ref></publisher>
                <note xml:id="n004" target="a004" type="editorial" resp="#TH"><p><graphic
                         url="https://www.bl.uk/britishlibrary/~/media/bl/global/dl%20romantics%20and%20victorians/collection-items-manual/consumerism-books-lackington-allen-074521.jpg"
                         style="float:right" width="300px"/>
@@ -315,7 +314,7 @@
                      Ackermann depicting the interior of "Messrs. Lackington Allen &amp; Co: Temple
                      of the Muses, Finsbury Square." </p></note>, <lb/>
                <pubPlace><placeName type="tgn" key="7449907">FINSBURY SQUARE</placeName></pubPlace>. <lb/>
-               <docDate>1818</docDate><ref target="a005" corresp="n005"/><note xml:id="n005"
+               <docDate><ref target="a005" corresp="n005">1818</ref></docDate><note xml:id="n005"
                   target="a005" type="editorial" resp="#AF"><p>The first edition of <hi rend="italic"
                         >Frankenstein</hi> was written while Mary Shelley was in the prime of her
                      life, but it was published in January of 1818, shortly after she buried her
@@ -367,8 +366,8 @@
          <div type="dedication">
             <pb n="[dedication]" facs="images/vi.jpg"/>
             <p>TO </p>
-            <p><persName type="lccn" key="n80024468">WILLIAM GODWIN</persName><ref target="a006a"
-                  corresp="n006a"/><note xml:id="n006a" target="a006a" type="editorial" resp="#AR">
+            <p><persName type="lccn" key="n80024468"><ref target="a006a"
+               corresp="n006a">WILLIAM GODWIN</ref></persName><note xml:id="n006a" target="a006a" type="editorial" resp="#AR">
                   <p><graphic style="float:right"
                         url="https://upload.wikimedia.org/wikipedia/commons/a/a8/William_Godwin_by_Henry_William_Pickersgill.jpg"
                         width="300px"/>Mary Shelley dedicated Frankenstein to her father, <ref
@@ -391,8 +390,8 @@
                      painting by Henry William Pickersgill, housed in the National Portrait Gallery,
                      London. </p>
                </note>,</p>
-            <p><hi rend="italic">AUTHOR OF <bibl>POLITICAL JUSTICE</bibl><ref target="a006"
-                     corresp="n006"/><note xml:id="n006" target="a006" type="editorial" resp="#AF"
+            <p><hi rend="italic">AUTHOR OF <bibl><ref target="a006"
+               corresp="n006">POLITICAL JUSTICE</ref></bibl><note xml:id="n006" target="a006" type="editorial" resp="#AF"
                         ><p>Published in 1793, William Godwin’s <ref
                            target="http://oll.libertyfund.org/titles/godwin-an-enquiry-concerning-political-justice-vol-i"
                               ><hi rend="italic">Enquiry Concerning Political Justice and its
@@ -413,8 +412,8 @@
                         influence on Mary Shelley, see <ref
                            target="http://shelleysghost.bodleian.ox.ac.uk/william-godwin-and-mary-shelley"
                            >an online exhibit <hi rend="italic">Shelley’s Ghost</hi>, developed by
-                           the Bodleian Libraries.</ref></p></note>, <bibl>CALEB WILLIAMS</bibl><ref
-                     target="a007" corresp="n007"/><note xml:id="n007" target="a007"
+                           the Bodleian Libraries.</ref></p></note>, <bibl><ref
+                              target="a007" corresp="n007">CALEB WILLIAMS</ref></bibl><note xml:id="n007" target="a007"
                      type="editorial" resp="#AR"><p>Published in May 1794, <ref
                            target="http://shelleygodwinarchive.org/contents/msl_1876_forster_223/"
                               ><hi rend="italic">Things As They Are; or, The Adventures of Caleb
@@ -435,7 +434,7 @@
             <p>THESE VOLUMES</p>
             <p><hi rend="italic">Are respectfully inscribed</hi></p>
             <p>BY</p>
-            <p>THE AUTHOR<ref target="a008" corresp="n008"/><note xml:id="n008" target="a008"
+            <p><ref target="a008" corresp="n008">THE AUTHOR</ref><note xml:id="n008" target="a008"
                   type="editorial" resp="#TH"><p>
                      <graphic style="float:right"
                         url="https://collectionimages.npg.org.uk/large/mw05761/Mary-Wollstonecraft-Shelley.jpg"
@@ -472,7 +471,7 @@
          <div type="preface">
             <pb n="[1.vii]" facs="images/vii.jpg"/>
             <head>Preface.</head>
-            <p>THE event on which this fiction is founded<ref target="a009" corresp="n009"/><note
+            <p><ref target="a009" corresp="n009">THE event on which this fiction is founded</ref><note
                   xml:id="n009" target="a009" type="editorial" resp="#AF"><p><hi rend="italic"
                         >Frankenstein</hi> was created on a rainy afternoon in 1816 when Mary Godwin
                      (soon to be Mary Shelley), <ref
@@ -494,8 +493,8 @@
                         target="http://shelleygodwinarchive.org/contents/frankenstein/">images</ref>
                      of Shelley’s manuscript for <hi rend="italic">Frankenstein</hi> see the <hi
                         rend="italic">Shelley-Godwin Archive</hi>.</p></note> has been supposed, by
-               Dr. <persName type="lccn" key="n50037924">Darwin</persName><ref target="a010"
-                  corresp="n010"/><note xml:id="n010" target="a010" type="editorial" resp="#AF"
+               Dr. <persName type="lccn" key="n50037924"><ref target="a010"
+                  corresp="n010">Darwin</ref></persName><note xml:id="n010" target="a010" type="editorial" resp="#AF"
                         ><p><graphic style="float:right"
                         url="https://collectionimages.npg.org.uk/large/mw01731/Erasmus-Darwin.jpg"
                         width="300px"/>
@@ -544,7 +543,7 @@
                ordinary relations of existing events can yield.</p>
             <p>I have thus endeavoured to preserve the truth of the elementary principles of human
                nature, while I have not scrupled to innovate upon their combinations. <hi
-                  rend="italic"><bibl>The Iliad</bibl></hi><ref target="a011" corresp="n011"/><note
+                  rend="italic"><bibl><ref target="a011" corresp="n011">The Iliad</ref></bibl></hi><note
                   xml:id="n011" target="a011" type="editorial" resp="#AF"><p><hi rend="italic">The
                         Iliad</hi>, composed in approximately the 9th century BCE, is an epic poem
                      in elevated and formal verse, narrating the events that occurred in the ninth
@@ -558,8 +557,8 @@
                      Priam, father of Hector, and his recognition of a kinship between them through
                      grief. See MIT’s <ref target="http://classics.mit.edu/Homer/iliad.html">full
                         text</ref> version of <hi rend="italic">The Iliad</hi> translated by Samuel
-                     Butler.</p></note>, the tragic poetry of <placeName type="tgn" key="1000074"
-                  >Greece</placeName><ref target="a012" corresp="n012"/><note xml:id="n012"
+                     Butler.</p></note>, <ref target="a012" corresp="n012">the tragic poetry of <placeName type="tgn" key="1000074"
+                        >Greece</placeName></ref><note xml:id="n012"
                   target="a012" type="editorial" resp="#AF"><p>Tragedy is an elevated literary form
                      that originated in ancient Greece. According to Aristotle’s <hi rend="italic"
                            ><ref
@@ -583,7 +582,7 @@
                      Romantics turned the argument inward, invoking Shakespeare’s tragedies in lieu
                      of Ancient ones (<hi rend="italic">Macbeth</hi>,<hi rend="italic">Hamlet</hi>,
                         <hi rend="italic">Othello</hi>).</p></note>, <persName type="lccn"
-                  key="n78095332">Shakespeare</persName><ref target="a013" corresp="n013"/><note
+                           key="n78095332"><ref target="a013" corresp="n013">Shakespeare</ref></persName><note
                   xml:id="n013" target="a013" type="editorial" resp="#AF"><p><graphic
                         url="https://www.folger.edu/sites/default/files/TitlePageFirstFolio_005198.jpg"
                         width="300px"/> William Shakespeare (1564-1616) is one of the greatest
@@ -627,7 +626,7 @@
                      summaries and criticisms, see the <ref
                         target="https://www.folger.edu/shakespeares-works">Folger Shakespeare
                         Library</ref>.</p></note>, in the <hi rend="italic"
-                  ><bibl>Tempest</bibl></hi><ref target="a014" corresp="n014"/><note xml:id="n014"
+                           ><bibl><ref target="a014" corresp="n014">Tempest</ref></bibl></hi><note xml:id="n014"
                   target="a014" type="editorial" resp="#AF"><p><hi rend="italic"><ref
                            target="http://shakespeare.mit.edu/tempest/full.html">The
                         Tempest</ref></hi> is a comedy written in 1610 by <ref
@@ -644,8 +643,8 @@
                      common ground and love triumph. Explore more of the text on the <ref
                         target="https://www.folger.edu/tempest">Folger Shakespeare
                      Library</ref>.</p></note> and <hi rend="italic"><bibl><pb
-                        n="[1.ix - page breaks after 'Mid-']" facs="images/ix.jpg"/>Midsummer
-                     Night's Dream</bibl></hi><ref target="a015" corresp="n015"/><note xml:id="n015"
+                        n="[1.ix - page breaks after 'Mid-']" facs="images/ix.jpg"/><ref target="a015" corresp="n015">Midsummer
+                           Night's Dream</ref></bibl></hi><note xml:id="n015"
                   target="a015" type="editorial" resp="#AF"><p><graphic
                         url="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Oberon%2C_Titania_and_Puck_with_Fairies_Dancing._William_Blake._c.1786.jpg/800px-Oberon%2C_Titania_and_Puck_with_Fairies_Dancing._William_Blake._c.1786.jpg"
                         style="float:right" width="300px"/>
@@ -676,8 +675,8 @@
                      especially chapter 4, "The Carnivalesque in A Midsummer Night's Dream." The
                      image here is <hi rend="italic">Oberon, Titania and Puck with Fairies
                         Dancing</hi> by William Blake (1786) hosted by Tate Britain. </p></note> and
-               most especially <persName type="lccn" key="n78095532">Milton</persName><ref
-                  target="a016" xml:id="n016"/><note xml:id="a016" target="n016" type="editorial"
+               most especially <persName type="lccn" key="n78095532"><ref
+                  target="a016" xml:id="n016">Milton</ref></persName><note xml:id="a016" target="n016" type="editorial"
                   resp="#TH"><graphic
                      url="https://upload.wikimedia.org/wikipedia/commons/0/0c/John_Milton_portrait_painting.jpg"
                      width="300px"/>John Milton (1608-1674) was an English poet most notably known
@@ -690,8 +689,8 @@
                   Godfrey Kneller, <ref
                      target="https://commons.wikimedia.org/wiki/File:John_Milton_portrait_painting.jpg"
                      >via Wikimedia Commons</ref>.</note> , in <hi rend="italic"><bibl>Paradise
-                     Lost</bibl></hi>, conform to this rule; and the most humble novelist<ref
-                  target="a017" corresp="n017"/><note xml:id="n017" target="a017" type="editorial"
+                        Lost</bibl></hi>, conform to this rule; and <ref
+                           target="a017" corresp="n017">the most humble novelist</ref><note xml:id="n017" target="a017" type="editorial"
                   resp="#TH">Throughout the eighteenth century, the novel as a modern form of
                   entertainment accessible to a wide, middling-class, and generally-educated
                   audience grew. For more information on the "humble" novel, <ref
@@ -745,8 +744,8 @@
                <opener>
                   <hi rend="italic">To Mrs.</hi> SAVILLE, <hi rend="italic"><placeName type="tgn"
                         key="7002445">ENGLAND</placeName></hi>
-                  <placeName type="tgn" key="7010273">St. Petersburg</placeName>. <dateline>Dec. 11,
-                     17--</dateline><ref target="a018" corresp="n018"/><note xml:id="n018"
+                  <placeName type="tgn" key="7010273">St. Petersburg</placeName>. <dateline><ref target="a018" corresp="n018">Dec. 11,
+                     17--</ref></dateline><note xml:id="n018"
                      target="a018" type="editorial" resp="#AF">
                      <p>According to a footnote in the <ref
                            target="https://books.google.com/books?id=UQc52fOn3hUC">3rd Broadview

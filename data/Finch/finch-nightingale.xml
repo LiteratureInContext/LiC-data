@@ -58,9 +58,7 @@
                      <publisher>Printed by J[ohn] B[arber]</publisher>
                      <publisher>sold by W. Taylor [etc.]</publisher>
                      <date when="1714">1714</date>
-                     <extent>4 p.l., 390 p. 19 cm. <idno type="lcc">PR3765.W57 A7
-                           1714</idno>
-                     </extent>
+                     
                      <note>This book first appeared in 1713 undert the imprints of John Barber and
                         John Morphew, and there seem to be three different 1713 printings of this
                         text--each 1713 printing includes slight variations of the authorship
@@ -78,14 +76,15 @@
                      <publisher>Sold by John Morphew near Stationer's
                         Hall</publisher>
                      <date when="1713">1713</date>
-                     <extent>[8],390p. ; 8°</extent>
                   </imprint>
                   <imprint>
                      <pubPlace>Ann Arbor, MI</pubPlace>
                      <publisher>University of Michigan Library</publisher>
-                     <date when="4-2009">2009 April</date>
-                     <extent type="online">http://name.umdl.umich.edu/004860039.0001.000</extent>
+                     <date when="2009-04">2009 April</date>
+                     <note>This digital edition draws in part on XML and text from the University of Michigan's ECCO-TCP edition of Finch's <hi rend="italic"><ref target="http://name.umdl.umich.edu/004860039.0001.000">Miscellany Poems</ref></hi>.</note>
                   </imprint>
+                  <extent>4 p.l., 390 p. 19 cm.
+                  </extent>
                   <biblScope>pp 200-202</biblScope>
                </monogr>
             </biblStruct>
@@ -139,6 +138,7 @@
          <change when="2018-06-10" who="editors.xml#JW">Added annotations</change>
          <change when="2018-06-15" who="editors.xml#TH">Updated XML</change>
          <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
+         <change when="2019-01-25" who="editors.xml#TH">Validated</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -146,8 +146,8 @@
          <titlePage>
             <pb n="[titlepage]" facs="images/TP-1714.jpg"/>
             <titlePart>POEMS <lb/></titlePart>
-            <titlePart>ON<lb/> Several Occasions, <hi rend="italic">viz.</hi>.<lb/></titlePart>
-            <p>[...]</p>
+            <titlePart>ON<lb/> Several Occasions, <hi rend="italic">viz.</hi>.<lb/>
+              [...]</titlePart>
             <titlePart><ref target="a001" corresp="n001">Written by the Right Honorable <hi
                      rend="italic">ANNE</hi>,<lb/> Countess of <hi rend="italic"
                         >Winchelsea</hi></ref>.<lb/></titlePart>
@@ -167,7 +167,7 @@
          <div type="poem">
             <pb n="200" facs="images/200.jpg"/>
             <head type="title"><hi rend="italic">To the </hi><ref target="a002" corresp="n002">NIGHTINGALE</ref> .</head>
-            <lg type="rhymed couplets">
+            <lg type="couplets" met="iambic pentameter, iambic tetrameter, catalectic trochaic tetrameter">
                <l n="1">EXert thy Voice, Sweet Harbinger of Spring</l>
                <l n="2" rend="indent">This Moment is thy Time to Sing,</l>
                <l n="3" rend="indent">This Moment I attend to Praise,</l>
@@ -212,7 +212,7 @@
             <note xml:id="n001" target="a001" type="headnote" resp="editors.xml#JW">
                <p><graphic
                   url="https://collectionimages.npg.org.uk/large/mw06861/Anne-Finch-Countess-of-Winchilsea.jpg"
-                  style="float:right" width="300"/> Anne Finch, Countess of Winchilsea,
+                  style="float:right" width="300px"/> Anne Finch, Countess of Winchilsea,
                   was born in April 1661 to Anne Haselwood and Sir William Kingsmill. At age
                   twenty-one she was appointed maid of honor to <ref
                      target="https://www.britannica.com/biography/Mary-of-Modena">Mary Modena</ref>,
@@ -268,7 +268,7 @@
                   lifetime. Finch was able to make her voice heard by working within the masculine
                   restraints of Augustan form.</p>
                <p>Finch died on August 5, 1720. According to the <hi
-                  rend="italic"><ref url="https://www.poetryfoundation.org/poets/anne-finch"
+                  rend="italic"><ref target="https://www.poetryfoundation.org/poets/anne-finch"
                      >National Poetry Foundation</ref></hi> the first recognized modern edition
                   of her work was released in 1903. Since the advent of feminist recovery criticism
                   in the 1970s and 1980s, Anne Finch has gained critical acclaim; she is now
@@ -280,7 +280,7 @@
             <note xml:id="n002" target="a002" type="editorial" resp="editors.xml#TH">
                <p><graphic
                   url="https://www.rspb.org.uk/globalassets/images/birds-and-wildlife/bird-species-illustrations/nightingale_1200x675.jpg"
-                  style="float:right" width="300"/>The nightingale is a small bird native to
+                  style="float:right" width="300px"/>The nightingale is a small bird native to
                   Europe and Asia, with a population in the United Kingdom as well as Africa. It is
                   known for its beautiful, complex song, characterized by <ref
                      target="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/nightingale"
