@@ -1,137 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="finch-nightingale">
-   <teiHeader xml:lang="en">
-      <fileDesc>
-         <titleStmt>
-            <title type="main">"To the Nightingale"</title>
-            <author>
-               <persName type="lccn" key="n80056864">Winchilsea, <forename>Anne</forename> Kingsmill
-                     <surname>Finch</surname>, Countess of, 1661-1720</persName>
-            </author>
-            <editor>
-               <persName type="orcid" key="0000-0002-7400-4093"><name ref="editors.xml#TH"><forename>Tonya</forename> <surname>Howe</surname></name></persName>
-            </editor>
-            <respStmt>
-               <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
-               <name ref="editors.xml#JW"><forename>James</forename> <surname>West</surname></name>
-               <name ref="editors.xml#AR"><forename>Amy</forename> <surname>Ridderhof</surname></name>
-            </respStmt>
-         </titleStmt>
-         <publicationStmt>
-            <publisher>Literature in Context</publisher>
-            <distributor>
-               <orgName>Novels in Context</orgName>
-               <address>
-                  <addrLine>Marymount University Department of Literature and Languages</addrLine>
-                  <addrLine>2807 N. Glebe Road</addrLine>
-                  <addrLine>Arlington, VA </addrLine>
-                  <addrLine>22207</addrLine>
-               </address>
-               <email>thowe@marymount.edu</email>
-            </distributor>
-            <availability status="free">
-               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                  License </licence>
-            </availability>
-            
-            <date when="2018-06-05"/>
-         </publicationStmt>
-         <sourceDesc>
-            <biblStruct>
-               <analytic>
-                  <title>"To the Nightingale"</title>
-               </analytic>
-               <monogr>
-                  <author>
-                     <persName>Winchilsea, Anne Kingsmill Finch, Countess of, 1661-1720</persName>
-                  </author>
-                  <title type="marc245a">Poems on Several Occasions...</title>
-                  <title type="marc245c">Written by the Right Honourable Anne, countess of
-                     Winchelsea.</title>
-                  <imprint>
-                     <pubPlace>
-                        <placeName type="tgn" key="7011781">London</placeName>
-                     </pubPlace>
-                     <publisher>Printed by J[ohn] B[arber]</publisher>
-                     <publisher>sold by W. Taylor [etc.]</publisher>
-                     <date when="1714">1714</date>
-                     
-                     <note>This book first appeared in 1713 undert the imprints of John Barber and
-                        John Morphew, and there seem to be three different 1713 printings of this
-                        text--each 1713 printing includes slight variations of the authorship
-                        statement on the title page--from the anonymous "written by a Lady" to a
-                        full statement of authorship by "Anne Finch, Countess of Winchelsea." This
-                        digital edition uses the 1714 printing by Barber, housed in the Library of
-                        Congress. This 1714 printing is a reissue of the 1713 editions with a new
-                        title page. All page images are sourced from the Library of Congress.</note>
-                  </imprint>
-                  <imprint>
-                     <pubPlace>
-                        <placeName type="tgn" key="7011781">London</placeName>
-                     </pubPlace>
-                     <publisher>Printed by John Barber on Lambeth-Hill</publisher>
-                     <publisher>Sold by John Morphew near Stationer's
-                        Hall</publisher>
-                     <date when="1713">1713</date>
-                  </imprint>
-                  <imprint>
-                     <pubPlace>Ann Arbor, MI</pubPlace>
-                     <publisher>University of Michigan Library</publisher>
-                     <date when="2009-04">2009 April</date>
-                     <note>This digital edition draws in part on XML and text from the University of Michigan's ECCO-TCP edition of Finch's <hi rend="italic"><ref target="http://name.umdl.umich.edu/004860039.0001.000">Miscellany Poems</ref></hi>.</note>
-                  </imprint>
-                  <extent>4 p.l., 390 p. 19 cm.
-                  </extent>
-                  <biblScope>pp 200-202</biblScope>
-               </monogr>
-            </biblStruct>
-         </sourceDesc>
+   
+   <!--TEI Header BEGINS-->
+   <teiHeader xml:lang="en"> <!--BEGINS File Description -->
+      
+      <fileDesc> <!--BEGINS File Description -->
+             <titleStmt>
+                      <title type="main">"To the Nightingale"</title>
+                      <author>
+                         <persName type="lcnaf" key="n80056864">
+                            <name source="ALERT check-the-name"> 
+                               <forename>Anne</forename> 
+                               <surname type="birthname">Finch</surname>
+                               <surname>Finch</surname>
+                            </name>
+                         </persName>
+                      </author>
+                      <editor>
+                         <persName type="orcid" key="0000-0002-7400-4093">
+                            <name ref="editors.xml#TH">
+                               <forename>Tonya</forename> 
+                               <surname>Howe</surname>
+                            </name>
+                         </persName>
+                      </editor>
+                      <respStmt>
+                         <resp>Transcription, correction, editorial commentary, and markup</resp>
+                         <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+                         <name ref="editors.xml#JW"><forename>James</forename> <surname>West</surname></name>
+                         <name ref="editors.xml#AR"><forename>Amy</forename> <surname>Ridderhof</surname></name>
+                      </respStmt>
+                      <sponsor/>
+                      <funder>National Endowment for the Humanities</funder>
+             </titleStmt>
+         
+         
+             <publicationStmt>
+                      <publisher>Literature in Context</publisher>
+                      <distributor>
+                         <orgName>Novels in Context</orgName>
+                         <address>
+                            <addrLine>Marymount University Department of Literature and Languages</addrLine>
+                            <addrLine>2807 N. Glebe Road</addrLine>
+                            <addrLine>Arlington, VA </addrLine>
+                            <addrLine>22207</addrLine>
+                         </address>
+                         <email>thowe@marymount.edu</email>
+                      </distributor>
+                      <availability status="free">
+                         <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                            License </licence>
+                      </availability>
+                      <!-- date when="2018-06-05"/-->
+             </publicationStmt>
+         
+             <sourceDesc>
+                      <biblStruct>
+                         <analytic>
+                            <title>"To the Nightingale"</title>
+                         </analytic>
+                         <monogr>
+                            <author>
+                               <persName type="lcnaf" key="n80056864" >Winchilsea, Anne Kingsmill Finch, Countess of, 1661-1720</persName>
+                            </author>
+                            <title>Poems on Several Occasions...</title>
+                            <title>Written by the Right Honourable Anne, countess of
+                               Winchelsea.</title>
+                            <imprint>
+                               <pubPlace>
+                                  <placeName type="tgn" key="7011781">London</placeName>
+                               </pubPlace>
+                               <publisher>Printed by J[ohn] B[arber]</publisher>
+                               <publisher>sold by W. Taylor [etc.]</publisher>
+                               <date when="1714">1714</date>
+                               
+                               <note alertComment="should there be a source">This book first appeared in 1713 undert the imprints of John Barber and
+                                  John Morphew, and there seem to be three different 1713 printings of this
+                                  text--each 1713 printing includes slight variations of the authorship
+                                  statement on the title page--from the anonymous "written by a Lady" to a
+                                  full statement of authorship by "Anne Finch, Countess of Winchelsea." This
+                                  digital edition uses the 1714 printing by Barber, housed in the Library of
+                                  Congress. This 1714 printing is a reissue of the 1713 editions with a new
+                                  title page. All page images are sourced from the Library of Congress.</note>
+                            </imprint>
+                            <imprint>
+                               <pubPlace>
+                                  <placeName type="tgn" key="7011781">London</placeName>
+                               </pubPlace>
+                               <publisher>Printed by John Barber on Lambeth-Hill</publisher>
+                               <publisher>Sold by John Morphew near Stationer's
+                                  Hall</publisher>
+                               <date when="1713">1713</date>
+                            </imprint>
+                            <imprint>
+                               <pubPlace>Ann Arbor, MI</pubPlace>
+                               <publisher>University of Michigan Library</publisher>
+                               <date when="2009-04">2009 April</date>
+                               <note>This digital edition draws in part on XML and text from the University of Michigan's ECCO-TCP edition of Finch's <hi rend="italic"><ref target="http://name.umdl.umich.edu/004860039.0001.000">Miscellany Poems</ref></hi>.</note>
+                            </imprint>
+                            <extent>4 p.l., 390 p. 19 cm.
+                            </extent>
+                            <biblScope>pp 200-202</biblScope>
+                         </monogr>
+                      </biblStruct>
+             </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <projectDesc> <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi> project,
-            which provides an accessible, curated, and marked-up selection of primary sources
-            relevant to the study and the teaching of British and American literature of the 18th
-            century. This project is funded by the National Endowment for the Humanities and
-            developed by faculty at The University of Virginia and Marymount University. </p></projectDesc>
-         <editorialDecl>
-            <interpretation><p>Research informing these annotations draws on publicly-accessible
-               resources, with links provided where possible. Annotations have also included common
-               knowledge, defined as information that can be found in multiple reliable sources. If
-               you notice an error in these annotations, please contact
-               lic.open.anthology@gmail.com. </p></interpretation>
-            <normalization><p>Original spelling and capitalization is retained, though the long s has
-               been silently modernized and ligatured forms are not encoded.</p></normalization>
-            <hyphenation><p>Hyphenation has not been retained, except where necessary for the sense of
-               the word.</p></hyphenation>
-            <segmentation><p>Page breaks have been retained. Catchwords, signatures, and running
-               headers have not.</p></segmentation>
-            <correction><p>Materials have been transcribed from and checked against first editions,
-               where possible. See the Sources section.</p></correction>
-         </editorialDecl>
-         <tagsDecl>
-            <namespace name="http://www.tei-c.org/ns/1.0">
-               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
-            </namespace>
-         </tagsDecl>
-         <classDecl>
-            <taxonomy xml:id="lccn">
-               <bibl>Library of Congress Name Authority File</bibl>
-            </taxonomy>
-            <taxonomy xml:id="lcc">
-               <bibl>Library of Congress Classification</bibl>
-            </taxonomy>
-            <taxonomy xml:id="tgn">
-               <bibl>Getty Thesaurus of Geographic Names</bibl>
-            </taxonomy>
-            <taxonomy xml:id="orcid">
-               <bibl>Open Researcher and Contributor ID</bibl>
-            </taxonomy>
-         </classDecl>
+      
+      
+      <profileDesc>  <!--BEGINS Profile Description  -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="">
+            <channel mode="">print</channel>
+            <constitution type=""/>
+            <derivation type=""/>
+            <domain/>
+            <factuality type=""/>
+            <interaction/>
+            <preparedness type=""/>
+            <purpose type="" degree=""/>
+            <purpose type="" degree=""/>
+         </textDesc>
+         
+         <settingDesc>
+            <setting>
+               <name type="" key="">-----</name>
+               <name type="" key="">-----</name>
+               <time from="" to="">-----</time>
+            </setting>
+         </settingDesc>
+      </profileDesc>
+      
+      
+      
+      <encodingDesc> <!-- BEGINS Encoding Description -->
+             <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                   project, which provides an accessible, curated, and marked-up selection of primary
+                   sources relevant to the study and the teaching of British and American literature of
+                   the 18th century. This project is funded by the National Endowment for the Humanities
+                   and developed by faculty at The University of Virginia and Marymount University. </p>
+             </projectDesc>
+             <editorialDecl>
+                <interpretation>
+                   <p>Research informing these annotations draws on publicly-accessible resources, with
+                      links provided where possible. Annotations have also included common knowledge,
+                      defined as information that can be found in multiple reliable sources. If you
+                      notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+                   </p>
+                </interpretation>
+                <normalization>
+                   <p>Original spelling and capitalization is retained, though the long s has been
+                      silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                   <p>Hyphenation has not been retained, except where necessary for the sense of the
+                      word.</p>
+                </hyphenation>
+                <segmentation>
+                   <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                      not. Where pages break in the middle of a word, the complete word has been
+                      indicated prior to the page beginning.</p>
+                </segmentation>
+                <correction>
+                   <p>Materials have been transcribed from and checked against first editions, where
+                      possible. See the Sources section.</p>
+                </correction>
+             </editorialDecl>
+             <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                   <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+             </tagsDecl>
+             <classDecl>
+                <taxonomy xml:id="lcnaf">
+                   <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                   <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                   <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                   <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+             </classDecl>
       </encodingDesc>
-      <revisionDesc>
+      
+      
+      <revisionDesc>  <!--BEGINS Revision Description -->
          <change when="2018-06-01" who="editors.xml#JW">First pass XML file</change>
          <change when="2018-06-01" who="editors.xml#AR">First pass XML file</change>
          <change when="2018-06-05" who="editors.xml#TH">XML updates; updated teiHeader</change>
@@ -140,7 +203,13 @@
          <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
          <change when="2019-01-25" who="editors.xml#TH">Validated</change>
       </revisionDesc>
+      
    </teiHeader>
+   <!--TEI Header Ends -->
+   
+   
+   
+   
    <text>
       <front>
          <titlePage>

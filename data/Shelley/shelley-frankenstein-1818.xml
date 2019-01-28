@@ -1,94 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shelley-frankenstein-1818">
+   
+   <!--TEI Header BEGINS-->
    <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title type="main">Frankenstein, or The Modern Prometheus</title>
-            <author>
-               <persName type="lccn" key="n79061063">
-                  <forename>Mary</forename>
-                  <surname>Shelley</surname>
-               </persName>
-            </author>
-            <editor>
-               <persName type="orcid" key="0000-0002-7400-4093"><name xml:id="TH"><forename>Tonya</forename>
-                  <surname>Howe</surname></name></persName>
-               <persName><name xml:id="AF"><forename>Ally</forename>
-                  <surname>Freeland</surname></name></persName>
-            </editor>
-            <respStmt>
-               <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name xml:id="MUstudstaff">Students of Marymount University</name>
-               <name xml:id="AF">Ally Freeland</name>
-               <name xml:id="AR">Amy Ridderhof</name>
-            </respStmt>
-         </titleStmt>
-         <publicationStmt>
-            <publisher>Literature in Context</publisher>
-            <distributor>
-               <orgName>Novels in Context</orgName>
-               <address>
-                  <addrLine>Marymount University Department of Literature and Languages</addrLine>
-                  <addrLine>2807 N. Glebe Road</addrLine>
-                  <addrLine>Arlington, VA </addrLine>
-                  <addrLine>22207</addrLine>
-               </address>
-               <email>thowe@marymount.edu</email>
-            </distributor>
-            <authority>
-               <idno>she-fra</idno>
-            </authority>
-            <availability status="free">
-               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                  License </licence>
-            </availability>
-            <date>2018</date>
-         </publicationStmt>
-         <sourceDesc>
-            <biblStruct>
-               <monogr>
-                  <author>
-                     <persName type="lccn" key="n79061063"><surname>Shelley</surname>,
-                           <forename>Mary</forename>
-                        <surname>Wollstonecraft</surname>, 1797-1851</persName>
-                  </author>
-                  <title>Frankenstein; or, The Modern Prometheus</title>
-                  <imprint>
-                     <pubPlace>
-                        <placeName type="tgn" key="7011781">London</placeName>
-                     </pubPlace>
-                     <publisher>Printed for Lackington, Hughes, Harding, Mavor, &amp;
-                        Jones</publisher>
-                     <date when="1818">1818</date>
-                     <note>Page images are sourced from <ref target="https://lccn.loc.gov/53051218"
-                           >the first edition of the text housed in the Rare Books Collection of
-                           Library of Congress</ref>.</note>
-                  </imprint>
-                  <imprint>
-                     <pubPlace>Public domain electronic facsimile copy</pubPlace>
-                     <publisher>Romantic Circles</publisher>
-                     <date>2009-05</date>
-                     <note>First-pass plain text sourced from <ref
-                           target="https://www.rc.umd.edu/editions/frankenstein/1818_contents">the
-                           Romantic Circles edition</ref>.</note>
-                     <note> Minor corrections were made to the text to correct inconsistencies with
-                        the original text. </note>
-                  </imprint>
-                  <imprint>
-                     <pubPlace>Ontario, Canada</pubPlace>
-                     <publisher>Broadview Press</publisher>
-                     <date when="2012">2012</date>
-                     <note>3rd edition, edited by D.L. Macdonald and Kathleen Scherf, was employed
-                        as a base reading text.</note>
-                  </imprint>
-                  <extent>3 v. 19 cm.</extent>
-               </monogr>
-            </biblStruct>
-         </sourceDesc>
+      
+      
+      <fileDesc> <!--BEGINS File Description -->
+               <titleStmt>
+                      <title type="main">Frankenstein, or The Modern Prometheus</title>
+                      <author>
+                         <persName type="lcnaf" key="n79061063">
+                            <forename>Mary</forename>
+                            <surname>Shelley</surname>
+                         </persName>
+                      </author>
+                      <editor>
+                         <persName type="orcid" key="0000-0002-7400-4093">
+                            <name ref="editors.xml#TH">
+                               <forename>Tonya</forename>
+                               <surname>Howe</surname>
+                            </name>
+                         </persName>
+                         <persName>
+                            <name xml:id="AF">
+                               <forename>Ally</forename>
+                               <surname>Freeland</surname>
+                            </name>
+                         </persName>
+                      </editor>
+                      <respStmt>
+                         <resp>Transcription, correction, editorial commentary, and markup</resp>
+                         <name xml:id="MUstudstaff">Students of Marymount University</name>
+                         <name xml:id="AF">Ally Freeland</name>
+                         <name xml:id="AR">Amy Ridderhof</name>
+                      </respStmt>
+                     <sponsor/>
+                     <funder>National Endowment for the Humanities</funder>
+               </titleStmt>
+         
+         
+               <publicationStmt>
+                   <publisher>Literature in Context</publisher>
+                   <address>
+                      <addrLine>Marymount University Department of Literature and Languages</addrLine>
+                      <addrLine>2807 N. Glebe Road</addrLine>
+                      <addrLine>Arlington, VA </addrLine>
+                      <addrLine>22207</addrLine>
+                      <addrLine>thowe@marymount.edu</addrLine>
+                      <addrLine>lic.open.anthology@gmail.com</addrLine>
+                   </address>
+                   <availability status="free">
+                      <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                         Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                         License </licence>
+                   </availability>
+               </publicationStmt>
+         
+         
+               <sourceDesc>
+                        <biblStruct>
+                           <analytic> 
+                              <title commentAlert="title "></title>
+                           </analytic>
+                           <monogr>
+                              <author>
+                                 <persName type="lcnaf" key="n79061063">
+                                       <surname>Shelley</surname>,
+                                       <forename>Mary</forename>
+                                       <surname>Wollstonecraft</surname>, 1797-1851
+                                 </persName>
+                              </author>
+                              <title>Frankenstein; or, The Modern Prometheus</title>
+                              <imprint>
+                                 <pubPlace>
+                                    <placeName type="tgn" key="7011781">London</placeName>
+                                 </pubPlace>
+                                 <publisher>Printed for Lackington, Hughes, Harding, Mavor, &amp;
+                                    Jones</publisher>
+                                 <date when="1818">1818</date>
+                                 <note commentAlert="should this have a source?">Page images are sourced from 
+                                    <ref target="https://lcnaf.loc.gov/53051218"
+                                       >the first edition of the text housed in the Rare Books Collection of
+                                       Library of Congress</ref>.</note>
+                              </imprint>
+                              <imprint>
+                                 <pubPlace>Public domain electronic facsimile copy</pubPlace>
+                                 <publisher>Romantic Circles</publisher> 
+                                 <date when="">2009-05</date>
+                                 <note>First-pass plain text sourced from <ref
+                                       target="https://www.rc.umd.edu/editions/frankenstein/1818_contents">the
+                                       Romantic Circles edition</ref>.</note>
+                                 <note> Minor corrections were made to the text to correct inconsistencies with
+                                    the original text. </note>
+                              </imprint>
+                              <imprint>
+                                 <pubPlace>Ontario, Canada</pubPlace>
+                                 <publisher>Broadview Press</publisher>
+                                 <date when="2012">2012</date>
+                                 <note>3rd edition, edited by D.L. Macdonald and Kathleen Scherf, was employed
+                                    as a base reading text.</note>
+                              </imprint>
+                              <extent>3 v. 19 cm.</extent>
+                              <biblScope unit="">---</biblScope>
+                              <biblScope>---</biblScope>
+                           </monogr>
+                        </biblStruct>
+               </sourceDesc>
+         
       </fileDesc>
-      <encodingDesc>
+      
+      <profileDesc>  <!--BEGINS Profile Description  --> 
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="">
+            <channel mode="">print</channel>
+            <constitution type=""/>
+            <derivation type=""/>
+            <domain/>
+            <factuality type=""/>
+            <interaction/>
+            <preparedness type=""/>
+            <purpose type="" degree=""/>
+            <purpose type="" degree=""/>
+         </textDesc>
+         
+         <settingDesc>
+            <setting>
+               <name type="" key="">----------</name>
+               <name type="" key="">----------</name>
+               <time from="" to="">-----------</time>
+            </setting>
+         </settingDesc>
+      </profileDesc>
+      
+      
+      
+      <encodingDesc>  <!-- BEGINS Encoding Description -->
          <projectDesc>
             <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
                project, which provides an accessible, curated, and marked-up selection of primary
@@ -103,9 +154,6 @@
                   defined as information that can be found in multiple reliable sources. If you
                   notice an error in these annotations, please contact
                   lic.open.anthology@gmail.com.</p>
-               <p>This TEI document also encodes places using the Getty Thesaurus of Geographic
-                  Names, names using the Library of Congress Name Authority File, embedded letters,
-                  quoted speech and direct quotations.</p>
             </interpretation>
             <normalization>
                <p>Original spelling and capitalization is retained, though the long s has been
@@ -113,12 +161,12 @@
             </normalization>
             <hyphenation>
                <p>Hyphenation has not been retained, except where necessary for the sense of the
-                  word. When a word spans a page break, the word has been included in whole prior to
-                  the page break and the hyphenation indicated in brackets.</p>
+                  word.</p>
             </hyphenation>
             <segmentation>
                <p>Page breaks have been retained. Catchwords, signatures, and running headers have
-                  not. Pagination indicates volume number as well as page number. </p>
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning. </p>
             </segmentation>
             <correction>
                <p>Materials have been transcribed from and checked against first editions, where
@@ -131,7 +179,7 @@
             </namespace>
          </tagsDecl>
          <classDecl>
-            <taxonomy xml:id="lccn">
+            <taxonomy xml:id="lcnaf">
                <bibl>Library of Congress Name Authority File</bibl>
             </taxonomy>
             <taxonomy xml:id="lcc">
@@ -145,18 +193,23 @@
             </taxonomy>
          </classDecl>
       </encodingDesc>
-      <revisionDesc>
-         <change when="2018-03-02" who="#AF">First-pass markup, teiHeader, and correction.</change>
-         <change when="2018-08-20" who="#AF">Added Vol 1 annotations and page images.</change>
-         <change when="2018-12-06" who="#AF">Fixed all of the pages in V1 to reflect the volume
-            number. Changed annotations to numerical.</change>
-         <change when="2019-01-05" who="#TH">Updated teiHeader, eliminated archaic notes format</change>
-         <change when="2019-01-06" who="#TH">Updated references to current practice and moved
-            inline. Volume II annotations not present.</change>
-         <change when="2019-01-18" who="#TH">Updated resonsibility and contribution XML</change>
-         <change when="2019-01-25" who="#TH">In the process of wrapping annotated text in ref tags, instead of using empty elements</change>
+      
+      
+      <revisionDesc> <!--BEGINS Revision Description -->
+              <change when="2018-03-02" who="#AF">First-pass markup, teiHeader, and correction.</change>
+              <change when="2018-08-20" who="#AF">Added Vol 1 annotations and page images.</change>
+              <change when="2018-12-06" who="#AF">Fixed all of the pages in V1 to reflect the volume
+                 number. Changed annotations to numerical.</change>
+              <change when="2019-01-05" who="#TH">Updated teiHeader, eliminated archaic notes format</change>
+              <change when="2019-01-06" who="#TH">Updated references to current practice and moved
+                 inline. Volume II annotations not present.</change>
+              <change when="2019-01-18" who="#TH">Updated resonsibility and contribution XML</change>
+              <change when="2019-01-25" who="#TH">In the process of wrapping annotated text in ref tags, instead of using empty elements</change>
       </revisionDesc>
+      
+      
    </teiHeader>
+   <!--TEI Header Ends -->
 
 
 
@@ -366,7 +419,7 @@
          <div type="dedication">
             <pb n="[dedication]" facs="images/vi.jpg"/>
             <p>TO </p>
-            <p><persName type="lccn" key="n80024468"><ref target="a006a"
+            <p><persName type="lcnaf" key="n80024468"><ref target="a006a"
                corresp="n006a">WILLIAM GODWIN</ref></persName><note xml:id="n006a" target="a006a" type="editorial" resp="#AR">
                   <p><graphic style="float:right"
                         url="https://upload.wikimedia.org/wikipedia/commons/a/a8/William_Godwin_by_Henry_William_Pickersgill.jpg"
@@ -493,7 +546,7 @@
                         target="http://shelleygodwinarchive.org/contents/frankenstein/">images</ref>
                      of Shelley’s manuscript for <hi rend="italic">Frankenstein</hi> see the <hi
                         rend="italic">Shelley-Godwin Archive</hi>.</p></note> has been supposed, by
-               Dr. <persName type="lccn" key="n50037924"><ref target="a010"
+               Dr. <persName type="lcnaf" key="n50037924"><ref target="a010"
                   corresp="n010">Darwin</ref></persName><note xml:id="n010" target="a010" type="editorial" resp="#AF"
                         ><p><graphic style="float:right"
                         url="https://collectionimages.npg.org.uk/large/mw01731/Erasmus-Darwin.jpg"
@@ -581,7 +634,7 @@
                         Taylor Coleridge</ref>, preferred to consider the common man. Often,
                      Romantics turned the argument inward, invoking Shakespeare’s tragedies in lieu
                      of Ancient ones (<hi rend="italic">Macbeth</hi>,<hi rend="italic">Hamlet</hi>,
-                        <hi rend="italic">Othello</hi>).</p></note>, <persName type="lccn"
+                        <hi rend="italic">Othello</hi>).</p></note>, <persName type="lcnaf"
                            key="n78095332"><ref target="a013" corresp="n013">Shakespeare</ref></persName><note
                   xml:id="n013" target="a013" type="editorial" resp="#AF"><p><graphic
                         url="https://www.folger.edu/sites/default/files/TitlePageFirstFolio_005198.jpg"
@@ -675,7 +728,7 @@
                      especially chapter 4, "The Carnivalesque in A Midsummer Night's Dream." The
                      image here is <hi rend="italic">Oberon, Titania and Puck with Fairies
                         Dancing</hi> by William Blake (1786) hosted by Tate Britain. </p></note> and
-               most especially <persName type="lccn" key="n78095532"><ref
+               most especially <persName type="lcnaf" key="n78095532"><ref
                   target="a016" xml:id="n016">Milton</ref></persName><note xml:id="a016" target="n016" type="editorial"
                   resp="#TH"><graphic
                      url="https://upload.wikimedia.org/wikipedia/commons/0/0c/John_Milton_portrait_painting.jpg"
@@ -879,7 +932,7 @@
                   effusions entranced my soul, and lifted it to heaven. I also became a poet, <pb
                      n="[1.6]" facs="images/6.jpg"/> and for one year lived in a Paradise of my own
                   creation; I imagined that I also might obtain a niche in the temple where the
-                  names of <persName type="lccn" key="n78095639">Homer</persName><ref target="a023"
+                  names of <persName type="lcnaf" key="n78095639">Homer</persName><ref target="a023"
                      corresp="n023"/>
                   <note xml:id="n023" target="a023" type="editorial" resp="#AF"><p><ref
                            target="https://www.ancient.eu/homer/">Homer</ref> is the figure credited
@@ -894,7 +947,7 @@
                         have suggested his floruit as anywhere between the 9th to 7th centuries BCE.
                         To learn more about Homer, see Suzanne Saïd’s entry in the <ref
                            target="http://classics.oxfordre.com">Oxford Classical
-                        Dictionary</ref>.</p></note> and <persName type="lccn" key="n78095332"
+                        Dictionary</ref>.</p></note> and <persName type="lcnaf" key="n78095332"
                      >Shakespeare</persName> are consecrated. You are well acquainted with my
                   failure, and how heavily I bore the disappointment. But just at that time I
                   inherited the fortune of my cousin, and my thoughts were turned into the channel
@@ -1573,7 +1626,7 @@
                               target="https://ebooks.adelaide.edu.au/d/dore/gustave/orlando/"
                               >famously illustrated by the late nineteenth-century artist Gustave
                               Doré</ref>.</p>
-                     </note>, <persName type="lccn" key="n79069719">Robin Hood</persName><ref
+                     </note>, <persName type="lcnaf" key="n79069719">Robin Hood</persName><ref
                         target="a033" corresp="n033"/><note xml:id="n033" target="a033"
                         type="editorial" resp="#AF"><p><graphic style="float:right"
                               url="https://upload.wikimedia.org/wikipedia/commons/f/f7/Richard_The_Lionheart_-_Robinhood.jpg"
@@ -1690,7 +1743,7 @@
                      When I was thirteen years of age, we all went on a party of pleasure to the
                      baths near <placeName type="tgn" key="1035867">Thonon</placeName>: the
                      inclemency of the weather obliged us to remain a day confined to the inn. In
-                     this house I chanced to find a volume of the works of <persName type="lccn"
+                     this house I chanced to find a volume of the works of <persName type="lcnaf"
                         key="n80043375">Cornelius Agrippa</persName><ref target="a037"
                         corresp="n037"/><note xml:id="n037" target="a037" type="editorial"
                         resp="#NPD">
@@ -1720,11 +1773,11 @@
                      cannot help remarking here the many opportunities instructors possess of
                      directing the attention of their pupils to useful knowledge, which they utterly
                      neglect. My father looked carelessly at the title-page of my book, and said,
-                        <said>"Ah! <persName type="lccn" key="n80043375">Cornelius
+                        <said>"Ah! <persName type="lcnaf" key="n80043375">Cornelius
                            Agrippa</persName>! My dear <persName>Victor</persName>, do not waste
                         your time upon this; it is sad trash."</said></p>
                   <p>If, instead of this remark, my father had taken the pains to explain to me,
-                     that the principles of <persName type="lccn" key="n80043375">Agrippa</persName>
+                     that the principles of <persName type="lcnaf" key="n80043375">Agrippa</persName>
                      had been entirely exploded, and that a modern system of science had been
                      introduced, which possessed much greater powers than the ancient, because the
                      powers of the latter were chimerical<ref target="a038" corresp="n038"/><note
@@ -1745,7 +1798,7 @@
                            Ligozzi (1547–1627) hosted on Wikimedia Commons.</p>
                      </note>, while <pb n="[1.53]" facs="images/53.jpg"/> those of the former were
                      real and practical; under such circumstances, I should certainly have thrown
-                        <persName type="lccn" key="n80043375">Agrippa</persName> aside, and, with my
+                        <persName type="lcnaf" key="n80043375">Agrippa</persName> aside, and, with my
                      imagination warmed as it was, should probably have applied myself to the more
                      rational theory of chemistry which has resulted from modern discoveries. It is
                      even possible, that the train of my ideas would never have received the fatal
@@ -1753,7 +1806,7 @@
                      volume by no means assured me that he was acquainted with its contents; and I
                      continued to read with the greatest avidity.</p>
                   <p>When I returned home, my first care was to procure the whole works of this
-                     author, and afterwards of <persName type="lccn" key="n80120959"
+                     author, and afterwards of <persName type="lcnaf" key="n80120959"
                         >Paracelsus</persName><ref target="a039" corresp="n039"/><note xml:id="n039"
                         target="a039" type="editorial" resp="#AF"><p><graphic
                               url="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Paracelsus.jpg/800px-Paracelsus.jpg"
@@ -1770,7 +1823,7 @@
                               target="https://academic.oup.com/toxsci/article/53/1/2/1673334"
                               >Paracelsus: Herald of Modern Toxicology</ref>". Pictured here is <hi
                               rend="italic">Paracelsus</hi> by Quentin Matsys from the Musée du
-                           Louvre, via Wikimedia Commons. </p></note> and <persName type="lccn"
+                           Louvre, via Wikimedia Commons. </p></note> and <persName type="lcnaf"
                         key="n81007973">Albertus Magnus</persName><ref target="a040" corresp="n040"
                         /><note xml:id="n040" target="a040" type="editorial" resp="#AF"><p><graphic
                               style="float:right"
@@ -1814,11 +1867,11 @@
                         n="[1.54 - page breaks after 'trea-']" facs="images/54.jpg"/> treasures
                      known to few beside myself; and although I have often wished to communicate
                      these secret stores of knowledge to my father, yet his indefinite censure of my
-                     favourite <persName type="lccn" key="n80043375">Agrippa</persName> always
+                     favourite <persName type="lcnaf" key="n80043375">Agrippa</persName> always
                      withheld me. I disclosed my discoveries to <persName>Elizabeth</persName>,
                      therefore, under a promise of strict secrecy; but she did not interest herself
                      in the subject, and I was left by her to pursue my studies alone.</p>
-                  <p>It may appear very strange, that a disciple of <persName type="lccn"
+                  <p>It may appear very strange, that a disciple of <persName type="lcnaf"
                         key="n81007973">Albertus Magnus</persName> should arise in the eighteenth
                      century; but our family was not scientifical, and I had not attended any of the
                      lectures given at the schools of <placeName type="tgn" key="7003746"
@@ -2003,9 +2056,9 @@
                            from Dwayne Godwin and Jorge Cham hosted on Scientific American.
                         </p></note>.</p>
                   <p>This last stroke completed the <pb n="[1.58 - page breaks after 'over-']"
-                        facs="images/58.jpg"/> overthrow of <persName type="lccn" key="n80043375"
-                        >Cornelius Agrippa</persName>, <persName type="lccn" key="n81007973"
-                        >Albertus Magnus</persName>, and <persName type="lccn" key="n80120959"
+                        facs="images/58.jpg"/> overthrow of <persName type="lcnaf" key="n80043375"
+                        >Cornelius Agrippa</persName>, <persName type="lcnaf" key="n81007973"
+                        >Albertus Magnus</persName>, and <persName type="lcnaf" key="n80120959"
                         >Paracelsus</persName>, who had so long reigned the lords of my imagination.
                      But by some fatality I did not feel inclined to commence the study of any
                      modern system; and this disinclination was influenced by the following
@@ -2018,8 +2071,8 @@
                      sulphates and oxyds, terms to which I could affix no idea; and I became
                      disgusted with the science of natural philosophy, although I still read <pb
                         n="[1.59]" facs="images/59.jpg"/>
-                     <persName type="lccn" key="n79042075">Pliny</persName> and <persName
-                        type="lccn" key="n50041361">Buffon</persName> with delight, authors, in my
+                     <persName type="lcnaf" key="n79042075">Pliny</persName> and <persName
+                        type="lcnaf" key="n50041361">Buffon</persName> with delight, authors, in my
                      estimation, of nearly equal interest and utility.</p>
                   <p>My occupations at this age were principally the mathematics, and most of the
                      branches of study appertaining to that science. I was busily employed in
@@ -2189,8 +2242,8 @@
                         one was kind enough to inform you that these fancies, which you have so
                         greedily imbibed, are a thousand years old, and as musty as they are
                         ancient? I little expected in this enlightened and scientific age to find a
-                        disciple of <persName type="lccn" key="n81007973">Albertus Magnus</persName>
-                        and <persName type="lccn" key="n80120959">Paracelsus</persName>. My dear
+                        disciple of <persName type="lcnaf" key="n81007973">Albertus Magnus</persName>
+                        and <persName type="lcnaf" key="n80120959">Paracelsus</persName>. My dear
                         Sir, you must begin your studies entirely anew."</said></p>
                   <p>So saying, he stepped aside, and wrote down a list of several books treating of
                      natural philosophy, which he desired me to procure, and dismissed me, after
@@ -2427,8 +2480,8 @@
                      his lecture, which in his own house was replaced by the greatest <pb n="[1.75]"
                         facs="images/75.jpg"/> affability and kindness. He heard with attention my
                      little narration concerning my studies, and smiled at the names of <persName
-                        type="lccn" key="n80043375">Cornelius Agrippa</persName> and <persName
-                        type="lccn" key="n80120959">Paracelsus</persName>, but without the contempt
+                        type="lcnaf" key="n80043375">Cornelius Agrippa</persName> and <persName
+                        type="lcnaf" key="n80120959">Paracelsus</persName>, but without the contempt
                      that <persName>M. Krempe</persName> had exhibited. He said, that <said>"these
                         were men to whose indefatigable zeal modern philosophers were indebted for
                         most of the foundations of their knowledge. They had left to us, as an
@@ -2486,7 +2539,7 @@
                         n="[1.80 - page breaks after 'ra-']" facs="images/80.jpg"/> rapidly. My
                      ardour was indeed the astonishment of the students; and my proficiency, that of
                      the masters. Professor <persName>Krempe</persName> often asked me, with a sly
-                     smile, how <persName type="lccn" key="n80043375">Cornelius Agrippa</persName>
+                     smile, how <persName type="lcnaf" key="n80043375">Cornelius Agrippa</persName>
                      went on? whilst <persName>M. Waldman</persName> expressed the most heartfelt
                      exultation in my progress. Two years passed in this manner, during which I paid
                      no visit to <placeName type="tgn" key="7003746">Geneva</placeName>, but was
@@ -2657,7 +2710,7 @@
                      rule were always observed; if no man allowed any pursuit whatsoever to
                      interfere with the tranquillity of his domestic affections, <placeName
                         type="tgn" key="1000074">Greece</placeName> had not been enslaved; <persName
-                        type="lccn" key="n79021400">Caesar</persName> would have spared his country;
+                        type="lcnaf" key="n79021400">Caesar</persName> would have spared his country;
                         <placeName type="tgn" key="8698314">America</placeName> would have been
                      discovered more gradually; and the empires of <placeName type="tgn"
                         key="7005560">Mexico</placeName> and <placeName type="tgn" key="1000056"
@@ -2737,7 +2790,7 @@
                      endued with animation could not be so hideous as that wretch. I had gazed on
                      him while unfinished; he was ugly then; but when those muscles and joints were
                      rendered capable of motion, it became a thing such as even <persName
-                        type="lccn" key="n78095495">Dante</persName><ref target="a055"
+                        type="lcnaf" key="n78095495">Dante</persName><ref target="a055"
                         corresp="n055"/> could not have conceived.</p>
                   <p>I passed the night wretchedly. Sometimes my pulse beat so quickly and <pb
                         n="[1.102]" facs="images/102.jpg"/> hardly, that I felt the palpitation of
@@ -3129,7 +3182,7 @@
                         <persName>Waldman</persName>. <said>"D--n the fellow!"</said> cried he;
                         <said>"why, M. <persName>Clerval</persName>, I assure you he has outstript
                         us all. Aye, stare if you please; but it is nevertheless true. A youngster
-                        who, but a few years ago, believed <persName type="lccn" key="n80043375"
+                        who, but a few years ago, believed <persName type="lcnaf" key="n80043375"
                            >Cornelius Agrippa</persName> as firmly as the gospel, has now set
                         himself at the head of the university; and if he is not soon pulled down, we
                         shall all be out of countenance.—Aye, aye,"</said> continued he, <pb
@@ -5076,7 +5129,7 @@
                         bondage to which she was now reduced. She instructed her daughter in the
                         tenets of her religion, and taught her to aspire to higher powers of
                         intellect, and an independence of spirit, forbidden to the female followers
-                        of <persName type="lccn" key="n79130881">Mahomet</persName>. This lady died;
+                        of <persName type="lcnaf" key="n79130881">Mahomet</persName>. This lady died;
                         but her lessons were indelibly impressed on the mind of
                            <persName>Safie</persName>, who sickened at the prospect of again
                         returning to <placeName type="tgn" key="1000004">Asia</placeName>, and the
@@ -5344,7 +5397,7 @@
                         republics. This book had a far different effect upon me from the <hi
                            rend="italic"><title>Sorrows of Werter</title></hi>. I learned from <hi
                            rend="italic"><title>Werter's</title></hi> imaginations despondency and
-                        gloom: but <persName type="lccn" key="n79026763" cert="medium"
+                        gloom: but <persName type="lcnaf" key="n79026763" cert="medium"
                            >Plutarch</persName> taught me high thoughts; he elevated me above the
                         wretched sphere of my own reflections, to admire and love the heroes of past
                         ages. Many things I read surpassed my understanding and experience. I had a
@@ -5358,11 +5411,11 @@
                         as far as I understood the signification of those terms, relative as they
                         were, as I applied them, to pleasure and pain alone. Induced by these
                         feelings, I was of course led to admire peaceable law givers, <persName
-                           type="lccn" key="n85202845">Numa</persName>, <persName type="lccn"
-                           key="n79110932">Solon</persName>, and <persName type="lccn"
+                           type="lcnaf" key="n85202845">Numa</persName>, <persName type="lcnaf"
+                           key="n79110932">Solon</persName>, and <persName type="lcnaf"
                            key="nr96035470" cert="medium">Lycurgus</persName>, in preference to
-                           <persName type="lccn" key="n83206699">Romulus</persName> and <persName
-                           type="lccn" key="no2014083772">Theseus</persName>. The patriarchal lives
+                           <persName type="lcnaf" key="n83206699">Romulus</persName> and <persName
+                           type="lcnaf" key="no2014083772">Theseus</persName>. The patriarchal lives
                         of my protectors caused these impressions to take a firm hold on my mind;
                         perhaps, if my first introduction to humanity had been made by a young
                         soldier, burning for glory and <pb n="[2.104]" facs="images/2.104.jpg"/>
@@ -6032,7 +6085,7 @@
                   <p>For myself, I was passive in all their arrangements; and the gentle affection
                      of my beloved <persName>Elizabeth</persName> was inadequate to draw me from the
                      depth of my despair. The promise I had made to the dæmon weighed upon my mind,
-                     like <persName type="lccn" key="n78095495">Dante</persName>'s iron cowl on the
+                     like <persName type="lcnaf" key="n78095495">Dante</persName>'s iron cowl on the
                      heads of the hellish hypocrites. All pleasures of earth and sky passed before
                      me like a dream, and that thought only had to me the reality of life. Can you
                      wonder, that sometimes a kind of insanity possessed me, or that I saw
@@ -6392,11 +6445,11 @@
                         >Oxford</placeName>. As we entered this city, our minds were filled with the
                      remembrance of the events that had been transacted there more than a century
                      and a half <pb n="[3.26]" facs="images/3.26.jpg"/> before. It was here that
-                        <persName type="lccn" key="n79132433">Charles I</persName>. had collected
+                        <persName type="lcnaf" key="n79132433">Charles I</persName>. had collected
                      his forces. This city had remained faithful to him, after the whole nation had
                      forsaken his cause to join the standard of parliament and liberty. The memory
-                     of that unfortunate king, and his companions, the amiable <persName type="lccn"
-                        key="n83180215">Falkland</persName>, the insolent <persName type="lccn"
+                     of that unfortunate king, and his companions, the amiable <persName type="lcnaf"
+                        key="n83180215">Falkland</persName>, the insolent <persName type="lcnaf"
                         key="n85115759" cert="low">Gower</persName>, his queen, and son, gave a
                      peculiar interest to every part of the city, which they might be supposed to
                      have inhabited. The spirit of elder days found a dwelling here, and we
@@ -8125,7 +8178,7 @@
                   my vessel. The brave fellows whom I have persuaded to be my companions look
                   towards me for aid; but I have none to bestow. There is something terribly
                   appalling in our situation, yet my courage and hopes do not desert me. We may
-                  survive; and if we do not, I will repeat the lessons of my <persName type="lccn"
+                  survive; and if we do not, I will repeat the lessons of my <persName type="lcnaf"
                      key="n79004229" cert="medium">Seneca</persName>, and die with a good heart.</p>
                <p>Yet what, <persName>Margaret</persName>, will be the state of your mind? You will
                   not hear of my destruction, and you will anxiously await my return. Years will
