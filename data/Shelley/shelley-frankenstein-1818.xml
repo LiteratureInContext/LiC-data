@@ -30,9 +30,9 @@
                       </editor>
                       <respStmt>
                          <resp>Transcription, correction, editorial commentary, and markup</resp>
-                         <name xml:id="MUstudstaff">Students of Marymount University</name>
-                         <name xml:id="AF">Ally Freeland</name>
-                         <name xml:id="AR">Amy Ridderhof</name>
+                         <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+                         <name ref="editors.xml#AF">Ally Freeland</name>
+                         <name ref="editors.xml#AF">Amy Ridderhof</name>
                       </respStmt>
                      <sponsor/>
                      <funder>National Endowment for the Humanities</funder>
@@ -59,9 +59,7 @@
          
                <sourceDesc>
                         <biblStruct>
-                           <analytic> 
-                              <title commentAlert="title "></title>
-                           </analytic>
+      
                            <monogr>
                               <author>
                                  <persName type="lcnaf" key="n79061063">
@@ -78,7 +76,7 @@
                                  <publisher>Printed for Lackington, Hughes, Harding, Mavor, &amp;
                                     Jones</publisher>
                                  <date when="1818">1818</date>
-                                 <note commentAlert="should this have a source?">Page images are sourced from 
+                                 <note>Page images are sourced from 
                                     <ref target="https://lcnaf.loc.gov/53051218"
                                        >the first edition of the text housed in the Rare Books Collection of
                                        Library of Congress</ref>.</note>
@@ -119,21 +117,22 @@
          <textDesc n="novel">
             <channel mode="w">print</channel>
             <constitution type="single">whole novel</constitution>
-            <derivation type=""/>
+            <derivation type="original"/>
             <domain/>
             <factuality type="fiction"/>
             <interaction/>
-            <preparedness type="scripted"/>
+            <preparedness type="revised"/>
             <purpose type="entertain" degree="high"/>
-            <purpose type="" degree=""/>
+            <purpose type="inform" degree="medium"/>
          </textDesc>
          
          <settingDesc>
             <setting>
-               <name type="tgn" key="">Western Europe? Europe?</name>
-               <name type="" key="">Eastern Europe and Russia? Arctic?</name>
-               <name type="" key="">England</name>
-               <name type="" key="">Scotland</name>
+               <name type="tgn" key="1000003">Europe</name>
+               <name type="tgn" key="4003761">Western Europe</name>
+               <name type="tgn" key="4003756">Eastern Europe and Russia? Arctic?</name>
+               <name type="tgn" key="7002445">England</name>
+               <name type="tgn" key="7002444">Scotland</name>
                <time from="1790" to="1800">Late eighteenth century</time>
             </setting>
          </settingDesc>
