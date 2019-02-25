@@ -85,36 +85,59 @@
       </fileDesc>
             
       <encodingDesc>
-          <projectDesc> <p>
-              This text is prepared as part of the <hi>Literature in Context</hi> project, which provides an accessible, curated, edited, and marked-up selection of primary sources relevant to the study and the teaching of British and American literature of the 17th, 18th, and 19th centuries. This project is funded by the National Endowment for the Humanities and developed by faculty at The University of Virginia and Marymount University.</p>
-          </projectDesc>
-          <editorialDecl>
-              <interpretation><p>Research informing these annotations draws on publicly-accessible resources, with links provided where possible. Annotations have also included common knowledge, defined as information that can be found in multiple reliable sources. If you notice an error in these annotations, please contact lic.open.anthology@gmail.com.</p>
-              </interpretation>
-              <normalization><p>Original spelling and capitalization is retained, though the long s has been silently modernized and ligatured forms are not encoded.</p></normalization>
-              <hyphenation><p>Hyphenation has not been retained, except where necessary for the sense of the word.</p></hyphenation>
-              <segmentation><p>Page breaks have been retained. Catchwords, signatures, and running headers have not.</p></segmentation>
-              <correction><p>Materials have been transcribed from and checked against first editions, where possible. See the Sources section.</p></correction>
-          </editorialDecl>
-          <tagsDecl>
-              <namespace name="http://www.tei-c.org/ns/1.0">
-                  <tagUsage gi="div">Unnumbered divs used.</tagUsage>
-              </namespace>
-          </tagsDecl>
-          <classDecl>
-              <taxonomy xml:id="">
-                  <bibl></bibl>
-              </taxonomy>
-          </classDecl>
-        
-         <listPrefixDef>
-            <prefixDef ident="tcp"
-                       matchPattern="([0-9\-]+):([0-9IVX]+)"
-                       replacementPattern="https://data.historicaltexts.jisc.ac.uk/view?pubId=ecco-$1&amp;index=ecco&amp;pageId=ecco-$1-$20"/>
-            <prefixDef ident="char"
-                       matchPattern="(.+)"
-                       replacementPattern="https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1"/>
-         </listPrefixDef>
+         <!-- BEGINS Encoding Description -->
+         <projectDesc>
+            <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning. </p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
       </encodingDesc>
       <profileDesc>
          <langUsage>
