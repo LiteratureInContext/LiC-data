@@ -3,91 +3,146 @@
        <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="behn-oroonoko">
          
      
-          <teiHeader>
-            <fileDesc>
-               <titleStmt>
-                  <title type="statusBar">Oroonoko, or, The royal slave: A True History</title>
-                  
-                  <author>
-                     <persName type="lcnaf" key="n50006616">
-                        <name>
-                        <forename>Aphra</forename>
-                        <surname>Behn</surname>
-                        </name>
-                        </persName>
-                        <date when="1640-12-14">Birth: 1640 December 14?</date>
-                        <date when="1689-04-16">Death: 1689 April 16</date>
-                  </author>
-                  
-                  <respStmt>
-                     <resp>Transcription, correction, editorial commentary, and markup</resp>
-                     <name>Students of The University of Virginia</name>
-                     <name>Malcolm Bare</name>
-                     <name>Ankita Chakrabarti</name>
-                     <name>Neal Curtis</name>
-                     <name>Alison Glassie</name>
-                     <name>Robert Hoile</name>
-                     <name>Rebeccca Rosenblatt</name>
-                     <name>Simon Sarkodie</name>
-                     <name>Kristian Smith</name>
-                     <name>Michael Van Hoose</name>
-                     <name>Alissa Winn</name>                   
-                  </respStmt>
-               </titleStmt>
-               
-               <publicationStmt>
-                  <publisher>Literature in Context</publisher>
-                  <distributor>
-                     <orgName>Literature in Context</orgName>
-                     <address>
-                        <addrLine>Department of English, The University of Virginia</addrLine>
-                        <addrLine>P. O. Box 400121</addrLine>
-                        <addrLine>Charlottesville, VA </addrLine>
-                        <addrLine>22904-4121</addrLine>
-                     </address>
-                     <email>jobrien@virginia.edu</email>
-                  </distributor>
-                  <authority>
-                     <idno>behn-oroonoko</idno> 
-                  </authority>
-                  <availability status="free">
-                     <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> Published by
-                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                        License </licence>
-                  </availability>
-                  <textDesc>
-                     <constitution status="incomplete">This text is incomplete and requires standardization of its annotation scheme; also, page images of the first edition would be a nice thing to have, but have not been sourced yet.</constitution>
-                  </textDesc>
-                  <date>2018</date>
-               </publicationStmt>    
-               
-               <sourceDesc>
-                  <bibl>This edition has been prepared from the edition undertaken by the Oxford Text Archive, which reproduces the copy of the first edition in the Huntington Library, San Marino, California. This is Oxford Text Archive record number A27305. We corrected errors in the Oxford Text Archive against the Google Books digitized page images of the first edition: 
-                     <extent>[14], 239 [i.e. 223] p.</extent>
-                  </bibl>
-                  <biblStruct>                   
-                     <monogr>
+          <teiHeader> <!--TEI Header BEGINS-->   
+               <fileDesc>  <!--BEGINS File Description -->
+                     <titleStmt>
+                        <title type="statusBar">Oroonoko, or, The royal slave: A True History</title>
+                        
                         <author>
-                           <persName type="lcnaf" key="n50006616">
-                              <name>
-                                    <forename>Aphra</forename>
-                                    <surname>Behn</surname>
-                                </name>
+                           
+                           <trait type="gender">
+                              <desc>Female</desc>
+                           </trait>
+                           
+                              <persName type="lcnaf" key="n50006616">
+                                   <name>
+                                   <forename>Aphra</forename>
+                                   <surname>Behn</surname>
+                                   </name>
+                                </persName>
+                           
+                                 <date when="1640-06-14">Birth: 1640 July 10</date>
+                                 <date when="1689-04-16">Death: 1689 April 16</date>
+                        </author>
+                        
+                        <editor>
+                           <persName type="orcid" key="">
+                              <name ref="editors.xml#" >
+                                 <surname></surname>
+                                 <forename></forename>
+                              </name>
                            </persName>
-                         </author>
-                        <title type="main">Oroonoko</title>
-                        <title type="sub">; or, The Royal Slave; a True History</title>
-                        <imprint>
-                           <pubPlace>
-                              <placeName type="city" key="lon">London</placeName>
-                           </pubPlace>
-                           <publisher>Printed for Will. Canning</publisher>
-                           <date when="1688">1688</date>                           
-                        </imprint>                    
-                     </monogr>
-                  </biblStruct>
-               </sourceDesc>
+                        </editor>
+                        
+                        
+                        <respStmt>
+                           <resp>Transcription, correction, editorial commentary, and markup</resp>
+                           <name>Students of The University of Virginia</name>
+                           <name>Malcolm Bare</name>
+                           <name>Ankita Chakrabarti</name>
+                           <name>Neal Curtis</name>
+                           <name>Alison Glassie</name>
+                           <name>Robert Hoile</name>
+                           <name>Rebeccca Rosenblatt</name>
+                           <name>Simon Sarkodie</name>
+                           <name>Kristian Smith</name>
+                           <name>Michael Van Hoose</name>
+                           <name>Alissa Winn</name>                   
+                        </respStmt>
+                        <sponsor/>
+                        <funder>National Endowment for the Humanities</funder>
+                  </titleStmt>
+                 
+                 <publicationStmt>
+                    <publisher>Literature in Context</publisher>
+                    <distributor>
+                          <orgName>Literature in Context</orgName>
+                          <address>
+                             <addrLine>Department of English, The University of Virginia</addrLine>
+                             <addrLine>P. O. Box 400121</addrLine>
+                             <addrLine>Charlottesville, VA </addrLine>
+                             <addrLine>22904-4121</addrLine>
+                          </address>
+                          <email>jobrien@virginia.edu</email>
+                    </distributor>
+                    <authority>
+                       <idno>behn-oroonoko</idno> 
+                    </authority>
+                    <availability status="free">
+                       <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> Published by
+                          Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                          License </licence>
+                    </availability>
+                 </publicationStmt>    
+                 
+                 <sourceDesc>
+                    <bibl>This edition has been prepared from the edition undertaken by the Oxford 
+                       Text Archive, which reproduces the copy of the first edition in the
+                       Huntington Library, San Marino, California. 
+                       This is Oxford Text Archive record number A27305.
+                       We corrected errors in the Oxford Text Archive against the Google Books 
+                       digitized page images of the first edition: 
+                      
+                    </bibl>
+                    <biblStruct>                   
+                       <monogr>
+                          <author>
+                             <persName type="lcnaf" key="n50006616">
+                                <name>
+                                      <forename>Aphra</forename>
+                                      <surname>Behn</surname>
+                                  </name>
+                             </persName>
+                           </author>
+                          <title type="main">Oroonoko</title>
+                          <title type="sub">; or, The Royal Slave; a True History</title>
+                          <imprint>
+                               <pubPlace>
+                                  <placeName type="tgn" key="7011781">London</placeName>
+                               </pubPlace>
+                               <publisher>Printed for Will. Canning</publisher>
+                               <date when="1688">1688</date>
+                               <note> </note>
+                          </imprint>       
+                          <extent>[14], 239 [i.e. 223] p.</extent>
+                          <biblScope unit=""></biblScope>
+                          <biblScope></biblScope>
+                       </monogr>
+                    </biblStruct>
+                 </sourceDesc>
             </fileDesc>
+             
+             <profileDesc>  <!--BEGINS Profile Description  -->
+                <!--This Profile Desc is all wrong, must be adapted to this text  -->
+                <langUsage>
+                   <language ident="en">English</language>
+                </langUsage>
+                
+                <creation/>
+                
+                <textDesc n="novella">
+                   <channel mode="w">print</channel>
+                   <constitution type="single"/>
+                   <derivation type="original"/>
+                   <domain/>
+                   <factuality type="fiction"/>
+                   <interaction/>
+                   <preparedness type="prepared"/>
+                   <purpose type="entertain" degree="high"/>
+                   <purpose type="inform" degree="low"/>
+                </textDesc>
+                
+                <settingDesc>
+                   <setting>
+                      <name type="tgn" key="7011781">London, England</name>
+                      <name type="tgn" key="7011197">Bath, England</name>
+                      <time from="1690" to="1724">Early 18th Century</time>
+                   </setting>
+                </settingDesc>
+             </profileDesc>
+             
+             
+             
             <encodingDesc>
                <projectDesc> <p>
                   This text is prepared as part of the <hi>Literature in Context</hi> project, which provides an accessible, curated, edited, and marked-up selection of primary sources relevant to the study and the teaching of British and American literature of the 17th, 18th, and 19th centuries. This project is funded by the National Endowment for the Humanities and developed by faculty at The University of Virginia and Marymount University.</p>
@@ -127,7 +182,15 @@
                   </taxonomy>
                </classDecl>
             </encodingDesc>
-         </teiHeader>
+             
+             <revisionDesc> <!--BEGINS Revision Description -->
+                <!--This must also be completed -->
+                <change when="" who="editors.xml#">e</change>
+             </revisionDesc>
+             
+             
+             
+          </teiHeader> <!--TEI Header Ends -->
 	 
    <text xml:lang="eng">
       <front>

@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
+    
+    <teiHeader> <!--TEI Header BEGINS-->   
+        <fileDesc> <!--BEGINS File Description -->
             <titleStmt>
                 <title>Childhood</title>
                 
                 <author>
-                    <trait type="gender"><desc>Female</desc></trait>
+                    <trait type="gender">
+                        <desc>Female</desc>
+                    </trait>
+                    
                     <persName type="lcnaf" key="n79145303">
                         <name>
                             <forename>Anne</forename>
                             <surname>Bradstreet</surname>
                         </name>
                     </persName>
+                    
                     <date when="l6l2-03-20">Birth: l6l2 March 20</date>
                     <date when="l664-06-22">Death: l672 September l6</date>           
                     <roleName>Poet</roleName>
@@ -25,6 +30,8 @@
                     <name>Staff and Research Assistants at The University of Virginia</name>
                     <name>John O'Brien</name>
                     <name>Sara Brunstetter</name>
+                    <sponsor/>
+                    <funder>National Endowment for the Humanities</funder>
                 </respStmt>
             </titleStmt>
             
@@ -50,9 +57,9 @@
                 <date>20l8</date>
             </publicationStmt>
             
-            <sourceDesc>
+            <sourceDesc>  <!--BEGINS Source Description -->
                 <bibl>Write source here
-                    <extent></extent>
+                    
                 </bibl>
                 <biblStruct>
                     <monogr>
@@ -68,15 +75,50 @@
                         
                         <imprint>
                             <pubPlace>
-                                <placeName type="country" key="eng">England</placeName>
+                                <placeName type="tgn" key="7002445">England</placeName>
                             </pubPlace>
                             <publisher>original publisher</publisher>
                             <date when="l000-l0-l0">date published</date>
-                        </imprint>                    
+                        </imprint> 
+                        
+                        
+                        <extent></extent>
+                        <biblScope unit=""></biblScope>
+                        <biblScope></biblScope>
+                        
                     </monogr>
                 </biblStruct>    
             </sourceDesc>        
         </fileDesc>
+        
+        <profileDesc>  <!--BEGINS Profile Description  -->
+            <!--This Profile Desc is all wrong, must be adapted to this text  -->
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            
+            <creation/>
+            
+            <textDesc n="novella">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="low"/>
+            </textDesc>
+            
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>
+                    <name type="tgn" key="7011197">Bath, England</name>
+                    <time from="1690" to="1724">Early 18th Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
         
         <encodingDesc>
             <!-- BEGINS Encoding Description -->
@@ -133,7 +175,16 @@
                 </taxonomy>
             </classDecl>
         </encodingDesc>
+        
+        <revisionDesc> <!--BEGINS Revision Description -->
+            <!--This must also be completed -->
+            <change when="" who="editors.xml#"></change>
+        </revisionDesc>
+        
+        
     </teiHeader>
+    <!--TEI Header Ends -->
+    
     
     <text>
         <body>

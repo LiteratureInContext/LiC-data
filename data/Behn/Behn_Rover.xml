@@ -1,104 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <!-- 
     Extent
     Taxonomy
 -->
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>The Rover, or, The Banished Cavaliers</title>
-               
-                <author>
-                    <trait type="gender"><desc>Female</desc></trait>
-                   
-                   <persName type="lcnaf" key="n50006616">
-                      <name>
-                         <forename>Aphra</forename>
-                         <surname>Behn</surname>
-                      </name>
-                   </persName>
-                   
-                    <date when="1640-12-14">Birth: 1640 December 14?</date>
-                    <date when="1689-04-16">Death: 1689 April 16</date>
-                    <roleName>Writer</roleName>
-                    <affiliation>Married</affiliation>
-                    <country>Britain</country>               
-                </author>
-               
-                <respStmt>
-                   <resp>Transcription, correction, editorial commentary, and markup</resp> 
-                    <name>Staff and Research Assistants at the University of Virginia</name>
-                    <name>Sara Brunstetter</name>   
-                    <name>John O'Brien</name>
-                </respStmt> 
-            </titleStmt>
-           
-            <publicationStmt>      
-               <publisher>Literature in Context</publisher>
-                <distributor>
-                   <orgName>Literature in Context</orgName>
-                    <address>
-                        <addrLine>Department of English, The University of Virginia</addrLine>
-                        <addrLine>P. O. Box 400121</addrLine>
-                        <addrLine>Charlottesville, VA </addrLine>
-                        <addrLine>22904-4121</addrLine>
-                    </address>
-                    <email>jobrien@virginia.edu</email>
-                </distributor>
-                <authority>
-                    <idno>behn-rover</idno>
-                </authority>
-                <availability status="free">
-                    <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> Published by Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported License
-                    </licence>
-                    <p>This text is incomplete and requires standardization of its annotation scheme; also, page images of the first edition would be a nice thing to have, but have not been sourced yet.
-                    </p> 
-                </availability>
-                <date>2018</date>
-            </publicationStmt>
-           
-            <sourceDesc>  
-               <bibl>
-                  Originally published by the Text Creation Partnership; this edition has been annotated and edited for use in the Open Anthology of Literature by students in ENEC 3400, Restoration and Eighteenth Century British Theatre, in fall 2016.
-                  <extent>
-                     
-                  </extent>
-               </bibl>
-                <biblStruct>
-                    <monogr>
-                        <author>
-                           <persName type="lcnaf" key="n50006616">
-                              <name>
-                                 <forename>Aphra</forename>
-                                 <surname>Behn</surname>
+   <teiHeader>    <!--TEI Header BEGINS-->   
+         <fileDesc>  <!--BEGINS File Description -->
+                <titleStmt>
+                         <title>The Rover, or, The Banished Cavaliers </title>
+                        
+                         <author>
+                                 <trait type="gender">
+                                    <desc>Female</desc>
+                                 </trait>
+                                
+                                <persName type="lcnaf" key="n50006616">
+                                   <name>
+                                      <forename>Aphra</forename>
+                                      <surname>Behn</surname>
+                                   </name>
+                                </persName>
+                                
+                                 <date when="1640-06-14">Birth: 1640 July 10</date>
+                                 <date when="1689-04-16">Death: 1689 April 16</date>
+                                 <roleName>Writer</roleName>
+                                 <affiliation>Married</affiliation>
+                                 <country>Britain</country>               
+                         </author>
+                        
+                        
+                        <editor>
+                           <persName type="orcid" key="">
+                              <name ref="editors.xml#" >
+                                 <surname></surname>
+                                 <forename></forename>
                               </name>
                            </persName>
-                        </author>
-                        <title type="main">The Rover</title>
-                        <title type="sub">The Banished Cavaliers</title>
-                        <imprint>
-                            <pubPlace>
-                                <placeName type="city" key="lon">
-                                    London
-                                </placeName>
-                            </pubPlace>
-                            <publisher>
-                                Printed for John Amery et al.
-                            </publisher>
-                            <date when="1677">
-                                1677
-                            </date>
-                        </imprint>
-                    </monogr>
-                        <note>
-                            Behn adapted this play and its sequel, The Rover, Part 2, from Thomas Killigrew's Thomaso
-                        </note>                    
-                </biblStruct>              
-            </sourceDesc>
-        </fileDesc>
+                        </editor>
+                        
+                        
+                         <respStmt>
+                            <resp>Transcription, correction, editorial commentary, and markup</resp> 
+                             <name>Staff and Research Assistants at the University of Virginia</name>
+                             <name>Sara Brunstetter</name>   
+                             <name>John O'Brien</name> <!-- Check thiss -->
+                             <name ref="editors.xml#UVAstudstaff">Students and Staff of the University of Virginia</name>
+                         </respStmt> 
+                        <sponsor/>
+                        <funder>National Endowment for the Humanities</funder>
+             </titleStmt>
+             
+              <publicationStmt>      
+                 <publisher>Literature in Context</publisher>
+                  <distributor>
+                         <orgName>Literature in Context</orgName>
+                          <address>
+                              <addrLine>Department of English, The University of Virginia</addrLine>
+                              <addrLine>P. O. Box 400121</addrLine>
+                              <addrLine>Charlottesville, VA </addrLine>
+                              <addrLine>22904-4121</addrLine>
+                          </address>
+                          <email>jobrien@virginia.edu</email>
+                  </distributor>
+                  <authority>
+                      <idno>behn-rover</idno>
+                  </authority>
+                 <availability status="free">
+                      <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                         Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                         License </licence>
+                   </availability>
+              </publicationStmt>
+             
+            <sourceDesc>   <!--BEGINS Source Description -->
+                 <bibl>
+                    Originally published by the Text Creation Partnership; this edition has been annotated and edited for use in the Open Anthology of Literature by students in ENEC 3400, Restoration and Eighteenth Century British Theatre, in fall 2016.
+                    
+                 </bibl>
+                  <biblStruct>
+                      <monogr>
+                          <author>
+                             <persName type="lcnaf" key="n50006616">
+                                <name ref="behn.xml">
+                                   <forename>Aphra</forename>
+                                   <surname>Behn</surname>
+                                </name>
+                             </persName>
+                          </author>
+                          <title type="main">The Rover</title>
+                          <title type="sub">The Banished Cavaliers</title>
+                         
+                          <imprint>
+                                  <pubPlace>
+                                     <placeName type="tgn" key="7011781">London</placeName>
+                                  </pubPlace>
+                                  <publisher>
+                                      Printed for John Amery et al.
+                                  </publisher>
+                                  <date when="1677">
+                                      1677
+                                  </date>
+                                  <note>
+                                     Behn adapted this play and its sequel, The Rover, Part 2, from Thomas Killigrew's Thomaso
+                                  </note>  
+                          </imprint>
+                         
+                         <extent></extent>
+                         <biblScope unit=""></biblScope>
+                         <biblScope></biblScope>
+                         
+                      </monogr>
+                  </biblStruct>              
+              </sourceDesc>
+          </fileDesc>
+      
+      <profileDesc>  <!--BEGINS Profile Description  -->
+         <!--This Profile Desc is all wrong, must be adapted to this text  -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="novella">
+            <channel mode="w">print</channel>
+            <constitution type="single"/>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="fiction"/>
+            <interaction/>
+            <preparedness type="prepared"/>
+            <purpose type="entertain" degree="high"/>
+            <purpose type="inform" degree="low"/>
+         </textDesc>
+         
+         <settingDesc>
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <name type="tgn" key="7011197">Bath, England</name>
+               <time from="1690" to="1724">Early 18th Century</time>
+            </setting>
+         </settingDesc>
+      </profileDesc>
        
        <encodingDesc>
           <!-- BEGINS Encoding Description -->
@@ -155,8 +199,15 @@
              </taxonomy>
           </classDecl>
        </encodingDesc>
-        <profileDesc/>
+       
+      <revisionDesc> <!--BEGINS Revision Description -->
+         <!--This must also be completed -->
+         <change when="" who="editors.xml#">e</change>
+      </revisionDesc>
+       
+       
     </teiHeader>
+   <!--TEI Header Ends -->
     
     
     
@@ -8544,5 +8595,5 @@ the famous <hi>Virgil</hi> does in <hi>Latin; I make Verses, and others have the
          </div>
       </body>
    </text>
-</TEI>
+
           
