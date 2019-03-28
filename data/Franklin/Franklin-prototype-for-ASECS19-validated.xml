@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="franklin-autobiograpy">
+   
+    <!--TEI Header BEGINS-->
     <teiHeader xml:lang="en">
     <fileDesc>
         <titleStmt>
@@ -11,7 +13,9 @@
                 </persName>
             </author>
             <editor>
-                <persName type="orcid" key="0000-0001-6453-8721">John O'Brien</persName>
+                <persName type="orcid" key="0000-0001-6453-8721">
+                    John O'Brien
+                </persName>
             </editor>
             <respStmt> 
                     <resp>Transcription, correction, editorial commentary, and markup</resp>
@@ -20,29 +24,33 @@
                     <name>Jane French</name>
                     <name>Andrew Michael</name>
                     <name>Natalie Thompson</name>
-                    <name>Monica David</name>      
+                    <name>Monica David</name>   
+                
                 </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            
         </titleStmt>
         <publicationStmt>
             <publisher>Literature in Context</publisher>
-            <distributor>
-                <orgName>Literature in Context</orgName>
+           
+               
                 <address>
                     <addrLine>University of Virginia Department of English</addrLine>
                     <addrLine>P. O. Box 400121</addrLine>
                     <addrLine>Charlottesville, VA </addrLine>
                     <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
                 </address>
-                <email>jobrien@virginia.edu</email>
-            </distributor>
+               
+            
             <availability status="free">
                 <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
                     Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
                     License </licence>
             </availability>
-            <authority>
-                <idno>franklin-autobiography</idno>
-            </authority>
+           
         </publicationStmt>
             <sourceDesc>
                         <msDesc>
@@ -59,6 +67,33 @@
                         </msDesc>
             </sourceDesc>
     </fileDesc>
+        
+        <profileDesc>  <!--BEGINS Profile Description  -->
+            <!--This Profile Desc is all wrong, must be adapted to this text  -->
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="novella">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="low"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>
+                    <name type="tgn" key="7011197">Bath, England</name>
+                    <time from="1690" to="1724">Early 18th Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
     <encodingDesc>
         <projectDesc> <p>This text is prepared as part of the Literature in Context project,
             which provides an accessible, curated, and marked-up selection of primary sources

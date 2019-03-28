@@ -6,19 +6,23 @@
                 <title>Old Age</title>
                 
                 <author>
-                    <trait type="gender"><desc>Female</desc></trait>
                     <persName type="lcnaf" key="n79145303">
                         <name>
                             <forename>Anne</forename>
                             <surname>Bradstreet</surname>
                         </name>
                     </persName>
-                    <date when="l6l2-03-f20">Birth: l6l2 March 20</date>
-                    <date when="l664-06-22">Death: l672 September l6</date>           
-                    <roleName>Poet</roleName>
-                    <affiliation>Married</affiliation>
-                    <country>Great Britain</country>
                 </author>
+                
+                
+                <editor>
+                    <persName type="orcid" key="">
+                        <name ref="editors.xml#" >
+                            <surname></surname>
+                            <forename></forename>
+                        </name>
+                    </persName>
+                </editor>
                 
                 <respStmt>
                     <resp>Transcription, correction, editorial commentary, and markup</resp>
@@ -26,33 +30,32 @@
                     <name>John O'Brien</name>
                     <name>Sara Brunstetter</name>
                 </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
             </titleStmt>
             
             <publicationStmt>
                 <publisher>Literature in Context</publisher>
-                <distributor>
-                    <orgName>Literature in context</orgName>
-                    <address>
-                        <addrLine>University of Virginia Department of English</addrLine>
-                        <addrLine>P. O. Box 400l2l</addrLine>
-                        <addrLine>Charlottesville, VA </addrLine>
-                        <addrLine>22904-4l2l</addrLine>
-                    </address>
-                    <email>jobrien@virginia.edu</email>
-                </distributor>
-                <authority>
-                    <idno>Bradstreet-Old</idno>
-                </authority>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
                 <availability status="free">
-                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> Published by Literature in Context under a Creative Commons                             Attribution-ShareAlike 4.0 Unported License</licence>
-                    <p>While free, this text is still incomplete and requires standardization of its annotation scheme.</p>
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
                 </availability>
-                <date>20l8</date>
             </publicationStmt>
             
             <sourceDesc>
                 <bibl>Write source here
-                    <extent></extent>
+                   
                 </bibl>
                 <biblStruct>
                     <monogr>
@@ -72,11 +75,41 @@
                             </pubPlace>
                             <publisher>original publisher</publisher>
                             <date when="l000-l0-l0">date published</date>
-                        </imprint>                    
+                        </imprint> 
+                        <extent></extent>
                     </monogr>
                 </biblStruct>    
             </sourceDesc>        
         </fileDesc>
+        
+        <profileDesc>  <!--BEGINS Profile Description  -->
+            <!--This Profile Desc is all wrong, must be adapted to this text  -->
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            
+            <creation/>
+            
+            <textDesc n="novella">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="low"/>
+            </textDesc>
+            
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>
+                    <name type="tgn" key="7011197">Bath, England</name>
+                    <time from="1690" to="1724">Early 18th Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
         
         <encodingDesc>
             <!-- BEGINS Encoding Description -->

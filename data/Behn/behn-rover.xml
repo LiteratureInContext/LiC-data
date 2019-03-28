@@ -6,8 +6,8 @@
     Taxonomy
 -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="behn-rover">
-    <teiHeader>
-        <fileDesc>
+   <teiHeader> <!--TEI Header BEGINS-->  
+      <fileDesc> <!--BEGINS File Description -->
             <titleStmt>
                 <title>The Rover, or, The Banished Cavaliers</title>
                
@@ -22,6 +22,16 @@
                            
                 </author>
                
+               <editor>
+                  <persName type="orcid" key="">
+                     <name ref="editors.xml#" >
+                        <surname></surname>
+                        <forename></forename>
+                     </name>
+                  </persName>
+               </editor>
+               
+
                 <respStmt>
                    <resp>Transcription, correction, editorial commentary, and markup</resp> 
                     <name>Staff and Research Assistants at the University of Virginia</name>
@@ -32,26 +42,25 @@
            
             <publicationStmt>      
                <publisher>Literature in Context</publisher>
-                <distributor>
-                   <orgName>Literature in Context</orgName>
+             
+                  
                     <address>
                         <addrLine>Department of English, The University of Virginia</addrLine>
                         <addrLine>P. O. Box 400121</addrLine>
                         <addrLine>Charlottesville, VA </addrLine>
                         <addrLine>22904-4121</addrLine>
+                       <addrLine>jobrien@virginia.edu</addrLine>
+                       <addrLine>lic.open.anthology@gmail.com</addrLine>
                     </address>
-                    <email>jobrien@virginia.edu</email>
-                </distributor>
-                <authority>
-                    <idno>behn-rover</idno>
-                </authority>
-                <availability status="free">
-                    <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> Published by Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported License
-                    </licence>
-                    <p>This text is incomplete and requires standardization of its annotation scheme; also, page images of the first edition would be a nice thing to have, but have not been sourced yet.
-                    </p> 
-                </availability>
-                <date>2018</date>
+                   
+                
+               
+               <availability status="free">
+                  <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                     Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                     License </licence>
+               </availability>
+                
             </publicationStmt>
            
             <sourceDesc>  
@@ -93,63 +102,94 @@
                 </biblStruct>              
             </sourceDesc>
         </fileDesc>
+      
+      <profileDesc>  <!--BEGINS Profile Description  -->
+         <!--This Profile Desc is all wrong, must be adapted to this text  -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="novella">
+            <channel mode="w">print</channel>
+            <constitution type="single"/>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="fiction"/>
+            <interaction/>
+            <preparedness type="prepared"/>
+            <purpose type="entertain" degree="high"/>
+            <purpose type="inform" degree="low"/>
+         </textDesc>
+         
+         <settingDesc>
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <name type="tgn" key="7011197">Bath, England</name>
+               <time from="1690" to="1724">Early 18th Century</time>
+            </setting>
+         </settingDesc>
+      </profileDesc>
+      
        
-       <encodingDesc>
-          <!-- BEGINS Encoding Description -->
-          <projectDesc>
-             <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
-                project, which provides an accessible, curated, and marked-up selection of primary
-                sources relevant to the study and the teaching of British and American literature of
-                the 18th century. This project is funded by the National Endowment for the Humanities
-                and developed by faculty at The University of Virginia and Marymount University. </p>
-          </projectDesc>
-          <editorialDecl>
-             <interpretation>
-                <p>Research informing these annotations draws on publicly-accessible resources, with
-                   links provided where possible. Annotations have also included common knowledge,
-                   defined as information that can be found in multiple reliable sources. If you
-                   notice an error in these annotations, please contact
-                   lic.open.anthology@gmail.com.</p>
-             </interpretation>
-             <normalization>
-                <p>Original spelling and capitalization is retained, though the long s has been
-                   silently modernized and ligatured forms are not encoded.</p>
-             </normalization>
-             <hyphenation>
-                <p>Hyphenation has not been retained, except where necessary for the sense of the
-                   word.</p>
-             </hyphenation>
-             <segmentation>
-                <p>Page breaks have been retained. Catchwords, signatures, and running headers have
-                   not. Where pages break in the middle of a word, the complete word has been
-                   indicated prior to the page beginning. </p>
-             </segmentation>
-             <correction>
-                <p>Materials have been transcribed from and checked against first editions, where
-                   possible. See the Sources section.</p>
-             </correction>
-          </editorialDecl>
-          <tagsDecl>
-             <namespace name="http://www.tei-c.org/ns/1.0">
-                <tagUsage gi="div">Unnumbered divs used.</tagUsage>
-             </namespace>
-          </tagsDecl>
-          <classDecl>
-             <taxonomy xml:id="lcnaf">
-                <bibl>Library of Congress Name Authority File</bibl>
-             </taxonomy>
-             <taxonomy xml:id="lcc">
-                <bibl>Library of Congress Classification</bibl>
-             </taxonomy>
-             <taxonomy xml:id="tgn">
-                <bibl>Getty Thesaurus of Geographic Names</bibl>
-             </taxonomy>
-             <taxonomy xml:id="orcid">
-                <bibl>Open Researcher and Contributor ID</bibl>
-             </taxonomy>
-          </classDecl>
-       </encodingDesc>
+      <encodingDesc> <!-- BEGINS Encoding Description -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
         <profileDesc/>
+      
+      
        <revisionDesc>  <!--BEGINS Revision Description -->
           <change when="2018" who="editors.xml#SB">Updated XML for LiC</change>
           <change when="2019-05-15" who="editors.xml#TH">Updated TEI Header and renamed the file for consistency</change>
