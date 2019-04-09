@@ -2,7 +2,7 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shelley-frankenstein-1818">
 
    <!--TEI Header BEGINS-->
-   <teiHeader>
+   <teiHeader xml:lang="en">
 
 
       <fileDesc>
@@ -11,8 +11,10 @@
             <title type="main">Frankenstein, or The Modern Prometheus</title>
             <author>
                <persName type="lcnaf" key="n79061063">
+                  <name>
                   <forename>Mary</forename>
                   <surname>Shelley</surname>
+                   </name>
                </persName>
             </author>
             <editor>
@@ -61,7 +63,6 @@
 
          <sourceDesc>
             <biblStruct>
-
                <monogr>
                   <author>
                      <persName type="lcnaf" key="n79061063">
@@ -111,9 +112,7 @@
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
-
          <creation/>
-
          <textDesc n="novel">
             <channel mode="w">print</channel>
             <constitution type="single">whole novel</constitution>
@@ -2391,13 +2390,13 @@
                      he had said of <persName>M. Waldman</persName>, whom I had never seen, as he
                      had hitherto been out of town.</p>
                   <p>Partly from curiosity, and partly from idleness, I went into the lecturing
-                     room, which <persName>M. Waldman</persName> entered shortly after. <ref target="a048" corresp="n048"> This
-                        professor </ref>
-                     <note xml:id="n048" target="a048" type="editorial" resp="editors.xml#AF"
-                           ><graphic
-                           url="http://www.britishmuseum.org/collectionimages/AN00048/AN00048580_001_l.jpg"
+                     room, which <persName>M. Waldman</persName> entered shortly after. 
+                     <ref target="a048" corresp="n048"> This professor </ref>
+                     
+                     <note xml:id="n048" target="a048" type="editorial" resp="editors.xml#AF">
+                        <graphic url="http://www.britishmuseum.org/collectionimages/AN00048/AN00048580_001_l.jpg"
                            style="float:right" width="300px"/>
-                        <p>Sir Humphrey Davy (1778-1829) was a Cornish scientist as well as poet,
+                        Sir Humphrey Davy (1778-1829) was a Cornish scientist as well as poet,
                            and according to Richard Holmes’ <ref
                               target="http://clinchem.aaccjnls.org/content/57/11/1625">"Humphrey
                               Davy and the Chemical Moment,"</ref> is best known today for his work
@@ -2429,8 +2428,8 @@
                               Galvani</ref> (1737-1798) who investigated the effect of electricity
                            on animal limbs. Sir Humphrey Davy corroborated the discovery and
                            supported the theory in a speech given to the Royal Society of
-                           London.</p>
-                        <p>Davy’s influence can be found in all of the science of <hi rend="italic"
+                           London.
+                        Davy’s influence can be found in all of the science of <hi rend="italic"
                               >Frankenstein</hi>; however, he is most obviously the inspiration for
                            M. Waldman, Victor’s mentor. Many of M. Waldman’s scientific ideas are
                            very similar to Davy’s, and Shelley frequently alludes to his 1802 <hi
@@ -2451,13 +2450,13 @@
                            work, see his 1812 <hi rend="italic"><ref
                                  target="https://archive.org/details/ElementschemicaVol1Davy"
                                  >Elements of Chemical Philosophy</ref></hi>, via the Internet
-                           Archive.</p>
-                        <p>The image above, from <ref
+                           Archive.
+                        The image above, from <ref
                               target="http://www.britishmuseum.org/research/collection_online/search.aspx"
                               >the British Museum</ref>, shows <hi rend="italic">Scientific
                               Researches! New Discoveries in Pneumaticks! An Experimental Lecture on
                               the Powers of Air</hi> (1802) a satirical etching by James Gillray
-                           depicting Davy and colleagues experimenting with nitrous oxide.</p>
+                           depicting Davy and colleagues experimenting with nitrous oxide.
                      </note> was very unlike his colleague. He appeared about fifty years of age,
                      but with an aspect expressive of the greatest benevolence; a few grey hairs
                      covered his temples, but those at the back of his head were nearly black. His
@@ -3590,44 +3589,40 @@
                      lightning dazzled my eyes, illuminating the lake, making it appear like a vast
                      sheet of fire; then for an instant everything seemed of a pitchy darkness,
                      until the eye recovered itself from the preceding flash. The storm, as is often
-                     the case in <ref target="a058" corresp="n058"> <placeName type="tgn" key="7011731">Switzerland </placeName> </ref>
-                     <note xml:id="n058" target="a058"
-                        type="editorial" resp="editors.xml#AF">
-                           <graphic
-                              url="https://upload.wikimedia.org/wikipedia/commons/c/ce/Genf_panorama.jpg"
-                              style="float:right" width="300px"/>
-                           <ref target="https://www.britannica.com/place/Switzerland"
-                              >Switzerland</ref> is not only the setting of most of the novel but
-                           also the place that inspired Mary Shelley to write <hi rend="italic"
-                              >Frankenstein</hi>. As Switzerland was the birthplace of the novel,
+                     the case in  
+                     <placeName type="tgn" key="7011731"> 
+                        <ref target="a058" corresp="n058"> Switzerland </ref> 
+                     </placeName> 
+                     <note xml:id="n058" target="a058" type="editorial" resp="editors.xml#AF">
+                           <graphic url="https://upload.wikimedia.org/wikipedia/commons/c/ce/Genf_panorama.jpg" style="float:right" width="300px"/>
+                           <ref target="https://www.britannica.com/place/Switzerland">Switzerland</ref> 
+                        is not only the setting of most of the novel but
+                           also the place that inspired Mary Shelley to write <hi rend="italic">Frankenstein</hi>. As Switzerland was the birthplace of the novel,
                            many people follow the "Frankenstein Trail" and have written about the
-                           experience. See Tony Perrottet’s article in <ref
-                              target="https://www.nytimes.com/2011/05/29/travel/lake-geneva-as-byron-and-shelley-knew-it.html"
-                                 ><hi rend="italic">The New York Times</hi></ref> and Nigel
-                           Richardson’s in <ref
-                              target="https://www.telegraph.co.uk/travel/destinations/europe/switzerland/articles/on-the-frankenstein-trail-in-switzerland/"
-                                 ><hi rend="italic">The Telegraph</hi></ref> for wonderful
+                           experience. See Tony Perrottet’s article in <ref target="https://www.nytimes.com/2011/05/29/travel/lake-geneva-as-byron-and-shelley-knew-it.html">
+                              <hi rend="italic">The New York Times</hi></ref> and Nigel
+                           Richardson’s in <ref target="https://www.telegraph.co.uk/travel/destinations/europe/switzerland/articles/on-the-frankenstein-trail-in-switzerland/">
+                              <hi rend="italic">The Telegraph</hi></ref> for wonderful
                            descriptions of the landscape and countryside. In honor of the 200th
                            anniversary of the novel, an art collective KLAT created and erected a
-                           bronze cast statue of the <ref target="https://youtu.be/oKa2-d_9IBU"
-                              >Creature</ref> in the city of Plainpolis. The image here is a
+                           bronze cast statue of the <ref target="https://youtu.be/oKa2-d_9IBU">Creature</ref> in the city of Plainpolis. The image here is a
                            panorama taken by Attila Terbócs of the view of Geneva from the top of
                            St. Peter’s Cathedral and it is hosted on Wikimedia Commons.
-                        <p>In the summer of 1814, Mary Shelley and her then-lover, Percy Shelley,
+                        In the summer of 1814, Mary Shelley and her then-lover, Percy Shelley,
                            travelled in secret to the continent, visiting France, Switzerland,
                            Germany, and the Netherlands. The couple published a collection of
-                           letters about their travels, titled <hi rend="italic"><ref
-                                 target="https://archive.org/details/sixweekhistoryof00shelrich"
-                                 >History of a Six-Week Tour</ref></hi>. In Letter II, Switzerland
+                           letters about their travels, titled <hi rend="italic"><ref target="https://archive.org/details/sixweekhistoryof00shelrich">History of a Six-Week Tour</ref></hi>. 
+                           In Letter II, Switzerland
                            is depicted as a place "with more equality of classes...than in England"
                            (103); this interest in the freer and more natural lives of the "lower
-                           orders" (103) was also central to the Romantic ideology. <ref
-                              target="https://www.bl.uk/collection-items/mary-shelleys-history-of-a-six-weeks-tour"
-                              >As the discussion of the <hi rend="italic">Six Week History</hi> on
+                           orders" (103) was also central to the Romantic ideology. <ref target="https://www.bl.uk/collection-items/mary-shelleys-history-of-a-six-weeks-tour">As the discussion of the <hi rend="italic">Six Week History</hi> on
                               the British Library website makes clear</ref>, this idea is "echoed in
                            chapter 6 of <hi rend="italic">Frankenstein</hi>, where Elizabeth writes
                            ‘the lower orders, being neither so poor nor so despised, their manners
-                           are more refined and moral’."</p></note>, appeared at once in various
+                           are more refined and moral’."</note>
+                     
+                     
+                     , appeared at once in various
                      parts of the heavens. The most violent storm hung exactly north of the town,
                      over that part of the lake which lies between the promontory of <placeName
                         type="tgn" key="8703247">Belrive</placeName> and the village of <placeName
@@ -5423,19 +5418,18 @@
                         had acquired at the cottage; they consisted of <hi rend="italic"
                               ><title>Paradise Lost</title></hi>, a volume of <hi rend="italic"
                               ><title>Plutarch's Lives</title></hi>, and the <hi rend="italic"
-                                 ><title><ref target="a062" corresp="n062"> Sorrows of Werter </ref> </title></hi>
+                                 ><title>
+                                    <ref target="a062" corresp="n062"> Sorrows of Werter </ref> </title></hi>
                         
                         <note xml:id="n062" target="a062" type="editorial"
                            resp="editors.xml#AF">
                           <graphic
                                  url="https://upload.wikimedia.org/wikipedia/commons/0/0f/Goethe_1774.JPG"
-                                 style="float:right" width="300px"/><hi rend="italic"><ref
-                                    target="https://ebooks.adelaide.edu.au/g/goethe/sorrows-of-young-werther/"
-                                    >The Sorrows of Young Werther</ref></hi> is an epistolary novel
+                                 style="float:right" width="300px"/>
+                           
+                           <hi rend="italic"><ref target="https://ebooks.adelaide.edu.au/g/goethe/sorrows-of-young-werther/">The Sorrows of Young Werther</ref></hi> is an epistolary novel
                               by Johann Wolfgang von Goethe, first published in 1774. The story
-                              follows the life of <ref
-                                 target="https://www.britannica.com/topic/The-Sorrows-of-Young-Werther"
-                                 >Werther</ref>, a young artist, who is writing to his friend
+                              follows the life of <ref target="https://www.britannica.com/topic/The-Sorrows-of-Young-Werther">Werther</ref>, a young artist, who is writing to his friend
                               Wilhelm. Werther falls in love with Charlotte, a woman already
                               promised to his friend, Albert. Despite the agony caused by this love
                               triangle, Werther cultivates a friendship with the couple, until the
@@ -5461,7 +5455,7 @@
                                     Review</hi></ref>. The image to the right shows the title page
                               of the first edition of <hi rend="italic">Sorrows</hi>, via Wikimedia
                               Commons.
-                           <p>Due to its unbridled passion, valuing human emotion over human life
+                              Due to its unbridled passion, valuing human emotion over human life
                               and rational thought <hi rend="italic">Sorrows</hi> was popular among
                               the Romantics. obvious influence over Mary Shelley’s novel, from the
                               epistolary format of <hi rend="italic">Frankenstein</hi> to the
@@ -5501,7 +5495,7 @@
                               (especially <ref
                                  target="https://www.jstor.org/stable/10.7722/j.ctt81twn.13"
                                  >"Chapter 8: "I sickened as I read": Mary Shelley’s <hi
-                                    rend="italic">Frankenstein</hi>"</ref>). </p></note>. The
+                                    rend="italic">Frankenstein</hi>"</ref>). </note>. The
                         possession of these treasures gave me extreme delight; I now continually
                         studied and exercised my mind upon these histories, whilst my friends were
                         employed in their ordinary occupations.</p>

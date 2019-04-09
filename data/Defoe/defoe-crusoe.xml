@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0"  xml:id="defoe-crusoe">
-   <teiHeader>
+   
+   <!--TEI Header BEGINS-->
+   <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
-            <title>The life and strange surprizing adventures of Robinson Crusoe: of York, mariner: who lived eight and twenty years, all alone in an un-inhabited island on the coast of America, near the mouth of the great river of Oroonoque; ... Written by himself.</title>
-            <title>Robinson Crusoe</title>
+
+            <title type="main">Robinson Crusoe</title>
+            <title type="sub">The life and strange surprizing adventures of Robinson Crusoe: of York, mariner: who lived eight and twenty years, all alone in an un-inhabited island on the coast of America, near the mouth of the great river of Oroonoque; ... Written by himself.</title>
              
             <author>
-                <trait type="gender"><desc>Male</desc></trait>
                <persName type="lcnaf" key="n79053974">
                    <name>
                     <forename>Daniel</forename>
                     <surname>Defoe</surname>
                     </name>
                </persName>
-                <date when="1660-09-13">Birth: 1660 September 13</date>
-                <date when="1731-04-24">Death: 1731 April 24</date>
-                <roleName>Writer, Journalist, Merchant</roleName>
-                <affiliation>Married</affiliation>
-                <country>England</country>
             </author>
+            
+           
              
              <respStmt>
                  <resp>Transcription, correction, editorial commentary, and markup</resp>
@@ -28,38 +27,30 @@
                  <name>John O'Brien</name>
                  <name>Sara Brunstetter</name>
              </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
          </titleStmt>
           
          <publicationStmt>
             <publisher>Literature in Context</publisher>
-             <distributor>
-                 <orgName>Literature in Context</orgName>
-                 <address>
-                     <addrLine>Department of English, The University of Virginia</addrLine>
-                     <addrLine>P. O. Box 400121</addrLine>
-                     <addrLine>Charlottesville, VA</addrLine>
-                     <addrLine>22904-4121</addrLine>
-                 </address>
-                 <email>jobrien@virginia.edu</email>
-             </distributor>
-             <authority>
-                 <idno>Defoe-Robinson</idno>
-             </authority>
-             <availability status="free">
-                 <licence target="http://creativecommons.org/licenses/by-sa/4.0/">
-                     Published by Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported License
-                 </licence>
-                 <p>While free, this text is still incomplete and requires standardization of its annotation scheme. 
-                 </p>
-             </availability>
-             <date>2018</date>
+            <address>
+               <addrLine>University of Virginia Department of English</addrLine>
+               <addrLine>P. O. Box 400l2l</addrLine>
+               <addrLine>Charlottesville, VA </addrLine>
+               <addrLine>22904-4l2l</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            
+            
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> Published by Literature in Context under a Creative Commons                             Attribution-ShareAlike 4.0 Unported License</licence>
+               <p>While free, this text is still incomplete and requires standardization of its annotation scheme.</p>
+            </availability>
+           
          </publicationStmt>
             
          <sourceDesc>
-             <bibl>
-                 
-                 <extent></extent>
-             </bibl>
              <biblStruct>
                  <monogr>
                      <author>
@@ -79,10 +70,42 @@
                          <publisher>William Taylor</publisher>
                          <date when="1719-04-25">1719 April 25</date>
                      </imprint>
+                    <extent></extent>
+                    
+                    <biblScope></biblScope>
                  </monogr>
              </biblStruct>
          </sourceDesc>
       </fileDesc>
+      
+      <profileDesc>  <!--BEGINS Profile Description  -->
+         <!--This Profile Desc is all wrong, must be adapted to this text  -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="novella">
+            <channel mode="w">print</channel>
+            <constitution type="single"/>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="fiction"/>
+            <interaction/>
+            <preparedness type="prepared"/>
+            <purpose type="entertain" degree="high"/>
+            <purpose type="inform" degree="low"/>
+         </textDesc>
+         
+         <settingDesc>
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <name type="tgn" key="7011197">Bath, England</name>
+               <time from="1690" to="1724">Early 18th Century</time>
+            </setting>
+         </settingDesc>
+      </profileDesc>
             
       <encodingDesc>
          <!-- BEGINS Encoding Description -->

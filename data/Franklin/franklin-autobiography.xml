@@ -6,21 +6,27 @@
             <title type="main">The Autobiography of Benjamin Franklin</title>
             <author>
                 <persName type="lccn" key="n50016726">
+                    <name>
                     <surname>Franklin</surname>
                     <forename>Benjamin</forename>
+                     </name>
                 </persName>
             </author>
             <editor>
-                <persName type="orcid" key="0000-0001-6453-8721">John O'Brien</persName>
+                <persName type="orcid" key="0000-0001-6453-8721">
+                    <name ref="editors.xml#JOB">
+                        <forename>John</forename>John 
+                        <surname>O'Brien</surname>
+                    </name>
+                </persName>
             </editor>
             <respStmt> 
                     <resp>Transcription, correction, editorial commentary, and markup</resp>
-                    <name>Faculty, librarians, and students of the University of Virginia: </name>
-                    <name>John O'Brien</name>
-                    <name>Jane French</name>
-                    <name>Andrew Michael</name>
-                    <name>Natalie Thompson</name>
-                    <name>Monica David</name>      
+                    <name>Faculty, librarians, and students of the University of Virginia </name>
+                    <name ref="editors.xml#EF">Ellen French</name>
+                    <name ref="editors.xml#AM">Andrew Michael</name>
+                    <name ref="editors.xml#NT">Natalie Thompson</name>
+                    <name ref="editors.xml#MD">Monica David</name>      
                 </respStmt>
         </titleStmt>
         <publicationStmt>
@@ -59,6 +65,31 @@
                         </msDesc>
             </sourceDesc>
     </fileDesc>
+        <profileDesc>  
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="autobiography">
+                <channel mode="w">manuscript</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fact"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="inform" degree="low"/>
+                <purpose type="entertain" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7013445">Boston, Massachusetts</name>
+                    <name type="tgn" key="7014406">Philadelphia, Pennsylvania</name>
+                    <time from="1706" to="1790">18th Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
     <encodingDesc>
         <projectDesc> <p>This text is prepared as part of the Literature in Context project,
             which provides an accessible, curated, and marked-up selection of primary sources
@@ -230,15 +261,53 @@
             J.F. born 1655, died 1744, AEtat 89.<lb/>
             A.F. born 1667, died 1752, 85.<lb/>
             
+            <pb n="9" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p9.jpg"/>
+            
         </p><p>By my rambling digressions I perceive myself to be grown old.  I us'd to write more methodically.  But one does not dress for private company as for a publick ball.  'Tis perhaps only negligence.
             
-        </p><p>To return: I continued thus employed in my father's business for two years, that is, till I was twelve years old; and my brother John, who was bred to that business, having left my father, married, and set up for himself at Rhode Island, there was all appearance that I was destined to supply his place, and become a tallow-chandler.  But my dislike to the trade continuing, my father was under apprehensions that if he did not find one for me more agreeable, I should break away and get to sea, as his son Josiah had done, to his great vexation.  He therefore sometimes took me to walk with him, and see joiners, bricklayers, turners, braziers, etc., at their work, that he might observe my inclination, and endeavor to fix it on some trade or other on land.  It has ever since been a pleasure to me to see good workmen handle their tools; and it has been useful to me, having learnt so much by it as to be able to do little jobs myself in my house when a workman could not readily be got, and to construct little machines for my experiments, while the intention of making the experiment was fresh and warm in my mind.  My father at last fixed upon the cutler's trade, and my uncle Benjamin's son Samuel, who was bred to that business in London, being about that time established in Boston, I was sent to be with him some time on liking.  But his expectations of a fee with me displeasing my father, I was taken home again.
+        </p><p>To return: I continued thus employed in my father's business for two years, that is, till I was twelve years old; and my brother John, who was bred to that business, having left my father, married, and set up for himself at Rhode Island, there was all appearance that I was destined to supply his place, and become a tallow-chandler.  But my dislike to the trade continuing, my father was under apprehensions that if he did not find one for me more agreeable, I should break away and get to sea, as his son Josiah had done, to his great vexation.  He therefore sometimes took me to walk with him, and see joiners, bricklayers, turners, braziers, etc., at their work, that he might observe my inclination, and endeavor to fix it on some trade or other on land.  It has ever since been a pleasure to me to see good workmen handle their tools; and it has been useful to me, having learnt so much by it as to be able to do little jobs myself in my house when a workman could not readily be got, and to construct little machines <pb n="10" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p10.jpg"/>for my experiments, while the intention of making the experiment was fresh and warm in my mind.  My father at last fixed upon the cutler's trade, and my uncle Benjamin's son Samuel, who was bred to that business in London, being about that time established in Boston, I was sent to be with him some time on liking.  But his expectations of a fee with me displeasing my father, I was taken home again.
             
         </p><p>From a child I was fond of reading, and all the little money that came into my hands was ever laid out in books. Pleased with the Pilgrim's Progress, my first collection was of John Bunyan's works in separate little volumes.  I afterward sold them to enable me to buy <ref target="a0021" corresp="n0021">R. Burton's Historical Collections</ref>; they were small chapmen's books, and cheap, 40 or 50 in all.  My father's little library consisted chiefly of books in polemic divinity, most of which I read, and have since often regretted that, at a time when I had such a thirst for knowledge, more proper books had not fallen in my way since it was now resolved I should not be a clergyman.  Plutarch's Lives there was in which I read abundantly, and I still think that time spent to great advantage. There was also a book of De Foe's, called an <ref target="a0022" corresp="n0022">Essay on Projects</ref>, and another of Dr. Mather's, called <ref target="a0023" corresp="n0023">Essays to do Good</ref>, which perhaps gave me a turn of thinking that had an influence on some of the principal future events of my life.
             
-        </p><p>This bookish inclination at length determined my father to make me a printer, though he had already one son (James) of that profession.  In 1717 my brother James returned from England with a press and letters to set up his business in Boston.  I liked it much better than that of my father, but still had a hankering for the sea.  To prevent the apprehended effect of such an inclination, my father was impatient to have me bound to my brother.  I stood out some time, but at last was persuaded, and signed the indentures when I was yet but twelve years old.  I was to serve as an apprentice till I was <ref target="a0024" corresp="n0024">twenty-one years of age</ref>, only I was to be allowed journeyman's wages during the last year.  In a little time I made great proficiency in the business, and became a useful hand to my brother.  I now had access to better books.  An acquaintance with the apprentices of booksellers enabled me sometimes to borrow a small one, which I was careful to return soon and clean. Often I sat up in my room reading the greatest part of the night, when the book was borrowed in the evening and to be returned early in the morning, lest it should be missed or wanted.
+        </p><p>This bookish inclination at length determined my father to make me a printer, though he had already one son (James) of that profession.  In 1717 my brother James returned from England with a press and letters to set up his business in Boston.  I liked it much better than that of my father, but still 
+            <pb n="11" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p11.jpg"/>
+            
+            had a hankering for the sea.  To prevent the apprehended effect of such an inclination, my father was impatient to have me bound to my brother.  I stood out some time, but at last was persuaded, and signed the indentures when I was yet but twelve years old.  I was to serve as an apprentice till I was <ref target="a0024" corresp="n0024">twenty-one years of age</ref>, only I was to be allowed journeyman's wages during the last year.  In a little time I made great proficiency in the business, and became a useful hand to my brother.  I now had access to better books.  An acquaintance with the apprentices of booksellers enabled me sometimes to borrow a small one, which I was careful to return soon and clean. Often I sat up in my room reading the greatest part of the night, when the book was borrowed in the evening and to be returned early in the morning, lest it should be missed or wanted.
         </p>
-   </body>
+       <p>And after some time an ingenious tradesman, Mr. Matthew Adams, who had a pretty collection of books, and who frequented our printing-house, took notice of me, invited me to his library, and very kindly lent me such books as I chose to read.  I now took a fancy to poetry, and made some little pieces; my brother, thinking it might turn to account, encouraged me, and put me on composing occasional ballads. One was called <hi rend="italic">The Lighthouse Tragedy,</hi> and contained an account of the drowning of Captain Worthilake, with his two daughters: the other was a sailor's song, on the taking of <hi rend="italic">Teach</hi> (or Blackbeard) the pirate.<ref target="a0025" corresp="n0025">They were wretched stuff</ref>, in the Grub-street-ballad style; and when they were printed he sent me about the town to sell them. The first sold wonderfully, the event being recent, having made a great noise.  This flattered my vanity; but my father discouraged me by ridiculing my performances, and telling me verse-makers were generally beggars.  So I escaped being a poet, most probably a very bad one; but as prose writing bad been of great use to me in the course of my life, and was a principal means of my advancement, 
+           <pb n="12" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p12.jpg"/>
+           I shall tell you how, in such a situation, I acquired what little ability I have in that way.
+       </p>
+       <p>There was another bookish lad in the town, John Collins by name, with whom I was intimately acquainted.  We sometimes disputed, and very fond we were of argument, and very desirous of confuting one another, which disputatious turn, by the way, is apt to become a very bad habit, making people often extremely disagreeable in company by the contradiction that is necessary to bring it into practice; and thence, besides souring and spoiling the conversation, is productive of disgusts and, perhaps enmities where you may have occasion for friendship.  I had caught it by reading my father's books of dispute about religion.  Persons of good sense, I have since observed, seldom fall into it, except lawyers, university men, and men of all sorts that have been bred at Edinborough.
+           
+       </p><p>A question was once, somehow or other, started between Collins and me, of the propriety of educating the female sex, and their abilities for study.  He was of opinion that it was improper, and that they were naturally unequal to it.  I took the contrary side, perhaps a little for dispute's sake.  He was naturally more eloquent, had a ready plenty of words; and sometimes, as I thought, bore me down more by his fluency than by the strength of his reasons. As we parted without settling the point, and were not to see 
+           <pb n="13" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p13.jpg"/>
+           one another again for some time, I sat down to put my arguments in writing, which I copied fair and sent to him. He answered, and I replied.  Three or four letters of a side had passed, when my father happened to find my papers and read them.  Without entering into the discussion, he took occasion to talk to me about the manner of my writing; observed that, though I had the advantage of my antagonist in correct spelling and  <ref target="a0026" corresp="n0026">pointing</ref> (which I ow'd to the printing-house), I fell far short in elegance of expression, in method and in perspicuity, of which he convinced me by several instances.  I saw the justice of his remark, and thence grew more attentive to the manner in writing, and determined to endeavor at improvement.
+           
+       </p><p>About this time I met with an odd volume of the <ref target="a0027" corresp="n0027"><hi rend="italic">Spectator</hi></ref>. It was <ref target="a0028" corresp="n0028">the third</ref>. I had never before seen any of them.  I bought it, read it over and over, and was much delighted with it.  I thought the writing excellent, and wished, if possible, to imitate it.  With this view I took some of the papers, and, making short hints of the sentiment in each sentence, laid them by a few days, and then, without looking at the book, try'd to compleat the papers again, by expressing each hinted sentiment at length, and as fully as it had been expressed before, in any suitable words that should come to hand.  Then I compared my <hi rend="italic">Spectator</hi> with the original, discovered some of my faults, and corrected them. But I found I wanted a stock of words, or a readiness in recollecting and using them, which I thought I should have acquired before that time if I had gone on making verses; since the continual occasion for words of the same import, but of different length, to suit the measure, or of different sound for the rhyme, would have laid me under a constant necessity of searching for variety, and also 
+           <pb n="14" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p14.jpg"/>
+           have tended to fix that variety in my mind, and make me master of it. Therefore I took some of the tales and turned them into verse; and, after a time, when I had pretty well forgotten the prose, turned them back again.  I also sometimes jumbled my collections of hints into confusion, and after some weeks endeavored to reduce them into the best order, before I began to form the full sentences and compleat the paper.  This was to teach me method in the arrangement of thoughts.  By comparing my work afterwards with the original, I discovered many faults and amended them; but I sometimes had the pleasure of fancying that, in certain particulars of small import, I had been lucky enough to improve the method or the language, and this encouraged me to think I might possibly in time come to be a tolerable English writer, of which I was extremely ambitious.  My time for these exercises and for reading was at night, after work or before it began in the morning, or on Sundays, when I contrived to be in the printing-house alone, evading as much as I could the common attendance on public worship which my father used to exact on me when I was under his care, and which indeed I still thought a duty, though I could not, as it seemed to me, afford time to practise it.
+           
+       </p><p>When about 16 years of age I happened to meet with a book, written by one Tryon, recommending <ref target="a0029" corresp="n0029">a vegetable diet</ref>. I determined to go into it.  My brother, being 
+           <pb n="15" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p15.jpg"/>
+           yet unmarried, did not keep house, but boarded himself and his apprentices in another family.  My refusing to eat flesh occasioned an inconveniency, and I was frequently chid for my singularity. I made myself acquainted with Tryon's manner of preparing some of his dishes, such as boiling potatoes or rice, making  <ref target="a0030" corresp="n0030">hasty pudding</ref>, and a few others, and then proposed to my brother, that if he would give me, weekly, half the money he paid for my board, I would board myself.  He instantly agreed to it, and I presently found that I could save half what he paid me.  This was an additional fund for buying books.  But I had another advantage in it.  My brother and the rest going from the printing-house to their meals, I remained there alone, and, despatching presently my light repast, which often was no more than a bisket or a slice of bread, a handful of raisins or a tart from the pastry-cook's, and a glass of water, had the rest of the time till their return for study, in which I made the greater progress, from that greater clearness of head and quicker apprehension which usually attend temperance in eating and drinking.
+           
+       </p><p>And now it was that, being on some occasion made asham'd of my ignorance in figures, which I had twice failed in learning when at school, I took <ref target="a0031" corresp="n0031">Cocker's book of Arithmetick</ref>, and went through the whole by myself with great ease.  I also read <ref target="a0032" corresp="n0032">Seller's and Shermy's books of Navigation</ref>, and became acquainted with the little geometry they contain; but never proceeded far in that science.  And I read about this time <ref target="s0033" corresp="n0033">Locke <hi rend="italic">On Human Understanding,</hi></ref> and <ref target="a0034" corresp="n0034">the <hi rend="italic">Art of Thinking,</hi> by Messrs. du Port Royal</ref>.
+           
+       </p><p>While I was intent on improving 
+           <pb n="16" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p16.jpg"/>
+           my language, I met with an English grammar (I think it was <ref target="a0035" corresp="n0035">Greenwood's)</ref>, at the end of which there were two little sketches of the arts of rhetoric and logic, the latter finishing with a specimen of a dispute in the Socratic method; and soon after I procur'd <ref target="a036" corresp="n0036">Xenophon's Memorable Things of Socrates</ref>, wherein there are many instances of the same method.  I was charm'd with it, adopted it, dropt my abrupt contradiction and positive argumentation, and put on the humble inquirer and doubter. And being then, from reading <ref target="a0037" corresp="n0037">Shaftesbury and Collins</ref>, become a real doubter in many points of our religious doctrine, I found this method safest for myself and very embarrassing to those against whom I used it; therefore I took a delight in it, practis'd it continually, and grew very artful and expert in drawing people, even of superior knowledge, into concessions, the consequences of which they did not foresee, entangling them in difficulties out of which they could not extricate themselves, and so obtaining victories that neither myself nor my cause always deserved.  I continu'd this method some few years, but gradually left it, retaining only the habit of expressing myself in terms of modest diffidence; never using, when I advanced any thing that may possibly be disputed, the words <hi rend="italic">certainly, undoubtedly,</hi> or any others that give the air of positiveness to an opinion; but rather say, I conceive or apprehend a thing to be so and so; it appears to me, or 
+           
+           <pb n="17" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p17.jpg"/>
+           <hi rend="italic">I should think it so or so,</hi> for such and such reasons; or ,<hi rend="italic">I imagine it to be so;</hi> or <hi rend="italic">it is so, if I am not mistaken</hi>.  This habit, I believe, has been of great advantage to me when I have had occasion to inculcate my opinions, and persuade men into measures that I have been from time to time engag'd in promoting; and, as the chief ends of conversation are to <hi rend="italic">inform</hi> or to be <hi rend="italic">informed,</hi> to <hi rend="italic">please</hi> or to <hi rend="italic">persuade,</hi> I wish well-meaning, sensible men would not lessen their power of doing good by a positive, assuming manner, that seldom fails to disgust, tends to create opposition, and to defeat every one of those purposes for which speech was given to us, to wit, giving or receiving information or pleasure.  For, if you would inform, a positive and dogmatical manner in advancing your sentiments may provoke contradiction and prevent a candid attention.  If you wish information and improvement from the knowledge of others, and yet at the same time express yourself as firmly fix'd in your present opinions, modest, sensible men, who do not love disputation, will probably leave you undisturbed in the possession of your error.  And by such a manner, you can seldom hope to recommend yourself in pleasing your hearers, or to persuade those whose concurrence you desire.<ref target="a0038" corresp="n0038">Pope says, judiciously</ref>:
+   </p>
+   <p>Men should be taught as if you taught them not,
+   And things unknown propos'd as things forgot,</p>
+       
+       <pb n="18" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p18.jpg"/>
+   <p> farther recommending it to us,</p>
+       <p>To speak tho' sure, with seeming Diffidence.       
+   </p></body>
             <back>
             <note xml:id="n0001" target="a0001" type="headnote" resp="editors.xml#JOB"><p>
                 
@@ -299,9 +368,165 @@
                 <p>Apprenticeship  in the American colonies had its roots in the practices of the English system, which dates back to the middle ages. One of the major pieces of legislation governing apprenticeship was the English Statute of Artificers (1563),  which required parents who did not otherwise provide for the education of their sons to bind them to a trade or the agricultural system. The seven year term, longer than the normal length of apprenticeship in France and Germany, “was designed to ensure English supremacy in handmade manufactures and to discourage the wandering and strolling that had characterized earlier periods of English life.”  Another aspect of English law and custom that influenced apprenticeship in the colonies was the English Poor Law (1601)  which required local authorities to bind poor or orphaned children into apprenticeship if their parents did not do so. Benjamin Franklin belonged to the class of apprentices who bound themselves “by their own free will and consent” to a master to learn his trade, not the apprentices involuntarily bound under the auspices of the Poor Law. </p>
                 <p>These English statutes applied to the American colonies in theory. However, these laws and customs depended on the medieval guild system for enforcement—a system which never developed in the colonies. Eighteenth-century colonial America did not have the deep pool of skilled laborers that characterized the guild system and had no enforcement mechanism to monitor quality of work, admit members to the status of journeyman or master, or standardize apprentice training.  In the colonies, “anyone could call himself a master artisan, and any such artisan could take an apprentice”—or many apprentices at once.  During Franklin’s boyhood in Boston, the real wages of artisans were falling and apprenticeship contracts often did not demand fees from parents, except for those in high-status crafts. It was guild enforcement that kept wages high and ensured quality craft in the English system, because it created a closed labor market—no artisan could work without permission from his guild.</p>
                 <p>In England, if an apprentice ran away from his master, there was an ironclad system in place to keep him from practicing his craft anywhere in the country. The guild system ensured that jurisdiction rules were enforced, and any new practitioner would have to be an approved guild member. In America, runaway penalties did not extend beyond the borders of each colony,  and, as Franklin’s narrative attests, the demand for skilled labor meant even a partially-trained apprentice would likely be hired, perhaps even with the status of a journeyman (though this label did not hold the weight it would in England).  If an American apprentice ran away, his master would circulate a description of the runaway with an offer of reward, and if returned, the apprentice would have to serve for a longer period.  The reward was the enforcement mechanism, meaning citizens might be on the lookout for apparent runaways.</p> 
-                <p>Technically, to be legal, an apprenticeship contract (called an “indenture”) needed to be registered with municipal authorities so it could be used as evidence in case of disputes. This was true even in the colonies.  However, the nature of indenture papers meant that possession of one’s half of the contract should have constituted evidence without consulting town records: “indenture”  papers were indented on both halves of the document so they could later be identified as one contract.  Benjamin Franklin’s original contract with his brother would probably have been properly registered—but the second set of indentures, which were secret, would only have been held by the master and the apprentice.  James probably could have proved Benjamin was his apprentice by comparing the two halves of the indenture, but once his brother was out of Boston, this means of redress was impractical at best. And of course, in attempting to regain his apprentice, James would have had to admit his real ownership of the Courant. --Natalie Thompson</p>
-            </note>
+                <p>Technically, to be legal, an apprenticeship contract (called an “indenture”) needed to be registered with municipal authorities so it could be used as evidence in case of disputes. This was true even in the colonies.  However, the nature of indenture papers meant that possession of one’s half of the contract should have constituted evidence without consulting town records: “indenture”  papers were indented on both halves of the document so they could later be identified as one contract.  Benjamin Franklin’s original contract with his brother would probably have been properly registered—but the second set of indentures, which were secret, would only have been held by the master and the apprentice.  James probably could have proved Benjamin was his apprentice by comparing the two halves of the indenture, but once his brother was out of Boston, this means of redress was impractical at best. And of course, in attempting to regain his apprentice, James would have had to admit his real ownership of the Courant. --Natalie Thompson</p></note>
+                
+                <note xml:id="n0025" target="a0025" type="editorial" resp="editors.xml#JOB">Neither of these poems has survived. But what Franklin was doing was a fairly typical thing in this period; newspapers were often filled with poems about recent events, particularly events as notable and spectacular as the two mentioned here.  The death by drowning of George Worthilake, his wife and daughter (Franklin misremembers this as having been two daughters) as they were returning from church by boat to the lighthouse that Worthilake was in charge of in Novenber 1716 became known as the "Lighthouse Tragedy." Edward Teach, the pirate known as Blackbeard, was killed in a firefight with ships from the Royal Navy off the coast of North Carolina on November 22, 1718. The "Grub Street-ballad-style" that Franklin laments using here was nothing to be ashamed of; many authors in this period wrote popular ballads published in the kind of popular journals that became associated with "Grub Street," the physical home of mass market printing in London.</note>
+                
+                <note xml:id="n0026" target="a0026" type="editorial" resp="editors.xml#JOB">punctuation</note>
+                
+                <note xml:id="n0027" target="a0027" type="editorial" resp="editors.xml#AM"><hi rend="italics">The Spectator</hi> was a newspaper created by Joseph Addison and Richard Steele that ran from March 3, 1711 to December 6, 1712. It consisted of a series of essays that were for the most part written by either Steele or Addison, but they assumed the viewpoint of the persona of “Mr. Spectator.” “Mr. Spectator” was a quiet observer of English society who commented on politics, fashion, and social issues through these essays, which were widely popular in both England and the colonies. They were read as models of good English style, and also as guides for civilized, middle-class behavior. Benjamin Franklin was influenced by <hi rend="italic">Spectator's</hi> prose style. And the  persona of "Silence Dogood" that he would use in his own periodical essays was clearly influenced by the silent "Mr. Spectator" of Addison and Steele's influential journal.</note>
+                
+                <note xml:id="n0028" target="a0028" type="editorial" resp="editors.xml#JOB">
+                    <p>Given Franklin's later interest in public finance, it is striking to see that the particular essay of the <hi rend="italic">Spectator</hi>that he remembers as his introduction to the series is a famous piece by Addison on the topic of "public credit." Here it is in its entirety.</p>
+                    <p>No. 3.       Saturday, March 3, 1711.</p>               
+                    <p>
+                    
+                    
+                    'Quoi quisque ferè studio devinctus adhæret:
+                    Aut quibus in rebus multùm sumus antè morati:
+                    Atque in quâ ratione fuit contenta magis mens;
+                    In somnis eadem plerumque videmur obire.'</p>
+                    
+                    <p>Lucr. L. 4.</p>
+                    
+                    
+                    <p>In one of my late Rambles, or rather Speculations, I looked into the
+                    great Hall where the Bank is kept, and was not a little pleased to
+                    see the Directors, Secretaries, and Clerks, with all the other Members
+                    of that wealthy Corporation, ranged in their several Stations, according
+                    to the Parts they act in that just and regular Oeconomy. This revived in
+                    my Memory the many Discourses which I had both read and heard,
+                    concerning the Decay of Publick Credit, with the Methods of restoring
+                    it, and which, in my Opinion, have always been defective, because they
+                    have always been made with an Eye to separate Interests and Party
+                    Principles.</p>
+                    
+                    <p>The Thoughts of the Day gave my Mind Employment for the whole Night, so
+                    that I fell insensibly into a kind of Methodical Dream, which disposed
+                    all my Contemplations into a Vision or Allegory, or what else the Reader
+                    shall please to call it.</p>
+                    
+                    <p>Methoughts I returned to the Great Hall, where I had been the Morning
+                    before, but to my Surprize, instead of the Company that I left there, I
+                    saw, towards the Upper-end of the Hall, a beautiful Virgin seated on a
+                    Throne of Gold. Her Name (as they told me) was _Publick Credit_. The
+                    Walls, instead of being adorned with Pictures and Maps, were hung with
+                    many Acts of Parliament written in Golden Letters. At the Upper end of
+                    the Hall was the _Magna Charta_, with the Act of Uniformity on
+                    the right Hand, and the Act of Toleration on the left. At the Lower
+                    end of the Hall was the Act of Settlement, which was placed full in
+                    the Eye of the Virgin that sat upon the Throne. Both the Sides of the
+                    Hall were covered with such Acts of Parliament as had been made for the
+                    Establishment of Publick Funds. The Lady seemed to set an unspeakable
+                    Value upon these several Pieces of Furniture, insomuch that she often
+                    refreshed her Eye with them, and often smiled with a Secret Pleasure, as
+                    she looked upon them; but at the same time showed a very particular
+                    Uneasiness, if she saw any thing approaching that might hurt them. She
+                    appeared indeed infinitely timorous in all her Behaviour: And, whether
+                    it was from the Delicacy of her Constitution, or that she was troubled
+                    with the Vapours, as I was afterwards told by one who I found was none
+                    of her Well-wishers, she changed Colour, and startled at everything she
+                    heard. She was likewise (as I afterwards found) a greater Valetudinarian
+                    than any I had ever met with, even in her own Sex, and subject to such
+                    Momentary Consumptions, that in the twinkling of an Eye, she would fall
+                    away from the most florid Complexion, and the most healthful State of
+                    Body, and wither into a Skeleton. Her Recoveries were often as sudden as
+                    her Decays, insomuch that she would revive in a Moment out of a wasting
+                    Distemper, into a Habit of the highest Health and Vigour.</p>
+                    
+                    <p>I had very soon an Opportunity of observing these quick Turns and
+                    Changes in her Constitution. There sat at her Feet a Couple of
+                    Secretaries, who received every Hour Letters from all Parts of the
+                    World; which the one or the other of them was perpetually reading to
+                    her; and according to the News she heard, to which she was exceedingly
+                    attentive, she changed Colour, and discovered many Symptoms of Health or
+                    Sickness.</p>
+                    
+                    <p>Behind the Throne was a prodigious Heap of Bags of Mony, which were
+                    piled upon one another so high that they touched the Ceiling. The Floor
+                    on her right Hand, and on her left, was covered with vast Sums of Gold
+                    that rose up in Pyramids on either side of her: But this I did not so
+                    much wonder at, when I heard, upon Enquiry, that she had the same Virtue
+                    in her Touch, which the Poets tell us a 'Lydian' King was formerly
+                    possessed of; and that she could convert whatever she pleased into that
+                    precious Metal.</p>
+                    
+                        <p>After a little Dizziness, and confused Hurry of Thought, which a Man
+                    often meets with in a Dream, methoughts the Hall was alarm'd, the Doors
+                    flew open, and there entered half a dozen of the most hideous Phantoms
+                    that I had ever seen (even in a Dream) before that Time. They came in
+                    two by two, though match'd in the most dissociable Manner, and mingled
+                    together in a kind of Dance. It would be tedious to describe their
+                    Habits and Persons; for which Reason I shall only inform my Reader that
+                    the first Couple were Tyranny and Anarchy, the second were Bigotry and
+                    Atheism, the third the Genius of a Common-Wealth, and a young Man of
+                    about twenty-two Years of Age, hose Name I could not learn. He had
+                    a Sword in his right Hand, which in the Dance he often brandished at the
+                    Act of Settlement; and a Citizen, who stood by me, whispered in my Ear,
+                    that he saw a Spunge in his left Hand. The Dance of so many jarring
+                    Natures put me in mind of the Sun, Moon, and Earth, in the 'Rehearsal',
+                    that danced together for no other end but to eclipse one another.</p>
+                    
+                            <p>The Reader will easily suppose, by what has been before said, that the
+                    Lady on the Throne would have been almost frightened to Distraction, had
+                    she seen but any one of these Spectres; what then must have been her
+                    Condition when she saw them all in a Body? She fainted and dyed away at
+                    the sight.</p>
+                    
+                    <p>'Et neq; jam color est misto candore rubori;
+                    Nec Vigor, et Vires, et quæ modò visa placebant;
+                    Nec Corpus remanet ...'</p>
+                    
+                        <p>Ov. 'Met.' Lib. 3.</p>
+                    
+                    
+                    <p>There was as great a Change in the Hill of Mony Bags, and the Heaps of
+                    Mony, the former shrinking, and falling into so many empty Bags, that I
+                    now found not above a tenth part of them had been filled with Mony. The
+                    rest that took up the same Space, and made the same Figure as the Bags
+                    that were really filled with Mony, had been blown up with Air, and
+                    called into my Memory the Bags full of Wind, which Homer tells us his
+                    Hero received as a present from Æolus. The great Heaps of Gold, on
+                    either side of the Throne, now appeared to be only Heaps of Paper, or
+                    little Piles of notched Sticks, bound up together in Bundles, like
+                    Bath-Faggots.</p>
+                    
+                    <p>Whilst I was lamenting this sudden Desolation that had been made before
+                    me, the whole Scene vanished: In the Room of the frightful Spectres,
+                    there now entered a second Dance of Apparitions very agreeably matched
+                    together, and made up of very amiable Phantoms. The first Pair was
+                    Liberty, with Monarchy at her right Hand: The Second was Moderation
+                    leading in Religion; and the third a Person whom I had never seen,
+                    with the genius of _Great Britain_. At their first Entrance the
+                    Lady reviv'd, the Bags swell'd to their former Bulk, the Piles of
+                    Faggots and Heaps of Paper changed into Pyramids of Guineas: And for
+                    my own part I was so transported with Joy, that I awaked, tho' I must
+                    confess I would fain have fallen asleep again to have closed my Vision,
+                    if I could have done it.</p>
+                </note>
+                
+                <note xml:id="n0029" target="a0029" type="editorial" resp="editors.xml#JOB">Thomas Tryon's <hi rend="italic">The Way to Health, Long Life, and Happiness</hi>, <graphic url="https://s3.amazonaws.com/lic-assets-staging/Franklin/Thomas_Tryon.jpg" style="float:left" width="300px"/>(Source: Wikimedia Commons) published in 1691, advocated a vegetarian diet. Which was unusual in this period; vegetarianism was rare, and it cannot have been easy to get enough nutrition through a vegetarian diet in colonial New England in this period, given the difficulty of finding fresh vegetables in the winter season.</note>
+                
+                <note xml:id="n0030" target="a0030" type="editorial" resp="editors.xml#JOB">Hasty pudding was a grain porridge; in the American colonies, it was usually made of corn, but could also be made of wheat, oats, or some other grain.</note>
+                
+                <note xml:id="n0031" target="a0031" type="editorial" resp="editors.xml#JOB">Edward Cocker's textbook, first published in 1677 under the title <hi rend="italic">Cocker's Arithmetick: being a plain and familiar method suitable to the meanest capacity for the full understanding of that incomparable art, as it is now taught by the ablest school-masters in city and country</hi>, and then republished under various titles for decades to come became the standard book for learning basic arithmetic in the eighteenth-century Anglophone world. It would have been comparatively easy for Franklin to have come across a copy of this book, which went through scores of editions.</note>
+                
+                <note xml:id="n0032" target="a0032" type="editorial" resp="editors.xml#JOB"><hi rend="italic">Practical Navigation: or an Introduction to the Whole Art</hi>first published in London in 1669, was a widely-reprinted text in the period; its author, John Seller (1632-1697) was a mapmaker and cartographer who was awarded with the title of "hydrophapher to the king." Samuel Sturmy (1633-1669) was the author of <hi rend="italic">The Mariner's Magazine</hi>, first published in 1669 and, like Seller's book, reprinted several times in the seventeenth and eighteenth centuries. This was a large and ambitious text, with sections on navigation and math, but also on things like nautical weaponry.</note>
+                
+                <note xml:id="n0033" target="a0033" type="editorial" resp="editors.xml#AM">The English philosopher John Locke (1632-1704) published <hi rend="italic">An Essay Concerning Human Understanding</hi> in 1690. Locke's philosophical skepticism and strong endorsement of religious toleration seem to have found a strong positive response in Franklin. Locke's book is still considered a foundational text in the philosophical tradition of English empiricism.</note>
+                
+                <note xml:id="n0034" target="a0034" type="editorial" resp="editors.xml#AM"><hi rend="italic">Logic, or, The Art of Thinking</hi> written by Antoine Arnauld and Pierre Nicole, was published in French in 1662, and soon thereafter translated into English and other languages. Known familiarly as the "Port Royal Logic," this, like Locke's book, was a highly influential text for centuries, and is still read by historians of philosophy. Source: https://plato.stanford.edu/entries/port-royal-logic/</note>
+                
+                <note xml:id="n0035" target="a0035" type="editorial" resp="editors.xml#JOB">The book that Franklin thinks that he is remembering is James Greenwood's <hi rend="italics">An Essay towards a Practical English Grammar</hi>, first published in 1711. But he is probably misremembering here, since that book does not have the Socratic dialogue to which he refers. He is more likely think of <hi rend="italic">A Grammar of the English Tongue</hi>, published anonymously but written by Charles Gildon in 1712. That book conclues with an essay called "Of the Socratic Method in Disputing," that describes and then models a method of debating controversial topics by means of open-ended, non-confrontational questions. Franklin says that he took this kind of method to heart, training himself to handle disputes by avoiding dogmatic statements of his own position and instead asking careful questions to learn more the positions of others.</note>
+                
+                <note xml:id="n0036" target="a0036" type="editorial" resp="editors.xml#AM">Xenophon (430-354 B.C.E.) was an ancient Greek historian whose writings included the "Memorabilia," a text containing many Socratic-style dialogues. Source: http://www.iep.utm.edu/xenophon/</note>
+                
+                <note xml:id="n0037" target="a0037" type="editorial" resp="editors.xml#JOB">Franklin is referring to works by Anthony Ashley Cooper, the earl of Shaftesbury and Anthony Collins. Both authors were well known in this period for their philosophical skepticism and their classification as "deists," that is, their belief that although a deity of some sort existed and had created the known universe, he, or perhaps better, it did not trouble himself much in the everyday doings of that creation.</note>
+                
+                <note xml:id="n0038" target="a0038" type="editorial" resp="editors.xml#JOB">These lines are from the 1711 poem "An Essay on Criticism" by Alexander Pope, though Franklin slightly misquotes, probably relying on his memory.</note>
             </back>
     
 </text>
 </TEI>
+
+
