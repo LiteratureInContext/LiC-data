@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="finch-nightingale">
    
-   <!--TEI Header BEGINS-->
+   <!-- TEI Header BEGINS -->
    <teiHeader xml:lang="en"> <!--BEGINS File Description -->
       
-      <fileDesc> <!--BEGINS File Description -->
+      <fileDesc> <!-- BEGINS File Description! -->
              <titleStmt>
                       <title type="main">"To the Nightingale"</title>
                       <author>
@@ -92,8 +92,6 @@
                                   digital edition uses the 1714 printing by Barber, housed in the Library of
                                   Congress. This 1714 printing is a reissue of the 1713 editions with a new
                                   title page. All page images are sourced from the Library of Congress.</note>
-                               
-                             
                                
                             </imprint>
                             <imprint>
@@ -213,6 +211,7 @@
          <change when="2018-06-15" who="editors.xml#TH">Updated XML</change>
          <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
          <change when="2019-01-25" who="editors.xml#TH">Validated</change>
+         <change when="2019-04-16" who="editors.xml#TH">Removed sample authorial note, worked on facs and note images references</change>
       </revisionDesc>
       
    </teiHeader>
@@ -224,7 +223,7 @@
    <text>
       <front>
          <titlePage>
-            <pb n="[titlepage]" facs="images/TP-1714.jpg"/>
+            <pb n="[titlepage]" facs="pageImages/199.jpg"/>
             <titlePart>POEMS <lb/></titlePart>
             <titlePart>ON<lb/> Several Occasions, <hi rend="italic">viz.</hi>.<lb/>
               [...]</titlePart>
@@ -245,7 +244,7 @@
       </front>
       <body>
          <div type="poem">
-            <pb n="200" facs="images/200.jpg"/>
+            <pb n="200" facs="pageImages/200.jpg"/>
             <head type="title"><hi rend="italic">To the </hi><ref target="a002" corresp="n002">NIGHTINGALE</ref> .</head>
             <lg type="couplets" met="iambic pentameter, iambic tetrameter, catalectic trochaic tetrameter">
                <l n="1">EXert thy Voice, Sweet Harbinger of Spring</l>
@@ -256,7 +255,7 @@
                <l n="5" rend="indent">Free as thine shall be my Song;</l>
                <l n="6" rend="indent">As thy Musick, short, or long.</l>
                <l n="7">Poets, wild as thee, were born,</l>
-               <pb n="201" facs="images/201.jpg"/>
+               <pb n="201" facs="pageImages201.jpg"/>
                <l n="8" rend="indent">Pleasing best when unconfin'd,</l>
                <l n="9" rend="indent">When to Please is least design'd,</l>
                <l n="10">Soothing but their Cares to rest;</l>
@@ -277,9 +276,9 @@
                   shake thy Throat.</l>
                <l n="24">Hark! Division now she tries;</l>
                <l n="25">Yet as far the Muse outflies </l>
-               <pb n="202" facs="images/202.jpg"/>
+               <pb n="202" facs="pageImages202.jpg"/>
                <l n="26" rend="indent">Cease then, prithee, cease thy Tune;</l>
-               <l n="27" rend="indent"><ref target="a007" corresp="n007">Trifler</ref>, wilt thou sing till <hi rend="italic">June?</hi></l>
+               <l n="27" rend="indent">Trifler, wilt thou sing till <hi rend="italic">June?</hi></l>
                <l n="28">Till thy Bus'ness all lies waste,</l>
                <l n="29">And the Time of Building's past !</l>
                <l n="30" rend="indent">Thus we Poets that have Speech,</l>
@@ -291,7 +290,7 @@
             </lg>
             <note xml:id="n001" target="a001" type="headnote" resp="editors.xml#JW">
                <p><graphic
-                  url="https://collectionimages.npg.org.uk/large/mw06861/Anne-Finch-Countess-of-Winchilsea.jpg"
+                  url="notes/Anne-Finch-Countess-of-Winchilsea.jpg"
                   style="float:right" width="300px"/> Anne Finch, Countess of Winchilsea,
                   was born in April 1661 to Anne Haselwood and Sir William Kingsmill. At age
                   twenty-one she was appointed maid of honor to <ref
@@ -411,8 +410,8 @@
                improvisation. For more information, please see "meter and time signatures" in the
                <ref target=" http://openmusictheory.com/meter.html">Open Music Theory</ref>
                textbook. </p></note>
-            <note xml:id="n007" target="a007" type="authorial" place="bottom">Here is a hypothetical author's note included in the original printing</note>
          </div>
+         
       </body>
    </text>
 </TEI>

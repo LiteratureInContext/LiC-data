@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="franklin-autobiograpy">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="franklin-autobiography">
     <teiHeader xml:lang="en">
     <fileDesc>
         <titleStmt>
             <title type="main">The Autobiography of Benjamin Franklin</title>
             <author>
                 <persName type="lccn" key="n50016726">
+                    <name>
                     <surname>Franklin</surname>
                     <forename>Benjamin</forename>
+                     </name>
                 </persName>
             </author>
             <editor>
                 <persName type="orcid" key="0000-0001-6453-8721">
                     <name ref="editors.xml#JOB">
+<<<<<<< HEAD
                         <forename>John</forename>John 
                         <surname>O'Brien</surname></name>
+=======
+                        <forename>John</forename> 
+                        <surname>O'Brien</surname>
+                    </name>
+>>>>>>> branch 'development' of https://github.com/LiteratureInContext/LiC-data.git
                 </persName>
             </editor>
             <respStmt> 
                     <resp>Transcription, correction, editorial commentary, and markup</resp>
+<<<<<<< HEAD
                     <name>Faculty, librarians, and students of the University of Virginia: </name>
+=======
+                    <name>Faculty, librarians, and students of the University of Virginia </name>
+>>>>>>> branch 'development' of https://github.com/LiteratureInContext/LiC-data.git
                     <name ref="editors.xml#EF">Ellen French</name>
                     <name ref="editors.xml#AM">Andrew Michael</name>
                     <name ref="editors.xml#NT">Natalie Thompson</name>
@@ -48,18 +60,29 @@
             </authority>
         </publicationStmt>
             <sourceDesc>
-                        <msDesc>
-                            <msIdentifier>
-                                <settlement>San Marino, California</settlement>
-                                <repository>Huntington</repository>
-                            </msIdentifier>
-                            <msContents>
-                                <msItem>
-                                <author>Franklin, Benjamin</author>
-                                <title>The Autobiography of Benjamin Franklin</title>
-                                </msItem>
-                            </msContents>
-                        </msDesc>
+                <bibl>
+                    Our text is based on the University of Virginia Library’s Electronic Text Center’s digital edition. This was produced from the print edition edited in 1909 by Charles Eliot and published by P. F. Collier and Son in New York. The page images are from the original manuscript that is held at the Huntington Library in San Marino, California.
+                </bibl>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n50027909">
+                                <name>
+                                    <forename>Benjamin</forename>
+                                    <surname>Franklin</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title type="main">The Autobiography of Benjamin Franklin</title>
+                        <title type="sub">Gustavus Vassa, the African. Written by himself</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="country" key="usa">United States of America</placeName>
+                            </pubPlace>
+                            <publisher>P. F. Collier and Son</publisher>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
             </sourceDesc>
     </fileDesc>
         <profileDesc>  
@@ -130,7 +153,7 @@
 </teiHeader>
 <text>
     <front>
-        <pb n="Title Page" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/franklin-title-page.jpg"/>
+        <pb n="Title Page" facs="pageImages/franklin-title-page.jpg"/>
             <titlePage>
                 <titlePart><ref target="a0001" corresp="n0001">The life of</ref><lb/></titlePart>
                 <titlePart>Benjamin Franklin<lb/></titlePart>
@@ -138,7 +161,7 @@
             </titlePage>   
     </front>
    <body>
-            <pb n="1" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p1.jpg"/>
+            <pb n="1" facs="pageImages/Franklin-p1.jpg"/>
         <p>TWYFORD, at the <ref target="a0002" corresp="n0002">Bishop of St. Asaph's,</ref><lb/>
             1771.<lb/>	
         </p>
@@ -151,7 +174,7 @@
         <p>And now I speak of thanking God, I desire with all humility to acknowledge that I owe the mentioned happiness of my past life to His kind providence, which lead me to the means I used and gave them success. My belief of this induces me to <hi rend="italic">hope,</hi> though I must not <hi rend="italic">presume,</hi> that the same goodness will still be exercised toward me, in continuing that happiness, or enabling me to bear a fatal reverse, which I may experience as others have done: the complexion of my future fortune being known to Him only in whose power it is to bless to us even our afflictions.
         </p>
         <p>The notes one of my uncles (who had the same kind of curiosity in collecting family anecdotes) once put into my hands, furnished me with several particulars relating to our ancestors. From these notes I learned that the family had lived in the same village, Ecton, in Northamptonshire, for three hundred years, and how much longer he knew not (perhaps from the time when the name of <ref target="a0006" corresp="n0006">Franklin</ref>, that before was the name of an order of people, was assumed by them as a surname when others took surnames all over the kingdom), on a <ref target="a0007" corresp="n0007">freehold</ref> of about thirty acres, aided by the smith's business, which had continued in the family till his time, the eldest son being always bred to that business; a custom which he and my father followed as to their eldest sons. When I searched the registers at Ecton, I found an account of their births, marriages and burials from the year 1555 only, there being no registers kept in that parish at any time preceding. By that register I perceived that I was the youngest son of the youngest son for five generations back. My grandfather Thomas, who was born in 1598, lived at Ecton till he grew too old to follow business longer, when he went to live with his son John, a dyer at Banbury, in Oxfordshire, with whom my father served an apprenticeship. There my grandfather 
-            <pb n="2" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p2.jpg"/>
+            <pb n="2" facs="pageImages/Franklin-p2.jpg"/>
             died and lies buried. We saw his gravestone in 1758. His eldest son Thomas lived in the house at Ecton, and left it with the land to his only child, a daughter, who, with her husband, one Fisher, of Wellingborough, sold it to Mr. Isted, now lord of the manor there. My grandfather had four sons that grew up, viz.: Thomas, John, Benjamin and Josiah.  I will give you what account I can of them, at this distance from my papers, and if these are not lost in my absence, you will among them find many more particulars.
         </p>
     <p>Thomas was bred a smith under his father; but, being ingenious, and encouraged in learning (as all my brothers were) by an Esquire Palmer, then the principal gentleman in that parish, he qualified himself for the business of <ref target="a0008" corresp="n0008">scrivener</ref>; became a considerable man in the county; was a chief mover of all public-spirited undertakings for the county or town of Northampton, and his own village, of which many instances were related of him; and much taken notice of and patronized by the then Lord Halifax. <ref target="a0009" corresp="n0009">He died in 17O2, January 6, old style, just four years to a day before I was born.</ref>  The account we received of his life and character from some old people at Ecton, I remember, struck you as something extraordinary, from its similarity to what you knew of mine.
@@ -159,7 +182,7 @@
         <p>"Had he died on the same day," you said, "one might have supposed a transmigration."
         </p>
         <p>John was bred a dyer, I believe of woolens. Benjamin was bred a silk dyer, serving an apprenticeship at London. 
-            <pb n="3" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p3.jpg"/>
+            <pb n="3" facs="pageImages/Franklin-p3.jpg"/>
             
             He was an ingenious man.  I remember him well, for when I was a boy he came over to my father in Boston, and lived in the house with us some years. He lived to a great age. His grandson, Samuel Franklin, now lives in Boston. He left behind him two quarto volumes, <ref target="a0100" corresp="n0100">MS.</ref>, of his own poetry, consisting of little occasional pieces addressed to his friends and relations, of which the following, sent to me, is a specimen.
         </p>
@@ -202,12 +225,12 @@
            He had formed a short-hand of his own, which he taught me, but, never practising it, I have now forgot it. I was named after this uncle, there being a particular affection between him and my father. He was very pious, a great attender of sermons of the best preachers, which he took down in his short-hand, and had with him many volumes of them. He was also much of a politician; too much, perhaps, for his station. There fell lately into my hands, in London, a collection he had made of all the principal pamphlets, relating to public affairs, from 1641 to 1717; many of the volumes are wanting as appears by the numbering, but there still remain <ref target="a0011" corresp="n0011">eight volumes in folio, and twenty-four in quarto and in octavo.</ref> A dealer in old books met with them, and knowing me by my sometimes buying of him, he brought them to me. It seems my uncle must have left them here, when he went to America, which was about fifty years since. There are many of his notes in the margins.
         </p>
        <p>This obscure family of ours was early in the Reformation, and continued Protestants through the reign 
-           <pb n="4" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p4.jpg"/>
+           <pb n="4" facs="pageImages/Franklin-p4.jpg"/>
            
            of Queen Mary, when they were sometimes in danger of trouble on account of their zeal <ref target="a0012" corresp="n0012">against popery</ref>. They had got an <ref target="a0013" corresp="n0013">English Bible</ref>, and to conceal and secure it, it was fastened open with tapes under and within the cover of a joint-stool. When my great-great-grandfather read it to his family, he turned up the joint-stool upon his knees, turning over the leaves then under the tapes. One of the children stood at the door to give notice if he saw the apparitor coming, who was an officer of the spiritual court. In that case the stool was turned down again upon its feet, when the Bible remained concealed under it as before. This anecdote I had from my uncle Benjamin. The family continued all of the Church of England till about the end of Charles the Second's reign, when some of the ministers that had been <ref target="a0014" corresp="n0014">outed for non-conformity holding conventicles</ref> in Northamptonshire, Benjamin and Josiah adhered to them, and so continued all their lives: the rest of the family remained with the Episcopal Church.
         </p>
         <p>Josiah, my father, married young, and carried his wife with three children into New England, about 1682. The conventicles having been forbidden by law, and frequently disturbed, induced some considerable men of his acquaintance to remove to that country, and he was prevailed with to accompany them thither, where they expected to enjoy their mode of religion with freedom. By the same wife he had four children more born there, and by a second 
-            <pb n="5" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p5.jpg"/>
+            <pb n="5" facs="pageImages/Franklin-p5.jpg"/>
             wife ten more, in all seventeen; of which I remember thirteen sitting at one time at his table, who all grew up to be men and women, and married; I was the youngest son, and the youngest child but two, and was born in Boston, New England. My mother, the second wife, was Abiah Folger, daughter of <ref target="a0015" corresp="n0015">Peter Folger</ref>, one of the first settlers of New England, of whom honorable mention is made by <ref target="a0016" corresp="n0016">Cotton Mather</ref> in his church history of that country, entitled Magnalia Christi Americana, as <hi rend="italic">"a godly, learned Englishman,"</hi> if I remember the words rightly.  I have heard that he wrote sundry small occasional pieces, but only one of them was printed, which I saw now many years since. It was written in 1675, in the home-spun verse of that time and people, and addressed to those then concerned in the government there. It was in favor of liberty of conscience, and in behalf of the Baptists, Quakers, and other sectaries that had been under persecution, ascribing the Indian wars, and other distresses that had befallen the country, to that persecution, as so many judgments of God to punish so heinous an offense, and exhorting a repeal of those uncharitable laws.
             
             The whole appeared to me as written with a good deal of decent plainness and manly freedom.  The six concluding lines I remember, though I have forgotten the two first of the stanza; but the purport of them was, that his censures proceeded from good-will, and, therefore, he would be known to be the author.
@@ -218,16 +241,16 @@
                 <l>     Without offense your real friend,</l>
                 <l>        It is Peter Folgier.</l></lg></q>
         </p><p><ref target="a0017" corresp="n0017">My elder brothers were all put apprentices to different trades.  I was put to the grammar-school at eight years of age, my father intending to devote me, as the tithe of his sons, to the service of the Church.</ref> My early readiness in learning to read (which must have been very early, as I do not remember when I could not read), and the opinion of all his friends, that I should certainly make a good scholar, encouraged him in this purpose of his.  My uncle Benjamin, too, approved of it, and proposed to give me all his short-hand volumes of sermons, I suppose as a stock to set up with, if I would learn his character.  I continued, however, at the grammar-school not quite one year, though in that time I had risen gradually from the middle of the class of that year to be the head of it, and farther was removed into the next class above it, in order to go with that into the third at the end of the year. But my father, in the meantime, from a view of the expense of a college education, which having so large a family he could not well afford, and the mean living many so educated were afterwards able to obtain reasons that be gave to his friends in my hearing altered his first intention, took me from the grammar-school, and sent me to a school for writing and arithmetic, kept by a then famous man, <ref target="a0018" corresp="n0018">Mr. George Brownell</ref>, very successful in his 
-       <pb n="6" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p6.jpg"/>
+       <pb n="6" facs="pageImages/Franklin-p6.jpg"/>
        profession generally, and that by mild, encouraging methods. Under him I acquired fair writing pretty soon, but I failed in the arithmetic, and made no progress in it. At ten years old I was taken home to assist my father in his business, which was that of a tallow-chandler and sope-boiler; a business he was not bred to, but had assumed on his arrival in New England, and on finding his dying trade would not maintain his family, being in little request. Accordingly, I was employed in cutting wick for the candles, filling the dipping mold and the molds for cast candles, attending the shop, going of errands, etc.
         </p>
         <p><ref target="a0019" corresp="n0019">I disliked the trade, and had a strong inclination for the sea, but my father declared against it;</ref> however, living near the water, I was much in and about it, learnt early to swim well, and to manage boats; and when in a boat or canoe with other boys, I was commonly allowed to govern, especially in any case of difficulty; and upon other occasions I was generally a leader among the boys, and sometimes led them into scrapes, of which I will mention one instance, as it shows an early projecting public spirit, tho' not then justly conducted.
         </p>
         <p>There was a salt-marsh that bounded part of the mill-pond, on the edge of which, at high water, we used to stand to fish for minnows.  By much trampling, we had made it a mere quagmire.  My proposal was to build a wharff there fit for us to stand upon, and I showed my comrades a large heap of stones, which were intended for a new house near the marsh, and which would very well suit 
-            <pb n="7" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p7.jpg"/>
+            <pb n="7" facs="pageImages/Franklin-p7.jpg"/>
             our purpose. Accordingly, in the evening, when the workmen were gone, I assembled a number of my play-fellows, and working with them diligently like so many <ref target="a0020" corresp="n0020">emmets</ref>, sometimes two or three to a stone, we brought them all away and built our little wharff.  The next morning the workmen were surprised at missing the stones, which were found in our wharff.  Inquiry was made after the removers; we were discovered and complained of; several of us were corrected by our fathers; and though I pleaded the usefulness of the work, mine convinced me that nothing was useful which was not honest.
         </p><p>I think you may like to know something of his person and character.  He had an excellent constitution of body, was of middle stature, but well set, and very strong; he was ingenious, could draw prettily, was skilled a little in music, and had a clear pleasing voice, so that when he played psalm tunes on his violin and sung withal, as he sometimes did in an evening after the business of the day was over, it was extremely agreeable to hear.  He had a mechanical genius too, and, on occasion, was very handy in the use of other tradesmen's tools; but his great excellence lay in a sound understanding and solid judgment in prudential matters, both in private and publick affairs.  In the latter, indeed, he was never employed, the numerous family he had to educate and the straitness of his circumstances keeping him close to his trade; but I remember well his being frequently visited by leading people, who consulted him for his opinion in affairs of the town or of the church he belonged to, and showed a good deal of respect for his judgment 
-       <pb n="8" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p8.jpg"/>
+       <pb n="8" facs="pageImages/Franklin-p8.jpg"/>
        and advice: he was also much consulted by private persons about their affairs when any difficulty occurred, and frequently chosen an arbitrator between contending parties.
         </p><p>At his table he liked to have, as often as he could, some sensible friend or neighbor to converse with, and always took care to start some ingenious or useful topic for discourse, which might tend to improve the minds of his children.  By this means he turned our attention to what was good, just, and prudent in the conduct of life; and little or no notice was ever taken of what related to the victuals on the table, whether it was well or ill dressed, in or out of season, of good or bad flavor, preferable or inferior to this or that other thing of the kind, so that I was bro't up in such a perfect inattention to those matters as to be quite indifferent what kind of food was set before me, and so unobservant of it, that to this day if I am asked I can scarce tell a few hours after dinner what I dined upon.  This has been a convenience to me in travelling, where my companions have been sometimes very unhappy for want of a suitable gratification of their more delicate, because better instructed, tastes and appetites.
             
@@ -258,20 +281,33 @@
             J.F. born 1655, died 1744, AEtat 89.<lb/>
             A.F. born 1667, died 1752, 85.<lb/>
             
+<<<<<<< HEAD
             <pb n="9" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p9.jpg"/>
+=======
+            <pb n="9" facs="pageImages/Franklin-p9.jpg"/>
+>>>>>>> branch 'development' of https://github.com/LiteratureInContext/LiC-data.git
             
         </p><p>By my rambling digressions I perceive myself to be grown old.  I us'd to write more methodically.  But one does not dress for private company as for a publick ball.  'Tis perhaps only negligence.
             
+<<<<<<< HEAD
         </p><p>To return: I continued thus employed in my father's business for two years, that is, till I was twelve years old; and my brother John, who was bred to that business, having left my father, married, and set up for himself at Rhode Island, there was all appearance that I was destined to supply his place, and become a tallow-chandler.  But my dislike to the trade continuing, my father was under apprehensions that if he did not find one for me more agreeable, I should break away and get to sea, as his son Josiah had done, to his great vexation.  He therefore sometimes took me to walk with him, and see joiners, bricklayers, turners, braziers, etc., at their work, that he might observe my inclination, and endeavor to fix it on some trade or other on land.  It has ever since been a pleasure to me to see good workmen handle their tools; and it has been useful to me, having learnt so much by it as to be able to do little jobs myself in my house when a workman could not readily be got, and to construct little machines <pb n="10" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p10.jpg"/>for my experiments, while the intention of making the experiment was fresh and warm in my mind.  My father at last fixed upon the cutler's trade, and my uncle Benjamin's son Samuel, who was bred to that business in London, being about that time established in Boston, I was sent to be with him some time on liking.  But his expectations of a fee with me displeasing my father, I was taken home again.
+=======
+        </p><p>To return: I continued thus employed in my father's business for two years, that is, till I was twelve years old; and my brother John, who was bred to that business, having left my father, married, and set up for himself at Rhode Island, there was all appearance that I was destined to supply his place, and become a tallow-chandler.  But my dislike to the trade continuing, my father was under apprehensions that if he did not find one for me more agreeable, I should break away and get to sea, as his son Josiah had done, to his great vexation.  He therefore sometimes took me to walk with him, and see joiners, bricklayers, turners, braziers, etc., at their work, that he might observe my inclination, and endeavor to fix it on some trade or other on land.  It has ever since been a pleasure to me to see good workmen handle their tools; and it has been useful to me, having learnt so much by it as to be able to do little jobs myself in my house when a workman could not readily be got, and to construct little machines <pb n="10" facs="pageImages/Franklin-p10.jpg"/>for my experiments, while the intention of making the experiment was fresh and warm in my mind.  My father at last fixed upon the cutler's trade, and my uncle Benjamin's son Samuel, who was bred to that business in London, being about that time established in Boston, I was sent to be with him some time on liking.  But his expectations of a fee with me displeasing my father, I was taken home again.
+>>>>>>> branch 'development' of https://github.com/LiteratureInContext/LiC-data.git
             
         </p><p>From a child I was fond of reading, and all the little money that came into my hands was ever laid out in books. Pleased with the Pilgrim's Progress, my first collection was of John Bunyan's works in separate little volumes.  I afterward sold them to enable me to buy <ref target="a0021" corresp="n0021">R. Burton's Historical Collections</ref>; they were small chapmen's books, and cheap, 40 or 50 in all.  My father's little library consisted chiefly of books in polemic divinity, most of which I read, and have since often regretted that, at a time when I had such a thirst for knowledge, more proper books had not fallen in my way since it was now resolved I should not be a clergyman.  Plutarch's Lives there was in which I read abundantly, and I still think that time spent to great advantage. There was also a book of De Foe's, called an <ref target="a0022" corresp="n0022">Essay on Projects</ref>, and another of Dr. Mather's, called <ref target="a0023" corresp="n0023">Essays to do Good</ref>, which perhaps gave me a turn of thinking that had an influence on some of the principal future events of my life.
             
         </p><p>This bookish inclination at length determined my father to make me a printer, though he had already one son (James) of that profession.  In 1717 my brother James returned from England with a press and letters to set up his business in Boston.  I liked it much better than that of my father, but still 
+<<<<<<< HEAD
             <pb n="11" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p11.jpg"/>
+=======
+            <pb n="11" facs="pageImages/Franklin-p11.jpg"/>
+>>>>>>> branch 'development' of https://github.com/LiteratureInContext/LiC-data.git
             
             had a hankering for the sea.  To prevent the apprehended effect of such an inclination, my father was impatient to have me bound to my brother.  I stood out some time, but at last was persuaded, and signed the indentures when I was yet but twelve years old.  I was to serve as an apprentice till I was <ref target="a0024" corresp="n0024">twenty-one years of age</ref>, only I was to be allowed journeyman's wages during the last year.  In a little time I made great proficiency in the business, and became a useful hand to my brother.  I now had access to better books.  An acquaintance with the apprentices of booksellers enabled me sometimes to borrow a small one, which I was careful to return soon and clean. Often I sat up in my room reading the greatest part of the night, when the book was borrowed in the evening and to be returned early in the morning, lest it should be missed or wanted.
         </p>
        <p>And after some time an ingenious tradesman, Mr. Matthew Adams, who had a pretty collection of books, and who frequented our printing-house, took notice of me, invited me to his library, and very kindly lent me such books as I chose to read.  I now took a fancy to poetry, and made some little pieces; my brother, thinking it might turn to account, encouraged me, and put me on composing occasional ballads. One was called <hi rend="italic">The Lighthouse Tragedy,</hi> and contained an account of the drowning of Captain Worthilake, with his two daughters: the other was a sailor's song, on the taking of <hi rend="italic">Teach</hi> (or Blackbeard) the pirate.<ref target="a0025" corresp="n0025">They were wretched stuff</ref>, in the Grub-street-ballad style; and when they were printed he sent me about the town to sell them. The first sold wonderfully, the event being recent, having made a great noise.  This flattered my vanity; but my father discouraged me by ridiculing my performances, and telling me verse-makers were generally beggars.  So I escaped being a poet, most probably a very bad one; but as prose writing bad been of great use to me in the course of my life, and was a principal means of my advancement, 
+<<<<<<< HEAD
            <pb n="12" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p12.jpg"/>
            I shall tell you how, in such a situation, I acquired what little ability I have in that way.
        </p>
@@ -302,19 +338,51 @@
    And things unknown propos'd as things forgot,</p>
        
        <pb n="18" facs="https://s3.amazonaws.com/lic-assets-staging/Franklin/Franklin-p18.jpg"/>
+=======
+           <pb n="12" facs="pageImages/Franklin-p12.jpg"/>
+           I shall tell you how, in such a situation, I acquired what little ability I have in that way.
+       </p>
+       <p>There was another bookish lad in the town, John Collins by name, with whom I was intimately acquainted.  We sometimes disputed, and very fond we were of argument, and very desirous of confuting one another, which disputatious turn, by the way, is apt to become a very bad habit, making people often extremely disagreeable in company by the contradiction that is necessary to bring it into practice; and thence, besides souring and spoiling the conversation, is productive of disgusts and, perhaps enmities where you may have occasion for friendship.  I had caught it by reading my father's books of dispute about religion.  Persons of good sense, I have since observed, seldom fall into it, except lawyers, university men, and men of all sorts that have been bred at Edinborough.
+           
+       </p><p>A question was once, somehow or other, started between Collins and me, of the propriety of educating the female sex, and their abilities for study.  He was of opinion that it was improper, and that they were naturally unequal to it.  I took the contrary side, perhaps a little for dispute's sake.  He was naturally more eloquent, had a ready plenty of words; and sometimes, as I thought, bore me down more by his fluency than by the strength of his reasons. As we parted without settling the point, and were not to see 
+           <pb n="13" facs="pageImages/Franklin-p13.jpg"/>
+           one another again for some time, I sat down to put my arguments in writing, which I copied fair and sent to him. He answered, and I replied.  Three or four letters of a side had passed, when my father happened to find my papers and read them.  Without entering into the discussion, he took occasion to talk to me about the manner of my writing; observed that, though I had the advantage of my antagonist in correct spelling and  <ref target="a0026" corresp="n0026">pointing</ref> (which I ow'd to the printing-house), I fell far short in elegance of expression, in method and in perspicuity, of which he convinced me by several instances.  I saw the justice of his remark, and thence grew more attentive to the manner in writing, and determined to endeavor at improvement.
+           
+       </p><p>About this time I met with an odd volume of the <ref target="a0027" corresp="n0027"><hi rend="italic">Spectator</hi></ref>. It was <ref target="a0028" corresp="n0028">the third</ref>. I had never before seen any of them.  I bought it, read it over and over, and was much delighted with it.  I thought the writing excellent, and wished, if possible, to imitate it.  With this view I took some of the papers, and, making short hints of the sentiment in each sentence, laid them by a few days, and then, without looking at the book, try'd to compleat the papers again, by expressing each hinted sentiment at length, and as fully as it had been expressed before, in any suitable words that should come to hand.  Then I compared my <hi rend="italic">Spectator</hi> with the original, discovered some of my faults, and corrected them. But I found I wanted a stock of words, or a readiness in recollecting and using them, which I thought I should have acquired before that time if I had gone on making verses; since the continual occasion for words of the same import, but of different length, to suit the measure, or of different sound for the rhyme, would have laid me under a constant necessity of searching for variety, and also 
+           <pb n="14" facs="pageImages/Franklin-p14.jpg"/>
+           have tended to fix that variety in my mind, and make me master of it. Therefore I took some of the tales and turned them into verse; and, after a time, when I had pretty well forgotten the prose, turned them back again.  I also sometimes jumbled my collections of hints into confusion, and after some weeks endeavored to reduce them into the best order, before I began to form the full sentences and compleat the paper.  This was to teach me method in the arrangement of thoughts.  By comparing my work afterwards with the original, I discovered many faults and amended them; but I sometimes had the pleasure of fancying that, in certain particulars of small import, I had been lucky enough to improve the method or the language, and this encouraged me to think I might possibly in time come to be a tolerable English writer, of which I was extremely ambitious.  My time for these exercises and for reading was at night, after work or before it began in the morning, or on Sundays, when I contrived to be in the printing-house alone, evading as much as I could the common attendance on public worship which my father used to exact on me when I was under his care, and which indeed I still thought a duty, though I could not, as it seemed to me, afford time to practise it.
+           
+       </p><p>When about 16 years of age I happened to meet with a book, written by one Tryon, recommending <ref target="a0029" corresp="n0029">a vegetable diet</ref>. I determined to go into it.  My brother, being 
+           <pb n="15" facs="pageImages/Franklin-p15.jpg"/>
+           yet unmarried, did not keep house, but boarded himself and his apprentices in another family.  My refusing to eat flesh occasioned an inconveniency, and I was frequently chid for my singularity. I made myself acquainted with Tryon's manner of preparing some of his dishes, such as boiling potatoes or rice, making  <ref target="a0030" corresp="n0030">hasty pudding</ref>, and a few others, and then proposed to my brother, that if he would give me, weekly, half the money he paid for my board, I would board myself.  He instantly agreed to it, and I presently found that I could save half what he paid me.  This was an additional fund for buying books.  But I had another advantage in it.  My brother and the rest going from the printing-house to their meals, I remained there alone, and, despatching presently my light repast, which often was no more than a bisket or a slice of bread, a handful of raisins or a tart from the pastry-cook's, and a glass of water, had the rest of the time till their return for study, in which I made the greater progress, from that greater clearness of head and quicker apprehension which usually attend temperance in eating and drinking.
+           
+       </p><p>And now it was that, being on some occasion made asham'd of my ignorance in figures, which I had twice failed in learning when at school, I took <ref target="a0031" corresp="n0031">Cocker's book of Arithmetick</ref>, and went through the whole by myself with great ease.  I also read <ref target="a0032" corresp="n0032">Seller's and Shermy's books of Navigation</ref>, and became acquainted with the little geometry they contain; but never proceeded far in that science.  And I read about this time <ref target="s0033" corresp="n0033">Locke <hi rend="italic">On Human Understanding,</hi></ref> and <ref target="a0034" corresp="n0034">the <hi rend="italic">Art of Thinking,</hi> by Messrs. du Port Royal</ref>.
+           
+       </p><p>While I was intent on improving 
+           <pb n="16" facs="pageImages/Franklin-p16.jpg"/>
+           my language, I met with an English grammar (I think it was <ref target="a0035" corresp="n0035">Greenwood's)</ref>, at the end of which there were two little sketches of the arts of rhetoric and logic, the latter finishing with a specimen of a dispute in the Socratic method; and soon after I procur'd <ref target="a036" corresp="n0036">Xenophon's Memorable Things of Socrates</ref>, wherein there are many instances of the same method.  I was charm'd with it, adopted it, dropt my abrupt contradiction and positive argumentation, and put on the humble inquirer and doubter. And being then, from reading <ref target="a0037" corresp="n0037">Shaftesbury and Collins</ref>, become a real doubter in many points of our religious doctrine, I found this method safest for myself and very embarrassing to those against whom I used it; therefore I took a delight in it, practis'd it continually, and grew very artful and expert in drawing people, even of superior knowledge, into concessions, the consequences of which they did not foresee, entangling them in difficulties out of which they could not extricate themselves, and so obtaining victories that neither myself nor my cause always deserved.  I continu'd this method some few years, but gradually left it, retaining only the habit of expressing myself in terms of modest diffidence; never using, when I advanced any thing that may possibly be disputed, the words <hi rend="italic">certainly, undoubtedly,</hi> or any others that give the air of positiveness to an opinion; but rather say, I conceive or apprehend a thing to be so and so; it appears to me, or 
+           
+           <pb n="17" facs="pageImages/Franklin-p17.jpg"/>
+           <hi rend="italic">I should think it so or so,</hi> for such and such reasons; or ,<hi rend="italic">I imagine it to be so;</hi> or <hi rend="italic">it is so, if I am not mistaken</hi>.  This habit, I believe, has been of great advantage to me when I have had occasion to inculcate my opinions, and persuade men into measures that I have been from time to time engag'd in promoting; and, as the chief ends of conversation are to <hi rend="italic">inform</hi> or to be <hi rend="italic">informed,</hi> to <hi rend="italic">please</hi> or to <hi rend="italic">persuade,</hi> I wish well-meaning, sensible men would not lessen their power of doing good by a positive, assuming manner, that seldom fails to disgust, tends to create opposition, and to defeat every one of those purposes for which speech was given to us, to wit, giving or receiving information or pleasure.  For, if you would inform, a positive and dogmatical manner in advancing your sentiments may provoke contradiction and prevent a candid attention.  If you wish information and improvement from the knowledge of others, and yet at the same time express yourself as firmly fix'd in your present opinions, modest, sensible men, who do not love disputation, will probably leave you undisturbed in the possession of your error.  And by such a manner, you can seldom hope to recommend yourself in pleasing your hearers, or to persuade those whose concurrence you desire.<ref target="a0038" corresp="n0038">Pope says, judiciously</ref>:
+   </p>
+   <p>Men should be taught as if you taught them not,
+   And things unknown propos'd as things forgot,</p>
+       
+       <pb n="18" facs="pageImages/Franklin-p18.jpg"/>
+>>>>>>> branch 'development' of https://github.com/LiteratureInContext/LiC-data.git
    <p> farther recommending it to us,</p>
        <p>To speak tho' sure, with seeming Diffidence.       
    </p></body>
             <back>
             <note xml:id="n0001" target="a0001" type="headnote" resp="editors.xml#JOB"><p>
                 
-            <graphic url="https://s3.amazonaws.com/lic-assets-staging/Franklin/Benjamin_Franklin_by_Joseph_Siffrein_Duplessis.jpg" style="float:right" width="400px"/>
+            <graphic url="notes/Benjamin_Franklin_by_Joseph_Siffrein_Duplessis.jpg" style="float:right" width="400px"/>
                 The book that we know as Benjamin Franklin's "Autobiography" was composed in several stages over more than two decades, and was never printed or published in Franklin's lifetime. And Franklin's conception of what this book was and what its purposes should be changed over time. The first section was composed in the summer of 1771, when Franklin, then living in London and serving as the colonial representative for several of the American colonies, was on an extended visit to the country home of his friend Jonathan Shipley. The text, which Franklin thought of as his "memoir" or his "life" took the ostensible form of a letter to his son William, though it is clear that this is a fiction, and that this was never a "letter" in the conventional sense, one intended to go through the post to its recipient. The later sections, composed in stages in the 1780s, seem addressed to a more general audience, in part perhaps because of Franklin's estrangement from his son, but also perhaps because Franklin saw this book as an opportunity to address a larger audience.</p>
                 <p>The manuscript, here titled "The Life of Benjamin Franklin" by an unknown hand, is unfinished. Franklin picked up the manuscript in late 1789 and early 1790, but died before completing his memoir, which only goes up to the 1760s. The publication of the manuscript is complicated, and it was not for several decades the the "Autobiography" assumed the form and the title that it now generally bears. Our edition includes page images of the original manuscript, which is housed at the Huntington Library in California. We have edited it to make it legible to modern reader, expanding abbreviations and regularizing the spelling. Our annotations are designed to provide important contextual information that Franklin's first readers would have known.</p></note>
   
-            <note xml:id="n0002" target="a0002" type="editorial" resp="editors.xml#JOB">Jonathan Shipley (1714-1788) <p><graphic url="https://s3.amazonaws.com/lic-assets-staging/Franklin/Jonathan-Shipley.jpg" style="float:right" width="300px"/>was the bishop of St. Asaph in Wales, but he spent much of his time at Twyford House, a large Tudor-era mansion in Hampshire in the south of England that had been in his family for generations. Shipley became a good friend and correspondent of Franklin's. He was sympathetic to the cause of the American colonists in their conflict with the government in London. Franklin wrote the first section of this memoir while he was visiting Shipley and his family at Twyford House for several weeks in July and August 1771. </p></note>
+            <note xml:id="n0002" target="a0002" type="editorial" resp="editors.xml#JOB">Jonathan Shipley (1714-1788) <p><graphic url="notes/Jonathan-Shipley.jpg" style="float:right" width="300px"/>was the bishop of St. Asaph in Wales, but he spent much of his time at Twyford House, a large Tudor-era mansion in Hampshire in the south of England that had been in his family for generations. Shipley became a good friend and correspondent of Franklin's. He was sympathetic to the cause of the American colonists in their conflict with the government in London. Franklin wrote the first section of this memoir while he was visiting Shipley and his family at Twyford House for several weeks in July and August 1771. </p></note>
                 
-            <note xml:id="n0003" target="a0003" type="editorial" resp="editors.xml#JOB">William Franklin (c. 1730-1813) was Benjamin's illegitimate son. His mother has never been identified with confidence; it might have been Franklin's common-law wife Deborah Read, but it also might have been another woman whose identity is lost to history. William had worked with his father in London. In 1771, when this was written, he held the position of the royal governor of New Jersey. Father and son would later be estranged over the American Revolutionary War; William remained loyal to the British crown and became a leading Loyalist opposing the American rebels, who by this time included his father. William and Benjamin met a few times after the war, but never really reconciled. <graphic url="https://s3.amazonaws.com/lic-assets-staging/Franklin/William_Franklin.-by-Mather_brownjpg.jpg" style="float:left" width="300px"/></note>
+            <note xml:id="n0003" target="a0003" type="editorial" resp="editors.xml#JOB">William Franklin (c. 1730-1813) was Benjamin's illegitimate son. His mother has never been identified with confidence; it might have been Franklin's common-law wife Deborah Read, but it also might have been another woman whose identity is lost to history. William had worked with his father in London. In 1771, when this was written, he held the position of the royal governor of New Jersey. Father and son would later be estranged over the American Revolutionary War; William remained loyal to the British crown and became a leading Loyalist opposing the American rebels, who by this time included his father. William and Benjamin met a few times after the war, but never really reconciled. <graphic url="notes/William_Franklin.-by-Mather_brown.jpg" style="float:left" width="300px"/></note>
                 
             <note xml:id="n0004" target="a0004" type="editorial" resp="editors.xml#AM">Franklin's figurative language wryly draws on his experience as a printer here and many times in the book, most obviously in his reflections on the "errata" or mistakes of his life, "errata" being a print-house term for a typographical error.</note>
                 
@@ -340,7 +408,7 @@
             
             <note xml:id="n0015" target="a0015" type="editorial" resp="editors.xml#AM">Peter Folger (1617-1690): Folger, born in Norwich, migrated to Massachusetts in 1635. He learned the Algonquian language and became an interpreter and “intermediary with the American Indian population” on the islands of Martha’s Vineyard and Nantucket. He also worked other jobs such as teacher, surveyor, farmer, and clerk of courts. His was a prominent family that produced “American scientists, merchants, and politicians, the most famous of whom was Benjamin Franklin, Folger’s grandson.” Source: Oxford Dictionary of National Biography</note>
             
-            <note xml:id="n0016" target="a0016" type="editorial" resp="editors.xml#EF"><p>Cotton Mather, born in Boston, Massachusetts in 1663 to one of the city's most influential families, became arguably the most prominent minister in the American colonies. <graphic url="https://s3.amazonaws.com/lic-assets-staging/Franklin/Cotton_Mather.jpg" style="float:right" width="300px"/> Indeed, his influence was so widely felt he could be described as one of the major transatlantic figures of the time. Ordained at Boston's North Church, he served there as minister for the entirety of his career. However, Mather's influence was not only limited to religion. He was politically active, and he studied science as well, eventually gaining admittance to London's Royal Society.</p>  
+            <note xml:id="n0016" target="a0016" type="editorial" resp="editors.xml#EF"><p>Cotton Mather, born in Boston, Massachusetts in 1663 to one of the city's most influential families, became arguably the most prominent minister in the American colonies. <graphic url="notes/Cotton_Mather.jpg" style="float:right" width="300px"/> Indeed, his influence was so widely felt he could be described as one of the major transatlantic figures of the time. Ordained at Boston's North Church, he served there as minister for the entirety of his career. However, Mather's influence was not only limited to religion. He was politically active, and he studied science as well, eventually gaining admittance to London's Royal Society.</p>  
                 <p> A prolific author, he published approximately 380 texts, including <hi rend="italic">Magnalia Christi Americana</hi> (on the movement of Christianity from Europe to America) and Bonifacius, <hi rend="italic">Essays to do Good</hi>. By the end of his life, Mather’s influence on Christianity in the colonies laid the groundwork for religious figures such as Jonathan Edwards. Mather died in February 1728 at the age of 65.</p>
                 <p>Mather’s works were wide-reaching, so it is unsurprising that Franklin felt his influence—most notably through Mather’s <hi rend="italic">Essays to do Good</hi>. While working as an apprentice in his brother’s print shop in 1722, sixteen-year-old Franklin wrote essays under the pseudonym of Silence Dogood—the surname "Dogood" was surely taken directly from Mather’s title. The persona Franklin assumed as Silence Dogood was a middle-aged minister’s widow who wrote on a variety of social topics such as politics, fashion, and education. Franklin silently slid these essays under the door of his brother’s business, hoping for publication. His ploy worked, and Franklin's pseudonymous works were published until October of 1722. Some critics have suggested that the the pseudonym and some of the essays were actually a mockery of Mather since the initial run of essays from Silence Dogood appeared at approximately the same time as widespread debates surrounding inoculation, a practice opposed by James Franklin, Benjamin’s brother and owner of <hi rend="italic">The New England Courant.</hi></p>
                 <p>For his part, Mather was a strong proponent of inoculation to the extent that in 1721, Mather and Dr. Zabdiel Boylston inoculated over 200 people during a smallpox epidemic, in the process eliciting a certain amount of public outcry. At the same time, James Franklin published numerous articles against inoculation in the Courant. Years later, and after his own child contracted smallpox, Franklin changed his position on inoculation, regretting his failure to inoculate his son.</p>
@@ -499,6 +567,7 @@
                     Faggots and Heaps of Paper changed into Pyramids of Guineas: And for
                     my own part I was so transported with Joy, that I awaked, tho' I must
                     confess I would fain have fallen asleep again to have closed my Vision,
+<<<<<<< HEAD
                     if I could have done it.</p>
                 </note>
                 
@@ -521,6 +590,34 @@
                 <note xml:id="n0037" corresp="a0037" type="editorial" resp="editors.xml#JOB">Franklin is referring to works by Anthony Ashley Cooper, the earl of Shaftesbury and Anthony Collins. Both authors were well known in this period for their philosophical skepticism and their classification as "deists," that is, their belief that although a deity of some sort existed and had created the known universe, he, or perhaps better, it did not trouble himself much in the everyday doings of that creation.</note>
                 
                 <note xml:id="n0038" corresp="a0038" type="editorial" resp="editors.xml#JOB">These lines are from the 1711 poem "An Essay on Criticism" by Alexander Pope, though Franklin slightly misquotes, probably relying on his memory.</note>
+=======
+                    if I could have done it.
+                    
+                   
+                    
+                    </p>
+                </note>
+                
+                <note xml:id="n0029" target="a0029" type="editorial" resp="editors.xml#JOB">Thomas Tryon's <hi rend="italic">The Way to Health, Long Life, and Happiness</hi>, <graphic url="notes/Thomas_Tryon.jpg" style="float:left" width="300px"/>(Source: Wikimedia Commons) published in 1691, advocated a vegetarian diet. Which was unusual in this period; vegetarianism was rare, and it cannot have been easy to get enough nutrition through a vegetarian diet in colonial New England in this period, given the difficulty of finding fresh vegetables in the winter season.</note>
+                
+                <note xml:id="n0030" target="a0030" type="editorial" resp="editors.xml#JOB">Hasty pudding was a grain porridge; in the American colonies, it was usually made of corn, but could also be made of wheat, oats, or some other grain.</note>
+                
+                <note xml:id="n0031" target="a0031" type="editorial" resp="editors.xml#JOB">Edward Cocker's textbook, first published in 1677 under the title <hi rend="italic">Cocker's Arithmetick: being a plain and familiar method suitable to the meanest capacity for the full understanding of that incomparable art, as it is now taught by the ablest school-masters in city and country</hi>, and then republished under various titles for decades to come became the standard book for learning basic arithmetic in the eighteenth-century Anglophone world. It would have been comparatively easy for Franklin to have come across a copy of this book, which went through scores of editions.</note>
+                
+                <note xml:id="n0032" target="a0032" type="editorial" resp="editors.xml#JOB"><hi rend="italic">Practical Navigation: or an Introduction to the Whole Art</hi>first published in London in 1669, was a widely-reprinted text in the period; its author, John Seller (1632-1697) was a mapmaker and cartographer who was awarded with the title of "hydrophapher to the king." Samuel Sturmy (1633-1669) was the author of <hi rend="italic">The Mariner's Magazine</hi>, first published in 1669 and, like Seller's book, reprinted several times in the seventeenth and eighteenth centuries. This was a large and ambitious text, with sections on navigation and math, but also on things like nautical weaponry.</note>
+                
+                <note xml:id="n0033" target="a0033" type="editorial" resp="editors.xml#AM">The English philosopher John Locke (1632-1704) published <hi rend="italic">An Essay Concerning Human Understanding</hi> in 1690. Locke's philosophical skepticism and strong endorsement of religious toleration seem to have found a strong positive response in Franklin. Locke's book is still considered a foundational text in the philosophical tradition of English empiricism.</note>
+                
+                <note xml:id="n0034" target="a0034" type="editorial" resp="editors.xml#AM"><hi rend="italic">Logic, or, The Art of Thinking</hi> written by Antoine Arnauld and Pierre Nicole, was published in French in 1662, and soon thereafter translated into English and other languages. Known familiarly as the "Port Royal Logic," this, like Locke's book, was a highly influential text for centuries, and is still read by historians of philosophy. Source: https://plato.stanford.edu/entries/port-royal-logic/</note>
+                
+                <note xml:id="n0035" target="a0035" type="editorial" resp="editors.xml#JOB">The book that Franklin thinks that he is remembering is James Greenwood's <hi rend="italics">An Essay towards a Practical English Grammar</hi>, first published in 1711. But he is probably misremembering here, since that book does not have the Socratic dialogue to which he refers. He is more likely think of <hi rend="italic">A Grammar of the English Tongue</hi>, published anonymously but written by Charles Gildon in 1712. That book conclues with an essay called "Of the Socratic Method in Disputing," that describes and then models a method of debating controversial topics by means of open-ended, non-confrontational questions. Franklin says that he took this kind of method to heart, training himself to handle disputes by avoiding dogmatic statements of his own position and instead asking careful questions to learn more the positions of others.</note>
+                
+                <note xml:id="n0036" target="a0036" type="editorial" resp="editors.xml#AM">Xenophon (430-354 B.C.E.) was an ancient Greek historian whose writings included the "Memorabilia," a text containing many Socratic-style dialogues. Source: http://www.iep.utm.edu/xenophon/</note>
+                
+                <note xml:id="n0037" target="a0037" type="editorial" resp="editors.xml#JOB">Franklin is referring to works by Anthony Ashley Cooper, the earl of Shaftesbury and Anthony Collins. Both authors were well known in this period for their philosophical skepticism and their classification as "deists," that is, their belief that although a deity of some sort existed and had created the known universe, he, or perhaps better, it did not trouble himself much in the everyday doings of that creation.</note>
+                
+                <note xml:id="n0038" target="a0038" type="editorial" resp="editors.xml#JOB">These lines are from the 1711 poem "An Essay on Criticism" by Alexander Pope, though Franklin slightly misquotes, probably relying on his memory.</note>
+>>>>>>> branch 'development' of https://github.com/LiteratureInContext/LiC-data.git
             </back>
     
 </text>
