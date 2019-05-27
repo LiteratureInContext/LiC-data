@@ -1,229 +1,280 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="haywood-fantomina"><!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
-  
-    <!--TEI Header BEGINS-->
-    <teiHeader xml:lang="en">
-        
-         <fileDesc> <!--BEGINS File Description -->
-                 <titleStmt>
-                          <title type="main">Template</title> <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
-                          <author>
-                             <persName type="lcnaf" key="n79008228"> <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
-                                 <name ref="xxx.xml"> <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
-                                   <forename>XXX</forename>
-                                   <surname>XXX</surname>
-                                 </name>
-                             </persName>
-                          </author>
-                          <editor>
-                              <persName type="orcid" key="0000-0002-7400-4093"> <!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
-                                  <name ref="editors.xml#TH" > <!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
-                                      <surname>XXX</surname>
-                                      <forename>XXX</forename>
-                                  </name>
-                              </persName>
-                          </editor>
-                          <respStmt>
-                             <resp>Transcription, correction, editorial commentary, and markup</resp> <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
-                             <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name> <!-- Each document in LiC may have more than one resp, and more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml.  -->
-                          </respStmt>
-                          <sponsor/>
-                          <funder>National Endowment for the Humanities</funder> <!-- Do not alter. -->
-                 </titleStmt>
-              
-              
-                 <publicationStmt> <!-- This element expresses the publication details of this particular etext. -->
-                    <publisher>Literature in Context</publisher> <!-- Do not alter. -->
-                          <address> <!-- Use the address information for your university. -->
-                             <addrLine>Marymount University Department of Literature and Languages</addrLine>
-                             <addrLine>2807 N. Glebe Road</addrLine>
-                             <addrLine>Arlington, VA </addrLine>
-                             <addrLine>22207</addrLine>
-                             <addrLine>thowe@marymount.edu</addrLine> <!-- Add your email address.  -->
-                             <addrLine>lic.open.anthology@gmail.com</addrLine> <!-- Do not alter. -->
-                          </address>
-                          <availability status="free"> <!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
-                             <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-                                Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                                License </licence>
-                          </availability>
-               </publicationStmt>
-             
-            
-               <sourceDesc> <!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
-                          
-                          <biblStruct>
-                             <analytic> <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
-                                <title>"Title of Contained Text in Quotation Marks"</title>
-                             </analytic>
-                             <monogr> <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
-                                <author>
-                                   <persName type="lcnaf" key="n79008228"> <!-- Note authority and key. -->
-                                      <forename>XXX</forename>
-                                      <surname>XXX</surname>
-                                   </persName>
-                                </author>
-                                <title>Container Title, No Quotation Marks</title>
-                                <imprint> <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
-                                   <pubPlace>
-                                      <placeName type="tgn" key="7011781">xxx</placeName> <!-- Note authority and key. -->
-                                   </pubPlace>
-                                   <publisher>xxx</publisher> <!-- Insert publsher of earliest/first edition. -->
-                                   <date when="xxxx">xxxx</date> <!-- Insert date of earliest/first edition. Note the attribute @when. -->
-                                   <note source="ESTC">Each section has a separate titlepage. The titlepage of the
-                                      first volume only is in red and black. The third volume was printed by
-                                      Samuel Aris on the evidence of the ornaments.</note> <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
-                                   <note>Page images are drawn from the second edition in ECCO.</note> <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
-                                   <note>For more information about this item, see the ESTC entry at <ref
-                                         target="http://estc.bl.uk/T66936">http://estc.bl.uk/T66936</ref>. </note> <!-- If links are available, indicate them using this model. -->
-                                </imprint>
-                                <imprint> <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
-                                   <pubPlace key="7014406">Philadelphia, PA</pubPlace>
-                                   <publisher>
-                                      University of Pennsylvania, Celebration of Women Writers
-                                   </publisher>
-                                   <date>n.d.</date>
-                                   <note>
-                                      Text for this digital edition drawn from
-                                      <ref target="http://digital.library.upenn.edu/women/haywood/fantomina/fantomina.html">
-                                         http://digital.library.upenn.edu/women/haywood/fantomina/fantomina.html
-                                      </ref>
-                                      and checked against the second edition text via ECCO.
-                                   </note>
-                                </imprint>
-                                <extent>4v.,plate ; 12°</extent> <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
-                                <biblScope unit="volume">III</biblScope> <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
-                                <biblScope>pp 256-291</biblScope>
-                             </monogr>
-                          </biblStruct>
-             </sourceDesc>
-         
-        </fileDesc> <!-- Don't forget to close out all your elements! -->
-         
-         
-         
-         <profileDesc>  <!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
-                   <langUsage>
-                      <language ident="en">English</language>
-                   </langUsage>
-             
-                   <creation/> <!-- For more information on the profileDesc, see TEI P5 guidelines.  -->
-             
-                   <textDesc n="novella"> <!-- Acceptable values include novel, novella, poem, essay. -->
-                      <channel mode="w">print</channel> <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
-                      <constitution type="single"/> <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. -->
-                      <derivation type="original"/> <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
-                      <domain/> <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-                      <factuality type="fiction"/> <!-- See the textDesc guidelines for more information. -->
-                      <interaction/> <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-                      <preparedness/> <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-                      <purpose type="entertain" degree="high"/> <!-- See the TEI guidelines for more information. -->
-                      <purpose type="inform" degree="low"/> <!-- Multiple purpose types may or may not be appropriate. -->
-                   </textDesc>
-             
-                   <settingDesc> <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
-                      <setting> 
-                         <name type="tgn" key="7011781">London, England</name> <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-                         <name type="tgn" key="7011197">Bath, England</name>
-                         <time from="1690" to="1724">Early 18th Century</time> <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
-                      </setting>
-                   </settingDesc>
-        </profileDesc>
-         
-         
-         
-         <encodingDesc> <!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
-                  <projectDesc>
-                     <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
-                        project, which provides an accessible, curated, and marked-up selection of primary
-                        sources relevant to the study and the teaching of British and American literature of
-                        the 18th century. This project is funded by the National Endowment for the Humanities
-                        and developed by faculty at The University of Virginia and Marymount University. </p>
-                  </projectDesc>
-                  <editorialDecl>
-                     <interpretation>
-                        <p>Research informing these annotations draws on publicly-accessible resources, with
-                           links provided where possible. Annotations have also included common knowledge,
-                           defined as information that can be found in multiple reliable sources. If you
-                           notice an error in these annotations, please contact lic.open.anthology@gmail.com.
-                        </p>
-                     </interpretation>
-                     <normalization>
-                        <p>Original spelling and capitalization is retained, though the long s has been
-                           silently modernized and ligatured forms are not encoded.</p>
-                     </normalization>
-                     <hyphenation>
-                        <p>Hyphenation has not been retained, except where necessary for the sense of the
-                           word.</p>
-                     </hyphenation>
-                     <segmentation>
-                        <p>Page breaks have been retained. Catchwords, signatures, and running headers have
-                           not. Where pages break in the middle of a word, the complete word has been
-                           indicated prior to the page beginning.</p>
-                     </segmentation>
-                     <correction>
-                        <p>Materials have been transcribed from and checked against first editions, where
-                           possible. See the Sources section.</p>
-                     </correction>
-                  </editorialDecl>
-                  <tagsDecl> <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
-                     <namespace name="http://www.tei-c.org/ns/1.0">
-                        <tagUsage gi="div">Unnumbered divs used.</tagUsage>
-                     </namespace>
-                  </tagsDecl>
-                  <classDecl> <!-- We here define the authority files used throughout the application and data. -->
-                     <taxonomy xml:id="lcnaf">
-                        <bibl>Library of Congress Name Authority File</bibl>
-                     </taxonomy>
-                     <taxonomy xml:id="lcc">
-                        <bibl>Library of Congress Classification</bibl>
-                     </taxonomy>
-                     <taxonomy xml:id="tgn">
-                        <bibl>Getty Thesaurus of Geographic Names</bibl>
-                     </taxonomy>
-                     <taxonomy xml:id="orcid">
-                        <bibl>Open Researcher and Contributor ID</bibl>
-                     </taxonomy>
-                  </classDecl>
-        </encodingDesc>
-         
-         
-         <revisionDesc> <!--BEGINS Revision Description -->
-            <change when="2019-01-24" who="editors.xml#SK">Created template</change> <!-- Indicate all substantive changes to the document using the model here. -->
-            <change when="2019-05-24" who="editors.xml#TH">Added explanatory comments to template.</change>         
-        </revisionDesc>
-        
-        
-   </teiHeader><!--TEI Header Ends -->
-    
-    
-    
-    
-    
-   <text> <!-- Here begins the encoding of the text itself. -->
-      <front> <!-- Include any front matter here, especially title pages. -->
-         <pb n="[TP]" facs="pageImages/TP.jpg"/> <!-- Indicate all page beginnings using this format. Note that the attribute N should indicate page number. If no page number exists, supply one indicating your addition in [brackets]. The attribute FACS should reference the page image (see below for cases of images in notes) in the AWS server structure. Note that this construction implies the addition of prior file structure information, part of which is the xml:id for this particular file. Accuracy and consistency are essential. -->
-         <titlePage> <!-- Begins the title page encoding. Encode the title page with line breaks where indicated on the title page. Use CAPITALS where appropriate. -->
-          <docTitle>     <titlePart>FANTOMINA:<lb/> 
-            OR,<lb/>
-            LOVE in a Maze.<lb/></titlePart>
-            <titlePart>BEING A<lb/>
-            <ref target="a001" corresp="n001">Secret History</ref><note xml:id="n001"
-                  target="a001" type="editorial" resp="editors.xml#TH">While there are many critical
-                  understandings of the secret history in literature, <ref
-                     target="https://books.google.com/books?id=h3iJDgAAQBAJ">as the essays in <hi
-                        rend="italic">The Secret History in Literature: 1660-1820</hi> (2017)</ref>,
-                  the genre usually offers a glimpse into the secret lives of public individuals. In
-                  the amatory tradition of <hi rend="italic">Fantomina</hi>, this "private" side is
-                  typically filled with sexual or political intrigue.</note><lb/> <!-- Here we see a sample annotation. Look carefully at the model content and structure, and see LiC guidelines on annotation for more information. Notes can be included in-line, or together at the end of the document. -->
-            OF AN<lb/>
-            AMOUR<lb/>
-            Between Two<lb/>
-            PERSONS OF CONDITION.<lb/>
-            </titlePart>
-          </docTitle>
-            <docAuthor><!-- Any broad information on the title page should be considered a titlePart. -->
-               By <ref target="a002" corresp="n002">Mrs. ELIZA HAYWOOD.</ref><note
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="haywood-fantomina">
+   <!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
+
+   <!--TEI Header BEGINS-->
+   <teiHeader xml:lang="en">
+
+      <fileDesc>
+         <!--BEGINS File Description -->
+         <titleStmt>
+            <title type="main">Template</title>
+            <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
+            <author>
+               <persName type="lcnaf" key="n79008228">
+                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
+                  <name ref="xxx.xml">
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                     <forename>XXX</forename>
+                     <surname>XXX</surname>
+                  </name>
+               </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
+                  <name ref="editors.xml#TH">
+                     <!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
+                     <surname>XXX</surname>
+                     <forename>XXX</forename>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
+               <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
+               <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
+            </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+            <!-- Do not alter. -->
+         </titleStmt>
+
+
+         <publicationStmt>
+            <!-- This element expresses the publication details of this particular etext. -->
+            <publisher>Literature in Context</publisher>
+            <!-- Do not alter. -->
+            <address>
+               <!-- Use the address information for your university. -->
+               <addrLine>Marymount University Department of Literature and Languages</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington, VA </addrLine>
+               <addrLine>22207</addrLine>
+               <addrLine>thowe@marymount.edu</addrLine>
+               <!-- Add your email address.  -->
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+               <!-- Do not alter. -->
+            </address>
+            <availability status="free">
+               <!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+
+         <sourceDesc>
+            <!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
+
+            <biblStruct>
+               <analytic>
+                  <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
+                  <title>"Title of Contained Text in Quotation Marks"</title>
+               </analytic>
+               <monogr>
+                  <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
+                  <author>
+                     <persName type="lcnaf" key="n79008228">
+                        <!-- Note authority and key. -->
+                        <forename>XXX</forename>
+                        <surname>XXX</surname>
+                     </persName>
+                  </author>
+                  <title>Container Title, No Quotation Marks</title>
+                  <imprint>
+                     <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781">xxx</placeName>
+                        <!-- Note authority and key. -->
+                     </pubPlace>
+                     <publisher>xxx</publisher>
+                     <!-- Insert publsher of earliest/first edition. -->
+                     <date when="xxxx">xxxx</date>
+                     <!-- Insert date of earliest/first edition. Note the attribute @when. -->
+                     <note source="ESTC">Each section has a separate titlepage. The titlepage of the
+                        first volume only is in red and black. The third volume was printed by
+                        Samuel Aris on the evidence of the ornaments.</note>
+                     <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
+                     <note>Page images are drawn from the second edition in ECCO.</note>
+                     <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
+                     <note>For more information about this item, see the ESTC entry at <ref
+                           target="http://estc.bl.uk/T66936">http://estc.bl.uk/T66936</ref>. </note>
+                     <!-- If links are available, indicate them using this model. -->
+                  </imprint>
+                  <imprint>
+                     <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
+                     <pubPlace key="7014406">Philadelphia, PA</pubPlace>
+                     <publisher> University of Pennsylvania, Celebration of Women Writers </publisher>
+                     <date>n.d.</date>
+                     <note> Text for this digital edition drawn from <ref
+                           target="http://digital.library.upenn.edu/women/haywood/fantomina/fantomina.html"
+                           > http://digital.library.upenn.edu/women/haywood/fantomina/fantomina.html
+                        </ref> and checked against the second edition text via ECCO. </note>
+                  </imprint>
+                  <extent>4v.,plate ; 12°</extent>
+                  <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
+                  <biblScope unit="volume">III</biblScope>
+                  <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
+                  <biblScope>pp 256-291</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+
+      </fileDesc>
+      <!-- Don't forget to close out all your elements! -->
+
+
+
+      <profileDesc>
+         <!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+         <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
+
+         <textDesc n="novella">
+            <!-- Acceptable values include novel, novella, poem, essay. -->
+            <channel mode="w">print</channel>
+            <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
+            <constitution type="single"/>
+            <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
+            <derivation type="original"/>
+            <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
+            <domain/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <factuality type="fiction"/>
+            <!-- See the textDesc guidelines for more information. -->
+            <interaction/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <preparedness/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <purpose type="entertain" degree="high"/>
+            <!-- See the TEI guidelines for more information. -->
+            <purpose type="inform" degree="low"/>
+            <!-- Multiple purpose types may or may not be appropriate. -->
+         </textDesc>
+
+         <settingDesc>
+            <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               <name type="tgn" key="7011197">Bath, England</name>
+               <time from="1690" to="1724">Early 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+
+
+
+      <encodingDesc>
+         <!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <!-- We here define the authority files used throughout the application and data. -->
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <!--BEGINS Revision Description -->
+         <change when="2019-01-24" who="editors.xml#SK">Created template</change>
+         <!-- Indicate all substantive changes to the document using the model here. -->
+         <change when="2019-05-24" who="editors.xml#TH">Added explanatory comments to
+            template.</change>
+      </revisionDesc>
+
+
+   </teiHeader>
+   <!--TEI Header Ends -->
+
+
+
+
+
+   <text>
+      <!-- Here begins the encoding of the text itself. -->
+      <front>
+         <!-- Include any front matter here, especially title pages. -->
+         <pb n="[TP]" facs="pageImages/TP.jpg"/>
+         <!-- Indicate all page beginnings using this format. Note that the attribute N should indicate page number. If no page number exists, supply one indicating your addition in [brackets]. The attribute FACS should reference the page image (see below for cases of images in notes) in the AWS server structure. Note that this construction implies the addition of prior file structure information, part of which is the xml:id for this particular file. Accuracy and consistency are essential. -->
+         <titlePage>
+            <!-- Begins the title page encoding. Encode the title page with line breaks where indicated on the title page. Use CAPITALS where appropriate. -->
+            <docTitle>
+               <!-- Separate the parts of your title page or front information in DOCTITLE, DOCAUTHOR, DOCIMPRINT, and DOCDATE. Multiple parts of a title are indicated with TITLEPART. See the TEI titlePage guidelines for more information. -->
+               <titlePart>FANTOMINA:<lb/> OR,<lb/> LOVE in a Maze.<lb/></titlePart>
+               <titlePart>BEING A<lb/>
+                  <!-- Note that this example has two titleParts. -->
+                  <ref target="a001" corresp="n001">Secret History</ref><note xml:id="n001"
+                     target="a001" type="editorial" resp="editors.xml#TH">While there are many
+                     critical understandings of the secret history in literature, <ref
+                        target="https://books.google.com/books?id=h3iJDgAAQBAJ">as the essays in <hi
+                           rend="italic">The Secret History in Literature: 1660-1820</hi>
+                        (2017)</ref>, the genre usually offers a glimpse into the secret lives of
+                     public individuals. In the amatory tradition of <hi rend="italic"
+                        >Fantomina</hi>, this "private" side is typically filled with sexual or
+                     political intrigue.</note><lb/>
+                  <!-- Here we see a sample annotation. Look carefully at the model content and structure, and see LiC guidelines on annotation for more information. Notes can be included in-line, or together at the end of the document. ANY NOTES ADDED BY THE AUTHOR SHOULD ALSO BE INCLUDED - these have a slightly different encoding. -->
+                  OF AN<lb/> AMOUR<lb/> Between Two<lb/> PERSONS OF CONDITION.<lb/>
+               </titlePart>
+            </docTitle>
+            <docAuthor> By <ref target="a002" corresp="n002">Mrs. ELIZA HAYWOOD.</ref><note
                   xml:id="n002" target="a002" type="editorial" resp="editors.xml#TH"><graphic
                      style="float:right"
                      url="https://upload.wikimedia.org/wikipedia/commons/2/25/Eliza-haywood.jpg"
@@ -236,10 +287,12 @@
                   Haywood wrote in a number of different genres, including amatory fiction, domestic
                   fiction, and essay.</note><lb/>
             </docAuthor>
-            <epigraph> <!-- Insert any epigraphs in this manner. Cut if irrelevant. -->
+            <epigraph>
+               <!-- Insert any epigraphs in this manner. Cut if irrelevant. -->
                <quote>
                   <lg>
-                     <l><hi rend="italic">In Love the Victors from the Vanquish'd fly</hi>.</l> <!-- Note the use of line groups and lines, as well as the rendering of highlighted text. LiC currently recognizes values of ITALICA and INDENT.-->
+                     <l><hi rend="italic">In Love the Victors from the Vanquish'd fly</hi>.</l>
+                     <!-- Note the use of line groups and lines, as well as the rendering of highlighted text. LiC currently recognizes values of ITALICA and INDENT.-->
                      <l><hi rend="italic">They fly that wound, and they pursue that dye.</hi></l>
                   </lg></quote>
                <bibl><persName><ref target="a003" corresp="n003">WALLER.</ref></persName><note
@@ -256,21 +309,27 @@
                            rend="italics">Encyclopaedia Britannica</hi></ref>.</note></bibl>
                <lb/>
             </epigraph>
-            <docImprint> <!-- Here begins imprint information included in the text pictured. -->
-               <pubPlace><placeName type="tgn" key="7011781">London</placeName></pubPlace>:<lb/> <!-- Note the continued use of line breaks. -->
+            <docImprint>
+               <!-- Here begins imprint information included in the text pictured. -->
+               <pubPlace><placeName type="tgn" key="7011781">London</placeName></pubPlace>:<lb/>
+               <!-- Note the continued use of line breaks. -->
                <publisher>Printed for <persName>D. BROWNE jun</persName>. at the
                      <placeName>Black-Swan<lb/> without Temple-Bar</placeName>, and <persName>S.
                      CHAPMAN</persName>, <placeName>at<lb/> the Angel in
-                  Pallmall</placeName>.</publisher>
-               <date>M.DCC.XXV.</date><lb/>
-            </docImprint>
+                  Pallmall</placeName>.</publisher></docImprint>
+            <docDate>
+               <date>M.DCC.XXV.</date>
+            </docDate>
+
          </titlePage>
       </front>
-      
-      <body> <!-- Here begins the body of the text to be encoded. -->
+
+      <body>
+         <!-- Here begins the body of the text to be encoded. -->
          <div>
             <pb n="[257]" facs="pageImages/257.jpg"/>
-            <head>FANTOMINA:<lb/> OR,<lb/> LOVE in a Maze.<lb/></head> <!-- Note use of head here. -->
+            <head>FANTOMINA:<lb/> OR,<lb/> LOVE in a Maze.<lb/></head>
+            <!-- Note use of head here. -->
             <p> A YOUNG Lady of distinguished Birth, Beauty, Wit, and Spirit, happened to be in a
                   <ref target="a005" corresp="n005">Box</ref><note xml:id="n005" target="a005"
                   type="editorial" resp="editors.xml#TH"><graphic style="float:right"
@@ -1288,11 +1347,10 @@
                      Measures to commence a Friendship with you, is neither Old, nor Deform'd. Till
                      then I am,</p>
 
-                  <closer>Yours, <signed><ref target="a057" corresp="n057"
-                        >INCOGNITA.</ref><note xml:id="n057" target="a057" type="editorial"
-                        resp="editors.xml#TH">Incognita is a feminine form of the Italian
-                        "incognito," meaning one who is unknown or in disguise
-                     (OED).</note></signed></closer>
+                  <closer>Yours, <signed><ref target="a057" corresp="n057">INCOGNITA.</ref><note
+                           xml:id="n057" target="a057" type="editorial" resp="editors.xml#TH"
+                           >Incognita is a feminine form of the Italian "incognito," meaning one who
+                           is unknown or in disguise (OED).</note></signed></closer>
                </body>
             </floatingText>
 
@@ -1358,8 +1416,8 @@
                   easy, weeping, wailing Sex!</said> Thus did she pride herself as if secure she
                never should have any Reason to repent the present Gaiety of her Humour. The Hour
                drawing near in which he was to come, she dress'd herself in as magnificent a Manner,
-               as if she were to be that Night <pb n="284"/> at <ref target="a058"
-                  corresp="n058">a Ball at Court</ref><note xml:id="n058" target="a058" type="editorial"
+               as if she were to be that Night <pb n="284"/> at <ref target="a058" corresp="n058">a
+                  Ball at Court</ref><note xml:id="n058" target="a058" type="editorial"
                   resp="editors.xml#TH"><graphic style="float:right"
                      url="https://collections.museumoflondon.org.uk/mol/mediaLib/236/617/83_531_va.jpg"
                      width="300px"/>Court dress for both women and men was both political and
@@ -1487,8 +1545,9 @@
                had she been at liberty to have acted with the same unquestionable Authority over
                herself, as she did before the coming of her Mother, yet now all her Invention was at
                a Loss for a Stratagem to impose on a Woman of her Penetration: – By eating little,
-               <ref target="a061" corresp="n061">lacing prodigious strait</ref><note xml:id="n061"
-                  target="a061" type="editorial" resp="editors.xml#TH"><graphic style="float:right"
+                  <ref target="a061" corresp="n061">lacing prodigious strait</ref><note
+                  xml:id="n061" target="a061" type="editorial" resp="editors.xml#TH"><graphic
+                     style="float:right"
                      url="https://media.vam.ac.uk/media/thira/collection_images/2006BB/2006BB0967_jpg_l.jpg"
                      width="300px"/>Lacing here refers to the lacing up of the stays, a shaping
                   undergarment <ref
@@ -1497,8 +1556,8 @@
                      Museum</ref>. According to Valerie Steele in <hi rend="italic">The Corset: A
                      Cultural History</hi>, tightly laced stays <ref
                      target="https://books.google.com/books?id=uk6I0-MDXVQC">were the visible sign
-                     of strict morality" (26)</ref>.</note>, and the Advantage of a great
-               <ref target="a062" corresp="n062">Hoop-Petticoat</ref><note xml:id="n062" target="a062"
+                     of strict morality" (26)</ref>.</note>, and the Advantage of a great <ref
+                  target="a062" corresp="n062">Hoop-Petticoat</ref><note xml:id="n062" target="a062"
                   type="editorial" resp="editors.xml#TH"><graphic style="float:right"
                      url="https://images.metmuseum.org/CRDImages/ci/original/CI65.13.1a%E2%80%93c_Fv2.jpg"
                      width="300px"/>Throughout the seventeenth and eighteenth centuries, women's
@@ -1523,8 +1582,8 @@
                griev'd beyond Expression, doubted not but she was struct with the Hand of Death; and
                order'd her to be carried Home in a Chair, while herself follow'd in another. – A
                Physician was immediately sent for: But he was presently perceiving what was her
-               Distemper, call'd the old Lady aside, and told her, it was not <ref target="a063" corresp="n063">a Doctor of his Sex,
-                  but one of her own</ref><note xml:id="n063"
+               Distemper, call'd the old Lady aside, and told her, it was not <ref target="a063"
+                  corresp="n063">a Doctor of his Sex, but one of her own</ref><note xml:id="n063"
                   target="a063" type="editorial" resp="editors.xml#TH">Until the mid to late
                   eighteenth century, childbirth was an almost exclusively female domain. Midwives
                   were women who had experience in both giving birth and attending at other births.
@@ -1608,15 +1667,15 @@
                Life. He continued to visit there, to enquire after her Health every Day; but the old
                Lady perceiving there was nothing likely to ensue from these Civilities, but,
                perhaps, a Renewing of the Crime, she entreated him to refrain; and as soon as <pb
-                  n="291"/> her Daughter was in a Condition, sent her to <ref target="a065" corresp="n065"
-                  >a Monastery in France, the
-                     Abbess of which had been her particular Friend</ref><note xml:id="n065" target="a065" type="editorial" resp="editors.xml#TH">The
-                  role of the French convent in English literary and cultural imagination is
-                  complex. Elite young women might be educated in a convent before their marriage;
-                  the convent might also be a house of reformation; for some women, the convent
-                  offered an intellectual alternative alternative to marriage in the company of
-                  other women. In the English protestant imagination, the French convent was often
-                  seen as an erotically-charged place. <ref
+                  n="291"/> her Daughter was in a Condition, sent her to <ref target="a065"
+                  corresp="n065">a Monastery in France, the Abbess of which had been her particular
+                  Friend</ref><note xml:id="n065" target="a065" type="editorial"
+                  resp="editors.xml#TH">The role of the French convent in English literary and
+                  cultural imagination is complex. Elite young women might be educated in a convent
+                  before their marriage; the convent might also be a house of reformation; for some
+                  women, the convent offered an intellectual alternative alternative to marriage in
+                  the company of other women. In the English protestant imagination, the French
+                  convent was often seen as an erotically-charged place. <ref
                      target="https://muse.jhu.edu/article/413815/summary">As Ana Acosta writes in
                      "Hotbeds of Popery: Convents in the English Literary Imagination,"</ref> the
                   convent "provided a site for amorous encounters, forced and broken vows,
@@ -1635,4 +1694,3 @@
       </body>
    </text>
 </TEI>
-
