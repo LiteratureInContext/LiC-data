@@ -73,18 +73,19 @@
             <biblStruct>
                <analytic>
                   <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
-                  <title>"Satyr"</title>
+                  <title>"Satyr [Against Reason and Mankind]"</title>
                </analytic>
                <monogr>
                   <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
                   <author>
-                     <persName type="lcnaf" key="n79008228">
+                    
                         <!-- Note authority and key. -->
-                        <forename>XXX</forename>
-                        <surname>XXX</surname>
-                     </persName>
+                        <forename>John</forename>
+                        <surname>Wilmot</surname>
+                        <addName>Earl of Rochester</addName>
+                     
                   </author>
-                  <title>POEMS, On Several Occasions: WITH Valentinian; A TRAGEDY.</title>
+                  <title>Poems on Several Occasions By the Right Honourable, THE E Of R—</title>
                   <imprint>
                      <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
                      <pubPlace>
@@ -93,13 +94,19 @@
                      </pubPlace>
                      <publisher/>
                      <!-- Insert publsher of earliest/first edition. -->
-                     <date when="1680">1680</date>
+                     <date when="1680" cert="medium">1680[?]</date>
                      <!-- Insert date of earliest/first edition. Note the attribute @when. -->
-                     <note source="ESTC">The imprint is false; actually printed in London.</note>
+                     <note source="ESTC">
+                        The E of R- = John Wilmot, Earl of Rochester.</note>
+                     <note source="ESTC">
+                        Actual place of publication conjectured by cataloger. Other editions "printed at Antwerp" were probably printed in London (cf. Wing); signatures and catchwords appear to be typical of English printing practice; Wing does not suggest London for this edition.</note>
+                        <note source="ESTC">
+                        Identified as Wing R1754, reel 1556, of the UMI microfilm set "Early English books, 1641-1700".</note>
+<note source="ESTC">                        Does not match Wing (2nd ed. rev. &amp; enl.) R1754B, which gives 152 p.The imprint is false; actually printed in London.</note>
                      <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
                      <note>Note to self - Update this Page images are drawn from the second edition in ECCO.</note>
                      <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
-                     <note>For more information about this item, see the ESTC entry at <ref target="http://estc.bl.uk/R202391">http://estc.bl.uk/R202391</ref>.</note>
+                     <note>For more information about this item, see the ESTC entry at <ref target="http://estc.bl.uk/R33544">http://estc.bl.uk/R33544</ref>.</note>
                      <!-- If links are available, indicate them using this model. -->
                   </imprint>
                   <imprint>
@@ -109,10 +116,10 @@
                      </pubPlace>
                      <publisher> Text Creation Partnership </publisher>
                      <date when="2003">2003</date>
-                     <note> Text for this digital edition drawn from <ref
+                     <note>The XML for this digital edition drawn from the EEBO-TCP edition (<ref
                         target="http://name.umdl.umich.edu/A57495.0001.001"
                         > http://name.umdl.umich.edu/A57495.0001.001
-                        </ref> and checked against the second edition text via ECCO. Note to self Add this information </note>
+                     </ref>) which is also Wing R1754. It has been checked against the anthologized version in <hi rend="italic">British Literature 1640-1789: An Anthology</hi>, edited by Robert DeMaria, Jr. (pp 281-285).</note>
                   </imprint>
                   <imprint>
                      <pubPlace></pubPlace>
@@ -267,23 +274,16 @@
             <!-- Begins the title page encoding. Encode the title page with line breaks where indicated on the title page. Use CAPITALS where appropriate. -->
             <docTitle>
                <!-- Separate the parts of your title page or front information in DOCTITLE, DOCAUTHOR, DOCIMPRINT, and DOCDATE. Multiple parts of a title are indicated with TITLEPART. See the TEI titlePage guidelines for more information. -->
-               <titlePart><lb/></titlePart>
-
-            </docTitle>
-            <docAuthor> </docAuthor>
-
+               <titlePart>POEMS<lb/>
+                  ON SEVERAL<lb/>
+                  OCCASIONS<lb/>
+                  </titlePart></docTitle>
+            <byline>
+               By the<lb/>
+               Right Honourable,<lb/>
+               <docAuthor>THE E Of R—</docAuthor></byline><lb/>
             <docImprint>
-               <!-- Here begins imprint information included in the text pictured. -->
-               <pubPlace><placeName type="tgn" key="7011781">London</placeName></pubPlace>:<lb/>
-               <!-- Note the continued use of line breaks. -->
-               <publisher>Printed for <persName>D. BROWNE jun</persName>. at the
-                     <placeName>Black-Swan<lb/> without Temple-Bar</placeName>, and <persName>S.
-                     CHAPMAN</persName>, <placeName>at<lb/> the Angel in
-                  Pallmall</placeName>.</publisher>
-            </docImprint>
-            <docDate>
-               <date>M.DCC.XXV.</date>
-            </docDate>
+Printed at <hi rend="italic">ANTWERPEN.</hi><lb/></docImprint>
 
          </titlePage>
       </front>
@@ -291,9 +291,9 @@
       <body>
          <!-- Here begins the body of the text to be encoded. -->
          <div type="poem">
-            <head type="title">SATYR [AGAINST REASON AND MANKIND]<lb/>[1680, "Antwerp" <ref
+            <head type="title">SATYR [AGAINST REASON AND MANKIND]<lb/>[1680, "Antwerpen" <ref
                   target="http://name.umdl.umich.edu/A57495.0001.001
-               ">EEBO-TCP</ref>
+                  ">EEBO-TCP</ref> | EEBO-TCP text corresponds to <ref target="http://estc.bl.uk/R33544">this record in ESTC</ref> |
                | First edition facsimile <ref
                   target="https://archive.org/details/case_6a_158_no_7/page/n3">here</ref>]</head>
             <lg>
