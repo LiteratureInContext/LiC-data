@@ -13,7 +13,8 @@
             <author>
                <persName type="lcnaf" key="n79027135">
                   <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
-                  <name> <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                  <name>
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
                      <forename>John</forename>
                      <surname>Wilmot</surname>
                      <addName>Earl of Rochester</addName>
@@ -78,12 +79,10 @@
                <monogr>
                   <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
                   <author>
-                    
-                        <!-- Note authority and key. -->
-                        <forename>John</forename>
-                        <surname>Wilmot</surname>
-                        <addName>Earl of Rochester</addName>
-                     
+                     <!-- Note authority and key. -->
+                     <forename>John</forename>
+                     <surname>Wilmot</surname>
+                     <addName>Earl of Rochester</addName>
                   </author>
                   <title>Poems on Several Occasions By the Right Honourable, THE E Of R—</title>
                   <imprint>
@@ -96,17 +95,21 @@
                      <!-- Insert publsher of earliest/first edition. -->
                      <date when="1680" cert="medium">1680[?]</date>
                      <!-- Insert date of earliest/first edition. Note the attribute @when. -->
-                     <note source="ESTC">
-                        The E of R- = John Wilmot, Earl of Rochester.</note>
-                     <note source="ESTC">
-                        Actual place of publication conjectured by cataloger. Other editions "printed at Antwerp" were probably printed in London (cf. Wing); signatures and catchwords appear to be typical of English printing practice; Wing does not suggest London for this edition.</note>
-                        <note source="ESTC">
-                        Identified as Wing R1754, reel 1556, of the UMI microfilm set "Early English books, 1641-1700".</note>
-<note source="ESTC">                        Does not match Wing (2nd ed. rev. &amp; enl.) R1754B, which gives 152 p.The imprint is false; actually printed in London.</note>
+                     <note source="ESTC"> The E of R- = John Wilmot, Earl of Rochester.</note>
+                     <note source="ESTC"> Actual place of publication conjectured by cataloger.
+                        Other editions "printed at Antwerp" were probably printed in London (cf.
+                        Wing); signatures and catchwords appear to be typical of English printing
+                        practice; Wing does not suggest London for this edition.</note>
+                     <note source="ESTC"> Identified as Wing R1754, reel 1556, of the UMI microfilm
+                        set "Early English books, 1641-1700".</note>
+                     <note source="ESTC"> Does not match Wing (2nd ed. rev. &amp; enl.) R1754B,
+                        which gives 152 p.The imprint is false; actually printed in London.</note>
                      <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
-                     <note>Note to self - Update this Page images are drawn from the second edition in ECCO.</note>
+                     <note>Note to self - Update this Page images are drawn from the second edition
+                        in ECCO.</note>
                      <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
-                     <note>For more information about this item, see the ESTC entry at <ref target="http://estc.bl.uk/R33544">http://estc.bl.uk/R33544</ref>.</note>
+                     <note>For more information about this item, see the ESTC entry at <ref
+                           target="http://estc.bl.uk/R33544">http://estc.bl.uk/R33544</ref>.</note>
                      <!-- If links are available, indicate them using this model. -->
                   </imprint>
                   <imprint>
@@ -117,19 +120,23 @@
                      <publisher> Text Creation Partnership </publisher>
                      <date when="2003">2003</date>
                      <note>The XML for this digital edition drawn from the EEBO-TCP edition (<ref
-                        target="http://name.umdl.umich.edu/A57495.0001.001"
-                        > http://name.umdl.umich.edu/A57495.0001.001
-                     </ref>) which is also Wing R1754. It has been checked against the anthologized version in <hi rend="italic">British Literature 1640-1789: An Anthology</hi>, edited by Robert DeMaria, Jr. (pp 281-285).</note>
+                           target="http://name.umdl.umich.edu/A57495.0001.001">
+                           http://name.umdl.umich.edu/A57495.0001.001 </ref>) which is also Wing
+                        R1754. It has been checked against the anthologized version in <hi
+                           rend="italic">British Literature 1640-1789: An Anthology</hi>, edited by
+                        Robert DeMaria, Jr. (pp 281-285).</note>
                   </imprint>
                   <imprint>
-                     <pubPlace></pubPlace>
-                     <publisher>
-                        Internet Archive
-                     </publisher>
+                     <pubPlace/>
+                     <publisher> Internet Archive </publisher>
                      <date when="1675" cert="high">1675</date>
-                     <note>The shorter 1675 edition, bound together with other items in the Newberry Library's Luttrell Broadsides collection, is available in facsimile via Internet Archive, at <ref target="https://archive.org/details/case_6a_158_no_7">https://archive.org/details/case_6a_158_no_7</ref>.</note>
+                     <note>The shorter 1675 edition, bound together with other items in the Newberry
+                        Library's Luttrell Broadsides collection, is available in facsimile via
+                        Internet Archive, at <ref
+                           target="https://archive.org/details/case_6a_158_no_7"
+                           >https://archive.org/details/case_6a_158_no_7</ref>.</note>
                   </imprint>
-                  <extent>151, [1] p. ;  8⁰.</extent>
+                  <extent>151, [1] p. ; 8⁰.</extent>
                   <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
                   <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
                   <biblScope>pp 6-13</biblScope>
@@ -274,16 +281,32 @@
             <!-- Begins the title page encoding. Encode the title page with line breaks where indicated on the title page. Use CAPITALS where appropriate. -->
             <docTitle>
                <!-- Separate the parts of your title page or front information in DOCTITLE, DOCAUTHOR, DOCIMPRINT, and DOCDATE. Multiple parts of a title are indicated with TITLEPART. See the TEI titlePage guidelines for more information. -->
-               <titlePart>POEMS<lb/>
-                  ON SEVERAL<lb/>
-                  OCCASIONS<lb/>
-                  </titlePart></docTitle>
-            <byline>
-               By the<lb/>
-               Right Honourable,<lb/>
-               <docAuthor><ref target="a001" corresp="n001">THE E Of R—</ref><note xml:id="n001" target="a001" type="editorial" resp="editors.xml#JL">John Wilmot, second earl of Rochester, was born to Anne St. John, Countess of Rochester and Henry Wilmot, first earl of Rochester on April 1st, 1647, in Oxfordshire, England. In 1658, at age eleven, John Wilmot succeeded his fathers’ Earldom. Just three years later, Wilmot received an M.A. from Wadham College, Oxford. Charles II, King of Great Britain and Ireland at the time, appointed Rochester a tutor to be mentored by. Rochester and his tutor, Sir Andrew Balfour travelled through France and Italy until 1664 when Rochester returned to Charles’ court to lead the court wits. In his time at the court, Wilmot became one of the most famous poets and controversial satirists of the restoration period. In the collection, “The Poems of John Wilmot”, editor Keith Walker notes that Rochester’s raucous lifestyle and many vices often garnered contempt from the king’s court. Though he was a notable poet, Rochester also contributed to Restoration drama by acting as a patron to many playwrights including John Dryden and John Fletcher. The latter part of the 1670’s saw Rochester contribute more seriously to the affairs of the state. On his deathbed, Rochester called upon his close friend, the bishop of Salisbury, Gilbert Burnet to recant his past libertinism and convert to Christianity. Rochester died on July 26th, 1680, in Oxfordshire, at the age of thirty-three. </note></docAuthor></byline><lb/>
-            <docImprint>
-Printed at <hi rend="italic">ANTWERPEN.</hi><lb/></docImprint>
+               <titlePart>POEMS<lb/> ON SEVERAL<lb/> OCCASIONS<lb/>
+               </titlePart>
+            </docTitle>
+            <byline> By the<lb/> Right Honourable,<lb/>
+               <docAuthor><ref target="a001" corresp="n001">THE E Of R—</ref><note xml:id="n001"
+                     target="a001" type="editorial" resp="editors.xml#JL">John Wilmot, second earl
+                     of Rochester, was born to Anne St. John, Countess of Rochester and Henry
+                     Wilmot, first earl of Rochester on April 1st, 1647, in Oxfordshire, England. In
+                     1658, at age eleven, John Wilmot succeeded his fathers’ Earldom. Just three
+                     years later, Wilmot received an M.A. from Wadham College, Oxford. Charles II,
+                     King of Great Britain and Ireland at the time, appointed Rochester a tutor to
+                     be mentored by. Rochester and his tutor, Sir Andrew Balfour travelled through
+                     France and Italy until 1664 when Rochester returned to Charles’ court. In his
+                     time at court, Wilmot became one of the most famous poets and controversial
+                     satirists of the Restoration period. In the collection <hi rend="italic"> The
+                        Poems of John Wilmot</hi>, editor Keith Walker notes that Rochester’s
+                     raucous lifestyle and many vices--some characteristics of his
+                     libertinism--often garnered contempt from the king’s court. Though he was a
+                     notable poet, Rochester acted as a patron to many playwrights including John
+                     Dryden and John Fletcher. The latter part of the 1670s saw Rochester contribute
+                     more seriously to the affairs of the state. On his deathbed, Rochester called
+                     upon his close friend, the bishop of Salisbury, Gilbert Burnet, to recant his
+                     past libertinism and convert to Christianity. Rochester died on July 26th,
+                     1680, in Oxfordshire, at the age of thirty-three. </note></docAuthor></byline>
+            <lb/>
+            <docImprint> Printed at <hi rend="italic">ANTWERPEN.</hi><lb/></docImprint>
 
          </titlePage>
       </front>
@@ -293,9 +316,11 @@ Printed at <hi rend="italic">ANTWERPEN.</hi><lb/></docImprint>
          <div type="poem">
             <head type="title">SATYR [AGAINST REASON AND MANKIND]<lb/>[1680, "Antwerpen" <ref
                   target="http://name.umdl.umich.edu/A57495.0001.001
-                  ">EEBO-TCP</ref> | EEBO-TCP text corresponds to <ref target="http://estc.bl.uk/R33544">this record in ESTC</ref> |
-               | First edition facsimile <ref
-                  target="https://archive.org/details/case_6a_158_no_7/page/n3">here</ref>]</head>
+                  "
+                  >EEBO-TCP</ref> | EEBO-TCP text corresponds to <ref
+                  target="http://estc.bl.uk/R33544">this record in ESTC</ref> | | First edition
+               facsimile <ref target="https://archive.org/details/case_6a_158_no_7/page/n3"
+                  >here</ref>]</head>
             <lg>
                <l n="1">WEre I (who to my cost already am</l>
                <l n="2">One of those strange prodigious Crea∣tures <hi rend="italic">Man.</hi>)</l>
@@ -310,8 +335,13 @@ Printed at <hi rend="italic">ANTWERPEN.</hi><lb/></docImprint>
                <l n="10">And before certain instinct, will preferr</l>
                <l n="11"><hi rend="italic">Reason,</hi> which fifty times for one does err.</l>
                <pb n="7"/>
-               <l n="12"><hi rend="italic">Reason,</hi> an <ref target="a003" corresp="n003"><hi rend="italic">Ignis fatuus,</hi></ref><note xml:id="n003" target="a003" type="editorial" resp="editors.xml#JL">From the Latin meaning, literally, "foolish fire," an ignis fatuus is a will-o'the-wisp, a flitting phosphorescent light that led travelers astray in marshy areas like the "Fenny  Bogs and Thorny Brakes" (15) Rochester describes below (<ref target="https://oed.com/">OED, "ignis fatuus, n."</ref>).</note> in
-                  the <hi rend="italic">Mind,</hi></l>
+               <l n="12"><hi rend="italic">Reason,</hi> an <ref target="a003" corresp="n003"><hi
+                        rend="italic">Ignis fatuus,</hi></ref><note xml:id="n003" target="a003"
+                     type="editorial" resp="editors.xml#JL">From the Latin meaning, literally,
+                     "foolish fire," an ignis fatuus is a will-o'the-wisp, a flitting phosphorescent
+                     light that led travelers astray in marshy areas like the "Fenny Bogs and Thorny
+                     Brakes" (15) Rochester describes below (<ref target="https://oed.com/">OED,
+                        "ignis fatuus, n."</ref>).</note> in the <hi rend="italic">Mind,</hi></l>
                <l n="13">Which leaving light of <hi rend="italic">Nature,</hi> sense behind;</l>
                <l n="14">Pathless and dan'grous wandring ways it takes,</l>
                <l n="15">Through errors, <hi rend="italic">Fenny-Boggs,</hi> and Thorny <hi
@@ -339,7 +369,16 @@ Printed at <hi rend="italic">ANTWERPEN.</hi><lb/></docImprint>
                <l n="34">Aiming to know what <hi rend="italic">World</hi> he shou'd enjoy;</l>
                <l n="35">And <hi rend="italic">Wit,</hi> was his vain frivolous pretence,</l>
                <l n="36">Of pleasing others, at his own expence.</l>
-               <l n="37">For <ref target="a004" corresp="n004"><hi rend="italic">Wits</hi></ref><note xml:id="n004" target="a004" type="editorial" resp="editors.xml#JL"> During the restoration period in England, Charles II would often be found in the company of young intellectuals. Much to the disdain of the Chancellors, of which the Wits cared little for. These men made up the Court Wits. In his book “The Court Wits of the Restoration", John Harold Wilson writes that “the label Wit was attached only to one who made some real pretense to distinction as a poet, critic, translator, raconteur, or a man of learning" (6). (<ref target="https://archive.org/details/in.ernet.dli.2015.500024/page/n17">Archive.org, "The Court Wits of the Restoration"</ref>).</note> are treated just like common<hi
+               <l n="37">For <ref target="a004" corresp="n004"><hi rend="italic"
+                     >Wits</hi></ref><note xml:id="n004" target="a004" type="editorial"
+                     resp="editors.xml#JL"> During the Restoration period in England, Charles II
+                     would often be found in the company of young intellectuals or "wits." In <hi
+                        rend="italic">The Court Wits of the Restoration</hi>, John Harold Wilson
+                     writes that “the label Wit was attached only to one who made some real pretense
+                     to distinction as a poet, critic, translator, raconteur, or a man of learning"
+                        (<ref target="https://archive.org/details/in.ernet.dli.2015.500024/page/n17"
+                        >6)</ref>. Among the so-called "court wits" were Wilmot, Sir John Suckling,
+                     Edmund Waller, and others. </note> are treated just like common<hi
                      rend="italic"> Whores,</hi></l>
                <l n="38">First they're enjoy'd, and then kickt out of <hi rend="italic"
                   >Doores,</hi></l>
@@ -349,15 +388,26 @@ Printed at <hi rend="italic">ANTWERPEN.</hi><lb/></docImprint>
                      rend="italic">Wit,</hi> are dang'rous Tools,</l>
                <l n="42">And ever fatal to admiring <hi rend="italic">Fools.</hi></l>
                <pb n="8"/>
-               <l n="43">Pleasure allures, and when the <ref target="a005" corresp="n005"><hi rend="italic">Fopps</hi></ref><note xml:id="n005" target="a005" type="editorial" resp="editors.xml#JL">Robert B. Heilman, writing for The Johns Hopkins University Press, discusses the term Fopp in his article Some Fops and some Versions of Foppery. Heilman notes that as a “general, all-purpose carrier of disapproval, fop works much like fool" (364). (<ref target="https://www.jstor.org/stable/2872988"></ref>)</note> escape,</l>
+               <l n="43">Pleasure allures, and when the <ref target="a005" corresp="n005"><hi
+                        rend="italic">Fopps</hi></ref><note xml:id="n005" target="a005"
+                     type="editorial" resp="editors.xml#JL">In "Fops and Some Versions of Foppery,"
+                     Robert B. Heilman discusses this term, noting that as a “general, all-purpose
+                     carrier of disapproval, fop works much like fool" (<ref
+                        target="https://www.jstor.org/stable/2872988">364</ref>).</note> escape,</l>
                <l n="44">'Tis not that they're belov'd, but fortunate,</l>
                <l n="45">And therefore what thy fear, at least they hate.</l>
-               <l n="46">But now methinks some formal <ref target="a006" corresp="n006">Band, and Beard,</ref><note xml:id="n006" target="a006" type="editorial"
-                  resp="editors.xml#JL"><graphic url="/notes/l7803.jpg"/>According to the OED, "band" refers to an eighteenth-century neck
-                     piece traditionally worn by clergy members, scholars, and those in the legal profession (<ref target="http://www.oed.com/view/Entry/15113">n.2.4b</ref>). In this portrait by Benjamin Wilson (c.1750) of 
-                     James Bradley, third Astronomer Royal from 1742 to 1762, the band at his neck indicates his academic profession. This portrait, via the <ref
-                     target="https://collections.rmg.co.uk/collections/objects/203215.html">
-                     Royal Museums Greenwich online collections</ref>, is housed in the National Maritime Museum, Greenwich, London. )</note></l>
+               <l n="46">But now methinks some formal <ref target="a006" corresp="n006">Band, and
+                     Beard,</ref><note xml:id="n006" target="a006" type="editorial"
+                     resp="editors.xml#JL"><graphic url="/notes/l7803.jpg"/>According to the OED,
+                     "band" refers to an eighteenth-century neck piece traditionally worn by clergy
+                     members, scholars, and those in the legal profession (<ref
+                        target="http://www.oed.com/view/Entry/15113">n.2.4b</ref>). In this portrait
+                     by Benjamin Wilson (c.1750) of James Bradley, third Astronomer Royal from 1742
+                     to 1762, the band at his neck indicates his academic profession. This portrait,
+                     via the <ref
+                        target="https://collections.rmg.co.uk/collections/objects/203215.html">
+                        Royal Museums Greenwich online collections</ref>, is housed in the National
+                     Maritime Museum, Greenwich, London. )</note></l>
                <l n="47">Takes me to task, come on Sir, I'm prepard.</l>
                <l n="48">Then by your favour, any thing that's writ</l>
                <l n="49">Against this gibeing jingling knack call'd <hi rend="italic">Wit,</hi></l>
@@ -369,8 +419,35 @@ Printed at <hi rend="italic">ANTWERPEN.</hi><lb/></docImprint>
                <l n="55">I long to lash it in some sharp Essay,</l>
                <l n="56">But your grand indiscretion bids me stay,</l>
                <l n="57">And turns my Tide of Ink another way.</l>
-               <l n="58">What rage ferments in your degen'rate mind,</l>
+               <l n="58"><ref target="a007" corresp="n007">What rage ferments in your degen'rate
+                     mind,</ref></l>
                <l n="59">To make you rail at Reason, and Mankind?</l>
+               <note xml:id="n007" target="a007" type="editorial" resp="editors.xml#TH">Rochester's poem is a response to the question
+                  being asked here by a hypothetical clergyman (the "formal band and beard," above).
+                  The clergyman describes Rochester's mind as "degen[e]rate," and his way of
+                  thinking, deviant. The context for this criticism is the philosophical an sexual
+                  libertinism that Rochester had become identified with. Libertinism in the
+                  Restoration period was characterized by a vivid, almost nihilistic sexuality. As
+                  Jeremy Webster argues in <hi rend="italic">Performing Libertinism in Charles II’s
+                     Court</hi>, “[l]ibertines...performed traditionally secretive acts— excessive
+                  drinking, carnality, sodomy, sedition, assault, and sacrilege—in the public sphere
+                  in a variety of ways” (2). In a brief article for the British Library on Restoration comedy, <ref target="https://www.bl.uk/restoration-18th-century-literature/articles/an-introduction-to-restoration-comedy">Diane Maybank</ref> notes that behind the "wit and sexual escapades" characteristic of the Restoration mode, there is a "deep unease" that
+                  scholars have traced both to the disorder that marked the Civil Wars
+                  and to the influential views of Thomas Hobbes. In <hi rend="italic">Leviathan</hi> (1651), Hobbes argued
+                  that humans are completely driven by the primary drives of appetite and aversion;
+                  people are selfish at their root. In the state of nature, which is a state of war,
+                  “there is no place for industry...; no account of time, no arts, no letters, no
+                  society, and, which is worst of all, continual fear and danger of violent death,
+                  and the life of man solitary, poor, nasty, brutish, and short” (<ref target="https://www.bartleby.com/34/5/13.html">Paragraph 9,
+                  Chapter 13, <hi rend="italic">Leviathan</hi></ref>). To avoid this chaotic, violent state of nature and
+                  maintain a civilization governed by law rather than desire, human societies
+                  contract with strong leaders. However, the libertinism of the court wits, which is
+                  characterized by a performative sexuality at odds with the moral and civil codes
+                  of liberal contractualism, “disturb[s] the self-evident” Restoration of order
+                  heralded by the return of Charles II to the throne (<ref target="https://www.jstor.org/stable/23242168">Tindemans 135</ref>; see also Jeremy
+                  Webster, <hi>Performing Libertinism in Charles II’s Court</hi>). Rochester’s poem is a
+                  “Satire against Reason and Mankind”; it is fundamentally skeptical of the
+                  ability--or desirability--of reason and law to ameliorate baser human interests. </note>
                <l n="60">Bless glorious <hi rend="italic">Man!</hi> to whom alone kind <hi
                      rend="italic">Heav'n,</hi></l>
                <l n="61">An everlasting <hi rend="italic">Soul</hi> has freely giv'n;</l>
