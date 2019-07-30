@@ -2,7 +2,6 @@
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0"  xml:id="defoe-crusoe">
    
-   <!--TEI Header BEGINS-->
    <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
@@ -56,37 +55,43 @@
             </availability>
            
          </publicationStmt>
-            
-         <sourceDesc>
-             <biblStruct>
-                 <monogr>
-                     <author>
-                        <persName type="lcnaf" key="n79053974">
-                           <name>
-                              <forename>Daniel</forename>
-                              <surname>Defoe</surname>
-                           </name>
-                        </persName>
-                     </author>
-                     <title type="main">Robinson Crusoe</title>
-                     <title type="sub">The life and strange surprizing adventures of Robinson Crusoe: of York, mariner: who lived eight and twenty years, all alone in an un-inhabited island on the coast of America, near the mouth of the great river of Oroonoque; ... Written by himself.</title>
-                     <imprint>
-                         <pubPlace>
-                             <placeName type="city" key="lon">London</placeName>
-                         </pubPlace>
-                         <publisher>William Taylor</publisher>
-                         <date when="1719-04-25">1719 April 25</date>
-                     </imprint>
-                    <extent></extent>
-                    
-                    <biblScope></biblScope>
-                 </monogr>
-             </biblStruct>
+         <sourceDesc>                 
+            <biblStruct>
+               <monogr>
+                  <author>
+                     <persName type="lcnaf" key="n79053974">
+                        <name>
+                           <forename>Robinson</forename>
+                           <surname>Crusoe</surname>
+                        </name>
+                     </persName>
+                  </author>
+                  <title type="main">Robinson Crusoe</title>
+                  <title type="sub">The life and strange surprizing adventures of Robinson Crusoe: of York, mariner: who lived eight and twenty years, all alone in an un-inhabited island on the coast of America, near the mouth of the great river of Oroonoque; ... Written by himself.</title>
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="">
+                           <!-- Get London key -->
+                           London
+                        </placeName>
+                     </pubPlace>
+                     <publisher>
+                        William Taylor
+                     </publisher>
+                     <date when="1719-04-25">
+                        1719 April 25
+                     </date>
+                     <note resp="editors.xml#JOB">
+                        This edition has been prepared from the Project Gutenberg online e-text. We have added annotations, and also restored the capitalization and italics present in the first edition, here sourced from the copy on the Eighteenth-Century Collection Online.
+                     </note>
+                  </imprint>
+               </monogr>                    
+            </biblStruct>              
          </sourceDesc>
       </fileDesc>
       
-      <profileDesc>  <!--BEGINS Profile Description  -->
-         <!--This Profile Desc is all wrong, must be adapted to this text  -->
+      
+      <profileDesc> 
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
@@ -102,14 +107,11 @@
             <interaction/>
             <preparedness type="prepared"/>
             <purpose type="entertain" degree="high"/>
-            <purpose type="inform" degree="low"/>
          </textDesc>
          
          <settingDesc>
             <setting>
-               <name type="tgn" key="7011781">London, England</name>
-               <name type="tgn" key="7011197">Bath, England</name>
-               <time from="1690" to="1724">Early 18th Century</time>
+               <time when="1719">1719</time>
             </setting>
          </settingDesc>
       </profileDesc>
