@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="montagu-saturday">
+   <!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
+
+   <!--TEI Header BEGINS-->
+   <teiHeader xml:lang="en">
+
+      <fileDesc>
+         <!--BEGINS File Description -->
+         <titleStmt>
+            <title type="main">"Saturday. The Small-Pox."</title>
+            <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
+            <author>
+               <persName type="lcnaf" key="xxxx">
+                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
+                  <name>
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model; ignore if irrelevant. -->
+                     <forename>Mary</forename>
+                     <surname>Wortley Montagu</surname>
+                  </name>
+               </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="xxxxx">
+                  <!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
+                  <name ref="editors.xml#XX">
+                     <!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
+                     <surname>XXX</surname>
+                     <forename>XXX</forename>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
+               <name ref="editors.xml#BehnBurney19">Workshop participants at the Behn/Burney Conference 2019</name>
+               <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
+               <name ref="editors.xml#JW">James West</name> <!-- ADD YOUR NAMES HERE, USING THIS MODEL; ADD YOUR PERSONAL INFORMATION TO THE FILE EDITORS.XML -->
+               <name ref="editors.xml#AR">Amy Ridderhof</name>
+            </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+            <!-- Do not alter. -->
+         </titleStmt>
+
+
+         <publicationStmt>
+            <!-- This element expresses the publication details of this particular etext. -->
+            <publisher>Literature in Context</publisher>
+            <!-- Do not alter. -->
+            <address>
+               <!-- Use the address information for your university. -->
+               <addrLine>Marymount University Department of Literature and Languages</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington, VA </addrLine>
+               <addrLine>22207</addrLine>
+               <addrLine>thowe@marymount.edu</addrLine>
+               <!-- Add your email address.  -->
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+               <!-- Do not alter. -->
+            </address>
+            <availability status="free">
+               <!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+
+         <sourceDesc>
+            <!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
+
+            <biblStruct>
+               <analytic>
+                  <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
+                  <title>"Saturday. The Small-Pox"</title>
+               </analytic>
+               <monogr>
+                  <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
+                  <author>
+                        <forename>Mary Wortley</forename>
+                        <surname>Montagu</surname>                  
+                  </author>
+                  <title>Six Town Eclogues. With Some Other Poems.</title>
+                  <imprint>
+                     <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781">London</placeName>
+                        <!-- Note authority and key. -->
+                     </pubPlace>
+                     <publisher>M. Cooper in Pater-noster-Row</publisher>
+                     <!-- Insert publsher of earliest/first edition. -->
+                     <date when="1747">1747</date>
+                     <!-- Insert date of earliest/first edition. Note the attribute @when. -->
+                     <note source="ESTC">Rt. Hon. L. M. W. M. = Right Honourable Lady Mary Wortley Montagu.
+                        With a half-title.</note>
+                     <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
+                     <note>Page images are drawn from the first printed edition, available via Google Books at <ref target="https://books.google.com/books/about/Six_Town_Eclogues.html">https://books.google.com/books/about/Six_Town_Eclogues.html</ref>. This edition is also available in ECCO.</note>
+                     <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
+                     <note>For more information about this item, see the ESTC entry at <ref
+                        target="http://estc.bl.uk/T79456">http://estc.bl.uk/T79456</ref>. </note>
+                     <!-- If links are available, indicate them using this model. -->
+                  </imprint>
+                  <imprint>
+                     <pubPlace>Oxford, UK</pubPlace>
+                     <publisher>ECCO-TCP</publisher>
+                     <date>n.d.</date>
+                     <note>Base XML for this edition drawn from the ECCO-TCP edition of <hi rend="italic">A Collection of Poems in Three Volumes. By Several Hands.</hi>
+                        London: printed by J. Hughs, for R. Dodsley, 1748., available at <ref target="https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/K092784.001">https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/K092784.001</ref>.</note>
+                  </imprint>
+                  <imprint>
+                     <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
+                     <pubPlace key="7014406">Philadelphia, PA</pubPlace>
+                     <publisher>Eighteenth-Century Poetry Archive</publisher>
+                     <date>n.d.</date>
+                     <note>Text, facsimile, visualization, and modeling of the 1763 edition from <hi rend="italic">A Collection of Poems in Six Volumes. By Several Hands.</hi> Vol. I. London: printed by J. Hughs, for R. and J. Dodsley, 1763 [1st ed. 1758], pp. 82-104., available at <ref
+                        target="https://www.eighteenthcenturypoetry.org/works/o5152-w0110.shtml#o5152-w0116"
+                        > https://www.eighteenthcenturypoetry.org/works/o5152-w0110.shtml#o5152-w0116
+                        </ref>.</note>
+                  </imprint>
+                  <extent>48p.;  4⁰.</extent>
+                  <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
+                  <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible, as for volumes. Delete unused. -->
+                  <biblScope>pp 32-37</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+
+      </fileDesc>
+      <!-- Don't forget to close out all your elements! -->
+
+
+
+      <profileDesc>
+         <!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+         <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
+
+         <textDesc n="poem">
+            <!-- Acceptable values include novel, novella, poem, essay. -->
+            <channel mode="w">print</channel>
+            <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
+            <constitution type="single"/>
+            <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
+            <derivation type="original"/>
+            <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
+            <domain/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <factuality type="inapplicable"/>
+            <!-- See the textDesc guidelines for more information. -->
+            <interaction/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <preparedness/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <purpose type="entertain" degree="high"/>
+            <!-- See the TEI guidelines for more information. -->
+            <purpose type="inform" degree="low"/>
+            <!-- Multiple purpose types may or may not be appropriate. -->
+         </textDesc>
+
+         <settingDesc>
+            <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
+            <setting>
+               <name type="tgn" key="XXX">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               <time from="1690" to="1724">Early 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+
+
+
+      <encodingDesc>
+         <!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <!-- We here define the authority files used throughout the application and data. -->
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+            <taxonomy xml:id="estc">
+               <bibl>English Short Title Catalog</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <!--BEGINS Revision Description -->
+         <change when="2019-10-12" who="editors.xml#TH">Began base XML in preparation for Behn/Burney 2019.</change>
+         <!-- Indicate all substantive changes to the document using the model here. -->
+        
+      </revisionDesc>
+
+
+   </teiHeader>
+   <!--TEI Header Ends -->
+
+
+
+
+
+   <text>
+      <!-- Here begins the encoding of the text itself. -->
+      <front>
+         <!-- Include any front matter here, especially title pages. Titlepages should be encoded to resemble, as closely as possible, the physical page used in this edition. While this digital edition is not a diplomatic edition, we seek a general consistency with the look and feel of the page. Line breaks and capitalization are most relevant. -->
+         <pb n="[TP]" facs="pageImages/TP.jpg"/>
+         <!-- Indicate all page beginnings using this format. Note that the attribute N should indicate page number. If no page number exists, supply one indicating your addition in [brackets]. The attribute FACS should reference the page image (see below for cases of images in notes) in the AWS server structure. Note that this construction implies the addition of prior file structure information, part of which is the xml:id for this particular file. Accuracy and consistency are essential. Use lowercase in your attributes, following the model here. -->
+         <titlePage>
+            <!-- Begins the title page encoding. Encode the title page with line breaks where indicated on the title page. Use CAPITALS where appropriate. -->
+            <docTitle>
+               <!-- Separate the parts of your title page or front information in DOCTITLE, DOCAUTHOR, DOCIMPRINT, and DOCDATE. Multiple parts of a title are indicated with TITLEPART. See the TEI titlePage guidelines for more information. -->
+               <titlePart><lb/></titlePart>
+               <titlePart><lb/>
+                  <!-- Note that this example has two titleParts spanning lines. -->                
+               </titlePart>
+            </docTitle>
+            <docAuthor> 
+            </docAuthor>
+            <docImprint>
+               <!-- Here begins imprint information included in the text pictured. -->
+               <pubPlace><placeName type="tgn" key="XXX">London</placeName></pubPlace>:<lb/> <!-- LOOK UP THE PLACE NAME IN THE GETTY THESAURUS OF GEOGRAPHIC NAMES AND INDICATE THE KEY HERE. -->
+               <!-- Note the continued use of line breaks. --> 
+               <publisher>[Printed for...]<persName>[xxx]</persName>[
+                     <placeName><lb/></placeName>.</publisher></docImprint>
+            <docDate>
+               <date>[date].</date>
+            </docDate>
+
+         </titlePage>
+      </front>
+
+      <body>
+         <!-- Here begins the body of the text to be encoded. -->
+         <div>
+            <pb n="32" facs="pageImages/032.jpg"/> <!-- NOTE THE METHOD OF PAGINATION. ALL PAGE IMAGES HAVE BEEN UPLOADED TO AWS IN THE FORMAT NOTED HERE, WHERE PAGE NUMBER IS INDICATED IN FILENAME. -->
+            <head><hi rend="italic">SATURDAY.</hi><lb/>
+               The Small-Pox.<lb/></head>
+            <!-- Note use of head here. -->
+            <head type="sub">FLAVIA.</head>
+            
+            <div type="eclogue"> <!-- THIS DIV DERIVED FROM ECCO-TCP XML. SHOULD BE UPDATED TO REFLECT LIC PRINCIPLES. -->
+               <pb n="103" facs="tcp:0509301101:107"/> <!-- CORRECT PAGE NUMBERINGS TO REFERENCE OUR PAGE IMAGES -->
+               <head>SATURDAY. The SMALL-POX.</head>
+               <stage>FLAVIA.</stage> <!-- WHAT DO WE DO WITH THIS? -->
+               <lg>
+                  <l>THE wretched FLAVIA on her couch reclin'd,</l> <!-- A BIT TEDIOUS, BUT NEED TO ADD N="1" AND SO ON TO EACH LINE. USE <HI REND="INDENT"/> TO INDICATE ANY INDENTATION. -->
+                  <l>Thus breath'd the anguiſh of a wounded mind;</l> <!-- REMEMBER THE LIC EDITORIAL GUIDELINES ABOUT LONG-S CHARACTERS, LIGATURES, AND SO ON. SILENTLY MODERNIZE. -->
+                  <l>A glaſs revers'd in her right hand ſhe bore,</l>
+                  <l>For now ſhe ſhunn'd the face ſhe ſought before.</l>
+               </lg>
+               <lg>
+                  <l>"How am I chang'd! alas! how am I grown</l>
+                  <l>'A frightful ſpectre, to myſelf unknown!</l>
+                  <l>'Where's my complexion? where my radiant bloom,</l>
+                  <l>'That promis'd happineſs for years to come?</l>
+                  <l>'Then with what pleaſure I this face ſurvey'd!</l>
+                  <l>'To look once more, my viſits oft delay'd!</l>
+                  <l>'Charm'd with the view, a freſher red would riſe,</l>
+                  <l>'And a new life ſhot ſparkling from my eyes!</l>
+               </lg>
+               <lg>
+                  <l>'Ah! faithleſs glaſs, my wonted bloom reſtore;</l>
+                  <l>'Alas! I rave, that bloom is now no more!</l>
+                  <l>'The greateſt good the Gods on men beſtow,</l>
+                  <l>'Ev'n youth itſelf, to me is uſeleſs now.</l>
+                  <l>'There was a time (oh! that I cou'd forget!)</l>
+                  <l>'When opera-tickets pour'd before my feet;</l>
+                  <l>'And at the ring, where brighteſt beauties ſhine,</l>
+                  <l>'The earlieſt cherries of the ſpring were mine.</l>
+                  <l>'Witneſs, O Lilly; and thou, Motteux, tell</l>
+                  <l>'How much japan theſe eyes have made ye ſell.</l>
+                  <l>
+                     <pb n="104" facs="tcp:0509301101:108" rendition="simple:additions"/> <!-- THE ECCO-TCP PROJECT USED THIS INFIRMATION TO DESIGNATE PAGE NUMBERS AND OTHER RENDITION ELEMENTS. WE ARE NOT. CUT WHAT IS UNNECESSARY. -->
+                     'With what contempt ye ſaw me oft deſpiſe</l>
+                  <l>'The humble offer of the raffled prize;</l>
+                  <l>'For at the raffle ſtill each prize I bore,</l>
+                  <l>'With ſcorn rejected, or with triumph wore!</l>
+                  <l>'Now beauty's fled, and preſents are no more!</l>
+               </lg>
+               <lg>
+                  <l>'For me the Patriot has the houſe forſook,</l>
+                  <l>'And left debates to catch a paſſing look:</l>
+                  <l>'For me the Soldier has ſoft verſes writ;</l>
+                  <l>'For me the Beau has aim'd to be a wit.</l>
+                  <l>'For me the Wit to nonſenſe was betray'd;</l>
+                  <l>'The Gameſter has for me his dun delay'd,</l>
+                  <l>'And overſeen the card I would have pay'd.</l>
+                  <l>'The bold and haughty by ſucceſs made vain,</l>
+                  <l>'Aw'd by my eyes, have trembled to complain:</l>
+                  <l>'The baſhful 'Squire touch'd by a wiſh unknown,</l>
+                  <l>'Has dar'd to ſpeak with ſpirit not his own;</l>
+                  <l>'Fir'd by one wiſh, all did alike adore;</l>
+                  <l>'Now beauty's fled, and lovers are no more!</l>
+               </lg>
+               <lg>
+                  <l>'As round the room I turn my weeping eyes,</l>
+                  <l>'New unaffected ſcenes of ſorrow riſe!</l>
+                  <l>'Far from my ſight that killing picture bear,</l>
+                  <l>'The face disfigure, and the canvas tear!</l>
+                  <l>'That picture, which with pride I us'd to ſhow,</l>
+                  <l>'The loſt reſemblance but upbraids me now.</l>
+                  <l>'And thou, my toilette! where I oft have ſate,</l>
+                  <l>'While hours unheeded paſs'd in deep debate,</l>
+                  <l>'How curls ſhould fall, or where a patch to place;</l>
+                  <l>'If blue or ſcarlet beſt became my face;</l>
+                  <l>
+                     <pb n="105" facs="tcp:0509301101:109"/> <!-- REMEMBER THAT WE ARE WORKING WITH THE 1747 PRINT EDITION; YOU HAVE PAGE IMAGES. PAGE BEGINNING <PB> ELEMENTS SHOULD REFLECT THAT EDITION. -->
+                     'Now on ſome happier nymph your aid beſtow;</l>
+                  <l>'On fairer heads, ye uſeleſs jewels, glow!</l>
+                  <l>'No borrow'd luſture can my charms reſtore;</l>
+                  <l>'Beauty is fled, and dreſs is now no more!</l>
+               </lg>
+               <lg>
+                  <l>'Ye meaner beauties, I permit ye ſhine;</l>
+                  <l>'Go, triumph in the hearts that once were mine;</l>
+                  <l>'But 'midſt your triumphs with confuſion know,</l>
+                  <l>''Tis to my ruin all your arms ye owe.</l>
+                  <l>'Would pitying heav'n reſtore my wonted mein,</l>
+                  <l>'Ye ſtill might move unthought-of and unſeen:</l>
+                  <l>'But oh! how vain, how wretched is the boaſt</l>
+                  <l>'Of beauty faded, and of empire loſt!</l>
+                  <l>'What now is left but weeping, to deplore</l>
+                  <l>'My beauty fled, and empire now no more!</l>
+               </lg>
+               <lg>
+                  <l>'Ye, cruel chymiſts, what with-held your aid!</l>
+                  <l>'Could no pomatums ſave a trembling maid?</l>
+                  <l>'How falſe and trifling is that art ye boaſt;</l>
+                  <l>'No art can give me back my beauty loſt!</l>
+                  <l>'In tears, ſurrounded by my friends I lay,</l>
+                  <l>'Maſk'd o'er, and trembled at the ſight of day;</l>
+                  <l>'MIRMILIO came my fortune to deplore,</l>
+                  <l>'(A golden-headed cane well carv'd he bore)</l>
+                  <l>'Cordials, he cry'd, my ſpirits muſt reſtore!</l>
+                  <l>'Beauty is fled, and ſpirit is no more!</l>
+               </lg>
+               <lg>
+                  <l>'GALEN, the grave; officious SQUIRT, was there,</l>
+                  <l>'With fruitleſs grief and unavailing care:</l>
+                  <l>'MACHAON too, the great MACHAON, known</l>
+                  <l>'By his red cloak and his ſuperior frown;</l>
+                  <l>
+                     <pb n="106" facs="tcp:0509301101:110"/>
+                     'And why, he cry'd, this grief and this deſpair?</l>
+                  <l>'You ſhall again be well, again be fair;</l>
+                  <l>'Believe my oath; (with that an oath he ſwore)</l>
+                  <l>'Falſe was his oath; my beauty is no more!</l>
+               </lg>
+               <lg>
+                  <l>'Ceaſe, hapleſs maid no more thy tale purſue,</l>
+                  <l>'Forſake mankind, and bid the world adieu!</l>
+                  <l>'Monarchs and beauties rule with equal ſway;</l>
+                  <l>'All ſtrive to ſerve, and glory to obey:</l>
+                  <l>'Alike unpitied when depos'd they grow,</l>
+                  <l>'Men mock the idol of their former vow.</l>
+               </lg>
+               <lg>
+                  <l>'Adieu! ye parks!—in ſome obſcure receſs,</l>
+                  <l>'Where gentle ſtreams will weep at my diſtreſs,</l>
+                  <l>'Where no falſe friend will in my grief take part,</l>
+                  <l>'And mourn my ruin with a joyful heart;</l>
+                  <l>'There let me live in ſome deſerted place,</l>
+                  <l>'There hide in ſhades this loſt inglorious face.</l>
+                  <l>'Ye operas, circles, I no more muſt view!</l>
+                  <l>'My toilette, patches, all the world adieu!</l>
+               </lg>
+               <pb facs="tcp:0509301101:111"/>
+               <pb facs="tcp:0509301101:112"/>
+               <!-- COULD ADD A <MILESTONE> ELEMENT TO INDICATE PRINTERS MARKS AND ORNAMENTS; SEE TEI P5 GUIDELINES. -->
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
