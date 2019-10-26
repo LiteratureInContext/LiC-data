@@ -84,35 +84,34 @@
                      <surname>Wilmot</surname>
                      <addName>Earl of Rochester</addName>
                   </author>
-                  <title>Poems on Several Occasions By the Right Honourable, THE E Of R—</title>
+                  <title>Poems on Several Occasions By the Right Honourable, THE E. Of R—</title>
                   <imprint>
                      <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
                      <pubPlace>
                         <placeName type="tgn" key="7011781" cert="low">Antwerpen</placeName>
                         <!-- Note authority and key. -->
                      </pubPlace>
-                     <publisher/>
+                     <publisher>[John Redmayne]</publisher>
                      <!-- Insert publsher of earliest/first edition. -->
-                     <date when="1680" cert="medium">1680[?]</date>
+                     <date when="1680" cert="medium">1680</date>
                      <!-- Insert date of earliest/first edition. Note the attribute @when. -->
-                     <note source="ESTC"> The E of R- = John Wilmot, Earl of Rochester.</note>
-                     <note source="ESTC"> Actual place of publication conjectured by cataloger.
-                        Other editions "printed at Antwerp" were probably printed in London (cf.
-                        Wing); signatures and catchwords appear to be typical of English printing
-                        practice; Wing does not suggest London for this edition.</note>
-                     <note source="ESTC"> Identified as Wing R1754, reel 1556, of the UMI microfilm
-                        set "Early English books, 1641-1700".</note>
-                     <note source="ESTC"> Does not match Wing (2nd ed. rev. &amp; enl.) R1754B,
-                        which gives 152 p.The imprint is false; actually printed in London.</note>
+                     <note source="ESTC">The E. of R--- = John Wilmot, Earl of Rochester.</note>
+                     <note source="ESTC">The first unauthorised edition.</note>
+                     <note source="ESTC">Place of publication from Wing.</note>
+                     <note source="ESTC">Printer identified in "The Library", March 2014.</note>
+                     <note source="ESTC">Wing R1753 conflates several editions. In this edition the title page has two rows of five ornaments; "E. of R---" has a full stop after "E".</note>
+                     <note source="ESTC">Citation/references: Wing (CD-Rom, 1996), R1753</note>
+                     <note source="ESTC">Fisher, N. ’Rochester’s poems on several occasions, 1680.’ The Library, 7th series, v.15:1 (March 2014), 45-62.</note>
+                     <note source="ESTC">Microfilm. Ann Arbor, Mich. University Microfilms International, 1978. 1 microfilm reel ; 35 mm. (Early English books, 1641-1700; 848:15).</note>
                      <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
-                     <note>Note to self: update this with EEBO images from John after checking</note>
+                     <note>Images sourced from the Wing microfilm (Early English books, 1641-1700; 848:15) as duplicated in EEBO.</note>
                      <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
                      <note>For more information about this item, see the ESTC entry at <ref
-                           target="http://estc.bl.uk/R33544">http://estc.bl.uk/R33544</ref>.</note>
+                        target="http://estc.bl.uk/R7108">http://estc.bl.uk/R7108</ref>.</note>
                      <!-- If links are available, indicate them using this model. -->
                   </imprint>
                   <imprint>
-                     <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
+                     <!-- Indicate any other imprint "witnesses" or "surrogates" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
                      <pubPlace>
                         <placeName type="tgn" key="7013304">Ann Arbor, MI</placeName>
                      </pubPlace>
@@ -127,7 +126,7 @@
                   </imprint>
                   <imprint>
                      <pubPlace/>
-                     <publisher> Internet Archive </publisher>
+                     <publisher>Internet Archive </publisher>
                      <date when="1675" cert="high">1675</date>
                      <note>The shorter 1675 edition, bound together with other items in the Newberry
                         Library's Luttrell Broadsides collection, is available in facsimile via
@@ -138,7 +137,7 @@
                   <extent>151, [1] p. ; 8⁰.</extent>
                   <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
                   <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
-                  <biblScope>pp 6-13</biblScope>
+                  <biblScope>pp titlepage and 6-13</biblScope>
                </monogr>
             </biblStruct>
          </sourceDesc>
@@ -157,7 +156,7 @@
          <creation/>
          <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
 
-         <textDesc n="novella">
+         <textDesc n="poem">
             <!-- Acceptable values include novel, novella, poem, essay. -->
             <channel mode="w">print</channel>
             <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
@@ -167,7 +166,7 @@
             <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
             <domain/>
             <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-            <factuality type="fiction"/>
+            <factuality type="inapplicable"/>
             <!-- See the textDesc guidelines for more information. -->
             <interaction/>
             <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
@@ -184,8 +183,7 @@
             <setting>
                <name type="tgn" key="7011781">London, England</name>
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="7011197">Bath, England</name>
-               <time from="1690" to="1724">Early 18th Century</time>
+               <time from="1660" to="1690">Late 17th Century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
             </setting>
          </settingDesc>
@@ -314,13 +312,7 @@
          <!-- Here begins the body of the text to be encoded. -->
          <pb n="6" facs="pageImages/006.jpg"/>
          <div type="poem">
-            <head type="title">SATYR [AGAINST REASON AND MANKIND]<lb/>[1680, "Antwerpen" <ref
-                  target="http://name.umdl.umich.edu/A57495.0001.001
-                  "
-                  >EEBO-TCP</ref> | EEBO-TCP text corresponds to <ref
-                  target="http://estc.bl.uk/R33544">this record in ESTC</ref> | | First edition
-               facsimile <ref target="https://archive.org/details/case_6a_158_no_7/page/n3"
-                  >here</ref>]</head>
+            <head type="title"><hi rend="italic">SATYR [AGAINST REASON AND MANKIND]</hi><lb/></head>
             <lg>
                <l n="1">WEre I (who to my cost already am</l>
                <l n="2">One of those strange prodigious Crea∣tures <hi rend="italic">Man.</hi>)</l>
