@@ -15,8 +15,8 @@
                   <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
                   <name>
                      <!-- If we use a separate file for author information, we reference it here, using the editors.xml model; ignore if irrelevant. -->
-                     <forename>Mary</forename>
-                     <surname>Wortley Montagu</surname>
+                     <forename>Mary Wortley</forename>
+                     <surname>Montagu</surname>
                   </name>
                </persName>
             </author>
@@ -35,8 +35,8 @@
                <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
                <name ref="editors.xml#BehnBurney19">Workshop participants at the Behn/Burney Conference 2019</name>
                <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
-               <name ref="editors.xml#JW">James West</name> <!-- ADD YOUR NAMES HERE, USING THIS MODEL; ADD YOUR PERSONAL INFORMATION TO THE FILE EDITORS.XML -->
-               <name ref="editors.xml#AR">Amy Ridderhof</name>
+               <name ref="editors.xml#JW"></name> <!-- ADD YOUR NAMES HERE, USING THIS MODEL; ADD YOUR PERSONAL INFORMATION TO THE FILE EDITORS.XML -->
+               <name ref="editors.xml#AR"></name>
             </respStmt>
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
@@ -74,7 +74,7 @@
             <biblStruct>
                <analytic>
                   <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
-                  <title>"Saturday. The Small-Pox"</title>
+                  <title>XXXX</title>
                </analytic>
                <monogr>
                   <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
@@ -82,11 +82,11 @@
                         <forename>Mary Wortley</forename>
                         <surname>Montagu</surname>                  
                   </author>
-                  <title>Six Town Eclogues. With Some Other Poems.</title>
+                  <title>XXX</title>
                   <imprint>
                      <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
                      <pubPlace>
-                        <placeName type="tgn" key="7011781">London</placeName>
+                        <placeName type="tgn" key="XXX">London</placeName>
                         <!-- Note authority and key. -->
                      </pubPlace>
                      <publisher>M. Cooper in Pater-noster-Row</publisher>
@@ -122,7 +122,7 @@
                   <extent>48p.;  4⁰.</extent>
                   <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
                   <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible, as for volumes. Delete unused. -->
-                  <biblScope>pp 32-37</biblScope>
+                  <biblScope>xxx</biblScope>
                </monogr>
             </biblStruct>
          </sourceDesc>
@@ -263,12 +263,12 @@
             <!-- Begins the title page encoding. Encode the title page with line breaks where indicated on the title page. Use CAPITALS where appropriate. -->
             <docTitle>
                <!-- Separate the parts of your title page or front information in DOCTITLE, DOCAUTHOR, DOCIMPRINT, and DOCDATE. Multiple parts of a title are indicated with TITLEPART. See the TEI titlePage guidelines for more information. -->
-               <titlePart><lb/></titlePart>
-               <titlePart><lb/>
+               <titlePart>title<lb/>part</titlePart>
+               <titlePart>titlepart<lb/>
                   <!-- Note that this example has two titleParts spanning lines. -->                
                </titlePart>
             </docTitle>
-            <docAuthor> 
+            <docAuthor>text re: author from titlepage; use linebreak if needed 
             </docAuthor>
             <docImprint>
                <!-- Here begins imprint information included in the text pictured. -->
