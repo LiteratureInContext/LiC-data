@@ -11,7 +11,7 @@
             <title type="main">"Saturday. The Small-Pox."</title>
             <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
             <author>
-               <persName type="lcnaf" key="xxxx">
+               <persName type="lcnaf" key="n50004183">
                   <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
                   <name>
                      <!-- If we use a separate file for author information, we reference it here, using the editors.xml model; ignore if irrelevant. -->
@@ -21,22 +21,24 @@
                </persName>
             </author>
             <editor>
-               <persName type="orcid" key="xxxxx">
+               <persName type="orcid" key="0000-0002-5987-8542">
                   <!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
-                  <name ref="editors.xml#XX">
+                  <name ref="editors.xml#LR">
                      <!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
-                     <surname>XXX</surname>
-                     <forename>XXX</forename>
+                     <surname>Runge</surname>
+                     <forename>Laura</forename>
                   </name>
                </persName>
             </editor>
             <respStmt>
-               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <resp>Correction, editorial commentary, and markup</resp>
                <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
                <name ref="editors.xml#BehnBurney19">Workshop participants at the Behn/Burney Conference 2019</name>
                <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
-               <name ref="editors.xml#JW"></name> <!-- ADD YOUR NAMES HERE, USING THIS MODEL; ADD YOUR PERSONAL INFORMATION TO THE FILE EDITORS.XML -->
-               <name ref="editors.xml#AR"></name>
+               <name ref="editors.xml#LR">Laura Runge</name>
+               <name ref="editors.xml#MN">Mona Narain</name> <!-- ADD YOUR NAMES HERE, USING THIS MODEL; ADD YOUR PERSONAL INFORMATION TO THE FILE EDITORS.XML -->
+               <name ref="editors.xml#SS">Shea Stuart</name>
+               <name ref="editors.xml#EMNK">Emily MN Kugler</name>
             </respStmt>
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
@@ -69,28 +71,28 @@
 
 
          <sourceDesc>
-            <!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
+            <!-- This element expresses the source information and "witnesses" or "surrogates" used in the construction of this etext, and to which this etext refers. -->
 
             <biblStruct>
                <analytic>
                   <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
-                  <title>XXXX</title>
+                  <title>"Saturday. The Small-Pox."</title>
                </analytic>
                <monogr>
                   <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
                   <author>
                         <forename>Mary Wortley</forename>
-                        <surname>Montagu</surname>                  
+                        <surname>Montagu</surname>                 
                   </author>
-                  <title>XXX</title>
+                  <title>Six Town Eclogues with some other POEMS</title>
                   <imprint>
                      <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
                      <pubPlace>
-                        <placeName type="tgn" key="XXX">London</placeName>
+                        <placeName type="tgn" key="7011798">London</placeName>
                         <!-- Note authority and key. -->
                      </pubPlace>
-                     <publisher>M. Cooper in Pater-noster-Row</publisher>
-                     <!-- Insert publsher of earliest/first edition. -->
+                     <publisher>M. Cooper</publisher>
+                     <!-- Insert publisher of earliest/first edition. -->
                      <date when="1747">1747</date>
                      <!-- Insert date of earliest/first edition. Note the attribute @when. -->
                      <note source="ESTC">Rt. Hon. L. M. W. M. = Right Honourable Lady Mary Wortley Montagu.
@@ -103,11 +105,11 @@
                      <!-- If links are available, indicate them using this model. -->
                   </imprint>
                   <imprint>
-                     <pubPlace>Oxford, UK</pubPlace>
+                     <pubPlace key="7011931">Oxford, UK</pubPlace>
                      <publisher>ECCO-TCP</publisher>
                      <date>n.d.</date>
                      <note>Base XML for this edition drawn from the ECCO-TCP edition of <hi rend="italic">A Collection of Poems in Three Volumes. By Several Hands.</hi>
-                        London: printed by J. Hughs, for R. Dodsley, 1748., available at <ref target="https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/K092784.001">https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/K092784.001</ref>.</note>
+                        London: printed by J. Hughs, for R. Dodsley, 1748., available at <ref target="https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/K092784.001">https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/K092784.001</ref>. XML edited to conform to page images.</note>
                   </imprint>
                   <imprint>
                      <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
@@ -122,7 +124,7 @@
                   <extent>48p.;  4⁰.</extent>
                   <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
                   <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible, as for volumes. Delete unused. -->
-                  <biblScope>xxx</biblScope>
+                  <biblScope>pp 32-37</biblScope>
                </monogr>
             </biblStruct>
          </sourceDesc>
@@ -150,13 +152,13 @@
             <derivation type="original"/>
             <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
             <domain/>
-            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <!-- Typically unnecessary for this project; however, the empty domain element must be retained for validation. -->
             <factuality type="inapplicable"/>
             <!-- See the textDesc guidelines for more information. -->
             <interaction/>
-            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <!-- Typically unnecessary for this project; however, the empty domain element must be retained for validation. -->
             <preparedness/>
-            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <!-- Typically unnecessary for this project; however, the empty domain element must be retained for validation. -->
             <purpose type="entertain" degree="high"/>
             <!-- See the TEI guidelines for more information. -->
             <purpose type="inform" degree="low"/>
@@ -166,7 +168,7 @@
          <settingDesc>
             <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
             <setting>
-               <name type="tgn" key="XXX">London, England</name>
+               <name type="tgn" key="7011798">London, England</name>
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
                <time from="1690" to="1724">Early 18th Century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
@@ -242,7 +244,7 @@
          <!--BEGINS Revision Description -->
          <change when="2019-10-12" who="editors.xml#TH">Began base XML in preparation for Behn/Burney 2019.</change>
          <!-- Indicate all substantive changes to the document using the model here. -->
-        
+       
       </revisionDesc>
 
 
@@ -263,21 +265,22 @@
             <!-- Begins the title page encoding. Encode the title page with line breaks where indicated on the title page. Use CAPITALS where appropriate. -->
             <docTitle>
                <!-- Separate the parts of your title page or front information in DOCTITLE, DOCAUTHOR, DOCIMPRINT, and DOCDATE. Multiple parts of a title are indicated with TITLEPART. See the TEI titlePage guidelines for more information. -->
-               <titlePart>title<lb/>part</titlePart>
-               <titlePart>titlepart<lb/>
-                  <!-- Note that this example has two titleParts spanning lines. -->                
+               <titlePart>SIX <lb/>TOWN ECLOGUES  <lb/> </titlePart> 
+               <titlePart>With some other <lb/> POEMS<lb/>
+                  <!-- Note that this example has two titleParts spanning lines. -->               
                </titlePart>
             </docTitle>
-            <docAuthor>text re: author from titlepage; use linebreak if needed 
+            <docAuthor>By the Rt. Hon. L.<hi rend="italic"> M. W. M.</hi><lb/>
             </docAuthor>
             <docImprint>
                <!-- Here begins imprint information included in the text pictured. -->
-               <pubPlace><placeName type="tgn" key="XXX">London</placeName></pubPlace>:<lb/> <!-- LOOK UP THE PLACE NAME IN THE GETTY THESAURUS OF GEOGRAPHIC NAMES AND INDICATE THE KEY HERE. -->
-               <!-- Note the continued use of line breaks. --> 
-               <publisher>[Printed for...]<persName>[xxx]</persName>[
-                     <placeName><lb/></placeName>.</publisher></docImprint>
+               <pubPlace><placeName type="tgn" key="7011798"><hi rend="italic">London</hi></placeName></pubPlace>:<lb/> <!-- LOOK UP THE PLACE NAME IN THE GETTY THESAURUS OF GEOGRAPHIC NAMES AND INDICATE THE KEY HERE. -->
+               <!-- Note the continued use of line breaks. -->
+               <publisher>Printed for <persName>M. Cooper</persName> in
+                     <placeName> <hi rend="italic">Pater Noster Row</hi><lb/></placeName>.</publisher>
+</docImprint>
             <docDate>
-               <date>[date].</date>
+               <date>1747</date>.
             </docDate>
 
          </titlePage>
@@ -291,140 +294,138 @@
                The Small-Pox.<lb/></head>
             <!-- Note use of head here. -->
             <head type="sub">FLAVIA.</head>
-            
+           
             <div type="eclogue"> <!-- THIS DIV DERIVED FROM ECCO-TCP XML. SHOULD BE UPDATED TO REFLECT LIC PRINCIPLES. -->
                <pb n="103" facs="tcp:0509301101:107"/> <!-- CORRECT PAGE NUMBERINGS TO REFERENCE OUR PAGE IMAGES -->
                <head>SATURDAY. The SMALL-POX.</head>
                <stage>FLAVIA.</stage> <!-- WHAT DO WE DO WITH THIS? -->
-               <lg>
-                  <l>THE wretched FLAVIA on her couch reclin'd,</l> <!-- A BIT TEDIOUS, BUT NEED TO ADD N="1" AND SO ON TO EACH LINE. USE <HI REND="INDENT"/> TO INDICATE ANY INDENTATION. -->
-                  <l>Thus breath'd the anguiſh of a wounded mind;</l> <!-- REMEMBER THE LIC EDITORIAL GUIDELINES ABOUT LONG-S CHARACTERS, LIGATURES, AND SO ON. SILENTLY MODERNIZE. -->
-                  <l>A glaſs revers'd in her right hand ſhe bore,</l>
-                  <l>For now ſhe ſhunn'd the face ſhe ſought before.</l>
+               <lg n="1">
+                  <l n="1">THE wretched FLAVIA on her couch reclin'd,</l> <!-- A BIT TEDIOUS, BUT NEED TO ADD N="1" AND SO ON TO EACH LINE. USE <HI REND="INDENT"/> TO INDICATE ANY INDENTATION. -->
+                  <l n="2">Thus breath'd the anguish of a wounded mind;</l> <!-- REMEMBER THE LIC EDITORIAL GUIDELINES ABOUT LONG-S CHARACTERS, LIGATURES, AND SO ON. SILENTLY MODERNIZE. -->
+                  <l n="3">A glass revers'd in her right hand she bore,</l>
+                  <l n="4">For now she shun'd the face she sought before.</l>
                </lg>
-               <lg>
-                  <l>"How am I chang'd! alas! how am I grown</l>
-                  <l>'A frightful ſpectre, to myſelf unknown!</l>
-                  <l>'Where's my complexion? where my radiant bloom,</l>
-                  <l>'That promis'd happineſs for years to come?</l>
-                  <l>'Then with what pleaſure I this face ſurvey'd!</l>
-                  <l>'To look once more, my viſits oft delay'd!</l>
-                  <l>'Charm'd with the view, a freſher red would riſe,</l>
-                  <l>'And a new life ſhot ſparkling from my eyes!</l>
+               <lg n="2">
+                  <l n="5">'How am I chang'd! alas! how am I grown</l>
+                  <l n="6">'A frightful spectre, to myself unknown!</l>
+                  <l n="7">'Where's my complexion? where my radiant bloom,</l>
+                  <l n="8">'That promis'd happiness for years to come?</l>
+                  <l n="9">'Then with what pleasure I this face survey'd!</l>
+                  <l n="10">'To look once more, my visits oft delay'd!</l>
+                  <l n="11">'Charm'd with the view, a fresher red would rise,</l>
+                  <l n="12">'And a new life shot sparkling from my eyes!</l>
                </lg>
-               <lg>
-                  <l>'Ah! faithleſs glaſs, my wonted bloom reſtore;</l>
-                  <l>'Alas! I rave, that bloom is now no more!</l>
-                  <l>'The greateſt good the Gods on men beſtow,</l>
-                  <l>'Ev'n youth itſelf, to me is uſeleſs now.</l>
-                  <l>'There was a time (oh! that I cou'd forget!)</l>
-                  <l>’When <ref target="a003" corresp="n003">opera-tickets</ref> pour’d before my feet;</l> <note xml:id="n003" target="a003"
-                     type="editorial" resp="editors.xml#JL">Opera was a fashionable entertainment past-time in the eighteenth century. Opera stars were celebrities, often extravagantly-compensated, and also the subject of some criticism, as <ref target="https://journals.openedition.org/1718/409">Michael Burden</ref> describes in "Opera, Excess, and the Discourse of Luxury in Eighteenth-Century England." Here, Flavia claims that "opera-tickets pour'd before [her] feet," which would have been an extravagance, indeed. According to Judith Milhous and Robert Hume, throughout much of the period ticket prices were fixed at 1s 6d or 5s, for pit/boxes or gallery seating, respectively. "A season subscription for fifty nights," they note, "was 15 [guineas]" (<ref target="http://www.jstor.org/stable/831805">79</ref>). For more information on eighteenth-century opera, see <ref target="http://www.vam.ac.uk/content/articles/0-9/18th-century-opera/">this overview from the Victoria and Albert Museum</ref>. For more information on cost of living in the early eighteenth century, see the <ref target="https://www.oldbaileyonline.org/static/Coinage.jsp">discussion of coinage at the Old Bailey Online</ref>.</note>
-                        
-                  <l>'And at the ring, where brighteſt beauties ſhine,</l>
-                  <l>'The earlieſt cherries of the ſpring were mine.</l>
-                  <l>'Witneſs, O Lilly; and thou, Motteux, tell</l>
-                  <l>'How much japan theſe eyes have made ye ſell.</l>
-                  <l>
-                     <pb n="104" facs="tcp:0509301101:108" rendition="simple:additions"/> <!-- THE ECCO-TCP PROJECT USED THIS INFIRMATION TO DESIGNATE PAGE NUMBERS AND OTHER RENDITION ELEMENTS. WE ARE NOT. CUT WHAT IS UNNECESSARY. -->
-                     'With what contempt ye ſaw me oft deſpiſe</l>
-                  <l>'The humble offer of the raffled prize;</l>
-                  <l>'For at the raffle ſtill each prize I bore,</l>
-                  <l>'With ſcorn rejected, or with triumph wore!</l>
-                  <l>'Now beauty's fled, and preſents are no more!</l>
+               <lg n="3">
+                  <l n="13">'Ah! faithless glass, my wonted bloom restore;</l>
+                  <l n="14">'Alas! I rave, that bloom is now no more!</l>
+                  <l n="15">'The greatest good the Gods on men bestow,</l>
+                  <l n="16">'Ev'n youth itself, to me is useless now.</l>
+                  <l n="17">'There was a time (oh! that I cou'd forget!)</l>
+                  <l n="18">'When opera-tickets pour'd before my feet;</l>
+                  <l n="19">'And at the ring, where brightest beauties shine,</l>
+                  <l n="20">'The earliest cherries of the spring were mine.</l>
+                  <l n="21">'Witness, O Lilly; and thou, Motteux, tell</l>
+                  <l n="22">'How much japan these eyes have made ye sell.</l>
+                  <l n="23">
+                     <pb n="104" facs="tcp:0509301101:108" rendition="simple:additions"/> <!-- THE ECCO-TCP PROJECT USED THIS INFORMATION TO DESIGNATE PAGE NUMBERS AND OTHER RENDITION ELEMENTS. WE ARE NOT. CUT WHAT IS UNNECESSARY. -->
+                     'With what contempt ye saw me oft despise</l>
+                  <l n="24">'The humble offer of the raffled prize;</l>
+                  <l n="25">'For at the raffle still each prize I bore,</l>
+                  <l n="26">'With scorn rejected, or with triumph wore!</l>
+                  <l n="27">'Now beauty's fled, and presents are no more!</l>
                </lg>
-               <lg>
-                  <l>'For me the Patriot has the houſe forſook,</l>
-                  <l>'And left debates to catch a paſſing look:</l>
-                  <l>'For me the Soldier has ſoft verſes writ;</l>
-                  <l>'For me the Beau has aim'd to be a wit.</l>
-                  <l>'For me the Wit to nonſenſe was betray'd;</l>
-                  <l>'The Gameſter has for me his dun delay'd,</l>
-                  <l>'And overſeen the card I would have pay'd.</l>
-                  <l>'The bold and haughty by ſucceſs made vain,</l>
-                  <l>'Aw'd by my eyes, have trembled to complain:</l>
-                  <l>'The baſhful 'Squire touch'd by a wiſh unknown,</l>
-                  <l>'Has dar'd to ſpeak with ſpirit not his own;</l>
-                  <l>'Fir'd by one wiſh, all did alike adore;</l>
-                  <l>'Now beauty's fled, and lovers are no more!</l>
+               <lg n="4">
+                  <l n="28">'For me the Patriot has the house forsook,</l>
+                  <l n="29">'And left debates to catch a passing look:</l>
+                  <l n="30">'For me the Soldier has soft verses writ;</l>
+                  <l n="31">'For me the Beau has aim'd to be a wit.</l>
+                  <l n="32">'For me the Wit to nonsense was betray'd;</l>
+                  <l n="33">'The Gamester has for me his dun delay'd,</l>
+                  <l n="34">'And overseen the card I would have pay'd.</l>
+                  <l n="35">'The bold and haughty by success made vain,</l>
+                  <l n="36">'Aw'd by my eyes, have trembled to complain:</l>
+                  <l n="37">'The bashful 'Squire touch'd by a wish unknown,</l>
+                  <l n="38">'Has dar'd to speak with spirit not his own;</l>
+                  <l n="39">'Fir'd by one wish, all did alike adore;</l>
+                  <l n="40">'Now beauty's fled, and lovers are no more!</l>
                </lg>
-               <lg>
-                  <l>'As round the room I turn my weeping eyes,</l>
-                  <l>'New unaffected ſcenes of ſorrow riſe!</l>
-                  <l>'Far from my ſight that killing picture bear,</l>
-                  <l>'The face disfigure, and the canvas tear!</l>
-                  <l>'That picture, which with pride I us'd to ſhow,</l>
-                  <l>'The loſt reſemblance but upbraids me now.</l>
-                  <l>'And thou, my toilette! where I oft have ſate,</l>
-                  <l>'While hours unheeded paſs'd in deep debate,</l>
-                  <l>'How curls ſhould fall, or where a patch to place;</l>
-                  <l>'If blue or ſcarlet beſt became my face;</l>
-                  <l>
+               <lg n="5">
+                  <l n="41">'As round the room I turn my weeping eyes,</l>
+                  <l n="42">'New unaffected scenes of sorrow rise!</l>
+                  <l n="43">'Far from my sight that killing picture bear,</l>
+                  <l n="44">'The face disfigure, and the canvas tear!</l>
+                  <l n="45">'That picture, which with pride I us'd to show,</l>
+                  <l n="46">'The lost resemblance but upbraids me now.</l>
+                  <l n="47">'And thou, my toilette! where I oft have sate,</l>
+                  <l n="48">'While hours unheeded pass'd in deep debate,</l>
+                  <l n="49">'How curls should fall, or where a patch to place;</l>
+                  <l n="50">'If blue or scarlet best became my face;</l>
+                  <l n="51">
                      <pb n="105" facs="tcp:0509301101:109"/> <!-- REMEMBER THAT WE ARE WORKING WITH THE 1747 PRINT EDITION; YOU HAVE PAGE IMAGES. PAGE BEGINNING <PB> ELEMENTS SHOULD REFLECT THAT EDITION. -->
-                     'Now on ſome happier nymph your aid beſtow;</l>
-                  <l>'On fairer heads, ye uſeleſs jewels, glow!</l>
-                  <l>'No borrow'd luſture can my charms reſtore;</l>
-                  <l>'Beauty is fled, and dreſs is now no more!</l>
+                     'Now on some happier nymph your aid bestow;</l>
+                  <l n="52">'On fairer heads, ye useless jewels, glow!</l>
+                  <l n="53">'No borrow'd lusture can my charms restore;</l>
+                  <l n="54">'Beauty is fled, and dress is now no more!</l>
                </lg>
-               <lg>
-                  <l>'Ye meaner beauties, I permit ye ſhine;</l>
-                  <l>'Go, triumph in the hearts that once were mine;</l>
-                  <l>'But 'midſt your triumphs with confuſion know,</l>
-                  <l>''Tis to my ruin all your arms ye owe.</l>
-                  <l>'Would pitying heav'n reſtore my wonted mein,</l>
-                  <l>'Ye ſtill might move unthought-of and unſeen:</l>
-                  <l>'But oh! how vain, how wretched is the boaſt</l>
-                  <l>'Of beauty faded, and of empire loſt!</l>
-                  <l>'What now is left but weeping, to deplore</l>
-                  <l>'My beauty fled, and empire now no more!</l>
+               <lg n="6">
+                  <l n="55">'Ye meaner beauties, I permit ye shine;</l>
+                  <l n="56">'Go, triumph in the hearts that once were mine;</l>
+                  <l n="57">'But 'midst your triumphs with confusion know,</l>
+                  <l n="58">''Tis to my ruin all your arms ye owe.</l>
+                  <l n="59">'Would pitying heav'n restore my wonted mein,</l>
+                  <l n="60">'Ye still might move unthought-of and unseen:</l>
+                  <l n="61">'But oh! how vain, how wretched is the boast</l>
+                  <l n="62">'Of beauty faded, and of empire lost!</l>
+                  <l n="63">'What now is left but weeping, to deplore</l>
+                  <l n="64">'My beauty fled, and empire now no more!</l>
                </lg>
-               <lg>
-                  <l>'Ye, cruel chymiſts, what with-held your aid!</l>
-                  <l>'Could no pomatums ſave a trembling maid?</l>
-                  <l>'How falſe and trifling is that art ye boaſt;</l>
-                  <l>'No art can give me back my beauty loſt!</l>
-                  <l>'In tears, ſurrounded by my friends I lay,</l>
-                  <l>'Maſk'd o'er, and trembled at the ſight of day;</l>
-                  <l>'MIRMILIO came my fortune to deplore,</l>
-                  <l>'(A golden-headed cane well carv'd he bore)</l>
-                  <l>'Cordials, he cry'd, my ſpirits muſt reſtore!</l>
-                  <l>'Beauty is fled, and ſpirit is no more!</l>
+               <lg n="7">
+                  <l rend="indent" n="65">'Ye, cruel Chymists, what with-held your aid!</l>
+                  <l n="66">'Could no pomatums save a trembling maid?</l>
+                  <l n="67">'How false and trifling is that art ye boast;</l>
+                  <l n="68">'No art can give me back my beauty lost.</l>
+                  <l n="69">'In tears, surrounded by my friends I lay,</l>
+                  <l n="70">'Mask'd o'er and trembled at the sight of day;</l>
+                  <l n="71">'MIRMILIO came my fortune to deplore,</l>
+                  <l n="72">'(A golden headed cane well carv'd he bore)</l>
+                  <l n="73">'Cordials, he cried, my spirits must restore:</l>
+                  <l n="74">'Beauty is fled, and spirit is no more!</l>
                </lg>
-               <lg>
-                  <l>'GALEN, the grave; officious SQUIRT, was there,</l>
-                  <l>'With fruitleſs grief and unavailing care:</l>
-                  <l>'MACHAON too, the great MACHAON, known</l>
-                  <l>'By his red cloak and his ſuperior frown;</l>
-                  <l>
-                     <pb n="106" facs="tcp:0509301101:110"/>
-                     'And why, he cry'd, this grief and this deſpair?</l>
-                  <l>'You ſhall again be well, again be fair;</l>
-                  <l>'Believe my oath; (with that an oath he ſwore)</l>
-                  <l>'Falſe was his oath; my beauty is no more!</l>
+               <lg n="8">
+                  <l n="75" rend="indent">'GALEN, the grave; officious SQUIRT, was there,</l>
+                  <l n="76">'With fruitless grief and unavailing care:</l>
+                  <l n="77">'MACHAON too, the great MACHAON, known</l>
+                  <l n="78">'By his red cloak and his superior frown;</l>
+                  <l n="79"> 'And why, he cry'd, this grief and this despair?</l>
+                  <l n="80">'You shall again be well, again be fair;</l>
+                  <l n="81">'Believe my oath; (with that an oath he swore)</l>
+                  <l n="82">'False was his oath; my beauty is no more!</l>
                </lg>
-               <lg>
-                  <l>'Ceaſe, hapleſs maid no more thy tale purſue,</l>
-                  <l>'Forſake mankind, and bid the world adieu!</l>
-                  <l>'Monarchs and beauties rule with equal ſway;</l>
-                  <l>'All ſtrive to ſerve, and glory to obey:</l>
-                  <l>'Alike unpitied when depos'd they grow,</l>
-                  <l>'Men mock the idol of their former vow.</l>
+               <lg n="9">
+                  <l rend="indent" n="83">'Cease, hapless maid no more thy tale pursue,</l>
+                  <l n="84">'Forsake mankind, and bid the world adieu!</l>
+                  <l n="85">'Monarchs and beauties rule with equal sway;</l>
+                  <l n="86">'All strive to serve, and glory to obey:</l>
+                  <l n="87">'Alike unpitied when depos'd they grow;</l>
+                  <l n="88">'Men mock the idol of their former vow.</l>
                </lg>
-               <lg>
-                  <l>'Adieu! ye parks!—in ſome obſcure receſs,</l>
-                  <l>'Where gentle ſtreams will weep at my diſtreſs,</l>
-                  <l>'Where no falſe friend will in my grief take part,</l>
-                  <l>'And mourn my ruin with a joyful heart;</l>
-                  <l>'There let me live in ſome deſerted place,</l>
-                  <l>'There hide in ſhades this loſt inglorious face.</l>
-                  <l>'Ye operas, circles, I no more muſt view!</l>
-                  <l>'My toilette, patches, all the world adieu!</l>
+               <lg n="10">
+                  <l rend="indent" n="89">'Adieu! ye parks!—in some obscure recess,</l>
+                  <l n="90">'Where gentle streams will weep at my distress,</l>
+                  <l n="91">     
+         <pb n="37" facs="pageImages/037.jpg"/>
+'Where no false friend will in my grief take part,</l>
+                  <l n="92">'And mourn my ruin with a joyful heart;</l>
+                  <l n="93">'There let me live in some deserted place,</l>
+                  <l n="94">'There hide in shades this lost inglorious face.</l>
+                  <l n="95">'Ye operas, circles, I no more must view!</l>
+                  <l n="96">'My toilette, patches, all the world adieu!</l>
                </lg>
-               <pb facs="tcp:0509301101:111"/>
-               <pb facs="tcp:0509301101:112"/>
                <!-- COULD ADD A <MILESTONE> ELEMENT TO INDICATE PRINTERS MARKS AND ORNAMENTS; SEE TEI P5 GUIDELINES. -->
             </div>
          </div>
       </body>
    </text>
 </TEI>
+
+
