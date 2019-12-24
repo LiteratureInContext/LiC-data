@@ -109,6 +109,44 @@
 
                </monogr>
             </biblStruct>
+            <listPerson type="speakers">
+               <person xml:id="victor">
+                  <persName>Victor Frankenstein</persName>
+               </person>
+               <person xml:id="walton">
+                  <persName>Robert Walton</persName>
+               </person>
+               <person xml:id="father">
+                  <persName>Victor Frankenstein's father</persName>
+               </person>
+               <person xml:id="mother">
+                  <persName>Victor Frankenstein's mother</persName>
+               </person>
+               <person xml:id="elizabeth">
+                  <persName>Elizabeth</persName>
+               </person>
+               <person xml:id="Ernest">
+                  <persName>Ernest</persName>
+               </person>
+               <person xml:id="kempe">
+                  <persName>Professor Kempe</persName>
+               </person>
+               <person xml:id="waldman">
+                  <persName>Professor Waldman</persName>
+               </person>
+               <person xml:id="clerval">
+                  <persName>Henry Clerval</persName>
+               </person>
+               <person xml:id="moritz">
+                  <persName>Justine Moritz</persName>
+               </person>
+               <person xml:id="creature">
+                  <persName>The Creature</persName>
+               </person>
+               <person xml:id="delacey">
+                  <persName>De Lacey</persName>
+               </person>
+            </listPerson>
          </sourceDesc>
 
       </fileDesc>
@@ -1269,7 +1307,7 @@
                      appeared on deck, the master said, <said>"Here is our captain, and he will not
                         allow you to perish on the open sea."</said></p>
                   <p>On perceiving me, the stranger addressed me in English, although with a foreign
-                     accent. <said>"Before I come on board your vessel,"</said> said he, <said>"will
+                     accent. <said who="#victor">"Before I come on board your vessel,"</said> said he, <said who="#victor">"will
                         you have the kindness to inform me whither you are bound?"</said></p>
                   <p>You may conceive my astonishment <pb n="[1.25]" facs="pageImages/vol1/25.jpg"/>
                      on hearing such a question addressed to me from a man on the brink of
@@ -1307,26 +1345,26 @@
                      lieutenant asked, <said>"Why he had come so far upon the ice in so strange a
                         vehicle?"</said></p>
                   <p>His countenance instantly assumed an aspect of the deepest gloom; and he <pb
-                        n="[1.28]" facs="pageImages/vol1/28.jpg"/> replied, <said>"To seek one who
+                        n="[1.28]" facs="pageImages/vol1/28.jpg"/> replied, <said who="#victor">"To seek one who
                         fled from me."</said></p>
                   <p><said>"And did the man whom you pursued travel in the same fashion?"</said></p>
-                  <p><said>"Yes."</said></p>
+                  <p><said who="#victor">"Yes."</said></p>
                   <p><said>"Then I fancy we have seen him; for, the day before we picked you up, we
                         saw some dogs drawing a sledge, with a man in it, across the
                      ice."</said></p>
                   <p>This aroused the stranger's attention; and he asked a multitude of questions
                      concerning the route which the dæmon, as he called him, had pursued. Soon
-                     after, when he was alone with me, he said, <said>"I have, doubtless, excited
+                     after, when he was alone with me, he said, <said who="#victor">"I have, doubtless, excited
                         your curiosity, as well as that of these good people; but you are too
                         considerate to make inquiries."</said></p>
-                  <p><said>"Certainly; it would indeed be very impertinent and inhuman in me to
+                  <p><said who="#walton">"Certainly; it would indeed be very impertinent and inhuman in me to
                         trouble you with any inquisitiveness of mine."</said></p>
                   <pb n="[1.29]" facs="pageImages/vol1/29.jpg"/>
-                  <p><said>"And yet you rescued me from a strange and perilous situation; you have
+                  <p><said who="#victor">"And yet you rescued me from a strange and perilous situation; you have
                         benevolently restored me to life."</said></p>
-                  <p>Soon after this <said aloud="false">he inquired, if I thought that the breaking
+                  <p>Soon after this <said who="#victor" aloud="false">he inquired, if I thought that the breaking
                         up of the ice had destroyed the other sledge?</said>
-                     <said aloud="false">I replied, that I could not answer with any degree of
+                     <said who="#walton" aloud="false">I replied, that I could not answer with any degree of
                         certainty; for the ice had not broken until near midnight, and the traveller
                         might have arrived at a place of safety before that time; but of this I
                         could not judge.</said></p>
@@ -1379,12 +1417,12 @@
                         n="[1.33 - page breaks after 'suc-']" facs="pageImages/vol1/33.jpg"/>
                      succeeded. One day I mentioned to him the desire I had always felt of finding a
                      friend who might sympathize with me, and direct me by his counsel. I said, I
-                     did not belong to that class of men who are offended by advice. <said>"I am
+                     did not belong to that class of men who are offended by advice. <said who="#walton">"I am
                         self-educated, and perhaps I hardly rely sufficiently upon my own powers. I
                         wish therefore that my companion should be wiser and more experienced than
                         myself, to confirm and support me; nor have I believed it impossible to find
                         a true friend."</said></p>
-                  <p><said>"I agree with you,"</said> replied the stranger, <said>"in believing that
+                  <p><said who="#victor">"I agree with you,"</said> replied the stranger, <said who="#victor">"in believing that
                         friendship is not only a desirable, but a possible acquisition. I once had a
                         friend, the most noble of human creatures, and am entitled, therefore, to
                         judge respecting friendship. You have hope, and the world before you, and
@@ -1414,7 +1452,7 @@
                <div>
                   <opener>
                      <dateline>August 19th, 17--</dateline>. </opener>
-                  <p> Yesterday the stranger said to me, <said>"You may easily perceive, Captain
+                  <p> Yesterday the stranger said to me, <said who="#victor">"You may easily perceive, Captain
                            <persName>Walton</persName>, that I have suffered great and unparalleled
                         misfortunes. I had determined, once, that the memory of these evils should
                         die with me; but you have won me to alter my determination. You seek for
@@ -1457,11 +1495,11 @@
                      misfortunes. I felt the greatest eagerness to hear the promised narrative,
                      partly from curiosity, and partly from a strong desire to ameliorate his fate,
                      if it were in my power. I expressed these feelings in my answer.</p>
-                  <p><said>"I thank you,"</said> he replied, <said>"for <pb n="[1.37]"
+                  <p><said who="#victor">"I thank you,"</said> he replied, <said who="#victor">"for <pb n="[1.37]"
                            facs="pageImages/vol1/37.jpg"/> your sympathy, but it is useless; my fate
                         is nearly fulfilled. I wait but for one event, and then I shall repose in
                         peace. I understand your feeling,"</said> continued he, perceiving that I
-                     wished to interrupt him; <said>"but you are mistaken, my friend, if thus you
+                     wished to interrupt him; <said who="#victor">"but you are mistaken, my friend, if thus you
                         will allow me to name you; nothing can alter my destiny: listen to my
                         history, and you will perceive how irrevocably it is determined."</said></p>
                   <p>He then told me, that he would commence his narrative the next day when I
@@ -1478,7 +1516,7 @@
             <div n="1.1" type="chapter">
                <pb n="[1.39]" facs="pageImages/vol1/39.jpg"/>
                <head>Chapter I</head>
-               <said><p>I AM by birth a Genevese; and my family is one of the most distinguished of
+               <said who="#victor"><p>I AM by birth a Genevese; and my family is one of the most distinguished of
                      that republic. My ancestors had been for many years counsellors and syndics;
                      and my father had filled several public situations with honour and reputation.
                      He was respected by all who knew him for his integrity and indefatigable
@@ -1554,7 +1592,7 @@
                      intention of marrying an Italian lady, and requesting my father to take charge
                      of the <pb n="[1.45 - page breaks after 'in-']" facs="pageImages/vol1/45.jpg"/>
                      infant <persName>Elizabeth</persName>, the only child of his deceased sister.
-                        <said>"It is my wish,"</said> he said, <said>"that you should consider her
+                        <said who="#brotherinlaw">"It is my wish,"</said> he said, <said who="#brotherinlaw">"that you should consider her
                         as your own daughter, and educate her thus. Her mother's fortune is secured
                         to her, the documents of which I will commit to your keeping. Reflect upon
                         this proposition; and decide whether you would prefer educating your niece
@@ -1848,7 +1886,7 @@
                      and, bounding with joy, I communicated my discovery to my father. I cannot help
                      remarking here the many opportunities instructors possess of directing the
                      attention of their pupils to useful knowledge, which they utterly neglect. My
-                     father looked carelessly at the title-page of my book, and said, <said>"Ah!
+                     father looked carelessly at the title-page of my book, and said, <said who="#father">"Ah!
                            <persName type="lcnaf" key="n80043375">Cornelius Agrippa</persName>! My
                         dear <persName>Victor</persName>, do not waste your time upon this; it is
                         sad trash."</said></p>
@@ -2090,7 +2128,7 @@
                      beheld anything so utterly destroyed.</p>
                   <p>The catastrophe of this tree excited my extreme astonishment; and I eagerly
                      inquired of my father the nature and origin of thunder and lightning. He
-                     replied, <said>"Electricity;"</said> describing at the same time the various
+                     replied, <said who="#father">"Electricity;"</said> describing at the same time the various
                      effects of that power. <ref target="a045" corresp="n045"> He constructed a
                         small electrical machine, and exhibited a few experiments; he made also a
                         kite, with a wire and string, which drew down that fluid from the clouds </ref>
@@ -2178,7 +2216,7 @@
             <div n="1.2" type="chapter">
                <pb n="[1.61]" facs="pageImages/vol1/61.jpg"/>
                <head>Chapter II</head>
-               <said><p>WHEN I had attained the age of seventeen, <ref target="a046" corresp="n046">
+               <said who="#victor"><p>WHEN I had attained the age of seventeen, <ref target="a046" corresp="n046">
                         my parents resolved that I should become a student at the university of
                            <placeName type="tgn" key="7017035">Ingolstadt</placeName>
                      </ref>
@@ -2220,8 +2258,8 @@
                      sickened; her fever was very malignant, and the looks of her attendants
                      prognosticated the worst event. On her death-bed the fortitude and benignity of
                      this admirable woman did not desert her. She joined the hands of
-                        <persName>Elizabeth</persName> and myself: <said>"My children,"</said> she
-                     said, <said>"my firmest hopes of future <pb n="[1.63]"
+                        <persName>Elizabeth</persName> and myself: <said who="#mother">"My children,"</said> she
+                     said, <said who="#mother">"my firmest hopes of future <pb n="[1.63]"
                            facs="pageImages/vol1/63.jpg"/> happiness were placed on the prospect of
                         your union. This expectation will now be the consolation of your father.
                            <persName>Elizabeth</persName>, my love, you must supply my place to your
@@ -2311,10 +2349,10 @@
                      politeness, and asked me several questions concerning my progress in the
                      different branches of science appertaining to natural philosophy. I mentioned,
                      it is true, with fear and trembling, the only authors I had ever read upon
-                     those subjects. The professor stared: <said>"Have you,"</said> he said,
-                        <said>"really spent your time in studying such nonsense?"</said></p>
-                  <p>I replied in the affirmative. <said>"Every minute,"</said> continued
-                        <persName>M. Krempe</persName> with warmth, <said>"every instant that you
+                     those subjects. The professor stared: <said who="#krempe">"Have you,"</said> he said,
+                        <said who="#krempe">"really spent your time in studying such nonsense?"</said></p>
+                  <p>I replied in the affirmative. <said who="#krempe">"Every minute,"</said> continued
+                        <persName>M. Krempe</persName> with warmth, <said who="#krempe">"every instant that you
                         have wasted on those books is utterly and entirely lost. You have burdened
                         your memory with exploded systems, and useless names. Good God! in what <pb
                            n="[1.70]" facs="pageImages/vol1/70.jpg"/> desert land have you lived,
@@ -2426,7 +2464,7 @@
                      and explained many of its elementary terms. After having made a few preparatory
                      experiments, he concluded with a panegyric upon modern chemistry, the terms of
                      which I shall never forget:—</p>
-                  <p><said>
+                  <p><said who="#waldman">
                         <ref target="a049" corresp="n049"> "The ancient teachers of this science,"
                         </ref>
                      </said>
@@ -2449,7 +2487,7 @@
                         matter effects which were formerly occasioned only by animal organs" (<ref
                            target="https://books.google.com/books?id=xAtQAAAAcAAJ">Davy, "Discourse"
                            321</ref>). Note the reference at the end of this passage to
-                        galvanism.</note> said he, <said>"promised impossibilities, and performed
+                        galvanism.</note> said he, <said who="#waldman">"promised impossibilities, and performed
                         nothing. The modern masters promise very little; they know that metals
                         cannot be transmuted, and that the elixir of life is a chimera. But these
                         philosophers, whose hands seem only made to dabble <pb n="[1.74]"
@@ -2563,7 +2601,7 @@
                         <persName type="lcnaf" key="n80043375">Cornelius Agrippa</persName> and
                         <persName type="lcnaf" key="n80120959">Paracelsus</persName>, but without
                      the contempt that <persName>M. Krempe</persName> had exhibited. He said, that
-                        <said>"these were men to whose indefatigable zeal modern philosophers were
+                        <said who="#waldman">"these were men to whose indefatigable zeal modern philosophers were
                         indebted for most of the foundations of their knowledge. They had left to
                         us, as an easier task, to give new names, arrange in connected
                         classifications, the facts which they in a great degree had been the
@@ -2574,7 +2612,7 @@
                      lecture had removed my prejudices against modern <pb n="[1.76]"
                         facs="pageImages/vol1/76.jpg"/> chemists; and I, at the same time, requested
                      his advice concerning the books I ought to procure.</p>
-                  <p><said>"I am happy,"</said> said <persName>M. Waldman</persName>, <said>"to have
+                  <p><said who="#waldman">"I am happy,"</said> said <persName>M. Waldman</persName>, <said who="#waldman">"to have
                         gained a disciple; and if your application equals your ability, I have no
                         doubt of your success. Chemistry <ref target="a054" corresp="n054"/>
                         <note xml:id="n054" target="a054" type="editorial" resp="editors.xml#"
@@ -2599,7 +2637,7 @@
             <div n="1.3" type="chapter">
                <pb n="[1.78]" facs="pageImages/vol1/78.jpg"/>
                <head>Chapter III</head>
-               <said><p>FROM this day natural philosophy, and particularly chemistry, in the most
+               <said who="#victor"><p>FROM this day natural philosophy, and particularly chemistry, in the most
                      comprehensive sense of the term, became nearly my sole occupation. I read with
                      ardour those works, so full of genius and discrimination, which modern
                      inquirers have written on these subjects. I attended the lectures, and
@@ -2772,7 +2810,7 @@
                      were insensible to the charms of nature. And the same feelings which made me
                      neglect the scenes around me caused me also to forget those friends who were so
                      many miles absent, and whom I had not seen for so long a time. I knew my
-                     silence disquieted them; and I well remembered the words of my father: <said>"I
+                     silence disquieted them; and I well remembered the words of my father: <said who="#father">"I
                         know that while you are pleased with yourself, you will think of us with
                         affection, and we shall hear regularly from you. You must pardon me, if I
                         regard any interruption in your correspondence as a proof <pb n="[1.93]"
@@ -2825,7 +2863,7 @@
             <div n="1.4" type="chapter">
                <pb n="[1.97]" facs="pageImages/vol1/97.jpg"/>
                <head>Chapter IV</head>
-               <said><p>IT was on a dreary night of <date>November</date>, that I beheld the
+               <said who="#victor"><p>IT was on a dreary night of <date>November</date>, that I beheld the
                      accomplishment of my toils. With an anxiety that almost amounted to agony, I
                      collected the instruments of life around me, that I might infuse a spark of
                      being into the lifeless thing that lay at my feet. It was already one in the
@@ -2922,8 +2960,8 @@
                      from the other end of the street. As it drew nearer, I observed that it was the
                      Swiss diligence: it stopped just where I was standing; and, on the door being
                      opened, I perceived <persName>Henry Clerval</persName>, who, on seeing me,
-                     instantly sprung out. <said>"My dear <persName>Frankenstein</persName>,"</said>
-                     exclaimed he, <said>"how glad I am to see you! how fortunate that you should be
+                     instantly sprung out. <said who="#clerval">"My dear <persName>Frankenstein</persName>,"</said>
+                     exclaimed he, <said who="#clerval">"how glad I am to see you! how fortunate that you should be
                         here at the very moment of my alighting!"</said></p>
                   <p>Nothing could equal my delight on seeing <persName>Clerval</persName>; his
                      presence brought back to my thoughts my father, <persName>Elizabeth</persName>,
@@ -2934,26 +2972,26 @@
                      manner, and we walked towards my college. <persName>Clerval</persName>
                      continued talking for some time about our mutual friends, and his own good
                      fortune in being permitted to come to <placeName type="tgn" key="7017035"
-                        >Ingolstadt</placeName>. <said>"You may easily believe,"</said> said he,
+                        >Ingolstadt</placeName>. <said who="#clerval">"You may easily believe,"</said> said he,
                         <said>"how great was the difficulty to persuade my father that it was not
                         absolutely necessary for a merchant not to understand any thing except
                         book-keeping; and, indeed, I believe I left him incredulous to the last, for
                         his constant answer to my unwearied entreaties was the same as that of the
-                        Dutch school-master in the <title>Vicar of Wakefield</title>: <said>"I have
+                        Dutch school-master in the <title>Vicar of Wakefield</title>: <said who="#clerval">"I have
                            ten thousand florins a year without Greek, I eat heartily without
                            Greek."</said> But his affection for me at length overcame his dislike of
                         learning, and he has permitted me to undertake <pb n="[1.106]"
                            facs="pageImages/vol1/106.jpg"/> a voyage of discovery to the land of
                         knowledge."</said></p>
-                  <p><said>"It gives me the greatest delight to see you; but tell me how you left my
+                  <p><said who="#victor">"It gives me the greatest delight to see you; but tell me how you left my
                         father, brothers, and <persName>Elizabeth</persName>."</said></p>
-                  <p><said>"Very well, and very happy, only a little uneasy that they hear from you
+                  <p><said who="#clerval">"Very well, and very happy, only a little uneasy that they hear from you
                         so seldom. By the bye, I mean to lecture you a little upon their account
                         myself.—But, my dear <persName>Frankenstein</persName>,"</said> continued
                      he, stopping short, and gazing full in my face, <said>"I did not before remark
                         how very ill you appear; so thin and pale; you look as if you had been
                         watching for several nights."</said></p>
-                  <p><said>"You have guessed right; I have lately been so deeply engaged in one
+                  <p><said who="#victor">"You have guessed right; I have lately been so deeply engaged in one
                         occupation, that I have not allowed myself sufficient rest, as you see: but
                         I hope, I sincerely hope, that all these employments are now at an end, and
                         that I am at length free."</said></p>
@@ -2983,11 +3021,11 @@
                      me more attentively, he saw a wildness in <pb n="[1.109]"
                         facs="pageImages/vol1/109.jpg"/> my eyes for which he could not account; and
                      my loud, unrestrained, heartless laughter, frightened and astonished him.</p>
-                  <p><said>"My dear <persName>Victor</persName>,"</said> cried he, <said>"what, for
+                  <p><said who="#clerval">"My dear <persName>Victor</persName>,"</said> cried he, <said who="#clerval">"what, for
                         God's sake, is the matter? Do not laugh in that manner. How ill you are!
                         What is the cause of all this?"</said></p>
-                  <p><said>"Do not ask me,"</said> cried I, putting my hands before my eyes, for I
-                     thought I saw the dreaded spectre glide into the room; <said>"he can tell. —Oh,
+                  <p><said who="#victor">"Do not ask me,"</said> cried I, putting my hands before my eyes, for I
+                     thought I saw the dreaded spectre glide into the room; <said who="#victor">"he can tell. —Oh,
                         save me! save me!"</said> I imagined that the monster seized me; I struggled
                      furiously, and fell down in a fit.</p>
                   <p>Poor <persName>Clerval</persName>! what must have been his feelings? A meeting,
@@ -3022,26 +3060,26 @@
                      in my bosom; my <pb n="[1.112]" facs="pageImages/vol1/112.jpg"/> gloom
                      disappeared, and in a short time I became as cheerful as before I was attacked
                      by the fatal passion.</p>
-                  <p><said>"Dearest <persName>Clerval</persName>,"</said> exclaimed I, <said>"how
+                  <p><said who="#victor">"Dearest <persName>Clerval</persName>,"</said> exclaimed I, <said>"how
                         kind, how very good you are to me. This whole winter, instead of being spent
                         in study, as you promised yourself, has been consumed in my sick room. How
                         shall I ever repay you? I feel the greatest remorse for the disappointment
                         of which I have been the occasion; but you will forgive me."</said></p>
-                  <p><said>"You will repay me entirely, if you do not discompose yourself, but get
+                  <p><said who="#clerval">"You will repay me entirely, if you do not discompose yourself, but get
                         well as fast as you can; and since you appear in such good spirits, I may
                         speak to you on one subject, may I not?"</said></p>
                   <p>I trembled. One subject! what could it be? Could he allude to an object on whom
                      I dared not even think?</p>
                   <pb n="[1.113]" facs="pageImages/vol1/113.jpg"/>
-                  <p><said>"Compose yourself,"</said> said <persName>Clerval</persName>, who
-                     observed my change of colour, <said>"I will not mention it, if it agitates you;
+                  <p><said who="#clerval">"Compose yourself,"</said> said <persName>Clerval</persName>, who
+                     observed my change of colour, <said who="#clerval">"I will not mention it, if it agitates you;
                         but your father and cousin would be very happy if they received a letter
                         from you in your own handwriting. They hardly know how ill you have been,
                         and are uneasy at your long silence."</said></p>
-                  <p><said>"Is that all? my dear <persName>Henry</persName>. How could you suppose
+                  <p><said who="#victor">"Is that all? my dear <persName>Henry</persName>. How could you suppose
                         that my first thought would not fly towards those dear, dear friends whom I
                         love, and who are so deserving of my love."</said></p>
-                  <p><said>"If this is your present temper, my friend, you will perhaps be glad to
+                  <p><said who="#clerval">"If this is your present temper, my friend, you will perhaps be glad to
                         see a letter that has been lying here some days for you: it is from your
                         cousin, I believe."</said></p></said>
             </div>
@@ -3049,7 +3087,7 @@
             <div n="1.5" type="chapter">
                <pb n="[1.114]" facs="pageImages/vol1/114.jpg"/>
                <head>Chapter V</head>
-               <said><p><persName>CLERVAL</persName> then put the following letter into my
+               <said who="#victor"><p><persName>CLERVAL</persName> then put the following letter into my
                      hands.</p>
                   <floatingText>
                      <body>
@@ -3233,8 +3271,8 @@
                               17--</date>.</closer>
                      </body>
                   </floatingText>
-                  <p><said>"Dear, dear <persName>Elizabeth</persName>!"</said> I exclaimed when I
-                     had read her letter, <said>"I will write instantly, and relieve them from the
+                  <p><said who="#victor">"Dear, dear <persName>Elizabeth</persName>!"</said> I exclaimed when I
+                     had read her letter, <said who="#victor">"I will write instantly, and relieve them from the
                         anxiety they must feel."</said> I wrote, and this exertion greatly fatigued
                      me; but my convalescence had commenced, and proceeded regularly. In another
                      fortnight I was able to leave my chamber.</p>
@@ -3272,15 +3310,15 @@
                   <p>M. <persName>Krempe</persName> was not equally docile; and in my condition at
                      that time, of almost insupportable sensitiveness, his harsh blunt encomiums
                      gave me even more pain than the benevolent approbation of M.
-                        <persName>Waldman</persName>. <said>"D--n the fellow!"</said> cried he;
-                        <said>"why, M. <persName>Clerval</persName>, I assure you he has outstript
+                        <persName>Waldman</persName>. <said who="#krempe">"D--n the fellow!"</said> cried he;
+                        <said who="#krempe">"why, M. <persName>Clerval</persName>, I assure you he has outstript
                         us all. Aye, stare if you please; but it is nevertheless true. A youngster
                         who, but a few years ago, believed <persName type="lcnaf" key="n80043375"
                            >Cornelius Agrippa</persName> as firmly as the gospel, has now set
                         himself at the head of the university; and if he is not soon pulled down, we
                         shall all be out of countenance.—Aye, aye,"</said> continued he, <pb
                         n="[1.128 - page breaks after 'ob-']" facs="pageImages/vol1/128.jpg"/>
-                     observing my face expressive of suffering, <said>"M.
+                     observing my face expressive of suffering, <said who="#krempe">"M.
                            <persName>Frankenstein</persName> is modest; an excellent quality in a
                         young man. Young men should be diffident of themselves, you know, M.
                            <persName>Clerval</persName>; I was myself when young; but that wears out
@@ -3359,7 +3397,7 @@
             <div n="1.6" type="chapter">
                <pb n="[1.134]" facs="pageImages/vol1/134.jpg"/>
                <head>Chapter VI</head>
-               <said><p>ON my return, I found the following letter from my father:—</p>
+               <said who="#victor"><p>ON my return, I found the following letter from my father:—</p>
                   <floatingText>
                      <body>
                         <opener>To <persName>V. FRANKENSTEIN.</persName>
@@ -3444,22 +3482,22 @@
                      letter, was surprised to observe the despair that succeeded to the joy I at
                      first expressed on receiving news from my friends. I threw the letter on the
                      table, and covered my face with my hands.</p>
-                  <p><said>"My dear <persName>Frankenstein</persName>,"</said> exclaimed
+                  <p><said who="#clerval">"My dear <persName>Frankenstein</persName>,"</said> exclaimed
                         <persName>Henry</persName>, when he perceived me weep with bitterness,
-                        <said>"are you always to be <pb n="[1.140]" facs="pageImages/vol1/140.jpg"/>
+                        <said who="#clerval">"are you always to be <pb n="[1.140]" facs="pageImages/vol1/140.jpg"/>
                         unhappy? My dear friend, what has happened?"</said></p>
                   <p>I motioned to him to take up the letter, while I walked up and down the room in
                      the extremest agitation. Tears also gushed from the eyes of
                         <persName>Clerval</persName>, as he read the account of my misfortune.</p>
-                  <p><said>"I can offer you no consolation, my friend,"</said> said he; <said>"your
+                  <p><said who="#clerval">"I can offer you no consolation, my friend,"</said> said he; <said who="#clerval">"your
                         disaster is irreparable. What do you intend to do?"</said></p>
-                  <p><said>"To go instantly to <placeName type="tgn" key="7003746"
+                  <p><said who="#victor">"To go instantly to <placeName type="tgn" key="7003746"
                            >Geneva</placeName>: come with me, <persName>Henry</persName>, to order
                         the horses."</said></p>
                   <p>During our walk, <persName>Clerval</persName> endeavoured to raise my spirits.
                      He did not do this by common topics of consolation, but by exhibiting the
-                     truest sympathy. <said>"Poor <persName>William</persName>!"</said> said he,
-                        <said>"that dear child; he now sleeps with his angel mother. His friends
+                     truest sympathy. <said who="#clerval">"Poor <persName>William</persName>!"</said> said he,
+                        <said who="#clerval">"that dear child; he now sleeps with his angel mother. His friends
                         mourn and weep, but he is at rest: he does not <pb n="[1.141]"
                            facs="pageImages/vol1/141.jpg"/> now feel the murderer's grasp; a sod
                         covers his gentle form, and he knows no pain. He can no longer be a fit
@@ -3511,7 +3549,7 @@
                      native town. I discovered more distinctly the black sides of <placeName
                         type="tgn" key="1109172">Jura</placeName>, and the bright summit of
                         <placeName type="tgn" key="7617157">Mont Blanc</placeName>; I wept like a
-                     child: <said>"Dear mountains! my own beautiful lake! how do you welcome your
+                     child: <said who="#victor">"Dear mountains! my own beautiful lake! how do you welcome your
                         wanderer? Your summits are clear; the sky and lake are blue and placid. Is
                         this to prognosticate peace, or to mock at my unhappiness?"</said></p>
                   <p>I fear, my friend, that I shall render myself tedious by dwelling on these
@@ -3636,7 +3674,7 @@
                            target="https://www.bl.uk/romantics-and-victorians/themes/romanticism"
                            >British Library’s resources on Romanticism</ref>.</note><pb n="[1.147]"
                         facs="pageImages/vol1/147.jpg"/> and exclaimed aloud,
-                           <said>"<persName>William</persName>, dear angel! this is thy funeral,
+                           <said who="#victor">"<persName>William</persName>, dear angel! this is thy funeral,
                         this thy dirge!"</said> As I said these words, I perceived in the gloom a
                      figure which stole from behind a clump of trees near me; I stood fixed, gazing
                      intently: I could not be mistaken. A flash of lightning illuminated the object,
@@ -3704,8 +3742,8 @@
                         <persName>William</persName>; and my tears flowed when I looked upon it.
                      While I was thus engaged, <persName>Ernest</persName> entered: he had heard me
                      arrive, and hastened to welcome me. He expressed a sorrowful delight to see me:
-                        <said>"Welcome, my dearest <persName>Victor</persName>,"</said> said he.
-                        <said>"Ah! I wish you had come three months ago, and then you would have
+                        <said who="#ernest">"Welcome, my dearest <persName>Victor</persName>,"</said> said he.
+                        <said who="#ernest">"Ah! I wish you had come three months ago, and then you would have
                         found us all joyous and delighted. But we are now unhappy; and, I am afraid,
                         tears instead of smiles will be your welcome. Our father looks so sorrowful:
                         this dreadful event seems to have revived in his mind his grief on the death
@@ -3713,26 +3751,26 @@
                         inconsolable."</said>
                      <pb n="[1.153 - page breaks after 'Er-']" facs="pageImages/vol1/153.jpg"/>
                      <persName>Ernest</persName> began to weep as he said these words.</p>
-                  <p><said>"Do not,"</said> said I, <said>"welcome me thus; try to be more calm,
+                  <p><said who="#victor">"Do not,"</said> said I, <said who="#victor">"welcome me thus; try to be more calm,
                         that I may not be absolutely miserable the moment I enter my father's house
                         after so long an absence. But, tell me, how does my father support his
                         misfortunes? and how is my poor <persName>Elizabeth</persName>?"</said></p>
-                  <p><said>"She indeed requires consolation; she accused herself of having caused
+                  <p><said who="#ernest">"She indeed requires consolation; she accused herself of having caused
                         the death of my brother, and that made her very wretched. But since the
                         murderer has been discovered—"</said></p>
-                  <p><said>"The murderer discovered! Good God! how can that be? who could attempt to
+                  <p><said who="#victor">"The murderer discovered! Good God! how can that be? who could attempt to
                         pursue him? it is impossible; one might as well try to overtake the winds,
                         or confine a mountain-stream with a straw."</said></p>
-                  <p><said>"I do not know what you mean; but we were all very unhappy when <pb
+                  <p><said who="#ernest">"I do not know what you mean; but we were all very unhappy when <pb
                            n="[1.154]" facs="pageImages/vol1/154.jpg"/> she was discovered. No one
                         would believe it at first; and even now <persName>Elizabeth</persName> will
                         not be convinced, notwithstanding all the evidence. Indeed, who would credit
                         that <persName>Justine Moritz</persName>, who was so amiable, and fond of
                         all the family, could all at once become so extremely wicked?"</said></p>
-                  <p><said>"<persName>Justine Moritz</persName>! Poor, poor girl, is she the
+                  <p><said who="#victor">"<persName>Justine Moritz</persName>! Poor, poor girl, is she the
                         accused? But it is wrongfully; every one knows that; no one believes it,
                         surely, <persName>Ernest</persName>?"</said></p>
-                  <p><said>"No one did at first; but several circumstances came out, that have
+                  <p><said who="#ernest">"No one did at first; but several circumstances came out, that have
                         almost forced conviction upon us: and her own behaviour has been so
                         confused, as to add to the evidence of facts a weight that, I fear, leaves
                         no hope for doubt. But she will be tried to-day, and you will then hear
@@ -3750,7 +3788,7 @@
                      the fact, the poor girl confirmed the suspicion in a great measure by her
                      extreme confusion of manner.</p>
                   <p>This was a strange tale, but it did not shake my faith; and I replied
-                     earnestly, <said>"You are all mistaken; I know the murderer.
+                     earnestly, <said who="#victor">"You are all mistaken; I know the murderer.
                            <persName>Justine</persName>, poor, good <persName>Justine</persName>, is
                         innocent."</said></p>
                   <pb n="[1.156]" facs="pageImages/vol1/156.jpg"/>
@@ -3758,14 +3796,14 @@
                      countenance, but he endeavoured to welcome me cheerfully; and, after we had
                      exchanged our mournful greeting, would have introduced some other topic than
                      that of our disaster, had not <persName>Ernest</persName> exclaimed,
-                        <said>"Good God, Papa! <persName>Victor</persName> says that he knows who
+                        <said who="#ernest">"Good God, Papa! <persName>Victor</persName> says that he knows who
                         was the murderer of poor William."</said></p>
-                  <p><said>"We do also, unfortunately,"</said> replied my father; <said>"for indeed
+                  <p><said who="#father">"We do also, unfortunately,"</said> replied my father; <said who="#father">"for indeed
                         I had rather have been for ever ignorant than have discovered so much
                         depravity and ingratitude in one I valued so highly."</said></p>
-                  <p><said>"My dear father, you are mistaken; <persName>Justine</persName> is
+                  <p><said who="#victor">"My dear father, you are mistaken; <persName>Justine</persName> is
                         innocent."</said></p>
-                  <p><said>"If she is, God forbid that she should suffer as guilty. She is to be
+                  <p><said who="#father">"If she is, God forbid that she should suffer as guilty. She is to be
                         tried to-day, and I hope, I sincerely hope, that she will be
                         acquitted."</said></p>
                   <pb n="[1.157]" facs="pageImages/vol1/157.jpg"/>
@@ -3784,8 +3822,8 @@
                      and <pb n="[1.158]" facs="pageImages/vol1/158.jpg"/> expressive of mildness,
                      now through recent affliction allied to sadness. Her hair was of a rich dark
                      auburn, her complexion fair, and her figure slight and graceful. She welcomed
-                     me with the greatest affection. <said>"Your arrival, my dear cousin,"</said>
-                     said she, <said>"fills me with hope. You perhaps will find some means to
+                     me with the greatest affection. <said who="#elizabeth">"Your arrival, my dear cousin,"</said>
+                     said she, <said who="#elizabeth">"fills me with hope. You perhaps will find some means to
                         justify my poor guiltless <persName>Justine</persName>. Alas! who is safe,
                         if she be convicted of crime? I rely on her innocence as certainly as I do
                         upon my own. Our misfortune is doubly hard to us; we have not only lost that
@@ -3794,15 +3832,15 @@
                         But she will not, I am sure she will not; and then I shall be happy again,
                         even after the sad death of my little
                      <persName>William</persName>."</said></p>
-                  <p><said>"She is innocent, my <persName>Elizabeth</persName>,"</said>
-                     <pb n="[1.159]" facs="pageImages/vol1/159.jpg"/> said I, <said>"and that shall
+                  <p><said who="#victor">"She is innocent, my <persName>Elizabeth</persName>,"</said>
+                     <pb n="[1.159]" facs="pageImages/vol1/159.jpg"/> said I, <said who="#victor">"and that shall
                         be proved; fear nothing, but let your spirits be cheered by the assurance of
                         her acquittal."</said></p>
-                  <p><said>"How kind you are! every one else believes in her guilt, and that made me
+                  <p><said who="#elizabeth">"How kind you are! every one else believes in her guilt, and that made me
                         wretched; for I knew that it was impossible: and to see every one else
                         prejudiced in so deadly a manner, rendered me hopeless and
                         despairing."</said> She wept.</p>
-                  <p><said>"Sweet niece,"</said> said my father, <said>"dry your tears. If she is,
+                  <p><said who="#father">"Sweet niece,"</said> said my father, <said who="#father">"dry your tears. If she is,
                         as you believe, innocent, rely on the justice of our judges, and the
                         activity with which I shall prevent the slightest shadow of
                         partiality."</said></p></said>
@@ -3811,7 +3849,7 @@
             <div n="1.7" type="chapter">
                <pb n="[1.160]" facs="pageImages/vol1/160.jpg"/>
                <head>Chapter VII</head>
-               <said><p>WE passed a few sad hours, until eleven o'clock, when the trial was to
+               <said who="#victor"><p>WE passed a few sad hours, until eleven o'clock, when the trial was to
                      commence. My father and the rest of the family being obliged to attend as
                      witnesses, I accompanied them to the court. During the whole of this wretched
                      mockery of justice, I suffered living torture. It was to be decided, whether
@@ -3863,7 +3901,7 @@
                      strongly expressed. Sometimes she struggled with her tears; but when she was
                      desired to plead, she collected her powers, and spoke in an audible although
                      variable voice:—</p>
-                  <p><said>"God knows,"</said> she said, <said>"how entirely I am innocent. But I do
+                  <p><said who="#moritz">"God knows,"</said> she said, <said who="#moritz">"how entirely I am innocent. But I do
                         not pretend that my protestations should acquit me: I rest my innocence on a
                         plain and simple explanation of the facts which have been adduced against
                         me; and I hope the character I have always borne will incline my judges to a
@@ -3887,7 +3925,7 @@
                      market-woman, was not surprising, since she had passed a sleepless night, and
                      the fate of poor <persName>William</persName> was yet uncertain. Concerning the
                      picture she could give no account.</p>
-                  <p><said>"I know,"</said> continued the unhappy victim, <said>"how heavily and
+                  <p><said who="#moritz">"I know,"</said> continued the unhappy victim, <said who="#moritz">"how heavily and
                         fatally this one circumstance weighs against me, but I have no power of
                         explaining it; and when I have expressed my utter ignorance, I am only left
                         to conjecture concerning the probabilities by which it might have been
@@ -3897,7 +3935,7 @@
                         him <pb n="[1.167]" facs="pageImages/vol1/167.jpg"/> for so doing; or if I
                         had, why should he have stolen the jewel, to part with it again so
                         soon?"</said></p>
-                  <p><said>"I commit my cause to the justice of my judges, yet I see no room for
+                  <p><said who="#moritz">"I commit my cause to the justice of my judges, yet I see no room for
                         hope. I beg permission to have a few witnesses examined concerning my
                         character; and if their testimony shall not overweigh my supposed guilt, I
                         must be condemned, although I would pledge my salvation on my
@@ -3910,7 +3948,7 @@
                      although violently <pb n="[1.168 - page breaks after 'agi']"
                         facs="pageImages/vol1/168.jpg"/> agitated, she desired permission to address
                      the court.</p>
-                  <p><said>"I am,"</said> said she, <said>"the cousin of the unhappy child who was
+                  <p><said who="#elizabeth">"I am,"</said> said she, <said who="#elizabeth">"the cousin of the unhappy child who was
                         murdered, or rather his sister, for I was educated by and have lived with
                         his parents ever since and even long before his birth. It may therefore be
                         judged indecent in me to come forward on this occasion; but when I see a
@@ -3962,12 +4000,12 @@
                   <pb n="[1.172]" facs="pageImages/vol1/172.jpg"/>
                   <p>When I returned home, <persName>Elizabeth</persName> eagerly demanded the
                      result.</p>
-                  <p><said>"My cousin,"</said> replied I, <said>"it is decided as you may have
+                  <p><said who="#victor">"My cousin,"</said> replied I, <said who="#victor">"it is decided as you may have
                         expected; all judges had rather that ten innocent should suffer, than that
                         one guilty should escape. But she has confessed."</said></p>
                   <p>This was a dire blow to poor <persName>Elizabeth</persName>, who had relied
                      with firmness upon <persName>Justine</persName>'s innocence.
-                        <said>"Alas!"</said> said she, <said>"how shall I ever again believe in
+                        <said who="#elizabeth">"Alas!"</said> said she, <said who="#elizabeth">"how shall I ever again believe in
                         human benevolence? <persName>Justine</persName>, whom I loved and esteemed
                         as my sister, how could she put on those smiles of innocence only to betray;
                         her mild eyes seemed incapable of any severity or ill-humour, and yet she
@@ -3975,7 +4013,7 @@
                   <p>Soon after we heard that the poor victim had expressed a wish to see my cousin.
                      My father wished her not to go; but said, that he left it to her own <pb
                         n="[1.173]" facs="pageImages/vol1/173.jpg"/> judgment and feelings to
-                     decide. <said>"Yes,"</said> said <persName>Elizabeth</persName>, <said>"I will
+                     decide. <said who="#elizabeth">"Yes,"</said> said <persName>Elizabeth</persName>, <said who="#elizabeth">"I will
                         go, although she is guilty; and you, <persName>Victor</persName>, shall
                         accompany me: I cannot go alone."</said> The idea of this visit was torture
                      to me, yet I could not refuse.</p>
@@ -3984,19 +4022,19 @@
                      rested on her knees. She rose on seeing us enter; and when we were left alone
                      with her, she threw herself at the feet of <persName>Elizabeth</persName>,
                      weeping bitterly. My cousin wept also.</p>
-                  <p><said>"Oh, <persName>Justine</persName>!"</said> said she, <said>"why did you
+                  <p><said who="#elizabeth">"Oh, <persName>Justine</persName>!"</said> said she, <said who="#elizabeth">"why did you
                         rob me of my last consolation? I relied on your innocence; and although I
                         was then very wretched, I was not so miserable as I am now."</said></p>
-                  <p><said>"And do you also believe that I am so very, very wicked? Do you also <pb
+                  <p><said who="#moritz">"And do you also believe that I am so very, very wicked? Do you also <pb
                            n="[1.174]" facs="pageImages/vol1/174.jpg"/> join with my enemies to
                         crush me?"</said> Her voice was suffocated with sobs.</p>
-                  <p><said>"Rise, my poor girl,"</said> said <persName>Elizabeth</persName>,
-                        <said>"why do you kneel, if you are innocent? I am not one of your enemies;
+                  <p><said who="#elizabeth">"Rise, my poor girl,"</said> said <persName>Elizabeth</persName>,
+                        <said who="#elizabeth">"why do you kneel, if you are innocent? I am not one of your enemies;
                         I believed you guiltless, notwithstanding every evidence, until I heard that
                         you had yourself declared your guilt. That report, you say, is false; and be
                         assured, dear <persName>Justine</persName>, that nothing can shake my
                         confidence in you for a moment, but your own confession."</said></p>
-                  <p><said>"I did confess; but I confessed a lie. I confessed, that I might obtain
+                  <p><said who="#moritz">"I did confess; but I confessed a lie. I confessed, that I might obtain
                         absolution; but now that falsehood lies heavier at my heart than all my
                         other sins. The God of heaven forgive me! Ever since I was condemned, my
                         confessor has besieged me; he threatened and menaced, until I almost began
@@ -4006,7 +4044,7 @@
                         Dear lady, I had none to support me; all looked on me as a wretch doomed to
                         ignominy and perdition. What could I do? In an evil hour I subscribed to a
                         lie; and now only am I truly miserable."</said></p>
-                  <p>She paused, weeping, and then continued—<said>"I thought with horror, my sweet
+                  <p>She paused, weeping, and then continued—<said who="#moritz">"I thought with horror, my sweet
                         lady, that you should believe your <persName>Justine</persName>, whom your
                         blessed aunt had so highly honoured, and whom you loved, was a creature
                         capable of a crime which none but the devil himself could have perpetrated.
@@ -4014,16 +4052,16 @@
                         you again in heaven, where we shall all be happy; and that consoles me,
                         going as I am to suffer ignominy and death."</said></p>
                   <pb n="[1.176]" facs="pageImages/vol1/176.jpg"/>
-                  <p><said>"Oh, <persName>Justine</persName>! forgive me for having for one moment
+                  <p><said who="#elizabeth">"Oh, <persName>Justine</persName>! forgive me for having for one moment
                         distrusted you. Why did you confess? But do not mourn, my dear girl; I will
                         every where proclaim your innocence, and force belief. Yet you must die;
                         you, my playfellow, my companion, my more than sister. I never can survive
                         so horrible a misfortune."</said></p>
-                  <p><said>"Dear, sweet <persName>Elizabeth</persName>, do not weep. You ought to
+                  <p><said who="#moritz">"Dear, sweet <persName>Elizabeth</persName>, do not weep. You ought to
                         raise me with thoughts of a better life, and elevate me from the petty cares
                         of this world of injustice and strife. Do not you, excellent friend, drive
                         me to despair."</said></p>
-                  <p><said>"I will try to comfort you; but this, I fear, is an evil too deep and
+                  <p><said who="#elizabeth">"I will try to comfort you; but this, I fear, is an evil too deep and
                         poignant to admit of consolation, for there is no hope. Yet heaven bless
                         thee, my dearest <persName>Justine</persName>, with resignation, and a
                         confidence elevated beyond this world. Oh! how I hate its shews and <pb
@@ -4039,7 +4077,7 @@
                         escaping from so miserable a den. Alas! I would I were in peace with my aunt
                         and my lovely <persName>William</persName>, escaped from a world which is
                         hateful to me, and the visages of men which I abhor."</said></p>
-                  <p><persName>Justine</persName> smiled languidly. <said>"This, dear lady, is
+                  <p><persName>Justine</persName> smiled languidly. <said who="#moritz">"This, dear lady, is
                         despair, and not resignation. I must not learn the lesson that <pb
                            n="[1.178]" facs="pageImages/vol1/178.jpg"/> you would teach me. Talk of
                         something else, something that will bring peace, and not increase of
@@ -4050,13 +4088,13 @@
                      between life and death, felt not as I did, such deep and bitter agony. I
                      gnashed my teeth, and ground them together, uttering a groan that came from my
                      inmost soul. <persName>Justine</persName> started. When she saw who it was, she
-                     approached me, and said, <said>"Dear Sir, you are very kind to visit me; you, I
+                     approached me, and said, <said who="#moritz">"Dear Sir, you are very kind to visit me; you, I
                         hope, do not believe that I am guilty."</said></p>
-                  <p>I could not answer. <said>"No, <persName>Justine</persName>,"</said> said
-                        <persName>Elizabeth</persName>; <said>"he is more convinced of your
+                  <p>I could not answer. <said who="#elizabeth">"No, <persName>Justine</persName>,"</said> said
+                        <persName>Elizabeth</persName>; <said who="#elizabeth">"he is more convinced of your
                         innocence than I was; for <pb n="[1.179]" facs="pageImages/vol1/179.jpg"/>
                         even when he heard that you had confessed, he did not credit it."</said></p>
-                  <p><said>"I truly thank him. In these last moments I feel the sincerest gratitude
+                  <p><said who="#moritz">"I truly thank him. In these last moments I feel the sincerest gratitude
                         towards those who think of me with kindness. How sweet is the affection of
                         others to such a wretch as I am! It removes more than half my misfortune;
                         and I feel as if I could die in peace, now that my innocence is acknowledged
@@ -4103,16 +4141,16 @@
                            Victorians" exhibit at the British Library</ref>. </note>, which nothing
                      could extinguish. We staid several hours with <persName>Justine</persName>; and
                      it was with great difficulty that <persName>Elizabeth</persName> could tear
-                     herself away. <said>"I wish,"</said> cried she, <said>"that I were to die with
+                     herself away. <said who="#elizabeth">"I wish,"</said> cried she, <said>"that I were to die with
                         you; I cannot live in this world of misery."</said></p>
                   <p><persName>Justine</persName> assumed an air of cheerfulness, while she with
                      difficulty repressed her bitter tears. She embraced
                         <persName>Elizabeth</persName>, and said, in a voice of half-suppressed
-                     emotion, <said>"Farewell, sweet lady, dearest <persName>Elizabeth</persName>,
+                     emotion, <said who="#moritz">"Farewell, sweet lady, dearest <persName>Elizabeth</persName>,
                         my beloved and only friend; may heaven in its bounty bless and preserve you;
                         may this be the last misfortune that you will ever suffer. Live, and be
                         happy, and make others so."</said></p>
-                  <p>As we returned, <persName>Elizabeth</persName> said, <said>"You <pb n="[1.181]"
+                  <p>As we returned, <persName>Elizabeth</persName> said, <said who="#elizabeth">"You <pb n="[1.181]"
                            facs="pageImages/vol1/181.jpg"/> know not, my dear
                            <persName>Victor</persName>, how much I am relieved, now that I trust in
                         the innocence of this unfortunate girl. I never could again have known
@@ -4134,7 +4172,7 @@
             <div n="2.1" type="chapter">
                <pb n="[2.1]" facs="pageImages/vol2/1.jpg"/>
                <head>Chapter I</head>
-               <said><p>NOTHING is more painful to the human mind, than, after the feelings have
+               <said who="#victor"><p>NOTHING is more painful to the human mind, than, after the feelings have
                      been worked up by a quick succession of events, the dead calmness of inaction
                      and certainty which follows, and deprives the soul both of hope and fear.
                         <persName>Justine</persName> died; she rested; and I was alive. The blood
@@ -4157,10 +4195,10 @@
                      solitude.</p>
                   <p>My father observed with pain the alteration perceptible in my disposition and
                      habits, and endeavoured to reason with me on the folly of giving way to
-                     immoderate grief. <said>"Do you think, <persName>Victor</persName>,"</said>
-                     said he, <said>"that I do not suffer also? No one could love a child more than
+                     immoderate grief. <said who="#father">"Do you think, <persName>Victor</persName>,"</said>
+                     said he, <said who="#father">"that I do not suffer also? No one could love a child more than
                         I loved your brother"</said>; (tears came into his eyes as he spoke);
-                        <said>"but is it not a duty to the survivors, that we should refrain from
+                        <said who="#father">"but is it not a duty to the survivors, that we should refrain from
                         augmenting their unhappiness by an appearance of immoderate grief? It is
                         also a duty owed to yourself; for excessive sorrow prevents improvement or
                         enjoyment, or even the discharge of daily usefulness, without which no man
@@ -4218,7 +4256,7 @@
                      prospects. She <pb n="[2.8]" facs="pageImages/vol2/8.jpg"/> had become grave,
                      and often conversed of the inconstancy of fortune, and the instability of human
                      life.</p>
-                  <p><said>"When I reflect, my dear cousin,"</said> said she, <said>"on the
+                  <p><said who="#elizabeth">"When I reflect, my dear cousin,"</said> said she, <said who="#elizabeth">"on the
                         miserable death of <persName>Justine Moritz</persName>, I no longer see the
                         world and its works as they before appeared to me. Before, I looked upon the
                         accounts of vice and injustice, that I read in books or heard from others,
@@ -4245,7 +4283,7 @@
                         would not change places with such a wretch."</said></p>
                   <p>I listened to this discourse with the extremest agony. I, not in deed, but in
                      effect, was the true murderer. <persName>Elizabeth</persName> read my anguish
-                     in my countenance, and kindly taking my hand said, <said>"My dearest cousin,
+                     in my countenance, and kindly taking my hand said, <said who="#elizabeth">"My dearest cousin,
                         you must calm yourself. These events have affected me, God knows how deeply;
                         but I am not so wretched as you are. There is an expression of despair, and
                         sometimes of revenge, in your countenance, that makes me tremble. Be calm,
@@ -4325,7 +4363,7 @@
             <div n="2.2" type="chapter">
                <pb n="[2.16]" facs="pageImages/vol2/16.jpg"/>
                <head>Chapter II</head>
-               <said><p>THE next day, contrary to the prognostications of our guides, was fine,
+               <said who="#victor"><p>THE next day, contrary to the prognostications of our guides, was fine,
                      although clouded. We visited the source of the <placeName type="tgn"
                         key="7622466" cert="medium"
                      >Arveiron</placeName><!-- see 1781 watercolor by Francis Towne http://www.tate.org.uk/art/artworks/towne-the-source-of-the-arveyron-t08147 -->,
@@ -4337,8 +4375,8 @@
                         facs="pageImages/vol2/17.jpg"/> brooded for the last month. I returned in
                      the evening, fatigued, but less unhappy, and conversed with my family with more
                      cheerfulness than had been my custom for some time. My father was pleased, and
-                        <persName>Elizabeth</persName> overjoyed. <said>"My dear cousin,"</said>
-                     said she, <said>"you see what happiness you diffuse when you are happy; do not
+                        <persName>Elizabeth</persName> overjoyed. <said who="#elizabeth">"My dear cousin,"</said>
+                     said she, <said who="#elizabeth">"you see what happiness you diffuse when you are happy; do not
                         relapse again!"</said></p>
                   <p>The following morning the rain poured down in torrents, and thick mists hid the
                      summits of the mountains. I rose early, but felt unusually melancholy. The rain
@@ -4400,7 +4438,7 @@
                      mountains, <pb n="[2.22]" facs="pageImages/vol2/22.jpg"/> whose aërial summits
                      hung over its recesses. Their icy and glittering peaks shone in the sunlight
                      over the clouds. My heart, which was before sorrowful, now swelled with
-                     something like joy; I exclaimed—<said>"Wandering spirits, if indeed ye wander,
+                     something like joy; I exclaimed—<said who="#victor">"Wandering spirits, if indeed ye wander,
                         and do not rest in your narrow beds, allow me this faint happiness, or take
                         me, as your companion, away from the joys of life."</said></p>
                   <p>As I said this, I suddenly beheld the figure of a man, at some distance,
@@ -4417,13 +4455,13 @@
                      scarcely observed this; anger and hatred had at first deprived me of utterance,
                      and I recovered only to overwhelm him with words expressive of furious
                      detestation and contempt.</p>
-                  <p><said>"Devil!"</said> I exclaimed, <said>"do you dare approach me? and do not
+                  <p><said who="#victor">"Devil!"</said> I exclaimed, <said who="#victor">"do you dare approach me? and do not
                         you fear the fierce vengeance of my arm wreaked on your miserable head?
                         Begone, vile insect! or rather stay, that I may trample you to dust! and,
                         oh, that I could, with the extinction of your miserable <pb n="[2.24]"
                            facs="pageImages/vol2/24.jpg"/> existence, restore those victims whom you
                         have so diabolically murdered!"</said></p>
-                  <p><said>"I expected this reception,"</said> said the dæmon. <said>"All men hate
+                  <p><said who="#creature">"I expected this reception,"</said> said the dæmon. <said who="#creature">"All men hate
                         the wretched; how then must I be hated, who am miserable beyond all living
                         things! Yet you, my creator, detest and spurn me, thy creature, to whom thou
                         art bound by ties only dissoluble by the annihilation of one of us. You
@@ -4432,14 +4470,14 @@
                         comply with my conditions, I will leave them and you at peace; but if you
                         refuse, I will glut the maw of death, until it be satiated with the blood of
                         your remaining friends."</said></p>
-                  <p><said>"Abhorred monster! fiend that thou art! the tortures of hell are too mild
+                  <p><said who="#victor">"Abhorred monster! fiend that thou art! the tortures of hell are too mild
                         a vengeance for thy crimes. <pb n="[2.25]" facs="pageImages/vol2/25.jpg"/>
                         Wretched devil! you reproach me with your creation; come on then, that I may
                         extinguish the spark which I so negligently bestowed."</said></p>
                   <p>My rage was without bounds; I sprang on him, impelled by all the feelings which
                      can arm one being against the existence of another.</p>
                   <p>He easily eluded me, and said,</p>
-                  <p><said>"Be calm! I entreat you to hear me, before you give vent to your hatred
+                  <p><said who="#creature">"Be calm! I entreat you to hear me, before you give vent to your hatred
                         on my devoted head. Have I not suffered enough, that you seek to increase my
                         misery? Life, although it may only be an accumulation of anguish, is dear to
                         me, and I will defend it. Remember, thou hast made me more powerful than
@@ -4455,10 +4493,10 @@
                         where I see bliss, from which I alone am irrevocably excluded. I was
                         benevolent and good; misery made me a fiend. Make me happy, and I shall
                         again be virtuous."</said></p>
-                  <p><said>"Begone! I will not hear you. There can be no community between you and
+                  <p><said who="#victor">"Begone! I will not hear you. There can be no community between you and
                         me; we are enemies. Begone, or let us try our strength in a fight, in which
                         one must fall."</said></p>
-                  <p><said>"How can I move thee? Will no entreaties cause thee to turn a <pb
+                  <p><said who="#creature">"How can I move thee? Will no entreaties cause thee to turn a <pb
                            n="[2.27 - page breaks after 'favour-']" facs="pageImages/vol2/27.jpg"/>
                         favourable eye upon thy creature, who implores thy goodness and compassion.
                         Believe me, <persName>Frankenstein</persName>: I was benevolent; my soul
@@ -4485,14 +4523,14 @@
                         spare me: listen to me; and <pb n="[2.29]" facs="pageImages/vol2/29.jpg"/>
                         then, if you can, and if you will, destroy the work of your
                      hands."</said></p>
-                  <p><said>"Why do you call to my remembrance circumstances of which I shudder to
+                  <p><said who="#victor">"Why do you call to my remembrance circumstances of which I shudder to
                         reflect, that I have been the miserable origin and author? Cursed be the
                         day, abhorred devil, in which you first saw light! Cursed (although I curse
                         myself) be the hands that formed you! You have made me wretched beyond
                         expression. You have left me no power to consider whether I am just to you,
                         or not. Begone! relieve me from the sight of your detested form."</said></p>
-                  <p><said>"Thus I relieve thee, my creator,"</said> he said, and placed his hated
-                     hands before my eyes, which I flung from me with violence; <said>"thus I take
+                  <p><said who="#creature">"Thus I relieve thee, my creator,"</said> he said, and placed his hated
+                     hands before my eyes, which I flung from me with violence; <said who="#creature">"thus I take
                         from thee a sight which you abhor. Still thou canst listen to me, and grant
                         me thy compassion. By the virtues that I <pb n="[2.30]"
                            facs="pageImages/vol2/30.jpg"/> once possessed, I demand this from you.
@@ -4521,7 +4559,7 @@
             <div n="2.3" type="chapter">
                <pb n="[2.32]" facs="pageImages/vol2/32.jpg"/>
                <head>Chapter III</head>
-               <said><said>
+               <said who="#victor"><said who="#creature">
                      <p>IT is with considerable difficulty that I remember the original æra of my
                         being: all the events of that period appear confused and indistinct. A
                         strange multiplicity of sensations seized me, and I saw, felt, heard, and
@@ -4769,7 +4807,7 @@
             <div n="2.4" type="chapter">
                <pb n="[2.53]" facs="pageImages/vol2/53.jpg"/>
                <head>Chapter IV</head>
-               <said><said><p>I LAY on my straw, but I could not sleep. I thought of the occurrences
+               <said who="#victor"><said who="#creature"><p>I LAY on my straw, but I could not sleep. I thought of the occurrences
                         of the day. What chiefly struck me was the gentle manners of these people;
                         and I longed to join them, but dared not. I remembered too well the
                         treatment I had suffered the night before from the barbarous villagers, and
@@ -4971,8 +5009,8 @@
                <pb n="[2.69]" facs="pageImages/vol2/69.jpg"/>
                <head>Chapter V</head>
 
-               <said>
-                  <said>
+               <said who="#victor">
+                  <said who="#creature">
                      <p>I NOW hasten to the more moving part of my story. I shall relate events that
                         impressed me with feelings which, from what I was, have made me what I
                         am.</p>
@@ -5175,8 +5213,8 @@
                <pb n="[2.84]" facs="pageImages/vol2/84.jpg"/>
                <head>Chapter VI</head>
 
-               <said>
-                  <said>
+               <said who="#victor">
+                  <said who="#creature">
                      <p>SOME time elapsed before I learned the history of my friends. It was one
                         which could not fail to impress itself deeply on my mind, unfolding as it
                         did a number of circumstances each interesting and wonderful to one so
@@ -5383,8 +5421,8 @@
             <div n="2.7" type="chapter">
                <pb n="[2.98]" facs="pageImages/vol2/98.jpg"/>
                <head>Chapter VII</head>
-               <said>
-                  <said>
+               <said who="#victor">
+                  <said who="#creature">
                      <p>SUCH was the history of my beloved cottagers. It impressed me deeply. I
                         learned, from the views of social life which it developed, to admire their
                         virtues, and to deprecate the vices of mankind.</p>
@@ -5663,85 +5701,85 @@
                         which I had placed before my hovel to conceal my retreat. The fresh air
                         revived me, and, with renewed determination, I approached the door of their
                         cottage.</p>
-                     <p>I knocked. <said>"Who is there?"</said> said the old man—<said>"Come
+                     <p>I knocked. <said who="#delacey">"Who is there?"</said> said the old man—<said who="#delacey">"Come
                            in."</said></p>
-                     <p>I entered; Pardon this intrusion, said I, I am a traveller in want of a
+                     <p>I entered; <said who="#creature">Pardon this intrusion,</said> said I, <said who="#creature">I am a traveller in want of a
                         little rest; you would greatly oblige me, if you would allow me to remain a
-                        few minutes before the fire.</p>
-                     <p><said>"Enter,"</said> said <persName>De Lacey</persName>; <said>"and I will
+                        few minutes before the fire.</said></p>
+                     <p><said who="#delacey">"Enter,"</said> said <persName>De Lacey</persName>; <said who="#delacey">"and I will
                            try in what manner I can relieve your wants; but, unfortunately, my
                            children are from home, and, as I am blind, I am afraid I shall find it
                            difficult to procure food for you."</said></p>
                      <pb n="[2.114]" facs="pageImages/vol2/114.jpg"/>
-                     <p><said>"Do not trouble yourself, my kind host, I have food; it is warmth and
+                     <p><said who="#creature">"Do not trouble yourself, my kind host, I have food; it is warmth and
                            rest only that I need."</said></p>
                      <p>I sat down, and a silence ensued. I knew that every minute was precious to
                         me, yet I remained irresolute in what manner to commence the interview; when
                         the old man addressed me—</p>
-                     <p><said>"By your language, stranger, I suppose you are my countryman;—are you
+                     <p><said who="#delacey">"By your language, stranger, I suppose you are my countryman;—are you
                               <foreign>French</foreign>?"</said></p>
-                     <p><said>"No; but I was educated by a <foreign>French</foreign> family, and
+                     <p><said who="#creature">"No; but I was educated by a <foreign>French</foreign> family, and
                            understand that language only. I am now going to claim the protection of
                            some friends, whom I sincerely love, and of whose favour I have some
                            hopes."</said></p>
-                     <p><said>"Are these <foreign>Germans</foreign>?"</said></p>
-                     <p><said>"No, they are <foreign>French</foreign>. But let us change the
+                     <p><said who="#delacey">"Are these <foreign>Germans</foreign>?"</said></p>
+                     <p><said who="#creature">"No, they are <foreign>French</foreign>. But let us change the
                            subject. I am an unfortunate and deserted creature; I look around, and I
                            have no relation or friend <pb n="[2.115]" facs="pageImages/vol2/115.jpg"
                            /> upon earth. These amiable people to whom I go have never seen me, and
                            know little of me. I am full of fears; for if I fail there, I am an
                            outcast in the world for ever."</said></p>
-                     <p><said>"Do not despair. To be friendless is indeed to be unfortunate; but the
+                     <p><said who="#delacey">"Do not despair. To be friendless is indeed to be unfortunate; but the
                            hearts of men, when unprejudiced by any obvious self-interest, are full
                            of brotherly love and charity. Rely, therefore, on your hopes; and if
                            these friends are good and amiable, do not despair."</said></p>
-                     <p><said>"They are kind—they are the most excellent creatures in the world;
+                     <p><said who="#creature">"They are kind—they are the most excellent creatures in the world;
                            but, unfortunately, they are prejudiced against me. I have good
                            dispositions; my life has been hitherto harmless, and in some degree
                            beneficial; but a fatal prejudice clouds their eyes, and where they ought
                            to see a feeling and kind friend, they behold only a detestable
                            monster."</said></p>
                      <pb n="[2.116]" facs="pageImages/vol2/116.jpg"/>
-                     <p><said>"That is indeed unfortunate; but if you are really blameless, cannot
+                     <p><said who="#delacey">"That is indeed unfortunate; but if you are really blameless, cannot
                            you undeceive them?"</said></p>
-                     <p><said>"I am about to undertake that task; and it is on that account that I
+                     <p><said who="#creature">"I am about to undertake that task; and it is on that account that I
                            feel so many overwhelming terrors. I tenderly love these friends; I have,
                            unknown to them, been for many months in the habits of daily kindness
                            towards them; but they believe that I wish to injure them, and it is that
                            prejudice which I wish to overcome."</said></p>
-                     <p><said>"Where do these friends reside?"</said></p>
-                     <p><said>"Near this spot."</said></p>
-                     <p>The old man paused, and then continued, <said>"If you will unreservedly
+                     <p><said who="#delacey">"Where do these friends reside?"</said></p>
+                     <p><said who="#creature">"Near this spot."</said></p>
+                     <p>The old man paused, and then continued, <said who="#delacey">"If you will unreservedly
                            confide to me the particulars of your tale, I perhaps may be of use in
                            undeceiving them. I am blind, and cannot judge of your countenance, but
                            there is something in your words which persuades me that you are sincere.
                            I <pb n="[2.117]" facs="pageImages/vol2/117.jpg"/> am poor, and an exile;
                            but it will afford me true pleasure to be in any way serviceable to a
                            human creature."</said></p>
-                     <p><said>"Excellent man! I thank you, and accept your generous offer. You raise
+                     <p><said who="#creature">"Excellent man! I thank you, and accept your generous offer. You raise
                            me from the dust by this kindness; and I trust that, by your aid, I shall
                            not be driven from the society and sympathy of your
                            fellow-creatures."</said></p>
-                     <p><said>"Heaven forbid! even if you were really criminal; for that can only
+                     <p><said who="#delacey">"Heaven forbid! even if you were really criminal; for that can only
                            drive you to desperation, and not instigate you to virtue. I also am
                            unfortunate; I and my family have been condemned, although innocent:
                            judge, therefore, if I do not feel for your misfortunes."</said></p>
-                     <p><said>"How can I thank you, my best and only benefactor? From your lips
+                     <p><said who="#creature">"How can I thank you, my best and only benefactor? From your lips
                            first have I heard the voice of kindness directed towards me; I shall be
                            for ever grateful; and your present humanity assures me of success <pb
                               n="[2.118]" facs="pageImages/vol2/118.jpg"/> with those friends whom I
                            am on the point of meeting."</said></p>
-                     <p><said>"May I know the names and residence of those friends?"</said></p>
+                     <p><said who="#delacey">"May I know the names and residence of those friends?"</said></p>
                      <p>I paused. This, I thought, was the moment of decision, which was to rob me
                         of, or bestow happiness on me forever. I struggled vainly for firmness
                         sufficient to answer him, but the effort destroyed all my remaining
                         strength; I sank on the chair, and sobbed aloud. At that moment I heard the
                         steps of my younger protectors. I had not a moment to lose; but, seizing the
-                        hand of the old man, I cried, <said>"Now is the time!—save and protect me!
+                        hand of the old man, I cried, <said who="#creature">"Now is the time!—save and protect me!
                            You and your family are the friends whom I seek. Do not you desert me in
                            the hour of trial!"</said></p>
-                     <p><said>"Great <persName>God</persName>!"</said> exclaimed the old man,
-                           <said>"who are you?"</said></p>
+                     <p><said who="#delacey">"Great <persName>God</persName>!"</said> exclaimed the old man,
+                           <said who="#delacey">"who are you?"</said></p>
                      <p>At that instant the cottage door <pb n="[2.119]"
                            facs="pageImages/vol2/119.jpg"/> was opened, and
                            <persName>Felix</persName>, <persName>Safie</persName>, and
@@ -5764,8 +5802,8 @@
                <pb n="[2.120]" facs="pageImages/vol2/120.jpg"/>
                <head>Chapter VIII</head>
 
-               <said>
-                  <said>
+               <said who="#victor">
+                  <said who="#creature">
                      <p>CURSED, cursed creator! Why did I live? Why, in that instant, did I not
                         extinguish the spark of existence which you had so wantonly bestowed? I know
                         not; despair had not yet taken possession of me; my feelings were those of
