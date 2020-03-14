@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="austen-lady-susan">
+   <!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
+
+   <!--TEI Header BEGINS-->
+   <teiHeader xml:lang="en">
+
+      <fileDesc>
+         <!--BEGINS File Description -->
+         <titleStmt>
+            <title type="main">Lady Susan</title>
+            <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
+            <author>
+               <persName type="lcnaf" key="n79008228">
+                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
+                  <name>
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                     <forename>Jane</forename>
+                     <surname>Austen</surname>
+                  </name>
+               </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
+                  <name ref="editors.xml#TH">
+                     <!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
+                     <surname>Howe</surname>
+                     <forename>Tonya</forename>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
+               <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
+               <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
+            </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+            <!-- Do not alter. -->
+         </titleStmt>
+
+
+         <publicationStmt>
+            <!-- This element expresses the publication details of this particular etext. -->
+            <publisher>Literature in Context</publisher>
+            <!-- Do not alter. -->
+            <address>
+               <!-- Use the address information for your university. -->
+               <addrLine>Marymount University Department of Literature and Languages</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington, VA </addrLine>
+               <addrLine>22207</addrLine>
+               <addrLine>thowe@marymount.edu</addrLine>
+               <!-- Add your email address.  -->
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+               <!-- Do not alter. -->
+            </address>
+            <availability status="free">
+               <!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+
+         <sourceDesc>
+            <!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
+
+            <biblStruct>
+               <analytic>
+                  <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
+                  <title>"Lady Susan"</title>
+               </analytic>
+               <monogr>
+                  <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
+                  <author>
+                        <forename>Jane</forename>
+                        <surname>Austen</surname>                  
+                  </author>
+                  <title>A Memoir of Jane Austen</title>
+                  <imprint>
+                     <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781">London</placeName>
+                        <!-- Note authority and key. -->
+                     </pubPlace>
+                     <publisher>Richard Bentley and Son</publisher>
+                     <!-- Insert publsher of earliest/first edition. -->
+                     <date when="1871">1871</date>
+                     <!-- Insert date of earliest/first edition. Note the attribute @when. -->
+                     <note>This text was written around 1795, but not published until 1871, in this, the second edition of James Edward Austen-Leigh's <hi rend="italic">A Memoir of Jane Austen</hi>. </note>
+                     <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
+                     <note>Page images are drawn from the text held by Oxford Libraries, digitized by Google, and available at Internet Archive. View the complete <hi rend="italic">Memoir</hi> online at <ref target="https://archive.org/details/amemoirjaneaust00leiggoog/page/n12/mode/2up">https://archive.org/details/amemoirjaneaust00leiggoog/page/n12/mode/2up</ref>.</note>
+                     <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
+                     <note>Item information available via WorldCat at <ref target="https://www.worldcat.org/title/memoir-of-jane-austen/oclc/358319">https://www.worldcat.org/title/memoir-of-jane-austen/oclc/358319</ref>.</note><!-- If links are available, indicate them using this model. -->
+                  </imprint>
+                  <imprint>
+                     <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
+                     <publisher>Project Gutenberg</publisher>
+                     <date>n.d.</date>
+                     <note>Base text for this digital edition has been drawn from Project Gutenberg <ref target="http://www.gutenberg.org/files/946/946-h/946-h.htm">http://www.gutenberg.org/files/946/946-h/946-h.htm</ref>
+                          </note>
+                  </imprint>
+                  <extent>364 pages ; 20 cm</extent>
+                  <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
+                  <biblScope>pp 203-291</biblScope>
+                  <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
+                  
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+
+      </fileDesc>
+      <!-- Don't forget to close out all your elements! -->
+
+
+
+      <profileDesc>
+         <!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+         <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
+
+         <textDesc n="novella">
+            <!-- Acceptable values include novel, novella, poem, essay. -->
+            <channel mode="w">print</channel>
+            <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
+            <constitution type="single"/>
+            <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
+            <derivation type="original"/>
+            <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
+            <domain/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <factuality type="fiction"/>
+            <!-- See the textDesc guidelines for more information. -->
+            <interaction/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <preparedness/>
+            <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+            <purpose type="entertain" degree="high"/>
+            <!-- See the TEI guidelines for more information. -->
+            <purpose type="inform" degree="low"/>
+            <!-- Multiple purpose types may or may not be appropriate. -->
+         </textDesc>
+
+         <settingDesc>
+            <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
+            <setting>
+               <name type="tgn" key="xxx">England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->           
+               <time from="1775" to="1800">Late 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+
+
+
+      <encodingDesc>
+         <!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <!-- We here define the authority files used throughout the application and data. -->
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <!--BEGINS Revision Description -->
+        
+         <!-- Indicate all substantive changes to the document using the model here. -->
+         <change when="2020-03-11" who="editors.xml#TH">Created base XML in template.</change>
+      </revisionDesc>
+
+
+   </teiHeader>
+   <!--TEI Header Ends -->
+
+
+
+
+
+   <text>
+      <!-- Here begins the encoding of the text itself. -->
+      
+
+      <body>
+         <!-- Here begins the body of the text to be encoded. -->
+         <div>
+            <pb n="[203]" facs="pageImages/203.jpg"/>
+            <head>LADY SUSAN.<lb/></head>
+            <!-- Note use of head here. -->
+            <div type="letter" n="1"><head type="sub">I.<lb/> <hi rend="italic">Lady Susan Vernon to Mr. Vernon.</hi></head>
+               <opener>
+                  <dateline>
+                     <placeName>Langford</placeName>,<date>Dec.</date>
+                  </dateline>
+               <salute>MY DEAR BROTHER,--</salute>
+            </opener>
+               <p>I can no longer refuse myself the pleasure of profiting by your kind invitation when we last parted of spending some weeks with you at Churchhill, and, therefore, if quite convenient to you and Mrs. Vernon to receive me at present, I shall hope within a few days to be introduced to a sister whom I have so long desired to be acquainted with. My kind friends here are most affectionately urgent with me to prolong my stay, but their hospitable and cheerful dispositions lead them too much into society for my present situation and state of mind; and I impatiently look forward to the hour when I shall be admitted into your delightful retirement.
+               </p>   
+                  <p>I long to be made known to your dear little children, in whose hearts I shall be very eager to secure an interest I shall soon have need for all my fortitude, as I am on the point of separation from my own daughter. The long illness of her dear father prevented my paying her that attention which duty and affection equally dictated, and I have too much reason to fear that the governess to whose care I consigned her was unequal to the charge. I have therefore resolved on placing her at one of the best private schools in town, where I shall have an opportunity of leaving her myself in my way to you. I am determined, you see, not to be denied admittance at Churchhill. It would indeed give me most painful sensations to know that it were not in your power to receive me.
+                  </p>
+                  <closer>
+                     <salute>Your most obliged and affectionate sister,</salute>
+                     <signed>S. VERNON.</signed>
+                  </closer>
+            </div>
+            <trailer></trailer>
+         </div>
+      </body>
+   </text>
+</TEI>
