@@ -11,7 +11,7 @@
             <title type="main">Lady Susan</title>
             <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
             <author>
-               <persName type="lcnaf" key="n79008228">
+               <persName type="lcnaf" key="n79032879">
                   <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
                   <name>
                      <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
@@ -92,7 +92,7 @@
                      <date when="1871">1871</date>
                      <!-- Insert date of earliest/first edition. Note the attribute @when. -->
                      <note>This text was written around 1795, but not published until 1871, in this,
-                        the second edition of James Edward Austen-Leigh's <hi rend="italic">A Memoir
+                        the second edition of <persName type="lcnaf" key="no97053860">James Edward Austen-Leigh's</persName> <hi rend="italic">A Memoir
                            of Jane Austen</hi>. </note>
                      <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
                      <note>Page images are drawn from the text held by Oxford Libraries, digitized
@@ -163,7 +163,7 @@
          <settingDesc>
             <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
             <setting>
-               <name type="tgn" key="xxx">England</name>
+               <name type="tgn" key="7002445">England</name>
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
                <time from="1775" to="1800">Late 18th Century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
@@ -375,7 +375,7 @@
             </div>
 
 
-            <div>
+            <div n="3" type="letter">
                <head>III.<lb/><hi rend="italic">Mrs. Vernon to Lady de Courcy.</hi>
                </head>
 
@@ -422,7 +422,7 @@
             </div>
 
 
-            <div>
+            <div n="4" type="letter">
                <head>IV.<lb/><hi rend="italic">Mr. de Courcy to Mrs. Vernon. </hi> </head>
 
                <opener><dateline><placeName>Parklands.</placeName> </dateline>
@@ -457,7 +457,7 @@
             </div>
 
 
-            <div>
+            <div n="5" type="letter">
                <head>V. <lb/><hi rend="italic">Lady Susan Vernon to Mrs. Johnson.</hi></head>
 
                <opener><dateline><placeName>Churchhill.</placeName></dateline></opener>
@@ -507,7 +507,7 @@
             </div>
 
 
-            <div>
+            <div n="6" type="letter">
                <head>VI.<lb/><hi rend="italic">Mrs. Vernon to Mr. de Courcy</hi></head>
 
                <opener><dateline><placeName>Churchhill.</placeName></dateline></opener>
@@ -561,7 +561,7 @@
 
 
             <pb n="215" facs="pageImages/215.jpg"/>
-            <div>
+            <div n="7" type="letter">
                <head>VII.<lb/><hi rend="italic">Lady Susan Vernon to Mrs. Johnson</hi></head>
                <opener> <dateline><placeName>Churchhill.</placeName></dateline> 
                   <salute>My dear Alicia,—</salute></opener>
@@ -617,7 +617,7 @@
             </div>
 
 
-            <div>
+            <div n="8" type="letter">
                <head type="sub">VIII<lb/><hi rend="italic">Mrs. Vernon to Lady de Courcy.</hi></head>
 
                <opener><dateline><placeName>Churchhill</placeName></dateline>.
@@ -670,7 +670,7 @@
             </div>
 
             <pb n="220" facs="pageImages/220.jpg"/>
-            <div>
+            <div n="9" type="letter">
                <head type="sub">IX<lb/><hi rend="italic">Mrs. Johnson to Lady S. Vernon.</hi></head>
 
                <opener><dateline><placeName>Edward Street.</placeName></dateline><salute> My dearest Friend,—</salute></opener>
@@ -692,7 +692,7 @@
 
             </div>
             <pb n="221" facs="pageImages/221.jpg"/>
-            <div>
+            <div n="10" type="letter">
                <head type="sub">X<lb/><hi rend="italic">Lady Susan Vernon to Mrs. Johnson.</hi></head>
 
                <opener><dateline><placeName>Churchhill.</placeName></dateline></opener>
@@ -740,7 +740,7 @@
                <closer><salute>Yours, &amp;,</salute> <signed>S. VERNON.</signed></closer>
             </div>
 
-            <div>
+            <div n="11" type="letter">
 
                <head type="sub">XI<lb/><hi rend="italic">Mrs. Vernon to Lady de Courcy.</hi></head>
 
@@ -773,7 +773,7 @@
             </div>
 
 
-            <div>
+            <div n="12" type="letter">
                <head type="sub">XII<lb/><hi rend="italic">Sir Reginald de Courcy to his Son.</hi></head>
 
                <opener><dateline><placeName>Parklands.</placeName></dateline></opener>
@@ -836,13 +836,19 @@
 
             </div>
 
-            <div>
+            <div n="13" type="letter">
+               
 
-               <p>XIII LADY DE COURCY TO MRS. VERNON
-
-               Parklands.
-
-               My dear Catherine,—Unluckily I was confined to my room when your last letter came,
+               <head type="sub">XIII<lb/>
+                  
+                  <hi rend="italic">Lady de Coourcy too Mrs. Vernon.</hi></head>
+                     <opener>
+                        <dateline>
+                           <placeName>Parklands.</placeName><lb/>
+                        </dateline>
+                        <salute>My dear Catherine,—</salute>
+                     </opener>
+                     <p>Unluckily I was confined to my room when your last letter came,
                   by a cold which affected my eyes so much as to prevent my reading it myself, so I
                   could not refuse your father when he offered to read it to me, by which means he
                   became acquainted, to my great vexation, with all your fears about your brother. I
@@ -864,17 +870,26 @@
                   satisfy your father, and he is certainly less uneasy since Reginald's letter. How
                   provoking it is, my dear Catherine, that this unwelcome guest of yours should not
                   only prevent our meeting this Christmas, but be the occasion of so much vexation
-                  and trouble! Kiss the dear children for me. 
-               Your affectionate mother, C. DE COURCY.
-</p>
+                  and trouble! Kiss the dear children for me. </p>
+                     <closer>
+                        <salute>Your affectionate mother,<lb/></salute>
+                        <signed>C. DE COURCY.</signed>
+                     </closer>
+                     
             </div>
 
 
-            <div>
-              <p> XIV MR. DE COURCY TO SIR REGINALD
-               Churchhill.
-
-               My dear Sir,—I have this moment received your letter, which has given me more
+            <div n="14" type="letter">
+               <head type="sub">XIV<lb/>
+                  <hi rend="italic">Mr. de Coourcy to Sir Reginald.</hi></head>
+                     <opener>
+                        <dateline>
+                           <placeName>Churchhill.</placeName><lb/>
+                        </dateline>
+                        <salute>My dear Sir,—</salute>
+                     </opener>
+                     <p>
+                        I have this moment received your letter, which has given me more
                   astonishment than I <pb n="229" facs="pageImages/229.jpg"/>ever felt before. I am
                   to thank my sister, I suppose, for having represented me in such a light as to
                   injure me in your opinion, and give you all this alarm. I know not why she should
@@ -906,8 +921,8 @@
                   retirement, with as little opportunity as inclination to do evil, could not avoid
                   censure, we must not rashly condemn those who, living in the world and surrounded
                   with temptations, should be accused of errors which they are known to have the
-                  power of committing. 
-               I blame myself severely for having so easily believed the slanderous tales
+                  power of committing. </p>
+                     <p> I blame myself severely for having so easily believed the slanderous tales
                   invented by Charles Smith to the prejudice of Lady Susan, as I am now convinced
                   how greatly they have traduced her. As to Mrs. Mainwaring's jealousy it was
                   totally his own invention, and his account of her attaching Miss Mainwaring's
@@ -938,18 +953,26 @@
                   letter how highly I admire her abilities, and esteem her character; but if you are
                   not equally <pb n="232" facs="pageImages/232.jpg"/>convinced by my full and solemn
                   assurance that your fears have been most idly created, you will deeply mortify and
-                  distress me. 
-               I am, &amp;, &amp;, R. DE COURCY.
-</p>
+                  distress me. </p>
+                     <closer>
+                        <salute>I am, &amp;c., &amp;c.,<lb/></salute>
+                        <signed>R. DE COURCY.</signed>
+                     </closer>
+                     
             </div>
 
 
-            <div>
-               <p>XV MRS. VERNON TO LADY DE COURCY
-
-               Churchhill
-
-               My dear Mother,—I return you Reginald's letter, and rejoice with all my heart that
+            <div n="15" type="letter">
+               <head type="sub">XV<lb/>
+                  <hi rend="italic">Mrs. Vernoon to Lady de Courcy.</hi></head>
+                     <opener>
+                        <dateline>
+                           <placeName>Churchhill</placeName>
+                        </dateline>
+                        <salute>My dear Mother,—</salute>
+                     </opener>
+                     <p>
+                        I return you Reginald's letter, and rejoice with all my heart that
                   my father is made easy by it: tell him so, with my congratulations; but, between
                   ourselves, I must own it has only convinced ME of my brother's having no PRESENT
                   intention of marrying Lady Susan, not that he is in no danger of doing so three
@@ -993,19 +1016,25 @@
                   not to Lady Susan's credit that he should be so bitter against her daughter; his
                   idea of her must be drawn from the mother's description. Well, whatever may be his
                   fate, we have the comfort of knowing that we have done our utmost to save him. We
-                  must commit the event to a higher power. 
-               Yours ever, &amp;, CATHERINE VERNON.
-</p>
+                  must commit the event to a higher power. </p>
+                     <closer>
+                        <salute>Yours ever,&amp;c.,<lb/></salute>
+                        <signed>CATHERINE VERNON.</signed>
+                     </closer>
+                     
             </div>
 
 
-            <div>
-              <p> XVI LADY SUSAN TO MRS. JOHNSON
-
-               Churchhill.
-
+            <div n="16" type="letter">
                
-               Never, my dearest Alicia, was I so provoked in my life as by a letter this morning
+               <head type="sub">XVI<lb/>
+                  <hi rend="italic">Lady Susan to Mrs. Johnson.</hi></head>
+                     <opener>
+                        <dateline>
+                           <placeName>Churchhill.</placeName><lb/>
+                        </dateline>
+                     </opener>
+                     <p>Never, my dearest Alicia, was I so provoked in my life as by a letter this morning
                   from Miss Summers. That horrid girl of mine has been trying to run away. I had not
                   a notion of her being such a little devil before, she seemed to have all the
                   Vernon milkiness; but on receiving the letter in which I declared my intention
@@ -1023,8 +1052,8 @@
                   I am vain of anything, it is of my eloquence. Consideration and esteem as surely
                   follow command of language as admiration waits on beauty, and here I have
                   opportunity enough for the exercise of my talent, as the chief of my time is spent
-                  in conversation. 
-               Reginald is never easy unless we are by ourselves, and when the weather is
+                  in conversation. </p>
+              <p>Reginald is never easy unless we are by ourselves, and when the weather is
                   tolerable, we pace the shrubbery for hours together. I like him on the whole very
                   well; he is clever and has a good deal to say, but he is sometimes impertinent and
                   troublesome. There is a sort of ridiculous delicacy about him which requires the
@@ -1041,18 +1070,26 @@
                   know no better support of love. He has been teazing me to allow of his coming into
                   this country, and lodging somewhere near INCOG.; but I forbade everything of the
                   kind. Those women are inexcusable who forget what is due to themselves, and the
-                  opinion of the world. 
-               Yours ever, S. VERNON. </p>
+                  opinion of the world. </p>
+                     <closer>
+                        <salute>Yours ever,</salute>
+                        <signed>S. VERNON.</signed>
+                     </closer>
+                     
             </div>
 
 
-            <div>
-               <p>
-               XVII MRS. VERNON TO LADY DE COURCY
-
-               Churchhill. My dear Mother,—
-
-               Mr. Vernon returned on Thursday night, bringing his niece with him. Lady Susan had
+            <div n="17" type="letter">
+               <head type="sub">XVII<lb/>
+                  <hi rend="italic">Mrs. Vernon to Lady de Courcy.</hi></head>
+                     <opener>
+                        <dateline>
+                           <placeName>Churchhill.</placeName><lb/>
+                        </dateline>
+                        <salute>My dear Mother,—</salute>
+                     </opener>
+                     <p>
+                        Mr. Vernon returned on Thursday night, bringing his niece with him. Lady Susan had
                   received a line from him by that day's post, informing her that Miss Summers had
                   absolutely refused to allow of Miss Vernon's continuance in her academy; we were
                   therefore prepared for her arrival, and expected them impatiently the whole
@@ -1077,8 +1114,8 @@
                   so blooming as Lady Susan's, and she has quite the Vernon cast of countenance, the
                   oval face and mild dark eyes, and there is peculiar sweetness in her look when she
                   speaks either to her uncle or <pb n="238" facs="pageImages/238.jpg"/>me, for as we
-                  behave kindly to her we have of course engaged her gratitude. 
-               Her mother has insinuated that her temper is intractable, but I never saw a face
+                  behave kindly to her we have of course engaged her gratitude. </p>
+               <p>Her mother has insinuated that her temper is intractable, but I never saw a face
                   less indicative of any evil disposition than hers; and from what I can see of the
                   behaviour of each to the other, the invariable severity of Lady Susan and the
                   silent dejection of Frederica, I am led to believe as heretofore that the former
@@ -1115,17 +1152,23 @@
                   deceive, it is impossible to be consistent. Lady Susan finds it necessary that
                   Frederica should be to blame, and probably has sometimes judged it expedient to
                   excuse her of ill-nature and sometimes to lament her want of sense. Reginald is
-                  only repeating after her ladyship. 
-               I remain, &amp;, &amp;, CATHERINE VERNON.
-               </p>
+                  only repeating after her ladyship.</p>
+                     <closer>
+                        <salute>I remain, &amp;c., &amp;c.,</salute>
+                        <signed>CATHERINE VERNON.</signed>
+                     </closer>
             </div>
 
             <pb n="240" facs="pageImages/240.jpg"/>
-            <div><p>
-               XVIII FROM THE SAME TO THE SAME
-
-               Churchhill. My dear Mother,—
-               I am very glad to find that my description of Frederica Vernon has interested
+            <div type="letter" n="18">
+               <head type="sub">XVIII<lb/>
+                  <hi rend="italic">FROM THE SAME TO THE SAME</hi>
+               </head>
+               <opener>
+                  <dateline><placeName>Churchhill.</placeName></dateline>
+                  <salute>My dear Mother,—</salute>
+               </opener>
+               <p>I am very glad to find that my description of Frederica Vernon has interested
                   you, for I do believe her truly deserving of your regard; and when I have
                   communicated a notion which has recently struck me, your kind impressions in her
                   favour will, I am sure, be heightened. I cannot help fancying that she is growing
@@ -1151,17 +1194,21 @@
                   make it clear that, if properly treated by Lady Susan, she would always appear to
                   much greater advantage. There cannot be a more gentle, affectionate heart; or more
                   obliging manners, when acting without restraint; and her little cousins are all
-                  very fond of her. 
-               Your affectionate daughter, C. VERNON
-            </p>
+                  very fond of her. </p>
+               <closer>
+                  <salute>Your affectionate daughter,<lb/></salute>
+                  <signed>C. VERNON</signed>
+               </closer>
             </div>
-
-            <div>
-
-               <p>XIX LADY SUSAN TO MRS. JOHNSON
-
-               Churchhill.
-
+            
+            <div type="letter" n="19">
+               <head type="sub">XIX<lb/>
+                  <hi rend="italic">From Lady Susan to Mrs. Johnson.</hi>
+               </head>
+               <opener>
+                  <dateline><placeName>Churchhill.</placeName></dateline>
+               </opener>
+               <p>
                You will be eager, I know, to hear something further of Frederica, and perhaps may
                   think me negligent for not writing before. She arrived with her uncle last
                   Thursday fortnight, when, of course, I lost no time in demanding the cause of her
@@ -1201,13 +1248,14 @@
                   unalterably fixed on this point, though I have not yet quite decided on the manner
                   of bringing it about. I should not chuse to have the business brought on here, and
                   canvassed by the wise heads of Mr. and Mrs. Vernon; and I cannot just now afford
-                  to go to town. Miss Frederica must therefore wait a little. 
-               Yours ever, S. VERNON.
-</p>
-
-
+                  to go to town. Miss Frederica must therefore wait a little. </p>
+                  <closer>
+                     <salute>Yours ever,<lb/></salute>
+                     <signed>S. VERNON.</signed>
+                  </closer>
             </div>
-            <div>
+            
+            <div type="letter" n="20">
                <head type="sub">XX.<lb/><hi rend="italic">Mrs. Vernon to Lady de Courcy.</hi></head>
 
                <opener><dateline><placeName>Churchhill.</placeName></dateline> </opener>
@@ -1309,7 +1357,7 @@
 
 
 
-            <div>
+            <div n="21" type="letter">
                <head type="sub">XXI.<lb/><hi rend="italic">Miss Vernon to Mr. de Courcy.</hi></head>
                <opener><salute>Sir,—</salute></opener>
                <p>I hope you will excuse this liberty; I am forced upon it by the greatest
@@ -1334,7 +1382,7 @@
 
 
 
-            <div>
+            <div n="22" type="letter">
                <head type="sub">XXII.<lb/><hi rend="italic">Lady Susan to Mrs. Johnson.</hi></head>
 
                <opener><dateline><placeName>Churchhill.</placeName></dateline></opener>
@@ -1418,7 +1466,7 @@
             </div>
 
 
-            <div>
+            <div n="23" type="letter">
 
                <head type="sub">XXIII.<lb/><hi rend="italic">Mrs. Vernon to Lady de Courcy.</hi></head>
 
@@ -1479,7 +1527,7 @@
             </div>
 
             <pb n="256" facs="pageImages/256.jpg"/>
-            <div>
+            <div n="24" type="letter">
                <head type="sub">XXIV.<lb/><hi rend="italic">Frrom the Same to the Same.</hi></head>
 
                <opener><dateline><placeName>Churchhill.</placeName></dateline></opener>
@@ -1649,7 +1697,7 @@
             </div>
 
             <pb n="264" facs="pageImages/264.jpg"/>
-            <div>
+            <div n="25" type="letter">
 
                <head type="sub">XXV.<lb/><hi rend="italic">Lady Susan to Mrs. Johnson.</hi></head>
 
@@ -1734,7 +1782,7 @@
 
             </div>
             <pb n="268" facs="pageImages/268.jpg"/>
-            <div>
+            <div n="26" type="letter">
                <head type="sub">XXVI.<lb/><hi rend="italic">Mrs. Johnson to Lady Susan.</hi></head>
 
                <opener><dateline><placeName>Edward Street.</placeName></dateline></opener>
@@ -1779,7 +1827,7 @@
 
 
             <pb n="270" facs="pageImages/270.jpg"/>
-            <div>
+            <div n="27" type="letter">
                <head type="sub">XXVII.<lb/><hi rend="italic">Mrs. Vernon to Lady de Courcy.</hi></head>
 
                <opener><dateline><placeName>Churchhill. </placeName></dateline></opener>
@@ -1814,7 +1862,7 @@
             </div>
 
 
-            <div>
+            <div n="28" type="letter">
                <head type="sub">XXVIII.<lb/><hi rend="italic">Mrs. Johnson to Lady Susan.</hi></head>
 
                <opener><dateline><placeName>Edward Street.</placeName></dateline> <salute>My dearest Friend,—</salute></opener>
@@ -1840,7 +1888,7 @@
 
 
 
-            <div>
+            <div n="29" type="letter">
                <head type="sub">XXIX.<lb/><hi rend="italic">Lady Susan Vernon to Mrs. Johnson.</hi></head>
 
                <opener><dateline><placeName>Upper Seymour Street.</placeName></dateline> <salute>My dear Alicia,—</salute></opener>
@@ -1870,7 +1918,7 @@
 
 
 
-            <div>
+            <div n="30" type="letter">
                <head type="sub">XXX.<lb/><hi rend="italic">Lady Susan Vernon to Mr. de Courcy.</hi></head>
                <opener><dateline><placeName>Upper Seymour Street.</placeName></dateline></opener>
 
@@ -1928,7 +1976,7 @@
             </div>
 
 
-            <div>
+            <div n="31" type="letter">
                <head type="sub">XXXI.<lb/><hi rend="italic">Lady Susan to Mrs. Johnson.</hi></head>
 
                <opener><dateline><placeName>Upper Seymour Street.</placeName></dateline> <salute>My dear Friend,—</salute></opener>
@@ -1952,7 +2000,7 @@
 
 
 
-            <div>
+            <div n="32" type="letter">
                <head type="sub">XXXII.<lb/><hi rend="italic">Mrs. Johnson to Lady Susan.</hi></head>
 
                <opener><dateline><placeName>Edward Street.</placeName></dateline><salute> My dear Creature,—</salute></opener>
@@ -2148,7 +2196,7 @@
 
 
             <pb n="285" facs="pageImages/285.jpg"/>
-            <div>
+            <div n="40" type="letter">
                <head type="sub">XL.<lb/><hi rend="italic">Lady de Courcy to Mrs. Vernon.</hi></head>
 
                <opener><salute>My dear Catherine,—</salute></opener>
@@ -2174,7 +2222,7 @@
 
             <pb n="286" facs="pageImages/286.jpg"/>
 
-            <div>
+            <div n="41" type="letter">
                <head type="sub">XLI.<lb/><hi rend="italic">Mrs. Vernon to Lady de Courcy.</hi></head>
                <opener><dateline><placeName>Churchhill.</placeName></dateline> <salute>My dear Mother,—</salute></opener>
                <p>Your letter has surprized me beyond measure! Can it be true that they are really
