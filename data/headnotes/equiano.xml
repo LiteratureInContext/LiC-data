@@ -2,7 +2,7 @@
 
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="headnote-equiano">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -29,7 +29,9 @@
                 <date>2019-5-26</date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listRelation>
+                    <relation type="headnote" passive="#headnote-equiano" active="#equiano-interesting-narrative"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>

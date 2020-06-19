@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="headnote-pope">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Headnote for Alexander Pope</title>
-                <author>John O'Brien</author>
+                <author><forename>John</forename><surname>O'Brien</surname></author>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal ref="editors.xml#JOB">John O'Brien</principal>
                 <principal ref="editors.xml#TH">Tonya Howe</principal>
                 <principal ref="editors.xml#CR">Christine Ruotolo</principal>
                 <respStmt>
-                    <resp>Headnote</resp>
+                    <resp>Headnote by</resp>
                     <name ref="editors.xml#JOB">John O'Brien</name>
                 </respStmt>               
             </titleStmt>
@@ -24,7 +24,9 @@
                 <date>2019-5-26</date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listRelation>
+                    <relation type="headnote" passive="#headnote-pope" active="#pope-rape-lock"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
