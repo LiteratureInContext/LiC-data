@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Literature in Context Editors and Contributors</title>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal ref="editors.xml#JOB">John O'Brien</principal>
+                <principal ref="editors.xml#TH">Tonya Howe</principal>
+                <principal ref="editors.xml#CR">Christine Ruotolo</principal>
+                <respStmt>
+                    <resp>List compiled by</resp>
+                    <name ref="editors.xml#TH">Tonya Howe</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <publisher/>
+                <date>2019-01-18</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>A list of editors and contributors for Literature in Context, in no particular
+                    order.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change type="reminder">Please be sure to update the publication date when changes are
+                made here!</change>
+            <change when="2019-01-18" who="editors.xml#TH">ADDED: Tonya Howe, John O'Brien,
+                Christine Ruotolo, Winona Salesky, Ally Freeland, Amy Ridderhof, James West, Sabrina
+                Koumoin, Sara Brunstetter</change>
+            <change when="2019-05-11" who="editors.xml#TH">Added occupation, affiliation, and notes
+                to contributor details.</change>
+            <change when="2019-05-19" who="editors.xml#TH">Added new contributors</change>
+            <change when="2019-06-04" who="editors.xml#JL">Added new contributors</change>
+            <change when="2020-05-04" who="editors.xml#TH">Added new contributors</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPerson>
+                <person xml:id="TH">
+                    <persName xml:lang="en">
+                        <forename>Tonya</forename>
+                        <surname>Howe</surname>
+                    </persName>
+                    <occupation>Professor of Literature and Languages</occupation>
+                    <affiliation>Marymount University</affiliation>
+                    <note>General editor and project co-principal investigator</note>
+                </person>
+
+                <person xml:id="CR">
+                    <persName xml:lang="en">
+                        <forename>Christine</forename>
+                        <surname>Ruotolo</surname>
+                    </persName>
+                    <occupation>Director, Research in the Arts and Humanities</occupation>
+                    <occupation>Digital Services Manager</occupation>
+                    <affiliation>The University of Virginia Library</affiliation>
+                    <note>General editor and project co-principal investigator</note>
+                </person>
+                <person xml:id="WS">
+                    <persName xml:lang="en">
+                        <forename>Winona</forename>
+                        <surname>Salesky</surname>
+                    </persName>
+                    <occupation>Web Developer and Designer</occupation>
+                    <affiliation/>
+                </person>
+                <person xml:id="JL">
+                    <persName xml:lang="en">
+                        <forename>Jordan</forename>
+                        <surname>Lawton</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                    <note>26 May 2019 - 30 June 2019</note>
+                </person>
+                <person xml:id="MUstudstaff">
+                    <persName xml:lang="en">
+                        <forename>Students and Staff</forename>
+                        <surname>Marymount University</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="UVAstudstaff">
+                    <persName xml:lang="en">
+                        <forename>Students and Staff</forename>
+                        <surname>The University of Virginia</surname>
+                    </persName>
+                    <affiliation>The University of Virginia</affiliation>
+                </person>
+                <person xml:id="AF">
+                    <persName xml:lang="en">
+                        <forename>Allyson</forename>
+                        <surname>Freeland</surname>
+                    </persName>
+                    <occupation>Graduate Assistant</occupation>
+                    <affiliation>Marymount University</affiliation>
+                    <note>1 January 2018 - 31 December 2018 </note>
+                </person>
+                <person xml:id="ND">
+                    <persName xml:lang="en">
+                        <forename>Naiya</forename>
+                        <surname>Dalce</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="AR">
+                    <persName xml:lang="en">
+                        <forename>Amy</forename>
+                        <surname>Ridderhof</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="ATJ">
+                    <persName xml:lang="en">
+                        <forename>Alexis</forename>
+                        <surname>Johnson</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="DMC">
+                    <persName xml:lang="en">
+                        <forename>Destiny</forename>
+                        <surname>Clark</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="JW">
+                    <persName xml:lang="en">
+                        <forename>James</forename>
+                        <surname>West</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="SK">
+                    <persName xml:lang="en">
+                        <forename>Sabrina</forename>
+                        <surname>Koumoin</surname>
+                    </persName>
+                    <occupation>Student Project Assistant</occupation>
+                    <affiliation>Marymount University</affiliation>
+                    <note>21 January 2019 - 09 May 2019</note>
+                </person>
+                <person xml:id="SB">
+                    <persName xml:lang="en">
+                        <forename>Sara</forename>
+                        <surname>Brunstetter</surname>
+                    </persName>
+                    <occupation>Student Project Assistant</occupation>
+                    <affiliation>The University of Virginia</affiliation>
+                    <note>1 January 2018 - </note>
+                </person>
+                <person xml:id="FB">
+                    <persName>
+                        <forename>Felix</forename>
+                        <surname>Baquedano</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+
+                <person xml:id="NB">
+                    <persName>
+                        <forename>Nomin</forename>
+                        <surname>Bayanmunkh</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="RB">
+                    <persName xml:lang="en">
+                        <forename>Rewan</forename>
+                        <surname>Bezabih</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="RDJ">
+                    <persName xml:lang="en">
+                        <forename>Rosaida</forename>
+                        <surname>De Jesus</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="JMF">
+                    <persName xml:lang="en">
+                        <forename>Josephine</forename>
+                        <surname>Fleming</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="DF">
+                    <persName xml:lang="en">
+                        <forename>Daryl</forename>
+                        <surname>Frierson</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="TG">
+                    <persName xml:lang="en">
+                        <forename>Tierney</forename>
+                        <surname>Goetz</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="AH">
+                    <persName xml:lang="en">
+                        <forename>Alexandra</forename>
+                        <surname>Holmes</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="MM">
+                    <persName xml:lang="en">
+                        <forename>Muna</forename>
+                        <surname>Mohamed</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="SM">
+                    <persName xml:lang="en">
+                        <forename>Sarah</forename>
+                        <surname>Moustafa</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="DN">
+                    <persName xml:lang="en">
+                        <forename>Dana</forename>
+                        <surname>Najib</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="MR">
+                    <persName xml:lang="en">
+                        <forename>Maria</forename>
+                        <surname>Robelo</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="KS">
+                    <persName xml:lang="en">
+                        <forename>Katelyn</forename>
+                        <surname>Smolar</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="ES">
+                    <persName xml:lang="en">
+                        <forename>Elizabeth</forename>
+                        <surname>Swanson</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="BT">
+                    <persName xml:lang="en">
+                        <forename>Bianca</forename>
+                        <surname>Thompson</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="SV">
+                    <persName xml:lang="en">
+                        <forename>Susanna</forename>
+                        <surname>Valladares</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="JF">
+                    <persName xml:lang="en">
+                        <forename>Jane</forename>
+                        <surname>French</surname>
+                    </persName>
+                    <affiliation>The University of Virginia</affiliation>
+                </person>
+                <person xml:id="AM">
+                    <persName xml:lang="en">
+                        <forename>Andrew</forename>
+                        <surname>Michael</surname>
+                    </persName>
+                    <affiliation>The University of Virginia</affiliation>
+                </person>
+                <person xml:id="NT">
+                    <persName xml:lang="en">
+                        <forename>Natalie</forename>
+                        <surname>Thompson</surname>
+                    </persName>
+                    <affiliation>The University of Virginia</affiliation>
+                </person>
+                <person xml:id="MD">
+                    <persName xml:lang="en">
+                        <forename>Monica</forename>
+                        <surname>David</surname>
+                    </persName>
+                    <affiliation>The University of Virginia</affiliation>
+                </person>
+                <person xml:id="BehnBurney19">
+                    <persName xml:lang="en">
+                        <forename>Workshop participants at the</forename>
+                        <surname>Behn Burney Conference 2019</surname>
+                    </persName>
+                    <affiliation>Various</affiliation>
+                </person>
+                <person xml:id="LR">
+                    <persName xml:lang="en">
+                        <forename>Laura</forename>
+                        <surname>Runge</surname>
+                    </persName>
+                    <affiliation>University of South Florida</affiliation>
+                </person>
+                <person xml:id="MN">
+                    <persName xml:lang="en">
+                        <forename>Mona</forename>
+                        <surname>Narain</surname>
+                    </persName>
+                    <affiliation>Texas Christian University</affiliation>
+                </person>
+                <person xml:id="EMNK">
+                    <persName xml:lang="en">
+                        <forename>Emily</forename>
+                        <surname>Kugler</surname>
+                    </persName>
+                    <affiliation>Howard University</affiliation>
+                </person>
+                <person xml:id="SS">
+                    <persName xml:lang="en">
+                        <forename>Shea</forename>
+                        <surname>Stuart</surname>
+                    </persName>
+                    <affiliation>Gardner-Webb University</affiliation>
+                </person>
+                <person xml:id="AKH">
+                    <persName xml:lang="en">
+                        <forename>Aleksondra</forename>
+                        <surname>Hultquist</surname>
+                    </persName>
+                    <affiliation>Stockton University</affiliation>
+                </person>
+                <person xml:id="FC">
+                    <persName xml:lang="en">
+                        <forename>Felipe</forename>
+                        <surname>Caceres</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="JKB">
+                    <persName xml:lang="en">
+                        <forename>Jabari</forename>
+                        <surname>Bryant</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="HSA">
+                    <persName xml:lang="en">
+                        <forename>Haider</forename>
+                        <surname>Adhoob</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="WR">
+                    <persName xml:lang="en">
+                        <forename>William</forename>
+                        <surname>Rash</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="AHM">
+                    <persName xml:lang="en">
+                        <forename>Anna</forename>
+                        <surname>Moon</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="STM">
+                    <persName xml:lang="en">
+                        <forename>Sibeso</forename>
+                        <surname>Mubonda</surname>
+                    </persName>
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="KIA">
+                    <persName xml:lang="en">
+                        <forename>Kiashu</forename>
+                        <surname>Akter</surname>
+                    </persName>
+
+                    <affiliation>Marymount University</affiliation>
+                </person>
+                <person xml:id="DJM">
+                    <persName xml:lang="en">
+                        <forename>Derek</forename>
+                        <surname>Manzanares</surname>
+                    </persName>
+                    <affiliation> Marymount University</affiliation>
+                </person>
+                <person xml:id="JML">
+                    <persName xml:lang="en">
+                        <forename>John</forename>
+                        <surname>Lillis</surname>
+                    </persName>
+                    <affiliation> Marymount University</affiliation>
+                </person>
+                <person xml:id="BS">
+                    <persName xml:lang="en">
+                        <forename>Blake</forename>
+                        <surname>Sorenson</surname>
+                    </persName>
+                    <affiliation> Marymount University</affiliation>
+                </person>
+
+            </listPerson>
+        </body>
+    </text>
+</TEI>
