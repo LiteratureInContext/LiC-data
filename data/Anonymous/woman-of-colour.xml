@@ -75,7 +75,7 @@
 							</pubPlace>
 							<publisher>Broadview Press</publisher>
 							<date>2008</date>
-							<note>Basic hand transcription from the Broadview edition, edited by Lyndon J. Dominique. The edition here on <hi rend="italic">Literature in Context</hi> is a simple reading version only, and <hi rend="italic">contains neither any annotations by the editor Lyndon Dominique, nor the substantial introduction or contextual appendices that appear in the modern print edition</hi>. <ref source="https://broadviewpress.com/product/the-woman-of-colour/#tab-description">Readers are encouraged to purchase the edited version from Broadview Press, an independent academic publisher.</ref></note>
+							<note>Basic hand transcription from the Broadview edition, edited by Lyndon J. Dominique. The edition here on <hi rend="italic">Literature in Context</hi> is a simple reading version only, and <hi rend="italic">contains neither any annotations by the editor Lyndon Dominique, nor the substantial introduction or contextual appendices that appear in the modern print edition</hi>. <ref target="https://broadviewpress.com/product/the-woman-of-colour/#tab-description">Readers are encouraged to purchase the edited version from Broadview Press, an independent academic publisher.</ref></note>
 							<note>The Broadview Press edition was checked using the only known physical copy of the book, housed in the British Library, St. Pancras, London.</note>
 						</imprint>
 						<imprint>
@@ -202,19 +202,19 @@
 			<titlePage>
 				<docTitle>
 					<titlePart>
-						<lb/> THE <lb/> WOMAN OF COLOUR,<lb/> A TALE.</titlePart>
+						<lb/> THE <lb/> WOMAN OF COLOUR,<lb/> A TALE.<lb/></titlePart>
 				</docTitle>
 				<epigraph/>
 
 				<docAuthor>BY THE AUTHOR OF "LIGHT AND SHADE," "THE AUNT<lb/> AND THE NEICE,"
 					"EBERSFIELD ABBEY," &amp;C.</docAuthor>
 				<lb/>
-				<titlePart>IN TWO VOLUMES.<lb/> VOL. I.</titlePart>
+				<titlePart>IN TWO VOLUMES.<lb/> VOL. I.<lb/></titlePart>
 				<docImprint><pubPlace><hi rend="italic">LONDON:</hi><lb/></pubPlace>
 					<publisher>PRINTED FOR BLACK, PARRY, AND KINGSBURY,<lb/> BOOKSELLERS TO THE
 						HONOURABLE EAST INDIA COMPANY,<lb/> LEADENHALL-STREET.<lb/></publisher>
 				</docImprint>
-				<docDate><date>1808</date></docDate>
+				<docDate><date when="1808">1808</date></docDate>
 			</titlePage>
 
 		</front>
@@ -226,7 +226,7 @@
 						<head type="sub">OLIVIA FAIRFIELD TO MRS. MILBANKE</head>
 
 
-						<dateline>At Sea, on board the **.** <lb/> 180 - </dateline>
+						<opener><dateline><placeName>At Sea, on board the **.** </placeName><lb/> <date>180 - </date></dateline></opener>
 
 						<p>LAUNCHED on a new world, what can have power to console me for leaving
 							the scenes of my infancy, and the friend of my youth? Nothing but the
@@ -822,12 +822,12 @@
 							rested on the shores of England! We are impatient of delay; and
 							Honeywood has adjusted matters for us to row to shore this evening. The
 							boat is already in view.</p>
-						<closer><salute>Adieu, my dearest Mrs. Milbanke.</salute></closer>
+						<p>Adieu, my dearest Mrs. Milbanke.</p>
 					</div>
 					<div type="entry">
 						<head type="sub">IN CONTINUATION</head>
 
-						<dateline><placeName>Bush Tavern, Bristol.</placeName></dateline>
+						<opener><dateline><placeName>Bush Tavern, Bristol.</placeName></dateline></opener>
 
 						<p>I MOMENTARILY expect Mr. Merton; figure to yourself the nature of my
 							present feeling. I write in order to divert my mind; for, to dwell on my
@@ -899,7 +899,7 @@
 									messenger to me, No. - Gloucester-row, Clifton, and half an hour
 									will bring to you, your affectionate relatives.</p>
 								<closer><salute>“I have the honour to be, dearest madam, your
-										obliged friend, and uncle,</salute>
+										obliged friend, and uncle,<lb/></salute>
 									<signed>“GEORGE MERTON."</signed></closer>
 							</body>
 						</floatingText>
@@ -1586,7 +1586,7 @@
 							more enjoy that placid happiness, that calm tranquility, which
 							surrounded me at the Fairfield plantation? Heaven alone can tell - But
 							in all situations, in all places, I am still, and ever shall be,</p>
-						<closer><salute>Your own affectionate and grateful</salute>
+						<closer><salute>Your own affectionate and grateful<lb/></salute>
 							<signed>OLIVIA FAIRFIELD.</signed></closer>
 					</div>
 					<div type="entry">
@@ -1808,7 +1808,7 @@
 
 					<div type="entry">
 
-						<dateline><placeName>London</placeName>, -</dateline>
+						<opener><dateline><placeName>London</placeName>, <date>-</date></dateline></opener>
 
 						<opener><salute>My dear Mrs. Milbanke,</salute></opener>
 						<p>THE hasty lines which I wrote you on the morning that I quitted Clifton,
@@ -2106,8 +2106,8 @@
 										interested for Olivia Fairfield, than I ever thought again
 										to have been for any human being.</p>
 
-									<quote>“’Tis not a set of features or complexion,<lb/> The
-										tincture of a skin, that I admire."<lb/></quote>
+									<p><quote>“’Tis not a set of features or complexion,<lb/> The
+										tincture of a skin, that I admire."</quote></p>
 
 									<p>No, my friend, it is not; for I will confess to you, that the
 										moment when my eyes were first cast on the person of my
@@ -2222,7 +2222,7 @@
 					<div type="packet" n="3">
 						<head type="sub">PACKET THE THIRD OLIVIA FAIRFIELD TO MRS. MILBANKE</head>
 						<div type="entry">
-							<opener><placeName>New Park, Devonshire.</placeName></opener>
+							<opener><dateline><placeName>New Park, Devonshire.</placeName></dateline></opener>
 
 							<p>AS I heard of no ship sailing for Jamaica, I have let my pen lie idle
 								on my standwish, my dearest madam, for the last three weeks, whilst
@@ -2276,7 +2276,7 @@
 								periodical works, viz. The Tatler, when the following paragraph
 								struck me as being applicable to my Augustus, that I will not
 								apologize to you for transcribing it: -</p>
-							<quote><p>“With great respect to country sports, I may say, this
+							<p><quote>“With great respect to country sports, I may say, this
 									gentleman could pass his time agreeably, if there were not a
 									hare, or a fox, in his country. That calm and elegant
 									satisfaction, which the vulgar call melancholy, is the true
@@ -2288,7 +2288,7 @@
 									delight is in the reason and understanding. Such a frame of mind
 									raises that sweet enthusiasm, which warms the imagination of the
 									sight of every work of nature, and turns all round you into
-									picture and landscape." - Tatler, No. 89.</p></quote>
+									picture and landscape." - Tatler, No. 89.</quote></p>
 							<p>Mr. Fairfield has patience with me in all my wild strolls, and sees a
 								beautiful view of the sea, a disjointed rock, or a lofty tree, with
 								an enthusiasm which equals mine. He is also interested and
@@ -2328,7 +2328,7 @@
 							<head type="sub">IN CONTINUATION</head>
 
 
-							<opener><placeName>New Park.</placeName></opener>
+							<opener><dateline><placeName>New Park.</placeName></dateline></opener>
 
 							<p>LAST week was devoted almost exclusively to the receiving and paying
 								of visits; I am not sorry that I now find myself a little more my
@@ -2517,7 +2517,7 @@
 							<head type="sub">IN CONTINUATION</head>
 
 
-							<opener><placeName>New Park.</placeName></opener>
+							<opener><dateline><placeName>New Park.</placeName></dateline></opener>
 							<p>MRS. HONEYWOOD is no more! - I have just read the account of her
 								death in the papers. I was preparing to write you a long letter, -
 								but, alas! I cannot. I have been recalling to my grateful memory the
@@ -2540,7 +2540,7 @@
 							<head type="sub">IN CONTINUATION</head>
 
 
-							<opener><placeName>New Park.</placeName></opener>
+							<opener><dateline><placeName>New Park.</placeName></dateline></opener>
 
 							<p>THE long list of our daily-increasing acquaintance must be omitted;
 								the characters will develop themselves, as many of them came
@@ -2854,14 +2854,14 @@
 								dead, his lamented Angelina, could not, I am sure, have loved him
 								with a more fervent affection. Adieu, dearest madam, </p>
 							<closer><salute>I am always your own affectionate child - your
-									own</salute>
+									own<lb/></salute>
 								<signed>OLIVIA FAIRFIELD</signed></closer>
 						</div>
 						<div type="entry">
 							<head type="sub">IN CONTINUATION</head>
 
 
-							<opener><placeName>New Park.</placeName></opener>
+							<opener><dateline><placeName>New Park.</placeName></dateline></opener>
 							<p>WHEN we returned from church this morning,I found Miss Danby seated
 								with her netting, and seeming to be very busily engaged at it, as if
 								she had quite forgotten that six days of the week were sufficient to
@@ -3069,10 +3069,10 @@
 								obtrude on my happiness, with his grief! Yet that Power who has
 								bestowed on me a happiness, for which I cannot be sufficiently
 								grateful has also taught me to “feel another’s woe."</p>
-							<closer><salute>Adieu, my dearest friend! My heart always turns to you
+							<p>Adieu, my dearest friend! My heart always turns to you
 									with a sentiment of reverential affection, which I feel but
-									cannot express.</salute>
-								<signed>OLIVIA FAIRFIELD.</signed>
+									cannot express.</p>
+								<closer><signed>OLIVIA FAIRFIELD.</signed>
 							</closer>
 						</div>
 						<div type="entry">
@@ -3145,7 +3145,7 @@
 								conveyed to Bristol by a gentleman now setting out. May every
 								earthly blessing attend you, my ever dear friend! - so will always
 								pray your affectionate</p>
-							<signed>OLIVIA FAIRFIELD.</signed>
+							<closer><signed>OLIVIA FAIRFIELD.</signed></closer>
 
 						</div>
 
@@ -3159,9 +3159,9 @@
 				<head type="title">THE WOMAN OF COLOUR <lb/>VOLUME II</head>
 
 				<div type="packet" n="4">
-					<head type="sub">PACKET THE FOURTH</head>
+					<head type="subtitle">PACKET THE FOURTH</head>
 					<div type="entry">
-						<opener><placeName>New Park, Devon.</placeName></opener>
+						<opener><dateline><placeName>New Park, Devon.</placeName></dateline></opener>
 
 
 						<p>SCARCELY do I send off one packet ere I begin another, so great is my
