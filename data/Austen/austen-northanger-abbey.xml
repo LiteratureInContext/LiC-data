@@ -25,12 +25,11 @@
  
 
 <respStmt>
-<resp>Creation of machine-readable version and the first version of TEI-conformant markup was performed by the University of Virginia Library Electronic Text Center in 1994. David Seamon checked the tagging in 1995. Lorrie Chisolm added the original TEI header in 2005. John Ivor Carlson converted the sgml file to TEI in 2005. </resp>
+<resp>Creation of machine-readable version and the first markup was performed by the University of Virginia Library Electronic Text Center in 1994. David Seamon checked the tagging in 1995. Lorrie Chisolm added the original TEI header in 2005. John Ivor Carlson converted the sgml file to TEI in 2005. </resp>
     <resp>correction, editorial commentary, and subsequent markup</resp>
     
     <name ref="editors.xml#UVAstudents staff">Students and Staff of The University of Virginia</name>
-    <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
-  
+   
 </respStmt>
 </titleStmt>
 
@@ -61,48 +60,109 @@
 <biblFull>
 <titleStmt>
 <title>Northanger Abbey</title>
-<author>Jane Austen</author>
+  <author><forename>Jane</forename>
+    <surname>Austen</surname>
+</author>
 <editor>R. W. Chapman</editor>
 </titleStmt>
 
-<editionStmt><p></p></editionStmt>
-<extent></extent>
 
 <publicationStmt>
-<publisher>Clarendon Press </publisher>
+<publisher>Clarendon Press</publisher>
 <pubPlace>Oxford </pubPlace>
 <date>1926 </date>
 </publicationStmt>
 <seriesStmt><p>The Novels of Jane Austen</p></seriesStmt>
-<notesStmt>
-<note></note>
-</notesStmt>
+
 </biblFull>
 </sourceDesc>
 </fileDesc>
 
-<encodingDesc>
-<projectDesc>
-<p>Prepared for the University of Virginia Library Electronic Text Center between 1994 and 2005. Edited and annotated for Literature in Context in 2021.</p>
-</projectDesc>
-
-<editorialDecl>
-<p>All quotation marks retained as data</p>
-
-</editorialDecl>
-
-</encodingDesc>
+  <encodingDesc>
+    
+    <projectDesc>
+      <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+        project, which provides an accessible, curated, and marked-up selection of primary
+        sources relevant to the study and the teaching of British and American literature of
+        the 18th century. This project is funded by the National Endowment for the Humanities
+        and developed by faculty at The University of Virginia and Marymount University. </p>
+    </projectDesc>
+    <editorialDecl>
+      <interpretation>
+        <p>Research informing these annotations draws on publicly-accessible resources, with
+          links provided where possible. Annotations have also included common knowledge,
+          defined as information that can be found in multiple reliable sources. If you
+          notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+        </p>
+      </interpretation>
+      <normalization>
+        <p>Original spelling and capitalization is retained, though the long s has been
+          silently modernized and ligatured forms are not encoded.</p>
+      </normalization>
+      <hyphenation>
+        <p>Hyphenation has not been retained, except where necessary for the sense of the
+          word.</p>
+      </hyphenation>
+      <segmentation>
+        <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+          not. Where pages break in the middle of a word, the complete word has been
+          indicated prior to the page beginning.</p>
+      </segmentation>
+      <correction>
+        <p>Materials have been transcribed from and checked against first editions, where
+          possible. See the Sources section.</p>
+      </correction>
+    </editorialDecl>
+    <tagsDecl>
+     
+      <namespace name="http://www.tei-c.org/ns/1.0">
+        <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+      </namespace>
+    </tagsDecl>
+    <classDecl>
+      
+      <taxonomy xml:id="lcnaf">
+        <bibl>Library of Congress Name Authority File</bibl>
+      </taxonomy>
+      <taxonomy xml:id="lcc">
+        <bibl>Library of Congress Classification</bibl>
+      </taxonomy>
+      <taxonomy xml:id="tgn">
+        <bibl>Getty Thesaurus of Geographic Names</bibl>
+      </taxonomy>
+      <taxonomy xml:id="orcid">
+        <bibl>Open Researcher and Contributor ID</bibl>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  
 
 <profileDesc>
 <creation>
 <date>1798-1817</date>
 </creation>
-
+  <textDesc n="novel">
+    <channel mode="w">print</channel>
+    <constitution type="single"/>
+    <derivation type="original"/>
+   <domain/>
+    <factuality type="fiction"/>
+   <interaction/>
+    <preparedness/>
+    <purpose type="entertain" degree="high"/>
+   <purpose type="inform" degree="low"/>   
+  </textDesc>
+  <settingDesc>
+    
+    <setting>
+      
+      <name type="tgn" key="7011197">Bath, England</name>
+      <time from="1800" to="1815">Early 19th Century</time>
+     
+    </setting>
+  </settingDesc>
 <textClass>
-<keywords>
-<term>fiction; prose</term>
-<term>Women Writers</term>
-</keywords>
+
 </textClass>
 </profileDesc>
 
