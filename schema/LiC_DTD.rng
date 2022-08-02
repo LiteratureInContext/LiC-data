@@ -559,7 +559,14 @@
             <data type="NCName"/>
           </element>
           <element name="add">
-            <text/>
+            <oneOrMore>
+              <choice>
+                <text/>
+                <element name="unclear">
+                  <text/>
+                </element>
+              </choice>
+            </oneOrMore>
           </element>
         </choice>
       </oneOrMore>
@@ -618,11 +625,32 @@
       </oneOrMore>
     </element>
   </define>
+  <define name="docAuthor">
+    <element name="docAuthor">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="hi"/>
+          <ref name="lb"/>
+          <ref name="note"/>
+          <ref name="ref"/>
+          <ref name="title"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="lb">
+    <element name="lb">
+      <empty/>
+    </element>
+  </define>
   <define name="milestone">
     <element name="milestone">
-      <attribute name="rend">
-        <data type="NCName"/>
-      </attribute>
+      <optional>
+        <attribute name="rend">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
       <attribute name="unit">
         <data type="NCName"/>
       </attribute>
@@ -640,25 +668,6 @@
           <ref name="note"/>
           <ref name="pb"/>
           <ref name="ref"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="lb">
-    <element name="lb">
-      <empty/>
-    </element>
-  </define>
-  <define name="docAuthor">
-    <element name="docAuthor">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="hi"/>
-          <ref name="lb"/>
-          <ref name="note"/>
-          <ref name="ref"/>
-          <ref name="title"/>
         </choice>
       </oneOrMore>
     </element>
@@ -739,10 +748,13 @@
           <ref name="head"/>
           <ref name="l"/>
           <ref name="lg"/>
+          <ref name="milestone"/>
           <ref name="note"/>
           <ref name="opener"/>
           <ref name="p"/>
           <ref name="pb"/>
+          <ref name="placeName"/>
+          <ref name="publisher"/>
           <ref name="salute"/>
           <ref name="stage"/>
           <element name="castList">
@@ -998,8 +1010,8 @@
       <text/>
     </element>
   </define>
-  <define name="head">
-    <element name="head">
+  <define name="stage">
+    <element name="stage">
       <optional>
         <attribute name="type">
           <data type="NCName"/>
@@ -1008,40 +1020,18 @@
       <oneOrMore>
         <choice>
           <text/>
+          <ref name="g"/>
           <ref name="hi"/>
-          <ref name="lb"/>
           <ref name="note"/>
           <ref name="ref"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="salute">
-    <element name="salute">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="lb"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="floatingText">
-    <element name="floatingText">
-      <ref name="body"/>
-    </element>
-  </define>
-  <define name="opener">
-    <element name="opener">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="dateline"/>
-          <ref name="hi"/>
-          <ref name="note"/>
-          <ref name="persName"/>
-          <ref name="placeName"/>
-          <ref name="salute"/>
+          <element name="expan">
+            <element name="am">
+              <ref name="g"/>
+            </element>
+            <element name="ex">
+              <data type="NCName"/>
+            </element>
+          </element>
         </choice>
       </oneOrMore>
     </element>
@@ -1080,8 +1070,28 @@
       </oneOrMore>
     </element>
   </define>
-  <define name="stage">
-    <element name="stage">
+  <define name="opener">
+    <element name="opener">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="dateline"/>
+          <ref name="hi"/>
+          <ref name="note"/>
+          <ref name="persName"/>
+          <ref name="placeName"/>
+          <ref name="salute"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="floatingText">
+    <element name="floatingText">
+      <ref name="body"/>
+    </element>
+  </define>
+  <define name="head">
+    <element name="head">
       <optional>
         <attribute name="type">
           <data type="NCName"/>
@@ -1090,18 +1100,37 @@
       <oneOrMore>
         <choice>
           <text/>
-          <ref name="g"/>
+          <ref name="byline"/>
           <ref name="hi"/>
+          <ref name="lb"/>
           <ref name="note"/>
+          <ref name="quote"/>
           <ref name="ref"/>
-          <element name="expan">
-            <element name="am">
-              <ref name="g"/>
-            </element>
-            <element name="ex">
-              <data type="NCName"/>
-            </element>
-          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="salute">
+    <element name="salute">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="lb"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="closer">
+    <element name="closer">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="date"/>
+          <ref name="hi"/>
+          <ref name="lb"/>
+          <ref name="placeName"/>
+          <ref name="salute"/>
+          <ref name="signed"/>
         </choice>
       </oneOrMore>
     </element>
@@ -1126,21 +1155,6 @@
           <text/>
           <ref name="lb"/>
           <ref name="ref"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="closer">
-    <element name="closer">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="date"/>
-          <ref name="hi"/>
-          <ref name="lb"/>
-          <ref name="placeName"/>
-          <ref name="salute"/>
-          <ref name="signed"/>
         </choice>
       </oneOrMore>
     </element>
