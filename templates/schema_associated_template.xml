@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_DTD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/LiteratureInContext/LiC-app/master/resources/css/style.css" title="LiC Style" alternate="no"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_DTD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="FILL-IN">
    <!-- this xml:id is important; it is the unique identifier for the text, added according to the model author-titleword, as in haywood-fantomina -->
    <teiHeader xml:lang="en">
@@ -68,9 +68,9 @@
                <monogr>
                   <author>
                      <name>
-                       <surname></surname>
-                        <forename></forename>
-                        <addl
+                        <forename>Firstname</forename>
+                        <surname><?oxy-placeholder content="Lastname"?></surname>
+                        <addName><?oxy-placeholder content="Additional Name, if necessary"?></addName>
                      </name>
                   </author>
 
@@ -291,6 +291,11 @@
          </div>
          <div type="act" n="2"/>
       </body>
+<back>
+   <div type="back_matter"> <!-- include any back matter -->
+      <p></p>
+   </div>
+</back>
 
    </text>
 </TEI>

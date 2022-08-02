@@ -625,25 +625,6 @@
       </oneOrMore>
     </element>
   </define>
-  <define name="docAuthor">
-    <element name="docAuthor">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="hi"/>
-          <ref name="lb"/>
-          <ref name="note"/>
-          <ref name="ref"/>
-          <ref name="title"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="lb">
-    <element name="lb">
-      <empty/>
-    </element>
-  </define>
   <define name="milestone">
     <element name="milestone">
       <optional>
@@ -668,6 +649,25 @@
           <ref name="note"/>
           <ref name="pb"/>
           <ref name="ref"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="lb">
+    <element name="lb">
+      <empty/>
+    </element>
+  </define>
+  <define name="docAuthor">
+    <element name="docAuthor">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="hi"/>
+          <ref name="lb"/>
+          <ref name="note"/>
+          <ref name="ref"/>
+          <ref name="title"/>
         </choice>
       </oneOrMore>
     </element>
@@ -1070,21 +1070,6 @@
       </oneOrMore>
     </element>
   </define>
-  <define name="opener">
-    <element name="opener">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="dateline"/>
-          <ref name="hi"/>
-          <ref name="note"/>
-          <ref name="persName"/>
-          <ref name="placeName"/>
-          <ref name="salute"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
   <define name="floatingText">
     <element name="floatingText">
       <ref name="body"/>
@@ -1116,6 +1101,21 @@
         <choice>
           <text/>
           <ref name="lb"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="opener">
+    <element name="opener">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="dateline"/>
+          <ref name="hi"/>
+          <ref name="note"/>
+          <ref name="persName"/>
+          <ref name="placeName"/>
+          <ref name="salute"/>
         </choice>
       </oneOrMore>
     </element>
