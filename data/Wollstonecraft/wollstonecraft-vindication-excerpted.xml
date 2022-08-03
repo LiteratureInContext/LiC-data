@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wollstonecraft-vindication-excerpted">
 
    <!--TEI Header BEGINS-->
@@ -44,7 +44,7 @@
                <name ref="editors.xml#ES">Elizabeth Swanson</name>
                <name ref="editors.xml#BT">Bianca Thompson</name>
                <name ref="editors.xml#SV">Susana Valladares</name>
-               
+
             </respStmt>
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
@@ -106,8 +106,9 @@
                      <pubPlace>Public domain electronic facsimile copy</pubPlace>
                      <publisher>London School of Economics Digital Library</publisher>
                      <date>nd</date>
-                     <note><ref target="https://digital.library.lse.ac.uk/objects/lse:dur688faq"
-                        /></note>
+                     <note>
+                        <ref target="https://digital.library.lse.ac.uk/objects/lse:dur688faq"/>
+                     </note>
                   </imprint>
 
                   <extent>22 cm.</extent>
@@ -211,7 +212,7 @@
          <change when="2018-03-01" who="editors.xml#MUstudstaff">Transcription</change>
          <change when="2018-05-01" who="editors.xml#MUstudstaff">TEI encoding and
             annotation</change>
-         <change when="2019-05-17" who="editors.xml#TH">Update for LiC</change>
+         <change when="2022-08-03" who="editors.xml#TH">Update for schema</change>
       </revisionDesc>
 
 
@@ -226,14 +227,14 @@
       <front>
          <pb n="[TP]" facs="pageImages/VIN-TP.jpg"/>
          <titlePage>
-            <docTitle><titlePart>
-               <lb/> A <lb/> VINDICATION <lb/> OF THE <lb/> RIGHTS OF WOMAN: <lb/> WITH <lb/>
-               STRICTURES <lb/> ON <lb/> POLITICAL AND MORAL SUBJECTS <lb/></titlePart></docTitle>
-            <docAuthor>BY <ref target="a001"
-               corresp="n001">MARY WOLLSTONECRAFT</ref></docAuthor>
-               <lb/> LONDON: <lb/>
-               <docImprint><ref target="a002" corresp="n002">PRINTED FOR J. JOHNSON, N℉ 71, ST. PAUL’S CHURCH
-                  YARD.</ref><lb/></docImprint>
+            <docTitle>
+               <titlePart>
+                  <lb/> A <lb/> VINDICATION <lb/> OF THE <lb/> RIGHTS OF WOMAN: <lb/> WITH <lb/>
+                  STRICTURES <lb/> ON <lb/> POLITICAL AND MORAL SUBJECTS <lb/></titlePart>
+            </docTitle>
+            <docAuthor>BY <ref target="wollstonecraft_" corresp="wollstonecraft">MARY WOLLSTONECRAFT</ref></docAuthor>
+            <docImprint><lb/> LONDON: <lb/><ref target="johnson_" corresp="johnson">PRINTED FOR J. JOHNSON,
+                  N℉ 71, ST. PAUL’S CHURCH YARD.</ref><lb/></docImprint>
             <docDate>1792. </docDate>
          </titlePage>
 
@@ -248,33 +249,33 @@
                great difference between man and man, or that the civilization which has hitherto
                taken place in the world has been very partial. I have turned over various books
                written on the subject of education, and patiently observed the conduct of parents
-               and the <ref target="a003" corresp="n003">management of schools</ref>; but what has
+               and the <ref target="education_" corresp="education">management of schools</ref>; but what has
                been the result? --a profound conviction that the neglected education of my
                fellow-creatures is the grand source of the misery I deplore; and that women, in
                particular, are rendered weak and wretched by a variety of concurring causes,
                originating from a hasty conclusion. The conduct and manners of women, in fact,
-               evidently prove <pb n="2" facs="pageImages/VIN-2.jpg"/> that their minds are not in a healthy
-               state; for, like the flowers which are planted in too rich a soil, strength and
-               usefulness are sacrificed to beauty; and the flaunting leaves, after having pleased a
-               fastidious eye, fade, disregarded on the stalk, long before the season when they
-               ought to have arrived at maturity.--One cause of this barren blooming I attribute to
-               a false system of education, gathered from the books written on this subject by men,
-               who considering females rather than human creatures, have been more anxious to make
-               them alluring mistresses than rational wives; and the understanding of sex has been
-               so <ref target="a004" corresp="n004">bubbled</ref> by this specious homage, that the
-               civilized women of the present century, with a few exceptions, are only anxious to
-               inspire love, when they ought to cherish a nobler ambition, and by their abilities
-               and virtues exact respect.</p>
-            <p>In a treatise, therefore, on female rights and manners, <ref target="a005"
-                  corresp="n005">the works which have been particularly written for their
+               evidently prove <pb n="2" facs="pageImages/VIN-2.jpg"/> that their minds are not in a
+               healthy state; for, like the flowers which are planted in too rich a soil, strength
+               and usefulness are sacrificed to beauty; and the flaunting leaves, after having
+               pleased a fastidious eye, fade, disregarded on the stalk, long before the season when
+               they ought to have arrived at maturity.--One cause of this barren blooming I
+               attribute to a false system of education, gathered from the books written on this
+               subject by men, who considering females rather than human creatures, have been more
+               anxious to make them alluring mistresses than rational wives; and the understanding
+               of sex has been so <ref target="bubbled_" corresp="bubbled">bubbled</ref> by this specious
+               homage, that the civilized women of the present century, with a few exceptions, are
+               only anxious to inspire love, when they ought to cherish a nobler ambition, and by
+               their abilities and virtues exact respect.</p>
+            <p>In a treatise, therefore, on female rights and manners, <ref target="conduct_"
+                  corresp="conduct">the works which have been particularly written for their
                   improvement</ref> must not be overlooked; especially when it is asserted, in
                direct terms, that the minds of women are enfeebled by false refinement; <pb n="3"
-                  facs="pageImages/VIN-3.jpg"/> that the books of instruction, written by men of genius, have
-               had the same tendency as more frivolous productions; and that, in the true style of
-                  <ref target="a006" corresp="n006">Mahometanism</ref>, they are only considered as
-               females, and not as a part of the human species, when improvable reason is allowed to
-               be the dignified distinction which raises men above the brute creation, and puts a
-               natural sceptre in a feeble hand. </p>
+                  facs="pageImages/VIN-3.jpg"/> that the books of instruction, written by men of
+               genius, have had the same tendency as more frivolous productions; and that, in the
+               true style of <ref target="mahometanism_" corresp="mahometanism">Mahometanism</ref>, they are only
+               considered as females, and not as a part of the human species, when improvable reason
+               is allowed to be the dignified distinction which raises men above the brute creation,
+               and puts a natural sceptre in a feeble hand. </p>
             <p> Yet, because I am a woman, I would not lead my reader to suppose that I mean
                violently to agitate the contested question respecting the equality or inferiority of
                the sex; but as the subject lies in my way, and I cannot pass it over without
@@ -284,28 +285,28 @@
                pursues, the female yields--this is the law of nature; and it does not appear to be
                suspended or abrogated in favour of woman. This physical superiority cannot be
                denied--and it is a noble prerogative! But not content with this natural pre <pb
-                  n="4" facs="pageImages/VIN-4.jpg"/> eminence, men endeavour to sink us still lower, merely to
-               render us alluring objects for a moment; and women, intoxicated by the adoration
-               which men, under the influence of their senses, pay them, do not seek to obtain a
-               durable interest in their hearts, or to become the friends of the fellow creatures
-               who find amusement in their society.</p>
+                  n="4" facs="pageImages/VIN-4.jpg"/> eminence, men endeavour to sink us still
+               lower, merely to render us alluring objects for a moment; and women, intoxicated by
+               the adoration which men, under the influence of their senses, pay them, do not seek
+               to obtain a durable interest in their hearts, or to become the friends of the fellow
+               creatures who find amusement in their society.</p>
             <p> I am aware of an obvious inference: from every quarter have I hear exclamations
                against masculine women; but where are they to be found? If by this appellation men
                mean to inveigh against their ardour in hunting, shooting, and gaming, I shall most
-               cordially join in the cry; but if it be against the imitation of <ref target="a007"
-                  corresp="n007">manly virtues</ref> or, more properly speaking, the attainment of
+               cordially join in the cry; but if it be against the imitation of <ref target="manly_"
+                  corresp="manly">manly virtues</ref> or, more properly speaking, the attainment of
                those talents and virtues, the exercise of which ennobles the human character, and
                which raise females in the scale of animal being, when they are comprehensively
                termed mankind; all those who view them with a philosophical eye must, I should
                think, wish with me, that they may every day grow more and more masculine. </p>
             <p>This discussion naturally divides the subject. I shall first consider women in the
-                  <pb n="5" facs="pageImages/VIN-5.jpg"/> grand light of human creatures, who, in common with
-               men, are placed on this earth to unfold their faculties; and afterwards I shall more
-               particularly point out their peculiar designation. </p>
+                  <pb n="5" facs="pageImages/VIN-5.jpg"/> grand light of human creatures, who, in
+               common with men, are placed on this earth to unfold their faculties; and afterwards I
+               shall more particularly point out their peculiar designation. </p>
             <p> I wish also to steer clear of an error which many respectable writers have fallen
                into; for the instruction which has hither been addressed to women, has rather been
                applicable to ladies, if the little indirect advice, that is scattered through <ref
-                  target="a008" corresp="n008">Sandford and Merton</ref>, be excepted; but,
+                  target="sandford_merton_" corresp="sandford_merton">Sandford and Merton</ref>, be excepted; but,
                addressing my sex in a firmer tone, I pay particular attention to those in the middle
                class, because they appear to be in the most natural state. Perhaps the seeds of
                false-refinement, immorality, and vanity, have ever been shed by the great. Weak,
@@ -317,8 +318,8 @@
                   facs="pageImages/VIN-6.jpg"/> practice of those duties which dignify the human
                character.—They only live to amuse themselves, and by the same law which in nature
                invariably produces certain effects, they soon only afford barren amusement. </p>
-            <p>But as I purpose taking a separate view of the <ref target="a009" corresp="n009">
-               different ranks of society</ref>, and of the moral character of women, in each,
+            <p>But as I purpose taking a separate view of the <ref target="ranks_" corresp="ranks_">
+                  different ranks of society</ref>, and of the moral character of women, in each,
                this hint is, for the present, sufficient; and I have only alluded to the subject,
                because it appears to me to be the very essence of an introduction to give a cursory
                account of the contents of the work it introduces. </p>
@@ -329,13 +330,14 @@
                women to endeavour to acquire strength, both of mind and body, and to convince them
                that the soft phrases, susceptibility of heart, delicacy of sentiment, and refinement
                of taste, are almost synonymous with epithets of weakness, and that those beings who
-               are only the objects of pity and that kind of love, which <pb n="7" facs="pageImages/VIN-7.jpg"
-               /> has been termed its sister, will soon become objects of contempt. </p>
+               are only the objects of pity and that kind of love, which <pb n="7"
+                  facs="pageImages/VIN-7.jpg"/> has been termed its sister, will soon become objects
+               of contempt. </p>
             <p> Dismissing then those pretty feminine phrases, which the men condescendingly use to
-               soften our slavish dependence, and despising that weak <ref target="a010"
-                  corresp="n010">elegancy of mind</ref>, exquisite sensibility, and sweet docility
+               soften our slavish dependence, and despising that weak <ref target="elegance_"
+                  corresp="elegance">elegancy of mind</ref>, exquisite sensibility, and sweet docility
                of manners, supposed to be the sexual characteristics of the weaker vessel, I wish to
-               shew that elegance is inferior to <ref target="a011" corresp="n011">virtue</ref>,
+               shew that elegance is inferior to <ref target="virtue_" corresp="virtue">virtue</ref>,
                that the first object of laudable ambition is to obtain a character as a human being,
                regardless of the distinction of sex; and that secondary views should be brought to
                this simple touchstone. </p>
@@ -346,29 +348,29 @@
                being useful, and sincerity will render me unaffected; for, wishing rather to
                persuade by the force of my arguments, than dazzle by the elegance of my language, I
                shall not waste my time in rounding periods, or in fabricating the turgid bombast of
-               arti <pb n="8" facs="pageImages/VIN-8.jpg"/> ficial feelings, which, coming from the head, never
-               reach the heart. – I shall be employed about things, not words! – and, anxious to
-               render my sex more respectable members of society, I shall try to avoid that flowery
-               diction which has slided from essays into novels, and from novels into familiar
-               letters and conversation. </p>
+               arti <pb n="8" facs="pageImages/VIN-8.jpg"/> ficial feelings, which, coming from the
+               head, never reach the heart. – I shall be employed about things, not words! – and,
+               anxious to render my sex more respectable members of society, I shall try to avoid
+               that flowery diction which has slided from essays into novels, and from novels into
+               familiar letters and conversation. </p>
             <p>These pretty nothings – these caricatures of the real beauty of sensibility, dropping
                glibly from the tongue, vitiate the taste, and create a kind of sickly delicacy that
                turns away from simple unadorned truth; and a deluge of false sentiments and
                overstretched feelings, stifling the natural emotions of the heart, render the
                domestic pleasures insipid,--that ought to sweeten the exercise of those severe
                duties, which educate a rational and immortal being for a nobler field of action. </p>
-            <p>The <ref target="a012" corresp="n012">education of women</ref> has, of late, been
+            <p>The <ref target="schools_" corresp="schools">education of women</ref> has, of late, been
                more attended to than formerly; yet they are still reckoned a frivolous sex, and
                ridiculed or pitied by the writers who endeavor by satire or instruction to improve
                them. It is acknowledged that they spend many of the first years of their lives in
-               acquiring a smatter <pb n="9" facs="pageImages/VIN-9.jpg"/> ing of accomplishments: meanwhile
-               strength of body and mind are sacrificed to libertine notions of beauty, to the
-               desire of establishing themselves, --the only way women can rise in the world,--by
-               marriage. And this desire making mere animals of them, when they marry they act as
-               such children may be expected to act: --they dress; they paint, and nickname God’s
-               creatures. --Surely there weak beings are only fit for a <ref target="a013"
-                  corresp="n013">seraglio</ref>! --Can they govern a family, or take care of the
-               poor bebes whom they bring into the world? </p>
+               acquiring a smatter <pb n="9" facs="pageImages/VIN-9.jpg"/> ing of accomplishments:
+               meanwhile strength of body and mind are sacrificed to libertine notions of beauty, to
+               the desire of establishing themselves, --the only way women can rise in the
+               world,--by marriage. And this desire making mere animals of them, when they marry
+               they act as such children may be expected to act: --they dress; they paint, and
+               nickname God’s creatures. --Surely there weak beings are only fit for a <ref
+                  target="seraglio_" corresp="seraglio">seraglio</ref>! --Can they govern a family, or take
+               care of the poor bebes whom they bring into the world? </p>
             <p>If then it can be fairly deduced from the present conduct of the sex, from the
                prevalent fondness for pleasure which takes place of ambition and those nobler
                passions that open and enlarge the soul; that the instruction which women have
@@ -376,9 +378,9 @@
                insignificant object of desire--more propagators of fools! --if it can be proved that
                in aiming to accomplish them, without cultivating their understandings, they are
                taken out of their sphere of duties, and make ridiculous and useless when the
-               short-lived bloom <pb n="10" facs="pageImages/VIN-10.jpg"/> of beauty is over<ref target="a1"
-                  corresp="n1">*</ref>, I presume that rational men will excuse me for endeavoring
-               to persuade them to become more masculine and respectable. </p>
+               short-lived bloom <pb n="10" facs="pageImages/VIN-10.jpg"/> of beauty is over<ref
+                  target="auth1_" corresp="auth1">*</ref>, I presume that rational men will excuse me for
+               endeavoring to persuade them to become more masculine and respectable. </p>
             <p> Indeed the word masculine is only a bugbear: there is little reason to fear that
                women will acquire too much courage or fortitude; for their apparent inferiority with
                respect to bodily strength, must render them, in some degree, dependent on men in the
@@ -391,10 +393,10 @@
                undermine esteem even whilst they excite desire. Do not foster these prejudices, and
                they will naturally fall into their subordinate, yet respectable station in life. It
                seems scarcely necessary to say, that I now speak of the sex in general. Many in <pb
-                  n="11" facs="pageImages/VIN-11.jpg"/> dividuals have more sense than their male relatives;
-               and, as nothing preponderates where there is a constant struggle for an equilibrium,
-               without it has naturally more gravity, some women govern their husbands without
-               degrading themselves, because intellect will always govern.</p>
+                  n="11" facs="pageImages/VIN-11.jpg"/> dividuals have more sense than their male
+               relatives; and, as nothing preponderates where there is a constant struggle for an
+               equilibrium, without it has naturally more gravity, some women govern their husbands
+               without degrading themselves, because intellect will always govern.</p>
          </div>
          <div type="chapter">
             <pb n="414" facs="pageImages/VIN-414.jpg"/>
@@ -407,7 +409,7 @@
                <head>SECT. II</head>
                <p>Another instance of that feminine weakness of character, often produced by a
                   confined education, is a romantic twist of the mind, which has been very properly
-                  termed <ref target="a014" corresp="n014">
+                  termed <ref target="sentimental_" corresp="sentimental">
                      <hi rend="italic">sentimental</hi>
                   </ref>.</p>
                <p>Women subjected by ignorance to their sensations, and only taught to look for
@@ -415,14 +417,14 @@
                   respecting that passion, which lead them shamefully to neglect the duties of life,
                   and frequently in the midst of these sublime refinements they plump into actual
                   vice. </p>
-               <p>Theses are women who are amused by the reveries of the <ref target="a015"
-                     corresp="n015">stupid novelists</ref>, who, knowing little of human nature,
+               <p>Theses are women who are amused by the reveries of the <ref target="novelists_"
+                     corresp="novelists">stupid novelists</ref>, who, knowing little of human nature,
                   work up stale tales, and describe meretricious scenes, all retailed in sentimental
                   jargon, which equally tend to corrupt the taste and draw the heart aside <pb
-                     n="426" facs="pageImages/VIN-426.jpg"/> from its daily duties. I do not mention the
-                  understanding, because never having been exercised, its slumbering energies rest
-                  inactive, like the lurking particles of fire which are supposed universally to
-                  pervade matter. </p>
+                     n="426" facs="pageImages/VIN-426.jpg"/> from its daily duties. I do not mention
+                  the understanding, because never having been exercised, its slumbering energies
+                  rest inactive, like the lurking particles of fire which are supposed universally
+                  to pervade matter. </p>
                <p>Females, in fact, denied all political privileges, and not allowed, as married
                   women, excepting in criminal cases, a civil existence, have their attention
                   naturally drawn from the interest of the whole community to that of the minute
@@ -432,16 +434,16 @@
                   political and civil oppression, sentiments become events, and reflection deepens
                   what it should, and would have effaced, if the understanding had been allowed to
                   take a wider range. </p>
-               <p>But, confined to <ref target="a016" corresp="n016">trifling employments</ref>,
+               <p>But, confined to <ref target="trifling_employments_" corresp="trifling_employments">trifling employments</ref>,
                   they naturally imbibe opinions which the only kind of reading calculated to
                   interest an innocent frivolous mind, inspires. Unable to grasp anything great, is
                   it surprising that they find the reading of history a very dry talk, and <pb
-                     n="427" facs="pageImages/VIN-427.jpg"/> disquisitions addressed to the understanding
-                  intolerably tedious, and almost unintelligible? Thus are they necessarily
-                  dependent on the novelist for amusement. Yet, when I exclaim against novels, I
-                  mean when contrasted with those works which exercise the understanding and
-                  regulate the imagination.--For any kind of reading I think better than leaving a
-                  blank still a blank, because the mind must receive a degree of enlargement and
+                     n="427" facs="pageImages/VIN-427.jpg"/> disquisitions addressed to the
+                  understanding intolerably tedious, and almost unintelligible? Thus are they
+                  necessarily dependent on the novelist for amusement. Yet, when I exclaim against
+                  novels, I mean when contrasted with those works which exercise the understanding
+                  and regulate the imagination.--For any kind of reading I think better than leaving
+                  a blank still a blank, because the mind must receive a degree of enlargement and
                   obtain a little strength by a slight exertion of its thinking powers; besides,
                   even the productions that are only addressed to the imagination, raise the reader
                   a little above the gross gratification of appetites, to which the mind has not
@@ -450,20 +452,20 @@
                   women, and one in particular, who was a very good woman--as good as such a narrow
                   mind would allow her to be, who took care that her daughters (three in number),
                   should never see a novel. As she was a woman of fortune and fashion, they had
-                  various masters to attend them, and a sort of menial <ref target="a017"
-                     corresp="n017">governess</ref> to watch their footsteps. From their masters
-                  they learned how tables, chairs, &amp;c. Were <pb n="428" facs="pageImages/VIN-428.jpg"/>
-                  called in French and Italian; but as the few books thrown in their way were far
-                  above their capacities, or devotional, they neither acquired ideas nor sentiments,
-                  and passed their time when not compelled to repeat words, in dressing, quarrelling
-                  with each other, or conversing with their maids by stealth, till they were brought
-                  into company as marriageable. </p>
+                  various masters to attend them, and a sort of menial <ref target="governess_"
+                     corresp="governess_">governess</ref> to watch their footsteps. From their masters
+                  they learned how tables, chairs, &amp;c. Were <pb n="428"
+                     facs="pageImages/VIN-428.jpg"/> called in French and Italian; but as the few
+                  books thrown in their way were far above their capacities, or devotional, they
+                  neither acquired ideas nor sentiments, and passed their time when not compelled to
+                  repeat words, in dressing, quarrelling with each other, or conversing with their
+                  maids by stealth, till they were brought into company as marriageable. </p>
                <p>Their mother, a widow, was busy in the meantime keeping up her connections, as she
                   termed a numerous acquaintance, lest her girls should want a proper introduction
                   into the great world. And these young ladies with minds vulgar in every sense of
                   the word, and spoiled tempers, entered life puffed up with notions of their own
                   consequence, and looking down with contempt on those who could not vie with them
-                  in <ref target="a018" corresp="n018">dress and parade.</ref>
+                  in <ref target="dress_" corresp="dress">dress and parade.</ref>
                </p>
                <p>With respect to love, nature, or their nurses had taken care to teach them the
                   physical meaning of the word; and, as they had few topics of conversation, and
@@ -471,7 +473,7 @@
                   delicate phrases, when they spoke freely, talking of matrimony.</p>
                <pb n="429" facs="pageImages/VIN-429.jpg"/>
                <p>
-                  <ref target="a019" corresp="n019">Could these girls have been injured by the
+                  <ref target="novels_" corresp="novels">Could these girls have been injured by the
                      perusal of novels?</ref> I almost forgot a shade in the character of one of
                   them; the affected a simplicity bordering on folly, and with a simper would utter
                   the most immodest remarks and questions, the full meaning of which she had learned
@@ -486,8 +488,8 @@
                   occurrences, as they stand detached: but what deserves the name of intellect, the
                   power of gaining general or abstract ideas, or even intermediate ones, was out of
                   the question. Their minds were quiescent, and when they were not roused by
-                  sensible ob <pb n="430" facs="pageImages/VIN-430.jpg"/> jects and employments of that kind,
-                  they were low-spirited, would cry, or go to sleep.</p>
+                  sensible ob <pb n="430" facs="pageImages/VIN-430.jpg"/> jects and employments of
+                  that kind, they were low-spirited, would cry, or go to sleep.</p>
                <p>When, therefore, I advise my sex not to reach such flimsy works, it is to induce
                   them to read something superior; for I coincide in opinion with sagacious man,
                   who, having a daughter and niece under his care, pursued a very different plan
@@ -513,26 +515,27 @@
                   want of taste and modesty. Ignorant women, forced to be chaste to preserve their
                   reputation, allow their imagination to revel in the unnatural and meretricious
                   scenes sketched by the novel writers of the day, slighting as insipid <ref
-                     target="a020" corresp="n020">the sober dignity and matronly graces of
+                     target="history_" corresp="history">the sober dignity and matronly graces of
                      history</ref>
-                  <ref target="a2" corresp="n2">*</ref>, whilst men carry the same vitiated taste
+                  <ref target="auth2_" corresp="auth2">*</ref>, whilst men carry the same vitiated taste
                   into life, and fly for amusement to the wanton, from the unsophisticated charms
-                     <pb n="432" facs="pageImages/VIN-432.jpg"/> of virtue, and the grave respectability of
-                  sense. </p>
+                     <pb n="432" facs="pageImages/VIN-432.jpg"/> of virtue, and the grave
+                  respectability of sense. </p>
                <p> Besides, the reading of novels makes women, and particularly ladies of fashion,
                   very fond of using strong expressions and superlatives in conversation; and,
                   though the dissipated artificial life which they lead prevents their cherishing
                   and strong legitimate passion, the language of passion in affected tones slips for
-                  ever from their glib tongues, and every trifle produces those <ref target="a021"
-                     corresp="n021">phosphoric bursts which only mimick in the dark the flame of
+                  ever from their glib tongues, and every trifle produces those <ref target="phosphorus_"
+                     corresp="phosphorus">phosphoric bursts which only mimick in the dark the flame of
                      passion</ref>. </p>
             </div>
+            
          </div>
 
-         <note type="editorial" xml:id="n001" target="a001" resp="editors.xml#MUstudstaff">
+         <note type="editorial" xml:id="wollstonecraft" target="wollstonecraft_" resp="editors.xml#MUstudstaff">
             <graphic
                url="notes/mw02603.jpg"
-               />Born in London on April 27, 1759, Mary Wollstonecraft is considered
+            />Born in London on April 27, 1759, Mary Wollstonecraft is considered
             one of the principal figures in modern feminism. Her works reflected her unmarried
             middle class experience, emphasizing gender injustice, the failure of the education
             system for young women, and the position of women in unhappy marriages. Her best known
@@ -542,9 +545,9 @@
                >biographical essay on Wollstonecraft by Janet Todd</ref>. The portrait of
             Wollstonecraft included here, painted by John Opie (1797), is housed in the <ref
                target="https://www.npg.org.uk/">National Portrait Gallery, London</ref>. </note>
-         <note type="editorial" xml:id="n006" target="a006" resp="editors.xml#BT">
+         <note type="editorial" xml:id="mahometanism" target="mahometanism_" resp="editors.xml#BT">
             <graphic url="notes/Ladies_cabul1848b.jpg"
-               />A term used by Westerners to refer to Muslims, in this context
+            />A term used by Westerners to refer to Muslims, in this context
             Mahometanism is associated with the limited opportunities and oppressed status of women
             in the eighteenth century. As discussed in <ref
                target="https://books.google.com/books?id=jumHDAAAQBAJ"><hi rend="italic">The
@@ -558,28 +561,28 @@
             Afgan women under purdah. <ref
                target="https://commons.wikimedia.org/wiki/File:Ladies_cabul1848b.jpg">Image via
                Wikimedia Commons</ref>.</note>
-         <note type="authorial" xml:id="n1" target="a1" place="bottom">* A <ref target="a1a" corresp="n1a">lively writer</ref>, I cannot
+         <note type="authorial" xml:id="auth1" target="auth1_" place="bottom">* A <ref target="lively_writer_" corresp="l">lively writer</ref>, I cannot
             recollect his name, asks what business women turned of forty have to do in the world?
-            [Wollstonecraft's note.] <note type="editorial" xml:id="n1a" target="a1a" resp="editors.xml#TH"><graphic
+            [Wollstonecraft's note.] <note type="editorial" xml:id="lively_writer" target="lively_writer_" resp="editors.xml#TH"><graphic
                url="notes/ba-obj-42138-0001-pub-large.jpg"
-               />The "lively writer" may be a mistaken reference to Lord Merton,
-            a character in Frances Burney's epistolary novel <hi rend="italic">Evelina</hi> (1778),
-            who says of the masculine Mrs. Selwyn, "I don't know what the devil a woman lives for
-            after thirty: she is only in other folks way" (III.1, 7). Clicking the note link
-            redirects you to the London School of Economics Digital Library facsimile edition of <hi
-               rend="italic">Evelina</hi>. Readers may also find <ref
-               target="https://babel.hathitrust.org/cgi/pt?id=mdp.39015011429282;view=1up;seq=153"
-               >this satirical essay from <hi rend="italic">The London Magazine</hi> of 1777 of
-               interest, in which a gentleman proposes a tax on unmarried women over the age of
-               35</ref>. The image below, from the <ref
-               target="http://collections.britishart.yale.edu/vufind/Record/3626225">Yale Center for
-               British Art</ref>, shows "An Old Maid Treating a Favorite Cat to a Duck and Green
-            Peas," a colored etching by Richard Newton (c.1792).] </note>
+            />The "lively writer" may be a mistaken reference to Lord Merton,
+               a character in Frances Burney's epistolary novel <hi rend="italic">Evelina</hi> (1778),
+               who says of the masculine Mrs. Selwyn, "I don't know what the devil a woman lives for
+               after thirty: she is only in other folks way" (III.1, 7). Clicking the note link
+               redirects you to the London School of Economics Digital Library facsimile edition of <hi
+                  rend="italic">Evelina</hi>. Readers may also find <ref
+                     target="https://babel.hathitrust.org/cgi/pt?id=mdp.39015011429282;view=1up;seq=153"
+                     >this satirical essay from <hi rend="italic">The London Magazine</hi> of 1777 of
+                     interest, in which a gentleman proposes a tax on unmarried women over the age of
+                     35</ref>. The image below, from the <ref
+                        target="http://collections.britishart.yale.edu/vufind/Record/3626225">Yale Center for
+                        British Art</ref>, shows "An Old Maid Treating a Favorite Cat to a Duck and Green
+               Peas," a colored etching by Richard Newton (c.1792).] </note>
          </note>
-         <note type="editorial" xml:id="n003" target="a003" resp="editors.xml#NB">
+         <note type="editorial" xml:id="education" target="education_" resp="editors.xml#NB">
             <graphic
                url="notes/wp01dee569_0a.jpg"
-               /> Mary Wollstonecraft noted the absence of proficient education for
+            /> Mary Wollstonecraft noted the absence of proficient education for
             young women in the eighteenth century and decided to establish a school. Wollstonecraft,
             along with her sister Eliza, and friend Fanny Blood, opened the school in 1784. The
             school was established in Newington Green just outside of London. Although the school
@@ -587,22 +590,22 @@
             teacher and wrote <hi rend="italic">Thoughts on the Education of Daughters with
                Reflections on Female Conduct in the more important Duties of Life</hi> (1787). The
             above picture shows <ref target="http://www.plaquesoflondon.co.uk/page3312.htm">a plaque dedicated to Mary Wollstonecraft at the Newington Green
-            Primary School</ref> near where the school was located in the 18th century. For more
+               Primary School</ref> near where the school was located in the 18th century. For more
             information on the life of Mary Wollstonecraft, read <ref
                target="https://plato.stanford.edu/entries/wollstonecraft/">this biographical essay
                written by Sylvana Tomaselli</ref>. To look through a copy of Wollstonecraft's <hi
-               rend="italic">Thoughts on the Education of Daughters with Reflections on Female
-               Conduct in the more important Duties of Life</hi> click <ref
-               target="https://digital.library.lse.ac.uk/objects/lse:ruf494jak">here</ref> for an
+                  rend="italic">Thoughts on the Education of Daughters with Reflections on Female
+                  Conduct in the more important Duties of Life</hi> click <ref
+                     target="https://digital.library.lse.ac.uk/objects/lse:ruf494jak">here</ref> for an
             online version of the book from the London School of Economics’ digital library. </note>
-         <note type="authorial" xml:id="n2" target="a2" place="bottom">* I am not now alluding to that superiority
+         <note type="authorial" xml:id="auth2" target="auth2_" place="bottom">* I am not now alluding to that superiority
             of mind which leads to the creation of ideal beauty, when life, surveyed with a
             penetrating eye, appears a tragi-comedy, in which little can be seen to satisfy the
             heart without the help of fancy. [Wollstonecraft’s note.] </note>
-         <note type="editorial" xml:id="n016" target="a016" resp="editors.xml#MM">
+         <note type="editorial" xml:id="trifling_employments" target="trifling_employments_" resp="editors.xml#MM">
             <graphic
                url="notes/Reynolds_2000.jpg"
-               />By "trifling employments," Wollstonecraft refers to the kinds of
+            />By "trifling employments," Wollstonecraft refers to the kinds of
             things elegant women did to employ their time such as needlepoint. Not allowed to
             participate in the masculine public sphere, women instead spent their time in domestic
             labor and activities. Many were mothers and homemakers. These activities were not
@@ -610,20 +613,20 @@
             eighteenth century in <ref
                target="http://www.jasna.org/persuasions/on-line/vol25no1/jones.html">this article by
                Susan E. Jones</ref>, also the source of this annotation. The portrait above, <ref
-               target="https://www.frick.org/exhibitions/scottish/reynolds">via the Frick
-               Collection</ref>, is a conversation piece by Joshua Reynolds (1723–1792) showing the
+                  target="https://www.frick.org/exhibitions/scottish/reynolds">via the Frick
+                  Collection</ref>, is a conversation piece by Joshua Reynolds (1723–1792) showing the
             genteel young ladies Waldegrave engaged in such domestic work. </note>
-         <note type="editorial" xml:id="n020" target="a020"  resp="editors.xml#DN"> This is likely a reference to
+         <note type="editorial" xml:id="history" target="history_"  resp="editors.xml#DN"> This is likely a reference to
             discussions about the hierarchy of genres during the eighteenth century. Dorothee Birke,
             author of <ref target="https://books.google.com/books?id=fujCDAAAQBAJ"><hi rend="italic"
-                  >Writing the Reader: Configurations of Cultural Practice in English Novel</hi>
+               >Writing the Reader: Configurations of Cultural Practice in English Novel</hi>
                (2016)</ref>, explains that historical and philosophical works were seen to have
             higher value than novels and poetry. The reason behind such a hierarchical placement is
             the perception of fictional reading to be connected with ignorance as people are fed
             unrealistic words. Thus, historical and philosophical works which were often based on
             truth and it reality, were insightful readings that were ranked higher than unrealistic
             or exaggerated works (<ref target="https://books.google.com/books?id=fujCDAAAQBAJ">Birke 63</ref>).</note>
-         <note type="editorial" xml:id="n008" target="a008" resp="editors.xml#SV"> Likely a reference to a popular
+         <note type="editorial" xml:id="sandford_merton" target="sandford_merton_" resp="editors.xml#SV"> Likely a reference to a popular
             children’s book written in the eighteenth century, <hi rend="italic">Sandford and
                Merton</hi> (1783), by Thomas Day, is about two boys who grow up differently based on
             social status. <ref target="https://books.google.com/books?id=eyb7nFtiPQYC">According to
@@ -634,17 +637,17 @@
             Interested viewers can also <ref
                target="https://archive.org/details/historyofsandfor00daytiala">read an abridged
                version of Day’s children’s book, published in 1792, at the Internet Archive</ref>. </note>
-         <note type="editorial" xml:id="n019" target="a019" resp="editors.xml#KS">Wollstonecraft's question refers to an
+         <note type="editorial" xml:id="novelists" target="novelists_" resp="editors.xml#KS">Wollstonecraft's question refers to an
             ongoing discussion about the work of novel-reading on young girls' intellectual growth.
             It was thought dangerous for women to read novels because society feared that they would
             not, as Anna North writes in <ref
                target="https://op-talk.blogs.nytimes.com/2014/09/14/when-novels-were-bad-for-you/"
                >"When Novels Were Bad for You,"</ref> be able to "differentiate between fiction and
             life."</note>
-         <note type="editorial" xml:id="n004" target="a004" resp="editors.xml#JMF">
+         <note type="editorial" xml:id="bubbled" target="bubbled_" resp="editors.xml#JMF">
             <graphic
                url="notes/AN00142098_001_l.jpg"
-               /> According to the Oxford English Dictionary, in the eighteenth-century
+            /> According to the Oxford English Dictionary, in the eighteenth-century
             the word "bubbled" meant befooled, cheated, or deceived. Here, Wollstonecraft is saying
             women’s understandings have been fooled by the popularization and distribution of
             conduct books and their false depiction of women. "Bubbled" in this usage is also
@@ -655,9 +658,9 @@
             The image included here is <ref target="https://www.britishmuseum.org/research/collection_online/search.aspx">from the British Museum's online collection</ref>. To read more, visit <ref
                target="https://www.library.hbs.edu/hc/ssb/history.html">Harvard Business School’s
                online exhibit on the South Sea Bubble</ref>, and the source of this annotation. </note>
-         <note type="editorial" xml:id="n005" target="a005" resp="editors.xml#BT">
+         <note type="editorial" xml:id="conduct" target="conduct_" resp="editors.xml#BT">
             <graphic url="notes/gregory.jpg"
-               /> This is most likely a reference to Dr. John Gregory’s <hi
+            /> This is most likely a reference to Dr. John Gregory’s <hi
                rend="italic">A Father’s Legacy to His Daughters</hi>, a conduct book written prior
             to Dr. Gregory’s wife’s passing in 1761 and addressed to his daughters about etiquette,
             religion, conduct, and behaviors. Wollstonecraft references this book directly in many
@@ -665,11 +668,11 @@
                target="https://www.si.edu/object/nmah_307978">View a 1793 edition of <hi
                   rend="italic">A Father’s Legacy to His Daughters</hi> at the Internet
                Archive</ref>.</note>
-         <note type="editorial" xml:id="n002" target="a002" resp="editors.xml#TH">
+         <note type="editorial" xml:id="johnson" target="johnson_" resp="editors.xml#TH">
             
-               <graphic
-                  url="notes/bookshops-around-stPauls.jpeg"
-                  />
+            <graphic
+               url="notes/bookshops-around-stPauls.jpeg"
+            />
             Throughout the eighteenth century, St. Paul’s Church Yard was the center of the
             publishing trade. Wollstonecraft's <hi rend="italic">Vindications</hi> was published by
             Joseph Johnson, a liberal publisher with radical views, who published work by William
@@ -680,12 +683,12 @@
                target="http://theamericanreader.com/24-december-1787-mary-wollstonecraft-to-joseph-johnson/"
                >letter from Wollstonecraft to her publisher reprinted in <hi rend="italic">The
                   American Reader</hi></ref>. The image here, from a <ref target="http://louisville.edu/artsandsciences/news/all/shakespeare-folio">University of Louisville news
-            article on William Shakespeare's first folio</ref>, shows the locations of printers around St.
+                     article on William Shakespeare's first folio</ref>, shows the locations of printers around St.
             Paul's during the late sixteenth and early seventeenth centuries. </note>
-         <note type="editorial" xml:id="n010" target="a010"  resp="editors.xml#SM">
+         <note type="editorial" xml:id="elegance" target="elegance_"  resp="editors.xml#SM">
             <graphic
                url="notes/156253-primary-0-nativeres.jpg"
-              /> Elegance in the 18th century has a specific meaning when applied to
+            /> Elegance in the 18th century has a specific meaning when applied to
             women. According to <ref target="https://books.google.com/books?id=BVKH3UIypN8C">Robert
                W. Jones, author of <hi rend="italic">Gender and the Formation of Taste in
                   Eighteenth-Century Britain</hi></ref>, feminine elegance is the combination of
@@ -696,12 +699,12 @@
             intrigue for the culture (Jones 109). The image here, <ref target="https://www.nga.gov/collection/art-object-page.156253.html">drawn from the National Gallery of
                Art in Washington, DC,</ref> shows <hi rend="italic">An Elegant Lady Playing a Cittern</hi> (1770), by Nathaniel
             Dance-Holland. </note>
-         <note type="editorial" xml:id="n007" target="a007" resp="editors.xml#RB"> Mary Wollstonecraft uses "virtue" with
+         <note type="editorial" xml:id="manly" target="manly_" resp="editors.xml#RB"> Mary Wollstonecraft uses "virtue" with
             its eighteenth-century sense of power. Men were often seen as virtuous because of their
             physical strength, whereas women acquired virtue through sensibility and virginity.
             Wollstonecraft argues that true virtue can only exist with knowledge and education.
             Therefore, women must be properly educated or they would only be mimicking true virtue.
-               <ref target="https://books.google.com/books?id=eEbY1xeU4S4C">Views of Women in
+            <ref target="https://books.google.com/books?id=eEbY1xeU4S4C">Views of Women in
                Eighteenth Century Literature," published in the <hi rend="italic">International
                   Journal of Communication Research</hi></ref> by Adrian Brunello and Florina-Elena
             Borsan reviews the way that understandings of womanhood shifted in the period, resulting
@@ -711,7 +714,7 @@
                   rend="italic">An Allegory of Virtue and Riches</hi>, painted in 1667 by Godfried
                Schalcken. </ref>
          </note>
-         <note type="editorial" xml:id="n012" target="a012" resp="editors.xml#FB">
+         <note type="editorial" xml:id="schools" target="schools_" resp="editors.xml#FB">
             <graphic
                url="notes/N00427_10.jpg"/> The
             most common schools available for lower working class families in eighteenth-century
@@ -722,7 +725,7 @@
             image of children learning in a dame school, painted by Thomas Webster (1845), is housed
             in the <ref target="https://www.tate.org.uk">Tate Art Museum, London.</ref>
          </note>
-         <note type="editorial" xml:id="n014" target="a014" resp="editors.xml#ES"> The sentimental novel is a genre which
+         <note type="editorial" xml:id="sentimental" target="sentimental_" resp="editors.xml#ES"> The sentimental novel is a genre which
             rose into popularity in the eighteenth century. This genre is characterized by
             excessively passionate characters, tearful scenes and dramatic, flowery dialogue. Mary
             Wollstonecraft may be using the popularity of these novels among young women to explain
@@ -731,14 +734,14 @@
                target="https://www.britannica.com/art/sentimental-novel">
                <hi rend="italic">Encyclopedia Britannica</hi>.</ref>
          </note>
-         <note type="editorial" xml:id="n015" target="a015" resp="editors.xml#ES">As novels became more accessible they
+         <note type="editorial" xml:id="novels" target="novels_" resp="editors.xml#ES">As novels became more accessible they
             became more popular. Some believed that excessive exposure to fiction novels would cause
             readers to lose touch with reality and identify with characters to the point of
             mimicking dangerous or immoral behavior. Read more about a popular novel that was blamed
             for youthful suicides in this article by Frank Furedi from <ref
                target="http://www.historytoday.com/frank-furedi/media%E2%80%99s-first-moral-panic">
                <hi rend="italic">History Today</hi></ref>. </note>
-         <note type="editorial" xml:id="n009" target="a009" resp="editors.xml#MR"> The different ranks of society in
+         <note type="editorial" xml:id="ranks" target="ranks_" resp="editors.xml#MR"> The different ranks of society in
             England during the eighteenth century were not simply divided between the rich or poor.
             According to the eighteenth-century writer Daniel Defoe, there were seven categories:
             the great, the rich, the middle sort, the working trades, the country people, the poor,
@@ -746,29 +749,29 @@
             of hunger, there was usually enough food to go around. Trade was increasing and more men
             and women acquired jobs in industry. However, wealth was unequally distributed, with
             only 5% of the national income belonging to the general population. Read more in this
-               <ref
+            <ref
                target="https://www.britannica.com/place/United-Kingdom/18th-century-Britain-1714-1815"
-                  ><hi rend="italic">Encyclopedia Britannica</hi> entry for eighteenth-century
+               ><hi rend="italic">Encyclopedia Britannica</hi> entry for eighteenth-century
                Britain</ref>, and the source of this annotation. </note>
-         <note type="editorial" xml:id="n013" target="a013"  resp="editors.xml#RDJ">
+         <note type="editorial" xml:id="seraglio" target="seraglio_"  resp="editors.xml#RDJ">
             <graphic
                url="notes/John_frederick_lewis-reception1873.jpg"
-               /> Wollstonecraft’s argument in <hi rend="italic"> A Vindication of the
+            /> Wollstonecraft’s argument in <hi rend="italic"> A Vindication of the
                Rights of Woman </hi> is that women spend most of their lives acquiring knowledge to
             be perfect wives instead of strengthening their minds and bodies to place a man. Because
             the only way women can rise the world is through marriage, they are being groomed to
             become lovers much like women in a Turkish seraglio, as Susan Gubar notes in "Feminist
             Misogyny" (<ref target="https://books.google.com/books?id=nxUtN1J-Z1UC">Gubar
-            151</ref>). Wollstonecraft is pointing out the lack of freedom for women. The image
+               151</ref>). Wollstonecraft is pointing out the lack of freedom for women. The image
             included here illustrates the women’s quarter of a seraglio painted in 1873 by John
             Frederick Lewis. <ref
                target="https://commons.wikimedia.org/wiki/File:John_frederick_lewis-reception1873.jpg"
                >This image is from Wikimedia Commons.</ref>
          </note>
-         <note type="editorial" xml:id="n018" target="a018" resp="editors.xml#DF">
+         <note type="editorial" xml:id="dress" target="dress_" resp="editors.xml#DF">
             <graphic
                url="notes/Madame_de_Pompadour.jpg"
-               />In the eighteenth century, women were encouraged to focus on their
+            />In the eighteenth century, women were encouraged to focus on their
             dress, meaning their overall attire, because <ref
                target="https://archive.org/stream/b28747021">as Dr. Gregory argues in <hi
                   rend="italic">A Father’s Legacy to His Daughters</hi>, it was supposedly natural
@@ -782,15 +785,15 @@
             more about eighteenth-century fashion at <ref
                target="http://www.vam.ac.uk/content/articles/i/introduction-to-18th-century-fashion/"
                >the Victoria and Albert Museum</ref>.</note>
-         <note type="editorial" xml:id="n017" target="a017"  resp="editors.xml#AH"> According to <ref
-               target="https://www.bl.uk/romantics-and-victorians/articles/the-figure-of-the-governess"
-               >Katheryn Hughes</ref>, the governess was one of the most familiar figures in the
+         <note type="editorial" xml:id="governess" target="governess_"  resp="editors.xml#AH"> According to <ref
+            target="https://www.bl.uk/romantics-and-victorians/articles/the-figure-of-the-governess"
+            >Katheryn Hughes</ref>, the governess was one of the most familiar figures in the
             Romantic period and throughout the Victorian period. Governesses were women who earned
             their living by teaching and caring for other women’s children. Most governesses lived
             with their employers and were paid a small salary on top of their board and lodging. The
             governess was seen as an outsider, not quite fitting in with the family she governed for
             but not exactly fitting in as a servant either.</note>
-         <note type="editorial" xml:id="n011" target="a011"  resp="editors.xml#RB">
+         <note type="editorial" xml:id="manly" target="manly_"  resp="editors.xml#RB">
             <graphic
                url="notes/Thomas_Gainsborough_-_Mr_and_Mrs_Andrews.jpg"/>"Manly virtues" in the eighteenth century refers to social
             behavior that encourages men to be kind, loving, and courageous both in the home and in
@@ -801,22 +804,24 @@
             against masculine women because of its imitation of manly virtues (<ref
                target="https://pdfs.semanticscholar.org/8ecf/602a48f6e143a90d72e5cca251751bc26bae.pdf"
                >Blakemore 42</ref>). The portrait here, <hi rend="italic"> Mr. and Mrs. Andrews</hi>
-            by Thomas Gainsborough (1748), is housed in the National Gallery London. TThis painting,
+            by Thomas Gainsborough (1748), is housed in the National Gallery London. This painting,
             via Wikimedia Commons, illustrates manliness in terms of gentility. </note>
-         <note type="editorial" xml:id="n021" target="a021"  resp="editors.xml#TG">
+         <note type="editorial" xml:id="phosphorus" target="phosphorus_"  resp="editors.xml#TG">
             <graphic
                url="notes/Joseph_Wright_of_Derby_The_Alchemist.jpg"
-               />Used by alchemists throughout the seventeenth century, phosphorous was
+            />Used by alchemists throughout the seventeenth century, phosphorous was
             officially designated the thirteenth element by Antoine Lavosier in 1777. Quack
             physicians incorporated the eerily-glowing phosphorous into their "cure all" medicines.
             Here, Wollstonecraft may be referring to a long-standing association between the element
             and its use in false medicines as well as its generation of artificial light. The image
             included here, <hi rend="italic">The Alchymist, In Search of the Philosopher’s Stone,
                Discovers Phosphorus</hi> (1770) is by Joseph Wright of Derby, <ref
-               target="https://en.wikipedia.org/wiki/The_Alchemist_Discovering_Phosphorus#/media/File:Joseph_Wright_of_Derby_The_Alchemist.jpg"
-               >via Wikimedia Commons</ref>. Read more about the discovery of phosphorus on <ref
-               target="https://resobscura.blogspot.com/2017/06/urine-phosphorus-and-philosophers-stone.html"
-               >the personal blog <hi rend="italic">Res Obscura</hi></ref>.</note>
+                  target="https://en.wikipedia.org/wiki/The_Alchemist_Discovering_Phosphorus#/media/File:Joseph_Wright_of_Derby_The_Alchemist.jpg"
+                  >via Wikimedia Commons</ref>. Read more about the discovery of phosphorus on <ref
+                     target="https://resobscura.blogspot.com/2017/06/urine-phosphorus-and-philosophers-stone.html"
+                     >the personal blog <hi rend="italic">Res Obscura</hi></ref>.</note>
+         
+         
 
 
       </body>
