@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Stuart-Articles_of_Peace">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="stuart-articles">
     <teiHeader xml:lang="en">
         <fileDesc>
             <titleStmt>
@@ -47,7 +47,7 @@
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <!-- The information here has been augmented by a PDF of the first edition at https://digitalarchive.wm.edu/bitstream/handle/10288/16654/ArticlesOfPeace.pdf?sequence=1&isAllowed=y. Whether this ought to be integrated into a separate publication or imprint element is up to the editors -->
+
                 <biblStruct>
                     <monogr>
                         <author>
@@ -66,7 +66,7 @@
                             <publisher> Printed by John Bill, Christopher Barker, Thomas Newcomb and
                                 Henry Hills, Printers to the Kings Most Excellent Majesty. </publisher>
                             <date when="1677"> 1677 </date>
-                            <note></note>
+                            <note>The information in this edition has been augmented by a PDF of the first edition at <ref target="https://digitalarchive.wm.edu/bitstream/handle/10288/16654/ArticlesOfPeace.pdf">https://digitalarchive.wm.edu/bitstream/handle/10288/16654/ArticlesOfPeace.pdf</ref></note>
                         </imprint>
                         <extent> </extent>
                         <biblScope> </biblScope>
@@ -184,9 +184,9 @@
                     <publisher> Printed by <persName>John Bill,</persName>
                         <persName>Christopher Barker,</persName>
                         <persName>Thomas Newcomb</persName> and <persName>Henry Hills,</persName>
-                        Printers to the Kings Most Excellent Majesty </publisher>
-                </docImprint>
+                        Printers to the Kings Most Excellent Majesty </publisher>           
                 <docDate> 1677. </docDate>
+                </docImprint>
             </titlePage>
         </front>
 
@@ -406,11 +406,12 @@
                 <publisher> Printed by <persName>John Bill,</persName>
                     <persName>Christopher Barker,</persName>
                     <persName>Thomas Newcomb</persName> and <persName>Henry Hills,</persName>
-                    Printers to the Kings Most Excellent Majesty </publisher>
-            </docImprint></div>
+                    Printers to the Kings Most Excellent Majesty </publisher>        
             <docDate> 1677. </docDate>
-            
-            <ref><note type="editorial" xml:id="treaty" target="treaty_" resp="editors.xml#JOB">
+            </docImprint>
+            </div>
+            <div>
+            <note type="editorial" xml:id="treaty" target="treaty_" resp="editors.xml#JOB">
                 This document, most typically remembered as the “Treaty of Middle Plantation,” after the place where it was ratified (the site of present-day Williamsburg, Virginia) was signed in May 1677 by the governor representing the English colonial government in the land they called Virginia and the leaders of several indigenous tribes, primarily the Pamunkey and Mattaponi, to bring an end to a series of conflicts between the English settlers and the native people of the region. The conflicts are most often referred to as <ref
                     target="https://encyclopediavirginia.org/entries/bacon-nathaniel-1647-1676/"
                     >“Bacon’s Rebellion”</ref> after its leader Nathaniel Bacon, who in 1676 led attacks against native groups and then an armed uprising against William Berkeley, then the English governor, and his administration. The Rebellion is a complicated and ugly story, one that has been interpreted in different ways over the years, but a key component was that Bacon and the colonists who joined him in rising up against their own government, argued that Berkeley was not sufficiently brutal to the native American population in the area, which Bacon wished to eliminate completely to clear land for settlement. Bacon’s uprising exposed divisions with the colonists between the elite members of the government and the farmers, indentured servants, and also some enslaved African people who fought on Bacon’s side, but also exposed and exacerbated divisions with the local indigenous nations. Bacon and his followers burned the colonial capital of Jamestown down, but he died of unexpectedly of dysentery in October 1676. The rebellion lost its momentum with the loss of its leader. The British government restored order and executed some of the other central figures in the uprising. Berkeley was relieved of his office and went back to England, where he died in July 1677. Charles II sent a commission to investigate the situation, as well as a new governor, Herbert Jeffreys, to replace the discredited Berkeley.
@@ -420,8 +421,8 @@
                 English settlers routinely ignored the three-mile rule, and Cockacoeske had mixed success in getting other indigenous leaders to acknowledge her authority. But the Treaty of Middle Plantation remains in force to this day. Representatives of the Mattaponi and Pamunky people <ref
                     target="https://www.wvtf.org/news/2021-11-24/mattaponi-and-pamunkey-fulfill-1677-treaty-obligations-at-governors-mansion"
                     >bring gifts such as turkey and deer to the Governor of Virginia</ref> each year, usually around Thanksgiving, in symbolic fulfillment of their obligations under the treaty. In theory, the Treaty of Middle Plantation protected indigenous people from acts of violence and codified their sovereignty, something that Bacon and his followers would not have accepted. But the document is also one of many that marks the long history of the displacement of native people in the Americas from the lands that they had lived on for many centuries.
-                </note></ref>
-
+                </note>
+            </div>
         </back>
     </text>
 </TEI>
