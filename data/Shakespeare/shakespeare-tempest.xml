@@ -114,9 +114,11 @@
                            https://www.ibiblio.org/xml/examples/shakespeare/tempest.xml </ref>. Note
                         that this digital edition uses modern spelling. Page breaks have been added
                         according to the First Folio.</note>
-                     <note><p>Text placed in the public domain by Moby Lexical Tools, 1992. Original
+                     <note>
+                        <p>Text placed in the public domain by Moby Lexical Tools, 1992. Original
                            SGML markup by Jon Bosak, 1992-1994. XML version by Jon Bosak, 1996-1998.
-                           XML updated for P5 guidelines, 2022.</p></note>
+                           XML updated for P5 guidelines, 2022.</p>
+                     </note>
                   </imprint>
                   <extent> 34 cm. (fol.)</extent>
                   <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
@@ -261,9 +263,12 @@
                </titlePart>
             </docTitle>
             <docImprint>
-               <pubPlace><hi rend="italic">LONDON</hi><lb/></pubPlace>
-               <publisher>Printed by Isaac Jaggard, and Ed. Blount.<lb/></publisher><docDate
-                  when="1623">1623.</docDate>
+               <pubPlace>
+                  <hi rend="italic">LONDON</hi>
+                  <lb/>
+               </pubPlace>
+               <publisher>Printed by Isaac Jaggard, and Ed. Blount.<lb/></publisher>
+               <docDate when="1623">1623.</docDate>
             </docImprint>
          </titlePage>
          <set>
@@ -295,8 +300,20 @@
          <div n="1" type="act">
             <div n="1" type="scene">
                <head type="sub">Act I, Scene I.</head>
-               <stage>A tempestuous noise of thunder and lightning heard. Enter a
-                     Ship-master and a Boatswain</stage>
+               <stage>A tempestuous noise of <ref target="thunder_" corresp="thunder">thunder and
+                     lightning</ref>
+                  <note xml:id="thunder" target="thunder_" type="editorial" resp="editors.xml#LD">In
+                     1611, when Shakespeare's <hi rend="italic">The Tempest</hi> was first
+                     performed, theatres used a mechanism known as a thunder machine, which was
+                     essentially a long wooden box balanced like a seesaw, containing a large cannon
+                     ball that when rolled around produced a loud noise resembling thunder. To
+                     create the effect of lightening, stage hands would prepare powdered resin which
+                     would be thrown onto a flame. Lighting a firecracker attached to a wire
+                     extending from the roof of the stage to the floor would create the illusion of
+                     a lightening bolt (<ref
+                        target="https://www.shakespearesglobe.com/discover/shakespeares-world/special-effects/"
+                        >"Special Effects"</ref>).</note>. Enter a Ship-master and a
+                  Boatswain</stage>
 
                <sp>
                   <speaker>Master</speaker>
@@ -320,8 +337,7 @@
                   <l n="7">master's whistle. Blow, till thou burst thy wind,</l>
                   <l n="8">if room enough! </l>
                </sp>
-               <stage>Enter Alonso, Sebastian, Antonio, Ferdinand, Gonzalo, and
-                     others</stage>
+               <stage>Enter Alonso, Sebastian, Antonio, Ferdinand, Gonzalo, and others</stage>
                <sp>
                   <speaker>Alonso</speaker>
                   <l n="9">Good boatswain, have care. Where's the master? </l>
@@ -442,9 +458,9 @@
                   <l n="58">Though every drop of water swear against it </l>
                   <l n="59">And gape at widest to glut him. </l>
                </sp>
-               <stage>A confused noise within: 'Mercy on us!'-- 'We split, we
-                     split!'--'Farewell, my wife and children!'-- 'Farewell, brother!'--'We split,
-                     we split, we split!'</stage>
+               <stage>A confused noise within: 'Mercy on us!'-- 'We split, we split!'--'Farewell, my
+                  wife and children!'-- 'Farewell, brother!'--'We split, we split, we
+                  split!'</stage>
                <sp>
                   <speaker>Antonio</speaker>
                   <l n="60">Let's all sink with the king. </l>
@@ -485,17 +501,23 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Be collected:</hi></l>
+                  <l>
+                     <hi rend="indent">Be collected:</hi>
+                  </l>
                   <l n="14">No more amazement: tell your piteous heart</l>
                   <l n="15">There's no harm done.</l>
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent2">O, woe the day!</hi></l>
+                  <l>
+                     <hi rend="indent2">O, woe the day!</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi  rend="indent3">No harm.</hi></l>
+                  <l>
+                     <hi rend="indent3">No harm.</hi>
+                  </l>
                   <l n="16">I have done nothing but in care of thee,</l>
                   <l n="17">Of thee, my dear one, thee, my daughter, who</l>
                   <l n="18">Art ignorant of what thou art, nought knowing</l>
@@ -505,12 +527,16 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">More to know</hi></l>
+                  <l>
+                     <hi rend="indent">More to know</hi>
+                  </l>
                   <l n="22">Did never meddle with my thoughts.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent2">'Tis time</hi></l>
+                  <l>
+                     <hi rend="indent2">'Tis time</hi>
+                  </l>
                   <l n="23">I should inform thee farther. Lend thy hand,</l>
                   <l n="24">And pluck my magic garment from me. So:</l>
                   <stage>Lays down his mantle</stage>
@@ -526,14 +552,18 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">You have often</hi></l>
+                  <l>
+                     <hi rend="indent">You have often</hi>
+                  </l>
                   <l n="34">Begun to tell me what I am, but stopp'd</l>
                   <l n="35">And left me to a bootless inquisition,</l>
                   <l n="36">Concluding 'stay: not yet.'</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">The hour's now come;</hi></l>
+                  <l>
+                     <hi rend="indent">The hour's now come;</hi>
+                  </l>
                   <l n="37">The very minute bids thee ope thine ear;</l>
                   <l n="38">Obey and be attentive. Canst thou remember</l>
                   <l n="39">A time before we came unto this cell?</l>
@@ -542,7 +572,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Certainly, sir, I can.</hi></l>
+                  <l>
+                     <hi rend="indent">Certainly, sir, I can.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -552,7 +584,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">'Tis far off</hi></l>
+                  <l>
+                     <hi rend="indent">'Tis far off</hi>
+                  </l>
                   <l n="44">And rather like a dream than an assurance</l>
                   <l n="45">That my remembrance warrants. Had I not</l>
                   <l n="46">Four or five women once that tended me?</l>
@@ -567,7 +601,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">But that I do not.</hi></l>
+                  <l>
+                     <hi rend="indent">But that I do not.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -577,7 +613,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Sir, are not you my father?</hi></l>
+                  <l>
+                     <hi rend="indent">Sir, are not you my father?</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -588,19 +626,25 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">O the heavens!</hi></l>
+                  <l>
+                     <hi rend="indent">O the heavens!</hi>
+                  </l>
                   <l n="59">What foul play had we, that we came from thence?</l>
                   <l n="60">Or blessed was't we did?</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Both, both, my girl:</hi></l>
+                  <l>
+                     <hi rend="indent">Both, both, my girl:</hi>
+                  </l>
                   <l n="61">By foul play, as thou say'st, were we heaved thence,</l>
                   <l n="62">But blessedly holp hither.</l>
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">O, my heart bleeds</hi></l>
+                  <l>
+                     <hi rend="indent">O, my heart bleeds</hi>
+                  </l>
                   <l n="63">To think o' the teen that I have turn'd you to,</l>
                   <l n="64">Which is from my remembrance! Please you, farther.</l>
                </sp>
@@ -622,7 +666,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Sir, most heedfully.</hi></l>
+                  <l>
+                     <hi rend="indent">Sir, most heedfully.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -642,7 +688,9 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">I pray thee, mark me.</hi></l>
+                  <l>
+                     <hi rend="indent">I pray thee, mark me.</hi>
+                  </l>
                   <l n="88">I, thus neglecting worldly ends, all dedicated</l>
                   <l n="89">To closeness and the bettering of my mind</l>
                   <l n="90">With that which, but by being so retired,</l>
@@ -664,7 +712,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Your tale, sir, would cure deafness.</hi></l>
+                  <l>
+                     <hi rend="indent">Your tale, sir, would cure deafness.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -681,7 +731,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">O the heavens!</hi></l>
+                  <l>
+                     <hi rend="indent">O the heavens!</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -690,14 +742,18 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">I should sin</hi></l>
+                  <l>
+                     <hi rend="indent">I should sin</hi>
+                  </l>
                   <l n="118">To think but nobly of my grandmother:</l>
                   <pb n="3" facs="pageImages/003.png"/>
                   <l n="119">Good wombs have borne bad sons.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Now the condition.</hi></l>
+                  <l>
+                     <hi rend="indent">Now the condition.</hi>
+                  </l>
                   <l n="120">The King of Naples, being an enemy</l>
                   <l n="121">To me inveterate, hearkens my brother's suit;</l>
                   <l n="122">Which was, that he, in lieu o' the premises</l>
@@ -713,7 +769,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Alack, for pity!</hi></l>
+                  <l>
+                     <hi rend="indent">Alack, for pity!</hi>
+                  </l>
                   <l n="132">I, not remembering how I cried out then,</l>
                   <l n="133">Will cry it o'er again: it is a hint</l>
                   <l n="134">That wrings mine eyes to't.</l>
@@ -727,12 +785,16 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Wherefore did they not</hi></l>
+                  <l>
+                     <hi rend="indent">Wherefore did they not</hi>
+                  </l>
                   <l n="138">That hour destroy us?</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Well demanded, wench:</hi></l>
+                  <l>
+                     <hi rend="indent">Well demanded, wench:</hi>
+                  </l>
                   <l n="139">My tale provokes that question. Dear, they durst not,</l>
                   <l n="140">So dear the love my people bore me, nor set</l>
                   <l n="141">A mark so bloody on the business, but</l>
@@ -748,12 +810,16 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Alack, what trouble</hi></l>
+                  <l>
+                     <hi rend="indent">Alack, what trouble</hi>
+                  </l>
                   <l n="151">Was I then to you!</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">O, a cherubim</hi></l>
+                  <l>
+                     <hi rend="indent">O, a cherubim</hi>
+                  </l>
                   <l n="152">Thou wast that did preserve me. Thou didst smile.</l>
                   <l n="152">Infused with a fortitude from heaven,</l>
                   <l n="154">When I have deck'd the sea with drops full salt,</l>
@@ -763,7 +829,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">How came we ashore?</hi></l>
+                  <l>
+                     <hi rend="indent">How came we ashore?</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -780,7 +848,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Would I might</hi></l>
+                  <l>
+                     <hi rend="indent">Would I might</hi>
+                  </l>
                   <l n="168">But ever see that man!</l>
                </sp>
                <sp>
@@ -801,7 +871,9 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Know thus far forth.</hi></l>
+                  <l>
+                     <hi rend="indent">Know thus far forth.</hi>
+                  </l>
                   <l n="177">By accident most strange, bountiful Fortune,</l>
                   <l n="178">Now my dear lady, hath mine enemies</l>
                   <l n="179">Brought to this shore; and by my prescience</l>
@@ -826,12 +898,16 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Hast thou, spirit,</hi></l>
+                  <l>
+                     <hi rend="indent">Hast thou, spirit,</hi>
+                  </l>
                   <l n="193">Perform'd to point the tempest that I bade thee?</l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">To every article.</hi></l>
+                  <l>
+                     <hi rend="indent">To every article.</hi>
+                  </l>
                   <l n="194">I boarded the king's ship; now on the beak,</l>
                   <l n="195">Now in the waist, the deck, in every cabin,</l>
                   <l n="196">I flamed amazement: sometime I'ld divide,</l>
@@ -846,13 +922,17 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">My brave spirit!</hi></l>
+                  <l>
+                     <hi rend="indent">My brave spirit!</hi>
+                  </l>
                   <l n="205">Who was so firm, so constant, that this coil</l>
                   <l n="206">Would not infect his reason?</l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">Not a soul</hi></l>
+                  <l>
+                     <hi rend="indent">Not a soul</hi>
+                  </l>
                   <l n="207">But felt a fever of the mad and play'd</l>
                   <l n="208">Some tricks of desperation. All but mariners</l>
                   <l n="209">Plunged in the foaming brine and quit the vessel,</l>
@@ -863,12 +943,16 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Why that's my spirit!</hi></l>
+                  <l>
+                     <hi rend="indent">Why that's my spirit!</hi>
+                  </l>
                   <l n="214">But was not this nigh shore?</l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">Close by, my master.</hi></l>
+                  <l>
+                     <hi rend="indent">Close by, my master.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -876,7 +960,9 @@
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">Not a hair perish'd;</hi></l>
+                  <l>
+                     <hi rend="indent">Not a hair perish'd;</hi>
+                  </l>
                   <l n="216">On their sustaining garments not a blemish,</l>
                   <l n="217">But fresher than before: and, as thou badest me,</l>
                   <l n="218">In troops I have dispersed them 'bout the isle.</l>
@@ -887,14 +973,18 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Of the king's ship</hi></l>
+                  <l>
+                     <hi rend="indent">Of the king's ship</hi>
+                  </l>
                   <l n="223">The mariners say how thou hast disposed</l>
                   <l n="224">And all the rest o' the fleet.</l>
                </sp>
                <pb n="4" facs="pageImages/004.png"/>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">Safely in harbour</hi></l>
+                  <l>
+                     <hi rend="indent">Safely in harbour</hi>
+                  </l>
                   <l n="225">Is the king's ship; in the deep nook, where once</l>
                   <l n="226">Thou call'dst me up at midnight to fetch dew</l>
                   <l n="227">From the still-vex'd Bermoothes, there she's hid:</l>
@@ -909,13 +999,17 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Ariel, thy charge</hi></l>
+                  <l>
+                     <hi rend="indent">Ariel, thy charge</hi>
+                  </l>
                   <l n="236">Exactly is perform'd: but there's more work.</l>
                   <l n="237">What is the time o' the day?</l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">Past the mid season.</hi></l>
+                  <l>
+                     <hi rend="indent">Past the mid season.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -930,12 +1024,16 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">How now? moody?</hi></l>
+                  <l>
+                     <hi rend="indent">How now? moody?</hi>
+                  </l>
                   <l n="243">What is't thou canst demand?</l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">My liberty.</hi></l>
+                  <l>
+                     <hi rend="indent">My liberty.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -943,7 +1041,9 @@
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">I prithee,</hi></l>
+                  <l>
+                     <hi rend="indent">I prithee,</hi>
+                  </l>
                   <l n="245">Remember I have done thee worthy service;</l>
                   <l n="246">Told thee no lies, made thee no mistakings, served</l>
                   <l n="247">Without or grudge or grumblings: thou didst promise</l>
@@ -951,12 +1051,16 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Dost thou forget</hi></l>
+                  <l>
+                     <hi rend="indent">Dost thou forget</hi>
+                  </l>
                   <l n="249">From what a torment I did free thee?</l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">No.</hi></l>
+                  <l>
+                     <hi rend="indent">No.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -968,7 +1072,9 @@
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">I do not, sir.</hi></l>
+                  <l>
+                     <hi rend="indent">I do not, sir.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -982,7 +1088,9 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Thou hast. Where was she born? speak; tell me.</hi></l>
+                  <l>
+                     <hi rend="indent">Thou hast. Where was she born? speak; tell me.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
@@ -990,7 +1098,9 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">O, was she so? I must</hi></l>
+                  <l>
+                     <hi rend="indent">O, was she so? I must</hi>
+                  </l>
                   <l n="260">Once in a month recount what thou hast been,</l>
                   <l n="261">Which thou forget'st. This damn'd witch Sycorax,</l>
                   <l n="262">For mischiefs manifold and sorceries terrible</l>
@@ -1023,7 +1133,9 @@
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">Yes, Caliban her son.</hi></l>
+                  <l>
+                     <hi rend="indent">Yes, Caliban her son.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -1039,7 +1151,9 @@
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">I thank thee, master.</hi></l>
+                  <l>
+                     <hi rend="indent">I thank thee, master.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -1049,18 +1163,24 @@
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">Pardon, master;</hi></l>
+                  <l>
+                     <hi rend="indent">Pardon, master;</hi>
+                  </l>
                   <l n="295">I will be correspondent to command</l>
                   <l n="296">And do my spiriting gently.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Do so, and after two days</hi></l>
+                  <l>
+                     <hi rend="indent">Do so, and after two days</hi>
+                  </l>
                   <l n="297">I will discharge thee.</l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">That's my noble master!</hi></l>
+                  <l>
+                     <hi rend="indent">That's my noble master!</hi>
+                  </l>
                   <l n="298">What shall I do? say what; what shall I do?</l>
                </sp>
                <sp>
@@ -1075,23 +1195,31 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">The strangeness of your story put</hi></l>
+                  <l>
+                     <hi rend="indent">The strangeness of your story put</hi>
+                  </l>
                   <l n="305">Heaviness in me.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Shake it off. Come on;</hi></l>
+                  <l>
+                     <hi rend="indent">Shake it off. Come on;</hi>
+                  </l>
                   <l n="306">We'll visit Caliban my slave, who never</l>
                   <l n="307">Yields us kind answer.</l>
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">'Tis a villain, sir,</hi></l>
+                  <l>
+                     <hi rend="indent">'Tis a villain, sir,</hi>
+                  </l>
                   <l n="308">I do not love to look on.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">But, as 'tis,</hi></l>
+                  <l>
+                     <hi rend="indent">But, as 'tis,</hi>
+                  </l>
                   <l n="309">We cannot miss him: he does make our fire,</l>
                   <l n="310">Fetch in our wood and serves in offices</l>
                   <l n="311">That profit us. What, ho! slave! Caliban!</l>
@@ -1138,7 +1266,9 @@
                </sp>
                <sp>
                   <speaker>Caliban</speaker>
-                  <l><hi rend="indent">I must eat my dinner.</hi></l>
+                  <l>
+                     <hi rend="indent">I must eat my dinner.</hi>
+                  </l>
                   <l n="329">This island's mine, by Sycorax my mother,</l>
                   <l n="330">Which thou takest from me. When thou camest first,</l>
                   <l n="331">Thou strokedst me and madest much of me, wouldst give me</l>
@@ -1157,7 +1287,9 @@
                <pb n="5" facs="pageImages/005.png"/>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Thou most lying slave,</hi></l>
+                  <l>
+                     <hi rend="indent">Thou most lying slave,</hi>
+                  </l>
                   <l n="343">Whom stripes may move, not kindness! I have used thee,</l>
                   <l n="344">Filth as thou art, with human care, and lodged thee</l>
                   <l n="345">In mine own cell, till thou didst seek to violate</l>
@@ -1165,13 +1297,17 @@
                </sp>
                <sp>
                   <speaker>Caliban</speaker>
-                  <l><hi rend="indent">O ho, O ho! would't had been done!</hi></l>
+                  <l>
+                     <hi rend="indent">O ho, O ho! would't had been done!</hi>
+                  </l>
                   <l n="347">Thou didst prevent me; I had peopled else</l>
                   <l n="348">This isle with Calibans.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Abhorred slave,</hi></l>
+                  <l>
+                     <hi rend="indent">Abhorred slave,</hi>
+                  </l>
                   <l n="349">Which any print of goodness wilt not take,</l>
                   <l n="350">Being capable of all ill! I pitied thee,</l>
                   <l n="351">Took pains to make thee speak, taught thee each hour</l>
@@ -1192,7 +1328,9 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Hag-seed, hence!</hi></l>
+                  <l>
+                     <hi rend="indent">Hag-seed, hence!</hi>
+                  </l>
                   <l n="363">Fetch us in fuel; and be quick, thou'rt best,</l>
                   <l n="364">To answer other business. Shrug'st thou, malice?</l>
                   <l n="365">If thou neglect'st or dost unwillingly</l>
@@ -1202,7 +1340,9 @@
                </sp>
                <sp>
                   <speaker>Caliban</speaker>
-                  <l><hi rend="indent">No, pray thee.</hi></l>
+                  <l>
+                     <hi rend="indent">No, pray thee.</hi>
+                  </l>
                   <stage>Aside</stage>
                   <l n="369">I must obey: his art is of such power,</l>
                   <l n="370">It would control my dam's god, Setebos,</l>
@@ -1210,11 +1350,13 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">So, slave; hence!</hi></l>
+                  <l>
+                     <hi rend="indent">So, slave; hence!</hi>
+                  </l>
                </sp>
                <stage>Exit Caliban</stage>
-               <stage>Re-enter Ariel, invisible, playing and singing; Ferdinand
-                     following Ariel's song.</stage>
+               <stage>Re-enter Ariel, invisible, playing and singing; Ferdinand following Ariel's
+                  song.</stage>
                <sp>
                   <speaker>[Ariel]</speaker>
                   <l n="372">Come unto these yellow sands,</l>
@@ -1268,7 +1410,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">What is't? a spirit?</hi></l>
+                  <l>
+                     <hi rend="indent">What is't? a spirit?</hi>
+                  </l>
                   <l n="407">Lord, how it looks about! Believe me, sir,</l>
                   <l n="408">It carries a brave form. But 'tis a spirit.</l>
                </sp>
@@ -1283,20 +1427,26 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">I might call him</hi></l>
+                  <l>
+                     <hi rend="indent">I might call him</hi>
+                  </l>
                   <l n="415">A thing divine, for nothing natural</l>
                   <l n="416">I ever saw so noble.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <stage>Aside</stage> 
-                  <l><hi rend="indent">It goes on, I see, </hi></l>
+                  <stage>Aside</stage>
+                  <l>
+                     <hi rend="indent">It goes on, I see, </hi>
+                  </l>
                   <l n="417">As my soul prompts it. Spirit, fine spirit! I'll free thee</l>
                   <l n="418">Within two days for this.</l>
                </sp>
                <sp>
                   <speaker>Ferdinand</speaker>
-                  <l><hi rend="indent">Most sure, the goddess</hi></l>
+                  <l>
+                     <hi rend="indent">Most sure, the goddess</hi>
+                  </l>
                   <l n="419">On whom these airs attend! Vouchsafe my prayer</l>
                   <l n="420">May know if you remain upon this island;</l>
                   <l n="421">And that you will some good instruction give</l>
@@ -1306,18 +1456,24 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">No wonder, sir;</hi></l>
+                  <l>
+                     <hi rend="indent">No wonder, sir;</hi>
+                  </l>
                   <l n="425">But certainly a maid.</l>
                </sp>
                <sp>
                   <speaker>Ferdinand</speaker>
-                  <l><hi rend="indent">My language! heavens!</hi></l>
+                  <l>
+                     <hi rend="indent">My language! heavens!</hi>
+                  </l>
                   <l n="426">I am the best of them that speak this speech,</l>
                   <l n="427">Were I but where 'tis spoken.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">How? the best?</hi></l>
+                  <l>
+                     <hi rend="indent">How? the best?</hi>
+                  </l>
                   <l n="428">What wert thou, if the King of Naples heard thee?</l>
                </sp>
                <sp>
@@ -1330,7 +1486,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Alack, for mercy!</hi></l>
+                  <l>
+                     <hi rend="indent">Alack, for mercy!</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Ferdinand</speaker>
@@ -1339,13 +1497,16 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <stage>Aside</stage> <l>The Duke of Milan </l>
+                  <stage>Aside</stage>
+                  <l>The Duke of Milan </l>
                   <l n="436">And his more braver daughter could control thee,</l>
                   <l n="437">If now 'twere fit to do't. At the first sight</l>
                   <l n="438">They have changed eyes. Delicate Ariel,</l>
                   <l n="439">I'll set thee free for this.</l>
                   <stage>To Ferdinand</stage>
-                  <l><hi rend="indent">A word, good sir;</hi></l>
+                  <l>
+                     <hi rend="indent">A word, good sir;</hi>
+                  </l>
                   <l n="440">I fear you have done yourself some wrong: a word.</l>
                </sp>
                <sp>
@@ -1357,19 +1518,25 @@
                </sp>
                <sp>
                   <speaker>Ferdinand</speaker>
-                  <l><hi rend="indent">O, if a virgin,</hi></l>
+                  <l>
+                     <hi rend="indent">O, if a virgin,</hi>
+                  </l>
                   <l n="445">And your affection not gone forth, I'll make you</l>
                   <l n="446">The queen of Naples.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Soft, sir! one word more.</hi></l>
+                  <l>
+                     <hi rend="indent">Soft, sir! one word more.</hi>
+                  </l>
                   <stage>Aside</stage>
                   <l n="447">They are both in either's powers; but this swift business</l>
                   <l n="448">I must uneasy make, lest too light winning</l>
                   <l n="449">Make the prize light.</l>
                   <stage>[To Ferdinand]</stage>
-                  <l><hi rend="indent">One word more; I charge thee</hi></l>
+                  <l>
+                     <hi rend="indent">One word more; I charge thee</hi>
+                  </l>
                   <l n="450">That thou attend me: thou dost here usurp</l>
                   <l n="451">The name thou owest not; and hast put thyself</l>
                   <l n="452">Upon this island as a spy, to win it</l>
@@ -1377,7 +1544,9 @@
                </sp>
                <sp>
                   <speaker>Ferdinand</speaker>
-                  <l><hi rend="indent">No, as I am a man.</hi></l>
+                  <l>
+                     <hi rend="indent">No, as I am a man.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
@@ -1387,7 +1556,9 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Follow me.</hi></l>
+                  <l>
+                     <hi rend="indent">Follow me.</hi>
+                  </l>
                   <pb n="6" facs="pageImages/006.png"/>
                   <l n="457">Speak not you for him; he's a traitor. Come;</l>
                   <l n="458">I'll manacle thy neck and feet together:</l>
@@ -1397,20 +1568,26 @@
                </sp>
                <sp>
                   <speaker>Ferdinand</speaker>
-                  <l><hi rend="indent">No;</hi></l>
+                  <l>
+                     <hi rend="indent">No;</hi>
+                  </l>
                   <l n="462">I will resist such entertainment till</l>
                   <l n="463">Mine enemy has more power.</l>
                </sp>
                <stage>Draws, and is charmed from moving</stage>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">O dear father,</hi></l>
+                  <l>
+                     <hi rend="indent">O dear father,</hi>
+                  </l>
                   <l n="464">Make not too rash a trial of him, for</l>
                   <l n="465">He's gentle and not fearful.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">What? I say,</hi></l>
+                  <l>
+                     <hi rend="indent">What? I say,</hi>
+                  </l>
                   <l n="466">My foot my tutor? Put thy sword up, traitor;</l>
                   <l n="467">Who makest a show but darest not strike, thy conscience</l>
                   <l n="468">Is so possess'd with guilt: come from thy ward,</l>
@@ -1419,7 +1596,9 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Beseech you, father.</hi></l>
+                  <l>
+                     <hi rend="indent">Beseech you, father.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
@@ -1427,12 +1606,16 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Sir, have pity;</hi></l>
+                  <l>
+                     <hi rend="indent">Sir, have pity;</hi>
+                  </l>
                   <l n="472">I'll be his surety.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Silence! one word more</hi></l>
+                  <l>
+                     <hi rend="indent">Silence! one word more</hi>
+                  </l>
                   <l n="473">Shall make me chide thee, if not hate thee. What!</l>
                   <l n="474">An advocate for an imposter! hush!</l>
                   <l n="475">Thou think'st there is no more such shapes as he,</l>
@@ -1442,19 +1625,25 @@
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">My affections</hi></l>
+                  <l>
+                     <hi rend="indent">My affections</hi>
+                  </l>
                   <l n="479">Are then most humble; I have no ambition</l>
                   <l n="480">To see a goodlier man.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Come on; obey:</hi></l>
+                  <l>
+                     <hi rend="indent">Come on; obey:</hi>
+                  </l>
                   <l n="481">Thy nerves are in their infancy again</l>
                   <l n="482">And have no vigour in them.</l>
                </sp>
                <sp>
                   <speaker>Ferdinand</speaker>
-                  <l><hi rend="indent">So they are;</hi></l>
+                  <l>
+                     <hi rend="indent">So they are;</hi>
+                  </l>
                   <l n="483">My spirits, as in a dream, are all bound up.</l>
                   <l n="484">My father's loss, the weakness which I feel,</l>
                   <l n="485">The wreck of all my friends, nor this man's threats,</l>
@@ -1466,36 +1655,50 @@
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <stage>Aside</stage> 
-                  <l><hi rend="indent">It works. </hi></l>
-                  <stage>To Ferdinand</stage> 
-                  <l><hi rend="indent">Come on.</hi></l>
-                  <l n="491">Thou hast done well, fine Ariel! <stage>[To Ferdinand] </stage>Follow me.</l>
-                  <stage>To Ariel</stage> <l n="492">Hark what thou else shalt do me.</l>
+                  <stage>Aside</stage>
+                  <l>
+                     <hi rend="indent">It works. </hi>
+                  </l>
+                  <stage>To Ferdinand</stage>
+                  <l>
+                     <hi rend="indent">Come on.</hi>
+                  </l>
+                  <l n="491">Thou hast done well, fine Ariel! <stage>[To Ferdinand] </stage>Follow
+                     me.</l>
+                  <stage>To Ariel</stage>
+                  <l n="492">Hark what thou else shalt do me.</l>
                </sp>
                <sp>
                   <speaker>Miranda</speaker>
-                  <l><hi rend="indent">Be of comfort;</hi></l>
+                  <l>
+                     <hi rend="indent">Be of comfort;</hi>
+                  </l>
                   <l n="493">My father's of a better nature, sir,</l>
                   <l n="494">Than he appears by speech: this is unwonted</l>
                   <l n="495">Which now came from him.</l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
-                  <l><hi rend="indent">Thou shalt be free</hi></l>
+                  <l>
+                     <hi rend="indent">Thou shalt be free</hi>
+                  </l>
                   <l n="496">As mountain winds: but then exactly do</l>
                   <l n="497">All points of my command.</l>
                </sp>
                <sp>
                   <speaker>Ariel</speaker>
-                  <l><hi rend="indent">To the syllable.</hi></l>
+                  <l>
+                     <hi rend="indent">To the syllable.</hi>
+                  </l>
                </sp>
                <sp>
                   <speaker>Prospero</speaker>
                   <stage>[To Ferdinand.]</stage>
-                  <l n="498">Come, follow.</l> 
+                  <l n="498">Come, follow.</l>
                   <stage>[To Miranda.]</stage>
-                  <l><hi rend="indent">Speak not for him.</hi></l>
+                  <l>
+                     <hi rend="indent">Speak not for him.</hi>
+                  </l>
                </sp>
                <stage>Exeunt</stage>
             </div>
@@ -1504,8 +1707,8 @@
             <head type="sub">Act II</head>
             <div type="scene">
                <head type="sub">Scene I. Another part of the island.</head>
-               <stage>Enter Alonso, Sebastian, Antonio, Gonzalo, Adrian,
-                     Francisco, and others</stage>
+               <stage>Enter Alonso, Sebastian, Antonio, Gonzalo, Adrian, Francisco, and
+                  others</stage>
                <sp>
                   <speaker>Gonzalo</speaker>
                   <l n="1">Beseech you, sir, be merry; you have cause,</l>
@@ -1532,8 +1735,7 @@
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
-                  <l n="12">Look he's winding up the watch of his wit;
-                  by and by it will strike.</l>
+                  <l n="12">Look he's winding up the watch of his wit; by and by it will strike.</l>
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
@@ -1545,8 +1747,8 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="15">When every grief is entertain'd that's offer'd,
-                  Comes to the entertainer--</l>
+                  <l n="15">When every grief is entertain'd that's offer'd, Comes to the
+                     entertainer--</l>
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
@@ -1554,8 +1756,8 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="17">Dolour comes to him, indeed: you
-                  have spoken truer than you purposed.</l>
+                  <l n="17">Dolour comes to him, indeed: you have spoken truer than you
+                     purposed.</l>
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
@@ -1583,8 +1785,7 @@
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
-                  <l n="24">Which, of he or Adrian, for a good
-                     wager, first begins to crow?</l>
+                  <l n="24">Which, of he or Adrian, for a good wager, first begins to crow?</l>
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
@@ -1632,8 +1833,7 @@
                </sp>
                <sp>
                   <speaker>Adrian</speaker>
-                  <l n="36">It must needs be of subtle, tender and delicate 
-                     temperance.</l>
+                  <l n="36">It must needs be of subtle, tender and delicate temperance.</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
@@ -1689,8 +1889,7 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="50">But the rarity of it is,--which is indeed almost 
-                     beyond credit,--</l>
+                  <l n="50">But the rarity of it is,--which is indeed almost beyond credit,--</l>
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
@@ -1698,15 +1897,13 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="52">That our garments, being, as they were, drenched in
-                  the sea, hold notwithstanding their freshness and 
-                  glosses, being rather new-dyed than stained with
-                  salt water.</l>
+                  <l n="52">That our garments, being, as they were, drenched in the sea, hold
+                     notwithstanding their freshness and glosses, being rather new-dyed than stained
+                     with salt water.</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
-                  <l n="53">If but one of his pockets could speak, would it not
-                     say he lies?</l>
+                  <l n="53">If but one of his pockets could speak, would it not say he lies?</l>
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
@@ -1715,9 +1912,9 @@
                <pb n="7" facs="pageImages/007.png"/>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="55">Methinks our garments are now as fresh as when we 
-                     put them on first in Afric, at the marriage of 
-                     the king's fair daughter Claribel to the King of Tunis.</l>
+                  <l n="55">Methinks our garments are now as fresh as when we put them on first in
+                     Afric, at the marriage of the king's fair daughter Claribel to the King of
+                     Tunis.</l>
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
@@ -1725,8 +1922,7 @@
                </sp>
                <sp>
                   <speaker>Adrian</speaker>
-                  <l n="57">Tunis was never graced before with such a paragon to
-                     their queen.</l>
+                  <l n="57">Tunis was never graced before with such a paragon to their queen.</l>
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
@@ -1738,13 +1934,13 @@
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
-                  <l n="60">What if he had said 'widower AEneas' too? Good Lord, 
-                     how you take it!</l>
+                  <l n="60">What if he had said 'widower AEneas' too? Good Lord, how you take
+                     it!</l>
                </sp>
                <sp>
                   <speaker>Adrian</speaker>
-                  <l n="61">'Widow Dido' said you? you make me study of that: 
-                     she was of Carthage, not of Tunis.</l>
+                  <l n="61">'Widow Dido' said you? you make me study of that: she was of Carthage,
+                     not of Tunis.</l>
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
@@ -1760,8 +1956,8 @@
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
-                  <l n="65">His word is more than the miraculous harp; he hath 
-                     raised the wall and houses too.</l>
+                  <l n="65">His word is more than the miraculous harp; he hath raised the wall and
+                     houses too.</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
@@ -1769,13 +1965,12 @@
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
-                  <l n="67">I think he will carry this island home in his pocket 
-                     and give it his son for an apple.</l>
+                  <l n="67">I think he will carry this island home in his pocket and give it his son
+                     for an apple.</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
-                  <l n="68">And, sowing the kernels of it in the sea, bring 
-                     forth more islands.</l>
+                  <l n="68">And, sowing the kernels of it in the sea, bring forth more islands.</l>
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
@@ -1787,9 +1982,8 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="71">Sir, we were talking that our garments seem now 
-                     as fresh as when we were at Tunis at the marriage 
-                     of your daughter, who is now queen.</l>
+                  <l n="71">Sir, we were talking that our garments seem now as fresh as when we were
+                     at Tunis at the marriage of your daughter, who is now queen.</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
@@ -1805,8 +1999,8 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="75">Is not, sir, my doublet as fresh as the first day I 
-                     wore it? I mean, in a sort.</l>
+                  <l n="75">Is not, sir, my doublet as fresh as the first day I wore it? I mean, in
+                     a sort.</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
@@ -1938,8 +2132,7 @@
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
-                  <l n="129">The latter end of his commonwealth forgets the 
-                     beginning.</l>
+                  <l n="129">The latter end of his commonwealth forgets the beginning.</l>
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
@@ -1980,11 +2173,10 @@
                   <l n="141">Prithee, no more: thou dost talk nothing to me.</l>
                </sp>
                <sp>
-                  <speaker>Gonzalo</speaker> 
-                  <l n="142">I do well believe your highness; and 
-                     did it to minister occasion to these gentlemen, 
-                     who are of such sensible and nimble lungs that 
-                     they always use to laugh at nothing.</l>
+                  <speaker>Gonzalo</speaker>
+                  <l n="142">I do well believe your highness; and did it to minister occasion to
+                     these gentlemen, who are of such sensible and nimble lungs that they always use
+                     to laugh at nothing.</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
@@ -1992,9 +2184,8 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="144">Who in this kind of merry fooling am nothing 
-                     to you: so you may continue and laugh at 
-                     nothing still.</l>
+                  <l n="144">Who in this kind of merry fooling am nothing to you: so you may
+                     continue and laugh at nothing still.</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
@@ -2006,9 +2197,8 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="147">You are gentlemen of brave metal; you would lift 
-                     the moon out of her sphere, if she would continue 
-                     in it five weeks without changing.</l>
+                  <l n="147">You are gentlemen of brave metal; you would lift the moon out of her
+                     sphere, if she would continue in it five weeks without changing.</l>
                </sp>
                <stage>Enter Ariel, invisible, playing solemn music</stage>
                <sp>
@@ -2021,9 +2211,8 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l n="150">No, I warrant you; I will not adventure 
-                     my discretion so weakly. Will you laugh
-                     me asleep, for I am very heavy?</l>
+                  <l n="150">No, I warrant you; I will not adventure my discretion so weakly. Will
+                     you laugh me asleep, for I am very heavy?</l>
                </sp>
                <sp>
                   <speaker>Antonio</speaker>
@@ -2032,9 +2221,8 @@
                <stage>All sleep except Alonso, Sebastian, and Antonio</stage>
                <sp>
                   <speaker>Alonso</speaker>
-                  <l n="152">What, all so soon asleep! I wish mine eyes 
-                     Would, with themselves, shut up my thoughts: I find 
-                     They are inclined to do so.</l>
+                  <l n="152">What, all so soon asleep! I wish mine eyes Would, with themselves, shut
+                     up my thoughts: I find They are inclined to do so.</l>
                </sp>
                <sp>
                   <speaker>Sebastian</speaker>
@@ -2298,8 +2486,7 @@
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
-                  <l rend="indent2">Now, good angels 
-                     Preserve the king.</l>
+                  <l rend="indent2">Now, good angels Preserve the king.</l>
                </sp>
                <stage>They wake</stage>
                <sp>
@@ -2364,8 +2551,7 @@
             </div>
             <div type="scene">
                <head type="sub">Scene II. Another part of the island.</head>
-               <stage>Enter Caliban with a burden of wood. A noise of thunder
-                     heard</stage>
+               <stage>Enter Caliban with a burden of wood. A noise of thunder heard</stage>
                <sp>
                   <speaker>Caliban</speaker>
                   <l>All the infections that the sun sucks up</l>
@@ -2732,8 +2918,7 @@
                   <l>But these sweet thoughts do even refresh my labours,</l>
                   <l>Most busy lest, when I do it.</l>
                </sp>
-               <stage>Enter Miranda; and Prospero at a distance,
-                  unseen</stage>
+               <stage>Enter Miranda; and Prospero at a distance, unseen</stage>
                <sp>
                   <speaker>Miranda</speaker>
                   <l>Alas, now, pray you,</l>
@@ -3271,8 +3456,8 @@
             </div>
             <div type="scene">
                <head type="sub">Scene III. Another part of the island.</head>
-               <stage>Enter Alonso, Sebastian, Antonio, Gonzalo, Adrian,
-                     Francisco, and others</stage>
+               <stage>Enter Alonso, Sebastian, Antonio, Gonzalo, Adrian, Francisco, and
+                  others</stage>
                <sp>
                   <speaker>Gonzalo</speaker>
                   <l>By'r lakin, I can go no further, sir;</l>
@@ -3293,8 +3478,7 @@
                <sp>
                   <speaker>Antonio</speaker>
                   <l>
-                     <stage>Aside to Sebastian</stage> I am right glad that
-                     he's so </l>
+                     <stage>Aside to Sebastian</stage> I am right glad that he's so </l>
                   <l>out of hope.</l>
                   <l>Do not, for one repulse, forego the purpose</l>
                   <l>That you resolved to effect.</l>
@@ -3316,8 +3500,7 @@
                <sp>
                   <speaker>Sebastian</speaker>
                   <l>
-                     <stage>Aside to Antonio</stage> I say, to-night: no
-                     more. </l>
+                     <stage>Aside to Antonio</stage> I say, to-night: no more. </l>
                </sp>
                <stage>Solemn and strange music</stage>
                <sp>
@@ -3328,9 +3511,9 @@
                   <speaker>Gonzalo</speaker>
                   <l>Marvellous sweet music!</l>
                </sp>
-               <stage>Enter Prospero above, invisible. Enter several strange
-                     Shapes, bringing in a banquet; they dance about it with gentle actions of
-                     salutation; and, inviting the King, &amp;c. to eat, they depart</stage>
+               <stage>Enter Prospero above, invisible. Enter several strange Shapes, bringing in a
+                  banquet; they dance about it with gentle actions of salutation; and, inviting the
+                  King, &amp;c. to eat, they depart</stage>
                <sp>
                   <speaker>Alonso</speaker>
                   <l>Give us kind keepers, heavens! What were these?</l>
@@ -3411,9 +3594,8 @@
                   <l>The best is past. Brother, my lord the duke,</l>
                   <l>Stand to and do as we.</l>
                </sp>
-               <stage>Thunder and lightning. Enter Ariel, like a harpy; claps his
-                     wings upon the table; and, with a quaint device, the banquet
-                  vanishes</stage>
+               <stage>Thunder and lightning. Enter Ariel, like a harpy; claps his wings upon the
+                  table; and, with a quaint device, the banquet vanishes</stage>
                <sp>
                   <speaker>Ariel</speaker>
                   <l>You are three men of sin, whom Destiny,</l>
@@ -3449,8 +3631,8 @@
                   <l>Upon your heads--is nothing but heart-sorrow</l>
                   <l>And a clear life ensuing.</l>
                </sp>
-               <stage>He vanishes in thunder; then, to soft music enter the Shapes
-                     again, and dance, with mocks and mows, and carrying out the table</stage>
+               <stage>He vanishes in thunder; then, to soft music enter the Shapes again, and dance,
+                  with mocks and mows, and carrying out the table</stage>
                <sp>
                   <speaker>Prospero</speaker>
                   <l>Bravely the figure of this harpy hast thou</l>
@@ -3740,8 +3922,7 @@
                   <l>So rare a wonder'd father and a wife</l>
                   <l>Makes this place Paradise.</l>
                </sp>
-               <stage>Juno and Ceres whisper, and send Iris on
-                  employment</stage>
+               <stage>Juno and Ceres whisper, and send Iris on employment</stage>
                <sp>
                   <speaker>Prospero</speaker>
                   <l>Sweet, now, silence!</l>
@@ -3764,10 +3945,9 @@
                   <l>And these fresh nymphs encounter every one</l>
                   <l>In country footing.</l>
                </sp>
-               <stage>Enter certain Reapers, properly habited: they join with the
-                     Nymphs in a graceful dance; towards the end whereof Prospero starts suddenly,
-                     and speaks; after which, to a strange, hollow, and confused noise, they heavily
-                     vanish</stage>
+               <stage>Enter certain Reapers, properly habited: they join with the Nymphs in a
+                  graceful dance; towards the end whereof Prospero starts suddenly, and speaks;
+                  after which, to a strange, hollow, and confused noise, they heavily vanish</stage>
                <sp>
                   <speaker>Prospero</speaker>
                   <l>
@@ -3877,12 +4057,11 @@
                   <l>And as with age his body uglier grows,</l>
                   <l>So his mind cankers. I will plague them all,</l>
                   <l>Even to roaring.</l>
-                  <stage>Re-enter Ariel, loaden with glistering apparel,
-                        &amp;c</stage>
+                  <stage>Re-enter Ariel, loaden with glistering apparel, &amp;c</stage>
                   <l>Come, hang them on this line.</l>
                </sp>
-               <stage>Prospero and Ariel remain invisible. Enter Caliban,
-                     Stephano, and Trinculo, all wet</stage>
+               <stage>Prospero and Ariel remain invisible. Enter Caliban, Stephano, and Trinculo,
+                  all wet</stage>
                <sp>
                   <speaker>Caliban</speaker>
                   <l>Pray you, tread softly, that the blind mole may not</l>
@@ -4021,9 +4200,8 @@
                   <speaker>Stephano</speaker>
                   <l>Ay, and this.</l>
                </sp>
-               <stage>A noise of hunters heard. Enter divers Spirits, in shape of
-                     dogs and hounds, and hunt them about, Prospero and Ariel setting them
-                  on</stage>
+               <stage>A noise of hunters heard. Enter divers Spirits, in shape of dogs and hounds,
+                  and hunt them about, Prospero and Ariel setting them on</stage>
                <sp>
                   <speaker>Prospero</speaker>
                   <l>Hey, Mountain, hey!</l>
@@ -4035,8 +4213,7 @@
                <sp>
                   <speaker>Prospero</speaker>
                   <l>Fury, Fury! there, Tyrant, there! hark! hark!</l>
-                  <stage>Caliban, Stephano, and Trinculo, are driven
-                     out</stage>
+                  <stage>Caliban, Stephano, and Trinculo, are driven out</stage>
                   <l>Go charge my goblins that they grind their joints</l>
                   <l>With dry convulsions, shorten up their sinews</l>
                   <l>With aged cramps, and more pinch-spotted make them</l>
@@ -4152,10 +4329,10 @@
                   <l>And deeper than did ever plummet sound</l>
                   <l>I'll drown my book.</l>
                   <stage>Solemn music</stage>
-                  <stage>Re-enter Ariel before: then Alonso, with a frantic
-                        gesture, attended by Gonzalo; Sebastian and Antonio in like manner, attended
-                        by Adrian and Francisco they all enter the circle which Prospero had made,
-                        and there stand charmed; which Prospero observing, speaks:</stage>
+                  <stage>Re-enter Ariel before: then Alonso, with a frantic gesture, attended by
+                     Gonzalo; Sebastian and Antonio in like manner, attended by Adrian and Francisco
+                     they all enter the circle which Prospero had made, and there stand charmed;
+                     which Prospero observing, speaks:</stage>
                   <l>A solemn air and the best comforter</l>
                   <l>To an unsettled fancy cure thy brains,</l>
                   <l>Now useless, boil'd within thy skull! There stand,</l>
@@ -4342,8 +4519,7 @@
                   <l>At least bring forth a wonder, to content ye</l>
                   <l>As much as me my dukedom.</l>
                </sp>
-               <stage>Here Prospero discovers Ferdinand and Miranda playing at
-                     chess</stage>
+               <stage>Here Prospero discovers Ferdinand and Miranda playing at chess</stage>
                <sp>
                   <speaker>Miranda</speaker>
                   <l>Sweet lord, you play me false.</l>
@@ -4450,16 +4626,14 @@
                <sp>
                   <speaker>Alonso</speaker>
                   <l>
-                     <stage>To Ferdinand and Miranda</stage> Give me your
-                     hands: </l>
+                     <stage>To Ferdinand and Miranda</stage> Give me your hands: </l>
                   <l>Let grief and sorrow still embrace his heart</l>
                   <l>That doth not wish you joy!</l>
                </sp>
                <sp>
                   <speaker>Gonzalo</speaker>
                   <l>Be it so! Amen!</l>
-                  <stage>Re-enter Ariel, with the Master and Boatswain amazedly
-                        following</stage>
+                  <stage>Re-enter Ariel, with the Master and Boatswain amazedly following</stage>
                   <l>O, look, sir, look, sir! here is more of us:</l>
                   <l>I prophesied, if a gallows were on land,</l>
                   <l>This fellow could not drown. Now, blasphemy,</l>
@@ -4513,8 +4687,7 @@
                <sp>
                   <speaker>Prospero</speaker>
                   <l>
-                     <stage>Aside to Ariel</stage> Bravely, my diligence.
-                     Thou shalt be free. </l>
+                     <stage>Aside to Ariel</stage> Bravely, my diligence. Thou shalt be free. </l>
                </sp>
                <sp>
                   <speaker>Alonso</speaker>
@@ -4541,8 +4714,8 @@
                   <l>There are yet missing of your company</l>
                   <l>Some few odd lads that you remember not.</l>
                </sp>
-               <stage>Re-enter Ariel, driving in Caliban, Stephano and Trinculo,
-                     in their stolen apparel</stage>
+               <stage>Re-enter Ariel, driving in Caliban, Stephano and Trinculo, in their stolen
+                  apparel</stage>
                <sp>
                   <speaker>Stephano</speaker>
                   <l>Every man shift for all the rest, and</l>
@@ -4718,11 +4891,15 @@
                <l>Unless I be relieved by prayer,</l>
                <l>Which pierces so that it assaults</l>
                <l>Mercy itself and frees all faults.</l>
-               <l><hi rend="indent">As you from crimes would pardon'd be,</hi></l>
-               <l><hi rend="indent">Let your indulgence set me free.</hi></l>
+               <l>
+                  <hi rend="indent">As you from crimes would pardon'd be,</hi>
+               </l>
+               <l>
+                  <hi rend="indent">Let your indulgence set me free.</hi>
+               </l>
             </sp>
          </epilogue>
-         
+
          <trailer>FINIS</trailer>
       </back>
    </text>
