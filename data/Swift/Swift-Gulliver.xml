@@ -1,22 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="swift-gulliver">
+<!-- 
+    Extent Still needs to be worked out with the proper sizing dimensionso`8j
+    ClassDecl/Taxonomy stuff needs to be inserted and properly done.
+!-->         
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Swift">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title></title>
+                <title type="main">Travels into Several Remote Nations of the World</title>
+                
+                <author>
+                    <persName type="lcnaf" key="n97925119">
+                        <name>
+                            <forename>Jonathan</forename>
+                            <surname>Swift</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#TH">
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
+                        </name>
+                    </persName>
+                    <persName type="orcid" key="0000-0002-3544-2891">
+                        <name>
+                            <forename>Sara</forename>
+                            <surname>Brunstetter</surname>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Students of The University of Virginia</name>
+                    <name>Samuel Nicol</name>
+                    <name>Millicent Wise</name>
+                    <name>Jianna Torre</name>
+                    <name>Sara Brunstetter</name>
+                    <name>Spencer Suddarth</name>
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
             </titleStmt>
+            
             <publicationStmt>
-
-                <p>test document of gulliver's travels</p>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
             </publicationStmt>
             <sourceDesc>
-                <p>test document for gulliver's travels</p>
+                <bibl>This edition has been prepared from the edition undertaken by the University
+                    of Virginia Library, which reproduces the copy of the first edition in the
+                    University of Virginia Special Collections Library, Charlottesville, Virginia.
+                    <extent/>
+                </bibl>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n97925119">
+                                <name>
+                                    <forename>Jonathan </forename>
+                                    <surname>Swift</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title type="main">Travels into Several Remote Nations of the World</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="city" key="ld">London</placeName>
+                            </pubPlace>
+                            <publisher>Benjamin Motte</publisher>
+                            <pubPlace>
+                                <placeName type="country" key="England">United Kingdom</placeName>
+                                <placeName type="city" key="lon">London</placeName>
+                            </pubPlace>
+                            <date when="1726">1726</date>
+                            <note resp="editors.xml#JOB"> The publication history of <hi
+                                rend="italic">Gulliver's Travels</hi> is complicated, and so too
+                                is the publication history of this digital edition. Swift's first
+                                publisher, Benjamin Motte, altered the text a bit to disguise some
+                                of the harshest and most obvious episodes of satire against the
+                                government. Most of these changes occur in Book I, where the
+                                Lilliputian court was enough like the court culture of London in
+                                1726 that readers would be quick to make obvious connections. Swift
+                                does not seem to have been happy about the changes, and when the
+                                opportunity came to revise the text back to what he intended in
+                                1735, Swift took it, and restored some of the original jokes. This
+                                is the edition that has most frequently been reprinted since the
+                                1730s. Our digital edition is based on the version encoded for the
+                                University of Virginia's E-Text Center in the 1990s and early 2000s.
+                                It in turn is a transcription of the 1784 edition of Swift's
+                                collected works as edited by Thomas Sheridan. Why this particular
+                                edition was chosen by the E-Text Center is at this point beyond
+                                reconstruction; one suspects that the facts that the edition was in
+                                the public domain and close at hand played a significant part. But
+                                the choice of base text explains why there are a few points where
+                                the reading text produced here differs from the page images, which
+                                are taken from a copy of the first, 1726 edition in the University
+                                of Michigan Library, digitized by Google and accessed through the
+                                HathiTrust.</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
             </sourceDesc>
         </fileDesc>
+        
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="satire">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="low"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <time when="1726">1726</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        
+        <encodingDesc>
+            <!-- BEGINS Encoding Description -->
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                    Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
     </teiHeader>
-    <text>
-        <body>
-        <head>
+    
+    
+    <text xml:lang="eng">
+        <front>
+            <titlePage>
+                <pb n="[Title Page]"
+                    facs="https://lic-assets-staging.s3.amazonaws.com/Swift/pageImages/Gulliver-1-title-page.jpg"/>
+                
+                <titlePart type="main"><ref target="a000" corresp="n000">TRAVELS</ref>
+                    <lb/> INTO SEVERAL <lb/> Remote NATIONS <lb/> OF THE <lb/> WORLD. <milestone
+                        unit="part" rend="line"/>
+                    <lb/> IN FOUR PARTS</titlePart>
+                <milestone unit="part" rend="line"/>
+                <lb/>
+                <titlePart type="subtitle">By <hi rend="italic">LEMUEL GULLIVER,</hi>
+                    <lb/> first a Surgeon, and then a Captain <lb/> of several SHIPS</titlePart>
+                <milestone unit="part" rend="line"/>
+                <lb/>
+                <titlePart type="desc">VOL. I.</titlePart>
+                <lb/>
+                <milestone unit="part" rend="line"/>
+                <docImprint>
+                    <pubPlace>
+                        <placeName type="tgn" key="7011781"><hi rend="italic"
+                            >LONDON:</hi></placeName></pubPlace>
+                    <publisher><hi rend="italic">Printed for</hi> BENJ. MOTTE, <hi rend="italic">at
+                        the Middle</hi> Temple-Gate <hi rend="italic">in</hi>
+                        Fleet-street</publisher>
+                    <docDate>M, DCC, XXVI</docDate></docImprint>
+                <lb/>
+                <lb/>
+                <lb/>
+            </titlePage>
+        </front>
+      
+    <body>
+    <head>
+        
 When it was first published in 1726, the book that we have come to call <hi rend="italics">Gulliver’s Travels</hi> appeared, without any advance notice or fanfare, on the shelves of London booksellers under the title <hi rend="italics">Travels into Several Remote Nations of the World</hi>, with the author identified as “Lemuel Gulliver, first a Surgeon, and then a Captain of Several Ships." The name Jonathan Swift appeared nowhere on the book; rather, “Lemuel Gulliver" was portrayed in a frontispiece portrait that identified him as being fifty-eight years old and a resident of Redriff, a village on the Thames river to the south east of London, a logical place for a retired seaman to be living.
             <lb/>
             <lb/>
