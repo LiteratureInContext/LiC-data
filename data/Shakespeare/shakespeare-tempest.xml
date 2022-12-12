@@ -83,8 +83,8 @@
                      <forename>William</forename>
                      <surname>Shakespeare</surname>
                   </author>
-                  <title type="sub">Mr. William Shakespeares comedies, histories, &amp;amp;
-                     tragedies : published according to the true originall copies.</title>
+                  <title type="sub">Mr. William Shakespeares comedies, histories, &amp;
+                     tragedies: published according to the true originall copies.</title>
                   <imprint>
                      <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
                      <pubPlace>
@@ -108,18 +108,17 @@
                   </imprint>
                   <imprint>
                      <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
-                     <pubPlace key="7014406">Philadelphia, PA</pubPlace>
-                     <publisher> University of Pennsylvania, Celebration of Women Writers </publisher>
-                     <date>n.d.</date>
-                     <note> Text for this digital edition drawn from <ref
+                     <pubPlace>Online</pubPlace>
+                     <publisher>iBiblio</publisher>
+                     <date>1999</date>
+                     <note>Base xml for this digital edition drawn from <ref
                            target="https://www.ibiblio.org/xml/examples/shakespeare/tempest.xml">
-                           https://www.ibiblio.org/xml/examples/shakespeare/tempest.xml </ref>. Note
-                        that this digital edition uses modern spelling. Page breaks have been added
-                        according to the First Folio.</note>
+                           https://www.ibiblio.org/xml/examples/shakespeare/tempest.xml</ref>.</note>
                      <note>
                         <p>Text placed in the public domain by Moby Lexical Tools, 1992. Original
                            SGML markup by Jon Bosak, 1992-1994. XML version by Jon Bosak, 1996-1998.
-                           XML updated for P5 guidelines, 2022.</p>
+                           XML updated for LiC guidelines, 2022. Page breaks have been added
+                           according to the First Folio. Line numbers have been added according to the Riverside Shakespeare (1974).</p>
                      </note>
                   </imprint>
                   <extent> 34 cm. (fol.)</extent>
@@ -167,9 +166,6 @@
          <settingDesc>
             <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
             <setting>
-               <name type="tgn" key="">XXX</name>
-               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="">XXX</name>
                <time from="1609" to="1610">Early 17th Century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
             </setting>
@@ -183,22 +179,19 @@
          <projectDesc>
             <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
                project, which provides an accessible, curated, and marked-up selection of primary
-               sources relevant to the study and the teaching of British and American literature of
-               the 18th century. This project is funded by the National Endowment for the Humanities
+               sources relevant to the study and the teaching of British and American literature. This project is funded by the National Endowment for the Humanities
                and developed by faculty at The University of Virginia and Marymount University. </p>
          </projectDesc>
          <editorialDecl>
             <interpretation>
                <p>Research informing these annotations draws on publicly-accessible resources, with
-                  links provided where possible. Annotations have also included common knowledge,
+                  links provided where possible. Annotations also include common knowledge,
                   defined as information that can be found in multiple reliable sources. If you
                   notice an error in these annotations, please contact lic.open.anthology@gmail.com.
                </p>
             </interpretation>
             <normalization>
-               <p>For this edition of <hi rend="italic">The Tempest</hi>spelling and capitalization
-                  have been modernized. The long s has been silently modernized and ligatured forms
-                  are not encoded.</p>
+               <p>Text for this edition of <hi rend="italic">The Tempest</hi> uses public domain base text by Moby Lexical Tools, 1992. Ligatured forms are not encoded. Line breaks and numbering have been regularized to correspond with the Rivierside Shakespeare edition. Otherwise, all capitalization, contraction, spelling, ligatured forms, and other details are from the 1992 public domain base text as encoded into XML by Jon Bosak. Missing and inferred stage directions are indicated with square brackets. </p>
             </normalization>
             <hyphenation>
                <p>Hyphenation has not been retained, except where necessary for the sense of the
@@ -211,7 +204,7 @@
                   whether the text is in prose or poetry, modern editions have been consulted.</p>
             </segmentation>
             <correction>
-               <p>Correction has been done according to XXXX. See the Sources section.</p>
+               <p>Correction to line breaks have been done to conform to the Riverside Shakespeare edition. </p>
             </correction>
          </editorialDecl>
          <tagsDecl>
