@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="doyle-sign">
 
    <!--TEI Header BEGINS-->
@@ -15,7 +14,8 @@
             <author>
                <persName type="lcnaf" key="n79082292">
                   <name ref="doyle.xml">
-                     <forename>Arthur Conan</forename>
+                     <forename>Arthur</forename>
+                     <forename>Conan</forename>
                      <surname>Doyle</surname>
                   </name>
                </persName>
@@ -62,14 +62,10 @@
             <biblStruct>
                <analytic>
                   <title>"The Sign of the Four"</title>
+
                </analytic>
                <monogr>
-                  <author>
-                     <name ref="conan-doyle.xml">
-                        <forename>Arthur Conan</forename>
-                        <surname>Doyle</surname>
-                     </name>
-                  </author>
+                 <author><persName></persName></author>
                   <title>Lippincott's Monthly Magazine</title>
                   <imprint>
                      <pubPlace>
@@ -125,7 +121,7 @@
 
          <settingDesc>
             <setting>
-               <name type="tgn" key="7011781"><placeName type="tgn" key="7011781"
+               <name><placeName type="tgn" key="7011781"
                   >London</placeName>, England</name>
                <time from="1888" to="1888">1888</time>
             </setting>
@@ -988,7 +984,7 @@
                      target="https://ontheworldmap.com/uk/city/london/"> On The World Map</ref>,
                   shows London boroughs and surrounding areas. </note>, apparently. Yes, I thought
                so. Now we are on the bridge. You can catch glimpses of the river."</p>
-            <p>We did indeed get a fleeting view of a stretch of the <placeName ref="tgn"
+            <p>We did indeed get a fleeting view of a stretch of the <placeName type="tgn"
                   key="7011913">Thames</placeName> with the lamps shining upon the broad, silent
                water; but our cab dashed on, and was soon involved in a labyrinth of streets upon
                the other side.</p>
@@ -2494,8 +2490,8 @@
                      Technologies</ref>.</note> which is now being published. It may be looked upon
                as the very latest authority. What have we here? ‘<placeName type ="tgn" key="1009838">Andaman Islands</placeName>, situated 340 miles
                to the north of <placeName type="tgn" key="7016484">Sumatra</placeName>, in the <placeName type="tgn" key="1112667">Bay of Bengal</placeName>.’ Hum! hum! What’s all this? Moist
-               climate, coral reefs, sharks, <placeName type="tgn" key="1076627">Port Blair</placeName>, convict-barracks, <placeName type="tgn" key="1008839">Rutland<pb n="190"
-                  facs="pageImages/190.jpg"/> Island</placeName>, cottonwoods—Ah, here we are. ‘The aborigines
+               climate, coral reefs, sharks, <placeName type="tgn" key="1076627">Port Blair</placeName>, convict-barracks, <placeName type="tgn" key="1008839">Rutland</placeName><pb n="190"
+                  facs="pageImages/190.jpg"/> Island, cottonwoods—Ah, here we are. ‘The aborigines
                of the <placeName type ="tgn" key="1009838">Andaman Islands</placeName> may perhaps claim the distinction of being the smallest race
                upon this earth, though some anthropologists prefer the Bushmen of Africa, the Digger
                Indians of America, and the Terra del Fuegians. The average height is rather below
@@ -2957,7 +2953,7 @@
                They send him messages what to do. No, I thought over every possible course, and this
                is the best."</p>
             <p>While this conversation had been proceeding, we had been shooting the long series of
-               bridges which span the <placeName ref="tgn" key="7011913">Thames</placeName>. As we
+               bridges which span the <placeName type="tgn" key="7011913">Thames</placeName>. As we
                passed the City the last rays of the sun were gilding the cross upon the summit of
                St. Paul’s. It was twilight before we reached the Tower.</p>
             <p>“That is Jacobson’s Yard," said Holmes, pointing to a bristle of masts and rigging on
@@ -3034,7 +3030,7 @@
                any question about it. At <placeName type="tgn" key="7018915">Greenwich</placeName> we were about three hundred paces behind them. At
                Blackwall we could not have been more than two hundred and fifty. I have coursed many
                creatures in many countries during my checkered career, but never did sport give me
-               such a wild thrill as this mad, flying man-hunt down the <placeName ref="tgn"
+               such a wild thrill as this mad, flying man-hunt down the <placeName type="tgn"
                   key="7011913">Thames</placeName>. Steadily we drew in upon them, yard by yard. In
                the silence of the night we could hear the panting and clanking of their machinery.
                The man in the stern still crouched upon the deck, and his arms were moving as though
@@ -3093,7 +3089,7 @@
                   n="203 [Break after con-]" facs="pageImages/203.jpg"/> weight, so we transferred
                it carefully to our own little cabin. As we steamed slowly up-stream again, we
                flashed our search-light in every direction, but there was no sign of the Islander.
-               Somewhere in the dark ooze at the bottom of the <placeName ref="tgn" key="7011913"
+               Somewhere in the dark ooze at the bottom of the <placeName type="tgn" key="7011913"
                   >Thames</placeName> lie the bones of that strange visitor to our shores.</p>
             <p>“See here," said Holmes, pointing to the wooden hatchway. “We were hardly quick
                enough with our pistols." There, sure enough, just behind where we had been standing,
@@ -3230,7 +3226,7 @@
             <p>“Pray sit down and tell me all about it, Dr. Watson," said she.</p>
             <p>I narrated briefly what had occurred since I had seen her last,—Holmes’s new method
                of search, the discovery of the Aurora, the appearance of Athelney Jones, our
-               expedition in the evening, and the wild chase down the <placeName ref="tgn"
+               expedition in the evening, and the wild chase down the <placeName type="tgn"
                   key="7011913">Thames</placeName>. She listened with parted lips and shining eyes
                to my recital of our adventures. When I spoke of the dart which had so narrowly
                missed us, she turned so white that I feared that she was about to faint.</p>
@@ -3255,7 +3251,7 @@
                   brass.</note> ."</p>
             <p>“And so heavy!" she exclaimed, trying to raise it. “The box alone must be of some
                value. Where is the key?"</p>
-            <p>“Small threw it into the <placeName ref="tgn" key="7011913">Thames</placeName>," I
+            <p>“Small threw it into the <placeName type="tgn" key="7011913">Thames</placeName>," I
                answered. “I must borrow Mrs. Forrester’s poker." There was in the front a thick and
                broad hasp, wrought in the image of a sitting Buddha. Under this I thrust the end of
                the poker and twisted it outward as a lever. The hasp sprang open with a loud snap.
@@ -3308,7 +3304,7 @@
                cannot have the use of it, and I know that they cannot. I have acted all through for
                them as much as for myself. It’s been the sign of four with us always. Well I know
                that they would have had me do just what I have done, and throw the treasure into the
-                  <placeName ref="tgn" key="7011913">Thames</placeName> rather than let it go to
+                  <placeName type="tgn" key="7011913">Thames</placeName> rather than let it go to
                kith or kin of Sholto or of . It was not to make them rich that we did for Achmet.
                You’ll find the treasure where the key is, and where little Tonga is. When I saw that
                your launch must catch us, I put the loot away in a safe place. There are no
@@ -3317,7 +3313,7 @@
                   unit of money in India, Pakistan, Nepal, Sri Lanka, Mauritius, and the Seychelles.
                   (OED)</note> for you this journey."</p>
             <p>“You are deceiving us, Small," said Athelney Jones, sternly. “If you had wished to
-               throw the treasure into the <placeName ref="tgn" key="7011913">Thames</placeName> it
+               throw the treasure into the <placeName type="tgn" key="7011913">Thames</placeName> it
                would have been easier for you to have thrown box and all."</p>
             <p>“Easier for me to throw, and easier for you to recover," he answered, with a shrewd,
                sidelong look. “The man that was clever enough to hunt me down is clever enough to
@@ -4115,8 +4111,11 @@
             <p>“For me," said Sherlock Holmes, “there still remains the cocaine-bottle." And he
                stretched his long white hand up for it.</p>
          </div>
-         <trailer>THE END.</trailer>
+         
       </body>
+      <back>
+         <div><trailer>THE END.</trailer></div>
+      </back>
    </text>
 </TEI>
 
