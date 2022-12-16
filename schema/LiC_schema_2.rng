@@ -322,23 +322,21 @@
                       </element>
                     </choice>
                   </oneOrMore>
-                  <optional>
-                    <element name="docImprint">
-                      <oneOrMore>
-                        <choice>
-                          <text/>
-                          <ref name="date"/>
-                          <ref name="docDate"/>
-                          <ref name="hi"/>
-                          <ref name="lb"/>
-                          <ref name="milestone"/>
-                          <ref name="note"/>
-                          <ref name="pubPlace"/>
-                          <ref name="publisher"/>
-                        </choice>
-                      </oneOrMore>
-                    </element>
-                  </optional>
+                  <element name="docImprint">
+                    <oneOrMore>
+                      <choice>
+                        <text/>
+                        <ref name="date"/>
+                        <ref name="docDate"/>
+                        <ref name="hi"/>
+                        <ref name="lb"/>
+                        <ref name="milestone"/>
+                        <ref name="note"/>
+                        <ref name="pubPlace"/>
+                        <ref name="publisher"/>
+                      </choice>
+                    </oneOrMore>
+                  </element>
                   <optional>
                     <ref name="docDate"/>
                   </optional>
@@ -380,9 +378,7 @@
         <ref name="name"/>
       </optional>
       <optional>
-        <oneOrMore>
-          <ref name="forename"/>
-        </oneOrMore>
+        <ref name="forename"/>
         <ref name="surname"/>
       </optional>
       <choice>
@@ -425,7 +421,9 @@
   <define name="name">
     <element name="name">
       <optional>
-        <attribute name="key"/>
+        <attribute name="key">
+          <data type="integer"/>
+        </attribute>
       </optional>
       <optional>
         <attribute name="ref"/>
@@ -446,7 +444,6 @@
           <text/>
           <ref name="addName"/>
           <ref name="forename"/>
-          <ref name="placeName"/>
           <ref name="surname"/>
         </choice>
       </oneOrMore>
@@ -595,7 +592,6 @@
       <oneOrMore>
         <choice>
           <text/>
-          <ref name="bibl"/>
           <ref name="date"/>
           <ref name="foreign"/>
           <ref name="graphic"/>
@@ -633,7 +629,6 @@
       <oneOrMore>
         <choice>
           <text/>
-          <ref name="hi"/>
           <ref name="lb"/>
           <ref name="note"/>
           <ref name="pb"/>
@@ -651,6 +646,118 @@
       <optional>
         <attribute name="n"/>
       </optional>
+    </element>
+  </define>
+  <define name="titlePart">
+    <element name="titlePart">
+      <optional>
+        <attribute name="type">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="hi"/>
+          <ref name="lb"/>
+          <ref name="note"/>
+          <ref name="ref"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="byline">
+    <element name="byline">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="docAuthor"/>
+          <ref name="lb"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="quote">
+    <element name="quote">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="bibl"/>
+          <ref name="hi"/>
+          <ref name="lb"/>
+          <ref name="lg"/>
+          <ref name="note"/>
+          <ref name="pb"/>
+          <ref name="ref"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="lb">
+    <element name="lb">
+      <empty/>
+    </element>
+  </define>
+  <define name="milestone">
+    <element name="milestone">
+      <optional>
+        <attribute name="n">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="rend">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <attribute name="unit">
+        <data type="NCName"/>
+      </attribute>
+    </element>
+  </define>
+  <define name="docAuthor">
+    <element name="docAuthor">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="hi"/>
+          <ref name="lb"/>
+          <ref name="note"/>
+          <ref name="ref"/>
+          <ref name="title"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="docDate">
+    <element name="docDate">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="date"/>
+          <ref name="ref"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="hi">
+    <element name="hi">
+      <attribute name="rend">
+        <data type="NCName"/>
+      </attribute>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="bibl"/>
+          <ref name="g"/>
+          <ref name="note"/>
+          <ref name="pb"/>
+          <ref name="persName"/>
+          <ref name="placeName"/>
+          <ref name="ref"/>
+          <ref name="title"/>
+        </choice>
+      </oneOrMore>
     </element>
   </define>
   <define name="div">
@@ -791,118 +898,6 @@
       </optional>
     </element>
   </define>
-  <define name="titlePart">
-    <element name="titlePart">
-      <optional>
-        <attribute name="type">
-          <data type="NCName"/>
-        </attribute>
-      </optional>
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="hi"/>
-          <ref name="lb"/>
-          <ref name="note"/>
-          <ref name="ref"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="byline">
-    <element name="byline">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="docAuthor"/>
-          <ref name="lb"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="lb">
-    <element name="lb">
-      <empty/>
-    </element>
-  </define>
-  <define name="quote">
-    <element name="quote">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="bibl"/>
-          <ref name="hi"/>
-          <ref name="lb"/>
-          <ref name="lg"/>
-          <ref name="note"/>
-          <ref name="pb"/>
-          <ref name="ref"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="milestone">
-    <element name="milestone">
-      <optional>
-        <attribute name="n">
-          <data type="integer"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="rend">
-          <data type="NCName"/>
-        </attribute>
-      </optional>
-      <attribute name="unit">
-        <data type="NCName"/>
-      </attribute>
-    </element>
-  </define>
-  <define name="docAuthor">
-    <element name="docAuthor">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="hi"/>
-          <ref name="lb"/>
-          <ref name="note"/>
-          <ref name="ref"/>
-          <ref name="title"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="docDate">
-    <element name="docDate">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="date"/>
-          <ref name="ref"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="hi">
-    <element name="hi">
-      <attribute name="rend">
-        <data type="NCName"/>
-      </attribute>
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="bibl"/>
-          <ref name="g"/>
-          <ref name="note"/>
-          <ref name="pb"/>
-          <ref name="persName"/>
-          <ref name="placeName"/>
-          <ref name="ref"/>
-          <ref name="title"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
   <define name="body">
     <element name="body">
       <zeroOrMore>
@@ -954,7 +949,7 @@
   </define>
   <define name="forename">
     <element name="forename">
-      <text/>
+      <data type="NCName"/>
     </element>
   </define>
   <define name="surname">
@@ -1056,31 +1051,6 @@
       <data type="NCName"/>
     </element>
   </define>
-  <define name="floatingText">
-    <element name="floatingText">
-      <ref name="body"/>
-    </element>
-  </define>
-  <define name="head">
-    <element name="head">
-      <optional>
-        <attribute name="type">
-          <data type="NCName"/>
-        </attribute>
-      </optional>
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="byline"/>
-          <ref name="hi"/>
-          <ref name="lb"/>
-          <ref name="note"/>
-          <ref name="quote"/>
-          <ref name="ref"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
   <define name="lg">
     <element name="lg">
       <optional>
@@ -1122,6 +1092,70 @@
       <text/>
     </element>
   </define>
+  <define name="dateline">
+    <element name="dateline">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="date"/>
+          <ref name="lb"/>
+          <ref name="placeName"/>
+          <ref name="ref"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="floatingText">
+    <element name="floatingText">
+      <ref name="body"/>
+    </element>
+  </define>
+  <define name="head">
+    <element name="head">
+      <optional>
+        <attribute name="type">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="byline"/>
+          <ref name="hi"/>
+          <ref name="lb"/>
+          <ref name="note"/>
+          <ref name="quote"/>
+          <ref name="ref"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="stage">
+    <element name="stage">
+      <optional>
+        <attribute name="type">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="g"/>
+          <ref name="hi"/>
+          <ref name="note"/>
+          <ref name="ref"/>
+          <element name="expan">
+            <element name="am">
+              <ref name="g"/>
+            </element>
+            <element name="ex">
+              <data type="NCName"/>
+            </element>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
   <define name="l">
     <element name="l">
       <optional>
@@ -1157,32 +1191,6 @@
       </oneOrMore>
     </element>
   </define>
-  <define name="stage">
-    <element name="stage">
-      <optional>
-        <attribute name="type">
-          <data type="NCName"/>
-        </attribute>
-      </optional>
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="g"/>
-          <ref name="hi"/>
-          <ref name="note"/>
-          <ref name="ref"/>
-          <element name="expan">
-            <element name="am">
-              <ref name="g"/>
-            </element>
-            <element name="ex">
-              <data type="NCName"/>
-            </element>
-          </element>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
   <define name="opener">
     <element name="opener">
       <oneOrMore>
@@ -1204,19 +1212,6 @@
         <choice>
           <text/>
           <ref name="lb"/>
-        </choice>
-      </oneOrMore>
-    </element>
-  </define>
-  <define name="dateline">
-    <element name="dateline">
-      <oneOrMore>
-        <choice>
-          <text/>
-          <ref name="date"/>
-          <ref name="lb"/>
-          <ref name="placeName"/>
-          <ref name="ref"/>
         </choice>
       </oneOrMore>
     </element>
