@@ -1,7 +1,9 @@
-   <!--TEI Header BEGINS -->
-<TEI>
- <teiHeader xml:lang="en" xml:id="poe-murders">
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="poe-murders">
+
+ <teiHeader xml:lang="en">
+
 
 
   <fileDesc>
@@ -13,7 +15,8 @@
      <persName type="lcnaf" key="n79029745">
       <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
 
-      <forename>Edgar Allan</forename>
+      <forename>Edgar</forename>
+      <forename>Allan</forename>
       <surname>Poe</surname>
 
      </persName>
@@ -38,7 +41,7 @@
     </respStmt>
     <sponsor/>
     <funder>National Endowment for the Humanities</funder>
-    <funder>VIVA</funder>
+
     <!-- Do not alter. -->
    </titleStmt>
 
@@ -76,7 +79,7 @@
      </analytic>
      <monogr>
       <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
-
+<author><persName></persName></author>
       <title>Graham’s Lady’s and Gentleman’s Magazine</title>
       <imprint>
        <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
@@ -89,16 +92,14 @@
        <date when="1841">1841</date>
        <!-- Insert year of earliest/first edition. Note the attribute @when. -->
 
-       <note>Page images are drawn from <ref target="url">url to the digital magazine</ref>.</note>
+       <note>Text for this digital edition drawn from <ref
+        target="https://www.google.com/books/edition/Graham_s_Magazine/PPNDAQAAMAAJ"
+        >https://www.google.com/books/edition/Graham_s_Magazine/PPNDAQAAMAAJ</ref> and checked
+        against the first edition text using Google Books. </note>
        <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
 
       </imprint>
-      <imprint>
-       <note>Text for this digital edition drawn from <ref
-         target="https://www.google.com/books/edition/Graham_s_Magazine/PPNDAQAAMAAJ"
-         >https://www.google.com/books/edition/Graham_s_Magazine/PPNDAQAAMAAJ</ref> and checked
-        against the first edition text using Google Books. </note>
-      </imprint>
+  
       <biblScope unit="volume">XVIII</biblScope>
       <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
       <biblScope>pp 166-179</biblScope>
@@ -208,15 +209,22 @@
     </taxonomy>
    </classDecl>
   </encodingDesc>
+<revisionDesc>
+ <change when="2021" who="editors.xml#MP">Initial xml and annotations</change>
+ <change when="2021" who="editors.xml#ACC">Initial xml and annotations</change>
 
+</revisionDesc>
  </teiHeader>
  <!--TEI Header Ends -->
  <text>
+  <front><titlePage><titlePart></titlePart>
+   <docImprint></docImprint>
+  </titlePage></front>
   <body>
    <div>
     <pb n="166" facs="pageImages/Murders_166.jpg"/>
     <head type="title">THE MURDERS IN THE RUE MORGUE.</head>
-
+<p></p><p></p>
     <p>It is not I probably that a few farther steps in phrenological science will lead to a belief
      in the existence, of not to the actual discovery and location of an organ of <hi rend="italic"
       >analysis</hi>. If this power (which may be described, although not defined, as the capacity
@@ -509,15 +517,15 @@
        [The word '<hi rend="italic">affaire</hi>' has not yet, in <placeName>France</placeName>,
        that levity of import which it conveys with us,] "but nothing whatever has transpired to
        throw light upon it. We give below all the material testimony elicited.</p>
-      <p><hi rend="italic"><persName>Pauline Dubourg</persName></hi>, laundress, deposes that she
+      <p><hi rend="italic">Pauline Dubourg</hi>, laundress, deposes that she
        has known both the deceased for three years, having washed for them during that period. The
        old lady and her daughter seemed on good terms—very affectionate towards each other. They
        were excellent pay. Could not speak in regard to their mode or means of living. Believed that
-        <persName>Madame L.</persName> told fortunes for a living. Was reputed to have money put by.
+       Madame L. told fortunes for a living. Was reputed to have money put by.
        Never met any persons in the house when she called for the clothes or took them home. Was
        sure that they had no servant in employ. There appeared to be no furniture in any part of the
        building except in the fourth story.</p>
-      <p><hi rend="italic"><persName>Pierre Moreau</persName></hi>, tobacconist, deposes that he has
+      <p><hi rend="italic">Pierre Moreau</hi>, tobacconist, deposes that he has
        been in the habit of selling small quantities of <pb n="170"
         facs="pageImages/Murders_170.jpg"/>tobacco and snuff to <persName>Madame
         L'Espanaye</persName> for nearly four years. Was born in the neighborhood, and has always
@@ -533,10 +541,10 @@
        ten times.</p>
       <p>Many other persons, neighbors, gave evidence to the same effect. No one was spoken of as
        frequenting the house. It was not known whether there were any living connexions of
-        <persName>Madame L.</persName> and her daughter. The shutters of the front windows were
+    Madame L. and her daughter. The shutters of the front windows were
        seldom opened. Those in the rear were always closed, with the exception of the large back
        room, fourth story. The house was a good house—not very old.</p>
-      <p><hi rend="italic"><persName>Isidore Muset</persName></hi>, gendarme, deposes that he was
+      <p><hi rend="italic">Isidore Muset</hi>, gendarme, deposes that he was
        called to the house about three o'clock in the morning, and found some twenty or thirty
        persons at the gateway, endeavoring to gain admittance. Forced it open, at length with a
        bayonet—not with a crowbar. Had but little difficulty in getting it open, on account of its
@@ -573,21 +581,21 @@
        so much shrill as harsh. Could not call it a shrill voice. The gruff voice said repeatedly
         '<hi rend="italic">sacré</hi>,' '<hi rend="italic">diable</hi>,' and once '<hi rend="italic"
         >mon dieu</hi>.'</p>
-      <p><hi rend="italic"><persName>Jules Mignaud</persName></hi>, Banker, of the firm of
+      <p><hi rend="italic">Jules Mignaud</hi>, Banker, of the firm of
         <persName>Mignaud</persName> et Fils, <placeName>Rue Deloraine</placeName>. Is the elder
         <persName>Mignaud</persName>. <persName>Madame L'Espanaye</persName> had some property. Had
        opened an account with his banking house in the spring of the year—(eight years previously.)
        Made frequent deposits in small sums. Had checked for nothing until the third day before her
        death, when she took out in person the sum of 4000 francs. This sum was paid in gold, and a
        clerk sent home with the money.</p>
-      <p><hi rend="italic"><persName>Adolphe Le Bon</persName></hi>, clerk to
+      <p><hi rend="italic">Adolphe Le Bon</hi>, clerk to
         <persName>Mignaud</persName> et Fils, deposes that on the day in question, about noon, he
        accompanied <persName>Madame L'Espanaye</persName> to her residence with the 4000 francs, put
        up in two bags. Upon the door being opened <persName>Mademoiselle L.</persName> appeared and
        took from his hands one of the bags, while the old lady relieved him of the other. He then
        bowed and departed. Did not see any person in the street at the time. It is a bye street—very
        lonely.</p>
-      <p><hi rend="italic"><persName>William Bird</persName></hi>, tailor deposes that he was one of
+      <p><hi rend="italic">William Bird</hi>, tailor deposes that he was one of
        the party who entered the house. Is an Englishman. Has lived in <placeName>Paris</placeName>
        two years. Was one of the first to ascend the stairs. Heard the voices in contention. The
        gruff voice was that of a Frenchman. Could make out several words, but cannot now remember
@@ -613,14 +621,14 @@
        contention and the breaking open of the room door was variously stated by the witnesses. Some
        made it as short as three minutes—some as long as five. The door was opened with
        difficulty.</p>
-      <p><hi rend="italic"><persName>Alfonzo Garcio</persName></hi>, undertaker, deposes that he
+      <p><hi rend="italic">Alfonzo Garcio</hi>, undertaker, deposes that he
        resides in the <placeName>Rue Morgue</placeName>. Is a native of
        <placeName>Spain</placeName>. Was one of the party who entered the house. Did not proceed up
        stairs. Is nervous, and was apprehensive of the consequences of agitation. Heard the voices
        in contention. The gruff voice was that of a Frenchman. Could not distinguish what was said.
        The shrill voice was that of an Englishman—is sure of this. Does not understand the English
        language, but judges by the intonation.</p>
-      <p><hi rend="italic"><persName>Alberto Montani</persName></hi>, confectioner, deposes that he
+      <p><hi rend="italic">Alberto Montani</hi>, confectioner, deposes that he
        was among the first to ascend the stairs. Heard the voices in question. The gruff voice was
        that of a Frenchman. Distinguished several words. The speaker appeared to be expostulating.
        Could not make out the words of the shrill voice. Spoke quick and unevenly. Thinks it the
@@ -633,7 +641,7 @@
        could have descended while the party proceeded up stairs. The body of <persName>Mademoiselle
         L'Espanaye</persName> was so firmly wedged in the chimney that it could not be got down
        until four or five of the party united their strength.</p>
-      <p><hi rend="italic"><persName>Paul Dumas</persName></hi>, physician, deposes that he was
+      <p><hi rend="italic">Paul Dumas</hi>, physician, deposes that he was
        called to view the bodies about day-break. They were both then lying on the sacking of the
        bedstead in the chamber where <persName>Mademoiselle L.</persName> was found. The corpse of
        the young lady was much bruised and excoriated. The fact that it had been thrust up the
@@ -652,7 +660,7 @@
        have inflicted the blows with any weapon. The head of the deceased, when seen by witness, was
        entirely separated from the body, and was also greatly shattered. The throat had evidently
        been cut with some very sharp instrument—probably with a razor.</p>
-      <p><hi rend="italic"><persName>Alexandre Etienne</persName></hi>, surgeon, was called with
+      <p><hi rend="italic">Alexandre Etienne</hi>, surgeon, was called with
         <persName>M. Dumas</persName> to view the bodies. Corroborated the testimony, and the
        opinions, of <persName>M. Dumas</persName>.</p>
       <p>Nothing farther of importance was elicited, although several other persons were examined. A
@@ -1255,7 +1263,7 @@
   </body>
 
   <back>
-   <note xml:id="n0001" target="a0001" type="editorial" resp="editors.xml#MP">Edmond Hoyle
+   <div><note xml:id="n0001" target="a0001" type="editorial" resp="editors.xml#MP">Edmond Hoyle
     (1672-1769) was an English writer who published a book called "Hoyle's Rules of Games," which
     explained the rules of many popular games at the time, one of which included the card game
     "whist". The idiom "rules of Hoyle" simply means "by the rules."</note>
@@ -1323,7 +1331,7 @@
    <note xml:id="n0025" target="a0025" type="editorial" resp="editors.xml#MP">National police
     headquarters in Paris.</note>
    <note xml:id="n0026" target="a0026" type="editorial" resp="editors.xml#MP">French for "to deny
-    what is, and to explain what is not".</note>
+    what is, and to explain what is not".</note></div>
   </back>
  </text>
 </TEI>
