@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="poe-masque">
    <teiHeader xml:lang="en">
       <fileDesc>
@@ -10,7 +10,8 @@
             <author>
                <persName type="lcnaf" key="n79029745">
                   <name ref="poe.xml">
-                     <forename>Edgar Allan</forename>
+                     <forename>Edgar</forename>
+                     <forename>Allan</forename>
                      <surname>Poe</surname>
                   </name>
                </persName>
@@ -49,15 +50,11 @@
          <sourceDesc>
             <biblStruct>
                <analytic>
-                  
+                
                   <title>"The Masque of the Red Death"</title>
                </analytic>
                <monogr>
-                  <author>
-                     <forename>Edgar</forename>
-                     <forename>Allan</forename>
-                     <surname>Poe</surname>                  
-                  </author>
+                  <author><persName></persName></author>
                   <title>The Works of the Late Edgar Allan Poe</title>
                   <imprint>
                      <pubPlace>
@@ -114,10 +111,10 @@
          <settingDesc>
             <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
             <setting>
-               <name type="tgn" key="7011781">London, England</name>
+               <name></name>    
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="">Europe</name>
-               <time from="1690" to="1724">undetermined</time>
+               <time></time>
+
                
             </setting>
          </settingDesc>
@@ -179,9 +176,14 @@
             </taxonomy>
          </classDecl>
       </encodingDesc>
+      <revisionDesc>
+         <change when="2021" who="editors.xml#JOB">First pass xml and annotations</change>
+      </revisionDesc>
    </teiHeader>
    <text>
-      
+      <front><titlePage><titlePart></titlePart>
+         <docImprint></docImprint>
+      </titlePage></front>
       <body>
          
          <div>
