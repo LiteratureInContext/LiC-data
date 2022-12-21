@@ -8,7 +8,7 @@
    <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
-            <title type="main"><?oxy-placeholder content="Enter the title of the text"?>The Waste Land</title>
+            <title type="main">The Waste Land</title>
             <author>
                <persName type="lcnaf" key="n79006870">
                   <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
@@ -68,38 +68,32 @@
 
                <monogr>
                   <author>
-                     <name>
-                        <forename>Thomas</forename>
-                        <forename>Stearns</forename>
-                        <surname><?oxy-placeholder content="Lastname"?>Eliot</surname>
-                        <addName><?oxy-placeholder content="Additional Name, if necessary"?>Stearns</addName>
-                     </name>
+                   <forename>TS</forename>
+                     <surname>Eliot</surname>
+                     <addName/>
                   </author>
 
-                  <title><?oxy-placeholder content="Title of the Monograph/Container"?>The Waste
+                  <title>The Waste
                      Land</title>
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="7007567"
-                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at https://www.getty.edu/research/tools/vocabularies/tgn/"?>New
+                        <placeName type="tgn" key="7007567">New
                            York</placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?>Boni and
+                     <publisher>Boni and
                         Liverwright</publisher>
-                     <date when="1922"><?oxy-placeholder content="Year of publication"?>1922</date>
-                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?>This
+                     <date when="1922">1922</date>
+                     <note>This
                         digital edition was transcribed and formatted to the first American edition.
-                        Facsimile page images of this source text are available at <ref
-                           target="https://archive.org/details/wasteland01elio/page/n7/mode/2up"
-                           >Internet Archive</ref>.</note>
-                     <!-- Add additional NOTE elements as needed  -->
-                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                        Facsimile page images of this source text are available at <ref target="https://archive.org/details/wasteland01elio/page/n7/mode/2up">Internet Archive</ref>.</note>
+                     
+                     <note/>
                   </imprint>
 
-                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?>64 pages ; 20 cm</extent>
-                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
-                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+                  <extent>64 pages ; 20 cm</extent>
+                  
+                  
 
                </monogr>
 
@@ -118,9 +112,9 @@
          <creation/>
 
          <textDesc n="poem">
-            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            
             <channel mode="w">print</channel>
-            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            
             <constitution type="single">single poem</constitution>
             <derivation type="original"/>
             <domain/>
@@ -129,24 +123,24 @@
             <preparedness type="revised"/>
             <purpose type="express"/>
             <purpose type="entertain" degree="medium"/>
-            <!-- interpretation in the textDesc will be necessary -->
+            
          </textDesc>
 
          <settingDesc>
 
             <setting>
                <name type="tgn" key="7011781">London, England</name>
-               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               
               
                <time from="1914" to="1925">Early 20th Century</time>
-               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+               
             </setting>
 
          </settingDesc>
       </profileDesc>
 
       <encodingDesc>
-         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         
          <projectDesc>
             <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
                project, which provides an accessible, reliable, curated, and marked-up selection of
@@ -202,24 +196,23 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="2022-12-10" who="editors.xml#GG"
-            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?>Initial markup</change>
+         <change when="2022-12-10" who="editors.xml#GG">Initial markup</change>
          <change when="2022-12-16" who="editors.xml#TH">Additional and corrected markup, header info</change>
       </revisionDesc>
 
    </teiHeader>
 
-   <!-- ************************************************************************** -->
+   
 
    <text>
 
       <front>
          <titlePage>
             <pb n="[TP]" facs="pageImages/wasteland01elio_Page_09.jpg"/>
-            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
+            
             <titlePart>THE WASTE LAND<lb/></titlePart>
             <titlePart>BY<lb/> T. S. ELIOT<lb/></titlePart>
-            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
+            
             <epigraph>
                <quote>
                   <lg>
@@ -234,9 +227,9 @@
          </titlePage>
       </front>
       <body>
-         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
+         
          <div type="poem">
-            <!-- note structure for poetry -->
+            
             <pb n="9" facs="pageImages/wasteland01elio_Page_13.jpg"/>
 
 
@@ -824,9 +817,9 @@
          </div>
       </body>
       <back>
-         <div type="back_matter">
-            <!-- include any back matter -->
-            <p/>
+         <div>
+            
+            
          </div>
       </back>
 
