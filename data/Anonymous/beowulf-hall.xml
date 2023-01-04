@@ -73,17 +73,14 @@
                         <title>Beowulf</title>
                         <imprint>
                             <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
-                            <pubPlace>
-                                <placeName>Np</placeName>
-                                <!-- Note authority and key. -->
-                            </pubPlace>
+                            <pubPlace/>
                             <publisher>Manuscript</publisher>
                             <!-- Insert publsher of earliest/first edition. -->
-                            <date when="1100" cert="medium">1100</date>
+                            <date when="1100" cert="medium">c.1100</date>
                             <!-- Insert year of earliest/first edition. Note the attribute @when. -->
                             <note>Text for this digital edition drawn from Lesslie Hall's translation from the Heyne-Socin Text on <ref
                                 target="https://www.gutenberg.org/ebooks/16328"
-                                >Project Gutenberg</ref>, marked up in XML. Hall edition originally published in 1892. Hall's notes have been removed; the sidenotes have been retained, with minor punctuation added for consistency.</note>
+                                >Project Gutenberg</ref>, marked up in XML. Hall's edition was originally published in 1892. Hall's notes and pagination have been removed; the sidenotes have been retained, with minor punctuation added for consistency.</note>
                         </imprint>
                         <imprint>
                             <pubPlace>Online</pubPlace>
@@ -202,7 +199,7 @@
             </classDecl>
         </encodingDesc>
         <revisionDesc>
-            <change when="2022" who="editors.xml#TH">First student-generated XML uploaded and minor
+            <change when="2022" who="editors.xml#TH">First pass XML uploaded and minor
                 edits made.</change>
         </revisionDesc>
     </teiHeader>
@@ -210,8 +207,8 @@
     <text>
         <front><div></div></front>
         <body>
-            <div type="argument">
-<head type="sub">THE STORY.</head>
+            <div>
+<floatingText><body><div type="argument"><head type="sub">THE STORY.</head>
 <p>
 Hrothgar, king of the Danes, or Scyldings, builds a great mead-hall, or
 palace, in which he hopes to feast his liegemen and to give them presents. The
@@ -290,7 +287,7 @@ be constantly reminded of the prowess of the national hero of Geatland.
 <p>
 The poem closes with a glowing tribute to his bravery, his gentleness, his
 goodness of heart, and his generosity.
-</p>
+</p></div></body></floatingText>
 </div>
  
 <pb n="page_1"/>
