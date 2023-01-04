@@ -75,9 +75,7 @@
                                 <surname>Anonymous</surname>
                             </persName>
                         </author>
-                        <editor>
-                            <persName>Lesslie Hall</persName>
-                        </editor>
+                      
                         <title>Beowulf</title>
                         <imprint>
                             <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
@@ -120,7 +118,7 @@
             <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
             
             <textDesc n="tale">
-                <channel mode="w">print</channel>
+                <channel mode="w">manuscript</channel>
                 <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
                 <constitution type="single"/>
                 <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
@@ -136,7 +134,7 @@
                 <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
                 <purpose type="entertain" degree="high"/>
                 <!-- See the TEI guidelines for more information. -->
-                <purpose type="inform" degree="low"/>
+                <purpose type="inform" degree="medium"/>
                 <!-- Multiple purpose types may or may not be appropriate. -->
             </textDesc>
             
