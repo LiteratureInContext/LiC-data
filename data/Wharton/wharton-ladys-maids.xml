@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wharton-ladys-maids">
+    <!--TEI Header BEGINS-->
+    <teiHeader xml:lang="en">
+
+        <fileDesc>
+            <!--BEGINS File Description -->
+            <titleStmt>
+                <title type="main">"The Lady’s Maid’s Bell"</title>
+                <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
+                <author>
+                    <persName type="lcnaf" key="n79151500">
+                        <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
+                        <forename>Edith</forename>
+                        <surname>Wharton</surname>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0002-7400-4093">
+                        <!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
+                        <name ref="editors.xml#SF">
+                            <!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
+                            <surname>Ficke</surname>
+                            <forename>Sarah</forename>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
+                    <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount
+                        University</name>
+                    <name ref="editors.xml#EP">Elizabeth Pierce</name>
+                    <name ref="editors.xml#ALB">Alexandra Block</name>
+                    <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+                <!-- Do not alter. -->
+            </titleStmt>
+
+
+            <publicationStmt>
+                <!-- This element expresses the publication details of this particular etext. -->
+                <publisher>Literature in Context</publisher>
+                <!-- Do not alter. -->
+                <address>
+                    <!-- Use the address information for your university. -->
+                    <addrLine>Marymount University Department of Literature and Languages</addrLine>
+                    <addrLine>2807 N. Glebe Road</addrLine>
+                    <addrLine>Arlington, VA </addrLine>
+                    <addrLine>22207</addrLine>
+                    <addrLine>thowe@marymount.edu</addrLine>
+                    <!-- Add your email address.  -->
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                    <!-- Do not alter. -->
+                </address>
+                <availability status="free">
+                    <!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+
+
+            <sourceDesc>
+                <!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
+
+                <biblStruct>
+                    <analytic>
+                        <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
+                        <title>"The Lady’s Maid’s Bell"</title>
+                    </analytic>
+                    <monogr>
+                        <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
+                        <author>
+                            <persName/>
+                        </author>
+                        <title>Scribner’s Magazine</title>
+                        <imprint>
+                            <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
+                            <pubPlace>
+                                <placeName type="tgn" key="7007567">New York</placeName>
+                                <!-- Note authority and key. -->
+                            </pubPlace>
+                            <publisher>Charles Scribner’s Sons</publisher>
+                            <!-- Insert publsher of earliest/first edition. -->
+                            <date when="1902">1902</date>
+                            <!-- Insert year of earliest/first edition. Note the attribute @when. -->
+
+                            <note>Page images are drawn from <ref
+                                    target="https://catalog.hathitrust.org/Record/000505912"
+                                    >HathiTrust</ref>'s digitized copy of Scribner's, Volume 32,
+                                sourced from the Univeristy of Chicago.</note>
+                            <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
+                            <note>Text for this digital edition drawn from <ref
+                                    target="https://www.gutenberg.org/files/4519/4519-h/4519-h.htm#bell"
+                                    >Project Gutenberg</ref>, marked up in XML and checked against
+                                page images from HathiTrust. </note>
+                        </imprint>
+
+                        <biblScope unit="volume">XXXII</biblScope>
+                        <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
+                        <biblScope>pp 549-560</biblScope>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+
+        </fileDesc>
+        <!-- Don't forget to close out all your elements! -->
+
+
+
+        <profileDesc>
+            <!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+
+            <creation/>
+            <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
+
+            <textDesc n="tale">
+                <channel mode="w">print</channel>
+                <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
+                <constitution type="single"/>
+                <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
+                <derivation type="original"/>
+                <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
+                <domain/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <factuality type="fiction"/>
+                <!-- See the textDesc guidelines for more information. -->
+                <interaction/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <preparedness/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <purpose type="entertain" degree="high"/>
+                <!-- See the TEI guidelines for more information. -->
+                <purpose type="inform" degree="low"/>
+                <!-- Multiple purpose types may or may not be appropriate. -->
+            </textDesc>
+
+            <settingDesc>
+                <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
+                <setting>
+                    <name type="tgn" key="7007567">New York City, United States</name>
+                    <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+                    <time from="1880" to="1902">Late 19th or early 20th Century</time>
+                    <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+                </setting>
+            </settingDesc>
+        </profileDesc>
+
+        <encodingDesc>
+            <!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature of the 18th century. This project is funded by the National Endowment
+                    for the Humanities and developed by faculty at The University of Virginia and
+                    Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com. </p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <!-- We here define the authority files used throughout the application and data. -->
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2022" who="editors.xml#TH">First student-generated XML uploaded and minor
+                edits made.</change>
+        </revisionDesc>
+    </teiHeader>
+    <!--TEI Header Ends -->
+    <text>
+        <front>
+            <div/>
+        </front>
+        <body>
+            <div>
+                <pb n="549" facs="pageImages/Bell_549.jpg"/>
+                <head type="title"><ref target="a0001" corresp="n0001">THE LADY’S MAID’S
+                    BELL</ref></head>
+
+                <head type="sub">By <ref target="a0002" corresp="n0002">Edith Wharton</ref></head>
+
+
+                <div type="part">
+                    <head>I</head>
+
+
+                    <p>IT was the autumn after I had the <ref target="a0003" corresp="n0003">
+                            typhoid</ref>. I'd been three months in hospital, and when I came out I
+                        looked so weak and tottery that the two or three ladies I applied to were
+                        afraid to engage me. Most of my money was gone, and after I'd boarded for
+                        two months, hanging about the employment-agencies, and answering any
+                        advertisement that looked any way respectable, I pretty nearly lost heart,
+                        for fretting hadn't made me fatter, and I didn't see why my luck should ever
+                        turn. It did though—or I thought so at the time. A Mrs. Railton, a friend of
+                        the lady that first brought me out to the <placeName>States</placeName>, met
+                        me one day and stopped to speak to me: she was one that had always a
+                        friendly way with her. She asked me what ailed me to look so white, and when
+                        I told her, "Why, Hartley," says she, "I believe I've got the very place for
+                        you. Come in tomorrow and we'll talk about it." </p>
+                    <p>The next day, when I called, she told me the lady she'd in mind was a niece
+                        of hers, a Mrs. Brympton, a youngish lady, but something of an invalid, who
+                        lived all the year round at her <ref target="a0004" corresp="n0004">
+                            country-place</ref> on the <placeName>Hudson</placeName>, owing to not
+                        being able to stand the fatigue of town life.</p>
+                    <p> "Now, Hartley," Mrs. Railton said, in that cheery way that always made me
+                        feel things must be going to take a turn for the better—"now understand me;
+                        it's not a cheerful place I'm sending you to. The house is big and gloomy;
+                        my niece is nervous, <ref target="a0005" corresp="n0005"> vaporish</ref>;
+                        her husband—well, he's generally away; and the two children are dead. A year
+                        ago, I would as soon have thought of shutting a rosy active girl like you
+                        into a vault; but you're not particularly brisk yourself just now, are you?
+                        and a quiet place, with country air and wholesome food and early hours,
+                        ought to be the very thing for you. Don't mistake me," she added, for I
+                        suppose I looked a trifle downcast; "you may find it dull, but you won't be
+                        unhappy. My niece is an angel. Her former maid, who died last spring, had
+                        been with her twenty years and worshipped the ground she walked on. She's a
+                        kind mistress to all, and where the mistress is kind, as you know, the
+                        servants are generally good-humored, so you'll probably get on well enough
+                        with the rest of the household. And you're the very woman I want for my
+                        niece: quiet, well-mannered, and educated above your station. You read aloud
+                        well, I think? That's a good thing; my niece likes to be read to. She wants
+                        a maid that can be something of a companion: her last was, and I can't say
+                        how she misses her. It's a lonely life . . . Well, have you decided?"</p>
+                    <p>"Why, ma'am," I said, "I'm not afraid of solitude."</p>
+                    <p>"Well, then, go; my niece will take you on my recommendation. I'll telegraph
+                        her at once and you can take the afternoon train. She has no one to wait on
+                        her at present, and I don't want you to lose any time."</p>
+                    <p>I was ready enough to start, yet something in me hung back; and to gain time
+                        I asked, "And the gentleman, ma'am?"</p>
+                    <p>"The gentleman's almost always away, I tell you," said Mrs. Ralston,
+                        quick-like—"and when he's there," says she suddenly, "you've only to keep
+                        out of his way."</p>
+                    <p>I took the afternoon train and got out at D—— station at about four o'clock.
+                        A <ref target="a0006" corresp="n0006"> groom in a dog-cart</ref> was
+                        waiting, and we drove off at a smart pace. It was a dull October day, with
+                        rain hanging close overhead, and by the time we turned into the
+                            <placeName>Brympton Place</placeName> woods the daylight was almost
+                        gone. The drive wound through the woods for a mile or two, and came out on a
+                        gravel court shut in with thickets of tall black-looking shrubs. There were
+                        no lights in the windows, and the house <hi rend="italic">did</hi> look a
+                        bit gloomy.</p>
+                    <p>I had asked no questions of the groom, for I never was one to get my notion
+                        of new masters from their other servants: I prefer to wait and see for
+                        myself. But I<pb n="550" facs="pageImages/Bell_550.jpg"/>could tell by the
+                        look of everything that I had got into the right kind of house, and that
+                        things were done handsomely. A pleasant-faced cook met me at the back door
+                        and called the house-maid to show me up to my room. "You'll see madam
+                        later," she said. "Mrs. Brympton has a visitor."</p>
+                    <p>I hadn't fancied Mrs. Brympton was a lady to have many visitors, and somehow
+                        the words cheered me. I followed the house-maid upstairs, and saw, through a
+                        door on the upper landing, that the main part of the house seemed
+                        well-furnished, with dark panelling and a number of old portraits. Another
+                        flight of stairs led us up to the servants' wing. It was almost dark now,
+                        and the house-maid excused herself for not having brought a light. "But
+                        there's matches in your room," she said, "and if you go careful you'll be
+                        all right. Mind the step at the end of the passage. Your room is just
+                        beyond."</p>
+                    <p>I looked ahead as she spoke, and half-way down the passage, I saw a woman
+                        standing. She drew back into a doorway as we passed, and the house-maid
+                        didn't appear to notice her. She was a thin woman with a white face, and a
+                        darkish stuff gown and apron. I took her for the housekeeper and thought it
+                        odd that she didn't speak, but just gave me a long look as she went by. My
+                        room opened into a square hall at the end of the passage. Facing my door was
+                        another which stood open: the house-maid exclaimed when she saw it.</p>
+                    <p>"There—Mrs. Blinder's left that door open again!" said she, closing it.</p>
+                    <p>"Is Mrs. Blinder the housekeeper?"</p>
+                    <p>"There's no housekeeper: Mrs. Blinder's the cook."</p>
+                    <p>"And is that her room?"</p>
+                    <p>"Laws, no," said the house-maid, cross-like. "That's nobody's room. It's
+                        empty, I mean, and the door hadn't ought to be open. Mrs. Brympton wants it
+                        kept locked."</p>
+                    <p>She opened my door and led me into a neat room, nicely furnished, with a
+                        picture or two on the walls; and having lit a candle she took leave, telling
+                        me that the servants'-hall tea was at six, and that Mrs. Brympton would see
+                        me afterward.</p>
+                    <p>I found them a pleasant-spoken set in the servants' hall, and by what they
+                        let fall I gathered that, as Mrs. Railton had said, Mrs. Brympton was the
+                        kindest of ladies; but I didn't take much notice of their talk, for I was
+                        watching to see the pale woman in the dark gown come in. She didn't show
+                        herself, however, and I wondered if she ate apart; but if she wasn't the
+                        housekeeper, why should she? Suddenly it struck me that she might be a
+                        trained nurse, and in that case her meals would of course be served in her
+                        room. If Mrs. Brympton was an invalid it was likely enough she had a nurse.
+                        The idea annoyed me, I own, for they're not always the easiest to get on
+                        with, and if I'd known, I shouldn't have taken the place. But there I was,
+                        and there was no use pulling a long face over it; and not being one to ask
+                        questions, I waited to see what would turn up.</p>
+                    <p>When tea was over, the house-maid said to the <ref target="a0007"
+                            corresp="n0007"> footman</ref>: "Has Mr. Ranford gone?" and when he said
+                        yes, she told me to come up with her to Mrs. Brympton.</p>
+                    <p>Mrs. Brympton was lying down in her bedroom. Her lounge stood near the fire
+                        and beside it was a shaded lamp. She was a delicate-looking lady, but when
+                        she smiled I felt there was nothing I wouldn't do for her. She spoke very
+                        pleasantly, in a low voice, asking me my name and age and so on, and if I
+                        had everything I wanted, and if I wasn't afraid of feeling lonely in the
+                        country.</p>
+                    <p>"Not with you I wouldn't be, madam," I said, and the words surprised me when
+                        I'd spoken them, for I'm not an impulsive person; but it was just as if I'd
+                        thought aloud.</p>
+                    <p>She seemed pleased at that, and said she hoped I'd continue in the same mind;
+                        then she gave me a few directions about her toilet, and said Agnes the
+                        house-maid would show me next morning where things were kept.</p>
+                    <p>"I am tired to-night, and shall dine upstairs," she said. "Agnes will bring
+                        me my tray, that you may have time to unpack and settle yourself; and later
+                        you may come and undress me."</p>
+                    <p>"Very well, ma'am," I said. "You'll ring, I suppose?"</p>
+                    <p>I thought she looked odd.</p>
+                    <p>"No—Agnes will fetch you," says she quickly, and took up her book again.</p>
+                    <p>Well—that was certainly strange: a <pb n="551" facs="pageImages/Bell_551.jpg"
+                        />lady's maid having to be fetched by the house-maid whenever her lady
+                        wanted her! I wondered if there were no <ref target="a0008" corresp="n0008">
+                            bells</ref>in the house; but the next day I satisfied myself that there
+                        was one in every room, and a special one ringing from my mistress's room to
+                        mine; and after that it did strike me as queer that, whenever Mrs. Brympton
+                        wanted anything, she rang for Agnes, who had to walk the whole length of the
+                        servants' wing to call me.</p>
+                    <p>But that wasn't the only queer thing in the house. The very next day I found
+                        out that Mrs. Brympton had no nurse; and then I asked Agnes about the woman
+                        I had seen in the passage the afternoon before. Agnes said she had seen no
+                        one, and I saw that she thought I was dreaming. To be sure, it was dusk when
+                        we went down the passage, and she had excused herself for not bringing a
+                        light; but I had seen the woman plain enough to know her again if we should
+                        meet. I decided that she must have been a friend of the cook's, or of one of
+                        the other women-servants: perhaps she had come down from town for a night's
+                        visit, and the servants wanted it kept secret. Some ladies are very stiff
+                        about having their servants' friends in the house overnight. At any rate, I
+                        made up my mind to ask no more questions.</p>
+                    <p>In a day or two, another odd thing happened. I was chatting one afternoon
+                        with Mrs. Blinder, who was a friendly disposed woman, and had been longer in
+                        the house than the other servants, and she asked me if I was quite
+                        comfortable and had everything I needed. I said I had no fault to find with
+                        my place or with my mistress, but I thought it odd that in so large a house
+                        there was no sewing-room for the lady's maid.</p>
+                    <p>"Why," says she, "there <hi rend="italic">is</hi> one; the room you're in is
+                        the old sewing-room."</p>
+                    <p>"Oh," said I; "and where did the other lady's maid sleep?"</p>
+                    <p>At that she grew confused, and said hurriedly that the servants' rooms had
+                        all been changed about last year, and she didn't rightly remember.</p>
+                    <p>That struck me as peculiar, but I went on as if I hadn't noticed: "Well,
+                        there's a vacant room opposite mine, and I mean to ask Mrs. Brympton if I
+                        mayn't use that as a sewing-room."</p>
+                    <p>To my astonishment, Mrs. Blinder went white, and gave my hand a kind of
+                        squeeze. "Don't do that, my dear," said she, trembling-like. "To tell you
+                        the truth, that was Emma Saxon's room, and my mistress has kept it closed
+                        ever since her death."</p>
+                    <p>"And who was Emma Saxon?"</p>
+                    <p>"Mrs. Brympton's former maid."</p>
+                    <p>"The one that was with her so many years?" said I, remembering what Mrs.
+                        Railton had told me.</p>
+                    <p>Mrs. Blinder nodded.</p>
+                    <p>"What sort of woman was she?"</p>
+                    <p>"No better walked the earth," said Mrs. Blinder. "My mistress loved her like
+                        a sister."</p>
+                    <p>"But I mean—what did she look like?"</p>
+                    <p>Mrs. Blinder got up and gave me a kind of angry stare. "I'm no great hand at
+                        describing," she said; "and I believe my pastry's rising." And she walked
+                        off into the kitchen and shut the door after her.</p>
+                </div>
+
+                <div type="part">
+                    <head>II</head>
+                    <p>I HAD been near a week at <placeName>Brympton</placeName> before I saw my
+                        master. Word came that he was arriving one afternoon, and a change passed
+                        over the whole household. It was plain that nobody loved him below stairs.
+                        Mrs. Blinder took uncommon care with the dinner that night, but she snapped
+                        at the kitchen-maid in a way quite unusual with her; and Mr. Wace, the
+                        butler, a serious, slow-spoken man, went about his duties as if he'd been
+                        getting ready for a funeral. He was a great Bible-reader, Mr. Wace was, and
+                        had a beautiful assortment of texts at his command; but that day he used
+                        such dreadful language that I was about to leave the table, when he assured
+                        me it was all out of Isaiah; and I noticed that whenever the master came Mr.
+                        Wace took to the prophets.</p>
+                    <p>About seven, Agnes called me to my mistress's room; and there I found Mr.
+                        Brympton. He was standing on the hearth; a big fair bull-necked man, with a
+                        red face and little bad-tempered blue eyes: the kind of man a young
+                        simpleton might have thought handsome, and would have been like to pay dear
+                        for thinking it.</p>
+                    <p>He swung about when I came in, and looked me over in a trice. I knew what the
+                        look meant, from having experienced <pb n="552"
+                            facs="pageImages/Bell_552.jpg"/>it once or twice in my former places.
+                        Then he turned his back on me, and went on talking to his wife; and I knew
+                        what <hi rend="italic">that</hi> meant, too. I was not the kind of morsel he
+                        was after. The typhoid had served me well enough in one way: it kept that
+                        kind of gentleman at arm's-length.</p>
+                    <p>"This is my new maid, Hartley," says Mrs. Brympton in her kind voice; and he
+                        nodded and went on with what he was saying.</p>
+                    <p>In a minute or two he went off, and left my mistress to dress for dinner, and
+                        I noticed as I waited on her that she was white, and chill to the touch.</p>
+                    <p>Mr. Brympton took himself off the next morning, and the whole house drew a
+                        long breath when he drove away. As for my mistress, she put on her hat and
+                        furs (for it was a fine winter morning) and went out for a walk in the
+                        gardens, coming back quite fresh and rosy, so that for a minute, before her
+                        color faded, I could guess what a pretty young lady she must have been, and
+                        not so long ago, either.</p>
+                    <p>She had met Mr. Ranford in the grounds, and the two came back together, I
+                        remember, smiling and talking as they walked along the terrace under my
+                        window. That was the first time I saw Mr. Ranford, though I had often heard
+                        his name mentioned in the hall. He was a neighbor, it appeared, living a
+                        mile or two beyond <placeName>Brympton</placeName>, at the end of the
+                        village; and as he was in the habit of spending his winters in the country
+                        he was almost the only company my mistress had at that season. He was a
+                        slight tall gentleman of about thirty, and I thought him rather
+                        melancholy-looking till I saw his smile, which had a kind of surprise in it,
+                        like the first warm day in spring. He was a great reader, I heard, like my
+                        mistress, and the two were forever borrowing books of one another, and
+                        sometimes (Mr. Wace told me) he would read aloud to Mrs. Brympton by the
+                        hour, in the big dark library where she sat in the winter afternoons. The
+                        servants all liked him, and perhaps that's more of a compliment than the
+                        masters suspect. He had a friendly word for every one of us, and we were all
+                        glad to think that Mrs. Brympton had a pleasant companionable gentleman like
+                        that to keep her company when the master was away. Mr. Ranford seemed on
+                        excellent terms with Mr. Brympton too; though I couldn't but wonder that two
+                        gentlemen so unlike each other should be so friendly. But then I knew how
+                        the real quality can keep their feelings to themselves.</p>
+                    <p>As for Mr. Brympton, he came and went, never staying more than a day or two,
+                        cursing the dulness and the solitude, grumbling at everything, and (as I
+                        soon found out) drinking a deal more than was good for him. After Mrs.
+                        Brympton left the table he would sit half the night over the old
+                            <placeName>Brympton</placeName> port and madeira, and once, as I was
+                        leaving my mistress's room rather later than usual, I met him coming up the
+                        stairs in such a state that I turned sick to think of what some ladies have
+                        to endure and hold their tongues about.</p>
+                    <p>The servants said very little about their master; but from what they let drop
+                        I could see it had been an unhappy match from the beginning. Mr. Brympton
+                        was coarse, loud and pleasure-loving; my mistress quiet, retiring, and
+                        perhaps a trifle cold. Not that she was not always pleasant-spoken to him: I
+                        thought her wonderfully forbearing; but to a gentleman as free as Mr.
+                        Brympton I daresay she seemed a little offish.</p>
+                    <p>Well, things went on quietly for several weeks. My mistress was kind, my
+                        duties were light, and I got on well with the other servants. In short, I
+                        had nothing to complain of; yet there was always a weight on me. I can't say
+                        why it was so, but I know it was not the loneliness that I felt. I soon got
+                        used to that; and being still languid from the fever, I was thankful for the
+                        quiet and the good country air. Nevertheless, I was never quite easy in my
+                        mind. My mistress, knowing I had been ill, insisted that I should take my
+                        walk regular, and often invented errands for me:—a yard of ribbon to be
+                        fetched from the village, a letter posted, or a book returned to Mr.
+                        Ranford. As soon as I was out of doors my spirits rose, and I looked forward
+                        to my walks through the bare moist-smelling woods; but the moment I caught
+                        sight of the house again my heart dropped down like a stone in a well. It
+                        was not a gloomy house exactly, yet I never entered it but a feeling of
+                        gloom came over me.</p>
+                    <pb n="553" facs="pageImages/Bell_553.jpg"/>
+                    <p>Mrs. Brympton seldom went out in winter; only on the finest days did she walk
+                        an hour at noon on the south terrace. Excepting Mr. Ranford, we had no
+                        visitors but the doctor, who drove over from D—— about once a week. He sent
+                        for me once or twice to give me some trifling direction about my mistress,
+                        and though he never told me what her illness was, I thought, from a waxy
+                        look she had now and then of a morning, that it might be the heart that
+                        ailed her. The season was soft and unwholesome, and in January we had a long
+                        spell of rain. That was a sore trial to me, I own, for I couldn't go out,
+                        and sitting over my sewing all day, listening to the drip, drip of the
+                        eaves, I grew so nervous that the least sound made me jump. Somehow, the
+                        thought of that locked room across the passage began to weigh on me. Once or
+                        twice, in the long rainy nights, I fancied I heard noises there; but that
+                        was nonsense, of course, and the daylight drove such notions out of my head.
+                        Well, one morning Mrs. Brympton gave me quite a start of pleasure by telling
+                        me she wished me to go to town for some shopping. I hadn't known till then
+                        how low my spirits had fallen. I set off in high glee, and my first sight of
+                        the crowded streets and the cheerful-looking shops quite took me out of
+                        myself. Toward afternoon, however, the noise and confusion began to tire me,
+                        and I was actually looking forward to the quiet of
+                            <placeName>Brympton</placeName>, and thinking how I should enjoy the
+                        drive home through the dark woods, when I ran across an old acquaintance, a
+                        maid I had once been in service with. We had lost sight of each other for a
+                        number of years, and I had to stop and tell her what had happened to me in
+                        the interval. When I mentioned where I was living she rolled up her eyes and
+                        pulled a long face.</p>
+                    <p>"What! The Mrs. Brympton that lives all the year at her place on the
+                            <placeName>Hudson</placeName>? My dear, you won't stay there three
+                        months."</p>
+                    <p>"Oh, but I don't mind the country," says I, offended somehow at her tone.
+                        "Since the fever I'm glad to be quiet."</p>
+                    <p>She shook her head. "It's not the country I'm thinking of. All I know is
+                        she's had four maids in the last six months, and the last one, who was a
+                        friend of mine, told me nobody could stay in the house."</p>
+                    <p>"Did she say why?" I asked.</p>
+                    <p>"No—she wouldn't give me her reason. But she says to me, <hi rend="italic"
+                            >Mrs. Ansley</hi>, she says,<hi rend="italic">if ever a young woman as
+                            you know of thinks of going there, you tell her it’s not worth while to
+                            unpack her boxes.</hi>."</p>
+                    <p>"Is she young and handsome?" said I, thinking of Mr. Brympton.</p>
+                    <p>"Not her! She's the kind that mothers engage when they've gay young gentlemen
+                        at college."</p>
+                    <p>Well, though I knew the woman was an idle gossip, the words stuck in my head,
+                        and my heart sank lower than ever as I drove up to
+                            <placeName>Brympton</placeName> in the dusk. There <hi rend="italic"
+                            >was</hi> something about the house—I was sure of it now...</p>
+                    <p>When I went in to tea I heard that Mr. Brympton had arrived, and I saw at a
+                        glance that there had been a disturbance of some kind. Mrs. Blinder's hand
+                        shook so that she could hardly pour the tea, and Mr. Wace quoted the most
+                        dreadful texts full of brimstone. Nobody said a word to me then, but when I
+                        went up to my room Mrs. Blinder followed me.</p>
+                    <p>"Oh, my dear," says she, taking my hand, "I'm so glad and thankful you've
+                        come back to us!"</p>
+                    <p>That struck me, as you may imagine. "Why," said I, "did you think I was
+                        leaving for good?"</p>
+                    <p>"No, no, to be sure," said she, a little confused, "but I can't a-bear to
+                        have madam left alone for a day even." She pressed my hand hard, and, "Oh,
+                        Miss Hartley," says she, "be good to your mistress, as you're a Christian
+                        woman." And with that she hurried away, and left me staring.</p>
+                    <p>A moment later Agnes called me to Mrs. Brympton. Hearing Mr. Brympton's voice
+                        in her room, I went round by the dressing-room, thinking I would lay out her
+                        dinner-gown before going in. The dressing-room is a large room with a window
+                        over the portico that looks toward the gardens. Mr. Brympton's apartments
+                        are beyond. When I went in, the door into the bedroom was ajar, and I heard
+                        Mr. Brympton saying angrily:—"One would suppose he was the only person fit
+                        for you to talk to."</p>
+                    <p>"I don't have many visitors in winter," Mrs. Brympton answered quietly.</p>
+                    <pb n="554" facs="pageImages/Bell_554.jpg"/>
+                    <p>"You have <hi rend="italic">me</hi>!" he flung at her, sneering.</p>
+                    <p>"You are here so seldom," said she.</p>
+                    <p>"Well—whose fault is that? You make the place about as lively as a family
+                        vault—"</p>
+                    <p>With that I rattled the toilet-things, to give my mistress warning and she
+                        rose and called me in.</p>
+                    <p>The two dined alone, as usual, and I knew by Mr. Wace's manner at supper that
+                        things must be going badly. He quoted the prophets something terrible, and
+                        worked on the kitchen-maid so that she declared she wouldn't go down alone
+                        to put the cold meat in the ice-box. I felt nervous myself, and after I had
+                        put my mistress to bed I was half-tempted to go down again and persuade Mrs.
+                        Blinder to sit up awhile over a game of cards. But I heard her door closing
+                        for the night, and so I went on to my own room. The rain had begun again,
+                        and the drip, drip, drip seemed to be dropping into my brain. I lay awake
+                        listening to it, and turning over what my friend in town had said. What
+                        puzzled me was that it was always the maids who left. . .</p>
+                    <p>After a while I slept; but suddenly a loud noise wakened me. My bell had
+                        rung. I sat up, terrified by the unusual sound, which seemed to go on
+                        jangling through the darkness. My hands shook so that I couldn't find the
+                        matches. At length I struck a light and jumped out of bed. I began to think
+                        I must have been dreaming; but I looked at the bell against the wall, and
+                        there was the little hammer still quivering.</p>
+                    <p>I was just beginning to<ref target="a0009" corresp="n0009"> huddle</ref> on
+                        my clothes when I heard another sound. This time it was the door of the
+                        locked room opposite mine softly opening and closing. I heard the sound
+                        distinctly, and it frightened me so that I stood stock still. Then I heard a
+                        footstep hurrying down the passage toward the main house. The floor being
+                        carpeted, the sound was very faint, but I was quite sure it was a woman's
+                        step. I turned cold with the thought of it, and for a minute or two I
+                        dursn't breathe or move. Then I came to my senses.</p>
+                    <p>"Alice Hartley," says I to myself, "someone left that room just now and ran
+                        down the passage ahead of you. The idea isn't pleasant, but you may as well
+                        face it. Your mistress has rung for you, and to answer her bell you've got
+                        to go the way that other woman has gone."</p>
+                    <p>Well—I did it. I never walked faster in my life, yet I thought I should never
+                        get to the end of the passage or reachMrs. Brympton's room. On the way I
+                        heard nothing and saw nothing: all was dark and quiet as the grave. When I
+                        reached my mistress's door the silence was so deep that I began to think I
+                        must be dreaming, and was half-minded to turn back. Then a panic seized me,
+                        and I knocked.</p>
+                    <p>There was no answer, and I knocked again, loudly. To my astonishment the door
+                        was opened by Mr. Brympton. He started back when he saw me, and in the light
+                        of my candle his face looked red and savage.</p>
+                    <p>"<hi rend="italic">You</hi>!" he said, in a queer voice. "<hi rend="italic"
+                            >How many of you are there, in God's name</hi>?"</p>
+                    <p>At that I felt the ground give under me; but I said to myself that he had
+                        been drinking, and answered as steadily as I could; "May I go in, sir? Mrs.
+                        Brympton has rung for me."</p>
+                    <p>"You may all go in, for what I care," says he, and, pushing by me, walked
+                        down the hall to his own bedroom. I looked after him as he went, and to my
+                        surprise I saw that he walked as straight as a sober man.</p>
+                    <p>I found my mistress lying very weak and still, but she forced a smile when
+                        she saw me, and signed to me to pour out some drops for her. After that she
+                        lay without speaking, her breath coming quick, and her eyes closed. Suddenly
+                        she groped out with her hand, and <hi rend="italic">"Emma</hi>," says she,
+                        faintly.</p>
+                    <p>"It's Hartley, madam," I said. "Do you want anything?"</p>
+                    <p>She opened her eyes wide and gave me a startled look.</p>
+                    <p>"I was dreaming," she said. "You may go, now, Hartley, and thank you kindly.
+                        I'm quite well again, you see." And she turned her face away from me.</p>
+                </div>
+
+                <div type="part">
+                    <head>III</head>
+                    <p>There was no more sleep for me that night, and I was thankful when daylight
+                        came.</p>
+                    <pb n="555" facs="pageImages/Bell_555.jpg"/>
+                    <p>Soon afterward, Agnes called me to Mrs. Brympton. I was afraid she was ill
+                        again, for she seldom sent for me before nine, but I found her sitting up in
+                        bed, pale and drawn-looking, but quite herself.</p>
+                    <p>"Hartley," says she quickly, "will you put on your things at once and go down
+                        to the village for me ? I want this prescription made up—" here she
+                        hesitated a minute and blushed—"and I should like you to be back again
+                        before Mr. Brympton is up."</p>
+                    <p>"Certainly, madam," I said.</p>
+                    <p>"And—stay a moment—" she called me back as if an idea had just struck
+                        her—"while you're waiting for the mixture, you'll have time to go on to Mr.
+                        Ranford's with this note."</p>
+                    <p>It was a two-mile walk to the village, and on my way I had time to turn
+                        things over in my mind. It struck me as peculiar that my mistress should
+                        wish the prescription made up without Mr. Brympton's knowledge ; and,
+                        putting this together with the scene of the night before, and with much else
+                        that I had noticed and suspected, I began to wonder if the poor lady was
+                        weary of her life, and had come to the mad resolve of ending it. The idea
+                        took such hold on me that I reached the village on a run, and dropped
+                        breathless into a chair before the chemist's counter. The good man, who was
+                        just taking down his shutters, stared at me so hard that it brought me to
+                        myself.</p>
+                    <p>"Mr. Limmel," I says, trying to speak indifferent, "will you run your eye
+                        over this, and tell me if it's quite right ?"</p>
+                    <p>He put on his spectacles and studied the prescription.</p>
+                    <p>"Why, it's one of Dr. Walton's," says he. "What should be wrong with it
+                        ?"</p>
+                    <p>"Well—is it dangerous to take ?"</p>
+                    <p>"Dangerous—how do you mean ?"</p>
+                    <p>I could have shaken the man for his stupidity.</p>
+                    <p>"I mean—if a person was to take too much of it—by mistake of course—" says I,
+                        my heart in my throat.</p>
+                    <p>"Lord bless you, no. It's only lime-water. You might feed it to a baby by the
+                        bottleful."</p>
+                    <p>I gave a great sigh of relief, and hurried on to Mr. Ranford's. But on the
+                        way another thought struck me. If there was nothing to conceal about my
+                        visit to the chemist's, was it my other errand that Mrs. Brympton wished me
+                        to keep private? Somehow, that thought frightened me worse than the other.
+                        Yet the two gentlemen seemed fast friends, and I would have staked my head
+                        on my mistress's goodness. I felt ashamed of my suspicions, and concluded
+                        that I was still disturbed by the strange events of the night. I left the
+                        note at Mr. Ranford's—and, hurrying back to Brympton, slipped in by a side
+                        door without being seen, as I thought.</p>
+                    <p>An hour later, however, as I was carrying in my mistress's breakfast, I was
+                        stopped in the hall byMr. Brympton.</p>
+                    <p>"What were you doing out so early ?" he says, looking hard at me.</p>
+                    <p>"Early—me, sir ?" I said, in a tremble.</p>
+                    <p>"Come, come," he says, an angry red spot coming out on his forehead, "didn't
+                        I see you scuttling home through the shrubbery an hour or more ago ?"</p>
+                    <p>I'm a truthful woman by nature, but at that a lie popped out ready-made. "No,
+                        sir, you didn't," said I, and looked straight back at him.</p>
+                    <p>He shrugged his shoulders and gave a sullen laugh. "I suppose you think I was
+                        drunk last night ?" he asked suddenly.</p>
+                    <p>"No, sir, I don't," I answered, this time truthfully enough.</p>
+                    <p>He turned away with another shrug. "A pretty notion my servants have of me!"
+                        I heard him mutter as he walked off.</p>
+                    <p>Not till I had settled down to my afternoon's sewing did I realize how the
+                        events of the night had shaken me. I couldn't pass that locked door without
+                        a shiver. I knew I had heard someone come out of it, and walk down the
+                        passage ahead of me. I thought of speaking to Mrs. Blinder or to Mr. Wace,
+                        the only two in the house who appeared to have an inkling of what was going
+                        on, but I had a feeling that if I questioned them they would deny
+                        everything, and that I might learn more by holding my tongue and keeping my
+                        eyes open. The idea of spending another night opposite the locked room
+                        sickened me, and once I was seized with the notion of packing my trunk and
+                        taking the first train to town ; but it wasn't in me to throw over a kind
+                        mistress in that manner, and I tried to go on with my sewing as if nothing
+                        had happened.</p>
+                    <pb n="556" facs="pageImages/Bell_556.jpg"/>
+                    <p>I hadn't worked ten minutes before the sewing-machine broke down. It was one
+                        I had found in the house, a good machine, but a trifle out of order: Mrs.
+                        Blinder said it had never been used since Emma Saxon's death. I stopped to
+                        see what was wrong, and as I was working at the machine a drawer which I had
+                        never been able to open slid forward and a photograph fell out. I picked it
+                        up and sat looking at it in a maze. It was a woman's likeness, and I knew I
+                        had seen the face somewhere—the eyes had an asking look that I had felt on
+                        me before. And suddenly I remembered the pale woman in the passage.</p>
+                    <p>I stood up, cold all over, and ran out of the room. My heart seemed to be
+                        thumping in the top of my head, and I felt as if I should never get away
+                        from the look in those eyes. I went straight to Mrs. Blinder. She was taking
+                        her afternoon nap, and sat up with a jump when I came in.</p>
+                    <p>"Mrs. Blinder," said I, "who is that ?" And I held out the photograph.</p>
+                    <p>She rubbed her eyes and stared.</p>
+                    <p>"Why, Emma Saxon," says she. "Where did you find it?"</p>
+                    <p>I looked hard at her for a minute. "Mrs. Blinder," I said, "I've seen that
+                        face before."</p>
+                    <p>Mrs. Blinder got up and walked over to the looking-glass. "Dear me ! I must
+                        have been asleep," she says. "My front is all over one ear. And now do run
+                        along, Miss Hartley, dear, for I hear the clock striking four, and I must go
+                        down this very minute and put on the Virginia ham for Mr. Brympton's
+                        dinner."</p>
+                </div>
+
+                <div type="part">
+                    <head>IV</head>
+                    <p>To all appearances, things went on as usual for a week or two. The only
+                        difference was that Mr. Brympton stayed on, instead of going off as he
+                        usually did, and that Mr. Ranford never showed himself. I heard Mr. Brympton
+                        remark on this one afternoon when he was sitting in my mistress's room
+                        before dinner.</p>
+                    <p>"Where's Ranford?" says he. "He hasn't been near the house for a week. Does
+                        he keep away because I'm here ?"</p>
+                    <p>Mrs. Brympton spoke so low that I couldn't catch her answer.</p>
+                    <p>"Well," he went on, "two's company and three's trumpery; I'm sorry to be in
+                        Ranford's way, and I suppose I shall have to take myself off again in a day
+                        or two and give him a show." And he laughed at his own joke.</p>
+                    <p>The very next day, as it happened, Mr. Ranford called. The footman said the
+                        three were very merry over their tea in the library, and Mr. Brympton
+                        strolled down to the gate with Mr. Ranford when he left.</p>
+                    <p>I have said that things went on as usual; and so they did with the rest of
+                        the household; but as for myself, I had never been the same since the night
+                        my bell had rung. Night after night I used to lie awake, listening for it to
+                        ring again, and for the door of the locked room to open stealthily. But the
+                        bell never rang, and I heard no sound across the passage. At last the
+                        silence began to be more dreadful to me than the most mysterious sounds. I
+                        felt that <hi rend="italic">someone</hi> were cowering there, behind the
+                        locked door, watching and listening as I watched and listened, and I could
+                        almost have cried out, "Whoever you are, come out and let me see you face to
+                        face, but don't lurk there and spy on me in the darkness!"</p>
+                    <p>Feeling as I did, you may wonder I didn't give warning. Once I very nearly
+                        did so ; but at the last moment something held me back. Whether it was
+                        compassion for my mistress, who had grown more and more dependent on me, or
+                        unwillingness to try a new place, or some other feeling that I couldn't put
+                        a name to, I lingered on as if spell-bound, though every night was dreadful
+                        to me, and the days but little better.</p>
+                    <p>For one thing, I didn't like Mrs. Brympton's looks. She had never been the
+                        same since that night, no more than I had. I thought she would brighten up
+                        after Mr. Brympton left, but though she seemed easier in her mind, her
+                        spirits didn’t revive, nor her strength either. She had grown attached to
+                        me, and seemed to like to have me about; and Agnes told me one day that,
+                        since Emma Saxon's death, I was the only maid her mistress had taken to.
+                        This gave me a warm feeling for the poor lady, though after all there was
+                        little I could do to help her.</p>
+                    <pb n="557" facs="pageImages/Bell_557.jpg"/>
+                    <p>[illustration]</p>
+                    <pb n="558" facs="pageImages/Bell_558.jpg"/>
+                    <p>After Mr. Brympton's departure, Mr. Ranford took to coming again, though less
+                        often than formerly. I met him once or twice in the grounds, or in the
+                        village, and I couldn't but think there was a change in him too ; but I set
+                        it down to my disordered fancy.</p>
+                    <p>The weeks passed, and Mr. Brympton had now been a month absent. We heard he
+                        was cruising with a friend in the <placeName><ref target="a0010"
+                                corresp="n0010">West Indies</ref></placeName>, and Mr. Wace said
+                        that was a long way off, but though you had the wings of a dove and went to
+                        the uttermost parts of the earth, you couldn't get away from the Almighty.
+                        Agnes said that as long as he stayed away from
+                            <placeName>Brympton</placeName>, the Almighty might have him and welcome
+                        ; and this raised a laugh, though Mrs. Blinder tried to look shocked, and
+                        Mr. Wace said the bears would eat us.</p>
+                    <p>We were all glad to hear that the <placeName>West Indies</placeName> were a
+                        long way off, and I remember that, in spite of Mr. Wace's solemn looks, we
+                        had a very merry dinner that day in the hall. I don't know if it was because
+                        of my being in better spirits, but I fancied Mrs. Brympton looked better
+                        too, and seemed more cheerful in her manner. She had been for a walk in the
+                        morning, and after luncheon she lay down in her room, and I read aloud to
+                        her. When she dismissed me I went to my own room feeling quite bright and
+                        happy, and for the first time in weeks walked past the locked door without
+                        thinking of it. As I sat down to my work I looked out and saw a few
+                        snow-flakes falling. The sight was pleasanter than the eternal rain, and I
+                        pictured to myself how pretty the bare gardens would look in their white
+                        mantle. It seemed to me as if the snow would cover up all the dreariness,
+                        indoors as well as out.</p>
+                    <p>The fancy had hardly crossed my mind when I heard a step at my side. I looked
+                        up, thinking it was Agnes.</p>
+                    <p>"Well, Agnes—" said I, and the words froze on my tongue; for there, in the
+                        door, stood Emma Saxon.</p>
+                    <p>I don't know how long she stood there. I only know I couldn't stir or take my
+                        eyes from her. Afterward I was terribly frightened, but at the time it
+                        wasn't fear I felt, but something deeper and quieter. She looked at me long
+                        and long, and her face was just one dumb prayer to me—but how in the world
+                        was I to help her ? Suddenly she turned, and I heard her walk down the
+                        passage. This time I wasn't afraid to follow—I felt that I must know what
+                        she wanted. I sprang up and ran out. She was at the other end of the
+                        passage, and I expected her to take the turn toward my mistress's room ; but
+                        instead of that she pushed open the door that led to the<ref target="a0011"
+                            corresp="n0011">backstairs</ref>. I followed her down the stairs, and
+                        across the passageway to the back door. The kitchen and hall were empty at
+                        that hour, the servants being off duty, except for the footman, who was in
+                        the pantry. At the door she stood still a moment, with another look at me;
+                        then she turned the handle, and stepped out. For a minute I hesitated. Where
+                        was she leading me to ? The door had closed softly after her, and I opened
+                        it and looked out, half-expecting to find that she had disappeared. But I
+                        saw her a few yards off, hurrying across the court-yard to the path through
+                        the woods. Her figure looked black and lonely in the snow, and for a second
+                        my heart failed me and I thought of turning back. But all the while she was
+                        drawing me after her; and catching up an old shawl of Mrs. Blinder's I ran
+                        out into the open.</p>
+                    <p>Emma Saxon was in the wood-path now. She walked on steadily, and I followed
+                        at the same pace, till we passed out of the gates and reached the high-road.
+                        Then she struck across the open fields to the village. By this time the
+                        ground was white, and as she climbed the slope of a bare hill ahead of me I
+                        noticed that she left no foot-prints behind her. At sight of that, my heart
+                        shrivelled up within me, and my knees were water. Somehow, it was worse here
+                        than indoors. She made the whole countryside seem lonely as the grave, with
+                        none but us two in it, and no help in the wide world.</p>
+                    <p>Once I tried to go back ; but she turned and looked at me, and it was as if
+                        she had dragged me with ropes. After that I followed her like a dog. We came
+                        to the village, and she led me through it, past the church and the<ref
+                            target="a0012" corresp="n0012"> blacksmith's shop</ref>, and down the
+                        lane to Mr. Ranford's. Mr. Ranford's house stands close to the road: a plain
+                        old-fashioned building, with a <pb n="559" facs="pageImages/Bell_559.jpg"
+                            /><pb n="559"/>flagged path leading to the door between box-borders. The
+                        lane was deserted, and as I turned into it, I saw Emma Saxon pause under the
+                        old elm by the gate. And now another fear came over me. I saw that we had
+                        reached the end of our journey, and that it was my turn to act. All the way
+                        from <placeName>Brympton</placeName> I had been asking myself what she
+                        wanted of me, but I had followed in a trance, as it were, and not till I saw
+                        her stop at Mr. Ranford's gate did my brain begin to clear itself. It stood
+                        a little way off in the snow, my heart beating fit to strangle me, and my
+                        feet frozen to the ground; and she stood under the elm and watched me.</p>
+                    <p>I knew well enough that she hadn't led me there for nothing. I felt there was
+                        something I ought to say or do—but how was I to guess what it was? I had
+                        never thought harm of my mistress and Mr. Ranford, but I was sure now that,
+                        from one cause or another, some dreadful thing hung over them. <hi
+                            rend="italic">She</hi> knew what it was; she would tell me if she could;
+                        perhaps she would answer if I questioned her.</p>
+                    <p>It turned me faint to think of speaking to her; but I<ref target="a0013"
+                            corresp="n0013"> plucked up heart</ref> and dragged myself across the
+                        few yards between us. As I did so, I heard the house-door open, and saw Mr.
+                        Ranford approaching. He looked handsome and cheerful, as my mistress had
+                        looked that morning, and at sight of him the blood began to flow again in my
+                        veins.</p>
+                    <p>"Why, Hartley," said he, "what's the matter? I saw you coming down the lane
+                        just now, and came out to see if you had taken root in the snow." He stopped
+                        and stared at me. "What are you looking at?" he says.</p>
+                    <p>I turned toward the elm as he spoke, and his eyes followed me; but there was
+                        no one there. The lane was empty as far as the eye could reach.</p>
+                    <p>A sense of helplessness came over me. She was gone, and I had not been able
+                        to guess what she wanted. Her last look had pierced me to the marrow; and
+                        yet it had not told me! All at once, I felt more desolate than when she had
+                        stood there watching me. It seemed as if she had left me all alone to carry
+                        the weight of the secret I couldn't guess. The snow went round me in great
+                        circles, and the ground fell away from me. . . .</p>
+                    <p>A drop of brandy and the warmth of Mr. Ranford's fire soon brought me to, and
+                        I insisted on being driven back at once to <placeName>Brympton</placeName>.
+                        It was nearly dark, and I was afraid my mistress might be wanting me. I
+                        explained to Mr. Ranford that I had been out for a walk and had been taken
+                        with a fit of giddiness as I passed his gate. This was true enough; yet I
+                        never felt more like a liar than when I said it.</p>
+                    <p>When I dressed Mrs. Brympton for dinner she remarked on my pale looks and
+                        asked what ailed me. I told her I had a headache, and she said she would not
+                        require me again that evening, and advised me to go to bed.</p>
+                    <p>It was a fact that I could scarcely keep on my feet; yet I had no fancy to
+                        spend a solitary evening in my room. I sat downstairs in the hall as long as
+                        I could hold my head up; but by nine I crept upstairs, too weary to care
+                        what happened if I could but get my head on a pillow. The rest of the
+                        household went to bed soon afterward; they kept early hours when the master
+                        was away, and before ten I heard Mrs. Blinder's door close, and Mr. Wace's
+                        soon after.</p>
+                    <p>It was a very still night, earth and air all muffled in snow. Once in bed I
+                        felt easier, and lay quiet, listening to the strange noises that come out in
+                        a house after dark. Once I thought I heard a door open and close again
+                        below: it might have been the glass door that led to the gardens. I got up
+                        and peered out of the window; but it was in the dark of the moon, and
+                        nothing visible outside but the streaking of snow against the panes.</p>
+                    <p>I went back to bed and must have dozed, for I jumped awake to the furious
+                        ringing of my bell. Before my head was clear I had sprung out of bed, and
+                        was dragging on my clothes. <hi rend="italic">It is going to happen
+                        now</hi>, I heard myself saying; but what I meant I had no notion. My hands
+                        seemed to be covered with glue—I thought I should never get into my clothes.
+                        At last I opened my door and peered down the passage. As far as my
+                        candle-flame carried, I could see nothing unusual ahead of me. I hurried on,
+                        breathless ; but as I pushed open the<ref target="a0014" corresp="n0014"
+                            >baize door</ref>leading to the main hall my heart stood still, for
+                        there at the head of the stairs was Emma <pb n="560"
+                            facs="pageImages/Bell_560.jpg"/>Saxon, peering dreadfully down into the
+                        darkness.</p>
+                    <p>For a second I couldn't stir; but my hand slipped from the door, and as it
+                        swung shut the figure vanished. At the same instant there came another sound
+                        from below stairs—a stealthy mysterious sound, as of a latch-key turning in
+                        the house-door. I ran to Mrs. Brympton's room and knocked.</p>
+                    <p>There was no answer, and I knocked again. This time I heard some one moving
+                        in the room; the bolt slipped back and my mistress stood before me. To my
+                        surprise I saw that she had not undressed for the night. She gave me a
+                        startled look.</p>
+                    <p>"What is this, Hartley?" she says in a whisper. "Are you ill? What are you
+                        doing here at this hour?"</p>
+                    <p>"I am not ill, madam ; but my bell rang."</p>
+                    <p>At that she turned pale, and seemed about to fall.</p>
+                    <p>"You are mistaken," she said harshly ; "I didn't ring. You must have been
+                        dreaming." I had never heard her speak in such a tone. "Go back to bed," she
+                        said, closing the door on me.</p>
+                    <p>But as she spoke I heard sounds again in the hall below: a man's step this
+                        time; and the truth leaped out on me.</p>
+                    <p>"Madam," I said, pushing past her, "there is someone in the house—"</p>
+                    <p>"Someone—?"</p>
+                    <p>"Mr. Brympton, I think—I hear his step below—"</p>
+                    <p>A dreadful look came over her, and without a word, she dropped flat at my
+                        feet. I fell on my knees and tried to lift her: by the way she breathed I
+                        saw it was no common faint. But as I raised her head there came quick steps
+                        on the stairs and across the hall: the door was flung open, and there stood
+                        Mr. Brympton, in his travelling-clothes, the snow dripping from him. He drew
+                        back with a start as he saw me kneeling by my mistress.</p>
+                    <p>"What the devil is this?" he shouted. He was less high-colored than usual,
+                        and the red spot came out on his forehead.</p>
+                    <p>"Mrs. Brympton has fainted, sir," said I.</p>
+                    <p>He laughed unsteadily and pushed by me. "It's a pity she didn't choose a more
+                        convenient moment. I'm sorry to disturb her, but—"</p>
+                    <p>I raised myself up, aghast at the man's action.</p>
+                    <p>"Sir," said I, "are you mad? What are you doing?"</p>
+                    <p>"Going to meet a friend," said he, and seemed to make for the
+                        dressing-room.</p>
+                    <p>At that my heart turned over. I don't know what I thought or feared; but I
+                        sprang up and caught him by the sleeve.</p>
+                    <p>"Sir, sir," said I, "for pity's sake look at your wife !"</p>
+                    <p>He shook me off furiously.</p>
+                    <p>"It seems that's done for me," says he, and caught hold of the dressing-room
+                        door.</p>
+                    <p>At that moment I heard a slight noise inside. Slight as it was, he heard it
+                        too, and tore the door open; but as he did so he dropped back. On the <ref
+                            target="a0015" corresp="n0015"> threshold</ref>stood Emma Saxon. All was
+                        dark behind her but I saw her plainly, and so did he. He threw up his hands
+                        as if to hide his face from her; and when I looked again she was gone.</p>
+                    <p>He stood motionless, as if the strength had run out of him; and in the
+                        stillness my mistress suddenly raised herself, and opening her eyes fixed a
+                        look on him. Then she fell back, and I saw the death-flutter pass over her.
+                        . . .</p>
+                    <p>We buried her on the third day, in a driving snow-storm. There were few
+                        people in the church, for it was bad weather to come from town, and I've a
+                        notion my mistress was one that hadn't many near friends. Mr. Ranford was
+                        among the last to come, just before they carried her up the aisle. He was in
+                        black, of course, being such a friend of the family, and I never saw a
+                        gentleman so pale. As he passed me, I noticed that he leaned a trifle on a
+                        stick he carried; and I fancy Mr. Brympton noticed it too, for the red spot
+                        came out sharp on his forehead, and all through the service he kept staring
+                        across the church at Mr. Ranford, instead of following the prayers as a
+                        mourner should.</p>
+                    <p>When it was over and we went out to the graveyard, Mr. Ranford had
+                        disappeared, and as soon as my poor mistress's body was underground, Mr.
+                        Brympton jumped into the carriage nearest the gate and drove off without a
+                        word to any of us. I heard him call out, "To the station," and we servants
+                        went back alone to the house.</p>
+                </div>
+            </div>
+        </body>
+
+        <back>
+            <div>
+                <note xml:id="n0001" target="a0001" type="editorial" resp="editors.xml#EP">A classic
+                    ghost story first published in the November 1902 issue of Scribner's Magazine.
+                    It is about Alice Hartley who begins a job in a secluded country house as a
+                    caregiver to a woman who is ill and shortly thereafter makes troubling
+                    observations of the house, the marriage of her mistress, and the previous
+                    caregiver who recently died. Strange noises, sightings of the deceased maid, her
+                    locked room, and ringing sound of a bell create an air of drama and mystery.<ref
+                        target="https://play.google.com/store/audiobooks/details/Edith_Wharton_The_Lady_s_Maid_s_Bell?id=AQAAAIAvOi66EM"
+                        >The Lady’ Maid’s Bell</ref>.</note>
+
+                <note xml:id="n0002" target="a0002" type="editorial" resp="editors.xml#EP">Edith
+                    Wharton (1862-1937) was born into New York’s upper-class society. She broke
+                    through strict social limitations placed on women at the time, writing more than
+                    40 books, including novels and short stories, as well as works on architecture,
+                    interior design, and travel. Among her most notable works are, The Age of
+                    Innocence, Ethan Frome, and The House of Mirth. Wharton was the first woman to
+                    receive the Pulitzer Prize for Fiction. She received three nominations for the
+                    Nobel Prize in Literature, received an honorary Doctorate of Letters from Yale
+                    University, and full membership in the American Academy of Arts and Letters.
+                    Read more about her life in<ref
+                        target="https://www.edithwharton.org/discover/edith-wharton/">Edith
+                        Wharton</ref>. </note>
+
+                <note xml:id="n0003" target="a0003" type="editorial" resp="editors.xml#EP">A
+                    systemic infection with symptoms including fever, headache, nausea, and
+                    diarrhea. Caused by contaminated food or water. Severity varies, sometimes with
+                    serious complications and can be fatal.</note>
+                <note xml:id="n0004" target="a0004" type="editorial" resp="editors.xml#EP"
+                    >Extravagant estate with luxurious mansion, landscaping and domestic staff on a
+                    very large, remote property.</note>
+                <note xml:id="n0005" target="a0005" type="editorial" resp="editors.xml#EP">Feeling
+                    faint, nervous, or depressed.</note>
+                <note xml:id="n0006" target="a0006" type="editorial" resp="editors.xml#EP">Large,
+                    four-wheeled carriages for a single, pair or team of horses, driven by grooms
+                    who also manage the stables. They are named as such, because they were
+                    originally designed to carry not only passengers, but also dogs. They perform
+                    well on country terrain, so were very popular with country estates, even in the
+                    age of motor vehicles".<ref
+                        target="https://www.nationaltrustcollections.org.uk/object/272875.1"> Groom
+                        in a dog-cart</ref>.</note>
+                <note xml:id="n0007" target="a0007" type="editorial" resp="editors.xml#EP">A
+                    uniformed worker with duties such as setting and waiting tables, serving food,
+                    clearing tables, opening and closing doors, and carrying luggage.<ref
+                        target="https://www.pbs.org/manorhouse/thepeople/charlie_duties.html"
+                        >Footman</ref>.</note>
+                <note xml:id="n0008" target="a0008" type="editorial" resp="editors.xml#EP">Country
+                    house design of this era typically included a servant’s hall, located in a
+                    separate wing of the house. This required a bell to be used by members of the
+                    household to summon staff for a wanted service. Bell types included sprung
+                    bells, bell pulls and electric bells. <ref
+                        target="https://www.nationaltrust.org.uk/features/did-you-ring-sir-country-house-communication-through-the-ages"
+                        > Bells</ref>.</note>
+
+
+                <note xml:id="n0009" target="a0009" type="editorial" resp="editors.xml#ALB">To <ref
+                        target="https://www.wordreference.com/definition/huddle">huddle</ref>
+                    usually means to gather in a cluster or group but it also meant "to put on
+                    (clothes) with careless haste," an outdated expression today.</note>
+
+                <note xml:id="n0010" target="a0010" type="editorial" resp="editors.xml#ALB">The West
+                    Indies are a chain of islands in the Caribbean Sea and Atlantic Ocean,
+                    stretching from the Bahamas to the northern tip of South America, an attractive
+                    holiday destination with a warm climate and beautiful beaches. It includes 13
+                    independent island countries and hundreds more smaller dependencies located in
+                    three major Archipelagos: the Greater Antilles, the Lesser Antilles, and the
+                    Lucayan Archipelago.<ref
+                        target="    https://www.britannica.com/place/West-Indies-island-group-Atlantic-Ocean"
+                        >West Indies</ref>.</note>
+
+                <note xml:id="n0011" target="a0011" type="editorial" resp="editors.xml#ALB">In a
+                    castle or a large manor house it was very important for the servants to keep out
+                    of sight, to be able to come and go without disturbing their employers. They
+                    were not allowed to use the traditional hallways and staircases but had their
+                    own passageways and backstairs. Inconspicuous doors in the public rooms led to
+                    their servants hallways and kitchens, whereby they entered as quietly and
+                    unobtrusively as possible to serve their employers.<ref
+                        target="    https://www.britannica.com/place/West-Indies-island-group-Atlantic-Ocean"
+                        >Backstairs</ref>. </note>
+                <note xml:id="n0012" target="a0012" type="editorial" resp="editors.xml#ALB">A
+                    metalsmith who works with wrought iron or steel using red hot fire to heat and
+                    shape the metal, makes repairs, tools and objects from weapons to decorative
+                    iron grates. Horseshoes are made by blacksmiths called farriers. Up until about
+                    the beginning of the 20th century, this shop was a common sight in farming and
+                    rural areas and in towns and villages. Today, artisans have revived this ancient
+                        tradition.<ref
+                        target="https://www.alamy.com/stock-photo/19th-century-blacksmith.html"
+                        >Blacksmith’s shop </ref>.</note>
+
+                <note xml:id="n0013" target="a0013" type="editorial" resp="editors.xml#ALB">This is
+                    an old fashioned expression, also used in Shakespeare’s Much Ado About Nothing.
+                    It means to force yourself to become brave enough to do something; to summon
+                        courage.<ref
+                        target="https://idiomorigins.org/origin/pluck-up-courageheartnervespirits-etc"
+                        >Plucked up heart</ref>.</note>
+
+                <note xml:id="n0014" target="a0014" type="editorial" resp="editors.xml#ALB"
+                    >Reference most often used in regard to servants. It is a sturdy green wool
+                    cloth that is attached to the side of a swing door. Popular during the mid-18th
+                    and 19th century, also in Jane Austen’s world, this insulating fabric prevented
+                    noises from disturbing individuals on either side. It also refers to the
+                    metaphorical dividing line between two domains, master and servant.<ref
+                        target="  https://www.baizewoolfabrics.co.uk/product-insights/green-baize-doors/"
+                        >Baize door</ref>.</note>
+                <note xml:id="n0015" target="a0015" type="editorial" resp="editors.xml#ALB">In
+                    Gothic tales it is the liminal space between good and evil. Liminal comes from
+                    the Latin limen, which literally means "threshold." It refers to someone or
+                    something being on a boundary between two things - often two extremes, like a
+                    transitory, 'in-between' state. Manuel Aguirre (Liminal Terror: The Poetics of
+                    Gothic Space), a literary critic, cites liminality as a defining feature of
+                    Gothic literature. Doors and windows are often literal and metaphorical
+                        thresholds.<ref
+                        target=" https://www.thegothiclibrary.com/gothic-vocab-liminal"
+                        >Threshold</ref>.</note>
+            </div>
+        </back>
+    </text>
+</TEI>
