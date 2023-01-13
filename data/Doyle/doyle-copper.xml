@@ -1,0 +1,488 @@
+ <!--TEI Header BEGINS-->
+   <teiHeader xml:lang="en">
+
+  	<fileDesc>
+     	<!--BEGINS File Description -->
+     	<titleStmt>
+        	<title type="main">"The Adventure of the Copper Beeches"</title>
+        	<!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
+        	<author>
+           	<persName type="lcnaf" key="n79082292">
+              	<!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
+              	<name ref="xxx.xml">
+                 	<forename>Arthur Conan</forename>
+                 	<surname>Doyle</surname>
+              	</name>
+           	</persName>
+        	</author>
+        	<editor>
+           	<persName type="orcid" key="0000-0002-7400-4093">
+              	<!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
+              	<name ref="editors.xml#TH">
+                 	<!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
+                 	<surname>XXX</surname>
+                 	<forename>XXX</forename>
+              	</name>
+           	</persName>
+        	</editor>
+        	<respStmt>
+           	<resp>Transcription, correction, editorial commentary, and markup</resp>
+           	<!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
+           	<name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
+   	<name ref="editors.xml#NA">Noor Abdelhamid</name>
+   			<name ref="editors.xml#AC">Audrey Clement</name>
+           	<!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
+        	</respStmt>
+        	<sponsor/>
+        	<funder>National Endowment for the Humanities</funder>
+        	<!-- Do not alter. -->
+     	</titleStmt>
+
+
+     	<publicationStmt>
+        	<!-- This element expresses the publication details of this particular etext. -->
+        	<publisher>Literature in Context</publisher>
+        	<!-- Do not alter. -->
+        	<address>
+           	<!-- Use the address information for your university. -->
+           	<addrLine>Marymount University Department of Literature and Languages</addrLine>
+           	<addrLine>2807 N. Glebe Road</addrLine>
+           	<addrLine>Arlington, VA </addrLine>
+           	<addrLine>22207</addrLine>
+           	<addrLine>thowe@marymount.edu</addrLine>
+           	<!-- Add your email address.  -->
+           	<addrLine>lic.open.anthology@gmail.com</addrLine>
+           	<!-- Do not alter. -->
+        	</address>
+        	<availability status="free">
+           	<!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
+           	<licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+              	Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+              	License </licence>
+        	</availability>
+     	</publicationStmt>
+
+
+     	<sourceDesc>
+        	<!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
+
+        	<biblStruct>
+           	<analytic>
+              	<!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
+              	<title>"The Adventure of the Copper Beeches"</title>
+           	</analytic>
+           	<monogr>
+              	<!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
+              	<author>
+                    	<forename>XXX</forename>
+                    	<surname>XXX</surname>             	 
+              	</author>
+              	<title>The Strand Magazine: An Illustrated Monthly</title>
+              	<imprint>
+                 	<!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
+                 	<pubPlace>
+                    	<placeName type="tgn" key="7011781">London</placeName>
+                    	<!-- Note authority and key. -->
+                 	</pubPlace>
+                 	<publisher>George Newnes, Limited</publisher>
+                 	<!-- Insert publsher of earliest/first edition. -->
+                 	<date when="1892">1892</date>
+                 	<!-- Insert year of earliest/first edition. Note the attribute @when. -->
+          	 
+                 	<note>Page images are drawn from <ref
+                       	target="https://archive.org/details/TheStrandMagazineAnIllustratedMonthly/TheStrandMagazine1892aVol.IiiJan-jun/page/n611/mode/2up">https://archive.org/details/TheStrandMagazineAnIllustratedMonthly/TheStrandMagazine1892aVol.IiiJan-jun/page/n611/mode/2up</ref>.</note>
+                 	<!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
+               	 
+              	</imprint>
+              	<imprint>
+                 	<note>Text for this digital edition drawn from <ref
+                       	target="https://archive.org/details/TheStrandMagazineAnIllustratedMonthly/TheStrandMagazine1892aVol.IiiJan-jun/page/n611/mode/2up">https://archive.org/details/TheStrandMagazineAnIllustratedMonthly/TheStrandMagazine1892aVol.IiiJan-jun/page/n611/mode/2up</ref> and checked against the first edition text using The Internet Archive. </note>
+              	</imprint>
+              	<biblScope unit="volume">III</biblScope>
+              	<!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
+              	<biblScope>pp 613-628</biblScope>
+           	</monogr>
+        	</biblStruct>
+     	</sourceDesc>
+
+  	</fileDesc>
+  	<!-- Don't forget to close out all your elements! -->
+
+
+
+  	<profileDesc>
+     	<!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
+     	<langUsage>
+        	<language ident="en">English</language>
+     	</langUsage>
+
+     	<creation/>
+     	<!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
+
+     	<textDesc n="tale">
+        	<channel mode="w">print</channel>
+        	<!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
+        	<constitution type="single"/>
+        	<!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
+        	<derivation type="original"/>
+        	<!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
+        	<domain/>
+        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+        	<factuality type="fiction"/>
+        	<!-- See the textDesc guidelines for more information. -->
+        	<interaction/>
+        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+        	<preparedness/>
+        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+        	<purpose type="entertain" degree="high"/>
+        	<!-- See the TEI guidelines for more information. -->
+        	<purpose type="inform" degree="low"/>
+        	<!-- Multiple purpose types may or may not be appropriate. -->
+     	</textDesc>
+
+     	<settingDesc>
+        	<!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
+        	<setting>
+           	<name type="tgn" key="7011781">London, England</name>
+           	<!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+           	<name type="tgn" key="7011375">Winchester, England</name>
+           	<time from="1890" to="1930">Late 19th Century</time>
+           	<!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+        	</setting>
+     	</settingDesc>
+  	</profileDesc>
+
+  	<encodingDesc>
+     	<!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
+     	<projectDesc>
+        	<p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+           	project, which provides an accessible, curated, and marked-up selection of primary
+           	sources relevant to the study and the teaching of British and American literature of
+           	the 18th century. This project is funded by the National Endowment for the Humanities
+           	and developed by faculty at The University of Virginia and Marymount University. </p>
+     	</projectDesc>
+     	<editorialDecl>
+        	<interpretation>
+           	<p>Research informing these annotations draws on publicly-accessible resources, with
+              	links provided where possible. Annotations have also included common knowledge,
+              	defined as information that can be found in multiple reliable sources. If you
+              	notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+           	</p>
+        	</interpretation>
+        	<normalization>
+           	<p>Original spelling and capitalization is retained, though the long s has been
+              	silently modernized and ligatured forms are not encoded.</p>
+        	</normalization>
+        	<hyphenation>
+           	<p>Hyphenation has not been retained, except where necessary for the sense of the
+              	word.</p>
+        	</hyphenation>
+        	<segmentation>
+           	<p>Page breaks have been retained. Catchwords, signatures, and running headers have
+              	not. Where pages break in the middle of a word, the complete word has been
+              	indicated prior to the page beginning.</p>
+        	</segmentation>
+        	<correction>
+           	<p>Materials have been transcribed from and checked against first editions, where
+              	possible. See the Sources section.</p>
+        	</correction>
+     	</editorialDecl>
+     	<tagsDecl>
+        	<!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
+        	<namespace name="http://www.tei-c.org/ns/1.0">
+           	<tagUsage gi="div">Unnumbered divs used.</tagUsage>
+        	</namespace>
+     	</tagsDecl>
+     	<classDecl>
+        	<!-- We here define the authority files used throughout the application and data. -->
+        	<taxonomy xml:id="lcnaf">
+           	<bibl>Library of Congress Name Authority File</bibl>
+        	</taxonomy>
+        	<taxonomy xml:id="lcc">
+           	<bibl>Library of Congress Classification</bibl>
+        	</taxonomy>
+        	<taxonomy xml:id="tgn">
+           	<bibl>Getty Thesaurus of Geographic Names</bibl>
+        	</taxonomy>
+        	<taxonomy xml:id="orcid">
+           	<bibl>Open Researcher and Contributor ID</bibl>
+        	</taxonomy>
+     	</classDecl>
+  	</encodingDesc>
+
+   </teiHeader>
+   <!--TEI Header Ends -->
+<text>
+<body>
+<div>
+<head type="main">Adventures of Sherlock Holmes.</head>
+<head type="main">XII,—THE ADVENTURE OF THE COPPER BEECHES,</head>
+<head type="sub">By <persName>A. Conan Doyle.</persName></head>
+<p>“To the man who loves art for its own sake," remarked <persName>Sherlock Holmes</persName>, tossing aside the advertisement sheet of <ref target="a0001" corresp="n0001"><hi rend="italic">The Daily Telegraph</hi></ref>, “it is frequently in its least important and lowliest manifestations that the keenest pleasure is to be derived. It is pleasant to me to observe, <persName>Watson</persName>, that you have so far grasped this truth that in these little records of our cases which you have been good enough to draw up, and, I am bound to say, occasionally to embellish, you have given prominence not so much to the many <hi rend="italic">causes célèbres</hi> and sensational trials in which I have figured, but rather to those incidents which may have been trivial in themselves, but which have given room for those faculties of deduction and of logical synthesis which I have made my special province."</p>
+<p>“And yet," said I, smiling, “I cannot quite hold myself absolved from the charge of sensationalism which has been urged against my records."</p>
+<p>"You have erred, perhaps," he observed, taking up a glowing cinder with the tongs, and lighting with it the long cherry wood pipe which was wont to replace his clay when he was in a disputatious, rather than a meditative mood— “you have erred perhaps in attempting to put colour and life into each of your statements, instead of confining yourself to the task of placing upon record that severe reasoning from cause to effect which is really the only notable feature about the thing."</p>
+<p>“It seems to me that I have done you full justice in the matter," I remarked, with some coldness, for I was repelled by the egotism which I had more than once observed to be a strong factor in my friend's singular character.</p>
+<p>“No, it is not selfishness or conceit," said he, answering, as was his wont, my thoughts rather than my words. “If I claim full justice for my art, it is because it is an impersonal thing—a thing beyond myself. Crime is common. Logic is rare. Therefore it is upon the logic rather than upon the crime that you should dwell. You have degraded what should have been a course of lectures into a series of tales."</p>
+<p>It was a cold morning of the early spring, and we sat after breakfast on either side of a cheery fire in the old room at <placeName>Baker-street</placeName>. A thick fog rolled down between the lines of <ref target="a0002" corresp="n0002">dun-coloured</ref> houses, and the opposing windows loomed like dark, shapeless blurs through the heavy yellow wreaths. Our gas was lit, and shone on the white cloth, and glimmer of china and metal, for the table had not been cleared yet. <persName>Sherlock Holmes</persName> had been<pb n="614"/> silent all the morning, dipping continuously into the advertisement columns of a succession of papers, until at last, having apparently given up his search, he had emerged in no very sweet temper to lecture me upon my literary shortcomings.</p>
+<p>“At the same time," he remarked, after a pause, during which he had sat puffing at his long pipe and gazing down into the fire, “you can hardly be open to a charge of sensationalism, for out of these cases which you have been so kind as to interest yourself in, a fair proportion do not treat of crime, in its legal sense, at all. The small matter in which I endeavoured to help <persName>the King of Bohemia</persName>, the singular experience of <persName>Miss Mary Sutherland</persName>, the problem connected with the man with the twisted lip, and the incident of the noble bachelor, were all matters which are outside the pale of the law. But in avoiding the sensational, I fear that you may have bordered on the trivial."</p>
+<p>“The end may have been so," I answered, “but the methods I hold to have been novel and of interest."</p>
+<p>“Pshaw, my dear fellow, what do the public, the great unobservant public, who could hardly tell a <ref target="a0003" corresp="n0003">weaver by his tooth</ref> or a <ref target="a0004" corresp="n0004">compositor by his left thumb</ref>, care about the finer shades of analysis and deduction! But, indeed, if you are trivial, I cannot blame you, for the days of the great cases are past. Man, or at least criminal man, has lost all enterprise and originality. As to my own little practice, it seems to be degenerating into an agency for recovering lost lead pencils, and giving advice to young ladies from boarding-schools. I think that I have touched bottom at last, however. This note I had this morning marks my zero point, I fancy. Read it! " He tossed a crumpled letter across to me.</p>
+<p>It was dated from <placeName>Montague-place</placeName> upon the preceding evening, and ran thus:—</p></div>
+<div>
+<opener><salute>“Dear <persName>Mr. Holmes</persName>,</salute></opener> <p>—I am very anxious to consult you as to whether I should or should not accept a situation which has been offered to me as governess. I shall call at half-past ten to-morrow, if I do not inconvenience you.</p><closer><salute>—Yours faithfully,</salute>
+<signed><persName>VIOLET HUNTER</persName>."</signed></closer></div>
+<div>
+<p>“Do you know the young lady ? " I asked.</p>
+<p>“Not I."</p>
+<p>“It is half-past ten now."</p>
+<p>“Yes, and I have no doubt that is her ring."</p>
+<p>“It may turn out to be of more interest than you think. You remember that the affair of the blue carbuncle, which appeared to be a mere whim at first, developed into a serious investigation. It may be so in this case, also."</p>
+<p>“Well, let us hope so ! But our doubts will very soon be solved, for here, unless I am much mistaken, is the person in question."</p>
+<p>As he spoke the door opened, and a young lady entered the room. She was plainly but neatly dressed, with a bright, quick face, freckled like a plover’s egg, and with the brisk manner of a woman who has had her own way to make in the world.</p>
+<p>“You will excuse my troubling you, I am sure," said she, as my companion rose to greet her; “but I have had a very strange experience, and as I have no parents or relations of any sort from whom I could ask advice, I thought that perhaps you would be kind enough to tell me what I should do."</p>
+<p>“Pray take a seat, <persName>Miss Hunter</persName>. I shall be happy to do anything that I can to serve you."</p>
+<p>I could see that <persName>Holmes</persName> was favourably impressed by the manner and speech of his new client. He looked her over in his searching fashion, and then composed himself with his lids drooping and his finger tips together to listen to her story.</p>
+<p>“I have been a governess for five years," said she, “in the family of <persName>Colonel Spence Munro</persName>, but two months ago <persName>the Colonel</persName> received an appointment at <placeName>Halifax</placeName>, in <placeName>Nova Scotia</placeName>, and took his children over to <placeName>America</placeName> with him, so that I found myself without a situation. I advertised, and I answered advertisements, but without success. At last the little money which I had saved began to run short, and I was at my wit’s end as to what I should do.</p>
+<p>“There is a well-known agency for governesses in the <placeName>West-end</placeName> called Westaway’s, and there I used to call about once a week in order to see whether anything had turned up which might suit me. Westaway was the name of the founder of the business, but it is really managed by <persName>Miss Stoper</persName>. She sits in her own little office, and the ladies who are seeking employment wait in an ante-room, and are then shown in one by one, when she consults her ledgers, and sees whether she has anything which would suit them.</p>
+<p>“Well, when I called last week<pb n="615"/> I was shown into the little office as usual, but I found that <persName>Miss Stoper</persName> was not alone. A prodigiously stout man with a very smiling face, and a great heavy chin which rolled down in fold upon fold over his throat, sat at her elbow with a pair of glasses on his nose, looking very earnestly at the ladies who entered. As I came in he gave quite a jump in his chair, and turned quickly to <persName>Miss Stoper</persName>:</p>
+<p>“‘That will do,’ said he, ‘I could not ask for anything better. Capital! capital!’ He seemed quite enthusiastic, and rubbed his hands together in the most genial fashion. He was such a comfortable looking man that it was quite a pleasure to look at him.</p>
+<p>‘“You are looking for a situation, miss?' he asked.</p>
+<p>“‘Yes, sir.'</p>
+<p>“‘As governess?’</p>
+<p>“‘Yes, sir.'</p>
+<p>“‘And what salary do you ask?’</p>
+<p>“‘I had four pounds a month in my last place with <persName>Colonel Spence Munro</persName>.'</p>
+<p>‘“Oh, tut, tut! Sweating --rank sweating!’ he cried, throwing his fat hands out into the air like a man who is in a boiling passion. ‘How could anyone offer so pitiful a sum to a lady with such attractions and accomplishments?’</p>
+<p>“‘My accomplishments, sir, may be less than you imagine,’ ^ said I. ‘ A little French, a little German, music and drawing-’</p>
+<p>“‘Tut, tut! ’ he cried. ‘This is all quite beside the question. The point is, have you or have you not the bearing and deportment of a lady? There it is in a nutshell. If you have not, you are not fitted for the rearing of a child who may some day play a considerable part in the history of the country. But if you have, why, then, how could any gentleman ask you to condescend to accept anything under the three figures ? Your salary with me, madam, would commence at a hundred pounds a year.’</p>
+<p>“You may imagine, <persName>Mr. Holmes</persName>, that to me, destitute as I was, such an offer seemed almost too good to be true. The gentleman, however, seeing perhaps the look of incredulity upon my face, opened a pocket-book and took out a note.</p>
+<p>“‘It is also my custom,’ said he, smiling in the most pleasant fashion until his eyes were just two little shining slits, amid the white creases of his face, ‘to advance to my young ladies half their salary beforehand, so that they may meet any little expenses of their journey and their wardrobe.’</p>
+<p>“It seemed to me that I had never met so fascinating and so thoughtful a man. As I was already in debt to my tradesmen the advance was a great convenience, and yet there was something unnatural about the<pb n="616"/> whole transaction which made me wish to know a little more before I quite committed myself. </p>
+<p>“‘May I ask where you live, sir?’ said I.</p>
+<p>“‘<placeName>Hampshire</placeName>. Charming rural place. <placeName>The Copper Beeches</placeName>, five miles on the far side of <ref target="a0005" corresp="n0005"><placeName>Winchester</placeName></ref>. It is the most lovely country, my dear young lady, and the dearest old country house.’</p>
+<p>“‘And my duties, sir ? I should be glad to know what they would be.’</p>
+<p>“‘One child—one dear little romper just six years old. Oh, if you could see him killing cockroaches with a slipper! Smack! smack! smack ! Three gone before you could wink!’ He leaned back in his chair and laughed his eyes into his head again.</p>
+<p>“I was a little startled at the nature of the child’s amusement, but the father’s laughter made me think that perhaps he was joking.</p>
+<p>“‘My sole duties, then,’ I asked, ‘are to take charge of a single child?’</p>
+<p>“‘No, no, not the sole, not the sole, my dear young lady,' he cried. ‘Your duty would be, as I am sure your good sense would suggest, to obey any little commands which my wife might give, provided always that they were such commands as a lady might with propriety obey. You see no difficulty, heh?’ </p>
+<p>“‘I should be happy to make myself useful.’</p>
+<p>“‘Quite so. In dress now, for example! We are faddy people, you know—faddy but kind-hearted. If you were asked to wear any dress which we might give you, you would not object to our little whim. Heh?’</p>
+<p>“‘No,’ said I, considerably astonished at his words.</p>
+<p>“‘Or to sit here, or sit there, that would not be offensive to you?’</p>
+<p>“‘Oh, no.’</p>
+<p>“‘Or to cut your hair quite short before you come to us.’</p>
+<p>“I could hardly believe my ears. As you may observe, <persName>Mr. Holmes</persName>, my hair is somewhat luxuriant, and of a rather peculiar tint of chestnut. It has been considered artistic. I could not dream of sacrificing it in this offhand fashion.</p>
+<p>“‘I am afraid that that is quite impossible,’ said I. He had been watching me eagerly out of his small eyes, and I could see a shadow pass over his face as I spoke.</p>
+<p>“‘I am afraid that it is quite essential,’ said he. ‘It is a little fancy of my wife’s, and ladies’ fancies, you know, madam, ladies’ fancies must be consulted. And so you won’t cut your hair?’</p>
+<p>“‘No, sir, I really could not,’ I answered firmly.</p>
+<p>“‘Ah, very well, then that quite settles the matter. It is a pity, because in other respects you would really have done very nicely. In that case, <persName>Miss Stoper</persName>, I had best inspect a few more of your young ladies.’</p>
+<p>“The manageress had sat all this while busy with her papers without a word to either of us, but she glanced at me now with so much annoyance upon her face that I could not help suspecting that she had lost a handsome commission through my refusal.</p>
+<p>“‘Do you desire your name to be kept upon the books?’ she asked.</p>
+<p>“‘If you please, <persName>Miss Stoper</persName>.’</p>
+<p>“‘Well, really, it seems rather useless, since you refuse the most excellent offers in this fashion,’ said she sharply. ‘You can hardly expect us to exert ourselves to find another such opening for you. Good day to you, <persName>Miss Hunter</persName>.' She struck a gong upon the table, and I was shown out by the page.</p>
+<p>“Well, <persName>Mr. Holmes</persName>, when I got back to my lodgings and found little enough in the cupboard, and two or three bills upon the table, I began to ask myself whether I had not done a very foolish thing. After all, if these people had strange fads, and expected obedience on the most extraordinary matters, they were at least ready to pay for their eccentricity. Very few governesses in <placeName>England</placeName> are getting a hundred a year. Besides, what use was my hair to me? Many people are improved by wearing it short, and perhaps I should be among the number. Next day I was inclined to think that I had made a mistake, and by the day after I was sure of it. I had almost overcome my pride, so far as to go back to the agency and inquire whether the place was still open, when I received this letter from the gentleman himself. I have it here, and I will read it to you:—</p></div>
+<div><opener><dateline>“‘ <placeName>The Copper Beeches</placeName>, near <placeName>Winchester</placeName>.</dateline>
+<salute>‘‘‘Dear <persName>Miss Hunter</persName>, </salute></opener><p>—<persName>Miss Stoper</persName> has very kindly given me your address, and I write from here to ask you whether you have reconsidered your decision. My wife is very anxious that you should come, for she has been much attracted by my description of you. We are willing to give thirty pounds a quarter, or  £120 a year, so as to<pb n="617"/> recompense you for any little inconvenience which our fads may cause you. They are not very exacting after all. My wife is fond of a particular shade of electric blue, and would like you to wear such a dress indoors in the morning. You need not, however, go to the expense of purchasing one, as we have one belonging to my dear daughter <persName>Alice</persName> (now in <placeName>Philadelphia</placeName>) which would, I should think, fit you very well. Then, as to sitting here or there, or amusing yourself in any manner indicated, that need cause you no inconvenience. As regards your hair, it is no doubt a pity, especially as I could not help remarking its beauty during our short interview, but I am afraid that I must remain firm upon this point, and I only hope that the increased salary may recompense you for the loss. Your duties, as far as the child is concerned, are very light. Now do try to come, and I shall meet you with the dogcart at <placeName>Winchester</placeName>. Let me know your train,</p><closer><salute>—Yours faithfully,</salute>
+<signed><persName>Jephro Rucastle</persName>.'</signed><.closer></div>
+<div>
+<p>“That is the letter which I have just received, <persName>Mr. Holmes</persName>, and my mind is made up that I will accept it. I thought, however, that before taking the final step, I should like to submit the whole matter to your consideration."</p>
+<p>“Well, <persName>Miss Hunter</persName>, if your mind is made up, that settles the question," said <persName>Holmes</persName>, smiling.</p>
+<p>“But you would not advise me to refuse?"</p>
+<p>“I confess that it is not the situation which I should like to see a sister of mine apply for."</p>
+<p>“What is the meaning of it all, <persName>Mr. Holmes</persName>?"</p>
+<p>“Ah, I have no data. I cannot tell. Perhaps you have yourself formed some opinion?"</p>
+<p>“Well, there seems to me to be only one possible solution. <persName>Mr. Rucastle</persName> seemed to be a very kind, good-natured man. Is it not possible that his wife is a lunatic, that he desires to keep the<pb n="618"/> matter quiet for fear she should be taken to an asylum, and that he humours her fancies in every way in order to prevent an outbreak."</p>
+<p>“That is a possible solution—in fact, as matters stand, it is the most probable one. But in any case it does not seem to be a nice household for a young lady."</p>
+<p>“But the money, <persName>Mr. Holmes</persName>, the money!"</p>
+<p>“Well, yes, of course the pay is good— too good. That is what makes me uneasy. Why should they give you £120 a year, when they could have their pick for £40? There must be some strong reason behind."</p>
+<p>“I thought that if I told you the circumstances you would understand afterwards if I wanted your help. I should feel so much stronger if I felt that you were at the back of me."</p>
+<p>“Oh, you may carry that feeling away with you. I assure you that your little problem promises to be the most interesting which has come my way for some months. There is something distinctly novel about some of the features. If you should find yourself in doubt or in danger-"</p>
+<p>“Danger ! What danger do you foresee?"</p>
+<p><persName>Holmes</persName> shook his head gravely. “It would cease to be a danger if we could define it," said he. “But at any time, day or night, a telegram would bring me down to your help."</p>
+<p>“That is enough." She rose briskly from her chair with the anxiety all swept from her face. “I shall go down to <placeName>Hampshire</placeName> quite easy in my mind now. I shall write to <persName>Mr. Rucastle</persName> at once, sacrifice my poor hair to-night, and start for <placeName>Winchester</placeName> to-morrow." With a few grateful words to <persName>Holmes</persName> she bade us both good-night and bustled off upon her way.</p>
+<p>“At least," said I, as we heard her quick, firm step descending the stairs, “she seems to be a young lady who is very well able to take care of herself."</p>
+<p>“And she would need to be," said <persName>Holmes</persName>, gravely; “I am much mistaken if we do not hear from her before many days are past."</p>
+<p>It was not very long before my friend’s prediction was fulfilled. A fortnight went by, during which I frequently found my thoughts turning in her direction, and wondering what strange side-alley of human experience this lonely woman had strayed into. The unusual salary, the curious conditions, the light duties, all pointed to something abnormal, though whether a fad or a plot, or whether the man were a philanthropist or a villain, it was quite beyond my powers to determine. As to <persName>Holmes</persName>, I observed that he sat frequently for half an hour on end, with knitted brows and an abstracted air, but he swept the matter away with a wave of his hand when I mentioned it. “Data ! data ! data ! " he cried impatiently. “I can’t make bricks without clay." And yet he would always wind up by muttering that no sister of his should ever have accepted such a situation.</p>
+<p>The telegram which we eventually received came late one night, just as I was thinking of turning in, and <persName>Holmes</persName> was settling down to one of those all-night chemical researches which he frequently indulged in, when I would leave him stooping over a retort and a test-tube at night, and find him in the same position when I came down to breakfast in the morning. He opened the yellow envelope, and then, glancing at the message, threw it across to me.</p>
+<p>“Just look up the trains in <placeName>Bradshaw</placeName>," said he, and turned back to his chemical studies.</p>
+<p>The summons was a brief and urgent one.</p></div>
+<div>
+<p>“Please be at the <placeName>‘Black Swan’ Hotel</placeName> at <placeName>Winchester</placeName> at midday to-morrow," it said. “Do come! I am at my wit’s end.</p>
+<closer><signed>“<persName>HUNTER</persName>."</signed></closer></div>
+<div>
+<p>“Will you come with me?" asked <persName>Holmes</persName>, glancing up.</p>
+<p>“I should wish to."</p>
+<p>“Just look it up, then."</p>
+<p>“There is a train at half-past nine," said I, glancing over my Bradshaw. “It is due at <placeName>Winchester</placeName> at 11.30."</p>
+<p>“That will do very nicely. Then perhaps I had better postpone my analysis of the acetones, as we may need to be at our best in the morning."</p>
+
+<p>By eleven o’clock the next day we were well upon our way to the old English capital. <persName>Holmes</persName> had been buried in the morning papers all the way down, but after we had passed the <placeName>Hampshire</placeName> border he threw them down, and began to admire the scenery. It was an ideal spring day, a light blue sky, flecked with little fleecy white clouds drifting across from west to east. The sun was shining very brightly, and yet there was an exhilarating nip in the air, which set an edge to a man’s energy. All over the countryside, away to the rolling hills around <placeName>Aldershot</placeName>, the little red and grey roofs of the farm-steadings peeped out from amidst the light green of the new foliage.</p>
+<p>“Are they not fresh and beautiful?" I cried, with all the enthusiasm of a man fresh from the <ref target="a0006" corresp="n0006">fogs</ref> of <placeName>Baker-street</placeName>.</p>
+<p>But <persName>Holmes</persName> shook his head gravely.</p>
+<p>“Do you know, <persName>Watson</persName>," said he, “that it is one of the curses of a mind with a turn like mine that I must look at everything with reference to my own special subject. You look at these scattered houses, and you are impressed by their beauty. I look at them, and the only thought which comes to me is a feeling of their isolation, and of the impunity with which crime may be committed there."</p>
+<p>“Good heavens!" I cried. “Who would associate crime with these dear old homesteads?"</p>
+<p>“They always fill me with a certain horror. It is my belief, <persName>Watson</persName>, founded upon my experience, that the lowest and vilest alleys in <placeName>London</placeName> do not present a more dreadful record of sin than does the smiling and beautiful countryside."</p>
+<p>“You horrify me ! "</p>
+<p>“But the reason is very obvious. The pressure of public opinion can do in the town what the law cannot accomplish. There is no lane so vile that the scream of a tortured child, or the thud of a drunkard’s blow, does not beget sympathy and<pb n="619"/>indignation among the neighbours, and then the whole machinery of justice is ever so close that a word of complaint can set it going, and there is but a step between the crime and the dock. But look at these lonely houses, each in its own fields, filled for the most part with poor ignorant folk who know little of the law. Think of the deeds of hellish cruelty, the hidden wickedness which may go on, year in, year out, in such places, and none the wiser. Had this lady who appeals to us for help gone to live in <placeName>Winchester</placeName>, I should never have had a fear for her. It is the five miles of country which makes the danger. Still, it is clear that she is not personally threatened."</p>
+<p>“No. If she can come to <placeName>Winchester</placeName> to meet us she can get away."</p>
+<p>“Quite so. She has her freedom."</p>
+<p>“What can be the matter, then? Can you suggest no explanation?"</p>
+<p>“I have devised seven separate explanations, each of which would cover the facts as far as we know them. But which of these is correct can only be determined by the fresh information which we shall no doubt find waiting for us. Well, there is the tower of the <ref target="a0007" corresp="n0007">Cathedral</ref>, and we shall soon learn all that <persName>Miss Hunter</persName> has to tell."</p>
+<p>The “<placeName>Black Swan</placeName>" is an inn of repute in the <placeName>High-street</placeName>, at no distance from the station, and there we found the young lady waiting for us. She had engaged a sitting-room, and our lunch awaited us upon the table.</p>
+<p>“I am so delighted that you have come," she said, earnestly. “It is so very kind of you both; but indeed I do not know what I should do. Your advice will be altogether invaluable to me."</p>
+<p>“Pray tell us what has happened to you."</p>
+<p>“I will do so, and I must be quick, for I have promised <persName>Mr. Rucastle</persName> to be back before three. I got his leave to come into town this morning, though he little knew for what purpose."</p>
+<p>“Let us have everything in its due order." <persName>Holmes</persName> thrust his long thin legs out towards the fire, and composed himself to listen.</p>
+<p>“In the first place, I may say that I have met, on the whole, with no actual ill-treatment from <persName>Mr. and Mrs. Rucastle</persName>. It is only fair to them to say that. But I cannot understand them, and I am not easy in my mind about them."</p>
+<p>“What can you not understand?" </p>
+<p>“Their reasons for their conduct. But you shall have it all just as it occurred. When I came down <persName>Mr. Rucastle</persName> met me here, and drove me in his dogcart to <placeName>the Copper Beeches</placeName>. It is, as he said, beautifully situated, but it is not beautiful in itself, for it is a large square block of a house, whitewashed, but all stained and streaked with damp and bad weather. There are grounds round it, woods on three sides, and on the fourth a field which slopes down to the <placeName>Southampton</placeName> high road, which curves<pb n="620"/>past about a hundred yards from the front door. This ground in front belongs to the house, but the woods all round are part of <persName>Lord Southerton</persName>’s preserves. A clump of copper beeches immediately in front of the hall door has given its name to the place.</p>
+<p>“I was driven over by my employer, who was as amiable as ever, and was introduced by him that evening to his wife and the child. There was no truth, <persName>Mr. Holmes</persName>, in the conjecture which seemed to us to be probable in your rooms at <placeName>Baker-street</placeName>. <persName>Mrs. Rucastle</persName> is not mad. I found her to be a silent, pale-faced woman, much younger than her husband, not more than thirty, I should think, while he can hardly be less than forty-five. From their conversation I have gathered that they have been married about seven years, that he was a widower, and that his only child by the first wife was the daughter who has gone to <placeName>Philadelphia</placeName>. <persName>Mr. Rucastle</persName> told me in private that the reason why she had left them was that she had an unreasoning aversion to her step-mother. As the daughter could not have been less than twenty I can quite imagine that her position must have been uncomfortable with her father’s young wife.</p> 
+<p>“<persName>Mrs. Rucastle</persName> seemed to me to be colourless in mind as well as in feature. She impressed me neither favourably nor the reverse. She was a nonentity. It was easy to see that she was passionately devoted both to her husband and to her little son. Her light grey eyes wandered continually from one to the other, noting every little want and forestalling it if possible. He was kind to her also in his bluff boisterous fashion, and on the whole they seemed to be a happy couple. And yet she had some secret sorrow, this woman. She would often be lost in deep thought, with the saddest look upon her face. More than once I have surprised her in tears. I have thought sometimes that it was the disposition of her child which weighed upon her mind, for I have never met so utterly spoilt and so ill-natured a little creature. He is small for his age, with a head which is quite disproportionately large. His whole life appears to be spent in an alternation between savage fits of passion, and gloomy intervals of sulking. Giving pain to any creature weaker than himself seems to be his one idea of amusement, and he shows quite remarkable talent in planning the capture of mice, little birds, and insects. But I would rather not talk about the creature, <persName>Mr. Holmes</persName>, and, indeed, he has little to do with my story."</p>
+<p>“I am glad of all details," remarked my friend, “ whether they seem to you to be relevant or not."</p>
+<p>“I shall try not to miss anything of importance. The one unpleasant thing about the house, which struck me at once, was the appearance and conduct of the servants. There are only two, a man and his wife. <persName>Toller</persName>, for that is his name, is a rough, uncouth man, with grizzled hair and whiskers, and a perpetual smell of drink. Twice since I have been with them he has been quite drunk, and yet <persName>Mr. Rucastle</persName> seemed to take no notice of it. His wife is a very tall and strong woman with a sour face, as silent as <persName>Mrs. Rucastle</persName>, and much less amiable. They are a most unpleasant couple, but fortunately I spend most of my time in the nursery and my own room, which are next to each other in one corner of the building.</p>
+<p>“For two days after my arrival at the <placeName>Copper Beeches</placeName> my life was very quiet; on the third, <persName>Mrs. Rucastle</persName> came down just after breakfast and whispered something to her husband.</p>
+<p>“‘Oh yes,’ said he, turning to me; ' we are very much obliged to you, <persName>Miss Hunter</persName>, for falling in with our whims so far as to cut your hair. I assure you that it has not detracted in the tiniest iota from your appearance. We shall now see how the electric blue dress will become you. You will find it laid out upon the bed in your room, and if you would be so good as to put it on we should both be extremely obliged.’</p>
+<p>“The dress which I found waiting for me was of a peculiar shade of blue. It was of excellent material, a sort of beige, but it bore unmistakable signs of having been worn before. It could not have been a better fit if I had been measured for it. Both <persName>Mr.</persName> and <persName>Mrs. Rucastle</persName> expressed a delight at the look of it which seemed quite exaggerated in its vehemence. They were waiting for me in the drawing-room, which is a very large room, stretching along the entire front of the house, with three long windows reaching down to the floor. A chair had been placed close to the central window, with its back turned towards it. In this I was asked to sit, and then <persName>Mr. Rucastle</persName>, walking up and down on the other side of the room, began to tell me a series of the funniest stories that I<pb n=621" facs="pageImages/Copper-Beeches_0621.jpg"/>have ever listened to. You cannot imagine how comical he was, and I laughed until I was quite weary. <persName>Mrs. Rucastle</persName>, however, who has evidently no sense of humour, never so much as smiled, but sat with her hands in her lap, and a sad, anxious look upon her face. After an hour or so, <persName>Mr. Rucastle</persName> suddenly remarked that it was time to commence the duties of the day, and that I might change my dress, and go to little <persName>Edward</persName> in the nursery.</p>
+<p>“Two days later this same performance was gone through under exactly similar circumstances. Again I changed my dress, again I sat in the window, and again I laughed very heartily at the funny stories of which my employer had an immense <hi rend=“italics">répertoire</hi>, and which he told inimitably. Then he handed me a yellow-backed novel, and, moving my chair a little sideways, that my own shadow might not fall upon the page, he begged me to read aloud to him. I read for about ten minutes, beginning in the heart of a chapter, and then suddenly, in the middle of a sentence, he ordered me to cease and to change my dress.</p>
+<p>“You can easily imagine, <persName>Mr. Holmes</persName>, how curious I became as to what the meaning of this extraordinary performance could possibly be. They were always very careful, I observed, to turn my face away from the window, so that I became consumed with the desire to see what was going on behind my back. At first it seemed to be impossible, but I soon devised a means. My hand mirror had been broken, so a happy thought seized me, and I concealed a piece of the glass in my handkerchief. On the next occasion, in the midst of my laughter, I put my handkerchief up to my eyes, and was able with a little management to see all that there was behind me. I confess that I was disappointed. There was nothing.</p>
+<p>“At least, that was my first impression. At the second glance, however, I perceived that there was a man standing in the <placeName>Southampton Road</placeName>, a small bearded man in a grey suit, who seemed to be looking in my direction. The road is an important highway, and there are usually people there. This man, however, was leaning against the railings which bordered our field, and was looking earnestly up. I lowered my hand¬ kerchief, and glanced at <persName>Mrs. Rucastle</persName> to find her eyes fixed upon me with a most searching gaze. She said nothing, but I am convinced that she had divined that I had a mirror in my hand, and had seen what was behind me. She rose at once.</p>
+<p>“‘<persName>Jephro</persName>,' said she, ‘there is an impertinent fellow upon the road there who stares up at <persName>Miss Hunter</persName>.’</p>
+<p>“‘No friend of yours, <persName>Miss Hunter</persName>?’  he asked.</p>
+<p>“‘No; I know no one in these parts.’</p>
+<p>‘“Dear me! How very impertinent! Kindly turn round, and motion to him to go away!’</p>
+<p>“‘Surely it would be better to take no notice.’</p>
+<p>“‘No, no, we should have him loitering here always. Kindly turn round, and wave him away like that.'</p>
+<p>“I did as I was told, and at the same instant <persName>Mrs. Rucastle</persName> drew down the blind. That was a week ago, and from that time I have not sat again in the window, nor have<pb n=622" facs="pageImages/Copper-Beeches_0622.jpg"/>I worn the blue dress, nor seen the man in the road.’'</p>
+<p>“Pray continue," said <persName>Holmes</persName>. “Your narrative promises to be a most interesting one."</p>
+<p>“You will find it rather disconnected, I fear, and there may prove to be little relation between the different incidents of which I speak. On the very first day that I was at the <placeName>Copper Beeches</placeName>, <persName>Mr. Rucastle</persName> took me to a small outhouse which stands near the kitchen door. As we approached it I heard the sharp rattling of a chain, and the sound as of a large animal moving about.</p>
+<p>“‘Look in here!’ said <persName>Mr. Rucastle</persName>, showing me a slit between two planks. ‘Is he not a beauty?’</p>
+<p>“I looked through, and was conscious of two glowing eyes, and of a vague figure huddled up in the darkness.</p>
+<p>“‘Don’t be frightened,’ said my employer, laughing at the start which I had given. ‘ It’s only <persName>Carlo</persName>, my <ref target="a0008" corresp="n0008">mastiff</ref>. I call him mine, but really old <persName>Toller</persName>, my groom, is the only man who can do anything with him. We feed him once a day, and not too much then, so that he is always as <ref target="a0009" corresp="n0009">keen as mustard</ref>. <persName>Toller</persName> lets him loose every night, and <persName>God</persName> help the trespasser whom he lays his fangs upon. For goodness' sake don’t you ever on any pretext set your foot over the threshold at night, for it is as much as your life is worth.’</p>
+<p>“The warning was no idle one, for two nights later I happened to look out of my bedroom window about two o'clock in the morning. It was a beautiful moonlight night, and the lawn in front of the house was silvered over and almost as bright as day. I was standing, wrapt in the peaceful beauty of the scene, when I was aware that something was moving under the shadow of the <ref target="a0010" corresp="n0010">copper beeches</ref>. As it emerged into the moonshine I saw what it was. It was a giant dog, as large as a calf, tawny tinted, with hanging jowl, black muzzle, and huge projecting bones. It walked slowly across the lawn and vanished into the shadow upon the other side. That dreadful silent sentinel sent a chill to my heart which I do not think that any burglar could have done.</p>
+<p>“And now I have a very strange experience to tell you. I had, as you know, cut off my hair in <placeName>London</placeName>, and I had placed it in a great coil at the bottom of my trunk. One evening, after the child was in bed, I began to amuse myself by examining the furniture of my room, and by rearranging my own little things. There was an old chest of drawers in the room, the two upper ones empty and open, the lower one locked. I had filled the two first with my linen, and, as I had still much to pack away, I was naturally annoyed at not having the use of the third drawer. It struck me that it might have been fastened by a mere oversight, so I took out my bunch of keys and tried to open it. The very first key fitted to perfection, and I drew the drawer open. There was only one thing in it, but I am sure that you would never guess what it was. It was my coil of hair.</p>
+<p>“I took it up and examined it. It was of the same peculiar tint, and the same thickness. But then the impossibility of the thing obtruded itself upon me. How <hi rend=“italics">could</hi> my hair have been locked in the drawer?<pb n=623" facs="pageImages/Copper-Beeches_0623.jpg"/>With trembling hands I undid my trunk turned out the contents, and drew from the bottom my own hair. I laid the two tresses together, and I assure you that they were identical. Was it not extraordinary? Puzzle as I would, I could make nothing at all of what it meant. I returned the strange hair to the drawer, and I said nothing of the matter to the <persName>Rucastles</persName>, as I felt that I had put myself in the wrong by opening a drawer which they had locked.</p>
+<p>“I am naturally observant, as you may have remarked, <persName>Mr. Holmes</persName>, and I soon had a pretty good plan of the whole house in my head. There was one wing, however, which appeared not to be inhabited at all. A door which faced that which led into the quarters of the <persName>Tollers</persName> opened into this suite, but it was invariably locked. One day, however, as I ascended the stair, I met <persName>Mr. Rucastle</persName> coming out through this door, his keys in his hand, and a look on his face which made him a very different person to the round, jovial man to whom I was accustomed. His cheeks were red, his brow was all crinkled with anger, and the veins stood out at his temples with passion. He locked the door, and hurried past me without a word or a look.</p>
+<p>“This aroused my curiosity ; so when I went out for a walk in the grounds with my charge, I strolled round to the side from which I could see the windows of this part of the house. There were four of them in a row, three of which were simply dirty, while the fourth was shuttered up. They were evidently all deserted. As I strolled up and down, glancing at them occasionally, <persName>Mr. Rucastle</persName> came out to me, looking as merry and jovial as ever.</p>
+<p>“Ah!' said he, ‘you must not think me rude if I passed you without a word, my dear young lady. I was preoccupied with business matters.’</p>
+<p>“I assured him that I was not offended. ‘By the way,’ said I, ‘you seem to have quite a suite of spare rooms up there, and one of them has the shutters up.’</p>
+<p>“ He looked surprised, and, as it seemed to me, a little startled at my remark.</p>
+<p>“‘Photography is one of my hobbies,’ said he. ‘ I have made my <ref target="a0011" corresp="n0011">dark room</ref> up there. But, dear me ! what an observant young lady we have come upon. Who would have believed it? Who would have ever believed it?’ He spoke in a jesting tone, but there was no jest in his eyes as he looked at me. I read suspicion there, and annoyance, but no jest.</p>
+<p>“Well, <persName>Mr. Holmes</persName>, from the moment that I understood that there was something about that suite of rooms which I was not to know, I was all on fire to go over them. It was not mere curiosity, though I have my share of that. It was more a feeling of duty—a feeling that some good might come from my penetrating to this place. They talk of woman’s instinct; perhaps it was woman’s instinct which gave me that feeling. At any rate, it was there ; and I was keenly on the look-out for any chance to pass the forbidden door.</p>
+<p>“It was only yesterday that the chance came. I may tell you that, besides <persName>Mr. Rucastle</persName>, both <persName>Toller</persName> and his wife find something to do in these deserted rooms, and I once saw him carrying a large black linen bag with him through the door. Recently he has been drinking hard, and yesterday evening he was very drunk; and, when I came upstairs, there was the key in the door. I have no doubt at all that he had left it there. <persName>Mr.</persName> and <persName>Mrs. Rucastle</persName> were both downstairs, and the child was with them, so that I had an admirable opportunity. I turned the key gently in the lock, opened the door, and slipped through.</p>
+<p>“There was a little passage in front of me, unpapered and uncarpeted, which turned at a right angle at the further end. Round this corner were three doors in a line, the first and third of which were open. They each led into an empty room, dusty and cheerless, with two windows in the one, and one in the other, so thick with dirt that the evening light glimmered dimly through them. The centre door was closed, and across the outside of it had been fastened one of the broad bars of an iron bed, padlocked at one end to a ring in the wall, and fastened at the other with stout cord. The door itself was locked as well, and the key was not there. This barricaded door corresponded clearly with the shuttered window outside, and yet I could see by the glimmer from beneath it that the room was not in darkness. Evidently there was a skylight which let in light from above. As I stood in the passage gazing at this sinister door, and wondering what secret it might veil, I suddenly heard the sound of steps within the room, and saw a shadow pass backwards and forwards against the little slit of dim light which shone out from under the door. A mad, unreasoning terror rose up in me at the sight, <persName>Mr. Holmes</persName>. My overstrung nerves failed me<pb n=624" facs="pageImages/Copper-Beeches_0624.jpg"/>​​suddenly, and I turned and ran—ran as though some dreadful hand were behind me, clutching at the skirt of my dress. I rushed down the passage, through the door, and straight into the arms of <persName>Mr. Rucastle</persName>, who was waiting outside.</p>
+<p>“‘So,’ said he, smiling, ‘it was you, then, I thought that it must be when I saw the door open.’</p>
+<p>“‘Oh, I am so frightened!’ I panted.</p>
+<p>“‘My dear young lady! my dear young lady!’ —you cannot think how caressing and soothing his manner was—‘and what has frightened you, my dear young lady?’</p>
+<p>“But his voice was just a little too coaxing. He overdid it, I was keenly on my guard against him.</p>
+<p>“‘I was foolish enough to go into the empty wing,’ I answered. ‘But it is so lonely and eerie in this dim light that I was frightened and ran out again. Oh, it is so dreadfully still in there!’</p>
+<p>“‘Only that?’  said he, looking at me keenly.</p>
+<p>“‘Why, what did you think?’ I asked.</p>
+<p>“‘Why do you think that I lock this door?’</p>
+<p>“‘I am sure that I do not know.’</p>
+<p>“‘It is to keep people out who have no business there. Do you see?’  He was still smiling in the most amiable manner.</p>
+<p>“‘I am sure if I had known—’</p>
+<p>“‘Well, then, you know now. And if you ever put your foot over that threshold again—’ here in an instant the smile hardened into a grin of rage, and he glared down at me with the face of a demon, ‘I’ll throw you to the mastiff,’</p>
+<p>“I was so terrified that I do not know what 1 did. I suppose that I must have rushed past him into my room, I remember nothing until I found myself lying on my bed trembling all over. Then I thought of you, <persName>Mr. Holmes</persName>. I could not live there longer without some advice. I was frightened of the house, of the man, of the woman, of the servants, even of the child. They were all horrible to me. If I could only bring you down all would be well. Of course I might have fled from the house, but my curiosity was almost as strong as my fears. My mind was soon made up. I would send you a wire. I put on my hat and cloak, went down to the office, which is about half a mile from the house, and then returned, feeling very much easier. A horrible doubt came into my mind as I approached the door lest the dog might be loose, but I remembered that <persName>Toller</persName> had drunk himself into a state of insensibility that evening, and I knew that he was the only one in the household who had any influence with the savage creature, or who would venture to set him free. I slipped in in safety, and lay awake half the night in my joy at the thought of seeing you. I had no difficulty in getting leave to come into <placeName>Winchester</placeName> this morning, but I must be back before three o'clock, for <persName>Mr.</persName> and <persName>Mrs. Rucastle</persName> are going on a visit, and will be away all the evening, so that I must look after the child. Now I have told you all my adventures, <persName>Mr, Holmes</persName>, and I should be very glad if you could tell me what it all means, and, above all what I should do."</p>
+<p><persName>Holmes<persName> and I had listened spellbound to this extraordinary story.<pb n=625" facs="pageImages/Copper-Beeches_0625.jpg"/>My friend rose now, and paced up and down the room, his hands in his pockets, and an expression of the most profound gravity upon his face.</p>
+<p>“Is <persName>Toller</persName> still drunk?" he asked.</p>
+<p>“Yes. I heard his wife tell <persName>Mrs. Rucastle</persName> that she could do nothing with him."</p>
+<p>“That is well. And the <persName>Rucastles</persName> go out to-night?"</p>
+<p>“Yes."</p>
+<p>“Is there a cellar with a good strong lock?"</p>
+<p>“Yes, the wine cellar."</p>
+<p>“You seem to me to have acted all through this matter like a very brave and sensible girl, <persName>Miss Hunter</persName>. Do you think that you could perform one more feat? I should not ask it of you if I did not think you a quite exceptional woman."</p>
+<p>“I will try. What is it?"</p>
+<p>“We shall be at the <placeName>Copper Beeches</placeName> by seven o’clock, my friend and I. The <persName>Rucastles</persName> will be gone by that time, and <persName>Toller</persName> will, we hope, be incapable. There only remains <persName>Mrs. Toller</persName>, who might give the alarm. If you could send her into the cellar on some errand, and then turn the key upon her, you would facilitate matters immensely."</p>
+<p>“ I will do it."</p>
+<p>“Excellent! We shall then look thoroughly into the affair. Of course there is only one feasible explanation. You have been brought there to personate someone, and the real person is imprisoned in this chamber. That is obvious. As to who this prisoner is, I have no doubt that it is the daughter, <persName>Miss Alice Rucastle</persName>, if I remember right, who was said to have gone to <placeName>America</placeName>. You were chosen, doubtless, as resembling her in height, figure, and the colour of your hair. Hers had been cut off, very possibly in some illness through which she has passed, and so, of course, yours had to be sacrificed also. By a curious chance you came upon her tresses. The man in the road was, undoubtedly, some friend of hers—possibly her <hi rend=“italics">fiance</hi> —and no doubt as you wore the girl’s dress, and were so like her, he was convinced from your laughter, whenever he saw you, and afterwards from your gesture, that <persName>Miss Rucastle</persName> was perfectly happy, and that she no longer desired his attentions. The dog is let loose at night to prevent him from endeavouring to communicate with her. So much is fairly clear. The most serious point in the case is the disposition of the child."</p>
+<p>“What on earth has that to do with it?" I ejaculated.</p>
+<p>“My dear <persName>Watson</persName>, you as a medical man are continually gaining light as to the tendencies of a child by the study of the parents. Don’t you see that the converse is equally valid. I have frequently gained my first real insight into the character of parents by studying their children. This child’s disposition is abnormally cruel, merely for cruelty’s sake, and whether he derives this from his smiling father, as I should suspect, or from his mother, it bodes evil for the poor girl who is in their power."</p>
+<p>“I am sure that you are right, <persName>Mr. Holmes</persName>," cried our client. “ A thousand things come back to me which make me certain that you have hit it. Oh, let us lose not an instant in bringing help to this poor creature."</p>
+<p>“We must be circumspect, for we are dealing with a very cunning man. We can do nothing until seven o’clock. At that hour we shall be with you, and it will not be long before we solve the mystery."</p>
+<p>We were as good as our word, for it was just seven when we reached the <placeName>Copper Beeches</placeName>, having put up our trap at a wayside <ref target="a0012" corresp="n0012">publichouse</ref>. The group of trees, with their dark leaves shining like burnished metal in the light of the setting sun, were sufficient to mark the house even had <persName>Miss Hunter</persName> not been standing smiling on the doorstep.</p>
+<p>“Have you managed it?" asked <persName>Holmes</persName>.</p>
+<p>A loud thudding noise came from somewhere downstairs. “That is <persName>Mrs. Toller</persName> in the cellar," said she. “Her husband lies snoring on the kitchen rug. Here are his keys, which are the duplicates of <persName>Mr. Rucastle’s</persName>."</p>
+<p>“You have done well indeed!" cried Holmes, with enthusiasm. “Now lead the way, and we shall soon see the end of this black business."</p>
+<p>We passed up the stair, unlocked the door, followed on down a passage, and found ourselves in front of the barricade which <persName>Miss Hunter</persName> had described. <persName>Holmes</persName> cut the cord and removed the transverse bar. Then he tried the various keys in the lock, but without success. No sound came from within, and at the silence <persName>Holmes’</persName> face clouded over.</p>
+<p>“I trust that we are not too late," said he. “I think, <persName>Miss Hunter</persName>, that we had better go in without you. Now, <persName>Watson</persName>, put your shoulder to it, and we shall see whether we cannot make our way in."</p>
+<pb n=626" facs="pageImages/Copper-Beeches_0626.jpg"/>
+<p>“It was an old rickety door, and gave at once before our united strength. Together we rushed into the room. It was empty. There was no furniture save a little pallet bed, a small table, and a basketful of linen. The skylight above was open, and the prisoner gone.</p>
+<p>“There has been some villainy here," said <persName>Holmes</persName>, “this beauty has guessed <persName>Miss Hunter’s</persName> intentions, and has carried his victim off."</p>
+<p>“But how?"</p>
+<p>“Through the skylight. We shall soon see how he managed it." He swung himself up on to the roof. “Ah, yes," he cried, “here’s the end of a long light ladder against the eaves. That is how he did it."</p>
+<p>“But it is impossible," said <persName>Miss Hunter</persName>, “the ladder was not there when the <persName>Rucastles</persName> went away."</p>
+<p>“He has come back and done it, I tell you that he is a clever and dangerous man. I should not be very much surprised if this were he whose step I hear now upon the stain I think, <persName>Watson</persName>, that it would be as well for you to have your pistol ready."</p>
+<p>The words were hardly out of his mouth before a man appeared at the door of the room, a very fat and burly man, with a heavy stick in his hand. <persName>Miss Hunter</persName> screamed and shrunk against the wall at the sight of him, but <persName>Sherlock Holmes</persName> sprang forward and confronted him.</p>
+<p>“You villain!" said he, “where's your daughter?"</p>
+<p>The fat man cast his eyes round, and then up at the open skylight.</p>
+<p>“It is for me to ask you that," he shrieked, “you thieves! Spies and thieves! I have caught you, have I? You are in my power. I’ll serve you!" He turned and clattered down the stairs as hard as he could go.</p>
+<p>"He’s gone for the dog!" cried <persName>Miss Hunter</persName>.</p>
+<p>“ I have my revolver," said I.</p>
+<p>“Better close the front door." cried <persName>Holmes</persName>, and we all rushed down the stairs together. We had hardly reached the hall when we heard the baying of a hound, and then a scream of agony, with a horrible worrying sound which it was dreadful to listen to. An elderly man with a red face and shaking limbs came staggering out at a side door.</p>
+<p>“My <persName>God</persName>!" he cried, “Some one has loosed the dog. It’s not been fed for two days. Quick, quick, or it’ll be too late!"</p>
+<pb n=627" facs="pageImages/Copper-Beeches_0627.jpg"/>
+<p><persName>Holmes</persName> and I rushed out, and round the angle of the house, with <persName>Toller</persName> hurrying behind us. There was the huge famished brute, its black muzzle buried in <persName>Rucastle’s</persName> throat, while he writhed and screamed upon the ground. Running up, I blew its brains out, and it fell over with its keen white teeth still meeting in the great creases of his neck. With much labour we separated them, and carried him, living but horribly mangled, into the house. We laid him upon the drawing-room sofa, and, having despatched the sobered <persName>Toller</persName> to bear the news to his wife, 1 did what I could to relieve his pain. We were all assembled round him when the door opened, and a tall, gaunt woman entered the room.</p>
+<p>“<persName>Mrs. Toller</persName>!" cried <persName>Miss Hunter</persName>.</p>
+<p>“Yes, miss. <persName>Mr. Rucastle</persName> let me out when he came back before he went up to you. Ah, miss, it is a pity you didn’t let me know what you were planning, for I would have told you that your pains were wasted."</p>
+<p>“Ha!" said <persName>Holmes</persName>, looking keenly at her, “It is clear that <persName>Mrs. Toller</persName> knows more about this matter than anyone else."</p>
+<p>“Yes, sir, I do, and I am ready enough to tell what I know."</p>
+<p>“Then, pray, sit down, and let us hear it, for there are several points on which I must confess that I am still in the dark."</p>
+<p>“I will soon make it clear to you," said she; “and I’d have done so before now if I could ha’ got out from the cellar. If there's police-court business over this, you’ll remember that I was the one that stood your friend, and that I was <persName>Miss Alice’s</persName> friend too.</p>
+<p>“She was never happy at home, <persName>Miss Alice</persName> wasn’t, from the time that her father married again. She was slighted like, and had no say in anything; but it never really became bad for her until after she met <persName>Mr. Fowler</persName> at a friend’s house. As well as I could learn, <persName>Miss Alice</persName> had rights of her own by will, but she was so quiet and patient, she was, that she never said a word about them, but just left everything in <persName>Mr. Rucastle’s</persName> hands. He knew he was safe with her; but when there was a chance of a husband coming forward, who would ask for all that the law would give him, then her father thought it time to put a stop on it, He wanted her to sign a paper so that whether she married or not, he could use her money. When she wouldn’t do it, he kept on worrying her until she got brain fever, and for six weeks was at death's door. Then she got better at last, all worn to a shadow, and with her beautiful hair cut off; but that didn’t make no change in her young man, and he stuck to her as true as man could be.</p>
+<p>“Ah," said <persName>Holmes</persName>, “I think that what you have been good enough to tell us makes the matter fairly clear, and that I can deduce all that remains. <persName>Mr. Rucastle</persName> then, I presume, took to this system of imprisonment?"</p>
+<pb n=628" facs="pageImages/Copper-Beeches_0628.jpg"/>
+<p>“Yes, sir."</p>
+<p>“And brought <persName>Miss Hunter</persName> down from <placeName>London</placeName> in order to get rid of the disagreeable persistence of <persName>Mr. Fowler</persName>."</p>
+<p>“That was it, sir."</p>
+<p>“But <persName>Mr. Fowler</persName> being a persevering man, as a good <ref target="a0013" corresp="n0013">seaman</ref> should be, blockaded the house, and, having met you, succeeded by certain arguments, metallic or otherwise, in convincing you that your interests were the same as his."</p>
+<p>“<persName>Mr. Fowler</persName> was a very kind-spoken, free-handed gentleman," said <persName>Mrs. Toller</persName> serenely.</p>
+<p>“And in this way he managed that your good man should have no want of drink, and that a ladder should be ready at the moment when your master had gone out."</p>
+<p>“You have it, sir, just as it happened."</p>
+<p>“I am sure we owe you an apology, <persName>Mrs. Toller</persName>," said <persName>Holmes</persName>, “for you have certainly cleared up everything which puzzled us. And here comes the country surgeon and <persName>Mrs. Rucastle</persName>, so I think, <persName>Watson</persName>, that we had best escort <persName>Miss Hunter</persName> back to <placeName>Winchester</placeName>, as it seems to me that our <ref target="a0014" corresp="n0014">locus standi</ref> now is rather a questionable one."</p>
+<p>And thus was solved the mystery of the sinister house with the copper beeches in front of the door. <persName>Mr. Rucastle</persName> survived, but was always a broken man, kept alive solely through the care of his devoted wife. They still live with their old servants, who probably know so much of <persName>Rucastle’s</persName> past life that he finds it difficult to part from them. <persName>Mr. Fowler</persName> and <persName>Miss Rucastle</persName> were married, by special licence, in <placeName>Southampton</placeName> the day after their flight, and he is now the holder of a Government appointment in the <placeName>Island of Mauritius</placeName>. As to <persName>Miss Violet Hunter</persName>, my friend <persName>Holmes</persName>, rather to my disappointment, manifested no further interest in her when once she had ceased to be the centre of one of his problems, and she is now the head of a private school at <placeName>Walsall<placeName>, where I believe that she has met with considerable success.</p></div></body>
+
+<back>
+<note xml:id="n0001" target="a0001" type="editorial" resp="editors.xml#AC"> 
+The Daily Telegraph, originally called the Daily Telegraph and Courier, was <ref target="https://www.gale.com/binaries/content/assets/gale-us-en/primary-sources/newsvault/gps_newsvault_thetelegraphhistoricalarchive_specialcorrespondent_fuller.pdf">established in 1855 as a penny paper</ref>, published daily in London. The paper is still in existence today. The word “telegraph” was included in the name due to the mode by which the paper received its news, which was the newly invented electric telegraph.</note>
+
+<note xml:id="n0002" target="a0002" type="editorial" resp="editors.xml#AC">
+<ref target="https://www.merriam-webster.com/dictionary/dun#:~:text=1a%20%3A%20having%20a%20slightly,marked%20by%20dullness%20and%20drabness">"Dun-colored”</ref> is a brownish, dark gray color (or sandy yellow) specifically, although the term can also generally mean dull or drab overall. The term derives from a particular kind of gene <ref target="https://vgl.ucdavis.edu/test/dun-horse">(the dun gene)</ref> found in horses that lightens their coat while keeping the mane, tail, and occasionally dorsal stripe, dark. The use of the term to refer to color most likely comes from a societal understanding of what a dun-colored horse looked like.</note> 
+
+<note xml:id="n0003" target="a0003" type="editorial" resp="editors.xml#AC">
+A weaver was a <ref target="https://www.merriam-webster.com/dictionary/weaver">person who wove fabric</ref>. Although it is difficult to discern from sourcing exactly where this saying derives from, it is generally thought that a person who wove as an occupation would have worn down teeth, as they would bite or chew the yarn/thread to sever it if their hands were busy with other tasks. </note>
+
+<note xml:id="n0004" target="a0004" type="editorial" resp="editors.xml#AC">
+A <ref target="https://www.collinsdictionary.com/us/dictionary/english/compositor">compositor</ref> was a person who set the type for printing books, magazines, newspapers, etc. The compositor would use a <ref target="https://www.merriam-webster.com/dictionary/composing%20stick">composing stick</ref> to set the type, holding the stick in one hand (usually the left), and setting the type in with the other (usually the right). Therefore, the thumb that held the type in place was usually the left, meaning that a compositor would likely form a callus on the left thumb.</note> 
+
+<note xml:id="n0005" target="a0005" type="editorial" resp="editors.xml#AC">
+As Doyle alludes, Winchester was the old <ref target="https://www.historic-uk.com/HistoryMagazine/DestinationsUK/Winchester-Ancient-Capital-of-England/">capital of England</ref>, retaining its status as such from the late 1st century (871 AD) until the 12th-13th centuries. At this point, major shifts in wealth and power (especially the relocation of the mint) established London as the premiere social and economic center.</note>
+
+<note xml:id="n0006" target="a0006" type="editorial" resp="editors.xml#AC">
+As the Industrial Revolution took off, the already well-established air pollution problem in London increased drastically. This issue would have been a prominent one when Doyle was writing this in 1892. Here, fog does not mean naturally occurring precipatory mist, but the <ref target="https://www.theguardian.com/science/the-h-word/2016/dec/09/pollution-air-london-smogs-fogs-pea-soupers">smog produced by coal fires and industry</ref>.</note>
+
+
+<note xml:id="n0007" target="a0007" type="editorial" resp="editors.xml#AC">
+The Cathedral in Winchester, one of the largest and most impressive Gothic-style cathedrals in the world, would have dominated the skyline in the 19th century era Doyle writes from. The Cathedral rests on the site of one of the first Christian churches in England, and the original building was erected in <ref target="https://www.historyhit.com/locations/winchester-cathedral/">645 AD</ref>.</note>
+
+<note xml:id="n0008" target="a0008" type="editorial" resp="editors.xml#NJA">
+A mastiff is a dog from a breed of large, robust dog.</note>
+
+<note xml:id="n0009" target="a0009" type="editorial" resp="editors.xml#NJA">
+Keen as mustard is an expression for describing someone or something as exciting or enthusiastic.</note>
+
+<note xml:id="n0010" target="a0010" type="editorial" resp="editors.xml#NJA">
+A copper beech is a large, European tree with burgundy leaves that turn into a shade of copper by Autumn.</note>
+
+<note xml:id="n0011" target="a0011" type="editorial" resp="editors.xml#NJA">
+A darkroom is where photographers process their photos and films, as they are light-sensitive material and need to be in a room that is completely dark.</note>
+
+<note xml:id="n0012" target="a0012" type="editorial" resp="editors.xml#NJA">
+A public house is a tavern or pub, where alcoholic beverages are served. These establishments were started in England, originally.</note>
+
+<note xml:id="n0013" target="a0013" type="editorial" resp="editors.xml#NJA">
+A seaman is a sailor, who has extraordinary knowledge of the sea and how to manage a boat, or uses these skills under the employment of the U.S. Navy.</note>
+
+<note xml:id="n0014" target="a0014" type="editorial" resp="editors.xml#NJA"> In legal terms, it is the right for someone to stand before a court and/or be heard.</note></back>
+
+
+</text>
