@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="rowlandson-sovereignty">
 
     <teiHeader xml:lang="en">
@@ -9,7 +10,7 @@
                     promises displayed; being a narrative of the captivity and restauration of Mrs.
                     Mary Rowlandson. </title>
                 <author>
-                    <persName>type="lcnaf" key="n50022304"> <name>
+                    <persName type="lcnaf" key="n50022304"> <name>
                             <forename>Mary</forename>
                             <surname>Rowlandson</surname>
                         </name>
@@ -25,7 +26,7 @@
                 </editor>
                 <respStmt>
                     <resp> Transcription, correction, editorial commentary, and markup </resp>
-                    <name>Faculty, librarians, and students at the University of Virginia</name>
+                    <name>faculty, librarians, and students at the University of Virginia, notably</name>
                     <name ref="editors.xml#RR"> Rachel Retica
                     </name>
                 </respStmt>
@@ -72,9 +73,8 @@
                             </pubPlace>
                             <publisher>Printed by Samuel Green</publisher>
                             <date when="1682">1682</date>
-                            <note source="ESTC">Mary Rowlandson's book was first published by the printer Samuel Green in 1682, whose press was in Cambridge, Massachusetts. We do not have a copy of the 
-                                the first edition. Our text is based on the transcription done in 2011-2012 by the Text Creation Partnership of the second edition, which was also printed by Green in the same year, which suggests
-                                that the work was popular and in high demand among readers in New England. The book was reprinted by the London printer/bookseller, again in 1682, under the title <hi rend="italic">A True History of the Captivity and Restoration of Mrs. Mary Rowlandson</hi>.  </note>
+                            <note source="ESTC">Mary Rowlandson's book was first published by the printer Samuel Green in 1682, whose press was in Cambridge, Massachusetts. No copy of the first edition is known to have survived, so modern texts are generally derived from the second edition, also printed in 1682. Our text is based on the transcription of that text done in 2011-2012 by the Text Creation Partnership; that the book was reprinted so quickly  suggests
+                                that Rowlandson's work was popular and in high demand among readers in New England. The book was then reprinted by the London printer/bookseller, again in 1682, under the title <hi rend="italic">A True History of the Captivity and Restoration of Mrs. Mary Rowlandson</hi>. Other than the title, there are no significant differences between the London version and that published in New England a short while before.  </note>
                             <note>A fuller bibliographical record is in the English Short Title Catalogue: <ref
                                     target="http://estc.bl.uk/R213983"
                                     >http://estc.bl.uk/R213983</ref></note>
@@ -241,9 +241,9 @@
                         New Englanders. It is likely that he encouraged Rowlandson to publish this account of her experience.</p>
                 </note>
 
-                <p> IT was on <ref target="calendar_" corresp="calendar"><hi rend="italic">Tuesday,
+                <p> IT was on <ref target="julian_" corresp="julian"><hi rend="italic">Tuesday,
                         Feb.</hi> 1. 1675.</ref>
-                    <note xml:id="calendar" target="calendar_" type="editorial" resp="editors.xml#RR">
+                    <note xml:id="julian" target="julian_" type="editorial" resp="editors.xml#RR">
                         <p> Rowlandson followed the Julian calendar for her dates. In the Georgian
                             calendar, this would be February 1st, 1676. The same is true for the
                             years given throughout the narrative.</p>
