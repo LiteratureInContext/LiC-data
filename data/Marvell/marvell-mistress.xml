@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="marvell-mistress">
+
+   <!--TEI Header BEGINS-->
+   <teiHeader>
+
+
+      <fileDesc>
+         <!--BEGINS File Description -->
+         <titleStmt>
+            <title type="main">"To His Coy Mistress""</title>
+            <author>
+               <persName type="lcnaf" key="n80010195">
+                  <name>
+                     <forename>Andrew</forename>
+                     <surname>Marvell</surname>
+                  </name>
+               </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename>Tonya</forename>
+                     <surname>Howe </surname>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+               <resp>Transcription and markup</resp>
+               <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+
+            </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>Marymount University Department of Literature and Languages</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington, VA </addrLine>
+               <addrLine>22207</addrLine>
+               <addrLine>thowe@marymount.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+
+         </publicationStmt>
+
+
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <title>"To His Coy Mistress"</title>
+               </analytic>
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Andrew</forename>
+                        <surname>Marvell</surname>
+                     </name>
+                  </author>
+                  <title>Miscellaneous Poems</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="TGN" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>Printed for Robert Boulter</publisher>
+
+                     <date when="1681">1681</date>
+                     <note>Page image sourced from the 1681 edition housed in the<ref
+                        target="https://www.bl.uk/collection-items/first-edition-of-andrew-marvells-poems-1681">British Library</ref>, which also makes available <ref target="https://www.bl.uk/collection-items/an-early-manuscript-copy-of-marvells-to-his-coy-mistress">an early manuscript version of the poem</ref>.</note>
+                  </imprint>
+                  <imprint>
+                     <pubPlace>Online</pubPlace>
+                     <publisher>EEBO TCP</publisher>
+                     <note>Full text of <hi rend="italic">Miscellaneous Poems</hi> is available via <ref target="	http://name.umdl.umich.edu/A52133.0001.001">EEBO TCP</ref>.</note>
+                  </imprint>
+                  <extent>[4], 116, 131-139, (i.e. 125), [1] p. front. (port) 28 cm.</extent>
+
+                  <biblScope>p 19-20</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+
+
+      <profileDesc>
+         <!--BEGINS Profile Description  -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <channel mode="w">print</channel>
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+
+         </textDesc>
+
+         <settingDesc>
+            <setting>
+               <time from="1670" to="1690">Late 17th century</time>
+
+            </setting>
+         </settingDesc>
+      </profileDesc>
+
+
+
+      <encodingDesc>
+         <!-- BEGINS Encoding Description -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <!--BEGINS Revision Description -->
+         <change when="2023-01-18" who="editors.xml#TH">First pass XML file</change>
+
+      </revisionDesc>
+
+
+   </teiHeader>
+   <!--TEI Header Ends -->
+
+
+
+   <!--Text Begins -->
+
+   <text>
+      <front>
+         <pb n="[frontispiece]" facs="pageImages/frontispiece.jpeg"/>
+         <pb n="[titlepage]" facs="pageImages/TP.jpeg"/>
+
+         <titlePage>
+            <docTitle>
+               <titlePart>MISCELLANEOUS POEMS.</titlePart>
+            </docTitle>
+            <byline>BY</byline>
+            <lb/>
+            <docAuthor>Andrew Marvell, Esq<lb/> Late Member of the Honourable House of
+               Commons.</docAuthor>
+            <lb/>
+
+
+            <lb/>
+            <docImprint>
+               <pubPlace><hi rend="italic">LONDON.</hi></pubPlace>
+               <lb/>
+               <publisher>Printed for <hi rend="italic">Robert Boulter</hi> at the <hi rend="italic"
+                     >Turks-Head</hi> in <hi rend="italic">Cornhill</hi>.<lb/>
+               </publisher>
+               <date>M.DC.LXXXI.</date>
+            </docImprint>
+         </titlePage>
+
+      </front>
+
+
+      <body>
+         <div type="poem" met="iambic tetrameter">
+            <pb n="19" facs="pageImages/19.jpeg"/>
+            <head type="title">
+               <hi rend="italic">To the Virgins, to make much of Time.</hi>
+            </head>
+
+
+            <lg>
+               <l>Had we but world enough and time,</l>
+               <l>This coyness, lady, were no crime.</l>
+               <l>We would sit down, and think which way</l>
+               <l>To walk, and pass our long love’s day.</l>
+               <l>Thou by the Indian Ganges’ side</l>
+               <l>Shouldst rubies find; I by the tide</l>
+               <l>Of Humber would complain. I would</l>
+               <l>Love you ten years before the flood,</l>
+               <l>And you should, if you please, refuse</l>
+               <l>Till the conversion of the Jews.</l>
+               <l>My vegetable love should grow</l>
+               <l>Vaster than empires and more slow;</l>
+               <l>An hundred years should go to praise</l>
+               <l>Thine eyes, and on thy forehead gaze;</l>
+               <l>Two hundred to adore each breast,</l>
+               <l>But thirty thousand to the rest;</l>
+               <l>An age at least to every part,</l>
+               <l>And the last age should show your heart.</l>
+               <l>For, lady, you deserve this state,</l>
+               <l>Nor would I love at lower rate.</l>
+            </lg>
+    <lg>        <l>But at my back I always hear</l>
+            <l>Time’s wingèd chariot hurrying near;</l>
+            <l>And yonder all before us lie</l>
+            <l>Deserts of vast eternity.</l>
+            <l>Thy beauty shall no more be found;</l>
+            <l>Nor, in thy marble vault, shall sound</l>
+            <l>My echoing song; then worms shall try</l>
+            <l>That long-preserved virginity,</l>
+            <l>And your quaint honour turn to dust,</l>
+            <l>And into ashes all my lust;</l>
+            <l>The grave’s a fine and private place,</l>
+            <l>But none, I think, do there embrace.</l></lg>
+            <pb n="20" facs="20.jpeg"/>
+            <lg><l>Now therefore, while the youthful hue</l>
+            <l>Sits on thy skin like morning dew,</l>
+            <l>And while thy willing soul transpires</l>
+            <l>At every pore with instant fires,</l>
+            <l>Now let us sport us while we may,</l>
+            <l>And now, like amorous birds of prey,</l>
+            <l>Rather at once our time devour</l>
+            <l>Than languish in his slow-chapped power.</l>
+            <l>Let us roll all our strength and all</l>
+            <l>Our sweetness up into one ball,</l>
+            <l>And tear our pleasures with rough strife</l>
+            <l>Through the iron gates of life:</l>
+            <l>Thus, though we cannot make our sun</l>
+            <l>Stand still, yet we will make him run.</l></lg>
+         </div>
+
+      </body>
+
+
+   </text>
+
+
+</TEI>
