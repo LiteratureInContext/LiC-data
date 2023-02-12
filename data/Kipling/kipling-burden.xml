@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="kipling-burden">
+   <!-- this xml:id is important; it is the unique identifier for the text, added according to the model author-titleword, as in haywood-fantomina -->
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"The White Man's Burden"</title>
+            <author>
+               <persName type="lcnaf" key="n79103792">
+                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
+                  <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                  <forename>Rudyard</forename>
+                  <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
+                  <surname>Kipling</surname>
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename>Tonya</forename>
+                     <surname>Howe</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <!-- edit this content to reflect this digital edition -->
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+
+               <name ref="editors.xml#MUStudStaff">Students and Staff at Marymount University</name>
+               <name ref="editors.xml#TH">Tonya Howe</name>
+               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+            </respStmt>
+
+            <sponsor/>
+            <funder>VIVA</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
+               <addrLine>Marymount University</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington VA 22207</addrLine>
+               <addrLine>lic.anthology@gmail.coom</addrLine>
+
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+
+                  <title>"The White Man's Burden"</title>
+
+               </analytic>
+
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Rudyard</forename>
+                        <surname>Kipling</surname>
+                     </name>
+                  </author>
+
+                  <title>Mclure's Magazine</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="000">New York</placeName>
+                     </pubPlace>
+                     <publisher>S/ S. McClure Co.</publisher>
+                     <date when="1899">February 1899</date>
+                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                  </imprint>
+
+                  <imprint>
+                     <pubPlace>Online</pubPlace>
+                     <publisher>HathiTrust</publisher>
+                     <date>nd</date>
+                     <note>The page images and text for this digital edition have been sourced from
+                        the <ref target="https://hdl.handle.net/2027/mdp.39015030656113">University
+                           of Michigan digitized volume of McClure's in HathiTrust</ref>.</note>
+                  </imprint>
+
+                  <extent>59 volumes : illustrations ; 25 cm</extent>
+                  <biblScope>Volume 12, Issue 4, pp 290-291</biblScope>
+
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <channel mode="w">print</channel>
+
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="high"/>
+            <purpose type="entertain" degree="high"/>
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7012149">United States</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               <name type="tgn" key="1000135">Philippines</name>
+               <time from="1890" to="1900">Late 19th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2022-12-16" who="editors.xml#TH">First Pass XML and Page Images</change>
+
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <pb n="[TP]" facs="pageImages/TP.jpeg"/>
+         <titlePage>
+            <pb n="290" facs="pageImages/290.jpeg"/>
+
+            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
+            <titlePart>McCLURE'S MAGAZINE.<lb/></titlePart>
+            <titlePart>VOL. XII. FEBRUARY, 1899. NO. 4.</titlePart>
+            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
+            <titlePart/>
+            <docImprint/>
+
+         </titlePage>
+      </front>
+      <body>
+         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
+         <div type="poem">
+            <!-- note structure for poetry -->
+            <head type="title">THE WHITE MAN'S BURDEN.</head>
+            <head type="sub">By Rudyard Kipling.</head>
+
+            <lg met="rhymed couplets">
+               <l n="1">Take up the White Man's burden--</l>
+               <l n="2" rend="indent">Send forth the best ye breed--</l>
+
+               <l n="3">Go, bind your sons to exile</l>
+               <l n="4" rend="indent">To serve your captives' need;</l>
+               <l n="5">To wait, in heavy harness</l>
+               <l n="6" rend="indent">On fluttered folk and wild--</l>
+               <l n="7">Your new-caught sullen peoples,</l>
+               <l n="8" rend="indent">Half devil and half child.</l>
+            </lg>
+            <lg>
+               <l n="9">Take up the White Man's burden-- </l>
+               <l n="10" rend="indent">In patience to abide,</l>
+               <l n="11">To veil the threat of terror</l>
+               <l n="12" rend="indent">And check the show of pride;</l>
+               <l n="13">By open speech and simple,</l>
+               <l n="14" rend="indent">An hundred times mad plain,</l>
+               <l n="15">To seek another's profit</l>
+               <l n="16" rend="indent">And work another's gain.</l>
+            </lg>
+            <lg>
+               <l n="17">Take up the White Man's burden--</l>
+               <l n="18" rend="indent">The savage wars of peace--</l>
+               <l n="19">Fill full the mouth of Famine</l>
+               <l n="20" rend="indent">And bid the sickness cease;</l>
+               <l n="21">And when your goal is nearest</l>
+               <l n="22" rend="indent">(The end for others sought)</l>
+               <l n="23">Watch sloth and heathen folly</l>
+               <l n="24" rend="indent">Bring all your hope to nought.</l>
+            </lg>
+
+            <lg>
+               <l n="25">Take up the White Man's burden--</l>
+               <l n="26" rend="indent">No iron rule of kings,</l>
+               <l n="27">But toil of serf and sweeper--</l>
+               <l n="28" rend="indent">The tale of common things.</l>
+               <l n="29">The ports ye shall not enter,</l>
+               <l n="30" rend="indent">The roads ye shall not tread,</l>
+               <l n="31">Go make them with your living</l>
+               <l n="32" rend="indent">And mark them with your dead.</l>
+            </lg>
+            <pb n="291" facs="pageImages/291.jpeg"/>
+            <lg>
+               <l n="33">Take up the White Man's burden--</l>
+               <l n="34" rend="indent">And reap his old reward--</l>
+               <l n="35">The blame of those ye better,</l>
+               <l n="36" rend="indent">The hate of those ye guard--</l>
+               <l n="37">The cry of hosts ye humour</l>
+               <l n="38" rend="indent">(Ah, slowly!) toward the light:--</l>
+               <l n="39">"Why brought ye us from bondage,</l>
+               <l n="40" rend="indent">Our loved Egyptian night?"</l>
+            </lg>
+            <lg>
+               <l n="41">Take up the White Man's burden--</l>
+               <l n="42" rend="indent">Ye dare not stoop to less--</l>
+               <l n="43">Nor call too loud on freedom</l>
+               <l n="44" rend="indent">To cloak your weariness.</l>
+               <l n="45">By all ye cry or whisper,</l>
+               <l n="46" rend="indent">By all ye leave or do,</l>
+               <l n="47">The silent sullen peoples</l>
+               <l n="48" rend="indent">Shall weigh your God and you.</l>
+            </lg>
+            <lg>
+               <l n="49">Take up the White Man's burden!</l>
+               <l n="50" rend="indent">Have done with childish days--</l>
+               <l n="51">The lightly proffered laurel,</l>
+               <l n="52" rend="indent">The easy ungrudged praise:</l>
+               <l n="53">Comes now, to search your manhood</l>
+               <l n="54" rend="indent">Through all the thankless years,</l>
+               <l n="55">Cold edged with dear-bought wisdom,</l>
+               <l n="56" rend="indent">The judgment of your peers.</l>
+            </lg>
+
+
+         </div>
+
+      </body>
+      <back>
+         <div/>
+      </back>
+
+   </text>
+</TEI>
