@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="johnson-london">
     <!-- Header / Metadata -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>London: A Poem, in Imitation of the Third Satire of Juvenal</title>
-                
+
                 <author>
-                    
+
                     <persName type="lcnaf" key="n78095825">
                         <name>
                             <forename>Samuel</forename>
@@ -16,10 +16,10 @@
                         </name>
                     </persName>
                 </author>
-                     
+
                 <editor>
                     <persName type="orcid" key="0000-0001-6453-8721">
-                        <name ref="editors.xml#JOB" >
+                        <name ref="editors.xml#JOB">
                             <surname>O'Brien</surname>
                             <forename>John</forename>
                         </name>
@@ -31,20 +31,24 @@
                         </name>
                     </persName>
                 </editor>
-                
+
                 <respStmt>
                     <resp>Transcription, correction, editorial commentary, and markup</resp>
                     <name>Staff and Research Assistants at The University of Virginia</name>
-                    <name ref="editors.xml#SB"><forename>Sara </forename> <surname>Brunstetter</surname></name>   
-                    <name ref="editors.xml#JOB"><forename>John </forename> <surname> O'Brien</surname></name>                  
+                    <name ref="editors.xml#SB"><forename>Sara </forename>
+                        <surname>Brunstetter</surname></name>
+                    <name ref="editors.xml#JOB"><forename>John </forename>
+                        <surname> O'Brien</surname></name>
+                    <name ref="editors.xml#AJB"><forename>Austin</forename>
+                        <surname>Benson</surname></name>
                 </respStmt>
                 <sponsor/>
                 <funder>National Endowment for the Humanities</funder>
             </titleStmt>
-            
+
             <publicationStmt>
                 <publisher>Literature in Context</publisher>
-                
+
                 <address>
                     <addrLine>University of Virginia Department of English</addrLine>
                     <addrLine>P. O. Box 400121</addrLine>
@@ -53,14 +57,14 @@
                     <addrLine>jobrien@virginia.edu</addrLine>
                     <addrLine>lic.open.anthology@gmail.com</addrLine>
                 </address>
-                
+
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                        License </licence>
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
                 </availability>
             </publicationStmt>
-            
+
             <sourceDesc>
                 <biblStruct>
                     <monogr>
@@ -72,23 +76,29 @@
                                 </name>
                             </persName>
                         </author>
-                        <title type="main">London: A Poem, in Imitation of the Third Satire of Juvenal</title>
+                        <title type="main">London: A Poem, in Imitation of the Third Satire of
+                            Juvenal</title>
                         <imprint>
                             <pubPlace>
                                 <placeName type="tgn" key="7011781">London</placeName>
                             </pubPlace>
-                            <publisher></publisher>
+                            <publisher/>
                             <date when="1738">1738</date>
-                            <note resp="editors.xml#JOB"> 
-                                This edition of London was prepared by students in "Samuel Johnson: From Print to Digital Media" in the spring of 2014: Sarah Booth, Kay Marie Ferguson, Laura Gilstrap, Katelyn Hebel, Brandan Hummel, Lauren Marrero, Maureen O'Connor, and Erica Seymour. They used the TypeWright tool in 18thConnect to edit from the copy of the first edition available in the Eighteenth-Century Collections Online database.
-                            </note>
+                            <note resp="editors.xml#JOB"> This edition of London was prepared by
+                                students in "Samuel Johnson: From Print to Digital Media" in the
+                                spring of 2014: Sarah Booth, Kay Marie Ferguson, Laura Gilstrap,
+                                Katelyn Hebel, Brandan Hummel, Lauren Marrero, Maureen O'Connor, and
+                                Erica Seymour. They used the TypeWright tool in 18thConnect to edit
+                                from the copy of the first edition available in the
+                                Eighteenth-Century Collections Online database. </note>
+                            <!-- https://link.gale.com/apps/doc/CB0127828133/ECCO?u=viva_uva&sid=bookmark-ECCO&xid=67d6dcae&pg=1 -->
                         </imprint>
                     </monogr>
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
-        
-        <profileDesc>  
+
+        <profileDesc>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
@@ -111,40 +121,41 @@
                 </setting>
             </settingDesc>
         </profileDesc>
-        
-        
+
+
         <encodingDesc>
             <projectDesc>
-                <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
-                    project, which provides an accessible, curated, and marked-up selection of primary
-                    sources relevant to the study and the teaching of British and American literature of
-                    the 18th century. This project is funded by the National Endowment for the Humanities
-                    and developed by faculty at The University of Virginia and Marymount University. </p>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                        Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
             </projectDesc>
             <editorialDecl>
                 <interpretation>
-                    <p>Research informing these annotations draws on publicly-accessible resources, with
-                        links provided where possible. Annotations have also included common knowledge,
-                        defined as information that can be found in multiple reliable sources. If you
-                        notice an error in these annotations, please contact
-                        lic.open.anthology@gmail.com.</p> 
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
                 </interpretation>
                 <normalization>
                     <p>Original spelling and capitalization is retained, though the long s has been
-                        silently modernized and ligatured forms are not encoded.</p> 
+                        silently modernized and ligatured forms are not encoded.</p>
                 </normalization>
                 <hyphenation>
-                    <p>Hyphenation has not been retained, except where necessary for the sense of the
-                        word.</p>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
                 </hyphenation>
                 <segmentation>
-                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
-                        not. Where pages break in the middle of a word, the complete word has been
-                        indicated prior to the page beginning. </p> 
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
                 </segmentation>
                 <correction>
-                    <p>Materials have been transcribed from and checked against first editions, where
-                        possible. See the Sources section.</p> 
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
                 </correction>
             </editorialDecl>
             <tagsDecl>
@@ -168,174 +179,257 @@
             </classDecl>
         </encodingDesc>
         <revisionDesc>
-            <change when="9-9-2022" who="John O'Brien"></change>
+            <change when="9-9-2022" who="John O'Brien"/>
         </revisionDesc>
     </teiHeader>
-    
+
     <text>
         <front>
-         <pb/></front>
+            <pb n="[TP]"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart>
+                        <ref target="introduction_" corresp="introduction">LONDON:</ref>
+                        <lb/> A <lb/> POEM, <lb/> In IMITATION of the <lb/> THIRD SATIRE of <hi
+                            rend="italic">JUVENAL</hi>
+                        <lb/>
+                    </titlePart>
+                </docTitle>
+                <docAuthor> by Samuel Johnson <lb/>
+                </docAuthor>
+                <epigraph>
+                    <quote><hi rend="italic">
+                            <ref target="juvenal_" corresp="juvenal">---------Quis ineptæ <lb/>Tam
+                                patiens Urbis, tam ferreus ut teneat se?</ref></hi> Juv. </quote>
+                </epigraph>
+                <docImprint>
+                    <hi rend="italic">LONDON:</hi>
+                    <lb/> Printed for <hi rend="italic">R. Doddesley</hi>, at <hi rend="italic"
+                        >Tully</hi>'s Head in <hi rend="italic">Pall-Mall</hi>. <lb/> MDCCXXXVIII.
+                </docImprint>
+            </titlePage>
+        </front>
         <body>
             <div>
-                <head>
-                    London: The Third Satire of Juvenal, Imitated <lb/><lb/><lb/>
+                <pb n="3"/>
+                <head> LONDON:<lb/> A<lb/> POEM,<lb/> In IMITATION of the<lb/> THIRD SATIRE of
+                    JUVENAL<lb/>
                 </head>
-                <!-- Need Picture -->
-                <p><hi rend="italic">London</hi>, published in 1738, represents Johnson's attempt to satirize the grubby world of London and also to rise above it. The poem is an "imitation" of the third Satire of the Roman poet Juvenal, which probably dates to the first century. In this poem, Juvenal imagines a friend of the poet, named Umbricius, who is sick and tired of the city of Rome and is leaving for the countryside for good. In doing what was called an "imitation" of his classical source, Johnson is not simply <hi rend="italic">translating</hi> Juvenal's poem, but <hi rend="italic">updating</hi> it, finding modern correlations to the Latin original.  Here, London stands in for Rome, "Thales" stands in for Juvenal's friend Umbricius, and the Tuscan countryside to which Umbricius was headed becomes Wales. Exhausted by the filth, crowds, noise of London, and the difficulty of making a living as a writer, Thales (believed by some scholars to refer to Richard Savage, another hack writer who had become a friend of Johnson's) in some ways expresses Johnson's own frustrations. But <hi rend="italic">London</hi> itself, published in a handsome folio edition, written in the heroic couplet form that to readers of the 1730s identified the high style of serious poetry, using the form of the imitation to signify its neoclassical aspirations, and hyped in the pages of the <hi rend="italic">Gentleman's Magazine</hi> (which published ads for the poem, and also excerpted it), is clearly an attempt to Johnson to get out of hackdom as soon as possible, to become a poet like Alexander Pope, making a good living independent of the whims and tight fists of the booksellers and magazine editors.</p>
-                <p>The poem also positioned itself as part of the growing opposition to the government of Sir Robert Walpole, who had dominated British politics since taking over as the de facto Prime Minister (there was no such official position yet) in 1721.</p>
-                <!-- Need Picture: Sir Robert Walpole -->
-                <p>Walpole successfully suppressed dissent through a mixture of brutality, bribery, and control of the print media. By the late 1730s, however, attacks on his regime were becoming more open and frequent, prompting new attempts on the part of his government to suppress dissenting voices. In particular, the Stage Licensing Act of 1737 called for theater managers to submit all plays for government approval in advance of performance. Prompted in part by satires against the regime like John Gay's <hi rend="italic">The Beggars Opera</hi> (1728) and the satirical afterpieces by Henry Fielding that had been very popular in the mid-1730s, the Stage Licensing Act had a chilling effect on the theater. In particular, the passage of the Act thwarted Johnson's attempt to become a playwright himself. Johnson had arrived in London just that year with a half-finished tragedy in his luggage, a play called <hi rend="italic">Irene</hi> that he probably imagined as a vehicle by which he could make a lot of money and gain status as an author. But in the aftermath of the Stage Licensing Act, theater managers became extremely cautious about new plays in general, and <hi rend="italic">Irene</hi> was not staged until 1749. By using Juvenal's Third Satire as a point of departure, <hi rend="italic">London</hi> manages to critique the Walpole regime indirectly and through coded references, but contemporary readers, particularly those in sympathy with the opposition, were readily able to see how the poem mocked Walpole's reign as corrupt.</p>
-                <p>Probably because of its political stance, <hi rend="italic">London</hi> seems to have sold reasonably well, and Alexander Pope, the most famous poet of the period (and a sympathizer with opposition politics), praised it. But as a vehicle for establishing Johnson's reputation as a significant poet who could make a living off his art it was a dead end. Johnson had to continue to grind out work for hire for another decade and a half. It was not until he achieved fame in the 1750s, first as the author of a <hi rend="italic">Spectator</hi>-like series of journalistic essays called <hi rend="italic">The Rambler</hi> and then as the editor of the <hi rend="italic">Dictionary of the English Language</hi>, which made him a kind of national treasure, since he had single-handedly accomplished for English what it had taken large teams of scholars to do for other European languages. Here, let's read Johnson as eighteenth-century Grub Street's finest product--and its most perceptive critic.</p>
-                
-                
-                
-               <head>
-                   LONDON:<lb/>
-                   A<lb/>
-                   POEM,<lb/>
-                   In IMITATION of the<lb/>
-                   THIRD SATIRE of JUVENAL<lb/><lb/>
-                   
-                   <ref target="a001" corresp="n001"><hi rend="italic">———Quis ineptæ
-                       Tam patiens Urbis, tam ferreus ut teneat se?
-                       Juv.</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n001" target="a001">"Who can endure this terrible city? Who is so iron-willed that he can bear it?" Juvenal</note> <lb/><lb/><lb/>
-               </head>
                 <lg>
                     <l n="1">THO' Grief and Fondness in my Breast rebel,</l>
-                    <l n="2">When injur'd <ref target="a002" corresp="n002"><hi rend="italic">Thales</hi></ref><note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="n002" target="a002">The character of Thales has often been seen to have been inspired by the author Richard Savage, a friend of Samuel Johnson. Richard Savage, like Thales here, left London in an attempt to live in Wales. In 1744, after the death of Savage, Johnson published his Life of Richard Savage, a full-scale biography.</note> bids the Town farewll,</l>
+                    <l n="2">When injur'd <ref target="thales_" corresp="thales"><hi rend="italic"
+                                >THALES</hi></ref> bids the Town farewll,</l>
                     <l n="3">Yet still my calmer Thoughts his Choice commend,</l>
                     <l n="4">I praise the Hermit, but regret the Friend,</l>
                     <l n="5">Who now resolves, from Vice and LONDON far,</l>
                     <l n="6">To breathe in distant Fields a purer Air,</l>
-                    <l n="7">And, fix'd on <ref target="a003" corresp="n003"><hi rend="italic">Cambria's</hi></ref><note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="n003" target="a003">Wales: Savage did go to Wales.</note> solitary Shore,</l>
-                    <l n="8">Give to <ref target="a004" corresp="n004">St. <hi rend="italic">David</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n004" target="a004">The Patron saint of Wales.</note> one true Briton more.</l>
-                    <l n="9">For who would leave, unbrib'd <ref target="a005" corresp="n005"><hi rend="italic">Hibernia's</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n005" target="a005">The classical name for Ireland.</note> Land,</l>
-                    <l n="10">Or change the Rocks of <hi rend="italic">Scotland</hi> for <ref target="a006" corresp="n006">the Strand</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n006" target="a006">The main thoroughfare of London, connecting the City of London with Westminster.</note>?</l>
+                    <l n="7">And, fix'd on <ref target="cambria_" corresp="cambria">CAMBRIA'S</ref>
+                        solitary Shore,</l>
+                    <l n="8">Give to <ref target="david_" corresp="david">St <hi rend="italic"
+                                >DAVID</hi></ref> one <hi rend="italic">true Briton</hi> more.</l>
+                </lg>
+                <pb n="4"/>
+                <lg>
+                    <l n="9">For who would leave, unbrib'd, <ref target="hibernia_"
+                            corresp="hibernia"><hi rend="italic">Hibernia's</hi></ref> Land,</l>
+                    <l n="10">Or change the Rocks of <hi rend="italic">Scotland</hi> for <hi
+                            rend="italic"><ref target="thestrand_" corresp="thestrand">the
+                                Strand</ref>?</hi></l>
                     <l n="11">There none are swept by sudden Fate away,</l>
                     <l n="12">But all whom Hunger spares, with Age decay:</l>
-                    <l n="13">Here Malice, <ref target="a045" corresp="n045">Rapine</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n045" target="a045">(DRAFT-DC)Plunder or pillage. Source: Oxford English Dictionary</note>, Accident, conspire,</l>
-                    <l n="14">And now a <ref target="a046" corresp="n046">Rabble</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n046" target="a046">(DRAFT)An unruly, disorganized crowd or mob. Source: Oxford English Dictionary</note> rages, now a Fire;</l>
+                    <l n="13">Here Malice, <ref target="rapine_" corresp="rapine">Rapine</ref>,
+                        Accident, conspire,</l>
+                    <l n="14">And now a <ref target="rabble_" corresp="rabble">Rabble</ref> rages,
+                        now a Fire;</l>
                     <l n="15">Their Ambush here relentless Ruffians lay,</l>
                     <l n="16">And here the fell Attorney prowls for Prey;</l>
                     <l n="17">Here falling Houses thunder on your Head,</l>
                     <l n="18">And here a female Atheist talks you dead.</l>
-                    <l n="19">While THALES waits the <ref target="a007" corresp="n007">wherry</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n007" target="a007">A light rowing boat used mainly on rivers.</note> that contains</l>
+
+                </lg>
+                <lg>
+                    <l n="19">While THALES waits the <ref target="wherry_" corresp="wherry"
+                            >Wherry</ref> that contains</l>
                     <l n="20">Of dissipated Wealth the small Remains,</l>
-                    <l n="21">On <ref target="a008" corresp="n008"><hi rend="italic">Thames'</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n008" target="a008">The second longest river in Britain, which goes through central London.</note> Banks, in silent Thought we stood,</l>
+                    <l n="21">On <ref target="thames_" corresp="thames"><hi rend="italic"
+                                >Thames</hi>s</ref> Banks, in silent Thought we stood,</l>
                     <l n="22">Where GREENWICH smiles upon the silver Flood:</l>
-                    <l n="23">Struck with the Seat that gave <ref target="a009" corresp="n009"><hi rend="italic">Eliza</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n009" target="a009">Queen Elizabeth I was born at Greenwich Palace.</note> Birth,</l>
-                    <l n="24">We kneel, and kiss the <ref target="a047" corresp="n047">consecrated</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n047" target="a047">Sacred, hallowed, or sanctified. Source: Oxford English Dictionary</note> Earth;</l>
+                    <l n="23">Struck with the Seat that gave <ref target="eliza_" corresp="eliza"
+                                ><hi rend="italic">ELIZA</hi></ref> Birth,</l>
+                    <l n="24">We kneel, and kiss the <ref target="consecrated_"
+                            corresp="consecrated">consecrated</ref> Earth;</l>
+                    <pb n="5"/>
                     <l n="25">In pleasing Dreams the blissful Age renew,</l>
-                    <l n="26">And call BRITANNIA'S Glories back to view;</l>
+                    <l n="26">And call BRITANNIA'<hi rend="italic">s</hi> Glories back to view;</l>
                     <l n="27">Behold her Cross triumphant on the Main,</l>
-                    <l n="28">The Guard of Commerce, and the Dread of Spain,</l>
-                    <l n="29">Ere <ref target="a010" corresp="n010">Masquerades</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n010" target="a010">Masquerade balls were enormously popular in London in this period. People dressed up in costume in order to conceal their identities; critics denounced masquerades as hot-beds of sexual intrigue and immoral behavior.</note> debauch'd, <ref target="a011" corresp="n011">Excise</ref> oppress'd,</l>
-                    <l n="30">Or English Honour grew a standing Jest.</l>
+                    <l n="28">The Guard of Commerce, and the Dread of <hi rend="italic"
+                        >Spain</hi>,</l>
+                    <l n="29">Ere <ref target="masquerade_" corresp="masquerade">Masquerades</ref>
+                        debauch'd, <ref target="excise_" corresp="excise">Excise</ref>
+                        oppress'd,</l>
+                    <l n="30">Or <hi rend="italic">English</hi> Honour grew a standing Jest.</l>
+                </lg>
+                <lg>
                     <l n="31">A transient Calm the happy Scenes bestow,</l>
                     <l n="32">And for a Moment lull the Sense of Woe.</l>
                     <l n="33">At length awaking, with contemptuous Frown,</l>
                     <l n="34">Indignant THALES eyes the neighb'ring Town.</l>
-                    <l n="35">Since Worth, he cries, in these degen'rate Days,</l>
+                </lg>
+                <lg>
+                    <l n="35">SINCE Worth, he cries, in these degen'rate Days,</l>
                     <l n="36">Wants ev'n the cheap Reward of empty Praise;</l>
                     <l n="37">In those curst Walls, devote to Vice and Gain,</l>
-                    <l n="38">Since <ref target="a012" corresp="n012">unrewarded Science</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n012" target="a012">Unacknowledged intellectual pursuits.</note> toils in vain;</l>
+                    <l n="38">Since <ref target="unrewardedscience_" corresp="unrewardedscience"
+                            >unrewarded Science</ref> toils in vain;</l>
                     <l n="39">Since Hope but sooths to double my Distress,</l>
                     <l n="40">And ev'ry Moment leaves my Little less;</l>
+                    <pb n="6"/>
                     <l n="41">While yet my steady Steps no Staff sustains,</l>
                     <l n="42">And Life still vig'rous revels in my Veins;</l>
                     <l n="43">Grant me, kind Heaven, to find some happier Place,</l>
                     <l n="44">Where Honesty and Sense are no Disgrace;</l>
-                    <l n="45">Some pleasing Bank where verdant <ref target="a013" corresp="n013">osiers</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n013" target="a013">Any of several willows with tough pliant branches used in basketwork. It can also be a flexible branch of any of these willows. Source: Oxford English Dictionary</note> play,</l>
-                    <l n="46">Some peaceful <ref target="a014" corresp="n014">vale</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n014" target="a014">A more or less extensive tract of land lying between two ranges of hills, or stretches of high ground, and usually traversed by a river or stream; a dale or valley, esp. one which is comparatively wide and flat. Source: Oxford English Dictionary</note> with Nature's Paintings gay;</l>
-                    <l n="47">Where once the harrass'd <ref target="a048" corresp="n048">BRITON</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n048" target="a048">A member of one of the Brittonic-speaking peoples; an inhabitant of Britain. Source: Oxford English Dictionary</note> found repose,</l>
+                    <l n="45">Some pleasing Bank where verdant <ref target="osiers_"
+                            corresp="osiers">Osiers</ref> play,</l>
+                    <l n="46">Some peaceful <ref target="vale_" corresp="vale">Vale</ref> with
+                        Nature's Paintings gay;</l>
+                    <l n="47">Where once the harrass'd <ref target="briton_" corresp="briton"
+                            >BRITON</ref> found Repose,</l>
                     <l n="48">And safe in Poverty defy'd his Foes;</l>
                     <l n="49">Some secret Cell, ye Pow'rs, indulgent give.</l>
-                    <l n="50"><ref target="a015" corresp="n015">Let ---- live here, for --- has learned to Live</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n015" target="a015">(DRAFT-Should there be five dashes?)Readers were invited to fill in the blanks here with people who it might be dangerous to name directly; perhaps even the name 'George,' that of the king.</note>.</l>
+                    <l n="50"><ref target="dashes_" corresp="dashes">Let ---- live here, for ----
+                            has learn'd to live</ref>.</l>
                     <l n="51">Here let those reign, whom Pensions can incite</l>
-                    <l n="52"><ref target="a016" corresp="n016">To vote a <hi rend="italic">Patriot</hi> black, a courtier white</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n016" target="a016">'Patriots' were those who opposed the Walpole government and 'Courtiers' were those who supported his policies.</note>;</l>
+                    <l n="52"><ref target="patriot_" corresp="patriot">To vote a <hi rend="italic"
+                                >Patriot</hi> black, a courtier white</ref>;</l>
                     <l n="53">Explain their Country's dear-bought Rights away,</l>
                     <l n="54">And plead for Pirates in the Face of Day;</l>
                     <l n="55">With slavish Tenets taint our poison'd Youth,</l>
                     <l n="56">And lend a Lye the Confidence of Truth.</l>
+                </lg>
+                <lg>
                     <l n="57">Let such raise Palaces, and Manors buy,</l>
                     <l n="58">Collect a Tax, or farm a Lottery,</l>
-                    <l n="59">With <ref target="a017" corresp="n017">warbling eunuchs</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n017" target="a017">Castrati singers; male singers who had been castrated as children to preserve the high register of their voices, these singers had become extremely popular to opera goers.</note> fill our <ref target="a018" corresp="n018">Licensed Stage</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n018" target="a018">The Stage Licensing Act had been passed in 1737; it required theatres to submit plays to the government for approval in advance of their performance, and effectively censored the London stage.</note>,</l>
+                    <pb n="7"/>
+                    <l n="59">With <ref target="eunuchs_" corresp="eunuchs">warbling eunuchs</ref>
+                        fill our <ref target="license_" corresp="license">Licensed
+                            Stage<!--The edition referenced in ECCO reads 'silenc'd'—leaving it Licensed for now -AB --></ref>,</l>
                     <l n="60">And lull to Servitude a thoughtless Age.</l>
+                </lg>
+                <lg>
                     <l n="61">Heroes, proceed! What Bounds your Pride shall hold?</l>
                     <l n="62">What Check restrain your Thirst of Pow'r and Gold?</l>
                     <l n="63">Behold rebellious Virtue quite o'erthrown,</l>
                     <l n="64">Behold our Fame, our Wealth, our Lives your own.</l>
+                </lg>
+                <lg>
                     <l n="65">To such, a groaning Nation's Spoils are giv'n,</l>
+                    <!-- ECCO edition reads 'to such the Plunder of a Land is giv'n', -AB -->
                     <l n="66">When publick Crimes inflame the Wrath of Heav'n:</l>
                     <l n="67">But what, my Friend, what Hope remains for me,</l>
                     <l n="68">Who start at Theft, and blush at Perjury?</l>
                     <l n="69">Who scarce forbear, tho' BRITAIN'S Court he sing,</l>
-                    <l n="70">To pluck a <ref target="a019" corresp="n019">tilted Poet's</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n019" target="a019">Johnson is implicitly attacking Poet Laureate Colley cibber. Cibber was a mediocre poet and playwright but he was primarily given the title because he supported Walpole and the Whig Party. The borrowed wing part may be an accusation of plagiarism.</note> borrow'd Wing;</l>
+                    <l n="70">To pluck a <ref target="poet_" corresp="poet">titled Poet's</ref>
+                        borrow'd Wing;</l>
                     <l n="71">A Statesman's Logic unconvinc'd can hear,</l>
-                    <l n="72">And dare to slumber o'er the <ref target="a020" corresp="n020">Gazetteer</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n020" target="a020">The <hi rend="italic">Gazette</hi> was the official newspaper used by the Walpole government to influence public opinion, and, therefore, here labeled a total bore.</note>;</l>
+                    <l n="72">And dare to slumber o'er the <hi rend="italic"><ref target="gazette_"
+                                corresp="gazette">Gazetteer</ref></hi>;</l>
                     <l n="73">Despise a Fool in half his Pension drest</l>
-                    <l n="74">And strive in vain to laugh at <ref target="a021" corresp="n021"><hi rend="italic">H---y's</hi></ref><note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="n021" target="a021">Probably referring to John Henly, known as <hi rend="italic">Orator Henly</hi>, a well-known London preacher who had become famous more for his showmanship than his religious doctrine; he drew big crowds but was also considered to be something of a buffoon, and was also known to be a Walpole supporter.</note> Jest.</l>
+                    <l n="74">And strive in vain to laugh at <ref target="henly_" corresp="henly"
+                                ><hi rend="italic">H---y</hi>'s</ref> Jest.</l>
+                </lg>
+                <lg>
                     <l n="75">Others with softer Smiles, and subtler Art,</l>
                     <l n="76">Can sap the Principles, or taint the Heart;</l>
+                    <pb n="8"/>
                     <l n="77">With more Address a Lover's Note convey,</l>
                     <l n="78">Or bribe a Virgin's Innocence away.</l>
                     <l n="79">Well may they rise, while I, whose Rustic Tongue</l>
-                    <l n="80">Ne'er knew to puzzle Right, or <ref target="a049" corresp="n049">varnish</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n049" target="a049">To cover, gloss over, or disguise. Source: Oxford English Dictionary</note> Wrong,</l>
+                    <l n="80">Ne'er knew to puzzle Right, or <ref target="varnish_"
+                            corresp="varnish">varnish</ref> Wrong,</l>
                     <l n="81">Spurn'd as a Begger, dreaded as a Spy,</l>
                     <l n="82">Live unregarded, unlamented die.</l>
+                </lg>
+                <lg>
                     <l n="83">For what but social Guilt the Friend endears?</l>
-                    <l n="84">Who shares <ref target="a022" corresp="n022"><hi rend="italic">Orgilio's</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n022" target="a022">The poet may not be referring to a particular person, but since <hi rend="italic">orgueil</hi> means <hi rend="italic">pride</hi> in French, imagining a prideful person in general.</note> Crimes, his Fortune shares.</l>
+                    <l n="84">Who shares <ref target="orgilio_" corresp="orgilio"><hi rend="italic"
+                                >Orgilio's</hi></ref> Crimes, his Fortune shares.</l>
                     <l n="85">But thou, should tempting Villainy present</l>
-                    <l n="86">All <ref target="a023" corresp="n023"><hi rend="italic">Marlborough</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n023" target="a023">John Churchill, the Duke of Marlborough (1650-1722), was a war hero for his successes in the War of the Spanish Succession at the turn of the eighteenth century; he was also widely believed to have been an enormous war profiteer, making a fortune from contracts to supply the troops.</note> hoarded, or all <ref target="a024" corresp="n024"><hi rend="italic">Villiers</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n024" target="a024">George Villiers, the second Duke of Buckingham, (1628-87) was a notorious rake and spendthrift.</note> spent,</l>
+                    <l n="86">All <ref target="marlborough_" corresp="marlborough"><hi rend="italic"
+                                >Marlborough</hi></ref> hoarded, or all <ref target="villiers_"
+                            corresp="villiers"><hi rend="italic">Villiers</hi></ref> spent,</l>
                     <l n="87">Turn from the glitt'ring Bribe thy scornful Eye,</l>
                     <l n="88">Nor fell for Gold, what Gold could never buy,</l>
                     <l n="89">The peaceful Slumber, self-approving Day,</l>
                     <l n="90">Unsullied Fame, and Conscience ever gay.</l>
+                </lg>
+                <lg>
                     <l n="91">The cheated Nation's happy Fav'rites see!</l>
                     <l n="92">Mark whom the Great caress, who frown on me!</l>
-                    </lg>
-                    <lg>
+                    <pb n="9"/>
                     <l n="93">LONDON! the needy Villain's gen'ral Home,</l>
-                    <l n="94">The <ref target="a025" corresp="n025">Common Shore</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n025" target="a025">Sewer. Source: Oxford English Dictionary</note> of Paris and of Rome;</l>
+                    <l n="94">The <ref target="sewer_" corresp="sewer">Common Shore</ref> of <hi
+                            rend="italic">Paris</hi> and of <hi rend="italic">Rome</hi>;</l>
                     <l n="95">With eager Thirst, by Folly or by Fate,</l>
                     <l n="96">Sucks in the Dregs of each corrupted State.</l>
-                    <l n="97">Forgive my <ref target="a026" corresp="n026">transports</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n026" target="a026">Here referring to the sense of <hi rend="italic">transport</hi> as a state of excitation, excess.</note> on a Theme like this,</l>
-                    <l n="98">I cannot bear a French Metropolis.</l>
-                    <l n="99">Illustrious <ref target="a027" corresp="n027"><hi rend="italic">Edward</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n027" target="a027">(DRAFT)</note>! from the Realms of Day,</l>
+                    <l n="97">Forgive my <ref target="transport_" corresp="transport"
+                            >transports</ref> on a Theme like this,</l>
+                    <l n="98">I cannot bear a <hi rend="italic">French</hi> Metropolis.</l>
+                </lg>
+                <lg>
+                    <l n="99">Illustrious EDWARD! from the Realms of Day,</l>
+                    <!-- do we need a note on which edward this is? -AB -->
                     <l n="100">The Land of Heroes and of Saints survey;</l>
-                    <l n="101">Nor hope the British <ref target="a050" corresp="n050">Lineaments</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n050" target="a050">(Draft)Line or outline. Source: Oxford English Dictionary</note> to trace,</l>
-                    <l n="102">The rustic Grandeur; or the surly Grace,</l>
+                    <l n="101">Nor hope the <hi rend="italic">British</hi>
+                        <ref target="lineament_" corresp="lineament">Lineaments</ref> to trace,</l>
+                    <l n="102">The rustic Grandeur, or the surly Grace,</l>
                     <l n="103">But lost in thoughtless Ease, and empty Show,</l>
                     <l n="104">Behold the Warriour dwindled to a Beau;</l>
                     <l n="105">Sense, Freedom, Piety, refin'd away,</l>
                     <l n="106">Of FRANCE the Mimic, and of SPAIN the Prey;</l>
+                </lg>
+                <lg>
                     <l n="107">All that at home no more can beg or steal,</l>
-                    <l n="108">Or like a <ref target="a028" corresp="n028">Gibbet</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n028" target="a028">Orignially synonymous with gallows, but has later been used to mean an upright post with projecting arm from which the bodies of criminals were hung in chains or irons after execution. Source: Oxford English Dictionary</note> better than a <ref target="a029" corresp="n029">Wheel</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n029" target="a029">An instrument of torture and punishment. Source: Oxford English Dictionary</note>;</l>
+                    <l n="108">Or like a <ref target="gibbet_" corresp="gibbet">Gibbet</ref> better
+                        than a <ref target="wheel_" corresp="wheel">Wheel</ref>;</l>
                     <l n="109">Hiss'd from the Stage, or hooted from the Court,</l>
                     <l n="110">Their Air, their Dress, their Politicks import;</l>
-                    <l n="111"><ref target="a029" corresp="n029">Obsequious</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n029" target="a029">Compliant with the will or wishes of another.</note>, artful, <ref target="a030" corresp="n030">Voluble</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n030" target="a030">Liable to change; inconstant, variable, mutable. Source: Oxford English Dictionary</note> and gay,</l>
-                    <l n="112">On <hi rend="italic">Britain's</hi> fond <ref target="a051" corresp="n051">Credulity</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n051" target="a051">Readiness to believe. Source: Oxford English Dictionary</note> they prey.</l>
+                    <pb n="10"/>
+                    <l n="111"><ref target="obsequious_" corresp="obsequious">Obsequious</ref>,
+                        artful, <ref target="voluble_" corresp="voluble">Voluble</ref> and gay,</l>
+                    <l n="112">On <hi rend="italic">Britain</hi>'s fond <ref target="credulity_"
+                            corresp="credulity">Credulity</ref> they prey.</l>
                     <l n="113">No gainful Trade their Industry can 'scape,</l>
                     <l n="114">They sing, they dance, clean Shoes, or cure a Clap;</l>
                     <l n="115">All Sciences a fasting Monsieur knows,</l>
                     <l n="116">And bid him go to Hell, to Hell he goes,</l>
-                    <l n="117"><ref target="a052" corresp="n052">Ah! what avails it, that, from Slav'ry far,</ref></l>
-                    <l n="118">I drew the Breath of Life in <hi rend="italic">English</hi> Air;</l>    
-                    
-                    <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n052" target="a052">(DRAFT-Should it be pointed out that this is such a terrible rhyme for a reason.)</note>    
-                    <l n="119">Was early taught a <hi rend="italic">Briton's</hi> Right to prize,</l>
-                    <l n="120">And lisp the Tale of <ref target="a031" corresp="n031">Henry's</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n031" target="a031">Probably a reference to Henry V, who was famous for his military success in the Hundred Years War with France.</note> Victories;</l>
-                    <l n="121">If the <ref target="a032" corresp="n032">gulled</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n032" target="a032">Duped, deceived, befooled. Source: Oxford English Dictionary</note> conqueror <ref target="a053" corresp="n053">receives the Chain</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n053" target="a053">(DRAFT-DC-Does this mean to be hung?)</note>,</l>
+                </lg>
+                <lg>
+                    <l n="117">Ah! what avails it, that, from Slav'ry far,</l>
+                    <l n="118">I drew the Breath of Life in <hi rend="italic">English</hi> Air;</l>
+                    <!-- Should we add a note mentioning that far / Air is an intentionally bad rhyme? -->
+                    <l n="119">Was early taught a <hi rend="italic">Briton</hi>'s Right to
+                        prize,</l>
+                    <l n="120">And lisp the Tale of <ref target="henry_" corresp="henry">HENRY'<hi
+                                rend="italic">s</hi></ref> Victories;</l>
+                    <l n="121">If the <ref target="gulled_" corresp="gulled">gull'd</ref> conqueror
+                        receives the Chain,</l>
+                    <!-- Does this mean to be hanged? -->
                     <l n="122">And what their Armies lost, their Cringes gain?</l>
+                </lg>
+                <lg>
                     <l n="123">Studious to please, and ready to submit,</l>
-                    <l n="124">The supple <ref target="a033" corresp="n033"><hi rend="italic">Gaul</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n033" target="a033">Frenchman. Source: Oxford English Dictionary</note> was born a Parasite:</l>
+                    <l n="124">The supple <ref target="gaul_" corresp="gaul"><hi rend="italic"
+                                >Gaul</hi></ref> was born a Parasite:</l>
                     <l n="125">Still to his Int'rest true, where'er he goes,</l>
                     <l n="126">Wit, Brav'ry, Worth, his lavish Tongue bestows;</l>
+                    <pb n="11"/>
                     <l n="127">In ev'ry Face a Thousand Graces shine,</l>
                     <l n="128">From ev'ry Tongue flows Harmony divine.</l>
                     <l n="129">These arts in vain our rugged Natives try,</l>
                     <l n="130">Strain out with fault'ring Diffidence a Lye,</l>
                     <l n="131">And gain a Kick for awkward Flattery.</l>
+                </lg>
+                <lg>
                     <l n="132">Besides, with Justice, this discerning Age</l>
                     <l n="133">Admires their wond'rous Talents for the Stage:</l>
                     <l n="134">Well may they venture on the Mimic's Art,</l>
@@ -347,20 +441,27 @@
                     <l n="140">To shake with Laughter ere the Jest they hear,</l>
                     <l n="141">To pour at Will the counterfeited Tear;</l>
                     <l n="142">And as their Patron hints the Cold or Heat,</l>
-                    <l n="143">To shake in Dog-days, in December sweat.</l>
-                    </lg>  
-                
-              
-                
-                    <lg>    
+                    <l n="143">To shake in Dog-days, in <hi rend="italic">December</hi> sweat.</l>
+                </lg>
+                <pb n="12"/>
+                <lg>
                     <l n="144">How, when Competitors like these contend,</l>
                     <l n="145">Can surly Virtue hope to fix a Friend?</l>
-                    <l n="146">Slaves that with serious <ref target="a054" corresp="n054">Impudence</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n054" target="a054">Shameless, immodest. Source: Oxford English Dictionary</note> <ref target="a055" corresp="n055">beguile</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n055" target="a055">To deceive or cheat. Source: Oxford English Dictionary</note>,</l>
+                    <l n="146">Slaves that with serious <ref target="a054" corresp="n054"
+                            >Impudence</ref><note resp="editors.xml#UVAstudstaff" type="gloss"
+                            xml:id="n054" target="a054">Shameless, immodest. Source: Oxford English
+                            Dictionary</note>
+                        <ref target="a055" corresp="n055">beguile</ref><note
+                            resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n055" target="a055"
+                            >To deceive or cheat. Source: Oxford English Dictionary</note>,</l>
                     <l n="147">And lye without a Blush, without a Smile;</l>
                     <l n="148">Exalt each Trifle, ev'ry Vice adore,</l>
                     <l n="149">Your Taste in Snuff, your Judgment in a Whore;</l>
-                    <l n="150">Can <ref target="a034" corresp="n034">Balbo's</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n034" target="a034">Balbo is Latin for one who stammers, so, such a person's eloquence here is an oxymoron.</note> Eloquence applaud, and swear</l>
+                    <l n="150">Can <ref target="balbo_" corresp="balbo"><hi rend="italic"
+                            >Balbo</hi>'s</ref> Eloquence applaud, and swear</l>
                     <l n="151">He gropes his Breeches with a Monarch's Air.</l>
+                </lg>
+                <lg>
                     <l n="152">For Arts like these preferr’d, admir’d, carest,</l>
                     <l n="153">They first invade your Table, then your Breast;</l>
                     <l n="154">Explore your Secrets with insidious Art,</l>
@@ -369,9 +470,7 @@
                     <l n="157">Commence your Lords, and govern or betray.</l>
                     <l n="158">By Numbers here from Shame or Censure free,</l>
                     <l n="159">All Crimes are safe, but hated Poverty.</l>
-                    </lg>
-                
-                    <lg>
+                    <pb n="13"/>
                     <l n="160">This, only this, the rigid Law persues,</l>
                     <l n="161">This, only this, provokes the snarling Muse;</l>
                     <l n="162">The sober Trader at a tatter'd Cloak,</l>
@@ -382,121 +481,484 @@
                     <l n="167">Sure the most bitter is a scornful Jest;</l>
                     <l n="168">Fate never wounds more deep the gen'rous Heart,</l>
                     <l n="169">Than when a Blockhead's Insult points the Dart.</l>
+                </lg>
+                <lg>
                     <l n="170">Has Heaven reserv'd, in Pity to the Poor,</l>
                     <l n="171">No pathless Waste, or undiscover'd Shore?</l>
                     <l n="172">No secret Island in the boundless Main?</l>
                     <l n="173">No peaceful Desart yet unclaim'd by SPAIN?</l>
                     <l n="174">Quick let us rise, the happy Seats explore,</l>
                     <l n="175">And bear Oppression's Insolence no more.</l>
-                    </lg>
-                
-                    <lg>
+                    <pb n="14"/>
                     <l n="176">This mournful Truth is ev'ry where confest,</l>
                     <l n="177">SLOW RISES WORTH, BY POVERTY DEPREST:</l>
                     <l n="178">But here more slow, where all are Slaves to Gold,</l>
                     <l n="179">Where Looks are Merchandise, and Smiles are sold,</l>
                     <l n="180">Where won by Bribes, by Flatteries implor'd,</l>
                     <l n="181">The Groom retails the Favours of his Lord.</l>
+                </lg>
+                <lg>
                     <l n="182">But hark! th' affrighted Crowd's tumultuous Cries</l>
                     <l n="183">Roll thro' the Streets, and thunder to the Skies;</l>
                     <l n="184">Rais'd from some pleasing Dream of Wealth and Pow'r,</l>
-                    <l n="185">Some pompous Palace, or some blissful <ref target="a056" corresp="n056">Bow'r</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n056" target="a056">A cottage, often used as a romanticized abode in poetry. Source: Oxford English Dictionary</note>,</l>
-                    <l n="186">Aghast you start, and scarce with <ref target="a057" corresp="n057">aking</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n057" target="a057">(DRAFT-Is this supposed to be aching)</note> Sight,</l>
+                    <l n="185">Some pompous Palace, or some blissful <ref target="bower_"
+                            corresp="bower">Bow'r</ref>,</l>
+                    <l n="186">Aghast you start, and scarce with <ref target="aking_"
+                            corresp="aking">aking</ref> Sight,</l>
                     <l n="187">Sustain th' approaching Fire's tremendous Light;</l>
                     <l n="188">Swift from pursuing Horrors take your Way,</l>
                     <l n="189">And Leave your little ALL to Flames a Prey;</l>
                     <l n="190">Then thro' the World a wretched Vagrant roam,</l>
                     <l n="191">For where can starving Merit find a Home?</l>
-                    </lg>
-                
-                
-                
-                    <lg>
+                    <pb n="15"/>
                     <l n="192">In vain your mournful Narrative disclose,</l>
                     <l n="193">While all neglect, and most insult your Woes.</l>
-                    <l n="194">Should Heaven's just Bolts Orgilio's Wealth con-found,</l>
+                </lg>
+                <lg>
+                    <l n="194">Should Heaven's just Bolts <hi rend="italic">Orgilio</hi>'s Wealth
+                        confound,</l>
                     <l n="195">And spread his flaming Palace on the Ground,</l>
-                    <l n="196">Swift o'er the Land the dismal Rumour flies,</l> 
+                    <l n="196">Swift o'er the Land the dismal Rumour flies,</l>
                     <l n="197">And publick Mournings pacify the Skies;</l>
-                    <l n="198">The <ref target="a035" corresp="n035">Laureat</ref><note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="n035" target="a035">The poets laureate; since this was an official position, such poets, like Cibber, did not deviate far from the government's official line.</note> Tribe in servile Verse relate,</l>
+                    <l n="198">The <ref target="laureate_" corresp="laureate">Laureat</ref> Tribe in
+                        servile Verse relate,</l>
                     <l n="199">How Virtue wars with persecuting Fate;</l>
                     <l n="200">With well-feign'd Gratitude the pension'd Band</l>
                     <l n="201">Refund the Plunder of the begger'd Land.</l>
-                    <l n="202">See! while he builds, the gaudy <ref target="a058" corresp="n058">Vassals</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n058" target="a058">Part of the feudal system, vassals are the ones who own land, and thus control the workers of the land. Normally they're portrayed in a negative, arrogant manner. Source: Oxford English Dictionary</note> come,</l>
+                    <l n="202">See! while he builds, the gaudy <ref target="vassal_"
+                            corresp="vassal">Vassals</ref> come,</l>
                     <l n="203">And crowd with sudden Wealth the rising Dome;</l>
                     <l n="204">The Price of Boroughs and of Souls restore,</l>
                     <l n="205">And raise his Treasures higher than before.</l>
                     <l n="206">Now bless'd with all the Baubles of the Great,</l>
                     <l n="207">The polish'd Marble, and the shining Plate,</l>
-                        </lg>
-                    <lg>
+                    <pb n="16"/>
                     <l n="208"><hi rend="italic">Orgilio</hi> sees the golden Pile aspire,</l>
                     <l n="209">And hopes from angry Heav'n another Fire.</l>
+                </lg>
+                <lg>
                     <l n="210">Could'st thou resign the Park and Play content,</l>
-                    <l n="211">For the fair Banks <ref target="a036" corresp="n036"><hi rend="italic">Severn of or Trent</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n036" target="a036">The River Severn is in Wales; the Trent river is a major river in England. Both are far from London.</note>;</l>
+                    <l n="211">For the fair Banks <ref target="a036" corresp="n036"><hi
+                                rend="italic">Severn</hi> of or <hi rend="italic"
+                        >Trent</hi></ref>;</l>
                     <l n="212">There might'st thou find some elegant Retreat,</l>
-                    <l n="213">Some <ref target="a037" corresp="n037">hireling Senator's</ref><note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="n037" target="a037">Members of Parliament who had been paid off to vote the government line.</note> deserted Seat;</l>
+                    <l n="213">Some <ref target="a037" corresp="n037">hireling Senator's</ref><note
+                            resp="editors.xml#UVAstudstaff" type="editorial" xml:id="n037"
+                            target="a037">Members of Parliament who had been paid off to vote the
+                            government line.</note> deserted Seat;</l>
                     <l n="214">And stretch thy Prospects o'er the smiling Land,</l>
-                    <l n="215">For less than rent the Dungeons of the Strand;</l>
+                    <l n="215">For less than rent the Dungeons of the <hi rend="italic"
+                        >Strand</hi>;</l>
                     <l n="216">There prune thy Walks, support thy drooping Flow'rs,</l>
                     <l n="217">Direct thy Rivulets, and twine thy bowers;</l>
-                    <l n="218">And, while thy Beds a cheap <ref target="a059" corresp="n059">Repast</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n059" target="a059">Refreshments and/or rest. Source: Oxford English Dictionary</note> afford,</l>
-                    <l n="219">Despite the Dainties of a <ref target="a038" corresp="n038">venal</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n038" target="a038">Corrupt. Source: Oxford English Dictionary</note> Lord:</l>
+                    <l n="218">And, while thy Beds a cheap <ref target="repast_" corresp="repast"
+                            >Repast</ref> afford,</l>
+                    <l n="219">Despite the Dainties of a <ref target="venal_" corresp="venal"
+                            >venal</ref> Lord:</l>
                     <l n="220">There ev'ry Bush with Nature's Music rings,</l>
                     <l n="221">There ev'ry Breeze bears Health upon its Wings;</l>
                     <l n="222">On all thy Hours Security shall smile,</l>
                     <l n="223">And bless thine Evening Walk and Morning Toil.</l>
-                    </lg>
-                    <lg>
+                </lg>
+                <pb n="17"/>
+                <lg>
                     <l n="224">Prepare for Death, if here at Night you roam,</l>
                     <l n="225">And sign your Will before you sup from Home.</l>
-                    <l n="226">Some fiery <ref target="a060" corresp="n060">Fop</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n060" target="a060">(DRAFT-DC)One who is overtly concerned about their appearance and other people's perceptions of them. Source: Oxford English Dictionary</note>, with new Commission vain,</l>
-                    <l n="227">Who sleeps on <ref target="a039" corresp="n039">Brambles</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n039" target="a039">Pickly Shrubs. Source: Oxford English Dictionary</note> till he kills his Man;</l>
+                    <l n="226">Some fiery <ref target="fop_" corresp="fop">Fop</ref>, with new
+                        Commission vain,</l>
+                    <l n="227">Who sleeps on <ref target="bramble_" corresp="bramble">Brambles</ref>
+                        till he kills his Man;</l>
                     <l n="228">Some frolick Drunkard, reeling from a Feast,</l>
                     <l n="229">Provokes a Broil, and stabs you for a Jest.</l>
                     <l n="230">Yet ev'n these Heroes, mischievously gay,</l>
                     <l n="231">Lords of the Street, and Terrors of the Way;</l>
                     <l n="232">Flush'd as they are with Folly, Youth and Wine,</l>
                     <l n="233">Their prudent Insults to the Poor confine;</l>
-                    <l n="234">Afar they mark the <ref target="a040" corresp="n040">Flambeaus</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n040" target="a040">Torches. Source: Oxford English Dictionary</note> bright Approach,</l>
+                    <l n="234">Afar they mark the <ref target="flambeau_" corresp="flambeau"
+                            >Flambeaus</ref> bright Approach,</l>
                     <l n="235">And shun the shining Train, and golden Coach.</l>
+                </lg>
+                <lg>
                     <l n="236">In vain, these Dangers past, your Doors you close,</l>
-                    <l n="237">And hope the Balmy Blessings of <ref target="a061" corresp="n061">Repose</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n061" target="a061">A break or rest. Source: Oxford English Dictionary</note>:</l>
-                    </lg>
-                    <lg>
+                    <l n="237">And hope the Balmy Blessings of <ref target="repose_"
+                            corresp="repose">Repose</ref>:</l>
+                    <pb n="18"/>
                     <l n="238">Cruel with Guilt, and daring with Despair,</l>
                     <l n="239">The midnight Murd'rer bursts the faithless Bar;</l>
                     <l n="240">Invades the sacred Hour of silent Rest,</l>
                     <l n="241">And plants, unseen, a Dagger in your Breast.</l>
-                    <l n="242">Scarce can our Fields, such Crowds at <ref target="a041" corresp="n041">Tyburn</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n041" target="a041">Tyburn, roughly at the site of Marble Arch today was the location of the gallows at which criminals were hanged. Often such executions drew large crowds.</note> die,</l>
+                </lg>
+                <lg>
+                    <l n="242">Scarce can our Fields, such Crowds at <ref target="tyburn_"
+                            corresp="tyburn"><hi rend="italic">Tyburn</hi></ref> die,</l>
                     <l n="243">With Hemp the Gallows and the Fleet supply.</l>
                     <l n="244">Propose your Schemes, ye Senatorian Band,</l>
-                    <l n="245">Whose Ways and Means support the sinking Land;</l>
+                    <l n="245">Whose <hi rend="italic">Ways and Means</hi> support the sinking
+                        Land;</l>
                     <l n="246">Lest Ropes be wanting in the tempting Spring,</l>
-                    <l n="247">To rig another Convoy for the K--g.</l>
-                    <l n="248">A single Jail, in <ref target="a042" corresp="n042">ALFRED'S</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n042" target="a042">Alfred was King of Wessex from 871 to 899. He successfully defended his kingdom against the Viking attempt at conquest, and by the time of his death had become the dominant ruler in England. He is the only English monarch to be accorded the epithet <hi rend="italic">the Great</hi>. His reputation has been that of a learned and merciful man who encouraged education and improved his the legal system and military structure of his kingdom.</note> golden Reign,</l>
+                    <l n="247">To rig another Convoy for the K---g.</l>
+                </lg>
+                <lg>
+                    <l n="248">A single Jail, in <ref target="alred_" corresp="alfred">ALFRED'<hi
+                                rend="italic">s</hi></ref> golden Reign,</l>
                     <l n="249">Could half the Nation's Criminals contain;</l>
                     <l n="250">Fair Justice then, without Constraint ador'd,</l>
                     <l n="251">Sustain'd the Ballance, but resign'd the Sword;</l>
-                    <l n="252">No Spies were paid, no Special Juries known,</l>
+                    <l n="252">No Spies were paid, no <hi rend="italic">Special Juries</hi>
+                        known,</l>
                     <l n="253">Blest Age ! But ah ! how diff'rent from our own !</l>
-                    </lg>
-                    <lg>
+                </lg>
+                <pb n="19"/>
+                <lg>
                     <l n="254">Much could I add, ---- but see the Boat at hand,</l>
                     <l n="255">The Tide retiring, calls me from the Land:</l>
-                    <l n="256">Farewel ! --- When Youth, and Health, and Fortune spent,</l>
-                    <l n="257">Thou fly'st for Refuge to the Wilds of <ref target="a043" corresp="n043"><hi rend="italic">Kent</hi></ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n043" target="a043">(DRAFT-Add more about perhaps what he meant by this)A country in southeastern England; not particularly wild.</note>;</l>
+                    <l n="256">Farewel ! ----- When Youth, and Health, and Fortune spent,</l>
+                    <l n="257">Thou fly'st for Refuge to the Wilds of <ref target="kent_"
+                            corresp="kent"><hi rend="italic">Kent</hi></ref>;</l>
                     <l n="258">And tir'd like me with Follies and with Crimes,</l>
                     <l n="259">In angry Numbers warn'st succeeding Times;</l>
                     <l n="260">Then shall thy Friend, nor thou refuse his Aid,</l>
-                    <l n="261">Still Foe to Vice forsake his <ref target="a044" corresp="n044">Cambrian</ref><note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n044" target="a044">Welsh. Source: Oxford English Dictionary</note> Shade;</l>
+                    <l n="261">Still Foe to Vice forsake his <ref target="cambrian_"
+                            corresp="cambrian"><hi rend="italic">Cambrian</hi></ref> Shade;</l>
                     <l n="262">In Virtue's Cause once more exert his Rage,</l>
-                    <l n="263">Thy Satire point, and animate thy Page.</l> 
-                    <l>F I N I S.</l>
+                    <l n="263">Thy Satire point, and animate thy Page.</l>
+                    <l><hi rend="italic">F I N I S</hi>.</l>
                 </lg>
-                <!-- Add picture. -->
+                <!-- Add picture? -->
             </div>
         </body>
+        <back>
+            <div>
+                <note xml:id="introduction" target="introduction_"><p><hi rend="italic">London</hi>,
+                        published in 1738, represents Johnson's attempt to satirize the grubby world
+                        of London and also to rise above it. The poem is an "imitation" of the third
+                        Satire of the Roman poet Juvenal, which probably dates to the first century.
+                        In this poem, Juvenal imagines a friend of the poet, named Umbricius, who is
+                        sick and tired of the city of Rome and is leaving for the countryside for
+                        good. In doing what was called an "imitation" of his classical source,
+                        Johnson is not simply <hi rend="italic">translating</hi> Juvenal's poem, but
+                            <hi rend="italic">updating</hi> it, finding modern correlations to the
+                        Latin original. Here, London stands in for Rome, "Thales" stands in for
+                        Juvenal's friend Umbricius, and the Tuscan countryside to which Umbricius
+                        was headed becomes Wales. Exhausted by the filth, crowds, noise of London,
+                        and the difficulty of making a living as a writer, Thales (believed by some
+                        scholars to refer to <ref
+                            target="https://www.britannica.com/biography/Richard-Savage-English-writer"
+                            >Richard Savage</ref>, another hack writer who had become a friend of
+                        Johnson's) in some ways expresses Johnson's own frustrations. But <hi
+                            rend="italic">London</hi> itself, published in a handsome folio edition,
+                        written in the heroic couplet form that to readers of the 1730s identified
+                        the high style of serious poetry, using the form of the imitation to signify
+                        its neoclassical aspirations, and hyped in the pages of the <hi
+                            rend="italic">Gentleman's Magazine</hi> (which published ads for the
+                        poem, and also excerpted it), is clearly an attempt to Johnson to get out of
+                        hackdom as soon as possible, to become a poet like <ref
+                            target="https://www.britannica.com/biography/Alexander-Pope-English-author"
+                            >Alexander Pope</ref>, making a good living independent of the whims and
+                        tight fists of the booksellers and magazine editors.</p>
+                    <p>The poem also positioned itself as part of the growing opposition to the
+                        government of <ref
+                            target="https://www.britannica.com/biography/Robert-Walpole-1st-Earl-of-Orford"
+                            >Sir Robert Walpole</ref>, who had dominated British politics since
+                        taking over as the de facto Prime Minister (there was no such official
+                        position yet) in 1721.</p>
+                    <!-- Need Picture: Sir Robert Walpole -->
+                    <p>Walpole successfully suppressed dissent through a mixture of brutality,
+                        bribery, and control of the print media. By the late 1730s, however, attacks
+                        on his regime were becoming more open and frequent, prompting new attempts
+                        on the part of his government to suppress dissenting voices. In particular,
+                        the Stage Licensing Act of 1737 called for theater managers to submit all
+                        plays for government approval in advance of performance. Prompted in part by
+                        satires against the regime like John Gay's <hi rend="italic">The Beggars
+                            Opera</hi> (1728) and the satirical afterpieces by Henry Fielding that
+                        had been very popular in the mid-1730s, the Stage Licensing Act had a
+                        chilling effect on the theater. In particular, the passage of the Act
+                        thwarted Johnson's attempt to become a playwright himself. Johnson had
+                        arrived in London just that year with a half-finished tragedy in his
+                        luggage, a play called <hi rend="italic">Irene</hi> that he probably
+                        imagined as a vehicle by which he could make a lot of money and gain status
+                        as an author. But in the aftermath of the <ref
+                            target="https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100104279;jsessionid=924D23D9564A06F826870B888FA56197"
+                            >Stage Licensing Act</ref>, theater managers became extremely cautious
+                        about new plays in general, and <hi rend="italic">Irene</hi> was not staged
+                        until 1749. By using Juvenal's Third Satire as a point of departure, <hi
+                            rend="italic">London</hi> manages to critique the Walpole regime
+                        indirectly and through coded references, but contemporary readers,
+                        particularly those in sympathy with the opposition, were readily able to see
+                        how the poem mocked Walpole's reign as corrupt.</p>
+                    <p>Probably because of its political stance, <hi rend="italic">London</hi> seems
+                        to have sold reasonably well, and Alexander Pope, the most famous poet of
+                        the period (and a sympathizer with opposition politics), praised it. But as
+                        a vehicle for establishing Johnson's reputation as a significant poet who
+                        could make a living off his art it was a dead end. Johnson had to continue
+                        to grind out work for hire for another decade and a half. It was not until
+                        he achieved fame in the 1750s, first as the author of a <hi rend="italic"
+                            >Spectator</hi>-like series of journalistic essays called <hi
+                            rend="italic">The Rambler</hi> and then as the editor of the <hi
+                            rend="italic">Dictionary of the English Language</hi>, which made him a
+                        kind of national treasure, since he had single-handedly accomplished for
+                        English what it had taken large teams of scholars to do for other European
+                        languages. Here, let's read Johnson as eighteenth-century Grub Street's
+                        finest product--and its most perceptive critic.</p></note>
+
+                <note xml:id="juvenal" target="juvenal_"><p>"Who can endure this terrible city? Who
+                        is so iron-willed that he can bear it?"</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="thales"
+                    target="thales_"><p>The character of Thales has often been seen to have been
+                        inspired by the author <ref
+                            target="https://www.britannica.com/biography/Richard-Savage-English-writer"
+                            >Richard Savage</ref>, a friend of Samuel Johnson. Richard Savage, like
+                        Thales here, left London in an attempt to live in Wales. In 1744, after the
+                        death of Savage, Johnson published his Life of Richard Savage, a full-scale
+                        biography.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="cambria"
+                    target="cambria_"><p>Wales. Savage did go to Wales, where he died in debtor's
+                        prison.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="david" target="david_"
+                        ><p>The Patron saint of Wales.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="hibernia"
+                    target="hibernia_"><p>The Latin name for Ireland.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="thestrand"
+                    target="thestrand_"><p>The main thoroughfare of London, connecting the City of
+                        London with Westminster.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="rapine" target="rapine_"
+                        ><p>Plunder or pillage. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="rabble" target="rabble_"
+                        ><p>An unruly, disorganized crowd or mob. Source: Oxford English
+                        Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="wherry" target="wherry_"
+                        ><p>A light rowing boat used mainly on rivers. Source: Oxford English
+                        Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="thames" target="thames_"
+                        ><p>The second longest river in Britain, which flows through central
+                        London.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="eliza" target="eliza_"
+                        ><p>Queen Elizabeth I was born at Greenwich Palace.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="consecrated"
+                    target="consecrated_"><p>Sacred, hallowed, or sanctified. Source: Oxford English
+                        Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="masquerade"
+                    target="masquerade_"><p>Masquerade balls were enormously popular in London in
+                        this period. People dressed up in costume in order to conceal their
+                        identities; critics denounced masquerades as hot-beds of sexual intrigue and
+                        immoral behavior.</p></note>
+
+                <note resp="editors.xml#AJB" type="gloss" xml:id="excise" target="excise_"><p> Any
+                        toll or tax. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="unrewardedscience"
+                    target="unrewardedscience_"><p>Unacknowledged intellectual pursuits.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="osiers" target="osiers_"
+                        ><p>Any of several willows with tough pliant branches used in basketwork. It
+                        can also be a flexible branch of any of these willows. Source: Oxford
+                        English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="vale" target="vale_"><p>A
+                        more or less extensive tract of land lying between two ranges of hills, or
+                        stretches of high ground, and usually traversed by a river or stream; a dale
+                        or valley, esp. one which is comparatively wide and flat. Source: Oxford
+                        English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="briton" target="briton_"
+                        ><p>A member of one of the Brittonic-speaking (Welsh, Cornish) peoples.
+                        Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="dashes" target="dashes_"
+                        ><p>Readers were invited to fill in the blanks here with people who it might
+                        be dangerous to name directly; perhaps even the name 'George,' that of the
+                        king.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="patriot"
+                    target="patriot_"><p>"Patriots" were those who opposed the Walpole government
+                        and "Courtiers" were those who supported his policies.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="eunuchs"
+                    target="eunuchs_"><p>Castrati singers; male singers who had been castrated as
+                        children to preserve the high register of their voices, these singers had
+                        become extremely popular to opera goers.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="license"
+                    target="license_"><p><ref
+                            target="https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100104279;jsessionid=924D23D9564A06F826870B888FA56197"
+                            >The Stage Licensing Act</ref> had been passed in 1737; it required
+                        theatres to submit plays to the government for approval in advance of their
+                        performance, and effectively censored the London stage.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="poet" target="poet_"
+                        ><p>Johnson is implicitly attacking Poet Laureate <ref
+                            target="https://www.britannica.com/biography/Colley-Cibber">Colley
+                            Cibber</ref>. Cibber was a mediocre poet and playwright but he was
+                        primarily given the title because he supported Walpole and the Whig Party.
+                        The borrowed wing part may be an accusation of plagiarism.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="gazette"
+                    target="gazette_"><p>The <ref target="https://www.thegazette.co.uk/history"><hi
+                                rend="italic">Gazette</hi></ref> was the official newspaper used by
+                        the Walpole government to influence public opinion, and, therefore, here
+                        labeled a total bore.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="henly"
+                    target="henly_"><p>Probably referring to <ref
+                            target="https://www.acsu.buffalo.edu/~duchan/new_history/enlightenment/henley.html"
+                            >John Henly</ref>, known as <hi rend="italic">Orator Henly</hi>, a
+                        well-known London preacher who had become famous more for his showmanship
+                        than his religious doctrine; he drew big crowds but was also considered to
+                        be something of a buffoon, and was also known to be a Walpole
+                    supporter.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="varnish"
+                    target="varnish_"><p>To cover, gloss over, or disguise. Source: Oxford English
+                        Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="orgilio"
+                    target="orgilio_"><p>The poet may not be referring to a particular person, but
+                        since <hi rend="italic">orgueil</hi> means <hi rend="italic">pride</hi> in
+                        French, imagining a prideful person in general.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="marlborough"
+                    target="marlborough_"><p><ref
+                            target="https://www.britannica.com/biography/John-Churchill-1st-duke-of-Marlborough"
+                            >John Churchill</ref>, the Duke of Marlborough (1650-1722), was a war
+                        hero for his successes in the War of the Spanish Succession at the turn of
+                        the eighteenth century; he was also widely believed to have been an enormous
+                        war profiteer, making a fortune from contracts to supply the
+                    troops.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="villiers"
+                    target="villiers_"><p><ref
+                            target="https://www.britannica.com/biography/George-Villiers-1st-duke-of-Buckingham"
+                            >George Villiers</ref>, the second Duke of Buckingham, (1628-87) was a
+                        notorious rake and spendthrift.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="sewer" target="sewer_"
+                        ><p>Sewer. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="transport"
+                    target="transport_"><p>Here referring to the sense of <hi rend="italic"
+                            >transport</hi> as a state of excitation, excess.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="lineament"
+                    target="lineament_"><p>Line or outline. Source: Oxford English
+                    Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="gibbet" target="gibbet_"
+                        ><p>Orignially synonymous with gallows, but has later been used to mean an
+                        upright post with projecting arm from which the bodies of criminals were
+                        hung in chains or irons after execution. Source: Oxford English
+                        Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="wheel" target="wheel_"
+                        ><p>An instrument of torture and punishment. Source: Oxford English
+                        Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="obsequious"
+                    target="obsequious_"><p>Compliant with the will or wishes of another. Source:
+                        Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="voluble"
+                    target="voluble_"><p>Liable to change; inconstant, variable, mutable. Source:
+                        Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="credulity"
+                    target="credulity_"><p>Readiness to believe. Source: Oxford English
+                        Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="henry" target="henry_"
+                        ><p>Probably a reference to <ref
+                            target="https://www.britannica.com/biography/Henry-V-king-of-England"
+                            >Henry V</ref>, who was famous for his military success in the Hundred
+                        Years War with France.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="gulled" target="gulled_"
+                        ><p>Duped, deceived, befooled. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="gaul" target="gaul_"
+                        ><p>Frenchman. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="balbo" target="balbo_"
+                        ><p>Balbo is Latin for one who stammers, so, such a person's eloquence here
+                        is an oxymoron.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="bower" target="bower_"
+                        ><p>A cottage, often used as a romanticized abode in poetry. Source: Oxford
+                        English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="aking" target="aking_"
+                        ><p>An archaic spelling of aching.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="editorial" xml:id="laureate"
+                    target="laureate_"><p>The poets laureate; since this was an official position,
+                        such poets, like Cibber, did not deviate far from the government's official
+                        line.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="vassal" target="vassal_"
+                        ><p>Part of the feudal system, vassals are the ones who own land, and thus
+                        control the workers of the land. Normally they're portrayed in a negative,
+                        arrogant manner. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="n036" target="a036"
+                        ><p>The River Severn is in Wales; the Trent river is a major river in
+                        England. Both are far from London.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="repast" target="repast_"
+                        ><p>Refreshments or rest. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="venal" target="venal_"
+                        ><p>Corrupt. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="fop" target="fop_"><p>One
+                        who is overtly concerned about their appearance and other people's
+                        perceptions of them. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="bramble"
+                    target="bramble_"><p>Prickly Shrubs. Source: Oxford English
+                    Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="flambeau"
+                    target="flambeau_"><p>Torches. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="repose" target="repose_"
+                        ><p>A break or rest. Source: Oxford English Dictionary.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="tyburn" target="tyburn_"
+                            ><p><ref
+                            target="https://www.historic-uk.com/HistoryMagazine/DestinationsUK/Tyburn-Tree-Speakers-Corner/"
+                            >Tyburn</ref>, roughly at the site of Marble Arch today was the location
+                        of the gallows at which criminals were hanged. Often such executions drew
+                        large crowds.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="alfred" target="alfred_"
+                            ><p><ref
+                            target="https://www.britannica.com/biography/Alfred-king-of-Wessex"
+                            >Alfred</ref> was King of Wessex from 871 to 899. He successfully
+                        defended his kingdom against the Viking attempt at conquest, and by the time
+                        of his death had become the dominant ruler in England. He is the only
+                        English monarch to be accorded the epithet <hi rend="italic">the Great</hi>.
+                        His reputation has been that of a learned and merciful man who encouraged
+                        education and improved his the legal system and military structure of his
+                        kingdom.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="kent" target="kent_"><p>A
+                        country in southeastern England.</p></note>
+
+                <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="cambrian"
+                    target="cambrian_"><p>Welsh. Source: Oxford English Dictionary.</p></note>
+
+            </div>
+        </back>
     </text>
-    
+
 </TEI>
