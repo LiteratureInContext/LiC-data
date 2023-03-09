@@ -1,272 +1,412 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="poe-tell-tale">
-   <!--TEI Header BEGINS-->
    <teiHeader xml:lang="en">
-
-  	<fileDesc>
-     	<!--BEGINS File Description -->
-     	<titleStmt>
-        	<title type="main">"The Tell-Tale Heart"</title> 
-        	<!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
-        	<author>
-           	<persName type="lcnaf" key="n79029745">
-              	<!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
-           	   <name><forename>Edgar Allan</forename><surname>Poe</surname></name><!-- THIS name or fore/sur/add populates the 'By....' directly under the title on the text's page.  -->
-           	</persName>
-        	</author>
-        	<editor>
-           	<persName>
-              	<!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
-              	<name ref="editors.xml#SF">
-                 	<!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
-                 	<surname>Ficke</surname>
-                 	<forename>Sarah</forename>
-              	</name>
-           	</persName>
-        	</editor>
-        	<respStmt>
-           	<resp>Transcription, correction, editorial commentary, and markup</resp>
-           	<!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
-           	<name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
-   	        <name ref="editors.xml#HAS">Hawa Sheikh-Adam</name>
-   			
-           	<!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
-        	</respStmt>
-        	<sponsor/>
-        	<funder>National Endowment for the Humanities</funder>
-        	<!-- Do not alter. -->
-     	</titleStmt>
-
-
-     	<publicationStmt>
-        	<!-- This element expresses the publication details of this particular etext. -->
-        	<publisher>Literature in Context</publisher>
-        	<!-- Do not alter. -->
-        	<address>
-           	<!-- Use the address information for your university. -->
-           	<addrLine>Marymount University Department of Literature and Languages</addrLine>
-           	<addrLine>2807 N. Glebe Road</addrLine>
-           	<addrLine>Arlington, VA </addrLine>
-           	<addrLine>22207</addrLine>
-           	<addrLine>thowe@marymount.edu</addrLine>
-           	<!-- Add your email address.  -->
-           	<addrLine>lic.open.anthology@gmail.com</addrLine>
-           	<!-- Do not alter. -->
-        	</address>
-        	<availability status="free">
-           	<!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
-           	<licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-              	Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-              	License </licence>
-        	</availability>
-     	</publicationStmt>
-
-
-     	<sourceDesc>
-        	<!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
-
-        	<biblStruct>
-           	<analytic>
-              	<!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
-              	<title>"The Tell-Tale Heart"</title>
-           	   
-           	</analytic>
-           	<monogr>
-              	<!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
-              	<author><persName>Edgar Allan Poe</persName></author>
-              	<title>"The Tell-Tale Heart"</title>
-              	<imprint>
-                 	<!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
-                 	<pubPlace>
-                    	<placeName type="tgn" key="7014406">Boston</placeName>
-                    	<!-- Note authority and key. -->
-                 	</pubPlace>
-                 	<publisher>J. R. Lowell and R. Carter</publisher>
-                 	<!-- Insert publsher of earliest/first edition. -->
-                 	<date when="1843">1843</date>
-                 	<!-- Insert year of earliest/first edition. Note the attribute @when. -->
-          	 
-              	   <note>Text for this digital edition drawn from <ref
-              	      target="http://xroads.virginia.edu/~Hyper/POE/telltale.html">The University of Virginia's etext center</ref> and checked against the first edition text using The Internet Archive. 
-              	      Page images are drawn from <ref
-                       	target="https://archive.org/details/pioneerliteraryc01lowe/page/28/mode/2up">The Internet Archive</ref>'s facsimile copy off <hi rend="italic">The Pioneer: A Literary and Critical Magazine</hi>.</note>
-                 	<!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
-               	 
-              	</imprint>
-              	
-              	<biblScope unit="volume">I</biblScope>
-              	<!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
-              	<biblScope>pp 29-31</biblScope>
-           	</monogr>
-        	</biblStruct>
-     	</sourceDesc>
-
-  	</fileDesc>
-  	<!-- Don't forget to close out all your elements! -->
-
-
-
-  	<profileDesc>
-     	<!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
-     	<langUsage>
-        	<language ident="en">English</language>
-     	</langUsage>
-
-     	<creation/>
-     	<!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
-
-     	<textDesc n="tale">
-        	<channel mode="w">print</channel>
-        	<!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
-        	<constitution type="single"/>
-        	<!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
-        	<derivation type="original"/>
-        	<!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
-        	<domain/>
-        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-        	<factuality type="fiction"/>
-        	<!-- See the textDesc guidelines for more information. -->
-        	<interaction/>
-        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-        	<preparedness/>
-        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-        	<purpose type="entertain" degree="high"/>
-        	<!-- See the TEI guidelines for more information. -->
-        	<purpose type="inform" degree="low"/>
-        	<!-- Multiple purpose types may or may not be appropriate. -->
-     	</textDesc>
-
-     	<settingDesc>
-        	<!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
-        	<setting>
-                  	<time from="1800" to="1900">19th Century</time>
-           	<!-- The time setting may be somewhat interpretive, though research should tell you more. -->
-        	</setting>
-     	</settingDesc>
-  	</profileDesc>
-
-  	<encodingDesc>
-     	<!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
-     	<projectDesc>
-        	<p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
-           	project, which provides an accessible, curated, and marked-up selection of primary
-           	sources relevant to the study and the teaching of British and American literature of
-           	the 18th century. This project is funded by the National Endowment for the Humanities
-           	and developed by faculty at The University of Virginia and Marymount University. </p>
-     	</projectDesc>
-     	<editorialDecl>
-        	<interpretation>
-           	<p>Research informing these annotations draws on publicly-accessible resources, with
-              	links provided where possible. Annotations have also included common knowledge,
-              	defined as information that can be found in multiple reliable sources. If you
-              	notice an error in these annotations, please contact lic.open.anthology@gmail.com.
-           	</p>
-        	</interpretation>
-        	<normalization>
-           	<p>Original spelling and capitalization is retained, though the long s has been
-              	silently modernized and ligatured forms are not encoded.</p>
-        	</normalization>
-        	<hyphenation>
-           	<p>Hyphenation has not been retained, except where necessary for the sense of the
-              	word.</p>
-        	</hyphenation>
-        	<segmentation>
-           	<p>Page breaks have been retained. Catchwords, signatures, and running headers have
-              	not. Where pages break in the middle of a word, the complete word has been
-              	indicated prior to the page beginning.</p>
-        	</segmentation>
-        	<correction>
-           	<p>Materials have been transcribed from and checked against first editions, where
-              	possible. See the Sources section.</p>
-        	</correction>
-     	</editorialDecl>
-     	<tagsDecl>
-        	<!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
-        	<namespace name="http://www.tei-c.org/ns/1.0">
-           	<tagUsage gi="div">Unnumbered divs used.</tagUsage>
-        	</namespace>
-     	</tagsDecl>
-     	<classDecl>
-        	<!-- We here define the authority files used throughout the application and data. -->
-        	<taxonomy xml:id="lcnaf">
-           	<bibl>Library of Congress Name Authority File</bibl>
-        	</taxonomy>
-        	<taxonomy xml:id="lcc">
-           	<bibl>Library of Congress Classification</bibl>
-        	</taxonomy>
-        	<taxonomy xml:id="tgn">
-           	<bibl>Getty Thesaurus of Geographic Names</bibl>
-        	</taxonomy>
-        	<taxonomy xml:id="orcid">
-           	<bibl>Open Researcher and Contributor ID</bibl>
-        	</taxonomy>
-     	</classDecl>
-  	</encodingDesc>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"The Tell-Tale Heart"</title>
+            <author>
+               <persName type="lcnaf" key="n79029745">
+                  <name><forename>Edgar Allan</forename><surname>Poe</surname></name>
+               </persName>
+            </author>
+            <editor>
+               <persName>
+                  <name ref="editors.xml#SF">
+                     <surname>Ficke</surname>
+                     <forename>Sarah</forename>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup by</resp>
+               <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
+               <name ref="editors.xml#HAS">Hawa Sheikh-Adam</name>
+               <name ref="editors.xml#AJB">Austin Benson.</name>
+            </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>Marymount University Department of Literature and Languages</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington, VA </addrLine>
+               <addrLine>22207</addrLine>
+               <addrLine>thowe@marymount.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <title>"The Tell-Tale Heart"</title>
+               </analytic>
+               <monogr>
+                  <author>
+                     <persName>Edgar Allan Poe</persName>
+                  </author>
+                  <title>"The Tell-Tale Heart"</title>
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="7014406">Boston</placeName>
+                     </pubPlace>
+                     <publisher>J. R. Lowell and R. Carter</publisher>
+                     <date when="1843">1843</date>
+                     <note>Text for this digital edition drawn from <ref
+                           target="http://xroads.virginia.edu/~Hyper/POE/telltale.html">The
+                           University of Virginia's etext center</ref> and checked against the first
+                        edition text using The Internet Archive. Page images are drawn from <ref
+                           target="https://archive.org/details/pioneerliteraryc01lowe/page/28/mode/2up"
+                           >The Internet Archive</ref>'s facsimile copy off <hi rend="italic">The
+                           Pioneer: A Literary and Critical Magazine</hi>.</note>
+                  </imprint>
+                  <biblScope unit="volume">Vol. I</biblScope>
+                  <biblScope>pp 29-31</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         <creation/>
+         <textDesc n="tale">
+            <channel mode="w">print</channel>
+            <constitution type="single"/>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="fiction"/>
+            <interaction/>
+            <preparedness/>
+            <purpose type="entertain" degree="high"/>
+            <purpose type="inform" degree="low"/>
+         </textDesc>
+         <settingDesc>
+            <setting>
+               <time from="1800" to="1900">19th Century</time>
+            </setting>
+         </settingDesc>
+      </profileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
       <revisionDesc>
-         <!--BEGINS Revision Description -->
          <change when="2021" who="editors.xml#HAS">Initial XML file</change>
-
       </revisionDesc>
-      
    </teiHeader>
-   <!--TEI Header Ends -->
    <text>
-      <front><titlePage><pb n="29" facs="pageImages/Tell-Tale_Heart_0029.jpg"/><titlePart>THE TELL-TALE HEART.</titlePart>
-         <lb/><lb/>
-         <docAuthor>BY EDGAR A. POE</docAuthor><lb/>
-         <epigraph>
-            <quote>
-               <lg><l>Art is long and Time is fleeting,</l>
-            <l>And our hearts, though stout and brave,</l>
-            <l>Still, like muffled drums, are beating</l>
-            <l>Funeral marches to the grave.</l></lg>
-            </quote>
-            <bibl><persName type="lcnaf" key="n2010037536"><hi rend="italic">Longfellow.</hi></persName></bibl><lb/>
-         </epigraph>
-         <docImprint></docImprint>
-</titlePage></front>
-   <body>
-   <div>
-      <p>TRUE! --nervous --very, very dreadfully nervous I had been and am; but why will you say that I am mad? The disease had sharpened my senses --not destroyed --not dulled them. Above all was the sense of hearing acute. I heard all things in the heaven and in the earth. I heard many things in hell. How, then, am I mad? <ref target="hearken_" corresp="hearken">Hearken</ref><note xml:id="hearken" target="hearken_" type="gloss" resp="editors.xml#HAS">Hearken means listen.</note> and observe how healthily --how calmly I can tell you the whole story.</p>
-
-<p>It is impossible to say how first the idea entered my brain; but once conceived, it haunted me day and night. Object there was none. Passion there was none. I loved the old man. He had never wronged me. He had never given me insult. For his gold I had no desire. I think it was his eye! yes, it was this! He had the eye of a vulture --a pale blue eye, with a film over it. Whenever it fell upon me, my blood ran cold; and so by degrees --very gradually --I made up my mind to take the life of the old man, and thus rid myself of the eye forever.</p>
-
-      <p> Now this is the point. You fancy me mad. Madmen know nothing. But you should have seen me. You should have seen how wisely I proceeded --with what caution --with what foresight --with what <ref target="dissimulation_" corresp="dissimulation">dissimulation</ref><note xml:id="dissimulation" target="dissimulation_" type="gloss" resp="editors.xml#HAS">Dissimulation means concealment of one's thoughts, feelings, or character; pretense.</note> I went to work! I was never kinder to the old man than during the whole week before I killed him. And every night, about midnight, I turned the latch of his door and opened it --oh so gently! And then, when I had made an opening sufficient for my head, I put in a dark lantern, all closed, closed, that no light shone out, and then I thrust in my head. Oh, you would have laughed to see how cunningly I thrust it in! I moved it slowly --very, very slowly, so that I might not disturb the old man's sleep. It took me an hour to place my whole head within the opening so far that I could see him as he lay upon his bed. Ha! would a madman have been so wise as this, And then, when my head was well in the room, I undid the lantern cautiously-oh, so cautiously --cautiously (for the hinges creaked) --I undid it just so much that a single thin ray fell upon the vulture eye. And this I did for seven long nights --every night just at midnight --but I found the eye always closed; and so it <pb n="30" facs="pageImages/Tell-Tale_Heart_0030.jpg"/>was impossible to do the work; for it was not the old man who vexed me, but his Evil Eye. And every morning, when the day broke, I went boldly into the chamber, and spoke courageously to him, calling him by name in a hearty tone, and inquiring how he has passed the night. So you see he would have been a very profound old man, indeed, to suspect that every night, just at twelve, I looked in upon him while he slept.</p>
-
-      <p>Upon the eighth night I was more than usually cautious in opening the door. A watch's minute hand moves more quickly than did mine. Never before that night had I felt the extent of my own powers --of my <ref target="sagacity_" corresp="sagacity">sagacity</ref><note xml:id="sagacity" target="sagacity_" type="gloss" resp="editors.xml#HAS">Sagacity means wisdom or sound judgment.</note>. I could scarcely contain my feelings of triumph. To think that there I was, opening the door, little by little, and he not even to dream of my secret deeds or thoughts. I fairly chuckled at the idea; and perhaps he heard me; for he moved on the bed suddenly, as if startled. Now you may think that I drew back --but no. His room was as black as pitch with the thick darkness, (for the shutters were close fastened, through fear of robbers,) and so I knew that he could not see the opening of the door, and I kept pushing it on steadily, steadily.</p>
-
-<p> I had my head in, and was about to open the lantern, when my thumb slipped upon the tin fastening, and the old man sprang up in bed, crying out --"Who's there?"</p>
-
-<p> I kept quite still and said nothing. For a whole hour I did not move a muscle, and in the meantime I did not hear him lie down. He was still sitting up in the bed listening; --just as I have done, night after night, hearkening to the death watches in the wall. </p>
-
-
-<p> Presently I heard a slight groan, and I knew it was the groan of mortal terror. It was not a groan of pain or of grief --oh, no! --it was the low stifled sound that arises from the bottom of the soul when overcharged with awe. I knew the sound well. Many a night, just at midnight, when all the world slept, it has welled up from my own bosom, deepening, with its dreadful echo, the terrors that distracted me. I say I knew it well. I knew what the old man felt, and pitied him, although I chuckled at heart. I knew that he had been lying awake ever since the first slight noise, when he had turned in the bed. His fears had been ever since growing upon him. He had been trying to fancy them causeless, but could not. He had been saying to himself --"It is nothing but the wind in the chimney --it is only a mouse crossing the floor," or "It is merely a cricket which has made a single chirp." Yes, he had been trying to comfort himself with these suppositions: but he had found all in vain. All in vain; because Death, in approaching him had stalked with his black shadow before him, and enveloped the victim. And it was the mournful influence of the unperceived shadow that caused him to feel --although he neither saw nor heard --to feel the presence of my head within the room.</p>
-
-<p>When I had waited a long time, very patiently, without hearing him lie down, I resolved to open a little --a very, very little crevice in the lantern. So I opened it --you cannot imagine how stealthily, stealthily --until, at length a simple dim ray, like the thread of the spider, shot from out the crevice and fell full upon the vulture eye. </p>
-<p>It was open --wide, wide open --and I grew furious as I gazed upon it. I saw it with perfect distinctness --all a dull blue, with a hideous veil over it that chilled the very marrow in my bones; but I could see nothing else of the old man's face or person: for I had directed the ray as if by instinct, precisely upon the damned spot. </p>
-
-<p>And have I not told you that what you mistake for madness is but over-acuteness of the sense? --now, I say, there came to my ears a low, dull, quick sound, such as a watch makes when enveloped in cotton. I knew that sound well, too. It was the beating of the old man's heart. It increased my fury, as the beating of a drum stimulates the soldier into courage. </p>
-
-
-      <p> But even yet I refrained and kept still. I scarcely breathed. I held the lantern motionless. I tried how steadily I could maintain the ray upon the eve. Meantime the hellish tattoo of the heart increased. It grew quicker and quicker, and louder and louder every instant. The old man's terror must have been extreme! It grew louder, I say, louder every moment! --do you mark me well I have told you that I am nervous: so I am. And now at the dead hour of the night, amid the dreadful silence of that old house, so strange a noise as this excited me to uncontrollable terror. Yet, for some minutes longer I refrained and stood still. But the beating grew louder, louder! I thought the heart must burst. And now a new anxiety seized me --the sound would be heard by a neighbour! The old man's hour had come! With a loud yell, I threw open the lantern and leaped into the room. He shrieked once --once only. In an instant I dragged him to the floor, and pulled the heavy bed over him. I then smiled gaily, to find the deed so far done. But, for many minutes, the heart beat on with a muffled sound. This, however, did not <ref target="vex_" corresp="vex">vex</ref><note xml:id="vex" target="vex_" type="gloss" resp="editors.xml#HAS">Vex means make (someone) feel annoyed, frustrated, or worried, especially with trivial matters.</note> me; it would not be heard through the wall. At length it ceased. The old man was dead. I removed the bed and examined the corpse. Yes, he was stone, stone dead. I placed my hand upon the heart and held it there many minutes. There was no <ref target="pulsation_" corresp="pulsation">pulsation</ref><note xml:id="pulsation" target="pulsation_" type="gloss" resp="editors.xml#HAS">Pulsation means  rhythmical throbbing or vibrating (as of an artery) also : a single beat or throb. 2 : a periodically recurring alternate increase and decrease of a quantity (such as pressure, volume, or voltage).</note>. He was stone dead. His eve would trouble me no more.</p>
-
-<p>If still you think me mad, you will think so no longer when I describe the wise precautions I took for the concealment of the body. The night waned, and I worked hastily, but in silence. First of all I dismembered the corpse. I cut off the head and the arms and the legs.<pb n="31" facs="pageImages/Tell-Tale_Heart_0031.jpg"/>I then took up three planks from the flooring of the chamber, and deposited all between the scantlings. I then replaced the boards so cleverly, so cunningly, that no human eye --not even <hi rend="italic">his</hi>  --could have detected any thing wrong. There was nothing to wash out --no stain of any kind --no blood-spot whatever. I had been too wary for that. A tub had caught all --ha! ha! </p>
-
-      <p>When I had made an end of these labors, it was four o'clock --still dark as midnight. As the bell sounded the hour, there came a knocking at the street door. I went down to open it with a light heart, --for what had I<hi rend="italic">now</hi> to fear? There entered three men, who introduced themselves, with perfect  <ref target="suavity_" corresp="suavity">suavity</ref><note xml:id="suavity" target="suavity_" type="gloss" resp="editors.xml#HAS"> Suavity means the quality of being suave in manner.</note>, as officers of the police. A shriek had been heard by a neighbour during the night; suspicion of foul play had been aroused; information had been lodged at the police office, and they (the officers) had been deputed to search the premises. </p>
-
-<p> I smiled, --for <hi rend="italic">what</hi> had I to fear? I bade the gentlemen welcome. The shriek, I said, was my own in a dream. The old man, I mentioned, was absent in the country. I took my visitors all over the house. I bade them search --search for <hi rend="italic">well</hi>. I led them, at length, to for <hi rend="italic">his</hi> chamber. I showed them his treasures, secure, undisturbed. In the enthusiasm of my confidence, I brought chairs into the room, and desired them for <hi rend="italic">here</hi>to rest from their fatigues, while I myself, in the wild audacity of my perfect triumph, placed my own seat upon the very spot beneath which reposed the corpse of the victim. </p>
-
-<p>The officers were satisfied. My for <hi rend="italic">manner</hi> had convinced them. I was singularly at ease. They sat, and while I answered cheerily, they chatted of familiar things. But, ere long, I felt myself getting pale and wished them gone. My head ached, and I fancied a ringing in my ears: but still they sat and still chatted. The ringing became more distinct: --It continued and became more distinct: I talked more freely to get rid of the feeling: but it continued and gained definiteness --until, at length, I found that the noise was for <hi rend="italic">not</hi> within my ears. </p>
-
-      <p> No doubt I now grew for <hi rend="italic">very</hi> pale; --but I talked more fluently, and with a heightened voice. Yet the sound increased --and what could I do? It was <hi rend="italic">a low, dull, quick sound --much such a sound as a watch makes when enveloped in cotton</hi>. I gasped for breath --and yet the officers heard it not. I talked more quickly --more vehemently; but the noise steadily increased. I arose and argued about trifles, in a high key and with violent<ref target="gesticulation_" corresp="gesticulation">gesticulations</ref><note xml:id="gesticulation" target="gesticulation_" type="gloss" resp="editors.xml#HAS"> Gesticulation means a gesture, especially a dramatic one, used instead of speaking or to emphasize one's words.</note>; but the noise steadily increased. Why<hi rend="italic">would</hi> they not be gone? I paced the floor to and fro with heavy strides, as if excited to fury by the observations of the men --but the noise steadily increased. Oh God! what <hi rend="italic">could</hi> I do? I foamed --I raved --I swore! I swung the chair upon which I had been sitting, and grated it upon the boards, but the noise arose over all and continually increased. It grew louder --louder --<hi rend="italic">louder</hi>! And still the men chatted pleasantly, and smiled. Was it possible they heard not? Almighty God! --no, no! They heard! --they suspected! --they<hi rend="italic">knew</hi> ! --they were making a mockery of my horror!-this I thought, and this I think. But anything was better than this agony! Anything was more tolerable than this derision! I could bear those hypocritical smiles no longer! I felt that I must scream or die! and now --again! --hark! louder! louder! louder! <hi rend="italic">louder</hi>!</p>
-
-      <p>"Villains!" I shrieked, "<ref target="dissemble_" corresp="dissemble">dissemble</ref><note xml:id="dissemble" target="dissemble_" type="gloss" resp="editors.xml#HAS"> Dissemble means conceal one's true motives, feelings, or beliefs.</note> no more! I admit the deed! --tear up the planks! here, here! --It is the beating of his hideous heart!"
- </p></div></body>
-
-
-</text>
-
+      <front>
+         <titlePage>
+            <pb n="29" facs="pageImages/Tell-Tale_Heart_0029.jpg"/>
+            <titlePart>THE TELL-TALE HEART.</titlePart>
+            <lb/>
+            <lb/>
+            <docAuthor>BY EDGAR A. POE</docAuthor>
+            <lb/>
+            <epigraph>
+               <quote>
+                  <lg>
+                     <l>Art is long and Time is fleeting,</l>
+                     <l>And our hearts, though stout and brave,</l>
+                     <l>Still, like muffled drums, are beating</l>
+                     <l>Funeral marches to the grave.</l>
+                  </lg>
+               </quote>
+               <bibl><persName type="lcnaf" key="n2010037536"><hi rend="italic"
+                     >Longfellow.</hi></persName></bibl>
+               <lb/>
+            </epigraph>
+            <docImprint/>
+         </titlePage>
+      </front>
+      <body>
+         <div>
+            <p>TRUE! — nervous — very, very dreadfully nervous I had been, and am; but why <hi
+                  rend="italic">will</hi> you say that I am mad? The disease had sharpened my senses
+               — not destroyed — not dulled them. Above all was the sense of hearing acute. I heard
+               all things in the heaven and in the earth. I heard many things in hell. How, then, am
+               I mad? <ref target="hearken_" corresp="hearken">Hearken</ref> and observe how
+               healthily — how calmly I can tell you the whole story.</p>
+            <p>It is impossible to say how first the idea entered my brain; but, once conceived, it
+               haunted me day and night. Object there was none. Passion there was none. I loved the
+               old man. He had never wronged me. He had never given me insult. For his gold I had no
+               desire. I think it was his eye! — yes, it was this! He had the eye of a vulture — a
+               pale blue eye, with a film over it. Whenever it fell upon me, my blood ran cold; and
+               so, by degrees — very gradually — I made up my mind to take the life of the old man,
+               and thus rid myself of the eye forever.</p>
+            <p> Now this is the point. You fancy me mad. Madmen know nothing. But you should have
+               seen <hi rend="italic">me</hi>. You should have seen how wisely I proceeded — with
+               what caution — with what foresight — with what <ref target="dissimulation_"
+                  corresp="dissimulation">dissimulation</ref> I went to work! I was never kinder to
+               the old man than during the whole week before I killed him. And every night, about
+               midnight, I turned the latch of his door and opened it — oh so gently! And then, when
+               I had made an opening sufficient for my head, I put in a dark lantern, all closed,
+               closed, that no light shone out, and then I thrust in my head. Oh, you would have
+               laughed to see how cunningly I thrust it in! I moved it slowly — very, very slowly,
+               so that I might not disturb the old man's sleep. It took me an hour to place my whole
+               head within the opening so far that I could see him as he lay upon his bed. Ha! —
+               would a madman have been so wise as this? And then, when my head was well in the
+               room, I undid the lantern cautiously — oh, so cautiously — cautiously (for the hinges
+               creaked) — I undid it just so much that a single thin ray fell upon the vulture eye.
+               And this I did for seven long nights — every night just at midnight — but I found the
+               eye always closed; and so it <pb n="30" facs="pageImages/Tell-Tale_Heart_0030.jpg"
+               />was impossible to do the work; for it was not the old man who vexed me, but his
+                  <ref target="evil_eye" corresp="evil_eye">Evil Eye</ref>. And every morning, when
+               the day broke, I went boldly into his chamber, and spoke courageously to him, calling
+               him by name in a hearty tone, and inquiring how he has passed the night. So you see
+               he would have been a very <ref target="profound_" corresp="profound">profound</ref>
+               old man, indeed, to suspect that every night, just at twelve, I looked in upon him
+               while he slept.</p>
+            <p>Upon the eighth night I was more than usually cautious in opening the door. A watch's
+               minute hand moves more quickly than did mine. Never before that night had I <hi
+                  rend="italic">felt</hi> the extent of my own powers — of my <ref
+                  target="sagacity_" corresp="sagacity">sagacity</ref>. I could scarcely contain my
+               feelings of triumph. To think that there I was, opening the door, little by little,
+               and the old man not even to dream of my secret deeds or thoughts. I fairly chuckled
+               at the idea; and perhaps the old man heard me; for he moved in the bed suddenly, as
+               if startled. Now you may think that I drew back — but no. His room was as black as
+               pitch with the thick darkness, (for the shutters were close fastened, through fear of
+               robbers,) and so I knew that he could not see the opening of the door, and I kept
+               pushing it on steadily, steadily.</p>
+            <p> I had got my head in, and was about to open the lantern, when my thumb slipped upon
+               the tin fastening, and the old man sprang up in bed, crying out — "Who's there?"</p>
+            <p> I kept quite still and said nothing. For another hour I did not move a muscle, and
+               in the meantime I did not hear the old man lie down. He was still sitting up in the
+               bed, listening; — just as I have done, night after night, hearkening to the
+               death-watches in the wall.</p>
+            <p> Presently I heard a slight groan, and I knew it was the groan of <ref
+                  target="mortal_" corresp="mortal">mortal</ref> terror. It was not a groan of pain
+               or of grief — oh, no! — it was the low stifled sound that arises from the bottom of
+               the soul when overcharged with <hi rend="italic">awe</hi>. I knew the sound well.
+               Many a night, just at midnight, when all the world slept, it has welled up from my
+               own bosom, deepening, with its dreadful echo, the terrors that distracted me. I say I
+               knew it well. I knew what the old man felt, and pitied him, although I chuckled at
+               heart. I knew that he had been lying awake ever since the first slight noise, when he
+               had turned in the bed. His fears had been, ever since, growing upon him. He had been
+               trying to fancy them causeless, but could not. He had been saying to himself — "It is
+               nothing but the wind in the chimney — it is only a mouse crossing the floor," or "It
+               is merely a cricket which has made a single chirp." Yes, he had been trying to
+               comfort himself with these <ref target="supposition_" corresp="supposition"
+                  >suppositions</ref>; but he had found all in vain. <hi rend="italic">All in
+                  vain:</hi> because death, in approaching the old man, had stalked with his black
+               shadow before him, and enveloped the victim. And it was the mournful influence of the
+               unperceived shadow that caused him to feel — although he neither saw nor heard — to
+                  <hi rend="italic">feel</hi> the presence of my head within the room.</p>
+            <p>When I had waited a long time, very patiently, without hearing him lie down, I
+               resolved to open a little — a very, very little crevice in the lantern. So I opened
+               it — you cannot imagine how stealthily, stealthily — until, at length a simple dim
+               ray, like the thread of the spider, shot from out the crevice and fell full upon the
+               vulture eye.</p>
+            <p>It was open — wide, wide open — and I grew furious as I gazed upon it. I saw it with
+               perfect distinctness — all a dull blue, with a hideous veil over it that chilled the
+               very marrow in my bones; but I could see nothing else of the old man's face or
+               person; for I had directed the ray as if by instinct, precisely upon the damned
+               spot.</p>
+            <p>And now — have I not told you that what you mistake for madness is but over-acuteness
+               of the senses? — now, I say, there came to my ears <hi rend="italic">a low, dull,
+                  quick sound, such as a watch makes when enveloped in cotton</hi>. I knew <hi
+                  rend="italic">that</hi> sound well, too. It was the beating of the old man's
+               heart. It increased my fury, as the beating of a drum stimulates the soldier into
+               courage. </p>
+            <p> But even yet I refrained and kept still. I scarcely breathed. I held the lantern
+               motionless. I tried how steadily I could maintain the ray upon the eye. Meantime the
+               hellish tattoo of the heart increased. It grew quicker, and louder and louder every
+               instant. The old man's terror <hi rend="italic">must</hi> have been extreme! It grew
+               louder, I say, louder every moment: — do you mark me well? I have told you that I am
+               nervous: — so I am. And now, at the dead hour of the night, and amid the dreadful
+               silence of that old house, so strange a noise as this excited me to uncontrollable
+               wrath. Yet, for some minutes longer, I refrained and kept still. But the beating grew
+               louder, <hi rend="italic">louder!</hi> I thought the heart must burst! And now a new
+               anxiety seized me — the sound would be heard by a neighbor! The old man's hour had
+               come! With a loud yell, I threw open the lantern and leaped into the room. He
+               shrieked once — once only. In an instant I dragged him to the floor, and pulled the
+               heavy bed over him. I then smiled gaily, to find the deed so far done. But, for many
+               minutes, the heart beat on with a muffled sound. This, however, did not <ref
+                  target="vex_" corresp="vex">vex</ref> me; it would not be heard through the walls.
+               At length it ceased. The old man was dead. I removed the bed and examined the corpse.
+               Yes, he was stone, stone dead. I placed my hand upon the heart and held it there many
+               minutes. There was no <ref target="pulsation_" corresp="pulsation">pulsation</ref>.
+               The old man was stone dead. His eye would trouble <hi rend="italic">me</hi> no
+               more.</p>
+            <p>If, still, you think me mad, you will think so no longer when I describe the wise
+               precautions I took for the concealment of the body. The night waned, and I worked
+               hastily, but in silence. First of all I dismembered the corpse. I cut off the head
+               and the arms and the legs.<pb n="31" facs="pageImages/Tell-Tale_Heart_0031.jpg"/> I
+               then took up three planks from the flooring of the chamber, and deposited all between
+               the scantlings. I then replaced the boards so cleverly, so cunningly, that no human
+               eye — not even <hi rend="italic">his</hi> — could have detected anything wrong. There
+               was nothing to wash out — no stain of any kind — no blood-spot whatever. I had been
+               too wary for that. A tub had caught all — ha! ha!</p>
+            <p>When I had made an end of these labors, it was four o'clock — still dark as midnight.
+               As the bell sounded the hour, there came a knocking at the street door. I went down
+               to open it with a light heart, — for what had I<hi rend="italic">now</hi> to fear?
+               There entered three men, who introduced themselves, with perfect <ref
+                  target="suavity_" corresp="suavity">suavity</ref>, as officers of the police. A
+               shriek had been heard by a neighbour during the night; suspicion of foul play had
+               been aroused; information had been lodged at the police-office, and they (the
+               officers) had been deputed to search the premises.</p>
+            <p> I smiled, — for <hi rend="italic">what</hi> had I to fear? I bade the gentlemen
+               welcome. The shriek, I said, was my own in a dream. The old man, I mentioned, was
+               absent in the country. I took my visitors all over the house. I bade them search
+               —search <hi rend="italic">well</hi>. I led them, at length, to <hi rend="italic"
+                  >his</hi> chamber. I showed them his treasures, secure, undisturbed. In the
+               enthusiasm of my confidence, I brought chairs into the room, and desired them <hi
+                  rend="italic">here</hi>to rest from their fatigues, while I myself, in the wild
+                  <ref target="audacity_" corresp="audacity">audacity</ref> of my perfect triumph,
+               placed my own seat upon the very spot beneath which reposed the corpse of the
+               victim.</p>
+            <p>The officers were satisfied. My <hi rend="italic">manner</hi> had convinced them. I
+               was singularly at ease. They sat, and while I answered cheerily, they chatted of
+               familiar things. But, ere long, I felt myself getting pale and wished them gone. My
+               head ached, and I fancied a ringing in my ears: but still they sat and still chatted.
+               The ringing became more distinct: I talked more freely to get rid of the feeling; but
+               it continued and gained definiteness — until, at length, I found that the noise was
+                  <hi rend="italic">not</hi> within my ears.</p>
+            <p> No doubt I now grew <hi rend="italic">very</hi> pale; — but I talked more <ref
+                  target="fluently_" corresp="fluently">fluently</ref>, and with a heightened voice.
+               Yet the sound increased — and what could I do? It was <hi rend="italic">a low, dull,
+                  quick sound — much such a sound as a watch makes when enveloped in cotton</hi>. I
+               gasped for breath — and yet the officers heard it not. I talked more quickly — more
+                  <ref target="vehemently_" corresp="vehemently">vehemently</ref>; — but the noise
+               steadily increased. I arose and argued about trifles, in a high key and with
+                  violent<ref target="gesticulation_" corresp="gesticulation">gesticulations</ref>;
+               — but the noise steadily increased. Why<hi rend="italic">would</hi> they not be gone?
+               I paced the floor to and fro, with heavy strides, as if excited to fury by the
+               observations of the men — but the noise steadily increased. Oh God! what <hi
+                  rend="italic">could</hi> I do? I foamed — I raved — I swore! I swung the chair
+               upon which I had sat, and grated it upon the boards; — but the noise arose over all
+               and continually increased. It grew louder — louder — <hi rend="italic">louder!</hi>
+               And still the men chatted pleasantly, and smiled. Was it possible they heard not?
+               Almighty God! — no, no! They heard! — they suspected! — they<hi rend="italic"
+                  >knew!</hi> — they were making a mockery of my horror! — this I thought, and this
+               I think. But anything better than this agony! Anything was more tolerable than this
+               derision! I could bear those hypocritical smiles no longer! I felt that I must scream
+               or die! — and now — again! — hark! louder! louder! louder! <hi rend="italic"
+                  >louder</hi>! —</p>
+            <p>"Villains!" I shrieked, "<ref target="dissemble_" corresp="dissemble">dissemble</ref>
+               no more! I admit the deed! — tear up the planks! — here, here! — it is the beating of
+               his hideous heart!"</p>
+         </div>
+      </body>
+      <back>
+         <div>
+            <note xml:id="hearken" target="hearken_" type="gloss" resp="editors.xml#HAS"><p>To hear
+                  with attention, give ear to; to listen to; to have regard to, heed; to understand,
+                  learn by hearing. Source: Oxford English Dictionary.</p></note>
+            <note xml:id="dissimulation" target="dissimulation_" type="gloss" resp="editors.xml#HAS"
+                  ><p>The action of dissimulating or dissembling; concealment of what really is,
+                  under a feigned semblance of something different; feigning, hypocrisy. Source:
+                  Oxford English Dictionary..</p></note>
+            <note xml:id="evil_eye" target="evil_eye_" type="gloss" resp="editors.xml#AJB">
+               <p> The <ref target="https://www.britannica.com/topic/evil-eye">Evil Eye</ref> is a
+                  ubiquitious cultural phenomenon referring to a glance "believed to have the
+                  ability to cause injury or death to those on whom it falls."</p></note>
+            <note xml:id="profound" target="profound_" type="gloss" resp="editors.xml#AJB">
+               <p> Having great insight into or knowledge of something. Source: Oxford English
+                  Dictionary. </p>
+            </note>
+            <note xml:id="sagacity" target="sagacity_" type="gloss" resp="editors.xml#HAS"
+                  ><p>Acuteness of mental discernment; aptitude for investigation or discovery;
+                  keenness and soundness of judgement in the estimation of persons and conditions,
+                  and in the adaptation of means to ends; penetration, shrewdness. Source: Oxford
+                  English Dictionary.</p></note>
+            <note xml:id="mortal" target="mortal_" type="gloss" resp="editors.xml#AJB">
+               <p> Of pain, grief, fear, or the like: such as might cause death; deadly in its
+                  effects. Source: Oxford English Dictionary.</p>
+            </note>
+            <note xml:id="supposition" target="supposition_" type="gloss" resp="editors.xml#AJB">
+               <p> An assumption (without reference to its truth or falsehood) used as a basis of
+                  argument, or for the purpose of tracing the consequences; a premise from which a
+                  conclusion is drawn. Source: Oxford English Dictionary.</p>
+            </note>
+            <note xml:id="vex" target="vex_" type="gloss" resp="editors.xml#HAS"><p>To trouble,
+                  afflict, or harass (a person, etc.) by aggression, encroachment, or other
+                  interference with peace and quiet; to cause damage, detriment, or difficulty to.
+                  Source: Oxford English Dictionary.</p></note>
+            <note xml:id="pulsation" target="pulsation_" type="gloss" resp="editors.xml#HAS"><p>The
+                  beating or throbbing of the pulse; rhythmical expansion and contraction of the
+                  heart, an artery, etc. Source: Oxford English Dictionary.</p></note>
+            <note xml:id="suavity" target="suavity_" type="gloss" resp="editors.xml#HAS"
+                  ><p>Gracious; sweet; agreeable. Source: Oxford English Dictionary.</p></note>
+            <note xml:id="audacity" target="audacity_" type="gloss" resp="editors.xml#AJB">
+               <p> Boldness, daring, intrepidity; confidence. Source: Oxford English Dictionary.</p>
+            </note>
+            <note xml:id="fluently" target="fluently_" type="gloss" resp="editors.xml#AJB">
+               <p> With easy and ready flow of words. Source: Oxford English Dictionary.</p>
+            </note>
+            <note xml:id="vehemently" target="vehemently_" type="gloss" resp="editors.xml#AJB">
+               <p> In a manner expressive of strong feeling, perturbation, or excitement; with
+                  strong or forceful language. Source: Oxford English Dictionary.</p>
+            </note>
+            <note xml:id="gesticulation" target="gesticulation_" type="gloss" resp="editors.xml#HAS"
+                  ><p>The action or process of gesticulating; to make lively or energetic motions
+                  with the limbs or body; esp. as an accompaniment or in lieu of speech. Source:
+                  Oxford English Dictionary.</p></note>
+            <note xml:id="dissemble" target="dissemble_" type="gloss" resp="editors.xml#HAS"><p> To
+                  alter or disguise the semblance of (one's character, a feeling, design, or action)
+                  so as to conceal, or deceive as to, its real nature; to give a false or feigned
+                  semblance to; to cloak or disguise by a feigned appearance. Source: Oxford English
+                  Dictionary.</p></note>
+         </div>
+      </back>
+   </text>
 </TEI>
