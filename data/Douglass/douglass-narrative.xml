@@ -23,8 +23,8 @@
                 <respStmt>
                     <resp> Transcription, correction, editorial commentary, and markup </resp>
                     <name ref="editors.xml#MUstudstaff"> Students and Staff of the University of
-                        Virginia <!-- Austin Benson -->
-                    </name>
+                        Virginia </name>
+                    <name>Austin Benson</name>
                 </respStmt>
                 <funder> National Endowment for the Humanities </funder>
             </titleStmt>
@@ -59,7 +59,8 @@
                             <pubPlace>
                                 <placeName type="tgn" key="7013445">Boston</placeName>
                             </pubPlace>
-                            <publisher>Published at the Anti-Slavery Office, No. 25 Cornhill</publisher>
+                            <publisher>Published at the Anti-Slavery Office, No. 25
+                                Cornhill</publisher>
                             <date when="1845">1845</date>
                         </imprint>
                         <extent/>
@@ -154,211 +155,183 @@
             <pb n="[TP]"/>
             <titlePage>
                 <docTitle>
-                    <titlePart>NARRATIVE<lb/>OF THE<lb/>LIFE<lb/>OF<lb/>FREDERICK DOUGLASS<lb/>
-                        AN<lb/>AMERICAN SLAVE<lb/></titlePart>
+                    <titlePart><ref target="intro_" corresp="intro">NARRATIVE</ref><lb/>OF
+                        THE<lb/>LIFE<lb/>OF<lb/>FREDERICK DOUGLASS<lb/> AN<lb/>AMERICAN
+                        SLAVE<lb/></titlePart>
                 </docTitle>
-                <docAuthor>WRITTEN BY HIMSELF</docAuthor>
+                <docAuthor>WRITTEN BY HIMSELF<lb/></docAuthor>
                 <docImprint>
                     <pubPlace>
-                        <placeName type="tgn" key="7013445">BOSTON</placeName>
+                        <placeName type="tgn" key="7013445">BOSTON<lb/></placeName>
                     </pubPlace>
-                    <publisher>PUBLISHED AT <placeName>THE ANTI-SLAVERY OFFICE, No. 25
-                            CORNHILL</placeName>
+                    <publisher>PUBLISHED AT <placeName>THE ANTI-SLAVERY OFFICE, <lb/>No. 25
+                            CORNHILL<lb/></placeName>
                     </publisher>
                 </docImprint>
                 <docDate>
                     <date when="1845">1845</date>
                 </docDate>
             </titlePage>
+            <dateline> Entered, according to Act of Congress, in the year 1845, <lb/> By FREDERICK
+                DOUGLASS,<lb/> In the Clerk's Office of the District Court of Massachusetts.
+            </dateline>
         </front>
         <body>
-            <!--I've made some slight alterations to the original etext center markup. These are:
-                
-            1) Throughout the original markup is the string &emdash; to indicate where Douglass (liberally)
-            uses em dashes. I have done a simple find and replace to substitute these with actual em dashes,
-            since TEI supports this character without any issues.
-            2) The <div> elements were listed in the original markup as <div1>. I have simply updated them to <div>.
-            3) <div> elements with the type="chapter" attribute came with an id attribute that invalidated the TEI file.
-            I have deleted them. You can find them easily enough in the original etext markup, if it turns out these were
-            important.
-            
-            I hope this helps! -austin benson
-            
-            -->
             <div>
-                <pb n="ix"/>
-                <head>PREFACE</head>
+                <pb n="iii"/>
+                <head>PREFACE.</head>
                 <lb/>
-                <p>In the month of August, 1841, I attended an anti-<lb/> slavery convention in
-                    Nantucket, at which it was<lb/> my happiness to become acquainted with
-                    FREDERICK<lb/> DOUGLASS, the writer of the following Narrative. He<lb/> was a
-                    stranger to nearly every member of that body;<lb/> but, having recently made his
-                    escape from the south-<lb/> ern prison-house of bondage, and feeling his
-                    curiosity<lb/> excited to ascertain the principles and measures of<lb/> the
-                    abolitionists,— of whom he had heard a somewhat<lb/> vague description
-                    while he was a slave,— he was in-<lb/> duced to give his attendance, on
-                    the occasion al-<lb/> luded to, though at that time a resident in New<lb/>
-                    Bedford.<lb/>
-                </p>
-                <p>Fortunate, most fortunate occurrence!— fortunate<lb/> for the millions of
-                    his manacled brethren, yet pant-<lb/> ing for deliverance from their awful
-                    thraldom!— for-<lb/> tunate for the cause of negro emancipation, and
-                    of<lb/> universal liberty!— fortunate for the land of his birth,<lb/>
-                    which he has already done so much to save and bless!<lb/>— fortunate for
-                    a large circle of friends and acquaint-<lb/> ances, whose sympathy and affection
-                    he has strongly<lb/> secured by the many sufferings he has endured, by<lb/> his
-                    virtuous traits of character, by his ever-abiding<lb/> remembrance of those who
-                    are in bonds, as being<lb/> bound with them!— fortunate for the
-                    multitudes, in<lb/> various parts of our republic, whose minds he has<lb/>
-                    enlightened on the subject of slavery, and who have<lb/> been melted to tears by
-                    his pathos, or roused to<lb/> virtuous indignation by his stirring eloquence
-                    against<lb/> the enslavers of men!— fortunate for himself, as<lb/>
-                    <pb n="x"/> it at once brought him into the field of public use-<lb/> fulness,
-                    "gave the world assurance of a MAN," quick-<lb/> ened the slumbering energies of
-                    his soul, and con-<lb/> secrated him to the great work of breaking the rod<lb/>
-                    of the oppressor, and letting the oppressed go free!<lb/>
-                </p>
-                <p>I shall never forget his first speech at the conven-<lb/> tion— the
-                    extraordinary emotion it excited in my own<lb/> mind— the powerful
-                    impression it created upon a<lb/> crowded auditory, completely taken by surprise
-                   — the<lb/> applause which followed from the beginning to the<lb/> end of
-                    his felicitous remarks. I think I never hated<lb/> slavery so intensely as at
-                    that moment; certainly, my<lb/> perception of the enormous outrage which is
-                    in-<lb/> flicted by it, on the godlike nature of its victims, was<lb/> rendered
-                    far more clear than ever. There stood one,<lb/> in physical proportion and
-                    stature commanding and<lb/> exact— in intellect richly endowed— in
-                    natural elo-<lb/> quence a prodigy— in soul manifestly "created but
-                    a<lb/> little lower than the angels"— yet a slave, ay, a fugi-<lb/> tive
-                    slave,— trembling for his safety, hardly daring to<lb/> believe that on
-                    the American soil, a single white<lb/> person could be found who would befriend
-                    him at<lb/> all hazards, for the love of God and humanity! Ca-<lb/> pable of
-                    high attainments as an intellectual and<lb/> moral being— needing nothing
-                    but a comparatively<lb/> small amount of cultivation to make him an orna-<lb/>
-                    ment to society and a blessing to his race— by the law<lb/> of the land,
-                    by the voice of the people, by the terms<lb/> of the slave code, he was only a
-                    piece of property, a<lb/> beast of burden, a chattel personal,
-                    nevertheless!<lb/>
-                </p>
-                <p>A beloved friend from New Bedford prevailed on<lb/> Mr. DOUGLASS to address the
-                    convention: He came<lb/> forward to the platform with a hesitancy and
-                    embar-<lb/> rassment, necessarily the attendants of a sensitive<lb/> mind in
-                    such a novel position. After apologizing for<lb/> his ignorance, and reminding
-                    the audience that slav-<lb/> ery was a poor school for the human intellect and<lb/>
-                    <pb n="xi"/> heart, he proceeded to narrate some of the facts in<lb/> his own
-                    history as a slave, and in the course of his<lb/> speech gave utterance to many
-                    noble thoughts and<lb/> thrilling reflections. As soon as he had taken his<lb/>
-                    seat, filled with hope and admiration, I rose, and<lb/> declared that PATRICK
-                    HENRY, of revolutionary fame,<lb/> never made a speech more eloquent in the
-                    cause of<lb/> liberty, than the one we had just listened to from<lb/> the lips
-                    of that hunted fugitive. So I believed at<lb/> that time— such is my
-                    belief now. I reminded the<lb/> audience of the peril which surrounded this
-                    self-<lb/> emancipated young man at the North,— even in Mas-<lb/>
-                    sachusetts, on the soil of the Pilgrim Fathers, among<lb/> the descendants of
-                    revolutionary sires; and I ap-<lb/> pealed to them, whether they would ever
-                    allow him<lb/> to be carried back into slavery,— law or no law, con-<lb/>
-                    stitution or no constitution. The response was unani-<lb/> mous and in
-                    thunder-tones— "NO!" "Will you succor<lb/> and protect him as a
-                    brother-man— a resident of the<lb/> old Bay State?" "YES!" shouted the
-                    whole mass,<lb/> with an energy so startling, that the ruthless tyrants<lb/>
-                    south of Mason and Dixon's line might almost have<lb/> heard the mighty burst of
-                    feeling, and recognized<lb/> it as the pledge of an invincible determination,
-                    on<lb/> the part of those who gave it, never to betray him<lb/> that wanders,
-                    but to hide the outcast, and firmly to<lb/> abide the consequences.<lb/>
-                </p>
-                <p>It was at once deeply impressed upon my mind,<lb/> that, if Mr. DOUGLASS could be
-                    persuaded to conse-<lb/> crate his time and talents to the promotion of the<lb/>
-                    anti-slavery enterprise, a powerful impetus would<lb/> be given to it, and a
-                    stunning blow at the same time<lb/> inflicted on northern prejudice against a
-                    colored<lb/> complexion. I therefore endeavored to instil hope<lb/> and courage
-                    into his mind, in order that he might<lb/> dare to engage in a vocation so
-                    anomalous and re-<lb/> sponsible for a person in his situation; and I was<lb/>
-                    <pb n="xii"/> seconded in this effort by warm-hearted friends, es-<lb/> pecially
-                    by the late General Agent of the Massa-<lb/> chusetts Anti-Slavery Society, Mr.
-                    JOHN A. COLLINS,<lb/> whose judgment in this instance entirely coincided<lb/>
-                    with my own. At first, he could give no encourage-<lb/> ment; with unfeigned
-                    diffidence, he expressed his<lb/> conviction that he was not adequate to the
-                    perform-<lb/> ance of so great a task; the path marked out was<lb/> wholly an
-                    untrodden one; he was sincerely appre-<lb/> hensive that he should do more harm
-                    than good.<lb/> After much deliberation, however, he consented to<lb/> make a
-                    trial; and ever since that period, he has acted<lb/> as a lecturing agent, under
-                    the auspices either of the<lb/> American or the Massachusetts Anti-Slavery
-                    Society.<lb/> In labors he has been most abundant; and his success<lb/> in
-                    combating prejudice, in gaining proselytes, in agi-<lb/> tating the public mind,
-                    has far surpassed the most<lb/> sanguine expectations that were raised at the
-                    com-<lb/> mencement of his brilliant career. He has borne him-<lb/> self with
-                    gentleness and meekness, yet with true<lb/> manliness of character. As a public
-                    speaker, he excels<lb/> in pathos, wit, comparison, imitation, strength of<lb/>
-                    reasoning, and fluency of language. There is in him<lb/> that union of head and
-                    heart, which is indispensable<lb/> to an enlightenment of the heads and a
-                    winning of<lb/> the hearts of others. May his strength continue to<lb/> be equal
-                    to his day! May he continue to "grow in<lb/> grace, and in the knowledge of
-                    God," that he may<lb/> be increasingly serviceable in the cause of bleeding<lb/>
-                    humanity, whether at home or abroad!<lb/>
-                </p>
-                <p>It is certainly a very remarkable fact, that one of<lb/> the most efficient
-                    advocates of the slave population,<lb/> now before the public, is a fugitive
-                    slave, in the<lb/> person of FREDERICK DOUGLASS; and that the free<lb/> colored
-                    population of the United States are as ably<lb/> represented by one of their own
-                    number, in the per-<lb/> son of CHARLES LENOX REMOND, whose eloquent<lb/>
-                    <pb n="xiii"/> appeals have extorted the highest applause of multi-<lb/> tudes
-                    on both sides of the Atlantic. Let the calum-<lb/> niators of the colored race
-                    despise themselves for<lb/> their baseness and illiberality of spirit, and
-                    hence-<lb/> forth cease to talk of the natural inferiority of those<lb/> who
-                    require nothing but time and opportunity to<lb/> attain to the highest point of
-                    human excellence.<lb/>
-                </p>
-                <p>It may, perhaps, be fairly questioned, whether any<lb/> other portion of the
-                    population of the earth could<lb/> have endured the privations, sufferings and
-                    horrors<lb/> of slavery, without having become more degraded<lb/> in the scale
-                    of humanity than the slaves of African<lb/> descent. Nothing has been left
-                    undone to cripple<lb/> their intellects, darken their minds, debase their<lb/>
-                    moral nature, obliterate all traces of their relation-<lb/> ship to mankind; and
-                    yet how wonderfully they have<lb/> sustained the mighty load of a most frightful
-                    bond-<lb/> age, under which they have been groaning for cen-<lb/> turies! To
-                    illustrate the effect of slavery on the white<lb/> man,— to show that he
-                    has no powers of endurance,<lb/> in such a condition, superior to those of his
-                    black<lb/> brother,— DANIEL O'CONNELL, the distinguished<lb/> advocate of
-                    universal emancipation, and the mighti-<lb/> est champion of prostrate but not
-                    conquered Ireland,<lb/> relates the following anecdote in a speech
-                    delivered<lb/> by him in the Conciliation Hall, Dublin, before the<lb/> Loyal
-                    National Repeal Association, March 31, 1845.<lb/> "No matter," said Mr.
-                    O'CONNELL, "under what<lb/> specious term it may disguise itself, slavery is
-                    still<lb/> hideous. IT HAS A NATURAL, AN INEVITABLE TENDENCY TO<lb/> BRUTALIZE
-                    EVERY NOBLE FACULTY OF MAN. An American<lb/> sailor, who was cast away on the
-                    shore of Africa,<lb/> where he was kept in slavery for three years, was, at<lb/>
-                    the expiration of that period, found to be imbruted<lb/> and stultified—
-                    he had lost all reasoning power; and<lb/> having forgotten his native language,
-                    could only ut-<lb/> ter some savage gibberish between Arabic and Eng-<lb/>
-                    <pb n="xiv"/> lish, which nobody could understand, and which<lb/> even he
-                    himself found difficulty in pronouncing. So<lb/> much for the humanizing
-                    influence of THE DOMESTIC<lb/> INSTITUTION!" Admitting this to have been an
-                    ex-<lb/> traordinary case of mental deterioration, it proves at<lb/> least that
-                    the white slave can sink as low in the<lb/> scale of humanity as the black
-                    one.<lb/>
-                </p>
+                <p>IN the month of August, 1841, I attended an anti-slavery convention in Nantucket,
+                    at which it was my happiness to become acquainted with FREDERICK DOUGLASS, the
+                    writer of the following Narrative. He was a stranger to nearly every member of
+                    that body; but, having recently made his escape from the southern prison-house
+                    of bondage, and feeling his curiosity excited to ascertain the principles and
+                    measures of the abolitionists,—of whom he had heard a somewhat vague description
+                    while he was a slave,— he was induced to give his attendance, on the occasion
+                    alluded to, though at that time a resident in New Bedford.</p>
+                <p>Fortunate, most fortunate occurrence!— fortunate for the millions of his manacled
+                    brethren, yet panting for deliverance from their awful <ref target="thraldom_"
+                        corresp="thraldom">thraldom</ref>!— fortunate for the cause of negro
+                    emancipation, and of universal liberty!— fortunate for the land of his birth,
+                    which he has already done so much to save and bless! fortunate for a large
+                    circle of friends and acquaintances, whose sympathy and affection he has
+                    strongly secured by the many sufferings he has endured, by his virtuous traits
+                    of character, by his ever-abiding remembrance of those who are in bonds, as
+                    being bound with them!— fortunate for the multitudes, in various parts of our
+                    republic, whose minds he has enlightened on the subject of slavery, and who have
+                    been melted to tears by his <ref target="pathos_" corresp="pathos">pathos</ref>,
+                    or roused to virtuous indignation by his stirring eloquence against the
+                    enslavers of men!— fortunate for himself, as it at once brought him into the <pb
+                        n="iv"/>field of public usefulness, "gave the world assurance of a MAN,"
+                    quickened the slumbering energies of his soul, and consecrated him to the great
+                    work of breaking the rod of the oppressor, and letting the oppressed go free! </p>
+                <p>I shall never forget his first speech at the convention— the extraordinary
+                    emotion it excited in my own mind— the powerful impression it created upon a
+                    crowded auditory, completely taken by surprise — the applause which followed
+                    from the beginning to the end of his felicitous remarks. I think I never hated
+                    slavery so intensely as at that moment; certainly, my perception of the enormous
+                    outrage which is in flicted by it, on the godlike nature of its victims, was
+                    rendered far more clear than ever. There stood one, in physical proportion and
+                    stature commanding and exact— in intellect richly endowed— in natural eloquence
+                    a prodigy— in soul manifestly "created but a little lower than the angels"— yet
+                    a slave, ay, a fugitive slave,— trembling for his safety, hardly daring to
+                    believe that on the American soil, a single white person could be found who
+                    would befriend him at all hazards, for the love of God and humanity! Capable of
+                    high attainments as an intellectual and moral being— needing nothing but a
+                    comparatively small amount of cultivation to make him an ornament to society and
+                    a blessing to his race— by the law of the land, by the voice of the people, by
+                    the terms of the slave code, he was only a piece of property, a beast of burden,
+                    a chattel personal, nevertheless! </p>
+                <p>A beloved friend from New Bedford prevailed on Mr. DOUGLASS to address the
+                    convention: He came forward to the platform with a hesitancy and embarrassment,
+                    necessarily the attendants of a sensitive mind in such a novel position. After
+                    apologizing for his ignorance, and reminding the audience that slavery was a
+                    poor school for the human intellect and heart, <pb n="v"/>he proceeded to
+                    narrate some of the facts in his own history as a slave, and in the course of
+                    his speech gave utterance to many noble thoughts and thrilling reflections. As
+                    soon as he had taken his seat, filled with hope and admiration, I rose, and
+                    declared that <ref target="patrickhenry_" corresp="patrickhenry">PATRICK
+                        HENRY</ref>, of revolutionary fame, never made a speech more eloquent in the
+                    cause of liberty, than the one we had just listened to from the lips of that
+                    hunted fugitive. So I believed at that time— such is my belief now. I reminded
+                    the audience of the peril which surrounded this self-emancipated young man at
+                    the North,— even in Massachusetts, on the soil of the Pilgrim Fathers, among the
+                    descendants of revolutionary sires; and I appealed to them, whether they would
+                    ever allow him to be carried back into slavery,— law or no law, constitution or
+                    no constitution. The response was unanimous and in thunder-tones— "NO!" "Will
+                    you succor and protect him as a brother-man— a resident of the old Bay State?"
+                    "YES!" shouted the whole mass, with an energy so startling, that the ruthless
+                    tyrants south of Mason and Dixon's line might almost have heard the mighty burst
+                    of feeling, and recognized it as the pledge of an invincible determination, on
+                    the part of those who gave it, never to betray him that wanders, but to hide the
+                    outcast, and firmly to abide the consequences. </p>
+                <p>It was at once deeply impressed upon my mind, that, if Mr. DOUGLASS could be
+                    persuaded to consecrate his time and talents to the promotion of the
+                    anti-slavery enterprise, a powerful impetus would be given to it, and a stunning
+                    blow at the same time inflicted on northern prejudice against a colored
+                    complexion. I therefore endeavored to instil hope and courage into his mind, in
+                    order that he might dare to engage in a vocation so anomalous and responsible
+                    for a person in his situation; and I was seconded in this effort by warm-hearted
+                    friends, especially by the late General <pb n="vi"/>Agent of the Massachusetts
+                    Anti-Slavery Society, Mr. <ref target="johncollins_" corresp="johncollins">JOHN
+                        A. COLLINS</ref>, whose judgment in this instance entirely coincided with my
+                    own. At first, he could give no encouragement; with unfeigned diffidence, he
+                    expressed his conviction that he was not adequate to the performance of so great
+                    a task; the path marked out was wholly an untrodden one; he was sincerely appre
+                    hensive that he should do more harm than good. After much deliberation, however,
+                    he consented to make a trial; and ever since that period, he has acted as a
+                    lecturing agent, under the auspices either of the American or the Massachusetts
+                    Anti-Slavery Society. In labors he has been most abundant; and his success in
+                    combating prejudice, in gaining proselytes, in agitating the public mind, has
+                    far surpassed the most sanguine expectations that were raised at the
+                    commencement of his brilliant career. He has borne himself with gentleness and
+                    meekness, yet with true manliness of character. As a public speaker, he excels
+                    in pathos, wit, comparison, imitation, strength of reasoning, and fluency of
+                    language. There is in him that union of head and heart, which is indispensable
+                    to an enlightenment of the heads and a winning of the hearts of others. May his
+                    strength continue to be equal to his day! May he continue to "grow in grace, and
+                    in the knowledge of God," that he may be increasingly serviceable in the cause
+                    of bleeding humanity, whether at home or abroad! </p>
+                <p>It is certainly a very remarkable fact, that one of the most efficient advocates
+                    of the slave population, now before the public, is a fugitive slave, in the
+                    person of FREDERICK DOUGLASS; and that the free colored population of the United
+                    States are as ably represented by one of their own number, in the person of <ref
+                        target="charlesremond_" corresp="charlesremond">CHARLES LENOX REMOND</ref>,
+                    whose eloquent <pb n="xiii"/> appeals have extorted the highest applause of
+                    multitudes on both sides of the Atlantic. Let the calumniators of the colored
+                        <pb n="vii"/>race despise themselves for their baseness and illiberality of
+                    spirit, and henceforth cease to talk of the natural inferiority of those who
+                    require nothing but time and opportunity to attain to the highest point of human
+                    excellence. </p>
+                <p>It may, perhaps, be fairly questioned, whether any other portion of the
+                    population of the earth could have endured the privations, sufferings and
+                    horrors of slavery, without having become more degraded in the scale of humanity
+                    than the slaves of African descent. Nothing has been left undone to cripple
+                    their intellects, darken their minds, debase their moral nature, obliterate all
+                    traces of their relationship to mankind; and yet how wonderfully they have
+                    sustained the mighty load of a most frightful bondage, under which they have
+                    been groaning for centuries! To illustrate the effect of slavery on the white
+                    man,— to show that he has no powers of endurance, in such a condition, superior
+                    to those of his black brother,— <ref target="danieloconnell_"
+                        corresp="danieloconnell">DANIEL O'CONNELL</ref>, the distinguished advocate
+                    of universal emancipation, and the mightiest champion of prostrate but not
+                    conquered Ireland, relates the following anecdote in a speech delivered by him
+                    in the Conciliation Hall, Dublin, before the Loyal National Repeal Association,
+                    March 31, 1845. "No matter," said Mr. O'CONNELL, "under what specious term it
+                    may disguise itself, slavery is still hideous. IT HAS A NATURAL, AN INEVITABLE
+                    TENDENCY TO BRUTALIZE EVERY NOBLE FACULTY OF MAN. An American sailor, who was
+                    cast away on the shore of Africa, where he was kept in slavery for three years,
+                    was, at the expiration of that period, found to be imbruted and stultified— he
+                    had lost all reasoning power; and having forgotten his native language, could
+                    only utter some savage gibberish between Arabic and English, which nobody could
+                    understand, and which even he himself found difficulty in pronouncing. So much
+                    for the humanizing influence of THE DOMESTIC INSTITUTION!" <pb n="viii"
+                    />Admitting this to have been an extraordinary case of mental deterioration, it
+                    proves at least that the white slave can sink as low in the scale of humanity as
+                    the black one. </p>
                 <p>Mr. DOUGLASS has very properly chosen to write<lb/> his own Narrative, in his own
                     style, and according<lb/> to the best of his ability, rather than to employ
                     some<lb/> one else. It is, therefore, entirely his own produc-<lb/> tion; and,
-                    considering how long and dark was the ca-<lb/> reer he had to run as a slave,
-                   — how few have been his<lb/> opportunities to improve his mind since he
-                    broke his<lb/> iron fetters,— it is, in my judgment, highly
-                    creditable<lb/> to his head and heart. He who can peruse it without<lb/> a
-                    tearful eye, a heaving breast, an afflicted spirit,—<lb/> without being
-                    filled with an unutterable abhorrence<lb/> of slavery and all its abettors, and
-                    animated with a<lb/> determination to seek the immediate overthrow of<lb/> that
-                    execrable system,— without trembling for the<lb/> fate of this country in
-                    the hands of a righteous God,<lb/> who is ever on the side of the oppressed, and
-                    whose<lb/> arm is not shortened that it cannot save,— must have<lb/> a
-                    flinty heart, and be qualified to act the part of a<lb/> trafficker "in slaves
-                    and the souls of men." I am con-<lb/> fident that it is essentially true in all
-                    its statements;<lb/> that nothing has been set down in malice, nothing<lb/>
-                    exaggerated, nothing drawn from the imagination;<lb/> that it comes short of the
-                    reality, rather than over-<lb/> states a single fact in regard to SLAVERY AS IT
-                    IS.<lb/> The experience of FREDERICK DOUGLASS, as a slave,<lb/> was not a
-                    peculiar one; his lot was not especially<lb/> a hard one; his case may be
-                    regarded as a very fair<lb/> specimen of the treatment of slaves in Maryland,
-                    in<lb/> which State it is conceded that they are better fed<lb/> and less
-                    cruelly treated than in Georgia, Alabama,<lb/>
+                    considering how long and dark was the ca-<lb/> reer he had to run as a slave, —
+                    how few have been his<lb/> opportunities to improve his mind since he broke
+                    his<lb/> iron fetters,— it is, in my judgment, highly creditable<lb/> to his
+                    head and heart. He who can peruse it without<lb/> a tearful eye, a heaving
+                    breast, an afflicted spirit,—<lb/> without being filled with an unutterable
+                    abhorrence<lb/> of slavery and all its abettors, and animated with a<lb/>
+                    determination to seek the immediate overthrow of<lb/> that execrable system,—
+                    without trembling for the<lb/> fate of this country in the hands of a righteous
+                    God,<lb/> who is ever on the side of the oppressed, and whose<lb/> arm is not
+                    shortened that it cannot save,— must have<lb/> a flinty heart, and be qualified
+                    to act the part of a<lb/> trafficker "in slaves and the souls of men." I am
+                    con-<lb/> fident that it is essentially true in all its statements;<lb/> that
+                    nothing has been set down in malice, nothing<lb/> exaggerated, nothing drawn
+                    from the imagination;<lb/> that it comes short of the reality, rather than
+                    over-<lb/> states a single fact in regard to SLAVERY AS IT IS.<lb/> The
+                    experience of FREDERICK DOUGLASS, as a slave,<lb/> was not a peculiar one; his
+                    lot was not especially<lb/> a hard one; his case may be regarded as a very
+                    fair<lb/> specimen of the treatment of slaves in Maryland, in<lb/> which State
+                    it is conceded that they are better fed<lb/> and less cruelly treated than in
+                    Georgia, Alabama,<lb/>
                     <pb n="xv"/> or Louisiana. Many have suffered incomparably<lb/> more, while very
                     few on the plantations have suf-<lb/> fered less, than himself. Yet how
                     deplorable was his<lb/> situation! what terrible chastisements were
@@ -371,9 +344,9 @@
                     of<lb/> woe which shrouded in blackness the last ray of hope,<lb/> and filled
                     the future with terror and gloom! what<lb/> longings after freedom took
                     possession of his breast,<lb/> and how his misery augmented, in proportion as
-                    he<lb/> grew reflective and intelligent,— thus demonstrating<lb/> that a
-                    happy slave is an extinct man! how he<lb/> thought, reasoned, felt, under the
-                    lash of the driver,<lb/> with the chains upon his limbs! what perils he en-<lb/>
+                    he<lb/> grew reflective and intelligent,— thus demonstrating<lb/> that a happy
+                    slave is an extinct man! how he<lb/> thought, reasoned, felt, under the lash of
+                    the driver,<lb/> with the chains upon his limbs! what perils he en-<lb/>
                     countered in his endeavors to escape from his hor-<lb/> rible doom! and how
                     signal have been his deliverance<lb/> and preservation in the midst of a nation
                     of pitiless<lb/> enemies!<lb/>
@@ -382,19 +355,19 @@
                     eloquence and power; but I<lb/> think the most thrilling one of them all is the
                     de-<lb/> scription DOUGLASS gives of his feelings, as he stood<lb/>
                     soliloquizing respecting his fate, and the chances of<lb/> his one day being a
-                    freeman, on the banks of the<lb/> Chesapeake Bay— viewing the receding
-                    vessels as they<lb/> flew with their white wings before the breeze, and<lb/>
+                    freeman, on the banks of the<lb/> Chesapeake Bay— viewing the receding vessels
+                    as they<lb/> flew with their white wings before the breeze, and<lb/>
                     apostrophizing them as animated by the living spirit<lb/> of freedom. Who can
                     read that passage, and be in-<lb/> sensible to its pathos and sublimity?
                     Compressed<lb/> into it is a whole Alexandrian library of thought,<lb/> feeling,
                     and sentiment— all that can, all that need be<lb/>
                     <pb n="xvi"/> urged, in the form of expostulation, entreaty, rebuke,<lb/>
-                    against that crime of crimes,— making man the prop-<lb/> erty of his
-                    fellow-man! O, how accursed is that<lb/> system, which entombs the godlike mind
-                    of man,<lb/> defaces the divine image, reduces those who by crea-<lb/> tion were
-                    crowned with glory and honor to a level<lb/> with four-footed beasts, and exalts
-                    the dealer in hu-<lb/> man flesh above all that is called God! Why should<lb/>
-                    its existence be prolonged one hour? Is it not evil,<lb/> only evil, and that
+                    against that crime of crimes,— making man the prop-<lb/> erty of his fellow-man!
+                    O, how accursed is that<lb/> system, which entombs the godlike mind of man,<lb/>
+                    defaces the divine image, reduces those who by crea-<lb/> tion were crowned with
+                    glory and honor to a level<lb/> with four-footed beasts, and exalts the dealer
+                    in hu-<lb/> man flesh above all that is called God! Why should<lb/> its
+                    existence be prolonged one hour? Is it not evil,<lb/> only evil, and that
                     continually? What does its pres-<lb/> ence imply but the absence of all fear of
                     God, all<lb/> regard for man, on the part of the people of the<lb/> United
                     States? Heaven speed its eternal overthrow!<lb/>
@@ -433,26 +406,25 @@
                     disproved, if they are untrue.<lb/>
                 </p>
                 <p>In the course of his Narrative, he relates two in-<lb/> stances of murderous
-                    cruelty,— in one of which a<lb/> planter deliberately shot a slave
-                    belonging to a neigh-<lb/> boring plantation, who had unintentionally
-                    gotten<lb/> within his lordly domain in quest of fish; and in the<lb/> other, an
-                    overseer blew out the brains of a slave who<lb/> had fled to a stream of water
-                    to escape a bloody<lb/> scourging. Mr. DOUGLASS states that in neither of<lb/>
-                    these instances was any thing done by way of legal<lb/> arrest or judicial
-                    investigation. The Baltimore Amer-<lb/> ican, of March 17, 1845, relates a
-                    similar case of<lb/> atrocity, perpetrated with similar impunity— as
-                    fol-<lb/> lows:— "SHOOTING A SLAVE.— We learn, upon the au-<lb/>
-                    thority of a letter from Charles county, Maryland,<lb/> received by a gentleman
-                    of this city, that a young<lb/> man, named Matthews, a nephew of General
-                    Mat-<lb/> thews, and whose father, it is believed, holds an of-<lb/> fice at
-                    Washington, killed one of the slaves upon his<lb/> father's farm by shooting
-                    him. The letter states that<lb/>
+                    cruelty,— in one of which a<lb/> planter deliberately shot a slave belonging to
+                    a neigh-<lb/> boring plantation, who had unintentionally gotten<lb/> within his
+                    lordly domain in quest of fish; and in the<lb/> other, an overseer blew out the
+                    brains of a slave who<lb/> had fled to a stream of water to escape a bloody<lb/>
+                    scourging. Mr. DOUGLASS states that in neither of<lb/> these instances was any
+                    thing done by way of legal<lb/> arrest or judicial investigation. The Baltimore
+                    Amer-<lb/> ican, of March 17, 1845, relates a similar case of<lb/> atrocity,
+                    perpetrated with similar impunity— as fol-<lb/> lows:— "SHOOTING A SLAVE.— We
+                    learn, upon the au-<lb/> thority of a letter from Charles county, Maryland,<lb/>
+                    received by a gentleman of this city, that a young<lb/> man, named Matthews, a
+                    nephew of General Mat-<lb/> thews, and whose father, it is believed, holds an
+                    of-<lb/> fice at Washington, killed one of the slaves upon his<lb/> father's
+                    farm by shooting him. The letter states that<lb/>
                     <pb n="xviii"/> young Matthews had been left in charge of the farm;<lb/> that he
                     gave an order to the servant, which was dis-<lb/> obeyed, when he proceeded to
                     the house, OBTAINED<lb/> A GUN, AND, RETURNING, SHOT THE SERVANT. He
                     immedi-<lb/> ately, the letter continues, fled to his father's resi-<lb/> dence,
-                    where he still remains unmolested."— Let it<lb/> never be forgotten, that
-                    no slaveholder or overseer<lb/> can be convicted of any outrage perpetrated on
+                    where he still remains unmolested."— Let it<lb/> never be forgotten, that no
+                    slaveholder or overseer<lb/> can be convicted of any outrage perpetrated on
                     the<lb/> person of a slave, however diabolical it may be, on<lb/> the testimony
                     of colored witnesses, whether bond<lb/> or free. By the slave code, they are
                     adjudged to be<lb/> as incompetent to testify against a white man, as<lb/>
@@ -478,8 +450,8 @@
                     efforts to break every<lb/> yoke, and let the oppressed go free. Come what
                     may<lb/>— cost what it may— inscribe on the banner which<lb/>
                     <pb n="xix"/> you unfurl to the breeze, as your religious and po-<lb/> litical
-                    motto— "NO COMPROMISE WITH SLAVERY! NO<lb/> UNION WITH
-                    SLAVEHOLDERS!"<lb/> WM. LLOYD GARRISON<lb/> BOSTON, MAY 1, 1845.<lb/>
+                    motto— "NO COMPROMISE WITH SLAVERY! NO<lb/> UNION WITH SLAVEHOLDERS!"<lb/> WM.
+                    LLOYD GARRISON<lb/> BOSTON, MAY 1, 1845.<lb/>
                     <pb n="xxi"/>
                 </p>
                 <p> LETTER<lb/> FROM WENDELL PHILLIPS, ESQ.<lb/> BOSTON, APRIL 22, 1845.<lb/> My
@@ -501,8 +473,8 @@
                     with them, as converts. A man must be dis-<lb/> posed to judge of emancipation
                     by other tests than<lb/> whether it has increased the produce of sugar,—
                     and<lb/> to hate slavery for other reasons than because it<lb/> starves men and
-                    whips women,— before he is ready<lb/> to lay the first stone of his
-                    anti-slavery life.<lb/>
+                    whips women,— before he is ready<lb/> to lay the first stone of his anti-slavery
+                    life.<lb/>
                 </p>
                 <p>I was glad to learn, in your story, how early the<lb/> most neglected of God's
                     children waken to a sense<lb/> of their rights, and of the injustice done them. Ex-<lb/>
@@ -525,14 +497,14 @@
                     your truth, candor, and<lb/> sincerity. Every one who has heard you speak
                     has<lb/> felt, and, I am confident, every one who reads your<lb/> book will
                     feel, persuaded that you give them a fair<lb/> specimen of the whole truth. No
-                    one-sided portrait,<lb/>— no wholesale complaints,— but strict
-                    justice done,<lb/> whenever individual kindliness has neutralized, for<lb/> a
-                    moment, the deadly system with which it was<lb/> strangely allied. You have been
-                    with us, too, some<lb/> years, and can fairly compare the twilight of
-                    rights,<lb/> which your race enjoy at the North, with that "noon<lb/> of night"
-                    under which they labor south of Mason<lb/> and Dixon's line. Tell us whether,
-                    after all, the half-<lb/> free colored man of Massachusetts is worse off
-                    than<lb/> the pampered slave of the rice swamps!<lb/>
+                    one-sided portrait,<lb/>— no wholesale complaints,— but strict justice
+                    done,<lb/> whenever individual kindliness has neutralized, for<lb/> a moment,
+                    the deadly system with which it was<lb/> strangely allied. You have been with
+                    us, too, some<lb/> years, and can fairly compare the twilight of rights,<lb/>
+                    which your race enjoy at the North, with that "noon<lb/> of night" under which
+                    they labor south of Mason<lb/> and Dixon's line. Tell us whether, after all, the
+                    half-<lb/> free colored man of Massachusetts is worse off than<lb/> the pampered
+                    slave of the rice swamps!<lb/>
                 </p>
                 <p>In reading your life, no one can say that we have<lb/> unfairly picked out some
                     rare specimens of cruelty.<lb/> We know that the bitter drops, which even you have<lb/>
@@ -552,10 +524,10 @@
                     Independence with the halter about their necks.<lb/> You, too, publish your
                     declaration of freedom with<lb/> danger compassing you around. In all the broad
                     lands<lb/> which the Constitution of the United States over-<lb/> shadows, there
-                    is no single spot,— however narrow or<lb/> desolate,— where a
-                    fugitive slave can plant himself<lb/> and say, "I am safe." The whole armory of
-                    North-<lb/> ern Law has no shield for you. I am free to say that,<lb/> in your
-                    place, I should throw the MS. into the fire.<lb/>
+                    is no single spot,— however narrow or<lb/> desolate,— where a fugitive slave can
+                    plant himself<lb/> and say, "I am safe." The whole armory of North-<lb/> ern Law
+                    has no shield for you. I am free to say that,<lb/> in your place, I should throw
+                    the MS. into the fire.<lb/>
                 </p>
                 <p>You, perhaps, may tell your story in safety, en-<lb/> deared as you are to so
                     many warm hearts by rare<lb/> gifts, and a still rarer devotion of them to the
@@ -574,11 +546,11 @@
                     friend, till you, and those who, like you,<lb/> have been saved, so as by fire,
                     from the dark prison-<lb/> house, shall stereotype these free, illegal pulses
                     into<lb/> statutes; and New England, cutting loose from a<lb/> blood-stained
-                    Union, shall glory in being the house<lb/> of refuge for the oppressed,—
-                    till we no longer merely<lb/> "HIDE the outcast," or make a merit of standing
-                    idly<lb/> by while he is hunted in our midst; but, consecrat-<lb/> ing anew the
-                    soil of the Pilgrims as an asylum for the<lb/> oppressed, proclaim our WELCOME
-                    to the slave so<lb/> loudly, that the tones shall reach every hut in the<lb/>
+                    Union, shall glory in being the house<lb/> of refuge for the oppressed,— till we
+                    no longer merely<lb/> "HIDE the outcast," or make a merit of standing idly<lb/>
+                    by while he is hunted in our midst; but, consecrat-<lb/> ing anew the soil of
+                    the Pilgrims as an asylum for the<lb/> oppressed, proclaim our WELCOME to the
+                    slave so<lb/> loudly, that the tones shall reach every hut in the<lb/>
                     Carolinas, and make the broken-hearted bondman<lb/> leap up at the thought of
                     old Massachusetts.<lb/> God speed the day!<lb/>
                     <lb/> TILL THEN, AND EVER,<lb/> YOURS TRULY,<lb/> WENDELL PHILLIPS<lb/></p>
@@ -637,15 +609,15 @@
                     <pb n="2"/> The opinion was also whispered that my master was<lb/> my father;
                     but of the correctness of this opinion, I<lb/> know nothing; the means of
                     knowing was withheld<lb/> from me. My mother and I were separated when I<lb/>
-                    was but an infant— before I knew her as my mother.<lb/> It is a common
-                    custom, in the part of Maryland<lb/> from which I ran away, to part children
-                    from their<lb/> mothers at a very early age. Frequently, before the<lb/> child
-                    has reached its twelfth month, its mother is<lb/> taken from it, and hired out
-                    on some farm a con-<lb/> siderable distance off, and the child is placed
-                    under<lb/> the care of an old woman, too old for field labor.<lb/> For what this
-                    separation is done, I do not know,<lb/> unless it be to hinder the development
-                    of the child's<lb/> affection toward its mother, and to blunt and destroy<lb/>
-                    the natural affection of the mother for the child.<lb/> This is the inevitable
+                    was but an infant— before I knew her as my mother.<lb/> It is a common custom,
+                    in the part of Maryland<lb/> from which I ran away, to part children from
+                    their<lb/> mothers at a very early age. Frequently, before the<lb/> child has
+                    reached its twelfth month, its mother is<lb/> taken from it, and hired out on
+                    some farm a con-<lb/> siderable distance off, and the child is placed under<lb/>
+                    the care of an old woman, too old for field labor.<lb/> For what this separation
+                    is done, I do not know,<lb/> unless it be to hinder the development of the
+                    child's<lb/> affection toward its mother, and to blunt and destroy<lb/> the
+                    natural affection of the mother for the child.<lb/> This is the inevitable
                     result.<lb/>
                 </p>
                 <p>I never saw my mother, to know her as such, more<lb/> than four or five times in
@@ -655,9 +627,9 @@
                     distance on<lb/> foot, after the performance of her day's work. She<lb/> was a
                     field hand, and a whipping is the penalty of<lb/> not being in the field at
                     sunrise, unless a slave has<lb/> special permission from his or her master to
-                    the con-<lb/> trary— a permission which they seldom get, and one<lb/>
-                    that gives to him that gives it the proud name of<lb/> being a kind master. I do
-                    not recollect of ever seeing<lb/> my mother by the light of day. She was with me
+                    the con-<lb/> trary— a permission which they seldom get, and one<lb/> that gives
+                    to him that gives it the proud name of<lb/> being a kind master. I do not
+                    recollect of ever seeing<lb/> my mother by the light of day. She was with me
                     in<lb/> the night. She would lie down with me, and get me<lb/> to sleep, but
                     long before I waked she was gone. Very<lb/> little communication ever took place
                     between us.<lb/> Death soon ended what little we could have while<lb/> she
@@ -747,10 +719,9 @@
                 </p>
                 <p>This occurrence took place very soon after I went<lb/> to live with my old
                     master, and under the following<lb/> circumstances. Aunt Hester went out one
-                    night,—<lb/> where or for what I do not know,— and happened
-                    to<lb/> be absent when my master desired her presence. He<lb/> had ordered her
-                    not to go out evenings, and warned<lb/> her that she must never let him catch
-                    her in com-<lb/>
+                    night,—<lb/> where or for what I do not know,— and happened to<lb/> be absent
+                    when my master desired her presence. He<lb/> had ordered her not to go out
+                    evenings, and warned<lb/> her that she must never let him catch her in com-<lb/>
                     <pb n="6"/> pany with a young man, who was paying attention<lb/> to her
                     belonging to Colonel Lloyd. The young man's<lb/> name was Ned Roberts, generally
                     called Lloyd's<lb/> Ned. Why master was so careful of her, may be<lb/> safely
@@ -767,18 +738,18 @@
                     suspect him of any such virtue. Before<lb/> he commenced whipping Aunt Hester,
                     he took her<lb/> into the kitchen, and stripped her from neck to waist,<lb/>
                     leaving her neck, shoulders, and back, entirely<lb/> naked. He then told her to
-                    cross her hands, calling<lb/> her at the same time a d— -d b— -h.
-                    After crossing<lb/> her hands, he tied them with a strong rope, and led<lb/> her
-                    to a stool under a large hook in the joist, put<lb/> in for the purpose. He made
-                    her get upon the stool,<lb/> and tied her hands to the hook. She now stood
-                    fair<lb/> for his infernal purpose. Her arms were stretched<lb/> up at their
-                    full length, so that she stood upon the<lb/> ends of her toes. He then said to
-                    her, "Now, you<lb/> d— -d b— -h, I'll learn you how to disobey
-                    my<lb/> orders!" and after rolling up his sleeves, he com-<lb/> menced to lay on
-                    the heavy cowskin, and soon the<lb/> warm, red blood (amid heart-rending shrieks
-                    from<lb/> her, and horrid oaths from him) came dripping to<lb/> the floor. I was
-                    so terrified and horror-stricken at the<lb/> sight, that I hid myself in a
-                    closet, and dared not<lb/> venture out till long after the bloody transaction was<lb/>
+                    cross her hands, calling<lb/> her at the same time a d— -d b— -h. After
+                    crossing<lb/> her hands, he tied them with a strong rope, and led<lb/> her to a
+                    stool under a large hook in the joist, put<lb/> in for the purpose. He made her
+                    get upon the stool,<lb/> and tied her hands to the hook. She now stood fair<lb/>
+                    for his infernal purpose. Her arms were stretched<lb/> up at their full length,
+                    so that she stood upon the<lb/> ends of her toes. He then said to her, "Now,
+                    you<lb/> d— -d b— -h, I'll learn you how to disobey my<lb/> orders!" and after
+                    rolling up his sleeves, he com-<lb/> menced to lay on the heavy cowskin, and
+                    soon the<lb/> warm, red blood (amid heart-rending shrieks from<lb/> her, and
+                    horrid oaths from him) came dripping to<lb/> the floor. I was so terrified and
+                    horror-stricken at the<lb/> sight, that I hid myself in a closet, and dared
+                    not<lb/> venture out till long after the bloody transaction was<lb/>
                     <pb n="7"/> over. I expected it would be my turn next. It was<lb/> all new to
                     me. I had never seen any thing like it<lb/> before. I had always lived with my
                     grandmother on<lb/> the outskirts of the plantation, where she was put to<lb/>
@@ -854,18 +825,18 @@
                     doing either of<lb/> these, very many of their sleeping hours are con-<lb/>
                     sumed in preparing for the field the coming day;<lb/> and when this is done, old
                     and young, male and<lb/> female, married and single, drop down side by
-                    side,<lb/> on one common bed,— the cold, damp floor,— each<lb/>
-                    covering himself or herself with their miserable<lb/> blankets; and here they
-                    sleep till they are summoned<lb/> to the field by the driver's horn. At the
-                    sound of<lb/> this, all must rise, and be off to the field. There<lb/> must be
-                    no halting; every one must be at his or<lb/> her post; and woe betides them who
-                    hear not this<lb/> morning summons to the field; for if they are not<lb/>
-                    awakened by the sense of hearing, they are by the<lb/> sense of feeling: no age
-                    nor sex finds any favor.<lb/> Mr. Severe, the overseer, used to stand by the
-                    door<lb/> of the quarter, armed with a large hickory stick<lb/> and heavy
-                    cowskin, ready to whip any one who was<lb/> so unfortunate as not to hear, or,
-                    from any other<lb/> cause, was prevented from being ready to start for<lb/> the
-                    field at the sound of the horn.<lb/>
+                    side,<lb/> on one common bed,— the cold, damp floor,— each<lb/> covering himself
+                    or herself with their miserable<lb/> blankets; and here they sleep till they are
+                    summoned<lb/> to the field by the driver's horn. At the sound of<lb/> this, all
+                    must rise, and be off to the field. There<lb/> must be no halting; every one
+                    must be at his or<lb/> her post; and woe betides them who hear not this<lb/>
+                    morning summons to the field; for if they are not<lb/> awakened by the sense of
+                    hearing, they are by the<lb/> sense of feeling: no age nor sex finds any
+                    favor.<lb/> Mr. Severe, the overseer, used to stand by the door<lb/> of the
+                    quarter, armed with a large hickory stick<lb/> and heavy cowskin, ready to whip
+                    any one who was<lb/> so unfortunate as not to hear, or, from any other<lb/>
+                    cause, was prevented from being ready to start for<lb/> the field at the sound
+                    of the horn.<lb/>
                 </p>
                 <p>Mr. Severe was rightly named: he was a cruel<lb/> man. I have seen him whip a
                     woman, causing the<lb/> blood to run half an hour at the time; and this,
@@ -919,14 +890,13 @@
                     on<lb/> their way, they would make the dense old woods,<lb/> for miles around,
                     reverberate with their wild songs,<lb/> revealing at once the highest joy and
                     the deepest<lb/> sadness. They would compose and sing as they went<lb/> along,
-                    consulting neither time nor tune. The thought<lb/> that came up, came out
-                   — if not in the word, in the<lb/> sound;— and as frequently in the
-                    one as in the other.<lb/> They would sometimes sing the most pathetic
-                    senti-<lb/> ment in the most rapturous tone, and the most rap-<lb/> turous
-                    sentiment in the most pathetic tone. Into all<lb/> of their songs they would
-                    manage to weave some-<lb/> thing of the Great House Farm. Especially would<lb/>
-                    they do this, when leaving home. They would then<lb/> sing most exultingly the
-                    following words:—<lb/>
+                    consulting neither time nor tune. The thought<lb/> that came up, came out — if
+                    not in the word, in the<lb/> sound;— and as frequently in the one as in the
+                    other.<lb/> They would sometimes sing the most pathetic senti-<lb/> ment in the
+                    most rapturous tone, and the most rap-<lb/> turous sentiment in the most
+                    pathetic tone. Into all<lb/> of their songs they would manage to weave
+                    some-<lb/> thing of the Great House Farm. Especially would<lb/> they do this,
+                    when leaving home. They would then<lb/> sing most exultingly the following words:—<lb/>
                     <lb/>
                 </p>
                 <p> "I am going away to the Great House Farm!<lb/>
@@ -958,8 +928,8 @@
                     soul-killing effects of slavery, let<lb/> him go to Colonel Lloyd's plantation,
                     and, on allow-<lb/> ance-day, place himself in the deep pine woods, and<lb/>
                     there let him, in silence, analyze the sounds that<lb/> shall pass through the
-                    chambers of his soul,— and if<lb/> he is not thus impressed, it will only
-                    be because<lb/> "there is no flesh in his obdurate heart."<lb/>
+                    chambers of his soul,— and if<lb/> he is not thus impressed, it will only be
+                    because<lb/> "there is no flesh in his obdurate heart."<lb/>
                     <pb n="15"/>
                 </p>
                 <p>I have often been utterly astonished, since I came<lb/> to the north, to find
@@ -986,8 +956,8 @@
                     almost constant employment<lb/> for four men, besides the chief gardener,
                     (Mr.<lb/> M'Durmond.) This garden was probably the great-<lb/> est attraction of
                     the place. During the summer<lb/> months, people came from far and near—
-                    from<lb/> Baltimore, Easton, and Annapolis— to see it. It<lb/> abounded
-                    in fruits of almost every description, from<lb/> the hardy apple of the north to
+                    from<lb/> Baltimore, Easton, and Annapolis— to see it. It<lb/> abounded in
+                    fruits of almost every description, from<lb/> the hardy apple of the north to
                     the delicate orange<lb/> of the south. This garden was not the least source<lb/>
                     of trouble on the plantation. Its excellent fruit was<lb/> quite a temptation to
                     the hungry swarms of boys,<lb/> as well as the older slaves, belonging to the
@@ -1009,44 +979,43 @@
                     carriage-house contained three splendid coaches,<lb/> three or four gigs,
                     besides dearborns and barouches<lb/> of the most fashionable style.<lb/>
                 </p>
-                <p>This establishment was under the care of two<lb/> slaves— old Barney and
-                    young Barney— father and son.<lb/> To attend to this establishment was
-                    their sole work.<lb/> But it was by no means an easy employment; for in<lb/>
-                    nothing was Colonel Lloyd more particular than in<lb/> the management of his
-                    horses. The slightest inat-<lb/> tention to these was unpardonable, and was
-                    visited<lb/> upon those, under whose care they were placed, with<lb/> the
-                    severest punishment; no excuse could shield<lb/> them, if the colonel only
-                    suspected any want of<lb/> attention to his horses— a supposition which
-                    he fre-<lb/> quently indulged, and one which, of course, made<lb/> the office of
-                    old and young Barney a very trying one.<lb/> They never knew when they were safe
-                    from punish-<lb/> ment. They were frequently whipped when least<lb/> deserving,
-                    and escaped whipping when most deserv-<lb/> ing it. Every thing depended upon
-                    the looks of the<lb/> horses, and the state of Colonel Lloyd's own mind<lb/>
-                    when his horses were brought to him for use. If a<lb/> horse did not move fast
-                    enough, or hold his head<lb/> high enough, it was owing to some fault of his
-                    keep-<lb/> ers. It was painful to stand near the stable-door,<lb/> and hear the
-                    various complaints against the keepers<lb/> when a horse was taken out for use.
-                    "This horse has<lb/> not had proper attention. He has not been suffi-<lb/>
-                    ciently rubbed and curried, or he has not been prop-<lb/> erly fed; his food was
-                    too wet or too dry; he got it<lb/> too soon or too late; he was too hot or too
-                    cold; he<lb/> had too much hay, and not enough of grain; or he<lb/> had too much
-                    grain, and not enough of hay; instead<lb/> of old Barney's attending to the
-                    horse, he had very<lb/> improperly left it to his son." To all these com-<lb/>
-                    plaints, no matter how unjust, the slave must an-<lb/>
+                <p>This establishment was under the care of two<lb/> slaves— old Barney and young
+                    Barney— father and son.<lb/> To attend to this establishment was their sole
+                    work.<lb/> But it was by no means an easy employment; for in<lb/> nothing was
+                    Colonel Lloyd more particular than in<lb/> the management of his horses. The
+                    slightest inat-<lb/> tention to these was unpardonable, and was visited<lb/>
+                    upon those, under whose care they were placed, with<lb/> the severest
+                    punishment; no excuse could shield<lb/> them, if the colonel only suspected any
+                    want of<lb/> attention to his horses— a supposition which he fre-<lb/> quently
+                    indulged, and one which, of course, made<lb/> the office of old and young Barney
+                    a very trying one.<lb/> They never knew when they were safe from punish-<lb/>
+                    ment. They were frequently whipped when least<lb/> deserving, and escaped
+                    whipping when most deserv-<lb/> ing it. Every thing depended upon the looks of
+                    the<lb/> horses, and the state of Colonel Lloyd's own mind<lb/> when his horses
+                    were brought to him for use. If a<lb/> horse did not move fast enough, or hold
+                    his head<lb/> high enough, it was owing to some fault of his keep-<lb/> ers. It
+                    was painful to stand near the stable-door,<lb/> and hear the various complaints
+                    against the keepers<lb/> when a horse was taken out for use. "This horse
+                    has<lb/> not had proper attention. He has not been suffi-<lb/> ciently rubbed
+                    and curried, or he has not been prop-<lb/> erly fed; his food was too wet or too
+                    dry; he got it<lb/> too soon or too late; he was too hot or too cold; he<lb/>
+                    had too much hay, and not enough of grain; or he<lb/> had too much grain, and
+                    not enough of hay; instead<lb/> of old Barney's attending to the horse, he had
+                    very<lb/> improperly left it to his son." To all these com-<lb/> plaints, no
+                    matter how unjust, the slave must an-<lb/>
                     <pb n="19"/> swer never a word. Colonel Lloyd could not brook<lb/> any
                     contradiction from a slave. When he spoke, a<lb/> slave must stand, listen, and
                     tremble; and such was<lb/> literally the case. I have seen Colonel Lloyd
                     make<lb/> old Barney, a man between fifty and sixty years of<lb/> age, uncover
                     his bald head, kneel down upon the<lb/> cold, damp ground, and receive upon his
                     naked and<lb/> toil-worn shoulders more than thirty lashes at the<lb/> time.
-                    Colonel Lloyd had three sons— Edward, Mur-<lb/> ray, and Daniel,—
-                    and three sons-in-law, Mr. Winder,<lb/> Mr. Nicholson, and Mr. Lowndes. All of
-                    these lived<lb/> at the Great House Farm, and enjoyed the luxury of<lb/>
-                    whipping the servants when they pleased, from old<lb/> Barney down to William
-                    Wilkes, the coach-driver.<lb/> I have seen Winder make one of the
-                    house-servants<lb/> stand off from him a suitable distance to be touched<lb/>
-                    with the end of his whip, and at every stroke raise<lb/> great ridges upon his
-                    back.<lb/>
+                    Colonel Lloyd had three sons— Edward, Mur-<lb/> ray, and Daniel,— and three
+                    sons-in-law, Mr. Winder,<lb/> Mr. Nicholson, and Mr. Lowndes. All of these
+                    lived<lb/> at the Great House Farm, and enjoyed the luxury of<lb/> whipping the
+                    servants when they pleased, from old<lb/> Barney down to William Wilkes, the
+                    coach-driver.<lb/> I have seen Winder make one of the house-servants<lb/> stand
+                    off from him a suitable distance to be touched<lb/> with the end of his whip,
+                    and at every stroke raise<lb/> great ridges upon his back.<lb/>
                 </p>
                 <p>To describe the wealth of Colonel Lloyd would<lb/> be almost equal to describing
                     the riches of Job. He<lb/> kept from ten to fifteen house-servants. He was
@@ -1133,12 +1102,12 @@
                     the slave, into impudence, and would treat it ac-<lb/> cordingly. There must be
                     no answering back to him;<lb/> no explanation was allowed a slave, showing
                     himself<lb/> to have been wrongfully accused. Mr. Gore acted<lb/> fully up to
-                    the maxim laid down by slaveholders,—<lb/> "It is better that a dozen
-                    slaves should suffer under the<lb/> lash, than that the overseer should be
-                    convicted, in<lb/> the presence of the slaves, of having been at fault."<lb/> No
-                    matter how innocent a slave might be— it availed<lb/> him nothing, when
-                    accused by Mr. Gore of any<lb/> misdemeanor. To be accused was to be
-                    convicted,<lb/> and to be convicted was to be punished; the one<lb/>
+                    the maxim laid down by slaveholders,—<lb/> "It is better that a dozen slaves
+                    should suffer under the<lb/> lash, than that the overseer should be convicted,
+                    in<lb/> the presence of the slaves, of having been at fault."<lb/> No matter how
+                    innocent a slave might be— it availed<lb/> him nothing, when accused by Mr. Gore
+                    of any<lb/> misdemeanor. To be accused was to be convicted,<lb/> and to be
+                    convicted was to be punished; the one<lb/>
                     <pb n="24"/> always following the other with immutable certainty.<lb/> To escape
                     punishment was to escape accusation; and<lb/> few slaves had the fortune to do
                     either, under the<lb/> overseership of Mr. Gore. He was just proud enough<lb/>
@@ -1187,15 +1156,15 @@
                     Lloyd and my old master, why he resorted to this<lb/> extraordinary expedient.
                     His reply was, (as well as<lb/> I can remember,) that Demby had become
                     unman-<lb/> ageable. He was setting a dangerous example to the<lb/> other
-                    slaves,— one which, if suffered to pass without<lb/> some such
-                    demonstration on his part, would finally<lb/> lead to the total subversion of
-                    all rule and order<lb/> upon the plantation. He argued that if one slave
-                    re-<lb/> fused to be corrected, and escaped with his life, the<lb/> other slaves
-                    would soon copy the example; the re-<lb/> sult of which would be, the freedom of
-                    the slaves,<lb/> and the enslavement of the whites. Mr. Gore's de-<lb/> fence
-                    was satisfactory. He was continued in his sta-<lb/> tion as overseer upon the
-                    home plantation. His<lb/> fame as an overseer went abroad. His horrid crime<lb/>
-                    was not even submitted to judicial investigation. It<lb/>
+                    slaves,— one which, if suffered to pass without<lb/> some such demonstration on
+                    his part, would finally<lb/> lead to the total subversion of all rule and
+                    order<lb/> upon the plantation. He argued that if one slave re-<lb/> fused to be
+                    corrected, and escaped with his life, the<lb/> other slaves would soon copy the
+                    example; the re-<lb/> sult of which would be, the freedom of the slaves,<lb/>
+                    and the enslavement of the whites. Mr. Gore's de-<lb/> fence was satisfactory.
+                    He was continued in his sta-<lb/> tion as overseer upon the home plantation.
+                    His<lb/> fame as an overseer went abroad. His horrid crime<lb/> was not even
+                    submitted to judicial investigation. It<lb/>
                     <pb n="26"/> was committed in the presence of slaves, and they of<lb/> course
                     could neither institute a suit, nor testify<lb/> against him; and thus the
                     guilty perpetrator of one of<lb/> the bloodiest and most foul murders goes
@@ -1206,15 +1175,15 @@
                     respected as though his guilty soul<lb/> had not been stained with his brother's
                     blood.<lb/>
                 </p>
-                <p>I speak advisedly when I say this,— that killing<lb/> a slave, or any
-                    colored person, in Talbot county,<lb/> Maryland, is not treated as a crime,
-                    either by the<lb/> courts or the community. Mr. Thomas Lanman, of<lb/> St.
-                    Michael's, killed two slaves, one of whom he<lb/> killed with a hatchet, by
-                    knocking his brains out. He<lb/> used to boast of the commission of the awful
-                    and<lb/> bloody deed. I have heard him do so laughingly,<lb/> saying, among
-                    other things, that he was the only<lb/> benefactor of his country in the
-                    company, and that<lb/> when others would do as much as he had done, we<lb/>
-                    should be relieved of "the d— -d niggers."<lb/>
+                <p>I speak advisedly when I say this,— that killing<lb/> a slave, or any colored
+                    person, in Talbot county,<lb/> Maryland, is not treated as a crime, either by
+                    the<lb/> courts or the community. Mr. Thomas Lanman, of<lb/> St. Michael's,
+                    killed two slaves, one of whom he<lb/> killed with a hatchet, by knocking his
+                    brains out. He<lb/> used to boast of the commission of the awful and<lb/> bloody
+                    deed. I have heard him do so laughingly,<lb/> saying, among other things, that
+                    he was the only<lb/> benefactor of his country in the company, and that<lb/>
+                    when others would do as much as he had done, we<lb/> should be relieved of "the
+                    d— -d niggers."<lb/>
                 </p>
                 <p>The wife of Mr. Giles Hicks, living but a short<lb/> distance from where I used
                     to live, murdered my<lb/> wife's cousin, a young girl between fifteen and
@@ -1224,8 +1193,8 @@
                     had not been in her untimely grave but a few hours<lb/> before she was taken up
                     and examined by the cor-<lb/> oner, who decided that she had come to her
                     death<lb/> by severe beating. The offence for which this girl<lb/> was thus
-                    murdered was this:— She had been set<lb/> that night to mind Mrs. Hicks's
-                    baby, and during the<lb/> night she fell asleep, and the baby cried. She, having<lb/>
+                    murdered was this:— She had been set<lb/> that night to mind Mrs. Hicks's baby,
+                    and during the<lb/> night she fell asleep, and the baby cried. She, having<lb/>
                     <pb n="27"/> lost her rest for several nights previous, did not hear<lb/> the
                     crying. They were both in the room with Mrs.<lb/> Hicks. Mrs. Hicks, finding the
                     girl slow to move,<lb/> jumped from her bed, seized an oak stick of wood<lb/> by
@@ -1276,13 +1245,13 @@
                 </p>
                 <p>I was seldom whipped by my old master, and suf-<lb/> fered little from any thing
                     else than hunger and<lb/> cold. I suffered much from hunger, but much more<lb/>
-                    from cold. In hottest summer and coldest winter, I<lb/> was kept almost naked
-                   — no shoes, no stockings, no<lb/> jacket, no trousers, nothing on but a
-                    coarse tow linen<lb/> shirt, reaching only to my knees. I had no bed. I<lb/>
-                    must have perished with cold, but that, the coldest<lb/> nights, I used to steal
-                    a bag which was used for carry-<lb/> ing corn to the mill. I would crawl into
-                    this bag,<lb/> and there sleep on the cold, damp, clay floor, with<lb/> my head
-                    in and feet out. My feet have been so<lb/> cracked with the frost, that the pen
+                    from cold. In hottest summer and coldest winter, I<lb/> was kept almost naked —
+                    no shoes, no stockings, no<lb/> jacket, no trousers, nothing on but a coarse tow
+                    linen<lb/> shirt, reaching only to my knees. I had no bed. I<lb/> must have
+                    perished with cold, but that, the coldest<lb/> nights, I used to steal a bag
+                    which was used for carry-<lb/> ing corn to the mill. I would crawl into this
+                    bag,<lb/> and there sleep on the cold, damp, clay floor, with<lb/> my head in
+                    and feet out. My feet have been so<lb/> cracked with the frost, that the pen
                     with which I<lb/> am writing might be laid in the gashes.<lb/>
                     <pb n="30"/>
                 </p>
@@ -1358,8 +1327,8 @@
                     State. We stopped but a<lb/> few moments, so that I had no time to go on
                     shore.<lb/> It was the first large town that I had ever seen, and<lb/> though it
                     would look small compared with some of<lb/> our New England factory villages, I
-                    thought it a<lb/> wonderful place for its size— more imposing even<lb/>
-                    than the Great House Farm!<lb/>
+                    thought it a<lb/> wonderful place for its size— more imposing even<lb/> than the
+                    Great House Farm!<lb/>
                 </p>
                 <p>We arrived at Baltimore early on Sunday morn-<lb/> ing, landing at Smith's Wharf,
                     not far from Bow-<lb/> ley's Wharf. We had on board the sloop a large<lb/> flock
@@ -1375,9 +1344,9 @@
                     wish I could de-<lb/> scribe the rapture that flashed through my soul as I<lb/>
                     beheld it. It was a new and strange sight to me,<lb/>
                     <pb n="33"/> brightening up my pathway with the light of happi-<lb/> ness.
-                    Little Thomas was told, there was his Freddy,<lb/>— and I was told to
-                    take care of little Thomas; and<lb/> thus I entered upon the duties of my new
-                    home with<lb/> the most cheering prospect ahead.<lb/>
+                    Little Thomas was told, there was his Freddy,<lb/>— and I was told to take care
+                    of little Thomas; and<lb/> thus I entered upon the duties of my new home
+                    with<lb/> the most cheering prospect ahead.<lb/>
                 </p>
                 <p>I look upon my departure from Colonel Lloyd's<lb/> plantation as one of the most
                     interesting events of<lb/> my life. It is possible, and even quite probable,
@@ -1414,11 +1383,11 @@
                 <head> VI<lb/>
                 </head>
                 <p>My new mistress proved to be all she appeared<lb/> when I first met her at the
-                    door,— a woman of the<lb/> kindest heart and finest feelings. She had
-                    never had<lb/> a slave under her control previously to myself, and<lb/> prior to
-                    her marriage she had been dependent upon<lb/> her own industry for a living. She
-                    was by trade a<lb/> weaver; and by constant application to her business,<lb/>
-                    she had been in a good degree preserved from the<lb/> blighting and dehumanizing
+                    door,— a woman of the<lb/> kindest heart and finest feelings. She had never
+                    had<lb/> a slave under her control previously to myself, and<lb/> prior to her
+                    marriage she had been dependent upon<lb/> her own industry for a living. She was
+                    by trade a<lb/> weaver; and by constant application to her business,<lb/> she
+                    had been in a good degree preserved from the<lb/> blighting and dehumanizing
                     effects of slavery. I was<lb/> utterly astonished at her goodness. I scarcely
                     knew<lb/> how to behave towards her. She was entirely unlike<lb/> any other
                     white woman I had ever seen. I could not<lb/> approach her as I was accustomed
@@ -1447,18 +1416,18 @@
                     things, that it was unlawful, as well as unsafe, to<lb/> teach a slave to read.
                     To use his own words, further,<lb/> he said, "If you give a nigger an inch, he
                     will take<lb/> an ell. A nigger should know nothing but to obey<lb/> his master
-                   — to do as he is told to do. Learning would<lb/> SPOIL the best nigger in
-                    the world. Now," said he, "if<lb/> you teach that nigger (speaking of myself)
-                    how to<lb/> read, there would be no keeping him. It would for-<lb/> ever unfit
-                    him to be a slave. He would at once be-<lb/> come unmanageable, and of no value
-                    to his master.<lb/> As to himself, it could do him no good, but a great<lb/>
-                    deal of harm. It would make him discontented and<lb/> unhappy." These words sank
-                    deep into my heart,<lb/> stirred up sentiments within that lay slumbering,<lb/>
-                    and called into existence an entirely new train of<lb/> thought. It was a new
-                    and special revelation, ex-<lb/> plaining dark and mysterious things, with which
+                    — to do as he is told to do. Learning would<lb/> SPOIL the best nigger in the
+                    world. Now," said he, "if<lb/> you teach that nigger (speaking of myself) how
+                    to<lb/> read, there would be no keeping him. It would for-<lb/> ever unfit him
+                    to be a slave. He would at once be-<lb/> come unmanageable, and of no value to
+                    his master.<lb/> As to himself, it could do him no good, but a great<lb/> deal
+                    of harm. It would make him discontented and<lb/> unhappy." These words sank deep
+                    into my heart,<lb/> stirred up sentiments within that lay slumbering,<lb/> and
+                    called into existence an entirely new train of<lb/> thought. It was a new and
+                    special revelation, ex-<lb/> plaining dark and mysterious things, with which
                     my<lb/> youthful understanding had struggled, but struggled<lb/> in vain. I now
-                    understood what had been to me a<lb/> most perplexing difficulty— to wit,
-                    the white man's<lb/> power to enslave the black man. It was a grand<lb/>
+                    understood what had been to me a<lb/> most perplexing difficulty— to wit, the
+                    white man's<lb/> power to enslave the black man. It was a grand<lb/>
                     achievement, and I prized it highly. From that mo-<lb/> ment, I understood the
                     pathway from slavery to free-<lb/> dom. It was just what I wanted, and I got it
                     at a<lb/> time when I the least expected it. Whilst I was sad-<lb/> dened by the
@@ -1511,13 +1480,12 @@
                     blood of one<lb/> of these slaves. The girls seldom passed her without<lb/> her
                     saying, "Move faster, you BLACK GIP!" at the same<lb/> time giving them a blow
                     with the cowskin over the<lb/> head or shoulders, often drawing the blood.
-                    She<lb/> would then say, "Take that, you BLACK GIP!"— con-<lb/> tinuing,
-                    "If you don't move faster, I'll move you!"<lb/> Added to the cruel lashings to
-                    which these slaves<lb/> were subjected, they were kept nearly half-starved.<lb/>
-                    They seldom knew what it was to eat a full meal.<lb/> I have seen Mary
-                    contending with the pigs for the<lb/> offal thrown into the street. So much was
-                    Mary<lb/> kicked and cut to pieces, that she was oftener called<lb/> "PECKED"
-                    than by her name.<lb/>
+                    She<lb/> would then say, "Take that, you BLACK GIP!"— con-<lb/> tinuing, "If you
+                    don't move faster, I'll move you!"<lb/> Added to the cruel lashings to which
+                    these slaves<lb/> were subjected, they were kept nearly half-starved.<lb/> They
+                    seldom knew what it was to eat a full meal.<lb/> I have seen Mary contending
+                    with the pigs for the<lb/> offal thrown into the street. So much was Mary<lb/>
+                    kicked and cut to pieces, that she was oftener called<lb/> "PECKED" than by her name.<lb/>
                     <pb n="39"/>
                 </p>
             </div>
@@ -1583,8 +1551,8 @@
                     stow upon the hungry little urchins, who, in return,<lb/> would give me that
                     more valuable bread of knowl-<lb/> edge. I am strongly tempted to give the names
                     of<lb/> two or three of those little boys, as a testimonial of<lb/> the
-                    gratitude and affection I bear them; but pru-<lb/> dence forbids;— not
-                    that it would injure me, but it<lb/> might embarrass them; for it is almost an
+                    gratitude and affection I bear them; but pru-<lb/> dence forbids;— not that it
+                    would injure me, but it<lb/> might embarrass them; for it is almost an
                     unpar-<lb/> donable offence to teach slaves to read in this Chris-<lb/> tian
                     country. It is enough to say of the dear little<lb/> fellows, that they lived on
                     Philpot Street, very near<lb/> Durgin and Bailey's ship-yard. I used to talk
@@ -1607,8 +1575,8 @@
                     behalf of slavery was brought forward<lb/> by the master, all of which was
                     disposed of by the<lb/>
                     <pb n="42"/> slave. The slave was made to say some very smart as<lb/> well as
-                    impressive things in reply to his master—<lb/> things which had the
-                    desired though unexpected ef-<lb/> fect; for the conversation resulted in the
+                    impressive things in reply to his master—<lb/> things which had the desired
+                    though unexpected ef-<lb/> fect; for the conversation resulted in the
                     voluntary<lb/> emancipation of the slave on the part of the master.<lb/>
                 </p>
                 <p>In the same book, I met with one of Sheridan's<lb/> mighty speeches on and in
@@ -1697,29 +1665,28 @@
                     carpenters,<lb/> after hewing, and getting a piece of timber ready<lb/> for use,
                     write on the timber the name of that part<lb/> of the ship for which it was
                     intended. When a piece<lb/> of timber was intended for the larboard side,
-                    it<lb/> would be marked thus— "L." When a piece was for<lb/> the
-                    starboard side, it would be marked thus— "S." A<lb/> piece for the
-                    larboard side forward, would be marked<lb/> thus— "L. F." When a piece
-                    was for starboard side<lb/> forward, it would be marked thus— "S. F." For
-                    lar-<lb/> board aft, it would be marked thus— "L. A." For star-<lb/>
-                    board aft, it would be marked thus— "S. A." I soon<lb/> learned the names
-                    of these letters, and for what<lb/> they were intended when placed upon a piece
-                    of<lb/> timber in the ship-yard. I immediately commenced<lb/> copying them, and
-                    in a short time was able to make<lb/> the four letters named. After that, when I
-                    met with<lb/> any boy who I knew could write, I would tell him<lb/> I could
-                    write as well as he. The next word would be,<lb/> "I don't believe you. Let me
-                    see you try it." I would<lb/> then make the letters which I had been so
-                    fortunate<lb/> as to learn, and ask him to beat that. In this way I<lb/> got a
-                    good many lessons in writing, which it is quite<lb/> possible I should never
-                    have gotten in any other way.<lb/> During this time, my copy-book was the board
-                    fence,<lb/> brick wall, and pavement; my pen and ink was a<lb/> lump of chalk.
-                    With these, I learned mainly how to<lb/> write. I then commenced and continued
-                    copying the<lb/> Italics in Webster's Spelling Book, until I could make<lb/>
-                    them all without looking on the book. By this time,<lb/> my little Master Thomas
-                    had gone to school, and<lb/> learned how to write, and had written over a
-                    number<lb/> of copy-books. These had been brought home, and<lb/> shown to some
-                    of our near neighbors, and then laid<lb/> aside. My mistress used to go to class
-                    meeting at<lb/>
+                    it<lb/> would be marked thus— "L." When a piece was for<lb/> the starboard side,
+                    it would be marked thus— "S." A<lb/> piece for the larboard side forward, would
+                    be marked<lb/> thus— "L. F." When a piece was for starboard side<lb/> forward,
+                    it would be marked thus— "S. F." For lar-<lb/> board aft, it would be marked
+                    thus— "L. A." For star-<lb/> board aft, it would be marked thus— "S. A." I
+                    soon<lb/> learned the names of these letters, and for what<lb/> they were
+                    intended when placed upon a piece of<lb/> timber in the ship-yard. I immediately
+                    commenced<lb/> copying them, and in a short time was able to make<lb/> the four
+                    letters named. After that, when I met with<lb/> any boy who I knew could write,
+                    I would tell him<lb/> I could write as well as he. The next word would be,<lb/>
+                    "I don't believe you. Let me see you try it." I would<lb/> then make the letters
+                    which I had been so fortunate<lb/> as to learn, and ask him to beat that. In
+                    this way I<lb/> got a good many lessons in writing, which it is quite<lb/>
+                    possible I should never have gotten in any other way.<lb/> During this time, my
+                    copy-book was the board fence,<lb/> brick wall, and pavement; my pen and ink was
+                    a<lb/> lump of chalk. With these, I learned mainly how to<lb/> write. I then
+                    commenced and continued copying the<lb/> Italics in Webster's Spelling Book,
+                    until I could make<lb/> them all without looking on the book. By this time,<lb/>
+                    my little Master Thomas had gone to school, and<lb/> learned how to write, and
+                    had written over a number<lb/> of copy-books. These had been brought home,
+                    and<lb/> shown to some of our near neighbors, and then laid<lb/> aside. My
+                    mistress used to go to class meeting at<lb/>
                     <pb n="46"/> the Wilk Street meetinghouse every Monday after-<lb/> noon, and
                     leave me to take care of the house. When<lb/> left thus, I used to spend the
                     time in writing in the<lb/> spaces left in Master Thomas's copy-book,
@@ -1765,17 +1732,17 @@
                     the high excitement and deep<lb/> anxiety which were felt among us poor slaves
                     during<lb/> this time. Our fate for life was now to be decided.<lb/> we had no
                     more voice in that decision than the<lb/> brutes among whom we were ranked. A
-                    single word<lb/> from the white men was enough— against all our<lb/>
-                    wishes, prayers, and entreaties— to sunder forever the<lb/> dearest
-                    friends, dearest kindred, and strongest ties<lb/> known to human beings. In
-                    addition to the pain of<lb/> separation, there was the horrid dread of falling
-                    into<lb/> the hands of Master Andrew. He was known to us<lb/> all as being a
-                    most cruel wretch,— a common drunk-<lb/> ard, who had, by his reckless
-                    mismanagement and<lb/> profligate dissipation, already wasted a large por-<lb/>
-                    tion of his father's property. We all felt that we<lb/> might as well be sold at
-                    once to the Georgia traders,<lb/> as to pass into his hands; for we knew that
-                    that<lb/> would be our inevitable condition,— a condition held<lb/> by us
-                    all in the utmost horror and dread.<lb/>
+                    single word<lb/> from the white men was enough— against all our<lb/> wishes,
+                    prayers, and entreaties— to sunder forever the<lb/> dearest friends, dearest
+                    kindred, and strongest ties<lb/> known to human beings. In addition to the pain
+                    of<lb/> separation, there was the horrid dread of falling into<lb/> the hands of
+                    Master Andrew. He was known to us<lb/> all as being a most cruel wretch,— a
+                    common drunk-<lb/> ard, who had, by his reckless mismanagement and<lb/>
+                    profligate dissipation, already wasted a large por-<lb/> tion of his father's
+                    property. We all felt that we<lb/> might as well be sold at once to the Georgia
+                    traders,<lb/> as to pass into his hands; for we knew that that<lb/> would be our
+                    inevitable condition,— a condition held<lb/> by us all in the utmost horror and
+                    dread.<lb/>
                 </p>
                 <p>I suffered more anxiety than most of my fellow-<lb/> slaves. I had known what it
                     was to be kindly treated;<lb/> they had known nothing of the kind. They had
@@ -1785,15 +1752,14 @@
                     was yet tender; for while at Baltimore I got few whip-<lb/> pings, and few
                     slaves could boast of a kinder master<lb/> and mistress than myself; and the
                     thought of pass-<lb/>
-                    <pb n="49"/> ing out of their hands into those of Master Andrew—<lb/> a
-                    man who, but a few days before, to give me a<lb/> sample of his bloody
-                    disposition, took my little<lb/> brother by the throat, threw him on the ground,
-                    and<lb/> with the heel of his boot stamped upon his head<lb/> till the blood
-                    gushed from his nose and ears— was<lb/> well calculated to make me
-                    anxious as to my fate.<lb/> After he had committed this savage outrage upon<lb/>
-                    my brother, he turned to me, and said that was the<lb/> way he meant to serve me
-                    one of these days,— mean-<lb/> ing, I suppose, when I came into his
-                    possession.<lb/>
+                    <pb n="49"/> ing out of their hands into those of Master Andrew—<lb/> a man who,
+                    but a few days before, to give me a<lb/> sample of his bloody disposition, took
+                    my little<lb/> brother by the throat, threw him on the ground, and<lb/> with the
+                    heel of his boot stamped upon his head<lb/> till the blood gushed from his nose
+                    and ears— was<lb/> well calculated to make me anxious as to my fate.<lb/> After
+                    he had committed this savage outrage upon<lb/> my brother, he turned to me, and
+                    said that was the<lb/> way he meant to serve me one of these days,— mean-<lb/>
+                    ing, I suppose, when I came into his possession.<lb/>
                 </p>
                 <p>Thanks to a kind Providence, I fell to the portion<lb/> of Mrs. Lucretia, and was
                     sent immediately back<lb/> to Baltimore, to live again in the family of
@@ -1805,8 +1771,8 @@
                 <p>Very soon after my return to Baltimore, my mis-<lb/> tress, Lucretia, died,
                     leaving her husband and one<lb/> child, Amanda; and in a very short time after
                     her<lb/> death, Master Andrew died. Now all the property<lb/> of my old master,
-                    slaves included, was in the hands<lb/> of strangers,— strangers who had
-                    had nothing to do<lb/> with accumulating it. Not a slave was left free. All<lb/>
+                    slaves included, was in the hands<lb/> of strangers,— strangers who had had
+                    nothing to do<lb/> with accumulating it. Not a slave was left free. All<lb/>
                     remained slaves, from the youngest to the oldest. If<lb/> any one thing in my
                     experience, more than another,<lb/> served to deepen my conviction of the
                     infernal char-<lb/> acter of slavery, and to fill me with unutterable<lb/>
@@ -1818,23 +1784,22 @@
                     <pb n="50"/> him in infancy, attended him in childhood, served<lb/> him through
                     life, and at his death wiped from his<lb/> icy brow the cold death-sweat, and
                     closed his eyes<lb/> forever. She was nevertheless left a slave— a slave
-                    for<lb/> life— a slave in the hands of strangers; and in their<lb/> hands
-                    she saw her children, her grandchildren, and<lb/> her great-grandchildren,
-                    divided, like so many sheep,<lb/> without being gratified with the small
-                    privilege of a<lb/> single word, as to their or her own destiny. And, to<lb/>
-                    cap the climax of their base ingratitude and fiendish<lb/> barbarity, my
-                    grandmother, who was now very old,<lb/> having outlived my old master and all
-                    his children,<lb/> having seen the beginning and end of all of them,<lb/> and
-                    her present owners finding she was of but little<lb/> value, her frame already
-                    racked with the pains of old<lb/> age, and complete helplessness fast stealing
-                    over her<lb/> once active limbs, they took her to the woods, built<lb/> her a
-                    little hut, put up a little mud-chimney, and<lb/> then made her welcome to the
-                    privilege of support-<lb/> ing herself there in perfect loneliness; thus
-                    virtually<lb/> turning her out to die! If my poor old grandmother<lb/> now
-                    lives, she lives to suffer in utter loneliness; she<lb/> lives to remember and
-                    mourn over the loss of chil-<lb/> dren, the loss of grandchildren, and the loss
-                    of great-<lb/> grandchildren. They are, in the language of the<lb/> slave's
-                    poet, Whittier,—<lb/>
+                    for<lb/> life— a slave in the hands of strangers; and in their<lb/> hands she
+                    saw her children, her grandchildren, and<lb/> her great-grandchildren, divided,
+                    like so many sheep,<lb/> without being gratified with the small privilege of
+                    a<lb/> single word, as to their or her own destiny. And, to<lb/> cap the climax
+                    of their base ingratitude and fiendish<lb/> barbarity, my grandmother, who was
+                    now very old,<lb/> having outlived my old master and all his children,<lb/>
+                    having seen the beginning and end of all of them,<lb/> and her present owners
+                    finding she was of but little<lb/> value, her frame already racked with the
+                    pains of old<lb/> age, and complete helplessness fast stealing over her<lb/>
+                    once active limbs, they took her to the woods, built<lb/> her a little hut, put
+                    up a little mud-chimney, and<lb/> then made her welcome to the privilege of
+                    support-<lb/> ing herself there in perfect loneliness; thus virtually<lb/>
+                    turning her out to die! If my poor old grandmother<lb/> now lives, she lives to
+                    suffer in utter loneliness; she<lb/> lives to remember and mourn over the loss
+                    of chil-<lb/> dren, the loss of grandchildren, and the loss of great-<lb/>
+                    grandchildren. They are, in the language of the<lb/> slave's poet, Whittier,—<lb/>
                     <lb/>
                 </p>
                 <p>"Gone, gone, sold and gone<lb/>
@@ -1869,16 +1834,15 @@
                     of the hideous owl.<lb/> All is gloom. The grave is at the door. And now,<lb/>
                     when weighed down by the pains and aches of old<lb/> age, when the head inclines
                     to the feet, when the<lb/> beginning and ending of human existence meet,
-                    and<lb/> helpless infancy and painful old age combine to-<lb/> gether— at
-                    this time, this most needful time, the time<lb/> for the exercise of that
-                    tenderness and affection<lb/> which children only can exercise towards a
-                    declining<lb/> parent— my poor old grandmother, the devoted<lb/> mother
-                    of twelve children, is left all alone, in yonder<lb/> little hut, before a few
-                    dim embers. She stands—<lb/> she sits— she staggers— she
-                    falls— she groans— she dies<lb/>— and there are none of her
-                    children or grandchildren<lb/> present, to wipe from her wrinkled brow the
-                    cold<lb/> sweat of death, or to place beneath the sod her<lb/> fallen remains.
-                    Will not a righteous God visit for<lb/> these things?<lb/>
+                    and<lb/> helpless infancy and painful old age combine to-<lb/> gether— at this
+                    time, this most needful time, the time<lb/> for the exercise of that tenderness
+                    and affection<lb/> which children only can exercise towards a declining<lb/>
+                    parent— my poor old grandmother, the devoted<lb/> mother of twelve children, is
+                    left all alone, in yonder<lb/> little hut, before a few dim embers. She
+                    stands—<lb/> she sits— she staggers— she falls— she groans— she dies<lb/>— and
+                    there are none of her children or grandchildren<lb/> present, to wipe from her
+                    wrinkled brow the cold<lb/> sweat of death, or to place beneath the sod her<lb/>
+                    fallen remains. Will not a righteous God visit for<lb/> these things?<lb/>
                 </p>
                 <p>In about two years after the death of Mrs. Lu-<lb/> cretia, Master Thomas married
                     his second wife. Her<lb/> name was Rowena Hamilton. She was the eldest<lb/>
@@ -1928,18 +1892,18 @@
                     brought us into full acquaintance with each other.<lb/> I was made acquainted
                     with his wife not less than<lb/> with himself. They were well matched, being
                     equally<lb/> mean and cruel. I was now, for the first time during<lb/> a space
-                    of more than seven years, made to feel the<lb/> painful gnawings of hunger
-                   — a something which I<lb/> had not experienced before since I left
-                    Colonel<lb/> Lloyd's plantation. It went hard enough with me<lb/> then, when I
-                    could look back to no period at which<lb/> I had enjoyed a sufficiency. It was
-                    tenfold harder<lb/> after living in Master Hugh's family, where I had<lb/>
-                    always had enough to eat, and of that which was<lb/> good. I have said Master
-                    Thomas was a mean man.<lb/> He was so. Not to give a slave enough to eat,
-                    is<lb/> regarded as the most aggravated development of<lb/> meanness even among
-                    slaveholders. The rule is, no<lb/> matter how coarse the food, only let there be
-                    enough<lb/> of it. This is the theory; and in the part of Maryland<lb/> from
-                    which I came, it is the general practice,— though<lb/> there are many
-                    exceptions. Master Thomas gave us<lb/>
+                    of more than seven years, made to feel the<lb/> painful gnawings of hunger — a
+                    something which I<lb/> had not experienced before since I left Colonel<lb/>
+                    Lloyd's plantation. It went hard enough with me<lb/> then, when I could look
+                    back to no period at which<lb/> I had enjoyed a sufficiency. It was tenfold
+                    harder<lb/> after living in Master Hugh's family, where I had<lb/> always had
+                    enough to eat, and of that which was<lb/> good. I have said Master Thomas was a
+                    mean man.<lb/> He was so. Not to give a slave enough to eat, is<lb/> regarded as
+                    the most aggravated development of<lb/> meanness even among slaveholders. The
+                    rule is, no<lb/> matter how coarse the food, only let there be enough<lb/> of
+                    it. This is the theory; and in the part of Maryland<lb/> from which I came, it
+                    is the general practice,— though<lb/> there are many exceptions. Master Thomas
+                    gave us<lb/>
                     <pb n="54"/> enough of neither coarse nor fine food. There were<lb/> four slaves
                     of us in the kitchen— my sister Eliza, my<lb/> aunt Priscilla, Henny, and
                     myself; and we were al-<lb/> lowed less than a half of a bushel of corn-meal
@@ -2032,8 +1996,8 @@
                     seen<lb/> him tie up a lame young woman, and whip her with<lb/> a heavy cowskin
                     upon her naked shoulders, causing<lb/> the warm red blood to drip; and, in
                     justification<lb/> of the bloody deed, he would quote this passage of<lb/>
-                    Scripture— "He that knoweth his master's will, and<lb/> doeth it not,
-                    shall be beaten with many stripes."<lb/>
+                    Scripture— "He that knoweth his master's will, and<lb/> doeth it not, shall be
+                    beaten with many stripes."<lb/>
                 </p>
                 <p>Master would keep this lacerated young woman<lb/> tied up in this horrid
                     situation four or five hours at<lb/> a time. I have known him to tie her up
@@ -2078,9 +2042,9 @@
                     slaves<lb/> one year, for the sake of the training to which they<lb/> were
                     subjected, without any other compensation.<lb/> He could hire young help with
                     great ease, in con-<lb/> sequence of this reputation. Added to the natural<lb/>
-                    good qualities of Mr. Covey, he was a professor of<lb/> religion— a pious
-                    soul— a member and a class-leader in<lb/> the Methodist church. All of
-                    this added weight to<lb/>
+                    good qualities of Mr. Covey, he was a professor of<lb/> religion— a pious soul—
+                    a member and a class-leader in<lb/> the Methodist church. All of this added
+                    weight to<lb/>
                     <pb n="59"/> his reputation as a "nigger-breaker." I was aware of<lb/> all the
                     facts, having been made acquainted with<lb/> them by a young man who had lived
                     there. I never-<lb/> theless made the change gladly; for I was sure of<lb/>
@@ -2388,12 +2352,12 @@
                     gave up the<lb/> chase, thinking, I suppose, that I must come home<lb/> for
                     something to eat; he would give himself no fur-<lb/> ther trouble in looking for
                     me. I spent that day<lb/> mostly in the woods, having the alternative
-                    before<lb/> me,— to go home and be whipped to death, or stay<lb/> in the
-                    woods and be starved to death. That night,<lb/> I fell in with Sandy Jenkins, a
-                    slave with whom<lb/> I was somewhat acquainted. Sandy had a free wife<lb/> who
-                    lived about four miles from Mr. Covey's; and<lb/> it being Saturday, he was on
-                    his way to see her. I<lb/> told him my circumstances, and he very kindly
-                    in-<lb/> vited me to go home with him. I went home with<lb/>
+                    before<lb/> me,— to go home and be whipped to death, or stay<lb/> in the woods
+                    and be starved to death. That night,<lb/> I fell in with Sandy Jenkins, a slave
+                    with whom<lb/> I was somewhat acquainted. Sandy had a free wife<lb/> who lived
+                    about four miles from Mr. Covey's; and<lb/> it being Saturday, he was on his way
+                    to see her. I<lb/> told him my circumstances, and he very kindly in-<lb/> vited
+                    me to go home with him. I went home with<lb/>
                     <pb n="72"/> him, and talked this whole matter over, and got his<lb/> advice as
                     to what course it was best for me to pursue.<lb/> I found Sandy an old adviser.
                     He told me, with<lb/> great solemnity, I must go back to Covey; but that<lb/>
@@ -2426,27 +2390,27 @@
                     what he was up to, I gave<lb/> a sudden spring, and as I did so, he holding to
                     my<lb/> legs, I was brought sprawling on the stable floor.<lb/> Mr. Covey seemed
                     now to think he had me, and<lb/> could do what he pleased; but at this moment
-                   —<lb/> from whence came the spirit I don't know— I re-<lb/> solved
-                    to fight; and, suiting my action to the reso-<lb/> lution, I seized Covey hard
-                    by the throat; and as I<lb/> did so, I rose. He held on to me, and I to him.
-                    My<lb/> resistance was so entirely unexpected that Covey<lb/> seemed taken all
-                    aback. He trembled like a leaf.<lb/> This gave me assurance, and I held him
-                    uneasy,<lb/> causing the blood to run where I touched him with<lb/> the ends of
-                    my fingers. Mr. Covey soon called out<lb/> to Hughes for help. Hughes came, and,
-                    while Covey<lb/> held me, attempted to tie my right hand. While he<lb/> was in
-                    the act of doing so, I watched my chance,<lb/> and gave him a heavy kick close
-                    under the ribs.<lb/> This kick fairly sickened Hughes, so that he left<lb/> me
-                    in the hands of Mr. Covey. This kick had the<lb/> effect of not only weakening
-                    Hughes, but Covey also.<lb/> When he saw Hughes bending over with pain, his<lb/>
-                    courage quailed. He asked me if I meant to persist<lb/> in my resistance. I told
-                    him I did, come what<lb/> might; that he had used me like a brute for six<lb/>
-                    months, and that I was determined to be used so<lb/> no longer. With that, he
-                    strove to drag me to a<lb/> stick that was lying just out of the stable door.
-                    He<lb/> meant to knock me down. But just as he was leaning<lb/> over to get the
-                    stick, I seized him with both hands<lb/> by his collar, and brought him by a
-                    sudden snatch<lb/> to the ground. By this time, Bill came. Covey called<lb/>
-                    upon him for assistance. Bill wanted to know what<lb/> he could do. Covey said,
-                    "Take hold of him, take<lb/>
+                    —<lb/> from whence came the spirit I don't know— I re-<lb/> solved to fight;
+                    and, suiting my action to the reso-<lb/> lution, I seized Covey hard by the
+                    throat; and as I<lb/> did so, I rose. He held on to me, and I to him. My<lb/>
+                    resistance was so entirely unexpected that Covey<lb/> seemed taken all aback. He
+                    trembled like a leaf.<lb/> This gave me assurance, and I held him uneasy,<lb/>
+                    causing the blood to run where I touched him with<lb/> the ends of my fingers.
+                    Mr. Covey soon called out<lb/> to Hughes for help. Hughes came, and, while
+                    Covey<lb/> held me, attempted to tie my right hand. While he<lb/> was in the act
+                    of doing so, I watched my chance,<lb/> and gave him a heavy kick close under the
+                    ribs.<lb/> This kick fairly sickened Hughes, so that he left<lb/> me in the
+                    hands of Mr. Covey. This kick had the<lb/> effect of not only weakening Hughes,
+                    but Covey also.<lb/> When he saw Hughes bending over with pain, his<lb/> courage
+                    quailed. He asked me if I meant to persist<lb/> in my resistance. I told him I
+                    did, come what<lb/> might; that he had used me like a brute for six<lb/> months,
+                    and that I was determined to be used so<lb/> no longer. With that, he strove to
+                    drag me to a<lb/> stick that was lying just out of the stable door. He<lb/>
+                    meant to knock me down. But just as he was leaning<lb/> over to get the stick, I
+                    seized him with both hands<lb/> by his collar, and brought him by a sudden
+                    snatch<lb/> to the ground. By this time, Bill came. Covey called<lb/> upon him
+                    for assistance. Bill wanted to know what<lb/> he could do. Covey said, "Take
+                    hold of him, take<lb/>
                     <pb n="74"/> hold of him!" Bill said his master hired him out to<lb/> work, and
                     not to help to whip me; so he left Covey<lb/> and myself to fight our own battle
                     out. We were<lb/> at it for nearly two hours. Covey at length let me<lb/> go,
@@ -2485,10 +2449,9 @@
                     does not entirely<lb/> satisfy me; but such as it is, I will give it. Mr.
                     Covey<lb/> enjoyed the most unbounded reputation for being<lb/> a first-rate
                     overseer and negro-breaker. It was of con-<lb/> siderable importance to him.
-                    That reputation was at<lb/> stake; and had he sent me— a boy about
-                    sixteen years<lb/> old— to the public whipping-post, his reputation<lb/>
-                    would have been lost; so, to save his reputation, he<lb/> suffered me to go
-                    unpunished.<lb/>
+                    That reputation was at<lb/> stake; and had he sent me— a boy about sixteen
+                    years<lb/> old— to the public whipping-post, his reputation<lb/> would have been
+                    lost; so, to save his reputation, he<lb/> suffered me to go unpunished.<lb/>
                 </p>
                 <p>My term of actual service to Mr. Edward Covey<lb/> ended on Christmas day, 1833.
                     The days between<lb/> Christmas and New Year's day are allowed as holi-<lb/>
@@ -2547,8 +2510,8 @@
                     to choose<lb/> between liberty and slavery. We felt, and very prop-<lb/> erly
                     too, that we had almost as well be slaves to<lb/> man as to rum. So, when the
                     holidays ended, we<lb/> staggered up from the filth of our wallowing, took<lb/>
-                    a long breath, and marched to the field,— feeling,<lb/> upon the whole,
-                    rather glad to go, from what our<lb/> master had deceived us into a belief was
+                    a long breath, and marched to the field,— feeling,<lb/> upon the whole, rather
+                    glad to go, from what our<lb/> master had deceived us into a belief was
                     freedom,<lb/> back to the arms of slavery.<lb/>
                 </p>
                 <p>I have said that this mode of treatment is a part<lb/> of the whole system of
@@ -2587,9 +2550,9 @@
                     made no pretensions to,<lb/> or profession of, religion; and this, in my
                     opinion,<lb/> was truly a great advantage. I assert most unhesi-<lb/> tatingly,
                     that the religion of the south is a mere<lb/> covering for the most horrid
-                    crimes,— a justifier of<lb/> the most appalling barbarity,— a
-                    sanctifier of the<lb/> most hateful frauds,— and a dark shelter
-                    under,<lb/> which the darkest, foulest, grossest, and most infer-<lb/>
+                    crimes,— a justifier of<lb/> the most appalling barbarity,— a sanctifier of
+                    the<lb/> most hateful frauds,— and a dark shelter under,<lb/> which the darkest,
+                    foulest, grossest, and most infer-<lb/>
                     <pb n="79"/> nal deeds of slaveholders find the strongest protec-<lb/> tion.
                     Were I to be again reduced to the chains of<lb/> slavery, next to that
                     enslavement, I should regard<lb/> being the slave of a religious master the
@@ -2616,8 +2579,8 @@
                     ones. Mr. Hopkins<lb/> could always find some excuse for whipping a slave.<lb/>
                     It would astonish one, unaccustomed to a slave-<lb/> holding life, to see with
                     what wonderful ease a slave-<lb/> holder can find things, of which to make
-                    occasion<lb/> to whip a slave. A mere look, word, or motion,— a<lb/>
-                    mistake, accident, or want of power,— are all matters<lb/>
+                    occasion<lb/> to whip a slave. A mere look, word, or motion,— a<lb/> mistake,
+                    accident, or want of power,— are all matters<lb/>
                     <pb n="80"/> for which a slave may be whipped at any time. Does<lb/> a slave
                     look dissatisfied? It is said, he has the devil<lb/> in him, and it must be
                     whipped out. Does he speak<lb/> loudly when spoken to by his master? Then he
@@ -2625,22 +2588,22 @@
                     Does he forget to pull off his<lb/> hat at the approach of a white person? Then
                     he is<lb/> wanting in reverence, and should be whipped for<lb/> it. Does he ever
                     venture to vindicate his conduct,<lb/> when censured for it? Then he is guilty
-                    of impu-<lb/> dence,— one of the greatest crimes of which a slave<lb/>
-                    can be guilty. Does he ever venture to suggest a<lb/> different mode of doing
-                    things from that pointed<lb/> out by his master? He is indeed presumptuous,
-                    and<lb/> getting above himself; and nothing less than a flog-<lb/> ging will do
-                    for him. Does he, while ploughing,<lb/> break a plough,— or, while
-                    hoeing, break a hoe? It<lb/> is owing to his carelessness, and for it a slave
-                    must<lb/> always be whipped. Mr. Hopkins could always find<lb/> something of
-                    this sort to justify the use of the lash,<lb/> and he seldom failed to embrace
-                    such opportunities.<lb/> There was not a man in the whole county, with<lb/> whom
-                    the slaves who had the getting their own<lb/> home, would not prefer to live,
-                    rather than with<lb/> this Rev. Mr. Hopkins. And yet there was not a<lb/> man
-                    any where round, who made higher professions<lb/> of religion, or was more
-                    active in revivals,— more<lb/> attentive to the class, love-feast, prayer
-                    and preach-<lb/> ing meetings, or more devotional in his family,—<lb/>
-                    that prayed earlier, later, louder, and longer,— than<lb/> this same
-                    reverend slave-driver, Rigby Hopkins.<lb/>
+                    of impu-<lb/> dence,— one of the greatest crimes of which a slave<lb/> can be
+                    guilty. Does he ever venture to suggest a<lb/> different mode of doing things
+                    from that pointed<lb/> out by his master? He is indeed presumptuous, and<lb/>
+                    getting above himself; and nothing less than a flog-<lb/> ging will do for him.
+                    Does he, while ploughing,<lb/> break a plough,— or, while hoeing, break a hoe?
+                    It<lb/> is owing to his carelessness, and for it a slave must<lb/> always be
+                    whipped. Mr. Hopkins could always find<lb/> something of this sort to justify
+                    the use of the lash,<lb/> and he seldom failed to embrace such
+                    opportunities.<lb/> There was not a man in the whole county, with<lb/> whom the
+                    slaves who had the getting their own<lb/> home, would not prefer to live, rather
+                    than with<lb/> this Rev. Mr. Hopkins. And yet there was not a<lb/> man any where
+                    round, who made higher professions<lb/> of religion, or was more active in
+                    revivals,— more<lb/> attentive to the class, love-feast, prayer and preach-<lb/>
+                    ing meetings, or more devotional in his family,—<lb/> that prayed earlier,
+                    later, louder, and longer,— than<lb/> this same reverend slave-driver, Rigby
+                    Hopkins.<lb/>
                 </p>
                 <p>But to return to Mr. Freeland, and to my experi-<lb/> ence while in his
                     employment. He, like Mr. Covey,<lb/> gave us enough to eat; but, unlike Mr.
@@ -2759,39 +2722,38 @@
                     called on to meet. At times were were almost dis-<lb/> posed to give up, and try
                     to content ourselves with<lb/> our wretched lot; at others, we were firm and
                     un-<lb/> bending in our determination to go. Whenever we<lb/> suggested any
-                    plan, there was shrinking— the odds<lb/> were fearful. Our path was beset
-                    with the greatest<lb/> obstacles; and if we succeeded in gaining the end<lb/>
-                    <pb n="85"/> of it, our right to be free was yet questionable— we<lb/>
-                    were yet liable to be returned to bondage. We could<lb/> see no spot, this side
-                    of the ocean, where we could<lb/> be free. We knew nothing about Canada.
-                    Our<lb/> knowledge of the north did not extend farther than<lb/> New York; and
-                    to go there, and be forever harassed<lb/> with the frightful liability of being
-                    returned to<lb/> slavery— with the certainty of being treated
-                    tenfold<lb/> worse than before— the thought was truly a horrible<lb/>
-                    one, and one which it was not easy to overcome.<lb/> The case sometimes stood
-                    thus: At every gate<lb/> through which we were to pass, we saw a watchman<lb/>
-                   — at every ferry a guard— on every bridge a sentinel—<lb/>
-                    and in every wood a patrol. We were hemmed in<lb/> upon every side. Here were
-                    the difficulties, real or<lb/> imagined— the good to be sought, and the
-                    evil to be<lb/> shunned. On the one hand, there stood slavery, a<lb/> stern
-                    reality, glaring frightfully upon us,— its robes<lb/> already crimsoned
-                    with the blood of millions, and<lb/> even now feasting itself greedily upon our
-                    own flesh.<lb/> On the other hand, away back in the dim distance,<lb/> under the
-                    flickering light of the north star, behind<lb/> some craggy hill or snow-covered
-                    mountain, stood<lb/> a doubtful freedom— half frozen— beckoning us
+                    plan, there was shrinking— the odds<lb/> were fearful. Our path was beset with
+                    the greatest<lb/> obstacles; and if we succeeded in gaining the end<lb/>
+                    <pb n="85"/> of it, our right to be free was yet questionable— we<lb/> were yet
+                    liable to be returned to bondage. We could<lb/> see no spot, this side of the
+                    ocean, where we could<lb/> be free. We knew nothing about Canada. Our<lb/>
+                    knowledge of the north did not extend farther than<lb/> New York; and to go
+                    there, and be forever harassed<lb/> with the frightful liability of being
+                    returned to<lb/> slavery— with the certainty of being treated tenfold<lb/> worse
+                    than before— the thought was truly a horrible<lb/> one, and one which it was not
+                    easy to overcome.<lb/> The case sometimes stood thus: At every gate<lb/> through
+                    which we were to pass, we saw a watchman<lb/> — at every ferry a guard— on every
+                    bridge a sentinel—<lb/> and in every wood a patrol. We were hemmed in<lb/> upon
+                    every side. Here were the difficulties, real or<lb/> imagined— the good to be
+                    sought, and the evil to be<lb/> shunned. On the one hand, there stood slavery,
+                    a<lb/> stern reality, glaring frightfully upon us,— its robes<lb/> already
+                    crimsoned with the blood of millions, and<lb/> even now feasting itself greedily
+                    upon our own flesh.<lb/> On the other hand, away back in the dim distance,<lb/>
+                    under the flickering light of the north star, behind<lb/> some craggy hill or
+                    snow-covered mountain, stood<lb/> a doubtful freedom— half frozen— beckoning us
                     to<lb/> come and share its hospitality. This in itself was<lb/> sometimes enough
                     to stagger us; but when we per-<lb/> mitted ourselves to survey the road, we
                     were fre-<lb/> quently appalled. Upon either side we saw grim<lb/> death,
                     assuming the most horrid shapes. Now it was<lb/> starvation, causing us to eat
                     our own flesh;— now we<lb/> were contending with the waves, and were
-                    drowned;<lb/>— now we were overtaken, and torn to pieces by the<lb/>
-                    fangs of the terrible bloodhound. We were stung<lb/> by scorpions, chased by
-                    wild beasts, bitten by snakes,<lb/> and finally, after having nearly reached the
-                    desired<lb/> spot,— after swimming rivers, encountering wild<lb/> beasts,
-                    sleeping in the woods, suffering hunger and<lb/>
-                    <pb n="86"/> nakedness,— we were overtaken by our pursuers, and,<lb/> in
-                    our resistance, we were shot dead upon the spot!<lb/> I say, this picture
-                    sometimes appalled us, and made<lb/> us<lb/>
+                    drowned;<lb/>— now we were overtaken, and torn to pieces by the<lb/> fangs of
+                    the terrible bloodhound. We were stung<lb/> by scorpions, chased by wild beasts,
+                    bitten by snakes,<lb/> and finally, after having nearly reached the desired<lb/>
+                    spot,— after swimming rivers, encountering wild<lb/> beasts, sleeping in the
+                    woods, suffering hunger and<lb/>
+                    <pb n="86"/> nakedness,— we were overtaken by our pursuers, and,<lb/> in our
+                    resistance, we were shot dead upon the spot!<lb/> I say, this picture sometimes
+                    appalled us, and made<lb/> us<lb/>
                     <lb/>
                 </p>
                 <p> "rather bear those ills we had,<lb/>
@@ -2893,11 +2855,11 @@
                     Mr. Freeland put his head in at the door, and<lb/> called me by name, saying,
                     there were some gentle-<lb/> men at the door who wished to see me. I
                     stepped<lb/> to the door, and inquired what they wanted. They<lb/> at once
-                    seized me, and, without giving me any satis-<lb/> faction, tied me—
-                    lashing my hands closely together.<lb/> I insisted upon knowing what the matter
-                    was. They<lb/> at length said, that they had learned I had been in a<lb/>
-                    "scrape," and that I was to be examined before my<lb/> master; and if their
-                    information proved false, I<lb/> should not be hurt.<lb/>
+                    seized me, and, without giving me any satis-<lb/> faction, tied me— lashing my
+                    hands closely together.<lb/> I insisted upon knowing what the matter was.
+                    They<lb/> at length said, that they had learned I had been in a<lb/> "scrape,"
+                    and that I was to be examined before my<lb/> master; and if their information
+                    proved false, I<lb/> should not be hurt.<lb/>
                 </p>
                 <p>In a few moments, they succeeded in tying John.<lb/> They then turned to Henry,
                     who had by this time<lb/> returned, and commanded him to cross his hands.<lb/>
@@ -2909,8 +2871,8 @@
                     cocked<lb/> his pistol, and, with fingers on the trigger, walked<lb/> up to
                     Henry, saying, at the same time, if he did not<lb/> cross his hands, they would
                     blow his damned heart<lb/> out. "Shoot me, shoot me!" said Henry; "you
-                    can't<lb/> kill me but once. Shoot, shoot,— and be damned! I<lb/> WON'T
-                    BE TIED!" This he said in a tone of loud defi-<lb/> ance; and at the same time,
+                    can't<lb/> kill me but once. Shoot, shoot,— and be damned! I<lb/> WON'T BE
+                    TIED!" This he said in a tone of loud defi-<lb/> ance; and at the same time,
                     with a motion as quick<lb/> as lightning, he with one single stroke dashed
                     the<lb/> pistols from the hand of each constable. As he did<lb/>
                     <pb n="90"/> this, all hands fell upon him, and, after beating<lb/> him some
@@ -2921,17 +2883,17 @@
                     just<lb/> as we were to leave for Easton jail, Betsy Freeland,<lb/> mother of
                     William Freeland, came to the door with<lb/> her hands full of biscuits, and
                     divided them between<lb/> Henry and John. She then delivered herself of a<lb/>
-                    speech, to the following effect:— addressing herself<lb/> to me, she
-                    said, "YOU DEVIL! YOU YELLOW DEVIL! it was<lb/> you that put it into the heads
-                    of Henry and John<lb/> to run away. But for you, you long-legged mulatto<lb/>
-                    devil! Henry nor John would never have thought<lb/> of such a thing." I made no
-                    reply, and was imme-<lb/> diately hurried off towards St. Michael's. Just a
-                    mo-<lb/> ment previous to the scuffle with Henry, Mr. Hamil-<lb/> ton suggested
-                    the propriety of making a search for<lb/> the protections which he had
-                    understood Frederick<lb/> had written for himself and the rest. But, just
-                    at<lb/> the moment he was about carrying his proposal into<lb/> effect, his aid
-                    was needed in helping to tie Henry;<lb/> and the excitement attending the
-                    scuffle caused<lb/> them either to forget, or to deem it unsafe, under<lb/> the
+                    speech, to the following effect:— addressing herself<lb/> to me, she said, "YOU
+                    DEVIL! YOU YELLOW DEVIL! it was<lb/> you that put it into the heads of Henry and
+                    John<lb/> to run away. But for you, you long-legged mulatto<lb/> devil! Henry
+                    nor John would never have thought<lb/> of such a thing." I made no reply, and
+                    was imme-<lb/> diately hurried off towards St. Michael's. Just a mo-<lb/> ment
+                    previous to the scuffle with Henry, Mr. Hamil-<lb/> ton suggested the propriety
+                    of making a search for<lb/> the protections which he had understood
+                    Frederick<lb/> had written for himself and the rest. But, just at<lb/> the
+                    moment he was about carrying his proposal into<lb/> effect, his aid was needed
+                    in helping to tie Henry;<lb/> and the excitement attending the scuffle
+                    caused<lb/> them either to forget, or to deem it unsafe, under<lb/> the
                     circumstances, to search. So we were not yet<lb/> convicted of the intention to
                     run away.<lb/>
                 </p>
@@ -2954,9 +2916,9 @@
                     we came to<lb/> a unanimous decision among ourselves as to who<lb/> their
                     informant was. We were sent off to the jail at<lb/> Easton. When we got there,
                     we were delivered up<lb/> to the sheriff, Mr. Joseph Graham, and by him<lb/>
-                    placed in jail. Henry, John, and myself, were placed<lb/> in one room together
-                   — Charles, and Henry Bailey,<lb/> in another. Their object in separating
-                    us was to<lb/> hinder concert.<lb/>
+                    placed in jail. Henry, John, and myself, were placed<lb/> in one room together —
+                    Charles, and Henry Bailey,<lb/> in another. Their object in separating us was
+                    to<lb/> hinder concert.<lb/>
                 </p>
                 <p>We had been in jail scarcely twenty minutes,<lb/> when a swarm of slave traders,
                     and agents for slave<lb/> traders, flocked into jail to look at us, and to
@@ -3027,19 +2989,18 @@
                     needed a dozen pair of hands.<lb/> I was called a dozen ways in the space of a
                     single<lb/> minute. Three or four voices would strike my ear<lb/> at the same
                     moment. It was— "Fred., come help me<lb/>
-                    <pb n="94"/> to cant this timber here."— "Fred., come carry this<lb/>
-                    timber yonder."— "Fred., bring that roller here."—<lb/> "Fred., go
-                    get a fresh can of water."— "Fred., come<lb/> help saw off the end of
-                    this timber."— "Fred., go<lb/> quick, and get the crowbar."—
-                    "Fred., hold on the<lb/> end of this fall."— "Fred., go to the
-                    blacksmith's<lb/> shop, and get a new punch."— "Hurra, Fred.! run<lb/>
-                    and bring me a cold chisel."— "I say, Fred., bear a<lb/> hand, and get up
-                    a fire as quick as lightning under<lb/> that steam-box."— "Halloo,
+                    <pb n="94"/> to cant this timber here."— "Fred., come carry this<lb/> timber
+                    yonder."— "Fred., bring that roller here."—<lb/> "Fred., go get a fresh can of
+                    water."— "Fred., come<lb/> help saw off the end of this timber."— "Fred.,
+                    go<lb/> quick, and get the crowbar."— "Fred., hold on the<lb/> end of this
+                    fall."— "Fred., go to the blacksmith's<lb/> shop, and get a new punch."— "Hurra,
+                    Fred.! run<lb/> and bring me a cold chisel."— "I say, Fred., bear a<lb/> hand,
+                    and get up a fire as quick as lightning under<lb/> that steam-box."— "Halloo,
                     nigger! come, turn this<lb/> grindstone."— "Come, come! move, move! and
-                    BOWSE<lb/> this timber forward."— "I say, darky, blast your eyes,<lb/>
-                    why don't you heat up some pitch?"— "Halloo!<lb/> halloo! halloo!" (Three
-                    voices at the same time.)<lb/> "Come here!— Go there!— Hold on
-                    where you are!<lb/> Damn you, if you move, I'll knock your brains out!"<lb/>
+                    BOWSE<lb/> this timber forward."— "I say, darky, blast your eyes,<lb/> why don't
+                    you heat up some pitch?"— "Halloo!<lb/> halloo! halloo!" (Three voices at the
+                    same time.)<lb/> "Come here!— Go there!— Hold on where you are!<lb/> Damn you,
+                    if you move, I'll knock your brains out!"<lb/>
                 </p>
                 <p>This was my school for eight months; and I might<lb/> have remained there longer,
                     but for a most horrid<lb/> fight I had with four of the white apprentices,
@@ -3142,25 +3103,25 @@
                     over me again. When in Mr. Gardner's employ-<lb/> ment, I was kept in such a
                     perpetual whirl of ex-<lb/> citement, I could think of nothing, scarcely,
                     but<lb/> my life; and in thinking of my life, I almost forgot<lb/> my liberty. I
-                    have observed this in my experience<lb/> of slavery,— that whenever my
-                    condition was im-<lb/> proved, instead of its increasing my contentment,<lb/> it
-                    only increased my desire to be free, and set me to<lb/> thinking of plans to
-                    gain my freedom. I have found<lb/> that, to make a contented slave, it is
-                    necessary to<lb/> make a thoughtless one. It is necessary to darken his<lb/>
-                    moral and mental vision, and, as far as possible, to<lb/> annihilate the power
-                    of reason. He must be able to<lb/> detect no inconsistencies in slavery; he must
-                    be made<lb/> to feel that slavery is right; and he can be brought<lb/> to that
-                    only when he ceases to be a man.<lb/>
+                    have observed this in my experience<lb/> of slavery,— that whenever my condition
+                    was im-<lb/> proved, instead of its increasing my contentment,<lb/> it only
+                    increased my desire to be free, and set me to<lb/> thinking of plans to gain my
+                    freedom. I have found<lb/> that, to make a contented slave, it is necessary
+                    to<lb/> make a thoughtless one. It is necessary to darken his<lb/> moral and
+                    mental vision, and, as far as possible, to<lb/> annihilate the power of reason.
+                    He must be able to<lb/> detect no inconsistencies in slavery; he must be
+                    made<lb/> to feel that slavery is right; and he can be brought<lb/> to that only
+                    when he ceases to be a man.<lb/>
                 </p>
                 <p>I was now getting, as I have said, one dollar and<lb/> fifty cents per day. I
                     contracted for it; I earned it;<lb/> it was paid to me; it was rightfully my
                     own; yet,<lb/> upon each returning Saturday night, I was compelled<lb/> to
                     deliver every cent of that money to Master Hugh.<lb/> And why? Not because he
-                    earned it,— not because<lb/> he had any hand in earning it,— not
-                    because I owed<lb/> it to him,— nor because he possessed the
-                    slightest<lb/> shadow of a right to it; but solely because he had<lb/> the power
-                    to compel me to give it up. The right of<lb/> the grim-visaged pirate upon the
-                    high seas is exactly<lb/> the same.<lb/>
+                    earned it,— not because<lb/> he had any hand in earning it,— not because I
+                    owed<lb/> it to him,— nor because he possessed the slightest<lb/> shadow of a
+                    right to it; but solely because he had<lb/> the power to compel me to give it
+                    up. The right of<lb/> the grim-visaged pirate upon the high seas is exactly<lb/>
+                    the same.<lb/>
                     <pb n="99"/>
                 </p>
             </div>
@@ -3329,30 +3290,29 @@
                 <p>Things went on without very smoothly indeed,<lb/> but within there was trouble.
                     It is impossible for<lb/>
                     <pb n="105"/> me to describe my feelings as the time of my con-<lb/> templated
-                    start drew near. I had a number of warm-<lb/> hearted friends in Baltimore,
-                   — friends that I loved<lb/> almost as I did my life,— and the
-                    thought of being<lb/> separated from them forever was painful beyond<lb/>
-                    expression. It is my opinion that thousands would<lb/> escape from slavery, who
-                    now remain, but for the<lb/> strong cords of affection that bind them to
-                    their<lb/> friends. The thought of leaving my friends was de-<lb/> cidedly the
-                    most painful thought with which I had<lb/> to contend. The love of them was my
-                    tender point,<lb/> and shook my decision more than all things else.<lb/> Besides
-                    the pain of separation, the dread and appre-<lb/> hension of a failure exceeded
-                    what I had experienced<lb/> at my first attempt. The appalling defeat I
-                    then<lb/> sustained returned to torment me. I felt assured<lb/> that, if I
-                    failed in this attempt, my case would be<lb/> a hopeless one— it would
-                    seal my fate as a slave for-<lb/> ever. I could not hope to get off with any
-                    thing less<lb/> than the severest punishment, and being placed<lb/> beyond the
-                    means of escape. It required no very<lb/> vivid imagination to depict the most
-                    frightful<lb/> scenes through which I should have to pass, in case<lb/> I
-                    failed. The wretchedness of slavery, and the<lb/> blessedness of freedom, were
-                    perpetually before me.<lb/> It was life and death with me. But I remained<lb/>
-                    firm, and, according to my resolution, on the third<lb/> day of September, 1838,
-                    I left my chains, and suc-<lb/> ceeded in reaching New York without the
-                    slightest<lb/> interruption of any kind. How I did so,— what means<lb/> I
-                    adopted,— what direction I travelled, and by what<lb/> mode of
-                    conveyance,— I must leave unexplained,<lb/> for the reasons before
-                    mentioned.<lb/>
+                    start drew near. I had a number of warm-<lb/> hearted friends in Baltimore, —
+                    friends that I loved<lb/> almost as I did my life,— and the thought of
+                    being<lb/> separated from them forever was painful beyond<lb/> expression. It is
+                    my opinion that thousands would<lb/> escape from slavery, who now remain, but
+                    for the<lb/> strong cords of affection that bind them to their<lb/> friends. The
+                    thought of leaving my friends was de-<lb/> cidedly the most painful thought with
+                    which I had<lb/> to contend. The love of them was my tender point,<lb/> and
+                    shook my decision more than all things else.<lb/> Besides the pain of
+                    separation, the dread and appre-<lb/> hension of a failure exceeded what I had
+                    experienced<lb/> at my first attempt. The appalling defeat I then<lb/> sustained
+                    returned to torment me. I felt assured<lb/> that, if I failed in this attempt,
+                    my case would be<lb/> a hopeless one— it would seal my fate as a slave for-<lb/>
+                    ever. I could not hope to get off with any thing less<lb/> than the severest
+                    punishment, and being placed<lb/> beyond the means of escape. It required no
+                    very<lb/> vivid imagination to depict the most frightful<lb/> scenes through
+                    which I should have to pass, in case<lb/> I failed. The wretchedness of slavery,
+                    and the<lb/> blessedness of freedom, were perpetually before me.<lb/> It was
+                    life and death with me. But I remained<lb/> firm, and, according to my
+                    resolution, on the third<lb/> day of September, 1838, I left my chains, and
+                    suc-<lb/> ceeded in reaching New York without the slightest<lb/> interruption of
+                    any kind. How I did so,— what means<lb/> I adopted,— what direction I travelled,
+                    and by what<lb/> mode of conveyance,— I must leave unexplained,<lb/> for the
+                    reasons before mentioned.<lb/>
                 </p>
                 <p>I have been frequently asked how I felt when I<lb/> found myself in a free State.
                     I have never been able<lb/> to answer the question with any satisfaction to
@@ -3367,37 +3327,35 @@
                     This in itself was enough<lb/> to damp the ardor of my enthusiasm. But the
                     lone-<lb/> liness overcame me. There I was in the midst of<lb/> thousands, and
                     yet a perfect stranger; without home<lb/> and without friends, in the midst of
-                    thousands of my<lb/> own brethren— children of a common Father, and<lb/>
-                    yet I dared not to unfold to any one of them my<lb/> sad condition. I was afraid
-                    to speak to any one for<lb/> fear of speaking to the wrong one, and thereby
+                    thousands of my<lb/> own brethren— children of a common Father, and<lb/> yet I
+                    dared not to unfold to any one of them my<lb/> sad condition. I was afraid to
+                    speak to any one for<lb/> fear of speaking to the wrong one, and thereby
                     fall-<lb/> ing into the hands of money-loving kidnappers,<lb/> whose business it
                     was to lie in wait for the panting<lb/> fugitive, as the ferocious beasts of the
                     forest lie in<lb/> wait for their prey. The motto which I adopted<lb/> when I
-                    started from slavery was this— "Trust no<lb/> man!" I saw in every white
-                    man an enemy, and in<lb/> almost every colored man cause for distrust. It
-                    was<lb/> a most painful situation; and, to understand it, one<lb/> must needs
-                    experience it, or imagine himself in<lb/> similar circumstances. Let him be a
-                    fugitive slave in<lb/> a strange land— a land given up to be the
-                    hunting-<lb/> ground for slaveholders— whose inhabitants are legal-<lb/>
-                    ized kidnappers— where he is every moment sub-<lb/> jected to the
-                    terrible liability of being seized upon<lb/> by his fellowmen, as the hideous
-                    crocodile seizes<lb/> upon his prey!— I say, let him place himself in
-                    my<lb/> situation— without home or friends— without money<lb/> or
-                    credit— wanting shelter, and no one to give it—<lb/> wanting
-                    bread, and no money to buy it,— and at the<lb/>
+                    started from slavery was this— "Trust no<lb/> man!" I saw in every white man an
+                    enemy, and in<lb/> almost every colored man cause for distrust. It was<lb/> a
+                    most painful situation; and, to understand it, one<lb/> must needs experience
+                    it, or imagine himself in<lb/> similar circumstances. Let him be a fugitive
+                    slave in<lb/> a strange land— a land given up to be the hunting-<lb/> ground for
+                    slaveholders— whose inhabitants are legal-<lb/> ized kidnappers— where he is
+                    every moment sub-<lb/> jected to the terrible liability of being seized
+                    upon<lb/> by his fellowmen, as the hideous crocodile seizes<lb/> upon his prey!—
+                    I say, let him place himself in my<lb/> situation— without home or friends—
+                    without money<lb/> or credit— wanting shelter, and no one to give it—<lb/>
+                    wanting bread, and no money to buy it,— and at the<lb/>
                     <pb n="107"/> same time let him feel that he is pursued by merci-<lb/> less
                     men-hunters, and in total darkness as to what<lb/> to do, where to go, or where
-                    to stay,— perfectly help-<lb/> less both as to the means of defence and
-                    means of<lb/> escape,— in the midst of plenty, yet suffering the
-                    ter-<lb/> rible gnawings of hunger,— in the midst of houses,<lb/> yet
-                    having no home,— among fellow-men, yet feeling<lb/> as if in the midst of
-                    wild beasts, whose greediness<lb/> to swallow up the trembling and half-famished
-                    fugi-<lb/> tive is only equalled by that with which the monsters<lb/> of the
-                    deep swallow up the helpless fish upon which<lb/> they subsist,— I say,
-                    let him be placed in this most<lb/> trying situation,— the situation in
-                    which I was placed,<lb/>— then, and not till then, will he fully
-                    appreciate the<lb/> hardships of, and know how to sympathize with, the<lb/>
-                    toil-worn and whip-scarred fugitive slave.<lb/>
+                    to stay,— perfectly help-<lb/> less both as to the means of defence and means
+                    of<lb/> escape,— in the midst of plenty, yet suffering the ter-<lb/> rible
+                    gnawings of hunger,— in the midst of houses,<lb/> yet having no home,— among
+                    fellow-men, yet feeling<lb/> as if in the midst of wild beasts, whose
+                    greediness<lb/> to swallow up the trembling and half-famished fugi-<lb/> tive is
+                    only equalled by that with which the monsters<lb/> of the deep swallow up the
+                    helpless fish upon which<lb/> they subsist,— I say, let him be placed in this
+                    most<lb/> trying situation,— the situation in which I was placed,<lb/>— then,
+                    and not till then, will he fully appreciate the<lb/> hardships of, and know how
+                    to sympathize with, the<lb/> toil-worn and whip-scarred fugitive slave.<lb/>
                 </p>
                 <p>Thank Heaven, I remained but a short time in<lb/> this distressed situation. I
                     was relieved from it by the<lb/> humane hand of Mr. DAVID RUGGLES, whose
@@ -3548,21 +3506,21 @@
                     thirsty, and he gave me drink;<lb/> I was a stranger, and he took me in") lived
                     in a<lb/> neater house; dined at a better table; took, paid<lb/> for, and read,
                     more newspapers; better understood<lb/> the moral, religious, and political
-                    character of the<lb/> nation,— than nine tenths of the slaveholders in
-                    Tal-<lb/> bot county Maryland. Yet Mr. Johnson was a work-<lb/> ing man. His
-                    hands were hardened by toil, and not<lb/> his alone, but those also of Mrs.
-                    Johnson. I found the<lb/> colored people much more spirited than I had sup-<lb/>
-                    posed they would be. I found among them a deter-<lb/> mination to protect each
-                    other from the blood-thirsty<lb/> kidnapper, at all hazards. Soon after my
-                    arrival, I<lb/> was told of a circumstance which illustrated their<lb/> spirit.
-                    A colored man and a fugitive slave were on<lb/> unfriendly terms. The former was
-                    heard to threaten<lb/> the latter with informing his master of his where-<lb/>
-                    abouts. Straightway a meeting was called among the<lb/> colored people, under
-                    the stereotyped notice, "Busi-<lb/> ness of importance!" The betrayer was
-                    invited to at-<lb/> tend. The people came at the appointed hour, and<lb/>
-                    organized the meeting by appointing a very religious<lb/> old gentleman as
-                    president, who, I believe, made a<lb/> prayer, after which he addressed the
-                    meeting as fol-<lb/> lows: "FRIENDS, WE HAVE GOT HIM HERE, AND I WOULD<lb/>
+                    character of the<lb/> nation,— than nine tenths of the slaveholders in Tal-<lb/>
+                    bot county Maryland. Yet Mr. Johnson was a work-<lb/> ing man. His hands were
+                    hardened by toil, and not<lb/> his alone, but those also of Mrs. Johnson. I
+                    found the<lb/> colored people much more spirited than I had sup-<lb/> posed they
+                    would be. I found among them a deter-<lb/> mination to protect each other from
+                    the blood-thirsty<lb/> kidnapper, at all hazards. Soon after my arrival, I<lb/>
+                    was told of a circumstance which illustrated their<lb/> spirit. A colored man
+                    and a fugitive slave were on<lb/> unfriendly terms. The former was heard to
+                    threaten<lb/> the latter with informing his master of his where-<lb/> abouts.
+                    Straightway a meeting was called among the<lb/> colored people, under the
+                    stereotyped notice, "Busi-<lb/> ness of importance!" The betrayer was invited to
+                    at-<lb/> tend. The people came at the appointed hour, and<lb/> organized the
+                    meeting by appointing a very religious<lb/> old gentleman as president, who, I
+                    believe, made a<lb/> prayer, after which he addressed the meeting as fol-<lb/>
+                    lows: "FRIENDS, WE HAVE GOT HIM HERE, AND I WOULD<lb/>
                     <pb n="113"/> RECOMMEND THAT YOU YOUNG MEN JUST TAKE HIM OUT-<lb/> SIDE THE
                     DOOR, AND KILL HIM!" With this, a number<lb/> of them bolted at him; but they
                     were intercepted<lb/> by some more timid than themselves, and the be-<lb/>
@@ -3602,10 +3560,10 @@
                     subscriber to it. The paper<lb/> came, and I read it from week to week with
                     such<lb/> feelings as it would be quite idle for me to attempt<lb/> to describe.
                     The paper became my meat and my<lb/> drink. My soul was set all on fire. Its
-                    sympathy for<lb/> my brethren in bonds— its scathing denunciations
-                    of<lb/> slaveholders— its faithful exposures of slavery— and
-                    its<lb/> powerful attacks upon the upholders of the institu-<lb/> tion—
-                    sent a thrill of joy through my soul, such as<lb/> I had never felt before!<lb/>
+                    sympathy for<lb/> my brethren in bonds— its scathing denunciations of<lb/>
+                    slaveholders— its faithful exposures of slavery— and its<lb/> powerful attacks
+                    upon the upholders of the institu-<lb/> tion— sent a thrill of joy through my
+                    soul, such as<lb/> I had never felt before!<lb/>
                 </p>
                 <p>I had not long been a reader of the "Liberator,"<lb/> before I got a pretty
                     correct idea of the principles,<lb/> measures and spirit of the anti-slavery
@@ -3622,8 +3580,8 @@
                     few<lb/> moments, when I felt a degree of freedom, and said<lb/> what I desired
                     with considerable ease. From that<lb/>
                     <pb n="115"/> time until now, I have been engaged in pleading the<lb/> cause of
-                    my brethren— with what success, and with<lb/> what devotion, I leave
-                    those acquainted with my la-<lb/> bors to decide.<lb/>
+                    my brethren— with what success, and with<lb/> what devotion, I leave those
+                    acquainted with my la-<lb/> bors to decide.<lb/>
                     <pb n="116"/> [blank page]<lb/>
                     <pb n="117"/>
                 </p>
@@ -3639,11 +3597,11 @@
                     strictly to apply to the SLAVEHOLDING RELIGION of<lb/> this land, and with no
                     possible reference to Christi-<lb/> anity proper; for, between the Christianity
                     of this<lb/> land, and the Christianity of Christ, I recognize the<lb/> widest
-                    possible difference— so wide, that to receive<lb/> the one as good, pure,
-                    and holy, is of necessity to re-<lb/> ject the other as bad, corrupt, and
-                    wicked. To be the<lb/> friend of the one, is of necessity to be the enemy<lb/>
-                    of the other. I love the pure, peaceable, and impar-<lb/> tial Christianity of
-                    Christ: I therefore hate the cor-<lb/> rupt, slaveholding, women-whipping,
+                    possible difference— so wide, that to receive<lb/> the one as good, pure, and
+                    holy, is of necessity to re-<lb/> ject the other as bad, corrupt, and wicked. To
+                    be the<lb/> friend of the one, is of necessity to be the enemy<lb/> of the
+                    other. I love the pure, peaceable, and impar-<lb/> tial Christianity of Christ:
+                    I therefore hate the cor-<lb/> rupt, slaveholding, women-whipping,
                     cradle-plunder-<lb/> ing, partial and hypocritical Christianity of this
                     land.<lb/> Indeed, I can see no reason, but the most deceitful<lb/> one, for
                     calling the religion of this land Christianity.<lb/> I look upon it as the
@@ -3665,9 +3623,9 @@
                     religious advocate of marriage<lb/> robs whole millions of its sacred influence,
                     and leaves<lb/> them to the ravages of wholesale pollution. The<lb/> warm
                     defender of the sacredness of the family re-<lb/> lation is the same that
-                    scatters whole families,— sun-<lb/> dering husbands and wives, parents
-                    and children,<lb/> sisters and brothers,— leaving the hut vacant, and
-                    the<lb/> hearth desolate. We see the thief preaching against<lb/> theft, and the
+                    scatters whole families,— sun-<lb/> dering husbands and wives, parents and
+                    children,<lb/> sisters and brothers,— leaving the hut vacant, and the<lb/>
+                    hearth desolate. We see the thief preaching against<lb/> theft, and the
                     adulterer against adultery. We have<lb/> men sold to build churches, women sold
                     to support<lb/> the gospel, and babes sold to purchase Bibles for<lb/> the POOR
                     HEATHEN! ALL FOR THE GLORY OF GOD AND THE<lb/> GOOD OF SOULS! The slave
@@ -3701,27 +3659,26 @@
                     as truly said, as it was of<lb/> the ancient scribes and Pharisees, "They bind
                     heavy<lb/> burdens, and grievous to be borne, and lay them on<lb/> men's
                     shoulders, but they themselves will not move<lb/> them with one of their
-                    fingers. All their works they<lb/> do for to be seen of men.— They love
-                    the upper-<lb/> most rooms at feasts, and the chief seats in the syna-<lb/>
-                    gogues, . . . . . . and to be called of men, Rabbi,<lb/> Rabbi.— But woe
-                    unto you, scribes and Pharisees,<lb/> hypocrites! for ye shut up the kingdom of heaven<lb/>
+                    fingers. All their works they<lb/> do for to be seen of men.— They love the
+                    upper-<lb/> most rooms at feasts, and the chief seats in the syna-<lb/> gogues,
+                    . . . . . . and to be called of men, Rabbi,<lb/> Rabbi.— But woe unto you,
+                    scribes and Pharisees,<lb/> hypocrites! for ye shut up the kingdom of heaven<lb/>
                     <pb n="120"/> against men; for ye neither go in yourselves, neither<lb/> suffer
                     ye them that are entering to go in. Ye devour<lb/> widows' houses, and for a
                     pretence make long<lb/> prayers; therefore ye shall receive the greater
                     dam-<lb/> nation. Ye compass sea and land to make one prose-<lb/> lyte, and when
-                    he is made, ye make him twofold<lb/> more the child of hell than yourselves.
-                   — Woe unto<lb/> you, scribes and Pharisees, hypocrites! for ye pay<lb/>
-                    tithe of mint, and anise, and cumin, and have omit-<lb/> ted the weightier
-                    matters of the law, judgment,<lb/> mercy, and faith; these ought ye to have
-                    done, and<lb/> not to leave the other undone. Ye blind guides!<lb/> which strain
-                    at a gnat, and swallow a camel. Woe<lb/> unto you, scribes and Pharisees,
-                    hypocrites! for ye<lb/> make clean the outside of the cup and of the
-                    platter;<lb/> but within, they are full of extortion and excess.—<lb/>
-                    Woe unto you, scribes and Pharisees, hypocrites! for<lb/> ye are like unto
-                    whited sepulchres, which indeed ap-<lb/> pear beautiful outward, but are within
-                    full of dead<lb/> men's bones, and of all uncleanness. Even so ye also<lb/>
-                    outwardly appear righteous unto men, but within<lb/> ye are full of hypocrisy
-                    and iniquity."<lb/>
+                    he is made, ye make him twofold<lb/> more the child of hell than yourselves. —
+                    Woe unto<lb/> you, scribes and Pharisees, hypocrites! for ye pay<lb/> tithe of
+                    mint, and anise, and cumin, and have omit-<lb/> ted the weightier matters of the
+                    law, judgment,<lb/> mercy, and faith; these ought ye to have done, and<lb/> not
+                    to leave the other undone. Ye blind guides!<lb/> which strain at a gnat, and
+                    swallow a camel. Woe<lb/> unto you, scribes and Pharisees, hypocrites! for
+                    ye<lb/> make clean the outside of the cup and of the platter;<lb/> but within,
+                    they are full of extortion and excess.—<lb/> Woe unto you, scribes and
+                    Pharisees, hypocrites! for<lb/> ye are like unto whited sepulchres, which indeed
+                    ap-<lb/> pear beautiful outward, but are within full of dead<lb/> men's bones,
+                    and of all uncleanness. Even so ye also<lb/> outwardly appear righteous unto
+                    men, but within<lb/> ye are full of hypocrisy and iniquity."<lb/>
                 </p>
                 <p>Dark and terrible as is this picture, I hold it to be<lb/> strictly true of the
                     overwhelming mass of professed<lb/> Christians in America. They strain at a
@@ -3854,15 +3811,43 @@
                 <pb n="124"/>
                 <p>Sincerely and earnestly hoping that this little book<lb/> may do something toward
                     throwing light on the<lb/> American slave system, and hastening the glad
-                    day<lb/> of deliverance to the millions of my brethren in<lb/> bonds—
-                    faithfully relying upon the power of truth,<lb/> love, and justice, for success
-                    in my humble efforts<lb/>— and solemnly pledging my self anew to the
-                    sacred<lb/> cause,— I subscribe myself,<lb/>
+                    day<lb/> of deliverance to the millions of my brethren in<lb/> bonds— faithfully
+                    relying upon the power of truth,<lb/> love, and justice, for success in my
+                    humble efforts<lb/>— and solemnly pledging my self anew to the sacred<lb/>
+                    cause,— I subscribe myself,<lb/>
                 </p>
                 <signed>FREDERICK DOUGLASS<lb/> LYNN, MASS., APRIL 28, 1845.</signed>
                 <trailer> THE END </trailer>
-
             </div>
         </body>
+        <back>
+            <div>
+                <note target="intro_" xml:id="intro" type="gloss" resp="editors.xml#AJB">
+                    <p> </p>
+                </note>
+                <note target="thraldom_" xml:id="thraldom" type="gloss" resp="editors.xml#AJB">
+                    <p> </p>
+                </note>
+                <note target="pathos_" xml:id="pathos" type="gloss" resp="editors.xml#AJB">
+                    <p> </p>
+                </note>
+                <note target="patrickhenry_" xml:id="patrickhenry" type="editorial"
+                    resp="editors.xml#AJB">
+                    <p/>
+                </note>
+                <note target="johncollins_" xml:id="johncollins" type="editorial"
+                    resp="editors.xml#AJB">
+                    <p> </p>
+                </note>
+                <note target="charlesremond_" xml:id="charlesremond" type="editorial"
+                    resp="editors.xml#AJB">
+                    <p/>
+                </note>
+                <note target="danieloconnell_" xml:id="danieloconnell" type="editorial"
+                    resp="editors.xml#AJB">
+                    <p/>
+                </note>
+            </div>
+        </back>
     </text>
 </TEI>
