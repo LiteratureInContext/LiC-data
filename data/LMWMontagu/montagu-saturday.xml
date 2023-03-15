@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/Users/tonya-mariehowe/Documents/GitHub/LiteratureInContext/LIC_Data_Development_NEW/LiC-data/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="montagu-saturday">
    <!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
 
@@ -287,9 +288,56 @@
                   <!-- Note that this example has two titleParts spanning lines. -->
                </titlePart>
             </docTitle>
-            <docAuthor>By <ref target="a001" corresp="n001">the Rt. Hon. L.<hi rend="italic"> M. W.
-                     M.</hi></ref><lb/><note xml:id="n001" target="a001" type="editorial"
-                  resp="editors.xml#BehnBurney19">Author note here</note>
+            <docAuthor>By <ref target="montagu_" corresp="montagu">the Rt. Hon. L.<hi rend="italic">
+                     M. W. M.</hi></ref><lb/><note xml:id="montagu" target="montagu_"
+                  type="editorial" resp="editors.xml#BehnBurney19"><graphic
+                     url="notes/Jonathan_Richardson_d._J._001.jpg"/>Lady Mary Wortley Montagu, born
+                  Pierrepont (1689-1762), was an eccentric woman and talented writer who has not
+                  received as much attention as her friends and contemporaries, like Alexander Pope,
+                  with whom she had a close relationship before it turned acrimonious. Montagu was a
+                  member of the aristocracy, daughter of the Earl of Kingston and Lady Mary Fielding
+                  (yes, she was related to the Henry Fielding of <hi rend="italic">Tom Jones</hi>
+                  fame!). She fled an arranged marriage and eloped with Edward Wortley Montagu. Most
+                  remember her as a letter-writer, whose letters were designed for posthumous
+                  publication. Most significant in these letters are those typically referred to as
+                  the "Turkish Embassy" letters, because they discuss her experience traveling to
+                  and living in Contantinople (now Istanbul) with her husband, who served as
+                  ambassador to Turkey from 1716-1718. Her "Town Eclogues," from which this
+                  selection is taken, are a series of six adaptations of the Roman poet Virgil’s
+                  Eclogues, written in 37BCE. An "eclogue" is a kind of poem that presents a snippet
+                  (or a "selection") of life. In Virgil’s eclogues—a series of 10 poems—rural
+                  herdsman sing and discuss their experiences, often relating to the turbulent time
+                  in Rome just as the Roman Empire was emerging. In the early 18th century,
+                  "Augustan" British poets saw themselves as modern inheritors of a Roman tradition
+                  inaugurated by Augustus, the first Emperor of Rome. Montagu’s eclogues focus
+                  similarly on a turbulent, transitional era characterized by the social, political,
+                  and economic structures of rapid commercialization in the England and the United
+                  Kingdom. These "Town Eclogues" offer a series of six poems, which you can read in
+                  their entirety on <ref
+                     target="https://www.eighteenthcenturypoetry.org/works/o5152-w0110.shtml"
+                     >Eighteenth-Century Poetry Archive.</ref> The poems are organized by days of
+                  the week and discuss themes of sexuality, relationships between men and women,
+                  illness, and fashionable society. In this poem, "Saturday; or the Small-Pox," the
+                  poetic speaker recounts the character Flavia’s thoughts about her smallpox scars,
+                  which were shared by Mary Wortley Montagu herself—Montagu suffered from smallpox
+                  in her youth, which marked her for the rest of her life. During her travels to
+                  Turkey, she witnessed the act of inoculation for smallpox, which she employed to
+                  inoculate her children. She brought word of the innovation back to England, though
+                  she is not credited with its popularization. To read more about Montagu’s
+                  connection with the smallpox vaccine, read <ref
+                     target="https://theconversation.com/lady-mary-wortley-montagu-the-forgotten-immunisation-pioneer-164256"
+                     >Tom Solomon’s article on <hi rend="italic">The Conversation</hi></ref>. In
+                  1736, Montagu fell in love with an Italian writer, and she left her husband and
+                  family to live with him on the Continent, under cover of traveling for health
+                  reasons. He never caught up with her in Italy, however, and she traveled through
+                  France and Italy in the 40s and 50s, living for a decade with an Italian Count.
+                  After her husband died in 1761, she returned to London, and died of cancer shortly
+                  after. Her letters were published in 1763, but the first complete modern edition
+                  was published in the 1960s. The portrait of Montagu included here was painted in
+                  1725 by Jonathan Richardson. It is currently in the collection of the Earl of
+                  Harrowby, Stafford (<ref
+                     target="https://commons.wikimedia.org/wiki/File:Jonathan_Richardson_d._J._001.jpg"
+                     >via Wikimedia Commons</ref>).</note>
             </docAuthor>
             <docImprint>
                <!-- Here begins imprint information included in the text pictured. -->
@@ -313,9 +361,25 @@
                <!-- THIS DIV DERIVED FROM ECCO-TCP XML. SHOULD BE UPDATED TO REFLECT LIC PRINCIPLES. -->
                <pb n="32" facs="pageImages/032.jpg"/>
                <!-- CORRECT PAGE NUMBERINGS TO REFERENCE OUR PAGE IMAGES -->
-               <head>SATURDAY.<lb/><ref target="a002" corresp="n002">The SMALL-POX</ref>.</head>
-               <note xml:id="n002" target="a002" type="editorial" resp="editors.xml#BehnBurney19"
-                  >editorial note about smallpox here.</note>
+               <head>SATURDAY.<lb/><ref target="smallpox_" corresp="smallpox">The
+                  SMALL-POX</ref>.</head>
+               <note xml:id="smallpox" target="smallpox_" type="editorial"
+                  resp="editors.xml#BehnBurney19">Smallpox is an infectious disease caused by the
+                  variola virus, which ravaged many parts of the world until its eradication in
+                  1980. Throughout the eighteenth century, over 400,000 people died in Europe from
+                  the disease. It is characterized by pus-filled blisters that form on the skin,
+                  before hardening and falling off; smallpox often caused severe scarring and even
+                  blindness among those who survived. The virus was used as a biological weapon,
+                  notably by the British against Native Americans in Pontiac's War of the 1760s. The
+                  disease was 90% fatal among the Amerindian population, causing mass destruction.
+                  Before a vaccine was developed, the virus was managed through a process of
+                  inoculation--also called variolation--whereby a small amount of infected fluid,
+                  often from a cow, was introduced to a healthy person's body, causing an immune
+                  response. This process of inoculation was practiced in Asia and Africa, before
+                  appearing in the Ottoman Empire, where Mary Wortley Montagu witnessed the
+                  procedure. To read more, see <ref
+                     target="https://theconversation.com/lady-mary-wortley-montagu-the-forgotten-immunisation-pioneer-164256"
+                     >Tom Solomon’s article on <hi rend="italic">The Conversation</hi></ref>.</note>
                <stage>FLAVIA.</stage>
                <!-- WHAT DO WE DO WITH THIS? -->
                <lg n="1">
@@ -344,9 +408,9 @@
                   <l n="15">'The greatest good the Gods on men bestow,</l>
                   <l n="16">'Ev'n youth itself, to me is useless now.</l>
                   <l n="17">'There was a time (oh! that I cou'd forget!)</l>
-                  <l n="18">'When <ref target="a003" corresp="n003">opera-tickets</ref> pour’d
+                  <l n="18">'When <ref target="opera-tickets_" corresp="opera-tickets">opera-tickets</ref> pour’d
                      before my feet;</l>
-                  <note xml:id="n003" target="a003" type="editorial" resp="editors.xml#TH">Opera was
+                  <note xml:id="opera-tickets" target="opera-tickets_" type="editorial" resp="editors.xml#TH">Opera was
                      a fashionable entertainment past-time in the eighteenth century. Opera stars
                      were celebrities, often extravagantly-compensated, and also the subject of some
                      criticism, as <ref target="https://journals.openedition.org/1718/409">Michael
@@ -363,9 +427,9 @@
                      cost of living in the early eighteenth century, see the <ref
                         target="https://www.oldbaileyonline.org/static/Coinage.jsp">discussion of
                         coinage at the Old Bailey Online</ref>.</note>
-                  <l n="19">'And at <ref target="a004" corresp="n004">the ring</ref>, where
+                  <l n="19">'And at <ref target="ring_" corresp="ring">the ring</ref>, where
                      brightest beauties shine,</l>
-                  <note xml:id="n004" target="a004" type="editoral" resp="editors.xml#LR"><graphic
+                  <note xml:id="ring" target="ring_" type="editoral" resp="editors.xml#LR"><graphic
                         url="notes/Hyde_Park_London_from_1833_Schmollinger_map.jpg"/>The "ring"
                      referred to a circular path in Hyde Park where fashionable people would walk,
                      ride, or take a carriage ride. It was a place to be seen. You can see a
@@ -374,10 +438,10 @@
                         target="https://en.wikipedia.org/wiki/Hyde_Park,_London"> article from
                         Wikipedia</ref>.</note>
                   <l n="20">'The earliest cherries of the spring were mine.</l>
-                  <l n="21">'Witness, <ref target="a005" corresp="n005">O
+                  <l n="21">'Witness, <ref target="Lilly_" corresp="Lilly">O
                         <persName>Lilly</persName>; and thou, <persName type="lcnaf" key="n50016854"
                            >Motteux</persName></ref>, tell</l>
-                  <note xml:id="n005" target="a005" type="gloss" resp="editors.xml#LR">Charles
+                  <note xml:id="Lilly" target="Lilly_" type="gloss" resp="editors.xml#LR">Charles
                      Lilly, also known as Charles Lille, "<ref
                         target="http://www.perfumeintelligence.co.uk/library/perfume/l/l11/l11p1.htm"
                         >opened a perfume shop on The Strand in London in 1708 where he sold ‘snuffs
@@ -389,9 +453,9 @@
                         target="https://www.british-history.ac.uk/old-new-london/vol2/pp183-194"
                         >British History Online</ref>.</note>
 
-                  <l n="22">'How much <ref target="a006" corresp="n006">japan</ref> these eyes have
+                  <l n="22">'How much <ref target="Japan_" corresp="Japan">japan</ref> these eyes have
                      made ye sell.</l>
-                  <note xml:id="n006" target="a006" type="gloss" resp="editors.xml#LR">Japanese
+                  <note xml:id="Japan" target="Japan_" type="gloss" resp="editors.xml#LR">Japanese
                      artifacts with painted or vanished design. A fashionable item that would be
                      found in Motteux's store. For more information, see <ref
                         target="https://www.vam.ac.uk/articles/east-asian-lacquer-influence">this
@@ -407,17 +471,17 @@
                   <l n="28" rend="indent">'For me the Patriot has the house forsook,</l>
                   <l n="29">'And left debates to catch a passing look:</l>
                   <l n="30">'For me the Soldier has soft verses writ;</l>
-                  <l n="31">'For me the <ref target="a007" corresp="n007">Beau</ref> has aim'd to be
+                  <l n="31">'For me the <ref target="beau_" corresp="beau_">Beau</ref> has aim'd to be
                      a wit.</l>
-                  <note xml:id="n007" target="a007">Gloss for "beau" here</note>
+                  <note xml:id="beau" target="beau_">From the French, a beau is a ladies' man, or a suitor, often very fashionable (OED). </note>
                   <pb n="34" facs="pageImages/034.jpg"/>
-                  <l n="32">'For me the <ref target="a008" corresp="n008">Wit</ref> to nonsense was
+                  <l n="32">'For me the <ref target="wit_" corresp="wit">Wit</ref> to nonsense was
                      betray'd;</l>
-                  <note xml:id="n008" target="a008">Gloss for "wit" here</note>
-                  <l n="33">'The Gamester has for me his <ref target="a009" corresp="n009">dun</ref>
+                  <note xml:id="wit" target="wit_">Used here as a noun, a wit was (usually) a man known for cleverness or wittiness (OED).</note>
+                  <l n="33">'The Gamester has for me his <ref target="dun_" corresp="dun">dun</ref>
                      delay'd,</l>
-                  <note xml:id="n009" target="a009" type="gloss" resp="editors.xml#BehnBurney19"
-                     >Gloss for dun</note>
+                  <note xml:id="dun" target="dun_" type="gloss" resp="editors.xml#BehnBurney19"
+                     >Used here as a noun, a dun in this sense is a demand for payment of a debt (OED).</note>
                   <l n="34">'And overseen the card I would have pay'd.</l>
                   <l n="35">'The bold and haughty by success made vain,</l>
                   <l n="36">'Aw'd by my eyes, have trembled to complain:</l>
@@ -433,20 +497,20 @@
                   <l n="44">'The face disfigure, and the canvas tear!</l>
                   <l n="45">'That picture, which with pride I us'd to show,</l>
                   <l n="46">'The lost resemblance but upbraids me now.</l>
-                  <l n="47">'And thou, my <ref target="a010" corresp="n010">toilette</ref>! where I
+                  <l n="47">'And thou, my <ref target="toilette_" corresp="toilette">toilette</ref>! where I
                      oft have sate,</l>
-                  <note xml:id="n010" target="a010" type="gloss" resp="editors.xml#BehnBurney19"
-                     >Note on "toilette" here</note>
+                  <note xml:id="toilette" target="toilette_" type="gloss" resp="editors.xml#BehnBurney19"
+                     >Flavia's toilette is her dressing table. The word is used in multiple senses, either to refer to the location of the action of dressing and readying oneself for the day or as a collective term for the items of dressing or applying makeup (OED). </note>
                   <l n="48">'While hours unheeded pass'd in deep debate,</l>
-                  <l n="49">'How curls should fall, or where a <ref target="a011" corresp="n011"
+                  <l n="49">'How curls should fall, or where a <ref target="patch_" corresp="patch"
                         >patch</ref> to place;</l>
-                  <note xml:id="n011" target="a011" type="gloss" resp="editors.xml#BehnBurney19"
-                     >Gloss on patches here. If a more robust note, type=editorial.</note>
+                  <note xml:id="patch" target="patch_" type="editorial" resp="editors.xml#TH"
+                     ><graphic url="notes/PLL_Fig_042-edited-709x1024.jpeg"/>A patch in this sense has a specific historical meaning, now obsolete. In the 17th and 18th centuries, it was common for fasionable people to wear "patches," or small pieces of black silk or velvet, sometimes cut into shapes. These patches--called "les mouches" in French, because they resembled a fly--would be worn on the face, sometimes to cover a blemish or simply for fashionable purposes, as an artificial beauty mark. Patches were also sometimes used to declare a particular loyalty or party. To learn more about patches, see the <hi rend="italic">Collector's Weekly</hi> article, <ref target="https://www.collectorsweekly.com/articles/sexy-face-stickers/">"That Time the French Aristocracy Was Obsessed With Sexy Face Stickers."</ref> The image included here, from that article (via the Metropolitan Museum of Art), is an engraving showing a fashionable young woman at her toilette; she has two patches on her cheek. Engraving “The Morning: The Woman at Her Toilet” by Gilles-Edme Petit, c. 1745-1760.</note>
                   <l n="50">'If blue or scarlet best became my face;</l>
                   <pb n="35" facs="pageImages/035.jpg"/>
-                  <l n="51">'Now on some happier <ref target="a012" corresp="n012">nymph</ref> your
+                  <l n="51">'Now on some happier <ref target="nymph_" corresp="nymph">nymph</ref> your
                      aid bestow;</l>
-                  <note xml:id="n012" target="a012" type="gloss" resp="editors.xml#TH">According to
+                  <note xml:id="nymph" target="nymph_" type="gloss" resp="editors.xml#TH">According to
                      the OED, "nymph" (n1. 1-3) is a poetic way of describing a beautiful young
                      woman. It derives from classical mythology, but also can suggest an ironic
                      usage.</note>
@@ -469,21 +533,20 @@
                </lg>
                <lg n="7">
                   <l rend="indent" n="65">'Ye, cruel Chymists, what with-held your aid!</l>
-                  <l n="66">'Could no <ref target="a013" corresp="n013">pomatums</ref> save a
+                  <l n="66">'Could no <ref target="pomatums_" corresp="pomatums">pomatums</ref> save a
                      trembling maid?</l>
-                  <note xml:id="n013" target="a013" type="gloss" resp="editors.xml#TH">Gloss on
-                     pomatum.</note>
+                  <note xml:id="pomatums" target="pomatums_" type="gloss" resp="editors.xml#TH">Pomatum, or pomade, refers to a cosmetic applied to the face--often, it was made with lead, and used to add a whiteness to the skin (OED).</note>
                   <l n="67">'How false and trifling is that art ye boast;</l>
                   <l n="68">'No art can give me back my beauty lost.</l>
                   <l n="69">'In tears, surrounded by my friends I lay,</l>
-                  <l n="70">'<ref target="a014" corresp="n014">Mask'd o'er</ref> and trembled at the
+                  <l n="70">'Mask'd o'er and trembled at the
                      sight of day;</l>
-                  <note xml:id="n014" target="a014" type="editorial">Note on masking here</note>
                   <pb n="36" facs="pageImages/036.jpg"/>
-                  <l n="71">'<ref target="a015" corresp="n015">MIRMILIO</ref> came my fortune to deplore,</l>
-                  <note xml:id="n015" target="a015" type="editorial" resp="editors.xml#TH">In
-                     these lines, Montagu invokes characters from Samuel Garth's popular early
-                     mock-epic poem, "The Dispensary" (1699). According to <ref
+                  <l n="71">'<ref target="Mirmilio_" corresp="Mirmilio">MIRMILIO</ref> came my fortune to
+                     deplore,</l>
+                  <note xml:id="Mirmilio" target="Mirmilio_" type="editorial" resp="editors.xml#TH">In these
+                     lines, Montagu invokes characters from Samuel Garth's popular early mock-epic
+                     poem, "The Dispensary" (1699). According to <ref
                         target="https://www.rcplondon.ac.uk/news/dispensary-sir-samuel-garth-s-mock-heroic-poem"
                         >Sarah Gillam, writing for the Royal College of Physicians</ref>, Mirmillo
                      likely represents William Gibbons, one of the physicians caught up in the late
@@ -494,32 +557,40 @@
                   <l n="74">'Beauty is fled, and spirit is no more!</l>
                </lg>
                <lg n="8">
-                  <l n="75" rend="indent">'<ref target="a016" corresp="n016">GALEN</ref>, the grave;
-                        <ref target="a017" corresp="n017">officious SQUIRT</ref>, was there,</l>
-                  <note xml:id="n016" target="a016" type="editorial">While not referenced in Garth's
+                  <l n="75" rend="indent">'<ref target="Galen_" corresp="Galen">GALEN</ref>, the grave;
+                     <ref target="Squirt_" corresp="Squirt">officious SQUIRT</ref>, was there,</l>
+                  <note xml:id="Galen" target="Galen_" type="editorial">While not referenced in Garth's
                      "Dispensary," <ref target="https://en.wikipedia.org/wiki/Galen">Galen</ref> is
                      a Greek physician (129-216 CE) known for pioneering work in anatomy, among
                      other branches of medicine and philosophy. His humoral work was highly
                      influential in the Medieval and Early Modern periods.</note>
-                  <note xml:id="n017" target="a017" type="editorial" resp="editors.xml#TH"
-                     >Another character in Garth's "Dispensary," Squirt--always designated there
+                  <note xml:id="Squirt" target="Squirt_" type="editorial" resp="editors.xml#TH">Another
+                     character in Garth's "Dispensary," Squirt--always designated there
                      "officious"--is an assistant to Horoscope, the chief apothecary in the poem,
-                     who revives his master with a squirt from a urinal <ref target="https://quod.lib.umich.edu/e/eebo/A42418.0001.001?rgn=main;view=fulltext">at the end of Canto
-                        II</ref>: <lg><l>Oft he essay'd the
-                        Magus to restore,</l>
-                           <l>By Salt of Succinum's prevailing pow'r;</l>
-                           <l>But still supine
-                        the solid Lumber lay,</l>
-                        <l>An Image of scarce animated Clay; 
-                        </l><l>Till Fates,
-                           indulgent when Disasters call, </l><l>Bethought th' Assistant of a Urinal; </l><l>Whose
-                           Steam the Wight no sooner did receive, </l><l>But rowz'd, and blest the Stale
-                           Restorative. </l><l>The Springs of Life their former Vigour feel, </l><l>Such Zeal he had
-                        for that vile Urensil.</l></lg> </note>
+                     who revives his master with a squirt from a urinal <ref
+                        target="https://quod.lib.umich.edu/e/eebo/A42418.0001.001?rgn=main;view=fulltext"
+                        >at the end of Canto II</ref>: <quote><lg><l>Oft he essay'd the Magus to
+                           restore,</l>
+                        <l>By Salt of Succinum's prevailing pow'r;</l>
+                        <l>But still supine the solid Lumber lay,</l>
+                        <l>An Image of scarce animated Clay; </l><l>Till Fates, indulgent when
+                           Disasters call, </l><l>Bethought th' Assistant of a Urinal; </l><l>Whose
+                           Steam the Wight no sooner did receive, </l><l>But rowz'd, and blest the
+                           Stale Restorative. </l><l>The Springs of Life their former Vigour feel,
+                           </l><l>Such Zeal he had for that vile Urensil.</l></lg></quote>
+                  </note>
                   <l n="76">'With fruitless grief and unavailing care:</l>
-                  <l n="77">'<ref target="a018" corresp="n018">MACHAON</ref> too, the great MACHAON,
+                  <l n="77">'<ref target="Machaon_" corresp="Machaon">MACHAON</ref> too, the great MACHAON,
                      known</l>
-                  <note xml:id="n018" target="a018" type="editorial" resp="editors.xml#TH">Another character in Garth's "Dispensary," Machaon there represents a late seventeenth-century physician Sir Thomas Millington (<ref target="https://www.rcplondon.ac.uk/news/dispensary-sir-samuel-garth-s-mock-heroic-poem">Gillum</ref>). Machaon is also the name of a mythic figure, the son of the Greco-Roman god of medicine <ref target="https://en.wikipedia.org/wiki/Asclepius">Asclepius</ref>. In <hi rend="italic">The Illiad</hi>, Machaon was the surgeon for the Greek army during the Trojan War.</note>
+                  <note xml:id="Machaon" target="Machaon_" type="editorial" resp="editors.xml#TH">Another
+                     character in Garth's "Dispensary," Machaon there represents a late
+                     seventeenth-century physician Sir Thomas Millington (<ref
+                        target="https://www.rcplondon.ac.uk/news/dispensary-sir-samuel-garth-s-mock-heroic-poem"
+                        >Gillum</ref>). Machaon is also the name of a mythic figure, the son of the
+                     Greco-Roman god of medicine <ref
+                        target="https://en.wikipedia.org/wiki/Asclepius">Asclepius</ref>. In <hi
+                        rend="italic">The Illiad</hi>, Machaon was the surgeon for the Greek army
+                     during the Trojan War.</note>
                   <l n="78">'By his red cloak and his superior frown;</l>
                   <l n="79"> 'And why, he cry'd, this grief and this despair?</l>
                   <l n="80">'You shall again be well, again be fair;</l>
