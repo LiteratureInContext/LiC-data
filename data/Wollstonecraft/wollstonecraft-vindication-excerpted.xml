@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="file:/Users/tonya-mariehowe/Documents/GitHub/LiteratureInContext/LIC_Data_Development_NEW/LiC-data/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wollstonecraft-vindication-excerpted">
 
    <!--TEI Header BEGINS-->
@@ -233,8 +234,8 @@
                   STRICTURES <lb/> ON <lb/> POLITICAL AND MORAL SUBJECTS <lb/></titlePart>
             </docTitle>
             <docAuthor>BY <ref target="wollstonecraft_" corresp="wollstonecraft">MARY WOLLSTONECRAFT</ref></docAuthor>
-            <docImprint><lb/> LONDON: <lb/><ref target="johnson_" corresp="johnson">PRINTED FOR J. JOHNSON,
-                  No.HELP!!! 71, ST. PAUL’S CHURCH YARD.</ref><lb/></docImprint>
+            <docImprint><lb/><pubPlace>LONDON:</pubPlace><lb/><publisher><ref target="johnson_" corresp="johnson">PRINTED FOR J. JOHNSON,
+               No.71, ST. PAUL’S CHURCH YARD.</ref></publisher><lb/></docImprint>
             <docDate>1792. </docDate>
          </titlePage>
 
@@ -531,7 +532,7 @@
             
          </div>
 
-         <note type="editorial" xml:id="wollstonecraft" target="wollstonecraft_" resp="editors.xml#MUstudstaff">
+        <div type="notes"> <note type="editorial" xml:id="wollstonecraft" target="wollstonecraft_" resp="editors.xml#MUstudstaff">
             <graphic
                url="notes/mw02603.jpg"
             />Born in London on April 27, 1759, Mary Wollstonecraft is considered
@@ -560,11 +561,11 @@
             Afgan women under purdah. <ref
                target="https://commons.wikimedia.org/wiki/File:Ladies_cabul1848b.jpg">Image via
                Wikimedia Commons</ref>.</note>
-         <note type="authorial" xml:id="auth1" target="auth1_" place="bottom">* A <ref target="lively_writer_" corresp="l">lively writer</ref>, I cannot
+         <note type="authorial" xml:id="auth1" target="auth1_" resp="editors.xml#TH"><graphic
+            url="notes/ba-obj-42138-0001-pub-large.jpg"
+         />* A lively writer, I cannot
             recollect his name, asks what business women turned of forty have to do in the world?
-            [Wollstonecraft's note.] <note type="editorial" xml:id="lively_writer" target="lively_writer_" resp="editors.xml#TH"><graphic
-               url="notes/ba-obj-42138-0001-pub-large.jpg"
-            />The "lively writer" may be a mistaken reference to Lord Merton,
+            [Wollstonecraft's note.] The "lively writer" may be a mistaken reference to Lord Merton,
                a character in Frances Burney's epistolary novel <hi rend="italic">Evelina</hi> (1778),
                who says of the masculine Mrs. Selwyn, "I don't know what the devil a woman lives for
                after thirty: she is only in other folks way" (III.1, 7). Clicking the note link
@@ -576,7 +577,7 @@
                      35</ref>. The image below, from the <ref
                         target="http://collections.britishart.yale.edu/vufind/Record/3626225">Yale Center for
                         British Art</ref>, shows "An Old Maid Treating a Favorite Cat to a Duck and Green
-               Peas," a colored etching by Richard Newton (c.1792).] </note>
+               Peas," a colored etching by Richard Newton (c.1792).] 
          </note>
          <note type="editorial" xml:id="education" target="education_" resp="editors.xml#NB">
             <graphic
@@ -597,7 +598,7 @@
                   Conduct in the more important Duties of Life</hi> click <ref
                      target="https://digital.library.lse.ac.uk/objects/lse:ruf494jak">here</ref> for an
             online version of the book from the London School of Economics’ digital library. </note>
-         <note type="authorial" xml:id="auth2" target="auth2_" place="bottom">* I am not now alluding to that superiority
+         <note type="authorial" xml:id="auth2" target="auth2_">* I am not now alluding to that superiority
             of mind which leads to the creation of ideal beauty, when life, surveyed with a
             penetrating eye, appears a tragi-comedy, in which little can be seen to satisfy the
             heart without the help of fancy. [Wollstonecraft’s note.] </note>
@@ -822,7 +823,7 @@
          
          
 
-
+</div>
       </body>
    </text>
 </TEI>
