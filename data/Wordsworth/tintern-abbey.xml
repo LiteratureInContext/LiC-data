@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="tintern-abbey">
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wordsworth-tintern-abbey">
         <teiHeader xml:lang="en">
             <fileDesc>
          <titleStmt>
                     <title type="main">Tintern Abbey</title>
                     <author>
-                        <name>
                         <persName type="snac" key="50589557">
-                            
+                            <name>
                             <forename>William</forename>
                                 <surname>Wordsworth</surname>
-                        </persName>
-                        </name>
+                            </name>
+                        </persName>       
                     </author>
                     <editor>
                         <persName type="orcid" key="0000-0001-6453-8721">
@@ -57,10 +57,11 @@
                         </analytic>
                         <monogr>
                             <author>
+                                <name>
                                 <forename>William</forename>
-                                <surname>Wordsworth</surname>  
+                                <surname>Wordsworth</surname> 
                             <forename>Samuel Taylor</forename>
-                            <surname>Coleridge</surname> 
+                            <surname>Coleridge</surname> </name>
                             </author>
                             <title>Lyrical Ballads, with a Few Other Poems</title>
                             <imprint>
@@ -71,9 +72,8 @@
                                 <date when="1798">1798</date>
                                 <note>Page images are drawn from the copy of the first edition located in the Penn State Library and digitized by Google.</note>       
                             </imprint>
-                            <imprint>
                                
-                            <biblScope>pp 201-210</biblScope></imprint>
+                            <biblScope>pp 201-210</biblScope>
                         </monogr>
                     </biblStruct>
                 </sourceDesc>
@@ -83,7 +83,7 @@
                 <langUsage>
                     <language ident="en">English</language>
                 </langUsage>
-                
+                <creation/>
                 <textDesc n="poem">
                     <channel mode="w">print</channel>
                     <constitution type="single"/>
