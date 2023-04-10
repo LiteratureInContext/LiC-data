@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="thomson-rule">
 
    <!--TEI Header BEGINS-->
@@ -7,7 +8,7 @@
       <fileDesc>
          <!--BEGINS File Description -->
          <titleStmt>
-            <title type="main">An Ode [Rule, Britannia]</title>
+            <title type="main">"An Ode [Rule, Britannia]"</title>
 
             <author>
                <persName type="lcnaf" key="n79065635">
@@ -16,14 +17,10 @@
                      <surname>Thomson</surname>
                   </name>
                </persName>
-            </author>
-            <author>
                <persName type="lcnaf" key="n80017895">
-                     <forename>David</forename>
-                     <surname>Mallet</surname>
+                  <forename>David</forename>
+                  <surname>Mallet</surname>
                </persName>
-            </author>
-            <author>
                <persName type="lcnaf" key="n79139208">
                   <name ref="thomson-arne.xml">
                      <forename>Thomas</forename>
@@ -31,7 +28,9 @@
                   </name>
                </persName>
             </author>
-            
+
+
+
             <editor>
                <persName type="orcid" key="0000-0002-7400-4093">
                   <name ref="editors.xml#TH">
@@ -44,10 +43,11 @@
             <respStmt>
                <resp>Correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
+               <name ref="editors.xml#TH">Tonya Howe</name>
             </respStmt>
             <sponsor/>
-            <funder>National Endowment for the Humanities</funder>
             <funder>VIVA</funder>
+
          </titleStmt>
 
 
@@ -84,19 +84,35 @@
                   <title>Alfred: A Masque</title>
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="xxx">London</placeName>
+                        <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
                      <publisher>A. Millar</publisher>
                      <date when="1740">1740</date>
-                     <note>This song was originally included in the three-act masque, <hi rend="italic">Alfred</hi>, by James Thomson and David Mallet, published by A. Millar. It was set to music by Thomas Arne. The musical score was first printed in 1741, as a supplement to <hi rend="italic">The Music in the Judgement of Paris</hi>, in London, by Henry Waylett. The score can be viewed via the IMSLP Petrucchi Music Archive at <ref target="http://vmirror.imslp.org/files/imglnks/usimg/9/96/IMSLP284937-PMLP146712-Arne_Rule_Britannia.pdf">http://vmirror.imslp.org/files/imglnks/usimg/9/96/IMSLP284937-PMLP146712-Arne_Rule_Britannia.pdf</ref>.</note>
-                     <note>Page images are drawn from the libretto, available on Google Books at <ref target="https://www.google.com/books/edition/Alfred_a_Masque/OR3haEgISR8C">https://www.google.com/books/edition/Alfred_a_Masque/OR3haEgISR8C</ref>.</note>
-                     <note source="ESTC">For more information on the 1740 text, see the English Short Title Catalog at <ref target="http://estc.bl.uk/T21215">http://estc.bl.uk/T21215</ref>.</note>
+                     <note>This song was originally included in the three-act masque, <hi
+                           rend="italic">Alfred</hi>, by James Thomson and David Mallet, published
+                        by A. Millar. It was set to music by Thomas Arne. The musical score was
+                        first printed in 1741, as a supplement to <hi rend="italic">The Music in the
+                           Judgement of Paris</hi>, in London, by Henry Waylett. The score can be
+                        viewed via the IMSLP Petrucchi Music Archive at <ref
+                           target="http://vmirror.imslp.org/files/imglnks/usimg/9/96/IMSLP284937-PMLP146712-Arne_Rule_Britannia.pdf"
+                           >http://vmirror.imslp.org/files/imglnks/usimg/9/96/IMSLP284937-PMLP146712-Arne_Rule_Britannia.pdf</ref>.</note>
+                     <note>Page images are drawn from the libretto, available on Google Books at
+                           <ref
+                           target="https://www.google.com/books/edition/Alfred_a_Masque/OR3haEgISR8C"
+                           >https://www.google.com/books/edition/Alfred_a_Masque/OR3haEgISR8C</ref>.</note>
+                     <note source="ESTC">For more information on the 1740 text, see the English
+                        Short Title Catalog at <ref target="http://estc.bl.uk/T21215"
+                           >http://estc.bl.uk/T21215</ref>.</note>
                   </imprint>
                   <imprint>
                      <pubPlace>Oxford, UK</pubPlace>
                      <publisher>Oxford Text Archive</publisher>
-                     <date></date>
-                     <note>Thomson, James, 1700-1748. and Mallet, David, 1705?-1765., 2007, Alfred: a masque: Represented before Their Royal Highnesses the Prince and Princess of Wales, at Cliffden, on the first of August, 1740., Oxford Text Archive, <ref target="http://hdl.handle.net/20.500.12024/K030406.000">http://hdl.handle.net/20.500.12024/K030406.000</ref>.</note>
+                     <date/>
+                     <note>Thomson, James, 1700-1748. and Mallet, David, 1705?-1765., 2007, Alfred:
+                        a masque: Represented before Their Royal Highnesses the Prince and Princess
+                        of Wales, at Cliffden, on the first of August, 1740., Oxford Text Archive,
+                           <ref target="http://hdl.handle.net/20.500.12024/K030406.000"
+                           >http://hdl.handle.net/20.500.12024/K030406.000</ref>.</note>
                   </imprint>
                   <extent>44p.; 8⁰.</extent>
                   <biblScope>pp 42-43</biblScope>
@@ -157,7 +173,8 @@
             </interpretation>
             <normalization>
                <p>Original spelling and capitalization is retained, though the long s has been
-                  silently modernized and ligatured forms are not encoded. Main text has been normalized to standard roman type, with highlighted elements in italics.</p>
+                  silently modernized and ligatured forms are not encoded. Main text has been
+                  normalized to standard roman type, with highlighted elements in italics.</p>
             </normalization>
             <hyphenation>
                <p>Hyphenation has not been retained, except where necessary for the sense of the
@@ -197,7 +214,7 @@
 
       <revisionDesc>
          <!--BEGINS Revision Description -->
-         <change when="2022-07-22" who="editors.xml#TH">First pass XML file</change>         
+         <change when="2022-07-22" who="editors.xml#TH">First pass XML file</change>
       </revisionDesc>
 
 
@@ -213,63 +230,86 @@
          <pb n="[TP for Alfred: A Masque]" facs="pageImages/TP.png"/>
          <pb n="42" facs="pageImages/42.png"/>
          <titlePage>
-            <titlePart>
-               An <hi rend="italic">ODE</hi>. [Rule, Britannia]</titlePart>
+            <titlePart> An <hi rend="italic">ODE</hi>. [Rule, Britannia]</titlePart>
+            <docImprint/>
          </titlePage>
-         
+
       </front>
       <body>
-         <div>           
+         <div>
             <lg n="1">
                <head type="sub">1.</head>
                <l n="1">When <hi rend="italic">Britain</hi> first, at heaven's command,</l>
-               <l n="2">Arose from out the azure main;</l>
-               <l n="3"><hi rend="italic">This</hi> was the charter of the land,</l>
-               <l n="4">And guardian Angels sung <hi rend="italic">this</hi> strain:</l>
-               <l n="5">"Rule <hi rend="italic">Britannia,</hi> rule the waves;</l>
-               <l n="6">"<hi rend="italic">Britons</hi> never will be slaves."</l>
+               <l n="2" rend="indent">Arose from out the azure <ref target="main_" corresp="main"
+                     >main</ref>;</l>
+               <note xml:id="main" target="main_" type="gloss" resp="editors.xml#TH">According to
+                  the OED (main, n.5a), the "main" is the open sea--the azure or blue sea, in this
+                  case.</note>
+               <l n="3"><hi rend="italic">This</hi> was the <ref target="charter_" corresp="charter"
+                     >charter</ref> of the land,</l>
+               <note xml:id="charter" target="charter_" type="gloss" resp="editors.xml#TH">A charter
+                  is a founding document, but more specifically, a document from a sovereign source
+                  "granting privileges to, or recognizing the rights of,...certain classes" or
+                  groups of people (OED, n.1a). What entity grants these rights in the poem?</note>
+               <l n="4" rend="indent">And guardian Angels sung <hi rend="italic">this</hi>
+                  strain:</l>
+               <l n="5" rend="indent2">"Rule <hi rend="italic"><ref target="britannia_"
+                        corresp="britannia">Britannia</ref>,</hi> rule the waves;</l>
+               <note xml:id="britannia" target="britannia_" type="editorial" resp="editors.xml#TH"
+                     ><graphic
+                     url="notes/The_East_offering_its_riches_to_Britannia_-_Roma_Spiridone,_1778_-_BL_Foster_245.jpg"
+                  />Britannia is a figurative, allegorical representation of Britain as a female
+                  warrior carrying a trident and a sheild, often accompanied by a lion. The trident
+                  is the weapon of Neptune, the ancient Roman god of the sea, and in the 19th
+                  century, she became a vivid symbol of empire. We might keep in mind the role that
+                  white femininity might play in "civilizing" others. In the 1778 painting shown
+                  here, we see an unhelmeted Britannia accepting offerings from "the East" (<hi
+                     rend="italic">The East Offering its Richest to Britannia</hi>, via <ref
+                     target="https://en.wikipedia.org/wiki/The_East_Offering_its_Riches_to_Britannia"
+                     >Wikipedia</ref>).</note>
+               <l n="6" rend="indent2">"<hi rend="italic">Britons</hi> never will be slaves."</l>
             </lg>
             <lg n="2">
                <head type="sub">2.</head>
                <l n="7">The nations, not so blest as thee,</l>
-               <l n="8">Must, in their turns, to tyrants fall:</l>
+               <l n="8" rend="indent">Must, in their turns, to tyrants fall:</l>
                <l n="9">While thou shalt flourish great and free,</l>
-               <l n="10">The dread and envy of them all.</l>
-               <l n="11">"Rule, <hi rend="italic">&amp;c.</hi></l>
+               <l n="10" rend="indent">The dread and envy of them all.</l>
+               <l n="11" rend="indent2">"Rule, <hi rend="italic">&amp;c.</hi></l>
             </lg>
             <lg n="3">
                <head type="sub">3.</head>
                <l n="12">Still more majestic shalt thou rise,</l>
-               <l n="13">More dreadful, from each foreign stroke:</l>
+               <l n="13" rend="indent">More dreadful, from each foreign stroke:</l>
                <l n="14">As the loud blast that tears the skies,</l>
-               <l n="15">Serves but to root thy native oak.</l>
-               <l n="16">"Rule, <hi rend="italic">&amp;c.</hi></l>
+               <l n="15" rend="indent">Serves but to root thy native <ref target="oak_" corresp="oak">oak</ref>.</l><note xml:id="oak" target="oak_" type="gloss" resp="editors.xml#TH">The native English oak tree (quercus robur) has long been a symbol of strength and justice (<ref target="https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.15987">"Oak Symbolism in the Light of Genomics"</ref>).</note>
+               <l n="16" rend="indent2">"Rule, <hi rend="italic">&amp;c.</hi></l>
             </lg>
             <lg n="4">
                <head type="sub">4.</head>
                <l n="17">Thee haughty tyrants ne'er shall tame:</l>
-               <l n="18">All their attempts to bend thee down,</l>
+               <l n="18" rend="indent">All their attempts to bend thee down,</l>
                <l n="19">Will but arrouse thy generous flame;</l>
-               <l n="20">But work their woe, and thy renown.</l>
-               <l n="21">"Rule, <hi rend="italic">&amp;c.</hi></l>
+               <l n="20" rend="indent">But work their woe, and thy renown.</l>
+               <l n="21" rend="indent2">"Rule, <hi rend="italic">&amp;c.</hi></l>
             </lg>
+            <pb n="43" facs="pageImages/43.png"/>
             <lg n="5">
-               <pb n="43" facs="pageImages/43.png"/>
                <head type="sub">5.</head>
                <l n="22">To thee belongs the rural reign;</l>
-               <l n="23">Thy cities shall with commerce shine:</l>
+               <l n="23" rend="indent">Thy cities shall with commerce shine:</l>
                <l n="24">All thine shall be the subject main,</l>
-               <l n="25">And every shore it circles thine.</l>
-               <l n="26">"Rule, <hi rend="italic">&amp;c.</hi></l>
+               <l n="25" rend="indent">And every shore it circles thine.</l>
+               <l n="26" rend="indent2">"Rule, <hi rend="italic">&amp;c.</hi></l>
             </lg>
             <lg n="6">
                <head type="sub">6.</head>
                <l n="27">The Muses, still with freedom found,</l>
-               <l n="28">Shall to thy happy coast repair:</l>
+               <l n="28" rend="indent">Shall to thy happy coast repair:</l>
                <l n="29">Blest isle! with matchless beauty crown'd,</l>
-               <l n="30">And manly hearts to guard the fair.</l>
-               <l n="31">"Rule, <hi rend="italic">Britannia,</hi> rule the waves:</l>
-               <l n="32">"<hi rend="italic">Britons</hi> never will be slaves.</l>
+               <l n="30" rend="indent">And manly hearts to guard the fair.</l>
+               <l n="31" rend="indent2">"Rule, <hi rend="italic">Britannia,</hi> rule the waves:</l>
+               <l n="32" rend="indent2">"<hi rend="italic">Britons</hi> never will be slaves.</l>
             </lg>
          </div>
       </body>
