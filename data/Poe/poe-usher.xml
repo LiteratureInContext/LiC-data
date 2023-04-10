@@ -2,7 +2,6 @@
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="poe-usher">
   <teiHeader xml:lang="en">
-
     <fileDesc>
       <titleStmt>
         <title type="main">"The Fall of the House of Usher"</title>
@@ -33,7 +32,6 @@
         <sponsor/>
         <funder>National Endowment for the Humanities</funder>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Literature in Context</publisher>
         <address>
@@ -49,17 +47,11 @@
             in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported License
           </licence>
         </availability>
-
       </publicationStmt>
-
       <sourceDesc>
-
-
         <biblStruct>
           <analytic>
-
             <title>"The Fall of the House of Usher"</title>
-
           </analytic>
           <monogr>
             <author>
@@ -78,22 +70,20 @@
               <!-- Insert year of earliest/first edition. Note the attribute @when. -->
 
               <note>Page images are drawn from the <ref
-                target="https://catalog.hathitrust.org/Record/000529340"
-                  >HathiTrust</ref>'s digital copy of <hi rend="italic">Burton's Gentleman's
-                  Magazine</hi>, sourced from the University of Michigan.</note>
+                  target="https://catalog.hathitrust.org/Record/000529340">HathiTrust</ref>'s
+                digital copy of <hi rend="italic">Burton's Gentleman's Magazine</hi>, sourced from
+                the University of Michigan.</note>
               <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
               <note>Text for this digital edition drawn from <ref
                   target="https://docsouth.unc.edu/southlit/poe/poe.html#poe64"
                   >https://docsouth.unc.edu/southlit/poe/poe.html#poe64</ref> and checked against
                 the HathiTrust first edition.</note>
             </imprint>
-
             <biblScope unit="volume">V</biblScope>
             <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
             <biblScope>pp 145-152</biblScope>
           </monogr>
         </biblStruct>
-
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -101,45 +91,25 @@
         <language ident="en">English</language>
       </langUsage>
       <creation/>
-
       <textDesc n="tale">
-
         <channel mode="w">print</channel>
-
         <constitution type="single"/>
-
         <derivation type="original"/>
-
         <domain/>
-
         <factuality type="fiction"/>
-
         <interaction/>
-
         <preparedness/>
-
         <purpose type="entertain" degree="high"/>
-
         <purpose type="inform" degree="low"/>
       </textDesc>
-
-
       <settingDesc>
-
         <setting>
-
           <name type="tgn" key="4003761">Western Europe</name>
           <time from="1800" to="1845">Nineteenth century</time>
-
         </setting>
       </settingDesc>
-
     </profileDesc>
-
-
-
     <encodingDesc>
-
       <projectDesc>
         <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
           project, which provides an accessible, curated, and marked-up selection of primary sources
@@ -194,92 +164,74 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2021" who="editors.xml#JOB">First pass xml and annotations</change>
-      <change when="2022" who="editors.xml#TH">Updates to XML, source notes, page images, annotations with MU student additions</change>
+      <change when="2022" who="editors.xml#TH">Updates to XML, source notes, page images,
+        annotations with MU student additions</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <front>
-      <pb n="[145]" facs="pageImages/mdp.39015011390625-seq_161.jpg"/>
+      <pb n="145" facs="pageImages/mdp.39015011390625-seq_161.jpg"/>
       <titlePage>
         <titlePart>
-          <ref target="fall_" corresp="fall">THE FALL OF THE HOUSE OF USHER.</ref><note xml:id="fall"
-            target="fall_" type="editorial" resp="editors.xml#JOB">
-            <p>This has long been one of Poe's most popular stories, but it is a story that has long
-              resisted particularly persuasive interpretation. It's obvious that the entire tale
-              turns on the pun on the word "house," here meaning both the literal house of the Usher
-              family and the "house" in the sense of the family line itself. There has long been a
-              tradition that Poe was inspired by the true story of James Campbell Usher and Agnes
-              Pye Usher, twins who were the children of Luke and Harriet Usher, actor friends of
-              Poe's mother. Like Poe himself, the Usher twins were orphaned as children. The
-              situation is suggestive, but beyond the coincidence of orphaned twins named Usher, it
-              is impossible to know how much Poe knew about the real-life Ushers, and how much he
-              might have been inspired by them. </p>
-          </note></titlePart>
+          <ref target="fall_" corresp="fall">THE FALL OF THE HOUSE OF USHER.</ref></titlePart>
         <lb/>
         <epigraph>
           <quote>
             <ref target="son_" corresp="son"><lg>
                 <l>[Son cœur est un luth suspendu;</l>
                 <l>Sitôt qu’on le touche il résonne.]</l>
-              </lg></ref><note xml:id="son" target="son_" type="editorial" resp="editors.xml#JOB"
-              >"His heart is a hanging lute; as soon as it is touched, it responds." Poe adapted the
-              lines slightly from the poem entitled "Le Refus" by the contemporary French poet
-              Pierre-Jean de Beranger. This epigraph is not in the earliest printing.</note></quote>
+              </lg></ref></quote>
           <bibl><persName type="lcnaf" key="n81055604"><hi rend="italic">[De
               Béranger.]</hi></persName></bibl>
           <lb/>
-        </epigraph><lb/>
-<docAuthor>BY EDGAR A. POE</docAuthor>
+        </epigraph>
+        <lb/>
+        <docAuthor>BY EDGAR A. POE</docAuthor>
         <docImprint/>
-        
       </titlePage>
     </front>
     <body>
       <div>
-        
         <p>During the whole of a dull, dark, and soundless day in the autumn of the year, when the
           clouds hung oppressively low in the heavens, I had been passing alone, on horseback,
           through a singularly dreary tract of country; and at length found myself, as the shades of
-          the evening drew on, within view of the melancholy House of Usher. I know not how it was—but, with the
-          first glimpse of the building, a sense of insufferable gloom pervaded my spirit. I say
-          insufferable; for the feeling was unrelieved by any of that half-pleasurable, because
-          poetic, sentiment, with which the mind usually receives even the sternest natural images
-          of the desolate or terrible. I looked upon the scene before me—upon the mere house, and
-          the simple landscape features of the domain—upon the bleak walls—upon the vacant eye-like
-          windows—upon a few rank sedges—and upon a few white trunks of decayed trees—with an utter
-          depression of soul which I can compare to no earthly sensation more properly than to the
-          after-dream of the reveller upon opium—the bitter lapse into common life—the hideous
-          dropping off of the veil. There was an iciness, a sinking, a sickening of the heart—an
-          unredeemed dreariness of thought which no goading of the imagination could torture into
-          aught of the sublime. What was it— I paused to think—what was it that so unnerved me in
-          the contemplation of the House of Usher? It was a mystery all
-          insoluble; nor could I grapple with the shadowy fancies that crowded upon me as I
-          pondered. I was forced to fall back upon the unsatisfactory conclusion, that while, beyond
-          doubt, there <hi rend="italic">are</hi> combinations of very simple natural objects which
-          have the power of thus affecting us, still the reason, and the analysis, of this power,
-          lie among considerations beyond our depth. It was possible, I reflected, that a mere
-          different arrangement of the particulars of the scene, of the details of the picture,
+          the evening drew on, within view of the melancholy House of Usher. I know not how it
+          was—but, with the first glimpse of the building, a sense of insufferable gloom pervaded my
+          spirit. I say insufferable; for the feeling was unrelieved by any of that
+          half-pleasurable, because poetic, sentiment, with which the mind usually receives even the
+          sternest natural images of the desolate or terrible. I looked upon the scene before
+          me—upon the mere house, and the simple landscape features of the domain—upon the bleak
+          walls—upon the vacant eye-like windows—upon a few rank sedges—and upon a few white trunks
+          of decayed trees—with an utter depression of soul which I can compare to no earthly
+          sensation more properly than to the after-dream of the reveller upon opium—the bitter
+          lapse into common life—the hideous dropping off of the veil. There was an iciness, a
+          sinking, a sickening of the heart—an unredeemed dreariness of thought which no goading of
+          the imagination could torture into aught of the sublime. What was it— I paused to
+          think—what was it that so unnerved me in the contemplation of the House of Usher? It was a
+          mystery all insoluble; nor could I grapple with the shadowy fancies that crowded upon me
+          as I pondered. I was forced to fall back upon the unsatisfactory conclusion, that while,
+          beyond doubt, there <hi rend="italic">are</hi> combinations of very simple natural objects
+          which have the power of thus affecting us, still the reason, and the analysis, of this
+          power, lie among considerations beyond our depth. It was possible, I reflected, that a
+          mere different arrangement of the particulars of the scene, of the details of the picture,
           would be sufficient to modify, or perhaps to annihilate its capacity for sorrowful
           impression; and, acting upon this idea, I reined my horse to the precipitous brink of a
-          black and lurid <ref target="tarn_" corresp="tarn">tarn</ref><note xml:id="tarn"
-            target="tarn_" type="editorial" resp="editors.xml#LH">A tarn is a mountain lake, pond,
-            or pool</note>that lay in unruffled lustre by the dwelling, and gazed down—but with a
-          shudder even more thrilling than before—upon the re-modelled and inverted images of the
-          gray sedge, and the ghastly tree-stems, and the vacant and eye-like windows.</p>
+          black and lurid <ref target="tarn_" corresp="tarn">tarn</ref> that lay in unruffled lustre
+          by the dwelling, and gazed down—but with a shudder even more thrilling than before—upon
+          the re-modelled and inverted images of the gray sedge, and the ghastly tree-stems, and the
+          vacant and eye-like windows.</p>
         <p>Nevertheless, in this mansion of gloom I now proposed to myself a sojourn of some weeks.
           Its proprietor, Roderick Usher, had been one of my boon companions in boyhood; but many
           years had elapsed since our last meeting. A letter, however, had lately reached me in a
           distant part of the country—a letter from him—which, in its wildly importunate nature, had
-          admitted of no other than a personal reply. The <ref target="ms_" corresp="ms"
-            >MS.</ref><note xml:id="ms" target="ms_" type="gloss" resp="editors.xml#LH">MS. stands
-            for manuscript</note>gave evidence of nervous agitation. The writer spoke of acute
-          bodily illness—of a pitiable mental idiosyncrasy which oppressed him—and of an earnest
-          desire to see me, as his best, and indeed, his only personal friend, with a view of
-          attempting, by the cheerfulness of my society, some alleviation of his malady. It was the
-          manner in which all this, and much more, was said—it was the apparent <hi rend="italic"
-            >heart</hi> that went with his request—which allowed me no room for hesitation-- and I
-          accordingly obeyed, what I still considered a very singular summons, forthwith.</p>
-
+          admitted of no other than a personal reply. The <ref target="ms_" corresp="ms">MS.</ref>
+          gave evidence of nervous agitation. The writer spoke of acute bodily illness—of a pitiable
+          mental idiosyncrasy which oppressed him—and of an earnest desire to see me, as his best,
+          and indeed, his only personal friend, with a view of attempting, by the cheerfulness of my
+          society, some alleviation of his malady. It was the manner in which all this, and much
+          more, was said—it was the apparent <hi rend="italic">heart</hi> that went with his
+          request—which allowed me no room for hesitation—and I accordingly obeyed, what I still
+          considered a very singular summons, forthwith.</p>
         <p>Although, as boys, we had been even intimate associates, yet I really knew little of my
           friend. His reserve had been always excessive and habitual. I was aware, however, that his
           very ancient family had been noted, time out of mind, for a peculiar sensibility of
@@ -296,10 +248,9 @@
           might have exercised upon the other—it was this deficiency, perhaps, of collateral issue,
           and the consequent undeviating transmission, from sire to son, of the patrimony with the
           name, which had, at length, so identified the two as to merge the original title of the
-          estate in the quaint and equivocal appellation of the "House of
-            Usher"—an appellation <pb n="146" facs="pageImages/mdp.39015011390625-seq_162.jpg"/> which
-          seemed to include, in the minds of the peasantry who used it, both the family and the
-          family mansion.</p>
+          estate in the quaint and equivocal appellation of the "House of Usher"—an appellation <pb
+            n="146" facs="pageImages/mdp.39015011390625-seq_162.jpg"/> which seemed to include, in
+          the minds of the peasantry who used it, both the family and the family mansion.</p>
         <p>I have said that the sole effect of my somewhat childish experiment, of looking down
           within the tarn, had been to deepen the first singular impression. There can be no doubt
           that the consciousness of the rapid increase of my superstition—for why should I not so
@@ -311,7 +262,7 @@
           worked upon my imagination as really to believe that about the whole mansion and domain
           there hung an atmosphere peculiar to themselves and their immediate vicinity—an atmosphere
           which had no affinity with the air of heaven, but which had reeked up from the decayed
-          trees, and the gray wall, and the silent tarn, in the form of an inelastic vapor or gas--
+          trees, and the gray wall, and the silent tarn, in the form of an inelastic vapor or gas—
           dull, sluggish, faintly discernible, and leaden-hued. Shaking off from my spirit what <hi
             rend="italic">must</hi> have been a dream, I scanned more narrowly the real aspect of
           the building. Its principal feature seemed to be that of an excessive antiquity. The
@@ -333,10 +284,7 @@
           how, to heighten the vague sentiments of which I have already spoken. While the objects
           around me—while the carvings of the ceilings, the sombre tapestries of the walls, the
           ebony blackness of the floors and the <ref target="phantasm_" corresp="phantasm"
-            >phantasmagoric</ref><note xml:id="phantasm" target="phantasm_" type="gloss"
-            resp="editors.xml#LH">Having a fantastic or deceptive appearance, like something in a
-            dream or created by the imagination. Like a fantasy, archaically spelled
-            "phantasy."</note> armorial trophies which rattled as I strode, were but matters to
+            >phantasmagoric</ref> armorial trophies which rattled as I strode, were but matters to
           which, or to such as which, I had been accustomed from my infancy—while I hesitated not to
           acknowledge how familiar was all this—I still wondered to find how unfamiliar were the
           fancies which ordinary images were stirring up. On one of the staircases, I met the
@@ -355,32 +303,28 @@
           gloom hung over and pervaded all.</p>
         <p>Upon my entrance, Usher arose from a sofa on which he had been lying at full length, and
           greeted me with a vivacious warmth which had much in it, I at first thought, of an
-          overdone cordiality —of the constrained effort of the <ref target="ennuye_"
-            corresp="ennuye">ennuyé</ref><note xml:id="ennuye" target="ennuye_" type="gloss"
-            resp="editors.xml#JOB">Ennuyé: bored, world-weary, enervated.</note>man of the world. A
-          glance, however, at his countenance, convinced me of his perfect sincerity. We sat down;
-          and for some moments, while he spoke not, I gazed upon him with a feeling half of pity,
-          half of awe. Surely, man had never before so terribly altered, in so brief a period, as
-          had Roderick Usher! It was with difficulty that I could bring myself to admit the identity
-          of the wan being before me with the companion of my early boyhood. Yet the character of
-          his face had been at all times remarkable. A <ref target="cadaver_" corresp="cadaver"
-            >cadaverousness</ref><note xml:id="cadaver" target="cadaver_" type="gloss"
-            resp="editors.xml#LH">Of or like a corpse or cadaver; pale, ghastly, haggard, and
-            thin</note> of complexion; an eye large, liquid, and luminous beyond comparison; lips
-          somewhat thin and very pallid, but of a surpassingly beautiful curve; a nose of a delicate
-          Hebrew model, but with a breadth of nostril unusual in similar formations; a finely
-          moulded chin, speaking, in its want of prominence, of a want of moral energy; hair of a
-          more than web-like softness and tenuity; these features, with an inordinate expansion
-          above the regions of the temple, made up altogether a countenance not easily to be
-          forgotten. And now in the mere exaggeration of the prevailing character of these features,
-          and of the expression they were wont to convey, lay so much of change that I doubted to
-          whom I spoke. The now ghastly pallor of the skin, and the now miraculous lustre of the
-          eye, above all things startled and even awed me. The silken hair, too, had been suffered
-          to grow all unheeded, and as, in its wild gossamer texture, it floated rather than fell
-          about the face, I could not, even with effort, connect its arabesque expression with any
-          idea of simple humanity.</p>
+          overdone cordiality—of the constrained effort of the <ref target="ennuye_"
+            corresp="ennuye">ennuyé</ref> man of the world. A glance, however, at his countenance,
+          convinced me of his perfect sincerity. We sat down; and for some moments, while he spoke
+          not, I gazed upon him with a feeling half of pity, half of awe. Surely, man had never
+          before so terribly altered, in so brief a period, as had Roderick Usher! It was with
+          difficulty that I could bring myself to admit the identity of the wan being before me with
+          the companion of my early boyhood. Yet the character of his face had been at all times
+          remarkable. A <ref target="cadaver_" corresp="cadaver">cadaverousness</ref> of complexion;
+          an eye large, liquid, and luminous beyond comparison; lips somewhat thin and very pallid,
+          but of a surpassingly beautiful curve; a nose of a delicate Hebrew model, but with a
+          breadth of nostril unusual in similar formations; a finely moulded chin, speaking, in its
+          want of prominence, of a want of moral energy; hair of a more than web-like softness and
+          tenuity; these features, with an inordinate expansion above the regions of the temple,
+          made up altogether a countenance not easily to be forgotten. And now in the mere
+          exaggeration of the prevailing character of these features, and of the expression they
+          were wont to convey, lay so much of change that I doubted to whom I spoke. The now ghastly
+          pallor of the skin, and the now miraculous lustre of the eye, above all things startled
+          and even awed me. The silken hair, too, had been suffered to grow all unheeded, and as, in
+          its wild gossamer texture, it floated rather than fell about the face, I could not, even
+          with effort, connect its arabesque expression with any idea of simple humanity.</p>
         <pb n="147" facs="pageImages/mdp.39015011390625-seq_163.jpg"/>
-        <p> In the manner of my friend I was at once struck with an incoherence —an inconsistency;
+        <p> In the manner of my friend I was at once struck with an incoherence—an inconsistency;
           and I soon found this to arise from a series of feeble and futile struggles to overcome an
           habitual trepidancy, an excessive nervous agitation. For something of this nature I had
           indeed been prepared, no less by his letter, than by reminiscences of certain boyish
@@ -389,14 +333,14 @@
           from a tremulous indecision (when the animal spirits seemed utterly in abeyance) to that
           species of energetic concision—that abrupt, weighty, unhurried, and hollow-sounding
           enunciation—that leaden, self-balanced and perfectly modulated guttural utterance, which
-          may be observed in the moments of the [intensest] excitement of the lost drunkard, or the
+          may be observed in the moments of the intensest excitement of the lost drunkard, or the
           irreclaimable eater of opium.</p>
         <p>It was thus that he spoke of the object of my visit, of his earnest desire to see me, and
           of the solace he expected me to afford him. He entered, at some length, into what he
           conceived to be the nature of his malady. It was, he said, a constitutional and a family
           evil, and one for which he despaired to find a remedy—a mere nervous affection, he
           immediately added, which would undoubtedly soon pass off. It displayed itself in a host of
-          unnatural sensations. Some of these, as he detailed them, interested and bewildered me--
+          unnatural sensations. Some of these, as he detailed them, interested and bewildered me—
           although, perhaps, the terms, and the general manner of the narration had their weight. He
           suffered much from a morbid acuteness of the senses; the most insipid food was alone
           endurable; he could wear only garments of certain texture; the odors of all flowers were
@@ -427,8 +371,8 @@
           him (him the hopeless and the frail) the last of the ancient race of the Ushers." As he
           spoke, the lady Madeline (for so was she called) passed slowly through a remote portion of
           the apartment, and, without having noticed my presence, disappeared. I regarded her with
-          an utter astonishment not unmingled with dread. Her figure, her air, her features-- all,
-          in their very minutest development were those-- were identically (I can use no other
+          an utter astonishment not unmingled with dread. Her figure, her air, her features—all,
+          in their very minutest development were those—were identically (I can use no other
           sufficient term) were identically those of the Roderick Usher who sat beside me. A feeling
           of stupor oppressed me, as my eyes followed her retreating steps. When a door, at length,
           closed upon her exit, my glance sought instinctively and eagerly the countenance of the
@@ -441,59 +385,53 @@
           steadily borne up against the pressure of her malady, and had not betaken herself finally
           to bed; but, on the closing in of the evening of my arrival at the house, she succumbed,
           as her brother told me at night with inexpressible agitation, to the prostrating power of
-          the destroyer-- and I learned that the glimpse I had obtained of her person would thus
+          the destroyer—and I learned that the glimpse I had obtained of her person would thus
           probably be the last I should obtain—that the lady, at least while living, would be seen
           by me no more.</p>
         <p>For several days ensuing, her name was unmentioned by either Usher or myself; and during
           this period I was busied in earnest endeavors to alleviate the melancholy of my friend. We
-          painted and read together-- or I listened, as if in a dream, to the wild improvisations of
+          painted and read together—or I listened, as if in a dream, to the wild improvisations of
           his speaking guitar. And thus, as a closer and still closer intimacy admitted me more
           unreservedly in the recesses of his spirit, the more bitterly did I perceive the futility
           of all attempt at cheering a mind from which darkness, as if an inherent positive quality,
           poured forth upon all object of the moral and physical universe, in one unceasing
           radiation of gloom.</p>
-        <p>I shall ever bear about me, as <ref target="muslim_" corresp="muslim">Moslemin</ref><note
-            xml:id="muslim" target="muslim_" type="editorial" resp="editors.xml#LH">Muslim</note>
-          their shrouds at <placeName type="tgn" key="7003870">Mecca</placeName>, a memory of the many solemn <pb n="148"
-            facs="pageImages/mdp.39015011390625-seq_165.jpg"/> hours I thus spent alone with the master of the
-            House of Usher. Yet I should fail in any attempt to convey an
-          idea of the exact character of the studies, or of the occupations, in which he involved
-          me, or led me the way. An excited and highly distempered ideality threw a sulphureous
-          lustre over all. His long improvised dirges will ring for ever in my ears. Among other
-          things, I bear painfully in mind a certain singular perversion and amplification of the
-          wild air of the last waltz of Von Weber. From the paintings over which his elaborate fancy
-          brooded, and which grew, touch by touch, into vaguenesses at which I shuddered the more
-          thrillingly, because I shuddered knowing not why, from these paintings (vivid as their
-          images now are before me) I would in vain endeavor to educe more than a small portion
-          which should lie within the compass of merely written words. By the utter simplicity, by
-          the nakedness, of his designs, he arrested and over-awed attention. If ever mortal painted
-          an idea, that mortal was Roderick Usher. For me at least—in the circumstances then
-          surrounding me—there arose out of the pure abstractions which the hypochondriac contrived
-          to throw upon his canvass, an intensity of intolerable awe, no shadow of which felt I ever
-          yet in the contemplation of the certainly glowing yet too concrete reveries of <ref
-            target="fuseli_" corresp="fuseli"><persName type="lcnaf" key="n79021856">Fuseli</persName></ref><note xml:id="fuseli" target="fuseli_"
-            type="editorial" resp="editors.xml#LH"><ref
-              target="https://www.nga.gov/collection/artist-info.2513.html">Henry Fuseli</ref> was a
-            Swiss painter who painted many works dealing with supernatural subject
-          matter.</note>.</p>
+        <p>I shall ever bear about me, as <ref target="muslim_" corresp="muslim">Moslemin</ref>
+          their shrouds at <placeName type="tgn" key="7003870">Mecca</placeName>, a memory of the
+          many solemn <pb n="148" facs="pageImages/mdp.39015011390625-seq_165.jpg"/> hours I thus
+          spent alone with the master of the House of Usher. Yet I should fail in any attempt to
+          convey an idea of the exact character of the studies, or of the occupations, in which he
+          involved me, or led me the way. An excited and highly distempered ideality threw a
+          sulphureous lustre over all. His long improvised dirges will ring for ever in my ears.
+          Among other things, I bear painfully in mind a certain singular perversion and
+          amplification of the wild air of the last waltz of Von Weber. From the paintings over
+          which his elaborate fancy brooded, and which grew, touch by touch, into vaguenesses at
+          which I shuddered the more thrillingly, because I shuddered knowing not why, from these
+          paintings (vivid as their images now are before me) I would in vain endeavor to educe more
+          than a small portion which should lie within the compass of merely written words. By the
+          utter simplicity, by the nakedness, of his designs, he arrested and over-awed attention.
+          If ever mortal painted an idea, that mortal was Roderick Usher. For me at least—in the
+          circumstances then surrounding me—there arose out of the pure abstractions which the
+          hypochondriac contrived to throw upon his canvass, an intensity of intolerable awe, no
+          shadow of which felt I ever yet in the contemplation of the certainly glowing yet too
+          concrete reveries of <ref target="fuseli_" corresp="fuseli"><persName type="lcnaf"
+              key="n79021856">Fuseli</persName></ref>.</p>
         <p>One of the phantasmagoric conceptions of my friend, partaking not so rigidly of the
           spirit of abstraction, may be shadowed forth, although feebly, in words. A small picture
           presented the interior of an immensely long and rectangular vault or tunnel, with low
           walls smooth, white, and without interruption or device. Certain accessory points of the
           design served well to convey the idea that this excavation lay at an exceeding depth below
           the surface of the earth. No outlet was observed in any portion of its vast extent, and no
-          torch, or other artificial source of light was discernible-- yet a flood of intense rays
+          torch, or other artificial source of light was discernible—yet a flood of intense rays
           rolled throughout, and bathed the whole in a ghastly and inappropriate splendor.</p>
         <p>I have just spoken of that morbid condition of the auditory nerve which rendered all
           music intolerable to the sufferer, with the exception of certain effects of stringed
           instruments. It was, perhaps, the narrow limits to which he thus confined himself upon the
           guitar, which gave birth, in great measure, to the fantastic character of his
           performances. But the fervid <hi rend="italic">facility</hi> of his <ref
-            target="impromptu_" corresp="impromptu">impromptus</ref><note xml:id="impromptu"
-            target="impromptu_" type="editorial" resp="editors.xml#LH">A short piece of instrumental
-            music, especially a solo, that is reminiscent of an improvisation.</note> could not be
-          so accounted for. They must have been, and were, in the notes, as well as in the words of
-          his wild fantasias, (for he not unfrequently accompanied himself with rhymed verbal
+            target="impromptu_" corresp="impromptu">impromptus</ref> could not be so accounted for.
+          They must have been, and were, in the notes, as well as in the words of his wild
+          fantasias, (for he not unfrequently accompanied himself with rhymed verbal
           improvisations,) the result of that intense mental collectedness and concentration to
           which I have previously alluded as observable only in particular moments of the highest
           artificial excitement. The words of one of these rhapsodies I have easily borne away in
@@ -534,10 +472,7 @@
                 <l>Spirits moving musically</l>
                 <l>To a lute's well-tunéd law,</l>
                 <l>Round about a throne, where sitting</l>
-                <l><ref target="porphyrogene_" corresp="porphyrogene">(Porphyrogene!)</ref><note
-                    xml:id="porphyrogene" target="porphyrogene_" type="editorial"
-                    resp="editors.xml#AA">A son that is born after the accession of his father to
-                    the throne.</note></l>
+                <l><ref target="porphyrogene_" corresp="porphyrogene">(Porphyrogene!)</ref></l>
                 <l>In state his glory well befitting,</l>
                 <l>The sovereign of the realm was seen.</l>
               </lg>
@@ -604,18 +539,14 @@
           Nicholas Klimm by Holberg; the Chiromancy of Robert Flud, of Jean D'Indaginé, and of De la
           Chambre; the Journey into the Blue Distance of Tieck; and the City of the Sun of
           Campanella. One favorite volume was a small octavo edition of the <ref target="eymeric_"
-            corresp="eymeric">Directorium Inquisitorium</ref><note xml:id="eymeric"
-            target="eymeric_" type="editorial" resp="editors.xml#AA">This work was written by
-            Spanish theologian Nicholas Eymeric. Eymeric was appointed Grand Inquisitor of Aragon in
-            1357 and wrote it to be a guidebook for the Spanish Inquisition.</note>, by the
-          Dominican <persName type="lcnaf" key="n87884445">Eymeric de Gironne</persName>; and there were passages in <ref target="mela_"
-            corresp="mela"><persName type="lcnaf" key="n80139084">Pomponius Mela</persName></ref><note xml:id="mela" target="mela_" type="editorial"
-            resp="editors.xml#AA">Pomponius Mela was a Roman geographer that created the only
-            ancient writing on Geography in Latin, the<hi rend="italic">De situ orbis</hi>.</note>,
-          about the old African Satyrs and Œgipans, over which Usher would sit dreaming for hours.
-          His chief delight, however, was found in the earnest and repeated perusal of an
-          exceedingly rare and curious book in quarto Gothic— the manual of a forgotten church—the
-            <hi rend="italic">Vigiliae Mortuorum secundum Chorum Ecclesiae Maguntinae.</hi></p>
+            corresp="eymeric">Directorium Inquisitorium</ref>, by the Dominican <persName
+            type="lcnaf" key="n87884445">Eymeric de Gironne</persName>; and there were passages in
+            <ref target="mela_" corresp="mela"><persName type="lcnaf" key="n80139084">Pomponius
+              Mela</persName></ref>, about the old African Satyrs and Œgipans, over which Usher
+          would sit dreaming for hours. His chief delight, however, was found in the earnest and
+          repeated perusal of an exceedingly rare and curious book in quarto Gothic—the manual of a
+          forgotten church—the <ref target="vigilae_" corresp="vigilae"><hi rend="italic">Vigiliae
+              Mortuorum secundum Chorum Ecclesiae Maguntinae.</hi></ref></p>
         <p> I could not help thinking of the wild ritual of this work, and of its probable influence
           upon the hypochondriac, when, one evening, having informed me abruptly that the lady
           Madeline was no more, he stated his intention of preserving her corpse for a fortnight,
@@ -623,12 +554,12 @@
           the building. The worldly reason, however, assigned for this singular proceeding, was one
           which I did not feel at liberty to dispute. The brother had been led to his resolution (so
           he told me) by consideration of the unusual character <pb n="150"
-            facs="pageImages/mdp.39015011390625-seq_167.jpg"/>character of the malady of the deceased, of certain
-          obtrusive and eager inquiries on the part of her medical men, and of the remote and
-          exposed situation of the burial ground of the family. I will not deny that when I called
-          to mind the sinister countenance of the person whom I met upon the staircase, on the day
-          of my arrival at the house, I had no desire to oppose what I regarded as at best but a
-          harmless, and by no means an unnatural precaution.</p>
+            facs="pageImages/mdp.39015011390625-seq_167.jpg"/>character of the malady of the
+          deceased, of certain obtrusive and eager inquiries on the part of her medical men, and of
+          the remote and exposed situation of the burial ground of the family. I will not deny that
+          when I called to mind the sinister countenance of the person whom I met upon the
+          staircase, on the day of my arrival at the house, I had no desire to oppose what I
+          regarded as at best but a harmless, and by no means an unnatural precaution.</p>
         <p> At the request of Usher, I personally aided him in the arrangements for the temporary
           entombment. The body having been encoffined, we two alone bore it to its rest. The vault
           in which we placed it (and which had been so long unopened that our torches, half
@@ -636,13 +567,11 @@
           small, damp, and utterly without means of admission for light; lying, at great depth,
           immediately beneath that portion of the building in which was my own sleeping apartment.
           It had been used, apparently, in remote feudal times, for the worst purposes of a <ref
-            target="keep_" corresp="keep">donjon-keep</ref><note xml:id="keep" target="keep_"
-            type="editorial" resp="editors.xml#AA">The great inner tower of a medieval
-            castle.</note>, and, in later days, as a place of deposit for powder, or other highly
-          combustible substance, as a portion of its floor, and the whole interior of a long archway
-          through which we reached it, were carefully sheathed with copper. The door, of massive
-          iron, had been, also, similarly protected. Its immense weight caused an unusually sharp
-          grating sound, as it moved upon its hinges.</p>
+            target="keep_" corresp="keep">donjon-keep</ref>, and, in later days, as a place of
+          deposit for powder, or other highly combustible substance, as a portion of its floor, and
+          the whole interior of a long archway through which we reached it, were carefully sheathed
+          with copper. The door, of massive iron, had been, also, similarly protected. Its immense
+          weight caused an unusually sharp grating sound, as it moved upon its hinges.</p>
         <p> Having deposited our mournful burden upon tressels within this region of horror, we
           partially turned aside the yet unscrewed lid of the coffin, and looked upon the face of
           the tenant. The exact similitude between the brother and sister even here again startled
@@ -717,13 +646,10 @@
           dangerous to your frame. Here is one of your favorite romances. I will read, and you shall
           listen— and so we will pass away this terrible night together."</p>
         <p>The antique volume which I had taken up was the <ref target="trist_" corresp="trist">"Mad
-            Trist" of Sir Launcelot Canning</ref><note xml:id="trist" target="trist_"
-            type="editorial" resp="editors.xml#AA">"The Mad Trist" by Sir Launcelot Canning is a
-            story created by Poe himself to add to the plot of the story. It suggests the medieval
-            romance tradition.</note>— but I had called it a favorite of Usher's more in sad jest
-          than in earnest; for, in truth, there is little in its uncouth and unimaginative prolixity
-          which could have had interest for the lofty and spiritual ideality of my friend. It was,
-          however, the only book immediately at hand; and I indulged a vague hope that the
+            Trist" of Sir Launcelot Canning</ref>—but I had called it a favorite of Usher's more in
+          sad jest than in earnest; for, in truth, there is little in its uncouth and unimaginative
+          prolixity which could have had interest for the lofty and spiritual ideality of my friend.
+          It was, however, the only book immediately at hand; and I indulged a vague hope that the
           excitement which now agitated the hypochondriac might find relief (for the history of
           mental disorder is full of similar anomalies) even in the extremeness of the folly which I
           should read. Could I have judged, indeed, by the wild, overstrained air of vivacity with
@@ -756,9 +682,10 @@
           of a scaly and prodigious demeanor, and of a fiery tongue, which sate in guard before a
           palace of gold, with a floor of silver; and upon the wall there hung a shield of shining
           brass with this legend enwritten—</p>
-
-       <lg> <l>Who entereth herein, a conqueror hath bin;</l>
-        <l>Who slayeth the dragon, the shield he shall win;</l></lg>
+        <lg>
+          <l>Who entereth herein, a conqueror hath bin;</l>
+          <l>Who slayeth the dragon, the shield he shall win;</l>
+        </lg>
         <p>And Ethelred uplifted his mace, and struck upon the head of the dragon, which fell before
           him, and gave up his pesty breath, with a shriek so horrid and harsh, and withal so
           piercing, that Ethelred had fain to close his ears with his hands against the dreadful
@@ -768,24 +695,22 @@
           direction it proceeded I found it impossible to say) a low and apparently distant, but
           harsh, protracted, and most unusual screaming or grating sound—the exact counterpart of
           what my fancy had already conjured up as the sound of the dragon's unnatural shriek as
-          described by the <ref target="romance_" corresp="romance_">romancer</ref><note
-            xml:id="romance" target="romance_" type="editorial" resp="editors.xml#MUStudStaff">In
-            this sense, a "romancer" is someone who writes a chivalric medieval romance; in this
-            case, it is the fictional Sir Launcelot Canning.</note>.</p>
+          described by the <ref target="romance_" corresp="romance_">romancer</ref>.</p>
         <p>Oppressed, as I certainly was, upon the occurrence of this second and most extraordinary
           coincidence, by a thousand conflicting sensations, in which wonder and extreme terror were
           predominant, I still retained sufficient presence of mind to avoid exciting, by any
-          observation, the sensitive nervousness <pb n="152" facs="pageImages/mdp.39015011390625-seq_169.jpg"/> of
-          my companion. I was by no means certain that he had noticed the sounds in question;
-          although, assuredly, a strange alteration had, during the last few minutes, taken place in
-          his demeanor. From a position fronting my own, he had gradually brought round his chair,
-          so as to sit with his face to the door of the chamber, and thus I could but partially
-          perceive his features, although I saw that his lips trembled as if he were murmuring
-          inaudibly. His head had dropped upon his breast—yet I knew that he was not asleep, from
-          the wide and rigid opening of the eye, as I caught a glance of it in profile. The motion
-          of his body, too, was at variance with this idea—for he rocked from side to side with a
-          gentle yet constant and uniform sway. Having rapidly taken notice of all this, I resumed
-          the narrative of Sir Launcelot which thus proceeded:—</p>
+          observation, the sensitive nervousness <pb n="152"
+            facs="pageImages/mdp.39015011390625-seq_169.jpg"/> of my companion. I was by no means
+          certain that he had noticed the sounds in question; although, assuredly, a strange
+          alteration had, during the last few minutes, taken place in his demeanor. From a position
+          fronting my own, he had gradually brought round his chair, so as to sit with his face to
+          the door of the chamber, and thus I could but partially perceive his features, although I
+          saw that his lips trembled as if he were murmuring inaudibly. His head had dropped upon
+          his breast—yet I knew that he was not asleep, from the wide and rigid opening of the eye,
+          as I caught a glance of it in profile. The motion of his body, too, was at variance with
+          this idea—for he rocked from side to side with a gentle yet constant and uniform sway.
+          Having rapidly taken notice of all this, I resumed the narrative of Sir Launcelot which
+          thus proceeded:—</p>
         <p>"And now, the champion, having escaped from the terrible fury of the dragon, bethinking
           himself of the brazen shield, and of the breaking up of the enchantment which was upon it,
           removed the carcass from out of the way before him, and approached valorously over the
@@ -802,14 +727,14 @@
           and I saw that he spoke in a low, hurried, and gibbering murmur, as if unconscious of my
           presence. Bending closely over him, I at length drank in the hideous import of his
           words.</p>
-        <p>"Not hear it?—yes, I hear it, and have heard it. Long—long— long—many minutes, many
-          hours, many days, have I heard it—yet I dared not—oh, pity me, miserable wretch that I
-          am!—I dared not—I <hi rend="italic">dared</hi> not speak!<hi rend="italic">We have put her
-            living in the tomb!</hi> Said I not that my senses were acute? I now tell you that I
-          heard her first feeble movements in the hollow coffin. I heard them— many, many days
-          ago—yet I dared not—<hi rend="italic">I dared not speak!</hi> And
-          now—to-night—Ethelred—ha! ha!—the breaking of the hermit's door, and the death-cry of the
-          dragon, and the clangor of the shield!—say, rather, the rending of her coffin, and the
+        <p>"Not hear it?—yes, I hear it, and <hi rend="italic">have</hi> heard it. Long—long—
+          long—many minutes, many hours, many days, have I heard it—yet I dared not—oh, pity me,
+          miserable wretch that I am!—I dared not—I <hi rend="italic">dared</hi> not speak!<hi
+            rend="italic">We have put her living in the tomb!</hi> Said I not that my senses were
+          acute? I now tell you that I heard her first feeble movements in the hollow coffin. I
+          heard them— many, many days ago—yet I dared not—<hi rend="italic">I dared not speak!</hi>
+          And now—to-night—Ethelred—ha! ha!—the breaking of the hermit's door, and the death-cry of
+          the dragon, and the clangor of the shield!—say, rather, the rending of her coffin, and the
           grating of the iron hinges, and her struggles within the coppered archway of the vault! Oh
           whither shall I fly? Will she not be here anon? Is she not hurrying to upbraid me for my
           haste? Have I not heard her footsteps on the stair? Do I not distinguish that heavy and
@@ -837,23 +762,85 @@
           tumultuous shouting sound like the voice of a thousand waters—and the deep and dank tarn
           at my feet closed sullenly and silently over the fragments of the <hi rend="italic">"House
             of Usher."</hi></p>
+        <note type="footnote"><p><hi rend="italic">Note</hi>.—The ballad of "the Haunted Palace,"
+            introduced in this tale, was published separately, some months ago, in the Baltimore
+            "Museum."</p></note>
       </div>
     </body>
-
     <back>
+      <div>
+        <note xml:id="fall" target="fall_" type="editorial" resp="editors.xml#JOB">
+          <p>This has long been one of Poe's most popular stories, but it is a story that has long
+            resisted particularly persuasive interpretation. It's obvious that the entire tale turns
+            on the pun on the word "house," here meaning both the literal house of the Usher family
+            and the "house" in the sense of the family line itself. There has long been a tradition
+            that Poe was inspired by the true story of James Campbell Usher and Agnes Pye Usher,
+            twins who were the children of Luke and Harriet Usher, actor friends of Poe's mother.
+            Like Poe himself, the Usher twins were orphaned as children. The situation is
+            suggestive, but beyond the coincidence of orphaned twins named Usher, it is impossible
+            to know how much Poe knew about the real-life Ushers, and how much he might have been
+            inspired by them.</p>
+        </note>
+        <note xml:id="son" target="son_" type="editorial" resp="editors.xml#JOB"><p>"His heart is a
+            hanging lute; as soon as it is touched, it responds." Poe adapted the lines slightly
+            from the poem entitled "Le Refus" by the contemporary French poet Pierre-Jean de
+            Beranger. This epigraph is not in the earliest printing.</p></note>
 
-      <div/>
+        <note xml:id="tarn" target="tarn_" type="editorial" resp="editors.xml#LH"><p>A tarn is a
+            mountain lake, pond, or pool.</p></note>
 
+        <note xml:id="ms" target="ms_" type="gloss" resp="editors.xml#LH"><p>MS. stands for
+            manuscript.</p></note>
 
+        <note xml:id="phantasm" target="phantasm_" type="gloss" resp="editors.xml#LH"><p>Having a
+            fantastic or deceptive appearance, like something in a dream or created by the
+            imagination. Like a fantasy, archaically spelled "phantasy."</p></note>
 
+        <note xml:id="ennuye" target="ennuye_" type="gloss" resp="editors.xml#JOB"><p>Ennuyé: French
+            for bored, world-weary, enervated.</p></note>
 
+        <note xml:id="cadaver" target="cadaver_" type="gloss" resp="editors.xml#LH"><p>Of or like a
+            corpse or cadaver; pale, ghastly, haggard, and thin.</p></note>
 
+        <note xml:id="muslim" target="muslim_" type="editorial" resp="editors.xml#LH"
+          ><p>Muslim.</p></note>
 
+        <note xml:id="fuseli" target="fuseli_" type="editorial" resp="editors.xml#LH"><p><ref
+              target="https://www.nga.gov/collection/artist-info.2513.html">Henry Fuseli</ref> was a
+            Swiss painter who painted many works dealing with supernatural subject
+          matter.</p></note>
 
+        <note xml:id="impromptu" target="impromptu_" type="editorial" resp="editors.xml#LH"><p>A
+            short piece of instrumental music, especially a solo, that is reminiscent of an
+            improvisation.</p></note>
 
+        <note xml:id="porphyrogene" target="porphyrogene_" type="editorial" resp="editors.xml#AA"
+            ><p>A son that is born after the accession of his father to the throne.</p></note>
 
+        <note xml:id="eymeric" target="eymeric_" type="editorial" resp="editors.xml#AA"><p>This work
+            was written by Spanish theologian Nicholas Eymeric. Eymeric was appointed Grand
+            Inquisitor of Aragon in 1357 and wrote it to be a guidebook for the Spanish
+            Inquisition.</p></note>
 
+        <note xml:id="mela" target="mela_" type="editorial" resp="editors.xml#AA"><p>Pomponius Mela
+            was a Roman geographer that created the only ancient writing on Geography in Latin,
+              the<hi rend="italic">De situ orbis</hi>.</p></note>
 
+        <note xml:id="vigilae" target="vigilae_" type="gloss" resp="editors.xml#AJB">
+          <p>Latin for "Vigils for the Dead According to the Use of the Church of Mainz".</p>
+        </note>
+
+        <note xml:id="keep" target="keep_" type="editorial" resp="editors.xml#AA"><p>The great inner
+            tower of a medieval castle.</p></note>
+
+        <note xml:id="trist" target="trist_" type="editorial" resp="editors.xml#AA"><p>"The Mad
+            Trist" by Sir Launcelot Canning is a story created by Poe himself to add to the plot of
+            the story. It suggests the medieval romance tradition.</p></note>
+
+        <note xml:id="romance" target="romance_" type="editorial" resp="editors.xml#MUStudStaff"
+            ><p>In this sense, a "romancer" is someone who writes a chivalric medieval romance; in
+            this case, it is the fictional Sir Launcelot Canning.</p></note>
+      </div>
     </back>
 
   </text>

@@ -1,17 +1,17 @@
-
-    <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wordsworth-tintern-abbey">
         <teiHeader xml:lang="en">
             <fileDesc>
          <titleStmt>
                     <title type="main">Tintern Abbey</title>
                     <author>
-                        <name>
                         <persName type="snac" key="50589557">
-                            
+                            <name>
                             <forename>William</forename>
                                 <surname>Wordsworth</surname>
-                        </persName>
-                        </name>
+                            </name>
+                        </persName>       
                     </author>
                     <editor>
                         <persName type="orcid" key="0000-0001-6453-8721">
@@ -23,9 +23,9 @@
                     </editor>
                     <respStmt>
                         <resp>Transcription, correction, editorial commentary, and markup</resp>
-                        <!-- If the responsibilities of the named student editors below are different, please indicate that here. add student editors from sfu -->
+                      
                         <name ref="editors.xml#UVAstudstaff">Students and Staff of The University of Virginia and Simon Fraser University</name>
-                        <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
+                        
                     </respStmt>
                     <sponsor/>
                     <funder>National Endowment for the Humanities</funder>
@@ -57,10 +57,11 @@
                         </analytic>
                         <monogr>
                             <author>
+                                <name>
                                 <forename>William</forename>
-                                <surname>Wordsworth</surname>  
+                                <surname>Wordsworth</surname> 
                             <forename>Samuel Taylor</forename>
-                            <surname>Coleridge</surname> 
+                            <surname>Coleridge</surname> </name>
                             </author>
                             <title>Lyrical Ballads, with a Few Other Poems</title>
                             <imprint>
@@ -69,11 +70,10 @@
                                 </pubPlace>
                                 <publisher>J. and A. Arch</publisher>
                                 <date when="1798">1798</date>
-                                <note>Page images are drawn from the copy of the first edition in the University of Virginia Special Collecetions library.</note>       
+                                <note>Page images are drawn from the copy of the first edition located in the Penn State Library and digitized by Google.</note>       
                             </imprint>
-                            <imprint>
                                
-                            <biblScope>pp 201-210</biblScope></imprint>
+                            <biblScope>pp 201-210</biblScope>
                         </monogr>
                     </biblStruct>
                 </sourceDesc>
@@ -83,7 +83,7 @@
                 <langUsage>
                     <language ident="en">English</language>
                 </langUsage>
-                
+                <creation/>
                 <textDesc n="poem">
                     <channel mode="w">print</channel>
                     <constitution type="single"/>
@@ -103,7 +103,7 @@
                 
                 <settingDesc>
                     <setting>
-                        <name type="tgn" key="1100066">Tintern Abbey, England</name>
+                        <name type="tgn" key="1100066">Tintern Abbey, Wales</name>
                         <time>Late 18th Century</time>
                     </setting>
                 </settingDesc>
@@ -179,42 +179,38 @@
         </teiHeader>          
         <text>
             <body>
-                <div>
                     <pb facs="Wordsworth_1798_219.png" n="201"/>
-                    <head rend="centre uppercase font-size(3mm)">
-                        LINES
+                <div>
+                    <head>
+                    LINES
                         <lb/>
-                        <hi rend="centre uppercase font-size(1.5mm)"> WRITTEN A FEW MILES ABOVE</hi>
+                        WRITTEN A FEW MILES ABOVE
                         <lb/>
-                        <hi rend="centre uppercase font-size(3mm)">TINTERN ABBEY,</hi>
+                       TINTERN ABBEY,
                         <lb/>
-                        <hi rend="centre uppercase font-size(1.5mm)">
-                            ON REVISITING THE BANKS OF THE
-                            <hi rend="font-size(3mm)">WYE</hi>
-                            DURING
-                        </hi>
+                       ON REVISITING THE BANKS OF THE
+                       <lb/>
+                        WYE<lb/>
+                        DURING
                         <lb/>
-                        <hi rend="centre uppercase font-size(1.5mm)"> A TOUR,</hi>
+                         A TOUR,
                         <lb/>
-                        <hi rend="centre uppercase font-size(1.5mm)">
-                            <hi rend="italics">July</hi>
-                            13, 1798.
-                        </hi>
-                    </head>
-                    <figure type="double-line" rend="length(15mm)"/>
+                            <hi rend="italic">July</hi>
+                            13, 1798.               
+                    </head></div>
+            <div>
+                   
                     <lg type="stanza">
                         <l> Five years have passed; five summers, with the length </l>
                         <l>Of five long winters! and again I hear</l>
                         <l>These waters, rolling from their mountain-springs</l>
                         <l>
-                            With sweet inland murmur.
-                            <ptr target="#nta1" n="*" xml:id="pta1"/>
+                            <ref target="murmur_" corresp="murmur">With sweet inland murmur.</ref><note xml:id="murmur" target="murmur_">The river is not affected by the tides a few miles above Tintern. [Wordsworth's note.]</note>
                             —Once again
                         </l>
                         <l>Do I behold these steep and lofty cliffs,</l>
                         <l>Which on a wild secluded scene impress</l>
                         <l>Thoughts of more deep seclusion; and connect</l>
-                        <note type="footnote" xml:id="nta1"> * The river is not affected by the tides a few miles above Tintern. </note>
                         <pb facs="Wordsworth_1798_220.png" n="202"/>
                         <l>The landscape with the quiet of the sky.</l>
                         <l>The day is come when I again repose</l>
@@ -235,7 +231,7 @@
                         <l>The hermit sits alone.</l>
                     </lg>
                     <lg type="stanza">
-                        <l rend="indent(15mm)">Though absent long,</l>
+                        <l rend="indent">Though absent long,</l>
                         <l>These forms of beauty have not been to me,</l>
                         <pb facs="Wordsworth_1798_221.png" n="203"/>
                         <l>As is a landscape to a blind man’s eye:</l>
@@ -267,7 +263,7 @@
                         <l>We see into the life of things.</l>
                     </lg>
                     <lg type="stanza">
-                        <l rend="indent(20mm)">If this</l>
+                        <l rend="indent">If this</l>
                         <l>Be but a vain belief, yet, oh! how oft,</l>
                         <l>In darkness, and amid the many shapes</l>
                         <l>Of joyless day-light ; when the fretful stir</l>
@@ -288,7 +284,7 @@
                         <l>That in this moment there is life and food</l>
                         <l>For future years. And so I dare to hope</l>
                         <l> Though changed, no doubt, from what I was, when</l>
-                        <l rend="indent(5mm)"> first </l>
+                        <l rend="indent"> first </l>
                         <l>I came among these hills ; when like a roe</l>
                         <l>I bounded o’er the mountains, by the sides</l>
                         <l>Of the deep rivers, and the lonely streams,</l>
@@ -307,7 +303,7 @@
                         <l>That had no need of a remoter charm,</l>
                         <l>By thought supplied, or any interest</l>
                         <l>Unborrow’d from the eye. — That time is</l>
-                        <l rend="indent(5mm)">past,</l>
+                        <l rend="indent">past,</l>
                         <l>And all its aching joys are now no more,</l>
                         <l>And all its dizzy raptures. Not for this</l>
                         <l>Faint I, nor mourn nor murmur: other gifts</l>
@@ -332,10 +328,8 @@
                         <l>And mountains; and of all that we behold</l>
                         <l>From this green earth; of all the mighty world</l>
                         <l>
-                            Of eye and ear, both what they half-create,
-                            <ptr n="*" target="#nta2" xml:id="pta2"/>
-                        </l>
-                        <note xml:id="nta2"> * This line has a close resemblance to an admirable line of Young, the exact expression of which I cannot recollect. </note>
+                            Of eye and ear, both what they <ref target="half-create_" corresp="half-create">half-create,</ref>
+                            <note xml:id="half-create" target="half-create_">This line has a close resemblance to an admirable line of Young, the exact                             expression of which I cannot recollect. [Wordsworth's note]</note>  </l>
                         <pb facs="Wordsworth_1798_226.png" n="208"/>
                         <l>And what perceive; well pleased to recognize</l>
                         <l>In nature and the language of the sense,</l>
@@ -344,7 +338,7 @@
                         <l>Of all my moral being.</l>
                     </lg>
                     <lg type="stanza">
-                        <l rend="indent(20mm)">Nor, perchance,</l>
+                        <l rend="indent">Nor, perchance,</l>
                         <l>If I were not thus taught, should I the more</l>
                         <l>Suffer my genial spirits to decay:</l>
                         <l>For thou art with me, here, upon the banks</l>
@@ -398,8 +392,9 @@
                         <l>And this green pastoral landscape, were to me</l>
                         <l>More dear, both for themselves, and for thy sake.</l>
                     </lg>
-                    <p rend="center italics">E N D.</p>
-                </div>
-            </body>
+                    <p>E N D.</p>
+                
+         </div></body>
+            
         </text>
-    </TEI>
+</TEI>
