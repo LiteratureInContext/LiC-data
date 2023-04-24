@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/Users/tonya-mariehowe/Documents/GitHub/LiteratureInContext/LIC_Data_Development_NEW/LiC-data/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="austen-lady-susan">
    <!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
 
@@ -109,8 +110,8 @@
                      <date when="1871">1871</date>
                      <!-- Insert date of earliest/first edition. Note the attribute @when. -->
                      <note>This text was written around 1795, but not published until 1871, in this,
-                        the second edition of <persName type="lcnaf" key="no97053860">James Edward
-                           Austen-Leigh's</persName>
+                        the second edition of <person><persName type="lcnaf" key="no97053860">James Edward
+                           Austen-Leigh's</persName></person>
                         <hi rend="italic">A Memoir of Jane Austen</hi>. </note>
                      <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
                      <note>Page images are drawn from the text held by Oxford Libraries, digitized
@@ -290,16 +291,16 @@
                   when we last parted of spending some weeks with you at
                      <placeName>Churchhill</placeName>, and, therefore, if quite convenient to you
                   and <persName>Mrs. Vernon</persName> to receive me at present, I shall hope within
-                  a few days to be introduced to <ref target="aSister" corresp="nSister">a
-                     sister</ref><note xml:id="nSister" target="aSister" type="editorial"
+                  a few days to be introduced to <ref target="_Sister" corresp="Sister">a
+                     sister</ref><note xml:id="Sister" target="_Sister" type="editorial"
                      resp="editors.xml#TH">Lady Susan Vernon's deceased husband is Charles Vernon,
                      whom she calls her brother here. His wife, Catherine, is therefore her
                      sister-in-law. Lady Susan is trying to ingratiate herself through family
                      feeling, though as we will see she has not ever met Catherine and in fact
                      attempted to keep Charles and Catherine from marrying.</note> whom I have so
-                  long desired to be acquainted with. My <ref target="aKindFriend"
-                     corresp="nKindFriend">kind friends</ref><note xml:id="nKindFriend"
-                     target="aKindFriend" type="gloss" resp="editors.xml#TH"><ref
+                  long desired to be acquainted with. My <ref target="_KindFriend"
+                     corresp="KindFriend">kind friends</ref><note xml:id="KindFriend"
+                     target="_KindFriend" type="gloss" resp="editors.xml#TH"><ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/103445">Sense 8 for
                         the word "kind"</ref> in the Oxford English Dictionary, as well as <ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/74646">sense 6 for
@@ -308,9 +309,9 @@
                      Mainwaring, and the fact that she is writing to her confidante Alicia Johnson,
                      suggest that "kind friends" may also have these sexual connotations.</note>
                   here are most affectionately urgent with me to prolong my stay, but their
-                  hospitable and cheerful dispositions lead them too much <ref target="aIntoSociety"
-                     corresp="nIntoSociety">into society</ref><note xml:id="nIntoSociety"
-                     target="aIntoSociety" type="gloss" resp="editors.xml#TH"><graphic
+                  hospitable and cheerful dispositions lead them too much <ref target="_IntoSociety"
+                     corresp="IntoSociety">into society</ref><note xml:id="IntoSociety"
+                     target="_IntoSociety" type="gloss" resp="editors.xml#TH"><graphic
                         url="notes/N10000-65.jpg"/>According to the OED, this phrase, which is now
                      obsolete and only used historically, means going out and "mix[ing] in society
                      (as opposed to remaining in one's own home or domestic circle); to appear
@@ -328,8 +329,8 @@
                      n="204" facs="pageImages/204.jpg"/>as I am on the point of separation from my
                   own daughter. The long illness of her dear father prevented my paying her that
                   attention which duty and affection equally dictated, and I have too much reason to
-                  fear that the <ref target="aGoverness" corresp="nGoverness">governess</ref><note
-                     xml:id="nGoverness" target="aGoverness">While governesses were more frequently
+                  fear that the <ref target="_Governess" corresp="Governess">governess</ref><note
+                     xml:id="Governess" target="_Governess">While governesses were more frequently
                      depicted in the later Victorian period, this early reference to the profession
                      suggests something of the ambiguous positions these women held in the
                      households that employed them to teach and care for children. According to <ref
@@ -338,8 +339,8 @@
                      surrogate mother who had no children of her own, a family member who was
                      sometimes mistaken for a servant."</note> to whose care I consigned her was
                   unequal to the charge. I have therefore resolved on placing her at one of the best
-                     <ref target="aPrivateSchools" corresp="nPrivateSchools">private schools in
-                     town</ref><note xml:id="nPrivateSchools" target="aPrivateSchools"
+                     <ref target="_PrivateSchools" corresp="PrivateSchools">private schools in
+                     town</ref><note xml:id="PrivateSchools" target="_PrivateSchools"
                      type="editorial" resp="editors.xml#TH">According to Deborah Simonton's article
                      on "Women and Education" in <hi rend="italic">Women's History, Britain
                         1700-1850</hi>, in the Enlightenment period, the education of girls was
@@ -379,11 +380,11 @@
                   You foretold how it would be when I first came to <placeName>Langford</placeName>,
                   and <persName>Mainwaring</persName> is so uncommonly pleasing that I was not
                   without apprehensions for myself. I remember saying to myself, as I drove to the
-                  house, <said direct="true">"I like this man, pray <pb n="205"
+                  house, <said aloud="true">"I like this man, pray <pb n="205"
                         facs="pageImages/205.jpg"/>Heaven no harm come of it!"</said> But I was
-                  determined to be discreet, to bear in mind my being only <ref target="aFourMonths"
-                     corresp="nFourMonths">four months a widow</ref><note xml:id="nFourMonths"
-                     target="aFourMonths" type="editorial" resp="editors.xml#TH"><graphic
+                  determined to be discreet, to bear in mind my being only <ref target="_FourMonths"
+                     corresp="FourMonths">four months a widow</ref><note xml:id="FourMonths"
+                     target="_FourMonths" type="editorial" resp="editors.xml#TH"><graphic
                         url="notes/SC116480.jpg"/>In the eighteenth and nineteenth centuries, when a
                      woman's husband died, the widow was usually negatively economically impacted.
                      Widows, unlike wives, had a higher degree of authority and power over their own
@@ -407,17 +408,17 @@
                   notice, in order to detach him from <persName>Miss Mainwaring</persName>; but, if
                   the world could know my motive <hi rend="italic">there</hi> they would honour me.
                   I have been called an unkind mother, but it was the sacred impulse of maternal
-                  affection, it was the <ref target="aAdvantage" corresp="nAdvantage">advantage of
-                     my daughter</ref><note xml:id="nAdvantage" target="aAdvantage" type="gloss"
+                  affection, it was the <ref target="_Advantage" corresp="Advantage">advantage of
+                     my daughter</ref><note xml:id="Advantage" target="_Advantage" type="gloss"
                      resp="editors.xml#TH">Lady Susan here claims out that she seeks financial and
                      other benefits for her daughter as a result of the marriage she is trying to
                      arrange between Frederica and Sir James. See the OED definitions of
                      "advantage," especially <ref target="http://oed.com">phrase 1.b.</ref></note>
                   that led me on; and if that daughter were not the greatest simpleton on earth, I
                   might have been rewarded for my exertions as I ought.</p>
-               <p><persName>Sir James</persName> did <ref target="aMakeProposals"
-                     corresp="nMakeProposals">make proposals to me for</ref><note
-                     xml:id="nMakeProposals" target="aMakeProposals" type="editorial"
+               <p><persName>Sir James</persName> did <ref target="_MakeProposals"
+                     corresp="MakeProposals">make proposals to me for</ref><note
+                     xml:id="MakeProposals" target="_MakeProposals" type="editorial"
                      resp="editors.xml#TH">Over the course of the eighteenth century, marriages were
                      increasingly less "arranged," but financial arrangements were always made and
                      agreed upon before the marriage took place. Typically, this included agreements
@@ -441,9 +442,9 @@
                   very provoking: <persName>Sir James</persName> is gone, <persName>Maria</persName>
                   highly incensed, and <persName>Mrs. Mainwaring</persName> insupportably jealous;
                   so jealous, in short, and so enraged against me, that, in the fury of her temper,
-                  I should not be surprized at her appealing to <ref target="aGuardian"
-                     corresp="nGuardian">her guardian</ref><note xml:id="nGuardian"
-                     target="aGuardian" type="editorial" resp="editors.xml#TH">Guardianship in the
+                  I should not be surprized at her appealing to <ref target="_Guardian"
+                     corresp="Guardian">her guardian</ref><note xml:id="Guardian"
+                     target="_Guardian" type="editorial" resp="editors.xml#TH">Guardianship in the
                      eighteenth century was a legal mechanism for fathers to extend their power over
                      their children after death by appointing what was called a "testamentary
                      guardian" in their wills. Both paternal authority and guardianship ceased
@@ -513,8 +514,8 @@
                   future period, be obliged to receive her. Mr. Vernon, I think, was a great deal
                   too kind to her when he was in <placeName type="tgn" key="7008174"
                      >Staffordshire</placeName>; her behaviour to him, independent of her general
-                  character, has been so inexcusably <ref target="aArtful" corresp="nArtful"
-                     >artful</ref><note xml:id="nArtful" target="aArtful">This is an important
+                  character, has been so inexcusably <ref target="_Artful" corresp="Artful"
+                     >artful</ref><note xml:id="Artful" target="_Artful">This is an important
                      description of Lady Susan; Catherine Vernon is criticizing her sister-in-law as
                      "artful," suggesting much about Lady Susan’s character. An artful person is a
                      person "skilful in adapting means to ends, so as to secure the accomplishment
@@ -523,8 +524,8 @@
                      facs="pageImages/208.jpg"/>was first in agitation that no one less amiable and
                   mild than himself could have overlooked it all; and though, as his brother's
                   widow, and in narrow circumstances, it was proper to render her <ref
-                     target="aPecuniary" corresp="nPecuniary">pecuniary assistance</ref><note
-                     xml:id="nPecuniary" target="aPecuniary">Pecuniary means having to with
+                     target="_Pecuniary" corresp="Pecuniary">pecuniary assistance</ref><note
+                     xml:id="Pecuniary" target="_Pecuniary">Pecuniary means having to with
                      money--Catherine Vernon is stating that as a close family member, it was right
                      for her husband to offer Lady Susan financial assistance at the death of her
                      husband.</note>, I cannot help thinking his pressing invitation to her to visit
@@ -562,8 +563,8 @@
                   </dateline>
                   <salute> My dear Sister,—</salute></opener>
                <p>I congratulate you and Mr. Vernon on being about to receive into your family the
-                  most accomplished <ref target="aCoquette" corresp="nCoquette">coquette</ref><note
-                     xml:id="nCoquette" target="aCoquette" type="gloss" resp="editors.xml#ND">A
+                  most accomplished <ref target="_Coquette" corresp="Coquette">coquette</ref><note
+                     xml:id="Coquette" target="_Coquette" type="gloss" resp="editors.xml#ND">A
                      coquette is a flirt, or, according to the OED, one who uses "arts intended to
                      excite the admiration or love of the opposite sex, without any intention of
                      responding to the feelings awakened." </note> in
@@ -589,8 +590,8 @@
                      <placeName>Churchhill</placeName>, as she has not even manners to recommend
                   her; and, according to <persName>Mr. Smith's</persName> account, is equally dull
                   and proud. Where pride and stupidity unite there can be no <ref
-                     target="aDissimulation" corresp="nDissimulation">dissimulation</ref><note
-                     xml:id="nDissimulation" target="aDissimulation">To dissimulate is to conceal or
+                     target="_Dissimulation" corresp="Dissimulation">dissimulation</ref><note
+                     xml:id="Dissimulation" target="_Dissimulation">To dissimulate is to conceal or
                      feign; as an abstract noun, it refers to a concealment. </note> worthy notice,
                   and <persName>Miss Vernon</persName> shall be consigned to unrelenting contempt;
                   but by all that I can gather <persName>Lady Susan</persName> possesses a degree of
@@ -608,8 +609,8 @@
                <opener><dateline><placeName>Churchhill.</placeName></dateline></opener>
                <p>I received your note, my dear <persName>Alicia</persName>, just before I left
                   town, and rejoice to be assured that <persName>Mr. Johnson</persName> suspected
-                  nothing of <ref target="aEngagement" corresp="nEngagement">your
-                     engagement</ref><note xml:id="nEngagement" target="aEngagement">Lady Susan is
+                  nothing of <ref target="_Engagement" corresp="Engagement">your
+                     engagement</ref><note xml:id="Engagement" target="_Engagement">Lady Susan is
                      commenting on Alicia's "engagement" or meeting the night before with someone
                      unnamed, likely a lover. <ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/62197">According to
@@ -622,9 +623,9 @@
                   be tricked. I arrived here in safety, and have no reason to complain of my
                   reception from <persName>Mr. Vernon</persName>; but I confess myself not equally
                   satisfied with the behaviour <pb n="211" facs="pageImages/211.jpg"/>of his lady.
-                  She is perfectly well-bred, indeed, and has the air of <ref target="aWomanFashion"
-                     corresp="nWomanFashion">a woman of fashion</ref><note xml:id="nWomanFashion"
-                     target="aWomanFashion">A woman of fashion is more than just a fashionable
+                  She is perfectly well-bred, indeed, and has the air of <ref target="_WomanFashion"
+                     corresp="WomanFashion">a woman of fashion</ref><note xml:id="WomanFashion"
+                     target="_WomanFashion">A woman of fashion is more than just a fashionable
                      woman--she is typically a woman of independent spirit and taste, who exerts her
                      own power in the public sphere through fashionable consumption, display, and
                      behavior. For more on this controversial figure in the eighteenth century, see
@@ -642,8 +643,8 @@
                   buy <placeName>Vernon Castle</placeName>, when we were obliged to sell it; but it
                   was a trying circumstance, especially as the sale took place exactly at the time
                   of his marriage; and everybody ought to respect the delicacy of those feelings
-                  which could not endure that my husband's <ref target="aDignity" corresp="nDignity"
-                     >dignity</ref><note xml:id="nDignity" target="aDignity">The word "dignity" has
+                  which could not endure that my husband's <ref target="_Dignity" corresp="Dignity"
+                     >dignity</ref><note xml:id="Dignity" target="_Dignity">The word "dignity" has
                      many uses, including simply worthiness or nobility, but in the eighteenth
                      century often refers to a person’s rank or status. In this context, Lady Susan
                      is talking about her husband’s rank and status, as it derives from his estate.
@@ -659,16 +660,16 @@
                   given his wife an unfavourable impression, but where there is a disposition to
                   dislike, a motive will never be <pb n="212" facs="pageImages/212.jpg"/>wanting;
                   and as to money matters it has not withheld him from being very useful to me. I
-                  really have a regard for him, he is <ref target="aImposedOn" corresp="nImposedOn"
-                     >so easily imposed upon</ref><note xml:id="nImposedOn" target="aImposedOn">In
+                  really have a regard for him, he is <ref target="_ImposedOn" corresp="ImposedOn"
+                     >so easily imposed upon</ref><note xml:id="ImposedOn" target="_ImposedOn">In
                      this case, Lady Susan is talking about how easily she is able to deceive her
                      brother. <ref target="http://www.oed.com/view/Entry/92591">According to the
                         OED</ref>, this meaning of the phrase "imposed on" means "To obtrude or
                      ‘put’ (a thing) upon (a person) by false representations; to palm or pass
                      off."</note>! The house is a good one, the furniture fashionable, and
                   everything announces plenty and elegance. Charles is very rich I am sure; when a
-                  man has once got his name in <ref target="aBankingHousue" corresp="nBankingHouse"
-                     >a banking-house</ref><note xml:id="nBankingHouse" target="aBankingHouse">A
+                  man has once got his name in <ref target="_BankingHousue" corresp="BankingHouse"
+                     >a banking-house</ref><note xml:id="BankingHouse" target="_BankingHouse">A
                      banking house is a bank that was able to extend credit to its members. Unlike
                      today, not everyone could have an accoount with a banking house in the
                      eighteenth century. For more information, see <ref
@@ -685,8 +686,8 @@
                   here, full of complaints of his wife and sister, and lamentations on the cruelty
                   of his fate. I passed off the letter as his wife's, to <persName>the
                      Vernons</persName>, and when I write to him it must be <ref
-                     target="aUnderCover" corresp="nUnderCover">under cover to you</ref><note
-                     xml:id="nUnderCover" target="aUnderCover">Lady Susan is essentially using her
+                     target="_UnderCover" corresp="UnderCover">under cover to you</ref><note
+                     xml:id="UnderCover" target="_UnderCover">Lady Susan is essentially using her
                      friendship with Alicia Johnson to continue corresponding with her lover, Mr.
                      Mainwaring. She writes to him "under cover" to Mrs. Johnson. A "cover" in the
                      eighteenth-century letter-writing context means, as <ref
@@ -709,16 +710,16 @@
                <p>Well, my dear Reginald, I have seen this dangerous creature, and must give you
                   some description of her, though I hope you will soon be able to form your own
                   judgment. She is really excessively pretty; <pb n="213" facs="pageImages/213.jpg"
-                  />however you may choose to question the allurements of <ref target="aYouth"
-                     corresp="nYouth">a lady no longer young</ref><note xml:id="nYouth"
-                     target="aYouth">Lady Susan is 35 years old.</note>, I must, for my own part,
+                  />however you may choose to question the allurements of <ref target="_Youth"
+                     corresp="Youth">a lady no longer young</ref><note xml:id="Youth"
+                     target="_Youth">Lady Susan is 35 years old.</note>, I must, for my own part,
                   declare that I have seldom seen so lovely a woman as Lady Susan. She is delicately
                   fair, with fine grey eyes and dark eyelashes; and from her appearance one would
                   not suppose her more than five and twenty, though she must in fact be ten years
                   older, I was certainly not disposed to admire her, though always hearing she was
                   beautiful; but I cannot help feeling that she possesses an uncommon union of
-                  symmetry, brilliancy, and grace. Her <ref target="aAddress" corresp="nAddress"
-                     >address</ref><note xml:id="nAddress" target="aAddress"
+                  symmetry, brilliancy, and grace. Her <ref target="_Address" corresp="Address"
+                     >address</ref><note xml:id="Address" target="_Address"
                      resp="editors.xml#MUstudstaff">In this context, "address" refers not to a
                      physical location, but rather the style of speaking--how one addresses herself
                      to others.</note> to me was so gentle, frank, and even affectionate, that, if I
@@ -727,13 +728,13 @@
                   an attached friend. One is apt, I believe, to connect assurance of manner with
                   coquetry, and to expect that an impudent address will naturally attend an impudent
                   mind; at least I was myself prepared for an improper degree of <ref
-                     target="aConfidence" corresp="nConfidence">confidence</ref><note
-                     xml:id="nConfidence" target="aConficence">A "confident" woman was not a good
+                     target="_Confidence" corresp="Confidence">confidence</ref><note
+                     xml:id="Confidence" target="_Conficence">A "confident" woman was not a good
                      thing in the eighteenth century; according to the OED, it means "Assurance,
                      boldness, fearlessness." Women were to be anything but confident in their
                      behavior, in this sense.</note> in Lady Susan; but her countenance is
-                  absolutely sweet, and her voice and <ref target="aManner" corresp="nManner"
-                     >manner</ref><note xml:id="nManner" target="aManner">"Manner" is a fascinating
+                  absolutely sweet, and her voice and <ref target="_Manner" corresp="Manner"
+                     >manner</ref><note xml:id="Manner" target="_Manner">"Manner" is a fascinating
                      concept as it relates to eighteenth-century culture, and it has many senses and
                      meanings, as seen in the OED. In general, it refers to an individual’s habitual
                      actions or behavior.</note> winningly mild. I am sorry it is so, for what is
@@ -756,8 +757,8 @@
                   before she discovered that her friend's manner of living did not suit her
                   situation or feelings, I might have believed that concern for the loss of such a
                   husband as <persName>Mr. Vernon</persName>, to whom her own behaviour was far from
-                     <ref target="aUnexceptionable" corresp="nUnexceptionable"
-                     >unexceptionable</ref><note xml:id="nUnexceptionable" target="aUnexceptionable"
+                     <ref target="_Unexceptionable" corresp="Unexceptionable"
+                     >unexceptionable</ref><note xml:id="Unexceptionable" target="_Unexceptionable"
                      >Something that is "unexceptionable" is something that one cannot "take
                      exception to" or criticize. Here, the use of the double negative tells us that
                      Catherine Vernon does find something wrong in Lady Susan’s behavior, but she is
@@ -788,15 +789,15 @@
                   a stupid girl, and has nothing to recommend her. I would not, therefore, on my
                   account, have you encumber one moment of your precious time by sending for her to
                      <placeName>Edward Street</placeName>, especially as every visit is so much
-                  deducted from the grand affair of <ref target="aEducation" corresp="nEducation"
-                     >education</ref><note xml:id="nEducation" target="aEducation">What was women's
+                  deducted from the grand affair of <ref target="_Education" corresp="Education"
+                     >education</ref><note xml:id="Education" target="_Education">What was women's
                      education like, in this context? What is Lady Susan referring to?</note>, which
                   I really wish to have attended to while she remains at Miss Summers's. I want her
                   to play and sing with some portion of taste and a good deal of assurance, as she
                   has my hand and arm and a tolerable voice. I was so much indulged in my infant
                   years that I was never obliged to attend to anything, and consequently am without
-                     the<ref target="aAccomplishments" corresp="nAccomplishments"
-                     >accomplishments</ref><note xml:id="nAccomplishments" target="aAccomplishments"
+                     the<ref target="_Accomplishments" corresp="Accomplishments"
+                     >accomplishments</ref><note xml:id="Accomplishments" target="_Accomplishments"
                      type="gloss" resp="editors.xml#HSA">An accomplished woman would be someone who
                      could dance, draw, play music and sing (<ref
                         target="http://jasna.org/publications/persuasions-online/volume-38-no-3/doolley-moffat-wiltshire/"
@@ -811,9 +812,9 @@
                   will not remain long enough at school to understand anything thoroughly. I hope to
                   see her the wife of <persName>Sir James</persName> within a twelvemonth. You know
                   on what I ground my hope, and it is certainly a good foundation, for <ref
-                     target="aHumiliating" corresp="nHumiliating">school must be very humiliating to
-                     a girl of <persName>Frederica's</persName> age</ref><note xml:id="nHumiliating"
-                     target="aHumiliating" type="editorial" resp="MUstudstaff">Lady Susan is
+                     target="_Humiliating" corresp="Humiliating">school must be very humiliating to
+                     a girl of <persName>Frederica's</persName> age</ref><note xml:id="Humiliating"
+                     target="_Humiliating" type="editorial" resp="MUstudstaff">Lady Susan is
                      pointing out that, at 16--marriagable age--a finishing school would be
                      inapproopriate and hence humiliating for her daughter. Schools for girls were
                      meant to prepare them for future marriage.</note>. And, by-the-by, you had
@@ -839,8 +840,8 @@
                   his sister's kind offices have implanted, he may be an agreeable flirt. There is
                   exquisite pleasure in subduing an insolent spirit, in making a person
                   predetermined to dislike acknowledge one's superiority. I have disconcerted him
-                  already by my calm <ref target="aReserve" corresp="nReserve">reserve</ref><note
-                     xml:id="nReserve" target="aReserve">Note on "reserve" in women, link to conduct
+                  already by my calm <ref target="_Reserve" corresp="Reserve">reserve</ref><note
+                     xml:id="Reserve" target="_Reserve">Note on "reserve" in women, link to conduct
                      manuals?</note>, and it shall be my endeavour to humble the pride of these self
                   important <persName>De Courcys</persName> still lower, to convince <persName>Mrs.
                      Vernon</persName> that her sisterly cautions have been bestowed in vain, and to
@@ -860,8 +861,8 @@
                      Mother,—</salute></opener>
                <p>You must not expect Reginald back again for some time. He desires me to tell you
                   that the present open weather induces him to accept Mr. Vernon's invitation to
-                  prolong his stay <ref target="aInSussex" corresp="nInSussex">in Sussex.</ref><note
-                     xml:id="nInSussex" target="aInSussex" type="editorial" resp="editors.xml#ND"
+                  prolong his stay <ref target="_InSussex" corresp="InSussex">in Sussex.</ref><note
+                     xml:id="InSussex" target="_InSussex" type="editorial" resp="editors.xml#ND"
                         ><graphic url="notes/castle.jpg"/>Sussex is a county in the south of
                      England. in the 18<hi rend="sup">th</hi> century it was an area witnessing an
                      agricultural revolution. There was a transition period between rural ways and
@@ -870,8 +871,8 @@
                         >"Sussex Past"</ref>). The image included here is <ref
                         target=" https://www.tate.org.uk/art/artists/t-moore-2551">a sketch of
                         Amberley castle in Sussex. </ref></note> , that they may have some hunting
-                  together. He means to <ref target="aHorses" corresp="nHorses">Send for his
-                     horses</ref><note xml:id="nHorses" target="aHorses" type="editorial"
+                  together. He means to <ref target="_Horses" corresp="Horses">Send for his
+                     horses</ref><note xml:id="Horses" target="_Horses" type="editorial"
                      resp="editors.xml#FC"><graphic url="notes/foxhunting.jpg"/>Sussex was a rural
                      location, and the Vernon estate of Churchhill is wealthy. In this letter,
                      Reginald is having his horses sent from Kent, where his parents live, so he can
@@ -931,10 +932,10 @@
 
                <opener><dateline><placeName>Edward Street.</placeName></dateline><salute> My dearest
                      Friend,—</salute></opener>
-               <p>I congratulate you on Mr. De Courcy's arrival, and <ref target="aMarryHim"
-                     corresp="nMarryHim">I advise you by all means to marry him; his father's estate
+               <p>I congratulate you on Mr. De Courcy's arrival, and <ref target="_MarryHim"
+                     corresp="MarryHim">I advise you by all means to marry him; his father's estate
                      is, we know, considerable, and I believe certainly entailed</ref><note
-                     xml:id="nMarryHim" target="aMarryHim" type="editorial" resp="editors.xml#FC"> A
+                     xml:id="MarryHim" target="_MarryHim" type="editorial" resp="editors.xml#FC"> A
                      man's status in the 19<hi rend="sup">th</hi> century was based on the land he
                      owned, and from which he drew income. The land owned had to pass down through
                      generations; therefore, it was not just influence but affluence. An entail was
@@ -942,14 +943,13 @@
                      usually to ensure an estate stayed in the family. Here, Alicia Johnson is
                      advising Lady Susan to marry Reginald because he will likely inherit his
                      father’s wealthy estate--and probably soon, since his father is ill (<ref
-                        target="https://austenauthors.net/the-19th-century-entailment/">Jeffers,
-                        "The 19th Century Entailment"</ref>).</note> Sir Reginald is very infirm,
+                        target="https://www.britannica.com/topic/entail">"entail"</ref>).</note> Sir Reginald is very infirm,
                   and not likely to stand in your way long. I hear the young man well spoken of; and
                   though no one can really deserve you, my dearest Susan, Mr. De Courcy may be worth
                   having. Mainwaring will storm of course, but you easily pacify him; besides, the
                   most scrupulous point of honour could not require you to wait for <ref
-                     target="aEmancipation" corresp="nEmancipation"><hi rend="italic">his</hi>
-                     emancipation</ref><note xml:id="nEmancipation" target="aEmancipation"
+                     target="_Emancipation" corresp="Emancipation"><hi rend="italic">his</hi>
+                     emancipation</ref><note xml:id="Emancipation" target="_Emancipation"
                      type="gloss" resp="editors.xml#MUstudstaff">Alicia Johnson is pointing out that
                      it is very unlikely Mainwaring will ever be "emancipated" or divorced from his
                      wife.</note>. I have seen Sir James; he came to town for a few days last week,
@@ -986,8 +986,8 @@
                   think I may defy her. It has been delightful to me to watch his advances towards
                   intimacy, especially to observe his altered manner in consequence of my repressing
                   by the cool dignity of my deportment his insolent approach to direct familiarity.
-                     <ref target="aMyConduct" corresp="nMyConduct">My conduct has been equally
-                     guarded from the first.</ref><note xml:id="nMyConduct" target="aMyConduct"
+                     <ref target="_MyConduct" corresp="MyConduct">My conduct has been equally
+                     guarded from the first.</ref><note xml:id="MyConduct" target="_MyConduct"
                      type="editorial" resp="editors.xml#ND"> Conduct for women in the 18th century
                      was different from men. Women’s conduct was particularly to be "reserved" and
                      "guarded." In one conduct manual for women, <hi rend="italic">A Father’s Legacy
@@ -1052,11 +1052,11 @@
                   which spoke his regret at having believed the contrary himself. How sincerely do I
                   grieve that she ever entered this house! I always looked forward to her coming
                   with uneasiness; but very far was it from originating in anxiety for Reginald.
-                     <ref target="aSmallestDanger" corresp="nSmallestDanger">I expected a most
+                     <ref target="_SmallestDanger" corresp="SmallestDanger">I expected a most
                      disagreeable companion for myself, but could not imagine that my brother would
                      be in the smallest danger of being captivated by a woman with whose principles
-                     he was so well acquainted</ref><note xml:id="nSmallestDanger"
-                     target="aSmallestDanger" type="editorial" resp="editors.xml#FC">During the
+                     he was so well acquainted</ref><note xml:id="SmallestDanger"
+                     target="_SmallestDanger" type="editorial" resp="editors.xml#FC">During the
                      beginning of the 18th century most marriages were about money and financial
                      arrangements, which created alliances and trades of land and property. For
                      people in higher classes, many marriages were arranged by parents while members
@@ -1066,8 +1066,8 @@
                      introduced until the 19<hi rend="sup">th</hi> century. (<ref
                         target="https://muse.jhu.edu/article/268731">Moore, "Love and Marriage in
                         18th-Century Britain"</ref>)</note>, and whose character he so heartily
-                  despised. <ref target="aGetHimAway" corresp="nGetHimAway">if you can get him away
-                     it will be a good thing.</ref><note xml:id="nGetHimAway" target="aGetHimAway"
+                  despised. <ref target="_GetHimAway" corresp="GetHimAway">if you can get him away
+                     it will be a good thing.</ref><note xml:id="GetHimAway" target="_GetHimAway"
                      type="editorial" resp="editors.xml#ND"> Catherine Vernon insists on not letting
                      her brother, Reginald, fall in love with Lady Susan. She asks her mother to
                      talk to Reginald, and later on the reader’s see that the father, Sir Reginald,
@@ -1078,8 +1078,7 @@
                      appropriate for Lady de Courcy to chastise her son, she was within her duty to
                      ask her husband to do so. That is why the mother did not speak to Reginald, but
                      the father did. <ref
-                        target="https://austenauthors.net/the-19th-century-entailment">(19th
-                        Century)</ref></note>
+                        target="https://www.britannica.com/topic/entail">("entail")</ref></note>
                </p>
                <closer><salute>Yours, &amp;,</salute>
                   <signed>CATHERINE VERNON.</signed></closer>
@@ -1098,9 +1097,9 @@
                   you will be superior to such as allow nothing for a father's anxiety, and think
                   themselves privileged to refuse him their confidence and slight his advice. You
                   must be sensible that as an only son, and the representative of an ancient family,
-                  your <ref target="aConductInLife" corresp="nConductInLife">Your conduct in life is
-                     most interesting to your connections.</ref><note xml:id="nConductInLife"
-                     target="aConductInLife" type="editorial" resp="editors.xml#ND">he is wealthy,
+                  your <ref target="_ConductInLife" corresp="ConductInLife">Your conduct in life is
+                     most interesting to your connections.</ref><note xml:id="ConductInLife"
+                     target="_ConductInLife" type="editorial" resp="editors.xml#ND">he is wealthy,
                      so the way he acts (his conduct) shouldn’t embarrass his family or legacy. He
                      has to think about these things when it comes to Lady Susan, because of her
                      reputation. Women in the 18th century were to never marry in the lower class.
@@ -1115,7 +1114,7 @@
                   without acquainting your mother and myself, or at least, without being convinced
                   that we should approve of your choice; but I cannot help fearing that you may be
                   drawn in, by the lady who has lately attached you, to a <ref target=" aMarriage"
-                     corresp="nMarriage">marriage</ref><note xml:id="nMarriage" target="aMarriage"
+                     corresp="Marriage">marriage</ref><note xml:id="Marriage" target="_Marriage"
                      type="editorial" resp="editors.xml#KIA"><graphic url="notes/N03575_10.jpg"
                      />Marriage in the 18<hi rend="sup">th</hi> century was based on age, money, and
                      social life, and it was taken very seriously. People typically married within
@@ -1131,9 +1130,9 @@
                         >a 1744 painting by Joseph Highmore illustrating a scene from a novel</ref>,
                      shows a marriage ceremony.</note> which the whole of your family, far and near,
                   must highly reprobate. Lady Susan's age is itself a material objection, but her
-                  want of character is one so much more serious, that the <ref target="aTwelveYears"
-                     corresp="nTwelveYears">difference of even twelve years</ref><note
-                     xml:id="nTwelveYears" target="aTwelveYears" type="editorial"
+                  want of character is one so much more serious, that the <ref target="_TwelveYears"
+                     corresp="TwelveYears">difference of even twelve years</ref><note
+                     xml:id="TwelveYears" target="_TwelveYears" type="editorial"
                      resp="editors.xml#FC">Towards the end of the 18<hi rend="sup">th</hi> century,
                      the average age of marriage was twenty-eight years old for men and twenty-six
                      years old for women. In the 19<hi rend="sup">th</hi> century, the average age
@@ -1151,8 +1150,8 @@
                   in spite of his generous endeavours to excuse her, we know that she did, from the
                   most selfish motives, take all possible pains to prevent his marriage with
                   Catherine. </p>
-               <p>My years and increasing <ref target="aInfirmities" corresp="nInfirmities">
-                     infirmities</ref><note xml:id="nInfirmities" target=" aInfirmities"
+               <p>My years and increasing <ref target="_Infirmities" corresp="Infirmities">
+                     infirmities</ref><note xml:id="Infirmities" target=" aInfirmities"
                      type="gloss" resp="editors.xml#KIA">According to the OED, an infirmity was a
                      "weakness or want of strength" (CITE).</note>make me very desirous of seeing
                   you settled in the world. To the <pb n="226" facs="pageImages/226.jpg"/>fortune of
@@ -1162,14 +1161,14 @@
                   but it is my duty to oppose a match which deep art only could render possible, and
                   must in the end make wretched. It is possible her behaviour may arise only from
                   vanity, or the wish of gaining the admiration of a man whom she must imagine to be
-                  particularly <ref target="aPrejudiced" corresp="nPrejudiced">prejudiced</ref><note
-                     xml:id="nPrejudiced" target="aPrejudiced" type="gloss" resp="editors.xml#KIA"
+                  particularly <ref target="_Prejudiced" corresp="Prejudiced">prejudiced</ref><note
+                     xml:id="Prejudiced" target="_Prejudiced" type="gloss" resp="editors.xml#KIA"
                      >While today we think of racism when we hear this word, in this context, Sir
                      Reginald is not talking about race but using the word in its original sense,
                      "(unfairly) biased beforehand" (CITE OED).</note> against her; but it is more
                   likely that she should aim at something further. She is poor, and may naturally
-                  seek an <ref target="aAlliance" corresp="nAlliance">alliance</ref><note
-                     xml:id="nAlliance" target="aAlliance" type="gloss" resp="editors.xml#KIA"><ref
+                  seek an <ref target="_Alliance" corresp="Alliance">alliance</ref><note
+                     xml:id="Alliance" target="_Alliance" type="gloss" resp="editors.xml#KIA"><ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/5290?rskey=cI2L4l&amp;result=1#eid"
                         >According to the OED</ref>, an alliance refers to "people united by kinship
                      or friendship collectively." Here, Sir Reginald is pointing out that Lady Susan
@@ -1212,8 +1211,8 @@
                <p>Unluckily I was confined to my room when your last letter came, by a cold which
                   affected my eyes so much as to prevent my reading it myself, so I could not refuse
                   your father when he offered to read it to me, by which means he became acquainted,
-                  to my great <ref target="aVexation" corresp="nVexation">vexation</ref><note
-                     xml:id="nVexation" target="aVexation" type="gloss" resp="editors.xml#BS">
+                  to my great <ref target="_Vexation" corresp="Vexation">vexation</ref><note
+                     xml:id="Vexation" target="_Vexation" type="gloss" resp="editors.xml#BS">
                      According to the OED vexation means, "The action of troubling or harassing a
                      person by aggression or interference.<ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/222987?redirectedFrom=vexation#eid"
@@ -1263,9 +1262,9 @@
                   to Lady Susan would be taking from her every claim to that excellent understanding
                   which her bitterest enemies have never denied her; and equally low must sink my
                   pretensions to common sense if I am suspected of matrimonial views in my behaviour
-                  to her. <ref target="aAgeDifference" corresp="nAgeDifference">Our difference of
-                     age must be an insuperable objection,</ref><note xml:id="nAgeDifference"
-                     target="aAgeDifference" type="editorial" resp="editors.xml#WR"><graphic
+                  to her. <ref target="_AgeDifference" corresp="AgeDifference">Our difference of
+                     age must be an insuperable objection,</ref><note xml:id="AgeDifference"
+                     target="_AgeDifference" type="editorial" resp="editors.xml#WR"><graphic
                         url="notes/Marriage-A-la-Mode.jpg"/>Lady Susan, who is 35 years old, would
                      have been considered too old for Reginald De Courcy, who is 23, in the
                      eighteenth century. Because "women were extremely reliant on men for any legal
@@ -1306,8 +1305,8 @@
                   should be accused of errors which they are known to have the power of committing. </p>
                <p> I blame myself severely for having so easily believed the slanderous tales
                   invented by Charles Smith to the prejudice of Lady Susan, as I am now convinced
-                  how greatly they have <ref target="aTraduced" corresp="nTraduced"
-                     >traduced</ref><note xml:id="nTraduced" target="aTraduced" type="gloss"
+                  how greatly they have <ref target="_Traduced" corresp="Traduced"
+                     >traduced</ref><note xml:id="Traduced" target="_Traduced" type="gloss"
                      resp="editors.xml#WR">According to the Oxford English Dictionary, traduced
                      means "to defame, slander, or speak ill of" (<ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/204319?redirectedFrom=traduced#eid135433806"
@@ -1315,8 +1314,8 @@
                   totally his own invention, and his account of her attaching Miss Mainwaring's
                   lover was scarcely better founded. Sir James Martin had been drawn in by that
                   young lady to pay her some attention; and as he is a man of <ref
-                     target="aManOfFortune" corresp="nManOfFortune">fortune</ref><note
-                     xml:id="nManOfFortune" target="aManOfFortune" type="editorial"
+                     target="_ManOfFortune" corresp="ManOfFortune">fortune</ref><note
+                     xml:id="ManOfFortune" target="_ManOfFortune" type="editorial"
                      resp="editors.xml#BS">According to the OED, a "man of fortune" is a man
                      "possessing great (usually inherited) wealth" (<ref
                         target="www.oed.com/view/Entry/73751">Fortune" n.6</ref>). During the 18th
@@ -1334,9 +1333,9 @@
                   serious proposals from Sir James, but her removing to Langford immediately on the
                   discovery of his attachment, must acquit her on that article with any mind of
                   common candour. You will, I am sure, my dear Sir, feel the truth of this, and will
-                  hereby learn to do justice to the<ref target="aCharacter" corresp="nCharacter"
-                     >character</ref><note xml:id="nCharacter" target="aCharacter" type="editorial"
-                     resp="editors.xml#BS"> During the 18th Century, the word character in
+                  hereby learn to do justice to the <ref target="_Character" corresp="Character"
+                     >character</ref><note xml:id="Character" target="_Character" type="editorial"
+                     resp="editors.xml#BS">During the 18th Century, the word character in
                      literature was used as a criticism of an individual rather than referring to
                      someone in a sense of art. <ref
                         target="https://www-jstor-org.proxymu.wrlc.org/stable/41467280?seq=1#metadata_info_tab_contents"
@@ -1383,8 +1382,8 @@
                   by the discussion of such a subject. I am sorry to have incurred his displeasure,
                   but can expect nothing better while he is so very eager in Lady Susan's
                   justification. He is very severe against me indeed, and yet I hope I have not been
-                  hasty in my <ref target="aJudgement" corresp="nJudgement">judgment</ref><note
-                     xml:id="nJudgement" target="aJudgement" type="editorial" resp="editors.xml#BS">
+                  hasty in my <ref target="_Judgement" corresp="Judgement">judgment</ref><note
+                     xml:id="Judgement" target="_Judgement" type="editorial" resp="editors.xml#BS">
                      Judgement is considered going beyond empirical evidence to draw a conclusion.
                      In the eighteenth century, the period of the Enlightenment, questions about the
                      nature of judgement permeated intellectual conversation. Read more about
@@ -1426,8 +1425,8 @@
                   that he should be so bitter against her daughter; his idea of her must be drawn
                   from the mother's description. Well, whatever may be his fate, we have the comfort
                   of knowing that we have done our utmost to save him. We must commit the event to a
-                     <ref target="HigherPower" corresp="nHigherPower">higher power</ref><note
-                     xml:id="nHigherPower" target="HigherPower" type="editorial"
+                     <ref target="HigherPower" corresp="HigherPower">higher power</ref><note
+                     xml:id="HigherPower" target="HigherPower" type="editorial"
                      resp="editors.xml#BS"> Religion played a major part in everyday life during the
                         18<hi rend="sup">th</hi> century in Europe, with many individuals and groups
                      looking to the church as a guide to the future and as a guide on how to operate
@@ -1459,8 +1458,8 @@
                   about Sir James, she actually attempted to <pb n="235" facs="pageImages/235.jpg"
                   />elope; at least, I cannot otherwise account for her doing it. She meant, I
                   suppose, to go to the Clarkes in Staffordshire, for she has no other
-                  acquaintances. <ref target="aPunished" corresp="nPunished">But she shall be
-                     punished, she shall have him.</ref><note xml:id="nPunished" target="aPunished"
+                  acquaintances. <ref target="_Punished" corresp="Punished">But she shall be
+                     punished, she shall have him.</ref><note xml:id="Punished" target="_Punished"
                      type="editorial">Lady Susan’s desire for Frederica to marry comes from her need
                      of money to sustain her way of life and social status. Marriage in the
                      eighteenth century was most commonly done for other needs, rather than love.
@@ -1481,8 +1480,8 @@
                   enough for the exercise of my talent, as the chief of my time is spent in
                   conversation. </p>
                <p>Reginald is never easy unless we are by ourselves, and when the weather is
-                  tolerable, we pace the <ref target="aShrubbery" corresp="nShrubbery"
-                     >shrubbery</ref><note xml:id="nShrubbery" target="aShrubbery" type="editorial"
+                  tolerable, we pace the <ref target="_Shrubbery" corresp="Shrubbery"
+                     >shrubbery</ref><note xml:id="Shrubbery" target="_Shrubbery" type="editorial"
                      resp="editors.xml#WR"><graphic url="notes/Vauxhall-Gardens.jpg"/>According
                      toRobert Clark, shrubberies and wilderness gardens were open stretches of land
                      that were usually filled with bordering rows of bushes and trees, which could
@@ -1513,8 +1512,8 @@
                   compare, superior to Reginald—superior in everything but the power of being with
                   me! Poor fellow! he is much distracted by jealousy, which I am not sorry for, as I
                   know no better support of love. He has been teazing me to allow of his coming into
-                  this country, and <ref target="aINCOG" corresp="nINCOG">lodging somewhere near
-                     INCOG.</ref><note xml:id="nINCOG" target="aINCOG" type="editorial"
+                  this country, and <ref target="_INCOG" corresp="INCOG">lodging somewhere near
+                     INCOG.</ref><note xml:id="INCOG" target="_INCOG" type="editorial"
                      resp="editors.xml#MUstudstaff">This is short for "incognito"--Mainwaring is
                      suggesting he will rent an apartment nearby as someone else, incognito.</note>;
                   but I forbade everything of the kind. Those women are inexcusable who forget what
@@ -1537,8 +1536,8 @@
                   <salute>My dear Mother,—</salute>
                </opener>
                <p> Mr. Vernon returned on Thursday night, bringing his niece with him. Lady Susan
-                  had received a line from him by that day's <ref target="aPost" corresp="nPost"
-                     >post</ref><note xml:id="nPost" target="aPost" type="editorial"
+                  had received a line from him by that day's <ref target="_Post" corresp="Post"
+                     >post</ref><note xml:id="Post" target="_Post" type="editorial"
                      resp="editors.xml#BS">The post, or mail service, was introduced in the
                      seventeenth century. Carriers brought letters from one post or station to
                      another on foot or horseback. "Post" refers both to the letters themselves, and
@@ -1599,8 +1598,8 @@
                   detected in this scheme, I cannot so readily credit what Lady Susan has made him,
                   and wants to make me believe, that it was merely an impatience of restraint and a
                   desire of escaping from the tuition of masters which brought on the plan of an
-                  elopement. <ref target="aEnslaved" corresp="nEnslaved">O Reginald, how is your
-                     judgment enslaved!</ref><note xml:id="nEnslaved" target="aEnslaved"
+                  elopement. <ref target="_Enslaved" corresp="Enslaved">O Reginald, how is your
+                     judgment enslaved!</ref><note xml:id="Enslaved" target="_Enslaved"
                      type="editorial" resp="editors.xml#WR">Reginald's belief that Frederica
                      attempted to run away for no reason and that Lady Susan is not to blame may be
                      a result of blind love and unwillingness to face the truth. "In light of the
@@ -1648,9 +1647,9 @@
                      <persName>Frederica's</persName> artless affection detach him from her mother,
                   we might bless the day which brought her to <placeName>Churchhill</placeName>. I
                   think, my dear mother, you would not disapprove of her as a daughter. She is
-                  extremely young, to be sure, has had a <ref target="aWretchedEducation"
-                     corresp="nWretchedEducation">wretched education</ref><note
-                     xml:id="nWretchedEducation" target="aWretchEdeducation" type="editorial"
+                  extremely young, to be sure, has had a <ref target="_WretchedEducation"
+                     corresp="WretchedEducation">wretched education</ref><note
+                     xml:id="WretchedEducation" target="_WretchEdeducation" type="editorial"
                      resp="editors.xml#HSA">Although women's education was bad during the 18th
                      century, generally, in this letter, Ms. Veron refers to Lady Susan's poor
                      example for her daughter Frederica. In "Lady Susan: The Wicked Mother in Jane
@@ -1695,8 +1694,8 @@
                   myself to have been perfectly right in attributing it to my own letter. The
                   prospect of it frightened her so thoroughly, that, with a mixture of true girlish
                   perverseness and folly, she resolved on getting out of the house and proceeding
-                  directly by the <ref target="aTheStage" corresp="nTheStage"> the stage </ref>
-                  <note xml:id="nTheStage" target="aTheStage" type="editorial"
+                  directly by the <ref target="_TheStage" corresp="TheStage"> the stage </ref>
+                  <note xml:id="TheStage" target="_TheStage" type="editorial"
                      resp="editors.xml#JKB">
                      <graphic url="notes/BBO_OXATC_33-001.jpg"/>Frederica has escaped from her
                      school by "stage," which was a method of public transportation. According to
@@ -1716,9 +1715,9 @@
                   her journey when she was fortunately missed, pursued, and overtaken. Such was the
                   first distinguished exploit of <persName>Miss Frederica Vernon</persName>; and, if
                   we consider that it was achieved at the tender age of sixteen, we shall have room
-                  for the most flattering <ref target="aPrognostics" corresp="nPrognostics"
+                  for the most flattering <ref target="_Prognostics" corresp="Prognostics"
                      >prognostics</ref>
-                  <note xml:id="nPrognostics" target="aPrognostics" type="gloss"
+                  <note xml:id="Prognostics" target="_Prognostics" type="gloss"
                      resp="editors.xml#JML">
                      <ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/152205?rskey=KyxUSO&amp;result=1&amp;isAdvanced=false#eid"
@@ -1732,9 +1731,9 @@
                   money. Be that as it may, however, <persName>Frederica</persName> is returned on
                   my hands; and, having nothing else to employ her, is busy in pursuing the plan of
                   romance begun at <placeName>Langford</placeName>. She is actually falling in love
-                  with <persName>Reginald De Courcy</persName>! <ref target="aDisobeyHerMother"
-                     corresp="nDisobeyHerMother">To disobey her mother</ref>
-                  <note xml:id="nDisobeyHerMother" target="aDisobeyHerMother" type="editorial"
+                  with <persName>Reginald De Courcy</persName>! <ref target="_DisobeyHerMother"
+                     corresp="DisobeyHerMother">To disobey her mother</ref>
+                  <note xml:id="DisobeyHerMother" target="_DisobeyHerMother" type="editorial"
                      resp="editors.xml#JML"> In this context, "to disobey her Mother" means to go
                      against her mother’s wishes regarding who she wants to pursue romance with.
                         <ref
@@ -1742,9 +1741,9 @@
                         >Per this article by John Mullan in the British Library</ref>, marriage in
                      Austen’s time was often arranged and involved an elaborate process of
                      courtship. </note> by refusing an unexceptionable offer is not enough; her
-                  affections must also be given without her mother's <ref target="aApprobation"
-                     corresp="nApprobation">approbation</ref>
-                  <note xml:id="nApprobation" target="aApprobation" type="gloss"
+                  affections must also be given without her mother's <ref target="_Approbation"
+                     corresp="Approbation">approbation</ref>
+                  <note xml:id="Approbation" target="_Approbation" type="gloss"
                      resp="editors.xml#JML">
                      <ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/9850?redirectedFrom=approbation#eid"
@@ -1787,12 +1786,10 @@
                </opener>
                <p>We have a very unexpected guest with us at present, my dear Mother: he arrived
                   yesterday. I heard a carriage at the door, as I was sitting with my children while
-                  they dined; and supposing I should be wanted, left the <ref target="aNursery"
-                     corresp="nNursery">nursery</ref><note xml:id="nNursery" target="aNursery"
+                  they dined; and supposing I should be wanted, left the <ref target="_Nursery"
+                     corresp="ursery">nursery</ref><note xml:id="ursery" target="_Nursery"
                      type="editorial" resp="editors.xml#HSA">
-                     <graphic url="notes/TheNursery.jpg"/><ref
-                        target="https://www-oed-com.proxymu.wrlc.org/view/Entry/129254?rskey=fH9qjU&amp;result=1&amp;isAdvanced=false#eid"
-                        >According to the OED</ref> the nursery is a room or an area in the house
+                     <graphic url="notes/TheNursery.jpg"/>According to the OED the nursery is a room or an area in the house
                      made for babies and young children to live in while they were being cared for
                      and nursed. Often, early education occurred in the nursery. The image here,
                      from <ref
@@ -1801,19 +1798,19 @@
                      house much like Churchhil. </note>soon afterwards, and was half-way downstairs,
                   when <persName>Frederica</persName>, as pale as ashes, <pb n="244"
                      facs="pageImages/244.jpg"/>came running up, and rushed by me into her own room.
-                  I instantly followed, and asked her what was the matter. <said direct="true"
-                     >"Oh!"</said> said she, <said direct="true">"he is come—<persName>Sir
+                  I instantly followed, and asked her what was the matter. <said aloud="true"
+                     >"Oh!"</said> said she, <said aloud="true">"he is come—<persName>Sir
                         James</persName> is come, and what shall I do?"</said> This was no
                   explanation; I begged her to tell me what she meant. At that moment we were
                   interrupted by a knock at the door: it was <persName>Reginald</persName>, who
                   came, by <persName>Lady Susan</persName>'s direction, to call
-                     <persName>Frederica</persName> down. <said direct="true">"It is Mr. De
-                     Courcy!"</said> said she, colouring violently. <said direct="true">"Mamma has
+                     <persName>Frederica</persName> down. <said aloud="true">"It is Mr. De
+                     Courcy!"</said> said she, colouring violently. <said aloud="true">"Mamma has
                      sent for me; I must go."</said> We all three went down together; and I saw my
                   brother examining the terrified face of <persName>Frederica</persName> with
-                  surprize. In the <ref target="aBreakfastRoom" corresp="nBreakfastRoom"
+                  surprize. In the <ref target="_BreakfastRoom" corresp="BreakfastRoom"
                      >breakfast-room</ref>
-                  <note xml:id="nBreakfastRoom" target="aBreakfastRoom" type="editorial"
+                  <note xml:id="BreakfastRoom" target="_BreakfastRoom" type="editorial"
                      resp="editors.xml#JML">
                      <ref target="http://www.jasna.org/persuasions/printed/number12/sutherland2.htm"
                         >Per this article by Eileen Sutherland of the Jane Austen Society of North
@@ -1846,8 +1843,8 @@
                      <persName>Reginald</persName> observed all that passed in perfect silence. At
                   length <persName>Lady Susan</persName>, weary, I believe, of her situation,
                   proposed walking; and we left the two gentlemen together, to put on our <ref
-                     target="aPelisses" corresp="nPelisses">pellisses</ref><note xml:id="nPelisses"
-                     target="aPelisses" resp="editors.xml#AHM" type="gloss"><graphic
+                     target="_Pelisses" corresp="Pelisses">pellisses</ref><note xml:id="Pelisses"
+                     target="_Pelisses" resp="editors.xml#AHM" type="gloss"><graphic
                         url="notes/Pelisse.jpeg"/>A pelisse is a woman’s long dress-like coat. This
                      picture, from the <ref
                         target="https://www.metmuseum.org/art/collection/search/82141">Metropolitan
@@ -1855,19 +1852,17 @@
                      century.</note>. As we went upstairs <persName>Lady Susan</persName> begged
                   permission to attend me for a few moments in my dressing-room, as she was anxious
                   to speak with me in private. I led her thither accordingly, and as soon as the
-                  door was closed, she said: <said direct="true">"I was never more surprized in my
+                  door was closed, she said: <said aloud="true">"I was never more surprized in my
                      life than by <persName>Sir James</persName>'s arrival, and the suddenness of it
                      requires some apology to you, my dear sister; though to ME, as a mother, it is
                      highly flattering. He is so extremely attached to my daughter that he could not
                      exist longer without seeing her. <persName>Sir James</persName> is a young man
                      of an amiable disposition and excellent character; a little too much of the
-                        <ref target="aRattle" corresp="nRattle">rattle</ref><note xml:id="nRattle"
-                        target="aRattle" type="gloss" resp="editors.xml#HSA">According to the OED,
+                        <ref target="_Rattle" corresp="Rattle">rattle</ref><note xml:id="Rattle"
+                        target="_Rattle" type="gloss" resp="editors.xml#HSA">According to the OED,
                         to rattle is to "talk rapidly in a noisy, lively, or inane manner; to
                         chatter, to prattle." Here, Sir James is being called a rattle, or someone
-                        who talks inanely (<ref
-                           target="https://www-oed-com.proxymu.wrlc.org/view/Entry/158557?rskey=UhhETT&amp;result=3#eid"
-                           >3a</ref>).</note>, perhaps, but a year or two will rectify THAT: and he
+                        who talks inanely (OED, 3a).</note>, perhaps, but a year or two will rectify THAT: and he
                      is in other respects so very eligible a match for
                         <persName>Frederica</persName>, that I have always observed his attachment
                      with the greatest pleasure; and am persuaded that you and my brother will give
@@ -1892,7 +1887,7 @@
                   fact, the sudden disclosure of so important a matter took from me the power of
                   speaking with any clearness. She thanked me, however, most affectionately, for my
                   kind concern in the welfare of herself and daughter; and then said: <said
-                     direct="true">"I am not apt to deal in professions, my dear <persName>Mrs.
+                     aloud="true">"I am not apt to deal in professions, my dear <persName>Mrs.
                         Vernon</persName>, and I never had the convenient talent of affecting
                      sensations foreign to my heart; and therefore I trust you will believe me when
                      I declare, that much as I had heard in your praise before I knew you, I had no
@@ -1939,9 +1934,9 @@
                <head type="sub">XXI.<lb/><hi rend="italic"><persName>Miss Vernon</persName> to
                         <persName>Mr. de Courcy.</persName></hi></head>
                <opener><salute>Sir,—</salute></opener>
-               <p>I hope you will excuse <ref target="aThisLiberty" corresp="nThisLiberty">this
+               <p>I hope you will excuse <ref target="_ThisLiberty" corresp="ThisLiberty">this
                      liberty</ref>
-                  <note xml:id="nThisLiberty" target="aThisLiberty" type="editorial"
+                  <note xml:id="ThisLiberty" target="_ThisLiberty" type="editorial"
                      resp="editors.xml#JML"> In this context, "this liberty" is referring to Miss
                      Vernon’s decision to write to Mr. De Courcy. In this period, Miss Vernon’s
                      actions are considered controversial as single women were not meant to write to
@@ -1956,9 +1951,9 @@
                   have no other way in the world of helping myself but by writing to you, for I am
                   forbidden even speaking to my uncle and aunt on the subject; and this being the
                   case, I am afraid my applying to you will appear no better than equivocation, and
-                  as if I attended to <ref target="aLetterSpirit" corresp="nLetterSpirit">the letter
-                     and not the spirit of mamma's commands</ref><note xml:id="nLetterSpirit"
-                     target="aLetterSpirit" type="editorial" resp="editors.xml#TH">Frederica alludes
+                  as if I attended to <ref target="_LetterSpirit" corresp="LetterSpirit">the letter
+                     and not the spirit of mamma's commands</ref><note xml:id="LetterSpirit"
+                     target="_LetterSpirit" type="editorial" resp="editors.xml#TH">Frederica alludes
                      to the Bible here. In 2 Corinthians 3:6, God has "made us able ministers of the
                      new testament; not of the letter, but of the spirit: for the letter killeth,
                      but the spirit giveth life" (King James Version). In other words, Frederica is
@@ -2017,8 +2012,8 @@
                   that I was perfectly justified, all things considered, in desiring the match; and
                   the whole business seemed most comfortably arranged. They could none of them help
                   perceiving that <persName>Sir James</persName>
-                  <ref target="aNoSolomon" corresp="nNoSolomon">was no Solomon</ref><note
-                     xml:id="nNoSolomon" target="aNoSolomon" type="editorial" resp="editors.xml#TH"
+                  <ref target="_NoSolomon" corresp="oSolomon">was no Solomon</ref><note
+                     xml:id="oSolomon" target="_NoSolomon" type="editorial" resp="editors.xml#TH"
                      >Lady Susan references the biblical story of of Solomon, King of Israel (1
                      Kings 3:16–28). However, she provides a superficial allusion only to Solomon's
                      wisdom. Her chief intention here seems to be to show how well-read she is in
@@ -2062,8 +2057,8 @@
                   disfavour! Ought he not to have felt assured that I must have unanswerable motives
                   for all that I had done? Where was his reliance on my sense and goodness then?
                   Where the resentment which true love would have dictated against the person
-                  defaming me—that person, too, a <ref target="aChit" corresp="nChit"
-                     >chit</ref><note xml:id="nChit" target="aChit" type="gloss"
+                  defaming me—that person, too, a <ref target="_Chit" corresp="Chit"
+                     >chit</ref><note xml:id="Chit" target="_Chit" type="gloss"
                      resp="editors.xml#AHM">A chit is "A person considered as no better than a
                      child. Generally used of young persons in contempt’ (Johnson); now, mostly of a
                      girl or young woman" (<ref
@@ -2100,16 +2095,16 @@
                   since matters have now taken so favourable a turn, I am quite sorry that I ever
                   imparted my apprehensions to you; for the pleasure of learning that the danger is
                   over is perhaps dearly purchased by all that you have previously suffered. I am so
-                  much agitated by delight that <ref target="aPen" corresp="nPen">I can scarcely
-                     hold a pen</ref><note xml:id="nPen" target="aPen" type="editorial"
+                  much agitated by delight that <ref target="_Pen" corresp="Pen">I can scarcely
+                     hold a pen</ref><note xml:id="Pen" target="_Pen" type="editorial"
                      resp="editors.xml#DMC"> In the 18th century, the writing utensil was the quill
                      pen. The quality of the pen depended on the animal that the feather belonged
                      to. Discarded peacock and swan feathers were some of the high quality
                      ingredients for the pens (<ref
                         target="https://georgianera.wordpress.com/2015/12/17/18th-century-quill-pens-and-postage/"
                         > "18th Century Quill Pens and Postage"</ref>). </note> ; but am determined
-                  to send you a <ref target="aFewShortLines" corresp="nFewShortLines">Few short
-                     lines</ref><note xml:id="nFewShortLines" target="aFewShortLines"
+                  to send you a <ref target="_FewShortLines" corresp="FewShortLines">Few short
+                     lines</ref><note xml:id="FewShortLines" target="_FewShortLines"
                      type="editorial" resp="editors.xml#STM"><graphic
                         url="notes/Postboysandhorses.jpg"/>A "few short lines" refers to the length
                      of the letter that will be carried by James who in this case is the messenger
@@ -2128,8 +2123,8 @@
                      Courcy.</note> by James, that you may have some explanation of what must so
                   greatly astonish you, as that Reginald should be returning to Parklands. I was
                   sitting about half an hour ago with Sir James in the <ref
-                     target="aBreakfastParlour" corresp="nBreakfastParlour">breakfast
-                     parlour</ref><note xml:id="nBreakfastParlour" target="aBreakfastParlour"
+                     target="_BreakfastParlour" corresp="BreakfastParlour">breakfast
+                     parlour</ref><note xml:id="BreakfastParlour" target="_BreakfastParlour"
                      type="editorial" resp="editors.xml#STM"><graphic
                         url="notes/BreakfastParlour.jpg"/>In the 18th century, dining rooms were
                      only used for formal dinners most of the time. It has always been a custom to
@@ -2160,9 +2155,9 @@
                   immediately; he is only a fool: but what her mother can mean, Heaven only knows!
                   Good bye," he added, shaking my hand with earnestness; "I do not know when you
                   will see me again; but remember what I tell you of Frederica; you MUST make it
-                  your business to see justice done her. She is an<ref target="aAmiable"
-                     corresp="nAmiable">amiable</ref><note xml:id="nAmiable" target="aAmiable"
-                     type="gloss" resp="editors.xml#STM"> According to the OED, being amiable means
+                  your business to see justice done her. She is an <ref target="_Amiable"
+                     corresp="Amiable">amiable</ref><note xml:id="Amiable" target="_Amiable"
+                     type="gloss" resp="editors.xml#STM">According to the OED, being amiable means
                      to be "lovable, worthy to be loved, and/or lovely" (<ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/6378?redirectedFrom=amiable#eid"
                         > "Amiable, adj.2.a"</ref>).</note> girl, and has a very superior mind to
@@ -2208,22 +2203,13 @@
                   made me so happy only two hours ago has vanished. The quarrel between Lady Susan
                   and Reginald is made up, and we are all as we were before. One point only is
                   gained. Sir James Martin is dismissed. What are we now to look forward to? I am
-                  indeed disappointed; Reginald was all but gone,<ref target="aStablehand"
-                     corresp="nStablehand">his horse was ordered and all but brought to the
-                     door</ref><note xml:id="nStablehand" target="aStablehand" type=" gloss"
-                     resp=" editors.xml#DMC"><graphic url="notes/servant_coachman_groom003.jpeg"
-                     />Stable hands take care of a horse's daily needs, including feeding and
-                     grooming. This job required dedication since it lasts all day. Stable hands
+                  indeed disappointed; Reginald was all but gone,<ref target="_Stablehand"
+                     corresp="Stablehand">his horse was ordered and all but brought to the
+                     door</ref><note xml:id="Stablehand" target="_Stablehand" type=" gloss"
+                     resp="editors.xml#DMC">Stable hands take care of a horse's daily needs, including feeding, grooming, and cleaning. This job required dedication since it lasts all day. Stable hands
                      take out and saddle the horses if any one in the house they worked for wanted
                      to ride, and they collect the horses when a rider returns (<ref
-                        target="http://www.avictorian.com/servants_index.html"> "Household
-                        management and Servants of the Victorian Era"</ref>). The image <ref
-                        target="http://www.avictorian.com/victorian/servant_coachman_groom003.jpg">
-                        of a groom and a coachman</ref> shows a coachman’s uniform, the one in
-                     charge of directing horses and the groom. Their outfits, called "livery,"
-                     identify the households they work for, and the uniforms themselves have
-                     differences that allow the roles that they had to be easily identified by their
-                     employers.</note>; who would not have felt safe? For half an hour I was in
+                        target="https://en.wikipedia.org/wiki/Groom_(profession)"> "Groom (profession)"</ref>). The coachman would have been in charge of directing horses and grooms.</note>; who would not have felt safe? For half an hour I was in
                   momentary expectation of his departure. After I had sent off my letter to you, I
                   went to Mr. Vernon, and sat with him in his room talking over the whole matter,
                   and then determined to look for Frederica, whom I had not seen since breakfast. I
@@ -2239,8 +2225,8 @@
                   I know; but you have not an idea of the misery I have been in: and mamma had
                   ordered me never to speak to you or my uncle about it, and—" "You therefore spoke
                   to my brother to engage his interference," said I, to save her the explanation.
-                  "No, but I wrote to him—I did indeed, I got up this morning <ref target="aLight"
-                     corresp="nLight">before it was light</ref><note xml:id="nLight" target="aLight"
+                  "No, but I wrote to him—I did indeed, I got up this morning <ref target="_Light"
+                     corresp="Light">before it was light</ref><note xml:id="Light" target="_Light"
                      type=" gloss" resp="editors.xml#DMC"> During the 18th century, while the sun
                      was the primary source of light, candles and oil lamps were used to light up
                      one's house. These sources when the sun could not be depended on. The use of
@@ -2310,9 +2296,9 @@
                   been necessary for me to show has alienated her affection; neither has she any of
                   that brilliancy of intellect, that genius or vigour of mind which will force
                   itself forward." "Say rather that she has been <ref
-                     target="aUnfortunateInHerEducation" corresp="nUnfortunateInHerEducation">she
+                     target="_UnfortunateInHerEducation" corresp="UnfortunateInHerEducation">she
                      has been unfortunate in her education</ref><note
-                     xml:id="nUnfortunateInHerEducation" target="aUnfortunateInHerEducation"
+                     xml:id="UnfortunateInHerEducation" target="_UnfortunateInHerEducation"
                      type="editorial" resp="editors.xml#STM">In the 18th century, many girls stayed
                      home to help out in the household and were educated by their mothers. It was
                      said that the main purpose of educating girls was to prepare them for marriage
@@ -2354,8 +2340,8 @@
                   any rate, quarrel with my brother for an interference which, you must know, it is
                   not in his nature to refuse when urged in such a manner?" </p>
                <p>"His disposition, you know, is warm, and he came to expostulate with me; his
-                  compassion all alive for this <ref target="aIllUsed" corresp="nIllUsed">ill-used
-                     girl</ref><note xml:id="nIllUsed" target="aIllUsed" type="editorial"
+                  compassion all alive for this <ref target="_IllUsed" corresp="IllUsed">ill-used
+                     girl</ref><note xml:id="IllUsed" target="_IllUsed" type="editorial"
                      resp="editors.xml#STM">According to a book called Chambers’ Journal, "to appear
                      ill-used—it is so sure to afford some presumption not quite favorable to him.
                      It also refers to the stupid and troublesome because nobody can endure them;
@@ -2395,9 +2381,9 @@
                   mother precludes every dearer hope. Prepare, my dear mother, for the worst! The
                   probability of their marrying is surely heightened! He is more securely hers than
                   ever. When that wretched event takes place, Frederica must belong wholly to us. I
-                  am thankful that <ref target="aLastLetter" corresp="nLastLetter">my last letter
-                     will precede this by so little</ref><note xml:id="nLastLetter"
-                     target="aLastLetter" type=" gloss" resp=" editors.xml#DMC">By the 18th century,
+                  am thankful that <ref target="_LastLetter" corresp="LastLetter">my last letter
+                     will precede this by so little</ref><note xml:id="LastLetter"
+                     target="_LastLetter" type=" gloss" resp=" editors.xml#DMC">By the 18th century,
                      mail was delivered by coach. This was proven to be much faster than the
                      previous horse and rider system. The coaches could travel up to eight miles an
                      hour, and had protection to insure that the mail won't be easily stolen. Mail
@@ -2418,7 +2404,7 @@
                <opener><dateline><placeName>Churchhill.</placeName></dateline></opener>
 
                <p>I call on you, dear Alicia, for congratulations: I am my own self, <ref
-                     target="aGay" corresp="nGay"> gay </ref><note xml:id="nGay" target="aGay"
+                     target="_Gay" corresp="Gay"> gay </ref><note xml:id="Gay" target="_Gay"
                      type="gloss" resp="editors.xml#JKB">According to <ref
                         target="https://hornet.com/stories/the-word-gay-sexuality-two/"
                         >Hornet.com</ref>the word "gay" has a variety of uses that date back as far
@@ -2439,8 +2425,8 @@
                   went; he came immediately. The angry emotions which had marked every feature when
                   we last parted were partially subdued. He seemed astonished at the summons, and
                   looked as if half wishing and half fearing to be softened by what I might say. If
-                  my countenance expressed what I aimed at, it was <ref target="aComposed"
-                     corresp="nComposed">composed</ref><note xml:id="nComposed" target="aComposed"
+                  my countenance expressed what I aimed at, it was <ref target="_Composed"
+                     corresp="Composed">composed</ref><note xml:id="Composed" target="_Composed"
                      type="gloss" resp="editors.xml#JKB">According to <ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/37782">the
                      OED</ref>, the word "composed" means "calm or tranquil," or someone whose face
@@ -2486,8 +2472,8 @@
                   dismissed; for, in reconciling Reginald to me, I was not able to save that
                   ill-fated young man; and I must make myself amends for the humiliation to which I
                   have stooped within these few days. To effect all this I have various plans. I
-                  have also an idea of being soon in <ref target="aTown" corresp="nTown">town </ref>
-                  <note xml:id="nTown" target="aTown" type="gloss" resp="editors.xml#JKB"> According
+                  have also an idea of being soon in <ref target="_Town" corresp="Town">town </ref>
+                  <note xml:id="Town" target="_Town" type="gloss" resp="editors.xml#JKB"> According
                      to <ref target="https://www-oed-com.proxymu.wrlc.org/view/Entry/204044">the
                         OED</ref>, "town" in this sense refers to a specific town, here, London, as
                      distinct from the country areas where Churchhill, Parklands, and Langford are
@@ -2529,9 +2515,9 @@
                   of a disposition to do you credit in the world, and seems precisely in her proper
                   place at Churchhill, with the Vernons. But you are fitted for society, and it is
                   shameful to have you exiled from it. Leave Frederica, therefore, to punish herself
-                  for the plague she has given you, by indulging that romantic<ref target="aTender"
-                     corresp="nTender"> tender-heartedness</ref><note xml:id="nTender"
-                     target="aTender" type="gloss" resp="editors.xml#DJM">According to the OED,
+                  for the plague she has given you, by indulging that romantic<ref target="_Tender"
+                     corresp="Tender"> tender-heartedness</ref><note xml:id="Tender"
+                     target="_Tender" type="gloss" resp="editors.xml#DJM">According to the OED,
                      tender-heartedness is "the ability to be easily moved by fear, pity, sorrow, or
                         love.(<ref target="https://www-oed-com.proxymu.wrlc.org/view/Entry/199060"
                         >"Tender-hearted," adj.</ref>). </note> which will always ensure her misery
@@ -2546,15 +2532,15 @@
                   indispensably necessary to you to get Mainwaring out of the way; and you only can
                   have influence enough to send him back to his wife. I have still another motive
                   for your coming: Mr. Johnson leaves London next Tuesday; he is going for his
-                  health to <ref target="aBath" corresp="nBath">Bath</ref><note xml:id="nBath"
-                     target="aBath" type="editorial" resp="editors.xml#DJM">Bath was a fashionable
+                  health to <ref target="_Bath" corresp="Bath">Bath</ref><note xml:id="Bath"
+                     target="_Bath" type="editorial" resp="editors.xml#DJM">Bath was a fashionable
                      city in Somerset, England, "known for and named after its Roman-built baths."
                      The mineral hot springs in Bath were thought to cure illnesses like gout (<ref
                         target="https://whc.unesco.org/en/list/428/">"Bath"</ref>). Mr. Johnson had
                      the gout, which led to him going to Bath for treatment in the hot mineral
                      springs. </note> where, if the waters are favourable to his constitution and my
-                  wishes, he will be laid up with the<ref target="aGout" corresp="nGout">
-                     gout</ref><note xml:id="nGout" target="aGout" type="editorial"
+                  wishes, he will be laid up with the<ref target="_Gout" corresp="Gout">
+                     gout</ref><note xml:id="Gout" target="_Gout" type="editorial"
                      resp="editors.xml#DJM"><graphic url="notes/Gout.jpg"/>Gout is a form of
                      arthritis causing "severe pain, redness, and tenderness of the joints." It
                      causes "high levels of uric acid in the blood that crystallize in the joints,
@@ -2572,9 +2558,9 @@
                   I would ask you to Edward Street, but that once he forced from me a kind of
                   promise never to invite you to my house; nothing but my being in the utmost
                   distress for money should have extorted it from me. I can get you, however, a nice
-                  drawing-room apartment in <ref target="aStreet" corresp="nStreet">Upper Seymour
+                  drawing-room apartment in <ref target="_Seymour" corresp="Seymour">Upper Seymour
                      Street</ref>
-                  <note xml:id="nStreet" target="aStreet" type="editorial" resp="editors.xml#DJM"
+                  <note xml:id="Seymour" target="_Seymour" type="editorial" resp="editors.xml#DJM"
                      >According to <hi rend="italic">Jane Austen’s World</hi>, Seymour Street is a
                      London street adjacent to Hyde Park and near other well-known locations Mayfair
                      and St. James’s, where wealthier people lived. This is the neighborhood where
@@ -2587,8 +2573,8 @@
                   in his absence) your not sleeping in the house. Poor Mainwaring gives me such
                   histories of his wife's jealousy. Silly woman to expect constancy from so charming
                   a man! but she always was silly—intolerably so in marrying him at all, she the
-                     <ref target="aHeiress1" corresp="nHeiress1">heiress of a large fortune and he
-                     without a shilling</ref><note xml:id="nHeiress1" target="aHeiress1"
+                     <ref target="_Heiress1" corresp="Heiress1">heiress of a large fortune and he
+                     without a shilling</ref><note xml:id="Heiress1" target="_Heiress1"
                      type="gloss" resp="editors.xml#DJM">An heiress is a woman who inherits the
                      property or rank of another on that person's death. In this case, she received
                      a large amount of money or property and Mainwaring--who has a title but no
@@ -2706,13 +2692,13 @@
             <div n="30" type="letter">
                <head type="sub">XXX.<lb/><hi rend="italic">Lady Susan Vernon to Mr. de
                   Courcy.</hi></head>
-               <opener><dateline><placeName><ref target="aUpperSeymourStreet"
-                           corresp="nUpperSeymourStreet">Upper Seymour Street</ref><note
-                           xml:id="aUpperSeymourStreet" target="nUpperSeymourStreet"
+               <opener><dateline><placeName><ref target="_UpperSeymourStreet"
+                           corresp="UpperSeymourStreet">Upper Seymour Street</ref><note
+                           xml:id="UpperSeymourStreet" target="_UpperSeymourStreet"
                            type="editorial" resp="editors.xml#SM"><graphic
                               url="notes/upperseymourstreet.jpg"/>Lady Susan is now in London, in
                            her fashionable lodgings in Upper Seymour Street. According to the
-                           well-researched blog _Jane Austen's World, "living at this location off
+                           well-researched blog <hi rend="italic">Jane Austen's World</hi>, "living at this location off
                            Oxford Street was considered a moderately respectable to fairly good
                            address during the Regency era." It is located in Westminster next to
                            Hyde Park. </note></placeName></dateline></opener>
@@ -2834,8 +2820,8 @@
                <opener>
                   <dateline><placeName>Upper Seymour Street.</placeName></dateline>
                </opener>
-               <p>This <ref target="aEclaircissement" corresp="nEclaircissement"
-                     >eclaircissement</ref><note xml:id="nEclaircissement" target="aEclaircissement"
+               <p>This <ref target="_Eclaircissement" corresp="Eclaircissement"
+                     >eclaircissement</ref><note xml:id="Eclaircissement" target="_Eclaircissement"
                      resp="editors.xml#MUstudstaff" type="gloss">In the fashionable French, this
                      word literally means "clearing up"; it is used to indicate that something kept
                      secret or hidden has been revealed, as noted in the OED. For Lady Susan, the
@@ -3014,21 +3000,16 @@
 
                <opener><salute>My dear Catherine,—</salute></opener>
                <p>I have charming news for you, and if I had not sent off my letter this morning you
-                  might have been spared the <ref target="aVexation" corresp="nVexation2">
-                     vexation</ref><note xml:id="nVexation2" target="aVexation" type="gloss"
+                  might have been spared the <ref target="_Vexation" corresp="Vexation2">
+                     vexation</ref><note xml:id="Vexation2" target="_Vexation" type="gloss"
                      resp="editors.xml#ATJ">According to the OED vexation is "the state or fact of
                      being mentally troubled or distressed; (in later use) esp. annoyance,
-                     irritation, dissatisfaction, or disappointment" (<ref
-                        target=" https://www-oed-
-com.proxymu.wrlc.org/view/Entry/222987?redirectedFrom=vexation#eid"
-                        >"Vexation," n.3a</ref>). </note> of knowing of Reginald's being gone to
-                  London, for he is returned. Reginald is returned, not to <ref target="aConsent"
-                     corresp="nConsent"> ask our consent </ref><note xml:id="aConsent"
-                     target="aConsent" type="gloss" resp="editors.xml#AHM">The OED states that
+                     irritation, dissatisfaction, or disappointment" ("Vexation," n.3a). </note> of knowing of Reginald's being gone to
+                  London, for he is returned. Reginald is returned, not to <ref target="_Consent"
+                     corresp="Consent"> ask our consent </ref><note xml:id="aConsent"
+                     target="_Consent" type="gloss" resp="editors.xml#AHM">The OED states that
                      consent means "voluntary agreement to or acquiescence in what another proposes
-                     or desires; compliance, concurrence, permission" (<ref
-                        target="https://www-oed-com.proxymu.wrlc.org/view/Entry/39517?rskey=e9StPB&amp;result=1#eid"
-                        >"Consent, n.1a"</ref>). Reginald is not asking for his parent's permission
+                     or desires; compliance, concurrence, permission" ("Consent, n.1a"). Reginald is not asking for his parent's permission
                      to marry Lady Susan.</note> to his marrying Lady Susan, but to tell us they are
                   parted for ever. He has been only an hour in the house, and I have not been able
                   to learn particulars, for he is so very low that I have not the heart to ask
@@ -3065,17 +3046,9 @@ com.proxymu.wrlc.org/view/Entry/222987?redirectedFrom=vexation#eid"
                   was dropped, of any disagreement or coolness between them. I asked her whether she
                   had seen my brother since his arrival in town; not, as you may suppose, with any
                   doubt of the fact, but merely to see how she looked. She immediately answered,
-                  without any embarrassment, that he had been kind enough to <ref target="aCallOn"
-                     corresp="nCallOn"> call on</ref><note xml:id="nCallOn" target="aCallOn"
-                     type="gloss" resp="editors.xml#ATJ">DRAFT-WRONG SENSE During the 18th century
-                     just from my personal knowledge when a man calls on a woman that means he like
-                     her and not only that but it can also take on the meaning of inviting someone.
-                     II. Senses in which the primary meaning relates to summoning, requesting, or
-                     announcing. 9. a. An order or request for someone to be present; a summons, an
-                     invitation. Also figurative (<ref
-                        target=" https://www-oed-com.proxymu.wrlc.org/view/Entry/26410?rskey=YoD5eS&amp;result=1&amp;isAdvanced=false#eid1040
-8972"
-                        >"Call" v.32a</ref>).</note> her on Monday; but she believed he had already
+                  without any embarrassment, that he had been kind enough to <ref target="_CallOn"
+                     corresp="CallOn"> call on</ref><note xml:id="CallOn" target="_CallOn"
+                     type="gloss" resp="editors.xml#MUStudStaff">To call upon someone meant to pay them a brief visit (OED, "call", v.).</note> her on Monday; but she believed he had already
                   returned home, which I was very far from crediting. Your kind invitation is
                   accepted by us with pleasure, and on Thursday next we and our little ones will be
                   with you. Pray heaven, Reginald may not be in town again by that time! I wish we
@@ -3085,23 +3058,18 @@ com.proxymu.wrlc.org/view/Entry/222987?redirectedFrom=vexation#eid"
                   thoroughly unwilling to let her go, and so was her uncle; and all that could be
                   urged we did urge; but Lady Susan declared that as she was now about to fix
                   herself in London for several months, she could not be easy if her daughter were
-                  not with her <ref target="aMasters" corresp="nMasters">for masters</ref><note
-                     xml:id="nMasters" target="aMasters" type="gloss" resp="editors.xml#AHM"
-                     >According to OED, master is someone "of approved learning, a respected
+                  not with her <ref target="_Masters" corresp="Masters">for masters</ref><note
+                     xml:id="Masters" target="_Masters" type="gloss" resp="editors.xml#AHM"
+                     >According to the OED, master is someone "of approved learning, a respected
                      scholar; an authority in (also of) a particular subject" (<ref
                         target="https://www-oed-com.proxymu.wrlc.org/view/Entry/114751?rskey=Kh74YB&amp;result=1#eid"
                         >"Master," 13a</ref>). Lady Susan is referring here to Frederica's London
                      tutors, likely in subjects like singing, dancing, and drawing.</note>, <ref
-                     target="aAmpersandC" corresp="nAmpersandC">&amp;c </ref><note
-                     xml:id="aAmpersandC" target="aAmpersandC" type="gloss" resp="editors.xml#AHM"
+                     target="_etc" corresp="etc">&amp;c</ref><note
+                     xml:id="etc" target="_etc" type="gloss" resp="editors.xml#AHM"
                      >This is a way to write et cetera. From the Latin, it means "And the rest, and
                      so forth, and so on, indicating that the statement refers not only to the
-                     things enumerated, but to others which may be inferred from analogy.
-                     Occasionally used when the conclusion of a quotation, a current formula of
-                     politeness, or the like, is omitted as being well known to the reader. Also
-                     Yours etc., used as an ending in letters" (<ref
-                        target="https://www-oed-com.proxymu.wrlc.org/view/Entry/64673?redirectedFrom=Et+cetera#eid"
-                        >"Et Cetera," 1</ref>).</note>; Her manner, to be sure, was very kind and
+                     things enumerated, but to others which may be inferred from analogy." The OED goes on to note that it is also a generic ending to a letter before the signature, as is the case with this letter ("Et Cetera," 1).</note>; Her manner, to be sure, was very kind and
                   proper, and Mr. Vernon believes that Frederica will now be treated with affection.
                   I wish I could think so too. The poor girl's heart was almost broke at taking
                   leave of us. I charged her to write to me very often, and to remember that if she
@@ -3164,14 +3132,13 @@ com.proxymu.wrlc.org/view/Entry/222987?redirectedFrom=vexation#eid"
                   attention. Mrs. Vernon persevered, however, in the offer of it, and though Lady
                   Susan continued to resist, her resistance in the course of a few days seemed
                   somewhat less formidable. The <pb n="290" facs="pageImages/290.jpg"/>lucky alarm
-                  of an<ref target="aInfluenza" corresp="nInfluenza">influenza</ref><note
-                     xml:id="nInfluenza" target="aInfluenza" type="editorial" resp="editors.xml#ATJ"
-                     >DRAFT-QUOTATION PROBLEMS AND C18 CONTEXT According to History.com the flu, or
+                  of an<ref target="_Influenza" corresp="Influenza">influenza</ref><note
+                     xml:id="Influenza" target="_Influenza" type="editorial" resp="editors.xml#MUStudStaff"
+                     >According to History.com the flu, or
                      influenza, is a highly contagious viral infection that mainly affects the
                      respiratory system. During the 18th century another influenza pandemic arose.
                      It began in 1729 in Russia and spread throughout Europe within 6 months and all
-                     the world within three years. This was a disease that affected a lot of people
-                     and could be compared to COVID-19 today (<ref
+                     the world within three years. In general, influenza was very dangerous in this period (<ref
                         target="https://www.history.com/topics/inventions/flu"
                      >"Influenza"</ref>)</note>. decided what might not have been decided quite so
                   soon. Lady Susan's maternal fears were then too much awakened for her to think of
@@ -3198,8 +3165,8 @@ com.proxymu.wrlc.org/view/Entry/222987?redirectedFrom=vexation#eid"
                   but her husband, and her conscience. Sir James may seem to have drawn a harder lot
                   than mere folly merited; I leave him, therefore, to all the pity that anybody can
                   give him. For myself, I confess that I can pity only Miss Mainwaring; who, coming
-                  to town, and putting herself to an <ref target="aClothes" corresp="nClothes">an
-                     expense in clothes</ref><note xml:id="nClothes" target="aClothes"
+                  to town, and putting herself to an <ref target="_Clothes" corresp="Clothes">an
+                     expense in clothes</ref><note xml:id="Clothes" target="_Clothes"
                      type="editorial" resp="editors.xml#AHM"><graphic url="notes/Robe.jpg"
                      />According to the article "The Cost of Living in London in Europe in the 18th
                      Century," clothes cost a lot because it was very important during this century.
