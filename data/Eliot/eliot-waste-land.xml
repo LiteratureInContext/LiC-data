@@ -32,6 +32,7 @@
                <name ref="editors.xml#MUStudStaff">Students and Staff of Marymount University</name>
                <name ref="editors.xml#GG">Greg Gillespie</name>
                <name ref="editors.xml#TH">Tonya Howe</name>
+               <name ref="editors.xml#ZO">Zafit Olea</name>
                <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
             </respStmt>
 
@@ -245,7 +246,15 @@
                   <l n="10">And went on in sunlight, into the Hofgarten, </l>
                   <pb n="10" facs="pageImages/wasteland01elio_Page_14.jpg"/>
                   <l n="11">And drank coffee, and talked for an hour.</l>
-                  <l n="12">Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.</l>
+                  <l n="12"><ref target="_identity" corresp="identity">Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.</ref></l><note xml:id="identity" target="_identity" type="editorial"
+                     resp="critic.xml#ZO">
+                     <p>In this passage, the female speaker's statement, "I am not Russian at all; I come from
+                        Lithuania, really German," introduces the theme of fragmentation and displacement that
+                        permeates the poem. The speaker's identity is shaped by multiple cultural influences, resulting
+                        in a fragmented sense of self. She does not fully identify as Russian, Lithuanian, or German, but
+                        as a hybrid of all three. This complex identity further highlights the themes of displacement and
+                        cultural conflict throughout the work.</p>
+                  </note>
                   <l n="13">And when we were children, staying at the archduke’s,</l>
                   <l n="14">My cousin’s, he took me out on a sled,</l>
                   <l n="15">And I was frightened. He said, Marie,</l>
@@ -291,7 +300,14 @@
                   <l n="42">Oed’ und leer das Meer.</l>
                </lg>
                <lg>
-                  <l n="43">Madame Sosostris, famous clairvoyante,</l>
+                  <l n="43">Madame Sosostris, famous <ref target="_clairvoyant" corresp="clairvoyant">clairvoyante</ref>,</l><note xml:id="clairvoyant" target="_clairvoyant" type="gloss" resp="editors.xml#CP">
+                     <p>
+                        This noun comes from the word "clairvoyance", which in the French means clear-sighted. A clairvoyant is what we would now call a psychic, someone who can see
+                        things that are not physically there. Madame Sosostris is
+                        a fortune teller who has a reputation as "the wisest woman in
+                        Europe." The -e is added to the word clairvoyant to make it feminine in the French (OED).
+                     </p>
+                  </note>
                   <l n="44">Had a bad cold, nevertheless</l>
                   <l n="45">Is known to be the wisest woman in Europe,</l>
                   <l n="46">With a wicked <ref target="cards_" corresp="cards">pack of cards</ref><note xml:id="cards" target="cards_" type="editorial" resp="editors.xml#TH">A character in Eliot's poem visits a famous fortune teller, and the following lines describe the tarot cards she received at a reading. According to Elizabeth DeBold of the <ref target="https://collation.folger.edu/2021/02/fortunes-fools-early-tarot-cards/">Folger Shakespeare Library</ref>, tarot originated in 14th-century Egypt, and traveled to Europe during the Renaissance.</note>. Here, said she,</l>
@@ -304,7 +320,12 @@
                   <l n="52">And here is the one-eyed merchant, and this card,</l>
                   <l n="53">Which is blank, is something he carries on his back,</l>
                   <l n="54">Which I am forbidden to see. I do not find</l>
-                  <l n="55">The Hanged Man. Fear death by water.</l>
+                  <l n="55">The Hanged Man. Fear <ref target="_water" corresp="water">death by water</ref>.</l><note xml:id="water" target="_water" type="editorial" resp="editors.xml#CP">
+                     <p>
+                        Water is a prevalent motif throughout <hi rend="italic">The Waste Land</hi>. Water is often associated with 
+                        regeneration/rebirth, but here and elsewhere, it is associated with death.
+                     </p>
+                  </note>
                   <l n="56">I see crowds of people, walking round in a ring.</l>
                   <l n="57">Thank you. If you see dear Mrs. Equitone,</l>
                   <l n="58">Tell her I bring the horoscope myself:</l>
@@ -342,7 +363,19 @@
                   <l n="77">The Chair she sat in, like a burnished throne,</l>
                   <l n="78">Glowed on the marble, where the glass</l>
                   <l n="79">Held up by standards wrought with fruited vines</l>
-                  <l n="80">From which a golden Cupidon peeped out</l>
+                  <l n="80">From which a golden <ref target="_cupidon" corresp="cupidon">Cupidon</ref> peeped out</l><note xml:id="cupidon" target="_cupidon" type="editorial"
+                     resp="critic.xml#ZO">
+                     <p><graphic
+                        url="notes/Eros_bow_Musei_Capitolini_MC410.jpeg"/>The scene described by the speaker features banners adorned with fruit-bearing vines and
+                        a standard depicting a golden "Cupidon," an alternate name for the Roman god of love, Cupid.
+                        The use of Cupidon in this context evokes themes of desire, fertility, and the pursuit of romantic
+                        love. The image of Cupidon peeking out from behind the banner may also imply a sense of
+                        voyeurism or hidden desire, contributing to an undercurrent of sexual tension in the scene. This
+                        lush, sensual imagery is suggestive of the speaker's heightened sensibility, and highlights the
+                        poem's themes of passion and desire. The image included here, via <ref target="https://en.wikipedia.org/wiki/Cupid#/media/File:Eros_bow_Musei_Capitolini_MC410.jpg">Wikipedia</ref>, shows a Roman copy of an original Greek sculpture of <hi rend="italic">Eros Stringing His Bow</hi>.</p>
+                     
+                  </note>
+                  
                   <l n="81">(Another hid his eyes behind his wing)</l>
                   <l n="82">Doubled the flames of sevenbranched candelabra</l>
                   <l n="83">Reflecting light upon the table as</l>
@@ -495,8 +528,17 @@
                   <l n="200">And on her daughter</l>
                   <pb n="30" facs="pageImages/wasteland01elio_Page_34.jpg"/>
                   <l n="201">They wash their feet in soda water</l>
-                  <l n="202"><hi rend="italic">Et O ces voix d’enfants, chantant dans la
-                        coupole!</hi></l>
+                  <l n="202"><hi rend="italic"><ref target="_Verlaine" corresp="Verlaine">Et O ces voix d’enfants, chantant dans la
+                     coupole!</ref></hi></l><note xml:id="Verlaine" target="_Verlaine" type="editorial" resp="editors.xml#ZO">
+                        <p><graphic url="notes/Parsifal.jpg"/>In this line, the speaker directly alludes to the last line of the French poet Paul Verlaine’s sonnet
+                           "Parsifal": "And, O those children's voices singing in the dome!" The sonnet is a meditation on art and the power of music; it reflects the poet's response to hearing <ref target="https://en.wikipedia.org/wiki/Parsifal">Richard Wagner's opera <hi rend="italic">Parsifal</hi></ref>, which is a major intertext to Eliot's poem. The use of this allusion
+                           adds an extra layer of meaning to the poem. The inclusion of French in the midst of an English
+                           poem could also suggest a sense of cultural dislocation or separation. Additionally, the image of
+                           children's voices singing in a dome may represent a symbol of purity and innocence that
+                           contrasts with the themes of corruption and decay present elsewhere in the poem. To learn
+                           more about Verlaine, see <ref target="https://www.poetryfoundation.org/poets/paul-verlaine">the Poetry Foundation</ref>. To learn more about Wagner's role in "The Waste Land," see this scholarly essay by Philip Waldron, <ref target="https://www.jstor.org/stable/3831390">"The Music of Poetry: Wagner in <hi rend="italic">The Waste Land</hi>."</ref>. You can read Verlaine's poem in the original French and in English translation <ref
+                              target="https://www.monsalvat.no/verlaine.htm">here</ref>.</p>
+                     </note>
                </lg>
 
                <lg>
@@ -535,7 +577,12 @@
                   <l n="228">I Tiresias, old man with wrinkled dugs</l>
                   <l n="229">Perceived the scene, and foretold the rest—</l>
                   <l n="230">I too awaited the expected guest.</l>
-                  <l n="231">He, the young man carbuncular, arrives,</l>
+                  <l n="231">He, the young man <ref target="_carbuncular" corresp="carbuncular">carbuncular</ref>, arrives,</l><note xml:id="carbuncular" target="_carbuncular" type="gloss" resp="editors.xml#CP">
+                     <p>
+                        Used here as an adjective, "carbuncular" comes from the word "carbuncle," which is an lesion on the skin that is irritated and filled with pus, and overall is unpleasant to look
+                        at (OED n3). 
+                     </p>
+                  </note>
                   <l n="232">A small house agent’s clerk, with one bold stare,</l>
                   <l n="233">One of the low on whom assurance sits</l>
                   <l n="234">As a silk hat on a <placeName type="tgn" key="7010443">Bradford</placeName> millionaire.</l>
@@ -619,7 +666,14 @@
                </lg>
 
                <lg>
-                  <l n="296">“My feet are at Moorgate, and my heart</l>
+                  <l n="296">“My feet are at <ref target="_Moorgate" corresp="Moorgate">Moorgate</ref>, and my heart</l><note xml:id="Moorgate" target="_Moorgate" type="editorial" resp="editors.xml#CP">
+                     <p><graphic
+                        url="notes/Moorgate_gate.jpeg"/>Dating back to the Medieval period, Moorgate was the last of the old gates to be built in the Roman defense wall that surrounded the fort of Londinium, now London. The original Roman walls were built 100-400 CE, but Moorgate was originally a secondary gate that was expanded in 1415. It led to the marshy Moorfields area in the north of London.
+                        It was demolished in
+                        1762. To learn more about the <ref target="https://en.wikipedia.org/wiki/London_Wall">London Wall, see Wikipedia</ref>. The image here, also via <ref target="https://en.wikipedia.org/wiki/Moorgate">Wikipedia</ref>, shows an 18th-century engraving depicting Moorgate before it was demolished. 
+                     </p>
+                  </note>
+                  
                   <l n="297">Under my feet. After the event</l>
                   <l n="298">He wept. He promised ‘a new start’.</l>
                   <l n="299">I made no comment. What should I resent?"</l>
@@ -634,7 +688,19 @@
                </lg>
 
                <lg>
-                  <l n="307">To <placeName type="tgn" key="7016143">Carthage</placeName> then I came</l>
+                  <l n="307">To <placeName type="tgn" key="7016143"><ref target="_Carthage" corresp="Carthage">Carthage</ref></placeName> then I came</l><note xml:id="Carthage" target="_Carthage" type="editorial" resp="editors.xml#ZO">
+                     <p><graphic url="notes/Carthage_National_Museum_representation_of_city.jpeg"/>This is a reference to the ancient city of Carthage, which was located in
+                        what is now Tunisia. Carthage was a major center of trade and civilization in the ancient
+                        Mediterranean world, but it was destroyed by the Romans in the Punic Wars in the 2nd century
+                        BCE. The use of Carthage in the poem may suggest themes of destruction, decay, and the
+                        decline of civilization. The city of Carthage has been interpreted as a symbol of the failure and
+                        fall of human civilizations, which can serve as a warning for modern society. The image included
+                        in this annotation, <ref
+                           target="https://commons.wikimedia.org/wiki/File:Carthage_National_Museum_representation_of
+                           _city.jpg">via Wikimedia Commons</ref>, shows a representation of the ancient city from the Carthage
+                        National Museum in Tunisia.</p>
+                  </note>
+                  
                </lg>
                <lg>
                   <l n="308">Burning burning burning burning</l>
