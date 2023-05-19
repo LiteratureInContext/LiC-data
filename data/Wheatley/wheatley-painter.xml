@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-painter">
 
    <!--TEI Header BEGINS-->
@@ -199,6 +200,7 @@
             responsibility details</change>
          <change when="2019-06-09" who="editors.xml#TH">Added annotations</change>
          <change when="2019-09-19" who="editors.xml#TH">Commented out titlepage</change>
+         <change when="2023-05-19" who="editors.xml#TH">Updated note style</change>
       </revisionDesc>
 
 
@@ -247,7 +249,7 @@
 
          <div type="poem">
             <pb n="114" facs="pageImages/WP-0114.jpg"/>
-            <head type="title">To <ref target="a001" corresp="n001">S. M.</ref><note xml:id="n001" target="a001"
+            <head type="title">To <ref target="_SM" corresp="SM">S. M.</ref><note xml:id="SM" target="_SM"
                   type="editorial" resp="editors.xml#TH"><p>According to <hi rend="italic">Africana:
                      The Encyclopedia of the African and African American Experience</hi>, Scipio
                   Moorhead was an enslaved artist, principally known for his painting of Phillis
@@ -276,8 +278,8 @@
                <l n="13">High to the blissful wonders of the skies</l>
                <l n="14">Elate thy soul, and raise thy wishful eyes.</l>
                <l n="15">Thrice happy, when exalted to survey</l>
-               <l n="16"><ref target="a002" corresp="n002">That splendid city</ref><note
-                  xml:id="n002" target="a002" type="editorial" resp="editors.xml#TH">Wheatley
+               <l n="16"><ref target="_city" corresp="city">That splendid city</ref><note
+                  xml:id="city" target="_city" type="editorial" resp="editors.xml#TH">Wheatley
                      refers to the heavenly city of "New Jerusalem," described in Revelation 21. As
                      many scholars have noted, Christianity offered a not uncomplicated narrative of
                      salvation and hope that was particularly resonant for the enslaved. She
@@ -299,8 +301,8 @@
                <l n="26">And view the landscapes in the realms above?</l>
                <l n="27">There shall thy tongue in heav'nly murmurs flow,</l>
                <l n="28">And there my muse with heav'nly transport glow:</l>
-               <l n="29">No more to tell of <ref target="a003" corresp="n003"><hi rend="italic"
-                  >Damon's</hi> tender sighs</ref><note xml:id="n003" target="a003"
+               <l n="29">No more to tell of <ref target="_Damon" corresp="_Damon"><hi rend="italic"
+                  >Damon's</hi> tender sighs</ref><note xml:id="Damon" target="_Damon"
                      type="editorial" resp="editors.xml#TH">Damon is a typical name for a male lover
                      in pastoral poetry, poetry that imagines romantic conflicts in bucolic or
                      country settings. Wheatley frequently both references and draws on classical
@@ -308,8 +310,8 @@
                      reading of Wheatley's use of the pastoral, see <ref
                         target="https://www.jstor.org/stable/2739444">John C. Shield's scholarly
                         essay, "Phillis Wheatley's Subversive Pastoral."</ref></note>,</l>
-               <l n="30">Or rising radiance of <ref target="a004" corresp="n004"><hi rend="italic"
-                  >Aurora's</hi> eyes</ref><note xml:id="n004" target="a004" type="editorial"
+               <l n="30">Or rising radiance of <ref target="_Aurora" corresp="Aurora"><hi rend="italic"
+                  >Aurora's</hi> eyes</ref><note xml:id="Aurora" target="_Aurora" type="editorial"
                      resp="editors.xml#TH">In Greco-Roman mythology, Aurora (called Eos in the
                      Greek) personifies the dawn.</note>,</l>
                <l n="31">For nobler themes demand a nobler strain,</l>

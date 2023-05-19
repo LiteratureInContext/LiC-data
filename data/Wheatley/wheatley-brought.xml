@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-brought">
 
    <!--TEI Header BEGINS-->
@@ -197,6 +198,7 @@
          <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution
             responsibility details</change>
          <change when="2019-09-19" who="editors.xml#TH">Commented out the title page for consistency</change>
+         <change when="2023-05-19" who="editors.xml#TH">Updated note style</change>
       </revisionDesc>
 
 
@@ -245,13 +247,13 @@
          <div type="poem" met="heroic couplets">
             <pb n="18" facs="pageImages/WP-0018.jpg"/>
             <head type="title">
-               <ref target="a001" corresp="n001">On being brought from AFRICA to AMERICA.</ref><note
-                  xml:id="n001" target="a001" type="editorial" resp="editors.xml#JW"><p><graphic
-                        url="http://www.bl.uk/learning/timeline/external/brooksslaveship-tl.jpg"
+               <ref target="_brought" corresp="brought">On being brought from AFRICA to AMERICA.</ref><note
+                  xml:id="brought" target="_brought" type="editorial" resp="editors.xml#JW"><p><graphic
+                        url="notes/brooksslaveship-tl.jpeg"
                         />The title of one Wheatley's most
                      (in)famous poems, "On being brought from AFRICA to AMERICA" alludes to the
                      experiences of many Africans who became subject to the <ref
-                        target="http://www.unesco.org/new/en/social-and-human-sciences/themes/slave-route/transatlantic-slave-trade/"
+                        target="https://www.unesco.org/en/articles/transatlantic-slave-trade-legacies-past-building-future"
                         >transatlantic slave trade</ref>. Wheatley uses biblical references and
                      direct address to appeal to a Christian audience, while also defending the
                      ability of her "sable race" to become "refin'd" through Christian theology.
@@ -281,8 +283,8 @@
                <l n="2">Taught my benighted soul to understand</l>
                <l n="3">That there's a God, that there's a <hi rend="italic">Saviour</hi> too:</l>
                <l n="4">Once I redemption neither sought nor knew.</l>
-               <l n="5"><ref target="a002" corresp="n002"> Some view</ref><note xml:id="n002"
-                     target="a002" type="editorial" resp="editors.xml#TH"><p>Wheatley's description
+               <l n="5"><ref target="_some" corresp="some"> Some view</ref><note xml:id="some"
+                     target="_some" type="editorial" resp="editors.xml#TH"><p>Wheatley's description
                         of those who "view our sable race with scornful eye" (5) is a clear
                         rejection of what <ref
                            target="https://books.google.com/books?id=pxaTAgAAQBAJ">Lena Hill
@@ -300,8 +302,8 @@
                   </note> our sable race with scornful eye,</l>
                <l n="6">"Their colour is a diabolic die."</l>
                <l n="7">Remember, <hi rend="italic">Christians</hi>, <hi rend="italic">Negros</hi>,
-                     <ref target="a003" corresp="n003">black as <hi rend="italic"
-                     >Cain</hi></ref>,<note xml:id="n003" target="a003" type="editorial"
+                     <ref target="_Cain" corresp="Cain">black as <hi rend="italic"
+                     >Cain</hi></ref>,<note xml:id="Cain" target="_Cain" type="editorial"
                      resp="editors.xml#JW"><p>The phrase "black as Cain" is a distortion of the
                         biblical idea of the mark of Cain <ref
                            target="https://www.kingjamesbibleonline.org/Genesis-4-15/">(Genesis
