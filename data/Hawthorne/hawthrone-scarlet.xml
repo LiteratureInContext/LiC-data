@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hawthorne-scarlet">
-    <teiHeader>
+    <teiHeader xml:lang="en">
         <fileDesc>
             <titleStmt>
                 <title type="main">The Scarlet Letter</title>
                 <author>
-                    <persName type="lcnaf" key="n79082292"> <!-- TODO: Fix key -->
+                    <persName type="lcnaf" key="n79007728">
                         <forename>Nathaniel</forename>
                         <surname>Hawthorne</surname>
                     </persName>
                 </author>
                 <editor>
-                    <persName type="orcid" key="0000-0001-6453-8721">
-                        <name ref="editors.xml#JOB">
-                            <forename>John</forename>John 
-                            <surname>O'Brien</surname></name></persName>
+                    <persName type="orcid" key="0000-0002-7400-4093">
+                        <name ref="editors.xml#TH">
+                            <forename>Tonya</forename>
+                            <surname>Howe</surname>
+                        </name>
+                    </persName>
                 </editor>
-                <!-- <title type="sort">scarlet letter</title>
-                <title n="245|b" type="sub">A Romance</title> -->
                 <respStmt>
                     <resp>Transcription, correction, editorial commentary, and markup</resp>
                     <name>Apex Data Services</name>
                 </respStmt>
-                <!-- <author n="100">
-                    <name n="100|a" type="last">Hawthorne</name>
-                    <name n="100|a" type="first">Nathaniel</name>
-                    <date n="100|d" from="1804" to="1864">1804-1864</date>
-                </author> -->
                 <funder />
-                <!-- <sponsor>Sponsored by the Andrew W. Mellon Foundation and the University of Virginia.</sponsor> -->
+                <!-- Old information that may be important to keep:
+                    <sponsor>Sponsored by the Andrew W. Mellon Foundation and the University of Virginia.</sponsor> -->
             </titleStmt>
-            <!-- <extent>ca. <num type="kilobytes">642</num> kilobytes</extent> --> 
             <publicationStmt>
                 <publisher>Literature in Context</publisher>
                 <address>
@@ -51,11 +46,11 @@
             <sourceDesc>                    
                 <biblStruct>
                     <analytic>
-                        <title></title>
+                        <title>"The Scarlet Letter"</title>
                     </analytic>
                 <monogr>
                     <author>
-                        <persName key="TODO">
+                        <persName>
                             <forename>Nathaniel</forename>
                             <surname>Hawthorne</surname>
                         </persName>
@@ -67,51 +62,40 @@
                         </pubPlace>
                         <publisher>Ticknor, Reed, and Fields</publisher>
                         <date when="1850">1850</date>
-                        <note> UVa_call_number: PS1868 .A1 1850b, UVa_Virgo_ID: 859059-1004, UVa_Title_Control_Number: l07003785.
-                            Page images have been included from the print version. Kodak Color Control Patches: 135scal</note> <!-- TODO: Update -->
+                        <!-- The original xml document had preserved the original bage breaks, these have been retained in a comment next to the word where the page break is denoted by a dash in the word -->
+                        <note> This source is from the library of Mr. and Mrs. Randolph Catlin, a gift of their sons, Avery and Randolph Catlin. The bookplate is of E.B. Fickes.
+                            Other source information: BAL 7600, First edition, Pub. advts. (4 p.) dated March 1, 1850, inserted at front, title in red and black, cover is original brown cloth.
+                            Page images have been included from the print version. Kodak Color Control Patches: 135scal.
+                            UVa call number: PS1868 .A1 1850b, UVa Virgo ID: 859059-1004, UVa Title Control Number: l07003785.
+                        </note>
                     </imprint>
                     <extent>iv, 322 p. ; 18 cm.</extent>
                 </monogr>
-                    <note>
-                        <p>BAL 7600. First edition. Pub. advts. (4 p.) dated March 1, 1850, inserted at front. Title in red and black. Original brown cloth.
-                            From the library of Mr. and Mrs. Randolph Catlin, a gift of their sons, Avery and Randolph Catlin.
-                            Bookplate of E.B. Fickes. From the library of Mr. and Mrs. Randolph Catlin, a gift of their sons, Avery and Randolph Catlin.</p>
-                    </note> <!-- TODO: Fix this up -->
             </biblStruct>
-                    <!-- <notesStmt>
-                        <note>
-                            <p>BAL 7600.</p>
-                        </note>
-                        <note>
-                            <p>First edition.</p>
-                        </note>
-                        <note>
-                            <p>Pub. advts. (4 p.) dated March 1, 1850, inserted at front.</p>
-                        </note>
-                        <note>
-                            <p>Title in red and black.</p>
-                        </note>
-                        <note>
-                            <p>Original brown cloth.</p>
-                        </note>
-                        <note>
-                            <p>From the library of Mr. and Mrs. Randolph Catlin, a gift of their sons, Avery and Randolph Catlin.</p>
-                        </note>
-                        <note>
-                            <p>Bookplate of E.B. Fickes. From the library of Mr. and Mrs. Randolph Catlin, a gift of their sons, Avery and Randolph Catlin.</p>
-                        </note>
-                    </notesStmt> -->
             </sourceDesc>
-            <!-- <seriesStmt>
-                <title>University of Virginia Library, Early American Fiction, 1789-1875</title>
-                <idno type="uva-set">UVA-LIB-EarlyAmFict1789-1875</idno>
-            </seriesStmt> -->
-            
-            <!-- <notesStmt>
-                <note><p>Page images have been included from the print version.</p></note>
-                <note><p>Kodak Color Control Patches: 135scal</p></note>
-            </notesStmt> -->
         </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="novel">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="original"/>
+                <purpose type="entertain" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7007518">Massachusetts Bay Colony</name> <!-- TODO: Update number -->
+                    <time from="1642" to="1649">Mid 17th Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
         <encodingDesc>
             <projectDesc>
                 <p>Prepared for the project Early American Fiction at the University
@@ -127,9 +111,8 @@
                         lic.open.anthology@gmail.com.</p>
                 </interpretation>
                 <normalization>
-                    <p>The electronic text does not contain normalizations of non-standard
-                    forms. Archaic spellings, abbreviations, etc. remain in the electronic
-                    text as they appear in the print source.</p>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
                 </normalization>
                 <hyphenation>
                     <p>Hyphenation has not been retained, except where necessary for the sense of the
@@ -141,16 +124,7 @@
                         indicated prior to the page beginning. </p>
                 </segmentation>
                 <correction>
-                    <p> <!-- Any corrections of printing errors are encoded with &lt;corr&gt;, with
-                        the "resp" attribute indicating responsibility for the correction, and
-                        with the "sic" attribute providing the content in question as
-                        originally printed (unless the printing error being corrected is an
-                        error of omission, in which case the "sic" attribute is not
-                        present). Wholly illegible passages are encoded with an empty &lt;unclear/&gt;
-                        element. Questionably legible passages are encoded with
-                        &lt;unclear&gt;...&lt;/unclear&gt;. Omissions in the electronic
-                        transcription are encoded with &lt;gap/&gt;. -->
-                        Materials have been transcribed from and checked against first editions, where
+                    <p> Materials have been transcribed from and checked against first editions, where
                         possible. See the Sources section.
                     </p>
                 </correction>
@@ -175,50 +149,6 @@
                 </taxonomy>
             </classDecl>
         </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="eng">English</language>
-            </langUsage>
-            <creation/>
-            <textDesc n="novel">
-                <channel mode="w">print</channel>
-                <constitution type="single"/>
-                <derivation type="original"/>
-                <domain/>
-                <factuality type="inapplicable"/>
-                <interaction/>
-                <preparedness type="original"/>
-                <purpose type="entertain" degree="high"/>
-            </textDesc>
-            <settingDesc>
-                <setting>
-                    <name type="tgn" key="7002445">Massachusetts Bay Colony</name> <!-- TODO: Update number -->
-                    <time from="1642" to="1649">Mid 17th Century</time>
-                </setting>
-            </settingDesc>
-            <!-- <textClass>
-                <keywords scheme="#LCSH">
-                    <term n="650">Adultery|vFiction.</term>
-                    <term n="650">Adultery in literature.</term>
-                    <term n="650">Puritans|vFiction.</term>
-                    <term n="650">Puritans in literature.</term>
-                    <term n="650">Illegitimate children|vFiction.</term>
-                    <term n="650">Prynne, Hester (Fictitious character)</term>
-                    <term n="651">Boston (Mass.)|xHistory|yColonial period, ca. 1600-1775|vFiction.</term>
-                    <term n="655">American literature|y1783-1850.</term>
-                </keywords>
-                <keywords scheme="#gsafd">
-                    <term n="655">Historical fiction</term>
-                </keywords>
-                <keywords scheme="#uva-form">
-                    <term>monograph</term>
-                </keywords>
-                <keywords scheme="#uva-etc">
-                    <term>Prose; fiction</term>
-                    <term>Masculine</term>
-                </keywords>
-            </textClass> -->
-        </profileDesc>
         <revisionDesc>
             <change when="2005-02" who="editors.xml#UVAstudstaff">Markup conversion >Perry Roland and Greg Murray, Digital Library
         Production Services, University of Virginia Library Converted markup (originally TEI Lite) to comply with the DLPS
@@ -230,20 +160,20 @@
     
     <text>
         <front>
-            <pb facs="uva-lib:176144" n="Spine"/>
-            <pb facs="uva-lib:176145" n="Front Cover"/>
-            <pb facs="uva-lib:176146" n="Back Cover"/>
-            <pb facs="uva-lib:176147" n="Top Edge"/>
-            <pb facs="uva-lib:176148" n="Bottom Edge"/>
-            <pb facs="uva-lib:176149" n="Front Edge"/>
+            <pb facs="uva-lib:176144" n="[Spine]"/>
+            <pb facs="uva-lib:176145" n="[Front Cover]"/>
+            <pb facs="uva-lib:176146" n="[Back Cover]"/>
+            <pb facs="uva-lib:176147" n="[Top Edge]"/>
+            <pb facs="uva-lib:176148" n="[Bottom Edge]"/>
+            <pb facs="uva-lib:176149" n="[Front Edge]"/>
             
             <div type="book-plate">
                 <pb facs="uva-lib:176150"/>
             </div>
             
             <div type="advertisement">
-                <pb facs="uva-lib:176151" n="Advertisement"/>
-                    <head type="title">A LIST OF BOOKS <lb/>
+                <pb facs="uva-lib:176151" n="[Advertisement]"/>
+                <head type="title">A LIST OF BOOKS <lb/>
                 RECENTLY PUBLISHED BY <lb/>
                 TICKNOR, REED, AND FIELDS.</head>
                 <pb facs="uva-lib:176152"/>
@@ -276,7 +206,7 @@
                 </div>
                 
                 <div type="advertisement">
-                    <pb facs="uva-lib:176153" n="Advertisement"/>
+                    <pb facs="uva-lib:176153" n="[Advertisement]"/>
                     <head type="title">LONGFELLOW'S PROSE WORKS.</head>
                     <list>
                         <item><hi rend="small-caps">I. KAVANAGH. A Tale. Lately published. In one
@@ -404,21 +334,20 @@
                         In one volume, 16mo.</item>
                     </list>
                     </div>
-                    <pb facs="uva-lib:176156" n="Blank Leaf"/>
-                    <pb facs="uva-lib:176157" n="Blank Leaf"/>
-                    <pb facs="uva-lib:176158" n="Blank Leaf"/>
-                    <pb facs="uva-lib:176159" n="Blank Leaf"/>
+                    <pb facs="uva-lib:176156" n="[Blank Leaf]"/>
+                    <pb facs="uva-lib:176157" n="[Blank Leaf]"/>
+                    <pb facs="uva-lib:176158" n="[Blank Leaf]"/>
+                    <pb facs="uva-lib:176159" n="[Blank Leaf]"/>
             </div>
             
             <titlePage>
-                <pb facs="uva-lib:176160" n="Title page"/>
+                <pb facs="uva-lib:176160" n="[TP]"/>
                 <docTitle>
                     <titlePart type="main">THE <lb/>
                     SCARLET LETTER,</titlePart>
                     <titlePart type="sub">A ROMANCE.</titlePart>
                 </docTitle>
-                <byline>BY <lb/>
-                NATHANIEL HAWTHORNE.</byline>
+                <byline>BY NATHANIEL HAWTHORNE.</byline>
                 <docAuthor />
                 <docImprint>
                     <pubPlace>BOSTON:</pubPlace> <lb/>
@@ -429,7 +358,7 @@
             
             <div type="contents">
                 <p>
-                    <pb facs="uva-lib:176161" n="Copyright page"/>
+                    <pb facs="uva-lib:176161" n="[Copyright page]"/>
                     Entered according to Act of Congress, in the year 1850, by <lb/>
                     <hi rend="small-caps">Nathaniel Hawthorne,</hi> <lb/>
                     in the Clerk's Office of the District Court of the District of Massachusetts. <lb/><lb/>
@@ -458,9 +387,7 @@
                     <item>XIV. —<hi rend="small-caps">Hester and the Physician</hi>... <ref target="#p135-217">203</ref></item>
                     <item>XV. —<hi rend="small-caps">Hester and Pearl</hi>... <ref target="#p135-226">212</ref></item>
                     <item>XVI. —<hi rend="small-caps">A Forest Walk</hi>... <ref target="#p135-235">221</ref></item>
-                    <item>XVII. —<hi rend="small-caps">The Pastor and his Parishioner</hi>... <ref target="#p135-244">230</ref>
-                        <!-- <pb facs="uva-lib:176163" n="iv"/> -->
-                        </item>
+                    <item>XVII. —<hi rend="small-caps">The Pastor and his Parishioner</hi>... <ref target="#p135-244">230</ref></item>
                     <pb facs="uva-lib:176163" n="iv"/>
                     <item>XVIII. —<hi rend="small-caps">A Flood of Sunshine</hi>... <ref target="#p135-257">243</ref></item>
                     <item>XIX. —<hi rend="small-caps">The Child at the Brook-side</hi>... <ref target="#p135-265">251</ref></item>
@@ -3855,8 +3782,8 @@
                 PEARL.</head>
                 <p><hi rend="small-caps">We</hi> have as yet hardly spoken of the infant; that  
                 little creature, whose innocent life had sprung, by the  
-                inscrutable decree of Providence, a lovely and immortal<!--immor-|tal -->
-                flower, out of the rank luxuriance of a guilty passion.<!-- pas-|sion -->
+                inscrutable decree of Providence, a lovely and immortal<!--immor-tal -->
+                flower, out of the rank luxuriance of a guilty passion.<!-- pas-sion -->
                 How strange it seemed to the sad woman, as she  
                 watched the growth, and the beauty that became every  
                 day more brilliant, and the intelligence that threw its  
@@ -4269,7 +4196,7 @@
                 
                 <p>But Hester could not resolve the query, being herself  
                 in a dismal labyrinth of doubt. She remembered—  
-                betwixt a smile and a shudder—the talk of the neighbouring <!-- neigh-|bouring -->
+                betwixt a smile and a shudder—the talk of the neighbouring <!-- neigh-bouring -->
                 townspeople; who, seeking vainly elsewhere  
                 for the child's paternity, and observing some of her  
                 odd attributes, had given out that poor little Pearl was  
@@ -5034,7 +4961,7 @@
                 the perilous wilderness, beheld the woman, in whom he  
                 hoped to find embodied the warmth and cheerfulness of  
                 home, set up as a type of sin before the people. Her  
-                matronly fame was trodden under all men's feet. Infamy <!-- In-|famy -->  
+                matronly fame was trodden under all men's feet. Infamy <!-- In-famy -->  
                 was babbling around her in the public market-place. <!-- market-place -->
                 For her kindred, should the tidings ever reach  
                 them, and for the companions of her unspotted life,  
@@ -5160,8 +5087,8 @@
                 —that Heaven had wrought an absolute miracle, by  
                 transporting an eminent Doctor of Physic, from a German <!-- Ger-man -->
                 university, bodily through the air, and setting him  
-                down at the door of Mr. Dimmesdale's study! Individuals <!-- Individ-|uals -->  
-                of wiser faith, indeed, who knew that Heaven promotes <!--pro-|motes -->
+                down at the door of Mr. Dimmesdale's study! Individuals <!-- Individ-uals -->  
+                of wiser faith, indeed, who knew that Heaven promotes <!--pro-motes -->
                 its purposes without aiming at the stage-effect of  
                 what is called miraculous interposition, were inclined to  
                 see a providential hand in Roger Chillingworth's so opportune <!-- op-portune -->
@@ -5169,9 +5096,9 @@
                 
                 <p>This idea was countenanced by the strong interest  
                 which the physician ever manifested in the young  
-                clergyman; he attached himself to him as a parishioner, <!-- parish-|ioner -->
-                and sought to win a friendly regard and confidence <!-- confi-|dence -->
-                from his naturally reserved sensibility. He expressed <!-- ex-|pressed -->
+                clergyman; he attached himself to him as a parishioner, <!-- parish-ioner -->
+                and sought to win a friendly regard and confidence <!-- confi-dence -->
+                from his naturally reserved sensibility. He expressed <!-- ex-pressed -->
                 great alarm at his pastor's state of health, but  
                 was anxious to attempt the cure, and, if early undertaken, <!-- under-taken -->
                 seemed not despondent of a favorable result.  
@@ -9197,7 +9124,7 @@
                 heavy sorrow, was made almost a solemn joy to her  
                 devout old soul by religious consolations and the truths  
                 of Scripture, wherewith she had fed herself continually  
-                for more than thirty years. And, since Mr. Dimmesdale <!-- Dimmes-|dale -->
+                for more than thirty years. And, since Mr. Dimmesdale <!-- Dimmes-dale -->
                 had taken her in charge, the good grandam's chief  
                 earthly comfort—which, unless it had been likewise a  
                 <pb facs="uva-lib:176430" n="267"/>
@@ -10256,7 +10183,7 @@
                 <p>One of these seafaring men—the shipmaster, indeed, <!-- in-deed -->
                 who had spoken to Hester Prynne—was so  
                 smitten with Pearl's aspect, that he attempted to lay  
-                hands upon her, with purpose to snatch a kiss. Finding <!-- Find-|ing -->
+                hands upon her, with purpose to snatch a kiss. Finding <!-- Find-ing -->
                 it as impossible to touch her as to catch a humming-bird <!-- hum-ming-bird -->
                 in the air, he took from his hat the gold  
                 chain that was twisted about it, and threw it to the  
