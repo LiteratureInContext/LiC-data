@@ -7,14 +7,16 @@
             <titleStmt>
                 <title type="main">The Turn of the Screw</title>
                 <author>
-                    <forename>Henry</forename>
-                    <surname>James</surname>
+                    <persName type="lcnaf" key="n78091982">
+                        <forename>Henry</forename>
+                        <surname>James</surname>
+                    </persName>
                 </author>
                 <editor>
-                    <persName type="orcid" key="0000-0001-6453-8721">
-                        <name ref="editors.xml#JOB">
-                            <surname>O'Brien</surname>
-                            <forename>John</forename>
+                    <persName type="orcid" key="0000-0002-7400-4093">
+                        <name ref="editors.xml#TH">
+                            <forename>Tonya</forename>
+                            <surname>Howe</surname>
                         </name>
                     </persName>
                 </editor>
@@ -59,15 +61,10 @@
                                 Virginia</note>
                         </imprint>
                         <extent>210 p.</extent>
+                        <biblScope>pp 3-212</biblScope>
                     </monogr>
                 </biblStruct>
             </sourceDesc>
-            <!-- The following was in the original TEI.2 document but no longer allowed in the updated TEI document.
-                It has been kept to retain the following information:
-                <seriesStmt>
-                <title>University of Virginia Library, Text collection</title>
-                <idno type="uva-set">UVA-LIB-Text</idno>
-            </seriesStmt> -->
         </fileDesc>
         <profileDesc>
             <langUsage>
@@ -87,18 +84,10 @@
             </textDesc>
             <settingDesc>
                 <setting>
-                    <time from="1800" to="1900">19th Century</time>
+                    <name type="tgn" key="7008131">Essex, England</name>
+                    <time when="1840">Mid 19th Century</time>
                 </setting>
             </settingDesc>
-            <!-- The following was in the original TEI.2 document but no longer allowed in the updated TEI document.
-                It has been kept to retain the following information:
-                <textClass>
-                    <keywords>
-                        <term>fiction</term>
-                        <term>prose</term>
-                        <term>masculine</term>
-                    </keywords>
-                </textClass> -->
         </profileDesc>
         <encodingDesc>   
             <projectDesc>
@@ -113,25 +102,25 @@
                         lic.open.anthology@gmail.com.</p>
                 </interpretation>
                 <normalization>
-                    <p>The trailing part of a word has
-                    been joined to the preceding line.</p>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
                 </normalization>
                 <hyphenation>
-                    <p>All unambiguous end-of-line hyphens have been removed</p>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
                 </hyphenation>
                 <segmentation>
                     <p>Page breaks have been retained. Catchwords, signatures, and running headers have
                         not.</p>
                 </segmentation>
                 <correction>
-                    <p>Materials have been transcribed from and checked against first editions.
-                        Some keywords in the header are a local Electronic Text Center scheme to aid in
-                        establishing analytical groupings. </p>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section for more information.</p>
                 </correction>
             </editorialDecl>
             <tagsDecl>
                 <namespace name="http://www.tei-c.org/ns/1.0">
-                    <tagUsage gi="div">Numbered divs used.</tagUsage>
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
                 </namespace>
             </tagsDecl>
             <classDecl>
@@ -149,6 +138,7 @@
                 </taxonomy>
             </classDecl>
         </encodingDesc>
+        
         <revisionDesc>
             <change when="2000" who="John Picker, Electronic Text Center">Added TEI header and tags, added images.</change>
             <change when="2005-07" who="John Ivor Carlson">Converted SGML to XML. Fixed tagging.</change>
@@ -161,15 +151,15 @@
 
     <text>
         <front>
-            <pb facs="DSSR_000002490_0001" n="Spine"/>
-            <pb facs="DSSR_000002490_0002" n="Cover"/>
-            <pb facs="DSSR_000002490_0003" n="Back"/>
-            <pb facs="DSSR_000002490_0004" n="Head"/>
-            <pb facs="DSSR_000002490_0005" n="Tail"/>
-            <pb facs="DSSR_000002490_0006" n="Foredge"/>
+            <pb facs="DSSR_000002490_0001" n="[Spine]"/>
+            <pb facs="DSSR_000002490_0002" n="[Cover]"/>
+            <pb facs="DSSR_000002490_0003" n="[Back]"/>
+            <pb facs="DSSR_000002490_0004" n="[Head]"/>
+            <pb facs="DSSR_000002490_0005" n="[Tail]"/>
+            <pb facs="DSSR_000002490_0006" n="[Foredge]"/>
            
             <div type="book-plate">
-                <pb facs="DSSR_000002490_0007" n="Book-plate"/>
+                <pb facs="DSSR_000002490_0007" n="[Book-plate]"/>
                 <p>
                     Hic Fructus Virtutis<lb/>
                     <lb/>
