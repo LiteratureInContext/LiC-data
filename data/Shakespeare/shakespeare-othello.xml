@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shakespeare-tempest">
+    <teiHeader xml:lang="en">        
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Othello</title>
+                <author>
+                    <persName type="lcnaf" key="n78095332">
+                        <name ref="shakespeare.xml">
+                            <forename>William</forename>
+                            <surname>Shakespeare</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>Buford</surname>
+                            <forename>Nial</forename>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#UVAstudentsstaff">Students and Staff of The University of
+                        Virginia</name>
+                    <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>                   
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22204-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by Literature
+                        in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported License
+                    </licence>
+                </availability>
+            </publicationStmt>
+            
+            
+            <sourceDesc>               
+                <biblStruct>
+                    <analytic>
+                        <title type="sub">"Othello"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <forename>William</forename>
+                            <surname>Shakespeare</surname>
+                        </author>
+                        <title type="sub">Mr. William Shakespeares comedies, histories, &amp; tragedies:
+                            published according to the true originall copies.</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7011781"><placeName type="tgn" key="7011781">London</placeName></placeName>
+                            </pubPlace>
+                            <publisher>Printed by Isaac Iaggard, and Ed. Blount</publisher>
+                            <date when="1623">1623</date>
+                            <note>Page images are drawn from the First Folio copy 68 held by the Folger
+                                Shakespeare Library, available at <ref
+                                    target="https://www.folger.edu/the-shakespeare-first-folio-folger-copy-no-68"
+                                    >https://www.folger.edu/the-shakespeare-first-folio-folger-copy-no-68</ref>.
+                                For more information about the First Folio, visit the Folger Shakespeare
+                                Library page <ref target="https://www.folger.edu/shakespeare/first-folio"
+                                    >https://www.folger.edu/shakespeare/first-folio</ref>.</note>
+                        </imprint>
+                        <imprint>
+                            <pubPlace>Online</pubPlace>
+                            <publisher>iBiblio</publisher>
+                            <date>1999</date>
+                            <note>Base xml for this digital edition drawn from <ref
+                                target="https://www.ibiblio.org/xml/examples/shakespeare/tempest.xml">
+                                https://www.ibiblio.org/xml/examples/shakespeare/tempest.xml</ref>.</note>
+                            <note>
+                                <p>Text placed in the public domain by Moby Lexical Tools, 1992. Original
+                                    SGML markup by Jon Bosak, 1992-1994. XML version by Jon Bosak, 1996-1998.
+                                    XML updated for LiC guidelines, 2022. Page breaks have been added
+                                    according to the First Folio. Line numbers have been added according to
+                                    the Riverside Shakespeare (1974).</p>
+                            </note>
+                        </imprint>
+                        <extent> 34 cm. (fol.)</extent>
+                        <biblScope>pp 1-19</biblScope>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>            
+        </fileDesc>                        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>           
+            <creation/>            
+            <textDesc n="play">
+                <!-- Acceptable values include novel, novella, poem, essay. -->
+                <channel mode="w">print</channel>
+                <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
+                <constitution type="single"/>
+                <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
+                <derivation type="original"/>
+                <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
+                <domain/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <factuality type="fiction"/>
+                <!-- See the textDesc guidelines for more information. -->
+                <interaction/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <preparedness/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <purpose type="entertain" degree="high"/>
+                <!-- See the TEI guidelines for more information. -->
+            </textDesc>
+            
+            <settingDesc>
+                <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
+                <setting>
+                    <time from="1609" to="1610">Early 17th Century</time>
+                    <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        
+        
+        <encodingDesc>
+            <!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of primary
+                    sources relevant to the study and the teaching of British and American literature.
+                    This project is funded by the National Endowment for the Humanities and developed by
+                    faculty at The University of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations also include common knowledge, defined
+                        as information that can be found in multiple reliable sources. If you notice an
+                        error in these annotations, please contact lic.open.anthology@gmail.com. </p>
+                </interpretation>
+                <normalization>
+                    <p>Base text for this edition of <hi rend="italic">Othello</hi> uses public domain
+                        transcription by Moby Lexical Tools, 1992, converted into XML by Jon Bosak. Ligatured forms are not encoded. Missing and inferred stage directions added by the Riverside are indicated
+                        with square brackets. </p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, running headers, and columns have
+                        not. Where pages break in the middle of a word, the complete word has been
+                        indicated prior to the page beginning. When it is unclear where a line ends, or
+                        whether the text is in prose or poetry, modern editions have been consulted.</p>
+                </segmentation>
+                <correction>
+                    <p>Line
+                        breaks, numbering, stage directions, and textual emendations have been made to ensure that this edition corresponds with the Rivierside
+                        Shakespeare edition of <hi rend="italic">The Tempest</hi>.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <!-- We here define the authority files used throughout the application and data. -->
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        
+        
+        <revisionDesc>
+            <!--BEGINS Revision Description -->
+            <change when="2019-01-24" who="editors.xml#SK">Created template</change>
+            <!-- Indicate all substantive changes to the document using the model here. -->
+            <change when="2019-05-24" who="editors.xml#TH">Added explanatory comments to
+                template.</change>
+        </revisionDesc>
+        
+        
+    </teiHeader>
+    <!--TEI Header Ends -->
+    <text>
+        <front>
+            <castList>
+                <p>Dramatis Personae</p>
+                <castItem>Duke of Venice</castItem>
+                <castItem>Brabantio, a senator.</castItem>
+                <castItem>Other Senators.</castItem>
+                <castItem>Gratiano, brother to Brabantio.</castItem>
+                <castItem>Lodovico, kinsman to Brabantio.</castItem>
+                <castItem>Othello, a noble Moor in the service of the Venetian state.</castItem>
+                <castItem>Cassio, his lieutenant.</castItem>
+                <castItem>Iago, his ancient.</castItem>
+                <castItem>Roderigo, a Venetian gentleman.</castItem>
+                <castItem>Montano, Othello's predecessor in the government of Cyprus.</castItem>
+                <castItem>Clown, servant to Othello. </castItem>
+                <castItem>Desdemona, daughter to Brabantio and wife to Othello.</castItem>
+                <castItem>Emilia, wife to Iago.</castItem>
+                <castItem>Bianca, mistress to Cassio.</castItem>
+                <castItem>Sailor, Messenger, Herald, Officers, Gentlemen, Musicians, and Attendants.</castItem>
+            </castList>
+        </front>
+        <body>
+            <pb n="310"/>
+            <head type="title">Othello</head>
+            <div n="1" type="act">
+                <div n="1" type="scene">
+                    <head type="sub">Act I, Scene I.</head>
+                    <stage>SCENE Venice: a Sea-port in Cyprus. Enter Roderigo and Iago</stage> 
+                </div>
+            </div>
+        </body>
+    </text> 
+</TEI>
