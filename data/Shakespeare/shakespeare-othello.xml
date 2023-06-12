@@ -78,8 +78,8 @@
                             <publisher>iBiblio</publisher>
                             <date>1999</date>
                             <note>Base xml for this digital edition drawn from <ref
-                                target="https://www.ibiblio.org/xml/examples/shakespeare/othello.xml">
-                                https://www.ibiblio.org/xml/examples/shakespeare/othello.xml</ref>.</note>
+                                target="https://www.ibiblio.org/xml/examples/shakespeare/Othello.xml">
+                                https://www.ibiblio.org/xml/examples/shakespeare/Othello.xml</ref>.</note>
                             <note>
                                 <p>Text placed in the public domain by Moby Lexical Tools, 1992. Original
                                     SGML markup by Jon Bosak, 1992-1994. XML version by Jon Bosak, 1996-1998.
@@ -121,7 +121,7 @@
             <settingDesc>
                 <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
                 <setting>
-                    <time from="1609" to="1610">Early 17th Century</time>
+                    <time from="1600" to="1610">Early 17th Century</time>
                     <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
                 </setting>
             </settingDesc>
@@ -201,12 +201,32 @@
         
     </teiHeader>
     <!--TEI Header Ends -->
+    
     <text>
         <front>
+            <pb n="[TP]" facs="pageImages/TP.png"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart>
+                        <lb/>MR. WILLIAM<lb/>SHAKESPEARES<lb/>COMEDIES,<lb/> HISTORIES, &amp;<lb/>
+                        TRAGEDIES.<lb/> Published according to the True Originall Copies.<lb/>
+                    </titlePart>
+                </docTitle>
+                <docImprint>
+                    <pubPlace>
+                        <hi rend="italic"><placeName type="tgn" key="7011781">London</placeName></hi>
+                        <lb/>
+                    </pubPlace>
+                    <publisher>Printed by <persName type="lcnaf" key="nr98029102"><name>Isaac
+                        Jaggard</name></persName>, and <persName type="lcnaf" key="n85084618"
+                            ><name>Ed. Blount</name></persName>.<lb/></publisher>
+                    <docDate when="1623">1623.</docDate>
+                </docImprint>
+            </titlePage>
             <castList>
                 <p>Dramatis Personae</p>
                 <castItem>Duke of Venice</castItem>
-                <castItem>Brabantio, a senator.</castItem>
+                <castItem>Brabantio, a Senator.</castItem>
                 <castItem>Other Senators.</castItem>
                 <castItem>Gratiano, brother to Brabantio.</castItem>
                 <castItem>Lodovico, kinsman to Brabantio.</castItem>
@@ -227,8 +247,609 @@
             <head type="title">Othello</head>
             <div n="1" type="act">
                 <div n="1" type="scene">
-                    <head type="sub">Act I, Scene I.</head>
-                    <stage>SCENE Venice: a Sea-port in Cyprus. Enter Roderigo and Iago</stage> 
+                    <head type="sub">Act I, Scene I.[Venice: a Sea-port in Cyprus.]</head>
+                    <stage>Enter Roderigo and Iago.</stage> 
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="1"> Tush! never tell me; I take it much unkindly</l>
+<l n="2">That thou, Iago, who hast had my purse</l>
+<l n="">As if the strings were thine, shouldst know of this.</l></sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">'Sblood, but you will not hear me:</l>
+<l n="">If ever I did dream of such a matter, Abhor me.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Thou told'st me thou didst hold him in thy hate.</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Despise me, if I do not. Three great ones of the city,</l>
+<l n="">In personal suit to make me his lieutenant,</l>
+<l n="">Off-capp'd to him: and, by the faith of man,</l>
+<l n="">I know my price, I am worth no worse a place:</l>
+<l n="">But he; as loving his own pride and purposes,</l>
+<l n="">Evades them, with a bombast circumstance</l>
+<l n="">Horribly stuff'd with epithets of war;</l>
+<l n="">And, in conclusion,</l>
+<l n="">Nonsuits my mediators; for, 'Certes,' says he,</l>
+<l n="">'I have already chose my officer.'</l>
+<l n="">And what was he?</l>
+<l n="">Forsooth, a great arithmetician,</l>
+<l n="">One Michael Cassio, a Florentine,</l>
+<l n="">A fellow almost damn'd in a fair wife;</l>
+<l n="">That never set a squadron in the field,</l>
+<l n="">Nor the division of a battle knows</l>
+<l n="">More than a spinster; unless the bookish theoric,</l>
+<l n="">Wherein the toged consuls can propose</l>
+<l n="">As masterly as he: mere prattle, without practise,</l>
+<l n="">Is all his soldiership. But he, sir, had the election:</l>
+<l n="">And I, of whom his eyes had seen the proof</l>
+<l n="">At Rhodes, at Cyprus and on other grounds</l>
+<l n="">Christian and heathen, must be be-lee'd and calm'd</l>
+<l n="">By debitor and creditor: this counter-caster,</l>
+<l n="">He, in good time, must his lieutenant be,</l>
+<l n="">And I--God bless the mark!--his Moorship's ancient.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">By heaven, I rather would have been his hangman.</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Why, there's no remedy; 'tis the curse of service,</l>
+<l n="">Preferment goes by letter and affection,</l>
+<l n="">And not by old gradation, where each second</l>
+<l n="">Stood heir to the first. Now, sir, be judge yourself,</l>
+<l n="">Whether I in any just term am affined</l>
+<l n="">To love the Moor.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">I would not follow him then.</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">O, sir, content you;</l>
+<l n="">I follow him to serve my turn upon him:</l>
+<l n="">We cannot all be masters, nor all masters</l>
+<l n="">Cannot be truly follow'd. You shall mark</l>
+<l n="">Many a duteous and knee-crooking knave,</l>
+<l n="">That, doting on his own obsequious bondage,</l>
+<l n="">Wears out his time, much like his master's ass,</l>
+<l n="">For nought but provender, and when he's old, cashier'd:</l>
+<l n="">Whip me such honest knaves. Others there are</l>
+<l n="">Who, trimm'd in forms and visages of duty,</l>
+<l n="">Keep yet their hearts attending on themselves,</l>
+<l n="">And, throwing but shows of service on their lords,</l>
+<l n="">Do well thrive by them and when they have lined</l>
+<l n="">their coats</l>
+<l n="">Do themselves homage: these fellows have some soul;</l>
+<l n="">And such a one do I profess myself. For, sir,</l>
+<l n="">It is as sure as you are Roderigo,</l>
+<l n="">Were I the Moor, I would not be Iago:</l>
+<l n="">In following him, I follow but myself;</l>
+<l n="">Heaven is my judge, not I for love and duty,</l>
+<l n="">But seeming so, for my peculiar end:</l>
+<l n="">For when my outward action doth demonstrate</l>
+<l n="">The native act and figure of my heart</l>
+<l n="">In compliment extern, 'tis not long after</l>
+<l n="">But I will wear my heart upon my sleeve</l>
+<l n="">For daws to peck at: I am not what I am.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">What a full fortune does the thicklips owe</l>
+<l n="">If he can carry't thus!</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Call up her father,</l>
+<l n="">Rouse him: make after him, poison his delight,</l>
+<l n="">Proclaim him in the streets; incense her kinsmen,</l>
+<l n="">And, though he in a fertile climate dwell,</l>
+<l n="">Plague him with flies: though that his joy be joy,</l>
+<l n="">Yet throw such changes of vexation on't,</l>
+<l n="">As it may lose some colour.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Here is her father's house; I'll call aloud.</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Do, with like timorous accent and dire yell</l>
+<l n="">As when, by night and negligence, the fire</l>
+<l n="">Is spied in populous cities.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">What, ho, Brabantio! Signior Brabantio, ho!</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Awake! what, ho, Brabantio! thieves! thieves! thieves!</l>
+<l n="">Look to your house, your daughter and your bags!</l>
+<l n="">Thieves! thieves!</l>
+</sp>
+<stage>Brabantio appears above, at a window.</stage>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">What is the reason of this terrible summons?</l>
+<l n="">What is the matter there?</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Signior, is all your family within?</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Are your doors lock'd?</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">Why, wherefore ask you this?</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">'Zounds, sir, you're robb'd; for shame, put on your gown;</l>    
+    <pb n="311"/>
+<l n="">Your heart is burst, you have lost half your soul;</l>
+<l n="">Even now, now, very now, an old black ram</l>
+<l n="">Is topping your white ewe. Arise, arise;</l>
+<l n="">Awake the snorting citizens with the bell,</l>
+<l n="">Or else the devil will make a grandsire of you:</l>
+<l n="">Arise, I say.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">What, have you lost your wits?</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Most reverend signior, do you know my voice?</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">Not I what are you?</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">My name is Roderigo.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">The worser welcome:</l>
+<l n="">I have charged thee not to haunt about my doors:</l>
+<l n="">In honest plainness thou hast heard me say</l>
+<l n="">My daughter is not for thee; and now, in madness,</l>
+<l n="">Being full of supper and distempering draughts,</l>
+<l n="">Upon malicious bravery, dost thou come</l>
+<l n="">To start my quiet.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Sir, sir, sir,--</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">But thou must needs be sure</l>
+<l n="">My spirit and my place have in them power</l>
+<l n="">To make this bitter to thee.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Patience, good sir.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">What tell'st thou me of robbing? this is Venice;</l>
+<l n="">My house is not a grange.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Most grave Brabantio,</l>
+<l n="">In simple and pure soul I come to you.</l>
+</sp>
+<sp style="prose">
+<speaker>Iago</speaker>
+<l n="">'Zounds, sir, you are one of those that will not</l>
+<l n="">serve God, if the devil bid you. Because we come to</l>
+<l n="">do you service and you think we are ruffians, you'll</l>
+<l n="">have your daughter covered with a Barbary horse;</l>
+<l n="">you'll have your nephews neigh to you; you'll have</l>
+<l n="">coursers for cousins and gennets for germans.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">What profane wretch art thou?</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">I am one, sir, that comes to tell you your daughter</l>
+<l n="">and the Moor are now making the beast with two backs.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">Thou art a villain.</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">You are--a Senator.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">This thou shalt answer; I know thee, Roderigo.</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Sir, I will answer any thing. But, I beseech you,</l>
+<l n="">If't be your pleasure and most wise consent,</l>
+<l n="">As partly I find it is, that your fair daughter,</l>
+<l n="">At this odd-even and dull watch o' the night,</l>
+<l n="">Transported, with no worse nor better guard</l>
+<l n="">But with a knave of common hire, a gondolier,</l>
+<l n="">To the gross clasps of a lascivious Moor--</l>
+<l n="">If this be known to you and your allowance,</l>
+<l n="">We then have done you bold and saucy wrongs;</l>
+<l n="">But if you know not this, my manners tell me</l>
+<l n="">We have your wrong rebuke. Do not believe</l>
+<l n="">That, from the sense of all civility,</l>
+<l n="">I thus would play and trifle with your reverence:</l>
+<l n="">Your daughter, if you have not given her leave,</l>
+<l n="">I say again, hath made a gross revolt;</l>
+<l n="">Tying her duty, beauty, wit and fortunes</l>
+<l n="">In an extravagant and wheeling stranger</l>
+<l n="">Of here and every where. Straight satisfy yourself:</l>
+<l n="">If she be in her chamber or your house,</l>
+<l n="">Let loose on me the justice of the state</l>
+<l n="">For thus deluding you.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">Strike on the tinder, ho!</l>
+<l n="">Give me a taper! call up all my people!</l>
+<l n="">This accident is not unlike my dream:</l>
+<l n="">Belief of it oppresses me already.</l>
+<l n="">Light, I say! light!</l>
+</sp>
+<stage>Exit above.</stage>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Farewell; for I must leave you:</l>
+<l n="">It seems not meet, nor wholesome to my place,</l>
+<l n="">To be produced--as, if I stay, I shall--</l>
+<l n="">Against the Moor: for, I do know, the state,</l>
+<l n="">However this may gall him with some cheque,</l>
+<l n="">Cannot with safety cast him, for he's embark'd</l>
+<l n="">With such loud reason to the Cyprus wars,</l>
+<l n="">Which even now stand in act, that, for their souls,</l>
+<l n="">Another of his fathom they have none,</l>
+<l n="">To lead their business: in which regard,</l>
+<l n="">Though I do hate him as I do hell-pains.</l>
+<l n="">Yet, for necessity of present life,</l>
+<l n="">I must show out a flag and sign of love,</l>
+<l n="">Which is indeed but sign. That you shall surely find him,</l>
+<l n="">Lead to the Sagittary the raised search;</l>
+<l n="">And there will I be with him. So, farewell.</l>
+</sp>
+<stage>Exit.</stage>    
+                    <stage>Enter, below, Brabantio, and Servants with torches.</stage>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">It is too true an evil: gone she is;</l>
+<l n="">And what's to come of my despised time</l>
+<l n="">Is nought but bitterness. Now, Roderigo,</l>
+<l n="">Where didst thou see her? O unhappy girl!</l>
+<l n="">With the Moor, say'st thou? Who would be a father!</l>
+<l n="">How didst thou know 'twas she? O she deceives me</l>
+<l n="">Past thought! What said she to you? Get more tapers:</l>
+<l n="">Raise all my kindred. Are they married, think you?</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Truly, I think they are.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">O heaven! How got she out? O treason of the blood!</l>
+<l n="">Fathers, from hence trust not your daughters' minds</l>
+<l n="">By what you see them act. Is there not charms</l>
+<l n="">By which the property of youth and maidhood</l>
+<l n="">May be abused? Have you not read, Roderigo,</l>
+<l n="">Of some such thing?</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Yes, sir, I have indeed.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">Call up my brother. O, would you had had her!</l>
+<l n="">Some one way, some another. Do you know</l>
+<l n="">Where we may apprehend her and the Moor?</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">I think I can discover him, if you please,</l>
+<l n="">To get good guard and go along with me.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">Pray you, lead on. At every house I'll call;</l>
+<l n="">I may command at most. Get weapons, ho!</l>
+<l n="">And raise some special officers of night.</l>
+<l n="">On, good Roderigo: I'll deserve your pains.</l>
+</sp>
+<stage>Exeunt.</stage>
+                </div>
+            <div type="scene">
+     <head type="sub">Scene II</head>
+<stage>Enter Othello, Iago, and Attendants with torches</stage>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Though in the trade of war I have slain men,</l>
+<l n="">Yet do I hold it very stuff o' the conscience</l>
+<l n="">To do no contrived murder: I lack iniquity</l>
+<l n="">Sometimes to do me service: nine or ten times</l>
+<l n="">I had thought to have yerk'd him here under the ribs.</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">'Tis better as it is.</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Nay, but he prated,</l>
+<l n="">And spoke such scurvy and provoking terms</l>
+<l n="">Against your honour</l>
+<l n="">That, with the little godliness I have,</l>
+<l n="">I did full hard forbear him. But, I pray you, sir,</l>
+<l n="">Are you fast married? Be assured of this,</l>
+<l n="">That the magnifico is much beloved,</l>
+<l n="">And hath in his effect a voice potential</l>
+<l n="">As double as the Duke's: he will divorce you;</l>
+<l n="">Or put upon you what restraint and grievance</l>
+    
+    <pb n="312"/>
+    
+<l n="">The law, with all his might to enforce it on,</l>
+<l n="">Will give him cable.</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">Let him do his spite:</l>
+<l n="">My services which I have done the signiory</l>
+<l n="">Shall out-tongue his complaints. 'Tis yet to know,--</l>
+<l n="">Which, when I know that boasting is an honour,</l>
+<l n="">I shall promulgate--I fetch my life and being</l>
+<l n="">From men of royal siege, and my demerits</l>
+<l n="">May speak unbonneted to as proud a fortune</l>
+<l n="">As this that I have reach'd: for know, Iago,</l>
+<l n="">But that I love the gentle Desdemona,</l>
+<l n="">I would not my unhoused free condition</l>
+<l n="">Put into circumscription and confine</l>
+<l n="">For the sea's worth. But, look! what lights come yond?</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Those are the raised father and his friends:</l>
+<l n="">You were best go in.</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">Not I I must be found:</l>
+<l n="">My parts, my title and my perfect soul</l>
+<l n="">Shall manifest me rightly. Is it they?</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">By Janus, I think no.</l>
+</sp>
+<stage>Enter Cassio, and certain Officers with torches</stage>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">The servants of the Duke, and my lieutenant.</l>
+<l n="">The goodness of the night upon you, friends!</l>
+<l n="">What is the news?</l>
+</sp>
+<sp style="verse">
+<speaker>Cassio</speaker>
+<l n="">The Duke does greet you, general,</l>
+<l n="">And he requires your haste-post-haste appearance,</l>
+<l n="">Even on the instant.</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">What is the matter, think you?</l>
+</sp>
+<sp style="verse">
+<speaker>Cassio</speaker>
+<l n="">Something from Cyprus as I may divine:</l>
+<l n="">It is a business of some heat: the galleys</l>
+<l n="">Have sent a dozen sequent messengers</l>
+<l n="">This very night at one another's heels,</l>
+<l n="">And many of the consuls, raised and met,</l>
+<l n="">Are at the Duke's already: you have been</l>
+<l n="">hotly call'd for;</l>
+<l n="">When, being not at your lodging to be found,</l>
+<l n="">The senate hath sent about three several guests</l>
+<l n="">To search you out.</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">'Tis well I am found by you.</l>
+<l n="">I will but spend a word here in the house,</l>
+<l n="">And go with you.</l>
+</sp>
+<stage>Exit</stage>
+<sp style="verse">
+<speaker>Cassio</speaker>
+<l n="">Ancient, what makes he here?</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">'Faith, he to-night hath boarded a land carack:</l>
+<l n="">If it prove lawful prize, he's made for ever.</l>
+</sp>
+<sp style="verse">
+<speaker>Cassio</speaker>
+<l n="">I do not understand.</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">He's married.</l>
+</sp>
+<sp style="verse">
+<speaker>Cassio</speaker>
+<l n="">To who?</l>
+</sp>
+<stage>Re-enter Othello</stage>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">Marry, to--Come, captain, will you go?</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">Have with you.</l>
+</sp>
+<sp style="verse">
+<speaker>Cassio</speaker>
+<l n="">Here comes another troop to seek for you.</l>
+</sp>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">It is Brabantio. General, be advised;</l>
+<l n="">He comes to bad intent.</l>
+</sp>
+<stage>Enter Brabantio, Roderigo, and Officers with torches and weapons</stage>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">Holla! stand there!</l>
+</sp>
+<sp style="verse">
+<speaker>Roderigo</speaker>
+<l n="">Signior, it is the Moor.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">Down with him, thief!</l>
+</sp>
+<stage>They draw on both sides</stage>
+<sp style="verse">
+<speaker>Iago</speaker>
+<l n="">You, Roderigo! come, sir, I am for you.</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">Keep up your bright swords, for the dew will rust them.</l>
+<l n="">Good signior, you shall more command with years</l>
+<l n="">Than with your weapons.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">O thou foul thief, where hast thou stow'd my daughter?</l>
+<l n="">Damn'd as thou art, thou hast enchanted her;</l>
+<l n="">For I'll refer me to all things of sense,</l>
+<l n="">If she in chains of magic were not bound,</l>
+<l n="">Whether a maid so tender, fair and happy,</l>
+<l n="">So opposite to marriage that she shunned</l>
+<l n="">The wealthy curled darlings of our nation,</l>
+<l n="">Would ever have, to incur a general mock,</l>
+<l n="">Run from her guardage to the sooty bosom</l>
+<l n="">Of such a thing as thou, to fear, not to delight.</l>
+<l n="">Judge me the world, if 'tis not gross in sense</l>
+<l n="">That thou hast practised on her with foul charms,</l>
+<l n="">Abused her delicate youth with drugs or minerals</l>
+<l n="">That weaken motion: I'll have't disputed on;</l>
+<l n="">'Tis probable and palpable to thinking.</l>
+<l n="">I therefore apprehend and do attach thee</l>
+<l n="">For an abuser of the world, a practiser</l>
+<l n="">Of arts inhibited and out of warrant.</l>
+<l n="">Lay hold upon him: if he do resist,</l>
+<l n="">Subdue him at his peril.</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">Hold your hands,</l>
+<l n="">Both you of my inclining, and the rest:</l>
+<l n="">Were it my cue to fight, I should have known it</l>
+<l n="">Without a prompter. Where will you that I go</l>
+<l n="">To answer this your charge?</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">To prison, till fit time</l>
+<l n="">Of law and course of direct session</l>
+<l n="">Call thee to answer.</l>
+</sp>
+<sp style="verse">
+<speaker>Othello</speaker>
+<l n="">What if I do obey?</l>
+<l n="">How may the Duke be therewith satisfied,</l>
+<l n="">Whose messengers are here about my side,</l>
+<l n="">Upon some present business of the state</l>
+<l n="">To bring me to him?</l>
+</sp>
+<sp style="verse">
+<speaker>First Officer</speaker>
+<l n="">'Tis true, most worthy signior;</l>
+<l n="">The Duke's in council and your noble self,</l>
+<l n="">I am sure, is sent for.</l>
+</sp>
+<sp style="verse">
+<speaker>Brabantio</speaker>
+<l n="">How! the Duke in council!</l>
+<l n="">In this time of the night! Bring him away:</l>
+<l n="">Mine's not an idle cause: the Duke himself,</l>
+<l n="">Or any of my brothers of the state,</l>
+<l n="">Cannot but feel this wrong as 'twere their own;</l>
+<l n="">For if such actions may have passage free,</l>
+<l n="">Bond-slaves and pagans shall our statesmen be.</l>
+</sp>
+<stage>Exeunt</stage>
+            </div>
+            <div type="scene">
+                <head type="sub">Scene III</head>
+<stage>The Duke and Senators sitting at a table; Officers attending</stage>
+<sp style="verse">
+<speaker>Duke of Venice</speaker>
+<l n="">There is no composition in these news</l>
+<l n="">That gives them credit.</l>
+</sp>
+<sp style="verse">
+<speaker>First Senator</speaker>
+<l n="">Indeed, they are disproportion'd;</l>
+<l n="">My letters say a hundred and seven galleys.</l>
+</sp>
+<sp style="verse">
+<speaker>Duke of Venice</speaker>
+<l n="">And mine, a hundred and forty.</l>
+</sp>
+<sp style="verse">
+<speaker>Second Senator</speaker>
+<l n="">And mine, two hundred:</l>
+<l n="">But though they jump not on a just account,--</l>
+<l n="">As in these cases, where the aim reports,</l>
+<l n="">'Tis oft with difference--yet do they all confirm</l>
+<l n="">A Turkish fleet, and bearing up to Cyprus.</l>
+</sp>
+<sp style="verse">
+<speaker>Duke of Venice</speaker>
+<l n="">Nay, it is possible enough to judgment:</l>
+<l n="">I do not so secure me in the error,</l>
+<l n="">But the main article I do approve</l>
+<l n="">In fearful sense.</l>
+</sp>
+<sp style="verse">
+<speaker>Sailor</speaker>
+<l n="">
+<stage>Within</stage>
+What, ho! what, ho! what, ho!
+</l>
+    <pb n="313"/>
+</sp>
                 </div>
             </div>
         </body>
