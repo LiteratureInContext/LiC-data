@@ -6,13 +6,12 @@
          <titleStmt>
             <title type="main">Red Wheel Barrow</title>
             <author>
-               <persName type="lcnaf" key="https://www.loc.gov/item/n79060075/william-carlos-williams/">
+               <persName type="lcnaf" key="n79060075">
                   <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
                   <name ref="xxx.xml">
                      <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
                      <forename>William Carlos</forename> 
                      <surname>Williams</surname>
-                     <addName>xxx</addName>
                   </name>
               
                </persName>
@@ -58,41 +57,34 @@
          <sourceDesc>
 
             <biblStruct>
-
-               <analytic>
-                 
-                  <title><?oxy-placeholder content="Title of Contained Document in Quotation Marks. If this is a stand-alone monograph, cut the <analytic> tag."?></title>
-                
-               </analytic>
                  
                <monogr>
                   <author>
                      <name>
-                        <forename>Firstname</forename>
-                        <surname><?oxy-placeholder content="Lastname"?></surname>
-                        <addName><?oxy-placeholder content="Additional Name, if necessary"?></addName>
+                        <forename>C.D.</forename>
+                        <surname>Wright></surname>
                      </name>
                   </author>
 
-                  <title><?oxy-placeholder content="Title of the Monograph/Container"?></title>
+                  <title>Spring and All</title>
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000"
+                        <placeName type="city" key="7007567"
                            ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at https://www.getty.edu/research/tools/vocabularies/tgn/"?></placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
-                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
+                     <publisher>New Directions Book</publisher>
+                     <date when="000">1970</date>
                      <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
                      <!-- Add additional NOTE elements as needed  -->
-                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                     <note>The poem entitled the "Red Wheelbarrow" appears on p. 74. Interestingly, it has no title. Instead, it is numbered XXII.</note>
                   </imprint>
 
                   <imprint>
                      <pubPlace/>
                      <publisher/>
                      <date/>
-                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
+                     <note>The poem is available on the web at the Poetry Foundation site. See https://www.poetryfoundation.org/poems/45502/the-red-wheelbarrow<?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
                   </imprint>
 
                   <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
@@ -240,17 +232,19 @@
                <body>
                   <div type="poem">
                      <salute/>
-                     <p>so much depends
-                        upon
+                     <p>
+                        <lg>
+                           <l>so much depends</l>
+                           <l>upon</l></lg>
                         
-                        a red wheel
-                        barrow
+                           <lg><l>a red wheel</l>
+                              <l>barrow</l></lg>
                         
-                        glazed with rain
-                        water
+                           <lg><l>glazed with rain</l>
+                              <l>water</l></lg>
                         
-                        beside the white
-                        chickens
+                           <lg><l>beside the white</l>
+                              <l>chickens</l></lg>
                         <?oxy-placeholder content="If including an embedded document--a poem, a letter, and so on--FLOATINGTEXT is a good solution."?></p>
                      <signed/>
                      <dateline/>
