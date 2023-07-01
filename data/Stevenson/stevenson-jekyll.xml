@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="stevenson-jekyll">
-    <teiHeader>
+    <teiHeader xml:lang="en">
         <fileDesc>
             <titleStmt>
                 <title type="main">The Strange Case of Dr. Jekyll and Mr. Hyde</title>
@@ -61,15 +61,32 @@
                         <title>The Strange Case of Dr. Jekyll and Mr. Hyde</title>
                         <imprint>
                             <pubPlace>
+                                <placeName type="tgn" key="7011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Longmans, Green, and Co.</publisher>
+                            <date when="1886">1886</date>
+                            <note>
+                                <p>This is the first edition publication information.
+                                </p>
+                            </note>
+                        </imprint>
+                        <imprint>
+                            <pubPlace>
                                 <placeName type="tgn" key="7007567">New York</placeName>
                             </pubPlace>
                             <publisher>J. H. Sears &amp; Company Inc.</publisher>
                             <date when="1923">1923</date>
                             <note>
-                                <p>British spelling; paginated to J. H. Sears &amp; Company. Inc edition, in New York in 1923
-                                    <ref target="https://hdl.handle.net/2027/uva.x000181445">https://hdl.handle.net/2027/uva.x000181445</ref>
-                                    and checked against the Project Gutenburg's edition
-                                <ref target="https://www.gutenberg.org/files/43/43-h/43-h.htm">https://www.gutenberg.org/files/43/43-h/43-h.htm</ref>.</p>
+                                <p>Text is paginated to J. H. Sears &amp; Company. Inc edition
+                                    <ref target="https://hdl.handle.net/2027/uva.x000181445">https://hdl.handle.net/2027/uva.x000181445</ref>.</p>
+                            </note>
+                        </imprint>
+                        <imprint>
+                            <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
+                            <publisher>Project Gutenberg</publisher>
+                            <date>n.d.</date>
+                            <note>Base text, including spellings, for this digital edition has been drawn from Project Gutenberg
+                                <ref target="https://www.gutenberg.org/files/43/43-h/43-h.htm">https://www.gutenberg.org/files/43/43-h/43-h.htm</ref>.
                             </note>
                         </imprint>
                         <extent>ca. 344 kilobytes</extent>
