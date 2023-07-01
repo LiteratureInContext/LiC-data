@@ -1,428 +1,199 @@
-<?xml version="1.0"?>
-
-<?dlps id="Chopin-Awakening"?>
-<?dlps page-images="none" figure-images="no"?>
-<?dlps transcription="other"?>
-
-<!DOCTYPE TEI.2 SYSTEM "http://text.lib.virginia.edu/dtd/tei/tei-p4/tei2.dtd" [
-<!ENTITY % POSTKB "INCLUDE">
-<!ENTITY % TEI.extensions.ent SYSTEM "http://text.lib.virginia.edu/dtd/tei/uva-dl-tei/uva-dl-tei.ent">
-<!ENTITY % TEI.extensions.dtd SYSTEM "http://text.lib.virginia.edu/dtd/tei/uva-dl-tei/uva-dl-tei.dtd">
-<!ENTITY % ISOlat1 SYSTEM "http://text.lib.virginia.edu/charent/iso-lat1.ent"> %ISOlat1;
-<!ENTITY % ISOpub SYSTEM "http://text.lib.virginia.edu/charent/iso-pub.ent"> %ISOpub;
-
-
-
-
-<!ENTITY DSSR_000002596_0001 SYSTEM "000002596_0001" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0002 SYSTEM "000002596_0002" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0003 SYSTEM "000002596_0003" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0004 SYSTEM "000002596_0004" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0005 SYSTEM "000002596_0005" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0006 SYSTEM "000002596_0006" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0007 SYSTEM "000002596_0007" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0008 SYSTEM "000002596_0008" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0009 SYSTEM "000002596_0009" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0010 SYSTEM "000002596_0010" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0011 SYSTEM "000002596_0011" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0012 SYSTEM "000002596_0012" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0013 SYSTEM "000002596_0013" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0014 SYSTEM "000002596_0014" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0015 SYSTEM "000002596_0015" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0016 SYSTEM "000002596_0016" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0017 SYSTEM "000002596_0017" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0018 SYSTEM "000002596_0018" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0019 SYSTEM "000002596_0019" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0020 SYSTEM "000002596_0020" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0021 SYSTEM "000002596_0021" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0022 SYSTEM "000002596_0022" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0023 SYSTEM "000002596_0023" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0024 SYSTEM "000002596_0024" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0025 SYSTEM "000002596_0025" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0026 SYSTEM "000002596_0026" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0027 SYSTEM "000002596_0027" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0028 SYSTEM "000002596_0028" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0029 SYSTEM "000002596_0029" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0030 SYSTEM "000002596_0030" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0031 SYSTEM "000002596_0031" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0032 SYSTEM "000002596_0032" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0033 SYSTEM "000002596_0033" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0034 SYSTEM "000002596_0034" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0035 SYSTEM "000002596_0035" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0036 SYSTEM "000002596_0036" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0037 SYSTEM "000002596_0037" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0038 SYSTEM "000002596_0038" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0039 SYSTEM "000002596_0039" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0040 SYSTEM "000002596_0040" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0041 SYSTEM "000002596_0041" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0042 SYSTEM "000002596_0042" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0043 SYSTEM "000002596_0043" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0044 SYSTEM "000002596_0044" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0045 SYSTEM "000002596_0045" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0046 SYSTEM "000002596_0046" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0047 SYSTEM "000002596_0047" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0048 SYSTEM "000002596_0048" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0049 SYSTEM "000002596_0049" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0050 SYSTEM "000002596_0050" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0051 SYSTEM "000002596_0051" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0052 SYSTEM "000002596_0052" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0053 SYSTEM "000002596_0053" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0054 SYSTEM "000002596_0054" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0055 SYSTEM "000002596_0055" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0056 SYSTEM "000002596_0056" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0057 SYSTEM "000002596_0057" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0058 SYSTEM "000002596_0058" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0059 SYSTEM "000002596_0059" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0060 SYSTEM "000002596_0060" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0061 SYSTEM "000002596_0061" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0062 SYSTEM "000002596_0062" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0063 SYSTEM "000002596_0063" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0064 SYSTEM "000002596_0064" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0065 SYSTEM "000002596_0065" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0066 SYSTEM "000002596_0066" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0067 SYSTEM "000002596_0067" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0068 SYSTEM "000002596_0068" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0069 SYSTEM "000002596_0069" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0070 SYSTEM "000002596_0070" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0071 SYSTEM "000002596_0071" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0072 SYSTEM "000002596_0072" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0073 SYSTEM "000002596_0073" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0074 SYSTEM "000002596_0074" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0075 SYSTEM "000002596_0075" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0076 SYSTEM "000002596_0076" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0077 SYSTEM "000002596_0077" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0078 SYSTEM "000002596_0078" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0079 SYSTEM "000002596_0079" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0080 SYSTEM "000002596_0080" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0081 SYSTEM "000002596_0081" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0082 SYSTEM "000002596_0082" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0083 SYSTEM "000002596_0083" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0084 SYSTEM "000002596_0084" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0085 SYSTEM "000002596_0085" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0086 SYSTEM "000002596_0086" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0087 SYSTEM "000002596_0087" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0088 SYSTEM "000002596_0088" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0089 SYSTEM "000002596_0089" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0090 SYSTEM "000002596_0090" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0091 SYSTEM "000002596_0091" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0092 SYSTEM "000002596_0092" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0093 SYSTEM "000002596_0093" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0094 SYSTEM "000002596_0094" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0095 SYSTEM "000002596_0095" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0096 SYSTEM "000002596_0096" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0097 SYSTEM "000002596_0097" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0098 SYSTEM "000002596_0098" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0099 SYSTEM "000002596_0099" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0100 SYSTEM "000002596_0100" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0101 SYSTEM "000002596_0101" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0102 SYSTEM "000002596_0102" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0103 SYSTEM "000002596_0103" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0104 SYSTEM "000002596_0104" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0105 SYSTEM "000002596_0105" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0106 SYSTEM "000002596_0106" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0107 SYSTEM "000002596_0107" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0108 SYSTEM "000002596_0108" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0109 SYSTEM "000002596_0109" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0110 SYSTEM "000002596_0110" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0111 SYSTEM "000002596_0111" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0112 SYSTEM "000002596_0112" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0113 SYSTEM "000002596_0113" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0114 SYSTEM "000002596_0114" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0115 SYSTEM "000002596_0115" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0116 SYSTEM "000002596_0116" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0117 SYSTEM "000002596_0117" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0118 SYSTEM "000002596_0118" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0119 SYSTEM "000002596_0119" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0120 SYSTEM "000002596_0120" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0121 SYSTEM "000002596_0121" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0122 SYSTEM "000002596_0122" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0123 SYSTEM "000002596_0123" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0124 SYSTEM "000002596_0124" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0125 SYSTEM "000002596_0125" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0126 SYSTEM "000002596_0126" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0127 SYSTEM "000002596_0127" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0128 SYSTEM "000002596_0128" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0129 SYSTEM "000002596_0129" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0130 SYSTEM "000002596_0130" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0131 SYSTEM "000002596_0131" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0132 SYSTEM "000002596_0132" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0133 SYSTEM "000002596_0133" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0134 SYSTEM "000002596_0134" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0135 SYSTEM "000002596_0135" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0136 SYSTEM "000002596_0136" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0137 SYSTEM "000002596_0137" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0138 SYSTEM "000002596_0138" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0139 SYSTEM "000002596_0139" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0140 SYSTEM "000002596_0140" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0141 SYSTEM "000002596_0141" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0142 SYSTEM "000002596_0142" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0143 SYSTEM "000002596_0143" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0144 SYSTEM "000002596_0144" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0145 SYSTEM "000002596_0145" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0146 SYSTEM "000002596_0146" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0147 SYSTEM "000002596_0147" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0148 SYSTEM "000002596_0148" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0149 SYSTEM "000002596_0149" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0150 SYSTEM "000002596_0150" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0151 SYSTEM "000002596_0151" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0152 SYSTEM "000002596_0152" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0153 SYSTEM "000002596_0153" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0154 SYSTEM "000002596_0154" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0155 SYSTEM "000002596_0155" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0156 SYSTEM "000002596_0156" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0157 SYSTEM "000002596_0157" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0158 SYSTEM "000002596_0158" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0159 SYSTEM "000002596_0159" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0160 SYSTEM "000002596_0160" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0161 SYSTEM "000002596_0161" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0162 SYSTEM "000002596_0162" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0163 SYSTEM "000002596_0163" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0164 SYSTEM "000002596_0164" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0165 SYSTEM "000002596_0165" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0166 SYSTEM "000002596_0166" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0167 SYSTEM "000002596_0167" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0168 SYSTEM "000002596_0168" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0169 SYSTEM "000002596_0169" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0170 SYSTEM "000002596_0170" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0171 SYSTEM "000002596_0171" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0172 SYSTEM "000002596_0172" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0173 SYSTEM "000002596_0173" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0174 SYSTEM "000002596_0174" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0175 SYSTEM "000002596_0175" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0176 SYSTEM "000002596_0176" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0177 SYSTEM "000002596_0177" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0178 SYSTEM "000002596_0178" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0179 SYSTEM "000002596_0179" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0180 SYSTEM "000002596_0180" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0181 SYSTEM "000002596_0181" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0182 SYSTEM "000002596_0182" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0183 SYSTEM "000002596_0183" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0184 SYSTEM "000002596_0184" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0185 SYSTEM "000002596_0185" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0186 SYSTEM "000002596_0186" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0187 SYSTEM "000002596_0187" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0188 SYSTEM "000002596_0188" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0189 SYSTEM "000002596_0189" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0190 SYSTEM "000002596_0190" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0191 SYSTEM "000002596_0191" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0192 SYSTEM "000002596_0192" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0193 SYSTEM "000002596_0193" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0194 SYSTEM "000002596_0194" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0195 SYSTEM "000002596_0195" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0196 SYSTEM "000002596_0196" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0197 SYSTEM "000002596_0197" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0198 SYSTEM "000002596_0198" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0199 SYSTEM "000002596_0199" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0200 SYSTEM "000002596_0200" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0201 SYSTEM "000002596_0201" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0202 SYSTEM "000002596_0202" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0203 SYSTEM "000002596_0203" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0204 SYSTEM "000002596_0204" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0205 SYSTEM "000002596_0205" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0206 SYSTEM "000002596_0206" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0207 SYSTEM "000002596_0207" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0208 SYSTEM "000002596_0208" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0209 SYSTEM "000002596_0209" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0210 SYSTEM "000002596_0210" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0211 SYSTEM "000002596_0211" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0212 SYSTEM "000002596_0212" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0213 SYSTEM "000002596_0213" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0214 SYSTEM "000002596_0214" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0215 SYSTEM "000002596_0215" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0216 SYSTEM "000002596_0216" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0217 SYSTEM "000002596_0217" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0218 SYSTEM "000002596_0218" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0219 SYSTEM "000002596_0219" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0220 SYSTEM "000002596_0220" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0221 SYSTEM "000002596_0221" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0222 SYSTEM "000002596_0222" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0223 SYSTEM "000002596_0223" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0224 SYSTEM "000002596_0224" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0225 SYSTEM "000002596_0225" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0226 SYSTEM "000002596_0226" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0227 SYSTEM "000002596_0227" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0228 SYSTEM "000002596_0228" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0229 SYSTEM "000002596_0229" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0230 SYSTEM "000002596_0230" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0231 SYSTEM "000002596_0231" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0232 SYSTEM "000002596_0232" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0233 SYSTEM "000002596_0233" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0234 SYSTEM "000002596_0234" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0235 SYSTEM "000002596_0235" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0236 SYSTEM "000002596_0236" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0237 SYSTEM "000002596_0237" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0238 SYSTEM "000002596_0238" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0239 SYSTEM "000002596_0239" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0240 SYSTEM "000002596_0240" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0241 SYSTEM "000002596_0241" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0242 SYSTEM "000002596_0242" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0243 SYSTEM "000002596_0243" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0244 SYSTEM "000002596_0244" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0245 SYSTEM "000002596_0245" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0246 SYSTEM "000002596_0246" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0247 SYSTEM "000002596_0247" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0248 SYSTEM "000002596_0248" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0249 SYSTEM "000002596_0249" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0250 SYSTEM "000002596_0250" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0251 SYSTEM "000002596_0251" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0252 SYSTEM "000002596_0252" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0253 SYSTEM "000002596_0253" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0254 SYSTEM "000002596_0254" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0255 SYSTEM "000002596_0255" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0256 SYSTEM "000002596_0256" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0257 SYSTEM "000002596_0257" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0258 SYSTEM "000002596_0258" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0259 SYSTEM "000002596_0259" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0260 SYSTEM "000002596_0260" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0261 SYSTEM "000002596_0261" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0262 SYSTEM "000002596_0262" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0263 SYSTEM "000002596_0263" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0264 SYSTEM "000002596_0264" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0265 SYSTEM "000002596_0265" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0266 SYSTEM "000002596_0266" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0267 SYSTEM "000002596_0267" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0268 SYSTEM "000002596_0268" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0269 SYSTEM "000002596_0269" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0270 SYSTEM "000002596_0270" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0271 SYSTEM "000002596_0271" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0272 SYSTEM "000002596_0272" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0273 SYSTEM "000002596_0273" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0274 SYSTEM "000002596_0274" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0275 SYSTEM "000002596_0275" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0276 SYSTEM "000002596_0276" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0277 SYSTEM "000002596_0277" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0278 SYSTEM "000002596_0278" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0279 SYSTEM "000002596_0279" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0280 SYSTEM "000002596_0280" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0281 SYSTEM "000002596_0281" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0282 SYSTEM "000002596_0282" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0283 SYSTEM "000002596_0283" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0284 SYSTEM "000002596_0284" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0285 SYSTEM "000002596_0285" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0286 SYSTEM "000002596_0286" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0287 SYSTEM "000002596_0287" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0288 SYSTEM "000002596_0288" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0289 SYSTEM "000002596_0289" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0290 SYSTEM "000002596_0290" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0291 SYSTEM "000002596_0291" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0292 SYSTEM "000002596_0292" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0293 SYSTEM "000002596_0293" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0294 SYSTEM "000002596_0294" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0295 SYSTEM "000002596_0295" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0296 SYSTEM "000002596_0296" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0297 SYSTEM "000002596_0297" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0298 SYSTEM "000002596_0298" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0299 SYSTEM "000002596_0299" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0300 SYSTEM "000002596_0300" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0301 SYSTEM "000002596_0301" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0302 SYSTEM "000002596_0302" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0303 SYSTEM "000002596_0303" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0304 SYSTEM "000002596_0304" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0305 SYSTEM "000002596_0305" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0306 SYSTEM "000002596_0306" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0307 SYSTEM "000002596_0307" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0308 SYSTEM "000002596_0308" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0309 SYSTEM "000002596_0309" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0310 SYSTEM "000002596_0310" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0311 SYSTEM "000002596_0311" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0312 SYSTEM "000002596_0312" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0313 SYSTEM "000002596_0313" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0314 SYSTEM "000002596_0314" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0315 SYSTEM "000002596_0315" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0316 SYSTEM "000002596_0316" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0317 SYSTEM "000002596_0317" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0318 SYSTEM "000002596_0318" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0319 SYSTEM "000002596_0319" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0320 SYSTEM "000002596_0320" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0321 SYSTEM "000002596_0321" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0322 SYSTEM "000002596_0322" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0323 SYSTEM "000002596_0323" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0324 SYSTEM "000002596_0324" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0325 SYSTEM "000002596_0325" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0326 SYSTEM "000002596_0326" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0327 SYSTEM "000002596_0327" NDATA uvaHighRes>
-<!ENTITY DSSR_000002596_0328 SYSTEM "000002596_0328" NDATA uvaHighRes>
-]>
-<TEI.2 id="Chopin-Awakening">
-<teiHeader type="migrated" creator="Etext">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="chopin-awakening">
+      <!--TEI Header BEGINS-->
+    <teiHeader xml:lang="en">
 <fileDesc>
+ <!--BEGINS File- Description -->
 <titleStmt>
 <title type="main">The Awakening</title>
 <author>
  <persName type="lcnaf" key="n80008080">  
    <forename>Kate</forename> 
    <surname>Chopin</surname>
-   <addName></addName>
  </persName>
-</author>
-<respStmt>
-<resp>Creation of machine-readable version:</resp>
-<name>Judy Boss</name>
-<resp>Creation of digital images:</resp>
+</author>            <editor>
+ <persName type="orcid" key="0000-0002-7400-4093">
+  <name ref="editors.xml#TH">
+   <forename>Andrew</forename>
+   <surname>Rivard Hill</surname>
+  </name>
+ </persName>
+</editor>
+ <respStmt>
+  <!-- edit this content to reflect this digital edition -->
+  <resp>Transcription, correction, editorial commentary, and markup</resp>
+  <name ref="editors.xml#XXX"
+   ><?oxy-placeholder content="Students and Staff of UNIVERSITY NAME"?></name>
+  <name ref="editors.xml#XX"><?oxy-placeholder content="Firstname Lastname"?></name>
+  <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+ </respStmt>
+ 
+ <sponsor/>
+ <funder>National Endowment for the Humanities</funder>
+</titleStmt>
+ <publicationStmt>
+  <publisher>Literature in Context</publisher>
+  <address>
+   <addrLine>University of Virginia Department of English</addrLine>
+   <addrLine>P. O. Box 400l2l</addrLine>
+   <addrLine>Charlottesville, VA </addrLine>
+   <addrLine>22904-4l2l</addrLine>
+   <addrLine>jobrien@virginia.edu</addrLine>
+   <addrLine>lic.open.anthology@gmail.com</addrLine>
+  </address>
+  <availability status="free">
+   <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+    Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+    License </licence>
+  </availability>
+ </publicationStmt>
+ 
+ 
+ 
+ 
+ 
+ <sourceDesc><biblStruct>
+  <monogr>
+   <author><forename></forename><surname></surname>
+   </author>
+   <title></title>
+   <imprint></imprint>
+  </monogr>
+ </biblStruct></sourceDesc>
+ 
+  <monogr>
+    <author><forename>Judy</forename><surname>Boss</surname>
+    </author>
+    <title></title>
+    <imprint></imprint>
+   </monogr>
+  </biblStruct>
+  <note>Creation of machine-readable version</note>
 <name>Electronic Text Center</name>
-<resp>Conversion to TEI.2-conformant markup:</resp>
 <name>University of Virginia Library Electronic Text Center.</name>
-</respStmt>
 </titleStmt>
-<extent>ca. <num type="kilobytes">302</num> kilobytes</extent>
-<publicationStmt>
-<publisher>University of Virginia Library</publisher>
-<pubPlace>Charlottesville, Virginia</pubPlace>
-<idno type="ETC">Chopin-Awakening</idno>
-<date value="1997">1997</date>
-<availability status="public">
-<p n="copyright">Copyright &#xa9; 1997 by the Rector and Visitors of the University of Virginia</p>
-<p n="access">Publicly accessible</p>
-</availability>
-<idno type="uva-pid">uva-lib:476780</idno>
-</publicationStmt>
-<seriesStmt>
-<title>University of Virginia Library, Text collection</title>
-<idno type="uva-set">UVA-LIB-Text</idno>
-</seriesStmt>
-<notesStmt>
-<note>
-<p>Judy Boss used the 1992 Bantam Classic edition as her source
-text. This electronic version follows the pagination of the
-text as presented in the photographic reproduction of the
-first (1899) edition published by Garrett Press in 1970.</p>
-</note>
-</notesStmt>
-<sourceDesc>
-<biblFull>
-<titleStmt>
-<title type="main">The Awakening</title>
-<title type="sort">awakening</title>
-<author>Kate Chopin</author>
-</titleStmt>
-<extent>pp. 1-303</extent>
-<publicationStmt>
-<publisher>Herbert S. Stone and Company</publisher>
-<pubPlace>Chicago</pubPlace>
-<date value="1899">1899</date>
-<idno type="callNo">Print copy consulted: Alderman Library, Call # PS 1294 .C63 A9 1970b</idno>
-</publicationStmt>
-<notesStmt>
-<note>
-<p>The 1899 edition differs from the electronic text as follows: Page 271, line 1: hope that she ] hope she</p>
-</note>
-</notesStmt>
-</biblFull>
-</sourceDesc>
+ <publicationStmt>
+  <publisher>University of Virginia Library</publisher>
+  <address>
+   
+   <addrLine></addrLine></address>
+  
+  
+  
+  <availability status="free">
+   <licence target=""></licence>
+  </availability>
+ </publicationStmt>
+ 
+ 
+ <sourceDesc>
+  <biblStruct>
+   <monogr>
+    <author>
+     <forename>Boss</forename><surname>Judy</surname>
+    </author>
+    <title></title>
+    <imprint></imprint>
+   </monogr>
+  </biblStruct>
+ </sourceDesc>
 </fileDesc>
-<encodingDesc>
+     <encodingDesc>
 <projectDesc>
 <p>Prepared for the University of Virginia Library Electronic Text Center.</p>
 </projectDesc>
-<editorialDecl>
-<p>All quotation marks retained as data.</p>
+
+      
+      <editorialDecl>
+       <interpretation>
+        <p></p>
+       </interpretation>
+       <normalization>
+        <p></p>
+       </normalization>
+       <hyphenation>
+        <p></p>
+       </hyphenation>
+       <segmentation>
+        <p></p>
+       </segmentation>
+       <correction>
+        <p></p>
+       </correction>
+      </editorialDecl>
+      <tagsDecl>
+       <namespace name="">
+        <tagUsage gi= "chapters"></tagUsage>
+       </namespace>
+      </tagsDecl>
+      
+      
+      <classDecl>
+       <taxonomy xml:id="lcnaf">
+        <bibl></bibl>
+       </taxonomy>
+      </classDecl>
+      </profileDesc>
+      
+      <encodingDesc>
+       <!-- BEGINS Encoding Description -->
+       <projectDesc><p></p></projectDesc>
+       <editorialDecl>
+        <interpretation>
+         <p></p>
+        </interpretation>
+        <normalization>
+         <p></p>
+        </normalization>
+        <hyphenation>
+         <p></p>
+        </hyphenation>
+        <segmentation>
+         <p></p>
+        </segmentation>
+        <correction>
+         <p></p>
+        </correction>
+       </editorialDecl>
+       <p> </p>
+       </hyphenation>
+       <segmentation>
+    <p>All quotation marks retained as data.</p>
 <p>All unambiguous end-of-line hyphens have been removed, and the trailing part of a word has been joined to the preceding line.</p>
 <p>The images exist as archived TIFF images, one or more JPEG versions for general use, and thumbnail GIFs.</p>
 <p>Keywords in the header are a local Electronic Text Center scheme to aid in establishing analytical groupings.</p>
+      
+        <interpretation>
+  <p></p>
+ </interpretation>
+ <normalization>
+  <p></p>
+ </normalization>
+ <hyphenation>
+  <p></p>
+ </hyphenation>
+ <segmentation>
+  <p></p>
+ </segmentation>
+ <correction>
+  <p></p>
+ </correction>
 </editorialDecl>
-</encodingDesc>
-<profileDesc>
-<creation>
+      <tagsDecl>
+       <namespace name="">
+        <tagUsage gi=""></tagUsage>
+       </namespace>
+      </tagsDecl> 
+      <classDecl>
+     </encodingDesc>
+       <taxonomy xml:id="">
+        <bibl></bibl>
+       </taxonomy>
+      </classDecl>
+     
+     <profileDesc>
+      <creation>
 <date value="1899">1899</date>
 </creation>
 <langUsage>
@@ -435,9 +206,19 @@ first (1899) edition published by Garrett Press in 1970.</p>
 <term>Women Writers</term>
 </keywords>
 </textClass>
-</profileDesc>
-<revisionDesc>
-<change>
+      <textDesc n="">
+       <channel mode=""></channel>
+       <constitution type=""></constitution>
+       <derivation type=""></derivation>
+       <domain></domain>
+       <factuality type=""></factuality>
+       <interaction></interaction>
+       <preparedness></preparedness>
+       <purpose type=""></purpose>
+      </textDesc>
+     </profileDesc>
+     <revisionDesc>
+      <change when="">
 <date value="1997-01">January 1997</date>
 <respStmt>
 <resp>corrector</resp>
@@ -486,6 +267,7 @@ first (1899) edition published by Garrett Press in 1970.</p>
 <item>Added and/or replaced the digital images accompanying the electronic text. Scanning of exterior and interior (ie. pages) of item was done only for items found in the University of Virginia Special Collections Library.</item>
 </change>
 </revisionDesc>
+</projectDesc>
 </teiHeader>
 
 <text id="d1">
@@ -575,7 +357,7 @@ hair was brown and straight, parted on one side.  His beard was
 neatly and closely trimmed.
 </p><p>Once in a while he withdrew his glance from the newspaper and
 looked about him.
-<pb entity="DSSR_000002596_0020" n="3"/>
+<pb n="3"/>
 There was more noise than ever over at the
 house.  The main building was called "the house," to distinguish it
 from the cottages.  The chattering and whistling birds were still
@@ -592,7 +374,7 @@ in Beaudelet's
 lugger to hear mass.  Some young people were out under the water-oaks playing croquet.  Mr. Pontellier's two children were there
 sturdy little fellows of four and five.  A quadroon nurse followed
 them about with a faraway, meditative air.
-<pb entity="DSSR_000002596_0021" n="4"/>
+<pb n="4"/>
 </p><p>Mr. Pontellier finally lit a cigar and began to smoke, letting
 the paper drag idly from his hand.  He fixed his gaze upon a white
 sunshade that was advancing at snail's pace from the beach.  He
@@ -605,7 +387,6 @@ reached the cottage, the two seated themselves with some appearance
 of fatigue upon the upper
 
 
-<milestone unit="page"  n="3"/>
 
 step of the porch, facing each other, each leaning against a
 supporting post.
