@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shakespeare-tempest">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="woolf-room-of-ones-own">
     <teiHeader xml:lang="en">        
         <fileDesc>
             <titleStmt>
                 <title type="main">A Room of One's Own</title>
                 <author>
-                    <persName type="lcnaf" key="n78095332">
-                        <name ref="shakespeare.xml">
+                    <persName type="lcnaf" key="n79041870">
+                        <name ref="woolf.xml">
                             <forename>Virginia</forename>
                             <surname>Woolf</surname>
                         </name>
@@ -14,17 +14,18 @@
                 </author>
                 <editor>
                     <persName>
-                        <name ref="editors.xml#JOB">
+                        <name ref="editors.xml#NXB">
                             <surname>Buford</surname>
                             <forename>Nial</forename>
                         </name>
                     </persName>
                 </editor>
                 <respStmt>
-                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <resp>Transcription, correction, and markup</resp>
                     <name ref="editors.xml#UVAstudentsstaff">Students and Staff of The University of
                         Virginia</name>
-                    <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>                   
+                    <name ref="editors.xml#NXB">Nial Buford</name>
+                    
                 </respStmt>
                 <sponsor/>
                 <funder>National Endowment for the Humanities</funder>
@@ -60,31 +61,13 @@
                         <title type="sub">A Room of One's Own</title>
                         <imprint>
                             <pubPlace>
-                                <placeName type="tgn" key="7011781"><placeName type="tgn" key="7011781">London</placeName></placeName>
+                                <placeName type="tgn" key="7018903">Richmond</placeName>
                             </pubPlace>
-                            <publisher>Printed by Isaac Iaggard, and Ed. Blount</publisher>
-                            <date when="1623">1623</date>
-                            <note>Page images are drawn from the First Folio copy 68 held by the Folger
-                                Shakespeare Library, available at <ref
-                                    target="https://www.folger.edu/the-shakespeare-first-folio-folger-copy-no-68"
-                                    >https://www.folger.edu/the-shakespeare-first-folio-folger-copy-no-68</ref>.
-                                For more information about the First Folio, visit the Folger Shakespeare
-                                Library page <ref target="https://www.folger.edu/shakespeare/first-folio"
-                                    >https://www.folger.edu/shakespeare/first-folio</ref>.</note>
-                        </imprint>
-                        <imprint>
-                            <pubPlace>Online</pubPlace>
-                            <publisher>iBiblio</publisher>
-                            <date>1999</date>
+                            <publisher>Leonard and Virginia Woolf at the Hogarth Press</publisher>
+                            <date when="1922">1929</date>
                             <note>Base xml for this digital edition drawn from <ref
-                                target="https://www.ibiblio.org/xml/examples/shakespeare/Othello.xml">
-                                https://www.ibiblio.org/xml/examples/shakespeare/Othello.xml</ref>.</note>
-                            <note>
-                                <p>Text placed in the public domain by Moby Lexical Tools, 1992. Original
-                                    SGML markup by Jon Bosak, 1992-1994. XML version by Jon Bosak, 1996-1998.
-                                    XML updated for LiC guidelines, 2022. Page breaks have been added
-                                    according to the First Folio.</p>
-                            </note>
+                                target="http://gutenberg.net.au/ebooks02/0200791h.html">
+                                http://gutenberg.net.au/ebooks02/0200791h.html</ref>.</note>
                         </imprint>
                         <extent> 34 cm. (fol.)</extent>
                         <biblScope>pp 1-19</biblScope>
@@ -97,7 +80,7 @@
                 <language ident="en">English</language>
             </langUsage>           
             <creation/>            
-            <textDesc n="play">
+            <textDesc n="essay">
                 <!-- Acceptable values include novel, novella, poem, essay. -->
                 <channel mode="w">print</channel>
                 <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
@@ -107,20 +90,20 @@
                 <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
                 <domain/>
                 <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-                <factuality type="fiction"/>
+                <factuality type="mixed"/>
                 <!-- See the textDesc guidelines for more information. -->
                 <interaction/>
                 <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
                 <preparedness/>
                 <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="high"/>
                 <!-- See the TEI guidelines for more information. -->
             </textDesc>
             
             <settingDesc>
                 <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
                 <setting>
-                    <time from="1600" to="1610">Early 17th Century</time>
+                    <time from="1900" to="1930">Early 20th Century</time>
                     <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
                 </setting>
             </settingDesc>
@@ -144,26 +127,12 @@
                         as information that can be found in multiple reliable sources. If you notice an
                         error in these annotations, please contact lic.open.anthology@gmail.com. </p>
                 </interpretation>
-                <normalization>
-                    <p>Base text for this edition of <hi rend="italic">Othello</hi> uses public domain
-                        transcription by Moby Lexical Tools, 1992, converted into XML by Jon Bosak. Ligatured forms are not encoded. Missing and inferred stage directions added by the Riverside are indicated
-                        with square brackets. </p>
-                </normalization>
                 <hyphenation>
-                    <p>Hyphenation has not been retained, except where necessary for the sense of the
-                        word.</p>
+                    <p>Hyphenation has been retained.</p>
                 </hyphenation>
                 <segmentation>
-                    <p>Page breaks have been retained. Catchwords, signatures, running headers, and columns have
-                        not. Where pages break in the middle of a word, the complete word has been
-                        indicated prior to the page beginning. When it is unclear where a line ends, or
-                        whether the text is in prose or poetry, modern editions have been consulted.</p>
+                    <p>Page breaks have been retained.</p>
                 </segmentation>
-                <correction>
-                    <p>Line
-                        breaks, numbering, stage directions, and textual emendations have been made to ensure that this edition corresponds with the Rivierside
-                        Shakespeare edition of <hi rend="italic">Othello</hi>.</p>
-                </correction>
             </editorialDecl>
             <tagsDecl>
                 <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
@@ -202,22 +171,28 @@
     <text>
         <front>
             <titlePage>
-                <titlePart>
-                    A Room of One's Own</titlePart>
+                <pb n="[TP]" facs="pageImages/jacobs_room_TP.jpg"/>
+                
+                <titlePart>A ROOM OF ONE'S OWN<lb/></titlePart>
                 <lb/>
-                <lb/>
-                <docAuthor>By Virginia Woolf</docAuthor>
-                <docImprint/>
+                
+                <docAuthor>VIRGINIA WOOLF<lb/></docAuthor>
+                <docImprint>
+                    
+                    <lb/> PUBLISHED BY<publisher> LEONARD &amp; VIRGINIA WOOLF </publisher> at<lb/>
+                    <publisher>THE HOGARTH PRESS,</publisher>
+                    <pubPlace>HOGARTH HOUSE</pubPlace>, <pubPlace><placeName>RICHMOND</placeName></pubPlace><lb/>
+                    <docDate>1929</docDate>. <lb/>
+                </docImprint>
             </titlePage>
+            <docImprint>[* This essay is based upon two papers read to the Arts Society
+            at Newnharn and the Odtaa at Girton in October 1928. The papers
+            were too long to be read in full, and have since been altered and
+            expanded.]</docImprint>
+            
         </front>
         <body> 
 
-    
-
-<head>[* This essay is based upon two papers read to the Arts Society
-at Newnharn and the Odtaa at Girton in October 1928. The papers
-were too long to be read in full, and have since been altered and
-expanded.]</head>
 
 <div type="chapter">
 <head>One</head>
