@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="chopin-hour">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">The Sun Also Rises</title>
+                <author>
+                    <persName type="lcnaf" key="n78078534">
+                        <name ref="hemingway.xml">
+                            <forename>Ernest</forename>
+                            <surname>Hemingway</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName>
+                        <name ref="editors.xml#NXB">
+                            <surname>Buford</surname>
+                            <forename>Nial</forename>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, and markup</resp>
+                    <name ref="editors.xml#UVAstudentsstaff">Students and Staff of The University of
+                        Virginia</name>
+                    <name ref="editors.xml#NXB">Nial Buford</name>
+                    
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22204-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by Literature
+                        in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported License
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>The Sun Also Rises</title>
+                    </analytic>
+                    <monogr>
+                        <author>                            
+                            <forename>Ernest</forename>
+                            <surname>Hemingway</surname>
+                        </author>
+                        <title>The Sun Also Rises</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7007567">New York</placeName>
+                            </pubPlace>
+                            <publisher>Charles Scribner's Sons</publisher>
+                            <date when="1926">1926</date>
+                            <note>Text for this digital edition drawn from <ref
+                                target="https://www.gutenberg.org/ebooks/67138">Project Gutenberg's ditigital version of 
+                                <hi rend="italic">The Sun Also Rises</hi></ref> </note>       
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="tale">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness/>
+                <purpose type="entertain" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="1000095">Spain</name>
+                    <time from="1900" to="1930">Early Twentieth Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of primary sources
+                    relevant to the study and the teaching of British and American literature of the 18th,
+                    19th, and 20th centuries. This project is funded by the National Endowment for the Humanities and
+                    developed by faculty at The University of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+                    </p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation is retained.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2023" who="editors.xml#HAS">Initial XML file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+    <div type="epigraph">
+<p>”One generation passeth away, and another generation
+cometh; but the earth abideth forever. . . . The sun also
+ariseth, and the sun goeth down, and hasteth to the place
+where he arose. . . . The wind goeth toward the south,
+and turneth about unto the north; it whirleth about continually,
+and the wind returneth again according to his
+circuits. . . . All the rivers run into the sea; yet the sea
+is not full; unto the place from whence the rivers come,
+thither they return again.”</p>
+<p>- Ecclesiastes</p>
+</div>
+        </front>
+<body>
+<div type ="book">
+<p>BOOK I</p>
+
+<pb n="3"/>
+<div type="chapter">
+    <p>CHAPTER 1</p>
+<lb/>
+<p>Robert Cohn was once middleweight boxing champion of
+Princeton. Do not think that I am very much impressed by that
+as a boxing title, but it meant a lot to Cohn. He cared nothing for
+boxing, in fact he disliked it, but he learned it painfully and
+thoroughly to counteract the feeling of inferiority and shyness
+he had felt on being treated as a Jew at Princeton. There was a
+certain inner comfort in knowing he could knock down anybody
+who was snooty to him, although, being very shy and a thoroughly
+nice boy, he never fought except in the gym. He was Spider
+Kelly’s star pupil. Spider Kelly taught all his young gentlemen to
+box like featherweights, no matter whether they weighed one
+hundred and five or two hundred and five pounds. But it seemed
+to fit Cohn. He was really very fast. He was so good that Spider
+promptly overmatched him and got his nose permanently flattened.
+This increased Cohn’s distaste for boxing, but it gave him
+a certain satisfaction of some strange sort, and it certainly improved
+his nose. In his last year at Princeton he read too much
+<pb n="4"/>
+    and took to wearing spectacles. I never met any one of his class
+who remembered him. They did not even remember that he was
+middleweight boxing champion.</p>
+<p>I mistrust all frank and simple people, especially when their
+stories hold together, and I always had a suspicion that perhaps
+Robert Cohn had never been middleweight boxing champion,
+and that perhaps a horse had stepped on his face, or that maybe
+his mother had been frightened or seen something, or that he had,
+maybe, bumped into something as a young child, but I finally had
+somebody verify the story from Spider Kelly. Spider Kelly not only
+remembered Cohn. He had often wondered what had become
+of him.</p>
+<p>Robert Cohn was a member, through his father, of one of the
+richest Jewish families in New York, and through his mother of
+one of the oldest. At the military school where he prepped for
+Princeton, and played a very good end on the football team, no
+one had made him race-conscious. No one had ever made him
+feel he was a Jew, and hence any different from anybody else,
+until he went to Princeton. He was a nice boy, a friendly boy,
+and very shy, and it made him bitter. He took it out in boxing, and
+he came out of Princeton with painful self-consciousness and the
+flattened nose, and was married by the first girl who was nice to
+him. He was married five years, had three children, lost most of
+the fifty thousand dollars his father left him, the balance of the
+estate having gone to his mother, hardened into a rather unattractive
+mould under domestic unhappiness with a rich wife; and
+just when he had made up his mind to leave his wife she left him
+and went off with a miniature-painter. As he had been thinking
+for months about leaving his wife and had not done it because it
+would be too cruel to deprive her of himself, her departure was a
+very healthful shock.</p>
+<p>The divorce was arranged and Robert Cohn went out to the
+Coast. In California he fell among literary people and, as he still
+<pb n="5"/>
+had a little of the fifty thousand left, in a short time he was backing
+a review of the Arts. The review commenced publication in
+Carmel, California, and finished in Provincetown, Massachusetts.
+By that time Cohn, who had been regarded purely as an angel,
+and whose name had appeared on the editorial page merely as a
+member of the advisory board, had become the sole editor. It was
+his money and he discovered he liked the authority of editing. He
+was sorry when the magazine became too expensive and he had to
+give it up.</p>
+<p>By that time, though, he had other things to worry about. He
+had been taken in hand by a lady who hoped to rise with the
+magazine. She was very forceful, and Cohn never had a chance of
+not being taken in hand. Also he was sure that he loved her.
+When this lady saw that the magazine was not going to rise, she
+became a little disgusted with Cohn and decided that she might
+as well get what there was to get while there was still something
+available, so she urged that they go to Europe, where Cohn could
+write. They came to Europe, where the lady had been educated,
+and stayed three years. During these three years, the first spent in
+travel, the last two in Paris, Robert Cohn had two friends, Braddocks
+and myself. Braddocks was his literary friend. I was his
+tennis friend.</p>
+<p>The lady who had him, her name was Frances, found toward
+the end of the second year that her looks were going, and her
+attitude toward Robert changed from one of careless possession
+and exploitation to the absolute determination that he should
+marry her. During this time Robert’s mother had settled an allowance
+on him, about three hundred dollars a month. During
+two years and a half I do not believe that Robert Cohn looked
+at another woman. He was fairly happy, except that, like many
+people living in Europe, he would rather have been in America,
+and he had discovered writing. He wrote a novel, and it was not
+really such a bad novel as the critics later called it, although it
+<pb n="6"/>
+was a very poor novel. He read many books, played bridge,
+played tennis, and boxed at a local gymnasium.</p>
+<p>I first became aware of his lady’s attitude toward him one night
+after the three of us had dined together. We had dined at
+l’Avenue’s and afterward went to the Café de Versailles for coffee.
+We had several fines after the coffee, and I said I must be
+going. Cohn had been talking about the two of us going off somewhere
+on a weekend trip. He wanted to get out of town and get
+in a good walk. I suggested we fly to Strasbourg and walk up to
+Saint Odile, or somewhere or other in Alsace. “I know a girl in
+Strasbourg who can show us the town,” I said.</p>
+<p>Somebody kicked me under the table. I thought it was accidental
+and went on: “She’s been there two years and knows
+everything there is to know about the town. She’s a swell girl.”</p>
+<p>I was kicked again under the table and, looking, saw Frances,
+Robert’s lady, her chin lifting and her face hardening.</p>
+<p>“Hell,” I said, “why go to Strasbourg? We could go up to Bruges,
+or to the Ardennes.”</p>
+<p>Cohn looked relieved. I was not kicked again. I said good-night
+and went out. Cohn said he wanted to buy a paper and would
+walk to the corner with me. “For God’s sake,” he said, “why did
+you say that about that girl in Strasbourg for? Didn’t you see
+Frances?”</p>
+<p>“No, why should I? If I know an American girl that lives in
+Strasbourg what the hell is it to Frances?”</p>
+<p>“It doesn’t make any difference. Any girl. I couldn’t go, that
+would be all.”</p>
+<p>“Don’t be silly.”</p>
+<p>“You don’t know Frances. Any girl at all. Didn’t you see the way
+she looked?”</p>
+<p>“Oh, well,” I said, “let’s go to Senlis.”</p>
+<p>“Don’t get sore.”</p>
+<pb n="7"/>
+<p>“I’m not sore. Senlis is a good place and we can stay at the
+Grand Cerf and take a hike in the woods and come home.”</p>
+<p>“Good, that will be fine.”</p>
+<p>“Well, I’ll see you to-morrow at the courts,” I said.</p>
+<p>“Good-night, Jake,” he said, and started back to the café.</p>
+<p>“You forgot to get your paper,” I said.</p>
+<p>“That’s so.” He walked with me up to the kiosque at the corner.
+“You are not sore, are you, Jake?” He turned with the paper
+in his hand.</p>
+<p>“No, why should I be?”</p>
+<p>“See you at tennis,” he said. I watched him walk back to the
+café holding his paper. I rather liked him and evidently she led
+him quite a life. </p></div>
+<pb n="8"/>
+<div type="chapter">
+    <p>CHAPTER 2</p>
+<p>That winter Robert Cohn went over to America with his novel,
+and it was accepted by a fairly good publisher. His going made
+an awful row I heard, and I think that was where Frances lost
+him, because several women were nice to him in New York, and
+when he came back he was quite changed. He was more enthusiastic
+about America than ever, and he was not so simple, and he
+was not so nice. The publishers had praised his novel pretty
+highly and it rather went to his head. Then several women had
+put themselves out to be nice to him, and his horizons had all
+shifted. For four years his horizon had been absolutely limited to
+his wife. For three years, or almost three years, he had never seen
+beyond Frances. I am sure he had never been in love in his life.</p>
+<p>He had married on the rebound from the rotten time he had in
+college, and Frances took him on the rebound from his discovery
+that he had not been everything to his first wife. He was not in
+love yet but he realized that he was an attractive quantity to
+women, and that the fact of a woman caring for him and wanting
+<pb n="9"/>
+to live with him was not simply a divine miracle. This changed
+him so that he was not so pleasant to have around. Also, playing
+for higher stakes than he could afford in some rather steep bridge
+games with his New York connections, he had held cards and
+won several hundred dollars. It made him rather vain of his
+bridge game, and he talked several times of how a man could
+always make a living at bridge if he were ever forced to.</p>
+<p>Then there was another thing. He had been reading W. H.
+Hudson. That sounds like an innocent occupation, but Cohn had
+read and reread “The Purple Land.” “The Purple Land” is a very
+sinister book if read too late in life. It recounts splendid imaginary
+amorous adventures of a perfect English gentleman in an intensely
+romantic land, the scenery of which is very well described.
+For a man to take it at thirty-four as a guide-book to what life
+holds is about as safe as it would be for a man of the same age
+to enter Wall Street direct from a French convent, equipped with
+a complete set of the more practical Alger books. Cohn, I believe,
+took every word of “The Purple Land” as literally as though it
+had been an R. G. Dun report. You understand me, he made
+some reservations, but on the whole the book to him was sound.
+It was all that was needed to set him off. I did not realize the
+extent to which it had set him off until one day he came into
+my office.</p>
+<p>“Hello, Robert,” I said. “Did you come in to cheer me up?”</p>
+<p>“Would you like to go to South America, Jake?” he asked.</p>
+<p>“No.”</p>
+<p>“Why not?”</p>
+<p>“I don’t know. I never wanted to go. Too expensive. You can
+see all the South Americans you want in Paris anyway.”</p>
+<p>“They’re not the real South Americans.”</p>
+<p>“They look awfully real to me.”</p>
+<p>I had a boat train to catch with a week’s mail stories, and only
+half of them written.</p>
+<pb n="10"/>
+<p>“Do you know any dirt?” I asked.</p>
+<p>“No.”</p>
+<p>“None of your exalted connections getting divorces?”</p>
+<p>“No; listen, Jake. If I handled both our expenses, would you
+go to South America with me?”</p>
+<p>“Why me?”</p>
+<p>“You can talk Spanish. And it would be more fun with two of
+us.”</p>
+<p>“No,” I said, “I like this town and I go to Spain in the summer-time.”</p>
+<p>“All my life I’ve wanted to go on a trip like that,” Cohn said.
+He sat down. “I’ll be too old before I can ever do it.”</p>
+<p>“Don’t be a fool,” I said. “You can go anywhere you want.
+You’ve got plenty of money.”</p>
+<p>“I know. But I can’t get started.”</p>
+<p>“Cheer up,” I said. “All countries look just like the moving
+pictures.”</p>
+<p>But I felt sorry for him. He had it badly.</p>
+<p>“I can’t stand it to think my life is going so fast and I’m not
+really living it.”</p>
+<p>“Nobody ever lives their life all the way up except bull-fighters.”</p>
+<p>“I’m not interested in bull-fighters. That’s an abnormal life. I
+want to go back in the country in South America. We could have
+a great trip.”</p>
+<p>“Did you ever think about going to British East Africa to shoot?”</p>
+<p>“No, I wouldn’t like that.”</p>
+<p>“I’d go there with you.”</p>
+<p>“No; that doesn’t interest me.”</p>
+<p>“That’s because you never read a book about it. Go on and
+read a book all full of love affairs with the beautiful shiny black
+princesses.”</p>
+<p>“I want to go to South America.”</p>
+<pb n="11"/>
+<p>He had a hard, Jewish, stubborn streak.</p>
+<p>“Come on down-stairs and have a drink.”</p>
+<p>“Aren’t you working?”</p>
+<p>“No,” I said. We went down the stairs to the café on the ground
+floor. I had discovered that was the best way to get rid of friends.
+Once you had a drink all you had to say was: “Well, I’ve got to
+get back and get off some cables,” and it was done. It is very important
+to discover graceful exits like that in the newspaper business,
+where it is such an important part of the ethics that you
+should never seem to be working. Anyway, we went down-stairs
+to the bar and had a whiskey and soda. Cohn looked at the bottles
+in bins around the wall. “This is a good place,” he said.</p>
+<p>“There’s a lot of liquor,” I agreed.</p>
+<p>“Listen, Jake,” he leaned forward on the bar. “Don’t you ever
+get the feeling that all your life is going by and you’re not taking
+advantage of it? Do you realize you’ve lived nearly half the time
+you have to live already?”</p>
+<p>“Yes, every once in a while.”</p>
+<p>“Do you know that in about thirty-five years more we’ll be
+dead?”</p>
+<p>“What the hell, Robert,” I said. “What the hell.”</p>
+<p>“I’m serious.”</p>
+<p>“It’s one thing I don’t worry about,” I said.</p>
+<p>“You ought to.”</p>
+<p>“I’ve had plenty to worry about one time or other. I’m through
+worrying.”</p>
+<p>“Well, I want to go to South America.”</p>
+<p>“Listen, Robert, going to another country doesn’t make any difference.
+I’ve tried all that. You can’t get away from yourself by
+moving from one place to another. There’s nothing to that.”</p>
+<p>“But you’ve never been to South America.”</p>
+<p>“South America hell! If you went there the way you feel now it
+<pb n="12"/>
+would be exactly the same. This is a good town. Why don’t you
+start living your life in Paris?”</p>
+<p>“I’m sick of Paris, and I’m sick of the Quarter.”</p>
+<p>“Stay away from the Quarter. Cruise around by yourself and
+see what happens to you.”</p>
+<p>“Nothing happens to me. I walked alone all one night and
+nothing happened except a bicycle cop stopped me and asked to
+see my papers.”</p>
+<p>“Wasn’t the town nice at night?”</p>
+<p>“I don’t care for Paris.”</p>
+<p>So there you were. I was sorry for him, but it was not a thing
+you could do anything about, because right away you ran up
+against the two stubbornnesses: South America could fix it and
+he did not like Paris. He got the first idea out of a book, and I
+suppose the second came out of a book too.</p>
+<p>“Well,” I said, “I’ve got to go up-stairs and get off some cables.”</p>
+<p>“Do you really have to go?”</p>
+<p>“Yes, I’ve got to get these cables off.”</p>
+<p>“Do you mind if I come up and sit around the office?”</p>
+<p>“No, come on up.”</p>
+<p>He sat in the outer room and read the papers, and the Editor
+and Publisher and I worked hard for two hours. Then I sorted
+out the carbons, stamped on a by-line, put the stuff in a couple of
+big manila envelopes and rang for a boy to take them to the Gare
+St. Lazare. I went out into the other room and there was Robert
+Cohn asleep in the big chair. He was asleep with his head on his
+arms. I did not like to wake him up, but I wanted to lock the
+office and shove off. I put my hand on his shoulder. He shook his
+head. “I can’t do it,” he said, and put his head deeper into his
+arms. “I can’t do it. Nothing will make me do it.”</p>
+<p>“Robert,” I said, and shook him by the shoulder. He looked up.
+He smiled and blinked.</p>
+<p>“Did I talk out loud just then?”</p>
+<pb n="13"/>
+<p>“Something. But it wasn’t clear.”</p>
+<p>“God, what a rotten dream!”</p>
+<p>“Did the typewriter put you to sleep?”</p>
+<p>“Guess so. I didn’t sleep all last night.”</p>
+<p>“What was the matter?”</p>
+<p>“Talking,” he said.</p>
+<p>I could picture it. I have a rotten habit of picturing the bedroom
+scenes of my friends. We went out to the Café Napolitain to
+have an <hi rend="italic">apéritif</hi> and watch the evening crowd on the Boulevard.</p>
+<pb n="14"/></div>
+    
+<div type="chapter">
+    <p>CHAPTER 3</p>
+<p>It was a warm spring night and I sat at a table on the terrace of
+the Napolitain after Robert had gone, watching it get dark and
+the electric signs come on, and the red and green stop-and-go
+traffic-signal, and the crowd going by, and the horse-cabs
+clippety-clopping along at the edge of the solid taxi traffic, and
+the <hi rend="italic">poules</hi> going by, singly and in pairs, looking for the evening
+meal. I watched a good-looking girl walk past the table and
+watched her go up the street and lost sight of her, and watched
+another, and then saw the first one coming back again. She
+went by once more and I caught her eye, and she came over and
+sat down at the table. The waiter came up.</p>
+<p>“Well, what will you drink?” I asked.</p>
+<p>“Pernod.”</p>
+<p>“That’s not good for little girls.”</p>
+<p>“Little girl yourself. Dites garçon, un pernod.”</p>
+<p>“A pernod for me, too.”</p>
+<p>“What’s the matter?” she asked. “Going on a party?”
+<pb n="15"/></p>
+<p>“Sure. Aren’t you?”</p>
+<p>“I don’t know. You never know in this town.”</p>
+<p>“Don’t you like Paris?”</p>
+<p>“No.”</p>
+<p>“Why don’t you go somewhere else?”</p>
+<p>“Isn’t anywhere else.”</p>
+<p>“You’re happy, all right.”</p>
+<p>“Happy, hell!”</p>
+<p>Pernod is greenish imitation absinthe. When you add water it
+turns milky. It tastes like licorice and it has a good uplift, but it
+drops you just as far. We sat and drank it, and the girl looked
+sullen.</p>
+<p>“Well,” I said, “are you going to buy me a dinner?”</p>
+<p>She grinned and I saw why she made a point of not laughing.
+With her mouth closed she was a rather pretty girl. I paid for the
+saucers and we walked out to the street. I hailed a horse-cab and
+the driver pulled up at the curb. Settled back in the slow,
+smoothly rolling <hi rend="italic">fiacre</hi> we moved up the Avenue de l’Opéra,
+passed the locked doors of the shops, their windows lighted, the
+Avenue broad and shiny and almost deserted. The cab passed
+the New York <hi rend="italic">Herald</hi> bureau with the window full of clocks.</p>
+<p>“What are all the clocks for?” she asked.</p>
+<p>“They show the hour all over America.”</p>
+<p>“Don’t kid me.”</p>
+<p>We turned off the Avenue up the Rue des Pyramides, through
+the traffic of the Rue de Rivoli, and through a dark gate into the
+Tuileries. She cuddled against me and I put my arm around her.
+She looked up to be kissed. She touched me with one hand and
+I put her hand away.</p>
+<p>“Never mind.”</p>
+<p>“What’s the matter? You sick?”</p>
+<p>“Yes.”</p>
+<p>“Everybody’s sick. I’m sick, too.”
+<pb n="16"/></p>
+    <p>We came out of the Tuileries into the light and crossed the
+Seine and then turned up the Rue des Saints Pères.</p>
+<p>“You oughtn’t to drink pernod if you’re sick.”</p>
+<p>“You neither.”</p>
+<p>“It doesn’t make any difference with me. It doesn’t make any
+difference with a woman.”</p>
+<p>“What are you called?”</p>
+<p>“Georgette. How are you called?”</p>
+<p>“Jacob.”</p>
+<p>“That’s a Flemish name.”</p>
+<p>“American too.”</p>
+<p>“You’re not Flamand?”</p>
+<p>“No, American.”</p>
+<p>“Good, I detest Flamands.”</p>
+<p>By this time we were at the restaurant. I called to the <hi rend="italic">cocher</hi>
+to stop. We got out and Georgette did not like the looks of the
+place. “This is no great thing of a restaurant.”</p>
+<p>“No,” I said. “Maybe you would rather go to Foyot’s. Why don’t
+you keep the cab and go on?”</p>
+<p>I had picked her up because of a vague sentimental idea that
+it would be nice to eat with some one. It was a long time since I
+had dined with a <hi rend="italic">poule</hi>, and I had forgotten how dull it could be.
+We went into the restaurant, passed Madame Lavigne at the
+desk and into a little room. Georgette cheered up a little under
+the food.</p>
+<p>“It isn’t bad here,” she said. “It isn’t chic, but the food is all
+right.”</p>
+<p>“Better than you eat in Liège.”</p>
+<p>“Brussels, you mean.”</p>
+<p>We had another bottle of wine and Georgette made a joke.
+She smiled and showed all her bad teeth, and we touched
+glasses. “You’re not a bad type,” she said. “It’s a shame you’re
+sick. We get on well. What’s the matter with you, anyway?”
+<pb n="17"/> </p>
+<p>“I got hurt in the war,” I said.</p>
+<p>“Oh, that dirty war.”</p>
+<p>We would probably have gone on and discussed the war and
+agreed that it was in reality a calamity for civilization, and perhaps
+would have been better avoided. I was bored enough. Just
+then from the other room some one called: “Barnes! I say,
+Barnes! Jacob Barnes!”</p>
+<p>“It’s a friend calling me,” I explained, and went out.</p>
+<p>There was Braddocks at a big table with a party: Cohn, Frances
+Clyne, Mrs. Braddocks, several people I did not know.</p>
+<p>“You’re coming to the dance, aren’t you?” Braddocks asked.</p>
+<p>“What dance?”</p>
+<p>“Why, the dancings. Don’t you know we’ve revived them?”
+Mrs. Braddocks put in.</p>
+<p>“You must come, Jake. We’re all going,” Frances said from the
+end of the table. She was tall and had a smile.</p>
+<p>“Of course, he’s coming,” Braddocks said. “Come in and have
+coffee with us, Barnes.”</p>
+<p>“Right.”</p>
+<p>“And bring your friend,” said Mrs. Braddocks laughing. She
+was a Canadian and had all their easy social graces.</p>
+<p>“Thanks, we’ll be in,” I said. I went back to the small room.</p>
+<p>“Who are your friends?” Georgette asked.</p>
+<p>“Writers and artists.”</p>
+<p>“There are lots of those on this side of the river.”</p>
+<p>“Too many.”</p>
+<p>“I think so. Still, some of them make money.”</p>
+<p>“Oh, yes.”</p>
+<p>We finished the meal and the wine. “Come on,” I said. “We’re
+going to have coffee with the others.”</p>
+<p>Georgette opened her bag, made a few passes at her face as
+she looked in the little mirror, re-defined her lips with the lipstick,
+and straightened her hat.
+<pb n="18"/></p>
+<p>“Good,” she said.</p>
+<p>We went into the room full of people and Braddocks and the
+men at his table stood up.</p>
+<p>“I wish to present my fiancée, Mademoiselle Georgette
+Leblanc,” I said. Georgette smiled that wonderful smile, and we
+shook hands all round.</p>
+<p>“Are you related to Georgette Leblanc, the singer?” Mrs. Braddocks
+asked.</p>
+<p>“Connais pas,” Georgette answered.</p>
+<p>“But you have the same name,” Mrs. Braddocks insisted
+cordially.</p>
+<p>“No,” said Georgette. “Not at all. My name is Hobin.”</p>
+<p>“But Mr. Barnes introduced you as Mademoiselle Georgette
+Leblanc. Surely he did,” insisted Mrs. Braddocks, who in the excitement
+of talking French was liable to have no idea what she
+was saying.</p>
+<p>“He’s a fool,” Georgette said.</p>
+<p>“Oh, it was a joke, then,” Mrs. Braddocks said.</p>
+<p>“Yes,” said Georgette. “To laugh at.”</p>
+<p>“Did you hear that, Henry?” Mrs. Braddocks called down the
+table to Braddocks. “Mr. Barnes introduced his fiancée as Mademoiselle
+Leblanc, and her name is actually Hobin.”</p>
+<p>“Of course, darling. Mademoiselle Hobin, I’ve known her for a
+very long time.”</p>
+<p>“Oh, Mademoiselle Hobin,” Frances Clyne called, speaking
+French very rapidly and not seeming so proud and astonished as
+Mrs. Braddocks at its coming out really French. “Have you been
+in Paris long? Do you like it here? You love Paris, do you not?”</p>
+<p>“Who’s she?” Georgette turned to me. “Do I have to talk to
+her?”</p>
+<p>She turned to Frances, sitting smiling, her hands folded, her
+head poised on her long neck, her lips pursed ready to start talking
+again.
+<pb n="19"/></p>
+<p>“No, I don’t like Paris. It’s expensive and dirty.”</p>
+<p>“Really? I find it so extraordinarily clean. One of the cleanest
+cities in all Europe.”</p>
+<p>“I find it dirty.”</p>
+<p>“How strange! But perhaps you have not been here very
+long.”</p>
+<p>“I’ve been here long enough.”</p>
+<p>“But it does have nice people in it. One must grant that.”</p>
+<p>Georgette turned to me. “You have nice friends.”</p>
+<p>Frances was a little drunk and would have liked to have kept
+it up but the coffee came, and Lavigne with the liqueurs, and
+after that we all went out and started for Braddocks’s dancing-club.</p>
+<p>The dancing-club was a <hi rend="italic">bal musette</hi> in the Rue de la Montagne
+Sainte Geneviève. Five nights a week the working people of the
+Pantheon quarter danced there. One night a week it was the
+dancing-club. On Monday nights it was closed. When we arrived
+it was quite empty, except for a policeman sitting near the door,
+the wife of the proprietor back of the zinc bar, and the proprietor
+himself. The daughter of the house came downstairs as
+we went in. There were long benches, and tables ran across the
+room, and at the far end a dancing-floor.</p>
+<p>“I wish people would come earlier,” Braddocks said. The
+daughter came up and wanted to know what we would drink.
+The proprietor got up on a high stool beside the dancing-floor and
+began to play the accordion. He had a string of bells around one
+of his ankles and beat time with his foot as he played. Every one
+danced. It was hot and we came off the floor perspiring.</p>
+<p>“My God,” Georgette said. “What a box to sweat in!”</p>
+<p>“It’s hot.”</p>
+<p>“Hot, my God!”</p>
+<p>“Take off your hat.”</p>
+<p>“That’s a good idea.”
+<pb n="20"/></p>
+<p>Some one asked Georgette to dance, and I went over to the bar.
+It was really very hot and the accordion music was pleasant in
+the hot night. I drank a beer, standing in the doorway and getting
+the cool breath of wind from the street. Two taxis were coming
+down the steep street. They both stopped in front of the Bal. A
+crowd of young men, some in jerseys and some in their shirt-sleeves,
+got out. I could see their hands and newly washed, wavy
+hair in the light from the door. The policeman standing by the
+door looked at me and smiled. They came in. As they went in,
+under the light I saw white hands, wavy hair, white faces, grimacing,
+gesturing, talking. With them was Brett. She looked very
+lovely and she was very much with them.</p>
+<p>One of them saw Georgette and said: “I do declare. There is
+an actual harlot. I’m going to dance with her, Lett. You watch
+me.”</p>
+<p>The tall dark one, called Lett, said: “Don’t you be rash.”</p>
+<p>The wavy blond one answered: “Don’t you worry, dear.” And
+with them was Brett.</p>
+<p>I was very angry. Somehow they always made me angry. I
+know they are supposed to be amusing, and you should be tolerant,
+but I wanted to swing on one, any one, anything to shatter
+that superior, simpering composure. Instead, I walked down the
+street and had a beer at the bar at the next Bal. The beer was
+not good and I had a worse cognac to take the taste out of my
+mouth. When I came back to the Bal there was a crowd on the
+floor and Georgette was dancing with the tall blond youth, who
+danced big-hippily, carrying his head on one side, his eyes lifted
+as he danced. As soon as the music stopped another one of them
+asked her to dance. She had been taken up by them. I knew then
+that they would all dance with her. They are like that.</p>
+<p>I sat down at a table. Cohn was sitting there. Frances was
+dancing. Mrs. Braddocks brought up somebody and introduced
+him as Robert Prentiss. He was from New York by way of
+<pb n="21"/>
+Chicago, and was a rising new novelist. He had some sort of an
+English accent. I asked him to have a drink.</p>
+<p>“Thanks so much,” he said, “I’ve just had one.”</p>
+<p>“Have another.”</p>
+<p>“Thanks, I will then.”</p>
+<p>We got the daughter of the house over and each had a <hi rend="italic">fine à
+l’eau.</hi></p>
+<p>“You’re from Kansas City, they tell me,” he said.</p>
+<p>“Yes.”</p>
+<p>“Do you find Paris amusing?”</p>
+<p>“Yes.”</p>
+<p>“Really?”</p>
+<p>I was a little drunk. Not drunk in any positive sense but just
+enough to be careless.</p>
+<p>“For God’s sake,” I said, “yes. Don’t you?”</p>
+<p>“Oh, how charmingly you get angry,” he said. “I wish I had that
+faculty.”</p>
+<p>I got up and walked over toward the dancing-floor. Mrs. Braddocks
+followed me. “Don’t be cross with Robert,” she said.
+“He’s still only a child, you know.”</p>
+<p>“I wasn’t cross,” I said. “I just thought perhaps I was going to
+throw up.”</p>
+<p>“Your fiancée is having a great success,” Mrs. Braddocks looked
+out on the floor where Georgette was dancing in the arms of the
+tall, dark one, called Lett.</p>
+<p>“Isn’t she?” I said.</p>
+<p>“Rather,” said Mrs. Braddocks.</p>
+<p>Cohn came up. “Come on, Jake,” he said, “have a drink.” We
+walked over to the bar. “What’s the matter with you? You seem all
+worked up over something?”</p>
+<p>“Nothing. This whole show makes me sick is all.”</p>
+<p>Brett came up to the bar.</p>
+<p>“Hello, you chaps.”
+<pb n="22"/></p>
+<p>“Hello, Brett,” I said. “Why aren’t you tight?”</p>
+<p>“Never going to get tight any more. I say, give a chap a brandy
+and soda.”</p>
+<p>She stood holding the glass and I saw Robert Cohn looking at
+her. He looked a great deal as his compatriot must have looked
+when he saw the promised land. Cohn, of course, was much
+younger. But he had that look of eager, deserving expectation.</p>
+<p>Brett was damned good-looking. She wore a slipover jersey
+sweater and a tweed skirt, and her hair was brushed back like a
+boy’s. She started all that. She was built with curves like the hull
+of a racing yacht, and you missed none of it with that wool
+jersey.</p>
+<p>“It’s a fine crowd you’re with, Brett,” I said.</p>
+<p>“Aren’t they lovely? And you, my dear. Where did you get it?”</p>
+<p>“At the Napolitain.”</p>
+<p>“And have you had a lovely evening?”</p>
+<p>“Oh, priceless,” I said.</p>
+<p>Brett laughed. “It’s wrong of you, Jake. It’s an insult to all of
+us. Look at Frances there, and Jo.”</p>
+<p>This for Cohn’s benefit.</p>
+<p>“It’s in restraint of trade,” Brett said. She laughed again.</p>
+<p>“You’re wonderfully sober,” I said.</p>
+<p>“Yes. Aren’t I? And when one’s with the crowd I’m with, one
+can drink in such safety, too.”</p>
+<p>The music started and Robert Cohn said: “Will you dance this
+with me, Lady Brett?”</p>
+<p>Brett smiled at him. “I’ve promised to dance this with Jacob,”
+she laughed. “You’ve a hell of a biblical name, Jake.”</p>
+<p>“How about the next?” asked Cohn.</p>
+<p>“We’re going,” Brett said. “We’ve a date up at Montmartre.”
+Dancing, I looked over Brett’s shoulder and saw Cohn, standing
+at the bar, still watching her.</p>
+<p>“You’ve made a new one there,” I said to her.
+<pb n="23"/></p>
+<p>“Don’t talk about it. Poor chap. I never knew it till just now.”</p>
+<p>“Oh, well,” I said. “I suppose you like to add them up.”</p>
+<p>“Don’t talk like a fool.”</p>
+<p>“You do.”</p>
+<p>“Oh, well. What if I do?”</p>
+<p>“Nothing,” I said. We were dancing to the accordion and some
+one was playing the banjo. It was hot and I felt happy. We passed
+close to Georgette dancing with another one of them.</p>
+<p>“What possessed you to bring her?”</p>
+<p>“I don’t know, I just brought her.”</p>
+<p>“You’re getting damned romantic.”</p>
+<p>“No, bored.”</p>
+<p>“Now?”</p>
+<p>“No, not now.”</p>
+<p>“Let’s get out of here. She’s well taken care of.”</p>
+<p>“Do you want to?”</p>
+<p>“Would I ask you if I didn’t want to?”</p>
+<p>We left the floor and I took my coat off a hanger on the wall
+and put it on. Brett stood by the bar. Cohn was talking to her.
+I stopped at the bar and asked them for an envelope. The patronne
+found one. I took a fifty-franc note from my pocket, put
+it in the envelope, sealed it, and handed it to the patronne.</p>
+<p>“If the girl I came with asks for me, will you give her this?” I
+said. “If she goes out with one of those gentlemen, will you save
+this for me?”</p>
+<p>“C’est entendu, Monsieur,” the patronne said. “You go now?
+So early?”</p>
+<p>“Yes,” I said.</p>
+<p>We started out the door. Cohn was still talking to Brett. She
+said good night and took my arm. “Good night, Cohn,” I said.
+Outside in the street we looked for a taxi.</p>
+<p>“You’re going to lose your fifty francs,” Brett said.</p>
+<p>“Oh, yes.”
+<pb n="24"/></p>
+<p>“No taxis.”</p>
+<p>“We could walk up to the Pantheon and get one.”</p>
+<p>“Come on and we’ll get a drink in the pub next door and send
+for one.”</p>
+<p>“You wouldn’t walk across the street.”</p>
+<p>“Not if I could help it.”</p>
+<p>We went into the next bar and I sent a waiter for a taxi.</p>
+<p>“Well,” I said, “we’re out away from them.”</p>
+<p>We stood against the tall zinc bar and did not talk and looked
+at each other. The waiter came and said the taxi was outside.
+Brett pressed my hand hard. I gave the waiter a franc and we
+went out. “Where should I tell him?” I asked.</p>
+<p>“Oh, tell him to drive around.”</p>
+<p>I told the driver to go to the Parc Montsouris, and got in, and
+slammed the door. Brett was leaning back in the corner, her eyes
+closed. I got in and sat beside her. The cab started with a jerk.</p>
+<p>“Oh, darling, I’ve been so miserable,” Brett said.
+<pb n="25"/></p></div>
+<div type="chapter">
+    <p>CHAPTER 4</p>
+<p>The taxi went up the hill, passed the lighted square, then on into
+the dark, still climbing, then levelled out onto a dark street behind
+St. Etienne du Mont, went smoothly down the asphalt,
+passed the trees and the standing bus at the Place de la Contrescarpe,
+then turned onto the cobbles of the Rue Mouffetard.
+There were lighted bars and late open shops on each side of the
+street. We were sitting apart and we jolted close together going
+down the old street. Brett’s hat was off. Her head was back. I
+saw her face in the lights from the open shops, then it was dark,
+then I saw her face clearly as we came out on the Avenue des
+Gobelins. The street was torn up and men were working on the
+car-tracks by the light of acetylene flares. Brett’s face was white
+and the long line of her neck showed in the bright light of the
+flares. The street was dark again and I kissed her. Our lips were
+tight together and then she turned away and pressed against the
+corner of the seat, as far away as she could get. Her head was
+down.
+<pb n="26"/></p>
+<p>“Don’t touch me,” she said. “Please don’t touch me.”</p>
+<p>“What’s the matter?”</p>
+<p>“I can’t stand it.”</p>
+<p>“Oh, Brett.”</p>
+<p>“You mustn’t. You must know. I can’t stand it, that’s all. Oh,
+darling, please understand!”</p>
+<p>“Don’t you love me?”</p>
+<p>“Love you? I simply turn all to jelly when you touch me.”</p>
+<p>“Isn’t there anything we can do about it?”</p>
+<p>She was sitting up now. My arm was around her and she was
+leaning back against me, and we were quite calm. She was looking
+into my eyes with that way she had of looking that made you
+wonder whether she really saw out of her own eyes. They would
+look on and on after every one else’s eyes in the world would have
+stopped looking. She looked as though there were nothing on
+earth she would not look at like that, and really she was afraid of
+so many things.</p>
+<p>“And there’s not a damn thing we could do,” I said.</p>
+<p>“I don’t know,” she said. “I don’t want to go through that hell
+again.”</p>
+<p>“We’d better keep away from each other.”</p>
+<p>“But, darling, I have to see you. It isn’t all that you know.”</p>
+<p>“No, but it always gets to be.”</p>
+<p>“That’s my fault. Don’t we pay for all the things we do, though?”</p>
+<p>She had been looking into my eyes all the time. Her eyes had
+different depths, sometimes they seemed perfectly flat. Now you
+could see all the way into them.</p>
+<p>“When I think of the hell I’ve put chaps through. I’m paying
+for it all now.”</p>
+<p>“Don’t talk like a fool,” I said. “Besides, what happened to me
+is supposed to be funny. I never think about it.”</p>
+<p>“Oh, no. I’ll lay you don’t.”</p>
+<p>“Well, let’s shut up about it.”
+<pb n="27"/></p>
+<p>“I laughed about it too, myself, once.” She wasn’t looking at
+me. “A friend of my brother’s came home that way from Mons.
+It seemed like a hell of a joke. Chaps never know anything, do
+they?”</p>
+<p>“No,” I said. “Nobody ever knows anything.”</p>
+<p>I was pretty well through with the subject. At one time or another
+I had probably considered it from most of its various angles,
+including the one that certain injuries or imperfections are a subject
+of merriment while remaining quite serious for the person
+possessing them.</p>
+<p>“It’s funny,” I said. “It’s very funny. And it’s a lot of fun, too,
+to be in love.”</p>
+<p>“Do you think so?” her eyes looked flat again.</p>
+<p>“I don’t mean fun that way. In a way it’s an enjoyable feeling.”</p>
+<p>“No,” she said. “I think it’s hell on earth.”</p>
+<p>“It’s good to see each other.”</p>
+<p>“No. I don’t think it is.”</p>
+<p>“Don’t you want to?”</p>
+<p>“I have to.”</p>
+<p>We were sitting now like two strangers. On the right was the
+Parc Montsouris. The restaurant where they have the pool of live
+trout and where you can sit and look out over the park was
+closed and dark. The driver leaned his head around.</p>
+<p>“Where do you want to go?” I asked. Brett turned her head
+away.</p>
+<p>“Oh, go to the Select.”</p>
+<p>“Café Select,” I told the driver. “Boulevard Montparnasse.”
+We drove straight down, turning around the Lion de Belfort that
+guards the passing Montrouge trams. Brett looked straight ahead.
+On the Boulevard Raspail, with the lights of Montparnasse in
+sight, Brett said: “Would you mind very much if I asked you to
+do something?”</p>
+<p>“Don’t be silly.”
+<pb n="28"/></p>
+<p>“Kiss me just once more before we get there.”</p>
+<p>When the taxi stopped I got out and paid. Brett came out putting
+on her hat. She gave me her hand as she stepped down. Her
+hand was shaky. “I say, do I look too much of a mess?” She
+pulled her man’s felt hat down and started in for the bar. Inside,
+against the bar and at tables, were most of the crowd who a
+been at the dance.</p>
+<p>“Hello, you chaps,” Brett said. “I’m going to have a drink.”</p>
+<p>“Oh, Brett! Brett!” the little Greek portrait-painter, who called
+himself a duke, and whom everybody called Zizi, pushed up to
+her. “I got something fine to tell you.”</p>
+<p>“Hello, Zizi,” Brett said.</p>
+<p>“I want you to meet a friend,” Zizi said. A fat man came up.</p>
+<p>“Count Mippipopolous, meet my friend Lady Ashley.”</p>
+<p>“How do you do?” said Brett.</p>
+<p>“Well, does your Ladyship have a good time here in Paris?”
+asked Count Mippipopolous, who wore an elk’s tooth on his
+watch-chain.</p>
+<p>“Rather,” said Brett.</p>
+<p>“Paris is a fine town all right,” said the count. “But I guess you
+have pretty big doings yourself over in London.”</p>
+<p>“Oh, yes,” said Brett. “Enormous.”</p>
+<p>Braddocks called to me from a table. “Barnes,” he said, “have a
+drink. That girl of yours got in a frightful row.”</p>
+<p>“What about?”</p>
+<p>“Something the patronne’s daughter said. A corking row. She
+was rather splendid, you know. Showed her yellow card and demanded
+the patronne’s daughter’s too. I say it was a row.”</p>
+<p>“What finally happened?”</p>
+<p>“Oh, some one took her home. Not a bad-looking girl. Wonderful
+command of the idiom. Do stay and have a drink.”</p>
+<p>“No,” I said. “I must shove off. Seen Cohn?”</p>
+<p>“He went home with Frances,” Mrs. Braddock put in.
+<pb n="29"/></p>
+<p>“Poor chap, he looks awfully down,” Braddocks said.</p>
+<p>“I dare say he is,” said Mrs. Braddocks.</p>
+<p>“I have to shove off,” I said. “Good night.”</p>
+<p>I said good night to Brett at the bar. The count was buying
+champagne. “Will you take a glass of wine with us, sir?” he asked.</p>
+<p>“No. Thanks awfully. I have to go.”</p>
+<p>“Really going?” Brett asked.</p>
+<p>“Yes,” I said. “I’ve got a rotten headache.”</p>
+<p>“I’ll see you to-morrow?”</p>
+<p>“Come in at the office.”</p>
+<p>“Hardly.”</p>
+<p>“Well, where will I see you?”</p>
+<p>“Anywhere around five o’clock.”</p>
+<p>“Make it the other side of town then.”</p>
+<p>“Good. I’ll be at the Crillon at five.”</p>
+<p>“Try and be there,” I said.</p>
+<p>“Don’t worry,” Brett said. “I’ve never let you down, have I?”</p>
+<p>“Heard from Mike?”</p>
+<p>“Letter to-day.”</p>
+<p>“Good night, sir,” said the count.</p>
+<p>I went out onto the sidewalk and walked down toward the
+Boulevard St. Michel, passed the tables of the Rotonde, still
+crowded, looked across the street at the Dome, its tables running
+out to the edge of the pavement. Some one waved at me from a
+table, I did not see who it was and went on. I wanted to get
+home. The Boulevard Montparnasse was deserted. Lavigne’s was
+closed tight, and they were stacking the tables outside the
+Closerie des Lilas. I passed Ney’s statue standing among the new-leaved
+chestnut-trees in the arc-light. There was a faded purple
+wreath leaning against the base. I stopped and read the inscription:
+from the Bonapartist Groups, some date; I forget. He looked
+very fine, Marshal Ney in his top-boots, gesturing with his sword
+<pb n="30"/>
+among the green new horse-chestnut leaves. My flat was just
+across the street, a little way down the Boulevard St. Michel.</p>
+<p>There was a light in the concierge’s room and I knocked on
+the door and she gave me my mail. I wished her good night
+and went up-stairs. There were two letters and some papers. I
+looked at them under the gas-light in the dining-room. The letters
+were from the States. One was a bank statement. It showed
+a balance of $2432.60. I got out my check-book and deducted four
+checks drawn since the first of the month, and discovered I had
+a balance of $1832.60. I wrote this on the back of the statement.
+The other letter was a wedding announcement. Mr. and Mrs.
+Aloysius Kirby announce the marriage of their daughter Katherine—I
+knew neither the girl nor the man she was marrying.
+They must be circularizing the town. It was a funny name. I felt
+sure I could remember anybody with a name like Aloysius. It
+was a good Catholic name. There was a crest on the announcement.
+Like Zizi the Greek duke. And that count. The count was
+funny. Brett had a title, too. Lady Ashley. To hell with Brett.
+To hell with you, Lady Ashley.</p>
+<p>I lit the lamp beside the bed, turned off the gas, and opened
+the wide windows. The bed was far back from the windows,
+and I sat with the windows open and undressed by the bed. Outside
+a night train, running on the street-car tracks, went by carrying
+vegetables to the markets. They were noisy at night when
+you could not sleep. Undressing, I looked at myself in the mirror
+of the big armoire beside the bed. That was a typically French
+way to furnish a room. Practical, too, I suppose. Of all the ways
+to be wounded. I suppose it was funny. I put on my pajamas
+and got into bed. I had the two bull-fight papers, and I took their
+wrappers off. One was orange. The other yellow. They would
+both have the same news, so whichever I read first would spoil
+the other. <hi rend="italic">Le Toril</hi> was the better paper, so I started to read it.
+I read it all the way through, including the Petite Correspondance
+<pb n="31"/>
+and the Cornigrams. I blew out the lamp. Perhaps I would be
+able to sleep.</p>
+<p>My head started to work. The old grievance. Well, it was a rotten
+way to be wounded and flying on a joke front like the Italian.
+In the Italian hospital we were going to form a society. It had a
+funny name in Italian. I wonder what became of the others, the
+Italians. That was in the Ospedale Maggiore in Milano, Padiglione
+Ponte. The next building was the Padiglione Zonda. There
+was a statue of Ponte, or maybe it was Zonda. That was where
+the liaison colonel came to visit me. That was funny. That was
+about the first funny thing. I was all bandaged up. But they had
+told him about it. Then he made that wonderful speech: “You, a
+foreigner, an Englishman” (any foreigner was an Englishman)
+“have given more than your life.” What a speech! I would like to
+have it illuminated to hang in the office. He never laughed. He
+was putting himself in my place, I guess. “Che mala fortuna!
+Che mala fortuna!”</p>
+<p>I never used to realize it, I guess. I try and play it along and
+just not make trouble for people. Probably I never would have
+had any trouble if I hadn’t run into Brett when they shipped me
+to England. I suppose she only wanted what she couldn’t have.
+Well, people were that way. To hell with people. The Catholic
+Church had an awfully good way of handling all that. Good advice,
+anyway. Not to think about it. Oh, it was swell advice. Try
+and take it sometime. Try and take it.</p>
+<p>I lay awake thinking and my mind jumping around. Then I
+couldn’t keep away from it, and I started to think about Brett
+and all the rest of it went away. I was thinking about Brett and
+my mind stopped jumping around and started to go in sort of
+smooth waves. Then all of a sudden I started to cry. Then after
+a while it was better and I lay in bed and listened to the heavy
+trams go by and way down the street, and then I went to sleep.</p>
+<p>I woke up. There was a row going on outside. I listened and I
+<pb n="32"/>
+thought I recognized a voice. I put on a dressing-gown and went
+to the door. The concierge was talking down-stairs. She was very
+angry. I heard my name and called down the stairs.</p>
+<p>“Is that you, Monsieur Barnes?” the concierge called.</p>
+<p>“Yes. It’s me.”</p>
+<p>“There’s a species of woman here who’s waked the whole
+street up. What kind of a dirty business at this time of night! She
+says she must see you. I’ve told her you’re asleep.”</p>
+<p>Then I heard Brett’s voice. Half asleep I had been sure it was
+Georgette. I don’t know why. She could not have known my
+address.</p>
+<p>“Will you send her up, please?”</p>
+<p>Brett came up the stairs. I saw she was quite drunk. “Silly
+thing to do,” she said. “Make an awful row. I say, you weren’t
+asleep, were you?”</p>
+<p>“What did you think I was doing?”</p>
+<p>“Don’t know. What time is it?”</p>
+<p>I looked at the clock. It was half-past four. “Had no idea
+what hour it was,” Brett said. “I say, can a chap sit down? Don’t
+be cross, darling. Just left the count. He brought me here.”</p>
+<p>“What’s he like?” I was getting brandy and soda and glasses.</p>
+<p>“Just a little,” said Brett. “Don’t try and make me drunk. The
+count? Oh, rather. He’s quite one of us.”</p>
+<p>“Is he a count?”</p>
+<p>“Here’s how. I rather think so, you know. Deserves to be, anyhow.
+Knows hell’s own amount about people. Don’t know where
+he got it all. Owns a chain of sweetshops in the States.”</p>
+<p>She sipped at her glass.</p>
+<p>“Think he called it a chain. Something like that. Linked them
+all up. Told me a little about it. Damned interesting. He’s one of
+us, though. Oh, quite. No doubt. One can always tell.”</p>
+<p>She took another drink.
+<pb n="33"/></p>
+<p>“How do I buck on about all this? You don’t mind, do you?
+He’s putting up for Zizi, you know.”</p>
+<p>“Is Zizi really a duke, too?”</p>
+<p>“I shouldn’t wonder. Greek, you know. Rotten painter. I rather
+liked the count.”</p>
+<p>“Where did you go with him?”</p>
+<p>“Oh, everywhere. He just brought me here now. Offered me
+ten thousand dollars to go to Biarritz with him. How much is
+that in pounds?”</p>
+<p>“Around two thousand.”</p>
+<p>“Lot of money. I told him I couldn’t do it. He was awfully nice
+about it. Told him I knew too many people in Biarritz.”</p>
+<p>Brett laughed.</p>
+<p>“I say, you are slow on the up-take,” she said. I had only sipped
+my brandy and soda. I took a long drink.</p>
+<p>“That’s better. Very funny,” Brett said. “Then he wanted me to
+go to Cannes with him. Told him I knew too many people in
+Cannes. Monte Carlo. Told him I knew too many people in Monte
+Carlo. Told him I knew too many people everywhere. Quite true,
+too. So I asked him to bring me here.”</p>
+<p>She looked at me, her hand on the table, her glass raised.
+“Don’t look like that,” she said. “Told him I was in love with you.
+True, too. Don’t look like that. He was damn nice about it.
+Wants to drive us out to dinner to-morrow night. Like to go?”</p>
+<p>“Why not?”</p>
+<p>“I’d better go now.”</p>
+<p>“Why?”</p>
+<p>“Just wanted to see you. Damned silly idea. Want to get dressed
+and come down? He’s got the car just up the street.”</p>
+<p>“The count?”</p>
+<p>“Himself. And a chauffeur in livery. Going to drive me around
+and have breakfast in the Bois. Hampers. Got it all at Zelli’s.
+Dozen bottles of Mumms. Tempt you?”
+<pb n="34"/></p>
+<p>“I have to work in the morning,” I said. “I’m too far behind you
+now to catch up and be any fun.”</p>
+<p>“Don’t be an ass.”</p>
+<p>“Can’t do it.”</p>
+<p>“Right. Send him a tender message?”</p>
+<p>“Anything. Absolutely.”</p>
+<p>“Good night, darling.”</p>
+<p>“Don’t be sentimental.”</p>
+<p>“You make me ill.”</p>
+<p>We kissed good night and Brett shivered. “I’d better go,” she
+said. “Good night, darling.”</p>
+<p>“You don’t have to go.”</p>
+<p>“Yes.”</p>
+<p>We kissed again on the stairs and as I called for the cordon
+the concierge muttered something behind her door. I went back
+up-stairs and from the open window watched Brett walking up
+the street to the big limousine drawn up to the curb under the
+arc-light. She got in and it started off. I turned around. On the
+table was an empty glass and a glass half-full of brandy and
+soda. I took them both out to the kitchen and poured the half-full
+glass down the sink. I turned off the gas in the dining-room,
+kicked off my slippers sitting on the bed, and got into bed. This
+was Brett, that I had felt like crying about. Then I thought of
+her walking up the street and stepping into the car, as I had last
+seen her, and of course in a little while I felt like hell again. It is
+awfully easy to be hard-boiled about everything in the daytime,
+but at night it is another thing.
+<pb n="35"/></p></div>
+<div type="chapter">
+    <p>CHAPTER 5</p>
+<p>In the morning I walked down the Boulevard to the rue Soufflot
+for coffee and brioche. It was a fine morning. The horse-chestnut
+trees in the Luxembourg gardens were in bloom. There was the
+pleasant early-morning feeling of a hot day. I read the papers
+with the coffee and then smoked a cigarette. The flower-women
+were coming up from the market and arranging their daily stock.
+Students went by going up to the law school, or down to the
+Sorbonne. The Boulevard was busy with trams and people going
+to work. I got on an S bus and rode down to the Madeleine,
+standing on the back platform. From the Madeleine I walked
+along the Boulevard des Capucines to the Opéra, and up to my
+office. I passed the man with the jumping frogs and the man with
+the boxer toys. I stepped aside to avoid walking into the thread
+with which his girl assistant manipulated the boxers. She was
+standing looking away, the thread in her folded hands. The man
+was urging two tourists to buy. Three more tourists had stopped
+and were watching. I walked on behind a man who was pushing
+<pb n="36"/>
+a roller that printed the name CINZANO on the sidewalk in
+damp letters. All along people were going to work. It felt pleasant
+to be going to work. I walked across the avenue and turned in
+to my office.</p>
+<p>Up-stairs in the office I read the French morning papers,
+smoked, and then sat at the typewriter and got off a good morning’s
+work. At eleven o’clock I went over to the Quai d’Orsay
+in a taxi and went in and sat with about a dozen correspondents,
+while the foreign-office mouthpiece, a young Nouvelle Revue
+Française diplomat in horn-rimmed spectacles, talked and answered
+questions for half an hour. The President of the Council
+was in Lyons making a speech, or, rather he was on his way
+back. Several people asked questions to hear themselves talk
+and there were a couple of questions asked by news service men
+who wanted to know the answers. There was no news. I shared a
+taxi back from the Quai d’Orsay with Woolsey and Krum.</p>
+<p>“What do you do nights, Jake?” asked Krum. “I never see you
+around.”</p>
+<p>“Oh, I’m over in the Quarter.”</p>
+<p>“I’m coming over some night. The Dingo. That’s the great
+place, isn’t it?”</p>
+<p>“Yes. That, or this new dive, The Select.”</p>
+<p>“I’ve meant to get over,” said Krum. “You know how it is,
+though, with a wife and kids.”</p>
+<p>“Playing any tennis?” Woolsey asked.</p>
+<p>“Well, no,” said Krum. “I can’t say I’ve played any this year.
+I’ve tried to get away, but Sundays it’s always rained, and the
+courts are so damned crowded.”</p>
+<p>“The Englishmen all have Saturday off,” Woolsey said.</p>
+<p>“Lucky beggars,” said Krum. “Well, I’ll tell you. Some day I’m
+not going to be working for an agency. Then I’ll have plenty of
+time to get out in the country.”
+<pb n="37"/></p>
+<p>“That’s the thing to do. Live out in the country and have a
+little car.”</p>
+<p>“I’ve been thinking some about getting a car next year.”</p>
+<p>I banged on the glass. The chauffeur stopped. “Here’s my
+street,” I said. “Come in and have a drink.”</p>
+<p>“Thanks, old man,” Krum said. Woolsey shook his head. “I’ve
+got to file that line he got off this morning.”</p>
+<p>I put a two-franc piece in Krum’s hand.</p>
+<p>“You’re crazy, Jake,” he said. “This is on me.”</p>
+<p>“It’s all on the office, anyway.”</p>
+<p>“Nope. I want to get it.”</p>
+<p>I waved good-by. Krum put his head out. “See you at the lunch
+on Wednesday.”</p>
+<p>“You bet.”</p>
+<p>I went to the office in the elevator. Robert Cohn was waiting
+for me. “Hello, Jake,” he said. “Going out to lunch?”</p>
+<p>“Yes. Let me see if there is anything new.”</p>
+<p>“Where will we eat?”</p>
+<p>“Anywhere.”</p>
+<p>I was looking over my desk. “Where do you want to eat?”</p>
+<p>“How about Wetzel’s? They’ve got good hors d’œuvres.”</p>
+<p>In the restaurant we ordered hors d’œuvres and beer. The
+sommelier brought the beer, tall, beaded on the outside of the
+steins, and cold. There were a dozen different dishes of hors
+d’œuvres.</p>
+<p>“Have any fun last night?” I asked.</p>
+<p>“No. I don’t think so.”</p>
+<p>“How’s the writing going?”</p>
+<p>“Rotten. I can’t get this second book going.”</p>
+<p>“That happens to everybody.”</p>
+<p>“Oh, I’m sure of that. It gets me worried, though.”</p>
+<p>“Thought any more about going to South America?”</p>
+<p>“I mean that.”
+<pb n="38"/></p>
+<p>“Well, why don’t you start off?”</p>
+<p>“Frances.”</p>
+<p>“Well,” I said, “take her with you.”</p>
+<p>“She wouldn’t like it. That isn’t the sort of thing she likes. She
+likes a lot of people around.”</p>
+<p>“Tell her to go to hell.”</p>
+<p>“I can’t. I’ve got certain obligations to her.”</p>
+<p>He shoved the sliced cucumbers away and took a pickled
+herring.</p>
+<p>“What do you know about Lady Brett Ashley, Jake?”</p>
+<p>“Her name’s Lady Ashley. Brett’s her own name. She’s a nice
+girl,” I said. “She’s getting a divorce and she’s going to marry
+Mike Campbell. He’s over in Scotland now. Why?”</p>
+<p>“She’s a remarkably attractive woman.”</p>
+<p>“Isn’t she?”</p>
+<p>“There’s a certain quality about her, a certain fineness. She
+seems to be absolutely fine and straight.”</p>
+<p>“She’s very nice.”</p>
+<p>“I don’t know how to describe the quality,” Cohn said. “I suppose
+it’s breeding.”</p>
+<p>“You sound as though you liked her pretty well.”</p>
+<p>“I do. I shouldn’t wonder if I were in love with her.”</p>
+<p>“She’s a drunk,” I said. “She’s in love with Mike Campbell, and
+she’s going to marry him. He’s going to be rich as hell some
+day.”</p>
+<p>“I don’t believe she’ll ever marry him.”</p>
+<p>“Why not?”</p>
+<p>“I don’t know. I just don’t believe it. Have you known her a
+long time?”</p>
+<p>“Yes,” I said. “She was a V. A. D. in a hospital I was in during
+the war.”</p>
+<p>“She must have been just a kid then.”</p>
+<p>“She’s thirty-four now.”
+<pb n="39"/></p>
+<p>“When did she marry Ashley?”</p>
+<p>“During the war. Her own true love had just kicked off with
+the dysentery.”</p>
+<p>“You talk sort of bitter.”</p>
+<p>“Sorry. I didn’t mean to. I was just trying to give you the facts.”</p>
+<p>“I don’t believe she would marry anybody she didn’t love.”</p>
+<p>“Well,” I said. “She’s done it twice.”</p>
+<p>“I don’t believe it.”</p>
+<p>“Well,” I said, “don’t ask me a lot of fool questions if you don’t
+like the answers.”</p>
+<p>“I didn’t ask you that.”</p>
+<p>“You asked me what I knew about Brett Ashley.”</p>
+<p>“I didn’t ask you to insult her.”</p>
+<p>“Oh, go to hell.”</p>
+<p>He stood up from the table his face white, and stood there
+white and angry behind the little plates of hors d’œuvres.</p>
+<p>“Sit down,” I said. “Don’t be a fool.”</p>
+<p>“You’ve got to take that back.”</p>
+<p>“Oh, cut out the prep-school stuff.”</p>
+<p>“Take it back.”</p>
+<p>“Sure. Anything. I never heard of Brett Ashley. How’s that?</p>
+<p>“No. Not that. About me going to hell.”</p>
+<p>“Oh, don’t go to hell,” I said. “Stick around. We’re just starting
+lunch.”</p>
+<p>Cohn smiled again and sat down. He seemed glad to sit down.
+What the hell would he have done if he hadn’t sat down? “You
+say such damned insulting things, Jake.”</p>
+<p>“I’m sorry. I’ve got a nasty tongue. I never mean it when I say
+nasty things.”</p>
+<p>“I know it,” Cohn said. “You’re really about the best friend I
+have, Jake.”</p>
+<p>God help you, I thought. “Forget what I said,” I said out loud.
+“I’m sorry.”
+<pb n="40"/></p>
+<p>“It’s all right. It’s fine. I was just sore for a minute.”</p>
+<p>“Good. Let’s get something else to eat.”</p>
+<p>After we finished the lunch we walked up to the Café de la
+Paix and had coffee. I could feel Cohn wanted to bring up Brett
+again, but I held him off it. We talked about one thing and another,
+and I left him to come to the office.
+<pb n="41"/></p></div>
+<div type="chapter">
+    <p>CHAPTER 6</p>
+<p>At five o’clock I was in the Hotel Crillon waiting for Brett. She
+was not there, so I sat down and wrote some letters. They were
+not very good letters but I hoped their being on Crillon stationery
+would help them. Brett did not turn up, so about quarter to six I
+went down to the bar and had a Jack Rose with George the barman.
+Brett had not been in the bar either, and so I looked for her
+up-stairs on my way out, and took a taxi to the Café Select. Crossing
+the Seine I saw a string of barges being towed empty down
+the current, riding high, the bargemen at the sweeps as they
+came toward the bridge. The river looked nice. It was always
+pleasant crossing bridges in Paris.</p>
+<p>The taxi rounded the statue of the inventor of the semaphore
+engaged in doing same, and turned up the Boulevard Raspail,
+and I sat back to let that part of the ride pass. The Boulevard
+Raspail always made dull riding. It was like a certain stretch on
+the P. L. M. between Fontainebleau and Montereau that always
+made me feel bored and dead and dull until it was over. I suppose
+<pb n="42"/>
+it is some association of ideas that makes those dead places
+in a journey. There are other streets in Paris as ugly as the Boulevard
+Raspail. It is a street I do not mind walking down at all.
+But I cannot stand to ride along it. Perhaps I had read something
+about it once. That was the way Robert Cohn was about
+all of Paris. I wondered where Cohn got that incapacity to enjoy
+Paris. Possibly from Mencken. Mencken hates Paris, I believe.
+So many young men get their likes and dislikes from Mencken.</p>
+<p>The taxi stopped in front of the Rotonde. No matter what
+café in Montparnasse you ask a taxi-driver to bring you to from
+the right bank of the river, they always take you to the Rotonde.
+Ten years from now it will probably be the Dome. It was near
+enough, anyway. I walked past the sad tables of the Rotonde
+to the Select. There were a few people inside at the bar, and
+outside, alone, sat Harvey Stone. He had a pile of saucers in front
+of him, and he needed a shave.</p>
+<p>“Sit down,” said Harvey, “I’ve been looking for you.”</p>
+<p>“What’s the matter?”</p>
+<p>“Nothing. Just looking for you.”</p>
+<p>“Been out to the races?”</p>
+<p>“No. Not since Sunday.”</p>
+<p>“What do you hear from the States?”</p>
+<p>“Nothing. Absolutely nothing.”</p>
+<p>“What’s the matter?”</p>
+<p>“I don’t know. I’m through with them. I’m absolutely through
+with them.”</p>
+<p>He leaned forward and looked me in the eye.</p>
+<p>“Do you want to know something, Jake?”</p>
+<p>“Yes.”</p>
+<p>“I haven’t had anything to eat for five days.”</p>
+<p>I figured rapidly back in my mind. It was three days ago that
+Harvey had won two hundred francs from me shaking poker dice
+in the New York Bar.
+<pb n="43"/></p>
+<p>“What’s the matter?”</p>
+<p>“No money. Money hasn’t come,” he paused. “I tell you it’s
+strange, Jake. When I’m like this I just want to be alone. I want
+to stay in my own room. I’m like a cat.”</p>
+<p>I felt in my pocket.</p>
+<p>“Would a hundred help you any, Harvey?”</p>
+<p>“Yes.”</p>
+<p>“Come on. Let’s go and eat.”</p>
+<p>“There’s no hurry. Have a drink.”</p>
+<p>“Better eat.”</p>
+<p>“No. When I get like this I don’t care whether I eat or not.”</p>
+<p>We had a drink. Harvey added my saucer to his own pile.</p>
+<p>“Do you know Mencken, Harvey?”</p>
+<p>“Yes. Why?”</p>
+<p>“What’s he like?”</p>
+<p>“He’s all right. He says some pretty funny things. Last time I
+had dinner with him we talked about Hoffenheimer. ‘The trouble
+is,’ he said, ‘he’s a garter snapper.’ That’s not bad.”</p>
+<p>“That’s not bad.”</p>
+<p>“He’s through now,” Harvey went on. “He’s written about all
+the things he knows, and now he’s on all the things he doesn’t
+know.”</p>
+<p>“I guess he’s all right,” I said. “I just can’t read him.”</p>
+<p>“Oh, nobody reads him now,” Harvey said, “except the people
+that used to read the Alexander Hamilton Institute.”</p>
+<p>“Well,” I said. “That was a good thing, too.”</p>
+<p>“Sure,” said Harvey. So we sat and thought deeply for a while.</p>
+<p>“Have another port?”</p>
+<p>“All right,” said Harvey.</p>
+<p>“There comes Cohn,” I said. Robert Cohn was crossing the
+street.</p>
+<p>“That moron,” said Harvey. Cohn came up to our table.</p>
+<p>“Hello, you bums,” he said.
+<pb n="44"/></p>
+<p>“Hello, Robert,” Harvey said. “I was just telling Jake here that
+you’re a moron.”</p>
+<p>“What do you mean?”</p>
+<p>“Tell us right off. Don’t think. What would you rather do if you
+could do anything you wanted?”</p>
+<p>Cohn started to consider.</p>
+<p>“Don’t think. Bring it right out.”</p>
+<p>“I don’t know,” Cohn said. “What’s it all about, anyway?”</p>
+<p>“I mean what would you rather do. What comes into your
+head first. No matter how silly it is.”</p>
+<p>“I don’t know,” Cohn said. “I think I’d rather play football again
+with what I know about handling myself, now.”</p>
+<p>“I misjudged you,” Harvey said. “You’re not a moron. You’re
+only a case of arrested development.”</p>
+<p>“You’re awfully funny, Harvey,” Cohn said. “Some day somebody
+will push your face in.”</p>
+<p>Harvey Stone laughed. “You think so. They won’t, though.
+Because it wouldn’t make any difference to me. I’m not a fighter.”</p>
+<p>“It would make a difference to you if anybody did it.”</p>
+<p>“No, it wouldn’t. That’s where you make your big mistake. Because
+you’re not intelligent.”</p>
+<p>“Cut it out about me.”</p>
+<p>“Sure,” said Harvey. “It doesn’t make any difference to me.
+You don’t mean anything to me.”</p>
+<p>“Come on, Harvey,” I said. “Have another porto.”</p>
+<p>“No,” he said. “I’m going up the street and eat. See you later,
+Jake.”</p>
+<p>He walked out and up the street. I watched him crossing the
+street through the taxis, small, heavy, slowly sure of himself in
+the traffic.</p>
+<p>“He always gets me sore,” Cohn said. “I can’t stand him.”</p>
+<p>“I like him,” I said. “I’m fond of him. You don’t want to get sore
+at him.”
+<pb n="45"/></p>
+<p>“I know it,” Cohn said. “He just gets on my nerves.”</p>
+<p>“Write this afternoon?”</p>
+<p>“No. I couldn’t get it going. It’s harder to do than my first book.
+I’m having a hard time handling it.”</p>
+<p>The sort of healthy conceit that he had when he returned from
+America early in the spring was gone. Then he had been sure of
+his work, only with these personal longings for adventure. Now
+the sureness was gone. Somehow I feel I have not shown Robert
+Cohn clearly. The reason is that until he fell in love with Brett,
+I never heard him make one remark that would, in any way, detach
+him from other people. He was nice to watch on the tennis-court,
+he had a good body, and he kept it in shape; he handled
+his cards well at bridge, and he had a funny sort of undergraduate
+quality about him. If he were in a crowd nothing he said stood
+out. He wore what used to be called polo shirts at school, and
+may be called that still, but he was not professionally youthful.
+I do not believe he thought about his clothes much. Externally
+he had been formed at Princeton. Internally he had been
+moulded by the two women who had trained him. He had a
+nice, boyish sort of cheerfulness that had never been trained out
+of him, and I probably have not brought it out. He loved to
+win at tennis. He probably loved to win as much as Lenglen, for
+instance. On the other hand, he was not angry at being beaten.
+When he fell in love with Brett his tennis game went all to pieces.
+People beat him who had never had a chance with him. He was
+very nice about it.</p>
+<p>Anyhow, we were sitting on the terrace of the Café Select, and
+Harvey Stone had just crossed the street.</p>
+<p>“Come on up to the Lilas,” I said.</p>
+<p>“I have a date.”</p>
+<p>“What time?”</p>
+<p>“Frances is coming here at seven-fifteen.”</p>
+<p>“There she is.”
+<pb n="46"/></p>
+<p>Frances Clyne was coming toward us from across the street. She
+was a very tall girl who walked with a great deal of movement.
+She waved and smiled. We watched her cross the street.</p>
+<p>“Hello,” she said, “I’m so glad you’re here, Jake. I’ve been wanting
+to talk to you.”</p>
+<p>“Hello, Frances,” said Cohn. He smiled.</p>
+<p>“Why, hello, Robert. Are you here?” She went on, talking
+rapidly. “I’ve had the darndest time. This one”—shaking her head
+at Cohn—“didn’t come home for lunch.”</p>
+<p>“I wasn’t supposed to.”</p>
+<p>“Oh, I know. But you didn’t say anything about it to the cook.
+Then I had a date myself, and Paula wasn’t at her office. I went
+to the Ritz and waited for her, and she never came, and of course
+I didn’t have enough money to lunch at the Ritz——”</p>
+<p>“What did you do?”</p>
+<p>“Oh, went out, of course.” She spoke in a sort of imitation joyful
+manner. “I always keep my appointments. No one keeps
+theirs, nowadays. I ought to know better. How are you, Jake,
+anyway?”</p>
+<p>“Fine.”</p>
+<p>“That was a fine girl you had at the dance, and then went off
+with that Brett one.”</p>
+<p>“Don’t you like her?” Cohn asked.</p>
+<p>“I think she’s perfectly charming. Don’t you?”</p>
+<p>Cohn said nothing.</p>
+<p>“Look, Jake. I want to talk with you. Would you come over
+with me to the Dome? You’ll stay here, won’t you, Robert? Come
+on, Jake.”</p>
+<p>We crossed the Boulevard Montparnasse and sat down at a
+table. A boy came up with the <hi rend="italic">Paris Times</hi>, and I bought one and
+opened it.</p>
+<p>“What’s the matter, Frances?”</p>
+<p>“Oh, nothing,” she said, “except that he wants to leave me.”
+<pb n="47"/></p>
+<p>“How do you mean?”</p>
+<p>“Oh, he told every one that we were going to be married, and
+I told my mother and every one, and now he doesn’t want to
+do it.”</p>
+<p>“What’s the matter?”</p>
+<p>“He’s decided he hasn’t lived enough. I knew it would happen
+when he went to New York.”</p>
+<p>She looked up, very bright-eyed and trying to talk inconsequentially.</p>
+<p>“I wouldn’t marry him if he doesn’t want to. Of course I
+wouldn’t. I wouldn’t marry him now for anything. But it does
+seem to me to be a little late now, after we’ve waited three years,
+and I’ve just gotten my divorce.”</p>
+<p>I said nothing.</p>
+<p>“We were going to celebrate so, and instead we’ve just had
+scenes. It’s so childish. We have dreadful scenes, and he cries and
+begs me to be reasonable, but he says he just can’t do it.”</p>
+<p>“It’s rotten luck.”</p>
+<p>“I should say it is rotten luck. I’ve wasted two years and a half
+on him now. And I don’t know now if any man will ever want to
+marry me. Two years ago I could have married anybody I
+wanted, down at Cannes. All the old ones that wanted to marry
+somebody chic and settle down were crazy about me. Now I
+don’t think I could get anybody.”</p>
+<p>“Sure, you could marry anybody.”</p>
+<p>“No, I don’t believe it. And I’m fond of him, too. And I’d like
+to have children. I always thought we’d have children.”</p>
+<p>She looked at me very brightly. “I never liked children much,
+but I don’t want to think I’ll never have them. I always thought
+I’d have them and then like them.”</p>
+<p>“He’s got children.”</p>
+<p>“Oh, yes. He’s got children, and he’s got money, and he’s got
+a rich mother, and he’s written a book, and nobody will publish
+<pb n="48"/>
+my stuff; nobody at all. It isn’t bad, either. And I haven’t got any
+money at all. I could have had alimony, but I got the divorce the
+quickest way.”</p>
+<p>She looked at me again very brightly.</p>
+<p>“It isn’t right. It’s my own fault and it’s not, too. I ought to have
+known better. And when I tell him he just cries and says he can’t
+marry. Why can’t he marry? I’d be a good wife. I’m easy to get
+along with. I leave him alone. It doesn’t do any good.”</p>
+<p>“It’s a rotten shame.”</p>
+<p>“Yes, it is a rotten shame. But there’s no use talking about it, is
+there? Come on, let’s go back to the café.”</p>
+<p>“And of course there isn’t anything I can do.”</p>
+<p>“No. Just don’t let him know I talked to you. I know what he
+wants.” Now for the first time she dropped her bright, terribly
+cheerful manner. “He wants to go back to New York alone, and
+be there when his book comes out so when a lot of little chickens
+like it. That’s what he wants.”</p>
+<p>“Maybe they won’t like it. I don’t think he’s that way. Really.”</p>
+<p>“You don’t know him like I do, Jake. That’s what he wants to
+do. I know it. I know it. That’s why he doesn’t want to marry. He
+wants to have a big triumph this fall all by himself.”</p>
+<p>“Want to go back to the café?”</p>
+<p>“Yes. Come on.”</p>
+<p>We got up from the table—they had never brought us a drink—and
+started across the street toward the Select, where Cohn sat
+smiling at us from behind the marble-topped table.</p>
+<p>“Well, what are you smiling at?” Frances asked him. “Feel pretty
+happy?”</p>
+<p>“I was smiling at you and Jake with your secrets.”</p>
+<p>“Oh, what I’ve told Jake isn’t any secret. Everybody will know
+it soon enough. I only wanted to give Jake a decent version.”</p>
+<p>“What was it? About your going to England?”
+<pb n="49"/></p>
+<p>“Yes, about my going to England. Oh, Jake! I forgot to tell you.
+I’m going to England.”</p>
+<p>“Isn’t that fine!”</p>
+<p>“Yes, that’s the way it’s done in the very best families. Robert’s
+sending me. He’s going to give me two hundred pounds and then
+I’m going to visit friends. Won’t it be lovely? The friends don’t
+know about it, yet.”</p>
+<p>She turned to Cohn and smiled at him. He was not smiling
+now.</p>
+<p>“You were only going to give me a hundred pounds, weren’t
+you, Robert? But I made him give me two hundred. He’s really
+very generous. Aren’t you, Robert?”</p>
+<p>I do not know how people could say such terrible things to
+Robert Cohn. There are people to whom you could not say insulting
+things. They give you a feeling that the world would be
+destroyed, would actually be destroyed before your eyes, if you
+said certain things. But here was Cohn taking it all. Here it was,
+all going on right before me, and I did not even feel an impulse
+to try and stop it. And this was friendly joking to what went on
+later.</p>
+<p>“How can you say such things, Frances?” Cohn interrupted.</p>
+<p>“Listen to him. I’m going to England. I’m going to visit friends.
+Ever visit friends that didn’t want you? Oh, they’ll have to take
+me, all right. ‘How do you do, my dear? Such a long time since
+we’ve seen you. And how is your dear mother?’ Yes, how is my
+dear mother? She put all her money into French war bonds. Yes,
+she did. Probably the only person in the world that did. ‘And what
+about Robert?’ or else very careful talking around Robert. ‘You
+must be most careful not to mention him, my dear. Poor Frances
+has had a most unfortunate experience.’ Won’t it be fun, Robert?
+Don’t you think it will be fun, Jake?”</p>
+<p>She turned to me with that terribly bright smile. It was very
+satisfactory to her to have an audience for this.
+<pb n="50"/></p>
+<p>“And where are you going to be, Robert? It’s my own fault, all
+right. Perfectly my own fault. When I made you get rid of your
+little secretary on the magazine I ought to have known you’d get
+rid of me the same way. Jake doesn’t know about that. Should I
+tell him?”</p>
+<p>“Shut up, Frances, for God’s sake.”</p>
+<p>“Yes, I’ll tell him. Robert had a little secretary on the magazine.
+Just the sweetest little thing in the world, and he thought she
+was wonderful, and then I came along and he thought I was
+pretty wonderful, too. So I made him get rid of her, and he had
+brought her to Provincetown from Carmel when he moved the
+magazine, and he didn’t even pay her fare back to the coast. All
+to please me. He thought I was pretty fine, then. Didn’t you,
+Robert?</p>
+<p>“You mustn’t misunderstand, Jake, it was absolutely platonic
+with the secretary. Not even platonic. Nothing at all, really. It
+was just that she was so nice. And he did that just to please me.
+Well, I suppose that we that live by the sword shall perish by the
+sword. Isn’t that literary, though? You want to remember that
+for your next book, Robert.</p>
+<p>“You know Robert is going to get material for a new book.
+Aren’t you, Robert? That’s why he’s leaving me. He’s decided I
+don’t film well. You see, he was so busy all the time that we were
+living together, writing on this book, that he doesn’t remember
+anything about us. So now he’s going out and get some new
+material. Well, I hope he gets something frightfully interesting.</p>
+<p>“Listen, Robert, dear. Let me tell you something. You won’t
+mind, will you? Don’t have scenes with your young ladies. Try
+not to. Because you can’t have scenes without crying, and then
+you pity yourself so much you can’t remember what the other
+person’s said. You’ll never be able to remember any conversations
+that way. Just try and be calm. I know it’s awfully hard. But
+remember, it’s for literature. We all ought to make sacrifices for
+<pb n="52"/>
+literature. Look at me. I’m going to England without a protest.
+All for literature. We must all help young writers. Don’t you
+think so, Jake? But you’re not a young writer. Are you, Robert?
+You’re thirty-four. Still, I suppose that is young for a great writer.
+Look at Hardy. Look at Anatole France. He just died a little while
+ago. Robert doesn’t think he’s any good, though. Some of his
+French friends told him. He doesn’t read French very well himself.
+He wasn’t a good writer like you are, was he, Robert? Do you
+think he ever had to go and look for material? What do you suppose
+he said to his mistresses when he wouldn’t marry them? I
+wonder if he cried, too? Oh, I’ve just thought of something.” She
+put her gloved hand up to her lips. “I know the real reason why
+Robert won’t marry me, Jake. It’s just come to me. They’ve sent
+it to me in a vision in the Café Select. Isn’t it mystic? Some day
+they’ll put a tablet up. Like at Lourdes. Do you want to hear,
+Robert? I’ll tell you. It’s so simple. I wonder why I never thought
+about it. Why, you see, Robert’s always wanted to have a mistress,
+and if he doesn’t marry me, why, then he’s had one. She was his
+mistress for over two years. See how it is? And if he marries me,
+like he’s always promised he would, that would be the end of all
+the romance. Don’t you think that’s bright of me to figure that
+out? It’s true, too. Look at him and see if it’s not. Where are you
+going, Jake?”</p>
+<p>“I’ve got to go in and see Harvey Stone a minute.”</p>
+<p>Cohn looked up as I went in. His face was white. Why did he
+sit there? Why did he keep on taking it like that?</p>
+<p>As I stood against the bar looking out I could see them through
+the window. Frances was talking on to him, smiling brightly,
+looking into his face each time she asked: “Isn’t it so, Robert?” Or
+maybe she did not ask that now. Perhaps she said something else.
+I told the barman I did not want anything to drink and went out
+through the side door. As I went out the door I looked back
+<pb n="53"/>
+through the two thicknesses of glass and saw them sitting there.
+She was still talking to him. I went down a side street to the
+Boulevard Raspail. A taxi came along and I got in and gave the
+driver the address of my flat.
+<pb n="54"/></p></div>
+
+<div type="chapter">
+    <p>CHAPTER 7</p>
+<p>As I started up the stairs the concierge knocked on the glass of
+the door of her lodge, and as I stopped she came out. She had
+some letters and a telegram.</p>
+<p>“Here is the post. And there was a lady here to see you.”</p>
+<p>“Did she leave a card?”</p>
+<p>“No. She was with a gentleman. It was the one who was here
+last night. In the end I find she is very nice.”</p>
+<p>“Was she with a friend of mine?”</p>
+<p>“I don’t know. He was never here before. He was very large.
+Very, very large. She was very nice. Very, very nice. Last night
+she was, perhaps, a little—” She put her head on one hand and
+rocked it up and down. “I’ll speak perfectly frankly, Monsieur
+Barnes. Last night I found her not so gentille. Last night I formed
+another idea of her. But listen to what I tell you. She is très, très
+gentille. She is of very good family. It is a thing you can see.”</p>
+<p>“They did not leave any word?”</p>
+<p>“Yes. They said they would be back in an hour.”
+<pb n="55"/></p>
+<p>“Send them up when they come.”</p>
+<p>“Yes, Monsieur Barnes. And that lady, that lady there is some
+one. An eccentric, perhaps, but quelqu’une, quelqu’une!”</p>
+<p>The concierge, before she became a concierge, had owned a
+drink-selling concession at the Paris race-courses. Her life-work
+lay in the pelouse, but she kept an eye on the people of the
+pesage, and she took great pride in telling me which of my guests
+were well brought up, which were of good family, who were
+sportsmen, a French word pronounced with the accent on the
+men. The only trouble was that people who did not fall into any
+of those three categories were very liable to be told there was no
+one home, chez Barnes. One of my friends, an extremely underfed-looking
+painter, who was obviously to Madame Duzinell
+neither well brought up, of good family, nor a sportsman,
+wrote me a letter asking if I could get him a pass to get by the
+concierge so he could come up and see me occasionally in the
+evenings.</p>
+<p>I went up to the flat wondering what Brett had done to the
+concierge. The wire was a cable from Bill Gorton, saying he was
+arriving on the <hi rend="italic">France.</hi> I put the mail on the table, went back to
+the bedroom, undressed and had a shower. I was rubbing down
+when I heard the door-bell pull. I put on a bathrobe and slippers
+and went to the door. It was Brett. Back of her was the count. He
+was holding a great bunch of roses.</p>
+<p>“Hello, darling,” said Brett. “Aren’t you going to let us in?”</p>
+<p>“Come on. I was just bathing.”</p>
+<p>“Aren’t you the fortunate man. Bathing.”</p>
+<p>“Only a shower. Sit down, Count Mippipopolous. What will you
+drink?”</p>
+<p>“I don’t know whether you like flowers, sir,” the count said,
+“but I took the liberty of just bringing these roses.”</p>
+<p>“Here, give them to me.” Brett took them. “Get me some water
+in this, Jake.” I filled the big earthenware jug with water in the
+<pb n="56"/>
+kitchen, and Brett put the roses in it, and placed them in the
+centre of the dining-room table.</p>
+<p>“I say. We have had a day.”</p>
+<p>“You don’t remember anything about a date with me at the
+Crillon?”</p>
+<p>“No. Did we have one? I must have been blind.”</p>
+<p>“You were quite drunk, my dear,” said the count.</p>
+<p>“Wasn’t I, though? And the count’s been a brick, absolutely.”</p>
+<p>“You’ve got hell’s own drag with the concierge now.”</p>
+<p>“I ought to have. Gave her two hundred francs.”</p>
+<p>“Don’t be a damned fool.”</p>
+<p>“His,” she said, and nodded at the count.</p>
+<p>“I thought we ought to give her a little something for last
+night. It was very late.”</p>
+<p>“He’s wonderful,” Brett said. “He remembers everything that’s
+happened.”</p>
+<p>“So do you, my dear.”</p>
+<p>“Fancy,” said Brett. “Who’d want to? I say, Jake, <hi rend="italic">do we get a
+drink?”</hi></p>
+<p>“You get it while I go in and dress. You know where it is.”</p>
+<p>“Rather.”</p>
+<p>While I dressed I heard Brett put down glasses and then a
+siphon, and then heard them talking. I dressed slowly, sitting on
+the bed. I felt tired and pretty rotten. Brett came in the room, a
+glass in her hand, and sat on the bed.</p>
+<p>“What’s the matter, darling? Do you feel rocky?”</p>
+<p>She kissed me coolly on the forehead.</p>
+<p>“Oh, Brett, I love you so much.”</p>
+<p>“Darling,” she said. Then: “Do you want me to send him
+away?”</p>
+<p>“No. He’s nice.”</p>
+<p>“I’ll send him away.”</p>
+<p>“No, don’t.”
+<pb n="57"/></p>
+<p>“Yes, I’ll send him away.”</p>
+<p>“You can’t just like that.”</p>
+<p>“Can’t I, though? You stay here. He’s mad about me, I tell you.”</p>
+<p>She was gone out of the room. I lay face down on the bed. I
+was having a bad time. I heard them talking but I did not listen.
+Brett came in and sat on the bed.</p>
+<p>“Poor old darling.” She stroked my head.</p>
+<p>“What did you say to him?” I was lying with my face away
+from her. I did not want to see her.</p>
+<p>“Sent him for champagne. He loves to go for champagne.”</p>
+<p>Then later: “Do you feel better, darling? Is the head any
+better?”</p>
+<p>“It’s better.”</p>
+<p>“Lie quiet. He’s gone to the other side of town.”</p>
+<p>“Couldn’t we live together, Brett? Couldn’t we just live together?”</p>
+<p>“I don’t think so. I’d just <hi rend="italic">tromper</hi> you with everybody. You
+couldn’t stand it.”</p>
+<p>“I stand it now.”</p>
+<p>“That would be different. It’s my fault, Jake. It’s the way I’m
+made.”</p>
+<p>“Couldn’t we go off in the country for a while?”</p>
+<p>“It wouldn’t be any good. I’ll go if you like. But I couldn’t live
+quietly in the country. Not with my own true love.”</p>
+<p>“I know.”</p>
+<p>“Isn’t it rotten? There isn’t any use my telling you I love you.”</p>
+<p>“You know I love you.”</p>
+<p>“Let’s not talk. Talking’s all bilge. I’m going away from you,
+and then Michael’s coming back.”</p>
+<p>“Why are you going away?”</p>
+<p>“Better for you. Better for me.”</p>
+<p>“When are you going?”</p>
+<p>“Soon as I can.”
+<pb n="58"/></p>
+<p>“Where?”</p>
+<p>“San Sebastian.”</p>
+<p>“Can’t we go together?”</p>
+<p>“No. That would be a hell of an idea after we’d just talked it
+out.”</p>
+<p>“We never agreed.”</p>
+<p>“Oh, you know as well as I do. Don’t be obstinate, darling.”</p>
+<p>“Oh, sure,” I said. “I know you’re right. I’m just low, and when
+I’m low I talk like a fool.”</p>
+<p>I sat up, leaned over, found my shoes beside the bed and put
+them on. I stood up.</p>
+<p>“Don’t look like that, darling.”</p>
+<p>“How do you want me to look?”</p>
+<p>“Oh, don’t be a fool. I’m going away to-morrow.”</p>
+<p>“To-morrow?”</p>
+<p>“Yes. Didn’t I say so? I am.”</p>
+<p>“Let’s have a drink, then. The count will be back.”</p>
+<p>“Yes. He should be back. You know he’s extraordinary about
+buying champagne. It means any amount to him.”</p>
+<p>We went into the dining-room. I took up the brandy bottle and
+poured Brett a drink and one for myself. There was a ring at the
+bell-pull. I went to the door and there was the count. Behind him
+was the chauffeur carrying a basket of champagne.</p>
+<p>“Where should I have him put it, sir?” asked the count.</p>
+<p>“In the kitchen,” Brett said.</p>
+<p>“Put it in there, Henry,” the count motioned. “Now go down
+and get the ice.” He stood looking after the basket inside the
+kitchen door. “I think you’ll find that’s very good wine,” he said.
+“I know we don’t get much of a chance to judge good wine in the
+States now, but I got this from a friend of mine that’s in the
+business.”</p>
+<p>“Oh, you always have some one in the trade,” Brett said.
+<pb n="59"/></p>
+<p>“This fellow raises the grapes. He’s got thousands of acres of
+them.”</p>
+<p>“What’s his name?” asked Brett. “Veuve Cliquot?”</p>
+<p>“No,” said the count. “Mumms. He’s a baron.”</p>
+<p>“Isn’t it wonderful,” said Brett. “We all have titles. Why
+haven’t you a title, Jake?”</p>
+<p>“I assure you, sir,” the count put his hand on my arm. “It never
+does a man any good. Most of the time it costs you money.”</p>
+<p>“Oh, I don’t know. It’s damned useful sometimes,” Brett said.</p>
+<p>“I’ve never known it to do me any good.”</p>
+<p>“You haven’t used it properly. I’ve had hell’s own amount of
+credit on mine.”</p>
+<p>“Do sit down, count,” I said. “Let me take that stick.”</p>
+<p>The count was looking at Brett across the table under the gas-light.
+She was smoking a cigarette and flicking the ashes on the
+rug. She saw me notice it. “I say, Jake, I don’t want to ruin your
+rugs. Can’t you give a chap an ash-tray?”</p>
+<p>I found some ash-trays and spread them around. The chauffeur
+came up with a bucket full of salted ice. “Put two bottles in it,
+Henry,” the count called.</p>
+<p>“Anything else, sir?”</p>
+<p>“No. Wait down in the car.” He turned to Brett and to me.
+“We’ll want to ride out to the Bois for dinner?”</p>
+<p>“If you like,” Brett said. “I couldn’t eat a thing.”</p>
+<p>“I always like a good meal,” said the count.</p>
+<p>“Should I bring the wine in, sir?” asked the chauffeur.</p>
+<p>“Yes. Bring it in, Henry,” said the count. He took out a heavy
+pigskin cigar-case and offered it to me. “Like to try a real American
+cigar?”</p>
+<p>“Thanks,” I said. “I’ll finish the cigarette.”</p>
+<p>He cut off the end of his cigar with a gold cutter he wore on
+one end of his watch-chain.
+<pb n="60"/></p>
+<p>“I like a cigar to really draw,” said the count “Half the cigars
+you smoke don’t draw.”</p>
+<p>He lit the cigar, puffed at it, looking across the table at Brett.
+“And when you’re divorced, Lady Ashley, then you won’t have
+a title.”</p>
+<p>“No. What a pity.”</p>
+<p>“No,” said the count. “You don’t need a title. You got class all
+over you.”</p>
+<p>“Thanks. Awfully decent of you.”</p>
+<p>“I’m not joking you,” the count blew a cloud of smoke. “You got
+the most class of anybody I ever seen. You got it. That’s all.”</p>
+<p>“Nice of you,” said Brett. “Mummy would be pleased. Couldn’t
+you write it out, and I’ll send it in a letter to her.”</p>
+<p>“I’d tell her, too,” said the count. “I’m not joking you. I never
+joke people. Joke people and you make enemies. That’s what I
+always say.”</p>
+<p>“You’re right,” Brett said. “You’re terribly right. I always joke
+people and I haven’t a friend in the world. Except Jake here.”</p>
+<p>“You don’t joke him.”</p>
+<p>“That’s it.”</p>
+<p>“Do you, now?” asked the count. “Do you joke him?”</p>
+<p>Brett looked at me and wrinkled up the corners of her eyes.</p>
+<p>“No,” she said. “I wouldn’t joke him.”</p>
+<p>“See,” said the count. “You don’t joke him.”</p>
+<p>“This is a hell of a dull talk,” Brett said. “How about some of
+that champagne?”</p>
+<p>The count reached down and twirled the bottles in the shiny
+bucket. “It isn’t cold, yet. You’re always drinking, my dear. Why
+don’t you just talk?”</p>
+<p>“I’ve talked too ruddy much. I’ve talked myself all out to Jake.”</p>
+<p>“I should like to hear you really talk, my dear. When you talk
+to me you never finish your sentences at all.”
+<pb n="61"/></p>
+<p>“Leave ’em for you to finish. Let any one finish them as they
+like.”</p>
+<p>“It is a very interesting system,” the count reached down and
+gave the bottles a twirl. “Still I would like to hear you talk some
+time.”</p>
+<p>“Isn’t he a fool?” Brett asked.</p>
+<p>“Now,” the count brought up a bottle. “I think this is cool.”</p>
+<p>I brought a towel and he wiped the bottle dry and held it up.
+“I like to drink champagne from magnums. The wine is better
+but it would have been too hard to cool.” He held the bottle,
+looking at it. I put out the glasses.</p>
+<p>“I say. You might open it,” Brett suggested.</p>
+<p>“Yes, my dear. Now I’ll open it.”</p>
+<p>It was amazing champagne.</p>
+<p>“I say that is wine,” Brett held up her glass. “We ought to toast
+something. ‘Here’s to royalty.’ ”</p>
+<p>“This wine is too good for toast-drinking, my dear. You don’t
+want to mix emotions up with a wine like that. You lose the
+taste.”</p>
+<p>Brett’s glass was empty.</p>
+<p>“You ought to write a book on wines, count,” I said.</p>
+<p>“Mr. Barnes,” answered the count, “all I want out of wines is to
+enjoy them.”</p>
+<p>“Let’s enjoy a little more of this,” Brett pushed her glass forward.
+The count poured very carefully. “There, my dear. Now
+you enjoy that slowly, and then you can get drunk.”</p>
+<p>“Drunk? Drunk?”</p>
+<p>“My dear, you are charming when you are drunk.”</p>
+<p>“Listen to the man.”</p>
+<p>“Mr. Barnes,” the count poured my glass full. “She is the only
+lady I have ever known who was as charming when she was drunk
+as when she was sober.”</p>
+<p>“You haven’t been around much, have you?”
+<pb n="62"/></p>
+<p>“Yes, my dear. I have been around very much. I have been
+around a very great deal.”</p>
+<p>“Drink your wine,” said Brett. “We’ve all been around. I dare
+say Jake here has seen as much as you have.”</p>
+<p>“My dear, I am sure Mr. Barnes has seen a lot. Don’t think I
+don’t think so, sir. I have seen a lot, too.”</p>
+<p>“Of course you have, my dear,” Brett said. “I was only ragging.”</p>
+<p>“I have been in seven wars and four revolutions,” the count
+said.</p>
+<p>“Soldiering?” Brett asked.</p>
+<p>“Sometimes, my dear. And I have got arrow wounds. Have you
+ever seen arrow wounds?”</p>
+<p>“Let’s have a look at them.”</p>
+<p>The count stood up, unbuttoned his vest, and opened his shirt.
+He pulled up the undershirt onto his chest and stood, his chest
+black, and big stomach muscles bulging under the light.</p>
+<p>“You see them?”</p>
+<p>Below the line where his ribs stopped were two raised white
+welts. “See on the back where they come out.” Above the small
+of the back were the same two scars, raised as thick as a finger.</p>
+<p>“I say. Those are something.”</p>
+<p>“Clean through.”</p>
+<p>The count was tucking in his shirt.</p>
+<p>“Where did you get those?” I asked.</p>
+<p>“In Abyssinia. When I was twenty-one years old.”</p>
+<p>“What were you doing?” asked Brett. “Were you in the army?”</p>
+<p>“I was on a business trip, my dear.”</p>
+<p>“I told you he was one of us. Didn’t I?” Brett turned to me.
+“I love you, count. You’re a darling.”</p>
+<p>“You make me very happy, my dear. But it isn’t true.”</p>
+<p>“Don’t be an ass.”</p>
+<p>“You see, Mr. Barnes, it is because I have lived very much that
+now I can enjoy everything so well. Don’t you find it like that?”
+<pb n="63"/></p>
+<p>“Yes. Absolutely.”</p>
+<p>“I know,” said the count. “That is the secret. You must get to
+know the values.”</p>
+<p>“Doesn’t anything ever happen to your values?” Brett asked.</p>
+<p>“No. Not any more.”</p>
+<p>“Never fall in love?”</p>
+<p>“Always,” said the count. “I am always in love.”</p>
+<p>“What does that do to your values?”</p>
+<p>“That, too, has got a place in my values.”</p>
+<p>“You haven’t any values. You’re dead, that’s all.”</p>
+<p>“No, my dear. You’re not right. I’m not dead at all.”</p>
+<p>We drank three bottles of the champagne and the count left
+the basket in my kitchen. We dined at a restaurant in the Bois.
+It was a good dinner. Food had an excellent place in the count’s
+values. So did wine. The count was in fine form during the meal.
+So was Brett. It was a good party.</p>
+<p>“Where would you like to go?” asked the count after dinner.
+We were the only people left in the restaurant. The two waiters
+were standing over against the door. They wanted to go home.</p>
+<p>“We might go up on the hill,” Brett said. “Haven’t we had a
+splendid party?”</p>
+<p>The count was beaming. He was very happy.</p>
+<p>“You are very nice people,” he said. He was smoking a cigar
+again. “Why don’t you get married, you two?”</p>
+<p>“We want to lead our own lives,” I said.</p>
+<p>“We have our careers,” Brett said. “Come on. Let’s get out of
+this.”</p>
+<p>“Have another brandy,” the count said.</p>
+<p>“Get it on the hill.”</p>
+<p>“No. Have it here where it is quiet.”</p>
+<p>“You and your quiet,” said Brett. “What is it men feel about
+quiet?”</p>
+<p>“We like it,” said the count. “Like you like noise, my dear.”
+<pb n="64"/></p>
+<p>“All right,” said Brett. “Let’s have one.”</p>
+<p>“Sommelier!” the count called.</p>
+<p>“Yes, sir.”</p>
+<p>“What is the oldest brandy you have?”</p>
+<p>“Eighteen eleven, sir.”</p>
+<p>“Bring us a bottle.”</p>
+<p>“I say. Don’t be ostentatious. Call him off, Jake.”</p>
+<p>“Listen, my dear. I get more value for my money in old brandy
+than in any other antiquities.”</p>
+<p>“Got many antiquities?”</p>
+<p>“I got a houseful.”</p>
+<p>Finally we went up to Montmartre. Inside Zelli’s it was
+crowded, smoky, and noisy. The music hit you as you went in.
+Brett and I danced. It was so crowded we could barely move.
+The nigger drummer waved at Brett. We were caught in the jam,
+dancing in one place in front of him.</p>
+<p>“Hahre you?”</p>
+<p>“Great.”</p>
+<p>“Thaats good.”</p>
+<p>He was all teeth and lips.</p>
+<p>“He’s a great friend of mine,” Brett said. “Damn good
+drummer.”</p>
+<p>The music stopped and we started toward the table where the
+count sat. Then the music started again and we danced. I looked
+at the count. He was sitting at the table smoking a cigar. The
+music stopped again.</p>
+<p>“Let’s go over.”</p>
+<p>Brett started toward the table. The music started and again we
+danced, tight in the crowd.</p>
+<p>“You are a rotten dancer, Jake. Michael’s the best dancer I
+know.”</p>
+<p>“He’s splendid.”</p>
+<p>“He’s got his points.”
+<pb n="65"/></p>
+<p>“I like him,” I said. “I’m damned fond of him.”</p>
+<p>“I’m going to marry him,” Brett said. “Funny. I haven’t thought
+about him for a week.”</p>
+<p>“Don’t you write him?”</p>
+<p>“Not I. Never write letters.”</p>
+<p>“I’ll bet he writes to you.”</p>
+<p>“Rather. Damned good letters, too.”</p>
+<p>“When are you going to get married?”</p>
+<p>“How do I know? As soon as we can get the divorce. Michael’s
+trying to get his mother to put up for it.”</p>
+<p>“Could I help you?”</p>
+<p>“Don’t be an ass. Michael’s people have loads of money.”</p>
+<p>The music stopped. We walked over to the table. The count
+stood up.</p>
+<p>“Very nice,” he said. “You looked very, very nice.”</p>
+<p>“Don’t you dance, count?” I asked.</p>
+<p>“No. I’m too old.”</p>
+<p>“Oh, come off it,” Brett said.</p>
+<p>“My dear, I would do it if I would enjoy it. I enjoy to watch
+you dance.”</p>
+<p>“Splendid,” Brett said. “I’ll dance again for you some time. I
+say. What about your little friend, Zizi?”</p>
+<p>“Let me tell you. I support that boy, but I don’t want to have
+him around.”</p>
+<p>“He is rather hard.”</p>
+<p>“You know I think that boy’s got a future. But personally I
+don’t want him around.”</p>
+<p>“Jake’s rather the same way.”</p>
+<p>“He gives me the willys.”</p>
+<p>“Well,” the count shrugged his shoulders. “About his future you
+can’t ever tell. Anyhow, his father was a great friend of my father.”</p>
+<p>“Come on. Let’s dance,” Brett said.</p>
+<p>We danced. It was crowded and close.
+<pb n="66"/></p>
+<p>“Oh, darling,” Brett said, “I’m so miserable.”</p>
+<p>I had that feeling of going through something that has all happened
+before. “You were happy a minute ago.”</p>
+<p>The drummer shouted: “You can’t two time—”</p>
+<p>“It’s all gone.”</p>
+<p>“What’s the matter?”</p>
+<p>“I don’t know. I just feel terribly.”</p>
+<p>“. . . . . .” the drummer chanted. Then turned to his sticks.</p>
+<p>“Want to go?”</p>
+<p>I had the feeling as in a nightmare of it all being something
+repeated, something I had been through and that now I must go
+through again.</p>
+<p>“. . . . . .” the drummer sang softly.</p>
+<p>“Let’s go,” said Brett. “You don’t mind.”</p>
+<p>“. . . . . .” the drummer shouted and grinned at Brett.</p>
+<p>“All right,” I said. We got out from the crowd. Brett went to the
+dressing-room.</p>
+<p>“Brett wants to go,” I said to the count. He nodded. “Does she?
+That’s fine. You take the car. I’m going to stay here for a while,
+Mr. Barnes.”</p>
+<p>We shook hands.</p>
+<p>“It was a wonderful time,” I said. “I wish you would let me get
+this.” I took a note out of my pocket.</p>
+<p>“Mr. Barnes, don’t be ridiculous,” the count said.</p>
+<p>Brett came over with her wrap on. She kissed the count and
+put her hand on his shoulder to keep him from standing up. As
+we went out the door I looked back and there were three girls at
+his table. We got into the big car. Brett gave the chauffeur the
+address of her hotel.</p>
+<p>“No, don’t come up,” she said at the hotel. She had rung and
+the door was unlatched.</p>
+<p>“Really?”</p>
+<p>“No. Please.”
+<pb n="67"/></p>
+<p>“Good night, Brett,” I said. “I’m sorry you feel rotten.”</p>
+<p>“Good night, Jake. Good night, darling. I won’t see you again.”
+We kissed standing at the door. She pushed me away. We kissed
+again. “Oh, don’t!” Brett said.</p>
+<p>She turned quickly and went into the hotel. The chauffeur
+drove me around to my flat. I gave him twenty francs and he
+touched his cap and said: “Good night, sir,” and drove off. I rang
+the bell. The door opened and I went up-stairs and went to bed.</p>
+</div></div>
+    <pb n="68"/>
+    <div type="book">
+        <p>BOOK II</p>
+        <pb n="69"/>
+        <div type="chapter">
+            <p>CHAPTER 8</p>
+        </div>
+    </div>
+</body>
+    </text>
+</TEI>
