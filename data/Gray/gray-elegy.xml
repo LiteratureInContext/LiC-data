@@ -71,7 +71,7 @@
                      <publisher>R. Dodsley</publisher>
                      <date when="1751">1751</date>
                      <note>
-                        <p>This is the first stand-alone edition of the poem, which was published at roughly the same time in the <hi rend="italic">Magazine of Magazines</hi>, a periodical that had obtained a copy of the poem in a manuscript copy. (Such copies had been circulating among Gray's friends for several years.) Gray asked his friend Horace Walpole to get a print edition issued by a more respectable London publisher since an authorized publication in a periodical was not the way that he wanted this poem to appear in the world.</p>
+                        <p>This is the first stand-alone edition of the poem, which was published at roughly the same time in the <hi rend="italic">Magazine of Magazines</hi>, a periodical that had obtained a copy of the poem in manuscript. (Such copies had been circulating among Gray's friends for several years.) Gray asked his friend Horace Walpole to get a print edition issued by a more respectable London publisher since an authorized publication in a periodical was not the way that he wanted this poem to appear in the world.</p>
                      </note>
                   </imprint>
                </monogr>
@@ -171,8 +171,8 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="0000-00-00" who="editors.xml#XX"
-            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
+         <change when="2023-08-55" who="editors.xml#JOB"
+            >Adapted TCP edition for Literature in Context use</change>
          <change when="0000-00-00" who="xxxx"/>
       </revisionDesc>
 
@@ -182,32 +182,19 @@
    <text>
 
       <front>
-         <titlePage>
-            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
-            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
-            <titlePart><lb/></titlePart>
-            <titlePart/>
-            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
-            <titlePart><lb/>
-            </titlePart>
+         <titlePage><pb/>
+            <docTitle>           
+               <titlePart>AN ELEGY WROTE IN A Country Church Yard.<lb/></titlePart></docTitle>
             <docImprint>
-               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
-               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
-                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic">Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
-                     Browne</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic">Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+               <pubPlace><placeName type="tgn" key="7011781"/></pubPlace>
+               <lb/> Printed by <publisher>R. DODSLEY in <hi rend="italic">Pall-mall;</hi></publisher> <lb/>
+               And sold by
+                     <publisher><hi rend="italic">M. COOPEr</hi></publisher>
+               <pubPlace>in<hi rend="italic">Peter-noster-row</hi> </pubPlace>. 
+               <docDate>1751 [Price Six-pence.]</docDate>. <lb/>
             </docImprint>
          </titlePage>
-            
-             
-                  <p>AN ELEGY WROTE IN A Country Church Yard.</p>
-                  <lb/>
-                     LONDON: Printed for R. DODSLEY in
-                     <hi>Pall-mall</hi>
-                     ; And sold by M. COOPER in
-                     <hi>Pater-noster-Row.</hi>
-                     1751. [Price Six-pence.]
+         <pb/>
                   
          <div type="notice">
            
@@ -224,10 +211,9 @@
          </front>
       <body>
             <div type="text">
-              
                <head>
                   AN ELEGY,
-                  <hi>&c.</hi>
+                  <hi rend="italic">&c.;</hi>
                </head>
                <lg>
                   <l>
@@ -449,6 +435,6 @@
                <trailer>FINIS.</trailer>
             </div>
                      
-               </body>
+               
    </text>
 </TEI>
