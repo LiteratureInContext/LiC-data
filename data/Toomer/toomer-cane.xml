@@ -9,7 +9,7 @@
             <author>
               <persName type="lcnaf" key="n50013727">
                   <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
-                  <name ref="xxx.xml">
+                  <name>
                      <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
                      <forename>Jean</forename>
                      <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
@@ -61,20 +61,20 @@
                   
                <monogr>
                   <author>
-                     <name>
+                    <persName type="lcnaf" key="n50013727"> <name>
                         <forename>Jean</forename>
                         <surname>Toomer</surname>
                         
-                     </name>
+                     </name></persName>
                   </author>
                   <title>Cane</title>
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000">New York</placeName>
+                       <placeName type="tgn" key="7007567">New York</placeName>
                      </pubPlace>
                      <publisher>Boni and Liveright</publisher>
                      <date when="1923">1923</date>
-                     <note>This digital edition is crafted from the 1951 reprint. Page images sourced from Google Books, from an original object held by the University of Michigan. Base XML drawn from Project Gutenberg.</note>
+                    <note>Page images sourced from Google Books, from an original object held by Indiana University Library (<ref target="https://www.google.com/books/edition/Cane/lJ7PAAAAMAAJ">https://www.google.com/books/edition/Cane/lJ7PAAAAMAAJ</ref>). Base XML drawn from Project Gutenberg.</note>
                      <!-- Add additional NOTE elements as needed  -->
                     
                   </imprint>
@@ -106,7 +106,7 @@
             <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
             <channel mode="w">print</channel>
             <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
-            <constitution type="single">single poem</constitution>
+            <constitution type="complete">complete</constitution>
             <derivation type="original"/>
             <domain/>
             <factuality type="inapplicable"/>
@@ -120,10 +120,10 @@
          <settingDesc>
 
             <setting>
-               <name type="tgn" key="00"></name>
+              <name type="tgn" key="7007248">Georgia</name>
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="00"></name>
-               <time from="00" to="00"></time>
+              <name type="tgn" key="7015717">Washington DC</name>
+               <time from="1900" to="1930">Early 20th Century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
             </setting>
 
