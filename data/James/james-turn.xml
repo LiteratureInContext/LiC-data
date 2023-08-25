@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="james-turn">
     <teiHeader xml:lang="en">
         <fileDesc>
@@ -493,7 +493,10 @@
                     Chivalrously brave, full of noble daring. Source: Oxford English Dictionary</note> and splendid, but
                     what took her most of all and gave her the courage she afterward showed was
                     that he put the whole thing to her as a kind of favor, an obligation he should
-                    gratefully <ref target="incur_" corresp="incur">incur.</ref> She conceived him as rich, but as fearfully extravagant—saw
+                    gratefully <ref target="incur_" corresp="incur">incur.</ref>
+                    <note target="incur_" xml:id="incur" resp="editors.xml#VBS" type="gloss">
+                    To bring upon oneself. Source: Oxford English Dictionary
+                    </note> She conceived him as rich, but as fearfully extravagant—saw
                     him all in a glow of high fashion, of good looks, of expensive habits, of
                     charming ways with women. He had for his own town residence a big house filled
                     with the spoils of travel and the trophies of the chase; but it was to his
@@ -912,9 +915,7 @@
             <p>
                 She was evidently grateful for such a profession. "See him, miss, first.
                 <hi rend="italic">Then</hi> believe it!" I felt <ref target="forthwith_" corresp="forthwith">forthwith</ref>
-                <note type="gloss" resp="editors.xml#VBS" xml:id="forthwith" target="forthwith_">
-                Immediately, at once. Source: Oxford English Dictionary
-                </note> a new impatience to see him; it
+                a new impatience to see him; it
                 was the beginning of a curiosity that, for all the next hours, was to deepen
                 almost to pain. Mrs. Grose was aware, I could judge, of what she had produced
                 in me, and she followed it up with assurance. "You might as well believe
@@ -1231,7 +1232,10 @@
                 <pb n="39"/>
                 years, there is no living view that I can hope to give. An unknown
                 man in a lonely place is a permitted object of fear to a young woman privately
-                <ref target="bred_" corresp="bred">bred;</ref> and the figure that faced me was—a few more seconds assured me—as <!-- TODO: Start here -->
+                <ref target="bred_" corresp="bred">bred;</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="bred" target="bred_">
+                Brought up, (properly) trained. Source: Oxford English Dictionary
+                </note> and the figure that faced me was—a few more seconds assured me—as
                 little anyone else I knew as it was the image that had been in my mind. I
                 had not seen it in Harley Street—I had not seen it anywhere. The place,
                 moreover, in the strangest way in the world, had, on the instant, and by
@@ -1258,9 +1262,14 @@
                 of mine, think what you will of it, lasted while I caught at a dozen
                 possibilities, none of which made a difference for the better, that I could
                 see, in there having been in the house—and for how long, above all?—a person
-                of whom I was in ignorance. It lasted while I just bridled a little with
+                of whom I was in ignorance. It lasted while I just <ref target="bridled_" corresp="bridled">bridled</ref>
+                <note target="bridled_" xml:id="bridled" resp="editors.xml#VBS" type="gloss">
+                To put a restrain on; to regulate; to restrict, bring under control. Source: Oxford English Dictionary
+                </note> a little with
                 the sense that my office demanded that there should be no such ignorance
-                and no such person. It lasted while this <ref corresp="visitant" target="visitant_">visitant,</ref> at all events—and there
+                and no such person. It lasted while this <ref corresp="visitant" target="visitant_">visitant,</ref>
+                <note target="visitant_" xml:id="visitant" resp="editors.xml#VBS" type="gloss">
+                A visitor. Source: Oxford English Dictionary</note> at all events—and there
                 was a touch of the strange freedom, as I remember, in the sign of familiarity
                 of his wearing no hat—seemed to fix me, from his position, with just the
                 question, just the scrutiny through the fading light, that his own presence
@@ -1273,10 +1282,16 @@
                 form on this page; then, exactly, after a minute, as if to add to the spectacle,
                 he slowly changed his place—passed, looking at me hard all the while, to
                 the opposite corner of the platform. Yes, I had the sharpest sense that during
-                this <ref target="_transit" corresp="transit">transit</ref> he never took his eyes from me, and I can see at this moment
-                the way his hand, as he went, passed from one of the <ref corresp="crenelations" target="crenelations_">crenelations</ref> to the
+                this transit he never took his eyes from me, and I can see at this moment
+                the way his hand, as he went, passed from one of the <ref corresp="crenelations" target="crenelations_">crenelations</ref> to the <!-- TODO: Define -->
                 next. He stopped at the other corner, but less long, and even as he turned
-                away still <ref target="markedly_" corresp="markedly">markedly fixed me</ref>. He turned away; that was all I knew.
+                away still <ref target="markedly_" corresp="markedly">markedly</ref>
+                <note target="markedly_" xml:id="markedly" type="gloss" resp="editors.xml#VBS">
+                Distinctly, definitely, notably. Source: Oxford English Dictionary
+                </note> <ref target="fixed_" corresp="fixed">fixed</ref>
+                <note target="fixed_" xml:id="fixed" resp="editors.xml#VBS" type="gloss">
+                To make someone motionless with astonishment. Source: Oxford English Dictionary
+                </note> me. He turned away; that was all I knew.
             </p>
         </div>
         <div type="chapter" n="4">
@@ -1285,10 +1300,18 @@
             <p>
                 It was not that I didn't wait, on this occasion, for more, for I was rooted
                 as deeply as I was shaken. Was there a "secret" at Bly—a mystery of <ref corresp="udolpho" target="udolpho_">Udolpho</ref>
+                <note type="editorial" resp="editors.xml#VBS" xml:id="udolpho" target="udolpho_">
+                This is in reference to the Gothic story <hi rend="italic">The Mysteries of Udolpho</hi>.
+                It is about Emily, a young woman, who moves in with her aunt after her father dies.
+                Her uncle is a crule man who traps her and her aunt in a castle and forces Emily to
+                marry his friend. She escapes and marries the man she loves.
+                <ref target="https://www.bl.uk/collection-items/the-mysteries-of-udolpho">https://www.bl.uk/collection-items/the-mysteries-of-udolpho</ref></note>
                 or an insane, an unmentionable relative kept in unsuspected confinement?
                 I can't say how long I turned it over, or how long, in a confusion of curiosity
                 and dread, I remained where I had had my collision; I only recall that when
                 I re-entered the house darkness had quite closed in. Agitation, in the <ref target="interval_" corresp="interval">interval,</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="interval" target="interval_">
+                An open space between two thing; a gap. Source: Oxford English Dictionary</note>
                 certainly had held me and driven me, for I must, in circling about the place,
                 have walked three miles; but I was to be, later on, so much more overwhelmed
                 that this mere dawn of alarm was a comparatively human chill. The most singular
@@ -1309,9 +1332,11 @@
                 I may say, with the instinct of sparing my companion. On the spot, accordingly,
                 in the pleasant hall and with her eyes on me, I, for a reason that I couldn't
                 then have phrased, achieved an inward resolution—offered a vague <ref corresp="pretext" target="pretext_">pretext</ref>
-                for my lateness and, with the plea of the beauty of the night and of the
+                <note target="pretext_" xml:id="pretext" resp="editors.xml#VBS" type="gloss">
+                A reason that hides someone's true purpose;  an excuse. Source: Oxford English Dictionary
+                </note> for my lateness and, with the plea of the beauty of the night and of the
                 heavy dew and wet feet, went as soon as possible to my room.
-            </p><p><!-- TODO: Start from here -->
+            </p><p>
                 Here it was another affair; here, for many days after, it was a queer affair
                 enough. There were hours, from day to day—or at least there were moments,
                 snatched even from clear duties—when I had to shut myself up to think. It
@@ -1328,11 +1353,18 @@
                 "game". Of whatever it was that I knew, nothing was known around me. There
                 was but one sane inference: someone had taken a liberty rather gross. That
                 was what, repeatedly, I dipped into my room and locked the door to say to
-                myself. We had been, collectively, subject to an intrusion; some unscrupulous
+                myself. We had been, collectively, subject to an intrusion; some <ref target="unscrupulous_" corresp="unscrupulous">unscrupulous</ref>
+                <note target="unscrupulous_" xml:id="unscrupulous" resp="editors.xml#VBS" type="gloss">
+                Someone who acts in a dishonest way in order to get what they want.
+                Source: <ref target="https://www.collinsdictionary.com/us/dictionary/english/unscrupulous">
+                https://www.collinsdictionary.com/us/dictionary/english/unscrupulous</ref></note>
                 traveler, curious in old houses, had made his way in unobserved, enjoyed
                 the prospect from the best point of view, and then stolen out as he came.
                 If he had given me such a bold hard stare, that was but a part of his
-                indiscretion. The good thing, after all, was that we should surely see no
+                <ref corresp="indiscretion" target="indiscretion_">indiscretion.</ref>
+                <note target="indiscretion_" type="gloss" resp="editors.xml#VBS" xml:id="indiscretion">
+                Wanting to be discreet. Source: Oxford English Dictionary
+                </note> The good thing, after all, was that we should surely see no
                 more of him.
             </p>
             <pb n="45"/>
@@ -1343,7 +1375,7 @@
                 could I so like it as through feeling that I could throw myself into it in
                 trouble. The attraction of my small charges was a constant joy, leading me
                 to wonder afresh at the vanity of my original fears, the distaste I had begun
-                by entertaining for the probable gray prose of my office. There was to be
+                by entertaining for the probable <ref target="prose_" corresp="gray">gray prose</ref> of my office. There was to be <!-- TODO: Define prose -->
                 no gray prose, it appeared, and no long grind; so how could work not be charming
                 that presented itself as daily beauty? It was all the romance of the nursery
                 and the poetry of the school room. I don't mean by this, of course, that
@@ -1355,27 +1387,51 @@
                 continued to cover the region of the boy's conduct at school. It had been
                 promptly given me, I have noted, to face that mystery 
                 <pb n="46"/>
-                without a pang. Perhaps
+                without a <ref corresp="pang" target="pang_">pang.</ref>
+                <note xml:id="pang" resp="editors.xml#VBS" type="gloss" target="pang_">
+                A sudden sharp feeling of mental anguish or intense emotional pain.
+                Source: Oxford English Dictionary</note> Perhaps
                 even it would be nearer the truth to say that—without a word—he himself
                 had cleared it up. He had made the whole charge absurd. My conclusion bloomed
                 there with the real rose flush of his innocence: he was only too fine and
                 fair for the little horrid, unclean school world, and he had paid a price
                 for it. I reflected acutely that the sense of such differences, such
                 superiorities of quality, always, on the part of the majority—which could
-                include even stupid, sordid headmasters—turns infallibly to the vindictive.
+                include even stupid, <ref target="sordid_" corresp="sordid">sordid</ref>
+                <note target="sordid_" type="gloss" resp="editors.xml#VBS" xml:id="sordid">
+                Low, coarse, rough; mean. Source: Oxford Englsh Dictionary</note> headmasters—turns
+                <ref corresp="infallibly" target="infallibly_">infallibly</ref>
+                <note xml:id="infallibly" target="infallibly_" resp="editors.xml#VBS" type="gloss">
+                Most certainly. Source: Oxford English Dictionary</note> to the
+                <ref target="vindictive_" corresp="vindictive">vindictive.</ref>
+                <note type="gloss" resp="edtors.xml#VBS" target="vindictive_" xml:id="vindictive">
+                Involving retribution or punishment; avenging. Source: Oxford English Dictionary</note>
             </p><p>
                 Both the children had a gentleness (it was their only fault, and it never
-                made Miles a muff) that kept them—how shall I express it? almost impersonal
-                and certainly quite unpunishable. They were like the cherubs of the anecdote,
+                made Miles a <ref corresp="muff" target="muff_">muff)</ref>
+                <note xml:id="muff" target="muff_" resp="editors.xml#VBS" type="gloss">
+                A foolish, stupid, feeble, or incompetent person. Source: Oxford English Dictionary
+                </note> that kept them—how shall I express it? almost impersonal
+                and certainly quite unpunishable. They were like the <ref target="cherubs_" corresp="cherubs">cherubs</ref> of the <!-- TODO: Define Cherbus -->
+                <ref corresp="anecdote" target="anecdote_">anecdote,</ref>
+                <note type="gloss" resp="editors.xml#VBS" target="anecdote_" xml:id="anecdote">
+                A short account of an interesting experience.
+                Source: Oxford English Dictionary</note>
                 who had—morally, at any rate—nothing to whack! I remember feeling with
                 Miles in especial as if he had had, as it were, no history. We expect of
-                a small child a scant one, but there was in this beautiful little boy something
+                a small child a <ref target="scant_" corresp="scant">scant</ref>
+                <note xml:id="scant" target="scant_" resp="editors.xml#VBS" type="gloss">
+                Barely; hardly. Source: Oxford English Dictionary
+                </note> one, but there was in this beautiful little boy something
                 extraordinarily sensitive, yet extraordinarily happy, that, more than in
                 any creature of his age I have seen, struck me as beginning anew each day.
                 He had never for a second suffered. I took this as a direct disproof of his
                 <pb n="47"/>
-                having really been chastised. If he had been wicked he would have "caught"
-                it, and I should have caught it by the rebound—I should have found the trace.
+                having really been <ref corresp="chastised" target="chastised_">chastised.</ref>
+                <note type="gloss" resp="editors.xml#VBS" target="chastised_" xml:id="chastised">
+                To punish; to inflict punishment. Source: Oxford English Dictionary
+                </note> If he had been wicked he would have "caught"
+                it, and I should have caught it by the rebound— I should have found the trace.
                 I found nothing at all, and he was therefore an angel. He never spoke of
                 his school, never mentioned a comrade or a master; and I, for my part, was
                 quite too much disgusted to allude to them. Of course I was under the spell,
@@ -1407,7 +1463,10 @@
                 instantaneous; it was all there. The person looking straight in was the person
                 who had already appeared to me. He appeared thus again with I won't say greater
                 distinctness, for that was impossible, but with a nearness that represented
-                a forward stride in our intercourse and made me, as I met him, catch my breath
+                a forward stride in our <ref target="intercourse_" corresp="intercourse">intercourse</ref>
+                <note type="gloss" resp="editors.xml#VBS" target="intercourse_" xml:id="intercourse">
+                Social communication between people. Source: Oxford English Dictionary
+                </note> and made me, as I met him, catch my breath
                 and turn cold. He was the same—he was the same, and seen, this time, as
                 he had been seen before, from the waist up, the window, though the dining
                 room was on the ground floor, not going down to the terrace on which he stood.
@@ -1420,7 +1479,10 @@
                 stare into my face, through the glass and across the room, was as deep and
                 hard as then, but it quitted me for a moment during which I could still watch
                 it, see it fix successively several other things. On the spot there came
-                to me the added shock of a certitude that it was not for me he had come there.
+                to me the added shock of a <ref corresp="certitude" target="certitude_">certitude</ref>
+                <note xml:id="certitude" target="certitude_" resp="editors.xml#VBS" type="gloss">
+                Being certain of anything. Source: Oxford English Dictionary
+                </note> that it was not for me he had come there.
                 He had come for someone else.
             </p><p>
                 The flash of this knowledge—for it was knowledge in the midst of dread—produced
@@ -1447,11 +1509,14 @@
                 moment, to show me exactly what his range had been, Mrs. Grose, as I had
                 done for himself just before, came in from the hall. With this I had the
                 full image of a repetition of what had already occurred. She saw me as I
-                had seen my own visitant; she pulled up short as I had done; I gave her something
+                had seen my own <ref target="visitant_" corresp="visitant">visitant;</ref> she pulled up short as I had done; I gave her something
                 of the shock that I had received. She turned white, and this made me 
                 <pb n="51"/>
                 ask
-                myself if I had blanched as much. She stared, in short, and retreated on
+                myself if I had <ref corresp="blanched" target="blanched_">blanched</ref>
+                <note target="blanched_" xml:id="blanched" type="gloss" resp="editors.xml#VBS">
+                To make something white; to bleach. Source: Oxford English Dictionary
+                </note> as much. She stared, in short, and retreated on <!-- TODO: Start here -->
                 just <hi rend="italic">my</hi> lines, and I knew she had then passed out and come round to
                 me and that I should presently meet her. I remained where I was, and while
                 I waited I thought of more things than one. But there's only one I take space
@@ -1471,7 +1536,9 @@
             </p><p>
                 "You're as white as a sheet. You look awful."
             </p><p>
-                I considered; I could meet on this, without scruple, any innocence. My need
+                I considered; I could meet on this, <ref target="scruple_" corresp="scruple">without scruple,</ref>
+                <note resp="editors.xml#VBS" type="gloss" xml:id="scruple" target="scruple_">
+                Without doubt or question. Source: Oxford Englsh Dictionary</note> any innocence. My need
                 to respect the bloom of Mrs. Grose's had dropped, without a rustle, from
                 my shoulders, and if I wavered for the instant it was not with what I kept
                 back. I put out my hand to her and she took it; I held her hard a little,
@@ -1480,7 +1547,9 @@
             </p><p>
                 "Has anything happened?"<pb n="53"/>
             </p><p>
-                "Yes. You must know now. Did I look very queer?"
+                "Yes. You must know now. Did I look very <ref corresp="queer" target="queer_">queer?"</ref>
+                <note target="queer_" xml:id="queer" type="gloss" resp="editors.xml#VBS">
+                Here meaning strange or odd. Source: Oxford English Dictionary</note>
             </p><p>
                 "Through this window? Dreadful!"
             </p><p>
@@ -1493,7 +1562,10 @@
             </p><p>
                 Her hand tightened. "What was it?"
             </p><p>
-                "An extraordinary man. Looking in."
+                "An <ref target="extraordinary_" corresp="extraordinary">extraordinary</ref>
+                <note resp="editors.xml#VBS" type="gloss" xml:id="extraordinary" target="extraordinary_">
+                Here meaning unusual. Source: Oxford English Dictionary
+                </note> man. Looking in."
             </p><p>
                 "What extraordinary man?"
             </p><p>
@@ -1548,7 +1620,9 @@
                 "He's—God help me if I know <hi rend="italic">what</hi> he is!"
             </p><p>
                 Mrs. Grose looked round once more; she fixed her eyes on the duskier distance,
-                then, pulling herself together, turned to me with abrupt inconsequence. "It's
+                then, pulling herself together, turned to me with abrupt <ref corresp="inconsequence" target="inconsequence_">inconsequence.</ref>
+                <note target="inconsequence_" xml:id="inconsequence" type="gloss" resp="editors.xml#VBS">
+                Lacking reason or a logical sequence. Source: Oxford English Dictionary</note>"It's
                 time we should be at church."
             </p><p>
                 "Oh, I'm not fit for church!"
@@ -1568,7 +1642,7 @@
                 I spoke boldly. "I'm afraid of <hi rend="italic">him.</hi>"
             </p><p>
                 Mrs. Grose's large face showed me, at this, for the first time, the faraway
-                faint glimmer of a consciousness more acute: I somehow made out in it the
+                faint glimmer of a consciousness more <ref target="acute_" corresp="acute">acute:</ref> I somehow made out in it the
                 delayed dawn of an idea I myself had not given her and that was as yet quite
                 obscure to me, It comes back to me that I thought instantly of this as something
                 I could get from her; and I felt it to be connected with the desire she presently
@@ -1606,7 +1680,7 @@
                 Mrs. Grose at last turned round, and there was still more in her face.
                 <hi rend="italic">"I</hi> couldn't have come out."
             </p><p>
-                "Neither could l!" I laughed again. "But I did come. I have my duty."
+                "Neither could I!" I laughed again. "But I did come. I have my duty."
             </p><p>
                 "So have I mine," she replied; after which she added "What is he like?"
             </p><p>
@@ -1657,7 +1731,10 @@
             </p><p>
                 "Quint?"
             </p><p>
-                "Peter Quint—his own man, his valet, when he was here!"
+                "Peter Quint—his own man, his <ref corresp="valet" target="valet_">valet,</ref>
+                <note target="valet_" xml:id="valet" type="gloss" resp="editors.xml#VBS">
+                Here meaning a gentleman's personal attendant. Source: Oxford English Dictionary
+                </note> when he was here!"
             </p><p>
                 "When the master was?"
             </p><p>
@@ -1691,19 +1768,30 @@
                 It took of course more than that particular passage to place us together
                 in presence of what we had now to live with as we could—my dreadful liability
                 to impressions of the order so vividly exemplified, and my companion's knowledge,
-                henceforth—a knowledge half consternation and half compassion—of that
+                henceforth—a knowledge half <ref corresp="consternation" target="consternation_">consternation</ref>
+                <note resp="editors.xml#VBS" type="gloss" xml:id="consternation" target="consternation_">
+                Amazement and terror; dismay. Source: Oxford English Dictionary
+                </note> and half compassion—of that
                 liability. There had been, this evening, after the revelation that left me,
-                for an hour, so prostrate—there had been, for either of us, no attendance
+                for an hour, so <ref target="prostrate_" corresp="prostrate">prostrate—</ref>
+                <note target="prostrate_" xml:id="prostrate" type="gloss" resp="editors.xml#VBS">
+                In a state of physical exhaustion or complete weakness. Source: Oxford English Dictionary
+                </note> there had been, for either of us, no attendance
                 on any service but a little service of tears and vows, of prayers and promises,
                 a climax to the series of mutual challenges and pledges that had straightway
-                ensued on our retreating together to me schoolroom and shutting ourselves
+                ensued on our retreating together to the schoolroom and shutting ourselves
                 up there to have everything out. The result of our having everything out
                 was simply to reduce our situation to the last rigor of its elements. She
                 herself had seen nothing, not the shadow of a shadow, and 
                 <pb n="60"/>
                 nobody in the house
-                but the governess was in the governess's plight; yet she accepted without
-                directly impugning my sanity the truth as I gave it to her, and ended by
+                but the governess was in the governess's <ref corresp="plight" target="plight_">plight;</ref>
+                <note resp="editors.xml#VBS" type="gloss" xml:id="plight" target="plight_">
+                An unfortunate condition or state. Source: Oxford English Dictionary
+                </note> yet she accepted without directly <ref target="impugning_" corresp="impugning">impugning</ref>
+                <note target="impugning_" xml:id="impugning" type="gloss" resp="editors.xml#VBS">
+                To call in question; to dispute the truth, validity, or correctness. Source: Oxford English Dictionary
+                </note> my sanity the truth as I gave it to her, and ended by
                 showing me, on this ground, an awestricken tenderness, an expression of the
                 sense of my more than questionable privilege, of which the very breath has
                 remained with me as that of the sweetest of human charities.
@@ -1727,12 +1815,18 @@
             </p><p>
                 "He was looking for someone else, you say—someone who was not you?"
             </p><p>
-                "He was looking for little Miles." A portentous clearness now possessed me.
+                "He was looking for little Miles." A <ref corresp="portentous" target="portentous_">portentous</ref>
+                <note resp="editors.xml#VBS" type="gloss" xml:id="portentous" target="portentous_">
+                Ominous, threatening. Source: Oxford English Dictionary</note> clearness now possessed me.
                 "<hi rend="italic">That's</hi> whom he was looking for."
             </p><p>
                 "But how do you know?"
             </p><p>
-                "I know, I know, I know!" My exaltation grew. "And <hi rend="italic">you</hi> know, my dear!"
+                "I know, I know, I know!" My <ref target="exaltation_" corresp="exaltation">exaltation</ref>
+                <note target="exaltation_" xml:id="exaltation" type="gloss" resp="editors.xml#VBS">
+                A strong feeling of happiness. Source: <ref target="https://dictionary.cambridge.org/us/dictionary/english/exaltation">
+                https://dictionary.cambridge.org/us/dictionary/english/exaltation</ref>
+                </note> grew. "And <hi rend="italic">you</hi> know, my dear!"
             </p><p>
                 She didn't deny this, but I required, I felt, not even so much telling as
                 that. She resumed in a moment, at any rate: "What if <hi rend="italic">he</hi> should see
@@ -1749,14 +1843,27 @@
                 but something within me said that by offering myself bravely as the sole
                 subject 
                 <pb n="62"/>
-                of such experience, by accepting, by inviting, by surmounting it
-                all, I should serve as an expiatory victim and guard the tranquility of my
-                companions. The children, in especial I should thus fence about and absolutely
+                of such experience, by accepting, by inviting, by <ref corresp="surmounting" target="surmounting_">surmounting</ref>
+                <note target="surmounting_" xml:id="surmounting" resp="editors.xml#VBS" type="gloss">
+                To prevail over, get the better of, overcome. Source: Oxford Englsh Dictionary</note> it
+                all, I should serve as an <ref target="expiatory_" corresp="expiatory">expiatory</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="expiatory" target="expiatory_">
+                Making amends for. Source: Oxford English Dictionary <!-- TODO: Double check -->
+                </note> victim and guard the tranquility of my
+                companions. The children, <ref corresp="especial" target="especial_">in especial,</ref>
+                <note target="especial_" xml:id="especial" resp="editors.xml#VBS" type="gloss">
+                In particular; especially. Source: Oxford English Dictionary
+                </note> I should thus <ref target="fence_" corresp="fence">fence about</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="fence" target="fence_">
+                To keep off with a fence. Source: Oxford English Dictionary</note> and absolutely
                 save. I recall one of the last things I said that night to Mrs. Grose.
             </p><p>
                 "It does strike me that my pupils have never mentioned—"
             </p><p>
-                She looked at me hard as I musingly pulled up. "His having been here and
+                She looked at me hard as I <ref corresp="musingly" target="musingly_">musingly</ref>
+                <note target="musingly_" xml:id="musingly" resp="editors.xml#VBS" type="gloss">
+                Thoughtfully, dreamily. Source: Oxford English Dictionary
+                </note> pulled up. "His having been here and
                 the time they were with him?"
             </p><p>
                 "The time they were with him, and his name, his presence, his history, in
@@ -1774,7 +1881,10 @@
             </p><p>
                 "That he has never spoken of him?"
             </p><p>
-                "Never by the least allusion. And you tell me they were 'great friends'?"
+                "Never by the least <ref target="allusion_" corresp="allusion">allusion.</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="allusion" target="allusion_">
+                An implied, indirect, or passing reference to a person or thing. Source: Oxford English Dictionary
+                </note> And you tell me they were 'great friends'?"
             </p><p>
                 "Oh, it wasn't <hi rend="italic">him!</hi>" Mrs. Grose with emphasis declared. "It was Quint's
                 own fancy. To 
@@ -1791,9 +1901,18 @@
                 reflection that a part of it applied to several of the members of the household,
                 of the half-dozen maids and men who were still of our small colony. But there
                 was everything, for our apprehension, in the lucky fact that no discomfortable
-                legend, no perturbation of scullions, had ever, within anyone's memory attached
+                legend, no <ref corresp="perturbation" target="perturbation_">perturbation</ref>
+                <note target="perturbation_" xml:id="perturbation" resp="editors.xml#VBS" type="gloss">
+                Mental or spiritual agitation or disturbance. Source: Oxford English Dictionary</note> of
+                <ref target="scullions_" corresp="scullions">scullions,</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="scullions" target="scullions_">
+                A domestic servant of the lowest rank in a household who worked in the kitchen. Source: Oxford English Dictionary
+                </note> had ever, within anyone's memory attached
                 to the kind old place. It had neither bad name nor ill fame, and Mrs. Grose,
-                most apparently, only desired to cling to me and to quake in silence. I even
+                most apparently, only desired to cling to me and to <ref corresp="quake" target="quake_">quake</ref>
+                <note target="quake_" xml:id="quake" resp="editors.xml#VBS" type="gloss">
+                To shake involuntarily; to tremble, shiver, shudder. Source: Oxford English Dictionary
+                </note> in silence. I even
                 put her, the very last thing of all, to the test. It was when, at midnight,
                 she had her hand on the schoolroom door to take leave. "I have it from you
                 then—for it's of great importance—that he was definitely and admittedly
@@ -1811,7 +1930,10 @@
                 "He wouldn't be bothered with more?" This squared well enough with my impression
                 of him: he was not a trouble-loving gentleman, nor so very particular perhaps
                 about some of the company <hi rend="italic">he</hi> kept. All the same, I pressed my
-                interlocutress, "I promise you I would have told!"
+                <ref target="interlocutress_" corresp="interlocutress">interlocutress,</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="interlocutress" target="interlocutress_">
+                A woman who takes part in a dialogue, conversation, or discussion. Source: Oxford English Dictionary
+                </note> "I promise you I would have told!"
             </p><p>
                 She felt my discrimination. "I daresay I was wrong. But, really, I was afraid."
             </p><p>
@@ -1858,10 +1980,16 @@
                 on the road from the village: a catastrophe explained—superficially at least—by
                 a visible wound to his head; such a wound as might have been produced—and
                 as, on the final evidence, <hi rend="italic">had</hi> been—by a fatal slip, in the dark
-                and after leaving the public house, on the steepish icy slope, a wrong path
+                and after leaving the <ref corresp="house" target="house_">public house,</ref>
+                <note target="house_" xml:id="house" resp="editors.xml#VBS" type="gloss">
+                A pub or tavern. Source: Oxford English Dictionary
+                </note> on the steepish icy slope, a wrong path
                 altogether, at the bottom of which he lay. The icy slope, the turn mistaken
                 at night and in liquor, accounted for much—practically, in the end and after
-                the inquest and boundless chatter, for everything; but there had been matters
+                the <ref target="inquest_" corresp="inquest">inquest</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="inquest" target="inquest_">
+                Inquiry or investigation (into something). Source: Oxford English Dictionary
+                </note> and boundless chatter, for everything; but there had been matters
                 in his life—strange passages and perils, secret disorders, vices more than
                 suspected—that would have accounted for a good deal more.
             </p><p>
@@ -1876,7 +2004,7 @@
                 me—I confess I rather applaud myself as I look back!—that I saw
                 my service so strongly and so simply. I was there to protect and defend the
                 little creatures in the world the most bereaved and the most lovable, the
-                appeal of whose helplessness had suddenly become only too explicit, a deep,
+                appeal of whose helplessness had suddenly become only too <ref corresp="explicit" target="explicit_">explicit,</ref> a deep,
                 constant ache of one's own committed heart. We were cut off, really, together;
                 we were united in our danger. They had nothing but me, and I—well, I had
                 <hi rend="italic">them.</hi> It was in short a magnificent chance. This chance presented
@@ -1899,19 +2027,30 @@
                 aware afresh, with her, as we went, of how, like her brother, she contrived—it
                 was the charming thing in both children—to let me alone without appearing
                 to drop me and to accompany me without appearing to surround. They were never
-                importunate and yet never listless. My attention to them all really went
+                <ref target="importunate_" corresp="importunate">importunate</ref>
+                <note target="importunate_" xml:id="importunate" resp="editors.xml#VBS" type="gloss">
+                Something that is a nuisance or inconvenience; persistently troublesome; annoying, irritating, irksome.
+                Source: Oxford English Dictionary</note> and yet never
+                <ref corresp="listless" target="listless_">listless.</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="listless" target="listless_">
+                A lack of interest, spirit, or energy.
+                Source: <ref target="https://www.merriam-webster.com/dictionary/listless">https://www.merriam-webster.com/dictionary/listless</ref>
+                </note> My attention to them all really went
                 to seeing them amuse themselves immensely without me: this was a spectacle
                 they seemed actively to prepare and that engaged me as an active admirer.
                 I walked in a world of their invention—they had no occasion whatever to
                 draw upon mine; so that my time was taken only with being, for them, some
                 remarkable person or thing that the game of the moment required and that
                 was merely, thanks to my superior, my exalted stamp, a happy and highly
-                distinguished sinecure. I forget what I was on the present occasion; I only
+                distinguished <ref target="sinecure_" corresp="sinecure">sinecure.</ref>
+                <note target="sinecure_" xml:id="sinecure" resp="editors.xml#VBS" type="gloss">
+                A position that does not have work attached to it but is paid. Source: Oxford English Dictionary
+                </note> I forget what I was on the present occasion; I only
                 remember that I was something very important and very quiet and that Flora
                 was playing very hard. We were 
                 <pb n="69"/>
                 on the edge of the lake, and, as we had lately
-                begun geography, the lake was the Sea of Azof.
+                begun geography, the lake was the <ref corresp="azof" target="azof_">Sea of Azof.</ref> <!-- TODO: Define -->
             </p><p>
                 Suddenly, in these circumstances, I became aware that, on the other side
                 of the Sea of Azof, we had an interested spectator. The way this knowledge
@@ -1925,17 +2064,22 @@
                 the hot, still hour. There was no ambiguity in anything; none whatever, at
                 least, in the conviction I from one moment to another found myself forming
                 as to what I should see straight before me and across the lake as a consequence
-                of raising my eyes. They were attached at this juncture to the stitching
+                of raising my eyes. They were attached at this <ref target="juncture_" corresp="juncture">juncture</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="juncture" target="juncture_">
+                The place where two things are joined. Source: Oxford English Dictionary</note> to the stitching
                 in which I was engaged, and I can feel once more the spasm of my effort not
                 to move them till I should so have steadied myself as to be able to make
                 up my mind what 
                 <pb n="70"/>
-                to do. There was an alien object in view—a figure whose
+                to do. There was an <ref target="alien_" corresp="alien">alien</ref>
+                <note target="alien_" xml:id="alien" resp="editors.xml#VBS" type="gloss">
+                Here meaning strange, unfamiliar, different. Source: Oxford English Dictionary
+                </note> object in view—a figure whose
                 right of presence I instantly, passionately questioned. I recollect counting
                 over perfectly the possibilities, reminding myself that nothing was more
                 natural, for instance, than the appearance of one of the men about the place,
                 or even of a messenger, a postman, or a tradesman's boy, from the village.
-                That reminder had as little effect on my practical certitude as I was
+                That reminder had as little effect on my practical <ref corresp="certitude" target="certitude_">certitude</ref> as I was
                 conscious—still even without looking—of its having upon the character and
                 attitude of our visitor. Nothing was more natural than that these things
                 should be the other things that they absolutely were not.
@@ -1950,7 +2094,10 @@
                 of alarm, would tell me. I waited, but nothing came; then, in the first
                 place—and 
                 <pb n="71"/>
-                there is something more dire in this, I feel, than in anything
+                there is something more <ref target="dire_" corresp="dire">dire</ref>
+                <note target="dire_" xml:id="dire" resp="editors.xml#VBS" type="gloss">
+                Terrible, dreadful; awful, ‘frightful’. Source: Oxford English Dictionary
+                </note> in this, I feel, than in anything
                 I have to relate—I was determined by a sense that, within a minute, all
                 sounds from her had previously dropped; and, in the second, by the circumstance
                 that, also within the minute, she had, in her play, turned her back to the
@@ -1959,7 +2106,10 @@
                 notice. She had picked up a small flat piece of wood, which happened to have
                 in it a little hole that had evidently suggested to her the idea of sticking
                 in another fragment that might figure as a mast and make the thing a boat
-                This second morsel, as I watched her, she was very markedly and intently
+                This second <ref corresp="morsel" target="morsel_">morsel,</ref>
+                <note type="gloss" resp="editors.xml#VBS" xml:id="morsel" target="morsel_">
+                A small piece or amount (of anything). Source: Oxford English Dictionary
+                </note> as I watched her, she was very markedly and intently
                 attempting to tighten in its  place. My apprehension of what she was doing
                 sustained me so that after some seconds I felt I was ready for more. Then
                 I again shifted my eyes—I faced what I had to face.
@@ -1970,22 +2120,28 @@
             <head>VII</head>
             <p>
                 I got hold of Mrs. Grose as soon after this as I could; and I can give no
-                intelligible account of how I fought out the interval. Yet I still hear myself
+                intelligible account of how I fought out the <ref target="interval_" corresp="interval">interval.</ref> Yet I still hear myself
                 cry as I fairly threw myself into her arms: "They <hi rend="italic">know</hi>—it's too
                 monstrous: they know, they know!"
             </p><p>
-                "And what on earth—?" I felt her incredulity as she held me.
+                "And what on earth—?" I felt her <ref corresp="incredulity" target="incredulity_">incredulity</ref>
+                <note target="incredulity_" xml:id="incredulity" resp="editors.xml#VBS" type="gloss">
+                Unwillingness to believe something. Source: Oxford English Dictionary
+                </note> as she held me.
             </p><p>
                 "Why, all that <hi rend="italic">we</hi> know—and heaven knows what else besides!" Then,
                 as she released me, I made it out to her, made it out perhaps only now with
-                full coherency even to myself. "Two hours ago, in the garden"—I could scarce
-                articulate—"Flora <hi rend="italic">saw!</hi>"
+                full coherency even to myself. "Two hours ago, in the garden"—I could <ref target="scarce_" corresp="scarce">scarce</ref>
+                <ref corresp="articulate" target="articulate_">articulate—</ref>
+                <note xml:id="articulate" resp="editors.xml#VBS" type="gloss" target="articulate_">
+                To utter or pronounce words. Source: Oxford English Dictionary
+                </note>"Flora <hi rend="italic">saw!</hi>"
             </p><p>
                 Mrs. Grose took it as she might have taken a blow in the stomach. "She has
                 told you?" she panted.
             </p><p>
                 "Not a word—that's the horror. She kept it to herself! The child of eight,
-                <hi rend="italic">that</hi> child!" Unutterable still, for me, was the stupefaction of it.
+                <hi rend="italic">that</hi> child!" Unutterable still, for me, was the <ref target="stupefaction_" corresp="stupefaction">stupefaction</ref> of it.
             </p>
             <pb n="73"/>
             <p>
@@ -1995,7 +2151,7 @@
             </p><p>
                 "Do you mean aware of <hi rend="italic">him?</hi>"
             </p><p>
-                "No—of <hi rend="italic">her.</hi>" I was conscious as I spoke that I looked prodigious
+                "No—of <hi rend="italic">her.</hi>" I was conscious as I spoke that I looked <ref corresp="prodigious" target="prodigious_">prodigious</ref>
                 things, for I got the slow reflection of them in my companion's face. "Another
                 person—this time; but a figure of quite as unmistakable horror and evil:
                 a woman in black, pale and dreadful—with such an air also, and such a face!—on
@@ -2107,7 +2263,9 @@
                 "In mourning—rather poor, almost shabby. But—yes—with extraordinary beauty."
                 I now recognized to what I had at last, stroke by stroke, brought the the
                 victim of my confidence, for she quite visibly weighed this. "Oh, handsome—very,
-                very," I insisted; "wonderfully handsome. But infamous."
+                very," I insisted; "wonderfully handsome. But <ref target="infamous_" corresp="infamous_">infamous."</ref>
+                <note resp="editors.xml#VBS" type="gloss" xml:id="infamous" target="infamous_">
+                Famous for badness of any kind. Source: Oxford English Dictionary</note>
             </p>
             <pb n="77"/>
             <p>
@@ -2138,9 +2296,13 @@
                 of a servant in the scale; but there was nothing to prevent 
                 <pb n="78"/>
                 an acceptance
-                of my companion's own measure of my predecessor's abasement. There was a
+                of my companion's own measure of my predecessor's <ref corresp="abasement" target="abasement_">abasement.</ref>
+                <note target="abasement_" xml:id="abasement" type="gloss" resp="editors.xml#VBS">
+                Lowering in rank; humiliation, degradation. Source: Oxford English Dictionary</note> There was a
                 way to deal with that, and I dealt; the more readily for my full vision—on
-                the evidence—of our employer's late clever, good-looking "own" man; impudent,
+                the evidence—of our employer's late clever, good-looking "own" man; <ref target="impudent_" corresp="impudent">impudent,</ref>
+                <note resp="editors.xml#VBS" type="gloss" target="impudent_" xml:id="impudent">
+                Shameless, immodest. Source: Oxford English Dictionary</note>
                 assured, spoiled, depraved. "The fellow was a hound."
             </p><p>
                 Mrs. Grose considered as if it were perhaps a little a case for a sense of
@@ -2151,7 +2313,10 @@
                 "With them all."
             </p><p>
                 It was as if now in my friend's own eyes Miss Jessel had again appeared.
-                I seemed at any rate, for an instant, to see their evocation of her as distinctly
+                I seemed at any rate, for an instant, to see their <ref target="evocation_" corresp="evocation">evocation</ref>
+                <note xml:id="evocation" target="evocation_" type="gloss" resp="editors.xml#VBS">
+                The calling up a spirit. Source: Oxford English Dictionary
+                </note> of her as distinctly
                 as I had seen her by the pond; and I brought out with decision: "It must
                 have been also what <hi rend="italic">she</hi> wished!"
             </p><p>
@@ -2183,7 +2348,7 @@
         <div type="chapter" n="8">
             <pb n="80"/>
             <head>VIII</head>
-            <p>
+            <p> <!-- TODO: Start here -->
                 What I had said to Mrs. Grose was true enough: there were in the matter I
                 had put before her depths and possibilities that I lacked resolution to sound;
                 so that when we met once more in the wonder of it we were of a common mind
@@ -2210,7 +2375,7 @@
                 On leaving her, after my first outbreak, I had of course returned to my pupils,
                 associating the right remedy for my dismay with that sense of their charm
                 which I had already found to be a thing I could positively cultivate and
-                which had never failed me yet. I had simply, in other words, plunged afresh
+                which had never failed me yet. I had simply, in other words, plunged <ref corresp="afresh" target="afresh_">afresh</ref>
                 into Flora's special society and there become aware—it was almost a
                 luxury!—that she could put her little conscious hand straight upon the spot
                 that ached. She had looked at me in sweet speculation and then had accused
@@ -2221,32 +2386,32 @@
                 this fathomless charity, that they had not entirely disappeared. To gaze
                 into the depths of blue of the child's eyes and pronounce their loveliness
                 a trick of premature cunning was to be guilty of a cynicism in preference
-                to which I naturally preferred to abjure my judgment and, so far as might
-                be, my agitation. I couldn't abjure for merely wanting to, but I could repeat
+                to which I naturally preferred to <ref target="abjure_" corresp="abjure">abjure</ref> my judgment and, so far as might
+                be, my agitation. I couldn't <ref corresp="abjure" target="abjure_">abjure</ref> for merely wanting to, but I could repeat
                 to Mrs. Grose as I did there, over and over, in the small hours—that with
                 their voices in the air, their pressure on one's heart, and their fragrant
                 faces against one's cheek, everything fell to the ground but their incapacity
                 and their beauty. It was a pity that, somehow, to settle this once for all,
-                I had equally to re-enumerate the signs of subtlety that, in the afternoon,
+                I had equally to <ref target="re-enumerate_" corresp="re-enumerate">re-enumerate</ref> the signs of subtlety that, in the afternoon,
                 by the lake, had made a miracle of my show of self-possession. It was a pity
-                to be obliged to reinvestigate the certitude of the moment itself and repeat
+                to be obliged to reinvestigate the <ref corresp="certitude" target="certitude_">certitude</ref> of the moment itself and repeat
                 how it had come to me as a revelation that the inconceivable communion I
                 then surprised was a matter, for either party, of habit. It was a pity that
-                I should have had to quaver out again the reasons for my not having, in my
-                delusion, so much as questioned that the little girl saw our visitant even
+                I should have had to <ref target="quaver_" corresp="quaver">quaver</ref> out again the reasons for my not having, in my
+                delusion, so much as questioned that the little girl saw our <ref corresp="visitant" target="visitant_">visitant</ref> even
                 as I actually saw Mrs. Grose herself, and that she wanted, by 
                 <pb n="83"/>
                 just so much
                 as she did thus see, to make me suppose she didn't, and at the same time,
                 without showing anything, arrive at a guess as to whether I myself did! It
-                was a pity that I needed once more to describe the portentous little activity
-                by which she sought to divert my attention—the perceptible increase of movement,
-                the greater intensity of play, the singing, the gabbling of nonsense, and
-                the invitation to romp.
+                was a pity that I needed once more to describe the <ref target="portentous_" corresp="portentous">portentous</ref> little activity
+                by which she sought to divert my attention—the <ref corresp="perceptible" target="perceptible_">perceptible</ref> increase of movement,
+                the greater intensity of play, the singing, the <ref target="gabbling_" corresp="gabbling">gabbling</ref> of nonsense, and
+                the invitation to <ref corresp="romp" target="romp_">romp.</ref>
             </p><p>
                 Yet if I had not indulged, to prove there was nothing in it, in this review,
                 I should have missed the two or three dim elements of comfort that still
-                remained to me. I should not for instance have been able to asseverate to
+                remained to me. I should not for instance have been able to <ref target="asseverate_" corresp="asseverate">asseverate</ref> to
                 my friend that I was certain—which was so much to the good—that <hi rend="italic">I</hi>
                 at least had not betrayed myself. I should not have been prompted, by stress
                 of need, by desperation of mind—I scarce know what to call it—to invoke
@@ -2266,28 +2431,29 @@
                 under my insistence, that you didn't pretend for him that he had not literally
                 <hi rend="italic">ever</hi> been 'bad'? He has <hi rend="italic">not</hi> literally 'ever,' in these weeks
                 that I myself have lived with him and so closely watched him; he has been
-                an imperturbable little prodigy of delightful, lovable goodness. Therefore
+                an <ref corresp="imperturbable" target="imperturbable_">imperturbable</ref> little prodigy of delightful, lovable goodness. Therefore
                 you might perfectly have made the claim for him if you had not, as it happened,
                 seen an exception to take. What was your exception, and to what passage in
                 your personal observation of him did you refer?"
             </p><p>
-                It was a dreadfully austere inquiry, but levity was not our note, and, at
-                any rate, before the gray dawn admonished us to separate I had got my answer.
+                It was a dreadfully <ref target="austere_" corresp="austere">austere</ref> inquiry, but
+                <ref corresp="levity" target="levity_">levity</ref> was not our note, and, at <!-- TODO: Define "not our note" -->
+                any rate, before the gray dawn <ref target="admonished_" corresp="admonished">admonished</ref> us to separate I had got my answer.
                 What my friend had had in mind proved to be immensely to the purpose. It
                 was neither more nor less than the circumstance that for a period of several
                 months Quint and the boy 
                 <pb n="85"/>
                 had been perpetually together. It was in fact the
                 very appropriate truth that she had ventured to criticize the propriety,
-                to hint at the incongruity, of so close an alliance, and even to go so far
-                on the subject as a frank overture to Miss Jessel. Miss Jessel had, with
+                to hint at the <ref corresp="incongruity" target="incongruity_">incongruity,</ref> of so close an alliance, and even to go so far
+                on the subject as a <ref target="overture_" corresp="overture">frank overture</ref> to Miss Jessel. Miss Jessel had, with
                 a most strange manner, requested her to mind her business, and the good woman
                 had, on this, directly approached little Miles. What she had said to him,
                 since I pressed, was that <hi rend="italic">she</hi> liked to see young gentlemen not forget
                 their station.
             </p><p>
                 I pressed again, of course, at this. "You reminded him that Quint was only
-                a base menial?"
+                a base <ref corresp="menial" target="menial_">menial?"</ref>
             </p><p>
                 "As you might say! And it was his answer, for one thing, that was bad."
             </p><p>
@@ -2305,7 +2471,7 @@
             </p>
             <pb n="86"/>
             <p>
-                "He then prevaricated about it—he said he hadn't?" Her assent was clear
+                "He then <ref target="prevaricated_" corresp="prevaricated">prevaricated</ref> about it—he said he hadn't?" Her assent was clear
                 enough to cause me to add in a moment: "I see. He lied."
             </p><p>
                 "Oh!" Mrs. Grose mumbled. This was a suggestion that it didn't matter; which
@@ -2328,7 +2494,7 @@
             </p><p>
                 "You do know, you dear thing," I replied; "only you haven't my dreadful boldness
                 of mind, and you keep back, out of timidity and modesty and delicacy, even
-                the impression that, in the past, when you had, without my aid, to flounder
+                the impression that, in the past, when you had, without my aid, to <ref corresp="flounder" target="flounder_">flounder</ref>
                 about 
                 <pb n="87"/>
                 in silence, most of all made you miserable. But I shall get it out
@@ -2337,16 +2503,16 @@
             </p><p>
                 "Oh, he couldn't prevent—"
             </p><p>
-                "Your learning the truth? I daresay! But, heavens," I fell, with vehemence,
-                athinking, "what it shows that they must, to that extent, have succeeded
+                "Your learning the truth? I daresay! But, heavens," I fell, with <ref target="vehemence_" corresp="vehemence">vehemence,</ref>
+                <ref corresp="athinking" target="athinking_">athinking,</ref> "what it shows that they must, to that extent, have succeeded
                 in making of him!"
             </p><p>
-                "Ah, nothing that's not nice <hi rend="italic">now!</hi>" Mrs. Grose lugubriously pleaded.
+                "Ah, nothing that's not nice <hi rend="italic">now!</hi>" Mrs. Grose <ref target="lugubriously_" corresp="lugubriously">lugubriously</ref> pleaded.
             </p><p>
                 "I don't wonder you looked queer," I persisted, "when I mentioned to you
                 the letter from his school!"
             </p><p>
-                "I doubt if I looked as queer as you!" she retorted with homely force. "And
+                "I doubt if I looked as queer as you!" she retorted with <ref corresp="homely" target="homely_">homely</ref> force. "And
                 if he was so bad then as that comes to, how is he such an angel now?"
             </p><p>
                 "Yes, indeed—and if he was a fiend at school! How, how, how? Well," I said
@@ -2357,7 +2523,7 @@
                 <pb n="88"/>
                 which
                 she had just previously referred—of the boy's happy capacity for an occasional
-                slip. "If Quint—on your remonstrance at the time you speak of—was a base
+                slip. "If Quint—on your <ref target="remonstrance_" corresp="remonstrance">remonstrance</ref> at the time you speak of—was a base
                 menial, one of the things Miles said to you, I find myself guessing, was
                 that you were another." Again her admission was so adequate that I continued:
                 "And you forgave him that?"
@@ -2372,14 +2538,14 @@
                 deadly view I was in the very act of forbidding myself to entertain. But
                 I so far succeeded in checking the expression of this view that I will throw,
                 just here, no further light on it than may be offered by the mention of my
-                final observation to Mrs. Grose. "His having lied and been impudent are,
+                final observation to Mrs. Grose. "His having lied and been <ref corresp="impudent" target="impudent_">impudent</ref> are,
                 I confess, less engaging specimens than I had hoped to have from you of the
-                outbreak in him of the little natural man. Still," I mused, "They must do,
+                outbreak in him of the little natural man. Still," I <ref target="mused_" corresp="mused">mused,</ref> "They must do,
                 <pb n="89"/>
                 for they make me feel more than ever that I must watch."
             </p><p>
                 It made me blush, the next minute, to see in my friend's face how much more
-                unreservedly she had forgiven him than her anecdote struck me as presenting
+                unreservedly she had forgiven him than her <ref corresp="anecdote" target="anecdote_">anecdote</ref> struck me as presenting
                 to my own tenderness an occasion for doing. This came out when, at the schoolroom
                 door, she quitted me. "Surely you don't accuse <hi rend="italic">him</hi>—"
             </p><p>
@@ -2392,7 +2558,7 @@
         <div type="chapter" n="9">
             <pb n="90"/>
             <head>IX</head>
-            <p>
+            <p> <!-- TODO: Start from here -->
                 I waited and waited, and the days, as they elapsed, took something from my
                 consternation. A very few of them, in fact, passing, in constant sight of
                 my pupils, without a fresh incident sufficed to give to grievous fancies
