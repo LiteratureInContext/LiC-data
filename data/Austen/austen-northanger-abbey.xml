@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="austen-northanger-abbey">
 
 <teiHeader xml:lang="en">
@@ -32,6 +33,8 @@
     <name ref="editors.xml#UVAstudents staff">Students and Staff of The University of Virginia</name>
    
 </respStmt>
+  <sponsor/>
+  <funder>National Endowment for the Humanities</funder>
 </titleStmt>
 
 <publicationStmt>
@@ -64,25 +67,28 @@
           <surname>Austen</surname>
         </persName>
       </author>
-  <editor><persName>R. W. Chapman</persName></editor>
   <title>Northanger Abbey</title>
   <imprint>
     <pubPlace>
-      <placeName type="tgn" key="7011931">Oxford</placeName>
+      <placeName type="tgn" key="7011781">London</placeName>
     </pubPlace>
-    <publisher>Clarendon Press</publisher>
-    <date>1926</date>
-    <note>Creation of machine-readable version and the first markup was performed by the University of Virginia Library Electronic Text Center in 1994. David Seamon checked the tagging in 1995. Lorrie Chisolm added the original TEI header in 2005. John Ivor Carlson converted the sgml file to TEI in 2005. </note>
-  </imprint>
+    <publisher>John Murray, Albemarle Street</publisher>
+    <date>1817</date>
+    <note>The first edition of <hi rend="italic">Northanger Abbey</hi> was published posthumously in 1817, together with <hi rend="italic">Persuasion</hi>. This digital edition is sourced from the 1926 Clarendon Press edition, noted below. Title page is sourced from the <ref target="https://janeaustens.house/northanger-abbey/">Jane Austen House Museum</ref></note></imprint>
+      <imprint>
+        <pubPlace>
+          <placeName type="tgn" key="7011931">Oxford</placeName>
+        </pubPlace>
+        <publisher>Clarendon Press</publisher>
+        <date>1926</date>
+        <note>Creation of machine-readable version and the first markup was performed by the University of Virginia Library Electronic Text Center in 1994. David Seamon checked the tagging in 1995. Lorrie Chisolm added the original TEI header in 2005. John Ivor Carlson converted the sgml file to TEI in 2005. </note>
+      </imprint>
     </monogr>
   </biblStruct>
 </sourceDesc>
 </fileDesc>
 
   
-  
-
-
   <encodingDesc>
     
     <projectDesc>
@@ -142,37 +148,55 @@
   </encodingDesc>
   
 
-<profileDesc>
-<creation>
-<date>1798-1817</date>
-</creation>
-  <textDesc n="novel">
-    <channel mode="w">print</channel>
-    <constitution type="single"/>
-    <derivation type="original"/>
-   <domain/>
-    <factuality type="fiction"/>
-   <interaction/>
-    <preparedness/>
-    <purpose type="entertain" degree="high"/>
-   <purpose type="inform" degree="low"/>   
-  </textDesc>
-  <settingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="en">English</language>
+    </langUsage>
     
-    <setting>
+    <creation/>
+    
+    <textDesc n="novel">
+      <channel mode="w">print</channel>
+      <constitution type="single"/>
+      <derivation type="original"/>
+      <domain/>
+      <factuality type="fiction"/>
+      <interaction/>
+      <preparedness/>
+      <purpose type="entertain" degree="high"/>
+      <purpose type="inform" degree="low"/>   
+    </textDesc>
+    
+    <settingDesc>
       
-      <name type="tgn" key="7011197">Bath, England</name>
-      <time from="1800" to="1815">Early 19th Century</time>
-     
-    </setting>
-  </settingDesc>
-<textClass>
-
-</textClass>
-</profileDesc>
-
+      <setting>
+        
+        <name type="tgn" key="7011197">Bath, England</name>
+        <time from="1800" to="1815">Early 19th Century</time>
+        
+      </setting>
+    </settingDesc>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2023" who="editors.xml#TH"
+      >Updated for schema compliance, added titlepage, added details about first edition for timeline data.</change>
+  </revisionDesc>
 </teiHeader>
 <text>
+  <front>
+    <pb n="[TP]" facs="pageImages/tp.jpg"/><titlePage><docTitle><titlePart>NORTHANGER ABBEY:<lb/>AND<lb/>PERSUASION.<lb/><lb/></titlePart></docTitle>
+    <docAuthor>BY THE AUTHOR OF "PRIDE AND PREJUDICE,"<lb/><lb/>"MANSFIELD-PARK," &amp;c.<lb/><lb/></docAuthor>
+    <titlePart>WITH A BIOGRAPHICAL NOTICE OF THE<lb/>AUTHOR.<lb/><lb/></titlePart>
+    <titlePart>IN FOUR VOLUMES.<lb/></titlePart>
+    <titlePart>VOL. I.<lb/><lb/></titlePart>
+    <docImprint>
+      <pubPlace>
+      <placeName type="tgn" key="7011781">LONDON:<lb/></placeName>
+      </pubPlace>
+      <publisher>JOHN MURRAY, ALBEMARLE-STREET.<lb/></publisher>
+      <date>1817</date>
+    </docImprint>
+  </titlePage></front>
   <body>
   <pb n="13"/>
 <div type="part" n="1">
