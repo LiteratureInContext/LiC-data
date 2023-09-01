@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/burke-reflections">
-    
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="burke-reflections">
     <teiHeader xml:lang="en">
 <fileDesc>
 <titleStmt>
@@ -60,7 +59,7 @@ This keyboarded and encoded edition of the work described above is co-owned by t
 <p>The EEBO-TCP project was divided into two phases. The 25,363 texts created during Phase 1 of the project have been released into the public domain as of 1 January 2015. Anyone can now take and use these texts for their own purposes, but we respectfully request that due credit and attribution is given to their original source.</p>
 <p>Users should be aware of the process of creating the TCP texts, and therefore of any assumptions that can be made about the data.</p>
 <p>Text selection was based on the New Cambridge Bibliography of English Literature (NCBEL). If an author (or for an anonymous work, the title) appears in NCBEL, then their works are eligible for inclusion. Selection was intended to range over a wide variety of subject areas, to reflect the true nature of the print record of the period. In general, first editions of a works in English were prioritized, although there are a number of works in other languages, notably Latin and Welsh, included and sometimes a second or later edition of a work was chosen if there was a compelling reason to do so.</p>
-<p>Image sets were sent to external keying companies for transcription and basic encoding. Quality assurance was then carried out by editorial teams in Oxford and Michigan. 5% (or 5 pages, whichever is the greater) of each text was proofread for accuracy and those which did not meet QA standards were returned to the keyers to be redone. After proofreading, the encoding was enhanced and/or corrected and characters marked as illegible were corrected where possible up to a limit of 100 instances per text. Any remaining illegibles were encoded as <gap>s. Understanding these processes should make clear that, while the overall quality of TCP data is very good, some errors will remain and some readable characters will be marked as illegible. Users should bear in mind that in all likelihood such instances will never have been looked at by a TCP editor.</p>
+<p>Image sets were sent to external keying companies for transcription and basic encoding. Quality assurance was then carried out by editorial teams in Oxford and Michigan. 5% (or 5 pages, whichever is the greater) of each text was proofread for accuracy and those which did not meet QA standards were returned to the keyers to be redone. After proofreading, the encoding was enhanced and/or corrected and characters marked as illegible were corrected where possible up to a limit of 100 instances per text. Any remaining illegibles were encoded as [gap]s. Understanding these processes should make clear that, while the overall quality of TCP data is very good, some errors will remain and some readable characters will be marked as illegible. Users should bear in mind that in all likelihood such instances will never have been looked at by a TCP editor.</p>
 <p>The texts were encoded and linked to page images in accordance with level 4 of the TEI in Libraries guidelines.</p>
 <p>Copies of the texts have been issued variously as SGML (TCP schema; ASCII text with mnemonic sdata character entities); displayable XML (TCP schema; characters represented either as UTF-8 Unicode or text strings within braces); or lossless XML (TEI P5, characters represented either as UTF-8 Unicode or TEI g elements).</p>
 <p>
@@ -69,10 +68,7 @@ Keying and markup guidelines are available at the
 .
 </p>
 </editorialDecl>
-<listPrefixDef>
-<prefixDef ident="tcp" matchPattern="([0-9\-]+):([0-9IVX]+)" replacementPattern="https://data.historicaltexts.jisc.ac.uk/view?pubId=ecco-$1&index=ecco&pageId=ecco-$1-$20"/>
-<prefixDef ident="char" matchPattern="(.+)" replacementPattern="https://raw.githubusercontent.com/textcreationpartnership/Texts/master/tcpchars.xml#$1"/>
-</listPrefixDef>
+
 </encodingDesc>
 <profileDesc>
 <langUsage>
@@ -93,7 +89,7 @@ Keying and markup guidelines are available at the
 <pb facs="tcp:0939801000:2"/>
 <p>
 IT may not be unnecessary to inform the Reader, that the following Reflections had their origin in a correspondence between the Author and a very young gentleman at Paris, who did him the honour of desiring his opinion upon the important transactions, which then, and ever since, have so much occupied the attention of all men. An answer was written some time in the month of October
-<hi>1789;</hi>
+<hi rend="italic">1789;</hi>
 but it was kept back upon prudential considerations. That letter is alluded to in the beginning of the fol
 
 lowing sheets. It has been since forwarded to the person to whom it was addressed. The reasons for the delay in sending it were assigned in a short letter to the same gentleman. This produced on his part a new and pressing application for the Author's sen
@@ -247,7 +243,7 @@ physic Knight of the Sorrowful Countenance.
 </p>
 <p>
 When I see the spirit of liberty in action, I see a strong principle at work; and this, for a while, is all I can possibly know of it. The wild
-<hi>gas,</hi>
+<hi rend="italic">gas,</hi>
 the fixed air is plainly broke loose: but we ought to suspend our judgment until the first ef
 
 servescence is a little subsided, till the liquor is cleared, and until we see something deeper
@@ -263,15 +259,15 @@ nue; with morality and religion; with the solidity of property; with peace and o
 nefit whilst it lasts, and is not likely to continue long. The effect of liberty to individuals is, that they may do what they please: We ought to see what it will please them to do, before we risque congratulations, which may be soon turned into complaints. Prudence would dictate this in the case of separate insulated private men; but li
 
 berty, when men act in bodies, is
-<hi>power.</hi>
+<hi rend="italic">power.</hi>
 Consi
 
 derate people before they declare themselves will observe the use which is made of
-<hi>power</hi>
+<hi rend="italic">power</hi>
 ; and particularly of so trying a thing as
-<hi>new</hi>
+<hi rend="italic">new</hi>
 power, in
-<hi>new</hi>
+<hi rend="italic">new</hi>
 persons, of whose principles, tem
 
 pers, and dispositions, they have little or no ex
@@ -341,20 +337,20 @@ For my part, I looked on that sermon as the public declaration of a man much con
 nected with literary caballers, and intriguing philosophers; with political theologians, and theological politicians, both at home and abroad. I know they set him up as a sort of oracle; be
 
 cause, with the best intentions in the world, he naturally
-<hi>philippizes,</hi>
+<hi rend="italic">philippizes,</hi>
 and chaunts his prophetic song in exact unison with their designs.
 </p>
 <p>
 That sermon is in a strain which I believe has not been heard in this kingdom, in any of the pulpits which are tolerated or encouraged in it, since the year 1648, when a predecessor of Dr. Price, the Reverend Hugh Peters, made the vault of the king's own chapel at St. James's ring with the honour and privilege of the Saints, who, with the
 <q>
 high praises of God in their mouths, and a
-<hi>two</hi>
+<hi rend="italic">two</hi>
 -edged sword in their hands, were to execute judgment on the heathen, and punishments upon the
-<hi>people</hi>
+<hi rend="italic">people</hi>
 ; to bind their
-<hi>kings</hi>
+<hi rend="italic">kings</hi>
 with chains, and their
-<hi>nobles</hi>
+<hi rend="italic">nobles</hi>
 with fetters of iron
 <note n="*" place="bottom">Psalm cxlix.</note>
 .
@@ -381,13 +377,13 @@ course. The hint given to a noble and reverend lay-divine, who is supposed high 
 , and to other lay-divines
 <q>
 of
-<hi>rank</hi>
+<hi rend="italic">rank</hi>
 and literature,
 </q>
 may be proper and season
 
 able, though somewhat new. If the noble
-<hi>Seekers</hi>
+<hi rend="italic">Seekers</hi>
 should find nothing to satisfy their pious fancies
 <pb n="15" facs="tcp:0939801000:18"/>
 in the old staple of the national church, or in all the rich variety to be found in the well-assorted warehouses of the dissenting congrega
@@ -398,17 +394,17 @@ tions, Dr. Price advises them to improve upon non-conformity; and to set up, eac
 Those who dislike that mode of worship which is pre
 
 scribed by public authority ought, if they can find
-<hi>no</hi>
+<hi rend="italic">no</hi>
 wor
 
 ship
-<hi>out</hi>
+<hi rend="italic">out</hi>
 of the church which they approve,
-<hi>to set up a separate worship for themselves</hi>
+<hi rend="italic">to set up a separate worship for themselves</hi>
 ; and by doing this, and giving an example of a national and manly worship, men of
-<hi>weight</hi>
+<hi rend="italic">weight</hi>
 from their
-<hi>rank</hi>
+<hi rend="italic">rank</hi>
 and literature may do the greatest service to society and the world.
 </q>
 P. 13. Dr. Price's Ser
@@ -424,13 +420,13 @@ nions. It is not for the diffusion of truth, but for the spreading of contradict
 descripts to the ample collection of known classes
 <g ref="char:punc">▪</g>
 genera and species, which at present beautify the
-<hi>hortus siccus</hi>
+<hi rend="italic">hortus siccus</hi>
 of dissent. A sermon from a noble
 <pb n="16" facs="tcp:0939801000:19"/>
 duke, or a noble marquis, or a noble earl, or baron bold, would certainly increase and diversify the amusements of this town, which begins to grow satiated with the uniform round of its vapid dissi
 
 pations. I should only stipulate that these new
-<hi>Mess-Johns</hi>
+<hi rend="italic">Mess-Johns</hi>
 in robes and coronets should keep some sort of bounds in the democratic and levelling principles which are expected from their titled pulpits. The new evangelists will, I dare say, disappoint the hopes that are conceived of them. They will not become, literally as well as figura
 
 tively, polemic divines, nor be disposed so to drill their congregations that they may, as in former blessed times, preach their doctrines to regiments of dragoons, and corps of infantry and artillery. Such arrangements, however favourable to the cause of compulsory freedom, civil and religious, may not be equally conducive to the national tranquillity. These few restrictions I hope are no great stretches of intolerance, no very violent exertions of despotism.
@@ -445,16 +441,16 @@ noxious a tendency. His doctrines affect our constitution in its vital parts. He
 lution Society, in this political sermon, that his majesty
 <q>
 is almost the
-<hi>only</hi>
+<hi rend="italic">only</hi>
 lawful king in the world, because the
-<hi>only</hi>
+<hi rend="italic">only</hi>
 one who owes his crown to the
-<hi>choice of his people.</hi>
+<hi rend="italic">choice of his people.</hi>
 </q>
 As to the kings of
-<hi>the world,</hi>
+<hi rend="italic">the world,</hi>
 all of whom (except one) this archpontiff of the
-<hi>rights of men,</hi>
+<hi rend="italic">rights of men,</hi>
 with all the
 <pb n="17" facs="tcp:0939801000:20"/>
 plenitude, and with more than the boldness of the papal deposing power in its meridian fervour of the twelfth century, puts into one sweeping clause of ban and anathema, and proclaims usurpers by circles of longitude and latitude, over the whole globe, it behoves them to consi
@@ -462,7 +458,7 @@ plenitude, and with more than the boldness of the papal deposing power in its me
 der how they admit into their territories these apostolic missionaries, who are to tell their sub
 
 jects they are not lawful kings. That is their concern. It is ours, as a domestic interest of some moment, seriously to consider the solidity of the
-<hi>only</hi>
+<hi rend="italic">only</hi>
 principle upon which these gentlemen ac
 
 knowledge a king of Great Britain to be entitled to their allegiance.
@@ -473,7 +469,7 @@ This doctrine, as applied to the prince now on the British throne, either is non
 fore neither true nor false, or it affirms a most unfounded, dangerous, illegal, and unconstitu
 
 tional position. According to this spiritual doctor of politics, if his majesty does not owe his crown to the choice of his people, he is no
-<hi>lawful</hi>
+<hi rend="italic">lawful</hi>
 king. Now nothing can be more untrue than that the crown of this kingdom is so held by his majesty. Therefore if you follow their rule, the king of Great Britain, who most cer
 
 tainly does not owe his high office to any form of popular election, is in no respect better than the rest of the gang of usurpers, who reign, or rather rob, all over the face of this our miserable world, without any sort of right or title to the allegiance of their people. The policy of this general doctrine, so qualified, is evident enough.
@@ -487,7 +483,7 @@ tuated to it, as if it were a first principle admit
 ted without dispute. For the present it would only operate as a theory, pickled in the preserv
 
 ing juices of pulpit eloquence, and laid by for future use.
-<hi>Condo et compono quae mox depromere possim.</hi>
+<hi rend="italic">Condo et compono quae mox depromere possim.</hi>
 By this policy, whilst our government is soothed with a reservation in its favour, to which it has no claim, the security, which it has in common with all governments, so far as opi
 
 nion is security, is taken away.
@@ -527,7 +523,7 @@ the same contempt of their choice with which his majesty has succeeded to that h
 Whatever may be the success of evasion in ex
 
 plaining away the gross error of
-<hi>fact,</hi>
+<hi rend="italic">fact,</hi>
 which sup
 
 poses that his majesty (though he holds it in concurrence with the wishes) owes his crown to the choice of his people, yet nothing can evade their full explicit declaration, concerning the principle of a right in the people to choose, which right is directly maintained, and tena
@@ -546,21 +542,21 @@ will resist the practical assertion of it with their lives and fortunes. They ar
 </p>
 <p>
 These gentlemen of the Old Jewry, in all their reasonings on the Revolution of 1688, have a revolution which happened in England about forty years before, and the late French revolution, so much before their eyes, and in their hearts, that they are constantly confounding all the three together. It is necessary that we should separate what they confound. We must recall their erring fancies to the
-<hi>acts</hi>
+<hi rend="italic">acts</hi>
 of the Revolution which we revere, for the discovery of its true
-<hi>principles.</hi>
+<hi rend="italic">principles.</hi>
 If the
-<hi>principles</hi>
+<hi rend="italic">principles</hi>
 of the Revolution of 1688 are any where to be found, it is in the statute called the
-<hi>Declaration of Right.</hi>
+<hi rend="italic">Declaration of Right.</hi>
 In that most wise, sober, and considerate declaration, drawn up by great lawyers and great statesmen, and not by warm and inexperienced enthusiasts, not one word is said, nor one suggestion made, of a general right
 <q>
 to choose our own
-<hi>governors</hi>
+<hi rend="italic">governors</hi>
 ; to cashier them for misconduct; and to
-<hi>form</hi>
+<hi rend="italic">form</hi>
 a government for
-<hi>ourselves.</hi>
+<hi rend="italic">ourselves.</hi>
 </q>
 </p>
 <p>
@@ -570,9 +566,9 @@ stone of our constitution, as reinforced, explained, improved, and in its fundam
 <q>
 An act for declaring the rights and liberties of the subject, and for
 <pb n="22" facs="tcp:0939801000:25"/>
-<hi>settling</hi>
+<hi rend="italic">settling</hi>
 the
-<hi>succession</hi>
+<hi rend="italic">succession</hi>
 of the crown.
 </q>
 You will observe, that these rights and this succession are declared in one body, and bound indissolubly to
@@ -589,7 +585,7 @@ vailed in the Declaration of Right; indicating with more precision the persons w
 herit in the Protestant line. This act also incor
 
 porated, by the same policy, our liberties, and an hereditary succession in the same act. Instead of a right to choose our own governors, they declared that the
-<hi>succession</hi>
+<hi rend="italic">succession</hi>
 in that line (the protestant line drawn from James the First) was absolutely ne
 
 cessary
@@ -597,7 +593,7 @@ cessary
 and that it was equally urgent on them
 <q>
 to maintain a
-<hi>certainty in the succession</hi>
+<hi rend="italic">certainty in the succession</hi>
 thereof, to which the subjects may safely have re
 
 course for their protection.
@@ -616,15 +612,15 @@ Unquestionably there was at the Revolution, in the person of King William, a sma
 porary deviation from the strict order of a regu
 
 lar hereditary succession; but it is against all genuine principles of jurisprudence to draw a principle from a law made in a special case, and regarding an individual person.
-<hi>Privilegium non transit in exemplum.</hi>
+<hi rend="italic">Privilegium non transit in exemplum.</hi>
 If ever there was a time favourable for establishing the principle, that a king of popular choice was the only legal king, without all doubt it was at the Revolution. Its not being done at that time is a proof that the nation was of opinion it ought not to be done at any time. There is no person so completely ignorant of our history, as not to know, that the majority in parliament of both parties were so little disposed to any thing resembling that principle, that at first they were determined to place the vacant crown, not on the head of the prince of Orange, but on that of his wife Mary, daughter of King James, the eldest born of the issue of that king, which they acknowledged as undoubtedly his. It would be to repeat a very trite story, to recall to your memory all those circumstances which demonstrated that their ac
 
 cepting King William was not properly a
-<hi>choice</hi>
+<hi rend="italic">choice</hi>
 ; but, to all those who did not wish, in effect to recall King James, or to deluge their country in blood, and again to bring their religion, laws,
 <pb n="24" facs="tcp:0939801000:27"/>
 and liberties into the peril they had just escaped, it was an act of
-<hi>necessity,</hi>
+<hi rend="italic">necessity,</hi>
 in the strictest moral sense in which necessity can be taken.
 </p>
 <p>
@@ -635,9 +631,9 @@ self on that delicate occasion. It is curious to observe with what address this 
 tary succession is brought forward, and fostered, and made the most of, by this great man, and by the legislature who followed him. Quitting the dry, imperative style of an act of parliament, he makes the lords and commons fall to a pious, legislative ejaculation, and declare, that they consider it
 <q>
 as a marvellous providence, and merciful goodness of God to this nation, to preserve their said majesties
-<hi>royal</hi>
+<hi rend="italic">royal</hi>
 persons, most happily to reign over us
-<hi>on the throne of their ancestors,</hi>
+<hi rend="italic">on the throne of their ancestors,</hi>
 for which, from the bottom of their hearts, they return their humblest thanks and praises.
 </q>
 —The legislature plainly had in view the act of recognition of the first of Queen Elizabeth, Chap. 3d, and of that of James the First, Chap. 1st, both acts strongly declaratory of the inheritable nature of the crown; and in many
@@ -650,7 +646,7 @@ giving, which is found in these old declaratory statutes.
 </p>
 <p>
 The two houses, in the act of king William, did not thank God that they had found a fair opportunity to assert a right to choose their own governors, much less to make an election the
-<hi>only lawful</hi>
+<hi rend="italic">only lawful</hi>
 title to the crown. Their having been in a condition to avoid the very appearance of it, as much as possible, was by them consider
 
 ed as a providential escape. They threw a poli
@@ -666,13 +662,13 @@ claratory statutes of queen Mary
 and queen Eli
 
 zabeth, in the next clause they vest, by recognition, in their majesties,
-<hi>all</hi>
+<hi rend="italic">all</hi>
 the legal prerogatives of the crown, declaring,
 <q>
 that in them they are most
-<hi>fully,</hi>
+<hi rend="italic">fully,</hi>
 rightfully, and
-<hi>intirely</hi>
+<hi rend="italic">intirely</hi>
 invested, incorpo
 
 rated, united, and annexed.
@@ -684,7 +680,7 @@ son of any pretended titles to the crown, they declare (observing also in this t
 language, along with the traditionary policy of the nation, and repeating as from a rubric the language of the preceding acts of Elizabeth and James) that on the preserving
 <q>
 a
-<hi>certainty</hi>
+<hi rend="italic">certainty</hi>
 in the SUCCESSION thereof, the unity, peace, and tranquillity of this nation doth, under God, wholly depend.
 </q>
 </p>
@@ -708,13 +704,13 @@ taining a most solemn pledge, taken from the preceding act of Queen Elizabeth, a
 ciation as could be made of the principles by this society imputed to them.
 <q>
 The lords spiritual and temporal, and commons, do, in the name of all the people aforesaid, most humbly and faithfully submit
-<hi>themselves, their heirs and posterities for ever</hi>
+<hi rend="italic">themselves, their heirs and posterities for ever</hi>
 ; and do faith
 
 fully promise, that they will stand to, main
 
 tain, and defend their said majesties, and also the
-<hi>limitation of the crown,</hi>
+<hi rend="italic">limitation of the crown,</hi>
 herein specified and contained, to the utmost of their powers,
 </q>
 &c. &c.
@@ -723,9 +719,7 @@ herein specified and contained, to the utmost of their powers,
 <pb n="27" facs="tcp:0939801000:30"/>
 So far is it from being true, that we acquired a right by the Revolution to elect our kings, that if we had possessed it before, the English nation did at that time most solemnly renounce and ab
 
-dicate it, for themselves and for all their pos
-
-terity for ever. These gentlemen may value themselves as much as they please on their whig principles; but I never desire to be thought a better whig than Lord Somers; or to understand the principles of the Revolution better than those by whom it was brought about; or to read in the declaration of right any mysteries un
+dicate it, for themselves and for all their posterity for ever. These gentlemen may value themselves as much as they please on their whig principles; but I never desire to be thought a better whig than Lord Somers; or to understand the principles of the Revolution better than those by whom it was brought about; or to read in the declaration of right any mysteries un
 
 known to those whose penetrating style has en
 
@@ -735,9 +729,9 @@ graved in our ordinances, and in our hearts, the words and spirit of that immort
 It is true that, aided with the powers derived from force and opportunity, the nation was at that time, in some sense, free to take what course it pleased for filling the throne; but only free to do so upon the same grounds on which they might have wholly abolished their mo
 
 narchy, and every other part of their constitution. However they did not think such bold changes within their commission. It is indeed difficult, perhaps impossible, to give limits to the mere
-<hi>abstract</hi>
+<hi rend="italic">abstract</hi>
 competence of the supreme power, such as was exercised by parliament at that time; but the limits of a
-<hi>moral</hi>
+<hi rend="italic">moral</hi>
 competence, subjecting, even in powers more indisputably sovereign, occasional will to permanent reason, and to the steady maxims of faith, justice, and fixed fun
 
 damental policy, are perfectly intelligible, and
@@ -757,7 +751,7 @@ munities. Otherwise competence and power would soon be confounded, and no law be
 ing the persons. Both these descriptions of law are of the same force, and are derived from an equal authority, emanating from the common a
 
 greement and original compact of the state,
-<hi>
+<hi rend="italic">
 com
 
 muni sponsione reipublicae,
@@ -783,7 +777,7 @@ fected without a decomposition of the whole civil and political mass, for the pu
 A state without the means of some change is without the means of its conservation. Without such means it might even risque the loss of that part of the constitution which it wished the most religiously to preserve. The two principles of conservation and correction operated strongly at the two critical periods of the Restoration and Revolution, when England found itself without a king. At both those periods the nation had lost the bond of union in their ancient edifice; they did not, however, dissolve the whole fabric. On the contrary, in both cases they regenerated the deficient part of the old constitution through
 <pb n="30" facs="tcp:0939801000:33"/>
 the parts which were not impaired. They kept these old parts exactly as they were, that the part recovered might be suited to them. They acted by the ancient organized states in the shape of their old organization, and not by the organic
-<hi>moleculae</hi>
+<hi rend="italic">moleculae</hi>
 of a disbanded people. At no time, perhaps, did the sovereign legislature manifest a more tender regard to that fundamen
 
 tal principle of British constitutional policy, than at the time of the Revolution, when it deviated from the direct line of hereditary succession. The crown was carried somewhat out of the line in which it had before moved; but the new line was derived from the same stock. It was still a line of hereditary descent; still an hereditary de
@@ -794,17 +788,17 @@ lable.
 </p>
 <p>
 On this principle, the law of inheritance had admitted some amendment in the old time, and long before the aera of the Revolution. Some time after the conquest great questions arose upon the legal principles of hereditary descent. It became a matter of doubt, whether the heir
-<hi>per capita</hi>
+<hi rend="italic">per capita</hi>
 or the heir
-<hi>per stirpes</hi>
+<hi rend="italic">per stirpes</hi>
 was to suc
 
 ceed; but whether the heir
-<hi>per capita</hi>
+<hi rend="italic">per capita</hi>
 gave way when the heirdom
-<hi>per stirpes</hi>
+<hi rend="italic">per stirpes</hi>
 took place, or the Catholic heir when the Protestant was preferred, the inheritable principle survived with a sort of immortality through all transmigrations—
-<hi>
+<hi rend="italic">
 mul
 
 tosque
@@ -827,15 +821,15 @@ fore the Revolution, and consequently to stain the throne of England with the bl
 nual usurpation? Do they mean to invalidate, annul, or to call into question, together with the titles of the whole line of our kings, that great body of our statute law which passed under those whom they treat as usurpers? to annul laws of inestimable value to our liberties—of as great
 <pb n="32" facs="tcp:0939801000:35"/>
 value at least as any which have passed at or since the period of the Revolution? If kings, who did not owe their crown to the choice of their people, had no title to make laws, what will become of the statute
-<hi>
+<hi rend="italic">
 de tallagio non conce
 
 dendo?
 </hi>
 —of the
-<hi>petition of right?</hi>
+<hi rend="italic">petition of right?</hi>
 —of the act of
-<hi>habeas corpus?</hi>
+<hi rend="italic">habeas corpus?</hi>
 Do these new doctors of the rights of men presume to assert, that King James the Second, who came to the crown as next of blood, according to the rules of a then unqua
 
 lified succession, was not to all intents and pur
@@ -854,13 +848,13 @@ cifically destined to the succession, is the act of
 the 12th and 13th of King William. The terms of this act bind
 <q>
 us and our
-<hi>heirs,</hi>
+<hi rend="italic">heirs,</hi>
 and our
-<hi>posterity,</hi>
+<hi rend="italic">posterity,</hi>
 to them, their
-<hi>heirs,</hi>
+<hi rend="italic">heirs,</hi>
 and their
-<hi>
+<hi rend="italic">
 poste
 
 rity,
@@ -872,28 +866,28 @@ being Protestants, to the end of time, in the same words as the declaration of r
 The Princess Sophia was named in the act of settlement of the 12th and 13th of King Wil
 
 liam, for a
-<hi>stock</hi>
+<hi rend="italic">stock</hi>
 and root of
-<hi>inheritance</hi>
+<hi rend="italic">inheritance</hi>
 to our kings, and not for her merits as a temporary administratrix of a power, which she might not, and in fact did not, herself ever exercise. She was adopted for one reason, and for one only, because, says the act,
 <q>
 the most excellent Princess Sophia, Electress and Dutchess Dow
 
 ager of Hanover, is
-<hi>daughter</hi>
+<hi rend="italic">daughter</hi>
 of the most excellent Princess Elizabeth, late Queen of Bohemia,
-<hi>daughter</hi>
+<hi rend="italic">daughter</hi>
 of our late
-<hi>sovereign lord</hi>
+<hi rend="italic">sovereign lord</hi>
 King James the First, of happy memory, and is hereby declared to be the next in
-<hi>succession</hi>
+<hi rend="italic">succession</hi>
 <pb n="34" facs="tcp:0939801000:37"/>
 in the Protestant line,
 </q>
 &c.
 <q>
 and the crown shall continue to the
-<hi>heirs</hi>
+<hi rend="italic">heirs</hi>
 of her body, being Protestants.
 </q>
 This limitation was made by parliament, that through the Princess So
@@ -907,9 +901,9 @@ nected with the old stock of inheritance in King James the First; in order that 
 scent, in which, if our liberties had been once endangered, they had often, through all storms and struggles of prerogative and pri
 
 vilege, been preserved. They did well. No experience has taught us, that in any other course or method than that of an
-<hi>hereditary crown,</hi>
+<hi rend="italic">hereditary crown,</hi>
 our liberties can be regularly perpetuated and preserved sacred as our
-<hi>hereditary right.</hi>
+<hi rend="italic">hereditary right.</hi>
 An ir
 
 regular, convulsive movement may be necessary to throw off an irregular, convulsive disease. But the course of succession is the healthy habit of the British constitution. Was it that the legis
@@ -947,7 +941,7 @@ double fraud, export to you in illicit bottoms, as raw commodities of British gr
 </p>
 <p>
 The people of England will not ape the fashions they have never tried; nor go back to those which they have found mischievous on trial. They look upon the legal, hereditary succession of their crown as among their rights, not as among their wrongs; as a benefit, not as a grievance; as a security for their liberty, not as a badge of servitude. They look on the frame of their commonwealth,
-<hi>such as it stands,</hi>
+<hi rend="italic">such as it stands,</hi>
 to be of in
 
 estimable value; and they conceive the undis
@@ -980,7 +974,7 @@ tics of popular arbitary power, maintain that a popular election is the sole law
 thority. The old prerogative enthusiasts, it is true, did speculate foolishly, and perhaps im
 
 piously too, as if monarchy had more of a divine fanction than any other mode of government; and as if a right to govern by inheritance were in strictness
-<hi>indefeasible</hi>
+<hi rend="italic">indefeasible</hi>
 in every person, and un
 
 der every circumstance, which no civil or politi
@@ -995,7 +989,7 @@ chievous maxims on the other.
 The second claim of the Revolution Society is
 <q>
 a right of cashiering their governors on
-<hi>misconduct.</hi>
+<hi rend="italic">misconduct.</hi>
 </q>
 Perhaps the apprehensions our ancestors entertained of forming such a prece
 
@@ -1005,17 +999,17 @@ was, if it had any fault, rather too guarded, and too circumstantial
 <note n="*" place="bottom">
 <q>
 That King James the second, having endeavoured to
-<hi>subvert the constitution</hi>
+<hi rend="italic">subvert the constitution</hi>
 of the kingdom, by breaking the
-<hi>original contract</hi>
+<hi rend="italic">original contract</hi>
 between king and people, and by the advice of jesuits, and other wicked persons, having violated the
-<hi>fundamental</hi>
+<hi rend="italic">fundamental</hi>
 laws, and
-<hi>having withdrawn himself out of the kingdom,</hi>
+<hi rend="italic">having withdrawn himself out of the kingdom,</hi>
 hath
-<hi>abdicated</hi>
+<hi rend="italic">abdicated</hi>
 the government, and the throne is thereby
-<hi>vacant.</hi>
+<hi rend="italic">vacant.</hi>
 </q>
 </note>
 . But all this guard, and all this accumulation of circumstances, serves to shew the spirit of caution which pre
@@ -1032,21 +1026,21 @@ tions.
 </p>
 <p>
 No government could stand a moment, if it could be blown down with any thing so loose and indefinite as an opinion of "
-<hi>misconduct.</hi>
+<hi rend="italic">misconduct.</hi>
 " They who led at the Revolution, grounded the virtual abdication of King James upon no such light and uncertain a principle. They charged him with nothing less than a design, confirmed by a multitude of illegal overt acts, to
-<hi>subvert the Protestant church and state,</hi>
+<hi rend="italic">subvert the Protestant church and state,</hi>
 and their
-<hi>
+<hi rend="italic">
 funda
 
 mental,
 </hi>
 unquestionable laws and liberties: they charged him with having broken the
-<hi>original contract</hi>
+<hi rend="italic">original contract</hi>
 between king and people. This was
 <pb n="39" facs="tcp:0939801000:42"/>
 more than
-<hi>misconduct.</hi>
+<hi rend="italic">misconduct.</hi>
 A grave and over-rul
 
 ing necessity obliged them to take the step they took, and took with infinite reluctance, as under that most rigorous of all laws. Their trust for the future preservation of the constitution was not in future revolutions. The grand policy of all their regulations was to render it almost im
@@ -1056,7 +1050,7 @@ practicable for any future sovereign to compel the states of the kingdom to have
 they enacted, that the ministers should serve the crown on the terms of that declara
 
 tion. They secured soon after the
-<hi>
+<hi rend="italic">
 frequent meet
 
 ings of parliament,
@@ -1064,7 +1058,7 @@ ings of parliament,
 by which the whole government would be under the constant inspection and ac
 
 tive controul of the popular representative and of the magnates of the kingdom. In the next great constitutional act, that of the 12th and 13th of King William, for the further limitation of the crown, and
-<hi>better</hi>
+<hi rend="italic">better</hi>
 securing the rights and liber
 
 ties of the subject, they provided,
@@ -1138,7 +1132,7 @@ As he is not to obey us, but as we are to
 obey the law in him, our constitution has made no sort of provision towards rendering him, as a servant, in any degree responsible. Our consti
 
 tution knows nothing of a magistrate like the
-<hi>Justicia</hi>
+<hi rend="italic">Justicia</hi>
 of Arragon; nor of any court legally ap
 
 pointed, nor of any process legally settled for sub
@@ -1148,14 +1142,14 @@ mitting the king to the responsibility belonging to all servants. In this he is 
 a king is no more than the first servant of the public, cre
 
 ated by it, and
-<hi>responsible to it.</hi>
+<hi rend="italic">responsible to it.</hi>
 </q>
 </p>
 <p>
 Ill would our ancestors at the Revolution have deserved their fame for wisdom, if they had found no security for their freedom, but in rendering their government feeble in its opera
 
 tions, and precarious in its tenure; if they had been able to contrive no better remedy against arbitrary power than civil confusion. Let these gentlemen state who that
-<hi>representative</hi>
+<hi rend="italic">representative</hi>
 public is to whom they will affirm the king, as a servant, to be responsible. It will be then time enough for me to produce to them the positive statute law which affirms that he is not.
 </p>
 <p>
@@ -1166,7 +1160,7 @@ tution.
 Laws are commanded to hold their tongues amongst arms; and tribunals fall to the ground with the peace they are no longer able to uphold. The Revolution of 1688 was obtained by a just war, in the only case in which any war, and much more a civil war, can be just.
 <q>
 Justa bella quibus
-<hi>necessaria.</hi>
+<hi rend="italic">necessaria.</hi>
 </q>
 The question of de
 
@@ -1190,11 +1184,11 @@ The third head of right, asserted by the pulpit of the Old Jewry, namely, the
 has, at least, as little countenance from any thing done at the Revolution, either in precedent or principle, as the two first of their claims. The Revolu
 
 tion was made to preserve our
-<hi>antient</hi>
+<hi rend="italic">antient</hi>
 indis
 
 putable laws and liberties, and that
-<hi>antient</hi>
+<hi rend="italic">antient</hi>
 constitution of government which is our only security for law and liberty. If you are de
 
 sirous of knowing the spirit of our constitution, and the policy which predominated in that great period which has secured it to this hour, pray look for both in our histories, in our records, in our acts of parliament, and jour
@@ -1202,7 +1196,7 @@ sirous of knowing the spirit of our constitution, and the policy which predomina
 nals of parliament, and not in the sermons of the Old Jewry, and the after-dinner toasts of the Revolution Society.—In the former you will find other ideas and another language. Such a claim is as ill-suited to our temper and wishes as it is unsupported by any appearance of authority. The very idea of the fabri
 
 cation of a new government, is enough to fill us with disgust and horror. We wished at the period of the Revolution, and do now wish, to derive all we possess as
-<hi>
+<hi rend="italic">
 an inheritance from our
 <pb n="45" facs="tcp:0939801000:48"/>
 forefathers.
@@ -1229,16 +1223,16 @@ thing more than a re-affirmance of the still more antient standing law of the ki
 ter of fact, for the greater part, these authors appear to be in the right; perhaps not always: but if the lawyers mistake in some particulars, it proves my position still the more strongly; because it demonstrates the powerful prepos
 
 session towards antiquity, with which the minds of all our lawyers and legislators, and of all the people whom they wish to influence, have been always filled; and the stationary policy of this kingdom in considering their most sacred rights and franchises as an
-<hi>inheritance.</hi>
+<hi rend="italic">inheritance.</hi>
 </p>
 <p>
 <pb n="46" facs="tcp:0939801000:49"/>
 In the famous law of the 3d of Charles I. called the
-<hi>Petition of Right,</hi>
+<hi rend="italic">Petition of Right,</hi>
 the parliament says to the king,
 <q>
 Your subjects have
-<hi>inherited</hi>
+<hi rend="italic">inherited</hi>
 this freedom,
 </q>
 claiming their franchises not on abstract principles "as the rights of men," but as the rights of Englishmen, and as a patrimony derived from their forefathers. Selden, and the other profoundly learned men, who drew this pe
@@ -1248,7 +1242,7 @@ tition of right, were as well acquainted, at least, with all the general theorie
 sons worthy of that practical wisdom which su
 
 perseded their theoretic science, they preferred this positive, recorded,
-<hi>hereditary</hi>
+<hi rend="italic">hereditary</hi>
 title to all which can be dear to the man and the citizen, to that vague speculative right, which exposed their sure inheritance to be scrambled for and torn to pieces by every wild litigious spirit.
 </p>
 <p>
@@ -1259,35 +1253,35 @@ You will see, that their whole care was to secure the religion, laws, and libert
 Taking
 <note n="*" place="bottom">1 W. and M.</note>
 into their most serious consideration the
-<hi>best</hi>
+<hi rend="italic">best</hi>
 means for making such an establishment,
 <pb n="47" facs="tcp:0939801000:50"/>
 that their religion, laws, and liberties, might not be in danger of being again subverted,
 </q>
 they auspicate all their proceedings, by stating as some of those
-<hi>best</hi>
+<hi rend="italic">best</hi>
 means, "in the
-<hi>first place</hi>
+<hi rend="italic">first place</hi>
 " to do
 <q>
 as their
-<hi>ancestors in like cases have usually</hi>
+<hi rend="italic">ancestors in like cases have usually</hi>
 done for vindicating their
-<hi>antient</hi>
+<hi rend="italic">antient</hi>
 rights and liberties, to
-<hi>declare</hi>
+<hi rend="italic">declare</hi>
 ;
 </q>
 —and then they pray the king and queen,
 <q>
 that it may be
-<hi>declared</hi>
+<hi rend="italic">declared</hi>
 and enacted, that
-<hi>all and singular</hi>
+<hi rend="italic">all and singular</hi>
 the rights and liberties
-<hi>asserted and declared</hi>
+<hi rend="italic">asserted and declared</hi>
 are the true
-<hi>
+<hi rend="italic">
 an
 
 cient
@@ -1297,7 +1291,7 @@ and indubitable rights and liberties of the people of this kingdom.
 </p>
 <p>
 You will observe, that from Magna Charta to the Declaration of Right, it has been the uniform policy of our constitution, to claim and assert our liberties, as an
-<hi>entailed inheritance</hi>
+<hi rend="italic">entailed inheritance</hi>
 derived to us from our forefathers, and to be transmitted to our posterity; as an estate specially belonging to the people of this kingdom, without any reference whatever to any other more general or prior right. By this means our constitution pre
 
 serves an unity in so great a diversity of its parts. We have an inheritable crown; an in
@@ -1378,11 +1372,11 @@ world, from the reciprocal struggle of dis
 cordant powers, draws out the harmony of the universe. These opposed and conflicting interests, which you considered as so great a blemish in your old and in our present constitution, interpose a salutary check to all precipitate resolutions; They render deliberation a matter not of choice, but of necessity; they make all change a sub
 
 ject of
-<hi>compromise</hi>
+<hi rend="italic">compromise</hi>
 ; which naturally begets mo
 
 deration; they produce
-<hi>temperaments,</hi>
+<hi rend="italic">temperaments,</hi>
 prevent
 
 ing the sore evil of harsh, crude, unqualified reformations; and rendering all the headlong exertions of arbitrary power, in the few or in the many, for ever impracticable. Through that diversity of members and interests, general liberty had as many securities as there were sepa
@@ -1495,7 +1489,7 @@ Were all these dreadful things necessary? were they the inevitable results of th
 dered away the precious treasure of their crimes, the persons who have made this prodigal and wild waste of public evils (the last stake reserved for the ultimate ransom of the state) have met in their progress with little, or rather with no oppo
 
 sition at all. Their whole march was more like a triumphal procession than the progress of a war. Their pioneers have gone before them, and demolished and laid every thing level at their feet. Not one drop of
-<hi>their</hi>
+<hi rend="italic">their</hi>
 blood have they shed in the cause of the country they have ruined. They have made no sacrifices to their projects of greater consequence than their shoe
 
 buckles, whilst they were imprisoning their king,
@@ -1515,7 +1509,7 @@ beyond these the people have not to give. Virtue and wisdom may be the objects o
 </p>
 <p>
 After I had read over the list of the persons and descriptions elected into the
-<hi>Tiers Etat,</hi>
+<hi rend="italic">Tiers Etat,</hi>
 nothing which they afterwards did could appear astonishing. Among them, indeed, I saw some of known rank; some of shining talents; but of any practical experience in the state, not one man was to be found. The best were only men of theory. But whatever the distinguished few may have been, it is the substance and mass of the body which constitutes its character, and must finally determine its direction. In all bodies, those who will lead, must also, in a considerable degree, follow. They must conform their propositions to the taste, talent, and disposition of those whom they wish to conduct: therefore, if an Assembly is viciously or feebly composed in a very great part of it, nothing but such a supreme degree of virtue as very rarely appears in the world, and for that reason cannot enter into calculation, will prevent the men of talents disseminated through it from becoming only the expert instruments of absurd projects! If what is the more likely event, instead of that unusual degree of virtue, they should be actuated by sinister ambition and a lust of meretricious glory, then the feeble part of the
 <pb n="60" facs="tcp:0939801000:63"/>
 Assembly, to whom at first they conform, becomes in its turn the dupe and instrument of their designs. In this political traffick the leaders will be obliged to bow to the ignorance of their followers, and the followers to become subser
@@ -1570,11 +1564,11 @@ vious fortune in character at stake; who could not be expected to bear with mode
 toxicated with their unprepared greatness? Who could conceive, that men who are habitually meddling, daring, subtle, active, of litigious dispositions and unquiet minds, would easily fall back into their old condition of obscure contention, and laborious, low, unprofitable chicane? Who could doubt but that, at any
 <pb n="63" facs="tcp:0939801000:66"/>
 expence to the state, of which they understood nothing, they must pursue their private interests, which they understood but too well? It was not an event depending on chance or contingency. It was inevitable; it was necessary; it was planted in the nature of things. They must
-<hi>join</hi>
+<hi rend="italic">join</hi>
 (if their capacity did not permit them to
-<hi>lead</hi>
+<hi rend="italic">lead</hi>
 ) in any project which could procure to them a
-<hi>litigious constitution</hi>
+<hi rend="italic">litigious constitution</hi>
 ; which could lay open to them those innumerable lucrative jobs which follow in the train of all great convulsions and revolutions in the state, and particularly in all great and violent permutations of property. Was it to be expected that they would attend to the stability of property, whose existence had always depended upon whatever rendered pro
 
 perty questionable, ambiguous, and insecure? Their objects would be enlarged with their eleva
@@ -1595,7 +1589,7 @@ cine. This faculty had not, any more than that of the law, possessed in France i
 ments of dignity. But supposing they had ranked as they ought to do, and as with us they do actually, the sides of sick beds are not the academies for forming statesmen and legislators. Then came the dealers in stocks and funds, who must be eager, at any expence, to change their ideal paper wealth for the more solid substance of land. To these were joined men of other descriptions, from whom as little knowlege of or attention to the interests of a great state was to be expected, and as little regard to the stability of any institution; men formed to be instruments, not controls. Such in general was the composi
 
 tion of the
-<hi>Tiers Etat</hi>
+<hi rend="italic">Tiers Etat</hi>
 in the National Assembly; in which was scarcely to be perceived the slightest traces of what we call the natural landed interest of the country.
 </p>
 <p>
@@ -1716,26 +1710,26 @@ ror, the ornament of their age. They were not like Jew brokers contending with e
 </p>
 <l>
 "Still as
-<hi>you</hi>
+<hi rend="italic">you</hi>
 rise, the
-<hi>state,</hi>
+<hi rend="italic">state,</hi>
 exalted too,
 </l>
 <l>
 "Finds no distemper whilst 'tis chang'd by
-<hi>you</hi>
+<hi rend="italic">you</hi>
 ;
 </l>
 <l>"Chang'd like the world's great scene, when without noise</l>
 <l>
 "The rising sun night's
-<hi>vulgar</hi>
+<hi rend="italic">vulgar</hi>
 lights destroys."
 </l>
 <p>
 <pb n="71" facs="tcp:0939801000:74"/>
 These disturbers were not so much like men usurping power, as asserting their natural place in society. Their rising was to illuminate and beautify the world. Their conquest over their competitors was by outshining them. The hand that, like a destroying angel, smote the country, communicated to it the force and energy under which it suffered. I do not say (God forbid) I do not say, that the virtues of such men were to be taken as a balance to their crimes; but they were some corrective to their effects. Such was, as I said, our Cromwell. Such were your whole race of Guises, Condés, and Colignis. Such the Richlieus, who in more quiet times acted in the spirit of a civil war. Such, as better men, and in a less dubious cause, were your Henry the 4th and your Sully, though nursed in civil confusions, and not wholly without some of their taint. It is a thing to be wondered at, to see how very soon France, when she had a moment to respire, recovered and emerged from the longest and most dreadful civil war that ever was known in any nation. Why? Because, among all their massacres, they had not slain the
-<hi>mind</hi>
+<hi rend="italic">mind</hi>
 in their country. A conscious dignity, a noble pride, a generous sense of glory and emulation, was not extinguished. On the contrary, it was kin
 
 dled and inflamed. The organs also of the state, however shattered, existed. All the prizes of honour and virtue, all the rewards, all the distinctions, remained. But your present con
@@ -1828,7 +1822,7 @@ Nothing is a due and adequate representation of a state, that does not represent
 well as its property. But as ability is a vigorous and active principle, and as property is sluggish, inert, and timid, it never can be safe from the invasions of ability, unless it be, out of all proportion, predominant in the representation. It must be represented too in great masses of ac
 
 cumulation, or it is not rightly protected. The characteristic essence of property, formed out of the combined principles of its acquisition and conservation, is to be
-<hi>unequal.</hi>
+<hi rend="italic">unequal.</hi>
 The great masses therefore which excite envy, and tempt rapacity, must be put out of the possibility of danger. Then they form a natural rampart about the lesser properties in all their gradations. The same quantity of property, which is by the natural course of things, divided among many, has not the same operation. Its defensive power is weak
 
 ened as it is diffused. In this diffusion each man's portion is less than what, in the eagerness of his desires, he may flatter himself to obtain by dissipating the accumulations of others. The plunder of the few would indeed give but a share inconceivably small in the distribution to the many. But the many are not capable of mak
@@ -1858,7 +1852,7 @@ ation) given to birth, is neither unnatural, nor unjust, nor impolitic.
 </p>
 <p>
 It is said, that twenty-four millions ought to prevail over two hundred thousand. True; if the constitution of a kingdom be a problem of arithmetic. This sort of discourse does well enough with the lamp-post for its second: to men who
-<hi>may</hi>
+<hi rend="italic">may</hi>
 reason calmly, it is ridicu
 
 lous. The will of the many, and their inte
@@ -1911,26 +1905,26 @@ able words:
 I cannot conclude without re
 
 calling
-<hi>particularly</hi>
+<hi rend="italic">particularly</hi>
 to your recollection a consideration which I have
-<hi>
+<hi rend="italic">
 more than once al
 
 luded to,
 </hi>
 and which probably your thoughts have
-<hi>been all along anticipating</hi>
+<hi rend="italic">been all along anticipating</hi>
 ; a considera
 
 tion with which my
-<hi>mind is impressed more than I can express.</hi>
+<hi rend="italic">mind is impressed more than I can express.</hi>
 I mean the consideration of the
-<hi>favourableness of the present times to all exertions in the cause of liberty.</hi>
+<hi rend="italic">favourableness of the present times to all exertions in the cause of liberty.</hi>
 </q>
 </p>
 <p>
 It is plain that the mind of this
-<hi>political</hi>
+<hi rend="italic">political</hi>
 Preacher was at the time big with some extra
 
 ordinary design; and it is very probable, that the thoughts of his audience, who understood him better than I do, did all along run before him in his reflection, and in the whole train of consequences to which it led.
@@ -1939,7 +1933,7 @@ ordinary design; and it is very probable, that the thoughts of his audience, who
 Before I read that sermon, I really thought I had lived in a free country; and it was an error I cherished, because it gave me a greater liking to the country I lived in. I was indeed aware, that a jealous, ever-waking vigilance, to guard the trea
 
 sure of our liberty, not only from invasion, but from decay and corruption, was our best wisdom and our first duty. However, I considered that treasure rather as a possession to be secured than as a prize to be contended for. I did not discern how the present time came to be so very favourable to all
-<hi>exertions</hi>
+<hi rend="italic">exertions</hi>
 in the cause of freedom. The pre
 
 sent
@@ -1982,42 +1976,42 @@ covered that the English nation is not free. They are convinced that the inequal
 sentation is a
 <q>
 defect in our constitution so
-<hi>gross and palpable,</hi>
+<hi rend="italic">gross and palpable,</hi>
 as to make it excellent chiefly in
-<hi>form</hi>
+<hi rend="italic">form</hi>
 and
-<hi>theory</hi>
+<hi rend="italic">theory</hi>
 <note n="*" place="bottom">Discourse on the Love of our Country, 3d edit. p. 39.</note>
 .
 </q>
 That a representation in the legislature of a kingdom is not only the basis of all constitutional liberty in it, but of
 <q>
-<hi>
+<hi rend="italic">
 all legiti
 
 mate government
 </hi>
 ; that without it a
-<hi>government</hi>
+<hi rend="italic">government</hi>
 is nothing but an
-<hi>usurpation</hi>
+<hi rend="italic">usurpation</hi>
 ;
 </q>
 —that
 <q>
 when the representation is
-<hi>partial,</hi>
+<hi rend="italic">partial,</hi>
 the kingdom pos
 
 sesses liberty only
-<hi>partially</hi>
+<hi rend="italic">partially</hi>
 ; and if extremely partial it gives only a
-<hi>semblance</hi>
+<hi rend="italic">semblance</hi>
 ; and if not only extremely partial, but corruptly chosen, it becomes a
-<hi>nuisance.</hi>
+<hi rend="italic">nuisance.</hi>
 </q>
 Dr. Price considers this inadequacy of representation as our
-<hi>
+<hi rend="italic">
 funda
 
 mental grievance
@@ -2029,31 +2023,31 @@ tion of this semblance of representation, he hopes it is not yet arrived to its 
 pravity; he fears that
 <q>
 nothing will be done towards gaining for us this
-<hi>essential blessing,</hi>
+<hi rend="italic">essential blessing,</hi>
 un
 
 til some
-<hi>great abuse of power</hi>
+<hi rend="italic">great abuse of power</hi>
 again provokes our resentment, or some
-<hi>great calamity</hi>
+<hi rend="italic">great calamity</hi>
 again alarms our fears, or perhaps till the acquisi
 
 tion of a
-<hi>pure and equal representation by other countries,</hi>
+<hi rend="italic">pure and equal representation by other countries,</hi>
 whilst we are
-<hi>mocked</hi>
+<hi rend="italic">mocked</hi>
 with the
-<hi>shadow,</hi>
+<hi rend="italic">shadow,</hi>
 kindles our shame.
 </q>
 To this he subjoins a note in these words.
 <q>
 A representation, chosen chiefly by the Treasury, and a
-<hi>few</hi>
+<hi rend="italic">few</hi>
 thousands
 <pb n="83" facs="tcp:0939801000:86"/>
 of the
-<hi>dregs</hi>
+<hi rend="italic">dregs</hi>
 of the people, who are generally paid for their votes.
 </q>
 </p>
@@ -2067,7 +2061,7 @@ quate to all the purposes for which a represen
 tation of the people can be desired or devised. I defy the enemies of our constitution to shew the contrary. To detail the particulars in which it is found so well to promote its ends, would de
 
 mand a treatise on our practical constitution. I state here the doctrine of the Revolutionists, only that you and others may see, what an opinion these gentlemen entertain of the constitution of their country, and why they seem to think that some great abuse of power, or some great calamity, as giving a chance for the blessing of a constitution according to their ideas, would be much palliated to their feelings; you see
-<hi>why they</hi>
+<hi rend="italic">why they</hi>
 are so much enamoured of your fair and equal representation, which being once obtained, the same effects might follow. You see they consider our house of commons as only "a semblance," "a form,"
 <pb n="84" facs="tcp:0939801000:87"/>
 "a theory," "a shadow," "a mockery," per
@@ -2076,9 +2070,9 @@ haps "a nuisance."
 </p>
 <p>
 These gentlemen value themselves on being systematic; and not without reason. They must therefore look on this gross and palpable defect of representation, this fundamental grievance (so they call it) as a thing not only vicious in itself, but as rendering our whole government absolutely
-<hi>illegitimate,</hi>
+<hi rend="italic">illegitimate,</hi>
 and not at all better than a downright
-<hi>usurpation.</hi>
+<hi rend="italic">usurpation.</hi>
 Another revolution, to get rid of this illegitimate and usurped government, would of course be perfectly justifiable, if not abso
 
 lutely necessary. Indeed their principle, if you observe it with any attention, goes much fur
@@ -2086,7 +2080,7 @@ lutely necessary. Indeed their principle, if you observe it with any attention, 
 ther than to an alteration in the election of the house of commons; for, if popular representa
 
 tion, or choice, is necessary to the
-<hi>legitimacy</hi>
+<hi rend="italic">legitimacy</hi>
 of all government, the house of lords is, at one stroke, bastardized and corrupted in blood. That house is no representative of the people at all, even in "semblance or in form." The case of the crown is altogether as bad. In vain the crown may endeavour to screen it
 
 self against these gentlemen by the authority of the establishment made on the Revolu
@@ -2107,7 +2101,7 @@ Some of them are so heated with their parti
 cular religious theories, that they give more than hints that the fall of the civil powers, with all the dreadful consequences of that fall, provided they might be of service to their theories, would not be unacceptable to them, or very remote from their wishes. A man amongst them of great authority, and certainly of great talents, speaking of a supposed alliance between church and state, says,
 <q>
 perhaps
-<hi>we must wait for the fall of the civil powers</hi>
+<hi rend="italic">we must wait for the fall of the civil powers</hi>
 before this most un
 
 natural alliance be broken. Calamitous no doubt will that time be. But what convul
@@ -2137,18 +2131,18 @@ cent government as against the most violent tyranny, or the greenest usurpation.
 
 physics. Let them be their amusement in the schools.—
 <q>
-<hi>Illa</hi>
+<hi rend="italic">Illa</hi>
 se jactet in aula—Aeolus, et clauso ventorum carcere regnet.
 </q>
 —But let them not break prison to burst like a
-<hi>Levanter,</hi>
+<hi rend="italic">Levanter,</hi>
 to sweep the earth with their hurricane, and to break up the fountains of the great deep to over
 
 whelm us.
 </p>
 <p>
 Far am I from denying in theory; full as far is my heart from witholding in practice (if I were of power to give or to withold) the
-<hi>real</hi>
+<hi rend="italic">real</hi>
 rights of men. In denying their false claims
 <pb n="87" facs="tcp:0939801000:90"/>
 of right, I do not mean to injure those which are real, and are such as their pretended rights would totally destroy. If civil society be made for the advantage of man, all the advantages for which it is made become his right. It is an institution of beneficence; and law itself is only beneficence acting by a rule. Men have a right to live by that rule; they have a right to justice; as between their fellows, whether their fellows are in politic function or in ordinary occupation. They have a right to the fruits of their industry; and to the means of making their industry fruitful. They have a right to the acquisitions of their parents; to the nourishment and improvement of their offspring; to instruction in life, and to consolation in death. Whatever each man can separately do, without trespassing upon others, he has a right to do for himself; and he has a right to a fair portion of all which society, with all its combinations of skill and force, can do in his favour. But as to the share of power, authority, and direction which each individual ought to have in the manage
@@ -2163,7 +2157,7 @@ tive, judicial, or executory power are its crea
 tures.
 <pb n="88" facs="tcp:0939801000:91"/>
 They can have no being in any other state of things; and how can any man claim, under the conventions of civil society, rights which do not so much as suppose its existence? Rights which are absolutely repugnant to it? One of the first motives to civil society, and which becomes one of its fundamental rules, is,
-<hi>that no man should be judge in his own cause.</hi>
+<hi rend="italic">that no man should be judge in his own cause.</hi>
 By this each person has at once divested himself of the first fundamental right of uncovenanted man, that is, to judge for himself, and to assert his own cause. He abdicates all right to be his own governor. He inclusively, in a great measure, abandons the right of self-defence, the first law of nature. Men cannot enjoy the rights of an uncivil and of a civil state together. That he may obtain justice he gives up his right of de
 
 termining what it is in points the most essential to him. That he may secure some liberty, he makes a surrender in trust of the whole of it.
@@ -2178,7 +2172,7 @@ tion is their practical defect. By having a right to every thing they want every
 ment is a contrivance of human wisdom to pro
 
 vide for human
-<hi>wants.</hi>
+<hi rend="italic">wants.</hi>
 Men have a right that these wants should be provided for by this wisdom. Among these wants is to be reckoned the want, out of civil society, of a sufficient re
 
 straint upon their passions. Society requires not
@@ -2186,7 +2180,7 @@ straint upon their passions. Society requires not
 only that the passions of individuals should be subjected, but that even in the mass and body as well as in the individuals, the inclinations of men should frequently be thwarted, their will controlled, and their passions brought into sub
 
 jection. This can only be done
-<hi>by a power out of themselves</hi>
+<hi rend="italic">by a power out of themselves</hi>
 ; and not, in the exercise of its func
 
 tion, subject to that will and to those passions which it is its office to bridle and subdue. In this sense the restraints on men, as well as their li
@@ -2217,7 +2211,7 @@ fessor of metaphysics. The science of construct
 ing a commonwealth, or renovating it, or reform
 
 ing it, is, like every other experimental science, not to be taught
-<hi>à priori.</hi>
+<hi rend="italic">à priori.</hi>
 Nor is it a short expe
 
 rience that can instruct us in that practical science; because the real effects of moral causes are not al
@@ -2259,7 +2253,7 @@ The pretended rights of these theorists are all extremes; and in proportion as t
 physically true, they are morally and politically
 <pb n="92" facs="tcp:0939801000:95"/>
 false. The rights of men are in a sort of
-<hi>
+<hi rend="italic">
 mid
 
 dle,
@@ -2280,9 +2274,9 @@ nominations.
 By these theorists the right of the people is almost always sophistically confounded with their power. The body of the community, whenever it can come to act, can meet with no effectual resistance; but till power and right are the same, the whole body of them has no right inconsistent with virtue, and the first of all virtues, prudence. Men have no right to what is not reasonable, and to what is not for their benefit; for though a plea
 
 sant writer said,
-<hi>Liceat perire poetis,</hi>
+<hi rend="italic">Liceat perire poetis,</hi>
 when one of them, in cold blood, is said to have leaped into the flames of a volcanic revolution,
-<hi>
+<hi rend="italic">
 Arden
 
 tem frigidus Aetnam insiluit,
@@ -2301,7 +2295,7 @@ ing the extreme medicine of the constitution its daily bread. It renders the hab
 This distemper of remedy, grown habitual, relaxes and wears out, by a vulgar and prosti
 
 tuted use, the spring of that spirit which is to be exerted on great occasions. It was in the most patient period of Roman servitude that themes of tyrannicide made the ordinary exercise of boys at school—
-<hi>cum perimit saevos classis numerosa tyrannos.</hi>
+<hi rend="italic">cum perimit saevos classis numerosa tyrannos.</hi>
 In the ordinary state of things, it produces in a country like ours the worst effects, even on the cause of that liberty which it abuses with the dissoluteness of an extravagant specula
 
 tion. Almost all the high-bred republicans of my time have, after a short space, become the most decided, thorough-paced courtiers; they soon left the business of a tedious, moderate, but practical resistance to those of us whom, in the pride and intoxication of their theories, they have slighted, as not much better than tories. Hypocrisy, of course, delights in the
@@ -2347,11 +2341,11 @@ vances; and when he arrives at his peroration, it is in a full blaze. Then viewi
 <p>
 <q>
 What an eventful period is this! I am
-<hi>thankful</hi>
+<hi rend="italic">thankful</hi>
 that I have lived to it; I could al
 
 most say,
-<hi>
+<hi rend="italic">
 Lord now lettest thou thy servant de
 
 part in peace, for mine eyes have seen thy salva
@@ -2359,15 +2353,15 @@ part in peace, for mine eyes have seen thy salva
 tion.
 </hi>
 —I have lived to see a
-<hi>diffusion</hi>
+<hi rend="italic">diffusion</hi>
 of know
 
 ledge, which has undermined superstition and error.—I have lived to see
-<hi>the rights of men</hi>
+<hi rend="italic">the rights of men</hi>
 better understood than ever; and nations pant
 
 ing for liberty which seemed to have lost the idea of it.—I have lived to see
-<hi>
+<hi rend="italic">
 Thirty Millions
 <pb n="97" facs="tcp:0939801000:100"/>
 of People,
@@ -2375,13 +2369,13 @@ of People,
 indignant and resolute, spurning at slavery, and demanding liberty with an irre
 
 sistible voice.
-<hi>Their King led in triumph, and an arbitrary monarch surrendering himself to his subjects</hi>
+<hi rend="italic">Their King led in triumph, and an arbitrary monarch surrendering himself to his subjects</hi>
 <note n="*" place="bottom">
 Another of these reverend gentlemen, who was witness to some of the spectacles which Paris has lately exhibited—ex
 
 presses himself thus,
 <q>
-<hi>A king dragged in submissive triumph by his conquering subjects</hi>
+<hi rend="italic">A king dragged in submissive triumph by his conquering subjects</hi>
 is one of those appearances of grandeur which seldom rise in the prospect of human affairs, and which, during the remainder of my life, I shall think of with wonder and gratification.
 </q>
 These gentlemen agree marvel
@@ -2399,34 +2393,34 @@ pears to me to have been quite as much en
 lightened. It had, though in a different place, a triumph as memorable as that of Dr. Price; and some of the great preachers of that period partook of it as eagerly as he has done in the triumph of France. On the trial of the Rev. Hugh Peters for high treason, it was deposed, that when King Charles was brought to Lon
 
 don for his trial, the Apostle of Liberty in that day conducted the
-<hi>triumph.</hi>
+<hi rend="italic">triumph.</hi>
 "I saw," says the witness,
 <q>
 his majesty in the coach with six horses, and Peters riding before the king
-<hi>triumphing.</hi>
+<hi rend="italic">triumphing.</hi>
 </q>
 Dr. Price, when he talks as if he had made a discovery, only follows a precedent; for, after the commencement of the king's trial, this precursor, the same Dr. Peters, concluding a long prayer at the royal chapel at Whitehall,
 <pb n="98" facs="tcp:0939801000:101"/>
 (he had very triumphantly chosen his place) said,
 <q>
 I have prayed and preached these twenty years; and now I may say with old Simeon,
-<hi>Lord now lettest thou thy servant depart in peace, for mine eyes have seen thy salvation</hi>
+<hi rend="italic">Lord now lettest thou thy servant depart in peace, for mine eyes have seen thy salvation</hi>
 <note n="*" place="bottom">State Trials, vol. ii. p. 360. p. 363.</note>
 .
 </q>
 Peters had not the fruits of his prayer; for he neither departed so soon as he wished, nor in peace. He became (what I heartily hope none of his followers may be in this country) himself a sacri
 
 fice to the triumph which he led as Pontiff. They dealt at the Restoration, perhaps, too hardly with this poor good man. But we owe it to his memory and his sufferings, that he had as much illumination, and as much zeal, and had as effectually undermined all
-<hi>the superstition and error</hi>
+<hi rend="italic">the superstition and error</hi>
 which might impede the great business he was engaged in, as any who follow and repeat after him, in this age, which would assume to itself an exclusive title to the knowledge of the rights of men, and all the glorious consequences of that knowledge.
 </p>
 <p>
 After this sally of the preacher of the Old Jewry, which differs only in place and time, but agrees perfectly with the spirit and letter of the rapture of 1648, the Revolution So
 
 ciety, the fabricators of governments, the heroic band of
-<hi>cashierers</hi>
+<hi rend="italic">cashierers</hi>
 of
-<hi>monarchs,</hi>
+<hi rend="italic">monarchs,</hi>
 electors of sove
 
 reigns, and leaders of kings in triumph, strut
@@ -2445,11 +2439,11 @@ journed from the church in the Old Jewry, to the London Tavern; where the same D
 I find a preacher of the gospel prophaning the beautiful and prophetic ejaculation, commonly call
 
 ed "
-<hi>nunc dimittis,</hi>
+<hi rend="italic">nunc dimittis,</hi>
 " made on the first presentation of our Saviour in the Temple, and applying it, with an inhuman and unnatural rapture, to the most horrid, atrocious, and afflicting spectacle, that perhaps ever was exhibited to the pity and indig
 
 nation of mankind. This "
-<hi>leading in triumph,</hi>
+<hi rend="italic">leading in triumph,</hi>
 " a thing in its best form unmanly and irreligious, which fills our Preacher with such unhallowed transports, must shock, I believe, the moral taste of every well-born mind. Several English were the stupified and indignant spectators of that tri
 
 umph. It was (unless we have been strangely deceived) a spectacle more resembling a proces
@@ -2469,7 +2463,7 @@ lieve that the National Assembly find themselves in a state of the greatest humi
 ject, must be destitute even of the appearance of liberty or impartiality. The apology of that As
 
 sembly is found in their situation; but when we approve what they
-<hi>must</hi>
+<hi rend="italic">must</hi>
 bear, it is in us the dege
 
 nerate choice of a vitiated mind.
@@ -2526,7 +2520,7 @@ berty. They act like the comedians of a fair be
 fore a riotous audience; they act amidst the tumul
 
 tuous cries of a mixed mob of ferocious men, and of women lost to shame, who, according to their insolent fancies, direct, control, applaud, explode them; and sometimes mix and take their seats amongst them; domineering over them with a strange mixture of servile petulance and proud presumptuous authority. As they have inverted order in all things, the gallery is in the place of the house. This Assembly, which overthrows kings and kingdoms, has not even the physiognomy and aspect of a grave legislative body—
-<hi>nec color imperii, nec frons erat ulla senatus.</hi>
+<hi rend="italic">nec color imperii, nec frons erat ulla senatus.</hi>
 They have a power given to them, like that of the evil principle, to subvert and destroy; but none to construct, except such machines as may be fitted for further subver
 
 sion and further destruction.
@@ -2565,7 +2559,7 @@ tection of the law, and that they would address the king (the captive king) to c
 slaved ministers of that captive king had formally notified to them, that there were neither law, nor authority, nor power left to protect? What must they have felt at being obliged, as a felici
 
 tation on the present new year, to request their captive king to forget the stormy period of the last, on account of the great good which
-<hi>he</hi>
+<hi rend="italic">he</hi>
 was likely to produce to his people; to the com
 
 plete attainment of which good they adjourned
@@ -2584,11 +2578,11 @@ formed to the new Parisian mode of good-breeding, as to think it quite in the mo
 dolence or congratulation) to say, to the most humiliated creature that crawls upon the earth, that great public benefits are derived from the murder of his servants, the attempted assassination of himself and of his wife, and the mortification, disgrace, and degradation, that he has personally suffered. It is a topic of consolation which our ordinary of Newgate would be too humane to use to a criminal at the foot of the gallows. I should have thought that the hangman of Paris, now that he is liberalized by the vote of the Na
 
 tional Assembly, and is allowed his rank and arms in the Herald's College of the rights of men, would be too generous, too gallant a man, too full of the sense of his new dignity, to employ that cutting consolation to any of the persons whom the
-<hi>leze nation</hi>
+<hi rend="italic">leze nation</hi>
 might bring under the adminis
 
 tration of his
-<hi>executive powers.</hi>
+<hi rend="italic">executive powers.</hi>
 </p>
 <p>
 A man is fallen indeed, when he is thus flat
@@ -2644,7 +2638,7 @@ deration, I was obliged to confess, that much allowance ought to be made for the
 Paean of the triumph, the animating cry which called
 <q>
 for
-<hi>all</hi>
+<hi rend="italic">all</hi>
 the BISHOPS to be hanged on the lamp-posts
 <note n="*" place="bottom">Tous les Eveques à la lanterne.</note>
 ,
@@ -2656,7 +2650,7 @@ fairs there is) in the midst of this joy some
 thing to exercise the patience of these worthy gen
 
 tlemen, and to try the long-suffering of their faith. The actual murder of the king and queen, and their child, was wanting to the other auspicious circumstances of this "
-<hi>beautiful day.</hi>
+<hi rend="italic">beautiful day.</hi>
 " The actual murder of the bishops, though called for by so many holy ejaculations, was also want
 
 ing. A groupe of regicide and sacrilegious slaughter, was indeed boldly sketched, but it was only sketched. It unhappily was left un
@@ -2685,29 +2679,29 @@ fiting of crimes, if not causing them, have taken the lead in public affairs.
 <head>EXTRACT of M. de Lally Tollendal's Second Letter to a Friend.</head>
 <p>
 Parlons du parti que j'ai pris; il est bien justifié dans ma conscience.—Ni cette ville coupable, ni cette assemblée plus coupable encore, ne meritoient que je me justifie; mais j'ai à coeur que vous, et les personnes qui pensent comme vous, ne me condamnent pas.—Ma santé, je vous jure, me rendoit mes fonctions impossibles; mais meme en les mettant de coté il a eté au-dessus de mes forces de supporter plus long-terms l'horreur que me causoit ce sang,—ces têtes,—cette reine
-<hi>presque egorgée,</hi>
+<hi rend="italic">presque egorgée,</hi>
 —ce roi,—amené
-<hi>esclave,</hi>
+<hi rend="italic">esclave,</hi>
 —entrant à Paris, au milieu de ses assassins, et precedé des tetes de ses mal
 
 heureux gardes.—Ces perfides jannissaires, ces assassins, ces femmes cannibales, ce cri de, TOUS LES EVEQUES A LA LANTERNE, dans le moment ou le roi entre sa capitale avec deux eveques de son conseil dans sa voiture. Un
-<hi>coup de fusil,</hi>
+<hi rend="italic">coup de fusil,</hi>
 que j'ai vu tirer dans un
-<hi>des carosses de la reine.</hi>
+<hi rend="italic">des carosses de la reine.</hi>
 M. Bailley appellant cela
-<hi>un beau jour.</hi>
+<hi rend="italic">un beau jour.</hi>
 L'assemblée ayant declaré sroidement le matin, qu'il n'étoit pas de sa dignité d'aller toute entiere environner le roi. M. Mirabeau disant impunement dans cette assemblée, que le vaisseau de l'état, loins d'etre arrêté dans sa course, a'élanceroit avec plus de ra
 
 pidité que jamais vers sa régénération. M. Barnave, riant avec lui, quand des flots de sang couloient autour de nous. Le vertueux Mounier
 <note n="*" place="bottom">
-<hi>N. B.</hi>
+<hi rend="italic">N. B.</hi>
 Mr. Mounier was then speaker of the National Assembly. He has since been obliged to live in exile, though one of the firmest assertors of liberty.
 </note>
 echappant par miracle à vingt assassins, qui avoient voulu faire de sa tete un trophée de plus.
 </p>
 <p>
 Voila ce qui me fit jurer de ne plus mettre le pied
-<hi>dans cette caverne d'Antropophages</hi>
+<hi rend="italic">dans cette caverne d'Antropophages</hi>
 [the National Assembly] où je n'avois plus de force d'élever la voix, ou depuis six semaines je l'avois elevée en vain. Moi, Mounier, et tous les honnêtes gens, ont le dernier effort à faire pour le bien étoit d'en sortir. Aucune idée de crainte ne s'est approchée de moi. Je rougirois de m'en defendre. J'avois encore reçû sur la route de la part de ce peuple, moins coupable que ceux qui l'ont enivré de fu
 
 reur, des acclamations, et des applaudissements, dont d'autres auroient été flattés, et qui m'ont fait fremir. C'est à l'in
@@ -2715,7 +2709,7 @@ reur, des acclamations, et des applaudissements, dont d'autres auroient été fl
 dignation, c'est à l'horreur. C'est aux convulsions physiques, que le seul aspect du sang me fait eprouver que j'ai cedé. On brave une seule mort; on la brave plusieurs fois, quand elle peut être utile. Mais aucune puissance sous le Ciel, mais aucune opinion publique ou privée n'ont le droit de me con
 
 damner à souffrir inutilement mille supplices par minute, et à perir de désespoir, de rage, au milieu des
-<hi>triomphes,</hi>
+<hi rend="italic">triomphes,</hi>
 du crime que je n'ai pu arrêter. Ils me proscriront, ils confisque
 
 ront mes biens. Je labourerai la terre, et je ne les verrai plus.—Voila ma justification. Vous pourez la lire, la mon
@@ -2854,7 +2848,7 @@ dom, as it is destitute of all taste and elegance, laws are to be supported only
 rors, and by the concern, which each individual may find in them, from his own private specula
 
 tions, or can spare to them from his own private interests. In the groves of
-<hi>their</hi>
+<hi rend="italic">their</hi>
 academy, at the end of every visto, you see nothing but the gal
 
 lows. Nothing is left which engages the affec
@@ -2866,7 +2860,7 @@ stitutions can never be embodied, if I may use the expression, in persons; so as
 ment. But that sort of reason which banishes the affections is incapable of filling their place. These public affections, combined with man
 
 ners, are required sometimes as supplements, sometimes as correctives, always as aids to law. The precept given by a wise man, as well as a great critic, for the construction of poems, is equally true as to states.
-<hi>Non satis est pulchra esse poemata, dulcia sunto.</hi>
+<hi rend="italic">Non satis est pulchra esse poemata, dulcia sunto.</hi>
 There ought to be a system of manners in every nation which a well-formed
 <pb n="116" facs="tcp:0939801000:119"/>
 mind would be disposed to relish. To make us love our country, our country ought to be lovely.
@@ -2877,7 +2871,7 @@ But power, of some kind or other, will survive the shock in which manners and op
 rish; and it will find other and worse means for its support. The usurpation which, in order to subvert antient institutions, has destroyed an
 
 tient principles, will hold power by arts similar to those by which it has acquired it. When the old feudal and chivalrous spirit of
-<hi>Fealty,</hi>
+<hi rend="italic">Fealty,</hi>
 which, by freeing kings from fear, freed both kings and subjects from the precautions of tyranny, shall be extinct in the minds of men, plots and assassi
 
 nations will be anticipated by preventive mur
@@ -2937,7 +2931,7 @@ nity is savage and brutal.
 </p>
 <p>
 It is not clear, whether in England we learned those grand and decorous principles, and manners, of which considerable traces yet remain, from you, or whether you took them from us. But to you, I think, we trace them best. You seem to me to be—
-<hi>gentis incunabula nostrae.</hi>
+<hi rend="italic">gentis incunabula nostrae.</hi>
 France has always more or less influenced manners in England; and when your fountain is choaked up and polluted,
 <pb n="119" facs="tcp:0939801000:122"/>
 the stream will not run long, or not run clear with us, or perhaps with any nation. This gives all Europe, in my opinion, but too close and con
@@ -2950,7 +2944,7 @@ ments, manners, and moral opinions. As things now stand, with every thing respec
 </p>
 <p>
 Why do I feel so differently from the Reverend Dr. Price, and those of his lay flock, who will choose to adopt the sentiments of his discourse?— For this plain reason—beause it is
-<hi>natural</hi>
+<hi rend="italic">natural</hi>
 I should; because we are so made as to be af
 
 fected at such spectacles with melancholy senti
@@ -3102,7 +3096,7 @@ ceived in England. Four hundred years have gone over us; but I believe we are no
 gishness of our national character, we still bear the stamp of our forefathers. We have not (as I conceive) lost the generosity and dignity of thinking of the fourteenth century; nor as yet have we subtilized ourselves into savages. We are not the converts of Rousseau; we are not the disciples of Voltaire; Helvetius has made no progress amongst us. Atheists are not our preachers; madmen are not our lawgivers. We
 <pb n="128" facs="tcp:0939801000:131"/>
 know that
-<hi>we</hi>
+<hi rend="italic">we</hi>
 have made no discoveries; and we think that no discoveries are to be made, in mo
 
 rality; nor many in the great principles of go
@@ -3122,27 +3116,27 @@ spect to nobility
 The English are, I conceive, misrepresented in a Letter published in one of the papers, by a gentleman thought to be a dissenting minister.—When writing to Dr. Price, of the spirit which prevails at Paris, he says,
 <q>
 The spirit of the people in this place has abolished all the proud
-<hi>distinctions</hi>
+<hi rend="italic">distinctions</hi>
 which the
-<hi>king</hi>
+<hi rend="italic">king</hi>
 and
-<hi>nobles</hi>
+<hi rend="italic">nobles</hi>
 had usurped in their minds;
 </q>
 whether they talk of
 <q>
 the king, the noble, or the priest,
-<hi>their whole language is that of the most</hi>
+<hi rend="italic">their whole language is that of the most</hi>
 enlightened and liberal amongst the English.
 </q>
 If this gentleman means to confine the terms
-<hi>enlightened and liberal</hi>
+<hi rend="italic">enlightened and liberal</hi>
 to one set of men in England, it may be true. It is not generally so.
 </note>
 . Why? Because when such
 <pb n="129" facs="tcp:0939801000:132"/>
 ideas are brought before our minds, it is
-<hi>natural</hi>
+<hi rend="italic">natural</hi>
 to be so affected; because all other feelings are false and spurious, and tend to corrupt our minds, to vitiate our primary morals, to render us unfit for rational liberty; and by teaching us a servile, licentious, and abandoned insolence, to be our low sport for a few holidays, to make us perfectly fit for, and justly deserving of slavery, through the whole course of our lives.
 </p>
 <p>
@@ -3533,7 +3527,7 @@ tional motives, as well as religious, against any project of turning their indep
 </p>
 <p>
 From the united considerations of religion and constitutional policy, from their opinion of a duty to make a sure provision for the consolation of the feeble and the instruction of the ignorant, they have incorporated and identified the estate of the church with the mass of
-<hi>private property,</hi>
+<hi rend="italic">private property,</hi>
 of which the state is not the proprietor, either for use or dominion, but the guardian only and the regulator. They have ordained that the pro
 
 vision of this establishment might be as stable as the earth on which it stands, and should not fluctuate with the Euripus of funds and actions.
@@ -3544,11 +3538,11 @@ The men of England, the men, I mean, of light and leading in England, whose wisd
 gion in name, which by their proceedings they appeared to contemn. If by their conduct (the only language that rarely lies) they seemed to regard the great ruling principle of the moral and the natural world, as a mere invention to
 <pb n="151" facs="tcp:0939801000:154"/>
 keep the vulgar in obedience, they apprehend that by such a conduct they would defeat the politic purpose they have in view. They would find it difficult to make others to believe in a system to which they manifestly gave no credit themselves. The Christian statesmen of this land would indeed first provide for the
-<hi>multitude</hi>
+<hi rend="italic">multitude</hi>
 ; be
 
 cause it is the
-<hi>multitude</hi>
+<hi rend="italic">multitude</hi>
 ; and is therefore, as such, the first object in the ecclesiastical institution, and in all institutions. They have been taught, that the circumstance of the gospel's being preached to the poor, was one of the great tests of its true mission. They think, there
 
 fore, that those do not believe it, who do not take care it should be preached to the poor. But as they know that charity is not confined to any one description, but ought to apply itself to all men who have wants, they are not de
@@ -3616,7 +3610,7 @@ In England most of us conceive that it is envy and malignity towards those who a
 cient church, that makes some look askance at the distinctions, and honours, and revenues, which, taken from no person, are set apart for virtue. The ears of the people of England are distinguish
 
 ing. They hear these men speak broad. Their tongue betrays them. Their language is in the
-<hi>patois</hi>
+<hi rend="italic">patois</hi>
 of fraud; in the cant and gibberish of hypo
 
 crisy. The people of England must think so, when these praters affect to carry back the clergy to that primitive evangelic poverty which, in the spirit, ought always to exist in them (and in us too, however we may like it) but in the thing must be varied, when the relation of that body to the state is altered; when manners, when modes of life, when indeed the whole order of human affairs has undergone a total revolution. We shall believe those reformers to be then honest enthusiasts, not as now we think them,
@@ -3635,7 +3629,7 @@ With these ideas rooted in their minds, the commons of Great Britain, in the nat
 gencies, will never seek their resource from the confiscation of the estates of the church and poor. Sacrilege and proscription are not among the ways and means in our committee of supply. The Jews in Change Alley have not yet dared to hint their hopes of a mortgage on the revenues be
 
 longing to the see of Canterbury. I am not afraid that I shall be disavowed, when I assure you that there is not
-<hi>one</hi>
+<hi rend="italic">one</hi>
 public man in this kingdom, whom you would wish to quote; no not one of any party or description, who does not reprobate the dishonest, perfidious and cruel confiscation which the national assembly has been compelled to make of that property which it was their first duty to protect.
 </p>
 <p>
@@ -3674,9 +3668,9 @@ dreadful revolution; and one to which a virtu
 ous mind would feel pain in condemning any guilt except that which would demand the life of the offender. But to many minds this punish
 
 ment of
-<hi>degradation</hi>
+<hi rend="italic">degradation</hi>
 and
-<hi>infamy</hi>
+<hi rend="italic">infamy</hi>
 is worse than death. Undoubtedly it is an infinite aggravation of this cruel suffering, that the persons who were taught a double prejudice in favour of religion, by education and by the place they held in the administration of its functions, are to receive the remnants of their property as alms from the pro
 
 fane and impious hands of those who had plun
@@ -3695,9 +3689,9 @@ kind.
 But this act of seizure of property, it seems, is a judgment in law, and not a confisca
 
 tion. They have, it seems, found out in the academies of the
-<hi>Palais Royale,</hi>
+<hi rend="italic">Palais Royale,</hi>
 and the
-<hi>
+<hi rend="italic">
 Ja
 
 cobins,
@@ -3789,7 +3783,7 @@ By the vast debt of France a great monied interest had insensibly grown up, and 
 vailed in that kingdom, the general circulation of property, and in particular the mutual con
 
 vertibility of land into money, and of money into land, had always been a matter of difficulty. Family settlements, rather more general and more strict than they are in England, the
-<hi>jus retractus,</hi>
+<hi rend="italic">jus retractus,</hi>
 the great mass of landed property held by the crown, and by a maxim of the French law held unalienably, the vast estates of the ec
 
 clesiastic corporations,—all these had kept the landed and monied interests more separated in France, less miscible, and the owners of the two distinct species of property not so well disposed to each other as they are in this country.
@@ -3885,7 +3879,7 @@ of nobility, and of priesthood. They became a sort of demagogues. They served as
 </p>
 <p>
 As these two kinds of men appear principal leaders in all the late transactions, their junction and politics will serve to account, not upon any principles of law or of policy, but as a
-<hi>cause,</hi>
+<hi rend="italic">cause,</hi>
 for the general fury with which all the landed pro
 
 perty of ecclesiastical corporations has been at
@@ -3902,7 +3896,7 @@ tracted by a decried and subverted government?
 </p>
 <p>
 Was the public estate a sufficient stake for the public debts? Assume that it was not, and that a loss
-<hi>must</hi>
+<hi rend="italic">must</hi>
 be incurred somewhere—When the only estate lawfully possessed, and which the contracting parties had in contemplation at the time in which their bargain was made, happens to fail, who, according to the principles of natural and legal equity, ought to be the sufferer? Certainly it ought to be either the party who trusted; or the party who persuaded him to trust; or both;
 <pb n="169" facs="tcp:0939801000:172"/>
 and not third parties who had no concern with the transaction. Upon any insolvency they ought to suffer who were weak enough to lend upon bad security, or they who fraudulently held out a security that was not valid. Laws are acquaint
@@ -3945,7 +3939,7 @@ dignation and horror? He is not a man who does not feel such emotions on such oc
 Few barbarous conquerors have ever made so terrible a revolution in property. None of the heads of the Roman factions, when they esta
 
 blished "
-<hi>crudelem illam Hastam</hi>
+<hi rend="italic">crudelem illam Hastam</hi>
 " in all their auctions of rapine, have ever set up to sale the goods of the conquered citizen to such an enor
 
 mous amount. It must be allowed in favour of those tyrants of antiquity, that what was done by them could hardly be said to be done in cold blood. Their passions were inflamed, their tem
@@ -3982,7 +3976,7 @@ ceedings were adopted by one of the most de
 cided tyrants in the rolls of history, as necessary preliminaries, before he could venture, by brib
 
 ing the members of his two servile houses with a share of the spoil, and holding out to them an eternal immunity from taxation, to demand a confirmation of his iniquitous proceedings by an act of parliament. Had fate reserved him to our times, four technical terms would have done his business, and saved him all this trouble; he needed nothing more than one short form of incantation—"
-<hi>
+<hi rend="italic">
 Philosophy, Light, Li
 
 berality, the Rights of Men.
@@ -4017,7 +4011,7 @@ selves to his view or his imagination:
 <l>"To such a rage? Was't luxury, or lust?</l>
 <l>
 "Was
-<hi>he</hi>
+<hi rend="italic">he</hi>
 so temperate, so chaste, so just?
 </l>
 <l>"Were these their crimes? they were his own much "more;</l>
@@ -4062,7 +4056,7 @@ so temperate, so chaste, so just?
 </note>
 <p>
 This same wealth, which is at all times treason and
-<hi>lese nation</hi>
+<hi rend="italic">lese nation</hi>
 to indigent and rapacious despot
 
 ism, under all modes of polity, was your tempta
@@ -4097,9 +4091,9 @@ ments of revenue (considered as entirely certain) to rather more than the amount
 ciency; and he concludes with these emphatical words (p. 39)
 <q>
 Quel pays, Messieurs, que celui, ou,
-<hi>sans impots</hi>
+<hi rend="italic">sans impots</hi>
 et avec de simples objets
-<hi>inappercus,</hi>
+<hi rend="italic">inappercus,</hi>
 on peut faire disparoitre un deficit qui a fait tant de bruit en Europe.
 </q>
 As to the re-imbursement, the sinking of debt, and the other great objects of public credit and political arrangement indicated in Mons. Necker's speech, no doubt could be entertained, but that a very moderate and proportioned assessment on the ci
@@ -4110,7 +4104,7 @@ mand.
 </p>
 <p>
 If this representation of Mons. Necker was false, then the assembly are in the highest degree culpable for having forced the king to accept as his minister, and since the king's deposition, for having employed as
-<hi>their</hi>
+<hi rend="italic">their</hi>
 minister, a man who had been capable of abusing so notoriously the confidence of his master and their own; in a mat
 
 ter too of the highest moment, and directly ap
@@ -4152,11 +4146,11 @@ Perhaps persons, unacquainted with the state of France, on hearing the clergy an
 blesse were privileged in point of taxation, may be led to imagine, that previous to the revolution these bodies had contributed nothing to the state. This is a great mistake. They certainly did not contribute equally with each other, nor either of them equally with the commons. They both how
 
 ever contributed largely. Neither nobility nor clergy enjoyed any exemption from the excise on consumable commodities, from duties of custom, or from any of the other numerous
-<hi>indirect</hi>
+<hi rend="italic">indirect</hi>
 impo
 
 sitions, which in France as well as here, make so very large a proportion of all payments to the public. The noblesse paid the capitation. They paid also a land-tax, called the twentieth penny, to the height sometimes of three, sometimes of four shillings in the pound; both of them
-<hi>direct</hi>
+<hi rend="italic">direct</hi>
 impositions of no light nature, and no trivial produce. The clergy of the provinces an
 
 nexed by conquest to France (which in extent make about an eighth part of the whole but in wealth a much larger proportion) paid likewise to the capitation and the twentieth penny, at the rate paid by the nobility. The clergy in the old provinces did not pay the capitation; but they had redeemed themselves at the ex
@@ -4190,7 +4184,7 @@ riously entertained) altogether impracticable. Public exigencies pressed upon al
 this paper currency to satisfy in the first in
 
 stance chiefly the demands made upon them by the
-<hi>Bank of discount,</hi>
+<hi rend="italic">Bank of discount,</hi>
 the great machine, or paper
 
 mill, of their fictitious wealth.
@@ -4212,7 +4206,7 @@ To cut off all appearance of connexion between the crown and public justice, and
 lished. Whilst the parliaments existed, it was evident that the people might some time or other come to resort to them, and rally under the standard of their antient laws. It became however a matter of con
 
 sideration that the magistrates and officers, in the courts now abolished,
-<hi>had purchased their places</hi>
+<hi rend="italic">had purchased their places</hi>
 at a very high rate, for which, as well as for the
 <pb n="182" facs="tcp:0939801000:185"/>
 duty they performed, they received but a very low return of interest. Simple confiscation is a boon only for the clergy;—to the lawyers some appearances of equity are to be observed; and they are to receive compensation to an immense amount. Their com
@@ -4227,7 +4221,7 @@ hibited by the alliance of bankruptcy and tyranny, at any time, or in any nation
 </p>
 <p>
 In the course of all these operations, at length comes out the grand
-<hi>arcanum</hi>
+<hi rend="italic">arcanum</hi>
 ;—that in reality, and in a fair sense, the lands of the church (so far as any thing certain can be gathered from their proceed
 
 ings) are not to be sold at all. By the late resolu
@@ -4235,7 +4229,7 @@ ings) are not to be sold at all. By the late resolu
 tions of the national assembly, they are indeed to be delivered to the highest bidder. But it is to be ob
 
 served, that
-<hi>
+<hi rend="italic">
 a certain portion only of the purchase money
 <pb n="183" facs="tcp:0939801000:186"/>
 is to be laid down.
@@ -4280,7 +4274,7 @@ chy directed by laws, controlled and balanced by the great hereditary wealth and
 nity of a nation; and both again controlled by a judicious check from the reason and feeling of the people at large acting by a suitable and per
 
 manent organ? Is it then impossible that a man may be found who, without criminal ill intention, or pitiable absurdity, shall prefer such a mixed and tempered government to either of the extremes; and who may repute that nation to be destitute of all wisdom and of all virtue, which, having in its choice to obtain such a government with case,
-<hi>or rather to confirm it when actually possessed,</hi>
+<hi rend="italic">or rather to confirm it when actually possessed,</hi>
 thought proper to commit a thousand crimes, and
 <pb n="185" facs="tcp:0939801000:188"/>
 to subject their country to a thousand evils, in order to avoid it? Is it then a truth so universally ac
@@ -4398,7 +4392,7 @@ ance than in reality.
 </p>
 <p>
 Among the standards upon which the effects of government on any country are to be estimated, I must consider the state of its population as not the least certain. No country in which population flourishes, and is in progressive improvement, can be under a
-<hi>very</hi>
+<hi rend="italic">very</hi>
 mischievous government. About sixty years ago, the Intendants of the generalities of France made, with other matters, a report of the population of their several districts. I have
 <pb n="190" facs="tcp:0939801000:193"/>
 not the books, which are very voluminous, by me, nor do I know where to procure them (I am ob
@@ -4408,7 +4402,7 @@ liged to speak by memory, and therefore the less positively) but I think the pop
 thority for his own time at least equal to the In
 
 tendants for theirs, reckons, and upon apparently sure principles, the people of France, in the year 1780, at twenty-four millions six hundred and seventy thousand. But was this the probable ultimate term under the old establishment? Dr. Price is of opinion, that the growth of population in France was by no means at its
-<hi>acmé</hi>
+<hi rend="italic">acmé</hi>
 in that year. I certainly defer to Dr. Price's authority a good deal more in these speculations, than I do in his general politics. This gentleman, taking ground on Mr. Necker's data, is very confident, that since the period of that minister's calculation, the French population has encreased rapidly; so ra
 
 pidly that in the year 1789 he will not consent to rate the people of that kingdom at a lower number than thirty millions. After abating much (and much I think ought to be abated) from the sanguine calculation of Dr. Price, I have no doubt that the population of France did encrease considerably during this later period: but suppos
@@ -4480,9 +4474,9 @@ It is impossible that Mr. Necker should be mis
 taken in the amount of the bullion which has been coined in the mint. It is a matter of official record. The reasonings of this able financier, concerning the quantity of gold and silver which remained for circulation, when he wrote in 1785, that is about four years before the deposition and imprisonment of the French King, are not of equal certainty; but they are laid on grounds so apparently solid, that it is not easy to refuse a considerable de
 
 gree of assent to his calculation. He calculates the
-<hi>numeraire,</hi>
+<hi rend="italic">numeraire,</hi>
 or what we call
-<hi>specie,</hi>
+<hi rend="italic">specie,</hi>
 then actually existing in France, at about eighty-eight millions of the same English money. A great accumula
 
 tion of wealth for one country, large as that coun
@@ -4537,7 +4531,7 @@ tate and indiscriminate censure, and which de
 mands, that we should very seriously examine, what and how great are the latent vices that could autho
 
 rise us at once to level so specious a fabric with the ground. I do not recognize, in this view of things, the despotism of Turkey. Nor do I discern the character of a government that has been, on the whole, so oppressive, or so corrupt, or so negligent, as to be utterly unfit
-<hi>for all reformation.</hi>
+<hi rend="italic">for all reformation.</hi>
 I must think such a government well deserved to have its excel
 
 lencies heightened; its faults corrected; and its ca
@@ -4573,7 +4567,7 @@ lation and wealth of the country, which it has taken under its care, is a matter
 cover in any degree the effects of this philosophic revolution, and before the nation can be replaced on its former footing. If Dr. Price should think fit, a few years hence, to favour us with an estimate of the population of France, he will hardly be able to make up his tale of thirty millions of souls, as computed in 1789, or the assembly's computation of twenty-six millions in that year; or even
 <pb n="197" facs="tcp:0939801000:200"/>
 Mr. Necker's twenty-five millions in 1780. I hear that there are considerable emigrations from France; and that many quitting that voluptuous climate, and that seductive
-<hi>Circean</hi>
+<hi rend="italic">Circean</hi>
 liberty, have taken refuge in the frozen regions, and under the British despotism, of Canada.
 </p>
 <p>
@@ -4601,11 +4595,11 @@ year
 <cell>Stg</cell>
 <cell>£. 161,121</cell>
 <cell>
-<hi>s.</hi>
+<hi rend="italic">s.</hi>
 13
 </cell>
 <cell>
-<hi>d.</hi>
+<hi rend="italic">d.</hi>
 4
 </cell>
 </row>
@@ -4696,13 +4690,13 @@ The advocates for this revolution, not satisfied with exaggerating the vices of 
 vernment, strike at the fame of their country itself, by painting almost all that could have at
 
 tracted the attention of strangers, I mean their nobility and their clergy, as objects of horror. If this were only a libel, there had not been much in it. But it has practical consequences. Had your nobility and gentry, who formed the great body of your landed men, and the whole of your military officers, resembled those of Germany, at the period when the Hanse-towns were necessitated to confederate against the nobles in defence of their property—had they been like the
-<hi>Orsini</hi>
+<hi rend="italic">Orsini</hi>
 and
-<hi>Vitelli</hi>
+<hi rend="italic">Vitelli</hi>
 in Italy, who used to sally from their fortified dens to rob the trader and traveller—had they been such as the
-<hi>Mamalukes</hi>
+<hi rend="italic">Mamalukes</hi>
 in Egypt, or the
-<hi>Nayres</hi>
+<hi rend="italic">Nayres</hi>
 on the coast of Malabar, I do admit, that too critical an enquiry might not be adviseable into the means of freeing the world from such a nuisance. The statues of Equity and Mercy might be veiled for a moment. The tenderest minds, confounded with the dreadful exigence in which morality sub
 
 mits to the suspension of its own rules in favour of its own principles, might turn aside whilst fraud and violence were accomplishing the destruction of a pretended nobility which disgraced whilst it per
@@ -4715,13 +4709,13 @@ tween the vices.
 But did the privileged nobility who met under the king's precept at Versailles, in 1789, or their
 <pb n="200" facs="tcp:0939801000:203"/>
 constituents, deserve to be looked on as the
-<hi>Nayres</hi>
+<hi rend="italic">Nayres</hi>
 or
-<hi>Mamalukes</hi>
+<hi rend="italic">Mamalukes</hi>
 of this age, or as the
-<hi>Orsini</hi>
+<hi rend="italic">Orsini</hi>
 and
-<hi>Vitelli</hi>
+<hi rend="italic">Vitelli</hi>
 of ancient times? If I had then asked the question, I should have passed for a madman. What have they since done that they were to be driven into exile, that their persons should be hunted about, mangled, and tortured, their families dispersed, their houses laid in ashes, that their order should be abolished, and the memory of it, if possible, extinguished, by ordain
 
 ing them to change the very names by which they were usually known? Read their instructions to their representatives. They breathe the spirit of liberty as warmly, and they recommend reforma
@@ -4768,7 +4762,7 @@ nerally practised with us in the intercourse between the higher and lower ranks 
 the humble part of the community were rare; and as to attacks made upon the property or the per
 
 sonal liberty of the commons, I never heard of any whatsoever from
-<hi>them</hi>
+<hi rend="italic">them</hi>
 ; nor, whilst the laws were in vigour under the antient government, would such tyranny in subjects have been permitted. As men of landed estates, I had no fault to find with their conduct, though much to reprehend, and much to wish changed, in many of the old tenures. Where the letting of their land was by rent, I could not discover that their agreements with their farmers were oppressive; nor when they were in partnership with the farmer, as often was the case, have I heard that they had taken the lion's share. The proportions seemed not inequitable. There might be exceptions; but certainly they were ex
 
 ceptions only. I have no reason to believe that in these respects the landed noblesse of France were worse than the landed gentry of this country; cer
@@ -4816,7 +4810,7 @@ veterate usages of our country, growing out of the prejudice of ages, has nothin
 nacious of those privileges, is not absolutely a crime. The strong struggle in every individual to preserve possession of what he has found to belong to him and to distinguish him, is one of the securities against injustice and despotism implanted in our nature. It operates as an instinct to secure pro
 
 perty, and to preserve communities in a settled state. What is there to shock in this? Nobility is a graceful ornament to the civil order. It is the Corinthian capital of polished society.
-<hi>Omnes boni nobilitati semper favemus,</hi>
+<hi rend="italic">Omnes boni nobilitati semper favemus,</hi>
 was the saying of a wise and good man. It is indeed one sign of a liberal and benevolent mind to incline to it with some sort of partial propensity. He feels no ennobling prin
 
 ciple in his own heart who wishes to level all the artificial institutions which have been adopted for giving a body to opinion, and permanence to fugitive esteem. It is a sour, malignant, envious disposition, without taste for the reality or for any image or representation of virtue, that sees with joy the unmerited fall of what had long flourished in splendour and in honour. I do not like to see any thing destroyed; any void produced in society; any ruin on the face of the land. It was therefore with no disappointment or dissatisfaction, that my
@@ -4877,13 +4871,13 @@ petities, which shake the public with the same
 <l>"The private state, and render life unsweet."</l>
 <p>
 These vices are the
-<hi>causes</hi>
+<hi rend="italic">causes</hi>
 of those storms. Re
 
 ligion, morals, laws, prerogatives, privileges, liber
 
 ties, rights of men, are the
-<hi>pretexts.</hi>
+<hi rend="italic">pretexts.</hi>
 The pretexts are always found in some specious appearance of a real good. You would not secure men from ty
 
 ranny and sedition, by rooting out of the mind the principles to which these fraudulent pretexts apply? If you did, you would root out every thing that is valuable in the human breast. As these are the pretexts, so the ordinary actors and instruments in great public evils are kings, priests, magistrates, senates, parliaments, national assem
@@ -4891,7 +4885,7 @@ ranny and sedition, by rooting out of the mind the principles to which these fra
 blies, judges, and captains. You would not cure the evil by resolving, that there should be no more monarchs, nor ministers of state, nor of the gospel; no interpreters of law; no general officers; no public councils. You might change
 <pb n="209" facs="tcp:0939801000:212"/>
 the names. The things in some shape must remain. A certain
-<hi>quantum</hi>
+<hi rend="italic">quantum</hi>
 of power must always exist in the community, in some hands, and under some appellation. Wise men will apply their remedies to vices, not to names; to the causes of evil which are permanent, not to the occasional organs by which they act, and the transitory modes in which they appear. Otherwise you will be wise historically, a fool in practice. Seldom have two ages the same fashion in their pretexts and the same modes of mischief. Wickedness is a little more inventive. Whilst you are discussing fashion, the fashion is gone by. The very same vice as
 
 sumes a new body. The spirit transmigrates; and, far from losing its principle of life by the change of its appearance, it is renovated in its new organs with the fresh vigour of a juvenile activity. It walks abroad; it continues its ravages; whilst you are gibbeting the carcass, or demolishing the tomb. You are terrifying yourself with ghosts and appa
@@ -4912,7 +4906,7 @@ lowers of Calvin, at the infamous massacre of St. Bar
 tholomew. What should we say to those who could think of retaliating on the Parisians of this day the abominations and horrors of that time? They are
 <pb n="210" facs="tcp:0939801000:213"/>
 indeed brought to abhor
-<hi>that</hi>
+<hi rend="italic">that</hi>
 massacre. Ferocious as they are, it is not difficult to make them dislike it; because the politicians and fashionable teachers have no interest in giving their passions exactly the same direction. Still however they find it their interest to keep the same savage dispositions alive. It was but the other day that they caused this very massacre to be acted on the stage for the diver
 
 sion of the descendants of those who committed it. In this tragic farce they produced the cardinal of Lorraine in his robes of function, ordering general slaughter. Was this spectacle intended to make the Parisians abhor persecution, and loath the effu
@@ -5026,7 +5020,7 @@ bled others of their own rank; and where there was
 any difference, it was in their favour. They were more fully educated than the military noblesse; so as by no means to disgrace their profession by ig
 
 norance, or by want of fitness for the exercise of their authority. They seemed to me, beyond the clerical character, liberal and open; with the hearts of gentlemen, and men of honour; neither insolent nor servile in their manners and conduct. They seemed to me rather a superior class; a set of men, amongst whom you would not be surprised to find a
-<hi>Fenelon.</hi>
+<hi rend="italic">Fenelon.</hi>
 I saw among the clergy in Paris (many of the description are not to be met with any where) men of great learning and candour; and I had reason to believe, that this description was not confined to Paris. What I found in other places, I know was accidental; and therefore to be pre
 
 sumed a fair sample. I spent a few days in a pro
@@ -5038,7 +5032,7 @@ formed; two of them of deep, general, and extensive erudition, antient and moder
 tered into the genius of those writers with a cri
 
 tical accuracy. One of these gentlemen is since dead, the Abbé
-<hi>Morangis.</hi>
+<hi rend="italic">Morangis.</hi>
 I pay this tribute, with
 
 out reluctance, to the memory of that noble, reve
@@ -5070,7 +5064,7 @@ ber, of vicious prelates was not great. Certain individuals among them not disti
 tions to that rank, than his immediate predecessor; and I believe, (as some spirit of reform has pre
 
 vailed through the whole reign) that it may be true. But the present ruling power has shewn a disposition only to plunder the church. It has punished
-<hi>all</hi>
+<hi rend="italic">all</hi>
 prelates; which is to favour the vicious, at least in point of reputation. It has made a degrading pensionary establishment, to which no man of liberal ideas or liberal condition will destine his children. It must settle into the lowest classes of the people. As with you the infe
 
 rior clergy are not numerous enough for their du
@@ -5105,7 +5099,7 @@ asts do not scruple to avow their opinion, that a state can subsist without any 
 good which may be in it, by a project of their own —namely, by a sort of education they have ima
 
 gined, founded in a knowledge of the physical wants of men; progressively carried to an enlightened self-interest, which, when well understood, they tell us will identify with an interest more enlarged and public. The scheme of this education has been long known. Of late they distinguish it (as they have got an entire new nomenclature of technical terms) by the name of a
-<hi>Civic Education.</hi>
+<hi rend="italic">Civic Education.</hi>
 </p>
 <p>
 I hope their partizans in England, (to whom I rather attribute very inconsiderate conduct than the ultimate object in this detestable design) will succeed neither in the pillage of the ecclesiastics, nor in the introduction of a principle of popular election to our bishoprics and parochial cures. This, in the present condition of the world, would be the last corruption of the church; the utter ruin of the clerical character; the most dangerous shock that the state ever received through a misunder
@@ -5122,7 +5116,7 @@ duct to all protestant nations; because the clergy, whom they have thus plundere
 given over to mockery and scorn, are of the Ro
 
 man Catholic, that is, of
-<hi>their own</hi>
+<hi rend="italic">their own</hi>
 pretended per
 
 suasion. I have no doubt that some miserable bigots will be found here as well as elsewhere, who hate sects and parties different from their own, more than they love the substance of religion; and who are more angry with those who differ from them in their particular plans and systems, than displeased with those who attack the foundation of our common hope. These men will write and speak on the subject in the manner that is to be expected from their temper and character. Burnet says, that when he was in France, in the year 1683,
@@ -5260,7 +5254,7 @@ Whether the following description is strictly true I know not; but it is what th
 ple of that district:
 <q>
 Dans la Révolution actuelle, ils ont résisté à toutes les
-<hi>
+<hi rend="italic">
 séductions du bigotisme, aux per
 
 sécutions et aux tracasseries
@@ -5268,33 +5262,33 @@ sécutions et aux tracasseries
 des Ennemis de la Révolu
 
 tion.
-<hi>Oubliant leurs plus grands intérêts</hi>
+<hi rend="italic">Oubliant leurs plus grands intérêts</hi>
 pour rendre hom
 
 mage aux vues d'ordre général qui ont determiné l'As
 
 semblée Nationale, ils voient,
-<hi>sans se plaindre,</hi>
+<hi rend="italic">sans se plaindre,</hi>
 supprimer cette foule d'établissemens ecclésiastiques par lesquels
-<hi>ils subsistoient</hi>
+<hi rend="italic">ils subsistoient</hi>
 ; et même, en perdant leur siège épiscopal, la seule de toutes ces ressources qui pouvoit, ou plutôt
-<hi>qui devoit, en toute équité,</hi>
+<hi rend="italic">qui devoit, en toute équité,</hi>
 leur être conservée; condamnés
-<hi>
+<hi rend="italic">
 à la plus effray
 
 ante misère,
 </hi>
 sans avoir
-<hi>été ni pu être entendus, ils ne murmurent point,</hi>
+<hi rend="italic">été ni pu être entendus, ils ne murmurent point,</hi>
 ils res
 <gap reason="illegible: indecipherable" extent="1 letter">
 <desc>•</desc>
 </gap>
 ent fidèles aux principes du plus pur patriotisme; ils sont encore prêts à
-<hi>verser leur sang</hi>
+<hi rend="italic">verser leur sang</hi>
 pour le maintien de la Constitution, qui va reduire leur Ville
-<hi>à la plus déplorable nullité.</hi>
+<hi rend="italic">à la plus déplorable nullité.</hi>
 </q>
 These people are not supposed to have endured those sufferings and injustices in a struggle for liberty, for the same account states truly that they had been always free; their patience in beggary and ruin, and their suffering, without re
 
@@ -5315,7 +5309,7 @@ rity; and in England we find those who stretch out their arms to them, who recom
 fraternity, and standards consecrated amidst their rites and mysteries
 <note n="*" place="bottom">
 See the proceedings of the confederation at
-<hi>Nantz.</hi>
+<hi rend="italic">Nantz.</hi>
 </note>
 ; who suggest to them leagues of perpetual amity, at the very time when the power, to which our constitution has exclusively delegated the federative capacity of this king
 
@@ -5402,13 +5396,13 @@ has nothing in view in his projects but the public good, a great difference will
 ginal introduction of such institutions, and on a question of their total abolition, where they have cast their roots wide and deep, and where by long habit things more valuable than themselves are so adapted to them, and in a manner interwoven with them, that the one cannot be destroyed without notably impairing the other. He might be em
 
 barrassed, if the case were really such as sophisters represent it in their paltry style of debating. But in this, as in most questions of state, there is a middle. There is something else than the mere alternative of absolute destruction, or unreformed existence.
-<hi>Spartam nactus es; hanc exorna.</hi>
+<hi rend="italic">Spartam nactus es; hanc exorna.</hi>
 This is, in my opi
 
 nion, a rule of profound sense, and ought never to depart from the mind of an honest reformer. I cannot conceive how any man can have brought himself to that pitch of presumption, to con
 
 sider his country as nothing but
-<hi>carte blanche,</hi>
+<hi rend="italic">carte blanche,</hi>
 upon which he may scribble whatever he pleases. A man full of warm speculative benevolence may wish his society otherwise constituted than he finds it; but a good patriot, and a true politician, always considers how he shall make the most of the exist
 
 ing materials of his country. A disposition to pre
@@ -5427,15 +5421,15 @@ ments, even when they seem to enjoy the confi
 dence of their prince and country, and to be in
 
 vested with full authority they have not always apt instruments. A politician, to do great things, looks for a
-<hi>power,</hi>
+<hi rend="italic">power,</hi>
 what our workmen call a
-<hi>
+<hi rend="italic">
 pur
 
 chase
 </hi>
 ; and if he finds that power, in politics as in mechanics he cannot be at a loss to apply it. In the monastic institutions, in my opinion, was found a great
-<hi>power</hi>
+<hi rend="italic">power</hi>
 for the mechanism of politic benevo
 
 lence. There were revenues with a public direction; there were men wholly set apart and dedicated to public purposes, without any other than public ties and public principles; men without the possibility of converting the estate of the community into a private fortune; men denied to self-interests, whose avarice is for some community; men to whom per
@@ -5466,9 +5460,9 @@ tal funds, the proceeding is in its natural course. Your politicians do not unde
 But the institutions savour of superstition in their very principle; and they nourish it by a permanent and standing influence. This I do not mean to dispute; but this ought not to hinder you from deriving from superstition itself any resources which may thence be furnished for the public advantage. You derive benefits from many dispositions and many passions of the human mind, which are of as doubtful a colour in the moral eye, as superstition itself. It was your business to correct and mitigate every thing which was noxious in this passion, as in all the passions. But is superstition the greatest of all possible vices? In its possible excess I think it becomes a very great evil. It is, however, a moral subject; and of course admits of all degrees and all modifications. Superstition is the religion of feeble minds; and they must be tolerated in an intermixture of it, in some trifling or some enthusi
 
 astic shape or other, else you will deprive weak minds of a resource found necessary to the strongest. The body of all true religion consists, to be sure, in obedience to the will of the sovereign of the world; in a confidence in his declarations; and an imitation of his perfections. The rest is our own. It may be prejudicial to the great end; it may be auxiliary. Wise men, who as such, are not
-<hi>admirers</hi>
+<hi rend="italic">admirers</hi>
 (not admirers at least of the
-<hi>Munera Terrae</hi>
+<hi rend="italic">Munera Terrae</hi>
 ) are not violently attached to these things, nor do they
 <pb n="235" facs="tcp:0939801000:238"/>
 violently hate them. Wisdom is not the most severe corrector of folly. They are the rival fol
@@ -5499,7 +5493,7 @@ ment to the morals of those who expend it, and to those of the people to whom it
 In all the views of receipt, expenditure, and per
 
 sonal employment, a sober legislator would carefully compare the possessor whom he was recommended to expel, with the stranger who was proposed to fill his place. Before the inconveniences are incurred which
-<hi>must</hi>
+<hi rend="italic">must</hi>
 attend all violent revolutions in property through extensive confiscation, we ought to have some rational assurance that the purchasers of the confiscated property will be in a considerable degree more laborious, more virtuous, more sober, less disposed to extort an unreasonable proportion of the gains of the labourer, or to consume on them
 
 selves a larger share than is fit for the measure of an individual, or that they should be qualified to dispense the surplus in a more steady and equal mode, so as to answer the purposes of a politic expenditure, than the old possessors, call those possessors, bishops, or canons, or commendatory ab
@@ -5603,7 +5597,7 @@ ment as a necessary substitute for an expelled ty
 ranny, mankind would anticipate the time of pre
 
 scription, which, through long usage, mellows into legality governments that were violent in their commencement. All those who have affections which lead them to the conservation of civil order would recognize, even in its cradle, the child as legitimate, which has been produced from those principles of cogent expediency to which all just governments owe their birth, and on which they justify their continuance. But they will be late and reluctant in giving any sort of countenance to the operations of a power, which has derived its birth from no law and no necessity; but which on the contrary has had its origin in those vices and sinister practices by which the social union is often disturbed and sometimes destroyed. This assembly has hardly a year's prescription. We have their own word for it that they have made a revolution. To make a revolution is a measure which,
-<hi>prima fronte,</hi>
+<hi rend="italic">prima fronte,</hi>
 requires an apology. To make a revolu
 
 tion is to subvert the antient state of our coun
@@ -5661,7 +5655,7 @@ gree of wisdom. When I speak of ability, I am ob
 liged to distinguish. What they have done towards the support of their system bespeaks no ordinary men. In the system itself, taken as the scheme of a republic constructed for procuring the prosperity and security of the citizen, and for promoting the strength and grandeur of the state, I confess my
 
 self unable to find out any thing which displays, in a single instance, the work of a comprehensive and disposing mind, or even the provisions of a vulgar prudence. Their purpose every where seems to have been to evade and slip aside from
-<hi>difficulty.</hi>
+<hi rend="italic">difficulty.</hi>
 This it has been the glory of the great masters in all the arts to confront, and to overcome; and when they had overcome the first difficulty, to turn
 <pb n="246" facs="tcp:0939801000:249"/>
 it into an instrument for new conquests over new difficulties; thus to enable them to extend the empire of their science; and even to push forward beyond the reach of their original thoughts, the land marks of the human understanding itself. Dif
@@ -5673,7 +5667,7 @@ preme ordinance of a parental guardian and legis
 lator, who knows us better than we know our
 
 selves, as he loves us better too.
-<hi>Pater ipse colendi haud facilem esse viam voluit.</hi>
+<hi rend="italic">Pater ipse colendi haud facilem esse viam voluit.</hi>
 He that wrestles with us strengthens our nerves, and sharpens our skill. Our antagonist is our helper. This amicable conflict with difficulty obliges us to an intimate ac
 
 quaintance with our object, and compels us to con
@@ -5767,7 +5761,7 @@ templation of those things. By hating vices too much, they come to love men too 
 fore not wonderful, that they should be indisposed and unable to serve them. From hence arises the complexional disposition of some of your guides to pull every thing in pieces. At this mali
 
 cious game they display the whole of their
-<hi>
+<hi rend="italic">
 qua
 
 drimanous
@@ -5777,7 +5771,7 @@ activity. As to the rest, the para
 doxes of eloquent writers, brought forth purely as a sport of fancy, to try their talents, to rouze attention, and excite surprize, are taken up by these gentlemen, not in the spirit of the original authors, as means of cultivating their taste and im
 
 proving their style. These paradoxes become with them serious grounds of action, upon which they proceed in regulating the most important concerns of the state. Cicero ludicrously describes Cato as endeavouring to act in the commonwealth upon the school paradoxes which exercised the wits of the junior students in the stoic philosophy. If this was true of Cato, these gentlemen copy after him in the manner of some persons who lived about his time—
-<hi>pede nudo Catonem.</hi>
+<hi rend="italic">pede nudo Catonem.</hi>
 Mr. Hume told me, that he had from Rousseau himself the secret of his principles of composition. That acute, though eccentric, observer had perceived, that to strike and interest the public, the marvellous must be produced; that the marvellous of the heathen mythology had long since lost its effect; that giants, magicians, fairies, and heroes of romance
 <pb n="252" facs="tcp:0939801000:255"/>
 which succeeded, had exhausted the portion of credulity which belonged to their age; that now nothing was left to a writer but that species of the marvellous, which might still be produced, and with as great an effect as ever, though in another way; that is, the marvellous in life, in manners, in characters, and in extraordinary situations, giving rise to new and unlooked-for strokes in politics and morals. I believe, that were Rousseau alive, and in one of his lucid intervals, he would be shocked at the practical phrenzy of his scholars, who in their paradoxes are servile imitators; and even in their incredulity discover an implicit faith.
@@ -5838,19 +5832,19 @@ The French builders, clearing away as mere rub
 bish whatever they found, and, like their ornamen
 
 tal gardeners, forming every thing into an exact level, propose to rest the whole local and general legislature on three bases of three different kinds; one geometrical, one arithmetical, and the third financial; the first of which they call the
-<hi>basis of territory</hi>
+<hi rend="italic">basis of territory</hi>
 ; the second, the
-<hi>basis of population</hi>
+<hi rend="italic">basis of population</hi>
 ; and the third, the
-<hi>basis of contribution.</hi>
+<hi rend="italic">basis of contribution.</hi>
 For the accomplish
 
 ment of the first of these purposes they divide the area of their country into eighty-one pieces, regu
 
 larly square, of eighteen leagues by eighteen. These large divisions are called
-<hi>Departments.</hi>
+<hi rend="italic">Departments.</hi>
 These they portion, proceeding by square measurement, into seventeen hundred and twenty districts called
-<hi>
+<hi rend="italic">
 Com
 
 munes.
@@ -5858,7 +5852,7 @@ munes.
 These again they subdivide, still proceed
 
 ing by square measurement, into smaller districts called
-<hi>Cantons,</hi>
+<hi rend="italic">Cantons,</hi>
 making in all 6,400.
 </p>
 <p>
@@ -5891,11 +5885,11 @@ ridical metaphysics. Had they stuck to their me
 taphysic principles, the arithmetical process would be simple indeed. Men, with them, are strictly equal, and are entitled to equal rights in their own government. Each head, on this system, would have its vote, and every man would vote directly for the person who was to represent him in the legis
 
 lature. "But soft—by regular degrees, not yet." This metaphysic principle, to which law, custom, usage, policy, reason, were to yield, is to yield itself to their pleasure. There must be many degrees, and some stages, before the representative can come in contact with his constituent. Indeed, as we shall soon see, these two persons are to have no sort of communion with each other. First, the voters in the
-<hi>Canton,</hi>
+<hi rend="italic">Canton,</hi>
 who compose what they call
-<hi>primary assemblies,</hi>
+<hi rend="italic">primary assemblies,</hi>
 are to have a
-<hi>qualification.</hi>
+<hi rend="italic">qualification.</hi>
 What! a
 <pb n="257" facs="tcp:0939801000:260"/>
 qualification on the indefeasible rights of men? Yes; but it shall be a very small qualification. Our injustice shall be very little oppressive; only the local valuation of three days labour paid to the public. Why, this is not much, I readily admit, for any thing but the utter subversion of your equalising principle. As a qualification it might as well be let alone; for it answers no one purpose for which qualifications are established: and, on your ideas, it excludes from a vote, the man of all others whose natural equality stands the most in need of protection and defence; I mean the man who has nothing else but his natural equality to guard him. You order him to buy the right, which you before told him nature had given to him gratuitously at his birth, and of which no authority on earth could lawfully deprive him. With re
@@ -5906,49 +5900,49 @@ gard to the person who cannot come up to your market, a tyrannous aristocracy, a
 The gradation proceeds. These primary assem
 
 blies of the
-<hi>Canton</hi>
+<hi rend="italic">Canton</hi>
 elect deputies to the
-<hi>Commune</hi>
+<hi rend="italic">Commune</hi>
 ; one for every two hundred qualified inhabitants. Here is the first medium put between the primary elector and the representative legislator; and here a new turnpike is fixed for taxing the rights of men with a second qualification: for none can be elected into the
-<hi>Commune</hi>
+<hi rend="italic">Commune</hi>
 who does not pay the amount of ten days labour. Nor have we yet done. There is still to be another gradation. These
-<hi>Communes,</hi>
+<hi rend="italic">Communes,</hi>
 chosen by the
-<hi>Canton,</hi>
+<hi rend="italic">Canton,</hi>
 choose to the
-<hi>Department</hi>
+<hi rend="italic">Department</hi>
 ; and the deputies of the
-<hi>Department</hi>
+<hi rend="italic">Department</hi>
 choose their
 <pb n="258" facs="tcp:0939801000:261"/>
 deputies to the
-<hi>National Assembly.</hi>
+<hi rend="italic">National Assembly.</hi>
 Here is a third barrier of a senseless qualification. Every deputy to the national assembly must pay, in direct contri
 
 bution, to the value of a
-<hi>mark of silver.</hi>
+<hi rend="italic">mark of silver.</hi>
 Of all these qualifying barriers we must think alike; that they are impotent to secure independence; strong only to destroy the rights of men.
 </p>
 <p>
 In all this process, which in its fundamental ele
 
 ments affects to consider only
-<hi>population</hi>
+<hi rend="italic">population</hi>
 upon a principle of natural right, there is a manifest atten
 
 tion to
-<hi>property</hi>
+<hi rend="italic">property</hi>
 ; which, however just and reasonable on other schemes, is on theirs perfectly unsupport
 
 able.
 </p>
 <p>
 When they come to their third basis, that of
-<hi>Contribution,</hi>
+<hi rend="italic">Contribution,</hi>
 we find that they have more com
 
 pletely lost sight of their rights of men. This last basis rests
-<hi>entirely</hi>
+<hi rend="italic">entirely</hi>
 on property. A principle to
 
 tally different from the equality of men, and ut
@@ -5956,18 +5950,18 @@ tally different from the equality of men, and ut
 terly irreconcileable to it, is thereby admitted; but no sooner is this principle, which is a principle regarding property, admitted, than (as usual) it is subverted; and it is not subverted, (as we shall presently see,) to approximate the inequality of riches to the level of nature. The additional share in the third portion of representation, (a portion reserved exclusively for the higher contribu
 
 tion,) is made to regard the
-<hi>district</hi>
+<hi rend="italic">district</hi>
 only, and not the individuals in it who pay. It is easy to perceive, by the course of their reasonings, how much they were embarrassed by their contradictory ideas of the rights of men and the privileges of riches. The committee of constitution do as good as admit that they are wholly irreconcileable.
 <pb n="259" facs="tcp:0939801000:262"/>
 <q>
 The relation, with regard to the contributions, is without doubt
-<hi>null</hi>
+<hi rend="italic">null</hi>
 (say they) when the question is on the balance of the political rights as between individual and individual; without which
-<hi>personal equality would be destroyed,</hi>
+<hi rend="italic">personal equality would be destroyed,</hi>
 and
-<hi>an aristocracy of the rich</hi>
+<hi rend="italic">an aristocracy of the rich</hi>
 would be established. But this inconvenience entirely disappears when the proportional relation of the contribution is only considered in the
-<hi>great masses,</hi>
+<hi rend="italic">great masses,</hi>
 and is solely between province and province; it serves in that case only to form a just reciprocal proportion be
 
 tween the cities, without affecting the personal rights of the citizens.
@@ -5975,15 +5969,15 @@ tween the cities, without affecting the personal rights of the citizens.
 </p>
 <p>
 Here the principle of
-<hi>contribution,</hi>
+<hi rend="italic">contribution,</hi>
 as taken be
 
 tween man and man, is reprobated as
-<hi>null,</hi>
+<hi rend="italic">null,</hi>
 and de
 
 structive to equality; and as pernicious too; because it leads to the establishment of an
-<hi>aristocracy of the rich.</hi>
+<hi rend="italic">aristocracy of the rich.</hi>
 However, it must not be abandoned. And the way of getting rid of the difficulty is to estab
 
 lish the inequality as between department and de
@@ -6000,19 +5994,19 @@ Now take it in the other point of view, and sup
 pose
 <pb n="260" facs="tcp:0939801000:263"/>
 their principle of representation according to contribution, that is, according to
-<hi>riches,</hi>
+<hi rend="italic">riches,</hi>
 to be well founded, and to be a necessary basis for the repub
 
 lic, how have they provided for the rich by giving to the district, that is to say, to the poor in the dis
 
 trict of
-<hi>Canton</hi>
+<hi rend="italic">Canton</hi>
 and
-<hi>Commune,</hi>
+<hi rend="italic">Commune,</hi>
 who are the majo
 
 rity, the power of making an additional number of members on account of the superior contribution of the wealthy? Suppose one man (it is an easy supposition) to contribute ten times more than ten of his neighbours. For this contribution he has one vote out of ten. The poor outvote him by nine voices in virtue of his superior contribution, for (say)
-<hi>ten</hi>
+<hi rend="italic">ten</hi>
 members, instead of out-voting him for only one member. Why are the rich compli
 
 mented with an aristocratic preference, which they can never feel either as a gratification to pride, or as a security to fortune? The rich indeed require an additional security from the dangers to which they are exposed when a popular power is prevalent
@@ -6065,98 +6059,98 @@ duals; and their divisions are likely to produce much hotter dissention, and som
 </p>
 <p>
 To compare together the three bases, not on their political reason, but on the ideas on which the assembly works, and to try its consistency with itself, we cannot avoid observing, that the principle which the committee call the basis of
-<hi>population,</hi>
+<hi rend="italic">population,</hi>
 does not begin to operate from the same point with the two other principles called the bases of
-<hi>
+<hi rend="italic">
 terri
 
 tory
 </hi>
 and of
-<hi>contribution,</hi>
+<hi rend="italic">contribution,</hi>
 which are both of an aris
 
 tocratic nature. The consequence is, that where all three begin to operate together, there is the most absurd inequality produced by the operation of the former on the two latter principles. Every canton contains four square leagues, and is estimated to contain, on the average, 4,000 inhabitants, or 680 voters in the
-<hi>primary assemblies,</hi>
+<hi rend="italic">primary assemblies,</hi>
 which vary in num
 
 bers with the population of the canton, and send
-<hi>one deputy</hi>
+<hi rend="italic">one deputy</hi>
 to the
-<hi>commune</hi>
+<hi rend="italic">commune</hi>
 for every 200 voters.
-<hi>Nine cantons</hi>
+<hi rend="italic">Nine cantons</hi>
 make a
-<hi>commune.</hi>
+<hi rend="italic">commune.</hi>
 </p>
 <p>
 Now let us take
-<hi>a canton</hi>
+<hi rend="italic">a canton</hi>
 containing
-<hi>a sea-port town of trade,</hi>
+<hi rend="italic">a sea-port town of trade,</hi>
 or
-<hi>a great manufacturing town.</hi>
+<hi rend="italic">a great manufacturing town.</hi>
 Let us suppose the population of this canton to be
 <pb n="263" facs="tcp:0939801000:266"/>
 12,700 inhabitants, or 2,193 voters, forming
-<hi>three primary assemblies,</hi>
+<hi rend="italic">three primary assemblies,</hi>
 and sending
-<hi>ten deputies</hi>
+<hi rend="italic">ten deputies</hi>
 to the
-<hi>commune.</hi>
+<hi rend="italic">commune.</hi>
 </p>
 <p>
 Oppose to this
-<hi>one</hi>
+<hi rend="italic">one</hi>
 canton
-<hi>two</hi>
+<hi rend="italic">two</hi>
 others of the re
 
 maining eight in the same commune. These we may suppose to have their fair population of 4,000 inhabitants, and 680 voters each, or 8,000 inhabi
 
 tants and 1,360 voters, both together. These will form only
-<hi>two primary assemblies,</hi>
+<hi rend="italic">two primary assemblies,</hi>
 and send only
-<hi>six</hi>
+<hi rend="italic">six</hi>
 deputies to the
-<hi>commune.</hi>
+<hi rend="italic">commune.</hi>
 </p>
 <p>
 When the assembly of the
-<hi>commune</hi>
+<hi rend="italic">commune</hi>
 comes to vote on the
-<hi>basis of territory,</hi>
+<hi rend="italic">basis of territory,</hi>
 which principle is first admitted to operate in that assembly, the
-<hi>single canton</hi>
+<hi rend="italic">single canton</hi>
 which has
-<hi>half</hi>
+<hi rend="italic">half</hi>
 the territory of the
-<hi>other two,</hi>
+<hi rend="italic">other two,</hi>
 will have
-<hi>ten</hi>
+<hi rend="italic">ten</hi>
 voices to
-<hi>six</hi>
+<hi rend="italic">six</hi>
 in the election of
-<hi>three deputies</hi>
+<hi rend="italic">three deputies</hi>
 to the assembly of the department, chosen on the express ground of a representation of terri
 
 tory.
 </p>
 <p>
 This inequality, striking as it is, will be yet highly aggravated, if we suppose, as we fairly may, the
-<hi>several</hi>
+<hi rend="italic">several</hi>
 other cantons of the
-<hi>commune</hi>
+<hi rend="italic">commune</hi>
 to fall proportionably short of the average population, as much as the
-<hi>principal canton</hi>
+<hi rend="italic">principal canton</hi>
 exceeds it. Now, as to
-<hi>the basis of contribution,</hi>
+<hi rend="italic">the basis of contribution,</hi>
 which also is a prin
 
 ciple admitted first to operate in the assembly of the
-<hi>commune.</hi>
+<hi rend="italic">commune.</hi>
 Let us again take
-<hi>one</hi>
+<hi rend="italic">one</hi>
 canton, such as is stated above. If the whole of the direct contributions paid by a great trading or manufactu
 
 ring town be divided equally among the inhabi
@@ -6164,46 +6158,46 @@ ring town be divided equally among the inhabi
 tants, each individual will be found to pay much more than an individual living in the country according to the same average. The whole paid by the inhabitants of the former will be more than
 <pb n="264" facs="tcp:0939801000:267"/>
 the whole paid by the inhabitants of the latter— we may fairly assume one-third more. Then the 12,700 inhabitants, or 2,193 voters of the canton will pay as much as 19,050 inhabitants, or 3,289 voters of the
-<hi>other cantons,</hi>
+<hi rend="italic">other cantons,</hi>
 which are nearly the estimated proportion of inhabitants and voters of
-<hi>five</hi>
+<hi rend="italic">five</hi>
 other cantons. Now the 2,193 voters will, as I before said, send only
-<hi>ten</hi>
+<hi rend="italic">ten</hi>
 deputies to the assem
 
 bly; the 3,289 voters will send
-<hi>sixteen.</hi>
+<hi rend="italic">sixteen.</hi>
 Thus, for an
-<hi>equal</hi>
+<hi rend="italic">equal</hi>
 share in the contribution of the whole
-<hi>commune,</hi>
+<hi rend="italic">commune,</hi>
 there will be a difference of
-<hi>sixteen</hi>
+<hi rend="italic">sixteen</hi>
 voices to
-<hi>ten</hi>
+<hi rend="italic">ten</hi>
 in voting for deputies to be chosen on the principle of representing the general contribution of the whole
-<hi>commune.</hi>
+<hi rend="italic">commune.</hi>
 </p>
 <p>
 By the same mode of computation we shall find 15,875 inhabitants, or 2,741 voters of the
-<hi>other</hi>
+<hi rend="italic">other</hi>
 cantons, who pay
-<hi>one-sixth</hi>
+<hi rend="italic">one-sixth</hi>
 LESS to the contribution of the whole
-<hi>commune,</hi>
+<hi rend="italic">commune,</hi>
 will have
-<hi>three</hi>
+<hi rend="italic">three</hi>
 voices MORE than the 12,700 inhabitants, or 2,193 voters of the
-<hi>one</hi>
+<hi rend="italic">one</hi>
 canton.
 </p>
 <p>
 Such is the fantastical and unjust inequality be
 
 tween mass and mass, in this curious repartition of the rights of representation arising out of
-<hi>territory</hi>
+<hi rend="italic">territory</hi>
 and
-<hi>contribution.</hi>
+<hi rend="italic">contribution.</hi>
 The qualifications which these confer are in truth negative qualifications, that give a right in an inverse proportion to the possession of them.
 </p>
 <p>
@@ -6223,7 +6217,7 @@ I am afraid I have gone too far into their way of considering the formation of a
 metic; but if it were all as exact as metaphysics, geometry, and arithmetic ought to be, and if their schemes were perfectly consistent in all their parts, it would make only a more fair and sightly vision. It is remarkable, that in a great arrangement of mankind, not one reference whatsoever is to be found to any thing moral or any thing politic; no
 
 thing that relates to the concerns, the actions, the passions, the interests of men.
-<hi>Hominem non sapiunt.</hi>
+<hi rend="italic">Hominem non sapiunt.</hi>
 </p>
 <p>
 You see I only consider this constitution as electoral, and leading by steps to the National As
@@ -6262,7 +6256,7 @@ rangements purposely produced through the me
 dium of confusion, begin to act, they will find them
 
 selves, in a great measure, strangers to one another. The electors and elected throughout, especially in the rural
-<hi>cantons,</hi>
+<hi rend="italic">cantons,</hi>
 will be frequently without any civil habitudes or connections, or any of that natural dis
 
 cipline which is the soul of a true republic. Magi
@@ -6288,7 +6282,7 @@ tution.
 able
 <pb n="268" facs="tcp:0939801000:271"/>
 or durable. But in this, as well as almost every instance, your new commonwealth is born, and bred, and fed, in those corruptions which mark degenerated and worn out republics. Your child comes into the world with the symptoms of death; the
-<hi>facies Hippocratica</hi>
+<hi rend="italic">facies Hippocratica</hi>
 forms the character of its physiognomy, and the prognostic of its fate.
 </p>
 <p>
@@ -6322,7 +6316,7 @@ ed. This standing, unalterable, fundamental go
 vernment would make, and it is the only thing which could make, that territory truly and properly an whole. With us, when we elect popular repre
 
 sentatives, we send them to a council, in which each man individually is a subject, and submitted to a government complete in all its ordinary functions. With you the elective assembly is the sovereign, and the sole sovereign: all the members are therefore integral parts of this sole sovereignty. But with us it is totally different. With us the representative, separated from the other parts, can have no action and no existence. The government is the point of reference of the several members and districts of our representation. This is the center of our unity. This government of reference is a trustee for the
-<hi>whole,</hi>
+<hi rend="italic">whole,</hi>
 and not for the parts. So is the other branch of our public council, I mean the house of lords. With us the king and the lords are several and joint securities for the equality of each district, each province, each city. When did you hear in Great Britain of any province suffering from the inequality of its representation; what district from having no representation at all? Not only our mo
 
 narchy and our peerage secure the equality on which our unity depends, but it is the spirit of the house of commons itself. The very inequality of
@@ -6358,13 +6352,13 @@ What is it we all seek for in an election? To answer its real purposes, you must
 sonal obligation or dependence. For what end are these primary electors complimented, or rather mocked, with a choice? They can never know any thing of the qualities of him that is to serve them, nor has he any obligation whatsoever to them. Of all the powers unfit to be delegated by those who have any real means of judging, that most pecu
 
 liarly unfit is what relates to a
-<hi>personal</hi>
+<hi rend="italic">personal</hi>
 choice. In case of abuse, that body of primary electors never can call the representative to an account for his conduct. He is too far removed from them in the chain of representation. If he acts improperly at the end of his two years lease, it does not concern him for two years more. By the new French con
 
 stitution, the best and the wisest representative go
 <pb n="272" facs="tcp:0939801000:275"/>
 equally with the worst into this
-<hi>Limbus Patrum.</hi>
+<hi rend="italic">Limbus Patrum.</hi>
 Their bottoms are supposed foul, and they must go into dock to be refitted. Every man who has served in an assembly is ineligible for two years after. Just as these magistrates begin to learn their trade, like chimney-sweepers, they are dis
 
 qualified for exercising it. Superficial, new, petu
@@ -6377,11 +6371,11 @@ tion of his fitness to execute it.
 This purgatory interval is not unfavourable to a faithless representative, who may be as good a can
 
 vasser as he was a bad governor. In this time he may cabal himself into a superiority over the wisest and most virtuous. As, in the end, all the members of this elective constitution are equally fugitive, and exist only for the election, they may be no longer the same persons who had chosen him, to whom he is to be responsible when he solicits for a renewal of his trust. To call all the secondary electors of the
-<hi>Commune</hi>
+<hi rend="italic">Commune</hi>
 to account, is ridiculous, impracticable, and unjust; they may themselves have been de
 
 ceived in their choice, as the third set of electors, those of the
-<hi>Department,</hi>
+<hi rend="italic">Department,</hi>
 may be in theirs. In your elections responsibility cannot exist.
 </p>
 <p>
@@ -6422,9 +6416,9 @@ tempted to confound all sorts of citizens, as well as they could, into one homog
 ple telling, and not to figures whose power is to arise from their place in the table. The elements of their own metaphysics might have taught them better lessons. The troll of their categorical ta
 
 ble might have informed them that there was something else in the intellectual world besides
-<hi>substance</hi>
+<hi rend="italic">substance</hi>
 and
-<hi>quantity.</hi>
+<hi rend="italic">quantity.</hi>
 They might learn from the catechisms of metaphysics that there were eight heads more
 <note n="*" place="bottom">Qualitas, Relatio, Actio, Passio, Ubi, Quando, Situs, Habitus.</note>
 , in every complex delibera
@@ -6451,7 +6445,7 @@ ed on earth. This is to play a most desperate game
 </p>
 <p>
 Finding no sort of principle of coherence with each other in the nature and constitution of the several new republics of France, I considered what cement the legislators had provided for them from any extraneous materials. Their confederations, their
-<hi>spectacles,</hi>
+<hi rend="italic">spectacles,</hi>
 their civic feasts, and their enthu
 
 siasm, I take no notice of; They are nothing but
@@ -6461,7 +6455,7 @@ mere tricks; but tracing their policy through their actions, I think I can disti
 ments by which they propose to hold these repub
 
 lics together. The first, is the
-<hi>confiscation,</hi>
+<hi rend="italic">confiscation,</hi>
 with the compulsory paper currency annexed to it; the second, is the supreme power of the city of Paris; the third, is the general army of the state. Of this last I shall reserve what I have to say, until I come to consider the army as an head by itself.
 </p>
 <p>
@@ -6479,7 +6473,7 @@ tion. In the mean time its binding force will be very uncertain, and it will str
 One thing only is certain in this scheme, which is an effect seemingly collateral, but direct, I have no doubt, in the minds of those who conduct this
 <pb n="277" facs="tcp:0939801000:280"/>
 business; that is, its effect in producing an
-<hi>
+<hi rend="italic">
 Oli
 
 garchy
@@ -6500,13 +6494,13 @@ all the representative of money, and perhaps a full tenth part of all the land i
 certainty in its value. They have reversed the Lato
 
 nian kindness to the landed property of Delos. They have sent theirs to be blown about, like the light fragments of a wreck,
-<hi>oras et littora circum.</hi>
+<hi rend="italic">oras et littora circum.</hi>
 The new dealers being all habitually adventurers, and without any fixed habits or local predilections, will purchase to job out again, as the market of paper, or of money, or of land shall present an advantage. For though an holy bishop thinks that agriculture will derive great advantages from the "
-<hi>enlightened</hi>
+<hi rend="italic">enlightened</hi>
 " usurers who are to purchase the church confiscations, I, who am not a good, but an old farmer, with great humility beg leave to tell his late lordship, that usury is not a tutor of agriculture; and if the word "enlightened" be understood according to the new dictionary, as it always is in your new schools, I cannot conceive how a man's not believing in God can teach him to cultivate the earth with the least of any additional skill or encouragement. "Diis immortalibus sero," said an old Roman, when he held one handle of the plough, whilst Death held the other. Though you were to join in the commission all the directors of the two aca
 
 demies to the directors of the
-<hi>Caisse d'Escompte,</hi>
+<hi rend="italic">Caisse d'Escompte,</hi>
 one old experienced peasant is worth them all. I have got more information, upon one curious and inter
 
 esting branch of husbandry, in one short conversa
@@ -6524,7 +6518,7 @@ tivated with the innocent and unprofitable de
 lights of a pastoral life; but in a little time they will find that agriculture is a trade much more labori
 
 ous, and much less lucrative than that which they had left. After making its panegyric, they will turn their backs on it like their great precursor and prototype.—They may, like him, begin by singing "
-<hi>Beatus ille</hi>
+<hi rend="italic">Beatus ille</hi>
 "—but what will be the end?
 <q>
 <l>Sic cum locutus foenerator Alphius,</l>
@@ -6533,7 +6527,7 @@ ous, and much less lucrative than that which they had left. After making its pan
 <l>Quaerit calendis ponere.</l>
 </q>
 They will cultivate the
-<hi>caisse d'Eglise,</hi>
+<hi rend="italic">caisse d'Eglise,</hi>
 under the sacred auspices of this prelate, with much more profit than its vineyards or its corn-fields. They will employ their talents according to their habits and their interests. They will not follow the plough whilst they can direct treasuries, and govern provinces.
 </p>
 <p>
@@ -6664,7 +6658,7 @@ pular to do. They will be roused by emulation and example to enterprises the bol
 </p>
 <p>
 Your all-sufficient legislators, in their hurry to do every thing at once, have forgot one thing that seems essential, and which, I believe, never has been, in the theory or the practice, omitted by any projector of a republic. They have forgot to constitute a
-<hi>Senate,</hi>
+<hi rend="italic">Senate,</hi>
 or something of that nature and character. Never, before this time, was heard of a body politic composed of one legislative and active assembly, and its executive officers, without such a council; without something to which foreign states might connect themselves; something to which, in the ordinary detail of government, the people could look up; something which might give a bias and steadiness, and preserve something like consistency in the proceedings of state. Such a body kings generally have as a council. A mo
 
 narchy may exist without it; but it seems to be in the very essence of a republican government. It
@@ -6736,7 +6730,7 @@ received from those who certainly would not have limited an aggrandized creature
 </p>
 <p>
 A king circumstanced as the present, if he is totally stupified by his misfortunes, so as to think it not the necessity, but the premium and privilege of life, to eat and sleep, without any regard to glory, never can be fit for the office. If he feels as men commonly feel, he must be sensible, that an office so circumstanced is one in which he can obtain no fame or reputation. He has no generous interest that can excite him to action. At best, his conduct will be passive and defensive. To inferior people such an office might be matter of honour. But to be raised to it, and to descend to it, are different things, and suggest different sentiments. Does he
-<hi>really</hi>
+<hi rend="italic">really</hi>
 name the ministers? They will have a sym
 
 pathy with him. Are they forced upon him? The whole business between them and the nominal king will be mutual counteraction. In all other countries, the office of ministers of state is of the highest dignity. In France it is full of peril and incapable of glory. Rivals however they will have in their nothingness, whilst shallow ambition exists in the world, or the desire of a miserable salary is an incentive to short-sighted avarice. Those competi
@@ -6807,7 +6801,7 @@ out choice. In their puzzled situation, under two sovereigns, over neither of wh
 tion; such must be the situation of those who succeed them. I have much respect, and many good wishes, for Mr. Necker. I am obliged to him for attentions. I thought when his enemies
 <pb n="298" facs="tcp:0939801000:301"/>
 had driven him from Versailles, that his exile was a subject of most serious congratulation—
-<hi>sed multae urbes et publica vota vicerunt.</hi>
+<hi rend="italic">sed multae urbes et publica vota vicerunt.</hi>
 He is now sitting on the ruins of the finances, and of the monarchy of France.
 </p>
 <p>A great deal more might be observed on the strange constitution of the executory part of the new government; but fatigue must give bounds to the discussion of subjects, which in themselves have hardly any limits.</p>
@@ -6869,7 +6863,7 @@ narchy. It would be a means of squaring the oc
 casional decrees of a democracy to some principles of general jurisprudence. The ruin of the antient democracies was, that they ruled, as you do, by oc
 
 casional decrees,
-<hi>psephismata.</hi>
+<hi rend="italic">psephismata.</hi>
 This practice soon broke in upon the tenour and consistency of the laws; they abated the respect of the people towards them; and totally destroyed them in the end.
 </p>
 <p>
@@ -6891,7 +6885,7 @@ which they have made (if any they have made) are to be useless to them. But to s
 verning power, which, in the midst of a cause, or on the prospect of it, may wholly change the rule of decision. If these orders of the National As
 
 sembly come to be contrary to the will of the people who locally choose those judges, such confusion must happen as is terrible to think of. For the judges owe their place to the local authority; and the commands they are sworn to obey come from those who have no share in their appointment. In the mean time they have the example of the court of
-<hi>Chatelet</hi>
+<hi rend="italic">Chatelet</hi>
 to encourage and guide them in the ex
 
 ercise of their functions. That court is to try crimi
@@ -6904,7 +6898,7 @@ haps certain, nor can it be ascertained; but when they acquit, we know, they hav
 The assembly indeed promises that they will form a body of law, which shall be short, simple, clear,
 <pb n="303" facs="tcp:0939801000:306"/>
 and so forth. That is, by their short laws, they will leave much to the discretion of the judge; whilst they have exploded the authority of all the learning which could make judicial discretion, (a thing perilous at best) deserving the appellation of a
-<hi>sound</hi>
+<hi rend="italic">sound</hi>
 discretion.
 </p>
 <p>
@@ -6958,11 +6952,11 @@ M. de la Tour du Pin, on the 4th of last June, comes to give an account of the s
 ment, as it exists under the auspices of the national assembly. No man knows it so well; no man can express it better. Addressing himself to the National Assembly, he says,
 <q>
 His Majesty has
-<hi>this day</hi>
+<hi rend="italic">this day</hi>
 sent me to apprize you of the mul
 
 tiplied disorders of which
-<hi>every day</hi>
+<hi rend="italic">every day</hi>
 he receives the most distressing intelligence. The army (le corps militaire) threatens to fall into the most turbulent anarchy. Entire regiments have dared to violate at once the respect due to the laws, to the King, to the order established by your decrees, and to the oaths which they have taken with the most awful solemnity. Compelled by my duty to give you information of these ex
 
 cesses, my heart bleeds when I consider who they are that have committed them. Those, against whom it is not in my power to withhold the most grievous complaints, are a part of that very soldiery which to this day have been so full of honour and loyalty, and with whom, for fifty years, I have lived the comrade and the friend.
@@ -6977,7 +6971,7 @@ herent and consistent body; whilst the French are taught by you, at once the res
 laws owe to the rights of man, and that which the citizens owe to the laws, the administration of the army presents nothing but disturbance and confusion. I see in more than one corps the bonds of discipline relaxed or broken; the most unheard-of pretensions avowed directly and with
 
 out any disguise; the ordinances without force; the chiefs without authority; the military chest and the colours carried off; the authority of the King himself [
-<hi>risum teneatis</hi>
+<hi rend="italic">risum teneatis</hi>
 ] proudly de
 
 fied; the officers despised, degraded, threatened, driven away, and some of them prisoners in the midst of their corps, dragging on a precarious life in the bosom of disgust and humiliation. To fill up the measure of all these horrors, the com
@@ -6988,13 +6982,13 @@ mandants of places have had their throats cut, under the eyes, and almost in the
 <p>
 <q>
 These evils are great; but they are not the worst consequences which may be produced by such military insurrections. Sooner or later they may menace the nation itself.
-<hi>The nature of things requires,</hi>
+<hi rend="italic">The nature of things requires,</hi>
 that the army should never act but as
-<hi>an instrument.</hi>
+<hi rend="italic">an instrument.</hi>
 The moment that, erect
 
 ing itself into a deliberative body, it shall act according to its own resolutions, the
-<hi>
+<hi rend="italic">
 govern
 
 ment, be it what it may, will immediately degene
@@ -7042,11 +7036,11 @@ man. The total abolition of titles and distinctions is not lost upon them. But M
 nished at their disloyalty, when the doctors of the assembly have taught them at the same time the respect due to laws. It is easy to judge which of the two sorts of lessons men with arms in their hands are likely to learn. As to the authority of the King, we may collect from the minister him
 
 self (if any argument on that head were not quite superfluous) that it is not of more consideration with these troops, than it is with every body else. "The King," says he, "has over and over again repeated his orders to put a stop to these excesses: but, in so terrible a crisis
-<hi>your</hi>
+<hi rend="italic">your</hi>
 [the assembly's] concurrence is become indispensably necessary to prevent the evils which menace the state.
-<hi>You</hi>
+<hi rend="italic">You</hi>
 unite to the force of the legislative power,
-<hi>that of opinion</hi>
+<hi rend="italic">that of opinion</hi>
 still more important." To be sure the army can have no opinion of the power or authority of the king. Perhaps the soldier has by this time learned, that the assembly itself does not enjoy a much greater degree of liberty than that royal figure.
 </p>
 <p>
@@ -7057,7 +7051,7 @@ to array itself in all its terrors, and to call forth all its majesty. He desire
 vere principles announced by them may give vi
 
 gour to the King's proclamation. After this we should have looked for courts civil and martial; breaking of some corps, decimating others, and all the terrible means which necessity has employed in such cases to arrest the progress of the most terrible of all evils; particularly, one might expect, that a serious inquiry would be made into the murder of commandants in the view of their soldiers. Not one word of all this, or of any thing like it. After they had been told that the soldiery trampled upon the decrees of the assembly promulgated by the King, the assembly pass new decrees; and they authorise the King to make new proclamations. After the Secretary at War had stated that the regiments had paid no regard to oaths
-<hi>
+<hi rend="italic">
 prêtés avec la plus impo
 
 sante solemnité
@@ -7105,7 +7099,7 @@ errer les l
 ens d'union entre les citoyens et les troupes.—Lest I should not be credited, I insert the words, authorising the troops to feast with the popular confederacies.
 </note>
 . That this remedy would be pleasing to the soldiers, as they are described by Mr. de la Tour du Pin, I can readily believe; and that, however mutinous otherwise, they will dutifully submit themselves to
-<hi>these</hi>
+<hi rend="italic">these</hi>
 royal proclamations. But I should ques
 
 tion whether all this civic swearing, clubbing, and feasting, would dispose them more than at present they are disposed, to an obedience to their offi
@@ -7113,7 +7107,7 @@ tion whether all this civic swearing, clubbing, and feasting, would dispose them
 cers;
 <pb n="311" facs="tcp:0939801000:314"/>
 or teach them better to submit to the austere rules of military discipline. It will make them admirable citizens after the French mode, but not quite so good soldiers after any mode. A doubt might well arise, whether the conversations at these good tables, would fit them a great deal the better for the character of
-<hi>mere instruments,</hi>
+<hi rend="italic">mere instruments,</hi>
 which this veteran officer and statesman justly ob
 
 serves, the nature of things always requires an army to be.
@@ -7126,7 +7120,7 @@ diers with the municipal festive societies, which is thus officially encouraged 
 nicipalities themselves, furnished to us by the war minister in this very speech. He conceives good hopes of the success of his endeavours towards re
 
 storing order
-<hi>for the present</hi>
+<hi rend="italic">for the present</hi>
 from the good disposi
 
 tion of certain regiments; but he finds something cloudy with regard to the future. As to preventing the return of confusion
@@ -7162,7 +7156,7 @@ ence. I suppose all the ministers of state must qua
 lify,
 <pb n="313" facs="tcp:0939801000:316"/>
 and take this test; wholly abjuring the errors and heresies of experience and observation. Every man has his own relish. But I think, if I could not attain to the wisdom, I would at least preserve something of the stiff and peremptory dignity of age. These gentlemen deal in regeneration; but at any price I should hardly yield my rigid fibres to be regenerated by them; nor begin, in my grand climacteric, to squall in their new accents, or to stammer, in my second cradle, the elemental sounds of their barbarous metaphysics.
-<hi>Si isti mihi largiantur ut repueriscam, et in eorum cunis vagiam, valde recusem!</hi>
+<hi rend="italic">Si isti mihi largiantur ut repueriscam, et in eorum cunis vagiam, valde recusem!</hi>
 </p>
 <p>
 The imbecility of any part of the puerile and pedantic system, which they call a constitution, can
@@ -7317,7 +7311,7 @@ duer of the soil is the true proprietor; that there
 is no prescription against nature; and that the agreements (where any there are) which have been made with their landlords, during the time of slavery, are only the effect of duresse and force; and that when the people re-entered into the rights of men, those agreements were made as void as every thing else which had been settled under the prevalence of the old feudal and aristocratic tyran
 
 ny. They will tell you that they see no difference between an idler with a hat and a national cockade, and an idler in a cowl or in a rochet. If you ground the title to rents on succession and prescription, they tell you, from the speech of Mr.
-<hi>Camus,</hi>
+<hi rend="italic">Camus,</hi>
 published by the national assembly for their infor
 
 mation, that things ill begun cannot avail them
@@ -7386,7 +7380,7 @@ sidered in itself only, is of a constitution much more simple, and in every resp
 vice of the individuals, who compose, or the fine in lieu of personal service, are directed by the same authority
 <note n="*" place="bottom">
 I see by Mr. Necker's account, that the national guards of Paris have received, over and above the money levied within their own city, about 145,000
-<hi>l.</hi>
+<hi rend="italic">l.</hi>
 sterling out of the public treasure. Whether this be an actual payment for the nine months of their existence, or an estimate of their yearly charge, I do not clearly perceive. It is of no great import
 
 ance, as certainly they may take whatever they please.
@@ -7453,7 +7447,7 @@ selves the management of this arduous concern. Far from any encrease of revenue 
 mittee of finances, of the second of August last, that the amount of the national revenue, as com
 
 pared with its produce before the revolution, was diminished by the sum of two hundred millions, or
-<hi>eight millions sterling</hi>
+<hi rend="italic">eight millions sterling</hi>
 of the annual income, con
 
 siderably more than one third of the whole!
@@ -7462,7 +7456,7 @@ siderably more than one third of the whole!
 If this be the result of great ability, never surely was ability displayed in a more distinguished man
 
 ner, or with so powerful an effect. No common folly, no vulgar incapacity, no ordinary official negligence, even no official crime, no corruption, no peculation, hardly any direct hostility which we have seen in the modern world, could in so short a time have made so complete an overthrow of the finances, and with them, of the strength of a great kingdom.—
-<hi>Cedò quî vestram rempublicam tantem amisistis tam cito?</hi>
+<hi rend="italic">Cedò quî vestram rempublicam tantem amisistis tam cito?</hi>
 </p>
 <p>
 The sophisters and declaimers, as soon as the assembly met, began with decrying the ancient constitution of the revenue in many of its most essential branches, such as the public monopoly of salt. They charged it, as truly as unwisely, with being ill-contrived, oppressive, and partial. This representation they were not satisfied to make use of in speeches preliminary to some
@@ -7593,39 +7587,39 @@ Their fanatical confidence in the omnipotence of church plunder, has induced the
 tlemen perhaps do not believe a great deal in the miracles of piety; but it cannot be ques
 
 tioned, that they have an undoubting faith in the prodigies of sacrilege. Is there a debt which presses them—Issue
-<hi>assignats.</hi>
+<hi rend="italic">assignats.</hi>
 —Are compensations to be made, or a maintenance decreed to those whom they have robbed of their freehold in their office, or expelled from their profession—
-<hi>Assignats.</hi>
+<hi rend="italic">Assignats.</hi>
 Is a fleet to be fitted out—
-<hi>Assignats.</hi>
+<hi rend="italic">Assignats.</hi>
 If sixteen millions sterling of these
-<hi>assignats,</hi>
+<hi rend="italic">assignats,</hi>
 forced on the peo
 
 ple, leave the wants of the state as urgent as ever— issue, says one, thirty millions sterling of
-<hi>assignats</hi>
+<hi rend="italic">assignats</hi>
 — says another, issue fourscore millions more of
-<hi>assignats.</hi>
+<hi rend="italic">assignats.</hi>
 The only difference among their finan
 
 cial factions is on the greater or the lesser quantity of
-<hi>assignats</hi>
+<hi rend="italic">assignats</hi>
 to be imposed on the publick sufferance.
 <pb n="339" facs="tcp:0939801000:342"/>
 They are all professors of
-<hi>assignats.</hi>
+<hi rend="italic">assignats.</hi>
 Even those, whose natural good sense and knowledge of com
 
 merce, not obliterated by philosophy, furnish de
 
 cisive arguments against this delusion, conclude their arguments, by proposing the emission of
-<hi>assignats.</hi>
+<hi rend="italic">assignats.</hi>
 I suppose they must talk of
-<hi>assignats,</hi>
+<hi rend="italic">assignats,</hi>
 as no other language would be understood. All experience of their inefficacy does not in the least discourage them. Are the old
-<hi>assignats</hi>
+<hi rend="italic">assignats</hi>
 depreciated at market? What is the remedy? Issue new
-<hi>assignats.—Mais si maladia, opiniatria, non vult se garire, quid illi facere? assignare—postea assignare; ensuita assignare.</hi>
+<hi rend="italic">assignats.—Mais si maladia, opiniatria, non vult se garire, quid illi facere? assignare—postea assignare; ensuita assignare.</hi>
 The word is a trifle altered. The Latin of your present doctors may be better than that of your old comedy; their wisdom, and the variety of their resources, are the same. They have not more notes in their song than the cuckow; though, far from the softness of that harbinger of summer and plenty, their voice is as harsh and as ominous as that of the raven.
 </p>
 <p>
@@ -7646,20 +7640,20 @@ cation, and comptroller general of sacrilege, he and his coadjutors were, in my 
 by their subsequent conduct, that they knew some
 
 thing of the office they assumed. When they had resolved to appropriate to the
-<hi>Fisc,</hi>
+<hi rend="italic">Fisc,</hi>
 a certain portion of the landed property of their conquered country, it was their business to render their bank a real fund of credit; as far as such a bank was capable of be
 
 coming so.
 </p>
 <p>
 To establish a current circulating credit upon any
-<hi>Land-bank,</hi>
+<hi rend="italic">Land-bank,</hi>
 under any circumstances whatsoever, has hitherto proved difficult at the very least. The attempt has commonly ended in bankruptcy. But when the assembly were led, through a contempt of moral, to a defiance of oeconomical principles, it might at least have been expected, that nothing would be omitted on their part to lessen this diffi
 
 culty, to prevent any aggravation of this bank
 
 ruptcy. It might be expected that to render your
-<hi>Land-bank</hi>
+<hi rend="italic">Land-bank</hi>
 tolerable, every means would be adopted that could display openness and candour in the state
 
 ment of the security; every thing which could aid the recovery of the demand. To take things in their most favourable point of view, your condition was that of a man of a large landed estate, which he wished to dispose of for the discharge of a debt, and the supply of certain services. Not being able instantly to sell, you wished to mortgage. What would a man of fair intentions, and a com
@@ -7671,7 +7665,7 @@ stances? Ought he not first to ascertain the gross value of the estate; the char
 the creditor) had been clearly ascertained, and pro
 
 perly vested in the hands of trustees; then he would indicate the parcels to be sold, and the time, and conditions of sale; after this, he would admit the public creditor, if he chose it, to subscribe his stock into this new fund; or he might receive proposals for an
-<hi>assignat</hi>
+<hi rend="italic">assignat</hi>
 from those who would advance mo
 
 ney to purchase this species of security.
@@ -7695,7 +7689,7 @@ that in the statement of the public charges for each year there should be brough
 account a sum sufficient for defraying the ex
 
 pences of the R. C. A. religion, the support of the ministers at the altars, the relief of the poor, the pensions to the ecclesiastics, secular as well as regular, of the one and of the other sex,
-<hi>
+<hi rend="italic">
 in order that the estates and goods which are at the disposal of the nation may be disengaged of all charges, and employed by the representatives, or the legislative body, to the great and most pressing ex
 
 igencies of the state.
@@ -7709,7 +7703,7 @@ In this resolution they admit it their duty to show distinctly the expence of th
 gaged should be first in the order of provision. They admit that they ought to shew the estate clear and disengaged of all charges, and that they should shew it immediately. Have they done this immediately, or at any time? Have they ever furnished a rent-roll of the immoveable estates, or given in an inventory of the moveable effects which they confiscate to their assignats? In what manner they can fulfil their engagements of holding out to public service "an estate disengaged of all charges," without authenticating the value of the estate, or the quantum of the charges, I leave it to their English admirers to explain. Instantly upon this assurance, and previously to any one step towards making it good, they issue, on the credit of so handsome a declaration, sixteen millions sterling of their paper. This was manly. Who, after this masterly stroke, can doubt of their abilities in finance? But then, before any other emission of
 <pb n="343" facs="tcp:0939801000:346"/>
 these financial
-<hi>indulgences,</hi>
+<hi rend="italic">indulgences,</hi>
 they took care at least to make good their original promise. If such esti
 
 mate, either of the value of the estate or the amount of the incumbrances, has been made, it has escaped me. I never heard of it. They have however done one thing, which in the gross is clear, obscure, as usual, in the detail. They have thrown upon this fund, which was to shew a surplus, disengaged of all charges, a new charge; namely, the com
@@ -7738,11 +7732,11 @@ no other prop than this confiscation to keep the whole state from tumbling to th
 rencies, and to swallow down paper pills by thirty-four millions sterling at a dose. Then they proudly lay in their claim to a future credit, on failure of all their past engagements, and at a time when (if in such a matter any thing can be clear) it is clear that the surplus estates will never answer even the first of their mortgages, I mean that of the four hun
 
 dred million (or sixteen millions sterling) of
-<hi>assignats.</hi>
+<hi rend="italic">assignats.</hi>
 In all this procedure I can discern neither the solid sense of plain-dealing, nor the subtle dexterity of ingenious fraud. The objection within the assembly to pulling up the flood-gates for this inundation of fraud, are unanswered; but they are thoroughly refuted by an hundred thousand financiers in the street. These are the numbers by which the meta
 
 physic arithmeticians compute. These are the grand calculations on which a philosophical public credit is founded in France. They cannot raise supplies; but they can raise mobs. Let them rejoice in the applauses of the club at Dundee, for their wisdom and patriotism in having thus applied the plunder of the citizens to the service of the state. I hear of no address upon this subject from the directors of the Bank of England; though their approbation would be of a
-<hi>little</hi>
+<hi rend="italic">little</hi>
 more weight in the scale of credit than that of the club at Dundee. But, to do justice to
 <pb n="345" facs="tcp:0939801000:348"/>
 the club, I believe the gentlemen who compose it to be wiser than they appear; that they will be less li
@@ -7751,11 +7745,11 @@ beral of their money than of their addresses; and that they would not give a dog
 </p>
 <p>
 Early in this year the assembly issued paper to the amount of sixteen millions sterling: What must have been the state into which the assembly has brought your affairs, that the relief afforded by so vast a supply has been hardly perceptible? This paper also felt an almost immediate depreciation of five per cent. which in little time came to about seven. The effect of these assignats on the receipt of the revenue is remarkable. Mr. Necker found that the collectors of the revenue, who received in coin, paid the treasury in
-<hi>assignats.</hi>
+<hi rend="italic">assignats.</hi>
 The collectors made seven per cent. by thus re
 
 ceiving in money, and accounting in depreciated paper. It was not very difficult to foresee, that this must be inevitable. It was, however, not the less embarrassing. Mr. Necker was obliged (I believe, for a considerable part, in the market of London) to buy gold and silver for the mint, which amounted to about twelve thousand pounds above the value of the commodity gained. That minister was of opinion, that whatever their secret nutritive virtue might be, the state could not live upon
-<hi>assignats</hi>
+<hi rend="italic">assignats</hi>
 alone; that some real silver was ne
 
 cessary, particularly for the satisfaction of those, who having iron in their hands, were not likely to distin
@@ -7771,13 +7765,13 @@ sembly, that they should order the collectors to pay in specie what in specie th
 ter issued it, such a dealing could not very great
 
 ly tend to enrich the public. The assembly took no notice of his recommendation. They were in this dilemma—If they continued to receive the assignats, cash must become an alien to their treasury: If the treasury should refuse those paper
-<hi>amulets,</hi>
+<hi rend="italic">amulets,</hi>
 or should discountenance them in any degree, they must destroy the credit of their sole resource. They seem then to have made their option; and to have given some sort of credit to their paper by taking it themselves; at the same time in their speeches they made a sort of swaggering declaration, something, I rather think, above legislative competence; that is, that there is no difference in value between metallic money and their assignats. This was a good stout proof article of faith, pronounced under an anathema, by the venerable fathers of this phi
 
 losophic synod.
-<hi>Credat</hi>
+<hi rend="italic">Credat</hi>
 who will—certainly not
-<hi>Judaeus Apella.</hi>
+<hi rend="italic">Judaeus Apella.</hi>
 </p>
 <p>
 A noble indignation rises in the minds of your popular leaders, on hearing the magic lanthorn in their shew of finance compared to the fraudulent exhibitions of Mr. Law. They cannot bear to hear the sands of his Mississippi compared with the rock of the church, on which they build their sys
@@ -7807,7 +7801,7 @@ adopted in the national assembly. It comes with something solid in aid of the cr
 It is as little worth remarking any farther upon all their drawing and re-drawing, on their circulation for putting off the evil day, on the play between the trea
 
 sury and the
-<hi>Caisse d'Escompte,</hi>
+<hi rend="italic">Caisse d'Escompte,</hi>
 and on all these old ex
 
 ploded contrivances of mercantile fraud, now exalted into policy of state. The revenue will not be trifled with. The prattling about the rights of men will not be accepted in payment for a biscuit or a pound of gunpowder. Here then the metaphysicians descend from their airy speculations, and faithfully follow examples. What examples? the examples of bank
@@ -7817,7 +7811,7 @@ rupts. But, defeated, baffled, disgraced, when their breath, their strength, the
 venue disappears in their hands, they have the pre
 
 sumption, in some of their late proceedings, to value
-<hi>themselves</hi>
+<hi rend="italic">themselves</hi>
 on the relief given to the people. They did not relieve the people. If they entertained such intentions, why did they order the obnoxious taxes to be paid? The people relieved themselves in spite of the assembly.
 </p>
 <p>
@@ -7846,19 +7840,19 @@ gust, the same magistrate, giving an account of his government at the bar of the
 memoration]
 <q>
 the finances of the city of Paris were
-<hi>yet</hi>
+<hi rend="italic">yet</hi>
 in good order; the expenditure was counterbalanced by the receipt, and she had at that time a million [forty thousand pounds ster
 
 ling] in bank. The expences which she has been
 <pb n="350" facs="tcp:0939801000:353"/>
 constrained to incur,
-<hi>subsequent to the revolution,</hi>
+<hi rend="italic">subsequent to the revolution,</hi>
 amount to 2,500,000 livres. From these ex
 
 pences, and the great falling off in the product of the
-<hi>free gifts,</hi>
+<hi rend="italic">free gifts,</hi>
 not only a momentary but a
-<hi>total</hi>
+<hi rend="italic">total</hi>
 want of money has taken place.
 </q>
 This is the Paris upon whose nourishment, in the course of the last year, such immense sums, drawn from the vitals of all France, has been expended. As long as Paris stands in the place of antient Rome, so long she will be maintained by the subject provinces. It is an evil inevitably attendant on the dominion of sovereign democratic republics. As it happened in Rome, it may survive that repub
@@ -7911,7 +7905,7 @@ tions; and they diffuse occasional gaiety over the severe brow of moral freedom.
 pliance with reason. But in such an undertaking as that in France, all these subsidiary sentiments and artifices are of little avail. To make a government requires no great prudence. Settle the seat of power; teach obedience: and the work is done.
 <pb n="353" facs="tcp:0939801000:356"/>
 To give freedom is still more easy. It is not necessary to guide; it only requires to let go the rein. But to form a
-<hi>free government</hi>
+<hi rend="italic">free government</hi>
 ; that is, to temper together these opposite elements of liberty and restraint in one consistent work, requires much thought, deep reflection, a sagacious, powerful, and combining mind. This I do not find in those who take the lead in the national assembly. Perhaps they are not so miserably deficient as they appear. I ra
 
 ther believe it. It would put them below the com
