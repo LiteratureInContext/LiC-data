@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> -->
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="james-turn">
     <teiHeader xml:lang="en">
         <fileDesc>
@@ -198,7 +198,7 @@
                     COVERING END
                 </titlePart>
                 <byline>BY</byline>
-                <docAuthor><hi rend="bold">HENRY JAMES</hi><lb/>
+                <docAuthor>HENRY JAMES<lb/>
                 AUTHOR OF "DAISY MILLER," "THE EUROPEANS"<lb/>
                     ETC., ETC.<lb/>
                 </docAuthor>
@@ -498,10 +498,10 @@
                     him all in a glow of high fashion, of good looks, of expensive habits, of
                     charming ways with women. He had for his own town residence a big house filled
                     with the spoils of travel and the trophies of the chase; but it was to his
-                    country home, an old family place in <placeName type="tgn" key="7011781">Essex,</placeName> that he wished her immediately <!-- TODO: Fix Key -->
+                    country home, an old family place in <placeName type="tgn" key="7008131">Essex,</placeName> that he wished her immediately
                     to proceed.
                 </p><p>
-                    He had been left, by the death of their parents in <placeName type="tgn" key="7011781">India,</placeName> guardian to a small <!-- TODO: Fix Key -->
+                    He had been left, by the death of their parents in <placeName type="tgn" key="7000208">India,</placeName> guardian to a small
                     nephew and a small niece, children of a younger, a military brother, whom
                     he had lost two years before. These children were, by the strangest of chances
                     for a man in his position—a lone man without the right sort of experience
@@ -523,7 +523,7 @@
                     establishment—but below stairs only—an excellent woman, Mrs. Grose, whom
                     he was sure his visitor would like and who had formerly been maid to his
                     mother. She was now housekeeper and was also acting for the time as
-                    <ref target="superintendent_" corresp="superintendent">superintendent</ref> to the little girl, of whom, without children of her own,
+                    superintendent to the little girl, of whom, without children of her own,
                     she was, by good luck, extremely <ref corresp="fond" target="fond_">fond.</ref>
                     <note target="fond_" xml:id="fond" resp="editors.xml#VBS" type="gloss">
                     Having an affection or liking for. Source: Oxford English Dictionary
@@ -531,7 +531,7 @@
                     but of course the young lady who should go down as governess would be in
                     supreme authority. She would also have, in holidays, to look after the small
                     boy, who had been for a term at school—young as he was 
-                    <pb facs="pageImages/henry-turn-14.png" n="13"/>
+                    <pb facs="pageImages/henry-turn-13.png" n="13"/>
                     to be sent, but what
                     else could be done?—and who, as the holidays were about to begin, would
                     be back from one day to the other. There had been for the two children at
@@ -594,7 +594,7 @@
                 </p><p>
                     "That she should never trouble him—but never, never: neither appeal nor
                     complain nor write about anything; only meet all questions herself, receive
-                    all moneys from his <ref target="solicitor_" corresp="solicitor">solicitor,</ref> take the whole thing over and let him alone. <!-- TODO: Define -->
+                    all moneys from his solicitor, take the whole thing over and let him alone.
                     She promised to do this, and she mentioned to me that when, for a moment,
                     disburdened, delighted, he held her hand, thanking her for the sacrifice,
                     she already felt rewarded.
@@ -632,10 +632,7 @@
             <head>I</head>
             <p>
                 I remember the whole beginning as a succession of flights and drops, a little
-                seesaw of the right <ref corresp="throbs" target="_throbs">throbs</ref>
-                <note resp="editors.xml#VBS" type="gloss" target="throbs_" xml:id="throbs"> <!-- TODO: define -->
-                    
-                </note> and the wrong. After rising, in town, to meet
+                seesaw of the right throbs and the wrong. After rising, in town, to meet
                 his appeal, I had at all events a couple of very bad days—found myself doubtful
                 again, felt indeed sure I had made a mistake. In this state of mind I spent
                 the long hours of bumping, swinging coach that carried me to the stopping
@@ -741,7 +738,11 @@
                 <note xml:id="serenity" resp="editors.xml#VBS" type="gloss" target="serenity_">
                 Tranquillity, peacefulness. Source: Oxford English Dictionary</note> indeed
                 of one of Raphael's holy infants, to be discussed, to be
-                <ref corresp="imputed" target="imputed_">imputed</ref> to her, <!-- TODO: define -->
+                <ref corresp="imputed" target="imputed_">imputed</ref>
+                <note target="imputed_" type="gloss" resp="editors.xml#VBS" xml:id="imputed">
+                To blame someone often falsely or unjustly. Source: <ref target="https://www.merriam-webster.com/dictionary/imputed">
+                https://www.merriam-webster.com/dictionary/imputed</ref>
+                </note> to her,
                 and to determine us—I felt quite sure she would presently like me. It was
                 part of what I already liked Mrs. Grose herself for, the pleasure I could
                 see her feel in my admiration and wonder as I sat at supper with four tall
@@ -825,12 +826,12 @@
                 informed eyes it would now appear sufficiently <ref target="contracted_" corresp="contracted">contracted.</ref>
                 <note target="contracted_" xml:id="contracted" resp="editors.xml#VBS" type="gloss">
                 Narrowed, shortened, shrunken. Source: Oxford English Dictionary</note> But as my little
-                conductress, with her hair of gold and her <ref corresp="frock" target="frock_">frock</ref> of blue, danced before me
+                conductress, with her hair of gold and her frock of blue, danced before me
                 round corners and pattered down passages, I had the view of a castle of romance
                 inhabited by a rosy sprite, such a place as would somehow, for diversion
                 of the young idea, take all color out of storybooks and fairytales. Wasn't
                 it just a storybook over which I had fallen <ref target="adoze_" corresp="adoze">adoze</ref>
-                <note type="gloss" resp="editors.xml#VBS" xml:id="doze" target="doze_">
+                <note type="gloss" resp="editors.xml#VBS" xml:id="adoze" target="adoze_">
                 In a light sleep. Source: Oxford English Dictionary</note> and
                 <ref corresp="adream" target="adream_">adream?</ref>
                 <note target="adream_" xml:id="adream" resp="editors.xml#VBS" type="gloss">
@@ -888,7 +889,7 @@
                 <note target="attenuated_" xml:id="attenuated" resp="editors.xml#VBS" type="gloss">
                 To weaken or reduce in force, effect, or amount. Source: Oxford English Dictionary</note> as
                 I could, 
-                <pb n="25"/>
+                <pb n="26"/>
                 and opened my letter again to repeat it to her; then, faltering
                 in the act and folding it up once more, I put it back in my pocket. "Is he
                 really <hi rend="italic">bad?</hi>"
@@ -1109,10 +1110,10 @@
                 like sisters, felt still more <ref target="fortified_" corresp="fortified">fortified</ref>
                 <note type="gloss" resp="editors.xml#VBS" xml:id="fortified" target="fortified_">
                 Strengthened; provided with means of defence. Source: Oxford English Dictionary
-                </note> and <ref corresp="indignant" target="indignant_">indignant.</ref> <!-- TODO: Start here -->
+                </note> and <ref corresp="indignant" target="indignant_">indignant.</ref>
                 <note target="indignant_" xml:id="indignant" resp="editors.xml#VBS" type="gloss">
-                    
-                </note>
+                Feeling angry because of something unjust. Source:
+                <ref target="https://www.merriam-webster.com/dictionary/indignant">https://www.merriam-webster.com/dictionary/indignant</ref></note>
             </p><p>
                 This, at all events, was for the time: a time so full that, as I recall the
                 way it went, it reminds me of all the art I now need to make it a little
@@ -1207,8 +1208,7 @@
                 one of a pair—square, <ref target="incongruous_" corresp="incongruous">incongruous,</ref>
                 <note type="gloss" resp="editors.xml#VBS" xml:id="incongruous" target="incongruous_">
                 Inconsistent. Source: Oxford English Dictionary</note>
-                <ref corresp="crenelated" target="crenelated_">crenelated</ref> structures—that were <!-- TODO: Crenelated -->
-                distinguished, for some reason, though I could see little difference, as
+                crenelated structures—that were distinguished, for some reason, though I could see little difference, as
                 the new and the old. They <ref target="flanked_" corresp="flanked">flanked</ref>
                 <note target="flanked_" xml:id="flanked" resp="editors.xml#VBS" type="gloss">
                 To defend the sides of something. Source: Oxford English Dictionary
@@ -1292,7 +1292,7 @@
                 he slowly changed his place—passed, looking at me hard all the while, to
                 the opposite corner of the platform. Yes, I had the sharpest sense that during
                 this transit he never took his eyes from me, and I can see at this moment
-                the way his hand, as he went, passed from one of the <ref corresp="crenelations" target="crenelations_">crenelations</ref> to the <!-- TODO: Define -->
+                the way his hand, as he went, passed from one of the crenelations to the
                 next. He stopped at the other corner, but less long, and even as he turned
                 away still <ref target="markedly_" corresp="markedly">markedly</ref>
                 <note target="markedly_" xml:id="markedly" type="gloss" resp="editors.xml#VBS">
@@ -1857,7 +1857,7 @@
                 To prevail over, get the better of, overcome. Source: Oxford Englsh Dictionary</note> it
                 all, I should serve as an <ref target="expiatory_" corresp="expiatory">expiatory</ref>
                 <note type="gloss" resp="editors.xml#VBS" xml:id="expiatory" target="expiatory_">
-                Making amends for. Source: Oxford English Dictionary <!-- TODO: Double check -->
+                Making amends for. Source: Oxford English Dictionary
                 </note> victim and guard the tranquility of my
                 companions. The children, <ref corresp="especial" target="especial_">in especial,</ref>
                 <note target="especial_" xml:id="especial" resp="editors.xml#VBS" type="gloss">
@@ -2059,7 +2059,7 @@
                 was playing very hard. We were 
                 <pb n="69"/>
                 on the edge of the lake, and, as we had lately
-                begun geography, the lake was the <ref corresp="azof" target="azof_">Sea of Azof.</ref> <!-- TODO: Define -->
+                begun geography, the lake was the <placeName type="tgn" key="1112246">Sea of Azof.</placeName>
             </p><p>
                 Suddenly, in these circumstances, I became aware that, on the other side
                 of the Sea of Azof, we had an interested spectator. The way this knowledge
@@ -2867,7 +2867,7 @@
                 attestation of my strength—became the element into which I saw the figure
                 disappear; in which I definitely saw it turn as I might have seen the low
                 <ref corresp="wretch" target="wretch_">wretch</ref>
-                <note target="wretch_" xml:id="wretch" resp="editors.xml#VBS" type="editors.xml#VBS">
+                <note target="wretch_" xml:id="wretch" resp="editors.xml#VBS" type="gloss">
                 A vile, sorry, or despicable person. Source: Oxford English Dictionary
                 </note> to which it had once belonged turn on receipt of an order, and pass,
                 with my eyes on the villainous back that no hunch could have more disfigured,
@@ -3433,7 +3433,7 @@
                 than any other, and that so much avoidance could not have been so successfully
                 <pb n="121"/>
                 effected without a great deal of <ref target="tacit_" corresp="tacit">tacit</ref>
-                <note xml:id="tacit" target="tacit_" type="editors.xml#VBS" resp="editors.xml#VBS">
+                <note xml:id="tacit" target="tacit_" type="gloss" resp="editors.xml#VBS">
                 Silent; not openly stated; understood, inferred. Source: Oxford English Dictionary
                 </note> arrangement. It was as if, at moments,
                 we were perpetually coming into sight of subjects before which we must stop
@@ -3533,7 +3533,7 @@
                 more than any other, and it was in the condition of nerves produced by it
                 that I made my actual inductions. They harassed me so that sometimes, at
                 odd moments, I shut myself up audibly 
-                <pb n="125"/>
+                <pb n="126"/>
                 to rehearse—it was at once a fantastic
                 relief and a renewed despair—the manner in which I might come to the point.
                 I approached it from one side and the other while, in my room, I flung myself
