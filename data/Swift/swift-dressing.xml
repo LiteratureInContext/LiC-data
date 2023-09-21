@@ -70,11 +70,11 @@
                      <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
-                     <publisher>R. Dodsley</publisher>
-                     <date when="1751">1751</date>
+                     <publisher>J. Roberts</publisher>
+                     <date when="1732">1732</date>
                      <note>
-                        <p>Tsted the prestigious London publisher Robert Dodsley, who rushed the text into print to beat the periodical version.</p>
-                        <p>Our edition was keyed for the purposes of the Literature in Context project.</p>
+                        <p>.</p>
+                        <p>This poem was incredibly popular from the moment it was published in June 1732. It was first issued as a pamphlet by the London publisher J. Roberts, who printed up 750 copies, a lot for a first run of a poem even now. He had to go back to press almost immediately because it sold so well. The poem was also reprinted immediately in newspapers and periodicals, and then printed in various editions of Swift's works and in anthologies ever since. Our edition follows that first edition, and was keyed for the purposes of the Literature in Context project. We include Swift's notes, which identify where he is quoting from texts such as John Milton's <hi rend="italic">Paradise Lost</hi>.</p>
                      </note>
                   </imprint>
                </monogr>
@@ -175,15 +175,17 @@
       <revisionDesc>
          <change when="2023-09-20" who="editors.xml#JOB">created edition for Literature in context use</change>
       </revisionDesc>
-
    </teiHeader>
    <text>
-      <body>
-            <div type="text">
-               <head>
-                  Written in the Year 1730
-               </head>
-                <lb/>
+     
+      <front>
+         <titlePage>
+      <docTitle>
+         <titlePart>The Ladies Dressing-Room</titlePart>
+         <titlePart>Written in the Year 1730</titlePart></docTitle>
+            <docAuthor></docAuthor></titlePage></front>
+      <body> 
+         <div type="text">
                <lg>
                   <l>Five Hours (and who can do it less in?)</l>
                   <l>By haughty <hi rend="italic">Caelia</hi> spent in Dressing;,</l>
@@ -298,7 +300,7 @@
                   <l>O! NE'ER may such a vile Machine</l>
                   <l>Be once in <hi rend="italic">Caelia's</hi> Chamber seen!</l>
                   <l>O! may she better learn to keep</l>
-                  <l>Those <hi rend="italic">Secrets of the hoary Deep!</hi></l>
+                  <l><ref target="Secrets_of_the_hoary_deep_" corresp="Secrets_of_the_hoary_deep">"Those Secrets of the hoary Deep!</ref><note xml:id="Secrets_of_the_hoary_deep" target="Secrets_of_the_hoary_deep_">Milton [Swift's note.}</note></l>
                </lg>
                <lg>
                   <l>As Mutton-Cutlets, <hi rend="italic"> prime of Meat</hi>,</l>
@@ -355,7 +357,7 @@
                     <l>Such Order from Confusion sprung,</l>
                     <l>Such gaudy <hi rend="italic">Tulips</hi> rais'd from <hi rend="italic">Dung</hi>.</l>         
                 </lg>
-            </div>
+         </div>
       </body>                     
    </text>
 </TEI>
