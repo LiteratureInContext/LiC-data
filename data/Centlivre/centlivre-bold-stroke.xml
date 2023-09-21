@@ -317,7 +317,7 @@ Keying and markup guidelines are available at the
         <div type="prologue">
         <pb facs="tcp:0391401600:8"/>
         <head>RROLOGUE,</head>
-        <p>By a GENTLEMAN.</p> <!-- TODO: Small caps and add <byLine>-->
+        <p>By a GENTLEMAN.</p>
         <sp style="prose">
         <speaker>Spoken by Mrs. THURMOND.</speaker>
         <l>TO-Night we come upon a bold Design,</l>
@@ -378,25 +378,75 @@ Keying and markup guidelines are available at the
         </div>
         <div type="dramatis_personae">
         <pb facs="tcp:0391401600:10"/>
-        <head>Dramtis Personae.</head> <!-- TODO: Fix -->
-        <p>Men.</p>
+        <head>Dramtis Personae.</head>
+        <head>Men.</head>
         <castList>
             <head>All Guardians to Mrs. Lovely.</head>
             <castItem>
-                <role>SirPhilip Modelove,
+                <role><hi rend="italic">SirPhilip Modelove,</hi>
                     an Old Beau,</role>
                 <actor xml:id="knap">
-                    Mr. Knap.
+                    Mr. <hi rend="italic">Knap.</hi>
                 </actor>
             </castItem>
             <castItem>
-                <role>Periwinkle, a kind of silly Virtuoso,</role>
+                <role><hi rend="italic">Periwinkle,</hi>
+                a kind of a silly <hi rend="italic">Virtuoso,</hi></role>
                 <actor xml:id="spiller">
-                    Mr. Spiller.
+                    Mr. <hi rend="italic">Spiller.</hi>
                 </actor>
             </castItem>
+            <castItem>
+                <role><hi rend="italic">Tradelove,</hi>
+                a Change-Broker,</role>
+                <actor xml:id="bullock">Mr.
+                <hi rend="italic">Bullock,</hi> sen.</actor>
+            </castItem>
+            <castItem>
+                <role><hi rend="italic">Obebiah Prim,</hi> a Quacker,</role>
+                <actor xml:id="pack">Mr. <hi rend="italic">Pack</hi></actor>
+            </castItem>
         </castList>
-        <!-- <table>
+        <castList>
+            <castItem>
+                <role>Colonel <hi rend="italic">Fainwell,</hi> in Love with
+                    Mrs. <hi rend="italic">Lovely,</hi></role>
+                <actor xml:id="mr-bullock">Mr. <hi rend="italic">Ch. Bullock.</hi></actor>
+            </castItem>
+            <castItem>
+                <role><hi rend="italic">Freeman,</hi> his Friend, a Merchant,</role>
+                <actor xml:id="ogden">Mr. <hi rend="italic">Ogden.</hi></actor>
+            </castItem>
+            <castItem>
+                <role><hi rend="italic">Simon Pure,</hi> A Quaking Preacher,</role>
+                <actor xml:id="griffin">Mr. <hi rend="italic">Griffin,</hi></actor>
+            </castItem>
+            <castItem>
+                <role>Mr. <hi rend="italic">Sackbut,</hi> a Tavern-Keeper.</role>
+                <actor xml:id="hall">Mr. <hi rend="italic">Hall.</hi></actor>
+            </castItem>
+        </castList>
+            <head>WOMEN.</head>
+        <castList>
+            <castItem>
+                <role>Mrs. <hi rend="italic">Lovely, a Fortune of 
+                    Thirty Thousand Pound,</hi></role>
+                <actor xml:id="mrs-bullock">Mrs. <hi rend="italic">Bullock.</hi></actor>
+            </castItem>
+            <castItem>
+                <role>
+                    Mrs. <hi rend="italic">Prim,</hi> Wife to <hi rend="italic">Prim</hi>
+                    the Hosier,
+                </role>
+                <actor xml:id="kent">Mrs. <hi rend="italic">Kent.</hi></actor>
+            </castItem>
+            <castItem>
+                <role><hi rend="italic">Betty,</hi> Servant to Mrs. <hi rend="italic">Lovely,</hi></role>
+                <actor xml:id="robins">Mrs. <hi rend="italic">Robins.</hi></actor>
+            </castItem>
+        </castList>
+        <p>Footmen, Drawers, &amp;c.</p>
+            <!-- <table>
         <head>MEN.</head>
         <row>
         <cell>
@@ -560,7 +610,6 @@ Keying and markup guidelines are available at the
         <sp>
             <speaker>FREEMAN.</speaker>
             <l>
-            <!-- <seg rend="decorInit">C</seg> -->
             <hi rend="italic">C</hi>OME,
             <hi rend="italic">Colonel,</hi>
             His Majesty's Health—You are as melancholly as if you were in Love; I wish some of the Beauties at
@@ -4224,7 +4273,7 @@ Keying and markup guidelines are available at the
         </l>
         <l>he's</l>
         </sp>
-        <pb n="39" facs="tcp:0391401600:51"/>
+        <pb n="39" facs="tcp:0391401600:53"/>
         <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <sp>
         <l>
@@ -4365,7 +4414,7 @@ Keying and markup guidelines are available at the
         <speaker>Free.</speaker>
         <stage>[Exit.</stage>
         </sp>
-        <pb n="40" facs="tcp:0391401600:37"/>
+        <pb n="40" facs="tcp:0391401600:53"/>
         <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <sp>
         <speaker>Free.</speaker>
@@ -4560,12 +4609,13 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Col.</speaker>
         <l>
-        No, no, the Quakers never ride Post; he can't be here before to-morrow at soonest: Do you send and buy me a Quaker's Dress, Mr.
+        No, no, the Quakers never ride Post; he can't be here before to-morrow at soonest:
+        Do you send and buy me a Quaker's Dress, Mr.
         <hi rend="italic">Sackbutt;</hi>
         and suppose,
         <hi rend="italic">Freeman,</hi>
         you should wait at the
-        <hi rend="italic">Bristol</hi>
+        <placeName><hi rend="italic">Bristol</hi></placeName>
         Coach, that if you see any such Person, you might contrive to give me Notice—
         </l>
         </sp>
@@ -4583,15 +4633,25 @@ Keying and markup guidelines are available at the
         Bring 'em in then,—
         <stage>
         [Exit
-        <hi rend="italic">Sack.</hi>
-        ]
+        <hi rend="italic">Sack.</hi>]
         </stage>
         Thou must dispatch
         <hi rend="italic">Periwinkle</hi>
         first,—remember his Uncle Sir
         <hi rend="italic">Toby Periwinkle</hi>
-        is an old Batchelor of seventy five,—that he has seven hundred a Year, most in Abbey-Land; that he was once in Love with your Mother, and shrewdly suspected by some to be your Father,—that you
+        is an old Batchelor of seventy five,—that he has seven hundred a Year, most in Abbey-Land;
+        that he was once in Love with your Mother, and shrewdly suspected by some to be your Father,—that you
+        </l>
+        </sp>
+        <p>C3</p>
+        <sp>
+        <l>have
+        </l>
+        </sp>
         <pb n="42" facs="tcp:0391401600:54"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
         have been thirty Years his Steward,—and ten Years his Gentleman—remember to improve these Hints.
         </l>
         </sp>
@@ -4611,9 +4671,9 @@ Keying and markup guidelines are available at the
         <l>
         Enough—
         <stage>
-        [Enter
-        <hi rend="italic">Sackbut</hi>
-        with Clothes.]
+        [<hi rend="italic">Enter</hi>
+        Sackbut
+        <hi rend="italic">with Clothes.</hi>]
         </stage>
         Now for the Country Put—
         <stage>[Dresses.</stage>
@@ -4629,7 +4689,8 @@ Keying and markup guidelines are available at the
         </sp>
         <sp>
         <speaker>Col.</speaker>
-        <l>Make one; I'll bring a Sett of honest Officers, that will spend their Money as freely to the King's Health, as they would their Blood in his Service.</l>
+        <l>Make one; I'll bring a Sett of honest Officers, that will spend their Money as freely to the King's Health,
+        as they would their Blood in his Service.</l>
         </sp>
         <sp>
         <speaker>Sack.</speaker>
@@ -4640,8 +4701,8 @@ Keying and markup guidelines are available at the
         <stage>[Bell rings.</stage>
         </l>
         <stage>
-        [Exit
-        <hi rend="italic">Sackbut.</hi>
+        [<hi rend="italic">Exit</hi>
+        Sackbut.
         </stage>
         </sp>
         <sp>
@@ -4667,8 +4728,8 @@ Keying and markup guidelines are available at the
         <l>All, all!—</l>
         </sp>
         <stage>
-        [Enter
-        <hi rend="italic">Sackbut.</hi>
+        [<hi rend="italic">Enter</hi>
+        Sackbut.
         </stage>
         <sp>
         <speaker>Sack.</speaker>
@@ -4677,7 +4738,8 @@ Keying and markup guidelines are available at the
         <hi rend="italic">Freeman!</hi>
         yonder is
         <hi rend="italic">Tradelove</hi>
-        in the damned'st Passion in the World.—He swears you are in the House,—he says you told him you was to dine here.
+        in the damned'st Passion in the World.—He swears you are in the House,—he
+        says you told him you was to dine here.
         </l>
         </sp>
         <sp>
@@ -4695,7 +4757,7 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Free.</speaker>
         <l>
-        Very well,—make you haste out,!
+        Very well,—make you haste out,
         <hi rend="italic">Colonel,</hi>
         and let me alone to deal with him: Where is he?
         </l>
@@ -4719,12 +4781,14 @@ Keying and markup guidelines are available at the
         success attend you.
         </l>
         <stage>
-        [Exit
-        <hi rend="italic">Sack.</hi>
+        [<hi rend="italic">Exit</hi>
+        Sack.
         </stage>
+        <speaker>Col.</speaker>
         </sp>
-        <sp>
         <pb n="43" facs="tcp:0391401600:55"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Col.</speaker>
         <l>
         Mr.
@@ -4745,8 +4809,8 @@ Keying and markup guidelines are available at the
         <hi rend="italic">Who made his Fortune in a Masquerade.</hi>
         </l>
         <stage>
-        [Exit
-        <hi rend="italic">Col.</hi>
+        [<hi rend="italic">Exit</hi>
+        Col.
         </stage>
         </sp>
         <stage>
@@ -4793,7 +4857,8 @@ Keying and markup guidelines are available at the
         <hi rend="italic">l.</hi>
         to what I have lost? There's two thousand Pounds to that
         <hi rend="italic">Dutchman</hi>
-        with the cursed long Name, besides the Stock I bought; the Devil! I cou'd tear my Flesh,—I must never show my Face upon Change more,—for, by my Soul, I can't pay it.
+        with the cursed long Name, besides the Stock I bought; the Devil! I cou'd tear my Flesh,—I must never
+        show my Face upon Change more,—for, by my Soul, I can't pay it.
         </l>
         </sp>
         <sp>
@@ -4821,15 +4886,21 @@ Keying and markup guidelines are available at the
         Ah! there's no Thought can be of any Service to me, without paying the Money, or running away.
         </l>
         </sp>
+        <p>C4</p>
         <sp>
+        <speaker>Free.</speaker>
+        </sp>
         <pb n="44" facs="tcp:0391401600:56"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Free.</speaker>
         <l>
         How do you know? What do you think of my proposing Mrs.
         <hi rend="italic">Lovely</hi>
         to him? He is a single Man,—and I heard him say he had a mind to marry an
         <hi rend="italic">English</hi>
-        Woman—nay, more than that, he said somebody told him, you had a pretty Ward—he wish'd you had betted her instead of your Money.
+        Woman—nay, more than that, he said somebody told him, you had a pretty Ward—he
+        wish'd you had betted her instead of your Money.
         </l>
         </sp>
         <sp>
@@ -4843,7 +4914,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Free.</speaker>
         <l>
-        So much the better; you may venture to give him your Consent, if he'll forgive you the Wager: It is not your Business to tell him, that your Consent will signifie nothing.
+        So much the better; you may venture to give him your Consent, if he'll forgive you the Wager:
+        It is not your Business to tell him, that your Consent will signifie nothing.
         </l>
         </sp>
         <sp>
@@ -4852,11 +4924,14 @@ Keying and markup guidelines are available at the
         </sp>
         <sp>
         <speaker>Free.</speaker>
-        <l>I can't tell that; but I'll try what I can do with him—He has promis'd me to meet me here an Hour hence; I'll feel his Pulse, and let you know: If I find it feasible, I'll send for you; if not, you are at liberty to take what Measures you please.</l>
+        <l>I can't tell that; but I'll try what I can do with him—He has promis'd me to meet me here an Hour hence;
+        I'll feel his Pulse, and let you know: If I find it feasible, I'll send for you; if not, you are at liberty to
+        take what Measures you please.</l>
         </sp>
         <sp>
         <speaker>Trade.</speaker>
-        <l>You must extol her Beauty, double her Portion, and tell him I have the entire Disposal of her, and that she can't marry without my Consent;—and that I am a covetous Rogue, and will never part with her without a Valuable Consideration.</l>
+        <l>You must extol her Beauty, double her Portion, and tell him I have the entire Disposal of her,
+        and that she can't marry without my Consent;—and that I am a covetous Rogue, and will never part with her without a Valuable Consideration.</l>
         </sp>
         <sp>
         <speaker>Free.</speaker>
@@ -4878,7 +4953,8 @@ Keying and markup guidelines are available at the
         </sp>
         <sp>
         <speaker>Trade.</speaker>
-        <l>At Home; pray Heaven you prosper—If I were but the sole Trustee now, I should not fear it. Who the Devil would be a Guardian,</l>
+        <l>At Home; pray Heaven you prosper—If I were but the sole Trustee now, I should not fear it
+        Who the Devil would be a Guardian,</l>
         <l>
         <hi rend="italic">If when Cash runs low, our Coffers t'enlarge,</hi>
         </l>
@@ -4895,31 +4971,31 @@ Keying and markup guidelines are available at the
         </div>
         <div type="scene">
         <pb n="45" facs="tcp:0391401600:57"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <head>
         <hi rend="stage">
-        SCENE changes to
-        <!-- TODO: Fix <hi rend="italic">Periwinkle</hi> -->
-        's House.
+        SCENE changes to Periwinkle's House.
         </hi>
         </head>
         <stage>
-        Enter
-        <hi rend="italic">Periwinkle</hi>
-        on one Side, and
-        <hi rend="italic">Footman</hi>
-        on t'other.
+        <hi rend="italic">Enter</hi>
+        Periwinkle
+        <hi rend="italic">on one Side, and</hi>
+        Footman
+        <hi rend="italic">on t'other.</hi>
         </stage>
         <sp>
         <speaker>Foot.</speaker>
         <l>
         A Gentleman from
-        <hi rend="italic">Coventry</hi>
+        <placeName><hi rend="italic">Coventry</hi></placeName>
         enquires for you, Sir.
         </l>
         </sp>
         <sp>
         <speaker>Per.</speaker>
-        <l>From my Uncle, I warrant you, bring him up—This will save me the Trouble, as well as the Expences of a Journey.</l>
+        <l>From my Uncle, I warrant you, bring him up—This will save me the Trouble,
+        as well as the Expences of a Journey.</l>
         </sp>
         <stage>
         Enter
@@ -4940,7 +5016,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Col.</speaker>
         <l>
-        I am sorry for the Message I bring—My old Master, whom I served these forty Years, claims the Sorrow due from a faithful Servant to an indulgent Master.
+        I am sorry for the Message I bring—My old Master, whom I served these forty Years,
+        claims the Sorrow due from a faithful Servant to an indulgent Master.
         <stage>[Weeps.</stage>
         </l>
         </sp>
@@ -4957,7 +5034,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Col.</speaker>
         <l>
-        He is, Sir, and he has left you Heir to Seven Hundred a Year, in as good Abbey-Land as ever paid
+        He is, Sir, and he has left you Heir to Seven Hundred a Year, in as good Abbey-Land
+        as ever paid
         <hi rend="italic">Peter-Pence</hi>
         to
         <hi rend="italic">Rome—</hi>
@@ -5003,12 +5081,13 @@ Keying and markup guidelines are available at the
         <speaker>Col.</speaker>
         <l>
         <hi rend="italic">Monday</hi>
-        last, at Four in the Morning. About Two he signed this Will, and gave it into my Hands, and strictly charged me to leave
-        <hi rend="italic">Coventry</hi>
+        last, at Four in the Morning. About Two he signed this Will, and gave it into my Hands,
+        and strictly charged me to leave
+        <placeName><hi rend="italic">Coventry</hi></placeName>
         the Moment he expir'd, and deliver it to you with what Speed I could; I have obey'd him, Sir, and there is the Will.
         <stage>
-        [Gives it to
-        <hi rend="italic">Per.</hi>
+        [<hi rend="italic">Gives it to</hi>
+        Per.
         </stage>
         </l>
         </sp>
@@ -5016,11 +5095,17 @@ Keying and markup guidelines are available at the
         <speaker>Per.</speaker>
         <l>'Tis very well, I'll lodge it in the Commons.</l>
         </sp>
+        <p>C5</p>
         <sp>
+        <speaker>Col.</speaker>
+        </sp>
         <pb n="46" facs="tcp:0391401600:58"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Col.</speaker>
         <l>
-        There are two Things which he forgot to insert, but charged me to tell you, that he desired you'd perform them as readily as if you had found them written in the Will,
+        There are two Things which he forgot to insert, but charged me to tell you,
+        that he desired you'd perform them as readily as if you had found them written in the Will,
         which is to remove his Corpse, and bury him by his Father in St.
         <hi rend="italic">Paul Covent-Garden,</hi>
         and to give all his Servants Mourning.
@@ -5107,7 +5192,11 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Per.</speaker>
+        </sp>
         <pb n="47" facs="tcp:0391401600:59"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Per.</speaker>
         <l>
         Ho, here it is
@@ -5120,9 +5209,8 @@ Keying and markup guidelines are available at the
         <hi rend="italic">Pillage,</hi>
         I see my Uncle does mention it, and I'll perform his Will. Give me the Lease—
         <stage>
-        [
-        <hi rend="italic">Col.</hi>
-        gives it him, he looks upon it, and lays it upon the Table.]
+        [Col.
+        <hi rend="italic">gives it him, he looks upon it, and lays it upon the Table.</hi>]
         </stage>
         Pray you step to the Door, and call for a Pen and Ink, Mr.
         <hi rend="italic">Pillage.</hi>
@@ -5141,9 +5229,9 @@ Keying and markup guidelines are available at the
         <l>
         I think it belongs to your Profession—
         <stage>
-        [He looks upon the Pen, while the
-        <hi rend="italic">Col.</hi>
-        changes the Lease, and lays down the Contract.]
+        [<hi rend="italic">He looks upon the Pen, while the</hi>
+        Col.
+        <hi rend="italic">changes the Lease, and lays down the Contract.</hi>]
         </stage>
         I doubt this is but a sorry Pen, tho' it may serve to write my Name.
         <stage>[Writes.</stage>
@@ -5163,8 +5251,9 @@ Keying and markup guidelines are available at the
         <hi rend="italic">Pillage,</hi>
         <stage>[Gives him the Paper.]</stage>
         Now I must desire you to make what Haste you can down to
-        <hi rend="italic">Coventry,</hi>
-        and take Care of every thing, and I'll send down the Undertaker for the Body; do you attend it up, and whatever Charge you are at, I will repay you.
+        <placeName><hi rend="italic">Coventry,</hi></placeName>
+        and take Care of every thing, and I'll send down the Undertaker for the Body; do you attend it up,
+        and whatever Charge you are at, I will repay you.
         </l>
         </sp>
         <sp>
@@ -5181,7 +5270,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Col.</speaker>
         <l>
-        I would rather not, there are some of my Neighbours which I met as I came along, who leaves the Town this Afternoon, they told me, and I should be glad of their Company down.
+        I would rather not, there are some of my Neighbours which I met as I came along, who leaves the Town this Afternoon,
+        they told me, and I should be glad of their Company down.
         </l>
         </sp>
         <sp>
@@ -5217,8 +5307,16 @@ Keying and markup guidelines are available at the
         <speaker>Per.</speaker>
         <l>
         Seven Hundred a Year! I wish he had died seventeen Years ago;—What a valuable Collection of Rarities might I have had by this time?—I might
+        </l>
+        <l>
+        have
+        </l>
+        </sp>
         <pb n="48" facs="tcp:0391401600:60"/>
-        have travell'd over all the known Parts of the Globe, and made my own Closet Rival the Vatican at
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
+        have travell'd over all the known Parts of the Globe, and made my own Closet Rival the <placeName>Vatican</placeName> at
         <hi rend="italic">Rome.—</hi>
         'Odso, I have a good Mind to begin my Travels now;—let me see,—I am but Sixty! My Father, Grandfather, and Great-Grandfather,
         reach'd Ninety odd;—I have almost forty Years good:—Let me consider! What will Seven Hundred a Year amount to—in—ay! in thirty Years,
@@ -5238,11 +5336,8 @@ Keying and markup guidelines are available at the
         <div type="scene">
         <head>
         <hi rend="stage">
-        SCENE changes to a Tavern;
-        <!-- TODO: Fix <hi rend="italic">Freeman</hi>
-        and
-        <hi rend="italic">Tradelove</hi> -->
-        over a Bottle.
+        SCENE changes to a Tavern; Freeman
+        and Tradelove over a Bottle.
         </hi>
         </head>
         <sp>
@@ -5253,8 +5348,7 @@ Keying and markup guidelines are available at the
         here's Mynheer
         <hi rend="italic">Jan, Van Tim, Tam, Tam;—</hi>
         I shall never think of that
-        <hi rend="italic">Dutchman</hi>
-        's Name.—
+        <hi rend="italic">Dutchman</hi>'s Name.—
         </l>
         </sp>
         <sp>
@@ -5290,8 +5384,14 @@ Keying and markup guidelines are available at the
         Oh, he has nothing of the
         <hi rend="italic">Hollander</hi>
         in his Temper—except an Antipathy to Monarchy—As soon as I told him your Circumstances, he reply'd,
-        he would not be the Ruin of any Man for the World,—and immediately made this Proposal himself:—Let him take what time he will for the Payment,
+        he would not be the Ruin of any Man for the World,—and immediately made this Proposal himself:—Let
+        him take what time he will for the Payment,
+        </l>
+        </sp>
         <pb n="49" facs="tcp:0391401600:61"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
         said he; or if he'll give me his Ward, I'll forgive him the Debt.
         </l>
         </sp>
@@ -5319,8 +5419,8 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <stage>
-        Enter a
-        <hi rend="italic">Filder.</hi>
+        <hi rend="italic">Enter a</hi>
+        Filder.
         </stage>
         <sp>
         <speaker>Fid.</speaker>
@@ -5351,13 +5451,13 @@ Keying and markup guidelines are available at the
         <stage>[Exit.</stage>
         </sp>
         <stage>
-        Enter
-        <hi rend="italic">Drawer,</hi>
-        and
-        <hi rend="italic">Colonel</hi>
-        drest for the
-        <hi rend="italic">Dutch</hi>
-        Merchant.
+        <hi rend="italic">Enter</hi>
+        Drawer,
+        <hi rend="italic">and</hi>
+        Colonel
+        <hi rend="italic">drest for the</hi>
+        Dutch
+        <hi rend="italic">Merchant.</hi>
         </stage>
         <sp>
         <speaker>Col.</speaker>
@@ -5448,11 +5548,12 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Trade.</speaker>
         <l>
-        There Mynheer, there's my Consent as amply as you can desire; but you must insert your own Name, for I know not how to spell it; I have left a Blank for it.
+        There Mynheer, there's my Consent as amply as you can desire; but you must insert your own Name,
+        for I know not how to spell it; I have left a Blank for it.
         <stage>
-        [Gives the
-        <hi rend="italic">Colonel</hi>
-        a Paper.
+        [<hi rend="italic">Gives the</hi>
+        Colonel
+        <hi rend="italic">a Paper.</hi>
         </stage>
         </l>
         </sp>
@@ -5521,7 +5622,8 @@ Keying and markup guidelines are available at the
         </sp>
         <sp>
         <speaker>Col.</speaker>
-        <l>Wat donder heb ye Myn betrocken Mynheer? Had Ik that gewoeten, Ik soude eaven met you geweest Syn.</l>
+        <l>Wat donder heb ye Myn betrocken Mynheer? Had Ik that gewoeten, Ik soude eaven met you
+        geweest Syn.</l>
         </sp>
         <sp>
         <speaker>Sack.</speaker>
@@ -5538,7 +5640,11 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Trade.</speaker>
+        </sp>
         <pb n="51" facs="tcp:0391401600:63"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Trade.</speaker>
         <l>
         I will say all that ever I can think on to recommend you, Mynheer, and if you please, I'll introduce you to the Lady.
@@ -5571,7 +5677,8 @@ Keying and markup guidelines are available at the
         </sp>
         <sp>
         <speaker>Free.</speaker>
-        <l>He hugs himself with his supposed good Fortune, and little thinks the Luck's of our Side;—but come, pursue the fickle Goddess while she's in the Mood.—Now for the Quaker.</l>
+        <l>He hugs himself with his supposed good Fortune, and little thinks the Luck's of our Side;—but come,
+        pursue the fickle Goddess while she's in the Mood.—Now for the Quaker.</l>
         </sp>
         <sp>
         <speaker>Col.</speaker>
@@ -5594,30 +5701,30 @@ Keying and markup guidelines are available at the
         <head>
         SCENE I.
         <hi rend="stage">
-        SCENE
-        <!-- TODO: Fix <hi rend="italic">Prim</hi> -->
-        's House.
+        SCENE Prim's House.
         </hi>
         </head>
         <stage>
-        Enter Mrs.
-        <hi rend="italic">Prim,</hi>
-        and Mrs.
-        <hi rend="italic">Lovely</hi>
-        in Quakers Dress, meeting.
+        <hi rend="italic">Enter Mrs.</hi>
+        Prim,
+        <hi rend="italic">and Mrs.</hi>
+        Lovely
+        <hi rend="italic">in Quakers Dress, meeting.</hi>
         </stage>
         <sp>
         <speaker>Mrs. Pr.</speaker>
         <l>
         SO, now I like thee,
         <hi rend="italic">Anne:</hi>
-        Art thou not better without thy monstrous Hoop Coat and Patches!—If Heaven shou'd make thee so many black Spots upon thy Face, wou'd it not fright thee,
+        Art thou not better without thy monstrous Hoop Coat and Patches!—If Heaven shou'd
+        make thee so many black Spots upon thy Face, wou'd it not fright thee,
         <hi rend="italic">Anne?</hi>
         </l>
         </sp>
         <sp>
         <speaker>Mrs. Lov.</speaker>
-        <l>If it shou'd turn your Inside outward, and show all the Spots of your Hypocrisy, 'twou'd fright me worse.</l>
+        <l>If it shou'd turn your Inside outward, and show all the Spots of your Hypocrisy,
+        'twou'd fright me worse.</l>
         </sp>
         <sp>
         <speaker>Mrs. Pr.</speaker>
@@ -5636,8 +5743,10 @@ Keying and markup guidelines are available at the
         <l>
         Well, well, make thy Jests;—but I'd have thee to know,
         <hi rend="italic">Anne,</hi>
-        that I cou'd have catch'd as many Fish (as thou call'st them) in my Time, as ever thou did'st with all thy Fool-Traps about
-        thee.—If Admirers be thy Aim, thou wilt have more of them in this Dress than thy other.—The Men, take my Word for't, are most desirous to see what we are most careful to conceal.
+        that I cou'd have catch'd as many Fish (as thou call'st them) in my Time,
+        as ever thou did'st with all thy Fool-Traps about
+        thee.—If Admirers be thy Aim, thou wilt have more of them in this Dress than thy other.—The Men,
+        take my Word for't, are most desirous to see what we are most careful to conceal.
         </l>
         </sp>
         <sp>
@@ -5649,20 +5758,27 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Mrs.</speaker>
+        </sp>
         <pb n="53" facs="tcp:0391401600:65"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Mrs. Pr.</speaker>
-        <l>Go, thou art corrupted with reading lude Plays, and filthy Romances,—good for nothing but to lead Youth into the High Road of Fornication.—Ah! I wish thou art not already too familiar with the wicked Ones.</l>
+        <l>Go, thou art corrupted with reading lude Plays, and filthy Romances,—good
+        for nothing but to lead Youth into the High Road of Fornication.—Ah! I wish thou
+        art not already too familiar with the wicked Ones.</l>
         </sp>
         <sp>
         <speaker>Mrs. Love.</speaker>
         <l>
-        Too familiar with the wicked Ones! Pray no more of those Freedoms, Madam,—I am familiar with none so wicked as your self;—How dare you talk thus to me! you, you, you unworthy Woman you.
+        Too familiar with the wicked Ones! Pray no more of those Freedoms, Madam,—I am familiar with none so wicked as your self;—How
+        dare you talk thus to me! you, you, you unworthy Woman you.
         <stage>[Bursts into Tears.</stage>
         </l>
         </sp>
         <stage>
-        Enter
-        <hi rend="italic">Tradelove.</hi>
+        <hi rend="italic">Enter</hi>
+        Tradelove.
         </stage>
         <sp>
         <speaker>Trade.</speaker>
@@ -5677,7 +5793,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Mrs. Lov.</speaker>
         <l>
-        Done to me! I admire I keep my Senses, among you;—but I will rid my self of your Tyranny, if there be either Law or Justice to be had;—I'll force you to give me up my Liberty.
+        Done to me! I admire I keep my Senses, among you;—but I will rid my self of your Tyranny,
+        if there be either Law or Justice to be had;—I'll force you to give me up my Liberty.
         </l>
         </sp>
         <sp>
@@ -5704,18 +5821,19 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <stage>
-        Enter Mr.
-        <hi rend="italic">Periwinkle,</hi>
-        and
-        <hi rend="italic">Obediah Prim</hi>
-        with a Letter in his Hand.
+        <hi rend="italic">Enter Mr.</hi>
+        Periwinkle,
+        <hi rend="italic">and</hi>
+        Obediah Prim
+        <hi rend="italic">with a Letter in his Hand.</hi>
         </stage>
         <sp>
         <speaker>Per.</speaker>
         <l>
         I have bought some black Stockings of your Husband, Mrs.
         <hi rend="italic">Prim,</hi>
-        but he tells me the Glover's Trade belongs to you, therefore I pray you look me out five or six Dozen of mourning Gloves, such as are given at Funerals, and send them to my House.—
+        but he tells me the Glover's Trade belongs to you, therefore I pray you look me out five or six Dozen of mourning Gloves,
+        such as are given at Funerals, and send them to my House.—
         </l>
         </sp>
         <sp>
@@ -5727,7 +5845,11 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Mrs.</speaker>
+        </sp>
         <pb n="54" facs="tcp:0391401600:66"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Mrs. Pr.</speaker>
         <l>I wish thee Joy of it, Neighbour.</l>
         </sp>
@@ -5756,7 +5878,7 @@ Keying and markup guidelines are available at the
         This Letter recommendeth a Speaker, 'tis from
         <hi rend="italic">Aminadab Holdfast</hi>
         of
-        <hi rend="italic">Bristol;</hi>
+        <placeName><hi rend="italic">Bristol;</hi></placeName>
         peradventure he will be here this Night; therefore
         <hi rend="italic">Sarah,</hi>
         do thou take care for his Reception.—
@@ -5839,7 +5961,11 @@ Keying and markup guidelines are available at the
         <l>Ay, ay, Madam, he wou'd dissect you.</l>
         </sp>
         <sp>
+        <speaker>Trade.</speaker>
+        </sp>
         <pb n="55" facs="tcp:0391401600:67"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Trade.</speaker>
         <l>
         Or, pore over you through a Microscope, to see how your Blood circulates from the Crown of your Head to the Sole of your Foot,—ha, ha! but I have a Husband for you,
@@ -5857,10 +5983,10 @@ Keying and markup guidelines are available at the
         <l>
         One that will dress you in all the Pride of
         <hi rend="italic">
-        Europe, Asia, Africa
+        <placeName>Europe,</placeName> <placeName>Asia,</placeName> <placeName>Africa</placeName>
         </hi>
         and
-        <hi rend="italic">America—</hi>
+        <placeName><hi rend="italic">America—</hi></placeName>
         a
         <hi rend="italic">Dutch</hi>
         Merchant, my Girl.
@@ -5871,7 +5997,8 @@ Keying and markup guidelines are available at the
         <l>
         A
         <hi rend="italic">Dutchman!</hi>
-        ha, ha, there's a Husband for a fine Lady—Ya Juffrow, will you met myn Slapen—ha, ha; he'll learn you to talk the Language of the Hogs, Madam, ha, ha.
+        ha, ha, there's a Husband for a fine Lady—Ya Juffrow, will you met myn Slapen—ha, ha;
+        he'll learn you to talk the Language of the Hogs, Madam, ha, ha.
         </l>
         </sp>
         <sp>
@@ -5915,7 +6042,8 @@ Keying and markup guidelines are available at the
         <l>
         Verily, Neighbour
         <hi rend="italic">Tradelove,</hi>
-        thou dost waste thy Breath about nothing—All that thou hast said tendeth only to debauch Youth, and fill their Heads with the Pride and Luxury of this
+        thou dost waste thy Breath about nothing—All that thou hast said tendeth only to debauch Youth,
+        and fill their Heads with the Pride and Luxury of this
         World—The Merchant is a very great Friend to Satan, and sendeth as many to his Dominions as the Pope.
         </l>
         </sp>
@@ -5935,7 +6063,12 @@ Keying and markup guidelines are available at the
         Periwinkle,
         </hi>
         and not her Insects.—Rid you of your homebred
+        </l>
+        </sp>
         <pb n="56" facs="tcp:0391401600:68"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
         Monsters, before you fetch any from abroad—I dare swear you have Maggots enough in your own Brain to stock all the
         <hi rend="italic">Virtuoso's</hi>
         in
@@ -5947,8 +6080,7 @@ Keying and markup guidelines are available at the
         <speaker>Sir Phil.</speaker>
         <l>
         By my Soul, Miss
-        <hi rend="italic">Nancy</hi>
-        's a Wit.
+        <hi rend="italic">Nancy</hi>'s a Wit.
         </l>
         </sp>
         <sp>
@@ -5985,8 +6117,8 @@ Keying and markup guidelines are available at the
         <stage>[Exit.</stage>
         </sp>
         <stage>
-        Enter Servant, and whispers to
-        <hi rend="italic">Prim.</hi>
+        <hi rend="italic">Enter Servant, and whispers to</hi>
+        Prim.
         </stage>
         <sp>
         <speaker>Serv.</speaker>
@@ -6024,9 +6156,9 @@ Keying and markup guidelines are available at the
         <stage>[Exit.</stage>
         </sp>
         <stage>
-        Enter
-        <hi rend="italic">Colonel</hi>
-        in a Quaker's Habit.
+        <hi rend="italic">Enter</hi>
+        Colonel
+        <hi rend="italic">in a Quaker's Habit.</hi>
         </stage>
         <sp>
         <speaker>Ob. Pr.</speaker>
@@ -6039,7 +6171,12 @@ Keying and markup guidelines are available at the
         <hi rend="italic">
         Bristol? Timothy
         </hi>
+        </l>
+        </sp>
         <pb n="57" facs="tcp:0391401600:69"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
         <hi rend="italic">Littlewit, John Slenderbrain,</hi>
         and
         <hi rend="italic">
@@ -6061,7 +6198,7 @@ Keying and markup guidelines are available at the
         Friend
         <hi rend="italic">Holdfast</hi>
         writes me Word, that thou camest lately from
-        <hi rend="italic">Pensilvania,</hi>
+        <placeName><hi rend="italic">Pensilvania,</hi></placeName>
         how do all Friends there—
         </l>
         </sp>
@@ -6166,7 +6303,11 @@ Keying and markup guidelines are available at the
         <l>I know my Way without his Instructions: I hop'd to have been quiet, when once I had put on your odious Formality here.</l>
         </sp>
         <sp>
+        <speaker>Col.</speaker>
+        </sp>
         <pb n="58" facs="tcp:0391401600:70"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Col.</speaker>
         <l>Then thou wearest it out of Compulsion, not Choice, Friend?</l>
         </sp>
@@ -6181,7 +6322,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Col.</speaker>
         <l>
-        Mind her not; she hurteth not me—If thou wilt leave her alone with me, I will discuss some few Points with her, that may, perchance, soften her Stubborness, and melt her into Compliance.
+        Mind her not; she hurteth not me—If thou wilt leave her alone with me, I will discuss some few Points with her,
+        that may, perchance, soften her Stubborness, and melt her into Compliance.
         </l>
         </sp>
         <sp>
@@ -6196,11 +6338,10 @@ Keying and markup guidelines are available at the
         <speaker>Mrs. Lov.</speaker>
         <l>
         <stage>
-        [Catching hold of
-        <hi rend="italic">Prim,</hi>
-        he breaks loose and
-        <hi rend="italic">Exit.</hi>
-        ]
+        [<hi rend="italic">Catching hold of</hi>
+        Prim,
+        <hi rend="italic"> he breaks loose and</hi>
+        Exit.]
         </stage>
         What do you mean—to leave me with this old Enthusiastical Canter? Don't think, because I comply'd with your Formality, to impose your ridiculous Doctrine upon me.
         </l>
@@ -6252,9 +6393,8 @@ Keying and markup guidelines are available at the
         <l>
         <hi rend="italic">Fainwell!</hi>
         <stage>
-        [Enter old
-        <hi rend="italic">Prim.</hi>
-        ]
+        [<hi rend="italic">Enter old</hi>
+        Prim.]
         </stage>
         Oh I'm undone!
         <hi rend="italic">Prim</hi>
@@ -6271,7 +6411,8 @@ Keying and markup guidelines are available at the
         </sp>
         <sp>
         <speaker>Mrs. Lov.</speaker>
-        <l>Shrick out! I'll shriek and shriek again, cry Murder, Thieves, or any thing, to drown the Noise of that Eternal Babbler, if you leave me with him any longer.</l>
+        <l>Shrick out! I'll shriek and shriek again, cry Murder, Thieves, or any thing,
+        to drown the Noise of that Eternal Babbler, if you leave me with him any longer.</l>
         </sp>
         <sp>
         <speaker>Ob. Pr.</speaker>
@@ -6281,7 +6422,11 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Col.</speaker>
+        </sp>
         <pb n="59" facs="tcp:0391401600:71"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Col.</speaker>
         <l>No matter, I'll bring down her Stomach, I'll warrant thee—leave us, I pray thee.</l>
         </sp>
@@ -6325,9 +6470,8 @@ Keying and markup guidelines are available at the
         <hi rend="italic">Prim</hi>
         shall make the fourth.
         <stage>
-        [
-        <hi rend="italic">Prim</hi>
-        listening.
+        [Prim
+        <hi rend="italic">listening.</hi>
         </stage>
         </l>
         </sp>
@@ -6393,7 +6537,11 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Col.</speaker>
+        </sp>
         <pb n="60" facs="tcp:0391401600:72"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Col.</speaker>
         <l>
         Enough, enough that thou art sorry, he is no Pope,
@@ -6436,7 +6584,7 @@ Keying and markup guidelines are available at the
         <speaker>Col.</speaker>
         <l>
         No, Friend, I know him not—Pox take him, I wish he were in
-        <hi rend="italic">Pensilvania</hi>
+        <placeName><hi rend="italic">Pensilvania</hi></placeName>
         again, with all my Blood.
         <stage>[Aside.</stage>
         </l>
@@ -6524,11 +6672,16 @@ Keying and markup guidelines are available at the
         about, the same
         <hi rend="italic">Simon Pure</hi>
         that came from
-        <hi rend="italic">Pensilvania,</hi>
+        <placeName><hi rend="italic">Pensilvania,</hi></placeName>
         and sojourned in
-        <hi rend="italic">Bristol</hi>
+        <placeName><hi rend="italic">Bristol</hi></placeName>
         eleven Days; thou would'st not take my
+        </l>
+        </sp>
         <pb n="61" facs="tcp:0391401600:73"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
         Name from me, would'st thou?—till I have done with it.
         <stage>[Aside.</stage>
         </l>
@@ -6542,9 +6695,9 @@ Keying and markup guidelines are available at the
         <l>
         At what? at thy own Assurance?
         <stage>
-        [Going up to him,
-        <hi rend="italic">S. Pure</hi>
-        starts back.
+        [<hi rend="italic">Going up to him,</hi>
+        S. Pure
+        <hi rend="italic">starts back.</hi>
         </stage>
         </l>
         </sp>
@@ -6564,12 +6717,13 @@ Keying and markup guidelines are available at the
         </sp>
         <sp>
         <speaker>Col.</speaker>
-        <l>Hark thee, Friend, thy Sham will not take—Don't exert thy Voice, thou art too well-acquainted with Sathan to start at him, thou wicked Reprobate—What can thy Design be here?</l>
+        <l>Hark thee, Friend, thy Sham will not take—Don't exert thy Voice,
+        thou art too well-acquainted with Sathan to start at him, thou wicked Reprobate—What can thy Design be here?</l>
         </sp>
         <stage>
-        [Enter Servant, and gives
-        <hi rend="italic">Prim</hi>
-        a Letter.
+        [<hi rend="italic">Enter Servant, and gives</hi>
+        Prim
+        <hi rend="italic">a Letter.</hi>
         </stage>
         <sp>
         <speaker>Ob. Pr.</speaker>
@@ -6594,8 +6748,8 @@ Keying and markup guidelines are available at the
         This Letter sayeth that thou art better acquainted with that Prince of Darkness, than any here—Read that, I pray thee,
         <hi rend="italic">Simon.</hi>
         <stage>
-        [Gives it the
-        <hi rend="italic">Col.</hi>
+        [<hi rend="italic">Gives it the</hi>
+        Col.
         </stage>
         </l>
         </sp>
@@ -6603,15 +6757,14 @@ Keying and markup guidelines are available at the
         <speaker>Col.</speaker>
         <l>
         'Tis
-        <hi rend="italic">Freeman</hi>
-        's Hand—
+        <hi rend="italic">Freeman</hi>'s Hand—
         <stage>[Reads.]</stage>
         <hi rend="italic">There is a Design form'd to rob your House this Night, and cut your Throat, and for that purpose there is a Man disguised like a Quaker, who is to pass for one</hi>
         Simon Pure;
         <hi rend="italic">
         the Gang whereof I am one, tho' now resolv'd to rob no more has been at
         </hi>
-        Bristol,
+        <placeName>Bristol,</placeName>
         <hi rend="italic">
         one of them came up in the Coach with the Quaker; whose Name he hath taken, and from what he hath gathered from him,
         formed that Design, and did not doubt but he should impose so far upon you, as to make you turn out the real
@@ -6627,8 +6780,8 @@ Keying and markup guidelines are available at the
         <l>
         Dost thou hear this?
         <stage>
-        [To
-        <hi rend="italic">S. Pure.</hi>
+        [<hi rend="italic">To</hi>
+        S. Pure.
         </stage>
         </l>
         </sp>
@@ -6637,8 +6790,8 @@ Keying and markup guidelines are available at the
         <l>
         Yea, but it moveth me not; that, doubtless, is the Impostor.
         <stage>
-        [Pointing at the
-        <hi rend="italic">Col.</hi>
+        [<hi rend="italic">Pointing at the</hi>
+        Col.
         </stage>
         </l>
         </sp>
@@ -6646,7 +6799,16 @@ Keying and markup guidelines are available at the
         <speaker>Col.</speaker>
         <l>
         Ah! thou wicked one—now I consider thy Face I remember thou didst come up in the Leathern Convenience with me—thou hadst a black Bob-Wig
+        </l>
+        </sp>
+        <p>D</p>
+        <sp>
+        <l>on,</l>
+        </sp>
         <pb n="62" facs="tcp:0391401600:74"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head><!-- TODO: Start here -->
+        <sp>
+        <l>
         on, and a brown Camblet Coat with Brass Buttons—canst thou deny it, ha?
         </l>
         </sp>
@@ -6664,10 +6826,9 @@ Keying and markup guidelines are available at the
         Nay then, I'll have a Fling at him.
         <stage>[Aside.]</stage>
         I remember the Face of this Fellow at
-        <hi rend="italic">Bath—</hi>
-        Ay, this is he that picked my Lady
-        <hi rend="italic">Raffle</hi>
-        's Pocket upon the Grove—Don't you remember that the Mob pump'd you, Friend? This is the most notorious Rogue—
+        <hi rend="italic">Bath</hi>—Ay, this is he that picked my Lady
+        <hi rend="italic">Raffle</hi>'s Pocket upon the Grove—Don't you remember that the Mob pump'd you,
+        Friend? This is the most notorious Rogue—
         </l>
         </sp>
         <sp>
@@ -6676,7 +6837,8 @@ Keying and markup guidelines are available at the
         </sp>
         <sp>
         <speaker>Ob. Pr.</speaker>
-        <l>She will do thee no hurt, nor thou shalt do me none; therefore get thee about thy Business Friend, and leave thy wicked Course of Life, or thou may'st not come off so favourably every where.</l>
+        <l>She will do thee no hurt, nor thou shalt do me none; therefore get thee about thy Business Friend,
+        and leave thy wicked Course of Life, or thou may'st not come off so favourably every where.</l>
         </sp>
         <sp>
         <speaker>Col.</speaker>
@@ -6722,7 +6884,16 @@ Keying and markup guidelines are available at the
         My Spirit is greatly troubled, and something telleth me, that tho' I have wrought a good Work in converting this Maiden, this tender Maiden,
         yet my Labour will be in vain; for the Evil Spirit fighteth against her; and I see, yea I see with the Eyes of my inward Man,
         that Sathan will re-buffet her again, whenever I withdraw my self from her; and she will, yea, this very Damosel will return again to that Abomination
+        </l>
+        </sp>
+        <p>4</p>
+        <sp>
+        <l>from</l>
+        </sp>
         <pb n="63" facs="tcp:0391401600:75"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
         from whence I have retrieved her, as if it were, yea as if it were out of the Jaws of the Fiend—hum—
         </l>
         </sp>
@@ -6735,7 +6906,8 @@ Keying and markup guidelines are available at the
         <l>
         I must second him.
         <stage>[Aside.]</stage>
-        What meaneth this Struggling within me? I feel the Spirit resisting the Vanities of this World, but the Flesh is rebellious, yea the Flesh—I greatly fear the Flesh, and the Weakness thereof—hum—
+        What meaneth this Struggling within me? I feel the Spirit resisting the Vanities of this World,
+        but the Flesh is rebellious, yea the Flesh—I greatly fear the Flesh, and the Weakness thereof—hum—
         </l>
         </sp>
         <sp>
@@ -6783,7 +6955,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Col.</speaker>
         <l>
-        I am not disposed for thy Food, my Spirit longeth for more delicious Meat;—fain would I redeem this Maiden from the Tribe of Sinners, and break those Cords asunder wherewith she is bound—Hum—
+        I am not disposed for thy Food, my Spirit longeth for more delicious Meat;—fain would I redeem this Maiden from the Tribe of Sinners,
+        and break those Cords asunder wherewith she is bound—Hum—
         </l>
         </sp>
         <sp>
@@ -6792,8 +6965,13 @@ Keying and markup guidelines are available at the
         and from him only must hope for Consolation,—Hum—it also telleth me that I am a chosen Vessel to raise up Seed to the Faithful,
         and that thou must consent that we two be one Flesh according to the Word—hum—</l>
         </sp>
+        <p>D2</p>
         <sp>
+        <speaker>Ob. Pr.</speaker> 
+        </sp>
         <pb n="64" facs="tcp:0391401600:76"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Ob. Pr.</speaker>
         <l>
         What a Revelation is here? This is certainly Part of thy Vision, Friend, this is the Maiden's growing to thy Side;
@@ -6829,7 +7007,8 @@ Keying and markup guidelines are available at the
         <l>
         Admirably perform'd
         <stage>[Aside.]</stage>
-        And I will take thee in all spiritual Love for an Helpmate, yea, for the Wife of my Bosom,—and now, methinks—I feel a Longing,—yea, a longing, I say for the Consummation of thy Love,—yea, I do long exceedingly.
+        And I will take thee in all spiritual Love for an Helpmate, yea, for the Wife of my Bosom,—and now, methinks—I feel a Longing,—yea, a longing,
+        I say for the Consummation of thy Love,—yea, I do long exceedingly.
         </l>
         </sp>
         <sp>
@@ -6851,7 +7030,13 @@ Keying and markup guidelines are available at the
         I perceive the Spirit will hedge thee into the Flock of the Righteous,—Thou art a chosen Lamb—yea a chosen Lamb,
         and I will not push thee back—no, I will not, I say—no, thou shalt leap-a, and frisk-a, and skip-a, and bound, and bound,
         I say—yea, bound within the Fold of the righteous—yea even within thy Fold, my Brother—
+        </l>
+        <l>Fetch</l>
+        </sp>
         <pb n="65" facs="tcp:0391401600:77"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
         Fetch me the Pen and Ink,
         <hi rend="italic">Sarah—</hi>
         and my Hand shall confess its Obedience to the Spirit.
@@ -6862,9 +7047,9 @@ Keying and markup guidelines are available at the
         <l>I wish it were over.</l>
         </sp>
         <stage>
-        [Enter Mrs.
-        <hi rend="italic">Prim</hi>
-        with Pen and Ink.
+        [<hi rend="italic">Enter Mrs.</hi>
+        Prim
+        <hi rend="italic">with Pen and Ink.</hi>
         </stage>
         <sp>
         <speaker>Mrs. Love.</speaker>
@@ -6878,9 +7063,8 @@ Keying and markup guidelines are available at the
         <l>
         Here Friend, do thou write what the Spirit prompteth, and I will sign it.
         <stage>
-        [
-        <hi rend="italic">Col.</hi>
-        sits down.
+        [Col.
+        <hi rend="italic">sits down.</hi>
         </stage>
         </l>
         </sp>
@@ -6919,10 +7103,10 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <stage>
-        Enter
-        <hi rend="italic">Betty</hi>
-        running to Mrs.
-        <hi rend="italic">Lovely.</hi>
+        <hi rend="italic">Enter</hi>
+        Betty
+        <hi rend="italic">running to Mrs.</hi>
+        Lovely.
         </stage>
         <sp>
         <speaker>Betty.</speaker>
@@ -6933,8 +7117,8 @@ Keying and markup guidelines are available at the
         <l>
         Ruin'd past Redemption!
         <stage>
-        [Aside to
-        <hi rend="italic">Col.</hi>
+        [<hi rend="italic">Aside to</hi>
+        Col.
         </stage>
         </l>
         </sp>
@@ -6943,9 +7127,9 @@ Keying and markup guidelines are available at the
         <l>
         No, no, one Minute sooner had spoil'd all, but now—here is Company coming, Friend, give me the Paper.
         <stage>
-        [Going up to
-        <hi rend="italic">Prim</hi>
-        hastily.
+        [<hi rend="italic">Going up to</hi>
+        Prim
+        <hi rend="italic">hastily.</hi>
         </stage>
         </l>
         </sp>
@@ -6972,12 +7156,15 @@ Keying and markup guidelines are available at the
         <l>
         Look thee, Friend, I have brought these People to satisfy thee that I am not that Impostor which thou didest take me for,
         this is the Man that did drive the Leathern Conveniency, that brought me from
-        <hi rend="italic">Bristol,—</hi>
-        and this is.—
+        <placeName><hi rend="italic">Bristol,</hi></placeName>—and this is.—
         </l>
         </sp>
         <sp>
+        <speaker>Col.</speaker>
+        </sp>
         <pb n="66" facs="tcp:0391401600:78"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Col.</speaker>
         <l>Look ye, Friend, to save the Court the Trouble of examining Witnesses—I plead guilty,—ha, ha!</l>
         </sp>
@@ -6993,7 +7180,8 @@ Keying and markup guidelines are available at the
         <speaker>Col.</speaker>
         <l>
         No really, Sir, I only made bold with this Gentleman's Name;—but I here give it up safe and found,
-        it has done the Business which I had occasion for, and now I intend to wear my own, which shall be at his Service upon the same Occasion at any Time: ha, ha, ha!
+        it has done the Business which I had occasion for, and now I intend to wear my own,
+        which shall be at his Service upon the same Occasion at any Time: ha, ha, ha!
         </l>
         </sp>
         <sp>
@@ -7039,8 +7227,8 @@ Keying and markup guidelines are available at the
         <l>
         Who can that other Man be?
         <stage>
-        [To the
-        <hi rend="italic">Col.</hi>
+        [<hi rend="italic">To the</hi>
+        Col.
         </stage>
         </l>
         </sp>
@@ -7053,18 +7241,17 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <stage>
-        Enter Sir
-        <hi rend="italic">Philip, Tradelove, Periwinkle</hi>
-        and
-        <hi rend="italic">Freeman.</hi>
+        <hi rend="italic">Enter Sir</hi>
+        Philip, Tradelove, Periwinkle
+        <hi rend="italic">and</hi>
+        Freeman.
         </stage>
         <sp>
         <speaker>Free.</speaker>
         <l>
         <stage>
-        [To the
-        <hi rend="italic">Col.</hi>
-        ]
+        [<hi rend="italic">To the</hi>
+        Col.]
         </stage>
         Is all safe? did my Letter do you Service?
         </l>
@@ -7095,7 +7282,11 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Sir</speaker>
+        </sp>
         <pb n="67" facs="tcp:0391401600:79"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Sir Phil.</speaker>
         <l>What, is the Girl metamorphos'd?</l>
         </sp>
@@ -7186,7 +7377,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Ob. Prim.</speaker>
         <l>
-        Canst thou not—Now I think thou art a fine Fellow to be left Guardian to an Orphan—Thou shallow-brain'd Shuttlecock, he may be a Pick-pocket for ought thou dost know.
+        Canst thou not—Now I think thou art a fine Fellow to be left Guardian to an Orphan—Thou
+        shallow-brain'd Shuttlecock, he may be a Pick-pocket for ought thou dost know.
         </l>
         </sp>
         <sp>
@@ -7198,7 +7390,11 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Trade.</speaker>
+        </sp>
         <pb n="68" facs="tcp:0391401600:80"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Trade.</speaker>
         <l>
         Ay, ay, so we will. Did not you tell me the
@@ -7251,7 +7447,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Per.</speaker>
         <l>
-        Ay, ay, one thing or another over-reach'd you all—but I'll take care he shall never finger a Penny ofher Money, I warrant you,—Over-reach'd quoth'a? Why I might have been over-reach'd too, if I had had no more Wit: I don't know but this very Fellow may be him that was directed to me from
+        Ay, ay, one thing or another over-reach'd you all—but I'll take care he shall never finger a Penny of her Money, I warrant you,—Over-reach'd quoth'a?
+        Why I might have been over-reach'd too, if I had had no more Wit: I don't know but this very Fellow may be him that was directed to me from
         <hi rend="italic">Grand Cairo</hi>
         to-day. Ha, ha, ha.
         </l>
@@ -7267,9 +7464,9 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Col.</speaker>
         <l>
-        No, as you say, at that Time it did not, that was not my lucky Hour;—but hark ye, Sir, I must let you into one Secret—you may keep honest
-        <hi rend="italic">John Tradescant</hi>
-        's Coat on, for your Uncle Sir
+        No, as you say, at that Time it did not, that was not my lucky Hour;—but hark ye,
+        Sir, I must let you into one Secret—you may keep honest
+        <hi rend="italic">John Tradescant</hi>'s Coat on, for your Uncle Sir
         <hi rend="italic">Toby Periwinkle</hi>
         is not dead,—so the Charge of Mourning will be saved, ha, ha,—don't you remember Mr.
         <hi rend="italic">Pillage</hi>
@@ -7288,7 +7485,11 @@ Keying and markup guidelines are available at the
         </l>
         </sp>
         <sp>
+        <speaker>Per.</speaker>
+        </sp>
         <pb n="69" facs="tcp:0391401600:81"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
         <speaker>Per.</speaker>
         <l>Well, and what signifies that Lease, if my Uncle is not dead? ha! I am sure it was a Lease I sign'd.—</l>
         </sp>
@@ -7297,8 +7498,8 @@ Keying and markup guidelines are available at the
         <l>
         Ay, but it was a Lease for Life, Sir, and of this beautiful Tenement, I thank you.
         <stage>
-        [Taking hold of Mrs.
-        <hi rend="italic">Lovely.</hi>
+        [<hi rend="italic">Taking hold of Mrs.</hi>
+        Lovely.
         </stage>
         </l>
         </sp>
@@ -7354,7 +7555,8 @@ Keying and markup guidelines are available at the
         <sp>
         <speaker>Sir Phil.</speaker>
         <l>
-        Sir, the Gentleman is a fine Gentleman.—I am glad you have got a Person, Madam, who understands Dress and good Breeding,—I was resolved she should have a Husband of my chusing.
+        Sir, the Gentleman is a fine Gentleman.—I am glad you have got a Person, Madam, who understands Dress and good Breeding,—I
+        was resolved she should have a Husband of my chusing.
         </l>
         </sp>
         <sp>
@@ -7373,11 +7575,18 @@ Keying and markup guidelines are available at the
         <speaker>Col.</speaker>
         <l>
         Look ye, Gentlemen,—I am the Person who can give the best Account of my self, and I must beg Sir
-        <hi rend="italic">Philip</hi>
-        's Pardon, when I tell him that I have as much Aversion to what he calls Dress and Breeding, as I have to the Enemies of my Religion. I have had the Honour to serve his Majesty, and headed a Regiment of the bravest Fellows that ever push'd Bayonet in the Throat of a
+        <hi rend="italic">Philip</hi>'s Pardon, when I tell him that I have as much Aversion to what he calls Dress and Breeding,
+        as I have to the Enemies of my Religion. I have had the Honour to serve his Majesty,
+        and headed a Regiment of the bravest Fellows that ever push'd Bayonet in the Throat of a
         <hi rend="italic">Frenchman;</hi>
         and, notwithstanding the Fortune
+        </l>
+        <l>this</l>
+        </sp>      
         <pb n="70" facs="tcp:0391401600:82"/>
+        <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
+        <sp>
+        <l>
         this Lady brings me, whenever my Country wants my Aid, this Sword and Arm are at her Service.
         </l>
         <l>
@@ -7408,7 +7617,7 @@ Keying and markup guidelines are available at the
         <hi rend="italic">'Tis Liberty of Choice that sweetens Life,</hi>
         </l>
         <l>
-        <hi rend="italic">Makes the glad Husband, and the happy Wise.</hi>
+        <hi rend="italic">Makes the glad Husband, and the happy Wife.</hi>
         </l>
         </sp>
         </div>
@@ -7419,7 +7628,7 @@ Keying and markup guidelines are available at the
         <pb facs="tcp:0391401600:83"/>
         <head>
             EPILOGUE,<lb/>
-            <byline>Written by Mr. SEWELL.</byline><lb/> <!-- TODO: Fix lines -->
+            <byline>Written by Mr. SEWELL.</byline><lb/>
             Spoken by Mrs. <hi rend="italic">BƲLLOCK.</hi>
         </head>
         <l><hi rend="bold">W</hi><hi rend="italic">HAT new strange Ways our Modern</hi></l>
@@ -7451,8 +7660,9 @@ Keying and markup guidelines are available at the
         Bess<hi rend="italic">'s Ruff,</hi>
         </l>
         <l><hi rend="italic">Not that I'd take 'em—may do well enough;</hi></l>
-        <l>
         <pb facs="tcp:0391401600:84"/>
+        <head>EPILOGUE.</head>
+        <l>
         <hi rend="italic">No—my ambitious Spirit's far above</hi>
         </l>
         <l><hi rend="italic">Those little Tricks of Mercenary Love.</hi></l>
