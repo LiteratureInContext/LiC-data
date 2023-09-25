@@ -60,7 +60,6 @@
                      </persName>
                   </author>
                   <title type="main">The Rape of the Lock</title>
-                  <title type="sub"> An heroi-comical poem in five canto's</title>
                   <imprint>
                      <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
@@ -99,7 +98,11 @@
          </textDesc>
          <settingDesc>
             <setting>
-               <date from="1700" to="1750">Early Eighteenth Century</date>
+               <name type="tgn" key="1000003">Europe</name>
+               <name type="tgn" key="4003761">Western Europe</name>
+               <name type="tgn" key="7002445">England</name>
+               <name type="tgn" key="1100405">Hampton Court</name>
+               <time from="1700" to="1715">early eighteenth century</time>
             </setting>
          </settingDesc>
       </profileDesc>
@@ -163,12 +166,11 @@
       <front>
 
          <div type="frontispiece">
-            <figure>
                <pb n="[Frontispiece]" facs="PageImages/Pope-RL:frontispiece.jpg"/>
-               <graphic url="PageImages/Pope-RL:frontispiece.jpg" style="float:center" width="50%"/>
-            </figure>
-            <p><ref target="a00001" corresp="n00001">[frontispiece note]</ref></p>
-            <note xml:id="n00001" target="a00001" type="editorial" resp="#JOB">The frontispiece was
+            <floatingText> <body><p>graphic url="PageImages/Pope-RL:frontispiece.jpg" style="float:center" width="50%"/></p></body></floatingText>
+            
+            <p><ref target="frontispiece_" corresp="frontispiece">[Frontispiece]</ref></p>
+            <note xml:id="frontispiece" target="frontispiece_" type="editorial" resp="#JOB">The frontispiece was
                designed by Louis du Guernier (1677-1716) a well-known illustrator of the period; he
                also designed the images that appear before each of the five cantos. They were
                engraved by Claude du Bosc (1682-1745?); both men had been born in France but moved
@@ -186,7 +188,7 @@
                point to the shooting star that ascends at the end of Canto V. In the front lower
                right of the image, a satyr, with pointed ears and cloven hoofs, holds the kind of
                mask that women in the period sometimes wore in public; like many authors in the
-               period, Pope is playing on the homophone between "satyr," the sexually-agressive
+               period, Pope is playing on the homophone between "satyr," the sexually-aggressive
                half-human, half-animals of Greek mythology, and "satire," the literary form of which
                "The Rape of the Lock" is an example. Behind the characters is the facade of Hampton
                Court Palace, the royal home down the Thames from London where much of the action of
@@ -199,8 +201,7 @@
             <pb n="[Title Page]" facs="PageImages/Pope-RL:titlepage.jpg"/>
             <docTitle>
                <titlePart type="main">
-                  <ref target="title_" corresp="title">The<hi>
-                        <lb/> Rape</hi> of the <hi>Lock</hi></ref><note xml:id="title"
+                  <ref target="title_" corresp="title">The<hi rend="italic"> Rape</hi> of the <hi rend="italic">Lock</hi></ref><note xml:id="title"
                      target="title_" type="editorial" resp="#JOB"><p><graphic
                            url="notes/Pope-Jervis.jpg" style="float:right" width="400px"/>Alexander
                         Pope’s "The Rape of the Lock" is the most famous poem written in English in
@@ -285,11 +286,11 @@
             </docTitle>
             <lb/>
             <lb/>
-            <byline>Written by Mr. POPE.</byline>
+            <docAuthor>Written by Mr. POPE.</docAuthor>
             <lb/>
             <lb/>
             <epigraph>
-               <q xml:lang="lat">—<ref target="nomen_" corresp="nomen">A tonso est hoc nomen adepta
+               <quote xml:lang="lat">—<ref target="nomen_" corresp="nomen">A tonso est hoc nomen adepta
                      capillo.</ref>
                   <note xml:id="nomen" target="nomen_" type="editorial" resp="#UVAstudstaff">The full
                      quote, which comes from Book VIII of Ovid's <hi rend="italic"
@@ -304,9 +305,8 @@
                      attempted to drown her. Instead of drowning,Scylla was turned to a sea bird and
                      called Ciris, (cutter), being named after the lock that she cut off. See Ovid's
                         <hi rend="italic">Metamorphoses</hi>, translated by Anthony S. Kline,
-                     http://ovid.lib.virginia.edu/trans/Metamorph8.htm </note></q>
-               <lb/>
-               <bibl><hi rend="right">OVID.</hi></bibl>
+                     http://ovid.lib.virginia.edu/trans/Metamorph8.htm </note></quote>
+               <bibl><persName>OVID.</persName></bibl>
             </epigraph>
             <lb/>
             <docImprint>
@@ -317,8 +317,6 @@
             </docImprint>
          </titlePage>
 
-         <lb/>
-         <lb/>
          <pb n="[Epistle.1]" facs="PageImages/Pope-RL:epistle.i.jpg"/>
          <div type="epistle">
             <head> TO <lb/>
@@ -381,8 +379,8 @@
                difficult Terms. </p>
             <p>The <hi rend="italic">Rosicrucians</hi> are the People I must bring You
                acquainted with. The best Account I know of them is in the French Book call'd
-                  <foreign xml:lang="fre"><ref target="Gabalis_" corresp="Gabalis">Le Comte de
-                     Gabalis</ref>,</foreign>
+                  <ref target="Gabalis_" corresp="Gabalis">Le Comte de
+                     Gabalis</ref>,
                <note xml:id="Gabalis" target="Gabalis_" type="gloss"><hi rend="italic">The Count of Gabala</hi> was written by Nicolas-Pierre-Henri of Montfaucon de Villars, a French cleric, and published in 1670. It is an odd book. In it, an anonymous narrator encounters the Comte de Gabalis, who teaches the narrator about the occult, including various beliefs associated with the Rosicrucians. The Count introduces such things as the Sylphs of the Air, the Undines of the Water, the Gnomes of the Earth and the Salamanders of Fire. It is entirely possible that de Villars is satirizing occult sciences, which had a vogue in seventeenth century Europe, as absurd or incompatible with orthodox religion. But it is hard to be sure; this may be an example of a satire that does not make its intentions clear enough.</note> which <pb
                   n="[Epistle.4]" facs="PageImages/Pope-RL:epistle.iv.jpg"/> both in its Title and
                Size is so like a <hi rend="italic">Novel,</hi> that many of the fair Sex have read
@@ -415,7 +413,7 @@
                this Occasion of assuring You that I am. with the truest Esteem, </p>
             <closer>
                <salute>
-                  <hi rend="italic">Madam</hi>
+                  <hi rend="italic">Madam,</hi>
                   <lb/>
                   <hi rend="italic">Your Most Obedient</hi>
                   <lb/>
@@ -423,7 +421,7 @@
                </salute>
                <lb/>
                <lb/>
-               <signed rend="italic">
+               <signed>
                   <name>A. POPE.</name>
                   <lb/>
                </signed>
@@ -1389,7 +1387,7 @@
                <l n="118"> Sent up in Vapours to the <hi rend="italic">Baron</hi>'s Brain </l>
                <l n="119">New Stratagems, the radiant Lock to gain.</l>
                <l n="120">Ah cease rash Youth! desist e'er 'tis too late,</l>
-               <l n="121"> Fear the just Gods, and think of <note rend="star" anchored="true"/>
+               <l n="121"> Fear the just Gods, and think of
                   <hi rend="italic"><ref target="Scylla_" corresp="Scylla">Scylla</ref></hi>
                   <note xml:id="Scylla" target="Scylla_" type="gloss">Nisus, king of Megara, was at war
                      against Crete, but it was decreed by fate that his kingdom would be safe as
