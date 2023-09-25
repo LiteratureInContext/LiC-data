@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="pope-rape-lock">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main"> The Rape of the Lock </title>
-
             <author>
                <persName type="lcnaf" key="n79084387">
                   <name>
@@ -21,24 +21,19 @@
                   </name>
                </persName>
             </editor>
-
-            <respStmt>
+        <respStmt>
                <resp> Creation of machine-readable version, transcription, correction, editorial
                   commentary, and markup </resp>
-               <name ref="editors.xml#UVAstudstaff">students and staff of the University of
+               <name ref="editors.xml#UVAstudstaff">Oxford Computing Services and students and staff of the University of
                   Virginia</name>
-               <name>Lou Burnard</name>
                <name ref="editors.xml#JOB">John O'Brien</name>
                <name ref="editors.xml#SB">Sara Brunstetter</name>
             </respStmt>
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
          </titleStmt>
-
-
          <publicationStmt>
             <publisher>Literature in Context</publisher>
-
             <address>
                <addrLine>University of Virginia Department of English</addrLine>
                <addrLine>P. O. Box 400121</addrLine>
@@ -47,20 +42,13 @@
                <addrLine>jobrien@virginia.edu</addrLine>
                <addrLine>lic.open.anthology@gmail.com</addrLine>
             </address>
-
-
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
                   Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
                   License </licence>
             </availability>
          </publicationStmt>
-
-
          <sourceDesc>
-            <bibl>
-               <extent/>
-            </bibl>
             <biblStruct>
                <monogr>
                   <author>
@@ -72,14 +60,15 @@
                      </persName>
                   </author>
                   <title type="main">The Rape of the Lock</title>
-                  <title type="sub">An heroi-comical poem in five canto's</title>
                   <imprint>
                      <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
+                     <publisher>B. Lintott</publisher>
+                     <date when="1714"></date>
                      <note resp="editors.xml#JOB"> Pope published a short, two-canto version of this
                         poem in 1712. He then reworked and republished the poem in a five-canto
-                        version in 1714, which is the work that is most read today, and that we reproduce here. The main difference                               between the two is that he added what he called the "apparatus" of fairies and sylphs that surround the human                          actors in the poem. This text follows the first edition of the 1714 version. The
+                        version in 1714, which is the work that is most read today, and that we reproduce here. The main difference                               between the two is that he added what he called the "apparatus" of fairies and sylphs that surround the human actors in the poem. This text follows the first edition of the 1714 version. The
                         digital text was originally produced by Oxford University Computing Services
                         (13 Banbury Road, Oxford), for the Oxford Text Archive, and uploaded by Lou
                         Burnard. Students and faculty have proofread the text and provided
@@ -109,7 +98,11 @@
          </textDesc>
          <settingDesc>
             <setting>
-               <date from="1700" to="1744">Early Eighteenth Century</date>
+               <name type="tgn" key="1000003">Europe</name>
+               <name type="tgn" key="4003761">Western Europe</name>
+               <name type="tgn" key="7002445">England</name>
+               <name type="tgn" key="1100405">Hampton Court</name>
+               <time from="1700" to="1715">early eighteenth century</time>
             </setting>
          </settingDesc>
       </profileDesc>
@@ -173,12 +166,8 @@
       <front>
 
          <div type="frontispiece">
-            <figure>
                <pb n="[Frontispiece]" facs="PageImages/Pope-RL:frontispiece.jpg"/>
-               <graphic url="PageImages/Pope-RL:frontispiece.jpg" style="float:center" width="50%"/>
-            </figure>
-            <p><ref target="a00001" corresp="n00001">[frontispiece note]</ref></p>
-            <note xml:id="n00001" target="a00001" type="editorial" resp="#JOB">The frontispiece was
+            <head><ref target="frontispiece_" corresp="frontispiece">Frontispiece</ref> <note xml:id="frontispiece" target="frontispiece_" type="editorial" resp="#JOB"><graphic url="PageImages/Pope-RL:frontispiece.jpg" style="float:center" width="50%"/>The frontispiece was
                designed by Louis du Guernier (1677-1716) a well-known illustrator of the period; he
                also designed the images that appear before each of the five cantos. They were
                engraved by Claude du Bosc (1682-1745?); both men had been born in France but moved
@@ -196,21 +185,20 @@
                point to the shooting star that ascends at the end of Canto V. In the front lower
                right of the image, a satyr, with pointed ears and cloven hoofs, holds the kind of
                mask that women in the period sometimes wore in public; like many authors in the
-               period, Pope is playing on the homophone between "satyr," the sexually-agressive
+               period, Pope is playing on the homophone between "satyr," the sexually-aggressive
                half-human, half-animals of Greek mythology, and "satire," the literary form of which
                "The Rape of the Lock" is an example. Behind the characters is the facade of Hampton
                Court Palace, the royal home down the Thames from London where much of the action of
                the poem takes place. Pope clearly intended the images and the poem to be read
                together, a feature that is not possible in most modern reproductions of the poem,
                which rely on the poetic text alone.</note>
-
+            </head>
          </div>
          <titlePage>
             <pb n="[Title Page]" facs="PageImages/Pope-RL:titlepage.jpg"/>
             <docTitle>
                <titlePart type="main">
-                  <ref target="title_" corresp="title">The<hi>
-                        <lb/> Rape</hi> of the <hi>Lock</hi></ref><note xml:id="title"
+                  <ref target="title_" corresp="title">The<hi rend="italic"> Rape</hi> of the <hi rend="italic">Lock</hi></ref><note xml:id="title"
                      target="title_" type="editorial" resp="#JOB"><p><graphic
                            url="notes/Pope-Jervis.jpg" style="float:right" width="400px"/>Alexander
                         Pope’s "The Rape of the Lock" is the most famous poem written in English in
@@ -295,28 +283,27 @@
             </docTitle>
             <lb/>
             <lb/>
-            <byline>Written by Mr. POPE.</byline>
+            <docAuthor>Written by Mr. POPE.</docAuthor>
             <lb/>
             <lb/>
             <epigraph>
-               <q xml:lang="lat">—<ref target="nomen_" corresp="nomen">A tonso est hoc nomen adepta
+               <quote>—<ref target="nomen_" corresp="nomen">A tonso est hoc nomen adepta
                      capillo.</ref>
                   <note xml:id="nomen" target="nomen_" type="editorial" resp="#UVAstudstaff">The full
                      quote, which comes from Book VIII of Ovid's <hi rend="italic"
                         >Metamorphoses</hi>, should read, "Ciris et, a tonso est hoc nomen adepta
-                     capillo": she acquired the name from the cutting of the hair. Ovid's story,
+                     capillo": "She acquired the name from the cutting of the hair." Ovid's story,
                      first published in 8 CE, goes like this. Nisus was the King of Alcathous and he
-                     had a lock of purple hair on hiscrown that guaranteed the safety of his
+                     had a lock of purple hair on his crown that (somehow) guaranteed the safety of his
                      kingdom. Scylla, his daughter, fell in love with King Minos, who was conquering
-                     this kingdom, and in order to gain his favor, Scylla cut off the lock of her
+                     the kingdom, and in order to gain his favor, Scylla cut off the lock of her
                      father's hair. But, disgusted with her disloyalty, Minos left by ship. As
                      Scylla swam after Minos, King Nisos, having been transformed into a sea eagle,
-                     attempted to drown her. Instead of drowning,Scylla was turned to a sea bird and
-                     called Ciris, (cutter), being named after the lock that she cut off. See Ovid's
+                     attempted to drown her. Instead of drowning, Scylla was turned to a sea bird and
+                     called Ciris, (i.e. "cutter"), being named after the lock that she cut off. See Ovid's
                         <hi rend="italic">Metamorphoses</hi>, translated by Anthony S. Kline,
-                     http://ovid.lib.virginia.edu/trans/Metamorph8.htm </note></q>
-               <lb/>
-               <bibl><hi rend="right">OVID.</hi></bibl>
+                     http://ovid.lib.virginia.edu/trans/Metamorph8.htm </note></quote>
+               <bibl><persName>OVID.</persName></bibl>
             </epigraph>
             <lb/>
             <docImprint>
@@ -327,14 +314,11 @@
             </docImprint>
          </titlePage>
 
-         <lb/>
-         <lb/>
          <pb n="[Epistle.1]" facs="PageImages/Pope-RL:epistle.i.jpg"/>
          <div type="epistle">
             <head> TO <lb/>
                <ref target="arabella_" corresp="arabella">Mrs. ARABELLA FERMOUR.</ref>
                <lb/>
-               <lb> </lb>
                <note xml:id="arabella" target="arabella_" type="editorial" resp="#JOB">Arabella Fermor
                   (1696-1737; image credit: Victoria and Albert Museum) <graphic
                      url="https://s3.amazonaws.com/lic-assets-staging/Pope/Arabella-Fermor.jpg"
@@ -353,8 +337,6 @@
                   of Troy or Lucrece. This letter, published with the much-enlarged 1714 edition of
                   the poem, can be read in part as Pope's attempt to mollify her.</note>
                <lb/>
-               <lb/>
-               <lb> </lb>
             </head>
             <salute>MADAM,</salute>
             <p>
@@ -394,8 +376,8 @@
                difficult Terms. </p>
             <p>The <hi rend="italic">Rosicrucians</hi> are the People I must bring You
                acquainted with. The best Account I know of them is in the French Book call'd
-                  <foreign xml:lang="fre"><ref target="Gabalis_" corresp="Gabalis">Le Comte de
-                     Gabalis</ref>,</foreign>
+                  <ref target="Gabalis_" corresp="Gabalis">Le Comte de
+                     Gabalis</ref>,
                <note xml:id="Gabalis" target="Gabalis_" type="gloss"><hi rend="italic">The Count of Gabala</hi> was written by Nicolas-Pierre-Henri of Montfaucon de Villars, a French cleric, and published in 1670. It is an odd book. In it, an anonymous narrator encounters the Comte de Gabalis, who teaches the narrator about the occult, including various beliefs associated with the Rosicrucians. The Count introduces such things as the Sylphs of the Air, the Undines of the Water, the Gnomes of the Earth and the Salamanders of Fire. It is entirely possible that de Villars is satirizing occult sciences, which had a vogue in seventeenth century Europe, as absurd or incompatible with orthodox religion. But it is hard to be sure; this may be an example of a satire that does not make its intentions clear enough.</note> which <pb
                   n="[Epistle.4]" facs="PageImages/Pope-RL:epistle.iv.jpg"/> both in its Title and
                Size is so like a <hi rend="italic">Novel,</hi> that many of the fair Sex have read
@@ -427,16 +409,16 @@
                done. But let its Fortune be what it will, mine is happy enough, to have given me
                this Occasion of assuring You that I am. with the truest Esteem, </p>
             <closer>
-               <salute>
-                  <hi rend="italic">Madam</hi>
+               <signed>
+                  <hi rend="italic">Madam,</hi>
                   <lb/>
                   <hi rend="italic">Your Most Obedient</hi>
                   <lb/>
                   <hi rend="italic">Humble Servant.</hi>
-               </salute>
+               </signed>
                <lb/>
                <lb/>
-               <signed rend="italic">
+               <signed>
                   <name>A. POPE.</name>
                   <lb/>
                </signed>
@@ -1402,7 +1384,7 @@
                <l n="118"> Sent up in Vapours to the <hi rend="italic">Baron</hi>'s Brain </l>
                <l n="119">New Stratagems, the radiant Lock to gain.</l>
                <l n="120">Ah cease rash Youth! desist e'er 'tis too late,</l>
-               <l n="121"> Fear the just Gods, and think of <note rend="star" anchored="true"/>
+               <l n="121"> Fear the just Gods, and think of
                   <hi rend="italic"><ref target="Scylla_" corresp="Scylla">Scylla</ref></hi>
                   <note xml:id="Scylla" target="Scylla_" type="gloss">Nisus, king of Megara, was at war
                      against Crete, but it was decreed by fate that his kingdom would be safe as

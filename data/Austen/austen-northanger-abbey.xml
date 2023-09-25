@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="austen-northanger-abbey">
 
 <teiHeader xml:lang="en">
@@ -32,6 +33,8 @@
     <name ref="editors.xml#UVAstudents staff">Students and Staff of The University of Virginia</name>
    
 </respStmt>
+  <sponsor/>
+  <funder>National Endowment for the Humanities</funder>
 </titleStmt>
 
 <publicationStmt>
@@ -64,25 +67,28 @@
           <surname>Austen</surname>
         </persName>
       </author>
-  <editor><persName>R. W. Chapman</persName></editor>
   <title>Northanger Abbey</title>
   <imprint>
     <pubPlace>
-      <placeName type="tgn" key="7011931">Oxford</placeName>
+      <placeName type="tgn" key="7011781">London</placeName>
     </pubPlace>
-    <publisher>Clarendon Press</publisher>
-    <date>1926</date>
-    <note>Creation of machine-readable version and the first markup was performed by the University of Virginia Library Electronic Text Center in 1994. David Seamon checked the tagging in 1995. Lorrie Chisolm added the original TEI header in 2005. John Ivor Carlson converted the sgml file to TEI in 2005. </note>
-  </imprint>
+    <publisher>John Murray, Albemarle Street</publisher>
+    <date>1817</date>
+    <note>The first edition of <hi rend="italic">Northanger Abbey</hi> was published posthumously in 1817, together with <hi rend="italic">Persuasion</hi>. This digital edition is sourced from the 1926 Clarendon Press edition, noted below. Title page is sourced from the <ref target="https://janeaustens.house/northanger-abbey/">Jane Austen House Museum</ref></note></imprint>
+      <imprint>
+        <pubPlace>
+          <placeName type="tgn" key="7011931">Oxford</placeName>
+        </pubPlace>
+        <publisher>Clarendon Press</publisher>
+        <date>1926</date>
+        <note>Creation of machine-readable version and the first markup was performed by the University of Virginia Library Electronic Text Center in 1994. David Seamon checked the tagging in 1995. Lorrie Chisolm added the original TEI header in 2005. John Ivor Carlson converted the sgml file to TEI in 2005. </note>
+      </imprint>
     </monogr>
   </biblStruct>
 </sourceDesc>
 </fileDesc>
 
   
-  
-
-
   <encodingDesc>
     
     <projectDesc>
@@ -142,37 +148,56 @@
   </encodingDesc>
   
 
-<profileDesc>
-<creation>
-<date>1798-1817</date>
-</creation>
-  <textDesc n="novel">
-    <channel mode="w">print</channel>
-    <constitution type="single"/>
-    <derivation type="original"/>
-   <domain/>
-    <factuality type="fiction"/>
-   <interaction/>
-    <preparedness/>
-    <purpose type="entertain" degree="high"/>
-   <purpose type="inform" degree="low"/>   
-  </textDesc>
-  <settingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="en">English</language>
+    </langUsage>
     
-    <setting>
+    <creation/>
+    
+    <textDesc n="novel">
+      <channel mode="w">print</channel>
+      <constitution type="single"/>
+      <derivation type="original"/>
+      <domain/>
+      <factuality type="fiction"/>
+      <interaction/>
+      <preparedness/>
+      <purpose type="entertain" degree="high"/>
+      <purpose type="inform" degree="low"/>   
+    </textDesc>
+    
+    <settingDesc>
       
-      <name type="tgn" key="7011197">Bath, England</name>
-      <time from="1800" to="1815">Early 19th Century</time>
-     
-    </setting>
-  </settingDesc>
-<textClass>
-
-</textClass>
-</profileDesc>
-
+      <setting>
+        
+        <name type="tgn" key="7011197">Bath, England</name>
+        <time from="1800" to="1815">Early 19th Century</time>
+        
+      </setting>
+    </settingDesc>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2023" who="editors.xml#TH"
+      >Updated for schema compliance, added titlepage, added details about first edition for timeline data.</change>
+    <change when="9-23-2023" who="editors.xml#JOB">began formatting and adding notes from students</change>
+  </revisionDesc>
 </teiHeader>
 <text>
+  <front>
+    <pb n="[TP]" facs="pageImages/tp.jpg"/><titlePage><docTitle><titlePart>NORTHANGER ABBEY:<lb/>AND<lb/>PERSUASION.<lb/><lb/></titlePart></docTitle>
+    <docAuthor>BY THE AUTHOR OF "PRIDE AND PREJUDICE,"<lb/><lb/>"MANSFIELD-PARK," &amp;c.<lb/><lb/></docAuthor>
+    <titlePart>WITH A BIOGRAPHICAL NOTICE OF THE<lb/>AUTHOR.<lb/><lb/></titlePart>
+    <titlePart>IN FOUR VOLUMES.<lb/></titlePart>
+    <titlePart>VOL. I.<lb/><lb/></titlePart>
+    <docImprint>
+      <pubPlace>
+      <placeName type="tgn" key="7011781">LONDON:<lb/></placeName>
+      </pubPlace>
+      <publisher>JOHN MURRAY, ALBEMARLE-STREET.<lb/></publisher>
+      <date>1817</date>
+    </docImprint>
+  </titlePage></front>
   <body>
   <pb n="13"/>
 <div type="part" n="1">
@@ -186,17 +211,16 @@ Her situation in life, the character of her father and
 mother, her own person and disposition, were all equally
 against her. Her father was a clergyman, without being
 neglected, or poor, and a very respectable man, though
-his name was Richard [richard issue?]--; and he had never been handsome.
-He had a considerable independence, besides two good
-livings --; and he was not in the least addicted to locking
-up his daughters. Her mother was a woman of useful
+his name was Richard--; and he had never been handsome.
+He had a considerable independence, besides <ref target="two_good_livings_" corresp="two_good_livings">two good
+  livings</ref><note xml:id="two_good_livings" target="two_good_livings_">That is, Richard Morland receives income from his work as the pastor of two separate parishes. Clergymen in the Church of England in this period would be granted a "living," sometimes also called a "benefice," to support themselves, and each such living was associated with a particular parish. The money could come from the hierarchy of the Church of England, but was also sometimes in the gift of the most powerful local landowner in a given area. A clergyman generally held such a living, which guaranteed an annual income, until he retired or died. As Richard Morland does, a successful clergyman could hold more than two livings at one time--usually in adjacent or nearby parishes--and thereby enhance their income. In this case, the clergyman might hire a younger, less well-established minister to be his "curate," performing some of the duties in one parish while he was doing his responsibilities in the other.</note> --; and he was not in the least addicted to locking up his daughters. Her mother was a woman of useful
 plain sense, with a good temper, and, what is more
 remarkable, with a good constitution. She had three
 sons before Catherine was born; and instead of dying in
 bringing the latter into the world, as any body might
 expect, she still lived on --; lived to have six children more
 --; to see them growing up around her, and to enjoy
-excellent health herself. A family of ten children will be
+excellent health <ref target="herself_" corresp="herself">herself</ref><note xml:id="herself" target="herself_">The jokey tone of the phrase "as any body might expect," reminds the reader of how typical it was for mothers of heroines in novels to have died in childbirth by the time the story began. But the joke also reminds us of the grim reality that maternal mortality was quite high in this period, so that for Mrs Morland to have survived childbirth ten times and remain in "excellent health" was no small accomplishment.</note>. A family of ten children will be
 always called a fine family, where there are heads and
 arms and legs enough for the number; but the Morlands
 had little other right to the word, for they were in general
@@ -215,8 +239,7 @@ Indeed she had no taste for a garden; and if she
 gathered flowers at all, it was chiefly for the pleasure of
 mischief --; at least so it was conjectured from her always
 preferring those which she was forbidden to take.--; Such
-were her propensities --; her abilities were quite as extraordinary.
-She never could learn or understand any thing
+were her propensities --; her abilities were quite as extraordinary. She never could learn or understand any thing
 before she was taught; and sometimes not even then,
 for she was often inattentive, and occasionally stupid.
 Her mother was three months in teaching her only to
@@ -248,11 +271,9 @@ quarrelsome, and very kind to the little ones, with few
 interruptions of tyranny; she was moreover noisy and
 wild, hated confinement and cleanliness, and loved
 nothing so well in the world as rolling down the green
-slope at the back of the house.
+slope at the back of the house.</p>
 
-Such was Catherine Morland at ten. At fifteen, appearances
-
-
+<p>Such was Catherine Morland at ten. At fifteen, appearances
   <pb n="15"/>
 were mending; she began to curl her hair and long
 for balls; her complexion improved, her features were
@@ -266,14 +287,10 @@ personal improvement.
 "Catherine grows quite a good-looking
 girl, --; she is almost pretty to day,"
 
-were words
-which caught her ears now and then; and how welcome
-were the sounds! To look <hi>almost</hi> pretty, is an acquisition
-of higher delight to a girl who has been looking plain the
-first fifteen years of her life, than a beauty from her cradle
-can ever receive.
+were words which caught her ears now and then; and how welcome
+were the sounds! To look <hi>almost</hi> pretty, is an acquisition of higher delight to a girl who has been looking plain the first fifteen years of her life, than a beauty from her cradle can ever receive.</p>
 
-Mrs. Morland was a very good woman, and wished to
+<p>Mrs. Morland was a very good woman, and wished to
 see her children every thing they ought to be; but her
 time was so much occupied in lying-in and teaching the
 little ones, that her elder daughters were inevitably left
@@ -288,41 +305,41 @@ had never any objection to books at all. But from fifteen
 to seventeen she was in training for a heroine; she read
 all such works as heroines must read to supply their
 memories with those quotations which are so serviceable
-and so soothing in the vicissitudes of their eventful lives.
-From Pope, she learnt to censure those who
+and so soothing in the vicissitudes of their eventful lives.</p>
+<p>From Pope, she learnt to censure those who</p>
 
- "bear about the mockery of woe."
-From Gray, that
- "Many a flower is born to blush unseen,
- "And waste its fragrance on the desert air."
+  <l>"bear about the mockery of woe."</l>
+<p>From Gray, that</p>
+  <l>"Many a flower is born to blush unseen,</l>
+  <l>"And waste its fragrance on the desert air."</l>
 
-From Thompson, that
+<p>From Thompson, that</p>
 
- --; "It is a delightful task
- "To teach the young idea how to shoot."
+  <l>--; "It is a delightful task</l>
+  <l>"To teach the young idea how to shoot."</l>
 
 
   <pb n="16"/>
 
-And from Shakspeare she gained a great store of
-information --; amongst the rest, that
+<p>And from Shakspeare she gained a great store of
+information --; amongst the rest, that</p>
 
- --;"Trifles light as air,
- "Are, to the jealous, confirmation strong,
- "As proofs of Holy Writ."
+  <l>--;"Trifles light as air,</l>
+  <l>Are, to the jealous, confirmation strong,</l>
+  <l>"As proofs of Holy Writ."</l>
 
-That
+<p>That</p>
 
- "The poor beetle, which we tread upon,
- "In corporal sufferance feels a pang as great
- "As when a giant dies."
+  <l> "The poor beetle, which we tread upon,</l> 
+  <l>"In corporal sufferance feels a pang as great</l>
+  <l>"As when a giant dies."</l>
 
-And that a young woman in love always looks
+  <p>And that a young woman in love always looks</p>
 
- --; "like Patience on a monument
- "Smiling at Grief."
+  <l>--; "like Patience on a monument</l>
+  <l>"Smiling at Grief."</l>
 
-So far her improvement was sufficient --; and in many
+<p>So far her improvement was sufficient --; and in many
 other points she came on exceedingly well; for though
 she could not write sonnets, she brought herself to read
 them; and though there seemed no chance of her throwing
@@ -346,15 +363,15 @@ not even a baronet. There was not one family among
 their acquaintance who had reared and supported a boy
 accidentally found at their door --; not one young man
 whose origin was unknown. Her father had no ward,
-and the squire of the parish no children.
-But when a young lady is to be a heroine, the perverseness
+and the squire of the parish no children.</p>
+<p>But when a young lady is to be a heroine, the perverseness
 of forty surrounding families cannot prevent her.
 
 
   <pb n="17"/>
 Something must and will happen to throw a hero in her
-way.
-Mr. Allen, who owned the chief of the property about
+way.</p>
+<p>Mr. Allen, who owned the chief of the property about
 Fullerton, the village in Wiltshire where the Morlands
 lived, was ordered to Bath for the benefit of a gouty constitution;--;
 and his lady, a good-humoured woman, fond
