@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-distress">
    
    <!--TEI Header BEGINS-->
@@ -190,6 +191,7 @@
          <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
          <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
          <change when="2019-09-19" who="editors.xml#TH">Commented out titlepage</change>
+         <change when="2023-05-19" who="editors.xml#TH">Updated note style</change>
       </revisionDesc>
       
       
@@ -531,8 +533,8 @@
                <l n="222">In her embrace she sees her daughter die.</l>
             </lg>
             <lg >
-               <l rend="indent" n="223"><ref target="a1" corresp="n1">*</ref>
-                  <note xml:id="n1" target="a1" type="authorial"><p>This Verse to the End is ther
+               <l rend="indent" n="223"><ref target="_auth1" corresp="auth1">*</ref>
+                  <note xml:id="auth1" target="_auth1" type="authorial"><p>This Verse to the End is ther
                      Work of another Hand. [Wheatley's note.]</p></note> "The queen of all her family bereft,</l>
                <l n="224">"Without or husband, son, or daughter left,</l>
                <l n="225">"Grew stupid at the shock. The passing air</l>

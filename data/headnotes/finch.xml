@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="headnote-finch">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Headnote for Anne Finch</title>
+                <author>
+                     <name><forename>James</forename><surname>West</surname></name>
+                     <name><forename>Tonya</forename><surname>Howe</surname></name>
+                </author>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal ref="editors.xml#JOB">John O'Brien</principal>
                 <principal ref="editors.xml#TH">Tonya Howe</principal>
@@ -25,7 +28,9 @@
                 <date>2018-07-30</date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <listRelation>
+                    <relation type="headnote" passive="#headnote-finch" active="#finch-nightingale"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="remarks-concerning-the-savages">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Remarks Concerning the Savages of North-America</title>
+                <author>
+                    <persName type="lcnaf" key="n79043402">
+                        <name>
+                            <forename>Benjamin</forename>
+                            <surname>Franklin</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name>
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp> Transcription, correction, editorial commentary, and markup </resp>
+                    <name ref="editors.xmlAJB"> Austin Benson
+                    </name>
+                </respStmt>
+                <funder> National Endowment for the Humanities </funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher> Literature in Context </publisher>
+                <address>
+                    <addrLine> University of Virginia Department of English </addrLine>
+                    <addrLine> Bryan Hall 219 </addrLine>
+                    <addrLine> PO Box 400121 </addrLine>
+                    <addrLine> Charlottesville, VA 22904-4121 </addrLine>
+                    <addrLine> 434-924-7105 </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported Licence </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <!-- this markup is based on a digital edition from Founders Online, 
+                    https://founders.archives.gov/documents/Franklin/01-41-02-0280. 
+                    The digital text lists two editions, an autograph copy by Franklin,
+                    and the first edition of the printed track. It is unclear which edition
+                    the digital text is based on. I will supply the imprint description
+                    provided by the digital edition, but the editors here might want to 
+                    supply additional information -->
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <forename>Benjamin</forename>
+                            <surname>Franklin</surname>
+                            <addName></addName>
+                        </author>
+                        <title> REMARKS CONCERNING THE SAVAGES OF NORTH-AMERICA </title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7617217"> Passy </placeName>
+                            </pubPlace>
+                            <publisher> Passy Press </publisher>
+                            <date when="1784">1784</date>
+                            <note></note>
+                        </imprint>
+                        <extent/>
+                        <biblScope/>
+                        <!-- the above two elements are included in case a physical edition
+                            of the text is consulted at a later date. -->
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="essay">
+                <channel mode="w">Print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fact"/>
+                <interaction/>
+                <preparedness/>
+                <purpose type="inform" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7617217">Passy</name>
+                    <time when="1784">1784</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature of the 18th century. This project is funded by the National Endowment
+                    for the Humanities and developed by faculty at The University of Virginia and
+                    Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com. </p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+
+        <!-- blank space for insertion of the <revisionDesc> element -->
+
+        <revisionDesc>
+            <change when="2022-07-15" who="editors"></change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <!-- & and &c. are rendered as 'and' and 'etc.', respectively, and marked 
+            with a comment indicating the original reading -->
+        <front>
+            <pb n="[TP]"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart> REMARKS <lb/> CONCERNING THE SAVAGES <lb/> OF NORTH-AMERICA
+                    </titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <p> SAVAGES we call them, because their manners differ from ours, which we think the
+                    Perfection of Civility; they think the same of theirs. </p>
+                <p> Perhaps if we could examine the manners of different Nations with Impartiality,
+                    we should find no People so rude as to be without Rules of Politeness; nor any
+                    so polite as not to have some remains of Rudeness. </p>
+                <p> The <hi rend="italic">Indian</hi> Men, when young, are Hunters and Warriors; when old, Counsellors; for
+                    all their Government is by the Counsel or Advice of the Sages; there is no
+                    Force, there are no Prisons, no Officers to compel Obedience, or inflict
+                    Punishment. Hence they generally study Oratory; the best Speaker having the most
+                    Influence. The <hi rend="italic">Indian</hi> Women till the Ground, dress the Food, nurse and bring up
+                    the Children, and<!-- & --> preserve and<!-- & --> hand down to Posterity the
+                    Memory of Public Transactions. These Employments of Men and Women are accounted
+                    natural and honorable. Having few Artificial Wants, they have abundance of
+                    Leisure for Improvement by Conversation. Our laborious manner of Life compared
+                    with theirs, they esteem slavish and base; and the Learning on which we value
+                    ourselves; they regard as frivolous and useless. An Instance of this occurred at
+                    the Treaty of Lancaster in Pennsylvania, Anno 1744, between the Government of
+                    Virginia and<!-- & --> the Six Nations. After the principal Business was
+                    settled, the Commissioners from Virginia acquainted the <hi rend="italic">Indian</hi>s by a Speech,
+                    that there was at Williamsburg a College with a Fund for Educating <hi rend="italic">Indian</hi> Youth,
+                    and that if the Chiefs of the Six-Nations would send down half a dozen of their
+                    sons to that College, the Government would take Care that they should be well
+                    provided for, and instructed in all the Learning of the white People. It is one
+                    of the <hi rend="italic">Indian</hi> Rules of Politeness not to answer a public Proposition the same
+                    day that it is made; they think it would be treating it as a light Matter; and
+                    that they show it Respect by taking time to consider it, as of a Matter
+                    important. They therefore deferred their Answer till the day following; when
+                    their Speaker began by expressing their deep Sense of the Kindness of the
+                    Virginia Government, in making them that Offer; for we know, says he, that you
+                    highly esteem the kind of Learning taught in those Colleges, and that the
+                    Maintenance of our Young Men while with you, would be very expensive to you. We
+                    are convinced therefore that you mean to do us Good by your Proposal, and we
+                    thank you heartily. But you who are wise must know, that different Nations have
+                    different Conceptions of things; and you will therefore not take it amiss, if
+                    our Ideas of this Kind of Education happen not to be the same with yours. We
+                    have had some Experience of it: Several of our Young People were formerly
+                    brought up at the Colleges of the Northern Provinces; they were instructed in
+                    all your Sciences; but when they came back to us they were bad Runners, ignorant
+                    of every means of living in the Woods, unable to bear either Cold or Hunger,
+                    knew neither how to build a Cabin, take a Deer, or kill an Enemy, spoke our
+                    Language imperfectly; were therefore neither fit for Hunters, Warriors, or
+                    Counsellors; they were totally good for nothing. We are however not the less
+                    obliged by your kind Offer, tho’ we decline accepting it; and to show our
+                    grateful Sense of it, if the Gentlemen of Virginia will send us a dozen of their
+                    Sons, we will take great Care of their Education, instruct them in all we know,
+                    and make Men of them. </p>
+                <p> Having frequent Occasions to hold public Councils, they have acquired great
+                    Order and Decency in conducting them. The old Men sit in the foremost Ranks, the
+                    Warriors in the next, and the Women and Children in the hindmost. The Business
+                    of the Women is to take exact notice of what passes, imprint it in their
+                    Memories, for they have no Writing, and communicate it to their Children. They
+                    are the Records of the Council, and they preserve Tradition of the Stipulations
+                    in Treaties a hundred Years back, which when we compare with our Writings we
+                    always find exact. He that would speak, rises. The rest observe a profound
+                    Silence. When he has finish’d and sits down, they leave him five or six Minutes
+                    to recollect, that if he has omitted any thing he intended to say, or has any
+                    thing to add, he may rise again and deliver it. To interrupt another, even in
+                    common Conversation, is reckoned highly indecent. How different this is from the
+                    Conduct of a polite British House of Commons, where scarce a day passes without
+                    some Confusion that makes the Speaker hoarse in calling to order; and how
+                    different from the mode of Conversation in many polite Companies of Europe,
+                    where if you do not deliver your Sentence with great Rapidity, you are cut off
+                    in the middle of it by the impatient Loquacity of those you converse with,
+                    and<!-- & --> never suffer’d to finish it. </p>
+                <p> The Politeness of these Savages in Conversation is indeed carried to excess,
+                    since it does not permit them to contradict, or deny the Truth of what is
+                    asserted in their Presence. By this means they indeed avoid Disputes, but then
+                    it becomes difficult to know their Minds, or what Impression you make upon them.
+                    The Missionaries who have attempted to convert them to Christianity, all
+                    complain of this as one of the great Difficulties of their Mission. The <hi rend="italic">Indian</hi>s
+                    hear with Patience the Truths of the Gospel explained to them, and give their
+                    usual Tokens of Assent and Approbation: you would think they were convinced. No
+                    such Matter. It is mere Civility. </p>
+                <p> A Suedish Minister having assembled the Chiefs of the Sasquehanah <hi rend="italic">Indian</hi>s, made
+                    a Sermon to them, acquainting them with the principal historical Facts on which
+                    our Religion is founded, such as the Fall of our first Parents by Eating an
+                    Apple, the Coming of Christ to repair the Mischief, his Miracles and Suffering,
+                    etc.<!-- &c. --> When he had finished, an <hi rend="italic">Indian</hi> Orator stood up to thank him.
+                    What you have told us, says he, is all very good. It is indeed bad to eat
+                    Apples. It is better to make them all into Cyder. We are much obliged by your
+                    Kindness in coming so far to tell us those things which you have heard from your
+                    Mothers. In return I will tell you some of those we have heard from ours. </p>
+                <p> In the Beginning our Fathers had only the Flesh of Animals to subsist on, and if
+                    their Hunting was unsuccessful, they were starving. Two of our young Hunters
+                    having killed a Deer, made a Fire in the Woods to broil some Parts of it. When
+                    they were about to satisfy their Hunger, they beheld a beautiful young Woman
+                    descend from the Clouds, and seat herself on that Hill which you see yonder
+                    among the blue Mountains. They said to each other, it is a Spirit that perhaps
+                    has smelt our broiling Venison, and<!-- & --> wishes to eat of it: let us offer
+                    some to her. They presented her with the Tongue: She was pleased with the Taste
+                    of it, and<!-- & --> said, your Kindness shall be rewarded. Come to this Place
+                    after thirteen Moons, and you shall find something that will be of great Benefit
+                    in nourishing you and your Children to the latest Generations. They did so, and
+                    to their Surprise found Plants they had never seen before, but which from that
+                    ancient time have been constantly cultivated among us to our great Advantage.
+                    Where her right Hand had touch’d the Ground, they found Maize; where her left
+                    Hand had touch’d it, they found Kidney-beans; and where her Backside had sat on
+                    it, they found Tobacco. The good Missionary, disgusted with this idle Tale,
+                    said, what I delivered to you were sacred Truths; but what you tell me is mere
+                    Fable, Fiction and <!-- & --> Falsehood. The <hi rend="italic">Indian</hi> offended, reply’d, my
+                    Brother, it seems your Friends have not done you Justice in your Education; they
+                    have not well instructed you in the Rules of common Civility. You saw that we
+                    who understand and practise those Rules, believed all your Stories; why do you
+                    refuse to believe ours? </p>
+                <p> When any of them come into our Towns, our People are apt to croud round them,
+                    gaze upon them, and incommode them where they desire to be private; this they
+                    esteem great Rudeness, and the Effect of want of Instruction in the Rules of
+                    Civility and good Manners. We have, say they, as much Curiosity as you, and when
+                    you come into our Towns we wish for Opportunities of looking at you; but for
+                    this purpose we hide ourselves behind Bushes where you are to pass, and never
+                    intrude ourselves into your Company. </p>
+                <p> Their Manner of entring one anothers Villages has likewise its Rules. It is
+                    reckon’d uncivil in travelling Strangers to enter a Village abruptly, without
+                    giving Notice of their Approach. Therefore as soon as they arrive within
+                    hearing, they stop and hollow, remaining there till invited to enter. Two old
+                    Men usually come out to them, and lead them in. There is in every Village a
+                    vacant Dwelling, called the Strangers House. Here they are placed, while the old
+                    Men go round from Hut to Hut acquainting the Inhabitants that Strangers are
+                    arrived who are probably hungry and weary; and every one sends them what he can
+                    spare of Victuals and Skins to repose on. When the Strangers are refresh’d,
+                    Pipes and<!-- & --> Tobacco are brought; and then, but not before, Conversation
+                    begins, with Enquiries who they are, whither bound, what News, etc.<!-- &c. -->
+                    and it usually ends with Offers of Service, if the Strangers have Occasion of
+                    Guides or any Necessaries for continuing their Journey; and nothing is exacted
+                    for the Entertainment. </p>
+                <p> The same Hospitality, esteemed among them as a principal Virtue, is practiced by
+                    private Persons; of which Conrad Weiser, our Interpreter, gave me the following
+                    Instance. He had been naturaliz’d among the Six-Nations, and spoke well the
+                    Mohock Language. In going thro’ the <hi rend="italic">Indian</hi> Country, to carry a Message from our
+                    Governor to the Council at Onondaga, he call’d at the Habitation of Canassetego,
+                    an old Acquaintance, who embraced him, spread Furs for him to sit on, placed
+                    before him some boiled Beans and Venison, and mixed some Rum and Water for his
+                    Drink. When he was well refresh’d, and had lit his Pipe, Canassetego began to
+                    converse with him, ask’d how he had fared the many Years since they had seen
+                    each other, whence he then came, what occasioned the Journey, etc.<!-- &c. -->
+                    etc.<!-- &c. --> Conrad answered all his Questions; and when the Discourse began
+                    to flag, the <hi rend="italic">Indian</hi>, to continue it, said, Conrad, you have liv’d long among the
+                    white People, and know something of their Customs; I have been sometimes at
+                    Albany, and have observed that once in seven Days, they shut up their Shops and
+                    assemble all in the great House; tell me, what is it for? what do they do there?
+                    They meet there, says Conrad, to hear and<!-- & --> learn good things. I do not
+                    doubt, says the <hi rend="italic">Indian</hi>, that they tell you so; they have told me the same; but I
+                    doubt the Truth of what they say, and<!-- & --> I will tell you my Reasons. I
+                    went lately to Albany to sell my Skins, and<!-- & --> buy Blankets, Knives,
+                    Powder, Rum, etc.<!-- &c. --> You know I used generally to deal with Hans
+                    Hanson; but I was a little inclined this time to try some other Merchants.
+                    However I called first upon Hans, and ask’d him what he would give for Beaver;
+                    He said he could not give more than four Shillings a Pound; but, says he, I
+                    cannot talk on Business now; this is the Day when we meet together to learn good
+                    things, and I am going to the Meeting. So I thought to myself since I cannot do
+                    any Business to day, I may as well go to the Meeting too; and I went with him.
+                    There stood up a Man in black, and began to talk to the People very angrily. I
+                    did not understand what he said; but perceiving that he looked much at me,
+                    and<!-- & --> at Hanson, I imagined he was angry at seeing me there; so I went
+                    out, sat down near the House, struck Fire and<!-- & --> lit my Pipe; waiting
+                    till the Meeting should break up. I thought too, that the Man had mentioned
+                    something of Beaver, and I suspected it might be the Subject of their Meeting.
+                    So when they came out I accosted any [my] Merchant; well Hans, says I, I hope
+                    you have agreed to give more than four Shillings a Pound. No, says he, I cannot
+                    give so much. I cannot give more than three Shillings and six Pence. I then
+                    spoke to several other Dealers, but they all sung the same Song, three
+                    and<!-- & --> six Pence, three and<!-- & --> six Pence. This made it clear to me
+                    that my Suspicion was right; and that whatever they pretended of Meeting to
+                    learn good things, the real Purpose was to consult, how to cheat <hi rend="italic">Indian</hi>s in the
+                    Price of Beaver. Consider but a little, Conrad, and you must be of my Opinion.
+                    If they met so often to learn good things, they would certainly have learnt some
+                    before this time. But they are still ignorant. You know our Practice. If a white
+                    Man in travelling thro’ our Country, enters one of our Cabins, we all treat him
+                    as I treat you; we dry him if he is wet, we warm him if he is cold, and give him
+                    Meat and<!-- & --> Drink that he may allay his Thirst and Hunger, and<!-- & -->
+                    we spread soft Furs for him to rest and<!-- & --> sleep on: We demand nothing in
+                    return*. But if I go into a white Man’s House at Albany, and ask for Victuals
+                    and <!-- & --> Drink, they say, where is your Money? and if I have none, they
+                    say, Get out, you <hi rend="italic">Indian</hi> Dog. You see they have not yet learnt those little good
+                    things, that we need no Meetings to be instructed in, because our Mothers taught
+                    them to us when we were Children. And therefore, it is impossible their
+                    Meetings, should be as they say for any such purpose, or have any such Effect;
+                    they are only to contrive the Cheating of <hi rend="italic">Indian</hi>s in the Price of Beaver. </p>
+            </div>
+        </body>
+    </text>
+</TEI>

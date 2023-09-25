@@ -2,7 +2,7 @@
 
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="headnote-behn">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -17,19 +17,27 @@
                 <principal ref="editors.xml#TH">Tonya Howe</principal>
                 <principal ref="editors.xml#CR">Christine Ruotolo</principal>
                 <respStmt>
-                    <resp>Headnote</resp>
+                    <resp>Headnote by</resp>
                     <name ref="editors.xml#JOB">John O'Brien</name>
-                </respStmt>               
+                </respStmt>
             </titleStmt>
             <editionStmt>
                 <edition n="1.0"/>
             </editionStmt>
             <publicationStmt>
-                <publisher></publisher>
+                <publisher/>
                 <date>2019-5-26</date>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digital.</p>
+                <bibl><author>
+                    <name>                               
+                        <forename>John</forename>
+                        <surname>O'Brien</surname>
+                    </name>            
+                </author></bibl>
+                <listRelation>
+                    <relation type="headnote" passive="#headnote-behn" active="#behn-rover #behn-oroonoko"/>
+                </listRelation>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -38,38 +46,140 @@
             </editorialDecl>
         </encodingDesc>
         <revisionDesc>
-            <change type="reminder">Please be sure to update the publication date when changes are made here!</change>
-            <change when="2019-01-18" who="editors.xml#TH">ADDED: Tonya Howe, John O'Brien, Christine Ruotolo, Winona Salesky, Ally Freeland, Amy Ridderhof, James West, Sabrina Koumoin, Sara Brunstetter</change>
-            <change when="2019-05-11" who="editors.xml#TH">Added occupation, affiliation, and notes to contributor details.</change>
+            <change type="reminder">Please be sure to update the publication date when changes are
+                made here!</change>
+            <change when="2019-01-18" who="editors.xml#TH">ADDED: Tonya Howe, John O'Brien,
+                Christine Ruotolo, Winona Salesky, Ally Freeland, Amy Ridderhof, James West, Sabrina
+                Koumoin, Sara Brunstetter</change>
+            <change when="2019-05-11" who="editors.xml#TH">Added occupation, affiliation, and notes
+                to contributor details.</change>
             <change when="2019-05-19" who="editors.xml#TH">Added new contributors</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <p><graphic
-                url="https://upload.wikimedia.org/wikipedia/commons/3/30/Aphra_Behn_by_Peter_Lely_ca._1670.jpg"
-                style="float:right" width="400px"/> 
-                Aphra Behn (c1640-1689) was perhaps the most versatile, and was certainly one of the most important writers of the late seventeenth century in English. She wrote and translated poetry, translated works of science, published long works of fiction, and many authored many plays. It was as a playwright that Behn was probably most successful in her own lifetime. Between 1670 and 1689, a couple dozen of her plays were staged in London; some of them continue to be revived even now, most notably <hi rend="italic">The Rover.</hi></p>
-                
-            <p>We know very little of Aphra Behn’s life before she started her writing career in London in the early 1670s. She never wrote a memoir (which is not surprising; people did not do that kind of thing in her era), and relatively few letters have survived. If she kept any kind of journal or diary, it has long since been lost. The lack of public information about her life before the age of about thirty makes it clear, though, that she did not come from a wealthy or prominent family. Scholars, working largely with parish records and surviving government documents, have pieced together some things. But often these are simply informed guesses rather than facts that we can know for certain. The best biography is Janet Todd’s <hi rend="italic">The Secret Life of Aphra Behn</hi>, and what I note below relies on Todd’s work.</p>
-                
-            <p><hi rend="italic">When and where was she born? who were her parents?</hi> We cannot be sure. The best research we have indicated that was probably the person who is recorded in a baptismal record as “Eaffrey” Johnson, born in December 1640 to a Bartholomew and Elizabeth Johnson from Bishopsbourne, a town in Kent near Canterbury. The Johnsons were not a wealthy family, but they were not desperately poor, either; Bartholomew worked as a barber and at one time was in charge of supervising the poor in a parish in Canterbury.</p>
-                
-            <p><hi rend="italic">How did she get the name Behn? and how did she pronounce it?</hi> Again, we are not sure, though the name seems to have come from a marriage she had in the 1650s or 1660s. She may have married a man called Johann Behn, who shows up in some business and shipping records of this period. No one has found a marriage certificate. The marriage does not seem to have lasted all that long; maybe he died, since she seems to be referred to as a widow in a single letter. We are not sure as to how she pronounced her last name: like “ben”? like “bean”? like “bane”? opinions vary.</p>
-                
-            <p><hi rend="italic">Did she really go to Surinam in the 1660s?</hi>  Maybe, though the evidence for that is the narrator’s  claim in <hi rend="italic">Oroonoko</hi>. Which might be true (Janet Todd believes her, and a lot of the circumstantial detail in <hi rend="italic">Oroonoko</hi> would be hard to invent if a person had not been there), but there is much in <hi rend="italics">Oroonoko</hi> that is obvious fabrication, so she might be making her trip there up as well and be relating information that she got at second hand. The story purports to be a true, first-hand account of events in Surinam. But, in addition to inventing the story of the African prince, Behn also seems to have invented the idea that her father was going to be the lieutenant governor of the colony, as the narrator of that story claims; there is no chance that her father was ever in a position to get such a significant job, and he may very well have been dead by the time of her (purported) sojourn in Surinam. There is is no independent evidence, like a government report or a ship’s manifest, that places her in Surinam, so we cannot be certain one way or another.</p>
-                
-            <p><hi rend="italic">Did she really work as a spy? Yes, this we know.</hi> In the 1660s, Aphra Behn was sent to Antwerp as a spy on behalf of the English government; her mission (which involved trying to turn an English man there against the Dutch) seems to have failed. She used the code name “Astrea” (a name associated in mythology with the goddess of justice), a name that she continued to use as a poetic name throughout her career. Behn may have done some other intelligence work for the government at other times in her 20s. We do not know why she stopped her mission, but she complained about not being paid, and at least one other person disparaged her work. She may have not been cut out to be a spy.</p>
-                
-            <p><hi rend="italic">When do we start to know unambiguous facts about her?</hi> In the early 1670s, Behn started working in the theater as a playwright for the Duke’s Company, one of the two theater troupes licensed to perform in London. From that point on until her death in 1689, we know a lot about her professional life as a writer from the plays that she staged, the books that she published, and the things that people said about her. In these decades, Behn was one of the two leading playwrights on the London stage; the other was John Dryden. In an era when many plays were written by amateurs, aristocrats who would not want to be seen as exerting themselves for money (Katherine Philips and William Wycherley would be examples of this) Behn and Dryden were the professional playwrights, each under contract (and therefore under pressure) to produce new works for the repertoire; each supporting him or herself on their earnings. Like Dryden, Behn also wrote and translated poetry. Behn also published fiction, something that Dryden did not do, and her work is an important precursor of the eighteenth-century novel in English.</p>
-                
-            <p>Trying to make a living as a writer was difficult. It was hard then as it is now, for playwrights to follow the movement of audience taste, and hard to know if the many hours of effort that go into writing and staging a play would be met with success until the moment the production was staged. A hit could make a fair amount of money (authors would be paid out of gate receipts and could also get money for selling the rights to the print copy of the script), but a flop could be a costly waste of time and effort on everyone’s part. The period when Behn was writing was also a politically contentious time, and playwrights could be subject to censorship if they offended the wrong person. Writers hoped to get support from wealthy patrons, which is why almost all works of this period are prefaced by dedications, letters of extravagant praise aimed at people who the author is hoping will provide money or at least convince their wealthy friends to buy the book or attend the play. Behn was very prolific, and successful in the sense that she had many plays staged and many works published and read, but she had to keep writing to maintain herself and never seems to have made a lot of money.</p>
-                
-            <p>It was particularly hard being a professional woman writer, and Behn seems to have blazed a trail here; there is probably no other woman writing in English who we could call a professional before she started working in the theater in the 1670s. It was considered immodest for a woman to put herself forward as a public figure in this period, which is why many women who wrote expressed reluctance at their work being published; a lot of their work remains in manuscript. Male critics of the eighteenth century often contrasted Behn, the public writer, with Katherine Philips, the model of the retired literary lady; the contrast between “Astrea” and “Orinda” was usually cast in terms that favored the latter for her gentility and modesty. Behn was attacked for being a professional, sometimes compared with prostitutes. Here a contrast with John Dryden becomes stark. Dryden was awarded with university degrees, became the poet laureate, and was in his later years considered a kind of sage, while Behn struggled for income and respectability.</p>
-                
-            <p>One final note about Behn. In many ways, her career strikes us modern, and her prose works in particular have a lot of features that now seem to pave the way for the modern novel. But Behn was also a very conservative, traditional person in many ways. She was a staunch supporter of the Stuart monarchy and of the absolutist form of government that the Stuart kings Charles I and James II believed in. She was a woman of her time, trying to make a career as a writer and public figure in an era when this was very challenging for anyone, and especially difficult for a women from a modest background. Dramatist, poet, novelist, translator, professional: Aphra Behn left us one of the richest bodies of work of any writer of the seventeenth century.</p>
-                
-                
+                    url="https://upload.wikimedia.org/wikipedia/commons/3/30/Aphra_Behn_by_Peter_Lely_ca._1670.jpg"
+                    style="float:right" width="400px"/> Aphra Behn (c1640-1689) was perhaps the most
+                versatile, and was certainly one of the most important writers of the late
+                seventeenth century in English. She wrote and translated poetry, translated works of
+                science, published long works of fiction, and many authored many plays. It was as a
+                playwright that Behn was probably most successful in her own lifetime. Between 1670
+                and 1689, a couple dozen of her plays were staged in London; some of them continue
+                to be revived even now, most notably <hi rend="italic">The Rover.</hi></p>
+
+            <p>We know very little of Aphra Behn’s life before she started her writing career in
+                London in the early 1670s. She never wrote a memoir (which is not surprising; people
+                did not do that kind of thing in her era), and relatively few letters have survived.
+                If she kept any kind of journal or diary, it has long since been lost. The lack of
+                public information about her life before the age of about thirty makes it clear,
+                though, that she did not come from a wealthy or prominent family. Scholars, working
+                largely with parish records and surviving government documents, have pieced together
+                some things. But often these are simply informed guesses rather than facts that we
+                can know for certain. The best biography is Janet Todd’s <hi rend="italic">The
+                    Secret Life of Aphra Behn</hi>, and what I note below relies on Todd’s work.</p>
+
+            <p><hi rend="italic">When and where was she born? who were her parents?</hi> We cannot
+                be sure. The best research we have indicated that was probably the person who is
+                recorded in a baptismal record as “Eaffrey” Johnson, born in December 1640 to a
+                Bartholomew and Elizabeth Johnson from Bishopsbourne, a town in Kent near
+                Canterbury. The Johnsons were not a wealthy family, but they were not desperately
+                poor, either; Bartholomew worked as a barber and at one time was in charge of
+                supervising the poor in a parish in Canterbury.</p>
+
+            <p><hi rend="italic">How did she get the name Behn? and how did she pronounce it?</hi>
+                Again, we are not sure, though the name seems to have come from a marriage she had
+                in the 1650s or 1660s. She may have married a man called Johann Behn, who shows up
+                in some business and shipping records of this period. No one has found a marriage
+                certificate. The marriage does not seem to have lasted all that long; maybe he died,
+                since she seems to be referred to as a widow in a single letter. We are not sure as
+                to how she pronounced her last name: like “ben”? like “bean”? like “bane”? opinions
+                vary.</p>
+
+            <p><hi rend="italic">Did she really go to Surinam in the 1660s?</hi> Maybe, though the
+                evidence for that is the narrator’s claim in <hi rend="italic">Oroonoko</hi>. Which
+                might be true (Janet Todd believes her, and a lot of the circumstantial detail in
+                    <hi rend="italic">Oroonoko</hi> would be hard to invent if a person had not been
+                there), but there is much in <hi rend="italics">Oroonoko</hi> that is obvious
+                fabrication, so she might be making her trip there up as well and be relating
+                information that she got at second hand. The story purports to be a true, first-hand
+                account of events in Surinam. But, in addition to inventing the story of the African
+                prince, Behn also seems to have invented the idea that her father was going to be
+                the lieutenant governor of the colony, as the narrator of that story claims; there
+                is no chance that her father was ever in a position to get such a significant job,
+                and he may very well have been dead by the time of her (purported) sojourn in
+                Surinam. There is is no independent evidence, like a government report or a ship’s
+                manifest, that places her in Surinam, so we cannot be certain one way or
+                another.</p>
+
+            <p><hi rend="italic">Did she really work as a spy? Yes, this we know.</hi> In the 1660s,
+                Aphra Behn was sent to Antwerp as a spy on behalf of the English government; her
+                mission (which involved trying to turn an English man there against the Dutch) seems
+                to have failed. She used the code name “Astrea” (a name associated in mythology with
+                the goddess of justice), a name that she continued to use as a poetic name
+                throughout her career. Behn may have done some other intelligence work for the
+                government at other times in her 20s. We do not know why she stopped her mission,
+                but she complained about not being paid, and at least one other person disparaged
+                her work. She may have not been cut out to be a spy.</p>
+
+            <p><hi rend="italic">When do we start to know unambiguous facts about her?</hi> In the
+                early 1670s, Behn started working in the theater as a playwright for the Duke’s
+                Company, one of the two theater troupes licensed to perform in London. From that
+                point on until her death in 1689, we know a lot about her professional life as a
+                writer from the plays that she staged, the books that she published, and the things
+                that people said about her. In these decades, Behn was one of the two leading
+                playwrights on the London stage; the other was John Dryden. In an era when many
+                plays were written by amateurs, aristocrats who would not want to be seen as
+                exerting themselves for money (Katherine Philips and William Wycherley would be
+                examples of this) Behn and Dryden were the professional playwrights, each under
+                contract (and therefore under pressure) to produce new works for the repertoire;
+                each supporting him or herself on their earnings. Like Dryden, Behn also wrote and
+                translated poetry. Behn also published fiction, something that Dryden did not do,
+                and her work is an important precursor of the eighteenth-century novel in
+                English.</p>
+
+            <p>Trying to make a living as a writer was difficult. It was hard then as it is now, for
+                playwrights to follow the movement of audience taste, and hard to know if the many
+                hours of effort that go into writing and staging a play would be met with success
+                until the moment the production was staged. A hit could make a fair amount of money
+                (authors would be paid out of gate receipts and could also get money for selling the
+                rights to the print copy of the script), but a flop could be a costly waste of time
+                and effort on everyone’s part. The period when Behn was writing was also a
+                politically contentious time, and playwrights could be subject to censorship if they
+                offended the wrong person. Writers hoped to get support from wealthy patrons, which
+                is why almost all works of this period are prefaced by dedications, letters of
+                extravagant praise aimed at people who the author is hoping will provide money or at
+                least convince their wealthy friends to buy the book or attend the play. Behn was
+                very prolific, and successful in the sense that she had many plays staged and many
+                works published and read, but she had to keep writing to maintain herself and never
+                seems to have made a lot of money.</p>
+
+            <p>It was particularly hard being a professional woman writer, and Behn seems to have
+                blazed a trail here; there is probably no other woman writing in English who we
+                could call a professional before she started working in the theater in the 1670s. It
+                was considered immodest for a woman to put herself forward as a public figure in
+                this period, which is why many women who wrote expressed reluctance at their work
+                being published; a lot of their work remains in manuscript. Male critics of the
+                eighteenth century often contrasted Behn, the public writer, with Katherine Philips,
+                the model of the retired literary lady; the contrast between “Astrea” and “Orinda”
+                was usually cast in terms that favored the latter for her gentility and modesty.
+                Behn was attacked for being a professional, sometimes compared with prostitutes.
+                Here a contrast with John Dryden becomes stark. Dryden was awarded with university
+                degrees, became the poet laureate, and was in his later years considered a kind of
+                sage, while Behn struggled for income and respectability.</p>
+
+            <p>One final note about Behn. In many ways, her career strikes us modern, and her prose
+                works in particular have a lot of features that now seem to pave the way for the
+                modern novel. But Behn was also a very conservative, traditional person in many
+                ways. She was a staunch supporter of the Stuart monarchy and of the absolutist form
+                of government that the Stuart kings Charles I and James II believed in. She was a
+                woman of her time, trying to make a career as a writer and public figure in an era
+                when this was very challenging for anyone, and especially difficult for a women from
+                a modest background. Dramatist, poet, novelist, translator, professional: Aphra Behn
+                left us one of the richest bodies of work of any writer of the seventeenth
+                century.</p>
+
+
         </body>
     </text>
 </TEI>

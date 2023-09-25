@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="gray-elegy"> 
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">An Elegy Wrote in a Country Church Yard</title>
+            <author>
+               <persName type="lcnaf" key="n79089789">
+                  <name>
+                     <forename>Thomas</forename> 
+                     <surname>Gray</surname>
+                  </name>
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               
+               <resp>Transcription, correction, editorial commentary, and markup </resp>
+              
+               <name>The Text Creation Partnership and Students and Staff of The University of Virginia</name>
+              
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>University of Virginia</addrLine>
+               <addrLine>Department of English</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA 22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                     <title>An Elegy Wrote in a Country Church Yard</title>
+               </analytic>
+               <monogr>
+                  <author>
+                     <persName type="lcnaf" key="n79089789">
+                        <name>
+                           <forename>Thomas</forename>
+                           <surname>Gray</surname>
+                        </name>
+                     </persName>
+                  </author>
+                  <title>An Elegy Wrote in a Country Church Yard</title>
+               <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>R. Dodsley</publisher>
+                     <date when="1751">1751</date>
+                     <note>
+                        <p>This is the first printed edition of Gray's poem; later editions are sometimes titled "An Elegy Written in a Country Church Yard." This pamphlet version was published at roughly the same time in a slightly different version in the <hi rend="italic">Magazine of Magazines</hi>, a periodical that had obtained a copy of the poem in manuscript. (Such copies had been circulating among Gray's friends for several years.) Gray asked his friend Horace Walpole to get a print edition issued by a more respectable London publisher since an authorized publication in a periodical was not the way that he wanted his work to appear in the world. At Gray's request, Walpole enlisted the prestigious London publisher Robert Dodsley, who rushed the text into print to beat the periodical version.</p>
+                        <p>Our edition is built from the version produced by the Text Creation Partnership. We have changed the long "s" in the original to a modern "s." Page images from this first edition are from the University of Virginia Special Collections Library.</p>
+                     </note>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="entertain" degree="medium"/>
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               
+               
+               <time from="1750" to="1799">Late 18th Century</time>
+   
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+        
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2023-08-05" who="editors.xml#JOB"
+            >Adapted TCP edition for Literature in Context use.</change>
+         <change when="0000-00-00" who="xxxx"/>
+      </revisionDesc>
+
+   </teiHeader>
+
+
+   <text>
+
+      <front>
+         <titlePage><pb/>
+            <docTitle>           
+               <titlePart><ref target="title_" corresp="title">AN ELEGY WROTE IN A Country Church Yard.</ref><note resp="editors.xml#JOB" xml:id="title" target="title_"><p>This is probably the most well-known and beloved poem in English from the eighteenth century. It was immediately popular with readers when it was first printed in 1751, and has been reprinted (usually under the later, revised title "An Elegy Written in a Country Churchyard"), anthologized, recited, translated, memorized, studied, parodied, and quoted ever since. The poem's publication kicked off an entire movement of what has been known as "graveyard poetry," poems centered around a figure--usually a man--walking quietly through a graveyard, musing on his place in the cosmos and mortality. Thomas Gray (1716-1771) did not write a great deal of poetry, and he published only a handful of poems in his own lifetime; he led a fairly quiet life as an academic in Cambridge. But the "Elegy" has been enough to ensure Gray a lasting place in English literary history.</p>
+                  <lb/>
+                  <graphic url="https://lic-assets-staging.s3.amazonaws.com/Gray/pageImages/elegy-title-page.jpg" style="float:right" width="400px"/>
+                  <lb/>
+               <p>What made Gray's "Elegy" stand out then and makes it significant now? Perhaps the most important clue is in the word "elegy" itself. An elegy is a poem of praise for the a dead person, and poets of this period very frequently wrote elegies to commemorate a death. Sometimes these were elegies for a famous person; other elegies were written to mark the passing of a family member or friend. Gray does something different. Rather than writing about an individual person and describing their virtues in the manner of most elegies, Gray offers praise for the long-gone, ordinary people whose lives are now largely forgotten, commemorated only by the names on the headstones in an undistinguished cemetary next to a typical small church in an unnamed English village. The poem praises ordinary, not extraordinary people, people whom the poet walking through the graveyard never knew. In its final stanzas, the poem then turns in another direction, as it offers an epitaph (that is, a poem that would be inscribed on a gravestone) that seems to be the future epitaph for the poet himself. </p></note>
+                  <lb/></titlePart></docTitle>
+            <docImprint>
+               <pubPlace><placeName type="tgn" key="7011781"/></pubPlace>
+               <lb/> Printed by <publisher>R. DODSLEY in <hi rend="italic">Pall-mall;</hi></publisher> <lb/>
+               And sold by
+                     <publisher><hi rend="italic">M. COOPER</hi></publisher>
+               <pubPlace>in<hi rend="italic"> Pater-noster-row</hi></pubPlace>. 
+               <docDate>1751</docDate>. <lb/>
+               [Price Six-pence.]
+            </docImprint>
+         </titlePage>
+         <pb/>
+                  
+         <div type="notice">
+           
+            <head>Advertisement.</head>
+            <lb/>
+            <p>
+               <hi rend="italic">THE following</hi>
+               POEM
+               <hi rend="italic">came into my Hands by Accident, if the general Approbation with which this little Piece has been spread, may be call'd by so slight a Term as Accident. It is this Approbation which makes it unnecessary for me to make any Apology but to the Author: As he cannot but feel some Satisfaction in having pleas'd so many Readers already, I flatter myself he will forgive my communicating that Pleasure to many more.</hi>
+            </p>
+            <closer>
+               <signed><ref target="EDITOR_" corresp="EDITOR">The EDITOR.</ref><note xml:id="EDITOR" target="EDITOR_">Although he is not identified here, the "editor" is surely <ref target="https://anthologydev.lib.virginia.edu/work/headnotes/walpole">Horace Walpole</ref>, Gray's friend for many years. When Gray learned that the poem was going to be published against his wishes in a  periodical, the <hi rend="italic">Magazine of Magazines</hi>, he wrote from his home in Cambridge to Walpole asking him to supervise getting a separate edition printed by a more respectable London printer. (There's a good chance, too, that it was Walpole's handwritten copy of the the poem that somehow made its way to William Owen, the publisher of the magazine, so it was his responsbility to make things right.) Walpole turned to Robert Dodsley, one of the most prestigious publishers in London at the time, and expedited the process. The magazine version and this stand-alone version came out at roughly the same time in February 1751.</note></signed>
+            </closer>
+         </div>
+         </front>
+      <body>
+            <div type="text">
+               <head>
+                  AN ELEGY, &amp;,
+                  <hi rend="italic"></hi>
+               </head>
+               <lg>
+                  <l>
+                     THE
+                     <ref target="Curfeu_" corresp="Curfeu"><hi rend="italic">Curfeu</hi></ref><note xml:id="Curfeu" target="Curfeu_">A bell rung at the end of the working day, signaling the "curfew," the time when people should return home. Curfew bells continued to be rung in some villages well into the nineteenth century.</note>
+                     tolls the Knell of parting Day,
+                  </l>
+                  <l>The lowing Herd winds slowly o'er the Lea,</l>
+                  <l>The Plow-man homeward plods his weary Way,</l>
+                  <l>And leaves the World to Darkness, and to me.</l>
+               </lg>
+               <lg>
+                  <l>Now fades the glimmering Landscape on the Sight,</l>
+                  <l>And all the Air a solemn Stillness holds;</l>
+                  <l>Save where the Beetle wheels his droning Flight,</l>
+                  <l>And drowsy Tinklings lull the distant Folds.</l>
+               </lg>
+               <lg>
+                  <l>Save that from yonder Ivy-mantled Tow'r</l>
+                  <l>The mopeing Owl does to the Moon complain</l>
+                  <l>Of such, as wand'ring near her sacred Bow'r,</l>
+                  <l>Molest her ancient solitary Reign.</l>
+               </lg>
+               <lg>
+                  <pb n="6" facs="tcp:0744200100:4"/>
+                  <l>Beneath those rugged Elms, that Yew-Tree's Shade,</l>
+                  <l>Where heaves the Turf in many a mould'ring Heap,</l>
+                  <l>Each in his narrow Cell for ever laid,</l>
+                  <l>The rude Forefathers of the Hamlet sleep.</l>
+               </lg>
+               <lg>
+                  <l>The breezy Call of Incense-breathing Morn,</l>
+                  <l>The Swallow twitt'ring from the Straw-built Shed,</l>
+                  <l>The Cock's shrill Clarion, or the ecchoing Horn,</l>
+                  <l>No more shall wake them from their lowly Bed.</l>
+               </lg>
+               <lg>
+                  <l>For them no more the blazing Hearth shall burn,</l>
+                  <l>Or busy Houswife ply her Evening Care:</l>
+                  <l>No Children run to lisp their Sire's Return,</l>
+                  <l>Or climb his Knees the envied Kiss to share.</l>
+               </lg>
+               <lg>
+                  <l>Oft did the Harvest to their Sickle yield,</l>
+                  <l>Their Furrow oft the stubborn Glebe has broke;</l>
+                  <l>How jocund did they they drive their Team afield!</l>
+                  <l>How bow'd the Woods beneath their sturdy Stroke!</l>
+               </lg>
+               <lg>
+                  <l>Let not Ambition mock their useful Toil,</l>
+                  <l>Their homely Joys and Destiny obscure;</l>
+                  <l>Nor Grandeur hear with a disdainful Smile,</l>
+                  <l>The short and simple Annals of the Poor.</l>
+               </lg>
+               <lg>
+                  <pb n="7" facs="tcp:0744200100:5"/>
+                  <l>The Boast of Heraldry, the Pomp of Pow'r,</l>
+                  <l>And all that Beauty, all that Wealth e'er gave,</l>
+                  <l>Awaits alike th' inevitable Hour.</l>
+                  <l>The Paths of Glory lead but to the Grave.</l>
+               </lg>
+               <lg>
+                  <l>Forgive, ye Proud, th' involuntary Fault,</l>
+                  <l>If Memory to these no Trophies raise,</l>
+                  <l>Where thro' the long-drawn Isle and fretted Vault</l>
+                  <l>The pealing Anthem swells the Note of Praise.</l>
+               </lg>
+               <lg>
+                  <l>Can storied Urn or animated Bust</l>
+                  <l>Back to its Mansion call the fleeting Breath?</l>
+                  <l>Can Honour's Voice provoke the silent Dust,</l>
+                  <l>Or Flatt'ry sooth the dull cold Ear of Death!</l>
+               </lg>
+               <lg>
+                  <l>Perhaps in this neglected Spot is laid</l>
+                  <l>Some Heart once pregnant with celestial Fire,</l>
+                  <l>Hands that the Reins of Empire might have sway'd,</l>
+                  <l>Or wak'd to Extacy the living Lyre.</l>
+               </lg>
+               <lg>
+                  <l>But Knowledge to their Eyes her ample Page</l>
+                  <l>Rich with the Spoils of Time did ne'er unroll;</l>
+                  <l>Chill Penury repress'd their noble Rage,</l>
+                  <l>And froze the genial Current of the Soul.</l>
+               </lg>
+               <lg>
+                  <pb n="8" facs="tcp:0744200100:6"/>
+                  <l>Full many a Gem of purest Ray serene,</l>
+                  <l>The dark unfathom'd Caves of Ocean bear:</l>
+                  <l>Full many a Flower is born to blush unseen,</l>
+                  <l>And waste its Sweetness on the desart Air.</l>
+               </lg>
+               <lg>
+                  <l>
+                     Some Village
+                     <ref target="Hampden_" corresp="Hampden"><hi rend="italic">-Hampden</hi></ref><note xml:id="Hampden" target="Hampden_">John Hampden (1594-1643) was a prominent member of Parliament who led the opposition against Charles I, helping to prompt the start of the English Civil War in the 1640s. Hampden was killed in a battle between Parliamentary forces and those of the King.</note>
+                     that with dauntless Breast
+                  </l>
+                  <l>The little Tyrant of his Fields withstood;</l>
+                  <l>
+                     Some mute inglorious
+                     <ref target="Milton_" corresp="Milton"><hi rend="italic">Milton</hi></ref><note xml:id="Milton" target="Milton_">The poet John Milton (1608-1674), author of <hi rend="italic">Paradise Lost</hi>, and also a prominent supporter of the Parliament's side in the English Civil War.</note>
+                     here may rest,
+                  </l>
+                  <l>
+                     Some
+                     guiltless of his Country's Blood.
+                  </l>
+               </lg>
+               <lg>
+                  <l>Th' Applause of list'ning Senates to command,</l>
+                  <l>The Threats of Pain and Ruin to despise,</l>
+                  <l>To scatter Plenty o'er a smiling Land,</l>
+                  <l>And read their Hist'ry in a Nation's Eyes</l>
+               </lg>
+               <lg>
+                  <l>Their Lot forbad: nor circumscrib'd alone</l>
+                  <l>Their growing Virtues, but their Crimes confin'd;</l>
+                  <l>Forbad to wade through Slaughter to a Throne,</l>
+                  <l>And shut the Gates of Mercy on Mankind,</l>
+               </lg>
+               <lg>
+                  <l>The struggling Pangs of conscious Truth to hide,</l>
+                  <l>To quench the Blushes of ingenuous Shame,</l>
+                  <l>Or heap the Shrine of Luxury and Pride</l>
+                  <l>With Incense, kindled at the Muse's Flame.</l>
+               </lg>
+               <lg>
+                  <pb n="9" facs="tcp:0744200100:7"/>
+                  <l>Far from the madding Crowd's ignoble Strife,</l>
+                  <l>Their sober Wishes never learn'd to stray;</l>
+                  <l>Along the cool sequester'd Vale of Life</l>
+                  <l>They kept the noiseless Tenor of their Way.</l>
+               </lg>
+               <lg>
+                  <l>Yet ev'n these Bones from Insult to protect</l>
+                  <l>Some frail Memorial still erected nigh,</l>
+                  <l>With uncouth Rhimes and shapeless Sculpture deck'd,</l>
+                  <l>Implores the passing Tribute of a Sigh.</l>
+               </lg>
+               <lg>
+                  <l>Their Name, their Years, spelt by th' unletter'd Muse,</l>
+                  <l>The Place of Fame and Elegy supply:</l>
+                  <l>And many a holy Text around she strews,</l>
+                  <l>That teach the rustic Moralist to dye.</l>
+               </lg>
+               <lg>
+                  <l>For who to dumb Forgetfulness a Prey,</l>
+                  <l>This pleasing anxious Being e'er resign'd,</l>
+                  <l>Left the warm Precincts of the chearful Day,</l>
+                  <l>Nor cast one longing ling'ring Look behind!</l>
+               </lg>
+               <lg>
+                  <l>On some fond Breast the parting Soul relies,</l>
+                  <l>Some pious Drops the closing Eye requires;</l>
+                  <l>Ev'n from the Tomb the Voice of Nature cries</l>
+                  <l>Awake, and faithful to her wonted Fires.</l>
+               </lg>
+               <lg>
+                  <pb n="10" facs="tcp:0744200100:8"/>
+                  <l>For thee, who mindful of th' unhonour'd Dead</l>
+                  <l>Dost in these Lines their artless Tale relate;</l>
+                  <l>If chance, by lonely Contemplation led,</l>
+                  <l>Some hidden Spirit shall inquire thy Fate,</l>
+               </lg>
+               <lg>
+                  <l>Haply some hoary-headed Swain may say,</l>
+                  <l>'Oft have we seen him at the Peep of Dawn</l>
+                  <l>'Brushing with hasty Steps the Dews away</l>
+                  <l>'To meet the Sun upon the upland Lawn.</l>
+               </lg>
+               <lg>
+                  <l>'There at the Foot of yonder nodding Beech</l>
+                  <l>'That wreathes its old fantastic Roots so high,</l>
+                  <l>'His listless Length at Noontide wou'd he stretch,</l>
+                  <l>'And pore upon the Brook that babbles by.</l>
+               </lg>
+               <lg>
+                  <l>'Hard by yon Wood, now frowning as in Scorn,</l>
+                  <l>'Mutt'ring his wayward Fancies he wou'd rove,</l>
+                  <l>'Now drooping, woeful wan, like one forlorn,</l>
+                  <l>'Or craz'd with Care, or cross'd in hopeless Love.</l>
+               </lg>
+               <lg>
+                  <l>'One Morn I miss'd him on the custom'd Hill,</l>
+                  <l>'Along the Heath, and near his fav'rite Tree;</l>
+                  <l>'Another came; nor yet beside the Rill,</l>
+                  <l>'Nor up the Lawn, nor at the Wood was he.</l>
+               </lg>
+               <lg>
+                  <pb n="11" facs="tcp:0744200100:9"/>
+                  <l>'The next with Dirges due in sad Array</l>
+                  <l>'Slow thro' the Church-way Path we saw him born.</l>
+                  <l>'Approach and read (for thou can'st read) the Lay,</l>
+                  <l>'Grav'd on the Stone beneath yon aged Thorn.</l>
+               </lg>
+               <div type="epitaph">
+                  <head>The EPITAPH.</head>
+                  <lg>
+                     <l>HERE rests his Head upon the Lap of Earth</l>
+                     <l>A Youth to Fortune and to Fame unknown:</l>
+                     <l>Fair Science frown'd not on his humble Birth,</l>
+                     <l>And Melancholy mark'd him for her own.</l>
+                  </lg>
+                  <lg>
+                     <l>Large was his Bounty, and his Soul sincere,</l>
+                     <l>Heav'n did a Recompence as largely send:</l>
+                     <l>He gave to Mis'ry all he had, a Tear:</l>
+                     <l>He gain'd from Heav'n ('twas all he wish'd) a Friend.</l>
+                  </lg>
+                  <lg>
+                     <l>No farther seek his Merits to disclose,</l>
+                     <l>Or draw his Frailties from their dread Abode,</l>
+                     <l>(There they alike in trembling Hope repose)</l>
+                     <l>The Bosom of his Father and his God.</l>
+                  </lg>
+               </div>
+               <trailer>FINIS.</trailer>
+            </div>
+      </body>         
+               
+   </text>
+</TEI>

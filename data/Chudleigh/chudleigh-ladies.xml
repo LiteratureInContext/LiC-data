@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="chudleigh-ladies">
-   
+
    <!--TEI Header BEGINS-->
    <teiHeader xml:lang="en">
-      
-      <fileDesc> <!--BEGINS File Description -->
+
+      <fileDesc>
+         <!--BEGINS File Description -->
          <titleStmt>
             <title type="main">"To the Ladies"</title>
             <author>
@@ -17,7 +19,7 @@
             </author>
             <editor>
                <persName type="orcid" key="0000-0002-7400-4093">
-                  <name ref="editors.xml#TH" >
+                  <name ref="editors.xml#TH">
                      <surname>Howe</surname>
                      <forename>Tonya</forename>
                   </name>
@@ -27,11 +29,11 @@
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
             </respStmt>
-            <sponsor />
+            <sponsor/>
             <funder>National Endowment for the Humanities</funder>
          </titleStmt>
-         
-         
+
+
          <publicationStmt>
             <publisher>Literature in Context</publisher>
             <address>
@@ -48,8 +50,8 @@
                   License </licence>
             </availability>
          </publicationStmt>
-         
-         
+
+
          <sourceDesc>
             <biblStruct>
                <analytic>
@@ -57,54 +59,60 @@
                </analytic>
                <monogr>
                   <author>
-                     <persName type="lcnaf" key="n83027904">
-                        Lady Mary Chudleigh
-                     </persName>
+                     <persName type="lcnaf" key="n83027904"> Lady Mary Chudleigh </persName>
                   </author>
                   <title>Poems on Several Occasions</title>
                   <imprint>
                      <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
-                     <publisher>Printed for Bernard Lintot, at the Cross-Keys between the Temple-Gates</publisher>
+                     <publisher>Printed for Bernard Lintot, at the Cross-Keys between the
+                        Temple-Gates</publisher>
                      <date when="1722">1722</date>
-                     <note source="ESTC">Includes: ’The song of the three children paraphras’d.’ and ’The ladies defence, or, the bride-woman’s counsellor answered: .. ’..</note>
-                     <note>This book was first published in 1703. This digital edition draws on the 3rd edition, corrected, of 1722, housed in the Marymount University Gomatos collection. Page images are sourced from the Marymount text.</note>
+                     <note source="ESTC">Includes: ’The song of the three children paraphras’d.’ and
+                        ’The ladies defence, or, the bride-woman’s counsellor answered: ..
+                        ’..</note>
+                     <note>This book was first published in 1703. This digital edition draws on the
+                        3rd edition, corrected, of 1722, housed in the Marymount University Gomatos
+                        collection. Page images are sourced from the Marymount text.</note>
                   </imprint>
                   <imprint>
-                    
-                     <publisher>Google Books  </publisher>
-                     <note>An open-source facsimile copy of this book is available via <ref target="https://books.google.com/books?id=RBJhAAAAcAAJ">Google Books</ref>.</note>
+
+                     <publisher>Google Books </publisher>
+                     <note>An open-source facsimile copy of this book is available via <ref
+                           target="https://books.google.com/books?id=RBJhAAAAcAAJ">Google
+                           Books</ref>.</note>
                   </imprint>
                   <extent>[12], 269 pages + [7] pages bookseller's list ; 18 cm (12mo)</extent>
                   <biblScope>pp 45-46</biblScope>
                </monogr>
             </biblStruct>
          </sourceDesc>
-         
+
       </fileDesc>
-      
-      
-      
-      <profileDesc>  <!--BEGINS Profile Description  -->
+
+
+
+      <profileDesc>
+         <!--BEGINS Profile Description  -->
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
-         
+
          <creation/>
-         
+
          <textDesc n="poem">
             <channel mode="w">print</channel>
             <constitution type="single"/>
             <derivation type="original"/>
             <domain/>
-            <factuality/>
+            <factuality type="inapplicable"/>
             <interaction/>
             <preparedness type="prepared"/>
             <purpose type="entertain" degree="medium"/>
             <purpose type="persuade" degree="high"/>
          </textDesc>
-         
+
          <settingDesc>
             <setting>
                <name type="tgn" key="7011781">London, England</name>
@@ -112,10 +120,11 @@
             </setting>
          </settingDesc>
       </profileDesc>
-      
-      
-      
-      <encodingDesc> <!-- BEGINS Encoding Description -->
+
+
+
+      <encodingDesc>
+         <!-- BEGINS Encoding Description -->
          <projectDesc>
             <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
                project, which provides an accessible, curated, and marked-up selection of primary
@@ -169,21 +178,22 @@
             </taxonomy>
          </classDecl>
       </encodingDesc>
-      
-      
-      <revisionDesc> <!--BEGINS Revision Description -->
+
+
+      <revisionDesc>
+         <!--BEGINS Revision Description -->
          <change when="2019-02-21" who="editors.xml#TH">TEI header and plain text</change>
-         <change when="2019-02-22" who="editors.xml#TH"></change>
+         <change when="2019-02-22" who="editors.xml#TH"/>
       </revisionDesc>
-      
-      
+
+
    </teiHeader>
    <!--TEI Header Ends -->
-   
-   
-   
-   
-   
+
+
+
+
+
    <text>
       <front>
          <pb n="[TP]"/>
@@ -191,16 +201,37 @@
             <titlePart>POEMS<lb/></titlePart>
             <titlePart>ON<lb/></titlePart>
             <titlePart>Several Occasions.<lb/></titlePart>
+
+            <titlePart>BY THE <lb/>
+               <ref target="_author" corresp="author">LADY <hi rend="italic"
+                  >CHUDLEIGH</hi></ref><note xml:id="author" target="_author" type="editorial" resp="editors.xml#TH">Mary
+                     Chudleigh was a poet and early feminist, friends with women like Lady Mary Wortley
+                     Montagu and Mary Astell. She is most well-known for her long poem <hi rend="italic"
+                        ><ref
+                           target="https://digital.library.upenn.edu/women/chudleigh/defence/defence.html"
+                           >The Ladies Defense</ref></hi> (1701), published in response to John Sprint’s
+                     <hi rend="italic"><ref
+                        target="https://www.google.com/books/edition/The_Bride_woman_s_Counsellor/tMLPJ-fANfEC"
+                        >The Bride-Woman’s Counsellor</ref></hi>, a marriage sermon he delivered in
+                     1699 expounding on the duty of wives to their husbands. Chudleigh was a devout
+                     Anglican, and had no formal education (women were not usually formally educated for a
+                     century more), but she was self-taught and read widely. In her late teens, she
+                     married Sir George Chudleigh, a Baronet. He was an overbearing husband, and scholars
+                     suggest that her own experience was an influence for her writing. However, he did
+                     allow her to publish her work, which was not common for women of her stature. To read
+                     more about anonymity and women writers, see <ref
+                        target="https://www.bl.uk/womens-rights/articles/women-authors-and-anonymity">Greg
+                        Buzwell's short essay ot the British Library</ref>. Chudleigh bore six children
+                     with her husband. </note></titlePart>
+            <lb/>
             
-            <byline>BY THE <lb/> <ref target="a001" corresp="n001">LADY <hi rend="italic">CHUDLEIGH</hi></ref></byline><lb/>
-            <note
-               xml:id="n001" target="a001" type="editorial" resp="editors.xml#TH">ADD NOTE HERE: Brief bio of Chudleigh. Unfortunately, no portraits of her are available.</note>
-            <docEdition>The THIRD Edition, Corrected.</docEdition>
+            <titlePart>The THIRD Edition, Corrected.</titlePart>
             <docImprint><pubPlace><placeName type="tgn" key="7011781">London</placeName></pubPlace>:<lb/>
-               <publisher>Printed for <persName>BERNARD LINTOT</persName>, at the
-                  <placeName><hi rend="italic">Cross-<lb/>Keys</hi> between the <hi rend="italic">Temple-Gates</hi></placeName>.</publisher>
+               <publisher>Printed for <persName>BERNARD LINTOT</persName>, at the <placeName><hi
+                        rend="italic">Cross-<lb/>Keys</hi> between the <hi rend="italic"
+                        >Temple-Gates</hi></placeName>.</publisher>
                <date when="1722">MDCCXXII.</date><lb/></docImprint>
-            
+
          </titlePage>
       </front>
       <body>
@@ -210,32 +241,89 @@
             <l n="1">Wife and Servant are the same,</l>
             <l n="2">But only differ in the Name:</l>
             <l n="3">For when that fatal Knot is ty'd,</l>
-            <l n="4">Which <ref target="a002" corresp="n002">nothing, nothing can divide</ref>:</l> <note xml:id="n002" target="a002">ADD NOTE HERE ABOUT DIVORCELESS SOCIETY OF THE 17TH AND 18TH CENTURIES.</note>
-            <l n="5">When she the word <ref target="a003" corresp="n003">obey</ref> has said,</l> <note xml:id="n003" target="a003">ADD NOTE HERE ABOUT JOHN SPRINT'S 1699 SERMON, THE BRIDE-WOMAN'S COUNSELLOR. https://books.google.com/books?id=tMLPJ-fANfEC</note>
-            <l n="6">And Man by <ref target="a004" corresp="n004">Law</ref> supreme has made,</l> <note xml:id="n004" target="a004">ADD NOTE HERE ABOUT FEMME COUVERT</note>
+            <l n="4">Which <ref target="_divorce" corresp="divorce">nothing, nothing can
+                  divide</ref>:</l>
+            <note xml:id="divorce" target="_divorce" type="editorial" resp="editors.xml#TH">Until the middle of the nineteenth century,
+               with the passage of the Matrimonial Causes Act of 1857, English society was
+               essentially divorceless; members of the gentility and the aristocracy typically
+               married for life. The only way to secure a divorce was through a very expensive
+               Private Act of Parliament; between 1700 and 1857, fewer than 325 parliamentary
+               divorces were granted in England. Almost all were initiated by men, and it was only
+               granted for adultery. Women could only seek divorce if the adultery were accompanied
+               by extreme cruelty. Those granted to women could be counted on one hand. As a result,
+               there were many unhappy marriages, and literature focused on chosing the right mate
+               was popular. Those in the lower classes (and sometimes those in the growing middle
+               classes) had more flexibility, often simply agreeing among themselves to leave each
+               other or through the practice of "wife selling." To read more about the history of
+               divorce, see <ref
+                  target="https://www.smithsonianmag.com/history/heartbreaking-history-of-divorce-180949439/"
+                  >Amanda Foreman's "The Heartbreaking History of Divorce" for <hi rend="italic">The
+                     Smithsonian Magazine</hi></ref>. </note>
+            <l n="5">When she the word obey has said,</l>
+            <l n="6">And Man by <ref target="_couverture" corresp="couverture">Law</ref> supreme has
+               made,</l>
+            <note xml:id="couverture" target="_couverture" type="editorial" resp="editors.xml#TH">Upon marriage, a woman became a "femme
+               couvert"; her legal identity was subsumed into (or "covered by") her husband's, and
+               she was no longer able to take on debt, own property, or engage in contracts.
+               Unmarried women and widows could. To read more about this doctrine of couverture,
+               which was only modified in the late 19th century, see <ref
+                  target="https://en.wikipedia.org/wiki/Coverture">Wikipedia</ref>. It is worth
+               noting that, in the US, it was only in 1974 (with the passage of the Equal Credit
+               Opportunity Act) that women could open bank accounts or apply for credit without
+               needing a male co-signer. In the UK, a similar law was passed in 1975.</note>
             <l n="7">Then all that's kind is laid aside,</l>
             <l n="8">And nothing left but State and Pride:</l>
-            <l n="9">Fierce as an <ref target="a005" corresp="n005">Eastern Prince</ref> he grows,</l> <note xml:id="n005" target="a005">NOTE ABOUT THE IMAGE OF THE OTTOMAN PRINCE AS TYRANT</note>
-           <l n="10">And all his innate Rigor shows:</l>
-           <l n="11">Then but to look, to laugh, or speak,</l>
-           <l n="12">Will the Nuptial Contract break.</l>
-           <l n="13">Like Mutes she Signs alone must make,</l>
-           <l n="14">And <ref target="a006" corresp="n006">never any Freedom take</ref>:</l> <note xml:id="n006" target="a006">ADD NOTE ABOUT THE IMAGE OF THE CONFINING SERAGLIO.</note>
-           <l n="15">But still be govern'd by a Nod,</l>
-           <l n="16">And fear her Husband as her God:</l>
-           <l n="17">Him still must serve, him still obey,</l>
-           <l n="18">And nothing act, and nothing say,</l>
-           <l n="19">But what her haughty Lord thinks fit,</l>
-           <l n="20">Who with the Pow'r, has all the Wit.</l>
-           <l n="21">Then shun, oh! shun that wretched State,</l>
-           <l n="22">And all <ref target="a007" corresp="n007">the fawning Flatt'rers</ref> hate:</l> <note xml:id="n007" target="a007">ADD NOTE ABOUT WHAT FAWNING FLATT'RERS ARE.</note>
-           <l n="23">Value your selves, and Men despise,</l>
-           <l n="24">You must be proud, if you'll be wise.</l>
-            
+            <l n="9">Fierce as an <ref target="_eastern-prince" corresp="eastern-prince">Eastern
+                  Prince</ref> he grows,</l>
+            <note xml:id="eastern-prince" target="_eastern-prince" type="editorial" resp="editors.xml#TH">The Ottoman Empire was the
+               largest empire in the world, spanning the 13th through the 20th centuries. As Emily
+               Kugler notes in <ref
+                  target="https://www.google.com/books/edition/Sway_of_the_Ottoman_Empire_on_English_Id/wLv5V2_79zIC"
+                     ><hi rend="italic">Sway of the Ottomoan Empire on English Identity in the Long
+                     Eighteenth Century</hi></ref> (2012), the English in the eighteenth century
+               depicted the Ottoman world as powerful, moreso than the English themselves, whose
+               empire was growing and would reach its height in the 19th century. Hence, Chudleigh
+               here uses the "eastern prince" as an image of unchecked power. This is exacerbated by
+               perceived differences in personal and political liberties between the English and the
+               Turkish subject, and especially the female subject.</note>
+            <l n="10">And all his innate Rigor shows:</l>
+            <l n="11">Then but to look, to laugh, or speak,</l>
+            <l n="12">Will the Nuptial Contract break.</l>
+            <l n="13">Like <ref target="_mutes" corresp="mutes">Mutes</ref> she Signs alone must
+               make,</l>
+            <note xml:id="mutes" target="_mutes" type="editorial" resp="editors.xml#TH">For an
+               interesting discussion of the "mute" in the Turkish Ottoman Court, see <ref
+                  target="https://www.independentliving.org/docs5/mmiles2.html">"Signing in the
+                  Seraglio," by M. Miles</ref>.</note>
+            <l n="14">And <ref target="_freedom" corresp="freedom">never any Freedom take</ref>:</l>
+            <note xml:id="freedom" target="_freedom" type="editorial" resp="editors.xml#TH">Chudleigh is drawing on the image of the <ref
+                  target="https://en.wikipedia.org/wiki/Ottoman_Imperial_Harem">Turkish
+                  seraglio</ref> as a site of female confinement and sexual enslavement. In British
+               literature, the trope of the English captive seeking to regain their "native" or
+               natural/innate liberties takes shape "against a detailed representation of the Orient
+               as debased and despotic" (<ref
+                  target="https://ecf.humanities.mcmaster.ca/wp-content/uploads/sites/15/2015/10/snader.pdf"
+                  >Snader, "The Oriental Captivity Narrative andn Early English Fiction" 268</ref>).
+               Note that Chudleigh refers, in an earlier line, to the husband's "innate Rigor." To
+               read more about the way the West viewed the Ottoman Empire as tyrranical and
+               despotic, especially when it comes to the image of women, see <ref
+                  target="https://www.jstor.org/stable/259479">"From Tyranny to Despotism: The
+                  Enlightenment's Unenlightened Image of the Turks"</ref> by Asli Çirakman. </note>
+            <l n="15">But still be govern'd by a Nod,</l>
+            <l n="16">And fear her Husband as her God:</l>
+            <l n="17">Him still must serve, him still obey,</l>
+            <l n="18">And nothing act, and nothing say,</l>
+            <l n="19">But what her haughty Lord thinks fit,</l>
+            <l n="20">Who with the Pow'r, has all the Wit.</l>
+            <l n="21">Then shun, oh! shun that wretched <ref target="_state" corresp="state">State</ref>,</l><note xml:id="state" target="_state" type="gloss" resp="editors.xml#TH">The "state" of marriage.</note>
+            <l n="22">And all the fawning Flatt'rers
+               hate:</l>
+            <l n="23">Value your selves, and Men despise,</l>
+            <l n="24">You must be proud, if you'll be wise.</l>
+
          </div>
-         
-         
+
+
       </body>
    </text>
 </TEI>
-
