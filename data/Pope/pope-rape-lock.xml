@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="pope-rape-lock">
-   <teiHeader>
+   <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
-            <title type="main"> The Rape of the Lock </title>
+            <title type="main">The Rape of the Lock</title>
             <author>
                <persName type="lcnaf" key="n79084387">
                   <name>
@@ -59,14 +59,13 @@
                         </name>
                      </persName>
                   </author>
-                  <title type="main">The Rape of the Lock</title>
-                  <title type="sub"> An heroi-comical poem in five canto's</title>
+                  <title>The Rape of the Lock</title>
                   <imprint>
                      <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
                      <publisher>B. Lintott</publisher>
-                     <date when="1714"></date>
+                     <date when="1714">1714</date>
                      <note resp="editors.xml#JOB"> Pope published a short, two-canto version of this
                         poem in 1712. He then reworked and republished the poem in a five-canto
                         version in 1714, which is the work that is most read today, and that we reproduce here. The main difference                               between the two is that he added what he called the "apparatus" of fairies and sylphs that surround the human actors in the poem. This text follows the first edition of the 1714 version. The
@@ -99,7 +98,11 @@
          </textDesc>
          <settingDesc>
             <setting>
-               <date from="1700" to="1750">Early Eighteenth Century</date>
+               <name type="tgn" key="1000003">Europe</name>
+               <name type="tgn" key="4003761">Western Europe</name>
+               <name type="tgn" key="7002445">England</name>
+               <name type="tgn" key="1100405">Hampton Court</name>
+               <time from="1700" to="1715">early eighteenth century</time>
             </setting>
          </settingDesc>
       </profileDesc>
@@ -163,12 +166,8 @@
       <front>
 
          <div type="frontispiece">
-            <figure>
                <pb n="[Frontispiece]" facs="PageImages/Pope-RL:frontispiece.jpg"/>
-               <graphic url="PageImages/Pope-RL:frontispiece.jpg" style="float:center" width="50%"/>
-            </figure>
-            <p><ref target="a00001" corresp="n00001">[frontispiece note]</ref></p>
-            <note xml:id="n00001" target="a00001" type="editorial" resp="#JOB">The frontispiece was
+            <head><ref target="frontispiece_" corresp="frontispiece">Frontispiece</ref> <note xml:id="frontispiece" target="frontispiece_" type="editorial" resp="#JOB"><graphic url="PageImages/Pope-RL:frontispiece.jpg" style="float:center" width="100%"/>The frontispiece was
                designed by Louis du Guernier (1677-1716) a well-known illustrator of the period; he
                also designed the images that appear before each of the five cantos. They were
                engraved by Claude du Bosc (1682-1745?); both men had been born in France but moved
@@ -186,21 +185,20 @@
                point to the shooting star that ascends at the end of Canto V. In the front lower
                right of the image, a satyr, with pointed ears and cloven hoofs, holds the kind of
                mask that women in the period sometimes wore in public; like many authors in the
-               period, Pope is playing on the homophone between "satyr," the sexually-agressive
+               period, Pope is playing on the homophone between "satyr," the sexually-aggressive
                half-human, half-animals of Greek mythology, and "satire," the literary form of which
                "The Rape of the Lock" is an example. Behind the characters is the facade of Hampton
                Court Palace, the royal home down the Thames from London where much of the action of
                the poem takes place. Pope clearly intended the images and the poem to be read
                together, a feature that is not possible in most modern reproductions of the poem,
                which rely on the poetic text alone.</note>
-
+            </head>
          </div>
          <titlePage>
             <pb n="[Title Page]" facs="PageImages/Pope-RL:titlepage.jpg"/>
             <docTitle>
                <titlePart type="main">
-                  <ref target="title_" corresp="title">The<hi>
-                        <lb/> Rape</hi> of the <hi>Lock</hi></ref><note xml:id="title"
+                  <ref target="title_" corresp="title">The<hi rend="italic"> Rape</hi> of the <hi rend="italic">Lock</hi></ref><note xml:id="title"
                      target="title_" type="editorial" resp="#JOB"><p><graphic
                            url="notes/Pope-Jervis.jpg" style="float:right" width="400px"/>Alexander
                         Pope’s "The Rape of the Lock" is the most famous poem written in English in
@@ -285,46 +283,46 @@
             </docTitle>
             <lb/>
             <lb/>
-            <byline>Written by Mr. POPE.</byline>
+            <docAuthor>Written by Mr. POPE.</docAuthor>
             <lb/>
             <lb/>
             <epigraph>
-               <q xml:lang="lat">—<ref target="nomen_" corresp="nomen">A tonso est hoc nomen adepta
-                     capillo.</ref>
+               <quote>—<ref target="nomen_" corresp="nomen"><hi rend="italic">A tonso est hoc nomen adepta</hi>
+                  capillo.</ref>
                   <note xml:id="nomen" target="nomen_" type="editorial" resp="#UVAstudstaff">The full
                      quote, which comes from Book VIII of Ovid's <hi rend="italic"
                         >Metamorphoses</hi>, should read, "Ciris et, a tonso est hoc nomen adepta
-                     capillo": she acquired the name from the cutting of the hair. Ovid's story,
+                     capillo": "She acquired the name from the cutting of the hair." Ovid's story,
                      first published in 8 CE, goes like this. Nisus was the King of Alcathous and he
-                     had a lock of purple hair on hiscrown that guaranteed the safety of his
+                     had a lock of purple hair on his crown that (somehow) guaranteed the safety of his
                      kingdom. Scylla, his daughter, fell in love with King Minos, who was conquering
-                     this kingdom, and in order to gain his favor, Scylla cut off the lock of her
+                     the kingdom, and in order to gain his favor, Scylla cut off the lock of her
                      father's hair. But, disgusted with her disloyalty, Minos left by ship. As
                      Scylla swam after Minos, King Nisos, having been transformed into a sea eagle,
-                     attempted to drown her. Instead of drowning,Scylla was turned to a sea bird and
-                     called Ciris, (cutter), being named after the lock that she cut off. See Ovid's
+                     attempted to drown her. Instead of drowning, Scylla was turned to a sea bird and
+                     called Ciris, (i.e. "cutter"), being named after the lock that she cut off. See Ovid's
                         <hi rend="italic">Metamorphoses</hi>, translated by Anthony S. Kline,
-                     http://ovid.lib.virginia.edu/trans/Metamorph8.htm </note></q>
+                     http://ovid.lib.virginia.edu/trans/Metamorph8.htm </note></quote>
+               <bibl><lb/><persName>OVID.</persName></bibl>
                <lb/>
-               <bibl><hi rend="right">OVID.</hi></bibl>
             </epigraph>
             <lb/>
             <docImprint>
                <pubPlace>
-                  <placeName type="tgn" key="7011781">LONDON</placeName>
+                  <hi rend="italic"><placeName type="tgn" key="7011781">LONDON</placeName></hi>
                </pubPlace><lb/> Printed for Bernard Lintott, at the<lb/>
-               <hi rend="italic"> Cross-keys</hi> in <hi rend="italic">Fleetstreet</hi>. 1714.
+               <hi rend="italic"> Cross-keys</hi> in <hi rend="italic">Fleetstreet</hi>.<docDate>
+                  1714.
+               </docDate>
             </docImprint>
          </titlePage>
 
-         <lb/>
-         <lb/>
          <pb n="[Epistle.1]" facs="PageImages/Pope-RL:epistle.i.jpg"/>
          <div type="epistle">
             <head> TO <lb/>
-               <ref target="arabella_" corresp="arabella">Mrs. ARABELLA FERMOUR.</ref>
+               <ref target="Arabella_" corresp="Arabella">Mrs. ARABELLA FERMOUR.</ref>
                <lb/>
-               <note xml:id="arabella" target="arabella_" type="editorial" resp="#JOB">Arabella Fermor
+               <note xml:id="Arabella" target="Arabella_" type="editorial" resp="#JOB">Arabella Fermor
                   (1696-1737; image credit: Victoria and Albert Museum) <graphic
                      url="https://s3.amazonaws.com/lic-assets-staging/Pope/Arabella-Fermor.jpg"
                      style="float:right" width="400px"/>was from a prominent Catholic family. 
@@ -381,8 +379,8 @@
                difficult Terms. </p>
             <p>The <hi rend="italic">Rosicrucians</hi> are the People I must bring You
                acquainted with. The best Account I know of them is in the French Book call'd
-                  <foreign xml:lang="fre"><ref target="Gabalis_" corresp="Gabalis">Le Comte de
-                     Gabalis</ref>,</foreign>
+                  <ref target="Gabalis_" corresp="Gabalis">Le Comte de
+                     Gabalis</ref>,
                <note xml:id="Gabalis" target="Gabalis_" type="gloss"><hi rend="italic">The Count of Gabala</hi> was written by Nicolas-Pierre-Henri of Montfaucon de Villars, a French cleric, and published in 1670. It is an odd book. In it, an anonymous narrator encounters the Comte de Gabalis, who teaches the narrator about the occult, including various beliefs associated with the Rosicrucians. The Count introduces such things as the Sylphs of the Air, the Undines of the Water, the Gnomes of the Earth and the Salamanders of Fire. It is entirely possible that de Villars is satirizing occult sciences, which had a vogue in seventeenth century Europe, as absurd or incompatible with orthodox religion. But it is hard to be sure; this may be an example of a satire that does not make its intentions clear enough.</note> which <pb
                   n="[Epistle.4]" facs="PageImages/Pope-RL:epistle.iv.jpg"/> both in its Title and
                Size is so like a <hi rend="italic">Novel,</hi> that many of the fair Sex have read
@@ -414,17 +412,17 @@
                done. But let its Fortune be what it will, mine is happy enough, to have given me
                this Occasion of assuring You that I am. with the truest Esteem, </p>
             <closer>
-               <salute>
-                  <hi rend="italic">Madam</hi>
+             
+                  <hi rend="italic">Madam,</hi>
                   <lb/>
                   <hi rend="italic">Your Most Obedient</hi>
                   <lb/>
                   <hi rend="italic">Humble Servant.</hi>
-               </salute>
+               
                <lb/>
                <lb/>
-               <signed rend="italic">
-                  <name>A. POPE.</name>
+               <signed>
+                  <persName>A. POPE.</persName>
                   <lb/>
                </signed>
             </closer>
@@ -433,10 +431,10 @@
       <body>
 
          <div type="engraving">
-            <figure>
+            
                <pb n="[Engraving]" facs="PageImages/Pope-RL:canto1.image.jpg"/>
-               <graphic url="PageImages/Pope-RL:canto1.image.jpg" style="float:center" width="50%"/>
-            </figure>
+            <head><ref target="Figure_1_" corresp="Figure_1">Figure 1</ref><note xml:id="Figure_1" target="Figure_1_"><graphic url="PageImages/Pope-RL:canto1.image.jpg" style="float:center" width="100%"/></note></head>
+            
          </div>
 
          <pb n="1" facs="PageImages/Pope-RL:p.1.jpg"/>
@@ -773,10 +771,8 @@
             </lg>
          </div>
          <div type="engraving">
-            <figure>
                <pb n="[Engraving]" facs="PageImages/Pope-RL:canto2.image.jpg"/>
-               <graphic url="PageImages/Pope-RL:canto2.image.jpg" style="float:center" width="50%"/>
-            </figure>
+            <head><ref target="Figure_2_" corresp="Figure_2">Figure 2</ref><note xml:id="Figure_2" target="Figure_2_"><graphic url="PageImages/Pope-RL:canto2.image.jpg" style="float:center" width="100%"/></note></head> 
          </div>
          <pb n="10" facs="PageImages/Pope-RL:p.10.jpg"/>
          <div n="2" type="canto">
@@ -1132,21 +1128,13 @@
                   mazy Ringlets of her Hair,</l>
                <l n="142">Some hang upon the Pendants of her Ear;</l>
                <l n="143">With beating Hearts the dire Event they wait,</l>
-               <l n="144">Anxious, and trembling for the Birth of Fate.</l>
-               <l>
-                  <figure>
-                     <!-- <graphic url="ENTITY_plate5"/> -->
-                  </figure>
-               </l>
+               <l n="144">Anxious, and trembling for the Birth of Fate.</l>        
             </lg>
          </div>
          <div type="engraving">
-            <figure>
                <pb n="[Engraving]" facs="PageImages/Pope-RL:cantoiii.image.jpg"/>
-               <graphic url="PageImages/Pope-RL:cantoiii.image.jpg" style="float:center" width="50%"
-               />
-            </figure>
-         </div>
+            <head><ref target="Figure_3_" corresp="Figure_3">Figure 3</ref><note xml:id="Figure_3" target="Figure_3_"><graphic url="PageImages/Pope-RL:cantoiii.image.jpg" style="float:center" width="100%"/></note></head>
+                   </div>
          <pb n="19" facs="PageImages/Pope-RL:p.19.jpg"/>
          <div n="3" type="canto">
             <head> THE RAPE <hi rend="italic">of the</hi> LOCK. <lb/></head>
@@ -1389,7 +1377,7 @@
                <l n="118"> Sent up in Vapours to the <hi rend="italic">Baron</hi>'s Brain </l>
                <l n="119">New Stratagems, the radiant Lock to gain.</l>
                <l n="120">Ah cease rash Youth! desist e'er 'tis too late,</l>
-               <l n="121"> Fear the just Gods, and think of <note rend="star" anchored="true"/>
+               <l n="121"> Fear the just Gods, and think of
                   <hi rend="italic"><ref target="Scylla_" corresp="Scylla">Scylla</ref></hi>
                   <note xml:id="Scylla" target="Scylla_" type="gloss">Nisus, king of Megara, was at war
                      against Crete, but it was decreed by fate that his kingdom would be safe as
@@ -1492,11 +1480,8 @@
             </lg>
          </div>
          <div type="engraving">
-            <figure>
                <pb n="[Engraving]" facs="PageImages/Pope-RL:canto.iv.image.jpg"/>
-               <graphic url="PageImages/Pope-RL:canto.iv.image.jpg" style="float:center" width="50%"
-               />
-            </figure>
+            <head><ref target="Figure_4_" corresp="Figure_4">Figure 4</ref><note xml:id="Figure_4" target="Figure_4_"><graphic url="PageImages/Pope-RL:canto.iv.image.jpg" style="float:center" width="100%"/></note></head>
          </div>
          <pb n="30" facs="PageImages/Pope-RL:p.30.jpg"/>
          <div n="4" type="canto">
@@ -1516,9 +1501,6 @@
                   awry, </l>
                <pb n="31" facs="PageImages/Pope-RL:p.31.jpg"/>
                <l>
-                  <figure>
-                     <!-- <graphic url="ENTITY_plate6"/> -->
-                  </figure>
                </l>
                <l n="9">E'er felt such Rage, Resentment and Despair,</l>
                <l n="10">As Thou, sad Virgin! for thy ravish'd Hair.</l>
@@ -1807,8 +1789,8 @@
             <lg type="verse_paragraph">
                <l rend="indent" n="131">It grieves me much (reply'd the Peer again)</l>
                <l n="132">Who speaks so well shou'd ever speak in vain.</l>
-               <l n="133">But * by this <ref target="n195" corresp="n195">Lock</ref><note
-                     xml:id="n195" target="a195" type="gloss">This passage may to a
+               <l n="133">But * by this <ref target="Lock_" corresp="Lock">Lock</ref><note
+                     xml:id="Lock" target="Lock_" type="gloss">This passage may to a
                      passage from Homer (<hi rend="italic">Iliad, book 23)</hi> in which Achilles cuts off a lock of his own hair to                     mourn and commemorate the death of Patroclus. Many of his men follow
                      suit and cut off locks of their own hair, and Achilles then cuts off
                      another lock of his hair that he had been growing for the river Spercheus to
@@ -1904,19 +1886,12 @@
                <l n="174">And tempts once more thy sacrilegious Hands.</l>
                <l n="175">Oh hadst thou, Cruel! been content to seize</l>
                <l n="176">Hairs less in sight, or any Hairs but these!</l>
-               <l>
-                  <figure>
-                     <!-- <graphic url="ENTITY_plate7"/> -->
-                  </figure>
-               </l>
             </lg>
          </div>
          <div type="engraving">
-            <figure>
                <pb n="[Engraving]" facs="PageImages/Pope-RL:canto.v.image.jpg"/>
-               <graphic url="PageImages/Pope-RL:canto.v.image.jpg" style="float:center" width="50%"
-               />
-            </figure>
+               <head>
+                     <ref target="Figure_5_" corresp="Figure_5">Figure 5</ref><note xml:id="Figure_5" target="Figure_5_"><graphic url="PageImages/Pope-RL:canto.v.image.jpg" style="float:center" width="100%"/></note></head>
          </div>
          <pb n="41" facs="PageImages/Pope-RL:p.41.jpg"/>
          <div n="5" type="canto">
