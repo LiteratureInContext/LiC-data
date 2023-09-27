@@ -4,8 +4,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>The interesting narrative of the life of Olaudah Equiano: or Gustavus Vassa, the
-               African.</title>
+            <title>The interesting narrative of the life of Olaudah Equiano: or Gustavus Vassa, the African.</title>
             <author>
                <persName type="lcnaf" key="n50027909">
                   <name>
@@ -60,20 +59,14 @@
                         <name>
                            <forename>Olaudah</forename>
                            <surname>Equiano</surname>
-                           <date when="1745">Birth: 1745</date>
-                           <date when="1797-03-31">Death: 1797 March 31</date>
-                           <roleName>Explorer, Writer, Merchant, and Abolitionist</roleName>
-                           <affiliation>Married</affiliation>
-                           <country>England</country>
                         </name>
                      </persName>
                   </author>
                   <title type="main">The Interesting Narrative of the Life of Olaudah
-                     Equiano</title>
-                  <title type="sub">Gustavus Vassa, the African. Written by himself</title>
+                     Equiano: or Gustavus Vassa, the African</title>
                   <imprint>
                      <pubPlace>
-                        <placeName type="country" key="eng">England</placeName>
+                        <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
                      <publisher>Olaudah Equiano</publisher>
                      <date when="1789">1789</date>
@@ -169,38 +162,66 @@
             </taxonomy>
          </classDecl>
       </encodingDesc>
+      
       <profileDesc>
          <langUsage>
             <language ident="eng">eng</language>
          </langUsage>
+         <creation/>
+         <textDesc n="memoir">
+            
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single work</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="entertain" degree="medium"/>
+         </textDesc>
+         
+         <settingDesc>
+            
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <name type="tgn" key="7005332">Bahamas</name>
+               <name type="tgn" key="7007712">South Carolina</name>
+               <name type="tgn" key="7593183">Arctic</name>
+               <name type="tgn" key="1000182">Nigeria</name>
+               <time from="1750" to="1800">Early 18th Century</time>
+               
+            </setting>
+            
+         </settingDesc>
       </profileDesc>
    </teiHeader>
-   <text xml:lang="eng">
+   <text>
       <front>
          <div type="frontispiece">
-            <pb n="[frontispiece]" facs="pageImages/Equiano-vol1-pI.jpg"/>
+            <pb n="[Frontispiece]" facs="pageImages/Equiano-vol1-pI.jpg"/>
             <head type="sub"><hi rend="italic">Olaudah Equiano</hi><lb/> or<lb/> Gustavus Vassa,<lb/>
                <hi rend="italic">the African</hi><lb/></head>
             <head type="sub"><hi rend="italic">Published March 1 1789 by G. Vassa</hi></head>
          </div>
-         <pb n="[TP]" facs="pageImages/Equiano-vol1-pII.jpg"/>
+         <pb n="[Title Page]" facs="pageImages/Equiano-vol1-pII.jpg"/>
          <titlePage>
             <docTitle>
                <titlePart> THE<lb/>INTERESTING NARRATIVE<lb/> OF<lb/> THE LIFE <lb/>OF <lb/>OLAUDAH
                   EQUIANO,<lb/> OR <lb/>GUSTAVUS VASSA,<lb/> THE AFRICAN.<lb/></titlePart>
             </docTitle>
-            <docAuthor><hi rend="italic">WRITTEN BY HIMSELF.<lb/></hi></docAuthor>
+            <docAuthor><hi rend="italic">WRITTEN BY HIMSELF.</hi></docAuthor>
             <titlePart> VOL 1.<lb/></titlePart>
             <epigraph>
                <quote>
-                  <p><hi rend="italic">Behold, God is my salvation; I will trust and not be afraid,
+                 <hi rend="italic">Behold, God is my salvation; I will trust and not be afraid,
                         for the Lord Jehovah is my strength and my song; he also is become my
                         salvation.</hi>
-                  </p>
-                  <p>
+                  
                      <hi rend="italic">And in that day shall ye say, Praise the Lord, call upon his
                         name, declare his doings among the people,</hi>
-                  </p>
+                  
                   <bibl>Isaiah xii. 2, 4.<lb/></bibl>
                </quote>
             </epigraph>
@@ -210,17 +231,17 @@
                <publisher> Printed and sold for the AUTHOR, by T. Wilkins, No. 23, Aldermanbury;
                   sold also by Mr. Johnson, St. Paul's Church-Yard; Mr. Buckland, Paternoster-Row;
                   Messrs. Robson and Clark, Bond-street; Mr. Davis, opposite Gray's-Inn, Holborn;
-                  Mr. Matthews, strand; Mr Stockdale, Piccadilly; Mr. Richardson, Royal Exchange;
+                  Mr. Matthews, Strand; Mr Stockdale, Piccadilly; Mr. Richardson, Royal Exchange;
                   Mr. Kearsley, Fleet-street; and the Booksellers in Oxford and
-                  Cambridge.</publisher></docImprint>
-            <note><hi rend="italic">[Entered at stationers-hall.</hi>]</note>
+                  Cambridge.</publisher>
+               <hi rend="italic">[Entered at stationers-hall.</hi>]</docImprint>
          </titlePage>
          <div type="dedication">
             <pb n="iii" facs="pageImages/Equiano-vol1-pIII.jpg"/>
             <head>To the Lords spiritual and Temporal, and the Commons of the Parliament of Great
                Britain.</head>
             <opener>
-               <salute><hi rend="italic">My Lords and Gentlemen</hi>,</salute>
+               <salute>My Lords and Gentlemen,</salute>
             </opener>
             <p>PERMIT me, with the greatest deference and respect, to lay at your feet the following
                genuine Narrative; the chief design of which is to excite in your august assemblies a
