@@ -1,20 +1,14 @@
 <collection xmlns="http://exist-db.org/collection-config/1.0">
-    <index xmlns:srophe="https://srophe.app" xmlns:tei="http://www.tei-c.org/ns/1.0">
+    <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:srophe="https://srophe.app">
         <lucene diacritics="no">
-            <module uri="http://srophe.org/srophe/facets" prefix="sf"
-                at="xmldb:exist:////db/apps/LiC/modules/lib/facets.xql"/>
+            <module uri="http://srophe.org/srophe/facets" prefix="sf" at="xmldb:exist:////db/apps/LiC/modules/lib/facets.xql"/>
             <text qname="tei:TEI">
-                <facet dimension="author"
-                    expression="sf:facet(., '/db/apps/LiC/facet-def.xml', 'author')"/>
-                <facet dimension="pubDateRange"
-                    expression="sf:range(., '/db/apps/LiC/facet-def.xml', 'pubDateRange')"/>
-                <facet dimension="placePub"
-                    expression="sf:facet(., '/db/apps/LiC/facet-def.xml', 'placePub')"/>
-                <!-- Predetermined sort fields -->
+                <facet dimension="author" expression="sf:facet(., '/db/apps/LiC/facet-def.xml', 'author')"/>
+                <facet dimension="pubDateRange" expression="sf:range(., '/db/apps/LiC/facet-def.xml', 'pubDateRange')"/>
+                <facet dimension="placePub" expression="sf:facet(., '/db/apps/LiC/facet-def.xml', 'placePub')"/><!-- Predetermined sort fields -->
                 <field name="title" expression="sf:field(.,'title')"/>
                 <field name="author" expression="sf:field(., 'author')"/>
-                <field name="authorLastNameFirstName"
-                    expression="sf:field(., 'authorLastNameFirstName')"/>
+                <field name="authorLastNameFirstName" expression="sf:field(., 'authorLastNameFirstName')"/>
                 <field name="pubDate" expression="sf:field(., 'pubDate')"/>
             </text>
             <text qname="tei:text">

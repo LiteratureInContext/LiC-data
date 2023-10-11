@@ -1,8 +1,9 @@
-xquery version "3.0";
-
-import module namespace xdb="http://exist-db.org/xquery/xmldb";
-
-import module namespace xrest="http://exquery.org/ns/restxq/exist" at "java:org.exist.extensions.exquery.restxq.impl.xquery.exist.ExistRestXqModule";
+xquery version "3.1";
+(:~ The post-install runs after contents are copied to db.
+ :
+ : @version 1.0.0
+ :)
+declare namespace repo="http://exist-db.org/xquery/repo";
 
 (: The following external variables are set by the repo:deploy function :)
 
@@ -13,7 +14,4 @@ declare variable $dir external;
 (: the target collection into which the app is deployed :)
 declare variable $target external;
 
-(
-(: Set UID for git-sync. :)
-(:sm:chmod(xs:anyURI($target || '/modules/git-sync.xql'), "rwsr-xr-x"):)''
-)
+1 + 1
