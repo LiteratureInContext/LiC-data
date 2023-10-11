@@ -15,5 +15,6 @@ declare variable $target external;
 
 (
 (: Set UID for git-sync. :)
-(:sm:chmod(xs:anyURI($target || '/modules/git-sync.xql'), "rwsr-xr-x"):)''
+(:sm:chmod(xs:anyURI($target || '/modules/git-sync.xql'), "rwsr-xr-x"):)
+sm:chmod(xs:anyURI($target || '/modules/lib/git-sync.xql'), "rwsr-xr-x")
 )
