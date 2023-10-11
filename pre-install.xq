@@ -1,5 +1,8 @@
 xquery version "1.0";
-
+(:~ The pre-install runs before the actual install and deploy.
+ :
+ : @version 1.0.0
+ :)
 import module namespace xdb="http://exist-db.org/xquery/xmldb";
 
 (: The following external variables are set by the repo:deploy function :)
@@ -28,7 +31,5 @@ declare function local:mkcol($collection, $path) {
 };
 
 (: store the collection configuration :)
-(local:mkcol("/db/system/config", $target),
-xdb:store-files-from-pattern(concat("/system/config", $target), $dir, "*.xconf")
-
-)
+local:mkcol("/db/system/config", $target),
+xdb:store-files-from-pattern(concat("/db/system/config", $target), $dir, "*.xconf")
