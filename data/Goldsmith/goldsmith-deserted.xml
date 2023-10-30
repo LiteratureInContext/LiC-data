@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="goldsmith-deserted">
+<teiHeader xml:lang="en">
+<fileDesc>
+<titleStmt>
+<title type="main">The Deserted Village</title>
+<author>Goldsmith, Oliver</author>
+<respStmt>
+<resp>Creation of machine-readable version</resp>
+<name>Judy Boss</name>
+</respStmt>
+<respStmt>
+<resp>Conversion to TEI-conformant markup</resp>
+<name>University of Virginia Library Electronic Text Center</name>
+</respStmt>
+</titleStmt>
+<extent>ca. <num type="kilobytes">29</num> kilobytes</extent>
+<publicationStmt>
+<publisher>University of Virginia Library</publisher>
+<pubPlace>Charlottesville, Virginia</pubPlace>
+<idno type="ETC">GolDese</idno>
+<date value="1994">1994</date>
+<availability status="public">
+<p n="copyright">Copyright &copy; 1994 by the Rector and Visitors of the University of Virginia</p>
+<p n="access">Publicly accessible</p>
+</availability>
+<idno type="uva-pid">uva-lib:475997</idno>
+</publicationStmt>
+<seriesStmt>
+<title>University of Virginia Library, Text collection</title>
+<idno type="uva-set">UVA-LIB-Text</idno>
+</seriesStmt>
+<sourceDesc>
+<biblFull>
+<titleStmt>
+<title type="main">The Deserted Village</title>
+<title type="sort">deserted village</title>
+<author>Oliver Goldsmith</author>
+</titleStmt>
+<publicationStmt>
+<publisher>The Fountain Press</publisher>
+<pubPlace>Chicago</pubPlace>
+<date value="1965">1965</date>
+</publicationStmt>
+</biblFull>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<projectDesc>
+<p>Prepared for the University of Virginia Library Electronic Text Center</p>
+</projectDesc>
+<editorialDecl>
+<p>All quotation marks retained as data</p>
+<p>All unambiguous end-of-line hyphens have been removed, and the
+trailing part of a word has been joined to the preceding line.</p>
+<p id="ETC">Keywords in the header are a local Electronic Text
+Center scheme to aid in establishing analytical groupings</p>
+</editorialDecl>
+<refsDecl>
+<p>ID elements are given for each page element and are composed of
+the text's unique cryptogram and the given page number, as in
+SpeFQue1 for page one of Spenser's Faerie Queene.</p>
+</refsDecl>
+</encodingDesc>
+<profileDesc>
+<creation>
+<date value="1770">1770</date>
+</creation>
+<langUsage>
+<language id="eng" usage="main">English</language>
+</langUsage>
+<textClass>
+<keywords>
+<term>fiction; prose</term>
+</keywords>
+</textClass>
+</profileDesc>
+<revisionDesc>
+<change>
+<date value="1994-04">April 1994</date>
+<respStmt>
+<resp>corrector</resp>
+<name>Timothy Jarrett</name>
+</respStmt>
+<item>minimal TEI markup</item>
+</change>
+<change>
+<date value="2005-07">July 2005</date>
+<respStmt>
+<resp>Corrector</resp>
+<name>John Ivor Carlson</name>
+</respStmt>
+<item>Converted SGML to XML. Fixed tagging.</item>
+</change>
+<change>
+<date value="2007-09">September 2007</date>
+<respStmt>
+<resp>Migration</resp>
+<name>Ethan Gruber, University of Virginia Library</name>
+</respStmt>
+<item>Converted XML markup from TEI Lite to uva-dl-tei (TEI P4 with local customizations).</item>
+</change>
+<change>
+<date value="2008-01">January 2008</date>
+<respStmt>
+<resp>Migration</resp>
+<name>Greg Murray, University of Virginia Library</name>
+</respStmt>
+<item>Programmatically updated TEI header markup (but not header content) for minimal compliance with current QA requirements.</item>
+</change>
+</revisionDesc>
+</teiHeader>
+
+<text id="d1">
+<body id="d2">
+<div1 type="poem" id="d3">
+
+<pb n="291"/>
+<lg type="stanza" n="1.1">
+
+<l n="1">Sweet Auburn! loveliest village of the plain,</l>
+<l n="2">Where health and plenty cheer'd the labouring swain,</l>
+<l n="3">Where smiling Spring its earliest visit paid,</l>
+<l n="4">And parting Summer's lingering blooms delay'd;</l>
+<l n="5">Dear lovely bowers of innocence and ease,</l>
+<l n="6">Seats of my youth, when every sport could please:</l>
+<l n="7">How often have I loiter'd o'er thy green,</l>
+<l n="8">Where humble happiness endear'd each scene!</l>
+<l n="9">How often have I paused on every charm,</l>
+<l n="10">The shelter'd cot, the cultivated farm,</l>
+<l n="11">The never-failing brook, the busy mill,</l>
+<l n="12">The decent church that topp'd the neighbouring hill;</l>
+<l n="13">The hawthorn bush, with seats beneath the shade,</l>
+<l n="14">For talking age and whispering lovers made!</l>
+<l n="15">How often have I bless'd the coming day,</l>
+<l n="16">When toil, remitting, lent its turn to play,</l>
+<l n="17">And all the village train, from labour free,</l>
+<l n="18">Led up their sports beneath the spreading tree!</l>
+<l n="19">While many a pastime circled in the shade,</l>
+<l n="20">The young contending as the old survey'd;</l>
+<l n="21">And many a gambol frolick'd o'er the ground,</l>
+<l n="22">And sleights of art and feats of strength went round;</l>
+<l n="23">And still, as each repeated pleasure tired,</l>
+<l n="24">Succeeding sports the mirthful band inspired-</l>
+<l n="25">The dancing pair that simply sought renown,</l>
+
+<pb n="292"/>
+<l n="26">By holding out to tire each other down;</l>
+<l n="27">The swain mistrustless of his smutted face,</l>
+<l n="28">While secret laughter titter'd round the place;</l>
+<l n="29">The bashful virgin's side-long looks of love;</l>
+<l n="30">The matron's glance, that would those looks reprove.</l>
+<l n="31">These were thy charms, sweet village! sports like these,</l>
+<l n="32">With sweet succession, taught e'en toil to please;</l>
+<l n="33">These round thy bowers their cheerful influence shed;</l>
+<l n="34">These were thy charms-but all these charms are fled.</l>
+</lg>
+<lg type="stanza" n="1.2">
+<l n="35">     Sweet smiling village, loveliest of the lawn,</l>
+<l n="36">Thy sports are fled, and all thy charms withdrawn;</l>
+<l n="37">Amidst thy bowers the tyrant's hand is seen,</l>
+<l n="38">And Desolation saddens all thy green:</l>
+<l n="39">One only master grasps the whole domain,</l>
+<l n="40">And half a tillage stints thy smiling plain.</l>
+<l n="41">No more thy glassy brook reflects the day,</l>
+<l n="42">But, choked with sedges, works its weedy way;</l>
+<l n="43">Along thy glades, a solitary guest,</l>
+<l n="44">The hollow-sounding bittern guards its nest;</l>
+<l n="45">Amidst thy desert walks the lapwing flies,</l>
+<l n="46">And tires their echoes with unvaried cries:</l>
+<l n="47">Sunk are thy bowers in shapeless ruin all,</l>
+<l n="48">And the long grass o'ertops the mouldering wall</l>
+<l n="49">And, trembling, shrinking from the spoiler's hand,</l>
+<l n="50">Far, far away thy children leave the land.</l>
+</lg>
+<lg type="stanza" n="1.3">
+<l n="51">Ill fares the land, to hastening ills a prey,</l>
+<l n="52">Where wealth accumulates, and men decay.</l>
+<l n="53">Princes and lords may flourish, or may fade;</l>
+<l n="54">A breath can make them, as a breath has made:</l>
+<l n="55">But a bold peasantry, their country's pride,</l>
+<l n="56">When once destroy'd, can never be supplied.</l>
+</lg>
+<lg type="stanza" n="1.4">
+<l n="57">A time there was, ere England's griefs began,</l>
+<l n="58">When every rood of ground maintain'd its man;</l>
+<l n="59">For him light Labour spread her wholesome store,</l>
+<l n="60">just gave what life required, but gave no more:</l>
+<l n="61">His best companions, Innocence and Health;</l>
+
+<pb n="293"/>
+<l n="62">And his best riches, ignorance of wealth.</l>
+</lg>
+<lg type="stanza" n="1.5">
+<l n="63">But times are alter'd; Trade's unfeeling train</l>
+<l n="64">Usurp the land, and dispossess the swain;</l>
+<l n="65">Along the lawn, where scatter'd hamlets rose,</l>
+<l n="66">Unwieldy wealth and cumbrous pomp repose;</l>
+<l n="67">And every want to luxury allied,</l>
+<l n="68">And every pang that folly pays to pride.</l>
+<l n="69">Those gentle hours that plenty bade to bloom,</l>
+<l n="70">Those calm desires that ask'd but little room,</l>
+<l n="71">Those healthful sports that graced the peaceful scene,</l>
+<l n="72">Lived in each look, and brighten'd all the green-</l>
+<l n="73">These, far departing, seek a kinder shore,</l>
+<l n="74">And rural mirth and manners are no more.</l>
+</lg>
+<lg type="stanza" n="1.6">
+<l n="75">Sweet Auburn! parent of the blissful hour,</l>
+<l n="76">Thy glades forlorn confess the tyrant's power,</l>
+<l n="77">Here, as I take my solitary rounds,</l>
+<l n="78">Amidst thy tangling walks and ruin'd grounds,</l>
+<l n="79">And, many a year elapsed, return to view</l>
+<l n="80">Where once the cottage stood, the hawthorn grew-</l>
+<l n="81">Remembrance wakes with all her busy train,</l>
+<l n="82">Swells at my breast, and turns the past to pain.</l>
+</lg>
+<lg type="stanza" n="1.7">
+<l n="83">In all my wanderings through this world of care,</l>
+<l n="84">In all my griefs-and God has given my share-</l>
+<l n="85">I still had hopes, my latest hours to crown,</l>
+<l n="86">Amidst these humble bowers to lay me down;</l>
+<l n="87">To husband out life's taper at the close,</l>
+<l n="88">And keep the flame from wasting, by repose:</l>
+<l n="89">I still had hopes, for pride attends us still,</l>
+<l n="90">Amidst the swains to show my book-learn'd skill,</l>
+<l n="91">Around my fire an evening group to draw,</l>
+<l n="92">And tell of all I felt, and all I saw;</l>
+<l n="93">And, as a hare, whom hounds and horns pursue,</l>
+<l n="94">Pants to the place f rom whence at first she flew,</l>
+<l n="95">I still had hopes, my long vexations past,</l>
+<l n="96">Here to return-and die at home at last.</l>
+</lg>
+<lg type="stanza" n="1.8">
+<l n="97">0 blest retirement, friend to life's decline,</l>
+
+<pb n="294"/>
+<l n="98">Retreats from care, that never must be mine,</l>
+<l n="99">How blest is he who crowns, in shades like these,</l>
+<l n="100">A youth of labour with an age of ease;</l>
+<l n="101">Who quits a world where strong temptations try,</l>
+<l n="102">And, since 'tis hard to combat, learns to fly!</l>
+<l n="103">For him no wretches, born to work and weep,</l>
+<l n="104">Explore the mine, or tempt the dangerous deep;</l>
+<l n="105">No surly porter stands, in guilty state,</l>
+<l n="106">To spurn imploring famine from the gate;</l>
+<l n="107">But on he moves to meet his latter end,</l>
+<l n="108">Angels around befriending virtue's friend;</l>
+<l n="109">Sinks to the grave with unperceived decay,</l>
+<l n="110">While resignation gently slopes the way;</l>
+<l n="111">And, all his prospects brightening to the last,</l>
+<l n="112">His heaven commences ere the world be past!</l>
+</lg>
+<lg type="stanza" n="1.9">
+<l n="113">Sweet was the sound, when oft, at evening's close,</l>
+<l n="114">Up yonder hill the village murmur rose.</l>
+<l n="115">There, as I pass'd with careless steps and slow,</l>
+<l n="116">The mingled notes came soften'd from below;</l>
+<l n="117">The swain responsive as the milk-maid sung,</l>
+<l n="118">The sober herd that low'd to meet their young,</l>
+<l n="119">The noisy geese that gobbled o'er the pool,</l>
+<l n="120">The playful children just let loose from school;</l>
+<l n="121">The watch dog's voice that bay'd the whispering
+wind,</l>
+<l n="122">And the loud laugh that spoke the vacant mind;-</l>
+<l n="123">These all in sweet confusion sought the shade,</l>
+<l n="124">And fill'd each pause the nightingale had made.</l>
+<l n="125">But now the sounds of population fail,</l>
+<l n="126">No cheerful murmurs fluctuate in the gale,</l>
+<l n="127">No busy steps the grass-grown footway tread</l>
+<l n="128">But all the bloomy flush of life is fled-</l>
+<l n="129">All but yon widow'd, solitary thing,</l>
+<l n="130">That feebly bends beside the plashy spring;</l>
+<l n="131">She, wretched matron,-forced, in age, for bread,</l>
+<l n="132">To strip the brook with mantling cresses spread,</l>
+<l n="133">To pick her wintry faggot from the thorn,</l>
+
+<pb n="295"/>
+<l n="134">To seek her nightly shed, and weep till morn,-</l>
+<l n="135">She only left of all the harmless train,</l>
+<l n="136">The sad historian of the pensive plain.</l>
+</lg>
+<lg type="stanza" n="1.10">
+<l n="137">Near yonder copse, where once the garden smiled,</l>
+<l n="138">And still where many a garden-flower grows wild,</l>
+<l n="139">There, where a few torn shrubs the place disclose,</l>
+<l n="140">The village preacher's modest mansion rose.</l>
+<l n="141">A man he was to all the country dear,</l>
+<l n="142">And passing rich with forty pounds a year.</l>
+<l n="143">Remote from towns he ran his godly race,</l>
+<l n="144">Nor e'er had changed, nor wish'd to change, his
+place;</l>
+<l n="145">Unskilful he to fawn, or seek for power</l>
+<l n="146">By doctrines fashion'd to the varying hour;</l>
+<l n="147">Far other aims his heart had learn'd to Prize,</l>
+<l n="148">More bent to raise the wretched than to rise.</l>
+<l n="149">His house was known to all the vagrant train;</l>
+<l n="150">He chid their wanderings, but relieved their pain;</l>
+<l n="151">The long-remember'd beggar was his guest,</l>
+<l n="152">Whose beard descending swept his aged breast;</l>
+<l n="153">The ruin'd spendthrift, now no longer proud,</l>
+<l n="154">Claim'd kindred there, and had his claims allow'd;</l>
+<l n="155">The broken soldier, kindly bid to stay,</l>
+<l n="156">Sat by his fire, and talk'd the night away;-</l>
+<l n="157">Wept o'er his wounds, or, tales of sorrow done,</l>
+<l n="158">Shoulder'd his crutch, and show'd how fields were
+won.</l>
+<l n="159">Pleased with his guests, the good man learn'd to
+glow,</l>
+<l n="160">And quite forgot their vices in their woe;</l>
+<l n="161">Careless their merits or their faults to scan,</l>
+<l n="162">His pity gave ere charity began,</l>
+</lg>
+<lg type="stanza" n="1.11">
+<l n="163">Thus to relieve the wretched was his pride,</l>
+<l n="164">And even his failings lean'd to virtue's side;</l>
+<l n="165">But in his duty prompt at every call,</l>
+<l n="166">He watch'd and wept, he pray'd and felt for all:</l>
+<l n="167">And, as a bird each fond endearment tries,</l>
+<l n="168">To tempt its new-fledged offspring to the skies,</l>
+<l n="169">He tried each art, reproved each dull delay,</l>
+
+<pb n="296"/>
+<l n="170">Allured to brighter worlds, and led the way.</l>
+</lg>
+<lg type="stanza" n="1.12">
+<l n="171">Beside the bed where parting life was laid,</l>
+<l n="172">And sorrow, guilt, and pain, by turns dismay'd,</l>
+<l n="173">The reverend champion stood.  At his control,</l>
+<l n="174">Despair and anguish fled the struggling soul;</l>
+<l n="175">Comfort came down the trembling wretch to raise,</l>
+<l n="176">And his last faltering accents whisper'd praise.</l>
+</lg>
+<lg type="stanza" n="1.14">
+<l n="177">At church, with meek and unaffected grace,</l>
+<l n="178">His looks adorn'd the venerable place;</l>
+<l n="179">Truth from his lips prevail'd with double sway,</l>
+<l n="180">And fools, who came to scoff, remain'd to pray.</l>
+<l n="181">The service past, around the pious man</l>
+<l n="182">With steady zeal, each honest rustic ran;</l>
+<l n="183">E'en children follow'd, with endearing wile,</l>
+<l n="184">And pluck'd his gown, to share the good man's
+smile;</l>
+<l n="185">His ready smile a parent's warmth express'd;</l>
+<l n="186">Their welfare pleased him, and their cares distress'd;</l>
+<l n="187">To them his heart, his love, his griefs were given</l>
+<l n="188">But all his serious thoughts had rest in heaven.</l>
+<l n="189">As some tall cliff that lifts its awful form,</l>
+<l n="190">Swells from the vale, and midway leaves the storm,</l>
+<l n="191">Though round its breast the rolling clouds are spread,</l>
+
+<l n="192">Eternal sunshine settles on its head.</l>
+</lg>
+<lg type="stanza" n="1.15">
+<l n="193">Beside yon straggling fence that skirts the way,</l>
+<l n="194">With blossom'd furze unprofitably gay,</l>
+<l n="195">There, in his noisy mansion, skill'd to rule,</l>
+<l n="196">The village master taught his little school.</l>
+<l n="197">A man severe he was, and stern to view;</l>
+<l n="198">I knew him well, and every truant knew:</l>
+<l n="199">Well had the boding tremblers learn'd to trace</l>
+<l n="200">The day's disasters in his morning face;</l>
+<l n="201">Full well they laugh'd with counterfeited glee</l>
+<l n="202">At all his jokes, for many a joke had he;</l>
+<l n="203">Full well the busy whisper, circling round,</l>
+<l n="204">Convey'd the dismal tidings when he frown'd.</l>
+<l n="205">Yet he was kind, or if severe in aught,</l>
+
+<pb n="297"/>
+<l n="206">The love he bore to learning was in fault.</l>
+<l n="207">The village all declared how much he knew;</l>
+<l n="208">'Twas certain he could write, and cipher too;</l>
+<l n="209">Lands he could measure, terms and tides presage,</l>
+<l n="210">And even the story ran that he could gauge.</l>
+<l n="211">In arguing, too, the parson own'd his skill,</l>
+<l n="212">For even though vanquish'd, he could argue still;</l>
+<l n="213">While words of learned length and thundering sound</l>
+<l n="214">Amazed the gazing rustics ranged around;</l>
+<l n="215">And still they gazed, and still the wonder grew,</l>
+<l n="216">That one small head could carry all he knew.</l>
+<l n="217">But past is all his fame;-the very spot</l>
+<l n="218">Where many a time he triumph'd, is forgot.</l>
+</lg>
+<lg type="stanza" n="1.16">
+<l n="219">Near yonder thorn, that lifts its head on high,</l>
+<l n="220">Where once the sign-post caught the passing eye,</l>
+<l n="221">Now lies that house where nut-brown draughts
+inspired,</l>
+<l n="222">Where grey-beard mirth and smiling toil retired,</l>
+<l n="223">Where village statesmen talk'd with looks profound,</l>
+<l n="224">And news much older than their ale went round.</l>
+<l n="225">Imagination fondly stoops to trace</l>
+<l n="226">The parlour splendours of that festive place;</l>
+<l n="227">The whitewash'd wall, the nicely sanded floor,</l>
+<l n="228">The varnish'd clock that click'd behind the door,</l>
+<l n="229">The chest, contrived a double debt to pay,</l>
+<l n="230">A bed by night, a chest of drawers by day,</l>
+<l n="231">The pictures placed for ornament and use,</l>
+<l n="232">The twelve good rules, the royal game of goose,</l>
+<l n="233">The hearth, except when winter chill'd the day,</l>
+<l n="234">With aspen boughs, and flowers, and fennel gay;-</l>
+<l n="235">While broken tea-cups, wisely kept for show,</l>
+<l n="236">Ranged o'er the chimney, glisten'd in a row.</l>
+</lg>
+<lg type="stanza" n="1.17">
+<l n="237">Vain transitory splendours! Could not all</l>
+<l n="238">Reprieve the tottering mansion from its fall?</l>
+<l n="239">Obscure it sinks, nor shall it more impart</l>
+<l n="240">An hour's importance to the poor man's heart.</l>
+<l n="241">Thither no more the peasant shall repair,</l>
+
+<pb n="298"/>
+<l n="242">To sweet oblivion of his daily care;</l>
+<l n="243">No more the farmer's news, the barber's tale,</l>
+<l n="244">No more the woodman's ballad shall prevail;</l>
+<l n="245">No more the smith his dusky brow shall clear,</l>
+<l n="246">Relax his ponderous strength, and lean to hear;</l>
+<l n="247">The host himself no longer shall be found</l>
+<l n="248">Careful to see the mantling bliss go round;</l>
+<l n="249">Nor the coy maid, half willing to be prest,</l>
+<l n="250">Shall kiss the cup to pass it to the rest.</l>
+</lg>
+<lg type="stanza" n="1.18">
+<l n="251">Yes! let the rich deride, the proud disdain,</l>
+<l n="252">These simple blessings of the lowly train;</l>
+<l n="253">To me more dear, congenial to my heart,</l>
+<l n="254">One native charm, than all the gloss of art.</l>
+<l n="255">Spontaneous joys, where nature has its play,</l>
+<l n="256">The soul adopts, and owns their first-born sway;</l>
+<l n="257">Lightly they frolic o'er the vacant mind,</l>
+<l n="258">Unenvied, unmolested, unconfined:</l>
+<l n="259">But the long pomp, the midnight masquerade,</l>
+<l n="260">With all the freaks of wanton wealth array'd,</l>
+<l n="261">In these, ere triflers half their wish obtain,</l>
+<l n="262">The toiling pleasure sickens into pain;</l>
+<l n="263">And, even while Fashion's brightest arts decoy,</l>
+<l n="264">The heart distrusting asks, if this be joy?</l>
+</lg>
+<lg type="stanza" n="1.19">
+<l n="265">Ye friends to truth, ye statesmen, who survey</l>
+<l n="266">The rich man's joys increase, the poor's decay,</l>
+<l n="267">'Tis yours to judge how wide the limits stand</l>
+<l n="268">Between a splendid and a happy land.</l>
+<l n="269">Proud swells the tide with loads of freighted ore,</l>
+<l n="270">And shouting Folly hails them from her shore;</l>
+<l n="271">Hoards, even beyond the miser's wish, abound,</l>
+<l n="272">And rich men flock from all the world around.</l>
+<l n="273">Yet count our gains.  This wealth is but a name</l>
+<l n="274">That leaves our useful products still the same.</l>
+<l n="275">Not so the loss.  The man of wealth and pride</l>
+<l n="276">Takes up a space that many poor supplied;</l>
+<l n="277">Space for his lake, his park's extended bounds,</l>
+
+<pb n="299"/>
+<l n="278">Space for his horses, equipage, and hounds;</l>
+<l n="279">The robe that wraps his limbs in silken sloth</l>
+<l n="280">Has robb'd the neighbouring fields of half their
+growth;</l>
+<l n="281">His seat, where solitary sports are seen,</l>
+<l n="282">Indignant spurns the cottage from the green;</l>
+<l n="283">Around the world each needful product flies,</l>
+<l n="284">For all the luxuries the world supplies;</l>
+<l n="285">While thus the land, adorn'd for pleasure all,</l>
+<l n="286">In barren splendour feebly waits the fall.</l>
+</lg>
+<lg type="stanza" n="1.20">
+<l n="287">As some fair female, unadorn'd and plain,</l>
+<l n="288">Secure to please while youth confirms her reign,</l>
+<l n="289">Slights every borrow'd charm that dress supplies,</l>
+<l n="290">Nor shares with art the triumph of her eyes;</l>
+<l n="291">But when those charms are past, for charms are frail,</l>
+
+<l n="292">When time advances, and when lovers fail,</l>
+<l n="293">She then shines forth, solicitous to bless,</l>
+<l n="294">In all the glaring impotence of dress;</l>
+<l n="295">Thus fares the land by luxury betray'd;</l>
+<l n="296">In nature's simplest charms at first array'd;-</l>
+<l n="297">But verging to decline, its splendours rise,</l>
+<l n="298">Its vistas strike, its palaces surprise;</l>
+<l n="299">While, scourged by famine, from the smiling land</l>
+<l n="300">The mournful peasant leads his humble band;</l>
+<l n="301">And while he sinks, without one arm to save,</l>
+<l n="302">The country blooms-a garden and a grave!</l>
+</lg>
+<lg type="stanza" n="1.21">
+<l n="303">Where, then, ah! where shall poverty reside,</l>
+<l n="304">To 'scape the pressure of contiguous pride?</l>
+<l n="305">If to some common's fenceless limits stray'd,</l>
+<l n="306">He drives his flock to pick the scanty blade,</l>
+<l n="307">Those fenceless fields the sons of wealth divide,</l>
+<l n="308">And even the bare-worn common is denied.</l>
+</lg>
+<lg type="stanza" n="1.22">
+<l n="309">If to the city sped-what waits him there?</l>
+<l n="310">To see profusion that he must not share;</l>
+<l n="311">To see ten thousand baneful arts combined</l>
+<l n="312">To pamper luxury and thin mankind;</l>
+<l n="313">To see each joy the sons of pleasure know</l>
+
+<pb n="300"/>
+<l n="314">Extorted from his fellow-creature's woe:</l>
+<l n="315">Here while the courtier glitters in brocade,</l>
+<l n="316">There the pale artist plies the sickly trade;</l>
+<l n="317">Here while the proud their long-drawn pomp display,</l>
+
+<l n="318">There the black gibbet glooms beside the way:</l>
+<l n="319">The dome where Pleasure holds her midnight reign,</l>
+<l n="320">Here, richly deck'd, admits the gorgeous train;</l>
+<l n="321">Tumultuous grandeur crowds the blazing square,</l>
+<l n="322">The rattling chariots clash, the torches glare.</l>
+<l n="323">Sure scenes like these no troubles e'er annoy!</l>
+<l n="324">Sure these denote one universal joy! -</l>
+<l n="325">Are these thy serious thoughts?-Ah, turn thine eyes</l>
+<l n="326">Where the poor houseless shivering female lies:</l>
+<l n="327">She once, perhaps, in village plenty bless'd,</l>
+<l n="328">Has wept at tales of innocence distress'd;</l>
+<l n="329">Her modest looks the cottage might adorn,</l>
+<l n="330">Sweet as the primrose peeps beneath the thorn:</l>
+<l n="331">Now lost to all, her friends, her virtue, fled,</l>
+<l n="332">Near her betrayer's door she lays her head,</l>
+<l n="333">And, pinch'd with cold, and, shrinking from the
+shower,</l>
+<l n="334">With heavy heart deplores that luckless hour,</l>
+<l n="335">When idly first, ambitious of the town,</l>
+<l n="336">She left her wheel, and robes of country brown.</l>
+</lg>
+<lg type="stanza" n="1.23">
+<l n="337">Do thine, sweet Auburn, thine, the loveliest train,</l>
+<l n="338">Do thy fair tribes participate her pain?</l>
+<l n="339">E'en now, perhaps, by cold and hunger led,</l>
+<l n="340">At proud men's doors they ask a little bread!</l>
+</lg>
+<lg type="stanza" n="1.24">
+<l n="341">Ah, no.  To distant climes, a dreary scene,</l>
+<l n="342">Where half the convex world intrudes between,</l>
+<l n="343">Through torrid tracts with fainting steps they go,</l>
+<l n="344">Where wild Altama murmurs to their woe.</l>
+<l n="345">Far different there from all that charm'd before,</l>
+<l n="346">The various terrors of that horrid shore;</l>
+<l n="347">Those blazing suns that dart a downward ray,</l>
+<l n="348">And fiercely shed intolerable day;</l>
+<l n="349">Those matted woods where birds forget to sing,</l>
+
+<pb n="301"/>
+<l n="350">But silent bats in drowsy clusters cling;</l>
+<l n="351">Those poisonous fields, with rank luxuriance
+crown'd,</l>
+<l n="352">Where the dark scorpion gathers death around;</l>
+<l n="353">Where at each step the stranger fears to wake</l>
+<l n="354">The rattling terrors of the vengeful snake;</l>
+<l n="355">Where crouching tigers wait their hapless prey,</l>
+<l n="356">And savage men more murderous still than they:</l>
+<l n="357">While oft in whirls the mad tornado flies,</l>
+<l n="358">Mingling the ravaged landscape with the skies.</l>
+<l n="359">Far different these from every former scene,</l>
+<l n="360">The cooling brook, the grassy-vested green,</l>
+<l n="361">The breezy covert of the warbling grove,</l>
+<l n="362">That only shelter'd thefts of harmless love.</l>
+</lg>
+<lg type="stanza" n="1.25">
+<l n="363">Good Heaven! what sorrows gloom'd that parting
+day,</l>
+<l n="364">That call'd them from their native walks away;</l>
+<l n="365">When the poor exiles, every pleasure past,</l>
+<l n="366">Hung round their bowers, and fondly looked their
+last,</l>
+<l n="367">And took a long farewell, and wish'd in vain,</l>
+<l n="368">For seats like these beyond the western main;</l>
+<l n="369">And shuddering still to face the distant deep,</l>
+<l n="370">Return'd and wept, and still return'd to weep!</l>
+<l n="371">The good old sire the first prepared to go</l>
+<l n="372">To new-found worlds, and wept for others' woe;</l>
+<l n="373">But for himself, in conscious virtue brave,</l>
+<l n="374">He only wish'd for worlds beyond the grave.</l>
+<l n="375">His lovely daughter, lovelier in her tears,</l>
+<l n="376">The fond companion of his helpless years,</l>
+<l n="377">Silent went next, neglectful of her charms,</l>
+<l n="378">And left a lover's for a father's arms.</l>
+<l n="379">With louder plaints the mother spoke her woes,</l>
+<l n="380">And bless'd the cot where every pleasure rose,</l>
+<l n="381">And kiss'd her thoughtless babes with many a tear,</l>
+<l n="382">And clasp'd them close, in sorrow doubly dear;</l>
+<l n="383">Whilst her fond husband strove to lend relief</l>
+<l n="384">In all the silent manliness of grief.</l>
+</lg>
+<lg type="stanza" n="1.26">
+<l n="385">0 Luxury, thou cursed by Heaven's decree,</l>
+
+<pb n="302"/>
+<l n="386">How ill exchanged are things like these for thee!</l>
+<l n="387">How do thy potions, with insidious joy,</l>
+<l n="388">Diffuse their pleasures only to destroy!</l>
+<l n="389">Kingdoms by thee to sickly greatness grown,</l>
+<l n="390">Boast of a florid vigour not their own;</l>
+<l n="391">At every draught more large and large they grow,</l>
+<l n="392">A bloated mass of rank unwieldy woe;</l>
+<l n="393">Till sapp'd their strength, and every part unsound,</l>
+<l n="394">Down, down they sink, and spread a ruin round.</l>
+</lg>
+<lg type="stanza" n="1.27">
+<l n="395">E'en now the devastation is begun,</l>
+<l n="396">And half the business of destruction done;</l>
+<l n="397">E'en now, methinks, as pondering here I stand,</l>
+<l n="398">I see the rural Virtues leave the land.</l>
+<l n="399">Down where yon anchoring vessel spreads the sail</l>
+<l n="400">That idly waiting flaps with every gale,</l>
+<l n="401">Downward they move, a melancholy band,</l>
+<l n="402">Pass from the shore, and darken all the strand;</l>
+<l n="403">Contented Toil, and hospitable Care,</l>
+<l n="404">And kind connubial tenderness are there;</l>
+<l n="405">And Piety with wishes placed above,</l>
+<l n="406">And steady Loyalty, and faithful Love.</l>
+</lg>
+<lg type="stanza" n="1.28">
+<l n="407">And thou, sweet Poetry, thou loveliest maid</l>
+<l n="408">Still first to fly where sensual joys invade!</l>
+<l n="409">Unfit, in these degenerate times of shame,</l>
+<l n="410">To catch the heart, or strike for honest fame;</l>
+<l n="411">Dear charming nymph, neglected and decried,</l>
+<l n="412">My shame in crowds, my solitary pride;</l>
+<l n="413">Thou source of all my bliss and all my woe,</l>
+<l n="414">That found'st me poor at first, and keep'st me so;</l>
+<l n="415">Thou guide by which the nobler arts excel,</l>
+<l n="416">Thou nurse of every virtue, fare thee well!</l>
+<l n="417">Farewell! and oh! where'er thy voice be tried,</l>
+<l n="418">On Torno's cliffs, or Pambamarca's side,</l>
+<l n="419">Whether where equinoctial fervours glow,</l>
+<l n="420">Or winter wraps the polar world in snow,</l>
+<l n="421">Still let thy voice, prevailing over time,</l>
+
+<pb n="303"/>
+<l n="422">Redress the rigours of th' inclement clime;</l>
+<l n="423">Aid slighted Truth with thy persuasive strain;</l>
+<l n="424">Teach erring man to spurn the rage of gain;</l>
+<l n="425">Teach him that states of native strength possest,</l>
+<l n="426">Though very poor, may still be very blest;</l>
+<l n="427">That Trade's proud empire hastes to swift decay,</l>
+<l n="428">As ocean sweeps the labour'd mole away;</l>
+<l n="429">While self-dependent power can time defy</l>
+<l n="430">As rocks resist the billows and the sky.</l>
+</lg>
+</div1>
+</body>
+</text>
+</TEI>
+
