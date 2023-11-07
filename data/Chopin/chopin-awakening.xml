@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="chopin-awakening">
- <!--TEI Header BEGINS-->
  <teiHeader xml:lang="en">
   <fileDesc>
-   <!--BEGINS File- Description -->
    <titleStmt>
     <title type="main">The Awakening</title>
     <author>
@@ -13,22 +11,12 @@
       <surname>Chopin</surname>
      </persName>
     </author>
-    <editor>
-     <persName type="orcid" key="0000-0002-7400-4093">
-      <name ref="editors.xml#TH">
-       <forename>Tonya</forename>
-       <surname>Howe</surname>
-      </name>
-     </persName>
-    </editor>
+<editor/>
     <respStmt>
      <!-- edit this content to reflect this digital edition -->
      <resp>Markup and correction</resp>
      <name ref="editors.xml#ARH">Andrew Rivard Hill</name>
     </respStmt>
-    
-
-
     <sponsor/>
     <funder>National Endowment for the Humanities</funder>
    </titleStmt>
@@ -49,7 +37,7 @@
    </publicationStmt>
    <sourceDesc>
     <biblStruct>
-
+     <analytic><title/></analytic>
      <monogr>
       <author>
        <persName>
@@ -61,13 +49,14 @@
       <imprint>
        <pubPlace>
         <placeName type="tgn" key="7013596">Chicago</placeName>
- <!--       <placeName type="tgn" key="7007567">New York</placeName> -->
+        <!--       <placeName type="tgn" key="7007567">New York</placeName> -->
        </pubPlace>
        <publisher>Herbert S. Stone &amp; Company</publisher>
        <date when="1899">1899</date>
-       <note>Page images are drawn from the first edition digitized in the Internet Archive. Base XML was drawn from the UVA Electronic Text Center.</note>
+       <note>Page images are drawn from the first edition digitized in the Internet Archive. Base
+        XML was drawn from the UVA Electronic Text Center.</note>
       </imprint>
-      
+
 
      </monogr>
     </biblStruct>
