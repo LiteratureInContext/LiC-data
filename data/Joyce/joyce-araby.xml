@@ -1,5 +1,5 @@
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="chopin-hour">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="joyce-araby">
     <teiHeader xml:lang="en">
         <fileDesc>
             <titleStmt>
@@ -14,16 +14,18 @@
                 </author>
                 <editor>
                     <persName>
-                        <name ref="editors.xml#NXB">
-                            <surname>Buford</surname>
-                            <forename>Nial</forename>
+                        <name ref="editors.xml#TH">
+                            <surname>Howe</surname>
+                            <forename>Tonya</forename>
                         </name>
                     </persName>
                 </editor>
                 <respStmt>
-                    <resp>Transcription, correction, and markup</resp>
+                    <resp>Markup and correction</resp>
                     <name ref="editors.xml#UVAstudentsstaff">Students and Staff of The University of
                         Virginia</name>
+                    <name ref="editors.xml#NXB">Nial Buford</name>
+                    <name ref="editors.xml#TH">Tonya Howe</name>
                     
                 </respStmt>
                 <sponsor/>
@@ -60,13 +62,15 @@
                                 <placeName type="tgn" key="7011781">London</placeName>
                             </pubPlace>
                             <publisher>Grant Richards, Ltd.</publisher>
-                            <date when="1927">1914</date>
+                            <date when="1914">1914</date>
                             <note>Text for this digital edition drawn from <ref
                                 target="https://www.gutenberg.org/ebooks/2814">Project Gutenberg's ditigital version of 
                                 <hi rend="italic">Dubliners</hi></ref> Page images are drawn from Hathitrust's digitized copy of <ref target="https://catalog.hathitrust.org/Record/100655016"><hi rend="italic">Dubliners</hi></ref>,
                                 sourced from the University of California and digitized by the Internet Archive.</note>       
                         </imprint>
+                        <extent>pp 33-41</extent>
                     </monogr>
+                   
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
@@ -88,7 +92,7 @@
             </textDesc>
             <settingDesc>
                 <setting>
-                    <name type="tgn" key="7001306"> Dublin</name>
+                    <name type="tgn" key="7001306">Dublin</name>
                     <time from="1900" to="1920">Early Twentieth Century</time>
                 </setting>
             </settingDesc>
@@ -149,17 +153,26 @@
     </teiHeader>
     <text>
         <front>
+            <pb n="[TP]" facs="pageImages/araby_TP.png"/>
             <titlePage>
                 <titlePart>
-                    ARABY</titlePart>
+                    DUBLINERS</titlePart>
                 <lb/>
                 <lb/>
                 <docAuthor>By James Joyce</docAuthor>
-                <docImprint/>
+                <lb/>
+                <lb/>
+                <docImprint>
+                    <pubPlace>LONDON<lb/></pubPlace>
+                    <publisher>GRANT RICHARDS LTD<lb/>PUBLISHERS<lb/></publisher>
+                </docImprint>
             </titlePage>
         </front>
     <body>
-        <pb n="33" facs="pageImages/0033.jpg"/>
+        <div>
+            <head type="main">ARABY</head>
+
+        <pb n="33" facs="pageImages/araby_33.png"/>
         <p>
             North Richmond Street, being blind, was a quiet street except at the hour when
             the Christian Brothers’ School set the boys free. An uninhabited house of
@@ -182,7 +195,7 @@
         <p>
             When the short days of winter came dusk fell before we had well eaten our
             dinners. When we met 
-            <pb n="34" facs="pageImages/0034.jpg"/>
+            <pb n="34" facs="pageImages/araby_34.png"/>
             in the street the houses had grown sombre. The space of
             sky above us was the colour of ever-changing violet and towards it the lamps of
             the street lifted their feeble lanterns. The cold air stung us and we played
@@ -206,7 +219,7 @@
             Every morning I lay on the floor in the front parlour watching her door. The
             blind was pulled down to within an inch of the sash so that I could not be
             seen. When she came out on the doorstep my         
-            <pb n="35" facs="pageImages/0035.jpg"/>
+            <pb n="35" facs="pageImages/araby_35.jpg"/>
             heart leaped. I ran to the hall,
             seized my books and followed her. I kept her brown figure always in my eye and,
             when we came near the point at which our ways diverged, I quickened my pace and
@@ -233,7 +246,7 @@
         </p>
         <p>
             One evening I went into the back drawing-room 
-            <pb n="36" facs="pageImages/0036.jpg"/>
+            <pb n="36" facs="pageImages/araby_36.jpg"/>
             in which the priest had died. It
             was a dark rainy evening and there was no sound in the house. Through one of
             the broken panes I heard the rain impinge upon the earth, the fine incessant
@@ -267,7 +280,7 @@
         </p>
         <p>
             “If I go,” I said, “I will bring you something.”
-            <pb n="37" facs="pageImages/0037.jpg"/>
+            <pb n="37" facs="pageImages/araby_37.jpg"/>
         </p>
         <p>
             What innumerable follies laid waste my waking and sleeping thoughts after that
@@ -299,7 +312,7 @@
         <p>
             When I came home to dinner my uncle had not yet been home. Still it was early.
             I sat staring at the clock for some time and, when its ticking began 
-            <pb n="38" facs="pageImages/0038.jpg"/>
+            <pb n="38" facs="pageImages/araby_38.jpg"/>
             to irritate me, I left the room. I mounted the staircase and gained the upper part
             of the house. The high cold empty gloomy rooms liberated me and I went from
             room to room singing. From the front window I saw my companions playing below
@@ -328,7 +341,7 @@
             heard him talking to himself and heard the hallstand rocking when it had
             received the weight of his overcoat. I could interpret these signs. When he was
             midway through his dinner I asked him 
-            <pb n="39" facs="pageImages/0039.jpg"/>
+            <pb n="39" facs="pageImages/araby_39.jpg"/>
             to give me the money to go to the bazaar. He had forgotten.
         </p>
         <p>
@@ -360,7 +373,7 @@
             up beside an improvised wooden platform. I passed out on to the road and saw by
             the lighted dial of a clock that it was ten minutes to ten. In front of me was
             a large building which displayed the magical name.           
-            <pb n="40" facs="pageImages/0040.jpg"/>
+            <pb n="40" facs="pageImages/araby_40.jpg"/>
         </p>
         <p>
             I could not find any sixpenny entrance and, fearing that the bazaar would be
@@ -401,7 +414,7 @@
             Observing me the young lady came over and asked me did I wish to buy anything.
             The tone of her voice was not encouraging; she seemed to have spoken to me out
             of a sense of duty. I looked humbly at the great jars that stood like eastern
-            <pb n="41" facs="pageImages/0041.jpg"/>
+            <pb n="41" facs="pageImages/araby_41.jpg"/>
             guards at either side of the dark entrance to the stall and murmured:
         </p>
         <p>
@@ -423,6 +436,7 @@
             Gazing up into the darkness I saw myself as a creature driven and derided by
             vanity; and my eyes burned with anguish and anger.
         </p>
+        </div>
     </body>
     </text>
 </TEI>
