@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="keats-grecian">
+   
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Ode on a Grecian Urn</title>
+            <author>
+               <persName type="lcnaf" key="FILL-IN">
+                  
+                  <name>John Keats
+                     
+                     <forename>John</forename> 
+                     <surname>Keats</surname>
+
+                  </name>
+              
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#StudStaffUVA"
+                  >Students and Staff of the University of Virginia</name>
+               
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
+               <addrLine>Address line 2</addrLine>
+               <addrLine>Address line 3</addrLine>
+               <addrLine>Address line 4</addrLine>
+               <addrLine>Email</addrLine>
+               <!-- cut unused or add additional addrLines -->
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title><?oxy-placeholder content="Title of Contained Document in Quotation Marks. If this is a stand-alone monograph, cut the <analytic> tag."?></title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>John</forename>
+                        <surname>Keats</surname>
+                        
+                     </name>
+                  </author>
+
+                  <title>Ode on a Grecian Urn</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="000"
+                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                     </pubPlace>
+                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
+                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
+                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <!-- Add additional NOTE elements as needed  -->
+                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                  </imprint>
+
+                  <imprint>
+                     <pubPlace/>
+                     <publisher/>
+                     <date/>
+                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
+                  </imprint>
+
+                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               <name type="tgn" key="7011197">Bath, England</name>
+               <time from="1690" to="1724">Early 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="0000-00-00" who="editors.xml#XX"
+            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
+         <change when="0000-00-00" who="xxxx"/>
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <titlePage>
+            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
+            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
+            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
+            <titlePart/>
+            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
+            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
+                  resp="XXX"/><lb/>
+               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
+            </titlePart>
+            <docImprint>
+               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
+               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
+                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
+               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
+                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
+                     Browne</hi></publisher>
+               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
+                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+            </docImprint>
+         </titlePage>
+      </front>
+      <body>
+         
+<div type="poem">
+    <head> Ode on a Grecian Urn</head>
+    <l>Thou still unravish'd bride of quietness,</l>
+    <l>Thou foster-child of silence and slow time,</l>
+    <l>Sylvan historian, who canst thus express</l>
+    <l>A flowery tale more sweetly than our rhyme</l>
+    <l>What leaf-fring'd legend haunts about thy shape</l>
+    <l>Of deities or mortals, or of both,</l>
+    <l>In Tempe or the dales of Arcady?</l>
+    <l>What men or gods are these? What maidens loth?</l>
+    <l>What mad pursuit? What struggle to escape?</l>
+    <l>What pipes and timbrels? What wild ecstasy?</l>
+    <l>Heard melodies are sweet, but those unheard</l>
+    <l>Are sweeter; therefore, ye soft pipes, play on;</l>
+    <l>Not to the sensual ear, but, more endear'd,</l>
+    <l>Pipe to the spirit ditties of no tone</l>
+    <l>Fair youth, beneath the trees, thou canst not leave</l>
+    <l>Thy song, nor ever can those trees be bare;</l>
+    <l>Bold lover, never, never canst thou kiss,</l>
+    <l>Though winning near the goal — yet, do not grieve;</l>
+    <l>She cannot fade, though thou hast not thy bliss,</l>
+    <l>For ever wilt thou love, and she be fair!</l>
+    <milestone unit="page" n="373"/>
+    <l>Ah, happy, happy boughs! that cannot shed</l>
+    <l>Your leaves, nor ever bid the spring adieu;</l>
+    <l>And, happy melodist, unwearied,</l>
+    <l>For ever piping songs for ever new;</l>
+    <l>More happy love! more happy, happy love!</l>
+    <l>For ever warm and still to be enjoy'd,</l>
+    <l>For ever panting, and for ever young;</l>
+    <l>All breathing human passion far above,</l>
+    <l>A burning forehead, and a parching tongue.</l>
+    <l>Who are these coming to the sacrifice?</l>
+    <l>To what green altar, O mysterious priest,</l>
+    <l>Lead'st thou that heifer lowing at the skies,</l>
+    <l>And all her silken flanks with garlands drest?</l>
+    <l>What little town by river or sea shore,</l>
+    <l>Or mountain-built with peaceful citadel,</l>
+    <l>Is emptied of this folk, this pious morn?</l>
+    <l>And, little town, thy streets for evermore</l>
+    <l>Will silent be; and not a soul to tell</l>
+    <l>Why thou art desolate, can e'er return.</l>
+    <l>O Attic shape! Fair attitude! with brede</l>
+    <l>Of marble men and maidens overwrought,</l>
+    <l>With forest branches and the trodden weed;</l>
+    <l>Thou, silent form, dost tease us out of thought</l>
+    <l>As doth eternity Cold Pastoral!</l>
+    <l>When old age shall this generation waste,</l>
+    <l>Thou shalt remain, in midst of other woe</l>
+    <l>Than ours, a friend to man, to whom thou say'st,</l>
+    <l>Beauty is truth, truth beauty, — that is all</l>
+    <l>Ye know on earth, and all ye need to know.</l>
+</div>
+</body>
+</text>
+</TEI>
