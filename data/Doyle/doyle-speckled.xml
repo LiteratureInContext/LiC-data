@@ -1,528 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="doyle-speckled">
     <!--TEI Header BEGINS-->
-   <teiHeader xml:lang="en">
+    <teiHeader xml:lang="en">
 
-  	<fileDesc>
-     	<!--BEGINS File Description -->
-     	<titleStmt>
-        	<title type="main">"The Adventure of The Speckled Band"</title>
-        	<!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
-        	<author>
-           	<persName type="lcnaf" key="n79082292">
-              	<!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
-              	<name ref="xxx.xml">
-                 	<forename>Arthur Conan</forename>
-                 	<surname>Doyle</surname>
-              	</name>
-           	</persName>
-        	</author>
-        	<editor>
-           	<persName type="orcid" key="0000-0002-7400-4093">
-              	<!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
-              	<name ref="editors.xml#TH">
-                 	<!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
-                 	<surname>XXX</surname>
-                 	<forename>XXX</forename>
-              	</name>
-           	</persName>
-        	</editor>
-        	<respStmt>
-           	<resp>Transcription, correction, editorial commentary, and markup</resp>
-           	<!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
-           	<name ref="editors.xml#MUstudstaff">Students and Staff of Marymount University</name>
-   	<name ref="editors.xml#ER">Elizabeth Ramos</name>
-   			<name ref="editors.xml#KS">Kiana Spearman</name>
-           	<!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
-        	</respStmt>
-        	<sponsor/>
-        	<funder>National Endowment for the Humanities</funder>
-        	<!-- Do not alter. -->
-     	</titleStmt>
-
-
-     	<publicationStmt>
-        	<!-- This element expresses the publication details of this particular etext. -->
-        	<publisher>Literature in Context</publisher>
-        	<!-- Do not alter. -->
-        	<address>
-           	<!-- Use the address information for your university. -->
-           	<addrLine>Marymount University Department of Literature and Languages</addrLine>
-           	<addrLine>2807 N. Glebe Road</addrLine>
-           	<addrLine>Arlington, VA </addrLine>
-           	<addrLine>22207</addrLine>
-           	<addrLine>thowe@marymount.edu</addrLine>
-           	<!-- Add your email address.  -->
-           	<addrLine>lic.open.anthology@gmail.com</addrLine>
-           	<!-- Do not alter. -->
-        	</address>
-        	<availability status="free">
-           	<!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
-           	<licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-              	Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-              	License </licence>
-        	</availability>
-     	</publicationStmt>
+        <fileDesc>
+            <!--BEGINS File Description -->
+            <titleStmt>
+                <title type="main">"The Adventure of The Speckled Band"</title>
+                <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
+                <author>
+                    <persName type="lcnaf" key="n79082292">
+                        <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
+                        <name ref="xxx.xml">
+                            <forename>Arthur Conan</forename>
+                            <surname>Doyle</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName>
+                        <!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
+                        <name ref="editors.xml#HK">
+                            <!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
+                            <surname>Karapetkova</surname>
+                            <forename>Holly</forename>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
+                    <name ref="editors.xml#MUstudstaff">Students and Staff of Marymount
+                        University</name>
+                    <name ref="editors.xml#ER">Elizabeth Ramos</name>
+                    <name ref="editors.xml#KS">Kiana Spearman</name>
+                    <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+                <!-- Do not alter. -->
+            </titleStmt>
 
 
-     	<sourceDesc>
-        	<!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
-
-        	<biblStruct>
-           	<analytic>
-              	<!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
-              	<title>"The Adventure of The Speckled Band"</title>
-           	</analytic>
-           	<monogr>
-              	<!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
-              	<author>
-                    	<forename>XXX</forename>
-                    	<surname>XXX</surname>             	 
-              	</author>
-              	<title>The Strand Magazine: An Illustrated Monthly</title>
-              	<imprint>
-                 	<!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
-                 	<pubPlace>
-                    	<placeName type="tgn" key="7011781">London</placeName>
-                    	<!-- Note authority and key. -->
-                 	</pubPlace>
-                 	<publisher>George Newnes, Limited</publisher>
-                 	<!-- Insert publsher of earliest/first edition. -->
-                 	<date when="1892">1892</date>
-                 	<!-- Insert year of earliest/first edition. Note the attribute @when. -->
-          	 
-                 	<note>Page images are drawn from <ref
-                     target="https://archive.org/details/TheStrandMagazineAnIllustratedMonthly/TheStrandMagazine1892aVol.IiiJan-jun/page/n153/mode/2up">https://archive.org/details/TheStrandMagazineAnIllustratedMonthly/TheStrandMagazine1892aVol.IiiJan-jun/page/n153/mode/2up</ref>.</note>
-                 	<!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
-               	 
-              	</imprint>
-              	<imprint>
-                 	<note>Text for this digital edition drawn from <ref
-                       	target="https://www.gutenberg.org/files/1661/1661-h/1661-h.htm#chap08">https://www.gutenberg.org/files/1661/1661-h/1661-h.htm#chap08</ref> and checked against the first edition text using The Internet Archive. </note>
-              	</imprint>
-              	<biblScope unit="volume">III</biblScope>
-              	<!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
-              	<biblScope>pp 142-157</biblScope>
-           	</monogr>
-        	</biblStruct>
-     	</sourceDesc>
-
-  	</fileDesc>
-  	<!-- Don't forget to close out all your elements! -->
+            <publicationStmt>
+                <!-- This element expresses the publication details of this particular etext. -->
+                <publisher>Literature in Context</publisher>
+                <!-- Do not alter. -->
+                <address>
+                    <!-- Use the address information for your university. -->
+                    <addrLine>Marymount University Department of Literature and Languages</addrLine>
+                    <addrLine>2807 N. Glebe Road</addrLine>
+                    <addrLine>Arlington, VA </addrLine>
+                    <addrLine>22207</addrLine>
+                    <addrLine>thowe@marymount.edu</addrLine>
+                    <!-- Add your email address.  -->
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                    <!-- Do not alter. -->
+                </address>
+                <availability status="free">
+                    <!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
 
 
+            <sourceDesc>
+                <!-- This element expresses the source information and "witnesses" used in the construction of this etext, and to which this etext refers. -->
 
-  	<profileDesc>
-     	<!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
-     	<langUsage>
-        	<language ident="en">English</language>
-     	</langUsage>
+                <biblStruct>
+                    <analytic>
+                        <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
+                        <title>"The Adventure of The Speckled Band"</title>
+                    </analytic>
+                    <monogr>
+                        <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
+                        <author>
+                            <forename>XXX</forename>
+                            <surname>XXX</surname>
+                        </author>
+                        <title>The Strand Magazine: An Illustrated Monthly</title>
+                        <imprint>
+                            <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
+                            <pubPlace>
+                                <placeName type="tgn" key="7011781">London</placeName>
+                                <!-- Note authority and key. -->
+                            </pubPlace>
+                            <publisher>George Newnes, Limited</publisher>
+                            <!-- Insert publsher of earliest/first edition. -->
+                            <date when="1892">1892</date>
+                            <!-- Insert year of earliest/first edition. Note the attribute @when. -->
 
-     	<creation/>
-     	<!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
+                            <note>Text for this digital edition drawn from <ref
+                                    target="https://www.gutenberg.org/files/1661/1661-h/1661-h.htm#chap08"
+                                    >Project Gutenberg</ref> and checked against the first edition
+                                text using The Internet Archive. Page images are drawn from <ref
+                                    target="https://archive.org/details/TheStrandMagazineAnIllustratedMonthly/TheStrandMagazine1892aVol.IiiJan-jun/page/n153/mode/2up"
+                                    >The Internet Archive</ref>, under a 
+                                Public Domain Mark 1.0 Universal license.</note>
+                            <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
 
-     	<textDesc n="tale">
-        	<channel mode="w">print</channel>
-        	<!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
-        	<constitution type="single"/>
-        	<!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
-        	<derivation type="original"/>
-        	<!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
-        	<domain/>
-        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-        	<factuality type="fiction"/>
-        	<!-- See the textDesc guidelines for more information. -->
-        	<interaction/>
-        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-        	<preparedness/>
-        	<!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
-        	<purpose type="entertain" degree="high"/>
-        	<!-- See the TEI guidelines for more information. -->
-        	<purpose type="inform" degree="low"/>
-        	<!-- Multiple purpose types may or may not be appropriate. -->
-     	</textDesc>
+                        </imprint>
 
-     	<settingDesc>
-        	<!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
-        	<setting>
-           	<name type="tgn" key="7011781">London, England, United Kingdom</name>
-           	<!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-           	<name type="tgn" key="7008175">Surrey, England, United Kingdom</name>
-           	<time from="1690" to="1724">Late 19th Century</time>
-           	<!-- The time setting may be somewhat interpretive, though research should tell you more. -->
-        	</setting>
-     	</settingDesc>
-  	</profileDesc>
+                        <biblScope unit="volume">III</biblScope>
+                        <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
+                        <biblScope>pp 142-157</biblScope>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
 
-  	<encodingDesc>
-     	<!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
-     	<projectDesc>
-        	<p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
-           	project, which provides an accessible, curated, and marked-up selection of primary
-           	sources relevant to the study and the teaching of British and American literature of
-           	the 18th century. This project is funded by the National Endowment for the Humanities
-           	and developed by faculty at The University of Virginia and Marymount University. </p>
-     	</projectDesc>
-     	<editorialDecl>
-        	<interpretation>
-           	<p>Research informing these annotations draws on publicly-accessible resources, with
-              	links provided where possible. Annotations have also included common knowledge,
-              	defined as information that can be found in multiple reliable sources. If you
-              	notice an error in these annotations, please contact lic.open.anthology@gmail.com.
-           	</p>
-        	</interpretation>
-        	<normalization>
-           	<p>Original spelling and capitalization is retained, though the long s has been
-              	silently modernized and ligatured forms are not encoded.</p>
-        	</normalization>
-        	<hyphenation>
-           	<p>Hyphenation has not been retained, except where necessary for the sense of the
-              	word.</p>
-        	</hyphenation>
-        	<segmentation>
-           	<p>Page breaks have been retained. Catchwords, signatures, and running headers have
-              	not. Where pages break in the middle of a word, the complete word has been
-              	indicated prior to the page beginning.</p>
-        	</segmentation>
-        	<correction>
-           	<p>Materials have been transcribed from and checked against first editions, where
-              	possible. See the Sources section.</p>
-        	</correction>
-     	</editorialDecl>
-     	<tagsDecl>
-        	<!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
-        	<namespace name="http://www.tei-c.org/ns/1.0">
-           	<tagUsage gi="div">Unnumbered divs used.</tagUsage>
-        	</namespace>
-     	</tagsDecl>
-     	<classDecl>
-        	<!-- We here define the authority files used throughout the application and data. -->
-        	<taxonomy xml:id="lcnaf">
-           	<bibl>Library of Congress Name Authority File</bibl>
-        	</taxonomy>
-        	<taxonomy xml:id="lcc">
-           	<bibl>Library of Congress Classification</bibl>
-        	</taxonomy>
-        	<taxonomy xml:id="tgn">
-           	<bibl>Getty Thesaurus of Geographic Names</bibl>
-        	</taxonomy>
-        	<taxonomy xml:id="orcid">
-           	<bibl>Open Researcher and Contributor ID</bibl>
-        	</taxonomy>
-     	</classDecl>
-  	</encodingDesc>
-
-   </teiHeader>
-   <!--TEI Header Ends -->
+        </fileDesc>
+        <!-- Don't forget to close out all your elements! -->
 
 
 
-<text><body><div><pb n="142" facs="pageImages/Speckled-Band_0142.jpg"/>
+        <profileDesc>
+            <!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
 
-<head><hi rend="italic">Adventures of Sherlock Holmes</hi>
-VIII.-THE ADVENTURE OF THE SPECKLED BAND</head>
-<head type=sub>By <persName>A. Conan Doyle</persName></head>
+            <creation/>
+            <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
 
-<p> In glancing over my notes of the seventy odd cases in which I have during the last eight years studied the methods of my friend <persName> Sherlock Holmes </persName>, I find many tragic, some comic, a large number merely strange, but none commonplace; for, working as he did rather for the love of his art than for the acquirement of wealth, he refused to associate himself with any investigation which did not tend towards the unusual, and even the fantastic. Of all these varied cases, however, I cannot recall any which presented more singular features than that which was associated with the well-known <persName> Surrey </persName> family of the <persName> Roylotts </persName>  of <placeName> Stoke Moran</placeName>. The events in question occurred in the early days of my association with <persName> Holmes </persName>, when we were sharing rooms as bachelors, in <placeName> Baker-street </placeName>. It is possible that I might have placed them upon record before, but a promise of secrecy was made at the time, from which I have only been freed during the last month by the untimely death of the lady to whom the pledge was given. It is perhaps as well that the facts should now come to light, for I have reasons to know that there are widespread rumours as to the death of <persName> Dr. Grimesby Roylott </persName> which tend to make the matter even more terrible than the truth. </p>
-<p>It was early in April in the <ref target="a0001" corresp="n0001">year ’83</ref> that I woke one morning to find <persName> Sherlock Holmes </persName> standing, fully dressed, by the side of my bed. He was a late riser as a rule, and, as the clock on the mantelpiece showed me that it was only a quarter past seven, I blinked up at him in some surprise, and perhaps just a little resentment, for I was myself regular in my habits.</p>
-<p>“Very sorry to knock you up, <persName> Watson </persName> ," said he, “but it’s the common lot this morning. <persName> Mrs. Hudson </persName> has been knocked up, she retorted upon me, and I on you."</p>
-<p>“What is it, then—a fire?"</p>
-<p>“No; a client. It seems that a young lady has arrived in a considerable state of excitement, who insists upon seeing me. She is waiting now in the sitting-room. Now, when young ladies wander about the <placeName>Metropolis</placeName> at this hour of the morning, and knock sleepy people up out of their beds, I presume that it is something very pressing which they have to communicate. Should it prove to be an interesting case, you would, I am sure, wish to follow it from the outset. I thought at any rate that I should call you and give you the chance."</p>
-<p>“My dear fellow, I would not miss it for anything."</p>
-<p>I had no keener pleasure than in following <persName>Holmes</persName> in his professional investigations, and in admiring the rapid deductions, as swift as intuitions, and yet always founded on a logical basis, with which he unravelled the problems which were submitted to him. I rapidly threw on my clothes, and was ready in a few minutes to accompany my friend down to the sitting-room. A lady dressed in black and heavily veiled, who had been sitting in the window, rose as we entered.</p>
-<p>“Good-morning, madam," said <persName>Holmes </persName>, cheerily. “My name is <persName>Sherlock Holmes</persName>. This is my intimate friend and associate, <persName>Dr. Watson</persName>, before whom you can speak as freely as before myself. Ha, I am glad to see that <persName>Mrs. Hudson</persName> has had the good sense to light the fire. Pray draw up to it, and I shall order you a cup of hot coffee, for I observe that you are shivering."</p>
-<p>“It is not cold which makes me shiver," said the woman in a low voice, changing her seat as requested.</p>
-<p>“What, then?"</p>
-<p>“It is fear, <persName> Mr. Holmes</persName>. It is terror." She raised her veil as she spoke, and we could see that she was indeed in a pitiable state of agitation, her face all drawn and grey, with restless, frightened eyes, like those of some hunted animal. Her features and figure were those of a woman of thirty, 
-<pb n="143" facs="pageImages/Speckled-Band_0143.jpg"/>
-but her hair was shot with premature grey, and her expression was weary and haggard. <persName>Sherlock Holmes</persName> ran her over with one of his quick, all-comprehensive glances.</p>
-<p>“You must not fear," said he soothingly, bending forward and patting her forearm. “We shall soon set matters right, I have no doubt. You have come in by train this morning, I see." </p> 
-<p>“You know me, then?"</p>
-<p>“No, but I observe the second half of a return ticket in the palm of your left glove. You must have started early, and yet you had a good drive in a dog-cart, along heavy roads, before you reached the station."</p>
-<p>The lady gave a violent start and stared in bewilderment at my companion.</p>
-<p>“There is no mystery, my dear madam," said he, smiling. “The left arm of your jacket is spattered with mud in no less than seven places. The marks are perfectly fresh. There is no vehicle save a dog-cart which throws up mud in that way, and then only when you sit on the left-hand side of the driver."</p>
-<p>“Whatever your reasons may be, you are perfectly correct," said she. “I started from home before six, reached <ref target="a0002" corresp="n0002"> <placeName> Leatherhead</placeName> </ref> at twenty past, and came in by the first train to <ref target="a0003" corresp="n0003">  <placeName>Waterloo</placeName> </ref>. Sir, I can stand this strain no longer; I shall go mad if it continues. I have no one to turn to—none, save only one, who cares for me, and he, poor fellow, can be of little aid. I have heard of you, <persName>Mr. Holmes</persName>; I have heard of you from <persName>Mrs. Farintosh</persName>, whom you helped in the hour of her sore need. It was from her that I had your address. Oh, sir, do you not think that you could help me, too, and at least throw a little light through the dense darkness which surrounds me? At present it is out of my power to reward you for your services, but in a month or six weeks I shall be married, with the control of my own income, and then at least you shall not find me ungrateful."</p>
-<p><persName>Holmes</persName> turned to his desk and, unlocking it, drew out a small case-book, which he consulted.</p>
-<p>"<persName>Farintosh</persName>," said he. “Ah, yes, I recall the case; it was concerned with an opal tiara. I think it was before your time, <persName>Watson</persName>. I can only say, madam, that I shall be happy to devote the same care to your case as I did to that of your friend. As to reward, my profession is its own reward; but you are at liberty to defray whatever expenses I may be put to, at the time which suits you best. And now I beg that you will lay before us everything that may help us in forming an opinion upon the matter." </p>
-<p>“Alas!" replied our visitor. “The very horror of my situation lies in the fact that my fears are so vague, and my suspicions depend so entirely upon small points, which might seem trivial to another, that even he to whom of all others I have a right to look for help and advice looks upon all that I tell him about it as the fancies of a nervous woman. He does not say so, but I can read it from his soothing answers and averted eyes. But I have heard, <persName>Mr. Holmes</persName>, that you can see deeply into the manifold wickedness of the human heart. 
+            <textDesc n="tale">
+                <channel mode="w">print</channel>
+                <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
+                <constitution type="single"/>
+                <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
+                <derivation type="original"/>
+                <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
+                <domain/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <factuality type="fiction"/>
+                <!-- See the textDesc guidelines for more information. -->
+                <interaction/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <preparedness/>
+                <!-- Typically unecessary for this project; however, the empty domain element must be retained for validation. -->
+                <purpose type="entertain" degree="high"/>
+                <!-- See the TEI guidelines for more information. -->
+                <purpose type="inform" degree="low"/>
+                <!-- Multiple purpose types may or may not be appropriate. -->
+            </textDesc>
 
-<pb n="144" facs="pageImages/Speckled-Band_0144.jpg"/>
-You may advise me how to walk amid the dangers which encompass me."</p>
-<p>“I am all attention, madam."</p>
-<p>“My name is <persName>Helen Stoner</persName>, and I am living with my stepfather, who is the last survivor of one of the oldest Saxon families in <placeName>England</placeName>, the <persName>Roylotts</persName> of <placeName>Stoke Moran</placeName>, on the western border of <placeName>Surrey</placeName>."</p>
-<p><persName>Holmes</persName> nodded his head. “The name is familiar to me," said he.</p>
-<p>“The family was at one time among the richest in <placeName> England </placeName> , and the estates extended over the borders into <ref target="a0004" corresp="n0004"> <placeName> Berkshire </placeName> </ref>in the north, and <ref target="a0005" corresp="n0005"> <placeName><placeName>Hampshire </placeName> </ref> in the west. In the last century, however, four successive heirs were of a dissolute and wasteful disposition, and the family ruin was eventually completed by a gambler in the days of the Regency. Nothing was left save a few acres of ground, and the two-hundred-year-old house, which is itself crushed under a heavy mortgage. The last squire dragged out his existence there, living the horrible life of an aristocratic pauper; but his only son, my stepfather, seeing that he must adapt himself to the new conditions, obtained an advance from a relative, which enabled him to take a medical degree and went out to <ref target="a0006" corresp="n0006"> <placeName>Calcutta</placeName> </ref> , where, by his professional skill and his force of character, he established a large practice. In a fit of anger, however, caused by some robberies which had been perpetrated in the house, he beat his native butler to death and narrowly escaped a capital sentence. As it was, he suffered a long term of imprisonment and afterwards returned to England a morose and disappointed man.</p>
-<p>“When <persName>Dr. Roylott </persName> was in <placeName>India </placeName> he married my mother, <persName>Mrs. Stoner</persName>, the young widow of <persName>Major-General Stoner </persName>, of the <ref target="a0007" corresp="n0007"> <placeName>Bengal Artillery </placeName></ref>. My sister <persName> Julia </persName> and I were twins, and we were only two years old at the time of my mother’s re-marriage. She had a considerable sum of money, not less than a thousand year, and this she <ref target="a0008" corresp="n0008"> bequeathed </ref> to <persName>Dr. Roylott</persName> entirely while we resided with him, with a provision that a certain annual sum should be allowed to each of us in the event of our marriage. Shortly after our return to <placeName> England </placeName> my mother died—she was killed eight years ago in a <ref target="a0009" corresp="n0009">  railway accident </ref> near <ref target="a0010" corresp="n0010"> <placeName> Crewe</placeName> </ref>. <persName>Dr. Roylott </persName> then abandoned his attempts to establish himself in practice in <ref target="a0011" corresp="n0011"> <placeName>London </placeName> </ref>and took us to live with him in the old ancestral house at <placeName> Stoke Moran </placeName>. The money which my mother had left was enough for all our wants, and there seemed to be no obstacle to our happiness.<p>
-<p>“But a terrible change came over our stepfather about this time. Instead of making friends and exchanging visits with our neighbours, who had at first been overjoyed to see a  <persName>Roylott  </persName> of <placeName>Stoke Moran </placeName>back in the old family seat, he shut himself up in his house, and seldom came out save to indulge in ferocious quarrels with whoever might cross his path. Violence of temper approaching to mania has been hereditary in the men of the family, and in my stepfather’s case it had, I believe, been intensified by his long residence in the tropics. A series of disgraceful brawls took place, two of which ended in the police-court, until at last he became the terror of the village, and the folks would fly at his approach, for he is a man of immense strength, and absolutely uncontrollable in his anger. </p>
-<p>“Last week he hurled the local blacksmith over a parapet into a stream, and it was only by paying over all the money which I could gather together that I was able to avert another public exposure. He had no friends at all save the wandering  <ref target="a0012" corresp="n0012">gipsies</ref>, and he would give these <ref target="a0013" corresp="n0013"> vagabonds </ref> leave to encamp upon the few acres of  
+            <settingDesc>
+                <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
+                <setting>
+                    <name type="tgn" key="7011781">London, England, United Kingdom</name>
+                    <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+                    <name type="tgn" key="7008175">Surrey, England, United Kingdom</name>
+                    <time from="1690" to="1724">Late 19th Century</time>
+                    <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+                </setting>
+            </settingDesc>
+        </profileDesc>
 
-<pb n="145" facs="pageImages/Speckled-Band_0145.jpg"/>
-<ref target="a0014" corresp="n0014">bramble </ref>-covered land which represent the family estate, and would accept in return the hospitality of their tents, wandering away with them sometimes for weeks on end. He has a passion also for Indian animals, which are sent over to him by a correspondent, and he has at this moment a cheetah and a baboon, which wander freely over his grounds and are feared by the villagers almost as much as their master. </p>
-<p>“You can imagine from what I say that my poor sister  <persName>Julia </persName> and I had no great pleasure in our lives. No servant would stay with us, and for a long time we did all the work of the house. She was but thirty at the time of her death, and yet her hair had already begun to whiten, even as mine has."</p>
-<p>“Your sister is dead, then?"</p>
-<p>“She died just two years ago, and it is of her death that I wish to speak to you. You can understand that, living the life which I have described, we were little likely to see anyone of our own age and position. We had, however, an aunt, my mother’s maiden sister, <persName> Miss Honoria Westphail </persName>, who lives near<ref target="a0015" corresp="n0015"> <placeName>Harrow </placeName> </ref>, and we were occasionally allowed to pay short visits at this lady’s house. <persName> Julia </persName>went there at Christmas two years ago, and met there a half-pay major of marines, to whom she became engaged. My stepfather learned of the engagement when my sister returned and offered no objection to the marriage; but within a fortnight of the day which had been fixed for the wedding, the terrible event occurred which has deprived me of my only companion."</p>
-<p><persName>Sherlock Holmes </persName> had been leaning back in his chair with his eyes closed and his head sunk in a cushion, but he half opened his lids now and glanced across at his visitor. </p>
-<p>“Pray be precise as to details," said he. </p>
-<p>“It is easy for me to be so, for every event of that dreadful time is seared into my memory. The <ref target="a0016" corresp="n0016">manor-house </ref> is, as I have already said, very old, and only one wing is now inhabited. The bedrooms in this wing are on the ground floor, the sitting-rooms being in the central block of the buildings. Of these bedrooms the first is <persName> Dr. Roylott’s </persName>, the second my sister’s, and the third my own. There is no communication between them, but they all open out into the same <ref target="a0017" corresp="n0017"> corridor </ref>. Do I make myself plain?" </p>
-<p>“Perfectly so." </p>
-<p>“The windows of the three rooms open out upon the lawn. That fatal night <persName>Dr. Roylott </persName>had gone to his room early, though we knew that he had not retired to rest, for my sister was troubled by the smell of the strong Indian cigars which it was his custom to smoke. She left her room, therefore, and came into mine, where she sat for some time, chatting about her approaching wedding. At eleven o’clock she rose to leave me, but she paused at the door and looked back.</p>
-<p>“‘Tell me, <persName>Helen </persName>,’ said she, ‘have you ever heard anyone whistle in the dead of the night?’ </p>
-<p>“‘Never,’ said I.</p>
-<p>“‘I suppose that you could not possibly whistle, yourself, in your sleep?’</p>
-<p>“‘Certainly not. But why?’</p>
-<p>“‘Because during the last few nights I have always, about three in the morning, heard a low clear whistle. I am a light sleeper, and it has awakened me. I cannot tell where it came from—perhaps from the next room, perhaps from the lawn. I thought that I would just ask you whether you had heard it.’</p>
-<p>“‘No, I have not. It must be those wretched gipsies in the plantation.’ </p>
-<p>“‘Very likely. And yet if it were on the lawn, I wonder that you did not hear it also.’</p>
-<p>“‘Ah, but I sleep more heavily than you.’</p>
-<p>“‘Well, it is of no great consequence, at any rate.’ She smiled back at me, closed my door, and a few moments later I heard her key turn in the lock."</p>
-<p>“Indeed," said  <persName> Holmes </persName> . “Was it your custom always to lock yourselves in at night?"</p>
-<p>“Always."</p>
-<p>“And why?"</p>
-<p>“I think that I mentioned to you that the Doctor kept a cheetah and a baboon. We had no feeling of security unless our doors were locked."</p>
-<p>“Quite so. Pray proceed with your statement."</p>
-<p>“I could not sleep that night. A vague feeling of impending misfortune impressed me. My sister and I, you will recollect, were twins, and you know how subtle are the links which bind two souls which are so closely allied. It was a wild night. The wind was howling outside, and the rain was beating and splashing against the windows. Suddenly, amidst all the hubbub of the gale, there burst forth the wild scream of a terrified woman. I knew that it was my sister’s voice. I sprang from my bed, wrapped a shawl round me, and rushed into the corridor. As I opened my door I 
+        <encodingDesc>
+            <!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature of the 18th century. This project is funded by the National Endowment
+                    for the Humanities and developed by faculty at The University of Virginia and
+                    Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com. </p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <!-- We here define the authority files used throughout the application and data. -->
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2023-11-10" who="editors.xml#TH">Corrections for schema and note style, and added page images</change>
+        </revisionDesc>
+    </teiHeader>
+    <!--TEI Header Ends -->
 
-<pb n="146" facs="pageImages/Speckled-Band_0146.jpg"/>
-seemed to hear a low whistle, such as my sister described, and a few moments later a clanging sound, as if a mass of metal had fallen. As I ran down the passage my sister’s door was unlocked and revolved slowly upon its hinges. I stared at it horror-stricken, not knowing what was about to issue from it. By the light of the corridor-lamp I saw my sister appear at the opening, her face blanched with terror, her hands groping for help, her whole figure swaying to and fro like that of a drunkard. I ran to her and threw my arms round her, but at that moment her knees seemed to give way and she fell to the ground. She writhed as one who is in terrible pain, and her limbs were dreadfully convulsed. At first I thought that she had not recognised me, but as I bent over her she suddenly shrieked out in a voice which I shall never forget, ‘Oh, my God!<persName> Helen</persName>! It was the band! The speckled band!’ There was something else which she would fain have said, and she stabbed with her finger into the air in the direction of the Doctor’s room, but a fresh convulsion seized her and choked her words. I rushed out, calling loudly for my stepfather, and I met him hastening from his room in his dressing-gown. When he reached my sister’s side she was unconscious, and though he poured brandy down her throat, and sent for medical aid from the village, all efforts were in vain, for she slowly sank and died without having recovered her consciousness. Such was the dreadful end of my beloved sister."</p>
-<p>“One moment," said <persName>Holmes </persName>, “are you sure about this whistle and metallic sound? Could you swear to it?"</p>
-<p>“That was what the county coroner asked me at the inquiry. It is my strong impression that I heard it, and yet among the crash of the gale and the creaking of an old house, I may possibly have been deceived."</p>
-<p>“Was your sister dressed?"</p>
-<p>“No, she was in her night dress. In her right hand was found the charred stump of a match, and in her left a match-box."</p>
-<p>“Showing that she had struck a light and looked about her when the alarm took place. That is important. And what conclusions did the coroner come to?"</p>
-<p>“He investigated the case with great care, for <persName>Dr. Roylott’s</persName> conduct had long been notorious in the county, but he was unable to find any satisfactory cause of death. My evidence showed that the door had been fastened upon the inner side, and the windows were blocked by old-fashioned 
 
-<pb n="147" facs="pageImages/Speckled-Band_0147.jpg"/>
-shutters with broad iron bars, which were secured every night. The walls were carefully sounded, and were shown to be quite solid all round, and the flooring was also thoroughly examined, with the same result. The chimney is wide, but is barred up by four large staples. It is certain, therefore, that my sister was quite alone when she met her end. Besides, there were no marks of any violence upon her."</p>
-<p>“How about poison?"</p>
-<p>“The doctors examined her for it, but without success."</p>
-<p>“What do you think that this unfortunate lady died of, then?"</p>
-<p>“It is my belief that she died of pure fear and nervous shock, though what it was that frightened her I cannot imagine."</p>
-<p>“Were there gipsies in the plantation at the time?"</p>
-<p>“Yes, there are nearly always some there."</p>
-<p>“Ah, and what did you gather from this allusion to a band—a speckled band?"</p>
-<p>“Sometimes I have thought that it was merely the wild talk of delirium, sometimes that it may have referred to some band of people, perhaps to these very gipsies in the plantation. I do not know whether the spotted handkerchiefs which so many of them wear over their heads might have suggested the strange adjective which she used."</p>
-<p><persName>Holmes </persName> shook his head like a man who is far from being satisfied.</p>
-<p>“These are very deep waters," said he; “pray go on with your narrative."</p>
-<p>“Two years have passed since then, and my life has been until lately lonelier than ever. A month ago, however, a dear friend, whom I have known for many years, has done me the honour to ask my hand in marriage. His name is<persName> Armitage </persName>—<persName>Percy Armitage</persName>—the second son of <persName>Mr. Armitage </persName>, of <placeName>Crane Water </placeName>, near <placeName> Reading</placeName>. My stepfather has offered no opposition to the match, and we are to be married in the course of the spring. Two days ago some repairs were started in the west wing of the building, and my bedroom wall has been pierced, so that I have had to move into the chamber in which my sister died, and to sleep in the very bed in which she slept. Imagine, then, my thrill of terror when last night, as I lay awake, thinking over her terrible fate, I suddenly heard in the silence of the night the low whistle which had been the herald of her own death. I sprang up and lit the lamp, but nothing was to be seen in the room. I was too shaken to go to bed again, however, so I dressed, and as soon as it was daylight I slipped down, got a dog-cart at the <placeName>“Crown" inn </placeName>, which is opposite, and drove to <placeName> Leatherhead</placeName>, from whence I have come on this morning with the one object of seeing you and asking your advice."</p>
-<p>“You have done wisely," said my friend. “But have you told me all?"</p>
-<p>“Yes, all."</p>
-<p>“<persName>Miss Roylott </persName>, you have not. You are screening your stepfather."</p>
-<p>“Why, what do you mean?"</p>
-<p>For answer <persName> Holmes </persName> pushed back the frill of black lace which fringed the hand that lay upon our visitor’s knee. Five little livid spots, the marks of four fingers and a thumb, were printed upon the white wrist.</p>
-<p>“You have been cruelly used," said<persName>  Holmes </persName> .</p>
-<p>The lady coloured deeply and ‘covered over her injured wrist. “He is a hard man," she said, “and perhaps he hardly knows his own strength."</p>
-<p>There was a long silence, during which Holmes leaned his chin upon his hands and stared into the crackling fire.</p>
-<p>“This is a very deep business," he said at last. “There are a thousand details which I should desire to know before I decide upon our course of action. Yet we have not a moment to lose. If we were to come to <placeName>Stoke Moran </placeName> to-day, would it be possible for us to see over these rooms without the knowledge of your stepfather?"</p>
-<p>“As it happens, he spoke of coming into town to-day upon some most important business. It is probable that he will be away all day, and that there would be nothing to disturb you. We have a housekeeper now, but she is old and foolish, and I could easily get her out of the way."</p>
-<p>“Excellent. You are not averse to this trip, Watson?"</p>
-<p>“By no means."</p>
-<p>“Then we shall both come. What are you going to do yourself?"</p>
-<p>“I have one or two things which I would wish to do now that I am in town. But I shall return by the twelve o’clock train, so as to be there in time for your coming."</p>
-<p>“And you may expect us early in the afternoon. I have myself some small business matters to attend to. Will you not wait and breakfast?"</p>
-<p>“No, I must go. My heart is lightened already since I have confided my trouble to you. I shall look forward to seeing you 
 
-<pb n="148" facs="pageImages/Speckled-Band_0148.jpg"/>
-again this afternoon." She dropped her thick black veil over her face and, glided from the room. </p>
-<p>“And what do you think of it all, <persName> Watson </persName>?" asked <persName> Sherlock Holmes </persName>, leaning back in his chair.</p>
-<p>“It seems to me to be a most dark and sinister business." </p>
-<p>“Dark enough and sinister enough."</p>
-<p>“Yet if the lady is correct in saying that the flooring and walls are sound, and that the door, window, and chimney are impassable, then her sister must have been undoubtedly alone when she met her mysterious end."</p>
-<p>“What becomes, then, of these nocturnal whistles, and what of the very peculiar words of the dying woman?"</p>
-<p>“I cannot think."</p>
-<p>“When you combine the ideas of whistles at night, the presence of a band of gipsies who are on intimate terms with this old doctor, the fact that we have every reason to believe that the doctor has an interest in preventing his stepdaughter’s marriage, the dying allusion to a band, and finally, the fact that Miss <persName>Helen Stoner </ persName>heard a metallic clang, which might have been caused by one of those metal bars that secured the shutters falling back into their place, I think that there is good ground to think that the mystery may be cleared along those lines."</p>
-<p>“But what, then, did the gipsies do?"</p>
-<p>“I cannot imagine."</p>
-<p>“I see many objections to any such theory."</p>
-<p>“And so do I. It is precisely for that reason that we are going to <placeName>Stoke Moran </placeName> this day. I want to see whether the objections are fatal, or if they may be explained away. But what in the name of the devil!"</p>
-<p>The ejaculation had been drawn from my companion by the fact that our door had been suddenly dashed open, and that a huge man had framed himself in the aperture. His costume was a peculiar mixture of the professional and of the agricultural, having a black top hat, a long frock coat, and a pair of high gaiters, with a hunting crop swinging in his hand. So tall was he that his hat actually brushed the cross bar of the doorway, and his breadth seemed to span it across from side to side. A large face, seared with a thousand wrinkles, burned yellow with the sun, and marked with every evil passion, was turned from one to the other of us, while his deep-set, bile-shot eyes, and his high thin fleshless nose, gave him somewhat the resemblance to a fierce old bird of prey.</p>
-<p>“Which of you is <persName>Holmes </persName>?" asked this apparition.</p>
-<p>“My name, sir; but you have the advantage of me," said my companion quietly. </p>
-<p>“I am Dr. <persName> Grimesby Roylott </persName>, of <placeName>Stoke Moran</placeName> ."</p>
-<p>“Indeed, Doctor," said Holmes blandly. “Pray take a seat."</p>
-<p>“I will do nothing of the kind. My stepdaughter has been here. I have traced her. What has she been saying to you?"</p>
-<p>“It is a little cold for the time of the year," said <persName> Holmes </persName> .</p>
-<p>“What has she been saying to you?" screamed the old man furiously.</p>
-<p>“But I have heard that the crocuses promise well," continued my companion imperturbably.</p>
+    <text>
+        <front>
+            <titlePage>
+                <titlePart/>
+                <docImprint/>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <pb n="142" facs="pageImages/Speckled-Band_0142.jpg"/>
 
-<pb n="149" facs="pageImages/Speckled-Band_0149.jpg"/>
-<p>“Ha! You put me off, do you?" said our new visitor, taking a step forward and shaking his hunting-crop. “I know you, you scoundrel! I have heard of you before. You are <persName> Holmes</persName>, the meddler."</p>
-<p>My friend smiled.</p>
-<p>“<persName>Holmes</persName>, the busybody!"</p>
-<p>His smile broadened.</p>
-<p>“<persName>Holmes</persName>, the <placeName> Scotland </placeName>- yard Jack-in-office!"</p>
-<p><persName>Holmes</persName> chuckled heartily. “Your conversation is most entertaining," said he. “When you go out close the door, for there is a decided draught."</p>
-<p>“I will go when I have said my say. Don’t you dare to meddle with my affairs. I know that Miss <persName>Stoner</persName> has been here- I traced her! I am a dangerous man to fall foul of! See here." He stepped swiftly forward, seized the poker, and bent it into a curve with his huge brown hands.</p>
-<p>“See that you keep yourself out of my grip," he snarled, and hurling the twisted poker into the fireplace, he strode out of the room.</p>
-<p>“He seems a very amiable person," said  <persName> Holmes </persName>, laughing. “I am not quite so bulky, but if he had remained I might have shown him that my grip was not much more feeble than his own." As he spoke he picked up the steel poker, and with a sudden effort straightened it out again.</p>
-<p>“Fancy his having the insolence to confound me with the official detective force! This incident gives zest to our investigation, however, and I only trust that our little friend will not suffer from her imprudence in allowing this brute to trace her. And now, <persName> Watson </persName>, we shall order breakfast, and afterwards I shall walk down to Doctors’ Commons, where I hope to get some data which may help us in this matter."</p>
-<p>It was nearly one o’clock when <persName> Sherlock Holmes </persName> returned from his excursion. He held in his hand a sheet of blue paper, scrawled over with notes and figures.</p>
-<p>“I have seen the will of the deceased wife," said he. “To determine its exact meaning I have been obliged to work out the present prices of the investments with which it is concerned. The total income, which at the time of the wife’s death was little short of £ 1,100, is now, through the fall in agricultural prices, not more than £ 750. Each daughter can claim an income of £ 250, in case of marriage. It is evident, therefore, that if both girls had married, this beauty would have had a mere pittance, while even one of them would cripple him to a very serious extent. My morning’s work has not been wasted, since it has proved that he has the very strongest motives for standing in the way of anything of the sort. And now, <persName> Watson </persName>, this is too serious for dawdling, especially as the old man is aware that we are interesting ourselves in his affairs, so if you are ready we shall call a cab and drive to  <placeName> Waterloo </placeName>. I should be very much obliged if you would slip your revolver into your pocket. An Eley’s No. 2 is an excellent argument with gentlemen who can twist steel pokers into knots. That and a tooth-brush are, I think, all that we need."</p>
-<p>At  <placeName>Waterloo </placeName> we were fortunate in catching a train for  <placeName> Leatherhead  </placeName>, where we hired a trap at the station inn and drove for four or five miles through the lovely Surrey lanes. It was a perfect day, with a bright sun and a few fleecy clouds in the heavens. The trees and wayside hedges were just throwing out their first green shoots, and the air was full of the pleasant smell of the moist earth. To me at least there was a strange contrast between the sweet promise of the spring and this sinister quest upon which we were engaged. My companion sat in the front of the trap, his arms folded, his hat pulled down over his eyes, and his chin sunk upon his breast, buried in the deepest thought. Suddenly, however, he started, tapped me on the shoulder, and pointed over the meadows.</p>
-<p>“Look there!" said he.</p>
-<p>A heavily- timbered park stretched up in a gentle slope, thickening into a grove at the highest point. From amid the branches there jutted out the grey gables and high roof-tree of a very old mansion.</p>
-<p>“<placeName>Stoke Moran</placeName>?" said he.</p>
-<p>“Yes, sir, that be the house of Dr.<persName>Grimesby Roylott</persName>," remarked the driver.</p>
-<p>“There is some building going on there," said <persName>Holmes</persName>; “that is where we are going."</p>
-<p>“There’s the village," said the driver, pointing to a cluster of roofs some distance to the left; “but if you want to get to the house, you’ll find it shorter to get over this stile, and so by the footpath over the fields. There it is, where the lady is walking."</p>
-<p>“And the lady, I fancy, is<persName> Miss Stoner</persName>," observed <persName>Holmes</persName>, shading his eyes. “Yes, I think we had better do as you suggest."</p>
-<p>We got off, paid our fare, and the trap rattled back on its way to <placeName>Leatherhead</placeName>.</p>
-<pb n="150" facs="pageImages/Speckled-Band_0150.jpg"/>
-<p>“I thought it as well," said <persName>Holmes</persName>, as we climbed the stile, “that this fellow should think we had come here as architects, or on some definite business. It may stop his gossip. Good afternoon, <persName>Miss Stoner</persName>. You see that we have been as good as our word."</p>
-<p>Our client of the morning had hurried forward to meet us with a face which spoke her joy. “I have been waiting so eagerly for you," she cried, shaking hands with us warmly. “All has turned out splendidly. <persName>Dr. Roylott</persName> has gone to town, and it is unlikely that he will be back before evening."</p>
-<p>“We have had the pleasure of making the Doctor’s acquaintance," said <persName>Holmes</persName>, and in a few words he sketched out what had occurred. <persName>Miss Stoner</persName> turned white to the lips as she listened.</p>
-<p>“Good heavens!" she cried, “he has followed me, then."</p>
-<p>“So it appears."</p>
-<p>“He is so cunning that I never know when I am safe from him. What will he say when he returns?"</p>
-<p>“He must guard himself, for he may find that there is someone more cunning than himself upon his track. You must lock yourself up from him to-night. If he is violent, we shall take you away to your aunt’s at <placeName>Harrow</placeName>. Now, we must make the best use of our time, so kindly take us at once to the rooms which we are to examine."</p>
-<p>The building was of grey, lichen-blotched stone, with a high central portion, and two curving wings, like the claws of a crab, thrown out on each side. In one of these wings the windows were broken, and blocked with wooden boards, while the roof was partly caved in, a picture of ruin. The central portion was in little better repair, but the right-hand block was comparatively modern, and the blinds in the windows, with the blue smoke curling up from the chimneys, showed that this was where the family resided. Some scaffolding had been erected against the end wall, and the stonework had been broken into, but there were no signs of any workmen at the moment of our visit. <persName>Holmes</persName> walked slowly up and down the ill-trimmed lawn, and examined with deep attention the outsides of the windows.</p>
-<p>“This, I take it, belongs to the room in which you used to sleep, the centre one to your sister’s, and the one next to the main building to <persName>Dr. Roylott</persName>’s chamber?"</p>
-<p>“Exactly so. But I am now sleeping in the middle one."</p>
-<p>“Pending the alterations, as I understand. By the way, there does not seem to be any very pressing need for repairs at that end wall."</p>
-<p>“There were none. I believe that it was an excuse to move me from my room."</p>
-<p>“Ah! that is suggestive. Now, on the other side of this narrow wing runs the corridor from which these three rooms open. There are windows in it, of course?"</p>
-<p>“Yes, but very small ones. Too narrow for anyone to pass through."</p>
-<p>“As you both locked your doors at night your rooms were unapproachable from that side. Now, would you have the kindness to go into your room, and to bar your shutters?"</p>
-<p><persName>Miss Stoner</persName> did so, and <persName>Holmes</persName>, after a careful examination through the open window, endeavoured in every way to force
-<pb n="151" facs="pageImages/Speckled-Band_0151.jpg"/>
-the shutter open, but without success. There was no slit through which a knife could be passed to raise the bar. Then with his lens he tested the hinges, but they were of solid iron, built firmly into the massive masonry. “Hum!" said he, scratching his chin in some perplexity, “my theory certainly presents some difficulties. No one could pass these shutters if they were bolted. Well, we shall see if the inside throws any light upon the matter."</p>
-<p>A small side door led into the whitewashed corridor from which the three bedrooms opened. <persName>Holmes</persName> refused to examine the third chamber, so we passed at once to the second, that in which <persName>Miss Stoner</persName> was now sleeping, and in which her sister had met with her fate. It was a homely little room, with a low ceiling and a gaping fireplace, after the fashion of old country houses. A brown chest of drawers stood in one corner, a narrow white-counterpaned bed in another, and a dressing-table on the left-hand side of the window. These articles, with two small wickerwork chairs, made up all the furniture in the room, save for a square of Wilton carpet in the centre. The boards round and the panelling of the walls were of brown, worm-eaten oak, so old and discoloured that it may have dated from the original building of the house. <persName>Holmes</persName> drew one of the chairs into a corner and sat silent, while his eyes travelled round and round and up and down, taking in every detail of the apartment.</p>
-<p>“Where does that bell communicate with?" he asked at last, pointing to a thick bell-rope which hung down beside the bed, the tassel actually lying upon the pillow.</p>
-<p>“It goes to the housekeeper’s room."</p>
-<p>“It looks newer than the other things?"</p>
-<p>“Yes, it was only put there a couple of years ago."</p>
-<p>“Your sister asked for it, I suppose?"</p>
-<p>“No, I never heard of her using it. We used always to get what we wanted for ourselves."</p>
-<p>“Indeed, it seemed unnecessary to put so nice a bell-pull there. You will excuse me for a few minutes while I satisfy myself as to this floor." He threw himself down upon his face with his lens in his hand, and crawled swiftly backward and forward, examining minutely the cracks between the boards. Then he did the same with the woodwork with which the chamber was panelled. Finally he walked over to the bed and spent some time in staring at it, and in running his eye up and down the wall. Finally he took the bell-rope in his hand and gave it a brisk tug.</p>
-<p>“Why, it’s a dummy," said he.</p>
-<p>“Won’t it ring?"</p>
-<p>“No, it is not even attached to a wire. This is very interesting. You can see now that it is fastened to a hook just above where the little opening for the ventilator is."</p>
-<p>“How very absurd! I never noticed that before."</p>
-<p>“Very strange!" muttered <persName>Holmes</persName>, pulling at the rope. “There are one or two very singular points about this room. For example, what a fool a builder must be to open a ventilator into another room, when, with the same trouble, he might have communicated with the outside air!"</p>
-<p>“That is also quite modern," said the lady.</p>
-<p>“Done about the same time as the bell-rope?" remarked <persName>Holmes</persName>.</p>
-<p>“Yes, there were several little changes carried out about that time."</p>
-<p>“They seem to have been of a most interesting character—dummy bell-ropes, and ventilators which do not ventilate. With your permission, <persName>Miss Stoner</persName>, we shall now carry our researches into the inner apartment."</p>
-<p><persName>Dr. Grimesby Roylott</persName>’s chamber was larger than that of his step-daughter, but was as plainly furnished. A camp bed, a small wooden shelf full of books, mostly of a technical character, an armchair beside the bed, a plain wooden chair against the wall, a round table, and a large iron safe were the principal things which met the eye. <persName>Holmes</persName> walked slowly round and examined each and all of them with the keenest interest.</p>
-<p>“What’s in here?" he asked, tapping the safe.</p>
-<p>“My stepfather’s business papers."</p>
-<p>“Oh! you have seen inside, then?"</p>
-<p>“Only once, some years ago. I remember that it was full of papers."</p>
-<p>“There isn’t a cat in it, for example?"</p>
-<p>“No. What a strange idea!"</p>
-<p>“Well, look at this!" He took up a small saucer of milk which stood on the top of it.</p>
-<p>“No; we don’t keep a cat. But there is a cheetah and a baboon."</p>
-<p>“Ah, yes, of course! Well, a cheetah is just a big cat, and yet a saucer of milk 
-<pb n="152" facs="pageImages/Speckled-Band_0152.jpg"/>
-does not go very far in satisfying its wants, I daresay. There is one point which I should wish to determine." He squatted down in front of the wooden chair and examined the seat of it with the greatest attention.</p>
-<p>“Thank you. That is quite settled," said he, rising and putting his lens in his pocket. “Hullo! here is something interesting!"</p>
-<p>The object which had caught his eye was a small dog lash hung on one corner of the bed. The lash, however, was curled upon itself, and tied so as to make a loop of whipcord.</p>
-<p>“What do you make of that, <persName>Watson</persName>?"</p>
-<p>“It’s a common enough lash. But I don’t know why it should be tied."</p>
-<p>“That is not quite so common, is it? Ah, me! it’s a wicked world, and when a clever man turns his brains to crime it is the worst of all. I think that I have seen enough now, <persName>Miss Stoner</persName>, and, with your permission, we shall walk out upon the lawn."</p>
-<p>I had never seen my friend’s face so grim, or his brow so dark, as it was when we turned from the scene of this investigation. We had walked several times up and down the lawn, neither <persName>Miss Stoner</persName> nor myself liking to break in upon his thoughts, before he roused himself from his reverie.</p>
-<p>“It is very essential, <persName>Miss Stoner</persName>," said he, “that you should absolutely follow my advice in every respect."</p>
-<p>“I shall most certainly do so."</p>
-<p>“The matter is too serious for any hesitation. Your life may depend upon your compliance."</p>
-<p>“I assure you that I am in your hands."</p>
-<p>“In the first place, both my friend and I must spend the night in your room."</p>
-<p>Both <persName>Miss Stoner</persName> and I gazed at him in astonishment.</p>
-<p>“Yes, it must be so. Let me explain. I believe that that is the village inn over there?"</p>
-<p>“Yes, that is the ‘<placeName>Crown</placeName>.’"</p>
-<p>“Very good. Your windows would be visible from there?"</p>
-<p>“Certainly."</p>
-<p>“You must confine yourself to your room, on pretence of a headache, when your stepfather comes back. Then when you hear him retire for the night, you must open the shutters of your window, undo the hasp, put your lamp there as a signal to us, and then withdraw quietly with everything which you are likely to want into the room which you used to occupy. I have no doubt that, in spite of the repairs, you could manage there for one night."</p>
-<p>“Oh, yes, easily."</p>
-<p>“The rest you will leave in our hands."</p>
-<p>“But what will you do?"</p>
-<p>“We shall spend the night in your room, and we shall investigate the cause of this noise which has disturbed you."</p>
-<p>“I believe, <persName>Mr. Holmes</persName>, that you have already made up your mind," said <persName>Miss Stoner</persName>, laying her hand upon my companion’s sleeve.</p>
-<p>“Perhaps I have."</p>
-<p>“Then for pity’s sake tell me what was the cause of my sister’s death."</p>
-<p>“I should prefer to have clearer proofs before I speak."</p>
-<p>“You can at least tell me whether my own thought is correct, and if she died from some sudden fright."</p>
-<p>“No, I do not think so. I think that there was probably some more tangible cause. And now, <persName>Miss Stoner</persName>, we must leave you, for if <persName>Dr. Roylott</persName> returned and 
-<pb n="153" facs="pageImages/Speckled-Band_0153.jpg"/>
-saw us, our journey would be in vain. Good-bye, and be brave, for if you will do what I have told you, you may rest assured that we shall soon drive away the dangers that threaten you."</p>
-<p><persName>Sherlock Holmes</persName> and I had no difficulty in engaging a bedroom and sitting-room at the <placeName>“Crown" Inn</placeName>. They were on the upper floor, and from our window we could command a view of the avenue gate, and of the inhabited wing of <placeName>Stoke Moran Manor House</placeName>. At dusk we saw <persName>Dr. Grimesby Roylott</persName> drive past, his huge form looming up beside the little figure of the lad who drove him. The boy had some slight difficulty in undoing the heavy iron gates, and we heard the hoarse roar of the doctor’s voice, and saw the fury with which he shook his clenched fists at him. The trap drove on, and a few minutes later we saw a sudden light spring up among the trees as the lamp was lit in one of the sitting-rooms.</p>
-<p>“Do you know, <persName>Watson</persName>," said <persName>Holmes</persName>, as we sat together in the gathering darkness, “I have really some scruples as to taking you to-night. There is a distinct element of danger."</p>
-<p>“Can I be of assistance?"</p>
-<p>“Your presence might be invaluable."</p>
-<p>“Then I shall certainly come."</p>
-<p>“It is very kind of you."</p>
-<p>“You speak of danger. You have evidently seen more in these rooms than was visible to me."</p>
-<p>“No, but I fancy that I may have deduced a little more. I imagine that you saw all that I did."</p>
-<p>“I saw nothing remarkable save the bell rope, and what purpose that could answer I confess is more than I can imagine."</p>
-<p>“You saw the ventilator, too?"</p>
-<p>“Yes, but I do not think that it is such a very unusual thing to have a small opening between two rooms. It was so small that a rat could hardly pass through."</p>
-<p>“I knew that we should find a ventilator before ever we came to Stoke Moran."</p>
-<p>“My dear <persName>Holmes</persName>!"</p>
-<p>“Oh, yes, I did. You remember in her statement she said that her sister could smell <persName>Dr. Roylott</persName>’s cigar. Now, of course that suggested at once that there must be a communication between the two rooms. It could only be a small one, or it would have been remarked upon at the Coroner’s inquiry. I deduced a ventilator."</p>
-<p>“But what harm can there be in that?"</p>
-<p>“Well, there is at least a curious coincidence of dates. A ventilator is made, a cord is hung, and a lady who sleeps in the bed dies. Does not that strike you?"</p>
-<p>“I cannot as yet see any connection."</p>
-<p>“Did you observe anything very peculiar about that bed?"</p>
-<p>“No."</p>
-<p>“It was clamped to the floor. Did you ever see a bed fastened like that before?"</p>
-<p>“I cannot say that I have."</p>
- <pb n="154" facs="pageImages/Speckled-Band_0154.jpg"/>
-<p>“The lady could not move her bed. It must always be in the same relative position to the ventilator and to the rope—for so we may call it, since it was clearly never meant for a bell-pull."</p>
-<p>“<persName>Holmes</persName>," I cried, “I seem to see dimly what you are hinting at. We are only just in time to prevent some subtle and horrible crime."</p>
-<p>“Subtle enough, and horrible enough. When a doctor does go wrong, he is the first of criminals. He has nerve and he has knowledge. <persName>Palmer</persName> and <persName>Pritchard</persName> were among the heads of their profession. This man strikes even deeper, but I think, <persName>Watson</persName>, that we shall be able to strike deeper still. But we shall have horrors enough before the night is over; for goodness’ sake let us have a quiet pipe, and turn our minds for a few hours to something more cheerful."</p>
-<p>About nine o’clock the light among the trees was extinguished, and all was dark in the direction of the <placeName>Manor House</placeName>. Two hours passed slowly away, and then, suddenly, just at the stroke of eleven, a single bright light shone out right in front of us.</p>
-<p>“That is our signal," said <persName>Holmes</persName>, springing to his feet; “it comes from the middle window."</p>
-<p>As we passed out he exchanged a few words with the landlord, explaining that we were going on a late visit to an acquaintance, and that it was possible that we might spend the night there. A moment later we were out on the dark road, a chill wind blowing in our faces, and one yellow light twinkling in front of us through the gloom to guide us on our sombre errand.</p>
-<p>There was little difficulty in entering the grounds, for unrepaired breaches gaped in the old park wall. Making our way among the trees, we reached the lawn, crossed it, and were about to enter through the window when out from a clump of laurel bushes there darted what seemed to be a hideous and distorted child, who threw itself upon the grass with writhing limbs and then ran swiftly across the lawn into the darkness.</p>
-<p>“My God!" I whispered; “did you see it?"</p>
-<p><persName>Holmes</persName> was for the moment as startled as I. His hand closed like a vice upon my wrist in his agitation. Then he broke into a low laugh and put his lips to my ear.</p>
-<p>“It is a nice household," he murmured. “That is the baboon."</p>
-<p>I had forgotten the strange pets which the Doctor affected. There was a cheetah, too; perhaps we might find it upon our shoulders at any moment. I confess that I felt easier in my mind when, after following <persName>Holmes</persName>’ example and slipping off my shoes, I found myself inside the bedroom. My companion noiselessly closed the shutters, moved the lamp on to the table, and cast his eyes round the room. All was as we had seen it in the daytime. Then creeping up to me and making a trumpet of his hand, he whispered into my ear again so gently that it was all that I could do to distinguish the words:</p>
-<p>“The least sound would be fatal to our plans."</p>
-<p>I nodded to show that I had heard.</p>
-<p>“We must sit without light. He would see it through the ventilator."</p>
-<p>I nodded again.</p>
-<p>“Do not go asleep; your very life may depend upon it. Have your pistol ready in case we should need it. I will sit on the side of the bed, and you in that chair."</p>
-<p>I took out my revolver and laid it on the corner of the table.</p>
-<p><persName>Holmes</persName> had brought up a long thin cane, and this he placed upon the bed beside him. By it he laid the box of matches and the stump of a candle. Then he turned down the lamp, and we were left in darkness.</p>
-<p>How shall I ever forget that dreadful vigil? I could not hear a sound, not even the drawing of a breath, and yet I knew that my companion sat open-eyed, within a few feet of me, in the same state of nervous tension in which I was myself. The shutters cut off the least ray of light, and we waited in absolute darkness. (¶ no) From outside came the occasional cry of a night bird, and once at our very window a long drawn, cat-like whine, which told us that the cheetah was indeed at liberty. Far away we could hear the deep tones of the parish clock, which boomed out every quarter of an hour. How long they seemed, those quarters! Twelve struck, and one, and two, and three, and still we sat waiting silently for whatever might befall.</p>
-<p>Suddenly there was the momentary gleam of a light up in the direction of the ventilator, which vanished immediately, but was succeeded by a strong smell of burning oil and heated metal. Someone in the next room had lit a dark lantern. I heard a gentle sound of movement, and then all was silent once more, though the
-<pb n="155" facs="pageImages/Speckled-Band_0155.jpg"/>
-smell grew stronger. For half an hour I sat with straining ears. Then suddenly another sound became audible—a very gentle, soothing sound, like that of a small jet of steam escaping continually from a kettle. The instant that we heard it, <persName>Holmes</persName> sprang from the bed, struck a match, and lashed furiously with his cane at the bell-pull.</p>
-<p>“You see it, <persName>Watson</persName>?" he yelled. “You see it?"</p>
-<p>But I saw nothing. At the moment when <persName>Holmes</persName> struck the light I heard a low, clear whistle, but the sudden glare flashing into my weary eyes made it impossible for me to tell what it was at which my friend lashed so savagely. I could, however, see that his face was deadly pale, and filled with horror and loathing. </p>
-¶<p>He had ceased to strike, and was gazing up at the ventilator, when suddenly there broke from the silence of the night the most horrible cry to which I have ever listened. It swelled up louder and louder, a hoarse yell of pain and fear and anger all mingled in the one dreadful shriek. They say that away down in the village, and even in the distant parsonage, that cry raised the sleepers from their beds. It struck cold to our hearts, and I stood gazing at <persName>Holmes</persName>, and he at me, until the last echoes of it had died away into the silence from which it rose.</p>
-<p>“What can it mean?" I gasped.</p>
-<p>“It means that it is all over," <persName>Holmes</persName> answered. “And perhaps, after all, it is for the best. Take your pistol, and we shall enter <persName>Dr. Roylott</persName>’s room."</p>
-<p>With a grave face he lit the lamp, and led the way down the corridor. Twice he struck at the chamber door without any reply from within. Then he turned the handle and entered, I at his heels, with the cocked pistol in my hand.</p>
-<p>It was a singular sight which met our eyes. On the table stood a dark lantern with the shutter half open, throwing a brilliant beam of light upon the iron safe, the door of which was ajar. Beside this table, on the wooden chair, sat <persName>Dr. Grimesby Roylott</persName> clad in a long grey dressing-gown, his bare ankles protruding beneath, and his feet thrust into red heelless Turkish slippers. Across his lap lay the short stock with the long lash which we had noticed during the day. His chin was cocked upwards, and his eyes were fixed in a dreadful rigid stare at the corner of the ceiling. Round his brow he had a peculiar yellow band, with brownish 
-<pb n="156" facs="pageImages/Speckled-Band_0156.jpg"/>
-speckles, which seemed to be bound tightly round his head. As we entered he made neither sound nor motion.</p>
-<p>“The band! the speckled band!" whispered <persName>Holmes</persName>.</p>
-<p>I took a step forward. In an instant his strange headgear began to move, and there reared itself from among his hair the squat diamond-shaped head and puffed neck of a loathsome serpent.</p>
-<p>“It is a swamp adder!" cried <persName>Holmes</persName>— “the deadliest snake in <placeName>India</placeName>. He has died within ten seconds of being bitten. Violence does, in truth, recoil upon the violent, and the schemer falls into the pit which he digs for another. Let us thrust this creature back into its den, and we can then remove <persName>Miss Stoner</persName> to some place of shelter, and let the county police know what has happened."</p>
-<p>As he spoke he drew the dog whip swiftly from the dead man’s lap, and throwing the noose round the reptile’s neck, he drew it from its horrid perch, and, carrying it at arm’s length threw it into the iron safe, which he closed upon it.</p>
-<p>Such are the true facts of the death of <persName>Dr. Grimesby Roylott</persName>, of <placeName>Stoke Moran</placeName>. It is not necessary that I should prolong a narrative which has already run to too great a length, by telling how we broke the sad news to the terrified girl, how we conveyed her by the morning train to the care of her good aunt at <placeName>Harrow</placeName>, of how the slow process of official inquiry came to the conclusion that the Doctor met his fate while indiscreetly playing with a dangerous pet. The little which I had yet to learn of the case was told me by <persName>Sherlock Holmes</persName> as we travelled back next day.</p>
-<p>“I had," said he, “come to an entirely erroneous conclusion, which shows, my dear <persName>Watson</persName>, how dangerous it always is to reason from insufficient data. The presence of the gipsies, and the use of the word ‘band,’ which was used by the poor girl, no doubt, to explain the appearance which she had caught a hurried glimpse of by the light of her match, were sufficient to put me upon an entirely wrong scent. I can only claim the merit that I instantly reconsidered my position when, however, it became clear to me that whatever danger threatened an occupant of the room could not come either from the window or the 
-<pb n="157" facs="pageImages/Speckled-Band_0157.jpg"/>
-door. My attention was speedily drawn, as I have already remarked to you, to this ventilator, and to the bell rope which hung down to the bed. The discovery that this was a dummy, and that the bed was clamped to the floor, instantly gave rise to the suspicion that the rope was there as a bridge for something passing through the hole, and coming to the bed. The idea of a snake instantly occurred to me, and when I coupled it with my knowledge that the Doctor was furnished with a supply of creatures from <placeName>India</placeName>, I felt that I was probably on the right track. The idea of using a form of poison which could not possibly be discovered by any chemical test was just such a one as would occur to a clever and ruthless man who had had an Eastern training. The rapidity with which such a poison would take effect would also, from his point of view, be an advantage. It would be a sharp-eyed coroner indeed who could distinguish the two little dark punctures which would show where the poison fangs had done their work. Then I thought of the whistle. Of course, he must recall the snake before the morning light revealed it to the victim. He had trained it, probably by the use of the milk which we saw, to return to him when summoned. He would put it through this ventilator at the hour that he thought best, with the certainty that it would crawl down the rope and land on the bed. It might or might not bite the occupant, perhaps she might escape every night for a week, but sooner or later she must fall a victim.</p>
-<p>“I had come to these conclusions before ever I had entered his room. An inspection of his chair showed me that he had been in the habit of standing on it, which, of course, would be necessary in order that he should reach the ventilator. The sight of the safe, the saucer of milk, and the loop of whipcord were enough to finally dispel any doubts which may have remained. The metallic clang heard by <persName>Miss Stoner</persName> was obviously caused by her stepfather hastily closing the door of his safe upon its terrible occupant. Having once made up my mind, you know the steps which I took in order to put the matter to the proof. I heard the creature hiss, as I have no doubt that you did also, and I instantly lit the light and attacked it."</p>
-<p>“With the result of driving it through the ventilator."</p>
-<p>“And also with the result of causing it to turn upon its master at the other side. Some of the blows of my cane came home, and roused its snakish temper, so that it flew upon the first person it saw. In this way I am no doubt indirectly responsible for <persName>Dr. Grimesby Roylott</persName>’s death, and I cannot say that it is likely to weigh very heavily upon my conscience."</p></div></body>
+                <head type="main"><hi rend="italic">Adventures of Sherlock Holmes</hi><lb/>
+                    VIII.--THE ADVENTURE OF THE SPECKLED BAND<lb/></head>
+                <head type="sub">BY A. CONAN DOYLE</head>
 
-<back>
-<note xml:id="n0001" target="a0001" type="editorial" resp="editors.xml#ER">The year is 1883.</note> 
-<note xml:id="n0002" target="a0002" type="editorial" resp="editors.xml#ER"> Leatherhead is a town in Surrey, England. </note>
-<note xml:id="n0003" target="a0003" type="editorial" resp="editors.xml#ER"> Waterloo is a district in central London, England.</note>
-<note xml:id="n0004" target="a0004" type="editorial" resp="editors.xml#ER"> Berkshire is a county in South East England. </note> 
-<note xml:id="n0005" target="a0005" type="editorial" resp="editors.xml#ER"> Hampshire is a county in South East England. </note> 
-<note xml:id="n0006" target="a0006" type="editorial" resp="editors.xml#ER"> Calcutta is the capital of the Indian state of West Bengal. </note> 
-<note xml:id="n0007" target="a0007" type="editorial" resp="editors.xml#ER"> Bengal Artillery were one of the elite regiments of the Bengal Army which then turned into the Royal Artillery.</note> 
-<note xml:id="n0008" target="a0008" type="editorial" resp="editors.xml#ER"> "Bequeathed" means to leave something to a person by a will. </note>
-<note xml:id="n0009" target="a0009" type="editorial" resp="editors.xml#ER">  A railway accident means a train accident.</note> 
-<note xml:id="n0010" target="a0010" type="editorial" resp="editors.xml#ER"> Crewe is a railway town in Cheshire, England.</note> 
-<note xml:id="n0011" target="a0011" type="editorial" resp="editors.xml#ER"> London is the capital city of England.</note> 
-<note xml:id="n0012" target="a0012" type="editorial" resp="editors.xml#ER"> spelled Gypsies. A person typically originating in South Asia and moving to Europe to live a nomadic lifestyle, meaning they wander a lot.</note> 
-<note xml:id="n0013" target="a0013" type="editorial" resp="editors.xml#ER"> a vagabond is a person who wanders from place to place without a job and has not settled home. </note>
-<note xml:id="n0014" target="a0014" type="editorial" resp="editors.xml#ER"> Bramble is a vine or shrub that is prickly, rough, and tangled that often has roses or berries. </note> 
-<note xml:id="n0015" target="a0015" type="editorial" resp="editors.xml#ER"> Harrow is a large town in London, England. </note> 
-<note xml:id="n0016" target="a0016" type="editorial" resp="editors.xml#ER"> a manor-house is an estate of a noble. These homes usually had lots of land and were grand in size and were built with some sort of defense in mind. </note> 
-<note xml:id="n0017" target="a0017" type="editorial" resp="editors.xml#ER"> a corridor is a long hallway. </note> 
+                <p> In glancing over my notes of the seventy odd cases in which I have during the
+                    last eight years studied the methods of my friend <persName> Sherlock Holmes
+                    </persName>, I find many tragic, some comic, a large number merely strange, but
+                    none commonplace; for, working as he did rather for the love of his art than for
+                    the acquirement of wealth, he refused to associate himself with any
+                    investigation which did not tend towards the unusual, and even the fantastic. Of
+                    all these varied cases, however, I cannot recall any which presented more
+                    singular features than that which was associated with the well-known <persName>
+                        Surrey </persName> family of the <persName> Roylotts </persName> of
+                        <placeName> Stoke Moran</placeName>. The events in question occurred in the
+                    early days of my association with <persName> Holmes </persName>, when we were
+                    sharing rooms as bachelors, in <placeName> Baker-street </placeName>. It is
+                    possible that I might have placed them upon record before, but a promise of
+                    secrecy was made at the time, from which I have only been freed during the last
+                    month by the untimely death of the lady to whom the pledge was given. It is
+                    perhaps as well that the facts should now come to light, for I have reasons to
+                    know that there are widespread rumours as to the death of <persName> Dr.
+                        Grimesby Roylott </persName> which tend to make the matter even more
+                    terrible than the truth. </p>
+                <p>It was early in April in the <ref target="year_" corresp="year">year ’83</ref>
+                    that I woke one morning to find <persName> Sherlock Holmes </persName> standing,
+                    fully dressed, by the side of my bed. He was a late riser as a rule, and, as the
+                    clock on the mantelpiece showed me that it was only a quarter past seven, I
+                    blinked up at him in some surprise, and perhaps just a little resentment, for I
+                    was myself regular in my habits.</p>
+                <p>“Very sorry to knock you up, <persName> Watson </persName> ," said he, “but it’s
+                    the common lot this morning. <persName> Mrs. Hudson </persName> has been knocked
+                    up, she retorted upon me, and I on you."</p>
+                <p>“What is it, then—a fire?"</p>
+                <p>“No; a client. It seems that a young lady has arrived in a considerable state of
+                    excitement, who insists upon seeing me. She is waiting now in the sitting-room.
+                    Now, when young ladies wander about the <placeName>Metropolis</placeName> at
+                    this hour of the morning, and knock sleepy people up out of their beds, I
+                    presume that it is something very pressing which they have to communicate.
+                    Should it prove to be an interesting case, you would, I am sure, wish to follow
+                    it from the outset. I thought at any rate that I should call you and give you
+                    the chance."</p>
+                <p>“My dear fellow, I would not miss it for anything."</p>
+                <p>I had no keener pleasure than in following <persName>Holmes</persName> in his
+                    professional investigations, and in admiring the rapid deductions, as swift as
+                    intuitions, and yet always founded on a logical basis, with which he unravelled
+                    the problems which were submitted to him. I rapidly threw on my clothes, and was
+                    ready in a few minutes to accompany my friend down to the sitting-room. A lady
+                    dressed in black and heavily veiled, who had been sitting in the window, rose as
+                    we entered.</p>
+                <p>“Good-morning, madam," said <persName>Holmes </persName>, cheerily. “My name is
+                        <persName>Sherlock Holmes</persName>. This is my intimate friend and
+                    associate, <persName>Dr. Watson</persName>, before whom you can speak as freely
+                    as before myself. Ha, I am glad to see that <persName>Mrs. Hudson</persName> has
+                    had the good sense to light the fire. Pray draw up to it, and I shall order you
+                    a cup of hot coffee, for I observe that you are shivering."</p>
+                <p>“It is not cold which makes me shiver," said the woman in a low voice, changing
+                    her seat as requested.</p>
+                <p>“What, then?"</p>
+                <p>“It is fear, <persName> Mr. Holmes</persName>. It is terror." She raised her veil
+                    as she spoke, and we could see that she was indeed in a pitiable state of
+                    agitation, her face all drawn and grey, with restless, frightened eyes, like
+                    those of some hunted animal. Her features and figure were those of a woman of
+                    thirty, <pb n="143" facs="pageImages/Speckled-Band_0143.jpg"/> but her hair was
+                    shot with premature grey, and her expression was weary and haggard.
+                        <persName>Sherlock Holmes</persName> ran her over with one of his quick,
+                    all-comprehensive glances.</p>
+                <p>“You must not fear," said he soothingly, bending forward and patting her forearm.
+                    “We shall soon set matters right, I have no doubt. You have come in by train
+                    this morning, I see." </p>
+                <p>“You know me, then?"</p>
+                <p>“No, but I observe the second half of a return ticket in the palm of your left
+                    glove. You must have started early, and yet you had a good drive in a dog-cart,
+                    along heavy roads, before you reached the station."</p>
+                <p>The lady gave a violent start and stared in bewilderment at my companion.</p>
+                <p>“There is no mystery, my dear madam," said he, smiling. “The left arm of your
+                    jacket is spattered with mud in no less than seven places. The marks are
+                    perfectly fresh. There is no vehicle save a dog-cart which throws up mud in that
+                    way, and then only when you sit on the left-hand side of the driver."</p>
+                <p>“Whatever your reasons may be, you are perfectly correct," said she. “I started
+                    from home before six, reached <ref target="Leatherhead_" corresp="Leatherhead">
+                        <placeName type="tgn" key="7011735"> Leatherhead</placeName>
+                    </ref> at twenty past, and came in by the first train to <ref target="Waterloo"
+                        corresp="Waterloo_">
+                        <placeName type="tgn" key="7441846">Waterloo</placeName>
+                    </ref>. Sir, I can stand this strain no longer; I shall go mad if it continues.
+                    I have no one to turn to—none, save only one, who cares for me, and he, poor
+                    fellow, can be of little aid. I have heard of you, <persName>Mr.
+                        Holmes</persName>; I have heard of you from <persName>Mrs.
+                        Farintosh</persName>, whom you helped in the hour of her sore need. It was
+                    from her that I had your address. Oh, sir, do you not think that you could help
+                    me, too, and at least throw a little light through the dense darkness which
+                    surrounds me? At present it is out of my power to reward you for your services,
+                    but in a month or six weeks I shall be married, with the control of my own
+                    income, and then at least you shall not find me ungrateful."</p>
+                <p><persName>Holmes</persName> turned to his desk and, unlocking it, drew out a
+                    small case-book, which he consulted.</p>
+                <p>"<persName>Farintosh</persName>," said he. “Ah, yes, I recall the case; it was
+                    concerned with an opal tiara. I think it was before your time,
+                        <persName>Watson</persName>. I can only say, madam, that I shall be happy to
+                    devote the same care to your case as I did to that of your friend. As to reward,
+                    my profession is its own reward; but you are at liberty to defray whatever
+                    expenses I may be put to, at the time which suits you best. And now I beg that
+                    you will lay before us everything that may help us in forming an opinion upon
+                    the matter." </p>
+                <p>“Alas!" replied our visitor. “The very horror of my situation lies in the fact
+                    that my fears are so vague, and my suspicions depend so entirely upon small
+                    points, which might seem trivial to another, that even he to whom of all others
+                    I have a right to look for help and advice looks upon all that I tell him about
+                    it as the fancies of a nervous woman. He does not say so, but I can read it from
+                    his soothing answers and averted eyes. But I have heard, <persName>Mr.
+                        Holmes</persName>, that you can see deeply into the manifold wickedness of
+                    the human heart. <pb n="144" facs="pageImages/Speckled-Band_0144.jpg"/> You may
+                    advise me how to walk amid the dangers which encompass me."</p>
+                <p>“I am all attention, madam."</p>
+                <p>“My name is <persName>Helen Stoner</persName>, and I am living with my
+                    stepfather, who is the last survivor of one of the oldest Saxon families in
+                        <placeName>England</placeName>, the <persName>Roylotts</persName> of
+                        <placeName>Stoke Moran</placeName>, on the western border of <placeName
+                        type="tgn" key="7008175">Surrey</placeName>."</p>
+                <p><persName>Holmes</persName> nodded his head. “The name is familiar to me," said
+                    he.</p>
+                <p>“The family was at one time among the richest in <placeName> England </placeName>
+                    , and the estates extended over the borders into <ref target="Berkshire_"
+                        corresp="Berkshire">
+                        <placeName type="tgn" key="7008101"> Berkshire </placeName>
+                    </ref>in the north, and <ref target="Hampshire_" corresp="Hampshire">
+                        <placeName type="tgn" key="7008139">Hampshire </placeName>
+                    </ref> in the west. In the last century, however, four successive heirs were of
+                    a dissolute and wasteful disposition, and the family ruin was eventually
+                    completed by a gambler in the days of the Regency. Nothing was left save a few
+                    acres of ground, and the two-hundred-year-old house, which is itself crushed
+                    under a heavy mortgage. The last squire dragged out his existence there, living
+                    the horrible life of an aristocratic pauper; but his only son, my stepfather,
+                    seeing that he must adapt himself to the new conditions, obtained an advance
+                    from a relative, which enabled him to take a medical degree and went out to <ref
+                        target="Calcutta_" corresp="Calcutta">
+                        <placeName type="tgn" key="7030776">Calcutta</placeName>
+                    </ref>, where, by his professional skill and his force of character, he
+                    established a large practice. In a fit of anger, however, caused by some
+                    robberies which had been perpetrated in the house, he beat his native butler to
+                    death and narrowly escaped a capital sentence. As it was, he suffered a long
+                    term of imprisonment and afterwards returned to England a morose and
+                    disappointed man.</p>
+                <p>“When <persName>Dr. Roylott </persName> was in <placeName>India </placeName> he
+                    married my mother, <persName>Mrs. Stoner</persName>, the young widow of
+                        <persName>Major-General Stoner </persName>, of the <ref target="artillery_"
+                        corresp="corresp">
+                        <placeName>Bengal Artillery </placeName></ref>. My sister <persName> Julia
+                    </persName> and I were twins, and we were only two years old at the time of my
+                    mother’s re-marriage. She had a considerable sum of money, not less than a
+                    thousand year, and this she <ref target="bequeathed_" corresp="bequeathed">
+                        bequeathed </ref> to <persName>Dr. Roylott</persName> entirely while we
+                    resided with him, with a provision that a certain annual sum should be allowed
+                    to each of us in the event of our marriage. Shortly after our return to
+                        <placeName> England </placeName> my mother died—she was killed eight years
+                    ago in a <ref target="rail_" corresp="rail"> railway accident </ref> near
+                        <placeName type="tgn" key="1028972">Crewe</placeName> . <persName>Dr.
+                        Roylott </persName> then abandoned his attempts to establish himself in
+                    practice in <placeName type="tgn" key="7008136">London </placeName> and took us
+                    to live with him in the old ancestral house at <placeName> Stoke Moran
+                    </placeName>. The money which my mother had left was enough for all our wants,
+                    and there seemed to be no obstacle to our happiness.</p>
+                <p>“But a terrible change came over our stepfather about this time. Instead of
+                    making friends and exchanging visits with our neighbours, who had at first been
+                    overjoyed to see a <persName>Roylott </persName> of <placeName>Stoke Moran
+                    </placeName>back in the old family seat, he shut himself up in his house, and
+                    seldom came out save to indulge in ferocious quarrels with whoever might cross
+                    his path. Violence of temper approaching to mania has been hereditary in the men
+                    of the family, and in my stepfather’s case it had, I believe, been intensified
+                    by his long residence in the tropics. A series of disgraceful brawls took place,
+                    two of which ended in the police-court, until at last he became the terror of
+                    the village, and the folks would fly at his approach, for he is a man of immense
+                    strength, and absolutely uncontrollable in his anger. </p>
+                <p>“Last week he hurled the local blacksmith over a parapet into a stream, and it
+                    was only by paying over all the money which I could gather together that I was
+                    able to avert another public exposure. He had no friends at all save the
+                    wandering <ref target="gipsies_" corresp="gipsies">gipsies</ref>, and he would
+                    give these <ref target="vagabond_" corresp="vagabond"> vagabonds </ref> leave to
+                    encamp upon the few acres of <pb n="145"
+                        facs="pageImages/Speckled-Band_0145.jpg"/>
+                    <ref target="bramble_" corresp="bramble">bramble</ref>-covered land which
+                    represent the family estate, and would accept in return the hospitality of their
+                    tents, wandering away with them sometimes for weeks on end. He has a passion
+                    also for Indian animals, which are sent over to him by a correspondent, and he
+                    has at this moment a cheetah and a baboon, which wander freely over his grounds
+                    and are feared by the villagers almost as much as their master. </p>
+                <p>“You can imagine from what I say that my poor sister <persName>Julia </persName>
+                    and I had no great pleasure in our lives. No servant would stay with us, and for
+                    a long time we did all the work of the house. She was but thirty at the time of
+                    her death, and yet her hair had already begun to whiten, even as mine has."</p>
+                <p>“Your sister is dead, then?"</p>
+                <p>“She died just two years ago, and it is of her death that I wish to speak to you.
+                    You can understand that, living the life which I have described, we were little
+                    likely to see anyone of our own age and position. We had, however, an aunt, my
+                    mother’s maiden sister, <persName> Miss Honoria Westphail </persName>, who lives
+                        near<ref target="Harrow_" corresp="Harrow">
+                        <placeName type="tgn" key="7018918">Harrow </placeName>
+                    </ref>, and we were occasionally allowed to pay short visits at this lady’s
+                    house. <persName> Julia </persName>went there at Christmas two years ago, and
+                    met there a half-pay major of marines, to whom she became engaged. My stepfather
+                    learned of the engagement when my sister returned and offered no objection to
+                    the marriage; but within a fortnight of the day which had been fixed for the
+                    wedding, the terrible event occurred which has deprived me of my only
+                    companion."</p>
+                <p><persName>Sherlock Holmes </persName> had been leaning back in his chair with his
+                    eyes closed and his head sunk in a cushion, but he half opened his lids now and
+                    glanced across at his visitor. </p>
+                <p>“Pray be precise as to details," said he. </p>
+                <p>“It is easy for me to be so, for every event of that dreadful time is seared into
+                    my memory. The <ref target="manor_" corresp="manor">manor-house </ref> is, as I
+                    have already said, very old, and only one wing is now inhabited. The bedrooms in
+                    this wing are on the ground floor, the sitting-rooms being in the central block
+                    of the buildings. Of these bedrooms the first is <persName> Dr. Roylott’s
+                    </persName>, the second my sister’s, and the third my own. There is no
+                    communication between them, but they all open out into the same <ref
+                        target="corridor_" corresp="corridor">corridor</ref>. Do I make myself
+                    plain?" </p>
+                <p>“Perfectly so." </p>
+                <p>“The windows of the three rooms open out upon the lawn. That fatal night
+                        <persName>Dr. Roylott </persName>had gone to his room early, though we knew
+                    that he had not retired to rest, for my sister was troubled by the smell of the
+                    strong Indian cigars which it was his custom to smoke. She left her room,
+                    therefore, and came into mine, where she sat for some time, chatting about her
+                    approaching wedding. At eleven o’clock she rose to leave me, but she paused at
+                    the door and looked back.</p>
+                <p>“‘Tell me, <persName>Helen </persName>,’ said she, ‘have you ever heard anyone
+                    whistle in the dead of the night?’ </p>
+                <p>“‘Never,’ said I.</p>
+                <p>“‘I suppose that you could not possibly whistle, yourself, in your sleep?’</p>
+                <p>“‘Certainly not. But why?’</p>
+                <p>“‘Because during the last few nights I have always, about three in the morning,
+                    heard a low clear whistle. I am a light sleeper, and it has awakened me. I
+                    cannot tell where it came from—perhaps from the next room, perhaps from the
+                    lawn. I thought that I would just ask you whether you had heard it.’</p>
+                <p>“‘No, I have not. It must be those wretched gipsies in the plantation.’ </p>
+                <p>“‘Very likely. And yet if it were on the lawn, I wonder that you did not hear it
+                    also.’</p>
+                <p>“‘Ah, but I sleep more heavily than you.’</p>
+                <p>“‘Well, it is of no great consequence, at any rate.’ She smiled back at me,
+                    closed my door, and a few moments later I heard her key turn in the lock."</p>
+                <p>“Indeed," said <persName> Holmes </persName> . “Was it your custom always to lock
+                    yourselves in at night?"</p>
+                <p>“Always."</p>
+                <p>“And why?"</p>
+                <p>“I think that I mentioned to you that the Doctor kept a cheetah and a baboon. We
+                    had no feeling of security unless our doors were locked."</p>
+                <p>“Quite so. Pray proceed with your statement."</p>
+                <p>“I could not sleep that night. A vague feeling of impending misfortune impressed
+                    me. My sister and I, you will recollect, were twins, and you know how subtle are
+                    the links which bind two souls which are so closely allied. It was a wild night.
+                    The wind was howling outside, and the rain was beating and splashing against the
+                    windows. Suddenly, amidst all the hubbub of the gale, there burst forth the wild
+                    scream of a terrified woman. I knew that it was my sister’s voice. I sprang from
+                    my bed, wrapped a shawl round me, and rushed into the corridor. As I opened my
+                    door I <pb n="146" facs="pageImages/Speckled-Band_0146.jpg"/> seemed to hear a
+                    low whistle, such as my sister described, and a few moments later a clanging
+                    sound, as if a mass of metal had fallen. As I ran down the passage my sister’s
+                    door was unlocked and revolved slowly upon its hinges. I stared at it
+                    horror-stricken, not knowing what was about to issue from it. By the light of
+                    the corridor-lamp I saw my sister appear at the opening, her face blanched with
+                    terror, her hands groping for help, her whole figure swaying to and fro like
+                    that of a drunkard. I ran to her and threw my arms round her, but at that moment
+                    her knees seemed to give way and she fell to the ground. She writhed as one who
+                    is in terrible pain, and her limbs were dreadfully convulsed. At first I thought
+                    that she had not recognised me, but as I bent over her she suddenly shrieked out
+                    in a voice which I shall never forget, ‘Oh, my God!<persName> Helen</persName>!
+                    It was the band! The speckled band!’ There was something else which she would
+                    fain have said, and she stabbed with her finger into the air in the direction of
+                    the Doctor’s room, but a fresh convulsion seized her and choked her words. I
+                    rushed out, calling loudly for my stepfather, and I met him hastening from his
+                    room in his dressing-gown. When he reached my sister’s side she was unconscious,
+                    and though he poured brandy down her throat, and sent for medical aid from the
+                    village, all efforts were in vain, for she slowly sank and died without having
+                    recovered her consciousness. Such was the dreadful end of my beloved
+                    sister."</p>
+                <p>“One moment," said <persName>Holmes </persName>, “are you sure about this whistle
+                    and metallic sound? Could you swear to it?"</p>
+                <p>“That was what the county coroner asked me at the inquiry. It is my strong
+                    impression that I heard it, and yet among the crash of the gale and the creaking
+                    of an old house, I may possibly have been deceived."</p>
+                <p>“Was your sister dressed?"</p>
+                <p>“No, she was in her night dress. In her right hand was found the charred stump of
+                    a match, and in her left a match-box."</p>
+                <p>“Showing that she had struck a light and looked about her when the alarm took
+                    place. That is important. And what conclusions did the coroner come to?"</p>
+                <p>“He investigated the case with great care, for <persName>Dr. Roylott’s</persName>
+                    conduct had long been notorious in the county, but he was unable to find any
+                    satisfactory cause of death. My evidence showed that the door had been fastened
+                    upon the inner side, and the windows were blocked by old-fashioned <pb n="147"
+                        facs="pageImages/Speckled-Band_0147.jpg"/> shutters with broad iron bars,
+                    which were secured every night. The walls were carefully sounded, and were shown
+                    to be quite solid all round, and the flooring was also thoroughly examined, with
+                    the same result. The chimney is wide, but is barred up by four large staples. It
+                    is certain, therefore, that my sister was quite alone when she met her end.
+                    Besides, there were no marks of any violence upon her."</p>
+                <p>“How about poison?"</p>
+                <p>“The doctors examined her for it, but without success."</p>
+                <p>“What do you think that this unfortunate lady died of, then?"</p>
+                <p>“It is my belief that she died of pure fear and nervous shock, though what it was
+                    that frightened her I cannot imagine."</p>
+                <p>“Were there gipsies in the plantation at the time?"</p>
+                <p>“Yes, there are nearly always some there."</p>
+                <p>“Ah, and what did you gather from this allusion to a band—a speckled band?"</p>
+                <p>“Sometimes I have thought that it was merely the wild talk of delirium, sometimes
+                    that it may have referred to some band of people, perhaps to these very gipsies
+                    in the plantation. I do not know whether the spotted handkerchiefs which so many
+                    of them wear over their heads might have suggested the strange adjective which
+                    she used."</p>
+                <p><persName>Holmes </persName> shook his head like a man who is far from being
+                    satisfied.</p>
+                <p>“These are very deep waters," said he; “pray go on with your narrative."</p>
+                <p>“Two years have passed since then, and my life has been until lately lonelier
+                    than ever. A month ago, however, a dear friend, whom I have known for many
+                    years, has done me the honour to ask my hand in marriage. His name is<persName>
+                        Armitage </persName>—<persName>Percy Armitage</persName>—the second son of
+                        <persName>Mr. Armitage </persName>, of <placeName>Crane Water </placeName>,
+                    near <placeName> Reading</placeName>. My stepfather has offered no opposition to
+                    the match, and we are to be married in the course of the spring. Two days ago
+                    some repairs were started in the west wing of the building, and my bedroom wall
+                    has been pierced, so that I have had to move into the chamber in which my sister
+                    died, and to sleep in the very bed in which she slept. Imagine, then, my thrill
+                    of terror when last night, as I lay awake, thinking over her terrible fate, I
+                    suddenly heard in the silence of the night the low whistle which had been the
+                    herald of her own death. I sprang up and lit the lamp, but nothing was to be
+                    seen in the room. I was too shaken to go to bed again, however, so I dressed,
+                    and as soon as it was daylight I slipped down, got a dog-cart at the
+                        <placeName>“Crown" inn </placeName>, which is opposite, and drove to
+                        <placeName> Leatherhead</placeName>, from whence I have come on this morning
+                    with the one object of seeing you and asking your advice."</p>
+                <p>“You have done wisely," said my friend. “But have you told me all?"</p>
+                <p>“Yes, all."</p>
+                <p>“<persName>Miss Roylott </persName>, you have not. You are screening your
+                    stepfather."</p>
+                <p>“Why, what do you mean?"</p>
+                <p>For answer <persName> Holmes </persName> pushed back the frill of black lace
+                    which fringed the hand that lay upon our visitor’s knee. Five little livid
+                    spots, the marks of four fingers and a thumb, were printed upon the white
+                    wrist.</p>
+                <p>“You have been cruelly used," said<persName> Holmes </persName> .</p>
+                <p>The lady coloured deeply and ‘covered over her injured wrist. “He is a hard man,"
+                    she said, “and perhaps he hardly knows his own strength."</p>
+                <p>There was a long silence, during which Holmes leaned his chin upon his hands and
+                    stared into the crackling fire.</p>
+                <p>“This is a very deep business," he said at last. “There are a thousand details
+                    which I should desire to know before I decide upon our course of action. Yet we
+                    have not a moment to lose. If we were to come to <placeName>Stoke Moran
+                    </placeName> to-day, would it be possible for us to see over these rooms without
+                    the knowledge of your stepfather?"</p>
+                <p>“As it happens, he spoke of coming into town to-day upon some most important
+                    business. It is probable that he will be away all day, and that there would be
+                    nothing to disturb you. We have a housekeeper now, but she is old and foolish,
+                    and I could easily get her out of the way."</p>
+                <p>“Excellent. You are not averse to this trip, Watson?"</p>
+                <p>“By no means."</p>
+                <p>“Then we shall both come. What are you going to do yourself?"</p>
+                <p>“I have one or two things which I would wish to do now that I am in town. But I
+                    shall return by the twelve o’clock train, so as to be there in time for your
+                    coming."</p>
+                <p>“And you may expect us early in the afternoon. I have myself some small business
+                    matters to attend to. Will you not wait and breakfast?"</p>
+                <p>“No, I must go. My heart is lightened already since I have confided my trouble to
+                    you. I shall look forward to seeing you <pb n="148"
+                        facs="pageImages/Speckled-Band_0148.jpg"/> again this afternoon." She
+                    dropped her thick black veil over her face and, glided from the room. </p>
+                <p>“And what do you think of it all, <persName> Watson </persName>?" asked
+                        <persName> Sherlock Holmes </persName>, leaning back in his chair.</p>
+                <p>“It seems to me to be a most dark and sinister business." </p>
+                <p>“Dark enough and sinister enough."</p>
+                <p>“Yet if the lady is correct in saying that the flooring and walls are sound, and
+                    that the door, window, and chimney are impassable, then her sister must have
+                    been undoubtedly alone when she met her mysterious end."</p>
+                <p>“What becomes, then, of these nocturnal whistles, and what of the very peculiar
+                    words of the dying woman?"</p>
+                <p>“I cannot think."</p>
+                <p>“When you combine the ideas of whistles at night, the presence of a band of
+                    gipsies who are on intimate terms with this old doctor, the fact that we have
+                    every reason to believe that the doctor has an interest in preventing his
+                    stepdaughter’s marriage, the dying allusion to a band, and finally, the fact
+                    that Miss <persName>Helen Stoner </persName>heard a metallic clang, which might
+                    have been caused by one of those metal bars that secured the shutters falling
+                    back into their place, I think that there is good ground to think that the
+                    mystery may be cleared along those lines."</p>
+                <p>“But what, then, did the gipsies do?"</p>
+                <p>“I cannot imagine."</p>
+                <p>“I see many objections to any such theory."</p>
+                <p>“And so do I. It is precisely for that reason that we are going to
+                        <placeName>Stoke Moran </placeName> this day. I want to see whether the
+                    objections are fatal, or if they may be explained away. But what in the name of
+                    the devil!"</p>
+                <p>The ejaculation had been drawn from my companion by the fact that our door had
+                    been suddenly dashed open, and that a huge man had framed himself in the
+                    aperture. His costume was a peculiar mixture of the professional and of the
+                    agricultural, having a black top hat, a long frock coat, and a pair of high
+                    gaiters, with a hunting crop swinging in his hand. So tall was he that his hat
+                    actually brushed the cross bar of the doorway, and his breadth seemed to span it
+                    across from side to side. A large face, seared with a thousand wrinkles, burned
+                    yellow with the sun, and marked with every evil passion, was turned from one to
+                    the other of us, while his deep-set, bile-shot eyes, and his high thin fleshless
+                    nose, gave him somewhat the resemblance to a fierce old bird of prey.</p>
+                <p>“Which of you is <persName>Holmes </persName>?" asked this apparition.</p>
+                <p>“My name, sir; but you have the advantage of me," said my companion quietly. </p>
+                <p>“I am Dr. <persName> Grimesby Roylott </persName>, of <placeName>Stoke
+                        Moran</placeName> ."</p>
+                <p>“Indeed, Doctor," said Holmes blandly. “Pray take a seat."</p>
+                <p>“I will do nothing of the kind. My stepdaughter has been here. I have traced her.
+                    What has she been saying to you?"</p>
+                <p>“It is a little cold for the time of the year," said <persName> Holmes
+                    </persName> .</p>
+                <p>“What has she been saying to you?" screamed the old man furiously.</p>
+                <p>“But I have heard that the crocuses promise well," continued my companion
+                    imperturbably.</p>
 
-</back></text>
+                <pb n="149" facs="pageImages/Speckled-Band_0149.jpg"/>
+                <p>“Ha! You put me off, do you?" said our new visitor, taking a step forward and
+                    shaking his hunting-crop. “I know you, you scoundrel! I have heard of you
+                    before. You are <persName> Holmes</persName>, the meddler."</p>
+                <p>My friend smiled.</p>
+                <p>“<persName>Holmes</persName>, the busybody!"</p>
+                <p>His smile broadened.</p>
+                <p>“<persName>Holmes</persName>, the <placeName> Scotland </placeName>- yard
+                    Jack-in-office!"</p>
+                <p><persName>Holmes</persName> chuckled heartily. “Your conversation is most
+                    entertaining," said he. “When you go out close the door, for there is a decided
+                    draught."</p>
+                <p>“I will go when I have said my say. Don’t you dare to meddle with my affairs. I
+                    know that Miss <persName>Stoner</persName> has been here- I traced her! I am a
+                    dangerous man to fall foul of! See here." He stepped swiftly forward, seized the
+                    poker, and bent it into a curve with his huge brown hands.</p>
+                <p>“See that you keep yourself out of my grip," he snarled, and hurling the twisted
+                    poker into the fireplace, he strode out of the room.</p>
+                <p>“He seems a very amiable person," said <persName> Holmes </persName>, laughing.
+                    “I am not quite so bulky, but if he had remained I might have shown him that my
+                    grip was not much more feeble than his own." As he spoke he picked up the steel
+                    poker, and with a sudden effort straightened it out again.</p>
+                <p>“Fancy his having the insolence to confound me with the official detective force!
+                    This incident gives zest to our investigation, however, and I only trust that
+                    our little friend will not suffer from her imprudence in allowing this brute to
+                    trace her. And now, <persName> Watson </persName>, we shall order breakfast, and
+                    afterwards I shall walk down to Doctors’ Commons, where I hope to get some data
+                    which may help us in this matter."</p>
+                <p>It was nearly one o’clock when <persName> Sherlock Holmes </persName> returned
+                    from his excursion. He held in his hand a sheet of blue paper, scrawled over
+                    with notes and figures.</p>
+                <p>“I have seen the will of the deceased wife," said he. “To determine its exact
+                    meaning I have been obliged to work out the present prices of the investments
+                    with which it is concerned. The total income, which at the time of the wife’s
+                    death was little short of £ 1,100, is now, through the fall in agricultural
+                    prices, not more than £ 750. Each daughter can claim an income of £ 250, in case
+                    of marriage. It is evident, therefore, that if both girls had married, this
+                    beauty would have had a mere pittance, while even one of them would cripple him
+                    to a very serious extent. My morning’s work has not been wasted, since it has
+                    proved that he has the very strongest motives for standing in the way of
+                    anything of the sort. And now, <persName> Watson </persName>, this is too
+                    serious for dawdling, especially as the old man is aware that we are interesting
+                    ourselves in his affairs, so if you are ready we shall call a cab and drive to
+                        <placeName> Waterloo </placeName>. I should be very much obliged if you
+                    would slip your revolver into your pocket. An Eley’s No. 2 is an excellent
+                    argument with gentlemen who can twist steel pokers into knots. That and a
+                    tooth-brush are, I think, all that we need."</p>
+                <p>At <placeName>Waterloo </placeName> we were fortunate in catching a train for
+                        <placeName> Leatherhead </placeName>, where we hired a trap at the station
+                    inn and drove for four or five miles through the lovely Surrey lanes. It was a
+                    perfect day, with a bright sun and a few fleecy clouds in the heavens. The trees
+                    and wayside hedges were just throwing out their first green shoots, and the air
+                    was full of the pleasant smell of the moist earth. To me at least there was a
+                    strange contrast between the sweet promise of the spring and this sinister quest
+                    upon which we were engaged. My companion sat in the front of the trap, his arms
+                    folded, his hat pulled down over his eyes, and his chin sunk upon his breast,
+                    buried in the deepest thought. Suddenly, however, he started, tapped me on the
+                    shoulder, and pointed over the meadows.</p>
+                <p>“Look there!" said he.</p>
+                <p>A heavily- timbered park stretched up in a gentle slope, thickening into a grove
+                    at the highest point. From amid the branches there jutted out the grey gables
+                    and high roof-tree of a very old mansion.</p>
+                <p>“<placeName>Stoke Moran</placeName>?" said he.</p>
+                <p>“Yes, sir, that be the house of Dr.<persName>Grimesby Roylott</persName>,"
+                    remarked the driver.</p>
+                <p>“There is some building going on there," said <persName>Holmes</persName>; “that
+                    is where we are going."</p>
+                <p>“There’s the village," said the driver, pointing to a cluster of roofs some
+                    distance to the left; “but if you want to get to the house, you’ll find it
+                    shorter to get over this stile, and so by the footpath over the fields. There it
+                    is, where the lady is walking."</p>
+                <p>“And the lady, I fancy, is<persName> Miss Stoner</persName>," observed
+                        <persName>Holmes</persName>, shading his eyes. “Yes, I think we had better
+                    do as you suggest."</p>
+                <p>We got off, paid our fare, and the trap rattled back on its way to
+                        <placeName>Leatherhead</placeName>.</p>
+                <pb n="150" facs="pageImages/Speckled-Band_0150.jpg"/>
+                <p>“I thought it as well," said <persName>Holmes</persName>, as we climbed the
+                    stile, “that this fellow should think we had come here as architects, or on some
+                    definite business. It may stop his gossip. Good afternoon, <persName>Miss
+                        Stoner</persName>. You see that we have been as good as our word."</p>
+                <p>Our client of the morning had hurried forward to meet us with a face which spoke
+                    her joy. “I have been waiting so eagerly for you," she cried, shaking hands with
+                    us warmly. “All has turned out splendidly. <persName>Dr. Roylott</persName> has
+                    gone to town, and it is unlikely that he will be back before evening."</p>
+                <p>“We have had the pleasure of making the Doctor’s acquaintance," said
+                        <persName>Holmes</persName>, and in a few words he sketched out what had
+                    occurred. <persName>Miss Stoner</persName> turned white to the lips as she
+                    listened.</p>
+                <p>“Good heavens!" she cried, “he has followed me, then."</p>
+                <p>“So it appears."</p>
+                <p>“He is so cunning that I never know when I am safe from him. What will he say
+                    when he returns?"</p>
+                <p>“He must guard himself, for he may find that there is someone more cunning than
+                    himself upon his track. You must lock yourself up from him to-night. If he is
+                    violent, we shall take you away to your aunt’s at <placeName>Harrow</placeName>.
+                    Now, we must make the best use of our time, so kindly take us at once to the
+                    rooms which we are to examine."</p>
+                <p>The building was of grey, lichen-blotched stone, with a high central portion, and
+                    two curving wings, like the claws of a crab, thrown out on each side. In one of
+                    these wings the windows were broken, and blocked with wooden boards, while the
+                    roof was partly caved in, a picture of ruin. The central portion was in little
+                    better repair, but the right-hand block was comparatively modern, and the blinds
+                    in the windows, with the blue smoke curling up from the chimneys, showed that
+                    this was where the family resided. Some scaffolding had been erected against the
+                    end wall, and the stonework had been broken into, but there were no signs of any
+                    workmen at the moment of our visit. <persName>Holmes</persName> walked slowly up
+                    and down the ill-trimmed lawn, and examined with deep attention the outsides of
+                    the windows.</p>
+                <p>“This, I take it, belongs to the room in which you used to sleep, the centre one
+                    to your sister’s, and the one next to the main building to <persName>Dr.
+                        Roylott</persName>’s chamber?"</p>
+                <p>“Exactly so. But I am now sleeping in the middle one."</p>
+                <p>“Pending the alterations, as I understand. By the way, there does not seem to be
+                    any very pressing need for repairs at that end wall."</p>
+                <p>“There were none. I believe that it was an excuse to move me from my room."</p>
+                <p>“Ah! that is suggestive. Now, on the other side of this narrow wing runs the
+                    corridor from which these three rooms open. There are windows in it, of
+                    course?"</p>
+                <p>“Yes, but very small ones. Too narrow for anyone to pass through."</p>
+                <p>“As you both locked your doors at night your rooms were unapproachable from that
+                    side. Now, would you have the kindness to go into your room, and to bar your
+                    shutters?"</p>
+                <p><persName>Miss Stoner</persName> did so, and <persName>Holmes</persName>, after a
+                    careful examination through the open window, endeavoured in every way to force
+                        <pb n="151" facs="pageImages/Speckled-Band_0151.jpg"/> the shutter open, but
+                    without success. There was no slit through which a knife could be passed to
+                    raise the bar. Then with his lens he tested the hinges, but they were of solid
+                    iron, built firmly into the massive masonry. “Hum!" said he, scratching his chin
+                    in some perplexity, “my theory certainly presents some difficulties. No one
+                    could pass these shutters if they were bolted. Well, we shall see if the inside
+                    throws any light upon the matter."</p>
+                <p>A small side door led into the whitewashed corridor from which the three bedrooms
+                    opened. <persName>Holmes</persName> refused to examine the third chamber, so we
+                    passed at once to the second, that in which <persName>Miss Stoner</persName> was
+                    now sleeping, and in which her sister had met with her fate. It was a homely
+                    little room, with a low ceiling and a gaping fireplace, after the fashion of old
+                    country houses. A brown chest of drawers stood in one corner, a narrow
+                    white-counterpaned bed in another, and a dressing-table on the left-hand side of
+                    the window. These articles, with two small wickerwork chairs, made up all the
+                    furniture in the room, save for a square of Wilton carpet in the centre. The
+                    boards round and the panelling of the walls were of brown, worm-eaten oak, so
+                    old and discoloured that it may have dated from the original building of the
+                    house. <persName>Holmes</persName> drew one of the chairs into a corner and sat
+                    silent, while his eyes travelled round and round and up and down, taking in
+                    every detail of the apartment.</p>
+                <p>“Where does that bell communicate with?" he asked at last, pointing to a thick
+                    bell-rope which hung down beside the bed, the tassel actually lying upon the
+                    pillow.</p>
+                <p>“It goes to the housekeeper’s room."</p>
+                <p>“It looks newer than the other things?"</p>
+                <p>“Yes, it was only put there a couple of years ago."</p>
+                <p>“Your sister asked for it, I suppose?"</p>
+                <p>“No, I never heard of her using it. We used always to get what we wanted for
+                    ourselves."</p>
+                <p>“Indeed, it seemed unnecessary to put so nice a bell-pull there. You will excuse
+                    me for a few minutes while I satisfy myself as to this floor." He threw himself
+                    down upon his face with his lens in his hand, and crawled swiftly backward and
+                    forward, examining minutely the cracks between the boards. Then he did the same
+                    with the woodwork with which the chamber was panelled. Finally he walked over to
+                    the bed and spent some time in staring at it, and in running his eye up and down
+                    the wall. Finally he took the bell-rope in his hand and gave it a brisk tug.</p>
+                <p>“Why, it’s a dummy," said he.</p>
+                <p>“Won’t it ring?"</p>
+                <p>“No, it is not even attached to a wire. This is very interesting. You can see now
+                    that it is fastened to a hook just above where the little opening for the
+                    ventilator is."</p>
+                <p>“How very absurd! I never noticed that before."</p>
+                <p>“Very strange!" muttered <persName>Holmes</persName>, pulling at the rope. “There
+                    are one or two very singular points about this room. For example, what a fool a
+                    builder must be to open a ventilator into another room, when, with the same
+                    trouble, he might have communicated with the outside air!"</p>
+                <p>“That is also quite modern," said the lady.</p>
+                <p>“Done about the same time as the bell-rope?" remarked
+                    <persName>Holmes</persName>.</p>
+                <p>“Yes, there were several little changes carried out about that time."</p>
+                <p>“They seem to have been of a most interesting character—dummy bell-ropes, and
+                    ventilators which do not ventilate. With your permission, <persName>Miss
+                        Stoner</persName>, we shall now carry our researches into the inner
+                    apartment."</p>
+                <p><persName>Dr. Grimesby Roylott</persName>’s chamber was larger than that of his
+                    step-daughter, but was as plainly furnished. A camp bed, a small wooden shelf
+                    full of books, mostly of a technical character, an armchair beside the bed, a
+                    plain wooden chair against the wall, a round table, and a large iron safe were
+                    the principal things which met the eye. <persName>Holmes</persName> walked
+                    slowly round and examined each and all of them with the keenest interest.</p>
+                <p>“What’s in here?" he asked, tapping the safe.</p>
+                <p>“My stepfather’s business papers."</p>
+                <p>“Oh! you have seen inside, then?"</p>
+                <p>“Only once, some years ago. I remember that it was full of papers."</p>
+                <p>“There isn’t a cat in it, for example?"</p>
+                <p>“No. What a strange idea!"</p>
+                <p>“Well, look at this!" He took up a small saucer of milk which stood on the top of
+                    it.</p>
+                <p>“No; we don’t keep a cat. But there is a cheetah and a baboon."</p>
+                <p>“Ah, yes, of course! Well, a cheetah is just a big cat, and yet a saucer of milk
+                        <pb n="152" facs="pageImages/Speckled-Band_0152.jpg"/> does not go very far
+                    in satisfying its wants, I daresay. There is one point which I should wish to
+                    determine." He squatted down in front of the wooden chair and examined the seat
+                    of it with the greatest attention.</p>
+                <p>“Thank you. That is quite settled," said he, rising and putting his lens in his
+                    pocket. “Hullo! here is something interesting!"</p>
+                <p>The object which had caught his eye was a small dog lash hung on one corner of
+                    the bed. The lash, however, was curled upon itself, and tied so as to make a
+                    loop of whipcord.</p>
+                <p>“What do you make of that, <persName>Watson</persName>?"</p>
+                <p>“It’s a common enough lash. But I don’t know why it should be tied."</p>
+                <p>“That is not quite so common, is it? Ah, me! it’s a wicked world, and when a
+                    clever man turns his brains to crime it is the worst of all. I think that I have
+                    seen enough now, <persName>Miss Stoner</persName>, and, with your permission, we
+                    shall walk out upon the lawn."</p>
+                <p>I had never seen my friend’s face so grim, or his brow so dark, as it was when we
+                    turned from the scene of this investigation. We had walked several times up and
+                    down the lawn, neither <persName>Miss Stoner</persName> nor myself liking to
+                    break in upon his thoughts, before he roused himself from his reverie.</p>
+                <p>“It is very essential, <persName>Miss Stoner</persName>," said he, “that you
+                    should absolutely follow my advice in every respect."</p>
+                <p>“I shall most certainly do so."</p>
+                <p>“The matter is too serious for any hesitation. Your life may depend upon your
+                    compliance."</p>
+                <p>“I assure you that I am in your hands."</p>
+                <p>“In the first place, both my friend and I must spend the night in your room."</p>
+                <p>Both <persName>Miss Stoner</persName> and I gazed at him in astonishment.</p>
+                <p>“Yes, it must be so. Let me explain. I believe that that is the village inn over
+                    there?"</p>
+                <p>“Yes, that is the ‘<placeName>Crown</placeName>.’"</p>
+                <p>“Very good. Your windows would be visible from there?"</p>
+                <p>“Certainly."</p>
+                <p>“You must confine yourself to your room, on pretence of a headache, when your
+                    stepfather comes back. Then when you hear him retire for the night, you must
+                    open the shutters of your window, undo the hasp, put your lamp there as a signal
+                    to us, and then withdraw quietly with everything which you are likely to want
+                    into the room which you used to occupy. I have no doubt that, in spite of the
+                    repairs, you could manage there for one night."</p>
+                <p>“Oh, yes, easily."</p>
+                <p>“The rest you will leave in our hands."</p>
+                <p>“But what will you do?"</p>
+                <p>“We shall spend the night in your room, and we shall investigate the cause of
+                    this noise which has disturbed you."</p>
+                <p>“I believe, <persName>Mr. Holmes</persName>, that you have already made up your
+                    mind," said <persName>Miss Stoner</persName>, laying her hand upon my
+                    companion’s sleeve.</p>
+                <p>“Perhaps I have."</p>
+                <p>“Then for pity’s sake tell me what was the cause of my sister’s death."</p>
+                <p>“I should prefer to have clearer proofs before I speak."</p>
+                <p>“You can at least tell me whether my own thought is correct, and if she died from
+                    some sudden fright."</p>
+                <p>“No, I do not think so. I think that there was probably some more tangible cause.
+                    And now, <persName>Miss Stoner</persName>, we must leave you, for if
+                        <persName>Dr. Roylott</persName> returned and <pb n="153"
+                        facs="pageImages/Speckled-Band_0153.jpg"/> saw us, our journey would be in
+                    vain. Good-bye, and be brave, for if you will do what I have told you, you may
+                    rest assured that we shall soon drive away the dangers that threaten you."</p>
+                <p><persName>Sherlock Holmes</persName> and I had no difficulty in engaging a
+                    bedroom and sitting-room at the <placeName>“Crown" Inn</placeName>. They were on
+                    the upper floor, and from our window we could command a view of the avenue gate,
+                    and of the inhabited wing of <placeName>Stoke Moran Manor House</placeName>. At
+                    dusk we saw <persName>Dr. Grimesby Roylott</persName> drive past, his huge form
+                    looming up beside the little figure of the lad who drove him. The boy had some
+                    slight difficulty in undoing the heavy iron gates, and we heard the hoarse roar
+                    of the doctor’s voice, and saw the fury with which he shook his clenched fists
+                    at him. The trap drove on, and a few minutes later we saw a sudden light spring
+                    up among the trees as the lamp was lit in one of the sitting-rooms.</p>
+                <p>“Do you know, <persName>Watson</persName>," said <persName>Holmes</persName>, as
+                    we sat together in the gathering darkness, “I have really some scruples as to
+                    taking you to-night. There is a distinct element of danger."</p>
+                <p>“Can I be of assistance?"</p>
+                <p>“Your presence might be invaluable."</p>
+                <p>“Then I shall certainly come."</p>
+                <p>“It is very kind of you."</p>
+                <p>“You speak of danger. You have evidently seen more in these rooms than was
+                    visible to me."</p>
+                <p>“No, but I fancy that I may have deduced a little more. I imagine that you saw
+                    all that I did."</p>
+                <p>“I saw nothing remarkable save the bell rope, and what purpose that could answer
+                    I confess is more than I can imagine."</p>
+                <p>“You saw the ventilator, too?"</p>
+                <p>“Yes, but I do not think that it is such a very unusual thing to have a small
+                    opening between two rooms. It was so small that a rat could hardly pass
+                    through."</p>
+                <p>“I knew that we should find a ventilator before ever we came to Stoke Moran."</p>
+                <p>“My dear <persName>Holmes</persName>!"</p>
+                <p>“Oh, yes, I did. You remember in her statement she said that her sister could
+                    smell <persName>Dr. Roylott</persName>’s cigar. Now, of course that suggested at
+                    once that there must be a communication between the two rooms. It could only be
+                    a small one, or it would have been remarked upon at the Coroner’s inquiry. I
+                    deduced a ventilator."</p>
+                <p>“But what harm can there be in that?"</p>
+                <p>“Well, there is at least a curious coincidence of dates. A ventilator is made, a
+                    cord is hung, and a lady who sleeps in the bed dies. Does not that strike
+                    you?"</p>
+                <p>“I cannot as yet see any connection."</p>
+                <p>“Did you observe anything very peculiar about that bed?"</p>
+                <p>“No."</p>
+                <p>“It was clamped to the floor. Did you ever see a bed fastened like that
+                    before?"</p>
+                <p>“I cannot say that I have."</p>
+                <pb n="154" facs="pageImages/Speckled-Band_0154.jpg"/>
+                <p>“The lady could not move her bed. It must always be in the same relative position
+                    to the ventilator and to the rope—for so we may call it, since it was clearly
+                    never meant for a bell-pull."</p>
+                <p>“<persName>Holmes</persName>," I cried, “I seem to see dimly what you are hinting
+                    at. We are only just in time to prevent some subtle and horrible crime."</p>
+                <p>“Subtle enough, and horrible enough. When a doctor does go wrong, he is the first
+                    of criminals. He has nerve and he has knowledge. <persName>Palmer</persName> and
+                        <persName>Pritchard</persName> were among the heads of their profession.
+                    This man strikes even deeper, but I think, <persName>Watson</persName>, that we
+                    shall be able to strike deeper still. But we shall have horrors enough before
+                    the night is over; for goodness’ sake let us have a quiet pipe, and turn our
+                    minds for a few hours to something more cheerful."</p>
+                <p>About nine o’clock the light among the trees was extinguished, and all was dark
+                    in the direction of the <placeName>Manor House</placeName>. Two hours passed
+                    slowly away, and then, suddenly, just at the stroke of eleven, a single bright
+                    light shone out right in front of us.</p>
+                <p>“That is our signal," said <persName>Holmes</persName>, springing to his feet;
+                    “it comes from the middle window."</p>
+                <p>As we passed out he exchanged a few words with the landlord, explaining that we
+                    were going on a late visit to an acquaintance, and that it was possible that we
+                    might spend the night there. A moment later we were out on the dark road, a
+                    chill wind blowing in our faces, and one yellow light twinkling in front of us
+                    through the gloom to guide us on our sombre errand.</p>
+                <p>There was little difficulty in entering the grounds, for unrepaired breaches
+                    gaped in the old park wall. Making our way among the trees, we reached the lawn,
+                    crossed it, and were about to enter through the window when out from a clump of
+                    laurel bushes there darted what seemed to be a hideous and distorted child, who
+                    threw itself upon the grass with writhing limbs and then ran swiftly across the
+                    lawn into the darkness.</p>
+                <p>“My God!" I whispered; “did you see it?"</p>
+                <p><persName>Holmes</persName> was for the moment as startled as I. His hand closed
+                    like a vice upon my wrist in his agitation. Then he broke into a low laugh and
+                    put his lips to my ear.</p>
+                <p>“It is a nice household," he murmured. “That is the baboon."</p>
+                <p>I had forgotten the strange pets which the Doctor affected. There was a cheetah,
+                    too; perhaps we might find it upon our shoulders at any moment. I confess that I
+                    felt easier in my mind when, after following <persName>Holmes</persName>’
+                    example and slipping off my shoes, I found myself inside the bedroom. My
+                    companion noiselessly closed the shutters, moved the lamp on to the table, and
+                    cast his eyes round the room. All was as we had seen it in the daytime. Then
+                    creeping up to me and making a trumpet of his hand, he whispered into my ear
+                    again so gently that it was all that I could do to distinguish the words:</p>
+                <p>“The least sound would be fatal to our plans."</p>
+                <p>I nodded to show that I had heard.</p>
+                <p>“We must sit without light. He would see it through the ventilator."</p>
+                <p>I nodded again.</p>
+                <p>“Do not go asleep; your very life may depend upon it. Have your pistol ready in
+                    case we should need it. I will sit on the side of the bed, and you in that
+                    chair."</p>
+                <p>I took out my revolver and laid it on the corner of the table.</p>
+                <p><persName>Holmes</persName> had brought up a long thin cane, and this he placed
+                    upon the bed beside him. By it he laid the box of matches and the stump of a
+                    candle. Then he turned down the lamp, and we were left in darkness.</p>
+                <p>How shall I ever forget that dreadful vigil? I could not hear a sound, not even
+                    the drawing of a breath, and yet I knew that my companion sat open-eyed, within
+                    a few feet of me, in the same state of nervous tension in which I was myself.
+                    The shutters cut off the least ray of light, and we waited in absolute darkness.
+                    (¶ no) From outside came the occasional cry of a night bird, and once at our
+                    very window a long drawn, cat-like whine, which told us that the cheetah was
+                    indeed at liberty. Far away we could hear the deep tones of the parish clock,
+                    which boomed out every quarter of an hour. How long they seemed, those quarters!
+                    Twelve struck, and one, and two, and three, and still we sat waiting silently
+                    for whatever might befall.</p>
+                <p>Suddenly there was the momentary gleam of a light up in the direction of the
+                    ventilator, which vanished immediately, but was succeeded by a strong smell of
+                    burning oil and heated metal. Someone in the next room had lit a dark lantern. I
+                    heard a gentle sound of movement, and then all was silent once more, though the
+                        <pb n="155" facs="pageImages/Speckled-Band_0155.jpg"/> smell grew stronger.
+                    For half an hour I sat with straining ears. Then suddenly another sound became
+                    audible—a very gentle, soothing sound, like that of a small jet of steam
+                    escaping continually from a kettle. The instant that we heard it,
+                        <persName>Holmes</persName> sprang from the bed, struck a match, and lashed
+                    furiously with his cane at the bell-pull.</p>
+                <p>“You see it, <persName>Watson</persName>?" he yelled. “You see it?"</p>
+                <p>But I saw nothing. At the moment when <persName>Holmes</persName> struck the
+                    light I heard a low, clear whistle, but the sudden glare flashing into my weary
+                    eyes made it impossible for me to tell what it was at which my friend lashed so
+                    savagely. I could, however, see that his face was deadly pale, and filled with
+                    horror and loathing. </p>
+                <p>He had ceased to strike, and was gazing up at the ventilator, when suddenly there
+                    broke from the silence of the night the most horrible cry to which I have ever
+                    listened. It swelled up louder and louder, a hoarse yell of pain and fear and
+                    anger all mingled in the one dreadful shriek. They say that away down in the
+                    village, and even in the distant parsonage, that cry raised the sleepers from
+                    their beds. It struck cold to our hearts, and I stood gazing at
+                        <persName>Holmes</persName>, and he at me, until the last echoes of it had
+                    died away into the silence from which it rose.</p>
+                <p>“What can it mean?" I gasped.</p>
+                <p>“It means that it is all over," <persName>Holmes</persName> answered. “And
+                    perhaps, after all, it is for the best. Take your pistol, and we shall enter
+                        <persName>Dr. Roylott</persName>’s room."</p>
+                <p>With a grave face he lit the lamp, and led the way down the corridor. Twice he
+                    struck at the chamber door without any reply from within. Then he turned the
+                    handle and entered, I at his heels, with the cocked pistol in my hand.</p>
+                <p>It was a singular sight which met our eyes. On the table stood a dark lantern
+                    with the shutter half open, throwing a brilliant beam of light upon the iron
+                    safe, the door of which was ajar. Beside this table, on the wooden chair, sat
+                        <persName>Dr. Grimesby Roylott</persName> clad in a long grey dressing-gown,
+                    his bare ankles protruding beneath, and his feet thrust into red heelless
+                    Turkish slippers. Across his lap lay the short stock with the long lash which we
+                    had noticed during the day. His chin was cocked upwards, and his eyes were fixed
+                    in a dreadful rigid stare at the corner of the ceiling. Round his brow he had a
+                    peculiar yellow band, with brownish <pb n="156"
+                        facs="pageImages/Speckled-Band_0156.jpg"/> speckles, which seemed to be
+                    bound tightly round his head. As we entered he made neither sound nor
+                    motion.</p>
+                <p>“The band! the speckled band!" whispered <persName>Holmes</persName>.</p>
+                <p>I took a step forward. In an instant his strange headgear began to move, and
+                    there reared itself from among his hair the squat diamond-shaped head and puffed
+                    neck of a loathsome serpent.</p>
+                <p>“It is a swamp adder!" cried <persName>Holmes</persName>— “the deadliest snake in
+                        <placeName>India</placeName>. He has died within ten seconds of being
+                    bitten. Violence does, in truth, recoil upon the violent, and the schemer falls
+                    into the pit which he digs for another. Let us thrust this creature back into
+                    its den, and we can then remove <persName>Miss Stoner</persName> to some place
+                    of shelter, and let the county police know what has happened."</p>
+                <p>As he spoke he drew the dog whip swiftly from the dead man’s lap, and throwing
+                    the noose round the reptile’s neck, he drew it from its horrid perch, and,
+                    carrying it at arm’s length threw it into the iron safe, which he closed upon
+                    it.</p>
+                <p>Such are the true facts of the death of <persName>Dr. Grimesby
+                    Roylott</persName>, of <placeName>Stoke Moran</placeName>. It is not necessary
+                    that I should prolong a narrative which has already run to too great a length,
+                    by telling how we broke the sad news to the terrified girl, how we conveyed her
+                    by the morning train to the care of her good aunt at
+                        <placeName>Harrow</placeName>, of how the slow process of official inquiry
+                    came to the conclusion that the Doctor met his fate while indiscreetly playing
+                    with a dangerous pet. The little which I had yet to learn of the case was told
+                    me by <persName>Sherlock Holmes</persName> as we travelled back next day.</p>
+                <p>“I had," said he, “come to an entirely erroneous conclusion, which shows, my dear
+                        <persName>Watson</persName>, how dangerous it always is to reason from
+                    insufficient data. The presence of the gipsies, and the use of the word ‘band,’
+                    which was used by the poor girl, no doubt, to explain the appearance which she
+                    had caught a hurried glimpse of by the light of her match, were sufficient to
+                    put me upon an entirely wrong scent. I can only claim the merit that I instantly
+                    reconsidered my position when, however, it became clear to me that whatever
+                    danger threatened an occupant of the room could not come either from the window
+                    or the <pb n="157" facs="pageImages/Speckled-Band_0157.jpg"/> door. My attention
+                    was speedily drawn, as I have already remarked to you, to this ventilator, and
+                    to the bell rope which hung down to the bed. The discovery that this was a
+                    dummy, and that the bed was clamped to the floor, instantly gave rise to the
+                    suspicion that the rope was there as a bridge for something passing through the
+                    hole, and coming to the bed. The idea of a snake instantly occurred to me, and
+                    when I coupled it with my knowledge that the Doctor was furnished with a supply
+                    of creatures from <placeName>India</placeName>, I felt that I was probably on
+                    the right track. The idea of using a form of poison which could not possibly be
+                    discovered by any chemical test was just such a one as would occur to a clever
+                    and ruthless man who had had an Eastern training. The rapidity with which such a
+                    poison would take effect would also, from his point of view, be an advantage. It
+                    would be a sharp-eyed coroner indeed who could distinguish the two little dark
+                    punctures which would show where the poison fangs had done their work. Then I
+                    thought of the whistle. Of course, he must recall the snake before the morning
+                    light revealed it to the victim. He had trained it, probably by the use of the
+                    milk which we saw, to return to him when summoned. He would put it through this
+                    ventilator at the hour that he thought best, with the certainty that it would
+                    crawl down the rope and land on the bed. It might or might not bite the
+                    occupant, perhaps she might escape every night for a week, but sooner or later
+                    she must fall a victim.</p>
+                <p>“I had come to these conclusions before ever I had entered his room. An
+                    inspection of his chair showed me that he had been in the habit of standing on
+                    it, which, of course, would be necessary in order that he should reach the
+                    ventilator. The sight of the safe, the saucer of milk, and the loop of whipcord
+                    were enough to finally dispel any doubts which may have remained. The metallic
+                    clang heard by <persName>Miss Stoner</persName> was obviously caused by her
+                    stepfather hastily closing the door of his safe upon its terrible occupant.
+                    Having once made up my mind, you know the steps which I took in order to put the
+                    matter to the proof. I heard the creature hiss, as I have no doubt that you did
+                    also, and I instantly lit the light and attacked it."</p>
+                <p>“With the result of driving it through the ventilator."</p>
+                <p>“And also with the result of causing it to turn upon its master at the other
+                    side. Some of the blows of my cane came home, and roused its snakish temper, so
+                    that it flew upon the first person it saw. In this way I am no doubt indirectly
+                    responsible for <persName>Dr. Grimesby Roylott</persName>’s death, and I cannot
+                    say that it is likely to weigh very heavily upon my conscience."</p>
+            </div>
+        </body>
+
+        <back>
+            <div>
+                <note xml:id="year" target="year_" type="gloss" resp="editors.xml#ER">The year is
+                    1883.</note>
+                <note xml:id="Leatherhead" target="Leatherhead_" type="gloss" resp="editors.xml#ER"
+                    >Leatherhead is a town in Surrey, England. </note>
+                <note xml:id="Waterloo" target="Waterloo_" type="gloss"
+                    resp="editors.xml#MUstudstaff">Waterloo is a district in central London,
+                    England, but here, the Waterloo train station is being specifically referred
+                    to</note>
+                <note xml:id="Berkshire" target="Berksire_" type="gloss" resp="editors.xml#ER"
+                    >Berkshire is a county in South East England. </note>
+                <note xml:id="Hampsire" target="Hampsire_" type="gloss" resp="editors.xml#ER"
+                    >Hampshire is a county in South East England. </note>
+                <note xml:id="Calcutta" target="Calcutta_" type="gloss" resp="editors.xml#ER"
+                    >Calcutta is the capital of the Indian state of West Bengal. </note>
+                <note xml:id="artillery" target="artillery_" type="editorial"
+                    resp="editors.xml#MUstudstaff">The Bengal Artillery was one of the elite
+                    regiments of the Bengal Army which then turned into the Royal Artillery. India
+                    was under the colonial government of Britain from 1858 until 1947. Prior to
+                    1858, it was under the control of the British East India Company, a company
+                    formed to trade in spices and other goods to the benefit of stockholders.</note>
+                <note xml:id="bequeathed" target="bequeathed_" type="gloss" resp="editors.xml#ER"
+                    >"Bequeathed" means to leave something to a person by a will. </note>
+                <note xml:id="rail" target="rail_" type="gloss" resp="editors.xml#ER">A railway
+                    accident means a train accident.</note>
+
+
+                <note xml:id="gypsies" target="gypsies" type="gloss" resp="editors.xml#ER">Today,
+                    spelled gypsies. A "gypsy" is a person typically originating in South Asia who
+                    lives a nomadic lifestyle, meaning they wander a lot. <ref
+                        target="https://www.theguardian.com/commentisfree/2020/jun/15/romany-gypsy-racism-britain-prejudice-roma-travellers"
+                        >The Romani Gypsy population has long been persecuted in the United Kingdom and Europe.</ref></note>
+                <note xml:id="vagabond" target="vagabond" type="gloss" resp="editors.xml#ER"> A
+                    vagabond is a person who wanders from place to place without a job and has not
+                    settled home. </note>
+                <note xml:id="bramble" target="bramble" type="gloss" resp="editors.xml#ER"> Bramble
+                    is a vine or shrub that is prickly, rough, and tangled that often has roses or
+                    berries. </note>
+                <note xml:id="Harrow" target="Harrow" type="gloss" resp="editors.xml#ER"> Harrow is
+                    a large town in London, England. </note>
+                <note xml:id="manor" target="manor" type="gloss" resp="editors.xml#ER"> A
+                    manor-house is the estate of a noble. These homes usually had lots of land ,
+                    were grand in size, and were built with some sort of defense in mind.</note>
+                <note xml:id="corridor" target="corridor" type="gloss" resp="editors.xml#ER"> A
+                    corridor is a long hallway. </note>
+            </div>
+        </back>
+    </text>
+</TEI>
