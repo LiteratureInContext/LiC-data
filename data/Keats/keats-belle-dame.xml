@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="keats-belle-dame">
+    
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Belle Dame Sans Merci</title>
+                <author>
+                    <persName type="lcnaf" key="n80035884">
+                        
+                        <name>John Keats
+                            <forename>John</forename> 
+                            <surname>Keats</surname>
+                            
+                        </name>
+                        
+                    </persName>
+                </author>
+                
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#StudStaffUVA"
+                        >Students and Staff of the University of Virginia</name>
+                    
+                </respStmt>
+                
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine> University of Virginia Department of English </addrLine>
+                    <addrLine> Bryan Hall 219 </addrLine>
+                    <addrLine> PO Box 400121 </addrLine>
+                    <addrLine> Charlottesville, VA 22904-4121 </addrLine>
+                    
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                
+                <biblStruct>
+                    
+                    <analytic>
+                        
+                        <title>La Belle Dame Sans Merci</title>
+                        
+                    </analytic>
+                    
+                    <monogr>
+                        <author>
+                            <name>
+                                <forename>John</forename>
+                                <surname>Keats</surname>
+                                
+                            </name>
+                        </author>
+                        
+                        <title>La Belle Dame Sans Merci</title>
+                        
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7013527"
+                                    >Cambridge, MA</placeName>
+                            </pubPlace>
+                            <publisher>Belknap Press</publisher>
+                            <date when="1978">1978</date>
+                            <note>Our edition is based on the version in <hi rend="italic">The Poems of John Keats</hi> in the Oxford Text Archive: http://hdl.handle.net/20.500.12024/3259. This is based on the 1978 print version edited by Jack Stillinger and published by the Belknap Press in Cambridge, Massachusetts. </note>
+                            
+                            
+                        </imprint>
+                        
+                        <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                        <biblScope>pp. 357-359
+                        </biblScope>
+                        
+                    </monogr>
+                    
+                </biblStruct>
+                
+            </sourceDesc>
+            
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            
+            <creation/>
+            
+            <textDesc n="poem">
+                <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+                <channel mode="w">print</channel>
+                <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+                <constitution type="single">single poem</constitution>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="inapplicable"/>
+                <interaction/>
+                <preparedness type="revised"/>
+                <purpose type="express"/>
+                <purpose type="inform" degree="medium"/>
+                <!-- interpretation in the textDesc will be necessary -->
+            </textDesc>
+            
+            <settingDesc>
+                
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>
+                    <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+                    <name type="tgn" key="7011197">England</name>
+                    <time from="1690" to="1724">London</time>
+                    <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+                </setting>
+                
+            </settingDesc>
+        </profileDesc>
+        
+        <encodingDesc>
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, reliable, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature. This project is was initially funded by the National Endowment for the
+                    Humanities and developed by faculty at The University of Virginia and Marymount
+                    University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                        not.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section for more information.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Numbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgm">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2023-11-14" who="editors.xmlJOB#">John O'Brien created LIC edition</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>   
+        <body>    
+            
+            <div type="poem">
+            
+                <head>La Belle Dame sans Merci</head>
+                <l>A Ballad</l>
+                <l>O what can ail thee, knight-at-arms,</l>
+                <l>Alone and palely loitering?</l>
+                <l>The sedge has wither'd from the lake,</l>
+                <l>And no birds sing.</l>
+                <l>O what can ail thee, knight-at-arms,</l>
+                <l>So haggard and so woe-begone?</l>
+                <l>The squirrel's granary is full,</l>
+                <l>And the harvest's done.</l>
+                <l>I see a lilly on thy brow,</l>
+                <l>With anguish moist and fever dew,</l>
+                <l>And on thy cheeks a fading rose</l>
+                <l>Fast withereth too.</l>
+                <l>I met a lady in the meads,</l>
+                <l>Full beautiful — a faery's child,</l>
+                <l>Her hair was long, her foot was light,</l>
+                <l>And her eyes were wild.</l>
+                <l>I made a garland for her head,</l>
+                <l>And bracelets too, and fragrant zone;</l>
+                <l>She look'd at me as she did love,</l>
+                <l>And made sweet moan.</l>
+                <l>I set her on my pacing steed,</l>
+                <l>And nothing else saw all day long,</l>
+                <l>For sidelong would she bend, and sing</l>
+                <l>A faery's song.</l>
+                <l>She found me roots of relish sweet,</l>
+                <l>And honey wild, and manna dew,</l>
+                <l>And sure in language strange she said —</l>
+                <l>"I love thee true " .</l>
+                <l>She took me to her elfin grot,</l>
+                <l>And there she wept, and sigh'd full sore,</l>
+                <l>And there I shut her wild wild eyes</l>
+                <l>With kisses four.</l>
+                <l>And there she lulled me asleep,</l>
+                <l>And there I dream'd — Ah! woe betide!</l>
+                <l>The latest dream I ever dream'd</l>
+                <l>On the cold hill side.</l>
+                <l>I saw pale kings and princes too,</l>
+                <l>Pale warriors, death-pale were they all;</l>
+                <l>They cried — " La belle dame sans merci</l>
+                <l>Hath thee in thrall!"</l>
+                <l>I saw their starved lips in the gloam,</l>
+                <l>With horrid warning gaped wide,</l>
+                <l>And I awoke and found me here,</l>
+                <l>On the cold hill's side.</l>
+                <l>And this is why I sojourn here,</l>
+                <l>Though the sedge has wither'd from the lake,</l>
+                <l>And no birds sing.</l>
+            </div>
+        </body>
+    </text>
+</TEI>
