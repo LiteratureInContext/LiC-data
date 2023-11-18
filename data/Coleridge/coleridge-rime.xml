@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="coleridge-rime">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">The Rime of the Ancient Mariner</title>
+            <author>
+                <persName type="lcnaf" key="n78095462">
+                  <name>             
+                     <forename>Samuel Taylor</forename> 
+                     <surname>Coleridge</surname>            
+                  </name>
+              
+               </persName>
+            </author>
+            <editor>
+                <persName type="orcid" key="00000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'rien</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#JOB"
+                  >Students and Staff of the University of Virginia</name>
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+             <publisher>Literature in Context</publisher>
+             
+             <address>
+                 <addrLine>University of Virginia Department of English</addrLine>
+                 <addrLine>P. O. Box 400121</addrLine>
+                 <addrLine>Charlottesville, VA</addrLine>
+                 <addrLine>22904-4121</addrLine>
+                 <addrLine>jobrien@virginia.edu</addrLine>
+                 <addrLine>lic.open.anthology@gmail.com</addrLine>
+             </address>
+             <availability status="free">
+                 
+                 <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                     Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                     License </licence>
+             </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title>The Rime of the Ancient Mariner</title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Samuel Taylor</forename>
+                        <surname>Coleridge</surname>
+                     </name>
+                  </author>
+
+                  <title>Samuel Taylor Coleridge</title>
+
+                  <imprint>
+                     <pubPlace>
+                         <placeName type="tgn" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>J. and A. Arch</publisher>
+                     <date when="1798">1798</date>
+                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <!-- Add additional NOTE elements as needed  -->
+                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                  </imprint>
+
+                  
+
+                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="fiction"/>
+            <interaction/>
+            <preparedness type="original"/>
+            <purpose type="express"/>
+            <purpose type="entertain" degree="contested"/>
+          
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="000"></name>
+              
+               
+               <time from="1790" to="1820">Late eighteenth/early nineteenth century</time>
+              
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2023-11-17" who="editors.xml#JOB"
+            >John O'Brien created Literature in Context Edition</change>
+        
+      </revisionDesc>
+
+   </teiHeader>
+
+
+
+   <text>
+
+      <front>
+         <titlePage>
+            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
+            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
+            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
+            <titlePart/>
+            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
+            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
+                  resp="XXX"/><lb/>
+               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
+            </titlePart>
+            <docImprint>
+               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
+               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
+                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
+               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
+                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
+                     Browne</hi></publisher>
+               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
+                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+            </docImprint>
+         </titlePage>
+      </front>
+      <body>
+         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
+         <div type="poem">
+            <!-- note structure for poetry -->
+            <pb n="200" facs="images/FN-200.jpg"/>
+            <head type="title"/>
+            <div type="canto" n="1">
+               <head type="sub">Canto I</head>
+               <lg met="rhymed couplets">
+                  <l n="1"/>
+                  <l n="2" rend="indent"/>
+               </lg>
+            </div>
+            <div type="canto" n="2">
+               <head type="sub"><ref target="aXX" corresp="nXX">Canto [this is the word or phrase
+                     from the text to be turned into a link to the note]</ref> II</head>
+               <note xml:id="nXX" target="aXX" type="XXX" resp="editors.xml#XX">Text of note goes
+                  here. Write in a clear, straightforward manner, aware of purpose and audience.
+                  Include references to sources both <ref target="XXX">in text and through
+                     links</ref>. If you include an image, describe the contents and include a
+                  linked note about sourcing. Be sure to use complete sentences. Note type can be
+                  gloss, editorial, or authorial. <graphic url="XXX"/></note>
+               <lg met="rhymed couplets">
+                  <l n="1"/>
+                  <l n="2" rend="indent"/>
+               </lg>
+            </div>
+         </div>
+
+         
+<head>THE RIME OF THE ANCIENT MARINER<lb/>
+
+IN SEVEN PARTS</head>  
+
+
+
+<div type="part" n="1">
+<head>PART THE FIRST.</head>
+    
+<lg type="stanza">
+    <l>It is an ancient Mariner,</l>
+    <l>And he stoppeth one of three.</l>
+    <l>"By thy long grey beard and glittering eye,</l>
+    <l>Now wherefore stopp'st thou me?</l></lg>
+
+    <lg type="stanza">
+        <l>"The Bridegroom's doors are opened wide,</l>
+        <l>And I am next of kin;</l>
+        <l>The guests are met, the feast is set:</l>
+        <l>May'st hear the merry din."</l></lg>
+     
+        <lg type="stanza">
+            <l>He holds him with his skinny hand,</l>
+            <l>"There was a ship," quoth he.</l>
+            <l>"Hold off! unhand me, grey-beard loon!"</l>
+            <l>Eftsoons his hand dropt he.</l></lg>
+
+            <lg type="stanza">
+                <l>He holds him with his glittering eye--</l>
+                <l>The Wedding-Guest stood still,</l>
+                <l>And listens like a three years child:</l>
+                <l>The Mariner hath his will.</l></lg>
+
+                <lg type="stanza">
+                    <l>The Wedding-Guest sat on a stone:</l>
+                    <l>He cannot chuse but hear;</l>
+                    <l>And thus spake on that ancient man,</l>
+                    <l>The bright-eyed Mariner.</l></lg>
+
+                    <lg type="stanza">
+                        <l>The ship was cheered, the harbour cleared,</l>
+                        <l>Merrily did we drop</l>
+                        <l>Below the kirk, below the hill,</l>
+                        <l>Below the light-house top.</l></lg>
+                        <lg type="stanza">
+
+                            <l>The Sun came up upon the left,</l>
+                            <l>Out of the sea came he!</l>
+                            <l>And he shone bright, and on the right</l>
+                            <l>Went down into the sea.</l>
+                        </lg>
+                            <lg type="stanza">
+                                <l>Higher and higher every day,</l>
+                                <l>Till over the mast at noon--</l>
+                                <l>The Wedding-Guest here beat his breast,</l>
+                                <l>For he heard the loud bassoon.</l></lg>
+                                <lg type="stanza">
+                                    <l>The bride hath paced into the hall,</l>
+                                    <l>Red as a rose is she;</l>
+                                    <l>Nodding their heads before her goes</l>
+                                    <l>The merry minstrelsy.</l>
+                                </lg>
+                                    <lg type="stanza">
+                                        <l>The Wedding-Guest he beat his breast,</l>
+                                        <l>Yet he cannot chuse but hear;</l>
+                                        <l>And thus spake on that ancient man,</l>
+                                        <l>The bright-eyed Mariner.</l></lg>
+
+                                        <lg type="stanza">
+                                            <l>And now the STORM-BLAST came, and he</l>
+                                            <l>Was tyrannous and strong:</l>
+                                            <l>He struck with his o'ertaking wings,</l>
+                                            <l>And chased south along.</l></lg>
+                                            <lg type="stanza">
+                                                
+                                                <l> With sloping masts and dipping prow,</l>
+                                                <l> As who pursued with yell and blow</l>
+                                                <l> Still treads the shadow of his foe</l>
+                                                <l> And forward bends his head,</l>
+                                                <l>The ship drove fast, loud roared the blast,</l>
+                                                <l>And southward aye we fled.</l></lg>
+    
+                                                <lg type="stanza">
+                                                    <l>And now there came both mist and snow,</l>
+                                                    <l>And it grew wondrous cold:</l>
+                                                    <l>And ice, mast-high, came floating by,</l>
+                                                    <l>As green as emerald.</l></lg>
+    
+                                                                 <lg type="stanza">
+                                                                     <l>And through the drifts the snowy clifts</l>
+                                                                     <l>Did send a dismal sheen:</l>
+                                                                     <l>Nor shapes of men nor beasts we ken--</l>
+                                                                     <l>The ice was all between.</l></lg>
+    
+                                                        <lg type="stanza">
+                                                            <l>The ice was here, the ice was there,</l>
+                                                            <l>The ice was all around:</l>
+                                                            <l>It cracked and growled, and roared and howled,</l>
+                                                            <l>Like noises in a swound!</l></lg>
+    
+                                                            <lg type="stanza">
+                                                                <l>At length did cross an Albatross:</l>
+                                                                <l>Thorough the fog it came;</l>
+                                                                <l>As if it had been a Christian soul,</l>
+                                                                <l>We hailed it in God's name.</l></lg>
+    
+                                                                <lg type="stanza">
+                                                                    <l>It ate the food it ne'er had eat,</l>
+                                                                    <l>And round and round it flew.</l>
+                                                                    <l>The ice did split with a thunder-fit;</l>
+                                                                    <l>The helmsman steered us through!</l></lg>
+    
+                                                                    <lg type="stanza">
+                                                                        <l> And a good south wind sprung up behind;</l>
+                                                                        <l>The Albatross did follow,</l>
+                                                                        <l>And every day, for food or play,</l>
+                                                                        <l>Came to the mariners' hollo!</l></lg>
+    
+                                                                        <lg type="stanza">
+                                                                            <l>In mist or cloud, on mast or shroud,</l>
+                                                                            <l>It perched for vespers nine;</l>
+                                                                            <l>Whiles all the night, through fog-smoke white,</l>
+                                                                            <l>Glimmered the white Moon-shine.</l></lg>
+    
+                                                                            <lg type="stanza">
+                                                                                <l>"God save thee, ancient Mariner!</l>
+                                                                                <l>From the fiends, that plague thee thus!--</l>
+                                                                                <l>Why look'st thou so?"--With my cross-bow</l>
+                                                                                <l>I shot the ALBATROSS.</l></lg>
+
+</div>
+
+          <div type="part" n="2">
+
+              <head>PART THE SECOND.</head>
+
+              <lg type="stanza">
+                  <l>The Sun now rose upon the right:</l>
+                  <l> Out of the sea came he,</l>
+                      <l>Still hid in mist, and on the left</l>
+                          <l> Went down into the sea.</l></lg>
+
+                  <lg type="stanza">
+                      <l> And the good south wind still blew behind</l>
+                          <l>But no sweet bird did follow,</l>
+                              <l>Nor any day for food or play</l>
+                                  <l> Came to the mariners' hollo!</l></lg>
+
+                      <lg type="stanza">
+                          <l>And I had done an hellish thing,</l>
+                              <l>And it would work 'em woe:</l>
+                                  <l>For all averred, I had killed the bird</l>
+                                      <l>That made the breeze to blow.</l>
+                                          <l>Ah wretch! said they, the bird to slay</l>
+                                              <l>That made the breeze to blow!</l></lg>
+     
+                          <lg type="stanza">
+                              <l>Nor dim nor red, like God's own head,</l>
+                                  <l> The glorious Sun uprist:</l>
+                                      <l>Then all averred, I had killed the bird</l>
+                                          <l>That brought the fog and mist.</l>
+                                              <l>'Twas right, said they, such birds to slay,</l>
+                                                  <l>That bring the fog and mist.</l></lg>
+
+                              <lg type="stanza">
+                                  <l>The fair breeze blew, the white foam flew,</l>
+                                      <l>The furrow followed free:</l>
+                                          <l>We were the first that ever burst</l>
+                                              <l>Into that silent sea.</l></lg>
+
+                                  <lg type="stanza">
+                                      <l>Down dropt the breeze, the sails dropt down,</l>
+                                          <l>'Twas sad as sad could be;</l>
+                                              <l>And we did speak only to break</l>
+                                                  <l>The silence of the sea!</l></lg>
+
+                                      <lg type="stanza">
+                                          <l>All in a hot and copper sky,</l>
+                                              <l>The bloody Sun, at noon,</l>
+                                                  <l>Right up above the mast did stand,</l>
+                                                      <l>No bigger than the Moon.</l></lg>
+
+                                          <lg type="stanza">
+                                              <l>Day after day, day after day,</l>
+                                                  <l>We stuck, nor breath nor motion;</l>
+                                                      <l>As idle as a painted ship</l>
+                                                          <l>Upon a painted ocean.</l></lg>
+
+                                              <lg type="stanza">
+                                                  <l>Water, water, every where,</l>
+                                                      <l>And all the boards did shrink;</l>
+                                                          <l>Water, water, every where,</l>
+                                                              <l>Nor any drop to drink.</l></lg>
+
+                                                  <lg type="stanza">
+                                                      <l>The very deep did rot: O Christ!</l>
+                                                          <l>That ever this should be!</l>
+                                                              <l>Yea, slimy things did crawl with legs</l>
+                                                                  <l>Upon the slimy sea.</l></lg>
+
+                                                      <lg type="stanza">
+                                                          <l>About, about, in reel and rout</l>
+                                                              <l>The death-fires danced at night;</l>
+                                                                  <l>The water, like a witch's oils,</l>
+                                                                      <l>Burnt green, and blue and white.</l></lg>
+
+                                                          <lg type="stanza">
+                                                              <l>And some in dreams assured were</l>
+                                                                  <l>Of the spirit that plagued us so:</l>
+                                                                      <l>Nine fathom deep he had followed us</l>
+                                                                          <l>From the land of mist and snow.</l></lg>
+
+                                                              <lg type="stanza">
+                                                                  <l>And every tongue, through utter drought,</l>
+                                                                      <l>Was withered at the root;</l>
+                                                                          <l>We could not speak, no more than if</l>
+                                                                              <l> We had been choked with soot.</l></lg>
+
+                                                                  <lg type="stanza">
+                                                                      <l>Ah! well a-day! what evil looks</l>
+                                                                          <l>Had I from old and young!</l>
+                                                                              <l>Instead of the cross, the Albatross</l>
+                                                                                  <l>About my neck was hung.</l></lg>
+
+          </div>
+
+          <div type="part" n="3">
+              <head>PART THE THIRD.</head>
+
+              <lg type="stanza">
+                  <l>There passed a weary time.  Each throat</l>
+                  <l>Was parched, and glazed each eye.</l>
+                      <l>A weary time! a weary time!</l>
+                          <l> How glazed each weary eye,</l>
+                              <l>When looking westward, I beheld</l>
+                                  <l> A something in the sky.</l></lg>
+
+                  <lg type="stanza">
+                      <l>At first it seemed a little speck,</l>
+                          <l>And then it seemed a mist:</l>
+                              <l>It moved and moved, and took at last</l>
+                                  <l> A certain shape, I wist.</l></lg>
+
+                      <lg type="stanza">
+                          <l>A speck, a mist, a shape, I wist!</l>
+                              <l>And still it neared and neared:</l>
+                                  <l>As if it dodged a water-sprite,</l>
+                                      <l>It plunged and tacked and veered.</l></lg>
+
+                          <lg type="stanza">
+                              <l>With throats unslaked, with black lips baked,</l>
+                                  <l>We could not laugh nor wail;</l>
+                                      <l>Through utter drought all dumb we stood!</l>
+                                          <l>I bit my arm, I sucked the blood,</l>
+                                              <l>And cried, A sail! a sail!</l></lg>
+
+                              <lg type="stanza">
+                                  <l>With throats unslaked, with black lips baked,</l>
+                                      <l>Agape they heard me call:</l>
+                                          <l>Gramercy! they for joy did grin,</l>
+                                              <l>And all at once their breath drew in,</l>
+                                                  <l>As they were drinking all.</l></lg>
+
+                                  <lg type="stanza">
+                                      <l>See! see! (I cried) she tacks no more!</l>
+                                          <l>Hither to work us weal;</l>
+                                               <l>Without a breeze, without a tide,</l>
+                                                   <l>She steadies with upright keel!</l></lg>
+
+                                      <lg type="stanza">
+                                          <l>The western wave was all a-flame</l>
+                                              <l>The day was well nigh done!</l>
+                                                  <l>Almost upon the western wave</l>
+                                                      <l>Rested the broad bright Sun;</l>
+                                                          <l>When that strange shape drove suddenly</l>
+                                                              <l>Betwixt us and the Sun.</l></lg>
+
+                                          <lg type="stanza">
+                                              <l>And straight the Sun was flecked with bars,</l>
+                                                  <l>(Heaven's Mother send us grace!)</l>
+                                                      <l>As if through a dungeon-grate he peered,</l>
+                                                          <l>With broad and burning face.</l></lg>
+
+                                              <lg type="stanza">
+                                                  <l>Alas! (thought I, and my heart beat loud)</l>
+                                                      <l>How fast she nears and nears!</l>
+                                                          <l>Are those her sails that glance in the Sun,</l>
+                                                              <l>Like restless gossameres!</l>
+                                              </lg>
+                                                  <lg type="stanza">
+                                                      <l>Are those her ribs through which the Sun</l>
+                                                          <l>Did peer, as through a grate?</l>
+                                                              <l>And is that Woman all her crew?</l>
+                                                                  <l>Is that a DEATH? and are there two?</l>
+                                                                      <l>Is DEATH that woman's mate?</l></lg>
+
+                                                      <lg type="stanza">
+                                                          <l>Her lips were red, her looks were free,</l>
+                                                              <l>Her locks were yellow as gold:</l>
+                                                                  <l>Her skin was as white as leprosy,</l>
+                                                                      <l>The Night-Mare LIFE-IN-DEATH was she,</l>
+                                                                          <l>Who thicks man's blood with cold.</l></lg>
+
+                                                          <lg type="stanza">
+                                                              <l>The naked hulk alongside came,</l>
+                                                                  <l>And the twain were casting dice;</l>
+                                                                      <l>"The game is done!  I've won!  I've won!"</l>
+                                                                          <l>Quoth she, and whistles thrice.</l></lg>
+
+                                                              <lg type="stanza">
+                                                                  <l>The Sun's rim dips; the stars rush out:</l>
+                                                                      <l>At one stride comes the dark;</l>
+                                                                          <l>With far-heard whisper, o'er the sea.</l>
+                                                                              <l>Off shot the spectre-bark.</l></lg>
+
+                                                                  <lg type="stanza">
+                                                                      <l>We listened and looked sideways up!</l>
+                                                                          <l>Fear at my heart, as at a cup,</l>
+                                                                              <l>My life-blood seemed to sip!</l></lg>
+
+                                                                      <lg type="stanza">
+                                                                          <l>The stars were dim, and thick the night,</l>
+                                                                              <l>The steersman's face by his lamp gleamed white;</l>
+                                                                                  <l>From the sails the dew did drip--</l>
+                                                                                      <l>Till clombe above the eastern bar</l>
+                                                                                          <l>The horned Moon, with one bright star</l>
+                                                                                              <l>Within the nether tip.</l></lg>
+
+                                                                          <lg type="stanza">
+                                                                              <l>One after one, by the star-dogged Moon</l>
+                                                                                  <l>Too quick for groan or sigh,</l>
+                                                                                      <l>Each turned his face with a ghastly pang,</l>
+                                                                                          <l>And cursed me with his eye.</l></lg>
+
+                                                                              <lg type="stanza">
+                                                                                  <l> Four times fifty living men,</l>
+                                                                                      <l>(And I heard nor sigh nor groan)</l>
+                                                                                          <l> With heavy thump, a lifeless lump,</l>
+                                                                                              <l>They dropped down one by one.</l></lg>
+
+                                                                                  <lg type="stanza">
+                                                                                      <l>The souls did from their bodies fly,--</l>
+                                                                                          <l>They fled to bliss or woe!</l>
+                                                                                              <l>And every soul, it passed me by,</l>
+                                                                                                  <l>Like the whizz of my CROSS-BOW!</l></lg>
+          </div>
+
+          <div type="part" n="4">
+
+              <head>PART THE FOURTH.</head>
+
+              <lg type="stanza">
+                  <l>"I fear thee, ancient Mariner!</l>
+                  <l>I fear thy skinny hand!</l>
+                  <l>And thou art long, and lank, and brown,</l>
+                  <l>As is the ribbed sea-sand.</l></lg>
+
+                  <lg type="stanza">
+                      <l>"I fear thee and thy glittering eye,</l>
+                      <l>And thy skinny hand, so brown."--</l>
+                      <l>Fear not, fear not, thou Wedding-Guest!</l>
+                      <l>This body dropt not down.</l></lg>
+
+                      <lg type="stanza">
+                          <l>Alone, alone, all, all alone,</l>
+                          <l>Alone on a wide wide sea!</l>
+                          <l>And never a saint took pity on</l>
+                          <l>My soul in agony.</l>
+                      </lg>
+                          <lg type="stanza">
+                              <l>The many men, so beautiful!</l>
+                              <l>And they all dead did lie:</l>
+                              <l>And a thousand thousand slimy things</l>
+                              <l>Lived on; and so did I.</l></lg>
+
+                              <lg type="stanza">
+                                  <l>I looked upon the rotting sea,</l>
+                                  <l>And drew my eyes away;</l>
+                                  <l>I looked upon the rotting deck,</l>
+                                  <l>And there the dead men lay.</l></lg>
+
+                                  <lg type="stanza">
+                                      <l>I looked to Heaven, and tried to pray:</l>
+                                      <l>But or ever a prayer had gusht,</l>
+                                      <l>A wicked whisper came, and made</l>
+                                      <l>my heart as dry as dust.</l></lg>
+
+                                      <lg type="stanza">
+                                          <l>I closed my lids, and kept them close,</l>
+                                          <l>And the balls like pulses beat;</l>
+                                          <l>For the sky and the sea, and the sea and the sky</l>
+                                          <l>Lay like a load on my weary eye,</l>
+                                          <l>And the dead were at my feet.</l></lg>
+              
+                                      <lg type="stanza">
+                                          <l>The cold sweat melted from their limbs,</l>
+                                          <l>Nor rot nor reek did they:</l>
+                                          <l>The look with which they looked on me</l>
+                                          <l>Had never passed away.</l></lg>
+
+                                          <lg type="stanza">
+                                              <l>An orphan's curse would drag to Hell</l>
+                                              <l>A spirit from on high;</l>
+                                              <l>But oh! more horrible than that</l>
+                                              <l>Is a curse in a dead man's eye!</l>
+                                              <l>Seven days, seven nights, I saw that curse,</l>
+                                              <l>And yet I could not die.</l></lg>
+
+                                              <lg type="stanza">
+                                                  <l>The moving Moon went up the sky,</l>
+                                                  <l>And no where did abide:</l>
+                                                  <l>Softly she was going up,</l>
+                                                  <l>And a star or two beside.</l></lg>
+
+                                                  <lg type="stanza">
+                                                      <l>Her beams bemocked the sultry main,</l>
+                                                      <l>Like April hoar-frost spread;</l>
+                                                      <l>But where the ship's huge shadow lay,</l>
+                                                      <l>The charmed water burnt alway</l>
+                                                      <l>A still and awful red.</l></lg>
+
+                                                      <lg type="stanza">
+                                                          <l>Beyond the shadow of the ship,</l>
+                                                          <l> I watched the water-snakes:</l>
+                                                          <l>They moved in tracks of shining white,</l>
+                                                          <l>And when they reared, the elfish light</l>
+                                                          <l>Fell off in hoary flakes.</l></lg>
+
+                                                          <lg type="stanza">
+                                                              <l>Within the shadow of the ship</l>
+                                                              <l>I watched their rich attire:</l>
+                                                              <l>Blue, glossy green, and velvet black,</l>
+                                                              <l>They coiled and swam; and every track</l>
+                                                              <l>Was a flash of golden fire.</l></lg>
+
+                                                              <lg type="stanza">
+                                                                  <l>O happy living things! no tongue</l>
+                                                                  <l>Their beauty might declare:</l>
+                                                                  <l>A spring of love gushed from my heart,</l>
+                                                                  <l>And I blessed them unaware:</l>
+                                                                  <l>Sure my kind saint took pity on me,</l>
+                                                                  <l>And I blessed them unaware.</l></lg>
+              
+                                                                  <lg type="stanza">
+
+                                                                      <l>The self same moment I could pray;</l>
+                                                                      <l>And from my neck so free</l>
+                                                                      <l>The Albatross fell off, and sank</l>
+                                                                     <l> Like lead into the sea.</l></lg>
+
+          </div>
+
+          <div type="part" n="5">
+
+              <head>PART THE FIFTH.</head>
+
+              <lg type="stanza">
+                  <l> Oh sleep! it is a gentle thing,</l>
+                  <l>Beloved from pole to pole!</l>
+                      <l>To Mary Queen the praise be given!</l>
+                          <l>She sent the gentle sleep from Heaven,</l>
+                              <l>That slid into my soul.</l></lg>
+
+                  <lg type="stanza">
+                      <l>The silly buckets on the deck,</l>
+                          <l>That had so long remained,</l>
+                              <l> I dreamt that they were filled with dew;</l>
+                                  <l>And when I awoke, it rained.</l></lg>
+
+                      <lg type="stanza">
+                          <l>My lips were wet, my throat was cold,</l>
+                              <l>My garments all were dank;</l>
+                                  <l>Sure I had drunken in my dreams,</l>
+                                      <l>And still my body drank.</l></lg>
+
+                          <lg type="stanza">
+                              <l>I moved, and could not feel my limbs:</l>
+                                  <l>I was so light--almost</l>
+                                      <l>I thought that I had died in sleep,</l>
+                                          <l>And was a blessed ghost.</l></lg>
+
+                              <lg type="stanza">
+                                  <l>And soon I heard a roaring wind:</l>
+                                      <l>It did not come anear;</l>
+                                              <l>But with its sound it shook the sails,</l>
+                                                  <l>That were so thin and sere.</l></lg>
+
+                                  <lg type="stanza">
+                                      <l>The upper air burst into life!</l>
+                                          <l>And a hundred fire-flags sheen,</l>
+                                              <l>To and fro they were hurried about!</l>
+                                                  <l>And to and fro, and in and out,</l>
+                                                      <l> The wan stars danced between.</l></lg>
+
+                                      <lg type="stanza">
+                                          <l>And the coming wind did roar more loud,</l>
+                                              <l>And the sails did sigh like sedge;</l>
+                                                  <l>And the rain poured down from one black cloud;</l>
+                                                      <l>The Moon was at its edge.</l></lg>
+
+                                          <lg type="stanza">
+                                              <l>The thick black cloud was cleft, and still</l>
+                                                  <l>The Moon was at its side:</l>
+                                                      <l>Like waters shot from some high crag,</l>
+                                                          <l> The lightning fell with never a jag,</l>
+                                                              <l>A river steep and wide.</l></lg>
+
+                                              <lg type="stanza">
+                                                  <l>The loud wind never reached the ship,</l>
+                                                      <l>Yet now the ship moved on!</l>
+                                                          <l>Beneath the lightning and the Moon</l>
+                                                              <l>The dead men gave a groan.</l></lg>
+
+                                                  <lg type="stanza">
+                                                      <l>They groaned, they stirred, they all uprose,</l>
+                                                          <l>Nor spake, nor moved their eyes;</l>
+                                                              <l>It had been strange, even in a dream,</l>
+                                                                  <l>To have seen those dead men rise.</l></lg>
+
+                                                      <lg type="stanza">
+                                                          <l> The helmsman steered, the ship moved on;</l>
+                                                              <l>Yet never a breeze up blew;</l>
+                                                                  <l>The mariners all 'gan work the ropes,</l>
+                                                                      <l>Where they were wont to do:</l>
+                                                                          <l>They raised their limbs like lifeless tools--</l>
+                                                                              <l>We were a ghastly crew.</l></lg>
+
+                                                          <lg type="stanza">
+                                                              <l>The body of my brother's son,</l>
+                                                                  <l>Stood by me, knee to knee:</l>
+                                                                      <l>The body and I pulled at one rope,</l>
+                                                                          <l>But he said nought to me.</l></lg>
+
+                                                              <lg type="stanza">
+                                                                  <l>"I fear thee, ancient Mariner!"</l>
+                                                                      <l>Be calm, thou Wedding-Guest!</l>
+                                                                          <l>'Twas not those souls that fled in pain,</l>
+                                                                              <l>Which to their corses came again,</l>
+                                                                                  <l>But a troop of spirits blest:</l></lg>
+
+                                                                  <lg type="stanza">
+                                                                      <l>For when it dawned--they dropped their arms,</l>
+                                                                          <l>And clustered round the mast;</l>
+                                                                              <l>Sweet sounds rose slowly through their mouths,</l>
+                                                                                  <l>And from their bodies passed.</l></lg>
+
+                                                                      <lg type="stanza">
+                                                                          <l>Around, around, flew each sweet sound,</l>
+                                                                              <l>Then darted to the Sun;</l>
+                                                                                  <l>Slowly the sounds came back again,</l>
+                                                                                      <l>Now mixed, now one by one.</l></lg>
+
+                                                                          <lg type="stanza">
+                                                                              <l>Sometimes a-dropping from the sky</l>
+                                                                                  <l>I heard the sky-lark sing;</l>
+                                                                                      <l>Sometimes all little birds that are,</l>
+                                                                                          <l>How they seemed to fill the sea and air</l>
+                                                                                              <l>With their sweet jargoning!</l></lg>
+
+                                                                              <lg type="stanza">
+                                                                                  <l>And now 'twas like all instruments,</l>
+                                                                                      <l>Now like a lonely flute;</l>
+                                                                                          <l>And now it is an angel's song,</l>
+                                                                                              <l>That makes the Heavens be mute.</l></lg>
+
+                                                                                  <lg type="stanza">
+                                                                                      <l>It ceased; yet still the sails made on</l>
+                                                                                          <l>A pleasant noise till noon,</l>
+                                                                                              <l>A noise like of a hidden brook</l>
+                                                                                                  <l>In the leafy month of June,</l>
+                                                                                                      <l>That to the sleeping woods all night</l>
+                                                                                                          <l> Singeth a quiet tune.</l></lg>
+
+                                                                                      <lg type="stanza">
+                                                                                          <l>Till noon we quietly sailed on,</l>
+                                                                                              <l>Yet never a breeze did breathe:</l>
+                                                                                                  <l> Slowly and smoothly went the ship,</l>
+                                                                                                      <l>Moved onward from beneath.</l></lg>
+
+                                                                                          <lg type="stanza">
+                                                                                              <l> From the land of mist and snow,</l>
+                                                                                                  <l>The spirit slid: and it was he</l>
+                                                                                                      <l>That made the ship to go.</l>
+                                                                                                          <l>The sails at noon left off their tune,</l>
+                                                                                                              <l>And the ship stood still also.</l></lg>
+
+                                                                                              <lg type="stanza">
+                                                                                                  <l>The Sun, right up above the mast,</l>
+                                                                                                      <l>Had fixed her to the ocean:</l>
+                                                                                                          <l>But in a minute she 'gan stir,</l>
+                                                                                                              <l>With a short uneasy motion--</l>
+                                                                                                                  <l>Backwards and forwards half her length</l>
+                                                                                                                      <l>With a short uneasy motion.</l></lg>
+
+                                                                                                  <lg type="stanza">
+                                                                                                      <l>Then like a pawing horse let go,</l>
+                                                                                                          <l>She made a sudden bound:</l>
+                                                                                                              <l>It flung the blood into my head,</l>
+                                                                                                                  <l>And I fell down in a swound.</l></lg>
+
+                                                                                                      <lg type="stanza">
+                                                                                                          <l> How long in that same fit I lay,</l>
+                                                                                                              <l>I have not to declare;</l>
+                                                                                                                  <l>But ere my living life returned,</l>
+                                                                                                                      <l>I heard and in my soul discerned</l>
+                                                                                                                          <l>Two VOICES in the air.</l></lg>
+
+                                                                                                          <lg type="stanza">
+                                                                                                              <l>"Is it he?" quoth one, "Is this the man?</l>
+                                                                                                              <l>By him who died on cross,</l>
+                                                                                                                      <l>With his cruel bow he laid full low,</l>
+                                                                                                                          <l>The harmless Albatross.</l></lg>
+
+                                                                                                              <lg type="stanza">
+                                                                                                                  <l>"The spirit who bideth by himself</l>
+                                                                                                                      <l>In the land of mist and snow,</l>
+                                                                                                                          <l>He loved the bird that loved the man</l>
+                                                                                                                              <l>Who shot him with his bow."</l></lg>
+
+                                                                                                                  <lg type="stanza">
+                                                                                                                      <l>The other was a softer voice,</l>
+                                                                                                         <l>As soft as honey-dew:</l>
+                                                                                                     <l>Quoth he, "The man hath penance done,</l>
+                                                                                                     <l>And penance more will do."</l></lg>
+
+          </div>
+
+          <div type="part" n="6">
+
+              <head>PART THE SIXTH.</head>
+
+
+              <l>FIRST VOICE.</l>
+          <lb/>
+
+              <lg type="stanza">
+                  <l>But tell me, tell me! speak again,</l>
+                  <l>Thy soft response renewing--</l>
+                  <l> What makes that ship drive on so fast?</l>
+                  <l>What is the OCEAN doing?</l></lg>
+
+
+                  <l>SECOND VOICE.</l>
+                  <lb/>
+                  <lg type="stanza">
+                      <l>Still as a slave before his lord,</l>
+                      <l>The OCEAN hath no blast;</l>
+                      <l>His great bright eye most silently</l>
+                      <l>Up to the Moon is cast--</l></lg>
+
+              <lg type="stanza">
+                  <l>If he may know which way to go;</l>
+                  <l>For she guides him smooth or grim</l>
+                  <l>See, brother, see! how graciously</l>
+                  <l> She looketh down on him.</l></lg>
+
+                      
+
+              <l>FIRST VOICE.</l>
+              <lb/>
+                      <lg type="stanza">
+                          <l>But why drives on that ship so fast,</l>
+                          <l>Without or wave or wind?</l></lg>
+
+
+              <l>SECOND VOICE.</l>
+              <lb/>
+                          <lg type="stanza">
+                              <l>The air is cut away before,</l>
+                              <l>And closes from behind.</l></lg>
+                              <lg type="stanza">
+                                  <l>Fly, brother, fly! more high, more high</l>
+                                  <l>Or we shall be belated:</l>
+                                  <l>For slow and slow that ship will go,</l>
+                                  <l>When the Mariner's trance is abated.</l></lg>
+                                  <lg type="stanza">
+                                      <l>I woke, and we were sailing on</l>
+                                      <l>As in a gentle weather:</l>
+                                      <l>'Twas night, calm night, the Moon was high;</l>
+                                      <l>The dead men stood together.</l></lg>
+                                      <lg type="stanza">
+
+                                          <l>All stood together on the deck,</l>
+                                          <l>For a charnel-dungeon fitter:</l>
+                                          <l>All fixed on me their stony eyes,</l>
+                                          <l>That in the Moon did glitter.</l></lg>
+              <lg type="stanza">
+                  <l>The pang, the curse, with which they died,</l>
+                  <l>Had never passed away:</l>
+                  <l>I could not draw my eyes from theirs,</l>
+                  <l>Nor turn them up to pray.</l></lg>
+                                              <lg type="stanza">
+                                                  <l>And now this spell was snapt: once more</l>
+                                                  <l>I viewed the ocean green.</l>
+                                                  <l>And looked far forth, yet little saw</l>
+                                                  <l>Of what had else been seen--</l></lg>
+                                                  <lg type="stanza">
+                                                      <l>Like one that on a lonesome road</l>
+                                                      <l>Doth walk in fear and dread,</l>
+                                                      <l>And having once turned round walks on,</l>
+                                                      <l>And turns no more his head;</l>
+                                                      <l> Because he knows, a frightful fiend</l>
+                                                      <l>Doth close behind him tread.</l></lg>
+                                                      <lg type="stanza">
+                                                          <l>But soon there breathed a wind on me,</l>
+                                                          <l>Nor sound nor motion made:</l>
+                                                          <l>Its path was not upon the sea,</l>
+                                                          <l>In ripple or in shade.</l></lg>
+                                                          <lg type="stanza">
+                                                              <l>It raised my hair, it fanned my cheek</l>
+                                                              <l>Like a meadow-gale of spring--</l>
+                                                              <l>It mingled strangely with my fears,</l>
+                                                              <l>Yet it felt like a welcoming.</l></lg>
+                                                              <lg type="stanza">
+                                                                  <l>Swiftly, swiftly flew the ship,</l>
+                                                                  <l>Yet she sailed softly too:</l>
+                                                                  <l>Sweetly, sweetly blew the breeze--</l>
+                                                                  <l> On me alone it blew.</l></lg>
+                                                                  <lg type="stanza">
+                                                                      <l>Oh! dream of joy! is this indeed</l>
+                                                                      <l>The light-house top I see?</l>
+                                                                      <l>Is this the hill? is this the kirk?</l>
+                                                                      <l>Is this mine own countree!</l></lg>
+                                                                      <lg type="stanza">
+                                                                          <l>We drifted o'er the harbour-bar,</l>
+                                                                          <l>And I with sobs did pray--</l>
+                                                                          <l>O let me be awake, my God!</l>
+                                                                          <l>Or let me sleep alway.</l></lg>
+                                                                          <lg type="stanza">
+                                                                              <l>The harbour-bay was clear as glass,</l>
+                                                                              <l> So smoothly it was strewn!</l>
+                                                                              <l>And on the bay the moonlight lay,</l>
+                                                                              <l>And the shadow of the moon.</l></lg>
+                                                          
+                                                                              <lg type="stanza">
+                                                                                  <l>The rock shone bright, the kirk no less,</l>
+                                                                                  <l>That stands above the rock:</l>
+                                                                                  <l>The moonlight steeped in silentness</l>
+                                                                                  <l>The steady weathercock.</l></lg>
+                                                                                  <lg type="stanza">
+                                                                                      <l>And the bay was white with silent light,</l>
+                                                                                      <l>Till rising from the same,</l>
+                                                                                      <l>Full many shapes, that shadows were,</l>
+                                                                                      <l>In crimson colours came.</l></lg>
+                                                                                      <lg type="stanza">
+                                                                                          <l>A little distance from the prow</l>
+                                                                                          <l>Those crimson shadows were:</l>
+                                                                                          <l>I turned my eyes upon the deck--</l>
+                                                                                          <l>Oh, Christ! what saw I there!</l></lg>
+                                                                                          <lg type="stanza">
+                                                                                              <l>Each corse lay flat, lifeless and flat,</l>
+                                                                                                  <l>And, by the holy rood!</l>
+                                                                                              <l>A man all light, a seraph-man,</l>
+                                                                                              <l>On every corse there stood.</l></lg>
+                                                                                              <lg type="stanza">
+                                                                                                  <l>This seraph band, each waved his hand:</l>
+                                                                                                  <l>It was a heavenly sight!</l>
+                                                                                                  <l>They stood as signals to the land,</l>
+                                                                                                  <l>Each one a lovely light:</l></lg>
+                                                                                                  <lg type="stanza">
+                                                                                                      <l>This seraph-band, each waved his hand,</l>
+                                                                                                      <l>No voice did they impart--</l>
+                                                                                                      <l>No voice; but oh! the silence sank</l>
+                                                                                                      <l>Like music on my heart.</l></lg>
+                                                                                                      <lg type="stanza">
+                                                                                                          <l>But soon I heard the dash of oars;</l>
+                                                                                                          <l>I heard the Pilot's cheer;</l>
+                                                                                                          <l>My head was turned perforce away,</l>
+                                                                                                          <l>And I saw a boat appear.</l></lg>
+                                                                                                          <lg type="stanza">
+                                                                                                              <l>The Pilot, and the Pilot's boy,</l>
+                                                                                                              <l>I heard them coming fast:</l>
+                                                                                                              <l>Dear Lord in Heaven! it was a joy</l>
+                                                                                                              <l>The dead men could not blast.</l></lg>
+                                                                                                              <lg type="stanza">
+                                                                                                                  <l>I saw a third--I heard his voice:</l>
+                                                                                                                  <l>It is the Hermit good!</l>
+                                                                                                                  <l> He singeth loud his godly hymns</l>
+                                                                                                                  <l>That he makes in the wood.</l>
+                                                                                                                  <l>He'll shrieve my soul, he'll wash away</l>
+                                                                                                                  <l>The Albatross's blood.</l></lg>
+
+          </div>
+          <div type="part" n="7">
+
+              <head>PART THE SEVENTH.</head>
+              <lg type="stanza">
+                  <l>This Hermit good lives in that wood</l>
+                  <l>Which slopes down to the sea.</l>
+                  <l>How loudly his sweet voice he rears!</l>
+                  <l> He loves to talk with marineres</l>
+                  <l>That come from a far countree.</l></lg>
+                  <lg type="stanza">
+
+                      <l>He kneels at morn and noon and eve--</l>
+                      <l> He hath a cushion plump:</l>
+                      <l>It is the moss that wholly hides</l>
+                      <l> The rotted old oak-stump.</l></lg>
+
+                      <lg type="stanza">
+                          <l>The skiff-boat neared: I heard them talk,</l>
+                          <l>"Why this is strange, I trow!</l>
+                          <l>Where are those lights so many and fair,</l>
+                          <l>That signal made but now?</l></lg>
+
+                          <lg type="stanza">
+                              <l>"Strange, by my faith!" the Hermit said--</l>
+                              <l>"And they answered not our cheer!</l>
+                              <l>The planks looked warped! and see those sails,</l>
+                              <l>How thin they are and sere!</l>
+                              <l> I never saw aught like to them,</l>
+                              <l>Unless perchance it were</l></lg>
+
+                              <lg type="stanza">
+                                  <l>"Brown skeletons of leaves that lag</l>
+                                  <l>My forest-brook along;</l>
+                                  <l> When the ivy-tod is heavy with snow,</l>
+                                  <l>And the owlet whoops to the wolf below,</l>
+                                  <l>That eats the she-wolf's young."</l></lg>
+
+                                  <lg type="stanza">
+                                      <l>"Dear Lord! it hath a fiendish look--</l>
+                                      <l>(The Pilot made reply)</l>
+                                      <l>I am a-feared"--"Push on, push on!"</l>
+                                      <l>Said the Hermit cheerily.</l></lg>
+
+                                      <lg type="stanza">
+                                          <l>The boat came closer to the ship,</l>
+                                          <l>But I nor spake nor stirred;</l>
+                                          <l>The boat came close beneath the ship,</l>
+                                          <l>And straight a sound was heard.</l></lg>
+
+                                          <lg type="stanza">
+                                              <l>Under the water it rumbled on,</l>
+                                              <l>Still louder and more dread:</l>
+                                              <l>It reached the ship, it split the bay;</l>
+                                              <l>The ship went down like lead.</l></lg>
+
+                                              <lg type="stanza">
+                                                  <l>Stunned by that loud and dreadful sound,</l>
+                                                  <l>Which sky and ocean smote,</l>
+                                                  <l>Like one that hath been seven days drowned</l>
+                                                  <l>My body lay afloat;</l>
+                                                  <l>But swift as dreams, myself I found</l>
+                                                  <l>Within the Pilot's boat.</l></lg>
+
+                                                  <lg type="stanza">
+                                                      <l>Upon the whirl, where sank the ship,</l>
+                                                      <l>The boat spun round and round;</l>
+                                                      <l>And all was still, save that the hill</l>
+                                                      <l>Was telling of the sound.</l></lg>
+
+                                                      <lg type="stanza">
+                                                          <l>I moved my lips--the Pilot shrieked</l>
+                                                          <l>And fell down in a fit;</l>
+                                                          <l>The holy Hermit raised his eyes,</l>
+                                                          <l>And prayed where he did sit.</l></lg>
+
+                                                          <lg type="stanza">
+                                                              <l>I took the oars: the Pilot's boy,</l>
+                                                              <l> Who now doth crazy go,</l>
+                                                              <l>Laughed loud and long, and all the while</l>
+                                                              <l>His eyes went to and fro.</l>
+                                                              <l>"Ha! ha!" quoth he, "full plain I see,</l>
+                                                              <l>The Devil knows how to row."</l></lg>
+
+                                                              <lg type="stanza">
+                                                                  <l>And now, all in my own countree,</l>
+                                                                  <l> I stood on the firm land!</l>
+                                                                  <l>The Hermit stepped forth from the boat,</l>
+                                                                  <l>And scarcely he could stand.</l></lg>
+
+                                                                  <lg type="stanza">
+                                                                      <l>"O shrieve me, shrieve me, holy man!"</l>
+                                                                      <l>The Hermit crossed his brow.</l>
+                                                                      <l>"Say quick," quoth he, "I bid thee say--</l>
+                                                                      <l>What manner of man art thou?"</l></lg>
+
+                                                                      <lg type="stanza">
+                                                                          <l>Forthwith this frame of mine was wrenched</l>
+                                                                          <l>With a woeful agony,</l>
+                                                                          <l>Which forced me to begin my tale;</l>
+                                                                          <l>And then it left me free.</l></lg>
+
+                                                                          <lg type="stanza">
+                                                                              <l>Since then, at an uncertain hour,</l>
+                                                                              <l>That agony returns;</l>
+                                                                              <l>And till my ghastly tale is told,</l>
+                                                                              <l>This heart within me burns.</l></lg>
+
+                                                                              <lg type="stanza">
+                                                                                  <l>I pass, like night, from land to land;</l>
+                                                                                  <l>I have strange power of speech;</l>
+                                                                                  <l>That moment that his face I see,</l>
+                                                                                  <l>I know the man that must hear me:</l>
+                                                                                  <l>To him my tale I teach.</l></lg>
+
+                                                                                  <lg type="stanza">
+                                                                                      <l>What loud uproar bursts from that door!</l>
+                                                                                      <l>The wedding-guests are there:</l>
+                                                                                      <l>But in the garden-bower the bride</l>
+                                                                                      <l>And bride-maids singing are:</l>
+                                                                                      <l>And hark the little vesper bell,</l>
+                                                                                      <l>Which biddeth me to prayer!</l></lg>
+
+                                                                                      <lg type="stanza">
+                                                                                          <l>O Wedding-Guest! this soul hath been</l>
+                                                                                          <l> Alone on a wide wide sea:</l>
+                                                                                          <l>So lonely 'twas, that God himself</l>
+                                                                                          <l>Scarce seemed there to be.</l></lg>
+
+                                                                                          <lg type="stanza">
+                                                                                              <l> O sweeter than the marriage-feast,</l>
+                                                                                              <l>'Tis sweeter far to me,</l>
+                                                                                              <l>To walk together to the kirk</l>
+                                                                                              <l>With a goodly company!--</l></lg>
+
+                                                                                              <lg type="stanza">
+                                                                                                  <l>To walk together to the kirk,</l>
+                                                                                                  <l>And all together pray,</l>
+                                                                                                  <l>While each to his great Father bends,</l>
+                                                                                                  <l>Old men, and babes, and loving friends,</l>
+                                                                                                  <l>And youths and maidens gay!</l></lg>
+
+                                                                                                  <lg type="stanza">
+                                                                                                      <l>Farewell, farewell! but this I tell</l>
+                                                                                                      <l>To thee, thou Wedding-Guest!</l>
+                                                                                                      <l>He prayeth well, who loveth well</l>
+                                                                                                      <l>Both man and bird and beast.</l></lg>
+
+                                                                                                      <lg type="stanza">
+                                                                                                          <l>He prayeth best, who loveth best</l>
+                                                                                                          <l>All things both great and small;</l>
+                                                                                                          <l>For the dear God who loveth us</l>
+                                                                                                          <l>He made and loveth all.</l></lg>
+
+                                                                                                          <lg type="stanza">
+                                                                                                              <l>The Mariner, whose eye is bright,</l>
+                                                                                                              <l>Whose beard with age is hoar,</l>
+                                                                                                              <l> Is gone: and now the Wedding-Guest</l>
+                                                                                                              <l>Turned from the bridegroom's door.</l></lg>
+
+                                                                                                              <lg type="stanza">
+                                                                                                                  <l>He went like one that hath been stunned,</l>
+                                                                                                                  <l>And is of sense forlorn:</l>
+                                                                                                                  <l> A sadder and a wiser man,</l>
+                                                                                                                  <l>He rose the morrow morn.</l></lg>
+          </div><div></div>
+
+
+      </body>
+
+
+   </text>
+</TEI>
+
+
+
