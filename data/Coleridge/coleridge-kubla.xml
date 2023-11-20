@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="coleridge-kubla">
+   
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Kubla Khan</title>
+            <author>
+               <persName type="lcnaf" key="FILL-IN">
+                 
+                 
+                     
+                     <forename>Samuel Taylor</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
+                     <surname>Colerdidge</surname>
+                   
+              
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <!-- edit this content to reflect this digital edition -->
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#XXX"
+                  ><?oxy-placeholder content="Students and Staff of UNIVERSITY NAME"?></name>
+               <name ref="editors.xml#XX"><?oxy-placeholder content="Firstname Lastname"?></name>
+               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+            </respStmt>
+
+            <sponsor/>
+            <funder><?oxy-placeholder content="Who is funding this work?"?></funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
+               <addrLine>Address line 2</addrLine>
+               <addrLine>Address line 3</addrLine>
+               <addrLine>Address line 4</addrLine>
+               <addrLine>Email</addrLine>
+               <!-- cut unused or add additional addrLines -->
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title><?oxy-placeholder content="Title of Contained Document in Quotation Marks. If this is a stand-alone monograph, cut the <analytic> tag."?></title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Samuel Taylor</forename>
+                        <surname>Coleridge</surname>
+                      
+                     </name>
+                  </author>
+
+                  <title><?oxy-placeholder content="Title of the Monograph/Container"?></title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="000"
+                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                     </pubPlace>
+                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
+                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
+                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <!-- Add additional NOTE elements as needed  -->
+                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                  </imprint>
+
+                  <imprint>
+                     <pubPlace/>
+                     <publisher/>
+                     <date/>
+                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
+                  </imprint>
+
+                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               <name type="tgn" key="7011197">Bath, England</name>
+               <time from="1690" to="1724">Early 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="0000-00-00" who="editors.xml#XX"
+            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
+         <change when="0000-00-00" who="xxxx"/>
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <titlePage>
+            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
+            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
+            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
+            <titlePart/>
+            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
+            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
+                  resp="XXX"/><lb/>
+               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
+            </titlePart>
+            <docImprint>
+               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
+               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
+                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
+               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
+                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
+                     Browne</hi></publisher>
+               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
+                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+            </docImprint>
+         </titlePage>
+      </front>
+      <body>
+         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
+         <div type="poem">
+            <!-- note structure for poetry -->
+            <pb n="200" facs="images/FN-200.jpg"/>
+            <head type="title"/>
+            <div type="canto" n="1">
+               <head type="sub">Canto I</head>
+               <lg met="rhymed couplets">
+                  <l n="1"/>
+                  <l n="2" rend="indent"/>
+               </lg>
+            </div>
+            <div type="canto" n="2">
+               <head type="sub"><ref target="aXX" corresp="nXX">Canto [this is the word or phrase
+                     from the text to be turned into a link to the note]</ref> II</head>
+               <note xml:id="nXX" target="aXX" type="XXX" resp="editors.xml#XX">Text of note goes
+                  here. Write in a clear, straightforward manner, aware of purpose and audience.
+                  Include references to sources both <ref target="XXX">in text and through
+                     links</ref>. If you include an image, describe the contents and include a
+                  linked note about sourcing. Be sure to use complete sentences. Note type can be
+                  gloss, editorial, or authorial. <graphic url="XXX"/></note>
+               <lg met="rhymed couplets">
+                  <l n="1"/>
+                  <l n="2" rend="indent"/>
+               </lg>
+            </div>
+         </div>
+
+         <div type="chapter">
+            <!-- note structure for prose -->
+            <head type="sub"/>
+            <p/>
+            <floatingText>
+               <body>
+                  <div type="letter">
+                     <salute/>
+                     <p><?oxy-placeholder content="If including an embedded document--a poem, a letter, and so on--FLOATINGTEXT is a good solution."?></p>
+                     <signed/>
+                     <dateline/>
+                  </div>
+               </body>
+            </floatingText>
+         </div>
+
+         <div type="act" n="1">
+            <!-- Note structure for drama -->
+            <div type="scene" n="1">
+               <sp>
+                  <stage>Stage directions here</stage>
+                  <speaker>Name of speaker</speaker>
+                  <l>line of speech</l>
+               </sp>
+            </div>
+            <div type="scene" n="2"/>
+         </div>
+         <div type="act" n="2"/>
+          <head>KUBLA KHAN 
+              Or, A Vision in a Dream. A Fragment.</head>
+          <p>The following fragment is here published at the request
+          of a poet of great and deserved celebrity, and,
+          as far as the Author's own opinions are concerned, rather as
+          a psychological curiosity, than on the ground of any supposed
+          poetic merits.</p>
+          
+          <p>In the summer of the year 1797, the Author, then in ill
+          health, had retired to a lonely farm-house between Porlock
+          and Linton, on the Exmoor confines of Somerset and Devonshire.
+          In consequence of a slight indisposition, an anodyne
+          had been prescribed, from the effects of which he fell asleep
+          in his chair at the moment that he was reading the following
+          sentence, or words of the same substance, in 'Purchas's
+          Pilgrimage': 'Here the Khan Kubla commanded a palace
+          to be built, and a stately garden thereunto. And thus ten
+          miles of fertile ground were inclosed with a wall.'[296:1] The
+          Author continued for about three hours in a profound sleep,
+          at least of the external senses, during which time he has the
+          most vivid confidence, that he could not have composed less
+          than from two to three hundred lines; if that indeed can
+          be called composition in which all the images rose up before20
+          him as things, with a parallel production of the correspondent
+          expressions, without any sensation or consciousness of effort.
+          On awaking he appeared to himself to have a distinct recollection
+          of the whole, and taking his pen, ink, and paper, instantly
+          and eagerly wrote down the lines that are here preserved. At
+          this moment he was unfortunately called out by a person on
+          business from Porlock, and detained by him above an hour,
+          and on his return to his room, found, to his no small surprise
+          and mortification, that though he still retained some vague
+          and dim recollection of the general purport of the vision, yet,30
+          with the exception of some eight or ten scattered lines and
+          images, all the rest had passed away like the images on the
+          surface of a stream into which a stone has been cast, but, alas!
+          without the after restoration of the latter!</p>
+          
+          <div type="poem">
+          <lg type="stanza">
+              <l>Then all the charm</l>
+              <l>Is broken—all that phantom-world so fair</l>
+              <l>Vanishes, and a thousand circlets spread,</l>
+              <l>And each mis-shape['s] the other. Stay awhile,</l>
+              <l>Poor youth! who scarcely dar'st lift up thine eyes—</l>
+              <l>The stream will soon renew its smoothness, soon40</l>
+              <l>The visions will return! And lo, he stays,</l>
+              <l>And soon the fragments dim of lovely forms</l>
+              <l>Come trembling back, unite, and now once more</l>
+              <l>The pool becomes a mirror.</l></lg></div>
+          
+          <p>Yet from the still surviving recollections in his mind, the
+          Author has frequently purposed to finish for himself what had
+          [297]been originally, as it were, given to him. Σαμερον αδιον ασω[297:1]
+          [Αὔριον ἅδιον ἄσω 1834]: but the to-morrow is yet to come.</p>
+          
+          <p>As a contrast to this vision, I have annexed a fragment of a
+          very different character, describing with equal fidelity the50
+          dream of pain and disease.[297:2]</p>
+          
+          <head>KUBLA KHAN</head>
+          <div type="poem">
+          <lg><l>In Xanadu did Kubla Khan</l>
+              <l>A stately pleasure-dome decree:</l>
+              <l>Where Alph, the sacred river, ran</l>
+              <l>Through caverns measureless to man</l>
+              <l>Down to a sunless sea.</l>
+              <l>So twice five miles of fertile ground</l>
+              <l>With walls and towers were girdled round:</l>
+              <l>And there were gardens bright with sinuous rills,</l>
+              <l>Where blossomed many an incense-bearing tree;</l>
+              <l> And here were forests ancient as the hills,10</l>
+              <l>Enfolding sunny spots of greenery.</l>
+              <l>But oh! that deep romantic chasm which slanted</l>
+              <l>Down the green hill athwart a cedarn cover!</l>
+              <l>A savage place! as holy and enchanted</l>
+              <l>As e'er beneath a waning moon was haunted15</l>
+              <l>By woman wailing for her demon-lover![297:3]</l>
+              <l> [297:4]And from this chasm, with ceaseless turmoil seething,</l>
+              <l>As if this earth in fast thick pants were breathing,</l>
+              <l>A mighty fountain momently was forced:</l>
+              <l>Amid whose swift half-intermitted burst20</l>
+              <l>Huge fragments vaulted like rebounding hail,</l>
+              <l>Or chaffy grain beneath the thresher's flail:</l>
+              <l>And 'mid these dancing rocks at once and ever</l>
+              <l> It flung up momently the sacred river.</l>
+              <l>Five miles meandering with a mazy motion25[298]</l>
+              <l>Through wood and dale the sacred river ran,</l>
+              <l>Then reached the caverns measureless to man</l>
+              <l>And sank in tumult to a lifeless ocean:</l>
+              <l>And 'mid this tumult Kubla heard from far</l>
+              <l>Ancestral voices prophesying war!30</l>
+              <l>The shadow of the dome of pleasure</l>
+              <l>Floated midway on the waves;</l>
+              <l>Where was heard the mingled measure</l>
+              <l>From the fountain and the caves.</l>
+              <l>It was a miracle of rare device,35</l>
+              <l>A sunny pleasure-dome with caves of ice![298:1]</l>
+              <l>A damsel with a dulcimer</l>
+              <l>In a vision once I saw:</l>
+              <l>It was an Abyssinian maid,</l>
+              <l>And on her dulcimer she played,40</l>
+              <l>Singing of Mount Abora.</l>
+              <l>Could I revive within me</l>
+              <l>Her symphony and song,</l>
+              <l>To such a deep delight 'twould win me,</l>
+              <l>That with music loud and long,45</l>
+              <l>I would build that dome in air,</l>
+              <l>That sunny dome! those caves of ice![298:2]</l>
+              <l>And all who heard should see them there,</l>
+              <l>And all should cry, Beware! Beware!</l>
+              <l> His flashing eyes, his floating hair!50</l>
+              <l> Weave a circle round him thrice,</l>
+              <l> And close your eyes with holy dread,</l>
+              <l>For he on honey-dew hath fed,</l>
+              <l>And drunk the milk of Paradise.</l>
+          </lg></div>
+          <p>1798.</p>
+      </body>
+
+
+   </text>
+</TEI>
+
+
+
