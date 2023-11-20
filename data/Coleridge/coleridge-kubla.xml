@@ -5,22 +5,20 @@
    <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
-            <title type="main">Kubla Khan</title>
+            <title type="main">"Kubla Khan"</title>
             <author>
-               <persName type="lcnaf" key="FILL-IN">
-                 
-                 
-                     
-                     <forename>Samuel Taylor</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
-                     <surname>Coleridge</surname>
-                   
               
+               <persName type="lcnaf" key="n78095462">     
+                 <name>           
+                     <forename>Samuel Taylor</forename> 
+                    <surname>Coleridge</surname></name>
+                   
                </persName>
             </author>
 
             <editor>
-               <persName type="orcid" key="0000-0002-7400-4093">
-                  <name ref="editors.xml#TH">
+               <persName type="orcid" key="000000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
                      <forename>John</forename>
                      <surname>O'Brien</surname>
                   </name>
@@ -28,12 +26,11 @@
             </editor>
 
             <respStmt>
-               <!-- edit this content to reflect this digital edition -->
+             
                <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name ref="editors.xml#XXX"
-                  ><?oxy-placeholder content="Students and Staff of UNIVERSITY NAME"?></name>
-               <name ref="editors.xml#XX"><?oxy-placeholder content="Firstname Lastname"?></name>
-               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+               <name ref="editors.xml#StudStaff"
+                  >Students and Staff of the University of Virginia</name>
+               
             </respStmt>
 
             <sponsor/>
@@ -42,15 +39,17 @@
 
          <publicationStmt>
             <publisher>Literature in Context</publisher>
+            
             <address>
-               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
-               <addrLine>Address line 2</addrLine>
-               <addrLine>Address line 3</addrLine>
-               <addrLine>Address line 4</addrLine>
-               <addrLine>Email</addrLine>
-               <!-- cut unused or add additional addrLines -->
+               <addrLine>University of Virginia Department of English</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA</addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
             </address>
             <availability status="free">
+               
                <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
                   Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
                   License </licence>
@@ -63,7 +62,7 @@
 
                <analytic>
                  
-                  <title><?oxy-placeholder content="Title of Contained Document in Quotation Marks. If this is a stand-alone monograph, cut the <analytic> tag."?></title>
+                  <title>"Kubla Khan"</title>
                 
                </analytic>
                  
@@ -80,13 +79,13 @@
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000"
-                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                        <placeName type="tgn" key="7011781"
+                           >London</placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
-                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
-                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
-                     <!-- Add additional NOTE elements as needed  -->
+                     <publisher>John Murray</publisher>
+                     <date when="1816">1816</date>
+                     <note>"Kubla Khan" was first published in 1816, in a volume containing three poems by Coleridge: this one, "Cristabel" and "The Pains of Sleep." We are reproducing the text of that first printing, which Coleridge did not alter much afterwards. Coleridge's claim that the poem was originally written 1798 seems entirely plausible, but is impossible to prove. We do know that the "poet of great and deserved celebrity" mentioned in Coleridge's prefatory note was Byron, who heard Coleridge recite the poem in 1815 or 1816 and urged him to publish it.</note>
+                     
                      <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
                   </imprint>
 
@@ -117,29 +116,24 @@
          <creation/>
 
          <textDesc n="poem">
-            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            
             <channel mode="w">print</channel>
-            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            
             <constitution type="single">single poem</constitution>
             <derivation type="original"/>
             <domain/>
-            <factuality type="inapplicable"/>
+            <factuality type="fiction"/>
             <interaction/>
             <preparedness type="revised"/>
             <purpose type="express"/>
             <purpose type="inform" degree="medium"/>
-            <!-- interpretation in the textDesc will be necessary -->
+       
          </textDesc>
 
          <settingDesc>
 
-            <setting>
-               <name type="tgn" key="7011781">London, England</name>
-               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+            <setting/>
                
-               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
-            </setting>
-
          </settingDesc>
       </profileDesc>
 
@@ -200,50 +194,25 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="0000-00-00" who="editors.xml#XX"
-            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
-         <change when="0000-00-00" who="xxxx"/>
+         <change when="2023-11-20" who="editors.xml#JOB"
+            >John O'Brien created Literature in Context edition.</change>
+        
       </revisionDesc>
 
    </teiHeader>
 
-   <!-- ************************************************************************** -->
-
    <text>
 
-      <front>
-         <titlePage>
-            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
-            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
-            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
-            <titlePart/>
-            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
-            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
-                  resp="XXX"/><lb/>
-               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
-            </titlePart>
-            <docImprint>
-               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
-               <lb/> Printed by <publisher><hi rend="italic"></hi></publisher> and sold by
-                     <publisher/><hi rend="italic">W. Taylor</hi>\
-               
-               <pubPlace/> <docDate/>
-            </docImprint>
-         </titlePage>
-      </front>
       <body>
-         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
+        
          <div type="poem">
         
-            <pb n="200" facs="images/FN-200.jpg"/>
+            <pb n="" facs=""/>
             
-               
-            </div>
-       
-
-        
          <head type="title">KUBLA KHAN </head>
-         <head type="sub">Or, A Vision in a Dream. A Fragment.</head>
+         <head type="sub">A Vision</head>
+         <head type="sub"><hi rend="small caps">OF THE</hi><lb/>
+         FRAGMENT OF KUBLA KHAN</head>
           <p>The following fragment is here published at the request
           of a poet of great and deserved celebrity, and,
           as far as the Author's own opinions are concerned, rather as
@@ -253,116 +222,130 @@
           <p>In the summer of the year 1797, the Author, then in ill
           health, had retired to a lonely farm-house between Porlock
           and Linton, on the Exmoor confines of Somerset and Devonshire.
-          In consequence of a slight indisposition, an anodyne
+          In 
+          
+             <pb n="52" facs=""/>
+          consequence of a slight indisposition, an anodyne
           had been prescribed, from the effects of which he fell asleep
           in his chair at the moment that he was reading the following
-          sentence, or words of the same substance, in 'Purchas's
-          Pilgrimage': 'Here the Khan Kubla commanded a palace
+          sentence, or words of the same substance, in "Purchas's
+          Pilgrimage:" "Here the Khan Kubla commanded a palace
           to be built, and a stately garden thereunto. And thus ten
-          miles of fertile ground were inclosed with a wall.'[296:1] The
+          miles of fertile ground were inclosed with a wall." The
           Author continued for about three hours in a profound sleep,
           at least of the external senses, during which time he has the
           most vivid confidence, that he could not have composed less
           than from two to three hundred lines; if that indeed can
-          be called composition in which all the images rose up before20
+          be called composition in which all the images rose up before
           him as things, with a parallel production of the correspondent
           expressions, without any sensation or consciousness of effort.
           On awaking he appeared to himself to have a distinct recollection
           of the whole, and taking his pen, ink, and paper, instantly
           and eagerly wrote down the lines that are here preserved. At
-          this moment he was unfortunately called out by a person on
+          this 
+          
+             <pb n="53" facs=""/>
+             moment he was unfortunately called out by a person on
           business from Porlock, and detained by him above an hour,
           and on his return to his room, found, to his no small surprise
           and mortification, that though he still retained some vague
-          and dim recollection of the general purport of the vision, yet,30
+          and dim recollection of the general purport of the vision, yet,
           with the exception of some eight or ten scattered lines and
           images, all the rest had passed away like the images on the
           surface of a stream into which a stone has been cast, but, alas!
-          without the after restoration of the latter!</p>
+          without the after restoration of the latter:</p>
           
           <div type="poem">
           <lg type="stanza">
-              <l>Then all the charm</l>
+              <l rend="indent">Then all the charm</l>
               <l>Is broken—all that phantom-world so fair</l>
               <l>Vanishes, and a thousand circlets spread,</l>
-              <l>And each mis-shape['s] the other. Stay awhile,</l>
+              <l>And each mis-shape the other. Stay awhile,</l>
               <l>Poor youth! who scarcely dar'st lift up thine eyes—</l>
-              <l>The stream will soon renew its smoothness, soon40</l>
+              <l>The stream will soon renew its smoothness, soon</l>
               <l>The visions will return! And lo, he stays,</l>
               <l>And soon the fragments dim of lovely forms</l>
               <l>Come trembling back, unite, and now once more</l>
               <l>The pool becomes a mirror.</l></lg></div>
           
-          <p>Yet from the still surviving recollections in his mind, the
-          Author has frequently purposed to finish for himself what had
-          [297]been originally, as it were, given to him. Σαμερον αδιον ασω[297:1]
-          [Αὔριον ἅδιον ἄσω 1834]: but the to-morrow is yet to come.</p>
+            <p>Yet from the still surviving recollections in his    <pb n="54" facs=""/>
+               mind, the Author has frequently purposed to finish for himself what had
+          been originally, as it were, given to him. Σαμερον αδιον ασω: but the to-morrow is yet to come.</p>
           
           <p>As a contrast to this vision, I have annexed a fragment of a
-          very different character, describing with equal fidelity the50
-          dream of pain and disease.[297:2]</p>
+          very different character, describing with equal fidelity the
+          dream of pain and disease.</p>
           
-          <head>KUBLA KHAN</head>
-          <div type="poem">
-          <lg><l>In Xanadu did Kubla Khan</l>
+            <pb n="55" facs=""/>
+          <head>KUBLA KHAN.</head>
+          <div type="stanza">
+             <lg><l>In Xanadu did <hi rend="small caps">Kubla Khan</hi></l>
               <l>A stately pleasure-dome decree:</l>
-              <l>Where Alph, the sacred river, ran</l>
-              <l>Through caverns measureless to man</l>
-              <l>Down to a sunless sea.</l>
+                <l>Where <hi rend="small caps">Alph</hi>, the sacred river, ran</l>
+              <l n="5">Through caverns measureless to man</l>
+              <l rend="indent">Down to a sunless sea.</l>
               <l>So twice five miles of fertile ground</l>
               <l>With walls and towers were girdled round:</l>
+                <pb n="56" facs=""/>
               <l>And there were gardens bright with sinuous rills,</l>
               <l>Where blossomed many an incense-bearing tree;</l>
-              <l> And here were forests ancient as the hills,10</l>
-              <l>Enfolding sunny spots of greenery.</l>
+              <l n="10"> And here were forests ancient as the hills,10</l>
+              <l>Enfolding sunny spots of greenery.</l></lg>
+             
+             <lg type="stanza">
               <l>But oh! that deep romantic chasm which slanted</l>
               <l>Down the green hill athwart a cedarn cover!</l>
               <l>A savage place! as holy and enchanted</l>
-              <l>As e'er beneath a waning moon was haunted15</l>
-              <l>By woman wailing for her demon-lover![297:3]</l>
-              <l> [297:4]And from this chasm, with ceaseless turmoil seething,</l>
+              <l n="15">As e'er beneath a waning moon was haunted15</l>
+              <l>By woman wailing for her demon-lover!</l>
+              <l>And from this chasm, with ceaseless turmoil seething,</l>
               <l>As if this earth in fast thick pants were breathing,</l>
               <l>A mighty fountain momently was forced:</l>
-              <l>Amid whose swift half-intermitted burst20</l>
+              <l n="20">Amid whose swift half-intermitted Burst</l>
               <l>Huge fragments vaulted like rebounding hail,</l>
               <l>Or chaffy grain beneath the thresher's flail:</l>
               <l>And 'mid these dancing rocks at once and ever</l>
-              <l> It flung up momently the sacred river.</l>
-              <l>Five miles meandering with a mazy motion25[298]</l>
+              <l>It flung up momently the sacred river.</l>
+                
+                <pb n="57" facs=""/>
+              <l n="25">Five miles meandering with a mazy motion</l>
               <l>Through wood and dale the sacred river ran,</l>
               <l>Then reached the caverns measureless to man</l>
               <l>And sank in tumult to a lifeless ocean:</l>
               <l>And 'mid this tumult Kubla heard from far</l>
-              <l>Ancestral voices prophesying war!30</l>
-              <l>The shadow of the dome of pleasure</l>
-              <l>Floated midway on the waves;</l>
-              <l>Where was heard the mingled measure</l>
-              <l>From the fountain and the caves.</l>
-              <l>It was a miracle of rare device,35</l>
-              <l>A sunny pleasure-dome with caves of ice![298:1]</l>
-              <l>A damsel with a dulcimer</l>
-              <l>In a vision once I saw:</l>
-              <l>It was an Abyssinian maid,</l>
-              <l>And on her dulcimer she played,40</l>
-              <l>Singing of Mount Abora.</l>
-              <l>Could I revive within me</l>
-              <l>Her symphony and song,</l>
-              <l>To such a deep delight 'twould win me,</l>
-              <l>That with music loud and long,45</l>
+              <l n="30">Ancestral voices prophesying war!</l></lg>
+             
+             <lg type="stanza">
+              <l rend="indent">The shadow of the dome of pleasure</l>
+             <l rend="indent">Floated midway on the waves;</l>
+             <l rend="indent">Where was heard the mingled measure</l>
+             <l rend="indent">From the fountain and the caves.</l>
+              <l n="35">It was a miracle of rare device,</l>
+              <l>A sunny pleasure-dome with caves of ice!</l>
+             </lg>
+             
+             <lg type="stanza">
+                <l rend="indent">A damsel with a dulcimer</l>
+                <l rend="indent">In a vision once I saw:</l>
+                <l rend="indent">It was an Abyssinian maid,</l>
+                <l rend="indent" n="40">And on her dulcimer she played,</l>
+                <pb n="58" facs=""/>
+                <l>rend="indent"Singing of Mount Abora.</l>
+                <l rend="indent">Could I revive within me</l>
+                   <l rend="indent">Her symphony and song,</l>
+                      <l rend="indent">To such a deep delight 'twould win me,</l>
+              <l n="45">That with music loud and long,</l>
               <l>I would build that dome in air,</l>
-              <l>That sunny dome! those caves of ice![298:2]</l>
+              <l>That sunny dome! those caves of ice!</l>
               <l>And all who heard should see them there,</l>
               <l>And all should cry, Beware! Beware!</l>
-              <l> His flashing eyes, his floating hair!50</l>
+              <l n="50"> His flashing eyes, his floating hair!</l>
               <l> Weave a circle round him thrice,</l>
               <l> And close your eyes with holy dread,</l>
               <l>For he on honey-dew hath fed,</l>
               <l>And drunk the milk of Paradise.</l>
-          </lg></div>
-          <p>1798.</p>
+          </lg> </div></div>
       </body>
-
-
    </text>
 </TEI>
 
