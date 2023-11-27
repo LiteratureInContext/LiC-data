@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wordsworth-tintern">
+        <teiHeader xml:lang="en">
+            <fileDesc>
+         <titleStmt>
+                    <title type="main">"Tintern Abbey"</title>
+                    <author>
+                        <persName type="snac" key="50589557">
+                            <name>
+                            <forename>William</forename>
+                                <surname>Wordsworth</surname>
+                            </name>
+                        </persName>       
+                    </author>
+                    <editor>
+                        <persName type="orcid" key="0000-0001-6453-8721">
+                            <name ref="editors.xml#JOB">
+                                <surname>O'Brien</surname>
+                                <forename>John</forename>
+                            </name>
+                        </persName>
+                    </editor>
+                    <respStmt>
+                        <resp>Transcription, correction, editorial commentary, and markup</resp>
+                      
+                        <name ref="editors.xml#UVAstudstaff">Students and Staff of The University of Virginia and Simon Fraser University</name>
+                        
+                    </respStmt>
+                    <sponsor/>
+                    <funder>National Endowment for the Humanities</funder>
+                  
+                </titleStmt>
+                
+                
+                <publicationStmt>
+                    <publisher>Literature in Context</publisher>
+                    <address>
+                        <addrLine>University of Virginia Department of English</addrLine>
+                        <addrLine>P. O. Box 400121</addrLine>
+                        <addrLine>Charlottesville, VA</addrLine>
+                        <addrLine>22904-4121</addrLine>
+                        <addrLine>jobrien@virginia.edu</addrLine>
+                        <addrLine>lic.open.anthology@gmail.com</addrLine>
+                    </address>
+                    <availability status="free">
+                        <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                            License </licence>
+                    </availability>
+                </publicationStmt>
+    
+                <sourceDesc>
+                <biblStruct>
+                        <analytic>
+                            <title>"Lines, Written a few Miles above Tintern Abbey, On Revising the Banks of the Wye, During a Tour, July 13, 1798"</title>
+                        </analytic>
+                        <monogr>
+                            <author>
+                                <name>
+                                <forename>William</forename>
+                                <surname>Wordsworth</surname> 
+                            <forename>Samuel Taylor</forename>
+                            <surname>Coleridge</surname> </name>
+                            </author>
+                            <title>Lyrical Ballads, with a Few Other Poems</title>
+                            <imprint>
+                                <pubPlace>
+                                    <placeName type="tgn" key="7011781">London</placeName> 
+                                </pubPlace>
+                                <publisher>J. and A. Arch</publisher>
+                                <date when="1798">1798</date>
+                                <note>Page images are drawn from the copy of the first edition located in the Penn State Library and digitized by Google.</note>       
+                            </imprint>
+                               
+                            <biblScope>pp 201-210</biblScope>
+                        </monogr>
+                    </biblStruct>
+                </sourceDesc>
+                 </fileDesc>
+          
+            <profileDesc>
+                <langUsage>
+                    <language ident="en">English</language>
+                </langUsage>
+                <creation/>
+                <textDesc n="poem">
+                    <channel mode="w">print</channel>
+                    <constitution type="single"/>
+                    <derivation type="original"/>
+                  
+                    <domain/>
+                    <factuality type="fiction"/>
+                    <interaction/>
+                    <preparedness/>
+                   
+                    <purpose type="entertain" degree="high"/>
+                    
+                    <purpose type="inform" degree="low"/>
+                    
+                </textDesc>
+                
+                <settingDesc>
+                    <setting>
+                        <name type="tgn" key="1100066">Tintern Abbey, Wales</name>
+                        <time>Late 18th Century</time>
+                    </setting>
+                </settingDesc>
+            </profileDesc>
+            <encodingDesc>
+            
+                <projectDesc>
+                    <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                        project, which provides an accessible, curated, and marked-up selection of primary
+                        sources relevant to the study and the teaching of British and American literature of
+                        the 18th century. This project is funded by the National Endowment for the Humanities
+                        and developed by faculty at The University of Virginia and Marymount University. </p>
+                </projectDesc>
+                <editorialDecl>
+                    <interpretation>
+                        <p>Research informing these annotations draws on publicly-accessible resources, with
+                            links provided where possible. Annotations have also included common knowledge,
+                            defined as information that can be found in multiple reliable sources. If you
+                            notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+                        </p>
+                    </interpretation>
+                    <normalization>
+                        <p>Original spelling and capitalization is retained, though the long s has been
+                            silently modernized and ligatured forms are not encoded.</p>
+                    </normalization>
+                    <hyphenation>
+                        <p>Hyphenation has not been retained, except where necessary for the sense of the
+                            word.</p>
+                    </hyphenation>
+                    <segmentation>
+                        <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                            not. Where pages break in the middle of a word, the complete word has been
+                            indicated prior to the page beginning.</p>
+                    </segmentation>
+                    <correction>
+                        <p>Materials have been transcribed from and checked against first editions, where
+                            possible. See the Sources section.</p>
+                    </correction>
+                </editorialDecl>
+                <tagsDecl>
+                 
+                    <namespace name="http://www.tei-c.org/ns/1.0">
+                        <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                    </namespace>
+                </tagsDecl>
+                <classDecl>
+                    <taxonomy xml:id="snac">
+                        <bibl>Social Networks and Archival Context ID</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="lcnaf">
+                        <bibl>Library of Congress Name Authority File</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="lcc">
+                        <bibl>Library of Congress Classification</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="tgn">
+                        <bibl>Getty Thesaurus of Geographic Names</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="orcid">
+                        <bibl>Open Researcher and Contributor ID</bibl>
+                    </taxonomy>
+                </classDecl>
+            </encodingDesc>
+            
+            
+            <revisionDesc>
+                <!--BEGINS Revision Description -->
+                <change when="2019-01-24" who="editors.xml#SK">Created template</change>
+                <!-- Indicate all substantive changes to the document using the model here. -->
+                <change when="2019-05-24" who="editors.xml#TH">Added explanatory comments to
+                    template.</change>
+                <change when="2023-11-27" who="editors.xml#JOB">Added page images.</change>
+            </revisionDesc>          
+        </teiHeader>          
+        <text>
+            <body>
+                    <pb facs="pageImages/201.pgn" n="201"/>
+                <div>
+                    <head>
+                        <ref target="Introduction_" corresp="Introduction">LINES
+                        <lb/>
+                        WRITTEN A FEW MILES ABOVE
+                        <lb/>
+                       TINTERN ABBEY,
+                        <lb/>
+                       ON REVISITING THE BANKS OF THE
+                       <lb/>
+                        WYE<lb/>
+                        DURING
+                        <lb/>
+                         A TOUR,
+                        <lb/>
+                            <hi rend="italic">July</hi>
+                            13, 1798.</ref>
+                        <note xml:id="Introduction" target="Introduction_"><p>William Wordsworth’s “Lines, Written a Few Miles Above Tintern Abbey, on Revisiting the Banks of the Wye During a Tour, July 13, 1798“ is one of the most important and influential poems in the English language. Published in 1798 as the last work in <hi rend="italic">Lyrical Ballads</hi>, the collection that Wordsworth put together with his friend and fellow poet Samuel Taylor Coleridge, the poem describes a walking trip to the Wye Valley, on the border between England and Wales, that Wordsworth had made with his sister Dorothy that summer. It was a trip that covered much the same route as one that Wordsworth had made alone five years earlier. The image of a poet recollecting his experience in a beautiful setting became a paradigm for a new kind of poetry: subjective, reflective, emotional, written in the kind of plain speech, that Wordsworth, in his preface to a later edition of <hi rend="italic">Lyrical Ballads</hi>, called “the real language of men.” Wordsworth’s poem is not quite like normal speech; it still has the rhythm of iambic pentameter verse, and is shaped in a way that ordinary speech is not. But Wordsworth deliberately avoids or downplays many of the features of the poetry written in the eighteenth century such as rhyme, word inversion, and figurative language to create verse that feels spontaneous, as though the poem is tracing the poet’s thoughts as they occurred to him. That is not the case, of course; this is a carefully composed poem, one that builds to a climax when the speaker turns to a “dear, dear Friend,” his sister Dorothy, and the reader realizes that she has been there all along. By turning the the memory of their walking tour, a memory that then reminds Wordsworth of another walking tour he had taken along the same route five years earlier, Wordsworth offers what he would later call “emotion recollected in tranquility,” a model for composing poetry that felt original to contemporary readers and has endured.</p>
+                            
+                            <graphic url="https://lic-assets-staging.s3.amazonaws.com/wordsworth-tintern/tinternabbey--turner.jpg"/>
+                            <p>The poem is almost always referred to as “Tintern Abbey,” after the ruins of a monastery in the Wye Valley that was close to the route that the Wordsworths took on their tour. By the late 1790s, Tintern Abbey was well-known tourist destination, featured in a number of travel guides to the area, and the subject of paintings by several contemporary painters. But calling the poem “Tintern Abbey” is slightly odd because the Abbey itself does not appear in the poem, and it is clear that the place where William and Dorothy are standing is, as the full title indicates, a few miles upriver than the Abbey itself. It is easier to see significance in the first word of the title: “Lines.” Literally, “Lines” refers to the lines of poetry that make the up the poem, the lines printed on the page that the reader holds in their hands. But within the poem, “lines” is also the word that the poet uses to refer to the lines of hedgerows in the landscape, the lines marking the boundaries between the different farm fields and pastures. The vista spread out before the Wordsworths is a cultural scene as much as it is a natural one, a human landscape, with farms, orchards, cottages, domesticated animals, and smoke rising from forges. The lines on the type-set page stand in, then, for the lines of the landscape, suggesting how poetry can be a surrogate experience for a reader who many never get to visit that remote part of the British Isles, but who can, by meditating with the poet on his experience, share its emotional impact. The layered memories of the walking tours through this area are clearly, for Wordsworth, restorative, a resource that he has drawn upon when he was living far away, “in lonely rooms, and mid the din/Of towns and cities.” His experience, processed and put in the form of this poem, can in turn become a resource for readers.</p>
+                            
+                            <p>The date included in the title--July 13, 1798--is also significant. Wordsworth notes that he had been at this spot exactly five years before. In the summer of 1793, Wordsworth was in a state of personal crisis. He had gone in late 1791 to France after his graduation from Cambridge. Like many young Englishmen, he was excited by the French Revolution, which seemed at that point to promise a bright future, one where representative government might break through the deadening effect of the aristocratic rule that dominated France and Britain. While in France, Wordsworth met and fell in love with Marie-Anne Vallon (she was usually known as Annette); she had a daughter, Caroline, in December 1792. But by that point, Wordsworth was on his way back to England; he was out of money, and had no way to make any in France. War between England and France broke out in early 1793; William and Annette probably did not see each other for several years. When he visited the Wye Valley in the summer of 1793, then, Wordsworth was a bit of a wreck; broke, without good prospects for employment, separated from his lover and their daughter, still holding to revolutionary ideals and hoping to see them realized in Britain and deeply unhappy that his country was at war with France. But he was also becoming aware of the violent turn that the Revolution had taken, having been in Paris during what were known as the September Massacres in September 1792, when hundreds of people—we still do not know how many—were killed for being suspected counter-revolutionaries. July 13 is the day before Bastille Day, the day when the Revolution initially began in 1789. It is not exactly clear what Wordsworth is thinking of in recording the date, and he never offered an explanation, but it is hard not to think that Wordsworth is drawing attention to the near-coincidence between the date of his tour nine years later and the anniversary of the Revolution’s start. Perhaps ironically or ruefully, aware of how the passage of time has made the Revolution, his previous visit to that location, and his situation now all feel very different from one another. By 1798 Wordsworth had become thoroughly disillusioned by the French Revolution, and turned to poetry, perhaps hoping to create a revolution in hearts and minds rather than in politics. This poem, and <hi rend="italic">Lyrical Ballads</hi>, are landmarks of that revolution, a revolution that we now call Romanticism.</p>
+                        <lb/>
+                            
+                            <p>Image: J. M. W. Turner. <hi rend="italic">Tintern Abbey</hi>, 1792. Tate Britain, London.</p></note>
+                    </head></div>
+            <div>
+                   
+                    <lg type="stanza">
+                        <l> Five years have passed; five summers, with the length </l>
+                        <l>Of five long winters! and again I hear</l>
+                        <l>These waters, rolling from their mountain-springs</l>
+                        <l>
+                            <ref target="murmur_" corresp="murmur">With sweet inland murmur.</ref><note xml:id="murmur" target="murmur_">The river is not affected by the tides a few miles above Tintern. [Wordsworth's note.]</note>
+                            —Once again
+                        </l>
+                        <l>Do I behold these steep and lofty cliffs,</l>
+                        <l>Which on a wild secluded scene impress</l>
+                        <l>Thoughts of more deep seclusion; and connect</l>
+                        <pb facs="pageImages/202.pgn" n="202"/>
+                        <l>The landscape with the quiet of the sky.</l>
+                        <l>The day is come when I again repose</l>
+                        <l>Here, under this dark sycamore, and view</l>
+                        <l> These plots of cottage-ground, these orchard-tufts, </l>
+                        <l>Which, at this season, with their unripe fruits,</l>
+                        <l>Among the woods and copses lose themselves,</l>
+                        <l>Nor, with their green and simple hue, disturb</l>
+                        <l>The wild green landscape. Once again I see</l>
+                        <l>These hedge-rows, hardly hedge-rows, little lines</l>
+                        <l>Of sportive wood run wild ; these pastoral farms</l>
+                        <l>Green to the very door ; and wreathes of smoke</l>
+                        <l>Sent up, in silence, from among the trees,</l>
+                        <l>And the low copses—coming from the trees</l>
+                        <l>With some uncertain notice, as might seem,</l>
+                        <l>Of vagrant dwellers in the houseless woods,</l>
+                        <l>Or of some hermit’s cave, where by his fire</l>
+                        <l>The hermit sits alone.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l rend="indent">Though absent long,</l>
+                        <l>These forms of beauty have not been to me,</l>
+                        <pb facs="pageImages/203.pgn" n="203"/>
+                        <l>As is a landscape to a blind man’s eye:</l>
+                        <l>But oft, in lonely rooms, and mid the din</l>
+                        <l>Of towns and cities, I have owed to them,</l>
+                        <l>In hours of weariness, sensations sweet,</l>
+                        <l>Felt in the blood, and felt along the heart,</l>
+                        <l>And passing even into my purer mind</l>
+                        <l>With tranquil restoration :—feelings too</l>
+                        <l>Of unremembered pleasure ; such, perhaps,</l>
+                        <l>As may have had no trivial influence</l>
+                        <l>On that best portion of a good man’s life ;</l>
+                        <l>His little, nameless, unremembered acts</l>
+                        <l>Of kindness and love. Nor less, I trust,</l>
+                        <l>To them I may have owed another gift,</l>
+                        <l>Of aspect more sublime; that blessed mood,</l>
+                        <l>In which the burthen of the mystery,</l>
+                        <l>In which the heavy and the weary weight</l>
+                        <l>Of all this unintelligible world</l>
+                        <l>Is lighten’d :—that serene and blessed mood,</l>
+                        <l>In which the affections gently lead us on,</l>
+                        <pb facs="pageImages/204.pgn" n="204"/>
+                        <l>Until, the breath of this corporeal frame,</l>
+                        <l>And even the motion of our human blood</l>
+                        <l>Almost suspended, we are laid asleep</l>
+                        <l>In body, and become a living soul :</l>
+                        <l>While with an eye made quiet by the power</l>
+                        <l>Of harmony, and the deep power of joy</l>
+                        <l>We see into the life of things.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l rend="indent">If this</l>
+                        <l>Be but a vain belief, yet, oh! how oft,</l>
+                        <l>In darkness, and amid the many shapes</l>
+                        <l>Of joyless day-light ; when the fretful stir</l>
+                        <l>Unprofitable, and the fever of the world,</l>
+                        <l>Have hung upon the beatings of my heart,</l>
+                        <l>How oft, in spirit, have I turned to thee</l>
+                        <l>O sylvan Wye! Thou wanderer through the woods,</l>
+                        <l>How often has my spirit turned to thee!</l>
+                    </lg>
+                    <lg>
+                        <l>And now, with gleams of half-extinguish’d thought,</l>
+                        <pb facs="pageImages/205.pgn" n="205"/>
+                        <l>With many recognitions dim and faint,</l>
+                        <l>And somewhat of a sad perplexity,</l>
+                        <l>The picture of the mind revives again :</l>
+                        <l>While here I stand, not only with the sense</l>
+                        <l>Of present pleasure, but with pleasing thoughts</l>
+                        <l>That in this moment there is life and food</l>
+                        <l>For future years. And so I dare to hope</l>
+                        <l> Though changed, no doubt, from what I was, when</l>
+                        <l rend="indent"> first </l>
+                        <l>I came among these hills ; when like a roe</l>
+                        <l>I bounded o’er the mountains, by the sides</l>
+                        <l>Of the deep rivers, and the lonely streams,</l>
+                        <l>Wherever nature led ; more like a man</l>
+                        <l>Flying from something that he dreads, than one</l>
+                        <l>Who sought the thing he loved. For nature then</l>
+                        <l>(The coarser pleasures of my boyish days,</l>
+                        <l>And their glad animal movements all gone by,)</l>
+                        <l>To me was all in all.—I cannot paint</l>
+                        <pb facs="pageImages/206.pgn" n="206"/>
+                        <l>What then I was. The sounding cataract</l>
+                        <l>Haunted me like a passion: the tall rock,</l>
+                        <l>The mountain, and the deep and gloomy wood,</l>
+                        <l>Their colours and their forms, were then to me</l>
+                        <l>An appetite: a feeling and a love,</l>
+                        <l>That had no need of a remoter charm,</l>
+                        <l>By thought supplied, or any interest</l>
+                        <l>Unborrow’d from the eye. — That time is</l>
+                        <l rend="indent">past,</l>
+                        <l>And all its aching joys are now no more,</l>
+                        <l>And all its dizzy raptures. Not for this</l>
+                        <l>Faint I, nor mourn nor murmur: other gifts</l>
+                        <l>Have followed, for such loss, I would believe,</l>
+                        <l>Abundant recompense. For I have learned</l>
+                        <l>To look on nature, not as in the hour</l>
+                        <l>Of thoughtless youth, but hearing oftentimes</l>
+                        <l>The still, sad music of humanity,</l>
+                        <l>Not harsh nor grating, though of ample power</l>
+                        <pb facs="pageImages/207.pgn" n="207"/>
+                        <l>To chasten and subdue. And I have felt</l>
+                        <l>A presence that disturbs me with the joy</l>
+                        <l>Of elevated thoughts; a sense sublime</l>
+                        <l>Of something far more deeply interfused,</l>
+                        <l>Whose dwelling is the light of setting suns,</l>
+                        <l>And the round ocean, and the living air,</l>
+                        <l>And the blue sky, and in the mind of man,</l>
+                        <l>A motion and a spirit, that impels</l>
+                        <l>All thinking things, all objects of all thought,</l>
+                        <l>And rolls through all things. Therefore am I still</l>
+                        <l>A lover of the meadows and the woods,</l>
+                        <l>And mountains; and of all that we behold</l>
+                        <l>From this green earth; of all the mighty world</l>
+                        <l>
+                            Of eye and ear, both what they <ref target="half-create_" corresp="half-create">half-create,</ref>
+                            <note xml:id="half-create" target="half-create_">This line has a close resemblance to an admirable line of Young, the exact                             expression of which I cannot recollect. [Wordsworth's note]</note>  </l>
+                        <pb facs="pageImages/208.pgn" n="208"/>
+                        <l>And what perceive; well pleased to recognize</l>
+                        <l>In nature and the language of the sense,</l>
+                        <l>The anchor of my purest thoughts, the nurse,</l>
+                        <l>The guide, the guardian of my heart, and soul</l>
+                        <l>Of all my moral being.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l rend="indent">Nor, perchance,</l>
+                        <l>If I were not thus taught, should I the more</l>
+                        <l>Suffer my genial spirits to decay:</l>
+                        <l>For thou art with me, here, upon the banks</l>
+                        <l>Of this fair river ; though, my dearest Friend,</l>
+                        <l>My dear, dear Friend, and in thy voice I catch</l>
+                        <l>The language of my former heart, and read</l>
+                        <l>My former pleasures in the shooting lights</l>
+                        <l>Of thy wild eyes. Oh! yet a little while</l>
+                        <l>May I behold in thee what I was once,</l>
+                        <l>My dear, dear Sister! And this prayer I make,</l>
+                        <l>Knowing that Nature never did betray</l>
+                    </lg>
+                <pb facs="pageImages/209.pgn" n="209"/>
+                    <lg type="stanza">
+                        <l>The heart that loved her; ’tis her privilege,</l>
+                        <l>Through all the years of this our life, to lead</l>
+                        <l>From joy to joy: for she can so inform</l>
+                        <l>The mind that is within us, so impress</l>
+                        <l>With quietness and beauty, and so feed</l>
+                        <l>With lofty thoughts, that neither evil tongues,</l>
+                        <l>Rash judgments, nor the sneers of selfish men,</l>
+                        <l>Nor greetings where no kindness is, nor all</l>
+                        <l>The dreary intercourse of daily life,</l>
+                        <l>Shall e’er prevail against us, or disturb</l>
+                        <l>Our cheerful faith that all which we behold</l>
+                        <l>Is full of blessings. Therefore let the moon</l>
+                        <l>Shine on thee in thy solitary walk;</l>
+                        <l>And let the misty mountain winds be free</l>
+                        <l>To blow against thee: and in after years,</l>
+                        <l>When these wild ecstasies shall be matured</l>
+                        <l>Into a sober pleasure, when thy mind</l>
+                        <l>Shall be a mansion for all lovely forms,</l>
+                        <l>Thy memory be as a dwelling-place</l>
+                        <pb facs="pageImages/210.pgn" n="210"/>
+                        <l>For all sweet sounds and harmonies; Oh! then,</l>
+                        <l>If solitude, or fear, or pain, or grief,</l>
+                        <l>Should be thy portion, with what healing thoughts</l>
+                        <l>Of tender joy wilt thou remember me,</l>
+                        <l>And these my exhortations! Nor, perchance,</l>
+                        <l>If I should be, where I no more can hear</l>
+                        <l> Thy voice, nor catch from thy wild eyes these gleams </l>
+                        <l>Of past existence, wilt thou then forget</l>
+                        <l>That on the banks of this delightful stream</l>
+                        <l>We stood together; and that I, so long</l>
+                        <l>A worshipper of Nature, hither came,</l>
+                        <l>Unwearied in that service: rather say</l>
+                        <l>With warmer love, oh! with far deeper zeal</l>
+                        <l>Of holier love. Nor wilt thou then forget,</l>
+                        <l>That after many wanderings, many years</l>
+                        <l>Of absence, these steep woods and lofty cliffs,</l>
+                        <l>And this green pastoral landscape, were to me</l>
+                        <l>More dear, both for themselves, and for thy sake.</l>
+                    </lg>
+                    <p>E N D.</p>
+                
+         </div></body>
+            
+        </text>
+</TEI>
