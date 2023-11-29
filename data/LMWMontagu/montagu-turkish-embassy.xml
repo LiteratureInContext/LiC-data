@@ -1,143 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="montagu-turkish-embassy">
-<teiHeader>
+<teiHeader xml:lang="en">
 <fileDesc>
 <titleStmt>
-<title>Letters of the Right Honourable Lady M--y W-----y M------e: written, during her travels in Europe, Asia and Africa, to persons of distinction, men of letters. etc. in different parts of Europe. : Which contain, among other curious relations, accounts of the policy and manners of the Turks; drawn from sources that have been inaccessible to other travellers.</title>
-<author>Montagu, Mary Wortley, Lady, 1689-1762.</author>
+<title>The Turkish Embassy Letters</title>
+<author>
+    <persName type="lcnaf" key="n50004183">
+        <name>
+            <addName>Lady</addName>
+            <forename>Mary Wortley</forename>
+            <surname>Montagu</surname>
+        </name>
+    </persName></author>
+    <editor>
+        <persName type="orcid" key="0000-0002-7400-4093">
+            <name ref="editors.xml#JOB">
+                <forename>John</forename>
+                <surname>O'Brien</surname>
+            </name>
+        </persName>
+    </editor>
+    <respStmt>
+        
+        <resp>Transcription, correction, editorial commentary, and markup </resp>
+        
+        <name>Students and Staff of The University of Virginia</name>
+        
+    </respStmt>
+    
+    <sponsor/>
+    <funder>National Endowment for the Humanities</funder>
 </titleStmt>
-<extent>Approx. 382 KB of XML-encoded text transcribed from 215 1-bit group-IV TIFF page images.</extent>
-<publicationStmt>
-<publisher>Text Creation Partnership,</publisher>
-<pubPlace>Ann Arbor, MI :</pubPlace>
-<date when="2008-09">2008-09.</date>
-<idno type="DLPS">N31507</idno>
-<idno type="TCP">N31507</idno>
-<idno type="STC">Shipton 41644</idno>
-<idno type="NOTIS">APW7412</idno>
-<idno type="IMAGE-SET">41644</idno>
-<idno type="EVANS-CITATION">99013566</idno>
-<availability>
-<p>
-This keyboarded and encoded edition of the work described above is co-owned by the institutions providing financial support to the Early English Books Online Text Creation Partnership. This Phase I text is available for reuse, according to the terms of
-<ref target="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0 1.0 Universal</ref>
-. The text can be copied, modified, distributed and performed, even for commercial purposes, all without asking permission.
-</p>
-</availability>
-</publicationStmt>
-<seriesStmt>
-<title>Early American Imprints, 1639-1800 ; no. 41644.</title>
-</seriesStmt>
-<notesStmt>
-<note>(Evans-TCP ; no. N31507)</note>
-<note>Transcribed from: (Readex Archive of Americana ; Early American Imprints, series I ; image set 41644)</note>
-<note>Images scanned from Readex microprint and microform: (Early American imprints. First series ; no. 41644)</note>
-</notesStmt>
-<sourceDesc>
-<biblFull>
-<titleStmt>
-<title>Letters of the Right Honourable Lady M--y W-----y M------e: written, during her travels in Europe, Asia and Africa, to persons of distinction, men of letters. etc. in different parts of Europe. : Which contain, among other curious relations, accounts of the policy and manners of the Turks; drawn from sources that have been inaccessible to other travellers.</title>
-<author>Montagu, Mary Wortley, Lady, 1689-1762.</author>
-<author>Astell, Mary, 1666-1731, ed.</author>
-</titleStmt>
-<editionStmt>
-<edition>The fourth edition.</edition>
-</editionStmt>
-<extent>ix, [3], 204 p. ; 18 cm. (8vo) </extent>
-<publicationStmt>
-<publisher>Printed and sold by Sarah Goddard, and Company.,</publisher>
-<pubPlace>Providence, in New-England: :</pubPlace>
-<date>M,DCC,LXVI. [1766]</date>
-</publicationStmt>
-<notesStmt>
-<note>Attributed to Lady Mary Montagu in the Dictionary of national biography.</note>
-<note>Preface signed: M.A. [i.e., Mary Astell].</note>
-<note>Another issue (Evans 10393) has imprint: New-York: Printed, MDCCLXXXVI.</note>
-</notesStmt>
-</biblFull>
-</sourceDesc>
+    
+    <publicationStmt>
+        <publisher>Literature in Context</publisher>
+        <address>
+            <addrLine>University of Virginia</addrLine>
+            <addrLine>Department of English</addrLine>
+            <addrLine>P. O. Box 400121</addrLine>
+            <addrLine>Charlottesville, VA 22904-4121</addrLine>
+            <addrLine>jobrien@virginia.edu</addrLine>
+            <addrLine>lic.open.anthology@gmail.com</addrLine>
+        </address>
+        <availability status="free">
+            <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                License </licence>
+        </availability>
+    </publicationStmt>
+    
+    <sourceDesc>
+        
+        <biblStruct>
+            
+            <analytic>
+                
+                <title>The Turkish Embassy Letters</title>
+                
+            </analytic>
+            
+            <monogr>
+                <author>
+                    <persName type="lcnaf" key="n97925119">
+                        <name>
+                            <addName>Lady</addName>
+                            <forename>Mary Wortley</forename>
+                            <surname>Montagu</surname>
+                        </name>
+                    </persName>
+                </author>
+                
+                <title>The Turkish Embassy Letters</title>
+                
+                <imprint>
+                    <pubPlace>
+                        <placeName type="tgn" key="7013952"
+                            >Providence, Rhode Island</placeName>
+                    </pubPlace>
+                    <publisher>Sarah Goddard</publisher>
+                    <date when="1766">1766</date>
+                    <note>Montagu's work was unpublished in her lifetime. After her death in 1762, the work most commonly known as <hi rend="italic">The Turkish Embassy Letters</hi> was published in London. Our edition is based on a reprint of that text, identified as a "Fourth Edition," and published by Sarah Goddard, a prominent publisher in colonial Rhode Island. It was digitized by the Text Creaetion Partnership. Additional information about their edition is available at: https://quod.lib.umich.edu/cgi/t/text/text-idx?c=evans;idno=N31507.0001.001</note>
+                    
+                </imprint>
+                
+               
+                
+            </monogr>
+            
+        </biblStruct>
+        
+    </sourceDesc>
+    
 </fileDesc>
-<encodingDesc>
-<projectDesc>
-<p>Created by converting TCP files to TEI P5 using tcp2tei.xsl, TEI @ Oxford. </p>
-</projectDesc>
-<editorialDecl>
-<p>EEBO-TCP is a partnership between the Universities of Michigan and Oxford and the publisher ProQuest to create accurately transcribed and encoded texts based on the image sets published by ProQuest via their Early English Books Online (EEBO) database (http://eebo.chadwyck.com). The general aim of EEBO-TCP is to encode one copy (usually the first edition) of every monographic English-language title published between 1473 and 1700 available in EEBO.</p>
-<p>EEBO-TCP aimed to produce large quantities of textual data within the usual project restraints of time and funding, and therefore chose to create diplomatic transcriptions (as opposed to critical editions) with light-touch, mainly structural encoding based on the Text Encoding Initiative (http://www.tei-c.org).</p>
-<p>The EEBO-TCP project was divided into two phases. The 25,363 texts created during Phase 1 of the project have been released into the public domain as of 1 January 2015. Anyone can now take and use these texts for their own purposes, but we respectfully request that due credit and attribution is given to their original source.</p>
-<p>Users should be aware of the process of creating the TCP texts, and therefore of any assumptions that can be made about the data.</p>
-<p>Text selection was based on the New Cambridge Bibliography of English Literature (NCBEL). If an author (or for an anonymous work, the title) appears in NCBEL, then their works are eligible for inclusion. Selection was intended to range over a wide variety of subject areas, to reflect the true nature of the print record of the period. In general, first editions of a works in English were prioritized, although there are a number of works in other languages, notably Latin and Welsh, included and sometimes a second or later edition of a work was chosen if there was a compelling reason to do so.</p>
 
-<p>The texts were encoded and linked to page images in accordance with level 4 of the TEI in Libraries guidelines.</p>
-<p>Copies of the texts have been issued variously as SGML (TCP schema; ASCII text with mnemonic sdata character entities); displayable XML (TCP schema; characters represented either as UTF-8 Unicode or text strings within braces); or lossless XML (TEI P5, characters represented either as UTF-8 Unicode or TEI g elements).</p>
-<p>
-Keying and markup guidelines are available at the
-<ref target="http://www.textcreationpartnership.org/docs/.">Text Creation Partnership web site</ref>
-.
-</p>
-</editorialDecl>
-
-</encodingDesc>
 <profileDesc>
 <langUsage>
-<language ident="eng">eng</language>
+<language ident="en">English</language>
 </langUsage>
-<textClass>
-<keywords scheme="http://authorities.loc.gov/">
-<term>Turkey -- Description and travel.</term>
-<term>Europe -- Description and travel.</term>
-<term>Asia -- Description and travel.</term>
-<term>Africa -- Description and travel.</term>
-<term>Travel literature.</term>
-</keywords>
-</textClass>
+    <creation/>
+<textDesc n="letters">
+    <channel mode="w">print</channel>
+    <constitution type="single">epistolary work</constitution>
+    <derivation type="original"/>
+    <domain/>
+    <factuality type="applicable"/>
+    <interaction/>
+    <preparedness type="mew"/>
+    <purpose type="express"/>
+    <purpose type="inform" degree="high"/>
+    
+</textDesc>
+    <settingDesc>
+        
+        <setting>
+            <name type="tgn" key="7002473">Istanbul, Turkey</name>
+            <name type="tgn" key="7003321">Vienna, Austria</name>
+            <name type="tgn" key="7002317">Edirne, Turkey</name>
+            <time from="1716" to="1724">Early 18th Century</time>
+            <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+        </setting>
+        
+    </settingDesc>
+    
 </profileDesc>
+    <encodingDesc>
+        <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+        <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                project, which provides an accessible, reliable, curated, and marked-up selection of
+                primary sources relevant to the study and the teaching of British and American
+                literature. This project is was initially funded by the National Endowment for the
+                Humanities and developed by faculty at The University of Virginia and Marymount
+                University.</p>
+        </projectDesc>
+        <editorialDecl>
+            <interpretation>
+                <p>Research informing these annotations draws on publicly-accessible resources, with
+                    links provided where possible. Annotations have also included common knowledge,
+                    defined as information that can be found in multiple reliable sources. If you
+                    notice an error in these annotations, please contact
+                    lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+                <p>Original spelling and capitalization is retained, though the long s has been
+                    silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+                <p>Hyphenation has not been retained, except where necessary for the sense of the
+                    word.</p>
+            </hyphenation>
+            <segmentation>
+                <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                    not.</p>
+            </segmentation>
+            <correction>
+                <p>Materials have been transcribed from and checked against first editions, where
+                    possible. See the Sources section for more information.</p>
+            </correction>
+        </editorialDecl>
+        <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+                <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+        </tagsDecl>
+        <classDecl>
+            <taxonomy xml:id="lcnaf">
+                <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+                <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+                <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+                <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+        </classDecl>
+    </encodingDesc>
+    
 <revisionDesc>
-<change>
-<date>2007-04</date>
-<label>TCP</label>
-Assigned for keying and markup
-</change>
-<change>
-<date>2007-07</date>
-<label>AEL Data (Chennai)</label>
-Keyed and coded from Readex/Newsbank page images
-</change>
-<change>
-<date>2008-01</date>
-<label>Alexis Jakobson</label>
-Sampled and proofread
-</change>
-<change>
-<date>2008-01</date>
-<label>Alexis Jakobson</label>
-Text and markup reviewed and edited
-</change>
-<change>
-<date>2008-02</date>
-<label>pfs.</label>
-Batch review (QC) and XML conversion
-</change>
+<change when="2023-11-29" who="editors.xml#JOB">John O'Brien began adapting for Literature in Context edition.</change>
+
 </revisionDesc>
 </teiHeader>
-<text xml:lang="eng">
+<text>
 <front>
 <div type="half_title">
-<pb facs="unknown:041644_0000_101AD1602EB47778"/>
-<pb facs="unknown:041644_0001_101AD161B386B838" rendition="simple:additions"/>
+
+<pb/>
 <p>LETTERS OF THE RIGHT HONOURABLE Lady M—y W—y M—e</p>
 </div>
-<div type="title_page">
-<pb facs="unknown:041644_0002_101AD163E7438F38"/>
-<p>LETTERS Of the RIGHT HONOURABLE Lady M—y W—y M—e:</p>
-<p>Written, during her TRAVELS in EUROPE, ASIA AND AFRICA, TO Persons of Distinction, Men of Letters. &amp;cc. in different PARTS of EUROPE.</p>
-<p>WHICH CONTAIN, Among other CURIOUS Relations, ACCOUNTS of the POLICY and MANNERS of the TURKS; Drawn from Sources that have been inaccessible to other Travellers.</p>
-<p>THE FOURTH EDITION.</p>
-<p>PROVIDENCE, in NEW-ENGLAND: Printed and sold by SARAH GODDARD, and COMPANY.</p>
-<p>M,DCC,LXVI</p>
-</div>
+<titlePage>
+<pb/>
+    <titlePart>LETTERS Of the RIGHT HONOURABLE Lady M—y W—y M—e:
+Written, during her TRAVELS in EUROPE, ASIA AND AFRICA, TO Persons of Distinction, Men of Letters. &amp;cc. in different PARTS of EUROPE.
+WHICH CONTAIN, Among other CURIOUS Relations, ACCOUNTS of the POLICY and MANNERS of the TURKS; Drawn from Sources that have been inaccessible to other Travellers.
+THE FOURTH EDITION.</titlePart>
+<docImprint>PROVIDENCE, in NEW-ENGLAND: Printed and sold by SARAH GODDARD, and COMPANY.</docImprint>
+<docDate>M,DCC,LXVI</docDate>
+</titlePage>
 <div type="preface">
-<pb facs="unknown:041644_0003_101AD165B2807398"/>
+<pb/>
 <head>PREFACE, BY A LADY.</head>
 <head>Written in 1724.</head>
 <p>
@@ -145,7 +210,7 @@ I WAS going, like common editors, to advertise the reader of the beauties and ex
 <hi>one</hi> letter only, has not discernment to distinguish that natural elegance, that delicacy of sentiment and observation, that easy gracefulness, and lovely simplicity (which is the perfection of writing) and in which these
 <hi>Letters</hi>
 exceed all that have appeared in
-<pb n="vi" facs="unknown:041644_0004_101AD1688138DDC0"/>
+<pb n="vi"/>
 this kind, or almost in any other, let him lay the book down, and leave it to those who have.
 </p>
 <p>
@@ -184,9 +249,7 @@ cursed
 <pb n="viii" facs="unknown:041644_0006_101AD16CC9C66160"/>
 company, sly whispering, cruel back-biting, spiteful detraction, and the rest of that hideous crew, which I hope are very falsely said to attend the
 <hi>Tea-Table,</hi>
-being more apt to think they fre
-
-quent those public places where virtu
+being more apt to think they frequent those public places where virtu
 
 ous women never come. Let the men malign one another, if they think sit, and strive to pull down merit when they cannot equal it. Let us be better natured, than to give way to any unkind or disrespectful thought of so bright an ornament of our sex, merely because she has better sense; for I doubt not but our hearts will tell us, that this is the real and unpardonable offence, whatever may be pretended. Let us be better Christi
 
@@ -195,9 +258,9 @@ ans, than to look upon her with an evil eye, only because the giver of all good 
 triumphs, and proud to follow in her train. Let us offer her the palm which is so justly her due: and if we pretend to any laurels, lay them willingly at her feet.
 </p>
 <closer>
-<dateline>
+<salute>
 <date>December 18, 1724.</date>
-</dateline>
+</salute>
 <signed>M. A.</signed>
 <dateline>
 <date>May 31, 1725.</date>
@@ -289,7 +352,7 @@ hold in their author, an ornament and model to their sex.
 <head>To the Countess of—.</head>
 <opener>
 <dateline>
-<hi>Rotterdam,</hi>
+<placeName>Rotterdam,</placeName>
 <date>Aug. 3, O. S. 1716.</date>
 </dateline>
 </opener>
@@ -329,7 +392,7 @@ offer. I can write enough in the stile of Rotterdam, to tell you plainly, in one
 <head>To Mrs. S.—</head>
 <opener>
 <dateline>
-<hi>Hague,</hi>
+<placeName>Hague,</placeName>
 <date>Aug. 5, O. S. 1716,</date>
 </dateline>
 </opener>
@@ -1692,13 +1755,7 @@ Persian tales, which I find are genuine. At first, he believed I understood Pers
 
 putes with him, concerning the difference of our cus
 
-toms, particularly the confinement of women. He assures me, there is nothing at all in it; only, says he, we have the advantage, that when our wives cheat us, no body knows it. He has wit, and is more polite than many Christian men of quality. I am very much entertained with him.—He has had the curiosity to make one of our servants set him an alphabet of our letters, and can already write a good Roman hand. But these amusements do not hinder my wishing heartily to be out of this place; though the weather is colder than I believe it ever was, any where, but in Greenland.—We have a very large stove constantly kept hot, and yet the windows
-<gap reason="illegible" resp="#AELD" extent="1 letter">
-<desc>•</desc>
-</gap>
-f the room are frozen on the inside.—God knows when I may have an opportunity of sending this let
-
-ter; but I have written it, for the discharge of my own conscience; and you cannot now reproach me, that one of yours makes ten of mine. Adieu.
+toms, particularly the confinement of women. He assures me, there is nothing at all in it; only, says he, we have the advantage, that when our wives cheat us, no body knows it. He has wit, and is more polite than many Christian men of quality. I am very much entertained with him.—He has had the curiosity to make one of our servants set him an alphabet of our letters, and can already write a good Roman hand. But these amusements do not hinder my wishing heartily to be out of this place; though the weather is colder than I believe it ever was, any where, but in Greenland.—We have a very large stove constantly kept hot, and yet the windows of the room are frozen on the inside.—God knows when I may have an opportunity of sending this letter; but I have written it, for the discharge of my own conscience; and you cannot now reproach me, that one of yours makes ten of mine. Adieu.
 </p>
 </div>
 <div n="25" type="letter">
@@ -1716,15 +1773,7 @@ To his Royal Highness the Princess of Wales
 </dateline>
 </opener>
 <p>
-I HAVE now, Madam, finished a journey that has not been undertaken by any Christian, since the time of the Greek Emperors; and I shall not regret all the fatigues I have suffered in it, if it gives me an opportunity of amusing your R. H. by an account of places utterly unknown amongst us; the Emperor's Embassadors, and those few English that have come hither, always going on the Danube to Nicopolis. But the river was now frozen, and Mr. W—was so zealous for the service of his Majesty, that he would not defer his journey to wait for the conveniency of that passage. We crossed the desarts of Servia, almost quite over-grown with wood, though a country naturally fertile. The inhabitants are industrious; but the oppression of the peasants is so great, they are forced to abandon their houses, and neglect their tillage; all they have being a prey to the Janizaries, whenever they please to seize upon it. We had a guard of five hundred of them, and I was almost in tears every day, to see their ins
-<gap reason="illegible" resp="#AELD" extent="1 letter">
-<desc>•</desc>
-</gap>
-lencies in the poor villages through which we passed.—After seven days travelling through thick wood
-<gap reason="illegible" resp="#AELD" extent="1 letter">
-<desc>•</desc>
-</gap>
-, we came to Nissa, once the capital of Servia, situated in a fine plain on the river
+I HAVE now, Madam, finished a journey that has not been undertaken by any Christian, since the time of the Greek Emperors; and I shall not regret all the fatigues I have suffered in it, if it gives me an opportunity of amusing your R. H. by an account of places utterly unknown amongst us; the Emperor's Embassadors, and those few English that have come hither, always going on the Danube to Nicopolis. But the river was now frozen, and Mr. W—was so zealous for the service of his Majesty, that he would not defer his journey to wait for the conveniency of that passage. We crossed the desarts of Servia, almost quite over-grown with wood, though a country naturally fertile. The inhabitants are industrious; but the oppression of the peasants is so great, they are forced to abandon their houses, and neglect their tillage; all they have being a prey to the Janizaries, whenever they please to seize upon it. We had a guard of five hundred of them, and I was almost in tears every day, to see their insolencies in the poor villages through which we passed.—After seven days travelling through thick woods, we came to Nissa, once the capital of Servia, situated in a fine plain on the river
 <hi>Nissava,</hi>
 in a very good air, and so fruitful a soil, that the great plenty is hardly
 <pb n="68" facs="unknown:041644_0077_101AD21C4F2FAA30"/>
@@ -2641,11 +2690,7 @@ tures of those animals, I never saw any that was resembling enough, to give a tr
 </gap>
 waradin, they far out-ran the swiftest horses, and brought the first news of the loss of the battle to Belgrade. They are never thoroughly tamed; the drivers take care to tye them one to another with
 <pb n="102" facs="unknown:041644_0111_101AD267070159A8"/>
-strong ropes, fifty in a string, led by an ass, on which the driver rides. I have seen three hundred in one caravan. They carry the third part more than any horse: but 'tis a particular art to load them, because of the bunch on their backs. They seem to me very ugly creatures, their heads being ill formed and disproportioned to their bodies. They carry all the burdens; and the beasts destined to the plough are buffaloes, and animal you are also unacquainted with. They are larger and more clumsy than an ox; they have short thick black horns close to their heads, which grow turning backwards. They say this horn looks very beautiful when 'tis well polished. They are all black, with very short hair on their hides, and have extremely little white eyes, that makes them look like devils. The country people dye their tails, and the hair of their forehead red, by way of orna
-
-ment. Horses are not put here to any laborious work, nor are they at all fit for it. They are beau
-
-tiful and full of spirit, but generally little, and not strong, as the breed of colder countries; very gentle, however, with all their vivacity, and also swift and sure-footed. I have a little white favourite, that I would not part with on any terms; he prances under me with so much fire, you would think that I had a great deal of courage to dare mount him; yet I'll assure you, I never rid a horse so much at my com
+strong ropes, fifty in a string, led by an ass, on which the driver rides. I have seen three hundred in one caravan. They carry the third part more than any horse: but 'tis a particular art to load them, because of the bunch on their backs. They seem to me very ugly creatures, their heads being ill formed and disproportioned to their bodies. They carry all the burdens; and the beasts destined to the plough are buffaloes, and animal you are also unacquainted with. They are larger and more clumsy than an ox; they have short thick black horns close to their heads, which grow turning backwards. They say this horn looks very beautiful when 'tis well polished. They are all black, with very short hair on their hides, and have extremely little white eyes, that makes them look like devils. The country people dye their tails, and the hair of their forehead red, by way of ornament. Horses are not put here to any laborious work, nor are they at all fit for it. They are beautiful and full of spirit, but generally little, and not strong, as the breed of colder countries; very gentle, however, with all their vivacity, and also swift and sure-footed. I have a little white favourite, that I would not part with on any terms; he prances under me with so much fire, you would think that I had a great deal of courage to dare mount him; yet I'll assure you, I never rid a horse so much at my com
 
 mand, in my life. My side-saddle is the first that was ever seen in this part of the world, and is gazed at with as much wonder, as the ship of Columbus in the first discovery of America. Here are some little
 <gap reason="illegible" resp="#AELD" extent="2 letters">
