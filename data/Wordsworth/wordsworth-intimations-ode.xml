@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wordsworth-intimations-ode">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"Ode" [Intimations of Immortality]</title>
+             <author>
+                 <persName type="lcnaf" key="79006595">
+                     <name>
+                         <forename>William</forename>
+                         <surname>Wordsworth</surname>
+                     </name>
+                 </persName>       
+             </author>
+
+             <editor>
+                 <persName type="orcid" key="0000-0001-6453-8721">
+                     <name ref="editors.xml#JOB">
+                         <surname>O'Brien</surname>
+                         <forename>John</forename>
+                     </name>
+                 </persName>
+             </editor>
+             <respStmt>
+                 <resp>Transcription, correction, editorial commentary, and markup</resp>
+                 
+                 <name ref="editors.xml#UVAstudstaff">Students and Staff of The University of Virginia</name>
+                 
+             </respStmt>
+             <sponsor/>
+             <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+          <publicationStmt>
+              <publisher>Literature in Context</publisher>
+              <address>
+                  <addrLine>University of Virginia Department of English</addrLine>
+                  <addrLine>P. O. Box 400121</addrLine>
+                  <addrLine>Charlottesville, VA</addrLine>
+                  <addrLine>22904-4121</addrLine>
+                  <addrLine>jobrien@virginia.edu</addrLine>
+                  <addrLine>lic.open.anthology@gmail.com</addrLine>
+              </address>
+              <availability status="free">
+                  <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                      Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                      License </licence>
+              </availability>
+          </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title>"Ode"</title>
+                
+               </analytic>
+                 
+                <monogr>
+                    <author>
+                        <name>
+                            <forename>William</forename>
+                            <surname>Wordsworth</surname> 
+                        </name>
+                    </author>
+                    <title>Poems</title>
+                    <imprint>
+                        <pubPlace>
+                            <placeName type="tgn" key="7011781">London</placeName> 
+                        </pubPlace>
+                        <publisher>Longman, Hurst, Rees, and Orme</publisher>
+                        <date when="1807">1807</date>
+                        <note></note>       
+                    </imprint>
+                    
+                    <biblScope>pp 147-158</biblScope>
+                </monogr>
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+       
+            <channel mode="w">print</channel>
+         
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+        
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               
+               <time from="1800" to="1820">Early 19t Century</time>
+              
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+      
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2023-12-4" who="editors.xml#JOB"
+            >John O'Brien created Literature in Context edition</change>
+         
+      </revisionDesc>
+   </teiHeader>
+   <text>
+
+      <front> <titlePage>
+          <docAuthor></docAuthor>
+      </titlePage></front>
+         
+      <body>
+        
+          <head>ODE.</head>
+          <head><hi rend="italic">Paulo majora canamus</hi></head>
+          <head>ODE</head>
+<div type="poem">
+    
+    <pb n="147" facs="pageImages/147.png"/>
+<lg type="stanza">
+          <l>There was a time when meadow, grove, and stream,</l>
+              <l>The earth, and every common sight,</l>
+              <l rend="indent">To me did seem</l>
+              <l rend="indent">Apparell'd in celestial light,</l>
+              <l>The glory and the freshness of a dream.</l>
+              <l>It is not now as it has been of yore;--</l>
+              <l rend="indent">Turn wheresoe'er I may,</l>
+              <l rend="indent">By night or day,</l>
+              <l>The things which I have seen I now can see no more.</l></lg>
+    
+<lg type="stanza">
+    <l rend="indent" n="10">The Rainbow comes and goes,</l>     
+        <l rend="indent">And lovely is the Rose,</l>
+            
+            <pb n="148" facs="pageImages/148.png"/>
+    <l rend="indent">The Moon doth with delight</l>
+    <l rend="indent">Look round her when the heavens are bare;</l>
+    <l rend="indent">Waters on a starry night</l>
+    <l rend="indent">Are beautiful and fair;</l>
+    <l rend="indent">The sunshine is a glorious birth;</l>
+    <l rend="indent">But yet I know, where'er I go,</l>
+                            <l>That there hath pass'd away a glory from the earth.</l></lg>
+
+<lg type="stanza">
+    <l>Now, while the Birds thus sing a joyous song,</l>
+    <l rend="indent" n="20">And while the young Lambs bound </l>       
+        <l rend="indent">As to the tabor's sound,</l>
+    <l>To me alone there came a thought of grief:</l>
+    <l>A timely utterance gave that thought relief,</l>
+    <l rend="indent">And I again am strong.</l>
+                <l>The Cataracts blow their trumpets from the steep,</l>
+                    <l>No more shall grief of mine the season wrong;</l>
+                        <l>I hear the Echoes through the mountains throng,</l>
+                            <l>The Winds come to me from the fields of sleep,</l></lg>
+
+    <pb n="149" facs="pageImages/149.png"/>
+    <lg type="stanza">
+        <l rend="indent">And all the earth is gay,</l>
+        <l rend="indent" n="30">Land and sea</l>            
+        <l rend="indent">Give themselves up to jollity,</l>
+            <l rend="indent">And with the heart of May</l>
+                <l rend="indent">Doth every Beast keep holiday,</l>
+                    <l rend="indent">Thou Child of Joy</l>
+        <l>Shout round me, let me hear thy shouts, thou happy Shepherd Boy!</l></lg>
+
+        <lg type="stanza">
+            
+            <l>Ye blessed Creatures, I have heard the call</l>
+            <l rend="indent">Ye to each other make; I see</l>
+            <l>The heavens laugh with you in your jubilee;</l>
+            <l rend="indent">My heart is at your festival,</l>
+                <l rend="indent" n="40">My head hath its coronal,</l>       
+            <l>The fullness of your bliss, I feel--I feel it all.</l>
+            <l rend="indent">Oh evil day! if I were sullen</l>
+            <l rend="indent">While the Earth herself is adorning,</l>
+            <l rend="indent">This sweet May-morning,</l>
+            <l rend="indent">And the Children are pulling,</l>
+                                    
+                                    <pb n="150" facs="pageImages/150.png"/>                          
+            <l rend="indent">On every side,</l>
+            <l rend="indent">In a thousand vallies far and wide,</l>
+            <l rend="indent">Fresh flowers; while the sun shines warm,</l>
+            <l>And the Babe leaps up on his mother's arm:--</l>
+            <l rend="indent" n="50">I hear, I hear, with joy I hear!  </l>     
+                            <l rend="indent">--But there's a Tree, of many one,</l>
+                                <l>A single Field which I have look'd upon,</l>
+            <l>Both of them speak of something that is gone:</l>
+            <l rend="indent">The Pansy at my feet</l>
+            <l rend="indent">Doth the same tale repeat:</l>
+           <l> Whither is fled the visionary gleam?</l>
+           <l> Where is it now, the glory and the dream?</l></lg>
+
+            <lg type="stanza">
+                <l>Our birth is but a sleep and a forgetting:</l>
+                <l>The Soul that rises with us, our life's Star,</l>
+                <l rend="indent">Hath had elsewhere its setting,</l>
+                <l rend="indent" n="60">And cometh from afar:</l>
+                    <l rend="indent">Not in entire forgetfulness,</l>
+                        <l rend="indent">And not in utter nakedness,</l>
+
+
+                <pb n="151" facs="pageImages/151.png"/>   
+                <l>But trailing clouds of glory do we come</l>
+                <l rend="indent">From God, who is our home;</l>
+                <l>Heaven lies about us in our infancy!</l>
+                <l>Shades of the prison-house begin to close</l>
+                <l rend="indent">Upon the growing Boy,</l>
+                <l>But He beholds the light, and whence it flows,</l>
+                <l rend="indent" n="70">He sees it in his joy;  </l>      
+                <l>The Youth, who daily farther from the East</l>
+                <l rend="indent">Must travel, still is Nature's Priest,</l>
+                <l rend="indent">And by the vision splendid</l>
+                <l rend="indent">Is on his way attended;</l>
+                <l>At length the Man perceives it die away,</l>
+                <l>And fade into the light of common day.</l>
+            </lg>
+
+                <lg type="stanza">
+                    <l>Earth fills her lap with pleasures of her own;</l>
+                        <l>Yearnings she hath in her own natural kind,</l>
+                            <l>And, even with something of a Mother's mind,</l>
+                                <l rend="indent" n="80">And no unworthy aim,</l>
+                    
+                    
+                    <pb n="152" facs="pageImages/152.png"/>    
+                    <l rend="indent">The homely Nurse doth all she can</l>
+                    <l>To make her Foster-child, her Inmate Man,</l>
+                    <l rend="indent">Forget the glories he hath known,</l>
+                    <l>And that imperial palace whence he came.</l></lg>
+
+                    <lg type="stanza">
+                        <l>Behold the Child among his new-born blisses,</l>
+                        <l>A four year's Darling of a pigmy size!</l>
+                        <l>See, where mid work of his own hand he lies,</l>
+                        <l>Fretted by sallies of his Mother's kisses,</l>
+                        <l>With light upon him from his Father's eyes!</l>
+                        <l n="90">See, at his feet, some little plan or chart, </l>   
+                        <l>Some fragment from his dream of human life,</l>
+                        <l>Shap'd by himself with newly-learned art;</l>
+                        <l rend="indent">A wedding or a festival,</l>
+                        <l rend="indent">A mourning or a funeral;</l>
+                        <l rend="indent">And this hath now his heart,</l>
+                        <l rend="indent">And unto this he frames his song:</l>
+                        <l rend="indent">Then will he fit his tongue</l>
+                                            <l rend="indent">To dialogues of business, love, or strife;
+                                            </l>
+    
+    <pb n="153" facs="pageImages/153.png"/>  
+    <l rend="indent">But it will not be long</l>
+    <l rend="indent" n="100">Ere this be thrown aside, </l>          
+    <l rend="indent">And with new joy and pride</l>
+    <l>The little Actor cons another part,</l>
+    <l>Filling from time to time his "humourous stage"</l>
+    <l>With all the Persons, down to palsied Age,</l>
+    <l>That Life brings with her in her Equipage;</l>
+    <l rend="indent">As if his whole vocation</l>
+    <l rend="indent">Were endless imitation.</l>
+    </lg>
+
+    <lg type="stanza">
+        <l>Thou, whose exterior semblance doth belie</l>
+        <l rend="indent">Thy Soul's immensity;</l>
+        <l n="110">Thou best Philosopher, who yet dost keep  </l>    
+        <l>Thy heritage, thou Eye among the blind,</l>
+        <l>That, deaf and silent, read'st the eternal deep,</l>
+        <l>Haunted for ever by the eternal mind,--</l>
+        <l rend="indent">Mighty Prophet! Seer blest!</l>
+        <l rend="indent">On whom those truths do rest,</l>
+        <l>Which we are toiling all our lives to find;</l>
+        <l>Thou, over whom thy Immortality</l></lg>
+
+    <pb n="154" facs="pageImages/154.png"/>  
+    <l>Broods like the Day, a Master o'er a Slave,</l>
+    <l>A Presence which is not to be put by;</l>
+    <l rend="indent" n="120">To whom the grave </l>                      
+    <l>Is but a lonely bed without the sense or sight</l>
+    <l rend="indent">Of day or the warm light,</l>
+    <l>A place of thought where we in waiting lie;</l>
+    <l>Thou little Child, yet glorious in the might</l>
+    <l>Of untam'd pleasures, on thy Being's height,</l>
+    <l>Why with such earnest pains dost thou provoke</l>
+    <l>The Years to bring the inevitable yoke,</l>
+    <l>Thus blindly with thy blessedness at strife?</l>
+    <l>Full soon thy Soul shall have her earthly freight,</l>
+    <l n="130">And custom lie upon thee with a weight,   </l>         
+    <l>Heavy as frost, and deep almost as life!</l>
+
+    <lg type="stanza">
+        <l rend="indent">O joy! that in our embers</l>
+        <l rend="indent">Is something that doth live,</l>
+        <l rend="indent">That nature yet remembers</l>
+        <l rend="indent">What was so fugitive!</l></lg>
+    
+    <pb n="155" facs="pageImages/155.png"/>  
+
+                                        <lg type="stanza">
+                                            <l>The thought of our past years in me doth breed</l>
+                                            <l>Perpetual benedictions: not indeed</l>
+                                            <l>For that which is most worthy to be blest;</l>
+                                            <l>Delight and liberty, the simple creed</l>
+                                            <l n="140">Of Childhood, whether fluttering or at rest,  </l>     
+                                            <l>With new-born hope for ever in his breast:--</l>
+                                            <l rend="indent">Not for these I raise</l>
+                                            <l rend="indent">The song of thanks and praise;</l>
+                                            <l rend="indent">But for those obstinate questionings</l>
+                                            <l rend="indent">Of sense and outward things,</l>
+                                            <l rend="indent">Fallings from us, vanishings;</l>
+                                            <l rend="indent">Blank misgivings of a Creature</l>
+                                            <l>Moving about in worlds not realiz'd,</l>
+                                            <l>High instincts, before which our mortal Nature</l>
+                                            <l n="150">Did tremble like a guilty Thing surpriz'd: </l>       
+                                            <l rend="indent">But for those first affections,</l>
+                                            <l rend="indent">Those shadowy recollections,</l>
+                                            <l rend="indent">Which, be they what they may,</l>
+                                            <l>Are yet the fountain light of all our day,</l>
+                                            <l>Are yet a master light of all our seeing;</l>
+
+
+                                            <pb n="156" facs="pageImages/156.png"/>  
+
+
+                                            <l rend="indent">Uphold us, cherish us, and make</l>
+                                            <l>Our noisy years seem moments in the being</l>
+                                            <l>Of the eternal Silence: truths that wake,</l>
+                                            <l rend="indent">To perish never;</l>
+                                            <l n="160">Which neither listlessness, nor mad endeavour,</l> 
+                                            <l rend="indent">Nor Man nor Boy,</l>
+                                            <l>Nor all that is at enmity with joy,</l>
+                                            <l>Can utterly abolish or destroy!</l>
+                                            <l rend="indent">Hence, in a season of calm weather,</l>
+                                            <l rend="indent">Though inland far we be,</l>
+                                            <l>Our Souls have sight of that immortal sea</l>
+                                            <l rend="indent">Which brought us hither,</l>
+                                                <l>Can in a moment travel thither,</l>
+                                                <l>And see the Children sport upon the shore,</l>
+                                                <l n="170">And hear the mighty waters rolling evermore.</l>  </lg>    
+
+    <lg type="stanza">
+        <l>Then, sing ye Birds, sing, sing a joyous song!</l>
+        <l rend="indent">And let the young Lambs bound</l>
+        <l rend="indent">As to the tabor's sound!</l>
+        <l>We in thought will join your throng,</l>
+
+                                                <pb n="157" facs="pageImages/157.png"/>  
+        <l rend="indent">Ye that pipe and ye that play,</l>
+        <l rend="indent">Ye that through your hearts to day</l>
+        <l rend="indent">Feel the gladness of the May!</l>
+        <l>What though the radiance which was once so bright</l>
+        <l>Be now for ever taken from my sight,</l>
+        <l rend="indent" n="180">Though nothing can bring back the hour </l>       
+        <l>Of splendour in the grass, of glory in the flower;</l>
+            <l rend="indent">We will grieve not, rather find</l>
+        <l rend="indent">Strength in what remains behind,</l>
+        <l rend="indent">In the primal sympathy</l>
+        <l rend="indent">Which having been must ever be,</l>
+        <l rend="indent">In the soothing thoughts that spring</l>
+        <l rend="indent">Out of human suffering,</l>
+        <l rend="indent">In the faith that looks through death,</l>
+        <l>In years that bring the philosophic mind.</l></lg>
+
+   
+                                                <lg type="stanza">
+                                                    
+                                                    <l n="190">And oh ye Fountains, Meadows, Hills, and Groves,</l>
+                                                    <l>Think not of any severing of our loves!</l>
+                                                    
+                                                    <pb n="158" facs="pageImages/158.png"/> 
+                                                    
+                                                    <l>Yet in my heart of hearts I feel your might;</l>
+                                                    <l>I only have relinquish'd one delight</l>
+                                                    <l> To live beneath your more habitual sway.</l>
+                                                    <l> I love the Brooks which down their channels fret,</l>
+                                                    <l>Even more than when I tripp'd lightly as they;</l>
+                                                    <l>The innocent brightness of a new-born Day</l>
+                                                    <l rend="indent">Is lovely yet;</l>
+                                                    <l> The Clouds that gather round the setting sun</l>
+                                                    <l n="200">Do take a sober colouring from an eye    </l>    
+                                                    <l>That hath kept watch o'er man's mortality;</l>
+                                                    <l>Another race hath been, and other palms are won</l>
+                                                    <l>Thanks to the human heart by which we live,</l>
+                                                    <l>Thanks to its tenderness, its joys, and fears,</l>
+                                                    <l>To me the meanest flower that blows can give</l>
+                                                    <l>Thoughts that do often lie too deep for tears.</l>
+                                                </lg>
+
+</div>
+      </body>
+       
+       
+   </text>
+</TEI>
