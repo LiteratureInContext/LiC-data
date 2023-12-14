@@ -29,7 +29,7 @@
             </editor>
 
             <respStmt>
-               <!-- edit this content to reflect this digital edition -->
+            
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#XXX"
                   >Students and Staff at the University of Virginia</name>
@@ -82,12 +82,12 @@
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000"
-                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                      <placeName type="tgn" key="7011781"
+                           >London</placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
-                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
-                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <publisher>Thomas Cautley Newby</publisher>
+                     <date when="1847">1847</date>
+                     <note>This digital edition is based on the one created for the University of Virginia Etext Center in the 1990s. </note>
                      <!-- Add additional NOTE elements as needed  -->
                      <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
                   </imprint>
@@ -99,9 +99,9 @@
                      <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
                   </imprint>
 
-                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
-                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
-                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+                  <extent></extent>
+                  <biblScope>\</biblScope>
+                
 
                </monogr>
 
@@ -136,18 +136,18 @@
          <settingDesc>
 
             <setting>
-               <name type="tgn" key="7011781">London, England</name>
-               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="7011197">Bath, England</name>
-               <time from="1690" to="1724">Early 18th Century</time>
-               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+             <name type="tgn" key="7008171">Yorkshire, England</name>
+          
+              
+               <time from="1800" to="1850">Early 19th Century</time>
+             
             </setting>
 
          </settingDesc>
       </profileDesc>
 
       <encodingDesc>
-         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         
          <projectDesc>
             <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
                project, which provides an accessible, reliable, curated, and marked-up selection of
@@ -203,183 +203,65 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="0000-00-00" who="editors.xml#XX"
-            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
-         <change when="0000-00-00" who="xxxx"/>
+   
+        <change when="1992-11-01" who="David Gants">David Gants. TEI markup added; pagination changed to
+          correlate to the Oxford University Press's 1981 "The World's
+          Classics" edition, edited by Ian Jack.  Ambiguous line-end
+          hyphens taken out.  Spellchecked to locate and emend most
+          scanning errors. As for the differences between this unidentified
+          electronic edition and the "World's Classics" edition whose
+          pagination we have mimicked, users should note that a great many
+          spelling, typographical and punctuation emendations have been
+          introduced by the Oxford editor, Ian Jack.  This is especially
+          true in the passages where Bronte has attempted to reproduce the
+          Yorkshire dialect.  Note also that, while this edition is broken into
+          two volumes of chapters 1-14 and 1-20, earlier editions have but one
+          volume containing chapters 1-34.</change>
+         
+       <change when="2005-06" who="John Ivor Carlson">John Ivor Carlson converted sgml to xml</change>
+         
+       <change when="2007-09" who="Ethan Gruber">Ethan Gruber migrated xml market from TEI Lite to uva-dl-tei (TEI P4 with local customizations).</change>
+         
+       <change when="2008-01" who="Greg Murray">Greg Murray programmatically updated TEI header markup (but not header content) for minimal compliance with current QA requirements.</change>
+         <change when="2023-12-15" who="editors.xml#JOB">John O'Brien created Literature in Context Edition</change>
+       
       </revisionDesc>
 
    </teiHeader>
 
-   <!-- ************************************************************************** -->
+  
 
    <text>
 
       <front>
          <titlePage>
-            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
-            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
-            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
+            <pb n=""/>
+           
+            <titlePart>Wuthering Heights<lb/>
+            A NOVEL,<lb/>
+            BY<lb/>
+            ELLIS BELL,<lb/>
+             <lb/>
+            IN THREE VOLUMES</titlePart>
             <titlePart/>
-            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
+            
             <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
                   resp="XXX"/><lb/>
                <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
             </titlePart>
             <docImprint>
-               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
-               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
-                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
-                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
-                     Browne</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
-                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+             <pubPlace><placeName type="tgn" key="7011781"/>London</pubPlace>
+               <lb/> <publisher>THOMAS CAUTLEY NEWBRY</publisher> 
+             <pubPlace>72, Mortimer Street, Cavendish Sq.</pubPlace>.<lb/> <docDate>1847</docDate>. 
             </docImprint>
          </titlePage>
       </front>
       <body>
-         
 
-         <div type="chapter">
-            <!-- note structure for prose -->
-            <head type="sub"/>
-            <p/>
-            <floatingText>
-               <body>
-                  <div type="letter">
-                     <salute/>
-                     <p><?oxy-placeholder content="If including an embedded document--a poem, a letter, and so on--FLOATINGTEXT is a good solution."?></p>
-                     <signed/>
-                     <dateline/>
-                  </div>
-               </body>
-            </floatingText>
-         </div>
-
-         
-      
-
-
-
-<respStmt>
-<resp>Creation of machine-readable version:</resp>
-<name>Online Book Initiative</name>
-<resp>Conversion to TEI-conformant markup:</resp>
-<name>University of Virginia Library Electronic Text Center</name>
-</respStmt>
-</titleStmt>
-<extent>ca. <num type="kilobytes">661</num> kilobytes</extent>
-<publicationStmt>
-<publisher>University of Virginia Library</publisher>
-<pubPlace>Charlottesville, Virginia</pubPlace>
-<idno type="ETC">BroWuth</idno>
-<date value="1993">1993</date>
-<availability status="public">
-<p n="copyright">Copyright &copy; 1993 by the Rector and Visitors of the University of Virginia</p>
-<p n="access">Publicly accessible</p>
-</availability>
-<idno type="uva-pid">uva-lib:475754</idno>
-</publicationStmt>
-<seriesStmt>
-<title>University of Virginia Library, Text collection</title>
-<idno type="uva-set">UVA-LIB-Text</idno>
-</seriesStmt>
-<sourceDesc>
-<biblFull>
-<titleStmt>
-<title type="main">Wuthering Heights</title>
-<title type="sort">wuthering heights</title>
-<author>Bronte, Emily</author>
-</titleStmt>
-<publicationStmt>
-<p/>
-</publicationStmt>
-</biblFull>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<projectDesc>
-<p>Prepared for the University of Virginia Library Electronic Text Center</p>
-</projectDesc>
-<editorialDecl>
-<p>All quotation marks retained as data</p>
-<p>spell-check and verification made against printed text using WordPerfect spell checker</p>
-<p>All unambiguous end-of-line hyphens have been removed, and the trailing part of a word has been joined to the preceding line.</p> 
-<p id="ETC">Keywords in the header are a local Electronic Text Center scheme to aid in establishing analytical groupings</p>
-</editorialDecl>
-<refsDecl>
-<p>ID elements are given for each page element and are composed of the text's unique cryptogram and the given page number, as in SpeFQue1 for page one of Spenser's Faerie Queene.</p>
-</refsDecl>
-</encodingDesc>
-<profileDesc>
-<creation>
-<date value="1847">1847</date>
-</creation>
-<langUsage>
-<language id="eng" usage="main">English</language>
-</langUsage>
-<textClass>
-<keywords>
-<term>fiction</term>
-<term>Prose</term>
-</keywords>
-</textClass>
-</profileDesc>
-<revisionDesc>
-<change>
-<date value="1992-11">November 1992</date>
-<respStmt>
-<resp>tagger</resp>
-<name>David Gants, Electronic Text Center, University of Virginia</name>
-</respStmt>
-<item>TEI markup added; pagination changed to
-correlate to the Oxford University Press's 1981 "The World's
-Classics" edition, edited by Ian Jack.  Ambiguous line-end
-hyphens taken out.  Spellchecked to locate and emend most
-scanning errors. As for the differences between this unidentified
-electronic edition and the "World's Classics" edition whose
-pagination we have mimicked, users should note that a great many
-spelling, typographical and punctuation emendations have been
-introduced by the Oxford editor, Ian Jack.  This is especially
-true in the passages where Bronte has attempted to reproduce the
-Yorkshire dialect.  Note also that, while this edition is broken into
-two volumes of chapters 1-14 and 1-20, earlier editions have but one
-volume containing chapters 1-34.</item>
-</change>
-<change>
-<date value="2005-06">June 2005</date>
-<respStmt>
-<resp>corrector</resp>
-<name>John Ivor Carlson</name>
-</respStmt>
-<item>Converted sgml to xml.</item>
-</change>
-<change>
-<date value="2007-09">September 2007</date>
-<respStmt>
-<resp>Migration</resp>
-<name>Ethan Gruber, University of Virginia Library</name>
-</respStmt>
-<item>Converted XML markup from TEI Lite to uva-dl-tei (TEI P4 with local customizations).</item>
-</change>
-<change>
-<date value="2008-01">January 2008</date>
-<respStmt>
-<resp>Migration</resp>
-<name>Greg Murray, University of Virginia Library</name>
-</respStmt>
-<item>Programmatically updated TEI header markup (but not header content) for minimal compliance with current QA requirements.</item>
-</change>
-</revisionDesc>
-</teiHeader>
-
-<text id="d1">
-
-<body id="d2">
-<div1 type="volume" n="1" id="d3">
+<div type="volume" n="1">
 <head>Volume 1</head>
 
-<div2 type="chapter" n="1.1" id="d4">
+<div type="chapter" n="1.1">
 <head>Chapter 1.1</head>
 
 <pb n="1"/>
@@ -611,7 +493,7 @@ I was encouraged so far as to volunteer another visit to-morrow. </p>
 I shall go, notwithstanding. It is astonishing
 how sociable I feel myself, compared with him.</p>
 
-</div2>
+</div>
 
 <div2 type="chapter" n="1.2" id="d5">
 <head>Chapter 1.2</head>
@@ -6429,7 +6311,7 @@ fascination that lurks in Catherine Heathcliff's brilliant
 eyes. I should be in a curious taking if I surrendered
 my heart to that young person, and the daughter
 turned out a second edition of the mother! </p>
-</div2></div1>
+</div2></div>
 
 <div1 type="volume" n="2" id="d19">
 <head>Volume 2</head>
