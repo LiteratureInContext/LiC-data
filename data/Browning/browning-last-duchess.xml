@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="browning-last-duchess">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">"Italy" ["My Last Duchess"]</title>
+                <author>
+                    <persName type="lcnaf" key="n79043688 ">
+                        <name>
+                            <forename>Robert</forename>
+                            <surname>Browning</surname>
+                        </name>
+                    </persName>
+                </author>
+
+                <editor>
+                    <persName>
+                        <name ref="editors.xml#TH">
+                            <forename>Tonya</forename>
+                            <surname>Howe</surname>
+                        </name>
+                    </persName>
+                </editor>
+
+                <respStmt>
+
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#StudsStaff">Students and Staff at the University of
+                        Virginia </name>
+                    <name ref="editors.xml#TH">Tonya Howe</name>
+
+                </respStmt>
+
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA, 22901</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+
+                <biblStruct>
+
+                    <analytic>
+
+                        <title>"Italy" ["My Last Duchess"]</title>
+
+                    </analytic>
+
+                    <monogr>
+                        <author>
+                            <name>
+                                <forename>Robert</forename>
+                                <surname>Browning</surname>
+                            </name>
+                        </author>
+
+                        <title>Bells and Pomegranates. No. III. Dramatic Lyrics</title>
+
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="London" key="7011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Edward Moxon, Dover Street</publisher>
+                            <date when="1842">1842</date>
+                            <note>"My Last Duchess" was first printed in the third volume ("Dramatic Lyrics") of <hi rend="italic">Bells and Pomegranates</hi>, an 8-part self-published collection, under the title "I. Italy." This was the first part of a longer piece in two parts called "Italy and France." It was first printed under its more familiar title in the 1849 collection <hi rend="italic">Dramatic Romances and Lyrics</hi>. The poem is frequently anthologized as an example of a dramatic monologue. "Ferrara" is the poetic speaker--this is most likely meant to represent Alfonso II (1533-1598), the fifth duke of Ferrara.</note>
+
+                        </imprint>
+
+
+                        <extent/>
+                        <biblScope>No. 3</biblScope>
+                        <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+                    </monogr>
+
+                </biblStruct>
+
+            </sourceDesc>
+
+        </fileDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+
+            <creation/>
+
+            <textDesc n="poem">
+
+                <channel mode="w">print</channel>
+
+                <constitution type="single">single poem</constitution>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="inapplicable"/>
+                <interaction/>
+                <preparedness/>
+                <purpose type="express"/>
+                <purpose type="entertain"/>
+                <!-- interpretation in the textDesc will be necessary -->
+            </textDesc>
+
+            <settingDesc>
+
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>
+
+                    <time from="1830" to="1850">Mid-Nineteenth Century</time>
+
+                </setting>
+
+            </settingDesc>
+        </profileDesc>
+
+        <encodingDesc>
+
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, reliable, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature. This project is was initially funded by the National
+                    Endowment for the Humanities and developed by faculty at The University of
+                    Virginia and Marymount University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section for more information.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Numbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgm">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+
+        <revisionDesc>
+            <change when="2023-12-16" who="editors.xml#TH">work begun on LIC edition</change>
+
+        </revisionDesc>
+
+    </teiHeader>
+
+
+    <text>
+
+        <front>
+            <titlePage>
+                <docTitle>
+                    <titlePart>BELLS AND POMEGRANATES.</titlePart>
+                    <titlePart>No. III.--DRAMATIC LYRICS.</titlePart>
+                </docTitle>
+                <docAuthor>BY ROBERT BROWNING,<lb/>AUTHOR OF "PARACELSUS."<lb/></docAuthor>
+
+                <docImprint>
+                    <pubPlace><placeName type="tgn" key="7011781">London:<lb/></placeName></pubPlace>
+                    <lb/><publisher>EDWARD MOXON, DOVER STREET.<lb/></publisher>
+                   
+                    <docDate>MDCCCXLII</docDate>
+                    <lb/>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+
+            <div type="monologue">
+                <head type="main">My Last Duchess</head>
+                <sp><speaker>FERRARA</speaker>
+                <lg>
+                    <l n="1">That's my last Duchess painted on the wall,</l>
+                    <l n="2">Looking as if she were alive. I call</l>
+                    <l n="3">That piece a wonder, now: Frà Pandolf's hands</l>
+                    <l n="4">Worked busily a day, and there she stands.</l>
+                    <l n="5">Will 't please you sit and look at her? I said</l>
+                    <l n="6">"Frà Pandolf" by design, for never read</l>
+                    <l n="7">Strangers like you that pictured countenance,</l>
+                    <l n="8">The depth and passion of its earnest glance,</l>
+                    <l n="9">But to myself they turned (since none puts by</l>
+                    <l n="10">The curtain I have drawn for you, but I)</l>
+                    <l n="11">And seemed as they would ask me, if they durst,</l>
+                    <l n="12">How such a glance came there; so, not the first</l>
+                    <l n="13">Are you to turn and ask thus. Sir, 'twas not</l>
+                    <l n="14">Her husband's presence only, called that spot</l>
+                    <l n="15">Of joy into the Duchess' cheek: perhaps</l>
+                    <l n="16">Frà Pandolf chanced to say, "Her mantle laps</l>
+                    <l n="17">Over my Lady's wrist too much," or "Paint</l>
+                    <l n="18">Must never hope to reproduce the faint</l>
+                    <l n="19">Half-flush that dies along her throat"; such stuff</l>
+                    <l n="20">Was courtesy, she thought, and cause enough</l>
+                    <l n="21">For calling up that spot of joy. She had</l>
+                    <l n="22">A heart . . . how shall I say? . . . too soon made glad,</l>
+                    <l n="23">Too easily impressed; she liked whate'er</l>
+                    <l n="24">She looked on, and her looks went everywhere.</l>
+                    <l n="25">Sir, 'twas all one! My favour at her breast,</l>
+                    <l n="26">The dropping of the daylight in the West,</l>
+                    <l n="27">The bough of cherries some officious fool</l>
+                    <l n="28">Broke in the orchard for her, the white mule</l>
+                    <l n="29">She rode with round the terrace--all and each</l>
+                    <l n="30">Would draw from her alike the approving speech,</l>
+                    <l n="31">Or blush, at least. She thanked men,--good; but thanked</l>
+                    <l n="32">Somehow . . . I know not how . . . as if she ranked</l>
+                    <l n="33">My gift of a nine-hundred-years-old name</l>
+                    <l n="34">With anybody's gift. Who'd stoop to blame</l>
+                    <l n="35">This sort of trifling? Even had you skill</l>
+                    <l n="36">In speech--(which I have not)--to make your will</l>
+                    <l n="37">Quite clear to such an one, and say, "Just this</l>
+                    <l n="38">Or that in you disgusts me; here you miss,</l>
+                    <l n="39">Or there exceed the mark"--and if she let</l>
+                    <l n="40">Herself be lessoned so, nor plainly set</l>
+                    <l n="41">Her wits to yours, forsooth, and made excuse,</l>
+                    <l n="42">--E'en then would be some stooping; and I chuse</l>
+                    <l n="43">Never to stoop. Oh, sir, she smiled, no doubt,</l>
+                    <l n="44">Whene'er I passed her; but who passed without</l>
+                    <l n="45">Much the same smile? This grew; I gave commands;</l>
+                    <l n="46">Then all smiles stopped together. There she stands</l>
+                    <l n="47">As if alive. Will 't please you rise? We'll meet</l>
+                    <l n="48">The company below, then. I repeat,</l>
+                    <l n="49">The Count your Master's known munificence</l>
+                    <l n="50">Is ample warrant that no just pretence</l>
+                    <l n="51">Of mine for dowry will be disallowed;</l>
+                    <l n="52">Though his fair daughter's self, as I avowed</l>
+                    <l n="53">At starting, is my object. Nay, we'll go</l>
+                    <l n="54">Together down, Sir! Notice Neptune, though,</l>
+                    <l n="55">Taming a sea-horse, thought a rarity,</l>
+                    <l n="56">Which Claus of Innsbruck cast in bronze for me.</l>
+                </lg></sp>
+            </div>
+            
+        </body>
+    </text>
+</TEI>
