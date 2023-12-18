@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="browning-fra-lippo-lippi">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">"Fra Lippo Lippi"</title>
+                <author>
+                    <persName type="lcnaf" key="n79043688 ">
+                        <name>
+                            <forename>Robert</forename>
+                            <surname>Browning</surname>
+                        </name>
+                    </persName>
+                </author>
+
+                <editor>
+                    <persName>
+                        <name ref="editors.xml#TH">
+                            <forename>Tonya</forename>
+                            <surname>Howe</surname>
+                        </name>
+                    </persName>
+                </editor>
+
+                <respStmt>
+
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#StudsStaff">Students and Staff at the University of
+                        Virginia</name>
+                    <name ref="editors.xml#TH">Tonya Howe</name>
+
+                </respStmt>
+
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA, 22901</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+
+                <biblStruct>
+
+                    <analytic>
+
+                        <title>"Porphyria" ["Porphyria's Lover"]</title>
+
+                    </analytic>
+
+                    <monogr>
+                        <author>
+                            <name>
+                                <forename>Robert</forename>
+                                <surname>Browning</surname>
+                            </name>
+                        </author>
+
+                        <title>Men and Women</title>
+
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="London" key="7011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Chapman and Hall</publisher>
+                            <date when="1855">1855</date>
+                            <note>Both volumes of the first edition of <hi rend="italic">Men and
+                                    Women</hi> are available at <ref
+                                    target="https://archive.org/details/browningmenandwomen01/"
+                                    >Internet Archive</ref>. Page breaks for this edition follow
+                                those in the 1855 text. </note>
+
+                        </imprint>
+
+
+                        <extent/>
+                        <biblScope>pp 25-38</biblScope>
+                        <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+                    </monogr>
+
+                </biblStruct>
+
+            </sourceDesc>
+
+        </fileDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+
+            <creation/>
+
+            <textDesc n="poem">
+
+                <channel mode="w">print</channel>
+
+                <constitution type="single">single poem</constitution>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="inapplicable"/>
+                <interaction/>
+                <preparedness/>
+                <purpose type="express"/>
+                <purpose type="entertain"/>
+                <!-- interpretation in the textDesc will be necessary -->
+            </textDesc>
+
+            <settingDesc>
+
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>
+
+                    <time from="1830" to="1870">Mid-Nineteenth Century</time>
+
+                </setting>
+
+            </settingDesc>
+        </profileDesc>
+
+        <encodingDesc>
+
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, reliable, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature. This project is was initially funded by the National
+                    Endowment for the Humanities and developed by faculty at The University of
+                    Virginia and Marymount University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section for more information.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Numbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgm">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+
+        <revisionDesc>
+            <change when="2023-12-16" who="editors.xml#TH">work begun on LIC edition</change>
+
+        </revisionDesc>
+
+    </teiHeader>
+
+
+    <text>
+
+        <front>
+            <pb n="[TP]" facs="pageImages/TP.jpeg"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart>MEN AND WOMEN.</titlePart>
+                </docTitle>
+                <docAuthor>BY<lb/>ROBERT BROWNING.</docAuthor>
+                <titlePart>IN TWO VOLUMES.<lb/>VOL. I.</titlePart>
+                <docImprint>
+                    <pubPlace><placeName type="tgn" key="7011781"
+                        >London:<lb/></placeName></pubPlace>
+                    <lb/><publisher>CHAPMAN AND HALL, 193, PICADILLY<lb/></publisher>
+                    <docDate>1855</docDate>
+                    <lb/>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="25"/>
+            <div type="poem">
+                <head type="main">Fra Lippo Lippi</head>
+                <lg>
+                    <l n="1">I am poor brother Lippo, by your leave!</l>
+                    <l n="2">You need not clap your torches to my face.</l>
+                    <l n="3">Zooks, what's to blame? you think you see a monk!</l>
+                    <l n="4">What, 'tis past midnight, and you go the rounds,</l>
+                    <l n="5">And here you catch me at an alley's end</l>
+                    <l n="6">Where sportive ladies leave their doors ajar?</l>
+                    <l n="7">The Carmine's my cloister: hunt it up,</l>
+                    <l n="8">Do,--harry out, if you must show your zeal,</l>
+                    <l n="9">Whatever rat, there, haps on his wrong hole,</l>
+                    <l n="10">And nip each softling of a wee white mouse,</l>
+                    <l n="11">Weke, weke, that's crept to keep him company!</l>
+                    <l n="12">Aha, you know your betters! Then, you'll take</l>
+                    <pb n="36"/>
+                    <l n="13">Your hand away that's fiddling on my throat,</l>
+                    <l n="14">And please to know me likewise. Who am I?</l>
+                    <l n="15">Why, one, sir, who is lodging with a friend</l>
+                    <l n="16">Three streets off--he's a certain . . . how d'ye call?</l>
+                    <l n="17">Master--a ...Cosimo of the Medici,</l>
+                    <l n="18">I' the house that caps the corner. Boh! you were best!</l>
+                    <l n="19">Remember and tell me, the day you're hanged,</l>
+                    <l n="20">How you affected such a gullet's-gripe!</l>
+                    <l n="21">But you, sir, it concerns you that your knaves</l>
+                    <l n="22">Pick up a manner nor discredit you:</l>
+                    <l n="23">Zooks, are we pilchards, that they sweep the streets</l>
+                    <l n="24">And count fair price what comes into their net?</l>
+                    <l n="25">He's Judas to a tittle, that man is!</l>
+                    <l n="26">Just such a face! Why, sir, you make amends.</l>
+                    <l n="27">Lord, I'm not angry! Bid your hang-dogs go</l>
+                    <l n="28">Drink out this quarter-florin to the health</l>
+                    <l n="29">Of the munificent House that harbours me</l>
+                    <l n="30">(And many more beside, lads! more beside!)</l>
+                    <l n="31">And all's come square again. I'd like his face--</l>
+                    <l n="32">His, elbowing on his comrade in the door</l>
+                    <pb n="37"/>
+                    <l n="33">With the pike and lantern,--for the slave that holds</l>
+                    <l n="34">John Baptist's head a-dangle by the hair</l>
+                    <l n="35">With one hand ("Look you, now," as who should say)</l>
+                    <l n="36">And his weapon in the other, yet unwiped!</l>
+                    <l n="37">It's not your chance to have a bit of chalk,</l>
+                    <l n="38">A wood-coal or the like? or you should see!</l>
+                    <l n="39">Yes, I'm the painter, since you style me so.</l>
+                    <l n="40">What, brother Lippo's doings, up and down,</l>
+                    <l n="41">You know them and they take you? like enough!</l>
+                    <l n="42">I saw the proper twinkle in your eye--</l>
+                    <l n="43">'Tell you, I liked your looks at very first.</l>
+                    <l n="44">Let's sit and set things straight now, hip to haunch.</l>
+                    <l n="45">Here's spring come, and the nights one makes up bands</l>
+                    <l n="46">To roam the town and sing out carnival,</l>
+                    <l n="47">And I've been three weeks shut within my mew,</l>
+                    <l n="48">A-painting for the great man, saints and saints</l>
+                    <l n="49">And saints again. I could not paint all night--</l>
+                    <l n="50">Ouf! I leaned out of window for fresh air.</l>
+                    <l n="51">There came a hurry of feet and little feet,</l>
+                    <l n="52">A sweep of lute strings, laughs, and whifts of song, --</l>
+                    <pb n="38"/>
+                    <l n="53"><hi rend="italic">Flower o' the broom,</hi></l>
+                    <l n="54"><hi rend="italic">Take away love, and our earth is a tomb!</hi></l>
+                    <l n="55"><hi rend="italic">Flower o' the quince,</hi></l>
+                    <l n="56"><hi rend="italic">I let Lisa go, and what good in life since?</hi></l>
+                    <l n="57"><hi rend="italic">Flower o' the thyme--</hi>and so on. Round they
+                        went.</l>
+                    <l n="58">Scarce had they turned the corner when a titter</l>
+                    <l n="59">Like the skipping of rabbits by moonlight,--three slim shapes,</l>
+                    <l n="60">And a face that looked up . . . zooks, sir, flesh and blood,</l>
+                    <l n="61">That's all I'm made of! Into shreds it went,</l>
+                    <l n="62">Curtain and counterpane and coverlet,</l>
+                    <l n="63">All the bed-furniture--a dozen knots,</l>
+                    <l n="64">There was a ladder! Down I let myself,</l>
+                    <l n="65">Hands and feet, scrambling somehow, and so dropped,</l>
+                    <l n="66">And after them. I came up with the fun</l>
+                    <l n="67">Hard by Saint Laurence, hail fellow, well met,--</l>
+                    <l n="68"><hi rend="italic">Flower o' the rose,</hi></l>
+                    <l n="69"><hi rend="italic">If I've been merry, what matter who knows?</hi></l>
+                    <l n="70">And so as I was stealing back again</l>
+                    <l n="71">To get to bed and have a bit of sleep</l>
+                    <pb n="39"/>
+                    <l n="72">Ere I rise up to-morrow and go work</l>
+                    <l n="73">On Jerome knocking at his poor old breast</l>
+                    <l n="74">With his great round stone to subdue the flesh,</l>
+                    <l n="75">You snap me of the sudden. Ah, I see!</l>
+                    <l n="76">Though your eye twinkles still, you shake your head--</l>
+                    <l n="77">Mine's shaved--a monk, you say--the sting 's in that!</l>
+                    <l n="78">If Master Cosimo announced himself,</l>
+                    <l n="79">Mum's the word naturally; but a monk!</l>
+                    <l n="80">Come, what am I a beast for? tell us, now!</l>
+                    <l n="81">I was a baby when my mother died</l>
+                    <l n="82">And father died and left me in the street.</l>
+                    <l n="83">I starved there, God knows how, a year or two</l>
+                    <l n="84">On fig-skins, melon-parings, rinds and shucks,</l>
+                    <l n="85">Refuse and rubbish. One fine frosty day,</l>
+                    <l n="86">My stomach being empty as your hat,</l>
+                    <l n="87">The wind doubled me up and down I went.</l>
+                    <l n="88">Old Aunt Lapaccia trussed me with one hand,</l>
+                    <l n="89">(Its fellow was a stinger as I knew)</l>
+                    <l n="90">And so along the wall, over the bridge,</l>
+                    <l n="91">By the straight cut to the convent. Six words there,</l>
+                    <pb n="40"/>
+                    <l n="92">While I stood munching my first bread that month:</l>
+                    <l n="93">"So, boy, you're minded," quoth the good fat father</l>
+                    <l n="94">Wiping his own mouth, 'twas refection-time,--</l>
+                    <l n="95">"To quit this very miserable world?</l>
+                    <l n="96">Will you renounce" . . . "the mouthful of bread?" thought I;</l>
+                    <l n="97">By no means! Brief, they made a monk of me;</l>
+                    <l n="98">I did renounce the world, its pride and greed,</l>
+                    <l n="99">Palace, farm, villa, shop, and banking-house,</l>
+                    <l n="100">Trash, such as these poor devils of Medici</l>
+                    <l n="101">Have given their hearts to--all at eight years old.</l>
+                    <l n="102">Well, sir, I found in time, you may be sure,</l>
+                    <l n="103">'Twas not for nothing--the good bellyful,</l>
+                    <l n="104">The warm serge and the rope that goes all round,</l>
+                    <l n="105">And day-long blessed idleness beside!</l>
+                    <l n="106">"Let's see what the urchin's fit for"--that came next.</l>
+                    <l n="107">Not overmuch their way, I must confess.</l>
+                    <l n="108">Such a to-do! They tried me with their books:</l>
+                    <l n="109">Lord, they'd have taught me Latin in pure waste!</l>
+                    <l n="110"><hi rend="italic">Flower o' the clove.</hi></l>
+                    <pb n="41"/>
+                    <l n="111"><hi rend="italic">All the Latin I construe is, "amo" I love!</hi></l>
+                    <l n="112">But, mind you, when a boy starves in the streets</l>
+                    <l n="113">Eight years together, as my fortune was,</l>
+                    <l n="114">Watching folk's faces to know who will fling</l>
+                    <l n="115">The bit of half-stripped grape-bunch he desires,</l>
+                    <l n="116">And who will curse or kick him for his pains,--</l>
+                    <l n="117">Which gentleman processional and fine,</l>
+                    <l n="118">Holding a candle to the Sacrament,</l>
+                    <l n="119">Will wink and let him lift a plate and catch</l>
+                    <l n="120">The droppings of the wax to sell again,</l>
+                    <l n="121">Or holla for the Eight and have him whipped,--</l>
+                    <l n="122">How say I?--nay, which dog bites, which lets drop</l>
+                    <l n="123">His bone from the heap of offal in the street,--</l>
+                    <l n="124">Why, soul and sense of him grow sharp alike,</l>
+                    <l n="125">He learns the look of things, and none the less</l>
+                    <l n="126">For admonition from the hunger-pinch.</l>
+                    <l n="127">I had a store of such remarks, be sure,</l>
+                    <l n="128">Which, after I found leisure, turned to use.</l>
+                    <l n="129">I drew men's faces on my copy-books,</l>
+                    <l n="130">Scrawled them within the antiphonary's marge,</l>
+                    <pb n="42"/>
+                    <l n="131">Joined legs and arms to the long music-notes,</l>
+                    <l n="132">Found eyes and nose and chin for A's and B's,</l>
+                    <l n="133">And made a string of pictures of the world</l>
+                    <l n="134">Betwixt the ins and outs of verb and noun,</l>
+                    <l n="135">On the wall, the bench, the door. The monks looked black.</l>
+                    <l n="136">"Nay," quoth the Prior, "turn him out, d'ye say?</l>
+                    <l n="137">In no wise. Lose a crow and catch a lark.</l>
+                    <l n="138">What if at last we get our man of parts,</l>
+                    <l n="139">We Carmelites, like those Camaldolese</l>
+                    <l n="140">And Preaching Friars, to do our church up fine</l>
+                    <l n="141">And put the front on it that ought to be!"</l>
+                    <l n="142">And hereupon he bade me daub away.</l>
+                    <l n="143">Thank you! my head being crammed, the walls a blank,</l>
+                    <l n="144">Never was such prompt disemburdening.</l>
+                    <l n="145">First, every sort of monk, the black and white,</l>
+                    <l n="146">I drew them, fat and lean: then, folk at church,</l>
+                    <l n="147">From good old gossips waiting to confess</l>
+                    <pb n="43"/>
+                    <l n="148">Their cribs of barrel-droppings, candle-ends,--</l>
+                    <l n="149">To the breathless fellow at the altar-foot,</l>
+                    <l n="150">Fresh from his murder, safe and sitting there</l>
+                    <l n="151">With the little children round him in a row</l>
+                    <l n="152">Of admiration, half for his beard and half</l>
+                    <l n="153">For that white anger of his victim's son</l>
+                    <l n="154">Shaking a fist at him with one fierce arm,</l>
+                    <l n="155">Signing himself with the other because of Christ</l>
+                    <l n="156">(Whose sad face on the cross sees only this</l>
+                    <l n="157">After the passion of a thousand years)</l>
+                    <l n="158">Till some poor girl, her apron o'er her head,</l>
+                    <l n="159">(Which the intense eyes looked through) came at eve</l>
+                    <l n="160">On tiptoe, said a word, dropped in a loaf,</l>
+                    <l n="161">Her pair of earrings and a bunch of flowers</l>
+                    <l n="162">(The brute took growling), prayed, and so was gone.</l>
+                    <l n="163">I painted all, then cried " `T#is ask and have;</l>
+                    <l n="164">Choose, for more's ready!"--laid the ladder flat,</l>
+                    <l n="165">And showed my covered bit of cloister-wall.</l>
+                    <l n="166">The monks closed in a circle and praised loud</l>
+                    <l n="167">Till checked, taught what to see and not to see,</l>
+                    <l n="168">Being simple bodies,--"That's the very man!</l>
+                    <pb n="44"/>
+                    <l n="169">Look at the boy who stoops to pat the dog!</l>
+                    <l n="170">That woman's like the Prior's niece who comes</l>
+                    <l n="171">To care about his asthma: it's the life!''</l>
+                    <l n="172">But there my triumph's straw-fire flared and funked;</l>
+                    <l n="173">Their betters took their turn to see and say:</l>
+                    <l n="174">The Prior and the learned pulled a face</l>
+                    <l n="175">And stopped all that in no time. "How? what's here?</l>
+                    <l n="176">Quite from the mark of painting, bless us all!</l>
+                    <l n="177">Faces, arms, legs, and bodies like the true</l>
+                    <l n="178">As much as pea and pea! it's devil's-game!</l>
+                    <l n="179">Your business is not to catch men with show,</l>
+                    <l n="180">With homage to the perishable clay,</l>
+                    <l n="181">But lift them over it, ignore it all,</l>
+                    <l n="182">Make them forget there's such a thing as flesh.</l>
+                    <l n="183">Your business is to paint the souls of men--</l>
+                    <l n="184">Man's soul, and it's a fire, smoke . . . no, it's not . . .</l>
+                    <l n="185">It's vapour done up like a new-born babe--</l>
+                    <l n="186">(In that shape when you die it leaves your mouth)</l>
+                    <l n="187">It's . . . well, what matters talking, it's the soul!</l>
+                    <l n="188">Give us no more of body than shows soul!</l>
+                    <l n="189">Here's Giotto, with his Saint a-praising God,</l>
+                    <l n="190">That sets us praising--why not stop with him?</l>
+                    <l n="191">Why put all thoughts of praise out of our head</l>
+                    <l n="192">With wonder at lines, colours, and what not?</l>
+                    <l n="193">Paint the soul, never mind the legs and arms!</l>
+                    <l n="194">Rub all out, try at it a second time.</l>
+                    <l n="195">Oh, that white smallish female with the breasts,</l>
+                    <l n="196">She's just my niece . . . Herodias, I would say,--</l>
+                    <pb n="46"/>
+                    <l n="197">The Prior's niece . . . patron-saint--is it so pretty</l>
+                    <l n="198">You can't discover if it means hope, fear,</l>
+                    <l n="199">Sorrow or joy? won't beauty go with these?</l>
+                    <l n="200">Suppose I've made her eyes all right and blue,</l>
+                    <l n="201">Can't I take breath and try to add life's flash,</l>
+                    <l n="202">And then add soul and heighten them three-fold?</l>
+                    <l n="203">Or say there's beauty with no soul at all--</l>
+                    <l n="204">(I never saw it--put the case the same--)</l>
+                    <l n="205">If you get simple beauty and nought else,</l>
+                    <l n="206">You get about the best thing God invents:</l>
+                    <l n="207">That's somewhat: and you'll find the soul you have missed,</l>
+                    <l n="208">Within yourself, when you return him thanks.</l>
+                    <l n="209">"Rub all out!" Well, well, there's my life, in short,</l>
+                    <l n="210">And so the thing has gone on ever since.</l>
+                    <l n="211">I'm grown a man no doubt, I've broken bounds:</l>
+                    <l n="212">You should not take a fellow eight years old</l>
+                    <l n="213">And make him swear to never kiss the girls.</l>
+                    <l n="214">I'm my own master, paint now as I please--</l>
+                    <l n="215">Having a friend, you see, in the Corner-house!</l>
+                    <l n="216">Lord, it's fast holding by the rings in front--</l>
+                    <l n="217">Those great rings serve more purposes than just</l>
+                    <l n="218">To plant a flag in, or tie up a horse!</l>
+                    <l n="219">And yet the old schooling sticks, the old grave eyes</l>
+                    <l n="220">Are peeping o'er my shoulder as I work,</l>
+                    <l n="221">The heads shake still--"It's art's decline, my son!</l>
+                    <l n="222">You're not of the true painters, great and old;</l>
+                    <l n="223">Brother Angelico's the man, you'll find;</l>
+                    <l n="224">Brother Lorenzo stands his single peer:</l>
+                    <l n="225">Fag on at flesh, you'll never make the third!"</l>
+                    <l n="226"><hi rend="italic">Flower o' the pine,</hi></l>
+                    <l n="227"><hi rend="italic">You keep your mistr ... manners, and I'll stick to
+                            mine!</hi></l>
+                    <l n="228">I'm not the third, then: bless us, they must know!</l>
+                    <l n="229">Don't you think they're the likeliest to know,</l>
+                    <l n="230">They with their Latin? So, I swallow my rage,</l>
+                    <l n="231">Clench my teeth, suck my lips in tight, and paint</l>
+                    <l n="232">To please them--sometimes do and sometimes don't;</l>
+                    <l n="233">For, doing most, there's pretty sure to come</l>
+                    <l n="234">A turn, some warm eve finds me at my saints--</l>
+                    <l n="235">A laugh, a cry, the business of the world--</l>
+                    <l n="236">(Flower o' the peach</l>
+                    <l n="237">Death for us all, and his own life for each!)</l>
+                    <l n="238">And my whole soul revolves, the cup runs over,</l>
+                    <l n="239">The world and life's too big to pass for a dream,</l>
+                    <l n="240">And I do these wild things in sheer despite,</l>
+                    <l n="241">And play the fooleries you catch me at,</l>
+                    <l n="242">In pure rage! The old mill-horse, out at grass</l>
+                    <l n="243">After hard years, throws up his stiff heels so,</l>
+                    <l n="244">Although the miller does not preach to him</l>
+                    <l n="245">The only good of grass is to make chaff.</l>
+                    <l n="246">What would men have? Do they like grass or no--</l>
+                    <l n="247">May they or mayn't they? all I want's the thing</l>
+                    <l n="248">Settled for ever one way. As it is,</l>
+                    <l n="249">You tell too many lies and hurt yourself:</l>
+                    <l n="250">You don't like what you only like too much,</l>
+                    <l n="251">You do like what, if given you at your word,</l>
+                    <l n="252">You find abundantly detestable.</l>
+                    <l n="253">For me, I think I speak as I was taught;</l>
+                    <l n="254">I always see the garden and God there</l>
+                    <l n="255">A-making man's wife: and, my lesson learned,</l>
+                    <l n="256">The value and significance of flesh,</l>
+                    <l n="257">I can't unlearn ten minutes afterwards.</l>
+                </lg>
+                <lg>
+                    <l n="258">You understand me: I'm a beast, I know.</l>
+                    <l n="259">But see, now--why, I see as certainly</l>
+                    <l n="260">As that the morning-star's about to shine,</l>
+                    <l n="261">What will hap some day. We've a youngster here</l>
+                    <l n="262">Comes to our convent, studies what I do,</l>
+                    <l n="263">Slouches and stares and lets no atom drop:</l>
+                    <l n="264">His name is Guidi--he'll not mind the monks--</l>
+                    <l n="265">They call him Hulking Tom, he lets them talk--</l>
+                    <l n="266">He picks my practice up--he'll paint apace.</l>
+                    <l n="267">I hope so--though I never live so long,</l>
+                    <l n="268">I know what's sure to follow. You be judge!</l>
+                    <l n="269">You speak no Latin more than I, belike;</l>
+                    <l n="270">However, you're my man, you've seen the world</l>
+                    <l n="271">--The beauty and the wonder and the power,</l>
+                    <l n="272">The shapes of things, their colours, lights and shades,</l>
+                    <l n="273">Changes, surprises,--and God made it all!</l>
+                    <l n="274">--For what? Do you feel thankful, ay or no,</l>
+                    <l n="275">For this fair town's face, yonder river's line,</l>
+                    <l n="276">The mountain round it and the sky above,</l>
+                    <l n="277">Much more the figures of man, woman, child,</l>
+                    <l n="278">These are the frame to? What's it all about?</l>
+                    <l n="279">To be passed over, despised? or dwelt upon,</l>
+                    <l n="280">Wondered at? oh, this last of course!--you say.</l>
+                    <l n="281">But why not do as well as say,--paint these</l>
+                    <l n="282">Just as they are, careless what comes of it?</l>
+                    <l n="283">God's works--paint any one, and count it crime</l>
+                    <l n="284">To let a truth slip. Don't object, "His works</l>
+                    <l n="285">Are here already; nature is complete:</l>
+                    <l n="286">Suppose you reproduce her--(which you can't)</l>
+                    <l n="287">There's no advantage! you must beat her, then."</l>
+                    <l n="288">For, don't you mark? we're made so that we love</l>
+                    <l n="289">First when we see them painted, things we have passed</l>
+                    <l n="290">Perhaps a hundred times nor cared to see;</l>
+                    <l n="291">And so they are better, painted--better to us,</l>
+                    <l n="292">Which is the same thing. Art was given for that;</l>
+                    <l n="293">God uses us to help each other so,</l>
+                    <l n="294">Lending our minds out. Have you noticed, now,</l>
+                    <l n="295">Your cullion's hanging face? A bit of chalk,</l>
+                    <l n="296">And trust me but you should, though! How much more,</l>
+                    <l n="297">If I drew higher things with the same truth!</l>
+                    <l n="298">That were to take the Prior's pulpit-place,</l>
+                    <l n="299">Interpret God to all of you! Oh, oh,</l>
+                    <l n="300">It makes me mad to see what men shall do</l>
+                    <l n="301">And we in our graves! This world's no blot for us,</l>
+                    <l n="302">Nor blank; it means intensely, and means good:</l>
+                    <l n="303">To find its meaning is my meat and drink.</l>
+                    <l n="304">"Ay, but you don't so instigate to prayer!"</l>
+                    <l n="305">Strikes in the Prior: "when your meaning's plain</l>
+                    <l n="306">It does not say to folk--remember matins,</l>
+                    <l n="307">Or, mind you fast next Friday!" Why, for this</l>
+                    <l n="308">What need of art at all? A skull and bones,</l>
+                    <l n="309">Two bits of stick nailed crosswise, or, what's best,</l>
+                    <l n="310">A bell to chime the hour with, does as well.</l>
+                    <l n="311">I painted a Saint Laurence six months since</l>
+                    <l n="312">At Prato, splashed the fresco in fine style:</l>
+                    <l n="313">"How looks my painting, now the scaffold's down?"</l>
+                    <l n="314">I ask a brother: "Hugely," he returns--</l>
+                    <l n="315">"Already not one phiz of your three slaves</l>
+                    <l n="316">Who turn the Deacon off his toasted side,</l>
+                    <l n="317">But's scratched and prodded to our heart's content,</l>
+                    <l n="318">The pious people have so eased their own</l>
+                    <l n="319">With coming to say prayers there in a rage:</l>
+                    <l n="320">We get on fast to see the bricks beneath.</l>
+                    <l n="321">Expect another job this time next year,</l>
+                    <l n="322">For pity and religion grow i' the crowd--</l>
+                    <l n="323">Your painting serves its purpose!" Hang the fools!</l>
+                    <l n="324">--That is--you'll not mistake an idle word</l>
+                    <l n="325">Spoke in a huff by a poor monk, God wot,</l>
+                    <l n="326">Tasting the air this spicy night which turns</l>
+                    <l n="327">The unaccustomed head like Chianti wine!</l>
+                    <l n="328">Oh, the church knows! don't misreport me, now!</l>
+                    <l n="329">It's natural a poor monk out of bounds</l>
+                    <l n="330">Should have his apt word to excuse himself:</l>
+                    <l n="331">And hearken how I plot to make amends.</l>
+                    <l n="332">I have bethought me: I shall paint a piece</l>
+                    <l n="333">... There's for you! Give me six months, then go, see</l>
+                    <l n="334">Something in Sant' Ambrogio's! Bless the nuns!</l>
+                    <l n="335">They want a cast o' my office. I shall paint</l>
+                    <l n="336">God in the midst, Madonna and her babe,</l>
+                    <l n="337">Ringed by a bowery, flowery angel-brood,</l>
+                    <l n="338">Lilies and vestments and white faces, sweet</l>
+                    <l n="339">As puff on puff of grated orris-root</l>
+                    <l n="340">When ladies crowd to Church at midsummer.</l>
+                    <l n="341">And then i' the front, of course a saint or two--</l>
+                    <l n="342">Saint John' because he saves the Florentines,</l>
+                    <l n="343">Saint Ambrose, who puts down in black and white</l>
+                    <l n="344">The convent's friends and gives them a long day,</l>
+                    <l n="345">And Job, I must have him there past mistake,</l>
+                    <l n="346">The man of Uz (and Us without the z,</l>
+                    <l n="347">Painters who need his patience). Well, all these</l>
+                    <l n="348">Secured at their devotion, up shall come</l>
+                    <l n="349">Out of a corner when you least expect,</l>
+                    <l n="350">As one by a dark stair into a great light,</l>
+                    <l n="351">Music and talking, who but Lippo! I!--</l>
+                    <l n="352">Mazed, motionless, and moonstruck--I'm the man!</l>
+                    <l n="353">Back I shrink--what is this I see and hear?</l>
+                    <l n="354">I, caught up with my monk's-things by mistake,</l>
+                    <l n="355">My old serge gown and rope that goes all round,</l>
+                    <l n="356">I, in this presence, this pure company!</l>
+                    <l n="357">Where's a hole, where's a corner for escape?</l>
+                    <l n="358">Then steps a sweet angelic slip of a thing</l>
+                    <l n="359">Forward, puts out a soft palm--"Not so fast!"</l>
+                    <l n="360">--Addresses the celestial presence, "nay--</l>
+                    <l n="361">He made you and devised you, after all,</l>
+                    <l n="362">Though he's none of you! Could Saint John there draw--</l>
+                    <l n="363">His camel-hair make up a painting brush?</l>
+                    <l n="364">We come to brother Lippo for all that,</l>
+                    <l n="365"><hi rend="italic">Iste perfecit opus!</hi> So, all smile--</l>
+                    <l n="366">I shuffle sideways with my blushing face</l>
+                    <l n="367">Under the cover of a hundred wings</l>
+                    <l n="368">Thrown like a spread of kirtles when you're gay</l>
+                    <l n="369">And play hot cockles, all the doors being shut,</l>
+                    <l n="370">Till, wholly unexpected, in there pops</l>
+                    <l n="371">The hothead husband! Thus I scuttle off</l>
+                    <l n="372">To some safe bench behind, not letting go</l>
+                    <l n="373">The palm of her, the little lily thing</l>
+                    <l n="374">That spoke the good word for me in the nick,</l>
+                    <l n="375">Like the Prior's niece . . . Saint Lucy, I would say.</l>
+                    <l n="376">And so all's saved for me, and for the church</l>
+                    <l n="377">A pretty picture gained. Go, six months hence!</l>
+                    <l n="378">Your hand, sir, and good-bye: no lights, no lights!</l>
+                    <l n="379">The street's hushed, and I know my own way back,</l>
+                    <l n="380">Don't fear me! There's the grey beginning. Zooks!</l>
+
+                </lg>
+            </div>
+
+        </body>
+
+    </text>
+</TEI>
