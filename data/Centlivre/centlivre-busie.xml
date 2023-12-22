@@ -170,31 +170,45 @@
         <revisionDesc>
             <change when="2023-10-04" who="Rachel Retica">created LiC text</change>
         </revisionDesc>
-        
     </teiHeader>
-    <text xml:lang="eng">
-        <front>
-            <div type="title_page">
-                <pb/>
-                <p>THE BUSIE BODY: A COMEDY. As it is Acted at the THEATRE-ROYAL IN DRURY-LANE, By
-                    Her Majesty's Servants.</p>
-                <p>Written by Mrs. SUSANNA CENTLIVRE.</p>
-                <p>
-                    <hi rend="blackletterType">The Second Edition.</hi>
-                </p>
-                <q>
+   
+    <text>
+         <front>
+             <pb n="[TP]"/>
+                <titlePage>
+                    <titlePart>
+                        <!-- not able to use </lb> within title part? -->
+                        <l>THE</l>
+                        <l>BUSIE BODY:</l>
+                    <l><hi rend="small-caps">A</hi></l> 
+                    <l>COMEDY.</l>
+                    <l>As it is Acted at the THEATRE-ROYAL</l>
+                    <l><hi rend="small-caps">IN</hi></l>
+                    <l>DRURY-LANE,</l> 
+                    <l>By Her Majesty's Servants.</l>
+                    <l>Written by Mrs. SUSANNA CENTLIVRE.</l>
+                    <l><hi rend="blackletterType">The Second Edition.</hi></l>
+                    </titlePart>
+                    
+                <epigraph>
+                    <p>
+                     <hi rend="italic">
                     <l>Quem tulit ad scenam ventoso Gloria curru,</l>
                     <l>Exanimat lentus Spectator, sedulus inflat.</l>
                     <l>Sic Leve, sic parvum est, animum quod laudis avarum</l>
-                    <l>Subruit aut resicit—</l>
+                    <l>Subruit aut resicit—</l></hi>
                     <bibl>Horat. Epist. Lib. II. Ep. 1.</bibl>
-                </q>
-                <p>
-                    <hi rend="italic">LONDON,</hi> Printed for BERNARD LINTOTT, at the <hi
-                        rend="italic">Cross-Keys</hi> between the TWO <hi rend="italic"
-                        >Temple-Gates</hi> in <hi rend="italic">Fleet-street.</hi>
-                </p>
-            </div>
+                    </p>
+                </epigraph>
+                
+                <titlePart>
+                    <l><hi rend="italic">LONDON,</hi></l>
+                    <l> Printed for BERNARD LINTOTT, at the <hi rend="italic">Cross-Keys</hi></l>
+                    <l>between the TWO <hi rend="italic" >Temple-Gates</hi> in <hi rend="italic">Fleet-street.</hi> </l>
+                
+                    </titlePart>   
+                </titlePage>
+            
             <div type="dedication">
                 <head> TO THE RIGHT HONOURABLE <hi rend="italic">JOHN</hi>Lord<hi rend="italic"
                         >SOMMERS,</hi>Lord-President of Her MAJESTY's most Honourable Privy-Council. </head>
