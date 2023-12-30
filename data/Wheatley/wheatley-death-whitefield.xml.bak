@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-death-whitefield">
+   
+   <!--TEI Header BEGINS-->
+   <teiHeader>
+      
+      
+      <fileDesc> <!--BEGINS File Description -->
+             <titleStmt>
+                <title type="main">"On the Death of the Rev. MR. GEORGE WHITEFIELD" </title>
+                <author>
+                   <persName type="lcnaf" key="n50016726">
+                      <name>
+                         <forename>Phillis</forename>
+                         <surname>Wheatley</surname>
+                      </name>
+                   </persName>
+                </author>
+                      <editor>
+                         <persName type="orcid" key="0000-0002-7400-4093">
+                            <name ref="editors.xml#TH">
+                               <forename> Tonya</forename>
+                               <surname> Howe </surname>
+                            </name>
+                         </persName>
+                      </editor>
+                      <respStmt>
+                         <resp>Transcription, correction, editorial commentary, and markup</resp>
+                         <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+                         <name ref="editors.xml#JW">James West</name>
+                         <name ref="editors.xml#AR">Amy Ridderhof</name>
+                      </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+             </titleStmt>
+         
+         
+             <publicationStmt>
+                      <publisher>Literature in Context</publisher>
+                       <address>
+                          <addrLine>Marymount University Department of Literature and Languages</addrLine>
+                          <addrLine>2807 N. Glebe Road</addrLine>
+                          <addrLine>Arlington, VA </addrLine>
+                          <addrLine>22207</addrLine>
+                          <addrLine>thowe@marymount.edu</addrLine>
+                          <addrLine>lic.open.anthology@gmail.com</addrLine>
+                       </address>
+                      <availability status="free">
+                         <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                            License </licence>
+                      </availability>
+                     
+             </publicationStmt>
+         
+         
+             <sourceDesc>
+                    <biblStruct>
+                       <analytic>
+                          <title>"On the Death of the Rev. MR. GEORGE WHITEFIELD"</title>
+                       </analytic>
+                       <monogr>
+                          <author>
+                                <name>
+                                   <forename>Phillis</forename>
+                                   <surname>Wheatley</surname>
+                                </name>
+                          </author>
+                          <title>Poems on Various Subjects, Religious and Moral</title>
+                          
+                          <imprint>
+                             <pubPlace>
+                                <placeName type="TGN" key="7011781">London</placeName>
+                             </pubPlace>
+                             <publisher>Printed for A. Bell</publisher>
+                             <publisher>bookseller, Aldgate</publisher>
+                             <date when="1773">1773</date>
+                             <note>Page images are sourced from two copies of the first edition housed in the Library of Congress.</note>
+                          </imprint>
+                          
+                          <imprint>
+                           
+                             <pubPlace>Ann Arbor, MI</pubPlace>
+                             <publisher>University of Michigan Humanities Text Initiative</publisher>
+                             <date when="1999">1999</date>
+                             <note><ref target="https://quod.lib.umich.edu/a/amverse/BAP5379.0001.001?view=toc">Online SGML text from the University of Michigan HTI</ref>. SGML markup edited to conform to LiC parameters,
+                                including changes to element and attribute case, ligatures, and other
+                                special html characters. </note>
+                          </imprint>
+                          <extent>[9],124p., 18cm </extent>
+                          <biblScope>pp 22-24</biblScope>
+                       </monogr>
+                    </biblStruct>
+             </sourceDesc>
+      </fileDesc>
+      
+      
+      <profileDesc>  <!--BEGINS Profile Description  --> 
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="poem">
+            <channel mode="w">print</channel>
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+         </textDesc>
+         
+         <settingDesc>
+            <setting>
+
+               <time from="1761" to="1765">mid 18th century</time>
+               <!-- Used the date of her enslavement -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+      
+      
+      
+      <encodingDesc>  <!-- BEGINS Encoding Description -->
+              <projectDesc> <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi> project,
+                 which provides an accessible, curated, and marked-up selection of primary sources
+                 relevant to the study and the teaching of British and American literature of the 18th
+                 century. This project is funded by the National Endowment for the Humanities and
+                 developed by faculty at The University of Virginia and Marymount University. </p>
+              </projectDesc>
+              <editorialDecl>
+                 <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                       links provided where possible. Annotations have also included common knowledge,
+                       defined as information that can be found in multiple reliable sources. If you
+                       notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+                    </p>
+                 </interpretation>
+                 <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                       silently modernized and ligatured forms are not encoded.</p>
+                 </normalization>
+                 <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                       word.</p>
+                 </hyphenation>
+                 <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                       not. Where pages break in the middle of a word, the complete word has been
+                       indicated prior to the page beginning.</p>
+                 </segmentation>
+                 <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                       possible. See the Sources section.</p>
+                 </correction>
+              </editorialDecl>
+              <tagsDecl>
+                 <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                 </namespace>
+              </tagsDecl>
+              <classDecl>
+                 <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                 </taxonomy>
+              </classDecl>
+      </encodingDesc>
+      
+      
+      <revisionDesc>  <!--BEGINS Revision Description -->
+         <change when="2018-07-01" who="editors.xml#JW">First pass XML file</change>
+         <change when="2018-07-01" who="editors.xml#AR">First pass XML file</change>
+         <change when="2018-07-05" who="editors.xml#TH">XML updates; updated teiHeader</change>
+         <change when="2018-07-10" who="editors.xml#JW">Added annotations</change>
+         <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
+         <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
+         <change when="2019-09-19" who="editors.xml#TH">Commented out titlepage</change>
+         <change when="2023-05-19" who="editors.xml#TH">Updated note style</change>
+      </revisionDesc>
+      
+      
+   </teiHeader>
+   <!--TEI Header Ends -->
+   
+   
+   
+   <!--Text Begins -->
+   
+   <text>
+             <!--<front>
+                      <div type="frontispiece" >
+                         <pb n="[frontispiece]" facs="pageImages/WP-FP.jpg"/>
+                      </div>
+                      <pb n="[titlepage]" facs="pageImages/WP-TP.jpg"/>
+                  
+                      <titlePage>
+                           <docTitle>
+                              <titlePart>POEMS <lb/>ON <lb/>VARIOUS SUBJECTS, <lb/>RELIGIOUS AND MORAL.<lb/></titlePart>
+                           </docTitle>
+                           <byline>BY</byline>
+                           <lb/>
+                           <docAuthor><hi rend="italic">PHILLIS WHEATLEY</hi>,</docAuthor>
+                           <lb/>
+                           <docAuthor>
+                              <title>NEGRO SERVANT to Mr. JOHN WHEATLEY, <lb/>of BOSTON, in NEW
+                                 ENGLAND.</title>
+                           </docAuthor>
+                           <lb/>
+                           <docImprint>
+                              <pubPlace><hi rend="italic">LONDON:</hi></pubPlace>
+                              <lb/>
+                              <publisher>Printed for A. BELL, Bookseller, Aldgate; and sold by<lb/>
+                                 Messrs. COX and BERRY, King-Street, <hi rend="italic">BOSTON.</hi>
+                              </publisher>
+                              <lb/>
+                              <date>M DCC LXXIII.</date>
+                              
+                           </docImprint>
+                     </titlePage>
+                
+           </front>-->
+      
+         
+            <body>
+               
+               <div type="poem" met="heroic couplets" >
+                  <pb n="22" facs="pageImages/WP-0022.jpg"/>
+                  <head type="title">On the Death of the <ref target="_Whitfield" corresp="Whitfield">Rev. MR. GEORGE WHITEFIELD.</ref></head>
+                  <opener>1770.</opener>
+                  
+                  <lg met="heroic couplets">
+                     <l n="1">HAIL, happy saint, on thine immortal throne,</l>
+                     <l n="2">Possest of glory, life, and bliss unknown;</l>
+                     <l n="3">We hear no more the music of thy tongue,</l>
+                     <l n="4">Thy <ref target="_wonted" corresp="wonted">wonted auditories</ref> cease to throng.</l>
+                     <l n="5">Thy sermons in <ref target="_unequalled" corresp="unequalled">unequall'd accents</ref> flow'd,</l>
+                     <l n="6">And ev'ry bosom with devotion glow'd;</l>
+                     <l n="7">Thou didst in strains of eloquence refin'd</l>
+                     <l n="8">Inflame the heart, and captivate the mind.</l>
+                     <l n="9">Unhappy we the setting sun deplore,</l>
+                     <l n="10">So glorious once, but ah! it shines no more.</l>
+                  </lg>
+                  <lg met="heroic couplets">
+                     <l rend="indent" n="11">Behold the prophet in his tow'ring flight!</l>
+                     <l n="12">He leaves the earth for heav'n's unmeasur'd height,</l>
+                     <l n="13">And worlds unknown receive him from our sight.</l>
+                     <l n="14">There <hi rend="italic">Whitefield</hi> wings with rapid course his
+                        way,</l>
+                     <l n="15">And sails to <ref target="_Zion" corresp="Zion"><hi rend="italic">Zion</hi></ref> through vast seas of day.</l>
+                     <l n="16">Thy pray'rs, great saint, and thine incessant cries</l>
+                     <l n="17">Have pierc'd the bosom of thy native skies.</l>
+                     <pb n="23" facs="pageImages/WP-0023.jpg"/>
+                     <l n="18">Thou moon hast seen, and all the stars of light,</l>
+                     <l n="19">How he has wrestled with his God by night.</l>
+                     <l n="20">He pray'd that grace in ev'ry heart might dwell,</l>
+                     <l n="21">He long'd to see <hi rend="italic">America</hi> excel;</l>
+                     <l n="22">He charg'd its youth that ev'ry grace divine</l>
+                     <l n="23">Should with full lustre in their conduct shine;</l>
+                     <l n="24">That Saviour, which his soul did first receive,</l>
+                     <l n="25">The greatest gift that ev'n a God can give,</l>
+                     <l n="26">He freely offer'd to the num'rous throng,</l>
+                     <l n="27">That on his lips with list'ning pleasure hung.</l>
+                  </lg>
+                  <lg met="heroic couplets">
+                     <l rend="indent" n="28">"Take him, ye wretched, for your only good,</l>
+                     <l n="29">"Take him ye starving sinners, for your food;</l>
+                     <l n="30">"Ye thirsty, come to this life-giving stream,</l>
+                     <l n="31">"Ye preachers, take him for your joyful theme;</l>
+                     <l n="32">"Take him my dear <hi rend="italic">Americans</hi>, he said,</l>
+                     <l n="33">"Be your complaints on his kind bosom laid:</l>
+                     <l n="34">"Take him, ye <hi rend="italic">Africans</hi>, he longs for you,</l>
+                     <l n="35">"<hi rend="italic">Impartial Saviour</hi> is his title due:</l>
+                     <l n="36">"Wash'd in the fountain of redeeming blood,</l>
+                     <l n="37">"You shall be sons, and kings, and priests to God."</l>
+                  </lg>
+                  <lg met="heroic couplets">
+                     <pb n="24" facs="pageImages/WP-0024.jpg"/>
+                     <l rend="indent" n="38">Great <ref target="_countess" corresp="countess"><hi rend="italic">Countess</hi></ref>,
+                        we <hi rend="italic"
+                              >Americans</hi> revere</l>
+                     <l n="39">Thy name, and mingle in thy grief sincere;</l>
+                     <l n="40"><hi rend="italic">New England</hi> deeply feels, the <ref target="_orphans" corresp="orphans"><hi rend="italic">Orphans</hi></ref> mourn,</l>
+                     <l n="41">Their more than father will no more return.</l>
+                  </lg>
+                  <lg met="heroic couplets">
+                     <l rend="indent" n="42">But, though arrested by the hand of death,</l>
+                     <l n="43"><hi rend="italic">Whitefield</hi> no more exerts his lab'ring
+                        breath,</l>
+                     <l n="44">Yet let us view him in th' eternal skies,</l>
+                     <l n="45">Let ev'ry heart to this bright vision rise;</l>
+                     <l n="46">While the tomb safe retains its sacred trust,</l>
+                     <l n="47">Till life divine re-animates his dust.</l>
+                  </lg>
+                  
+                  <note xml:id="Whitfield" target="_Whitfield" type="editorial" resp="editors.xml#JOB"><p>
+         
+         <graphic url="notes/George-Whitefield.jpg" style="float:right" width="400px"/>
+         George Whitefield (1714-1770; pronounced "wit-field") was one of the most famous people of the eighteenth-century Anglophone world. As a student at Oxford in the early 1730s, he got to know John and Charles Wesley, the founders of the Methodist movement in the church of England. Whitefield joined them in attempting to "methodize" the faith, returning it to the simple principles of the early church. But more than the Wesley brothers, Whitefield made this reformist movement into a public ministry. A famously charismatic public speaker, Whitefield preached to crowds numbering in the thousands in England and the American colonies, becoming a central figure in what was known as the "Great Awakening," a revival of evangelical Protestantism that was influential on both sides of the Atlantic. Benjamin Franklin and Olaudah Equiano were each impressed (though in very different ways) when they saw Whitefield preach in Philadelphia and Savannah, respectively. Whitefield made several visits to the Boston area, and it seems likely that the Wheatleys saw him preach there. Phillis might very well have joined them, but we cannot be sure. Whitefield died unexpectedly in Newburyport, Massachusetts on September 30, 1770, a few days after he left Boston on what turned out to be his last tour of the colonies.</p>
+      <p>Phillis Wheatley's elegy for Whitefield changed her life, transforming her from a young enslaved woman with a small readership among friends of the Wheatley family to an author with an international readership. The poem was published as a broadside on October 11, 1770, and was an immediate success. It was reprinted several times in colonial cities, as well as London, and also appeared in several newspapers. The poem brought Wheatley to the attention of Selina, the Countess of Huntingdon, who is addressed in the poem itself. A fervent Methodist herself, the Countess was Whitefield's patron, supporting him on his evangelical missions. The Countess became Wheatley's patron as well, sponsoring the publication of her only volume of poems, published in London in 1773.</p>
+      <p>[George Whitefield by an unknown artist, about 1770, National Portrait Gallery, London]</p></note>
+      <note xml:id="wonted" target="_wonted" type="editorial" resp="editors.xml#JOB">wonted: "Accustomed, customary, usual." <hi rend="italics">Oxford English Dictionary</hi>; auditory: "An assembly of hearers, an audience." <hi rend="italics">Oxford English Dictionary</hi>, hence the meaning here is something like "usual audience."</note>
+                  <note xml:id="unequalled" target="_unequalled" type="editorial" resp="editors.xml#JOB">"unequalled accents"; Whitefield was a famously eloquent and compelling public speaker; the sense here is that no other speaker could match the "accent" or style of his voice.</note>
+      <note xml:id="Zion" target="_Zion" type="editorial" resp="editors.xml#JOB">Zion is a name in the Hebrew bible for Jerusalem, and the term has often been extended to mean the entirety of what believers think of as the holy land, or even the afterlife.</note>
+      <note xml:id="countess" target="_countess" type="editorial" resp="editors.xml#JOB"><graphic url="notes/Selina-Hastings-Countess-of-Huntingdon.jpg" style="float:right" width="400px"/>The Countess of <hi rend="italic">Huntingdon</hi>, to whom Mr. <hi
+         rend="italic">Whitefield</hi> was Chaplain. [Wheatley's note].  Selina Hastings, the countess of Huntingdon (1707-1791), was a major figure in the Methodist movement, using her wealth to support the founding of chapels and a training school for ministers. Whitefield became her personal chaplain in the 1740s. Wheatley sought and recieved her patronage as well, and Wheatley's 1773 volume of poems was published with her support.
+      <p>[Selina Hastings by an unknown artist, about 1770, National Portrait Gallery, London]</p></note>
+      <note xml:id="orphans" target="_orphans" type="editorial" resp="editors.xml#JOB">Whitefield first came to the American colonies in 1738, when he travelled to Savannah, Georgia, where the colony's trustees had hired him to serve as minister. He decided to make his main project in Savannah the establishment of an orphanage, and he returned to England after only four months to raise money for the project. The Bethesda Orphan House was founded in 1740, and Whitefield continued to raise money and to return for visits to the institution throughout his lifetime.</note>
+
+               </div>
+      
+            </body>
+      </text>
+
+
+</TEI>

@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="pope-windsor"> 
+  <teiHeader xml:lang="en">
+    <fileDesc>
+      <titleStmt>
+        <title type="main">"Windsor-Forest"</title>
+        <author>
+          <persName type="lcnaf" key="79084387">
+            <name>
+            <forename>Alexander</forename> 
+            <surname>Pope</surname> 
+            </name>
+          </persName>
+        </author> 
+        <editor>
+          <persName type="orcid" key="0000-0001-6453-8721">
+            <name ref="editors.xml#JOB">
+              <forename>John</forename>
+              <surname>O'Brien</surname>
+            </name>
+          </persName>
+        </editor>       
+        <respStmt>              
+          <resp>Transcription, correction, editorial commentary, and markup </resp>                  
+          <name>The Text Creation Partnership and Students and Staff of The University of Virginia</name>        
+        </respStmt>             
+        <sponsor/>
+        <funder>National Endowment for the Humanities</funder>
+      </titleStmt>      
+      <publicationStmt>
+        <publisher>Literature in Context</publisher>
+        <address>
+          <addrLine>University of Virginia</addrLine>
+          <addrLine>Department of English</addrLine>
+          <addrLine>P. O. Box 400121</addrLine>
+          <addrLine>Charlottesville, VA 22904-4121</addrLine>
+          <addrLine>jobrien@virginia.edu</addrLine>
+          <addrLine>lic.open.anthology@gmail.com</addrLine>
+        </address>
+        <availability status="free">
+          <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+            License </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <extent/>
+        </bibl>
+        <biblStruct> 
+          <monogr>
+            <author>
+              <persName type="lcnaf" key="79084387">
+                <name>
+                  <forename>Alexander</forename>
+                  <surname>Pope</surname>
+                </name>
+              </persName>
+            </author>
+            <title>"Windsor-Forest"</title>
+            <imprint>
+              <pubPlace>
+                <placeName type="tgn" key="7011781">London</placeName>
+              </pubPlace>
+              <publisher>Bernard Lintott</publisher>
+              <date when="1713">1713</date>
+              <note>Our edition is built from the version produced by the Text Creation Partnership. We have changed the long "s" in the original to a modern "s."
+              </note>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="en">English</language>
+      </langUsage>
+      
+      <creation/>
+      
+      <textDesc n="poem">
+        
+        <channel mode="w">print</channel>
+        <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+        <constitution type="single">single poem</constitution>
+        <derivation type="original"/>
+        <domain/>
+        <factuality type="inapplicable"/>
+        <interaction/>
+        <preparedness type="new"/>
+        <purpose type="instruct"/>
+        <purpose type="entertain" degree="medium"/>
+      </textDesc>     
+      <settingDesc>         
+        <setting>
+          <name type="tgn" key="7011781">London, England</name>              
+          <time from="1700" to="1750">early 18th Century</time>               
+        </setting>             
+      </settingDesc>
+    </profileDesc> 
+    <encodingDesc>      
+      <projectDesc>
+        <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+          project, which provides an accessible, reliable, curated, and marked-up selection of
+          primary sources relevant to the study and the teaching of British and American
+          literature. This project is was initially funded by the National Endowment for the
+          Humanities and developed by faculty at The University of Virginia and Marymount
+          University.</p>
+      </projectDesc>
+      <editorialDecl>
+        <interpretation>
+          <p>Research informing these annotations draws on publicly-accessible resources, with
+            links provided where possible. Annotations have also included common knowledge,
+            defined as information that can be found in multiple reliable sources. If you
+            notice an error in these annotations, please contact
+            lic.open.anthology@gmail.com.</p>
+        </interpretation>
+        <normalization>
+          <p>Original spelling and capitalization is retained, though the long s has been
+            silently modernized and ligatured forms are not encoded.</p>
+        </normalization>
+        <hyphenation>
+          <p>Hyphenation has not been retained, except where necessary for the sense of the
+            word.</p>
+        </hyphenation>
+        <segmentation>
+          <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+            not.</p>
+        </segmentation>
+        <correction>
+          <p>Materials have been transcribed from and checked against first editions, where
+            possible. See the Sources section for more information.</p>
+        </correction>
+      </editorialDecl>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="div">Numbered divs used.</tagUsage>
+        </namespace>
+      </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="lcnaf">
+          <bibl>Library of Congress Name Authority File</bibl>
+        </taxonomy>
+        <taxonomy xml:id="lcc">
+          <bibl>Library of Congress Classification</bibl>
+        </taxonomy>
+        <taxonomy xml:id="tgm">
+          <bibl>Getty Thesaurus of Geographic Names</bibl>
+        </taxonomy>
+        <taxonomy xml:id="orcid">
+          <bibl>Open Researcher and Contributor ID</bibl>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2023-08-08" who="editors.xml#JOB"
+        >Adapted TCP edition for Literature in Context use.</change>
+      <change when="0000-00-00" who="xxxx"/>
+    </revisionDesc>  
+  </teiHeader>
+     <text>
+       <front>
+         <titlePage>
+      <docTitle>
+        <titlePart type="main"><ref target="Windsor-Forest_" corresp="Windsor-Forest">
+          WINDSOR-FOREST.<lb/>
+        <lb/></ref><note resp="editors.xml#JOB" xml:id="Windsor-Forest" target="windsor-Forest_">
+            <p>Alexander Pope’s “Windsor-Forest” is both a very personal poem and a very public poem. Personal in the sense that in it Pope is remembering the place where he grew up. Pope’s family moved to the town of Binfield, in Windsor Forest outside of London, when he was a child because, as Catholics, they were at risk of persecution in London after the Revolution of 1688-1689 deposed a Catholic ruler (James II) in favor of a Protestant one (William III). “Windsor-Forest” is also a very public poem in that it was published to celebrate the signing of the Treaty of Utrecht in 1713, a treaty that ended the long War of the Spanish Succession. That war had been very expensive, with the British government taking on unprecedented levels of debt, the kind of thing that made some people as nervous then as government debt does now. And the war and its aftermath were also incredibly political divisive. The two main political factions in Parliament, the Whigs and the Tories, were bitterly opposed to one another, and conspiracy theories abounded, as Whigs worried (with some justification) that the more conservative members of the Tory faction were secretly plotting to restore the Stuarts to the throne. Pope attempts to articulate a position above partisan politics here, arguing through the poem that the peace treaty would bring about a new era of political harmony and economic prosperity. Poets have often written poems to celebrate victories on the battlefield; by contrast, “Windsor-Forest” celebrates the signing of a peace treaty.</p>
+            <p>Pope was not the only writer to publish a poem on this occasion. In the early eighteenth century, poetry was often a public art, and poems would frequently be written to commemorate a significant political event, or to argue on one side of an issue or another. Not all of the poems written to mark the Treaty of Utrecht were in favor of it; a number of poets and other writers described the treaty as a kind of sell out, arguing that Britain was getting a bad deal. The French king Louis XIV and his forces were weakened by all the years of war, they argued (Louis died the next year, in fact), and Britain and its allies would get better terms by continuing to fight. Pope, like others who identified themselves politically as Tories, was in favor of the peace settlement, and the verdict of history is in many ways on his side. Pope is particularly prescient in this poem in describing the signing of the Treaty as an epochal event, one that had enormous implications for Britain. For the peace settlement of 1713 transformed the circum-Atlantic world, setting the terms under which Britain would come to dominate trade, establishing its first empire in the Caribbean and the North American mainland. Specifically, the Treaty gave Britain possession of Newfoundland and Nova Scotia, which had been ruled by France. The French government also agreed to stop its support of the Jacobite court around the son of the exiled Stuart monarch James II. Crucially, Britain also received the <hi rend="italic">asiento</hi>asiento, the contract to enslave African subjects for the Spanish colonies in the Americas, a concession that would eventually lead to Britain’s domination of the Atlantic trade in enslaved people. In its combination of nostalgia for the pastoral world of the past, its shrewd assessment of the present, and its prophetic vision of a future where London would become the center of an empire, “Windsor-Forest” is an astonishing imaginative response to what was on the one hand, the conclusion of a tedious diplomatic process, and on the other, the establishment of a framework that would shape the history of the entire Atlantic basin to the present day.</p>
+            <p>But although “Windsor-Forest” was published to commemorate the Treaty of Utrecht, much of it was not new in 1713. When he reissued “Windsor-Forest” in 1736, Pope noted that he had composed parts of the poem as early as 1704, when he was just sixteen years old. Such a long process of composition was not unusual for Pope; he often composed poems over periods of many years, sharing them with friends whose opinion he respected, reworking, revising, and finally stitching things together for publication either when he felt that the work had reached a good enough state or when (as with “Windsor Forest”) an occasion presented itself. And even after it was published, Pope continued to revise it every time it needed to be reprinted; this, too was the way he tended to work. There is a sense in which none of Pope’s poems was ever completely finished, since he continued to work and rework them in ways large and small.</p>
+          <p>With this poem, Pope also makes a claim for himself to be the great poet of Britain’s ascension to the status of an imperial power. By invoking Virgil’s <hi rend="italic">Eclogues</hi> in the epigraph to the poem, Pope is also suggesting that he thinks of himself as following in Virgil’s footsteps. Virgil’s Eclogues are poems about the countryside that also celebrate Rome’s new political order under the emperor Augustus. The implication is that with “Windsor-Forest,” Pope is writing a modern eclogue of his own, one that identifies the Treaty of Utrecht as the moment when Britain could claim an empire equal to that of Rome, and when he could claim his position as the heir to Virgil, the poet celebrating his nation’s power.</p>
+            
+          </note></titlePart>
+           <titlePart type="sub">
+             <ref target="Lansdown_" corresp="Lansdown">To the Right Honourable<lb/>
+               <hi rend="italic">GEORGE</hi> Lord <hi rend="italic">LANSDOWN.</hi></ref><note resp="editors.xml#JOB" xml:id="Lansdown" target="Lansdown_"><graphic
+                 url="https://lic-assets-staging.s3.amazonaws.com/pope-windsor/lansdown.jpg"/>Pope dedicated “Windsor-Forest” to George Granville (1666-1735), who was a poet and playwright, but also a politician and a member of the government. Granville's literary works are not much read now, but he was admired in literary circles in the early eighteenth century and Pope probably would have first gotten to know him that way. Granville had also served as the Secretary of War for the Tory government, and had been involved in the end-game of the War of the Spanish Succession. He played a key role in the peace negotiations that brought the war to an end with the Treaty of Utrecht in 1713. Granville was rewarded with a seat in the House of Lords for his service; he had just become "Baron Lansdown" when the poem was published. In identifying Granville as his patron and model, Pope is in effect saying that he will write the poem in favor of the peace that Granville might have written if he had the time. He is also perhaps hoping for some reward. The epigraph from the Roman poet Virgil is suggestive; Virgil is dedicating <hi rend="italic">his</hi> poem to the Roman politician Varus, who had some role in doling out property after a war. Perhaps Pope is hinting that maybe his friend Greville might do something along those lines for him.
+                 <lb/>
+                 <lb/>
+               Image: George Granville, Baron Lansdowne. (Wikimedia Commons). The engraving here is of a portrait by Sir Godfrey Kneller, who was well known for painting the portraits of prominent men in this period.</note>
+           </titlePart></docTitle>
+           <lb/>
+           <lb/>
+           <byline>
+             By Mr. POPE.</byline>
+           <lb/>
+           <lb/>
+        <epigraph> 
+          <q xml:lang="lat">
+            <ref target="Non_injussa_" corresp="Non_injussa"><hi rend="italic">Non injussa cano: Te nostrae, </hi>Vare, <hi rend="italic">Myricae<lb/>
+             
+          Te Nemus omne canet; nec Phaebo gratior ulla est<lb/>
+             
+             Quam sibi quae </hi>Vari <hi rend="italic">praescripsit Pagina nomen.</hi></ref><note xml:id="Non_injussa" target="Non_injussa_" type="gloss" resp="#JOB">The epigraph is from the sixth <hi rend="italic">Eclogue</hi>by the Roman poet Virgil: "I do not sing except by request: to you, Varus, our shrubs and groves all sing. There is not any page more pleasing to Apollo himself than those on which the name Varus is written." Pope is flattering Lansdown, his patron, by comparing him to Varus, a Roman official who was responsible for distributing land to soldiers after a war.</note></q></epigraph>
+           
+<byline>Virg.</byline>
+           
+           <lb/>
+           <lb/>
+           
+             <docImprint><hi rend="italic">LONDON:</hi>
+               <lb/>
+Printed for <hi rend="italic">Bernard Lintott</hi> at the <hi rend="italic">Cross-Keys</hi> in
+               <lb/>
+               <hi rend="italic">Fleet-street.</hi> <docDate>1713</docDate>.
+             </docImprint>
+         </titlePage>
+       </front>
+       <body>   
+<pb n="1"/><head>WINDSOR-FOREST.</head>
+  <div type="dedication"><p>To the Right Honourable
+    <hi rend="italic">GEORGE</hi> Lord <hi rend="italic">LANSDOWN.</hi></p>
+        </div> 
+         <div type="poem">
+<lg type="verse_paragraph"><l>THY Forests, <hi rend="italic">Windsor!</hi> and thy green Retreats,</l>
+<l>At once the Monarch's and the Muse's Seats,</l>
+<l>Invite my Lays. Be present, Sylvan Maids!</l>
+<l>Unlock your Springs, and open all your Shades.</l>
+<l><hi rend="italic">Granville</hi> commands: Your Aid O Muses bring!</l>
+<l>What Muse for <hi rend="italic">Granville</hi> can refuse to sing?</l>
+</lg>
+<lg type="verse_paragraph"><l>The Groves of <hi rend="italic">Eden,</hi> vanish'd now so long,</l>
+<l>Live in Description, and look green in Song:</l>
+<l><hi rend="italic">These,</hi> were my Breast inspir'd with equal Flame,</l>
+<l>Like them in Beauty, should be like in Fame.</l>
+<l>Here Hills and Vales, the Woodland and the Plain,</l>
+<l>Here Earth and Water seem to strive again,</l>
+<l>Not <hi rend="italic">Chaos</hi>-like together crush'd and bruis'd,</l>
+<l>But as the World, harmoniously confus'd:</l>
+<l>Where Order in Variety we see,</l>
+<l>And where, tho' all things differ, all agree.</l>
+<l><pb n="2"/>
+Here waving Groves a checquer'd Scene display,</l>
+<l>And part admit and part exclude the Day;</l>
+<l>As some coy Nymph her Lover's warm Address</l>
+<l>Nor quite indulges, nor can quite repress.</l>
+<l>There, interspers'd in Lawns and opening Glades,</l>
+<l>Thin Trees arise that shun each others Shades.</l>
+<l>Here in full Light the russet Plains extend;</l>
+<l>There wrapt in Clouds the blueish Hills ascend:</l>
+<l>Ev'n the wild Heath displays her Purple Dies,</l>
+<l>And' midst the Desart fruitful Fields arise,</l>
+<l>That crown'd with tufted Trees and springing Corn,</l>
+<l>Like verdant Isles the sable Waste adorn.</l>
+<l>Let <hi rend="italic">India</hi> boast her Plants, nor envy we</l>
+<l>The weeping Amber or the balmy Tree,</l>
+<l>While by our Oaks the precious Loads are born,</l>
+<l>And Realms commanded which those Trees adorn.</l>
+<l>Not proud <hi rend="italic">Olympus</hi> yields a nobler Sight,</l>
+<l>Tho' Gods assembled grace his tow'ring Height,</l>
+<l>Than what more humble Mountains offer here,</l>
+<l>Where, in their Blessings, all those Gods appear.</l>
+<l>See <hi rend="italic">Pan</hi> with Flocks, with Fruits <hi rend="italic">Pomona</hi> crown'd,</l>
+<l>Here blushing <hi rend="italic">Flora</hi> paints th' enamel'd Ground,</l>
+<l>Here <hi rend="italic">Ceres</hi>' Gifts in waving Prospect stand,</l>
+<l>And nodding tempt the joyful Reaper's Hand,</l>
+<l>Rich Industry sits smiling on the Plains,</l>
+<l>And Peace and Plenty tell, a STUART reigns.</l>
+</lg>
+<lg type="verse_paragraph"><pb n="3"/>
+  <l>Not thus the Land appear'd in Ages past,</l>
+<l>A dreary Desart and a gloomy Waste,</l>
+<l>To Savage Beasts and Savage Laws a Prey,</l>
+<l>And Kings more furious and severe than they:</l>
+<l>Who claim'd the Skies, dispeopled Air and Floods,</l>
+<l>The lonely Lords of empty Wilds and Woods.</l>
+<l>Cities laid waste, they storm'd the Dens and Caves</l>
+<l>(For wiser Brutes were backward to be Slaves)</l>
+<l>What could be free, when lawless Beasts obey'd,</l>
+<l>And ev'n the Elements a Tyrant sway'd?</l>
+<l>In vain kind Seasons swell'd the teeming Grain,</l>
+<l>Soft Show'rs distill'd, and Suns grew warm in vain;</l>
+<l>The Swain with Tears to Beasts his Labour yields,</l>
+<l>And famish'd dies amidst his ripen'd Fields.</l>
+<l>No wonder Savages or Subjects slain</l>
+<l>Were equal Crimes in a Despotick Reign;</l>
+<l>Both doom'd alike for sportive Tyrants bled,</l>
+<l>But Subjects starv'd while Savages were fed.</l>
+<l>Proud <hi rend="italic">Nimrod</hi> first the bloody Chace began,</l>
+<l>A mighty Hunter, and his Prey was Man.</l>
+<l>Our haughty <hi rend="italic">Norman</hi> boasts that barb'rous Name,</l>
+<l>And makes his trembling Slaves the Royal Game.</l>
+<l>The Fields are ravish'd from th' industrious Swains,</l>
+<l>From Men their Cities, and from Gods their Fanes:</l>
+<l><pb n="4"/>
+The levell'd Towns with Weeds lie cover'd o'er,</l>
+<l>The hollow Winds thro' naked Temples roar;</l>
+<l>Round broken Columns clasping Ivy twin'd;</l>
+<l>O'er Heaps of Ruins stalk'd the stately Hind;</l>
+<l>The Fox obscene to gaping Tombs retires,</l>
+<l>And Wolves with Howling fill the sacred Quires.</l>
+<l>Aw'd by his Nobles, by his Commons curst,</l>
+<l>Th' Oppressor rul'd Tyrannick where he <hi rend="italic">durst,</hi></l>
+<l>Stretch'd o'er the Poor, and Church, his Iron Rod,</l>
+<l>And treats alike his Vassals and his God.</l>
+<l>Whom ev'n the <hi rend="italic">Saxon</hi> spar'd, and bloody <hi rend="italic">Dane,</hi></l>
+<l>The wanton Victims of his <hi rend="italic">Sport</hi> remain.</l>
+<l>But see the Man who spacious Regions gave</l>
+<l>A Waste for Beasts, himself deny'd a Grave!</l>
+<l>Stretch'd on the Lawn his second Hope survey,</l>
+<l>At once the Chaser and at once the Prey.</l>
+<l>Lo <hi rend="italic">Rufus,</hi> tugging at the deadly Dart,</l>
+<l>Bleeds in the Forest, like a wounded Hart.</l>
+<l>Succeeding Monarchs heard the Subjects Cries,</l>
+<l>Nor saw displeas'd the peaceful Cottage rise.</l>
+<l>Then gath'ring Flocks on unknown Mountains fed,</l>
+<l>O'er sandy Wilds were yellow Harvests spread,</l>
+<l>The Forests wonder'd at th' unusual Grain,</l>
+<l>And secret Transports touch'd the conscious Swain.</l>
+<l>Fair <hi rend="italic">Liberty, Britannia</hi>'s Goddess, rears</l>
+<l>Her chearful Head, and leads the golden Years.</l>
+</lg>
+<lg type="verse_paragraph"><pb n="5"/>
+  <l>Ye vig'rous Swains! while Youth ferments your Blood,</l>
+<l>And purer Spirits swell the sprightly Flood,</l>
+<l>Now range the Hills, the thickest Woods beset,</l>
+<l>Wind the shrill Horn, or spread the waving Net.</l>
+<l>When milder Autumn Summer's Heat succeeds,</l>
+<l>And in the new-shorn Field the Partridge feeds,</l>
+<l>Before his Lord the ready Spaniel bounds,</l>
+<l>Panting with Hope, he tries the furrow'd Grounds,</l>
+<l>But when the tainted Gales the Game betray,</l>
+<l>Couch'd close he lyes, and meditates the Prey;</l>
+<l>Secure they trust th' unfaithful Field, beset,</l>
+<l>Till hov'ring o'er 'em sweeps the swelling Net.</l>
+<l>Thus (if small Things we may with great compare)</l>
+<l>When <hi rend="italic">Albion</hi> sends her eager Sons to War,</l>
+<l>Pleas'd, in the Gen'ral's Sight, the Host lye down</l>
+<l>Sudden, before some unsuspecting Town,</l>
+<l>The Young, the Old, one Instant makes our Prize,</l>
+<l>And high in Air <hi rend="italic">Britannia</hi>'s Standard flies.</l>
+</lg>
+<lg type="verse_paragraph"><l>See! from the Brake the whirring Pheasant springs,</l>
+<l>And mounts exulting on triumphant Wings;</l>
+<l>Short is his Joy! he feels the fiery Wound,</l>
+<l>Flutters in Blood, and panting beats the Ground.</l>
+<l>Ah! what avail his glossie, varying Dyes,</l>
+<l>His Purple Crest, and Scarlet-circled Eyes,</l>
+<l><pb n="6"/>
+The vivid Green his shining Plumes unfold;</l>
+<l>His painted Wings, and Breast that flames with Gold?</l>
+</lg>
+<lg type="verse_paragraph"><l>Nor yet, when moist <hi rend="italic">Arcturus</hi> clouds the Sky,</l>
+<l>The Woods and Fields their pleasing Toils deny.</l>
+<l>To Plains with well-breath'd Beagles we repair,</l>
+<l>And trace the Mazes of the circling Hare.</l>
+<l>(Beasts, taught by us, their Fellow Beasts pursue,</l>
+<l>And learn of Man each other to undo.)</l>
+<l>With slaught'ring Guns th' unweary'd Fowler roves,</l>
+<l>When Frosts have whiten'd all the naked Groves;</l>
+<l>Where Doves in Flocks the leafless Trees o'ershade,</l>
+<l>And lonely Woodcocks haunt the watry Glade.</l>
+<l>He lifts the Tube, and levels with his Eye;</l>
+<l>Strait a short Thunder breaks the frozen Sky.</l>
+<l>Oft, as in Airy Rings they skim the Heath,</l>
+<l>The clam'rous Plovers feel the Leaden Death:</l>
+<l>Oft as the mounting Larks their Notes prepare,</l>
+<l>They fall, and leave their little Lives in Air.</l>
+</lg>
+<lg type="verse_paragraph"><l>In genial Spring, beneath the quiv'ring Shade</l>
+<l>Where cooling Vapours breathe along the Mead,</l>
+<l>The patient Fisher takes his silent Stand</l>
+<l>Intent, his Angle trembling in his Hand;</l>
+<l>With Looks unmov'd, he hopes the Scaly Breed,</l>
+<l>And eyes the dancing Cork and bending Reed.</l>
+<l><pb n="7"/>
+Our plenteous Streams a various Race supply;</l>
+<l>The bright-ey'd Perch with Fins of <hi rend="italic">Tyrian</hi> Dye,</l>
+<l>The silver Eel, in shining Volumes roll'd,</l>
+<l>The yellow Carp, in Scales bedrop'd with Gold,</l>
+<l>Swift Trouts, diversify'd with Crimson Stains,</l>
+<l>And Pykes, the Tyrants of the watry Plains.</l>
+</lg>
+<lg type="verse_paragraph"><l>Now <hi rend="italic">Cancer</hi> glows with <hi rend="italic">Phoebus</hi>' fiery Car;</l>
+<l>The Youth rush eager to the Sylvan War;</l>
+<l>Swarm o'er the Lawns, the Forest Walks surround,</l>
+<l>Rowze the fleet Hart, and chear the opening Hound.</l>
+<l>Th' impatient Courser pants in ev'ry Vein,</l>
+<l>And pawing, seems to beat the distant Plain,</l>
+<l>Hills, Vales, and Floods appear already crost,</l>
+<l>And ere he starts, a thousand Steps are lost.</l>
+<l>See! the bold Youth strain up the threatning Steep,</l>
+<l>Rush thro' the Thickets, down the Vallies sweep,</l>
+<l>Hang o'er their Coursers Heads with eager Speed,</l>
+<l>And Earth rolls back beneath the flying Steed.</l>
+<l>Let old <hi rend="italic">Arcadia</hi> boast her spacious Plain,</l>
+<l>Th' Immortal Huntress, and her Virgin Train;</l>
+<l>Nor envy <hi rend="italic">Windsor!</hi> since thy Shades have seen</l>
+<l>As bright a Goddess, and as chast a Queen;</l>
+<l>Whose Care, like hers, protects the Sylvan Reign,</l>
+<l>The Earth's fair Light, and Empress of the Main.</l>
+</lg>
+<lg type="verse_paragraph"><pb n="8"/>
+ <l>Here, as old Bards have sung, <hi rend="italic">Diana</hi> stray'd</l>
+<l>Bath'd in the Springs, or sought the cooling Shade;</l>
+<l>Here arm'd with Silver Bows, in early Dawn,</l>
+<l>Her buskin'd Virgins trac'd the Dewy Lawn.</l>
+<l>Above the rest a rural Nymph was fam'd,</l>
+<l>Thy Offspring, <hi rend="italic">Thames!</hi> the fair <hi rend="italic">Lodona</hi> nam'd,</l>
+<l>(<hi rend="italic">Lodona</hi>'s Fate, in long Oblivion cast,</l>
+<l>The Muse shall sing, and what she sings shall last)</l>
+<l>Scarce could the Goddess from her Nymph be known,</l>
+<l>But by the Crescent and the golden Zone,</l>
+<l>She scorn'd the Praise of Beauty, and the Care;</l>
+<l>A Belt her Waste, a Fillet binds her Hair,</l>
+<l>A painted Quiver on her Shoulder sounds,</l>
+<l>And with her Dart the flying Deer she wounds.</l>
+<l>It chanc'd, as eager of the Chace the Maid</l>
+<l>Beyond the Forest's verdant Limits stray'd,</l>
+<l><hi rend="italic">Pan</hi> saw and lov'd, and furious with Desire</l>
+<l>Pursu'd her Flight; her Flight increas'd his Fire.</l>
+<l>Not half so swift the trembling Doves can fly,</l>
+<l>When the fierce Eagle cleaves the liquid Sky;</l>
+<l>Not half so swiftly the fierce Eagle moves,</l>
+<l>When thro' the Clouds he drives the trembling Doves;</l>
+<l>As from the God with fearful Speed she flew,</l>
+<l>As did the God with equal Speed pursue.</l>
+<l>Now fainting, sinking, pale, the Nymph appears;</l>
+<l>Now close behind his sounding Steps she hears;</l>
+<l><pb n="9"/>
+And now his Shadow reach'd her as she run,</l>
+<l>(His Shadow lengthen'd by the setting Sun)</l>
+<l>And now his shorter Breath with sultry Air</l>
+<l>Pants on her Neck, and fans her parting Hair.</l>
+<l>In vain on Father <hi rend="italic">Thames</hi> she calls for Aid,</l>
+<l>Nor could <hi rend="italic">Diana</hi> help her injur'd Maid.</l>
+<l>Faint, breathless, thus she pray'd, nor pray'd in vain;</l>
+<l>" Ah <hi rend="italic">Cynthia!</hi> ah—tho' banish'd from thy Train,</l>
+<l>" Let me, O let me, to the Shades repair,</l>
+<l>" My native Shades—there weep, and murmur there.</l>
+<l>She said, and melting as in Tears she lay,</l>
+<l>In a soft, silver Stream dissolv'd away.</l>
+<l>The silver Stream her Virgin Coldness keeps,</l>
+<l>For ever murmurs, and for ever weeps;</l>
+<l>Still bears the Name the hapless Virgin bore,</l>
+<l>And bathes the Forest where she rang'd before.</l>
+<l>In her chast Current oft the Goddess laves,</l>
+<l>And with Celestial Tears augments the Waves.</l>
+<l>Oft in her Glass the musing Shepherd spies</l>
+<l>The headlong Mountains and the downward Skies,</l>
+<l>The watry Landskip of the pendant Woods,</l>
+<l>And absent Trees that tremble in the Floods;</l>
+<l>In the clear azure Gleam the Flocks are seen,</l>
+<l>And floating Forests paint the Waves with Green.</l>
+<l>Thro' the fair Scene rowl slow the lingring Streams,</l>
+<l>Then foaming pour along, and rush into the <hi rend="italic">Thames.</hi></l>
+</lg>
+<lg type="verse_paragraph"><pb n="10"/>
+  <l>Thou too, great Father of the <hi rend="italic">British</hi> Floods!</l>
+<l>With joyful Pride survey'st our lofty Woods,</l>
+<l>Where tow'ring Oaks their spreading Honours rear,</l>
+<l>And future Navies on thy Banks appear.</l>
+<l>Not <hi rend="italic">Neptune</hi>'s self from all his Floods receives</l>
+<l>A wealthier Tribute, than to thine he gives.</l>
+<l>No Seas so rich, so full no Streams appear,</l>
+<l>No Lake so gentle, and no Spring so clear.</l>
+<l>Not fabled <hi rend="italic">Po</hi> more swells the Poets Lays,</l>
+<l>While thro' the Skies his shining Current strays,</l>
+<l>Than thine, which visits <hi rend="italic">Windsor</hi>'s fam'd Abodes,</l>
+<l>To grace the Mansion of our earthly Gods.</l>
+<l>Nor all his Stars a brighter Lustre show,</l>
+<l>Than the fair Nymphs that gild thy Shore below:</l>
+<l>Here <hi rend="italic">Jove</hi> himself, subdu'd by Beauty still,</l>
+<l>Might change <hi rend="italic">Olympus</hi> for a nobler Hill.</l>
+</lg>
+<lg type="verse_paragraph"><l>Happy the Man whom this bright Court approves,</l>
+<l>His Sov'reign favours, and his Country loves;</l>
+<l>Happy next him who to these Shades retires,</l>
+<l>Whom Nature charms, and whom the Muse inspires,</l>
+<l>Whom humbler Joys of home-felt Quiet please,</l>
+<l>Successive Study, Exercise and Ease.</l>
+<l>He gathers Health from Herbs the Forest yields,</l>
+<l>And of their fragrant Physick spoils the Fields:</l>
+<l><pb n="11"/>
+With Chymic Art exalts the Min'ral Pow'rs,</l>
+<l>And draws the Aromatick Souls of Flow'rs.</l>
+<l>Now marks the Course of rolling Orbs on high;</l>
+<l>O'er figur'd Worlds now travels with his Eye.</l>
+<l>Of ancient Writ unlocks the learned Store,</l>
+<l>Consults the Dead, and lives past Ages o'er.</l>
+<l>Or wandring thoughtful in the silent Wood,</l>
+<l>Attends the Duties of the Wise and Good,</l>
+<l>T' observe a Mean, be to himself a Friend,</l>
+<l>To follow Nature, and regard his End.</l>
+<l>Or looks on Heav'n with more than mortal Eyes,</l>
+<l>Bids his free Soul expatiate in the Skies,</l>
+<l>Amidst her Kindred Stars familiar roam,</l>
+<l>Survey the Region, and confess her Home!</l>
+<l>Such was the Life great <hi rend="italic">Scipio</hi> once admir'd,</l>
+<l>Thus <hi rend="italic">Atticus,</hi> and <hi rend="italic">Trumbal</hi> thus retir'd</l>
+</lg>
+<lg type="verse_paragraph"><l>Ye sacred Nine! that all my Soul possess,</l>
+<l>Whose Raptures fire me, and whose Visions bless,</l>
+<l>Bear me, oh bear me to sequester'd Scenes</l>
+<l>Of Bow'ry Mazes and surrounding Greens;</l>
+<l>To <hi rend="italic">Thames</hi>'s Banks which fragrant Breezes fill,</l>
+<l>Or where ye Muses sport on <hi rend="italic">Cooper</hi>'s Hill.</l>
+<l>(On <hi rend="italic">Cooper</hi>'s Hill eternal Wreaths shall grow,</l>
+<l>While lasts the Mountain, or while <hi rend="italic">Thames</hi> shall flow)</l>
+<l><pb n="12"/>
+I seem thro' consecrated Walks to rove,</l>
+<l>And hear soft Musick dye along the Grove;</l>
+<l>Led by the Sound I roam from Shade to Shade,</l>
+<l>By God-like Poets Venerable made:</l>
+<l>Here his first Lays Majestick <hi rend="italic">Denham</hi> sung;</l>
+<l>There the last Numbers flow'd from <hi rend="italic">Cowley</hi>'s Tongue.</l>
+<l>O early lost! what Tears the River shed</l>
+<l>When the sad Pomp along his Banks was led?</l>
+<l>His drooping Swans on ev'ry Note expire,</l>
+<l>And on his Willows hung each Muse's Lyre.</l>
+</lg>
+<lg type="verse_paragraph"><l>Since Fate relentless stop'd their Heav'nly Voice,</l>
+<l>No more the Forests ring, or Groves rejoice;</l>
+<l>Who now shall charm the Shades where <hi rend="italic">Cowley</hi> strung</l>
+<l>His living Harp, and lofty <hi rend="italic">Denham</hi> sung?</l>
+<l>But hark! the Groves rejoice, the Forest rings!</l>
+<l>Are these reviv'd? or is it <hi rend="italic">Granville</hi> sings?</l>
+</lg>
+<lg type="verse_paragraph"><l>'Tis yours, my Lord, to bless our soft Retreats,</l>
+<l>And call the Muses to their ancient Seats,</l>
+<l>To paint anew the flow'ry Sylvan Scenes,</l>
+<l>To crown the Forests with Immortal Greens,</l>
+<l>Make <hi rend="italic">Windsor</hi> Hills in lofty Numbers rise,</l>
+<l>And lift her Turrets nearer to the Skies;</l>
+<l>To sing those Honours you deserve to wear,</l>
+<l>And add new Lustre to her Silver <hi rend="italic">Star.</hi></l>
+</lg>
+<lg type="verse_paragraph"><pb n="13"/>
+  <l>Here noble <hi rend="italic">Surrey</hi> felt the sacred Rage,</l>
+<l><hi rend="italic">Surrey,</hi> the <hi rend="italic">Granville</hi> of a former Age:</l>
+<l>Matchless his Pen, victorious was his Lance;</l>
+<l>Bold in the Lists, and graceful in the Dance:</l>
+<l>In the same Shades the <hi rend="italic">Cupids</hi> tun'd his Lyre,</l>
+<l>To the same Notes, of Love, and soft Desire:</l>
+<l>Fair <hi rend="italic">Geraldine,</hi> bright Object of his Vow,</l>
+<l>Then fill'd the Groves, as heav'nly <hi rend="italic">Myra</hi> now.</l>
+</lg>
+<lg type="verse_paragraph">
+  <l>Oh wou'dst thou sing what Heroes <hi rend="italic">Windsor</hi> bore,</l>
+<l>What Kings first breath'd upon her winding Shore,</l>
+<l>Or raise old Warriors whose ador'd Remains</l>
+<l>In weeping Vaults her hallow'd Earth contains!</l>
+<l>With <hi rend="italic">Edward</hi>'s Acts adorn the shining Page,</l>
+<l>Stretch his long Triumphs down thro' ev'ry Age,</l>
+<l>Draw Kings enchain'd; and <hi rend="italic">Cressi</hi>'s glorious Field,</l>
+<l>The Lillies blazing on the Regal Shield.</l>
+<l>Then, from her Roofs when <hi rend="italic">Verrio</hi>'s Colours fall,</l>
+<l>And leave inanimate the naked Wall;</l>
+<l>Still in thy Song shou'd vanquish'd <hi rend="italic">France</hi> appear,</l>
+<l>And bleed for ever under <hi rend="italic">Britain</hi>'s Spear.</l>
+</lg>
+<lg type="verse_paragraph"><l>Let softer Strains Ill-fated <hi rend="italic">Henry</hi> mourn,</l>
+<l>And Palms Eternal flourish round his Urn.</l>
+<l><pb n="14"/>
+Here o'er the Martyr-King the Marble weeps,</l>
+<l>And fast beside him, once-fear'd <hi rend="italic">Edward</hi> sleeps:</l>
+<l>Whom not th' extended <hi rend="italic">Albion</hi> could contain,</l>
+<l>From old <hi rend="italic">Belerium</hi> to the <hi rend="italic">German</hi> Main,</l>
+<l>The Grave unites; where ev'n the Great find Rest,</l>
+<l>And blended lie th' Oppressor and th' Opprest!</l>
+</lg>
+<lg type="verse_paragraph"><l>Make sacred <hi rend="italic">Charles</hi>'s Tomb for ever known,</l>
+<l>(Obscure the Place, and uninscrib'd the Stone)</l>
+<l>Oh Fact accurst! What Tears has <hi rend="italic">Albion</hi> shed,</l>
+<l>Heav'ns! what new Wounds, and how her old have bled?</l>
+<l>She saw her Sons with purple Deaths expire,</l>
+<l>Her sacred Domes involv'd in rolling Fire.</l>
+<l>A dreadful Series of Intestine Wars,</l>
+<l>In glorious Triumphs, and dishonest Scars.</l>
+<l>At length great <hi rend="italic">ANNA</hi> said—Let Discord cease!</l>
+<l>She said, the World obey'd, and all was <hi rend="italic">Peace!</hi></l>
+</lg>
+<lg type="verse_paragraph"><l>In that blest Moment, from his Oozy Bed</l>
+<l>Old Father <hi rend="italic">Thames</hi> advanc'd his rev'rend Head.</l>
+<l>His Tresses dropt with Dews, and o'er the Stream</l>
+<l>His shining Horns diffus'd a golden Gleam:</l>
+<l>Grav'd on his Urn appear'd the Moon, that guides</l>
+<l>His swelling Waters, and alternate Tydes;</l>
+<l>The figur'd Streams in Waves of Silver roll'd,</l>
+<l>And on their Banks <hi rend="italic">Augusta</hi> rose in Gold.</l>
+<l><pb n="15"/>
+Around his Throne the Sea-born Brothers stood,</l>
+<l>That swell with Tributary Urns his Flood.</l>
+<l>First the fam'd Authors of his ancient Name,</l>
+<l>The winding <hi rend="italic">Isis,</hi> and the fruitful <hi rend="italic">Tame:</hi></l>
+<l>The <hi rend="italic">Kennet</hi> swift, for silver Eels renown'd;</l>
+<l>The <hi rend="italic">Loddon</hi> slow, with verdant Alders crown'd:</l>
+<l><hi rend="italic">Cole,</hi> whose clear Streams his flow'ry Islands lave;</l>
+<l>And chalky <hi rend="italic">Wey,</hi> that rolls a milky Wave:</l>
+<l>The blue, transparent <hi rend="italic">Vandalis</hi> appears;</l>
+<l>The gulphy <hi rend="italic">Lee</hi> his sedgy Tresses rears:</l>
+<l>And sullen <hi rend="italic">Mole,</hi> that hides his diving Flood;</l>
+<l>And silent <hi rend="italic">Darent,</hi> stain'd with <hi rend="italic">Danish</hi> Blood.</l>
+</lg>
+<lg type="verse_paragraph"><l>High in the midst, upon his Urn reclin'd,</l>
+<l>(His Sea-green Mantle waving with the Wind)</l>
+<l>The God appear'd; he turn'd his azure Eyes</l>
+<l>Where <hi rend="italic">Windsor</hi>-Domes and pompous Turrets rise,</l>
+<l>Then bow'd and spoke; the Winds forget to roar,</l>
+<l>And the hush'd Waves glide softly to the Shore.</l>
+</lg>
+<lg type="verse_paragraph"><l>Hail Sacred <hi rend="italic">Peace!</hi> hail long-expected Days,</l>
+<l>Which <hi rend="italic">Thames</hi>'s Glory to the Stars shall raise!</l>
+<l>Tho' <hi rend="italic">Tyber</hi>'s Streams immortal <hi rend="italic">Rome</hi> behold,</l>
+<l>Tho' foaming <hi rend="italic">Hermus</hi> swells with Tydes of Gold,</l>
+<l>From Heav'n it self tho' sev'nfold <hi rend="italic">Nilus</hi> flows,</l>
+<l>And Harvests on a hundred Realms bestows;</l>
+<l><pb n="16"/>
+These now no more shall be the Muse's Themes,</l>
+<l>Lost in my Fame, as in the Sea their Streams.</l>
+<l>Let <hi rend="italic">Volga</hi>'s Banks with Iron Squadrons shine,</l>
+<l>And Groves of Lances glitter on the <hi rend="italic">Rhine,</hi></l>
+<l>Let barb'rous <hi rend="italic">Ganges</hi> arm a servile Train;</l>
+<l>Be mine the Blessings of a peaceful Reign.</l>
+<l>No more my Sons shall dye with <hi rend="italic">British</hi> Blood</l>
+<l>Red <hi rend="italic">Iber</hi>'s Sands, or <hi rend="italic">Ister</hi>'s foaming Flood;</l>
+<l>Safe on my Shore each unmolested Swain</l>
+<l>Shall tend the Flocks, or reap the bearded Grain;</l>
+<l>The shady Empire shall retain no Trace</l>
+<l>Of War or Blood, but in the Sylvan Chace,</l>
+<l>The Trumpets sleep, while chearful Horns are blown,</l>
+<l>And Arms employ'd on Birds and Beasts alone.</l>
+<l>Behold! th' ascending <hi rend="italic">Villa's</hi> on my Side</l>
+<l>Project long Shadows o'er the Chrystal Tyde.</l>
+<l>Behold! <hi rend="italic">Augusta</hi>'s glitt'ring Spires increase,</l>
+<l>And Temples rise, the beauteous Works of Peace.</l>
+<l>I see, I see where two fair Cities bend</l>
+<l>Their ample Bow, a new <hi rend="italic">White-Hall</hi> ascend!</l>
+<l>There mighty Nations shall inquire their Doom,</l>
+<l>The World's great Oracle in Times to come;</l>
+<l>There Kings shall sue, and suppliant States be seen</l>
+<l>Once more to bend before a <hi rend="italic">British</hi> QUEEN.</l>
+</lg>
+<lg type="verse_paragraph"><l>Thy Trees, fair <hi rend="hi">Windsor!</hi> now shall leave their Woods,</l>
+<l>And half thy Forests rush into my Floods,</l>
+<l><pb n="17"/>
+Bear <hi rend="italic">Britain</hi>'s Thunder, and her Cross display,</l>
+<l>To the bright Regions of the rising Day;</l>
+<l>Tempt Icy Seas, where scarce the Waters roll,</l>
+<l>Where clearer Flames glow round the frozen Pole;</l>
+<l>Or under Southern Skies exalt their Sails,</l>
+<l>Led by new Stars, and born by spicy Gales!</l>
+<l>For me the Balm shall bleed, and Amber flow,</l>
+<l>The Coral redden, and the Ruby glow,</l>
+<l>The Pearly Shell its lucid Globe infold,</l>
+<l>And <hi rend="italic">Phoebus</hi> warm the ripening Ore to Gold.</l>
+<l>The Time shall come, when free as Seas or Wind</l>
+<l>Unbounded <hi rend="italic">Thames</hi> shall flow for all Mankind,</l>
+<l>Whole Nations enter with each swelling Tyde,</l>
+<l>And Oceans join whom they did first divide;</l>
+<l>Earth's distant Ends our Glory shall behold,</l>
+<l>And the new World launch forth to seek the Old.</l>
+<l>Then Ships of uncouth Form shall stem the Tyde,</l>
+<l>And Feather'd People crowd my wealthy Side,</l>
+<l>While naked Youth and painted Chiefs admire</l>
+<l>Our Speech, our Colour, and our strange Attire!</l>
+<l>Oh stretch thy Reign, fair <hi rend="italic">Peace!</hi> from Shore to Shore,</l>
+<l>Till Conquest cease, and Slav'ry be no more:</l>
+<l>Till the freed <hi rend="italic">Indians</hi> in their native Groves</l>
+<l>Reap their own Fruits, and woo their Sable Loves,</l>
+<l><hi rend="italic">Peru</hi> once more a Race of Kings behold,</l>
+<l>And other <hi rend="italic">Mexico's</hi> be roof'd with Gold.</l>
+<l><pb n="18"/>
+Exil'd by Thee from Earth to deepest Hell,</l>
+<l>In Brazen Bonds shall barb'rous <hi rend="italic">Discord</hi> dwell:</l>
+<l>Gigantick <hi rend="italic">Pride,</hi> pale <hi rend="italic">Terror,</hi> gloomy <hi rend="italic">Care,</hi></l>
+<l>And mad <hi rend="italic">Ambition,</hi> shall attend her there.</l>
+<l>There purple <hi rend="italic">Vengeance</hi> bath'd in Gore retires,</l>
+<l>Her Weapons blunted, and extinct her Fires:</l>
+<l>There hateful <hi rend="italic">Envy</hi> her own Snakes shall feel,</l>
+<l>And <hi rend="italic">Persecution</hi> mourn her broken Wheel:</l>
+<l>There <hi rend="italic">Faction</hi> roars, <hi rend="italic">Rebellion</hi> bites her Chain,</l>
+<l>And gasping Furies thirst for Blood in vain.</l>
+</lg>
+<lg type="verse_paragraph"><l>Here cease thy Flight, nor with unhallow'd Lays</l>
+<l>Touch the fair Fame of <hi rend="italic">Albion</hi>'s Golden Days.</l>
+<l>The Thoughts of Gods let <hi rend="italic">Granville</hi>'s Verse recite,</l>
+<l>And bring the Scenes of opening Fate to Light.</l>
+<l>My humble Muse, in unambitious Strains,</l>
+<l>Paints the green Forests and the flow'ry Plains,</l>
+<l>Where Peace descending bids her Olives spring,</l>
+<l>And scatters Blessings from her Dove-like Wing.</l>
+<l>Ev'n I more sweetly pass my careless Days,</l>
+<l>Pleas'd in the silent Shade with empty Praise;</l>
+<l>Enough for me, that to the listning Swains</l>
+<l>First in these Fields I sung the Sylvan Strains.</l>
+</lg>
+
+<trailer>FINIS.</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>
+      

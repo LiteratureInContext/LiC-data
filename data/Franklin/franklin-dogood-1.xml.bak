@@ -1,0 +1,2229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="franklin-dogood">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Silence Dogood Essays</title>
+
+                <author>
+
+                    <persName type="lcnaf" key="n79043402">
+                        <name>
+                            <forename>Benjamin</forename>
+                            <surname>Franklin</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                    <persName type="orcid" key="0000-0002-3544-2891">
+                        <name ref="editors.xml#SB">
+                            <surname>Brunstetter</surname>
+                            <forename>Sara</forename>
+                        </name>
+                    </persName>
+                </editor>
+
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Staff and Research Assistants at The University of Virginia</name>
+                    <name ref="editors.xml#AB"><forename>Austin</forename>
+                        <surname>Benson</surname></name>
+                    <name ref="editors.xml#SB"><forename>Sara </forename>
+                        <surname>Brunstetter</surname></name>
+                    <name ref="editors.xml#JOB"><forename> John </forename>
+                        <surname> O'Brien</surname></name>
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n79043402">
+                                <name>
+                                    <forename>Benjamin</forename>
+                                    <surname>Franklin</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title type="main">Silence Dogood</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7013445">Boston</placeName>
+                            </pubPlace>
+                            <publisher>James Franklin</publisher>
+                            <date when="1722">1722</date>
+                            <note resp="editors.xml#JOB"> </note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="letter">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <!-- Single? -->
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="mixed"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="low"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7013445">Boston</name>
+                    <time when="1722">1722</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+
+
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                        Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2022-8-10" who="JOB"/>
+        </revisionDesc>
+    </teiHeader>
+
+
+    <text>
+        <front>
+            <div/>
+        </front>
+        <body>
+            <div>
+                <head> The "Silence Dogood" Essays </head>
+                <p>Benjamin Franklin was sixteen years old and working as an apprentice in the
+                    Boston print shop of his older brother James when, in April 1722, he began
+                    writing a series of essays to be published in the <hi rend="italic">New-England
+                        Courant</hi> (which his brother published) under the pseudonym of "Silence
+                    Dogood." In his <hi rend="italic">Autobiography</hi>, Benjamin remembered
+                    slipping these essays, written in disguised handwriting, under the door of the
+                        <hi rend="italic">Courant's</hi> office; he assumed (probably correctly)
+                    that James would refuse to print an essay from him if he simply asked or
+                    submitted it under his own name. James published the essays, which became very
+                    popular among the newspaper's readers. Benjamin kept his authorship of the
+                    series a secret, even from his brother, until after he finished writing them in
+                    October 1722, at which point James printed an advertisement asking for "Silence
+                    Dogood" to come forth. Benjamin confessed that he was the author, which seems to
+                    have annoyed his older brother. It was not too long after that that Benjamin
+                    left his brother's shop--breaking his apprenticeship--and moved to
+                    Philadelphia.</p>
+                <!-- Need link add to "autobiography" to Franklin Autobiography on our web-->
+                <!-- Add picture -->
+                <p>The Silence Dogood essays are written in the persona of a middle-aged woman, but
+                    the title character is very clearly indebted to Mr. Spectator, the avatar of
+                    Addison and Steele's <hi rend="italic">Spectator</hi> series, published a decade
+                    earlier. It is testimony to how widely influential the <hi rend="italic"
+                        >Spectator</hi> was that even in colonial America, teenaged boys were
+                    reading it and taking it as a model for their own writing. In the <hi
+                        rend="italic">Autobiography</hi>, Franklin remembers how much he loved the
+                        <hi rend="italic">Spectator</hi>, and how he first came across it at the age
+                    of sixteen: "<hi rend="italic">an odd volume of the Spectator fell into my
+                        hands. This was a publication I had never seen. I bought the volume, and
+                        read it again and again. I was enchanted with it, thought the style
+                        excellent, and wished it were in my power to imitate it. With this view I
+                        selected some of the papers, made short summaries of the sense of each
+                        period, and put them for a few days aside. I then, without looking at the
+                        book, endeavoured to restore the essays to their true form, and to express
+                        each thought at length, as it was in the original, employing the most
+                        appropriate words that occurred to my mind. I afterwards compared my
+                        Spectator with the original; I perceived some faults, which I
+                    corrected</hi>." If the <hi rend="italic">Spectator</hi> gave Franklin a model
+                    for his prose style, so too did it give him a persona to inhabit; the "Silence"
+                    in Silence Dogood's name clearly alludes to the taciturn Mr. Spectator as
+                    invented by Addison and Steele. The surname "Dogood" also alludes to a famous
+                    writer, in this case a colonial writer: the prolific Boston cleric Cotton
+                    Mather, whose 1710 collection <hi rend="italic">Bonifacius: or, Essays to Do
+                        Good</hi>, advocating the reader to undertake charitable works, Franklin
+                    also remembered as a book that had a great impact on him as a young man. The
+                    startling thing about the Silence Dogood essays (in addition to the fact that
+                    they were written by a sixteen-year-old), is that Franklin adopts the persona of
+                    a <hi rend="italic">woman</hi>, a persona that enables him adopt, but also gently mock, the kinds of
+                    sentiments expressed by authority figures like Mather. Franklin would continue
+                    to use personae, male and female, throughout his career, the most famous of
+                    these being the Poor Richard of his Almanack. And there's a sense in which the
+                    "Benjamin Franklin" of the <hi rend="italic">Autobiography</hi> and of history
+                    was also a persona, a role that Franklin played on the public stage of the
+                    trans-Atlantic world.</p>
+                <p>There were fourteen Silence Dogood essays in all, published every two weeks in
+                    the pages of the <hi rend="italic">New England Courant</hi>, for which, as we
+                    have seen, James Franklin was the publisher. The <hi rend="italic">New England
+                        Courant</hi> was the first independently-published newspaper in colonial
+                    America; that is, it operated independently of government authority. So much so
+                    that the colonial government in Massachusetts frequently attempted to censor the
+                    newspaper and jailed James Franklin several times when he published articles
+                    that were thought to defame public officials (Cotton Mather, for example).
+                    During these periods, Benjamin was listed as the official publisher of the
+                    newspaper. It was finally closed for good in 1726. Benjamin had long since moved
+                    on, and was at this point finishing a stint as a journeyman printer in London
+                    and preparing to return to Philadelphia, where he opened a print shop of his
+                    own.</p>
+                
+            </div>
+            <div>
+                <head> April 2, 1722 [No. 1] To the Author of the <hi rend="italic">New-England
+                        Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>It may not be improper in the first place to inform your Readers, that I intend
+                    once a <ref corresp="fortnight" target="fortnight_">Fortnight</ref> to present
+                    them, by the Help of this Paper, with a short <ref corresp="epistle"
+                        target="epistle_">Epistle</ref>, which I presume will add somewhat to their
+                    Entertainment.</p>
+                <p>And since it is observed, that the Generality of People, now a days, are
+                    unwilling either to commend or <ref corresp="dispraise" target="dispraise_"
+                        >dispraise</ref> what they read, until they are in some measure informed who
+                    or what the Author of it is, whether he be <hi rend="italic">poor</hi> or <hi
+                        rend="italic">rich</hi>, <hi rend="italic"> old</hi> or <hi rend="italic"
+                        >young</hi>, a <hi rend="italic">Schollar</hi> or a <ref
+                        corresp="leatherapron" target="leatherapron_"><hi rend="italic">Leather
+                            Apron Man</hi></ref>, <ref corresp="etc" target="etc_">&amp;c</ref> and
+                    give their Opinion of the Performance, according to the Knowledge which they
+                    have of the Author's Circumstances, it may not be amiss to begin with a short
+                    Account of my past Life and present Condition, that the Reader may not be at a
+                    Loss to judge <ref corresp="whether" target="whether_">whether or no</ref> my
+                        <ref corresp="lucubrations" target="lucubrations_">Lucubrations</ref> are
+                    worth his reading.</p>
+                <p>At the time of my Birth, my Parents were on Ship-board in their Way from London
+                    to <ref corresp="nengland" target="nengland_">N. England</ref>. My Entrance into
+                    this troublesome World was attended with the Death of my Father, a Misfortune,
+                    which tho' I was not then capable of knowing, I shall never be able to forget;
+                    for as he, poor Man, stood upon the Deck rejoycing at my Birth, a merciless Wave
+                    entred the Ship, and in one Moment carry'd him beyond Reprieve. Thus, was the
+                        <hi rend="italic"> first Day</hi> which I saw, the <hi rend="italic"
+                        >last</hi> that was seen by my Father; and thus was my <ref
+                        corresp="disconsolate" target="disconsolate_">disconsolate</ref> Mother at
+                    once made both a <hi rend="italic">Parent</hi> and a <hi rend="italic"
+                        >Widow</hi>.</p>
+                <p>When we arrived at Boston (which was not long after) I was put to Nurse in a
+                    Country Place, at a small Distance from the Town, where I went to School, and
+                    past my Infancy and Childhood in Vanity and Idleness, until I was <ref
+                        corresp="apprentice" target="apprentice_">bound out Apprentice</ref>, that I
+                    might no longer be a Charge to my <ref corresp="indigent" target="indigent_"
+                        >Indigent</ref> Mother, who was put to hard Shifts for a Living.</p>
+                <p>My Master was a Country Minister, a pious good-natur'd young Man, and a
+                    Batchelor: he labour'd with all his Might to instil vertuous and godly
+                    Principles into my tender Soul, well knowing that it was the most suitable Time
+                    to make deep and lasting Impressions on the Mind, while it was yet untainted
+                    with Vice, free and unbiass'd. He endeavour'd that I might be instructed in all
+                    that Knowledge and Learning which is necessary for our Sex, and deny'd me no
+                    Accomplishment that could possibly be attained in a Country Place; such as all
+                    Sorts of Needle-Work, Writing, Arithmetick, &amp;c. and observing that I took a
+                        <ref corresp="literacy" target="literacy_">more than ordinary Delight in
+                        reading ingenious Books</ref>, he gave me the free Use of his Library, which
+                    tho' it was but small, yet it was well chose, to inform the Understanding
+                    rightly, and enable the Mind to frame great and noble Ideas.</p>
+                <p>Before I had liv'd quite two Years with this Reverend Gentleman, my indulgent
+                    Mother departed this Life, leaving me as it were by my self, having no Relation
+                    on Earth within my Knowledge.</p>
+                <p>I will not abuse your Patience with a tedious Recital of all the frivolous
+                    Accidents of my Life, that happened from this Time until I arrived to <ref
+                        corresp="discretion" target="discretion_">Years of Discretion</ref>, only
+                    inform you that I liv'd a chearful Country Life, spending my leisure Time either
+                    in some innocent Diversion with the neighbouring Females, or in some shady
+                    Retirement, with the best of Company, <hi rend="italic"> Books</hi>. Thus I past
+                    away the Time with a Mixture of Profit and Pleasure, having no affliction but
+                    what was imaginary, and created in my own Fancy; as nothing is more common with
+                    us Women, than to be grieving for nothing, when we have nothing else to grieve
+                    for.</p>
+                <p>As I would not engross too much of your Paper at once, I will defer the Remainder
+                    of my Story until my next Letter; in the mean time desiring your Readers to
+                    exercise their Patience, and bear with my Humours now and then, because I shall
+                    trouble them but seldom. I am not insensible of the Impossibility of pleasing
+                    all, but I would not willingly displease any; and for those who will take
+                    Offence <ref corresp="were" target="were_">were</ref> none is intended, they are
+                    beneath the Notice of Your Humble Servant,</p>
+                <p>SILENCE DOGOOD.</p>
+            </div>
+            <div>
+                <head> April 16, 1722 [No. 2] To the Author of the <hi rend="italic">New-England
+                        Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>Histories of Lives are seldom entertaining, unless they contain something either
+                    admirable or exemplar: And since there is little or nothing of this Nature in my
+                    own Adventures, I will not tire your Readers with tedious Particulars of no
+                    Consequence, but will briefly, and in as few Words as possible, relate the most
+                    material Occurrences of my Life, and according to my Promise, confine all to
+                    this Letter.</p>
+                <p>My Reverend master who had hitherto remained a Batchelor, (after much meditation
+                    on the <ref corresp="genesis" target="genesis_">Eighteenth verse of the Second
+                        Chapter of Genesis</ref>,) took up a Resolution to marry; and having made
+                    several unsuccessful fruitless Attempts on the <ref corresp="topsex"
+                        target="topsex_">more topping Sort of our Sex</ref>, and being tir'd with
+                    making troublesome Journeys and Visits to no Purpose, he began unexpectedly to
+                    cast a loving Eye upon Me, whom he had brought up cleverly to his Hand.</p>
+                <p>There is certainly scarce any Part of a Man's Life in which he appears more silly
+                    and ridiculous, than when he makes his first Onset in Courtship. The aukward
+                    Manner in which my Master first discover'd his Intentions, made me, in spite of
+                    my Reverence to his Person, burst out into an unmannerly Laughter: However,
+                    having ask'd his Pardon, and with much ado compos'd my Countenance, I promis'd
+                    him I would take his Proposal into serious Consideration, and speedily give him
+                    an Answer.</p>
+                <p>As he had been a great Benefactor (and in a Manner a Father to me) I could not
+                    well deny his Request, when I once perceived he was in earnest. Whether it was
+                    Love, or Gratitude, or Pride, or all Three that made me consent, I know not; but
+                    it is certain, he found it no hard Matter, by the Help of his Rhetorick, to
+                    conquer my Heart, and perswade me to marry him.</p>
+                <p>This unexpected Match was very astonishing to all the Country round about, and
+                    served to furnish them with Discourse for a long Time after; some approving it,
+                    others disliking it, as they were led by their various Fancies and
+                    Inclinations.</p>
+                <p>We lived happily together in the Heighth of conjugal Love and mutual Endearments,
+                    for near Seven Years, in which Time we added Two likely Girls and a Boy to the
+                    Family of the Dogoods: But alas! When my <ref corresp="meridian"
+                        target="meridian_">Sun was in its meridian Altitude</ref>, inexorable
+                    unrelenting Death, as if he had envy'd my Happiness and Tranquility, and
+                    resolv'd to make me entirely miserable by the Loss of so good an Husband,
+                    hastened his Flight to the Heavenly World, by a sudden unexpected Departure from
+                        <ref corresp="thisworld" target="thisworld_">this</ref>.</p>
+                <p>I have now remained in a State of Widowhood for several Years, but it is a State
+                    I never much admir'd, and I am apt to fancy that I could be easily perswaded to
+                    marry again, provided I was sure of a good-humour'd, sober, agreeable Companion:
+                    But one, even with these few good Qualities, being hard to find, I have lately
+                    relinquish'd all Thoughts of that Nature.</p>
+                <p>At present I pass away my leisure Hours in Conversation, either with my honest
+                    Neighbour Rusticus and his Family, or with the ingenious Minister of our Town,
+                    who now lodges at my House, and by whose Assistance I intend now and then to
+                    beautify my Writings with a Sentence or two in the learned Languages, which will
+                    not only be fashionable, and pleasing to those who do not understand it, but
+                    will likewise be very ornamental.</p>
+                <p>I shall conclude this with my own Character, which (one would think) I should be
+                    best able to give. <hi rend="italic">Know then</hi>, That I am an Enemy to Vice,
+                    and a Friend to Vertue. I am one of an extensive Charity, and a great Forgiver
+                    of <hi rend="italic">private</hi> Injuries: A hearty Lover of the Clergy and all
+                    good Men, and a mortal Enemy to arbitrary Government and unlimited Power. I am
+                    naturally very jealous for the Rights and Liberties of my Country; and the least
+                    appearance of an Incroachment on those invaluable Priviledges, is apt to make my
+                    Blood boil exceedingly. I have likewise a natural Inclination to observe and
+                    reprove the Faults of others, at which I have an excellent Faculty. I speak this
+                    by Way of Warning to all such whose Offences shall come under my Cognizance, for
+                    I never intend to wrap my Talent in a Napkin. To be brief; I am courteous and
+                    affable, good humour'd (unless I am first provok'd,) and handsome, and sometimes
+                    witty, but always, Sir, Your Friend and Humble Servant,</p>
+                <p>SILENCE DOGOOD.</p>
+            </div>
+            <div>
+                <head> April 30, 1722 [No. 3] To the Author of the <hi rend="italic">New-England
+                        Courant</hi>. </head>
+                <p>Sir.</p>
+                <p>It is undoubtedly the Duty of all Persons to serve the Country they live in,
+                    according to their Abilities; yet I sincerely acknowledge, that I have hitherto
+                    been very deficient in this Particular; whether it was for want of Will or
+                    Opportunity, I will not at present stand to determine: Let it suffice, that I
+                    now take up a Resolution, to do for the future all that <hi rend="italic">lies
+                        in my Way</hi> for the Service of my Countrymen.</p>
+                <p>I have from my Youth been <ref corresp="indefatigably" target="indefatigably_"
+                        >indefatigably</ref> studious to gain and treasure up in my Mind all useful
+                    and desireable Knowledge, especially such as tends to improve the Mind, and
+                    enlarge the Understanding: And as I have found it very beneficial to me, I am
+                    not without Hopes, that communicating my small Stock in this Manner, by <ref
+                        corresp="peacemeal" target="peacemeal_">Peace-meal</ref>> to the Publick,
+                    may be at least in some Measure useful.</p>
+                <p>I am very sensible that it is impossible for me, or indeed any one Writer to
+                    please all Readers at once. Various Persons have different Sentiments; and that
+                    which is pleasant and delightful to one, gives another a Disgust. He that would
+                    (in this Way of Writing) please all, is under a Necessity to make his Themes
+                    almost as numerous as his Letters. He must one while be merry and diverting,
+                    then more solid and serious; one while sharp and satyrical, then (to <ref
+                        corresp="mollify" target="mollify_">mollify</ref> that) be sober and
+                    religious; at one Time let the Subject be Politicks, then let the next Theme be
+                    Love: Thus will every one, one Time or other find some thing agreeable to his
+                    own Fancy, and in his Turn be delighted.</p>
+                <p>According to this Method I intend to proceed, bestowing now and then a few gentle
+                        <ref corresp="reproof" target="reproof_">Reproofs</ref> on those who deserve
+                    them, not forgetting at the same time to applaud those whose Actions merit
+                    Commendation. And here I must not forget to invite the ingenious Part of your
+                    Readers, particularly those of my own Sex to enter into a Correspondence with
+                    me, assuring them, that their Condescension in this Particular shall be received
+                    as a Favour, and accordingly acknowledged.</p>
+                <p>I think I have now finish'd the Foundation, and I intend in my next to begin to
+                    raise the Building. Having nothing more to write at present, I must make the
+                    usual excuse in such Cases, of <hi rend="italic">being in haste</hi>, assuring
+                    you that I speak from my Heart when I call my self, The most humble and obedient
+                    of all the Servants your Merits have acquir'd,</p>
+                <p>SILENCE DOGOOD.</p>
+            </div>
+            <div>
+                <head> May 14, 1722 [No. 4] <ref corresp="cicerotrans" target="cicerotrans_"><hi
+                            rend="italic">An sum etiam nunc vel Graecè loqui vel Latinè
+                            docendus?</hi> Cicero.</ref> To the Author of the <hi rend="italic"
+                        >New-England Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>Discoursing the other Day at Dinner with my Reverend Boarder, formerly mention'd,
+                    (whom for Distinction sake we will call by the Name of Clericus,) concerning the
+                    Education of Children, I ask'd his Advice about my young Son William, whether or
+                    no I had best bestow upon him Academical Learning, or (as our Phrase is) <hi
+                        rend="italic">bring him up at our College</hi>: He perswaded me to do it by
+                    all Means, using many weighty Arguments with me, and answering all the
+                    Objections that I could form against it; telling me withal, that he did not
+                    doubt but that the Lad would take his Learning very well, and not idle away his
+                    Time as too many there now-a-days do. These Words of Clericus gave me a
+                    Curiosity to inquire a little more strictly into the present Circumstances of
+                    that famous <ref corresp="seminary" target="seminary_">Seminary</ref> of
+                    Learning; but the Information which he gave me, was neither pleasant, nor such
+                    as I expected.</p>
+                <p>As soon as Dinner was over, I took a solitary Walk into my Orchard, still
+                    ruminating on Clericus's Discourse with much Consideration, until I came to my
+                    usual Place of Retirement under the <hi rend="italic">Great Apple-Tree</hi>;
+                    where having seated my self, and carelessly laid my Head on a <ref
+                        corresp="verdant" target="verdant_">verdant</ref> Bank, I fell by Degrees
+                    into a soft and undisturbed Slumber. My waking Thoughts remained with me in my
+                    Sleep, and before I awak'd again, I dreamt the following Dream.</p>
+                <p>I fancy'd I was travelling over pleasant and delightful Fields and Meadows, and
+                    thro' many small Country Towns and Villages; and as I pass'd along, all Places
+                    resounded with the Fame of the Temple of Learning: Every Peasant, who had
+                    wherewithal, was preparing to send one of his Children at least to this famous
+                    Place; and in this Case most of them consulted their own Purses instead of their
+                    Childrens Capacities: So that I observed, a great many, yea, the most part of
+                    those who were travelling thither, were little better than Dunces and
+                    Blockheads. Alas! alas!</p>
+                <p>At length I entred upon a spacious Plain, in the Midst of which was erected a
+                    large and stately Edifice: It was to this that a great Company of Youths from
+                    all Parts of the Country were going; so stepping in among the Crowd, I passed on
+                    with them, and presently arrived at the Gate.</p>
+                <p>The Passage was kept by two sturdy <ref corresp="porter" target="porter_"
+                        >Porters</ref> named <hi rend="italic">Riches and Poverty</hi>, and the
+                    latter obstinately refused to give Entrance to any who had not first gain'd the
+                    Favour of the former; so that I observed, many who came even to the very Gate,
+                    were obliged to travel back again as ignorant as they came, for want of this
+                    necessary Qualification. However, as a <ref corresp="spectator"
+                        target="spectator_">Spectator</ref> I gain'd Admittance, and with the rest
+                    entred directly into the Temple.</p>
+                <p>In the Middle of the great Hall stood a stately and magnificent Throne, which was
+                    ascended to by two high and difficult Steps. On the Top of it sat Learning in
+                    awful State; she was apparelled wholly in Black, and surrounded almost on every
+                    Side with innumerable Volumes in all Languages. She seem'd very busily employ'd
+                    in writing something on half a Sheet of Paper, and upon Enquiry, I understood
+                    she was preparing a Paper, call'd, <hi rend="italic">The New-England
+                        Courant</hi>. On her Right Hand sat <hi rend="italic">English</hi>, with a
+                    pleasant smiling Countenance, and handsomely attir'd; and on her left were
+                    seated several <hi rend="italic">Antique Figures</hi> with their Faces vail'd. I
+                    was considerably puzzl'd to guess who they were, until one informed me, (who
+                    stood beside me,) that those Figures on her left Hand were <hi rend="italic"
+                        >Latin</hi>, <hi rend="italic">Greek</hi>, <hi rend="italic">Hebrew</hi>,
+                    &amp;c. and that they were very much reserv'd, and seldom or never unvail'd
+                    their Faces here, and then to few or none, tho' most of those who have in this
+                    Place acquir'd so much Learning as to distinguish them from <hi rend="italic"
+                        >English</hi>, pretended to an intimate Acquaintance with them. I then
+                    enquir'd of him, what could be the Reason why they continued vail'd, in this
+                    Place especially: He pointed to the Foot of the Throne, where I saw <hi
+                        rend="italic">Idleness</hi>, attended with <hi rend="italic">Ignorance</hi>,
+                    and these (he informed me) were they, who first vail'd them, and still kept them
+                    so.</p>
+                <p>Now I observed, that the whole Tribe who entred into the Temple with me, began to
+                    climb the Throne; but the Work proving troublesome and difficult to most of
+                    them, they withdrew their Hands from the Plow, and contented themselves to sit
+                    at the Foot, with Madam <hi rend="italic">Idleness</hi> and her Maid <hi
+                        rend="italic">Ignorance</hi>, until those who were assisted by Diligence and
+                    a <ref corresp="docible" target="docible_">docible</ref> Temper, had well <ref
+                        corresp="nigh" target="nigh_">nigh</ref> got up the first Step: But the Time
+                    drawing nigh in which they could no way avoid ascending, they were <ref
+                        corresp="fain" target="fain_">fain</ref> to crave the Assistance of those
+                    who had got up before them, and who, for the Reward perhaps of a <hi
+                        rend="italic">Pint of Milk</hi>, or a <hi rend="italic">Piece of <ref
+                            corresp="cake" target="cake_">Plumb-Cake</ref></hi>, lent the <ref
+                        corresp="lubber" target="lubber_">Lubbers</ref> a helping Hand, and sat them
+                    in the Eye of the World, upon a Level with themselves.</p>
+                <p>The other Step being in the same Manner ascended, and the usual Ceremonies at an
+                    End, every Beetle-Scull seem'd well satisfy'd with his own Portion of Learning,
+                    tho' perhaps he was <hi rend="italic">e'en just</hi> as ignorant as ever. And
+                    now the Time of their Departure being come, they march'd out of Doors to make
+                    Room for another Company, who waited for Entrance: And I, having seen all that
+                    was to be seen, quitted the hall likewise, and went to make my Observations on
+                    those who were just gone out before me.</p>
+                <p>Some I perceiv'd took to <ref corresp="merch" target="merch_"
+                    >Merchandizing</ref>, others to Travelling, some to one Thing, some to another,
+                    and some to Nothing; and many of them from henceforth, for want of <ref
+                        corresp="patrimony" target="patrimony_">Patrimony</ref>, liv'd as poor as
+                        <ref corresp="churchmice" target="churchmice_">Church Mice</ref>, being
+                    unable to dig, and asham'd to beg, and to live by their Wits it was impossible.
+                    But the most Part of the Crowd went along a large beaten Path, which led to a
+                    Temple at the further End of the Plain, call'd, <hi rend="italic">The Temple of
+                            <ref corresp="theology" target="theology_">Theology</ref></hi>/hi>. The
+                    Business of those who were employ'd in this Temple being laborious and painful,
+                    I wonder'd exceedingly to see so many go towards it; but while I was pondering
+                    this Matter in my Mind, I spy'd <ref corresp="pecunia" target="pecunia_"><hi
+                            rend="italic">Pecunia</hi></ref> behind a Curtain, beckoning to them
+                    with her Hand, which Sight immediately satisfy'd me for whose Sake it was, that
+                    a great Part of them (I will not say all) travel'd that Road. In this Temple I
+                    saw nothing worth mentioning, except the ambitious and fraudulent Contrivances
+                    of <ref corresp="plagius" target="plagius_">Plagius</ref>, who (notwithstanding
+                    he had been severely reprehended for such Practices before) was diligently
+                    transcribing some eloquent Paragraphs out of <ref corresp="tillotson"
+                        target="tillotson_">Tillotson's <hi rend="italic">Works</hi></ref>, &amp;c.,
+                    to embellish his own.</p>
+                <p>Now I bethought my self in my Sleep, that it was Time to be at Home, and as I
+                    fancy'd I was travelling back thither, I reflected in my Mind on the extream
+                    Folly of those Parents, who, blind to their Childrens Dulness, and insensible of
+                    the Solidity of their Skulls, because they think their Purses can afford it,
+                    will needs send them to the Temple of Learning, where, for want of a suitable
+                    Genius, they learn little more than how to carry themselves handsomely, and
+                    enter a Room <ref corresp="genteel" target="genteel_">genteely</ref>, (which
+                    might as well be acquir'd at a Dancing-School,) and from whence they return,
+                    after Abundance of Trouble and Charge, as great Blockheads as ever, only more
+                    proud and self-conceited.</p>
+                <p>While I was in the midst of these unpleasant Reflections, Clericus (who with a
+                    Book in his Hand was walking under the Trees) accidentally awak'd me; to him I
+                    related my Dream with all its Particulars, and he, without much Study, presently
+                    interpreted it, assuring me, <hi rend="italic">That it was </hi><hi
+                        rend="italic">a lively Representation of</hi> Harvard College, <hi
+                        rend="italic">Etcetera</hi>. I remain, Sir, Your Humble Servant,</p>
+                <p>SILENCE DOGOOD.</p>
+            </div>
+            <div>
+                <head> May 28, 1722 [No. 5] <ref corresp="terencetrans" target="terencetrans_"><hi
+                            rend="italic">Mulier Mulieri magis congruet</hi>. Ter.</ref> To the
+                    Author of the <hi rend="italic">New-England Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>I shall here present your Readers with a Letter from one, who informs me that I
+                    have begun at the wrong End of my Business, and that I ought to begin at Home,
+                    and censure the Vices and Follies of my own Sex, before I venture to meddle with
+                    your's: Nevertheless, I am resolved to dedicate this Speculation to the Fair
+                    Tribe, and endeavour to show, that Mr. Ephraim charges Women with being
+                    particularly guilty of Pride, Idleness, &amp;c. wrongfully, inasmuch as the Men
+                    have not only as great a Share in those Vices as the Women, but are likewise in
+                    a great Measure the Cause of that which the Women are guilty of. I think it will
+                    be best to produce my Antagonist, before I encounter him.</p>
+                <p>"Madam</p>
+                <p>"My Design in troubling you with this Letter is, to desire you would begin with
+                    your own Sex first: Let the first Volley of your Resentments be directed against
+                        <hi rend="italic">Female</hi> Vice; let Female Idleness, Ignorance and
+                    Folly, (which are Vices more peculiar to your Sex than to our's,) be the Subject
+                    of your <ref corresp="satyr" target="satyr_">Satyrs</ref>, but more especially
+                    Female Pride, which I think is intollerable. Here is a large Field that wants
+                    Cultivation, and which I believe you are able (if willing) to improve with
+                    Advantage; and when you have once reformed the Women, you will find it a much
+                    easier Task to reform the Men, because Women are the prime Causes of a great
+                    many Male <ref corresp="maleenormity" target="maleenormity_">Enormities</ref>.
+                    This is all at present from Your Friendly Wellwisher,</p>
+                <p><ref corresp="ephraim" target="ephraim_">Ephraim Censorious</ref></p>
+                <p>After Thanks to my Correspondent for his Kindness in cutting out Work for me, I
+                    must assure him, that I find it a very difficult Matter to <ref
+                        corresp="reprove" target="reprove_">reprove</ref> Women separate from the
+                    Men; for what Vice is there in which the Men have not as great a Share as the
+                    Women? and in some have they not a far greater, as in Drunkenness, Swearing,
+                    &amp;c.? And if they have, then it follows, that when a Vice is to be reproved,
+                    Men, who are most culpable, deserve the most Reprehension, and certainly
+                    therefore, ought to have it. But we will wave this Point at present, and proceed
+                    to a particular Consideration of what my Correspondent calls <hi rend="italic"
+                        >Female Vice</hi>.</p>
+                <p>As for Idleness, if I should <ref corresp="quaere" target="quaere_">Quaere</ref>,
+                    Where are the greatest Number of its <ref corresp="votary" target="votary_"
+                        >Votaries</ref> to be found, with us or the Men? it might I believe be
+                    easily and truly answer'd, <hi rend="italic">With the latter</hi>. For
+                    notwithstanding the Men are commonly complaining how hard they are forc'd to
+                    labour, only to maintain their Wives in <ref corresp="pomp" target="pomp_"
+                        >Pomp</ref> and Idleness, yet if you go among the Women, you will learn,
+                    that <hi rend="italic">they have always more Work upon their Hands than they are
+                        able to do; and that a Woman's Work is never done</hi>, &amp;c. But however,
+                    Suppose we should grant for once, that we are generally more idle than the Men,
+                    (without making any Allowance for the <hi rend="italic">Weakness of the
+                    Sex</hi>,) I desire to know whose Fault it is? Are not the Men to blame for
+                    their Folly in maintaining us in Idleness? Who is there that can be handsomely
+                    Supported in Affluence, Ease and Pleasure by another, that will chuse rather to
+                    earn his Bread by the Sweat of his own Brows? And if a Man will be so fond and
+                    so foolish, as to labour hard himself for a Livelihood, and suffer his Wife in
+                    the mean Time to sit in Ease and Idleness, let him not blame her if she does so,
+                    for it is in a great Measure his own Fault.</p>
+                <p>And now for the Ignorance and Folly which he <ref corresp="reproach"
+                        target="reproach_">reproaches</ref> us with, let us see (if we are Fools and
+                    Ignoramus's) whose is the Fault, the Men's or our's. An ingenious Writer, having
+                    this Subject in Hand, has the following Words, wherein he lays the Fault wholly
+                    on the Men, for not allowing Women the Advantages of Education.</p>
+                <p>"I have (says he) often thought of it as one of the most barbarous Customs in the
+                    World, considering us as a civiliz'd and Christian Country, that we deny the
+                    Advantages of Learning to Women. We reproach the Sex every Day with Folly and
+                    Impertinence, while I am confident, had they the Advantages of Education equal
+                    to us, they would be guilty of less than our selves. One would wonder indeed how
+                    it should happen that Women are <ref corresp="conversible" target="conversible_"
+                        >conversible</ref> at all, since they are only beholding to natural Parts
+                    for all their Knowledge. Their Youth is spent to teach them to stitch and sew,
+                    or make <ref corresp="baubles" target="baubles_">Baubles</ref>: They are taught
+                    to read indeed, and perhaps to write their Names, or so; and that is the Heighth
+                    of a Womans Education. And I would but ask any who slight the Sex for their
+                    Understanding, What is a Man (a Gentleman, I mean) good for that is taught no
+                    more? If Knowledge and Understanding had been useless Additions to the Sex, God
+                    Almighty would never have given them Capacities, for he made nothing Needless.
+                    What has the Woman done to forfeit the Priviledge of being taught? Does she
+                    plague us with her Pride and <ref corresp="impertinence" target="impertinence_"
+                        >Impertinence</ref>? Why did we not let her learn, that she might have had
+                    more Wit? Shall we <ref corresp="upbraid" target="upbraid_">upbraid</ref> Women
+                    with Folly, when 'tis only the Error of this inhumane Custom that hindred them
+                    being made wiser."</p>
+                <p>So much for Female Ignorance and Folly, and now let us a little consider the
+                    Pride which my Correspondent thinks is <hi rend="italic">intollerable</hi>. By
+                    this Expression of his, one would think he is some dejected <ref corresp="swain"
+                        target="swain_">Swain</ref>, tyranniz'd over by some cruel haughty <ref
+                        corresp="nymph" target="nymph_">Nymph</ref>, who (perhaps he thinks) has no
+                    more Reason to be proud than himself. <hi rend="italic">Alas-a-day!</hi> What
+                    shall we say in this Case! Why truly, if Women are proud, it is certainly owing
+                    to the Men still; for if they will be such <hi rend="italic">Simpletons</hi> as
+                    to humble themselves at their Feet, and fill their <ref corresp="credulous"
+                        target="credulous_">credulous</ref> Ears with extravagant Praises of their
+                    Wit, Beauty, and other Accomplishments (perhaps where there are none too,) and
+                    when Women are by this Means perswaded that they are Something more than humane,
+                    what Wonder is it, if they carry themselves haughtily, and live extravagantly.
+                    Notwithstanding, I believe there are more Instances of extravagant Pride to be
+                    found among Men than among Women, and this Fault is certainly more hainous in
+                    the former than in the latter.</p>
+                <p>Upon the whole, I conclude, that it will be impossible to lash any Vice, of which
+                    the Men are not equally guilty with the Women, and consequently deserve an equal
+                    (if not a greater) Share in the Censure. However, I <ref corresp="exhort"
+                        target="exhort_">exhort</ref> both to amend, where both are <ref
+                        corresp="culpable" target="culpable_">culpable</ref>, otherwise they may
+                    expect to be severely handled by Sir, Your Humble Servant,</p>
+                <p>SILENCE DOGOOD</p>
+                <p><hi rend="italic">N.B.</hi> Mrs. Dogood has lately left her Seat in the Country,
+                    and come to Boston, where she intends to <ref target="tarry_" corresp="tarry"
+                        >tarry</ref> for the Summer Season, in order to compleat her Observations of
+                    the present reigning Vices of the Town.</p>
+            </div>
+            <div>
+                <head> June 11, 1722 [No. 6] <ref corresp="senecatrans" target="senecatrans_"><hi
+                            rend="italic">Quem Dies videt veniens Superbum, Hunc Dies vidit fugiens
+                            jacentem.</hi> Seneca.</ref> To the Author of the <hi rend="italic"
+                        >New-England Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>Among the many reigning Vices of the Town which may at any Time come under my
+                    Consideration and Reprehension, there is none which I am more inclin'd to expose
+                    than that of <hi rend="italic">Pride</hi>. It is acknowledg'd by all to be a
+                    Vice the most hateful to God and Man. Even those who nourish it in themselves,
+                    hate to see it in others. The proud Man aspires after Nothing less than an
+                    unlimited Superiority over his Fellow-Creatures. He has made himself a King in
+                        <ref corresp="soliloquy" target="soliloquy_"><hi rend="italic"
+                            >Soliloquy</hi>S</ref>; fancies himself conquering the World; and the
+                    Inhabitants thereof consulting on proper Methods to acknowledge his Merit. I
+                    speak it to my Shame, I my self was a Queen from the Fourteenth to the
+                    Eighteenth Year of my Age, and govern'd the World all the Time of my being
+                    govern'd by my Master. But this speculative Pride may be the Subject of another
+                    Letter: I shall at present confine my Thoughts to what we call <hi rend="italic"
+                        >Pride of Apparel</hi>. This Sort of Pride has been growing upon us ever
+                    since we parted with our Homespun Cloaths for <ref corresp="penny"
+                        target="penny_"><hi rend="italic">Fourteen Penny Stuffs</hi></ref>, &amp;c.
+                    And the <hi rend="italic">Pride of Apparel</hi> has <ref corresp="begot"
+                        target="begot_">begot</ref> and nourish'd in us a <hi rend="italic">Pride of
+                        Heart</hi>, which <ref corresp="portend" target="portend_">portends</ref>
+                    the Ruin of Church and State. <hi rend="italic">Pride goeth before Destruction,
+                        and a haughty Spirit before a Fall</hi>: And I remember my late Reverend
+                    Husband would often say upon this Text, That a Fall was the <hi rend="italic"
+                        >natural Consequence</hi>, as well as <hi rend="italic">Punishment</hi> of
+                    Pride. Daily Experience is sufficient to <ref corresp="evince" target="evince_"
+                        >evince</ref> the Truth of this Observation. Persons of small Fortune under
+                    the Dominion of this Vice, seldom consider their Inability to maintain
+                    themselves in it, but strive to imitate their Superiors in Estate, or Equals in
+                    Folly, until one Misfortune comes upon the Neck of another, and every Step they
+                    take is a Step backwards. By striving to appear rich they become really poor,
+                    and deprive themselves of that Pity and Charity which is due to the humble poor
+                    Man, who is made so more immediately by Providence.</p>
+                <p>This Pride of Apparel will appear the more foolish, if we consider, that those
+                    airy Mortals, who have no other Way of making themselves considerable but by
+                    gorgeous Apparel, draw after them Crowds of Imitators, who hate each other while
+                    they endeavour after a Similitude of Manners. They destroy by Example, and envy
+                    one another's Destruction.</p>
+                <p>I cannot dismiss this Subject without some Observations on a particular Fashion
+                    now reigning among my own Sex, the most immodest and inconvenient of any the Art
+                    of Woman has invented, namely, that of <ref corresp="hoop" target="hoop_"><hi
+                            rend="italic">Hoop-Petticoats</hi></ref>. By these they are <ref
+                        corresp="incommoded" target="incommoded_">incommoded</ref> in their General
+                    and Particular Calling, and therefore they cannot answer the Ends of either
+                    necessary or ornamental Apparel. These monstrous topsy-turvy <ref
+                        corresp="mortar" target="mortar_"><hi rend="italic"
+                    >Mortar-Pieces</hi></ref>, are neither fit for the Church, the Hall, or the
+                    Kitchen; and if a Number of them were well mounted on <ref corresp="noddles"
+                        target="noddles_">Noddles-Island</ref>, they would look more like Engines of
+                    War for bombarding the Town, than Ornaments of the Fair Sex. An honest Neighbour
+                    of mine, happening to be in Town some time since on a publick Day, inform'd me,
+                    that he saw four Gentlewomen with their Hoops half mounted in a Balcony, as they
+                    withdrew to the Wall, to the great Terror of the Militia, who (he thinks) might
+                    attribute their irregular Volleys to the formidable Appearance of the Ladies
+                    Petticoats.</p>
+                <p>I assure you, Sir, I have but little Hopes of perswading my Sex, by this Letter,
+                    utterly to relinquish the extravagant Foolery, and Indication of Immodesty, in
+                    this monstrous Garb of their's; but I would at least desire them to lessen the
+                    Circumference of their Hoops, and leave it with them to consider, Whether they,
+                    who pay no Rates or Taxes, ought to take up more Room in the King's High-Way,
+                    than the Men, who yearly contribute to the Support of the Government. I am, Sir,
+                    Your Humble Servant,</p>
+                <p>SILENCE DOGOOD.</p>
+            </div>
+            <div>
+                <head> June 25, 1722 [No. 7] <ref corresp="watts" target="watts_"><lg>
+                            <l>Give me the Muse, whose generous Force,</l>
+                            <l>Impatient of the Reins,</l>
+                            <l>Pursues an unattempted Course,</l>
+                            <l>Breaks all the Criticks Iron Chains.</l>
+                        </lg> Watts.</ref> To the Author of the <hi rend="italic">New-England
+                        Courant</hi>. </head>
+                <!-- PERHAPS an opening note about the satirical tone in this which I assume is mostly lost on the people of today. -->
+                <p>Sir,</p>
+                <p>It has been the Complaint of many Ingenious Foreigners, who have travell'd
+                    amongst us, <hi rend="italic">That good Poetry is not to be expected in
+                        New-England</hi>. I am apt to Fancy, the Reason is, not because our
+                    Countreymen are altogether void of a Poetical Genius, nor yet because we have
+                    not those Advantages of Education which other Countries have, but purely because
+                    we do not afford that Praise and Encouragement which is merited, when any thing
+                    extraordinary of this Kind is produc'd among us: Upon which Consideration I have
+                    determined, when I meet with a Good Piece of New-England Poetry, to give it a
+                    suitable <ref corresp="encomium" target="encomium_">Encomium</ref>, and thereby
+                    endeavour to discover to the World some of its Beautys, in order to encourage
+                    the Author to go on, and bless the World with more, and more Excellent
+                    Productions.</p>
+                <p>There has lately appear'd among us a most Excellent Piece of Poetry, entituled,
+                        <hi rend="italic">An Elegy upon the much Lamented Death of Mrs. Mehitebell
+                        Kitel, Wife of Mr. John Kitel of Salem, &amp;c</hi>. It may justly be said
+                    in its Praise, without Flattery to the Author, that it is the most <hi
+                        rend="italic">Extraordinary</hi> Piece that ever was wrote in New-England.
+                    The Language is so soft and Easy, the Expression so moving and pathetick, but
+                    above all, the Verse and Numbers so Charming and Natural, that it is almost
+                    beyond Comparison,</p>
+
+                <lg>
+                    <l>The Muse disdains</l>
+                    <l>Those Links and Chains,</l>
+                    <l>Measures and Rules of vulgar Strains,</l>
+                    <l><hi rend="italic">And o'er the Laws of Harmony a Sovereign Queen she
+                            reigns.</hi></l>
+                </lg>
+
+
+                <p>I find no English Author, Ancient or Modern, whose Elegies may be compar'd with
+                    this, in respect to the Elegance of Stile, or Smoothness of Rhime; and for the
+                    affecting Part, I will leave your Readers to judge, if ever they read any Lines,
+                    that would sooner make them <hi rend="italic">draw their Breath</hi> and Sigh,
+                    if not shed Tears, than these following.</p>
+
+                <lg>
+                    <l>Come let us mourn, for we have lost a Wife, a Daughter, and <hi rend="italic"
+                            >a Sister</hi>,</l>
+                    <l>Who has lately taken Flight, and greatly we have mist her.</l>
+                </lg>
+
+                <p>In another Place,</p>
+
+                <lg>
+                    <l><hi rend="italic">Some little Time</hi> before she yielded up her Breath,</l>
+                    <l><hi rend="italic">She said, I ne'er shall hear one Sermon more on
+                        Earth</hi>.</l>
+                    <l>She kist her Husband <hi rend="italic">some little Time</hi>before she
+                        expir'd,</l>
+                    <l>Then lean'd her Head the Pillow on, just out of Breath and tir'd.</l>
+                </lg>
+
+                <p>But the Threefold <ref corresp="appellation" target="appellation_"
+                        >Appellation</ref> in the first Line</p>
+
+                <lg>
+                    <l>a Wife, a Daughter, and a Sister,</l>
+                </lg>
+
+                <p>must not pass unobserved. That Line in the celebrated Watts,</p>
+                <lg>
+                    <l>Gunston <hi rend="italic">the Just</hi>, <hi rend="italic">the Generous</hi>,
+                            <hi rend="italic">and the Young</hi>, </l>
+                </lg>
+
+
+                <p>is nothing Comparable to it. The latter only mentions three Qualifications of <hi
+                        rend="italic">one</hi> Person who was deceased, which therefore could raise
+                    Grief and Compassion but for <hi rend="italic">One</hi>. Whereas the former,
+                        (<hi rend="italic">our most excellent Poet</hi>) gives his Reader a Sort of
+                    an Idea of the Death of <hi rend="italic">Three Persons</hi>, viz.</p>
+
+                <lg>
+                    <l>a Wife, a Daughter, and a Sister,</l>
+                </lg>
+
+                <p>which is <hi rend="italic">Three Times</hi> as great a Loss as the Death of <hi
+                        rend="italic">One</hi>, and consequently must raise <hi rend="italic">Three
+                        Times</hi> as much Grief and Compassion in the Reader.</p>
+                <p>I should be very much straitned for Room, if I should attempt to discover even
+                    half the Excellencies of this Elegy which are obvious to me. Yet I cannot omit
+                    one Observation, which is, that the Author has (to his Honour) invented a new
+                    Species of Poetry, which wants a Name, and was never before known. His Muse
+                    scorns to be confin'd to the old Measures and Limits, or to observe the dull
+                    Rules of Criticks;</p>
+
+                <lg>
+                    <l><hi rend="italic">Nor <ref corresp="rapin" target="rapin_">Rapin</ref> gives
+                            her Rules to fly, nor <ref corresp="purcell" target="purcell_"
+                                >Purcell</ref> Notes to sing</hi>. Watts.</l>
+                </lg>
+
+                <p>Now 'tis Pity that such an Excellent Piece should not be dignify'd with a
+                    particular Name; and seeing it cannot justly be called, either <ref
+                        corresp="greekstyle" target="greekstyle_"><hi rend="italic">Epic</hi>, <hi
+                            rend="italic">Sapphic</hi>, <hi rend="italic">Lyric</hi>, or <hi
+                            rend="italic">Pindaric</hi></ref>, nor any other Name yet invented, I
+                    presume it may, (in Honour and Remembrance of the Dead) be called the <ref
+                        corresp="kitelic" target="kitelic_">Kitelic</ref>. Thus much in the Praise
+                    of <hi rend="italic">Kitelic Poetry</hi>.</p>
+                <p>It is certain, that those Elegies which are of our own Growth, (and our Soil
+                    seldom produces any other sort of Poetry) are by far the greatest part,
+                    wretchedly Dull and Ridiculous. Now since it is imagin'd by many, that our Poets
+                    are honest, well-meaning Fellows, who do their best, and that if they had but
+                    some Instructions how to govern Fancy with Judgment, they would make indifferent
+                    good Elegies; I shall here <ref corresp="subjoin" target="subjoin_"
+                        >subjoin</ref> a <ref corresp="receipt" target="receipt_">Receipt</ref> for
+                    that purpose, which was left me as a Legacy, (among other valuable Rarities) by
+                    my Reverend Husband. It is as follows,</p>
+
+                <lg>
+                    <l>A RECEIPT to make a New-England Funeral ELEGY.</l>
+                </lg>
+
+
+                <p><hi rend="italic">For the Title of your Elegy</hi>. Of these you may have enough
+                    ready made to your Hands; but if you should chuse to make it your self, you must
+                    be sure not to omit the Words <ref corresp="aetatis" target="aetatis_"><hi
+                            rend="italic">Aetatis Suae</hi></ref>, which will Beautify it
+                    exceedingly.</p>
+                <p><hi rend="italic">For the Subject of your Elegy</hi>. Take one of your Neighbours
+                    who has lately departed this Life; it is no great matter at what Age the Party
+                    dy'd, but it will be best if he went away suddenly, being <hi rend="italic"
+                        >Kill'd</hi>, <hi rend="italic">Drown'd</hi>, or <hi rend="italic">Froze to
+                        Death</hi>.</p>
+                <p>Having chose the Person, take all his Virtues, Excellencies, &amp;c. and if he
+                    have not enough, you may borrow some to make up a sufficient Quantity: To these
+                    add his last Words, dying Expressions, &amp;c. if they are to be had; mix all
+                    these together, and be sure you <hi rend="italic">strain</hi> them well. Then
+                    season all with a Handful or two of Melancholly Expressions, such as, <hi
+                        rend="italic">Dreadful</hi>, <hi rend="italic">Deadly</hi>, <hi
+                        rend="italic">cruel cold Death</hi>, <hi rend="italic">unhappy Fate</hi>,
+                        <hi rend="italic">weeping Eyes</hi>, &amp;c. Have mixed all these
+                    Ingredients well, put them into the empty <ref corresp="scull" target="scull_"
+                        >Scull</ref> of some <hi rend="italic">young Harvard</hi>; (but in Case you
+                    have ne'er a One at Hand, you may use your own,) there let them Ferment for the
+                    Space of a Fortnight, and by that Time they will be incorporated into a Body,
+                    which take out, and having prepared a sufficient Quantity of double Rhimes, such
+                    as, <hi rend="italic">Power</hi>, <hi rend="italic">Flower</hi>; <hi
+                        rend="italic">Quiver</hi>, <hi rend="italic">Shiver</hi>; <hi rend="italic"
+                        >Grieve us</hi>, <hi rend="italic">Leave us</hi>; <hi rend="italic">tell
+                        you</hi>, <hi rend="italic">excel you</hi>; <hi rend="italic"
+                        >Expeditions</hi>, <hi rend="italic">Physicians</hi>; <hi rend="italic"
+                        >Fatigue him</hi>, <hi rend="italic">Intrigue him</hi>; &amp;c. you must
+                    spread all upon Paper, and if you can procure a Scrap of Latin to put at the
+                    End, it will garnish it mightily; then having affixed your Name at the Bottom,
+                    with a <ref corresp="moestus" target="moestus_"><hi rend="italic">Moestus
+                            Composuit</hi></ref>, you will have an Excellent Elegy.</p>
+                <p><ref corresp="notabene" target="notabene_"><hi rend="italic">N.B.</hi></ref> This
+                    Receipt will serve when a Female is the Subject of your Elegy, provided you
+                    borrow a greater Quantity of Virtues, Excellencies, &amp;c. Sir, Your
+                    Servant,</p>
+                <p>Silence Dogood</p>
+                <p>p.s. I shall make no other Answer to <ref corresp="hypercarpus"
+                        target="hypercarpus_">Hypercarpus's Criticism on my last Letter</ref> than
+                    this, <ref corresp="mater" target="mater_"><hi rend="italic">Mater me genuit,
+                            peperit mox filia matrem.</hi></ref>.</p>
+            </div>
+            <div>
+                <head> July 9, 1722 [No. 8] To the Author of the <hi rend="italic">New-England
+                        Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>I prefer the following Abstract from the London Journal to any Thing of my own,
+                    and therefore shall present it to your Readers this week without any further
+                    Preface.</p>
+                <p>"Without Freedom of Thought, there can be no such Thing as Wisdom; and no such
+                    Thing as publick Liberty, without Freedom of Speech; which is the Right of every
+                    Man, as far as by it, he does not hurt or controul the Right of another: And
+                    this is the only Check it ought to suffer, and the only Bounds it ought to
+                    know.</p>
+                <p>"This sacred Privilege is so essential to free Goverments, that the Security of
+                    Property, and the Freedom of Speech always go together; and in those wretched
+                    Countries where a Man cannot call his Tongue his own, he can scarce call any
+                    Thing else his own. Whoever would overthrow the Liberty of a Nation, must begin
+                    by subduing the Freeness of Speech; a <hi rend="italic">Thing</hi> terrible to
+                    Publick Traytors.</p>
+                <p>"This Secret was so well known to the Court of <ref corresp="charles"
+                        target="charles_">King Charles the First</ref>, that his wicked Ministry
+                    procured a Proclamation, to forbid the People to talk of Parliaments, which
+                    those Traytors had laid aside. To assert the undoubted Right of the Subject, and
+                    defend his Majesty's legal Prerogative, was called <ref corresp="disaffection"
+                        target="disaffection_">Disaffection</ref>, and punished as <ref
+                        corresp="sedition" target="sedition_">Sedition</ref>. Nay, People were
+                    forbid to talk of Religion in their Families: For the Priests had combined with
+                    the Ministers to cook up Tyranny, and suppress Truth and the Law, while <ref
+                        corresp="james" target="james_">the late King James</ref>, when Duke of
+                    York, went avowedly to Mass, Men were fined, imprisoned and undone, for saying
+                    he was a <ref corresp="papist" target="papist_">Papist</ref>: And that <ref
+                        corresp="charlesii" target="charlesii_">King Charles the Second</ref> might
+                    live more securely a Papist, there was an Act of Parliament made, declaring it
+                    Treason to say that he was one.</p>
+                <p>"That Men ought to speak well of <hi rend="italic">their Governours</hi> is true,
+                    while <hi rend="italic">their Governours</hi> deserve to be well spoken of; but
+                    to do publick Mischief, without hearing of it, is only the Prerogative and <ref
+                        corresp="felicity" target="felicity_">Felicity</ref> of Tyranny: A free
+                    People will be shewing that they are <hi rend="italic">so</hi>, by their Freedom
+                    of Speech.</p>
+                <p>"The Administration of Government, is nothing else but the Attendance of the <hi
+                        rend="italic">Trustees of the People</hi> upon the Interest and Affairs of
+                    the People: And as it is the Part and Business of the People, for whose Sake
+                    alone all publick Matters are, or ought to be transacted, to see whether they be
+                    well or ill transacted; so it is the Interest, and ought to be the Ambition, of
+                    all honest Magistrates, to have their Deeds openly examined, and publickly
+                    scann'd: Only the <hi rend="italic">wicked Governours</hi> of Men dread what is
+                    said of them; <ref corresp="audivit" target="audivit_"><hi rend="italic">Audivit
+                            Tiberius probra queis lacerabitur, atque</hi> perculsus est</ref>. The
+                    publick Censure was true, else he had not felt it bitter.</p>
+                <p>Freedom of Speech is ever the Symptom, as well as the Effect of a good
+                    Government. In old Rome, all was left to the Judgment and Pleasure of the
+                    People, who examined the publick Proceedings with such Discretion, and censured
+                    those who administred them with such Equity and Mildness, that in the space of
+                    Three Hundred Years, not five publick Ministers suffered unjustly. Indeed
+                    whenever the <hi rend="italic">Commons</hi> proceeded to Violence, the great
+                    Ones had been the Agressors.</p>
+                <p><hi rend="italic">"Guilt</hi> only dreads Liberty of Speech, which drags it out
+                    of its lurking Holes, and exposes its Deformity and Horrour to Daylight."
+                    Horatius, <ref corresp="valerius" target="valerius_">Valerius</ref>, <ref
+                        corresp="cincinnatus" target="cincinnatus_">Cincinnatus</ref>, and other
+                    vertuous and undesigning Magistrates of the Roman Commonwealth, had nothing to
+                    fear from Liberty of Speech. <hi rend="italic">Their virtuous</hi>
+                    Administration, the more it was examin'd, the more it brightned and gain'd by
+                    Enquiry. When Valerius in particular, was accused upon some slight grounds of
+                    affecting the <ref corresp="diadem" target="diadem_">Diadem</ref>; he, who was
+                    the first Minister of Rome, does not accuse the People for examining his
+                    Conduct, but approved his Innocence in a Speech to them; and gave such
+                    Satisfaction to them, and gained such Popularity to himself, that they gave him
+                    a new Name; <ref corresp="cognomen" target="cognomen_"><hi rend="italic">inde
+                            cognomen factum Publicolae est</hi></ref>; to denote that he was their
+                    Favourite and their Friend. <ref corresp="livytrans" target="livytrans_"><hi
+                            rend="italic">Latae deinde leges — Ante omnes de provocatione</hi>
+                        Adversus Magistratus Ad Populum, Livii, lib. 2. Cap. 8.</ref></p>
+                <p>"But Things afterwards took another Turn. Rome, with the Loss of its Liberty,
+                    lost also its Freedom of Speech; then Mens Words began to be feared and watched;
+                    and then first began the <hi rend="italic">poysonous Race of Informers</hi>,
+                    banished indeed under the righteous Administration of Titus, Narva, Trajan,
+                    Aurelius, &amp;c. but encouraged and enriched under the <hi rend="italic">vile
+                        Ministry</hi> of Sejanus, Tigillinus, Pallas, and Cleander: <ref
+                        corresp="plinytrans" target="plinytrans_"><hi rend="italic">Queri libet,
+                            quod in secreta nostra non inquirant principes, nisi quos Odimus</hi>,
+                        says Pliny to Trajan</ref>.</p>
+                <p>"The best Princes have ever encouraged and promoted Freedom of Speech; they know
+                    that upright Measures would defend themselves, and that all upright Men would
+                    defend them. <ref corresp="tacitus" target="tacitus_">Tacitus</ref>, speaking of
+                    the Reign of some of the Princes abovemention'd, says with Extasy, <hi
+                        rend="italic">Rara Temporum felicitate, ubi sentire quae velis, &amp; quae
+                        sentias dicere licet</hi>A blessed Time when you might think what you would,
+                    and speak what you thought.</p>
+                <p>"I doubt not but old Spencer and his Son, who were the <hi rend="italic">Chief
+                        Ministers</hi> and <hi rend="italic">Betrayers</hi> of <ref
+                        corresp="edwardii" target="edwardii_">Edward the Second</ref>, would have
+                    been very glad to have stopped the Mouths of all the honest Men in England. They
+                    dreaded to be called <hi rend="italic">Traytors</hi>, because they were <hi
+                        rend="italic">Traytors</hi>. And I dare say, <ref corresp="walsingham"
+                        target="walsingham_">Queen Elizabeth's Walsingham</ref>, who deserved no
+                    Reproaches, feared none. Misrepresentation of publick Measures is easily
+                    overthrown, by representing publick Measures truly; when they are honest, they
+                    ought to be publickly known, that they may be publickly commended; but if they
+                    are <ref corresp="knavish" target="knavish_">knavish</ref> or <ref
+                        corresp="pernicious" target="pernicious_">pernicious</ref>, they ought to be
+                    publickly exposed, in order to be publickly detested." Yours, &amp;c.,</p>
+                <p>SILENCE DOGOOD.</p>
+            </div>
+            <div>
+                <head> July 23, 1722 [No. 9] <ref corresp="corruptio" target="corruptio_">Corruptio
+                        optimi est pessima</ref>. To the Author of the <hi rend="italic">New-England
+                        Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>It has been for some Time a Question with me, Whether a Commonwealth suffers more
+                    by hypocritical Pretenders to Religion, or by the openly <ref corresp="profane"
+                        target="profane_">Profane</ref>? But some late Thoughts of this Nature, have
+                    inclined me to think, that the Hypocrite is the most dangerous Person of the
+                    Two, especially if he sustains a Post in the Government, and we consider his
+                    Conduct as it regards the Publick. The first <ref corresp="artifice"
+                        target="artifice_">Artifice</ref> of a <hi rend="italic">State
+                        Hypocrite</hi> is, by a few savoury Expressions which cost him Nothing, to
+                    betray the best Men in his Country into an Opinion of his Goodness; and if the
+                    Country wherein he lives is noted for the Purity of Religion, he the more easily
+                    gains his End, and consequently may more justly be expos'd and detested. A
+                    notoriously profane Person in a private Capacity, ruins himself, and perhaps
+                    forwards the Destruction of a few of his Equals; but a publick Hypocrite every
+                    day deceives his betters, and makes them the Ignorant <ref corresp="trumpeters"
+                        target="trumpeters_">Trumpeters</ref> of his supposed Godliness: They take
+                    him for a Saint, and pass him for one, without considering that they are (as it
+                    were) the Instruments of publick Mischief out of Conscience, and ruin their
+                    Country for God's sake.</p>
+                <p>This Political Description of a Hypocrite, may (for ought I know) be taken for a
+                    new Doctrine by some of your Readers; but let them consider, that a <hi
+                        rend="italic">little Religion, and a little Honesty, goes a great way in
+                        Courts</hi>. 'Tis not inconsistent with Charity to distrust a Religious Man
+                    in Power, tho' he may be a good Man; he has many Temptations "to propagate <hi
+                        rend="italic">publick Destruction for Personal Advantages</hi> and
+                    Security": And if his Natural Temper be covetous, and his Actions often
+                    contradict his pious Discourse, we may with great Reason conclude, that he has
+                    some other Design in his Religion besides barely getting to Heaven. But the most
+                    dangerous Hypocrite in a Common-Wealth, is one <hi rend="italic">who leaves the
+                        Gospel for the sake of the Law</hi>: A Man compounded of Law and Gospel, is
+                    able to cheat a whole Country with his Religion, and then destroy them under
+                        <ref corresp="colour" target="colour_"><hi rend="italic">Colour of
+                        Law</hi></ref>: And here the Clergy are in great Danger of being deceiv'd,
+                    and the People of being deceiv'd by the Clergy, until the Monster arrives to
+                    such Power and Wealth, that he is out of the reach of both, and can oppress the
+                    People without their own blind Assistance. And it is a sad Observation, that
+                    when the People too late see their Error, yet the Clergy still persist in their
+                        <ref corresp="encomium2" target="encomium2_">Encomiums</ref> on the
+                    Hypocrite; and when he happens to die <hi rend="italic">for the Good of his
+                        Country</hi>, without leaving behind him the Memory of <hi rend="italic">one
+                        good Action</hi>, he shall be sure to have his Funeral Sermon stuff'd with
+                        <hi rend="italic">Pious Expressions</hi> which he dropt at such a Time, and
+                    at such a Place, and on such an Occasion; than which nothing can be more
+                    prejudicial to the Interest of Religion, nor indeed to the Memory of the Person
+                    deceas'd. The Reason of this Blindness in the Clergy is, because they are
+                    honourably supported (as they ought to be) by their People, and see nor feel
+                    nothing of the Oppression which is obvious and burdensome to every one else.</p>
+                <p>But this Subject raises in me an <ref corresp="indignation" target="indignation_"
+                        >Indignation</ref> not to be born; and if we have had, or are like to have
+                    any Instances of this Nature in New England, we cannot better manifest our Love
+                    to Religion and the Country, than by setting the Deceivers in a true Light, and
+                    undeceiving the Deceived, however such Discoveries may be represented by the
+                    ignorant or designing Enemies of our Peace and Safety.</p>
+                <p>I shall conclude with a Paragraph or two from an ingenious Political Writer in
+                    the <hi rend="italic">London Journal</hi>, the better to convince your Readers,
+                    that Publick Destruction may be easily carry'd on by <hi rend="italic"
+                        >hypocritical Pretenders to Religion</hi>.</p>
+                <p>"A raging Passion for immoderate Gain had made Men universally and intensely
+                    hard-hearted: They were every where devouring one another. And yet the Directors
+                    and their Accomplices, who were the acting Instruments of all this outrageous
+                    Madness and Mischief, set up for wonderful pious Persons, while they were
+                    defying Almighty God, and plundering Men; and they set apart a Fund of
+                    Subscriptions for charitable Uses; that is, they mercilessly made a whole People
+                    Beggars, and charitably supported a few <hi rend="italic">necessitous and
+                        worthless</hi> Favourites. I doubt not, but if the Villany had gone on with
+                    Success, they would have had their Names handed down to Posterity with
+                    Encomiums; as the Names of other <hi rend="italic">publick Robbers</hi> have
+                    been! We have <hi rend="italic">Historians</hi> and Ode Makers now living, very
+                    proper for such a Task. It is certain, that most People did, at one Time,
+                    believe the <hi rend="italic">Directors</hi> to be <hi rend="italic">great and
+                        worthy Persons</hi>. And an honest Country Clergyman told me last Summer,
+                    upon the Road, that Sir John was an excellent publick-spirited Person, for that
+                    he had beautified his <ref corresp="chancel" target="chancel_"
+                    >Chancel</ref>.</p>
+                <p>"Upon the whole we must not judge of one another by their best Actions; since the
+                    worst Men do some Good, and all Men make fine Professions: But we must judge of
+                    Men by the whole of their Conduct, and the Effects of it. Thorough Honesty
+                    requires great and long Proof, since many a Man, long thought honest, has at
+                    length proved a <ref corresp="knave" target="knave_">Knave</ref>. And it is from
+                    judging without Proof, or false Proof, that Mankind continue Unhappy." I am,
+                    Sir, Your humble Servant,</p>
+                <p>SILENCE DOGOOD.</p>
+            </div>
+            <div>
+                <head> August 13, 1722 [No. 10] <ref corresp="cicerotrans2" target="cicerotrans2_"
+                            ><hi rend="italic">Optimè societas hominum servabitur</hi>. Cic.</ref>
+                    To the Author of the <hi rend="italic">New-England Courant</hi>. </head>
+
+                <p>Sir,</p>
+                <p>Discoursing lately with an intimate Friend of mine of the lamentable Condition of
+                    Widows, he put into my Hands a Book, wherein the ingenious Author proposes (I
+                    think) a certain Method for their Relief. I have often thought of some such
+                    Project for their Benefit my self, and intended to communicate my Thoughts to
+                    the Publick; but to prefer my own Proposals to what follows, would be rather an
+                    Argument of Vanity in me than Good Will to the many Hundreds of my
+                    Fellow-Sufferers now in New-England.</p>
+
+                <p>“We have (says he) abundance of Women, who have been Bred well, and Liv’d well,
+                    Ruin’d in a few Years, and perhaps, left Young, with a House full of Children,
+                    and nothing to Support them; which falls generally upon the Wives of the
+                    Inferior Clergy, or of Shopkeepers and <ref corresp="artificer"
+                        target="artificer_">Artificers</ref>.</p>
+                <p>“They marry Wives with perhaps <ref corresp="portion" target="portion_">£300 to
+                        £1000 Portion</ref>, and can settle no <ref corresp="jointure"
+                        target="jointure_">Jointure</ref> upon them; either they are Extravagant and
+                    Idle, and Waste it, or Trade decays, or Losses, or a Thousand Contingences
+                    happen to bring a Tradesman to Poverty, and he Breaks; the Poor Young Woman, it
+                    may be, has Three or Four Children, and is driven to a thousand shifts, while he
+                    lies in the <ref corresp="mint" target="mint_">Mint</ref> or <ref
+                        corresp="fryar" target="fryar_">Fryars</ref> under the <hi rend="italic"
+                        >Dilemma</hi> of a Statute of Bankrupt; but if he Dies, then she is
+                    absolutely Undone, unless she has Friends to go to.</p>
+                <p>“Suppose an Office to be Erected, to be call’d <hi rend="italic">An Office of
+                        Ensurance for Widows</hi>, upon the following Conditions;</p>
+                <p>“Two thousand Women, or their Husbands for them, Enter their Names into a
+                    Register to be kept for that purpose, with the Names, Age, and Trade of their
+                    Husbands, with the Place of their abode, Paying at the Time of their Entring
+                        <ref corresp="britcash" target="britcash_">5<hi rend="italic">s</hi></ref>.
+                    down with 1<hi rend="italic">s</hi>. 4<hi rend="italic">d</hi>. <hi
+                        rend="italic">per</hi> Quarter, which is to the setting up and support of an
+                    Office with Clerks, and all proper Officers for the same; <hi rend="italic">for
+                        there is no maintaining such without Charge</hi>; they receive every one of
+                    them a Certificate, Seal’d by the Secretary of the Office, and Sign’d by the
+                    Governors, for the Articles hereafter mentioned.</p>
+                <p>“If any one of the Women becomes a Widow, at any Time after Six Months from the
+                    Date of her Subscription, upon due Notice given, and Claim made at the Office in
+                    form, as shall be directed, she shall receive within Six Months after such Claim
+                    made, the Sum of £500 in Money, without any Deductions, saving some small Fees
+                    to the Officers, which the Trustees must settle, that they may be known.</p>
+                <p>“In Consideration of this, every Woman so Subscribing, Obliges her self to Pay as
+                    often as any Member of the Society becomes a Widow, the due Proportion or Share
+                    allotted to her to Pay, towards the £500 for the said Widow, provided her Share
+                    does not exceed the Sum of 5<hi rend="italic">s</hi>.</p>
+                <p>“No Seamen or Soldiers Wives to be accepted into such a Proposal as this, on the
+                    Account before mention’d, because the Contingences of their Lives are not equal
+                    to others, unless they will admit this general Exception, supposing they do not
+                    Die out of the Kingdom.</p>
+                <p>“It might also be an Exception, That if the Widow, that Claim’d, had really, <ref
+                        corresp="bonafide" target="bonafide_"><hi rend="italic">bona
+                    fide</hi></ref>,left her by her Husband to her own use, clear of all Debts and
+                    Legacies, £2000 she shou’d have no Claim; the Intent being to Aid the Poor, not
+                    add to the Rich. But there lies a great many Objections against such an Article:
+                    As</p>
+
+                <lg>
+                    <l>“1. It may tempt some to <ref corresp="forswear" target="forswear_"
+                            >forswear</ref> themselves.</l>
+                    <l>“2. People will Order their Wills so as to <ref corresp="defraud"
+                            target="defraud_">defraud</ref> the Exception.</l>
+                </lg>
+
+                <p>“One Exception must be made; and that is, Either very unequal Matches, as when a
+                    Woman of Nineteen Marries an old Man of Seventy; or Women who have <ref
+                        corresp="infirm" target="infirm_">infirm</ref> Husbands, I mean known and
+                    publickly so. To remedy which, Two things are to be done.</p>
+
+                <lg>
+                    <l>“[1.] The Office must have moving Officers without doors, who shall inform
+                        themselves of such matters, and if any such Circumstances appear, the Office
+                        should have 14 days time to return their Money, and declare their
+                        Subscriptions Void.</l>
+                    <l>“2. No Woman whose Husband had any visible <ref corresp="distemper"
+                            target="distemper_">Distemper</ref>, should claim under a Year after her
+                        Subscription.</l>
+
+                </lg>
+
+                <p>“One grand Objection against this Proposal, is, How you will oblige People to pay
+                    either their Subscription, or their <ref corresp="quarteridge"
+                        target="quarteridge_">Quarteridge</ref>.</p>
+                <p>“To this I answer, <hi rend="italic">By no Compulsion</hi> (tho’ that might be
+                    perform’d too) but altogether voluntary; only with this Argument to move it,
+                    that if they do not continue their Payments, they lose the Benefit of their past
+                    Contributions.</p>
+                <p>“I know it lies as a fair Objection against such a Project as this, That the
+                    number of Claims are so uncertain, That no Body knows what they engage in, when
+                    they Subscribe, for so many may die Annually out of Two Thousand, as may perhaps
+                    make my Payment £20 or 25 <ref corresp="perannum" target="perannum_"><hi
+                            rend="italic">per Ann</hi></ref>., and if a Woman happen to Pay that for
+                    Twenty Years, though she receives the £500 at last she is a great Loser; but if
+                    she dies before her Husband, she has lessened his Estate considerably, and
+                    brought a great Loss upon him.</p>
+                <p>“<hi rend="italic">First</hi>, I say to this, That I wou’d have such a Proposal
+                    as this be so fair and easy, that if any Person who had Subscrib’d found the
+                    Payments too high, and the Claims fall too often, it shou’d be at their Liberty
+                    at any Time, upon Notice given, to be released and stand Oblig’d no longer; and
+                    if so, <ref corresp="violenti" target="violenti_"><hi rend="italic">Volenti non
+                            fit Injuria</hi></ref>; every one knows best what their own
+                    Circumstances will bear.</p>
+
+                <p>“In the next Place, because Death is a Contingency, no Man can directly
+                    Calculate, and all that Subscribe must take the Hazard; yet that a Prejudice
+                    against this Notion may not be built on wrong Grounds, let’s examine a little
+                    the Probable hazard, and see how many shall die Annually out of 2000
+                    Subscribers, accounting by the common proportion of Burials, to the number of
+                    the Living.</p>
+                <p>“Sir William Petty in his <hi rend="italic">Political Arithmetick</hi>, by a very
+                    Ingenious Calculation, brings the Account of Burials in London, to be 1 in 40
+                    Annually, and proves it by all the proper Rules of proportion’d Computation; and
+                    I’le take my Scheme from thence. If then One in Forty of all the People in
+                    England should Die, that supposes Fifty to Die every Year out of our Two
+                    Thousand Subscribers; and for a Woman to Contribute 5<hi rend="italic">s</hi>.
+                    to every one, would certainly be to agree to Pay £12 10<hi rend="italic">s</hi>.
+                        <hi rend="italic">per Ann</hi>. upon her Husband’s Life, to receive £500
+                    when he Di’d, and lose it if she Di’d first; and yet this wou’d not be a hazard
+                    beyond reason too great for the Gain.</p>
+                <p>“But I shall offer some Reasons to prove this to be impossible in our Case;
+                    First, Sir William Petty allows the City of London to contain about a Million of
+                    People, and our Yearly Bill of Mortality never yet amounted to 25000 in the most
+                    Sickly Years we have had, Plague Years excepted, sometimes but to 20000, which
+                    is but One in Fifty: Now it is to be consider’d here, that Children and Ancient
+                    People make up, one time with another, at least one third of our Bills of
+                    Mortality; and our <hi rend="italic">Assurances</hi> lies upon none but the
+                    Midling Age of the People, which is the only age wherein Life is any thing
+                    steady; and if that be allow’d, there cannot Die by his Computation, above One
+                    in Eighty of such People, every Year; but because I would be sure to leave Room
+                    for Casualty, I’le allow one in Fifty shall Die out of our Number
+                    Subscrib’d.</p>
+                <p>“Secondly, It must be allow’d, that our Payments falling due only on the Death of
+                    Husbands, this One in Fifty must not be reckoned upon the Two thousand; for ’tis
+                    to be suppos’d at least as many Women shall die as Men, and then there is
+                    nothing to Pay; so that One in Fifty upon One Thousand, is the most that I can
+                    suppose shall claim the Contribution in a Year, which is Twenty Claims a Year at
+                        5<hi rend="italic">s</hi>. each, and is £5 <hi rend="italic">per Ann</hi>.
+                    and if a Woman pays this for Twenty Year, and claims at last, she is Gainer
+                    enough, and no extraordinary Loser if she never claims at all: And I verily
+                    believe any Office might undertake to demand at all Adventures not above £6 <hi
+                        rend="italic">per Ann</hi>. and secure the Subscriber £500 in case she come
+                    to claim as a Widow.”</p>
+                <p>I would leave this to the Consideration of all who are concern’d for their own or
+                    their Neighbour’s <ref corresp="temporal" target="temporal_">Temporal</ref>
+                    Happiness; and I am humbly of Opinion, that the Country is ripe for many such
+                        <hi rend="italic">Friendly Societies</hi>, whereby every Man might help
+                    another, without any Disservice to himself. We have many charitable Gentlemen
+                    who Yearly give liberally to the Poor, and where can they better bestow their
+                    Charity than on those who become so by Providence, and for ought they know on
+                    themselves. But above all, the Clergy have the most need of coming into some
+                    such Project as this. They as well as poor Men (according to the Proverb)
+                    generally abound in Children; and how many Clergymen in the Country are forc’d
+                    to labour in their Fields, to keep themselves in a Condition above Want? How
+                    then shall they be able to leave any thing to their forsaken, dejected, and
+                    almost forgotten Wives and Children. For my own Part, I have nothing left to
+                    live on, but Contentment and a few Cows; and tho’ I cannot expect to be reliev’d
+                    by this Project, yet it would be no small Satisfaction to me to see it put in
+                    Practice for the Benefit of others. I am, Sir, &amp;c.</p>
+                <p>SILENCE DOGOOD</p>
+                <!-- Why no period? -->
+            </div>
+            <div>
+                <head> August 20, 1722 [No. 11] <ref corresp="unknownlatin" target="unknownlatin_"
+                            ><hi rend="italic">Neque licitum interea est meam amicam
+                        visere.</hi></ref> To the Author of the <hi rend="italic">New-England
+                        Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>From a natural Compassion to my Fellow-Creatures, I have sometimes been betray'd
+                    into Tears at the Sight of an Object of Charity, who by a bear <ref
+                        corresp="sic" target="sic_">[sic]</ref> Relation of his Circumstances,
+                    seem'd to demand the Assistance of those about him. The following Petition
+                    represents in so lively a Manner the forlorn State of a Virgin well stricken in
+                    Years and Repentance, that I cannot forbear publishing it at this Time, with
+                    some Advice to the Petitioner.</p>
+
+                <p><hi rend="italic">To Mrs. Silence Dogood. </hi></p>
+                <p>"1. That your Petitioner being puff'd up in her younger Years with a numerous
+                    Train of Humble Servants, had the Vanity to think, that her extraordinary Wit
+                    and Beauty would continually recommend her to the Esteem of the <ref
+                        corresp="gallant" target="gallant_">Gallants</ref>; and therefore as soon as
+                    it came to be publickly known that any Gentleman address'd her, he was
+                    immediately discarded.</p>
+                <p>"2. That several of your Petitioners Humble Servants, who upon their being
+                    rejected by her, were, to all Apperance in a dying Condition, have since
+                    recover'd their Health, and been several Years married, to the great Surprize
+                    and Grief of your Petitioner, who parted with them upon no other Conditions, but
+                    that they should die or run distracted for her, as several of them faithfully
+                    promis'd to do.</p>
+                <p>"3. That your Petitioner finding her self disappointed in and neglected by her
+                    former Adorers, and no new Offers appearing for some Years past, she has been
+                    industriously contracting Acquaintance with several Families in Town and
+                    Country, where any young Gentlemen or Widowers have resided, and endeavour'd to
+                    appear as conversable as possible before them: She has likewise been a strict
+                    Observer of the Fashion, and always appear'd well dress'd. And the better to
+                    restore her decay'd Beauty, she has consum'd above <ref corresp="fiftylb"
+                        target="fiftylb_">Fifty Pound's Worth</ref> of the most approved <hi
+                        rend="italic">Cosmeticks</hi>. But all won't do.</p>
+                <p>"Your Petitioner therefore most humbly prays, That you would be pleased to form a
+                    Project for the Relief of all those <ref corresp="penitent" target="penitent_"
+                        >penitent</ref> Mortals of the fair Sex, that are like to be punish'd with
+                    their Virginity until old Age, for the Pride and Insolence of their Youth.</p>
+                <p>"And your Petitioner (as in Duty bound) shall ever pray, &amp;c.</p>
+                <p>Margaret Aftercast"</p>
+
+                <p>Were I endow'd with the Faculty of Match-making, it should be improv'd for the
+                    Benefit of Mrs. Margaret, and others in her Condition: But since my extream
+                    Modesty and <ref corresp="taciturn" target="taciturn_">Taciturnity</ref>,
+                    forbids an Attempt of this Nature, I would advise them to relieve themselves in
+                    a Method of <hi rend="italic">Friendly Society</hi>; and that already publish'd
+                    for Widows, I conceive would be a very proper Proposal for them, whereby every
+                    single Woman, upon full Proof given of her continuing a Virgin for the Space of
+                    Eighteen Years, (dating her Virginity from the Age of Twelve,) should be
+                    entituled to £500 in ready Cash.</p>
+                <p>But then it will be necessary to make the following Exceptions.</p>
+                <p>1. That no Woman shall be admitted into the Society after she is Twenty Five
+                    Years old, who has made a Practice of entertaining and discarding Humble
+                    Servants, without sufficient Reason for so doing, until she has manifested her
+                    Repentance in Writing under her Hand.</p>
+                <p>2. No Member of the Society who has declar'd before two credible Witnesses, <hi
+                        rend="italic">That it is well known she has refus'd several good Offers
+                        since the Time of her Subscribing</hi>, shall be entituled to the £500 when
+                    she comes of Age; that is to say, <hi rend="italic">Thirty Years</hi>.</p>
+                <p>3. No Woman, who after claiming and receiving, has had the good Fortune to marry,
+                    shall entertain any Company with <ref corresp="encomium3" target="encomium3_"
+                        >Encomiums</ref> on her Husband, above the Space of one Hour at a Time, upon
+                    Pain of returning one half the Money into the Office, for the first Offence; and
+                    upon the second Offence to return the Remainder. I am, Sir, Your Humble
+                    Servant,</p>
+                <p>SILENCE DOGOOD</p>
+
+            </div>
+            <div>
+                <head> September 10, 1722 [No. 12] <ref corresp="cordi" target="cordi_"><hi
+                            rend="italic">Quod est in cordi sobrii, est in ore ebrii</hi></ref>. To
+                    the Author of the <hi rend="italic">New-England Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>It is no unprofitable tho' unpleasant Pursuit, diligently to inspect and consider
+                    the Manners and Conversation of Men, who, insensible of the greatest Enjoyments
+                    of humane Life, abandon themselves to Vice from a false Notion of <hi
+                        rend="italic">Pleasure and good Fellowship</hi>. A true and natural
+                    Representation of any Enormity, is often the best Argument against it and Means
+                    of removing it, when the most severe Reprehensions alone, are found
+                    ineffectual.</p>
+                <p>I would in this letter improve the little Observation I have made on the Vice of
+                        <hi rend="italic">Drunkeness</hi>, the better to reclaim the <hi
+                        rend="italic">good Fellows</hi> who usually pay the Devotions of the Evening
+                    to <ref corresp="bacchus" target="bacchus_">Bacchus</ref>.</p>
+                <p>I doubt not but <hi rend="italic">moderate Drinking</hi> has been improv'd for
+                    the Diffusion of Knowledge among the ingenious Part of Mankind, who want the
+                    Talent of a ready Utterance, in order to discover the Conceptions of their Minds
+                    in an entertaining and intelligible Manner. 'Tis true, drinking does not <hi
+                        rend="italic">improve</hi> our Faculties, but it enables us to <hi
+                        rend="italic">use</hi> them; and therefore I conclude, that much Study and
+                    Experience, and a little Liquor, are of absolute Necessity for some Tempers, in
+                    order to make them accomplish'd Orators. Dic. Ponder discovers an excellent
+                    Judgment when he is inspir'd with a Glass or two of <ref corresp="claret"
+                        target="claret_"><hi rend="italic">Claret</hi></ref>, but he passes for a
+                    Fool among those of small Observation, who never saw him the better for Drink.
+                    And here it will not be improper to observe, That the moderate Use of Liquor,
+                    and a well plac'd and well regulated Anger, often produce this same Effect; and
+                    some who cannot ordinarily talk but in broken Sentences and false Grammar, do in
+                    the Heat of Passion express themselves with as much Eloquence as Warmth. Hence
+                    it is that my own Sex are generally the most eloquent, because the most
+                    passionate. "It has been said in the Praise of some Men, (says an ingenious
+                    Author,) that they could talk whole Hours together upon any thing; but it must
+                    be owned to the Honour of the other Sex, that there are many among them who can
+                    talk whole Hours together upon Nothing. I have known a Woman branch out into a
+                    long <ref corresp="extempore" target="extempore_">extempore</ref> Dissertation
+                    on the <ref corresp="edging" target="edging_">Edging of a Petticoat</ref>, and
+                        <ref corresp="chide" target="chide_">chide</ref> her Servant for breaking a
+                    China Cup, in all the Figures of Rhetorick."</p>
+                <p>But after all it must be consider'd, that no Pleasure can give Satisfaction or
+                    prove advantageous to a <hi rend="italic">reasonable Mind</hi>, which is not
+                    attended with the <hi rend="italic">Restraints of Reason</hi>. Enjoyment is not
+                    to be found by Excess in any sensual Gratification; but on the contrary, the
+                    immoderate Cravings of the <ref corresp="voluptuary" target="voluptuary_"
+                        >Voluptuary</ref>, are always succeeded with Loathing and a <ref
+                        corresp="palled" target="palled_">palled</ref> Appetite. What Pleasure can
+                    the Drunkard have in the Reflection, that, while in his Cups, he retain'd only
+                    the Shape of a Man, and acted the Part of a Beast; or that from reasonable
+                    Discourse a few Minutes before, he descended to <ref corresp="impertinence2"
+                        target="impertinence2_">Impertinence</ref> and Nonsense?</p>
+                <p>I cannot pretend to account for the different Effects of Liquor on Persons of
+                    different Dispositions, who are guilty of Excess in the Use of it. 'Tis strange
+                    to see Men of a regular Conversation become <ref corresp="rakish"
+                        target="rakish_">rakish</ref> and profane when intoxicated with Drink, and
+                    yet more surprizing to observe, that some who appear to be the most <ref
+                        corresp="profligate" target="profligate_">profligate</ref> Wretches when
+                    sober, become mighty religious in their Cups, and will then, and at no other
+                    Time address their Maker, but when they are destitute of Reason, and actually
+                        <ref corresp="affront" target="affront_">affronting</ref> him. Some shrink
+                        <ref corresp="wetting" target="wetting_">in the Wetting</ref>, and others
+                    swell to such an unusual Bulk in their Imaginations, that they can in an Instant
+                    understand all Arts and Sciences, by the liberal Education of a little <ref
+                        corresp="vivifying" target="vivifying_">vivifying</ref>
+                    <hi rend="italic">Punch</hi>, or a sufficient Quantity of other exhilerating
+                    Liquor.</p>
+                <p>And as the Effects of Liquor are various, so are the Characters given to its
+                    Devourers. It argues some Shame in the Drunkards themselves, in that they have
+                    invented numberless Words and Phrases to cover their Folly, whose proper
+                    Significations are harmless, or have no Signification at all. They are seldom
+                    known to be <hi rend="italic">drunk</hi>, tho' they are very often <ref
+                        corresp="drunk" target="drunk_"><hi rend="italic">boozey, cogey, tipsey,
+                            fox'd, merry, mellow, fuddl'd, groatable, Confoundedly cut, See two
+                            Moons, are Among the Philistines, In a very good Humour, See the Sun,
+                            or, The Sun has shone upon them; they Clip the King's English, are
+                            Almost froze, Feavourish, In their Altitudes, Pretty well enter'd</hi>,
+                        &amp;c</ref>. In short, every Day produces some new Word or Phrase which
+                    might be added to the Vocabulary of the <ref corresp="tipler" target="tipler_"
+                            ><hi rend="italic">Tiplers</hi></ref>: But I have chose to mention these
+                    few, because if at any Time a Man of Sobriety and Temperance happens to <hi
+                        rend="italic">cut himself confoundedly</hi>, or is <hi rend="italic">almost
+                        froze</hi>, or <hi rend="italic">feavourish</hi>, or accidentally <hi
+                        rend="italic">sees the Sun</hi>, &amp;c. he may escape the <ref
+                        corresp="imputation" target="imputation_">Imputation</ref> of being <hi
+                        rend="italic">drunk</hi>, when his Misfortune comes to be related. I am Sir,
+                    Your Humble Servant,</p>
+                <p>SILENCE DOGOOD</p>
+
+            </div>
+            <div>
+                <head> September 24, 1722 [No. 13] To the Author of the <hi rend="italic"
+                        >New-England Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>In Persons of a contemplative Disposition, the most indifferent Things provoke
+                    the Exercise of the Imagination; and the Satisfactions which often arise to them
+                    thereby, are a certain Relief to the Labour of the Mind (when it has been
+                    intensely fix'd on more substantial Subjects) as well as to that of the
+                    Body.</p>
+                <p>In one of the late pleasant Moon-light Evenings, I so far indulg'd in my self the
+                    Humour of the Town in walking abroad, as to continue from my Lodgings two or
+                    three Hours later than usual, and was pleas'd beyond Expectation before my
+                    Return. Here I found various Company to observe, and various Discourse to attend
+                    to. I met indeed with the common Fate of <hi rend="italic">Listeners</hi>, (who
+                        <hi rend="italic">hear no good of themselves</hi>,) but from a Consciousness
+                    of my Innocence, receiv'd it with a Satisfaction beyond what the Love of
+                    Flattery and the <ref corresp="daubing" target="daubing_">Daubings</ref> of a
+                    Parasite could produce. The Company who rally'd me were about Twenty in Number,
+                    of both Sexes; and tho' the <hi rend="italic">Confusion of Tongues</hi> (like
+                    that of Babel) which always happens among so many <ref corresp="impetuous"
+                        target="impetuous_">impetuous</ref> Talkers, render'd their Discourse not so
+                    intelligible as I could wish, I learnt thus much, That one of the Females
+                    pretended to know me, from some Discourse she had heard at a certain House
+                    before the Publication of one of my Letters; adding, <hi rend="italic">That I
+                        was a Person of an ill Character, and kept a criminal Correspondence with a
+                        Gentleman who assisted me in Writing</hi>. One of the <ref
+                        corresp="gallant2" target="gallant2_">Gallants</ref> clear'd me of this
+                    random Charge, by saying, <hi rend="italic">That tho' I wrote in the Character
+                        of a Woman, he knew me to be a Man; But</hi>, continu'd he, <hi
+                        rend="italic">he has more need of endeavouring a Reformation in himself,
+                        than spending his Wit in satyrizing others</hi>.</p>
+                <p>I had no sooner left this Set of <ref corresp="rambler" target="rambler_"
+                        >Ramblers</ref>, but I met a Crowd of <ref corresp="tarpolins"
+                        target="tarpolins_"><hi rend="italic">Tarpolins</hi></ref> and their <ref
+                        corresp="doxies" target="doxies_">Doxies</ref>, link'd to each other by the
+                    Arms, who ran (by their own Account) after the Rate of <ref corresp="knot"
+                        target="knot_"><hi rend="italic">Six Knots an Hour</hi></ref>, and bent
+                    their Course towards the Common. Their eager and amorous Emotions of Body,
+                    occasion'd by taking their Mistresses <hi rend="italic">in Tow</hi>, they call'd
+                        <hi rend="italic">wild <ref corresp="steerage" target="steerage_"
+                            >Steerage</ref></hi>: And as a Pair of them happen'd to trip and come to
+                    the Ground, the Company were call'd upon to <hi rend="italic">bring to</hi>, for
+                    that Jack and Betty were <hi rend="italic">founder'd</hi>. But this Fleet were
+                    not less comical or irregular in their Progress than a Company of Females I soon
+                    after came up with, who, by throwing their Heads to the Right and Left, at every
+                    one who pass'd by them, I concluded came out with no other Design than to revive
+                    the Spirit of Love in Disappointed Batchelors, and expose themselves to Sale to
+                    the first Bidder.</p>
+                <p>But it would take up too much Room in your Paper to mention all the Occasions of
+                    Diversion I met with in this Night's <ref corresp="ramble" target="ramble_"
+                        >Ramble</ref>. As it grew later, I observed, that many pensive Youths with
+                    down Looks and a slow Pace, would be ever now and then crying out on the Cruelty
+                    of their Mistresses; others with a more rapid Pace and chearful Air, would be
+                    swinging their Canes and clapping their Cheeks, and whispering at certain
+                    Intervals, <hi rend="italic">I'm certain I shall have her! This is more than I
+                        expected! How charmingly she talks!</hi> &amp;c.</p>
+                <p>Upon the whole I conclude, That our <hi rend="italic">Night-Walkers</hi> are a
+                    Set of People, who contribute very much to the Health and Satisfaction of those
+                    who have been fatigu'd with Business or Study, and occasionally observe their
+                    pretty Gestures and <ref corresp="impertinence3" target="impertinence3_"
+                        >Impertinencies</ref>. But among Men of Business, the <hi rend="italic"
+                        >Shoemakers</hi>, and other Dealers in Leather, are doubly oblig'd to them,
+                    inasmuch as they exceedingly promote the Consumption of their Ware: And I have
+                    heard of a <hi rend="italic">Shoemaker</hi>, who being ask'd by a noted Rambler,
+                        <hi rend="italic">Whether he could tell how long her Shoes would last</hi>;
+                    very prettily answer'd, <hi rend="italic">That he knew how many Days she might
+                        wear them, but not how many Nights; because they were then put to a more
+                        violent and irregular Service than when she employ'd her self in the common
+                        Affairs of the House</hi>. I am, Sir, Your Humble Servant,</p>
+                <p>SILENCE DOGOOD</p>
+
+            </div>
+            <div>
+                <head> October 8, 1722 [No. 14] <ref corresp="cicerotrans3" target="cicerotrans3_"
+                            ><hi rend="italic">Earum causarum quantum quaeque valeat, videamus</hi>.
+                        Cicero</ref>. To the Author of the <hi rend="italic">New-England
+                        Courant</hi>. </head>
+                <p>Sir,</p>
+                <p>It often happens, that the most zealous Advocates for any Cause find themselves
+                    disappointed in the first Appearance of Success in the Propagation of their
+                    Opinion; and the Disappointment appears unavoidable, when their easy <ref
+                        corresp="proselyte" target="proselyte_">Proselytes</ref> too suddenly start
+                    into Extreams, and are immediately fill'd with Arguments to invalidate their
+                    former Practice. This creates a Suspicion in the more considerate Part of
+                    Mankind, that those who are thus <hi rend="italic">given to Change</hi>, neither
+                        <hi rend="italic">fear God</hi>, nor <hi rend="italic">honour the King</hi>.
+                    In Matters of Religion, he that alters his Opinion on a <hi rend="italic"
+                        >religious Account</hi>, must certainly go thro' much Reading, hear many
+                    Arguments on both Sides, and undergo many Struggles in his Conscience, before he
+                    can come to a full Resolution: Secular Interest will indeed make quick Work with
+                    an immoral Man, especially if, notwithstanding the Alteration of his Opinion, he
+                    can with any Appearance of Credit retain his Immorality. But, by this Turn of
+                    Thought I would not be suspected of Uncharitableness to those Clergymen at
+                    Connecticut, who have lately embrac'd the Establish'd Religion of our Nation,
+                    some of whom I hear made their Professions with a Seriousness becoming their
+                    Order: However, since they have deny'd the Validity of <hi rend="italic"
+                        >Ordination</hi> by the Hands of <hi rend="italic">Presbyters</hi>, and
+                    consequently their Power of Administring the <hi rend="italic">Sacraments</hi>,
+                    &amp;c. we may justly expect a suitable Manifestation of their Repentance for
+                    invading the <hi rend="italic">Priests</hi> Office, and living so long in a <ref
+                        corresp="corah" target="corah_">Corah-like</ref> Rebellion. All I would
+                    endeavour to shew is, That an indiscreet Zeal for spreading an Opinion, hurts
+                    the Cause of the Zealot. There are too many blind Zealots among every
+                    Denomination of Christians; and he that propagates the Gospel among <ref
+                        corresp="rake" target="rake_"><hi rend="italic">Rakes</hi></ref> and <ref
+                        corresp="beau" target="beau_"><hi rend="italic">Beaus</hi></ref> without
+                    reforming them in their Morals, is every whit as ridiculous and impolitick as a
+                    Statesman who makes Tools of Ideots and <ref corresp="gossip" target="gossip_"
+                        >Tale-Bearers</ref>.</p>
+                <p>Much to my present Purpose are the Words of two Ingenious Authors of the Church
+                    of England, tho' in all Probability they were tainted with <ref
+                        corresp="whiggish" target="whiggish_">Whiggish</ref> Principles; and with
+                    these I shall conclude this Letter.</p>
+                <p>"I would (says one) have every zealous Man examine his Heart thoroughly, and, I
+                    believe, he will often find that what he calls a Zeal for his Religion, is
+                    either Pride, Interest or Ill-nature. A Man who differs from another in Opinion
+                    sets himself above him in his own Judgment, and in several Particulars pretends
+                    to be the wiser Person. This is a great Provocation to the Proud Man, and gives
+                    a keen Edge to what he calls his Zeal. And that this is the Case very often, we
+                    may observe from the Behaviour of some of the most Zealous for Orthodoxy, who
+                    have often great Friendships and Intimacies with vicious immoral Men, provided
+                    they do but agree with them in the same Scheme of Belief. The Reason is, because
+                    the vicious Believer gives the Precedency to the virtuous Man, and allows the
+                    good Christian to be the worthier Person, at the same Time that he cannot come
+                    up to his Perfections. This we find exemplified in that trite Passage which we
+                    see quoted in almost every System of Ethicks, tho' upon another Occasion;</p>
+
+                <p>
+                    <ref corresp="ovidtrans" target="ovidtrans_"><lg>
+                            <l>--Video meliore proboque</l>
+                            <l>Deteriora sequor--</l>
+                        </lg>
+                    </ref></p>
+
+                <p>On the contrary, it is certain if our Zeal were true and genuine, we should be
+                    much more angry with a Sinner than a <ref corresp="heretic" target="heretic_"
+                        >Heretick</ref>, since there are several Cases which may excuse the latter
+                    before his great Judge, but none which can excuse the former."</p>
+                <p>"I have (says another) found by Experience, that it is impossible to talk
+                    distinctly without defining the Words of which we make use. There is not a Term
+                    in our Language which wants Explanation so much as the Word <hi rend="italic"
+                        >Church</hi>. One would think when People utter it, they should have in
+                    their Minds Ideas of Virtue and Religion; but that important Monosyllable drags
+                    all the other Words in the Language after it, and it is made use of to express
+                    both Praise and Blame, according to the Character of him who speaks it. By this
+                    means it happens, that no one knows what his Neighbour means when he says such a
+                    one is for or against the Church. It has happen'd that he who is seen every Day
+                    at Church, has not been counted in the Eye of the World a Churchman; and he who
+                    is very zealous to oblige every one to frequent it but himself, has been a very
+                    good Son of the Church. This <ref corresp="Praepossession"
+                        target="Praepossession_">Praepossession</ref> is the best Handle imaginable
+                    for Politicians to make use of, for managing the Loves and Hatreds of Mankind to
+                    the Purposes to which they would lead them. But this is not a Thing for Fools to
+                    meddle with, for they only bring <ref corresp="disesteem" target="disesteem_"
+                        >Disesteem</ref> upon those whom they attempt to serve, when they
+                    unskilfully pronounce Terms of Art. I have observed great Evils arise from this
+                    Practice, and not only the Cause of Piety, but also the secular Interest of
+                    Clergymen, has extreamly suffered by the general unexplained Signification of
+                    the Word <hi rend="italic">Church</hi>." I am, Sir, Your Humble Servant.</p>
+                <p>SILENCE DOGOOD</p>
+
+
+            </div>
+        </body>
+        <back>
+            <div>
+                <note xml:id="fortnight" target="fortnight_" type="editorial"><p>Fourteen nights or
+                        two weeks. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="epistle" target="epistle_" type="editorial"><p>Letter. Source: Oxford
+                        English Dictionary</p></note>
+
+                <note xml:id="dispraise" target="dispraise_" type="editorial"><p>The opposite of
+                        praise. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="leatherapron" target="leatherapron_" type="editorial"><p>A working
+                        class man, what might later be called a blue-collar worker.</p></note>
+
+                <note xml:id="etc" target="etc_" type="editorial"><p>An abbreviation for et cetera.
+                        Source: Wikipedia</p></note>
+
+                <note xml:id="whether" target="whether_" type="editorial" resp="editors.xml#AJB"
+                        ><p>An early form of "whether or not."</p></note>
+
+                <note xml:id="lucubrations" target="lucubrations_" type="editorial"
+                        ><p>"Lucubrations" are writings produced by candle-light; so, these would be
+                        essays written alone at night after a day's work. The word itself already
+                        sounded a bit pompous in the early eighteenth century, so the speaker is to
+                        some degree making fun of herself.</p></note>
+
+                <note xml:id="nengland" target="nengland_" type="editorial"><p>New
+                    England</p></note>
+
+                <note xml:id="disconsolate" target="disconsolate_" type="editorial"><p>Inconsolable,
+                        despondent. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="apprentice" target="apprentice_" type="editorial"><p>Young women were
+                        sometimes bound as apprentices, usually in trades that were traditionally
+                        gendered female (like weaving), but the vast majority of apprentices in this
+                        era were young men. At the time of this writing, Franklin was
+                        serving an apprenticeship in the printshop of his older brother James.</p></note>
+
+                <note xml:id="indigent" target="indigent_" type="editorial"><p>Poor, destitute.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="literacy" target="literacy_" type="editorial"><p>Trying to determine
+                        how many people in colonial America could read in the early eighteenth
+                        century is an enormous challenge. The evidence is scanty and fragmentary. The best evidence, though, would suggest that literacy
+                        rates among English settler-colonists would have been highest in New England, because of the history of
+                        Puritanism in the colony. Puritans had long prized the ability fpr individuals to
+                        read the Bible on their own, and literacy was correspondingly comparatively high in places where Puritanism dominated.</p></note>
+
+                <note xml:id="discretion" target="discretion_" type="editorial"><p>The time in a
+                        person's life when they are presumed to be able to make sound judgements.</p></note>
+
+                <note xml:id="were" target="were_" type="editorial"><p>That is, "where".</p></note>
+
+                <note xml:id="genesis" target="genesis_" type="editorial"><p>"And the Lord God said,
+                        It is not good that the man should be alone: I will make him an help meet
+                        for him." King James Bible, Genesis 2:18</p></note>
+
+                <note xml:id="topsex" target="topsex_" type="editorial"><p>That is, upper-class
+                        women, who were probably socially more highly ranked than a country
+                        clergyman could expect to marry.</p></note>
+
+                <note xml:id="meridian" target="meridian_" type="editorial"><p>That is, when I was
+                        in the prime of life.</p></note>
+
+                <note xml:id="thisworld" target="thisworld_" type="editorial"><p>That is, this
+                        world.</p></note>
+
+                <note xml:id="indefatigably" target="indefatigably_" type="editorial"><p>Tirelessly.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="peacemeal" target="peacemeal_" type="editorial"><p>Piece by piece, or
+                        in small bits. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="mollify" target="mollify_" type="editorial"><p>Soften; make tender.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="reproof" target="reproof_" type="editorial"><p>Censures or Rebukes;
+                        subject to blame or scorn. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="cicerotrans" target="cicerotrans_" type="editorial"><p>"Should I be
+                        taught to speak either Greek or Latin?" Franklin is quoting here from the
+                        Roman orator Cicero. The essay that follows, taking the form of a dream
+                        vision, is a satire on Harvard College and its requirement that students
+                        study Greek and Latin.</p></note>
+
+                <note xml:id="seminary" target="seminary_" type="editorial"><p>A place of education
+                        such as a school or a college. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="verdant" target="verdant_" type="editorial"><p>Green; of vegetation.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="porter" target="porter_" type="editorial"><p>Gatekeepers. Source:
+                        Oxford English Dictionoary</p></note>
+
+                <note xml:id="spectator" target="spectator_" type="editorial"><p>A nod to the series
+                        of periodical essays, The Spectator, which Franklin used as a model for his
+                        Silence Dogood letters.</p></note>
+
+                <note xml:id="docible" target="docible_" type="editorial"><p>Ready to be taught;
+                        submissive to instruction. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="nigh" target="nigh_" type="editorial"><p>Near or almost. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="fain" target="fain_" type="editorial"><p>Happy, please. Source: Oxford
+                        English Dictionary</p></note>
+
+                <note xml:id="cake" target="cake_" type="editorial"><p>A fruitcake packed full of
+                        different types of candied and dried fruits such as plums, raisins, and
+                        orange peel. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="lubber" target="lubber_" type="editorial"><p>A large clumsy idiot who
+                        is often lazy and idle. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="merch" target="merch_" type="editorial"><p>Engaged in the selling and
+                        trade of goods. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="patrimony" target="patriony_" type="editorial"><p>Property that, by
+                        ancient right, belongs to an institution. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="churchmice" target="churchmice_" type="editorial"><p>The expression
+                        "church mice" is used to describe people who are poor and quiet. Source: Oxford
+                        English Dictionary</p></note>
+
+                <note xml:id="theology" target="theology_" type="editorial"><p>The Study of God, and
+                        God's relations with man and the universe. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="pecunia" target="pecunia_" type="editorial"><p>Latin for money or
+                        wealth.</p></note>
+
+                <note xml:id="plagius" target="plagius_" type="editorial"><p>A personification of
+                        plagiarism, here referring to clerics stealing from the sermons of more
+                        established ministers.</p></note>
+
+                <note xml:id="tillotson" target="tillotson_" type="editorial"><p>John Tillotson was
+                        the Archbishop of Canterbury in late seventeenth century.</p></note>
+
+                <note xml:id="genteel" target="genteel_" type="editorial"><p>In the manner of the
+                        gentry. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="terencetrans" target="terencetrans_" type="editorial"><p>"One woman
+                        agrees the most with another." The line is from the Roman playwright
+                        Terence.</p></note>
+
+                <note xml:id="satyr" target="satyr_" type="editorial"><p>A form of writing that mocks or ridicules something. The word actually comes from the Latin word "satura," meaning a full plate of varied foods. But the spelling "satyr" derives from a false etymology, which imagined that the term came from the Greek word for a mythological demon that was often depicted as a half-human, half-goat creature. The demon is generally a
+representation of lust and rage. For this reason, "satire" was often been associated with writing that was fierce and agressive. Source: Oxford English
+                    Dictionary</p></note>
+
+                <note xml:id="maleenormity" target="maleenormity_" type="editorial"><p>Deviation in
+                        behavior, often from moral or legal normality. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="ephraim" target="ephraim_" type="editorial"><p>Ephraim: The second son
+                        of Joseph and Asenath, as shown by Book of Genesis. The name Ephraim became
+                        related to the idea of "being fruitful." Censorious: one who gives constant
+                        censure and finds faults. Source: Oxford English Dictionary and
+                        Wikipedia</p></note>
+
+                <note xml:id="reprove" target="reprove_" type="editorial"><p>Rebuke; express
+                        disapproval. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="quaere" target="quaere_" type="edditorial"><p>To question or query.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="votary" target="votary_" type="editorial"><p>People bound to a
+                        religious life or a certain vow. Source: Oxford English
+                    Dictionary</p></note>
+
+                <note xml:id="pomp" target="pomp_" type="editorial"><p>Ostentatious display;
+                        boastful, prideful with a negative connotation. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="reproach" target="reproach_" type="editorial"><p>Scolds or censures.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="conversible" target="conversible_" type="editorial"><p>Capable of
+                        being converted. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="baubles" target="baubles_" type="editorial"><p>A showy trinket that's
+                        of little worth, often made for children to play with. Source: Oxford
+                        English Dictionary</p></note>
+
+                <note xml:id="impertinence" target="impertinence_" type="editorial"><p>Irrelevance.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="upbraid" target="upbraid_" type="editorial"><p>Censure</p></note>
+
+                <note xml:id="swain" target="swain_" type="editorial"><p>An innocent, rose-coloured
+                        country lover, such as one found in pastoral poetry. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="nymph" target="nymph_" type="editorial"><p>A woman or lover with
+                        sexual power or magic over a man. Coming from mythology, nymphs are spirits
+                        that take the form of women who, similarly to sirens, were said to charm men
+                        and lead them to sin or death. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="credulous" target="credulous" type="editorial"><p>Ready or willing.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="exhort" target="exhort_" type="editorial"><p>To urge earnestly.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="culpable" target="culpable_" type="editorial"><p>Guilty. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="tarry" target="tarry_" type="editorial"><p>To linger or stay. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="senecatrans" target="senecatrans_" type="editorial"><p>"A man who
+                        stands proudly at the start of the day is flattened by its end." Franklin is
+                        quoting here from the Roman tragedian Seneca.</p></note>
+
+                <note xml:id="soliloquy" target="soliloquy_" type="editorial"><p>A speech or talk
+                        given alone or aloud without addressing any person. Source: Oxford English
+                        Dictionary</p></note>
+                <note xml:id="penny" target="penny_">Expensive, probably imported fabric, as opposed to cloth made inexpensively at home.</note>
+
+                <note xml:id="begot" target="begot_"><p>Has given rise to. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="portend" target="portend_" type="editorial"><p>Fortells as an omen or
+                        other supernatural means. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="evince" target="evince_" type="editorial"><p>To overcome. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="hoop" target="hoop_" type="editorial">An undergarment, more commonly
+                    known as a hoop skirt, that is worn underneath a womans skirt. The skirt is
+                    constructed with rigid hoops that flare out and grow larger as one travels
+                    downward from the top of the skirt so as to give a domed shape to the bottom of
+                    a dress. Source: Oxford English Dictionary</note>
+
+                <note xml:id="incommoded" target="incommoded_" type="editorial"><p>Subjected to
+                        inconveience; troubled. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="mortar" target="mortar_" type="editorial"><p>A mortar is a hard-walled
+                        bowl that is used to grind things with a pestle. Here Franklin is saying the
+                        hoop-skirts are like thick, over-turned bowls. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="noddles" target="noddles_" type="editorial"><p>Historically one of
+                        Boston Harbor Islands, that has now been reconnected to the mainland by
+                        filling the strait that used to separate it from the mainland. Noddle's
+                        Island now makes up the southern part of the East Boston
+                    neighborhood.</p></note>
+
+                <note xml:id="watts" target="watts_" type="editorial"><p>Having used Latin
+                        quotations for his epigraphs to this point, Franklin here switches to a
+                        contemporary poem, drawing an extract from a 1709 poem called "The
+                        Adventurous Muse" by the English poet Isaac Watts.</p></note>
+
+                <note xml:id="encomium" target="encomium_" type="editorial"><p>Grand expression of
+                        praise. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="appellation" target="appellation_" type="editorial"><p>Calling of
+                        Names. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="rapin" target="rapin_" type="editorial"><p>Rene Rapin (1621-1687) was
+                        a French cleric, poet, and critic, whose essays on poetry gave "rules" on
+                        composition.</p></note>
+
+                <note xml:id="purcell" target="purcell_"><p>Henry Purcell (1669-1695) was considered
+                        to be the greatest English composer of the era. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="greekstyle" target="greekstyle_" type="editorial"><p>A series of
+                        common poetical styles of the time. Source: Oxford English
+                    Dictionary</p></note>
+
+                <note xml:id="kitelic" target="kitelic_" type="editorial"><p>That is, a new genre
+                        based on this poem about Mehitabel Kitel.</p></note>
+
+                <note xml:id="subjoin" target="subjoin_" type="editorial"><p>Add to the end of a
+                        statement. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="receipt" target="receipt_" type="editorial"><p>Recipe</p></note>
+
+                <note xml:id="aetatis" target="aetatis_" type="editorial">
+                    <p>Latin: "Of his or her age"</p></note>
+
+                <note xml:id="scull" target="scull_" type="editorial"><p>Skull</p></note>
+
+                <note xml:id="moestus" target="moestus" type="editorial"><p>Latin: "a mourner
+                        composed it"</p></note>
+
+                <note xml:id="notabene" target="notabene_" type="editorial"><p>"N.B." is used to
+                        signify something important in a text; "note well." Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="hypercarpus" target="hypercarpus_" type="editorial"><p>"Dogood" is
+                        responding to a piece in the June 18th issue of the <hi rend="italic"
+                            >Courant</hi> by a writer who went by the pseudonym "Hypercarpus,"
+                        (something like "great complainer"). There, Hypercarpus had complained that
+                        Dogood's claim in her sixth letter that wearing elaborate clothing like hoop
+                        skirts was making women proud had it backwards--that the pride came first,
+                        and then wearing skirts was simply an expression of it. It's an argument
+                        about cause and effect; Hypercarpus thinks that vanity causes people to try
+                        to distinguish themselves in the world with clothing; Dogood argues that the
+                        clothing leads to vanity. </p><p>Dogood's last word here is a Latin tag that
+                        responds to the criticism with a kind of a riddle that describes cause and
+                        effect as an infinite loop, sort of like the question of which comes first,
+                        a chicken or an egg: a woman gives birth to a daughter, who in turn gives
+                        birth to a woman who herself becomes a mother. A cause becomes an effect
+                        that in turn becomes a cause.</p></note>
+
+                <note xml:id="mater" target="mater_" type="editorial"><p>Latin: "My mother gave
+                        birth to me, and then a daughter gave birth to a mother."</p></note>
+
+                <note xml:id="charles" target="charles_" type="editorial"><p>Charles I of England
+                        reigned from 1625-1649 until his execution. Charles I was defeated in the
+                        English Civil War and was eventually beheaded by Oliver Cromwell's army
+                        after being found guilty of high treason. Source: Wikipedia</p></note>
+
+                <note xml:id="disaffection" target="disaffection_" type="editorial"><p>Hostility or
+                        animosity. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="sedition" target="sedition_" type="editorial"><p>Mutiny or rebellion.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="james" target="james_" type="editorial"><p>James II (1633-1701) became
+                        king upon the death of his brother, Charles II. During his short reign, he
+                        made it clear that he intended to return the country to Roman Catholicism,
+                        prompting his removal by Parliament in 1688 and replacement by William and
+                        Mary.</p></note>
+
+                <note xml:id="papist" target="papist" type="editorial"><p>A Roman Catholic. Source:
+                        Oxford English Dictionoary</p></note>
+
+                <note xml:id="charlesii" target="charlesii_" type="editorial"><p>After Oliver
+                        Cromwell's death in 1658 the monarchy was restored with Charles II in 1660.
+                        Although he restored the Church of England, he secretly and increasingly
+                        became sympathatic to Roman Catholicism. Source: Wikipedia</p></note>
+
+                <note xml:id="felicity" target="felicity_" type="editorial"><p>Happiness. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="audivit" target="audivit_" type="editorial"><p>Latin: "Tiberius heard
+                        reproaches that wounded and upset him." The quote is from the Roman poet
+                        Tacitus, but Franklin is almost certainly lifting it from the London
+                        periodical entitled <hi rend="italic">Cato's Letters</hi>, a series of
+                        political essays published by John Trenchard and Thomas Gordon, who put this
+                        quote in the issue 15, February 15, 1721. The series was widely read
+                        throughout the British colonial world.</p></note>
+
+                <note xml:id="valerius" target="valerius_" type="editorial"><p>Marcus Valerius
+                        Volusus was a consul of the Roman Republic in 505 BC.</p></note>
+
+                <note xml:id="cincinnatus" target="cincinnatus_" type="editorial"><p>Roman senator
+                        remembered for his public virtue.</p></note>
+
+                <note xml:id="diadem" target="diadem_" type="editorial"><p>A crown. Source: Oxford
+                        English Dictionary</p></note>
+
+                <note xml:id="cognomen" target="cognomen_" type="editorial"><p>Latin: "friend of the
+                        people"</p></note>
+
+                <note xml:id="livytrans" target="livytrans_" type="editorial"><p>Franklin is again
+                        lifting a Latin quotation from <hi rend="italic">Cato's Letters</hi>, number
+                        15, which is here citing a line from the Roman historian Livy: "Laws were
+                        proposed, the first of them an appeal from the people to the
+                        government."</p></note>
+
+                <note xml:id="plinytrans" target="plinytrans_" type="editorial"><p>Once again
+                        Franklin is lifting from <hi rend="italic">Cato's Letters</hi> issue 15,
+                        which cites this alleged Latin quotation: "We may well complain that only
+                        those leaders who inquire into our secrets are those we hate."</p></note>
+
+                <note xml:id="tacitus" target="tacitus_"><p>Roman historian.</p></note>
+
+                <note xml:id="edwardii" target="edwardii_" type="editorial"><p>Edward II of England
+                        reigned from 1284-1327. He was forced to abdicate the throne after losing
+                        power, being betrayed by his own wife Isabella, the daughter of King Philip
+                        IV of France. Source: Wikipedia</p></note>
+
+                <note xml:id="walsingham" target="walsingham_" type="editorial"><p>Francis
+                        Walsingham was principal secretary to Queen Elizabeth I of England. He was
+                        famously known as her 'spymaster,' a man who used gathered intelligence from
+                        across Europe to disrupt attempts on the Queen's life, penetrated the
+                        Spanish Military, and secured the Execution of Mary, Queen of Scots. Source:
+                        Wikipedia</p></note>
+
+                <note xml:id="knavish" target="knavish_"><p>Vulgar or villainous; mischievous.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="pernicious" target="pernicious_"><p>Wicked, intending harm. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="corruptio" target="corruptio_" type="editorial"><p>"The corruption of
+                        the best is the worst." This is a proverbial Latin expression.</p></note>
+
+                <note xml:id="profane" target="profane_" type="editorial">(draft-Does he mean
+                    'atheist" by this?)</note>
+
+                <note xml:id="artifice" target="artifice_" type="editorial"><p>Trickery, deceit.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="trumpeters" target="trumpeters" type="editorial"><p>Metaphorically one
+                        who praises and advocates for. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="colour" target="colour_" type="editorial"><p>The apparent or de facto
+                        authority, as opposed to the actual authority established. Frequently said
+                        with negative connotations, suggesting that the authority is just a pretext
+                        for corrupt behavior. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="encomium2" target="encomium2_" type="editorial"><p>High-flown
+                        expressions of praise. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="indignation" target="indignation_" type="editorial"><p>Disdain or
+                        contempt. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="chancel" target="chancel_" type="editorial"><p>The section of a church
+                        that is used by the offiates, such as the clergy or a priest, during their
+                        performance of the services of the church. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="knave" target="knave_" type="editorial"><p>A dishonest or villainous
+                        man. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="cicerotrans2" target="cicerotrans2_" type="editorial"><p>"The society
+                        of men will best be preserved." Again, Franklin cites the Roman orator
+                        Cicero.</p></note>
+
+                <note xml:id="artificer" target="artificer_" type="editorial"><p>Artisans or
+                        craftsmen. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="portion" target="portion_" type="editorial"><p>A fair amount of money
+                        given as a dowry or a gift to the husband along with the wife upon marriage.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="jointure" target="jointure_" type="editorial"><p>An estate for the
+                        wife to be used upon the death of the husband. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="mint" target="mint_" type="editorial"><p>A place where money is
+                        coined, usually under the authority of a government. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="fryar" target="fryar_" type="editorial"><p>The quarters of a certain
+                        religious order. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="britcash" target="britcash_" type="editorial"><p>£sd, known as
+                        "pounds, shillings, and pence" is the name for the pre-decimal currency
+                        system common in the British Empire. In the system there are twelve pence in
+                        a shilling twenty shilling in a pound. Source: Oxford English Dictionary and
+                        Wikipedia</p></note>
+
+                <note xml:id="bonafide" target="bonafide_" type="editorial"><p>In good faith.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="forswear" target="forswear_" type="editorial"><p>To renounce or
+                        abandon forever. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="defraud" target="defraud_" type="editorial"><p>To deprive someone what
+                        is rightfully theirs with fraud. Source: Oxford English
+                    Dictionary</p></note>
+
+                <note xml:id="infirm" target="infirm_" type="editorial"><p>Weak, feeble, or sick.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="distemper" target="distemper_" type="editorial"><p>Illness or
+                        disorder. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="quarteridge" target="quarteride_" type="editorial"><p>Payment made
+                        quarterly. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="perannum" target="perannum_" type="editorial"><p>'Per year.' Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="violenti" target="violenti_" type="editorial"><p>A common law doctrine
+                        which states that is one willingly puts themselves in a place where harm may
+                        occur, knowing that harm may occur, then they are unable to bring a claim
+                        against the other party. More shortly: To a willing person, injury is not
+                        done. Source: Wikipedia</p></note>
+
+                <note xml:id="temporal" target="temporal_" type="editorial"><p>Temporary. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="unknownlatin" target="unknownlatin_">"And in the meantime it is not legal to see my friend." Franklin is quoting the Roman playwright Plautus.</note>
+
+                <note xml:id="sic" target="sic_" type="editorial"><p>A parenthetical insertion used
+                        to call attention to something anomalous in the original work. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="gallant" target="gallant_" type="editorial"><p>Fine gentlemen. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="fiftylb" target="fiftylb_" type="editorial"><p>That would have been a
+                        lot of money. You could live on fifty pounds a year.</p></note>
+
+                <note xml:id="penitent" target="penitent_" type="editorial"><p>That repents with
+                        sincere desire to amend the sin. Source: Oxford English
+                    Dictionary</p></note>
+
+                <note xml:id="taciturn" target="taciturn_" type="editorial"><p>Habitual silence or
+                        reservedness in speech. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="encomium3" target="encomium3_" type="editorial"><p>High-flown
+                        expressions of praise. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="cordi" target="cordi_" type="editorial"><p>Whatever is in the heart of
+                        the sober person, is in the mouth of the drunkard.</p></note>
+
+                <note xml:id="bacchus" target="bacchus_" type="editorial"><p>The Roman god of wine.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="claret" target="claret_" type="editorial"><p>A red wine. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="extempore" target="extempore_" type="editorial"><p>Of the moment,
+                        without preparation or premeditation. Source: Oxford English
+                    Dictionary</p></note>
+
+                <note xml:id="edging" target="edging_" type="editorial"><p>A petticoat is an
+                        underskirt worn underneath a gown that is given a decorative bottom edge for
+                        in case the dress is ever lifted and the petticoat is shown. Source: Oxford
+                        English Dictionoary and Wikipedia</p></note>
+
+                <note xml:id="chide" target="chide_" type="editorial"><p>To scold. Source: Oxford
+                        English Dictionary</p></note>
+
+                <note xml:id="voluptuary" target="voluptuary_" type="editorial"><p>of or pertaining
+                        to sensuous or luxurious pleasures.</p></note>
+
+                <note xml:id="palled" target="palled_" type="editorial"><p>Weakened or impaired.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="impertinence2" target="impertinence2_" type="editorial"
+                        ><p>Irrelevance. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="rakish" target="rakish_" type="editorial"><p>Immoral or promiscuous.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="profligate" target="profligate_" type="editorial"><p>Reckless,
+                        extravagant, and wasteful. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="affront" target="affront_" type="editorial"><p>To insult deliberately.
+                        Source: Oxforod English Dictionary</p></note>
+
+                <note xml:id="wetting" target="wetting_" type="editorial"><p>Here the phrase is
+                        being used to mean: when drunk or inebriated. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="vivifying" target="vivifying_" type="editorial"><p>Life-giving or
+                        animating in a physical and/or mental manner. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="drunk" target="drunk_" type="editorial"><p>Here Franklin is giving a
+                        list of euphemistic ways drunkards will describe themselves to avoid using
+                        the negatively connotated word "drunk."</p></note>
+
+                <note xml:id="tipler" target="tipler_" type="editorial"><p>A habitual drinker; a
+                        drunk. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="imputation" target="imputation_" type="editorial"><p>The attribution
+                        or assignment of a fault or crime. Source: Oxford English
+                    Dictionary</p></note>
+
+                <note xml:id="daubing" target="daubing_" type="editorial"><p>Covers or coats.
+                        Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="impetuous" target="impetuous_" type="editorial"><p>Characterized by
+                        rapid, forceful, and/or violent motion. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="gallant2" target="gallant2_" type="editorial"><p>Fine, brave
+                        gentlemen. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="rambler" target="rambler_" type="editorial"><p>Ones who are
+                        recreationally out walking or wandering. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="tarpolins" target="tarpolins_" type="editorial">A slang term for
+                    seamen or sailors. Source: Oxford English Dictionary</note>
+
+                <note xml:id="doxies" target="doxies_" type="editorial"><p>Unmarried mistresses;
+                        prostitutes. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="knot" target="knot_" type="editorial"><p>Here a knot stands in for a
+                        nautical mile. A nautical mile is equal to 1.15 miles, thus six knots an
+                        hour is equivalent to about seven miles in an hour. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="steerage" target="steerage_" type="editorial"><p>The action of
+                        steering something such as a boat, ship, or airship. Here Franklin is most
+                        likely using a play on words to show how the seamen brought their women
+                        around. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="ramble" target="ramble_" type="editorial"><p>Aimless wandering for
+                        recreation. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="impertinence3" target="impertinence3" type="editorial"
+                        ><p>Irrelevancies, trivialities. Source: Oxford English
+                    Dictionary</p></note>
+
+                <note xml:id="cicerotrans3" target="cicerotrans3_" type="editorial">"Let us see how much each of these causes is worth." from the Latin orator Cicero</note>
+
+                <note xml:id="proselyte" target="proselyte_" type="editorial"><p>Converts. Source:
+                        Oxford English Dictionary</p></note>
+
+                <note xml:id="corah" target="corah_" type="editorial"><p>Korah led a revolt against
+                        Moses and his brother Aaron, as recounted in the book of Numbers. Such a
+                        rebellion, that is, goes against the leaders of the established
+                    faith.</p></note>
+
+                <note xml:id="rake" target="rake_" type="editorial"><p>Immoral or promiscuous
+                        people. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="beau" target="beau_" type="editorial"><p>The suitors of ladies.
+                        Source: Oxford English dictionary</p></note>
+
+                <note xml:id="gossip" target="gossip_" type="editorial"><p>One who gossips or
+                        blackmails. Source: Oxford English Dictionary</p></note>
+
+                <note xml:id="whiggish" target="whiggish_" type="editorial"><p>The Whig party was a
+                        political faction in the British Empire, opposed by the rival faction: the
+                        Tory Party. The origin of the Whigs lay in constitutional monarchism as
+                        opposed to absolute monarchy. Source: Oxford English Dictionary and
+                        Wikipedia</p></note>
+
+                <note xml:id="ovidtrans" target="ovidtrans_" type="editorial"><p>"I see a better
+                        thing and approve of it, but I follow something worse." from Ovid's <hi
+                            rend="italic">Metamorphoses</hi></p></note>
+
+                <note xml:id="heretic" target="heretic_" type="editorial"><p>Anyone who has
+                        religious opinions or practices that don't fall in line with the Catholic or
+                        orthodox doctrine of the Christian Church. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="Praepossession" target="Praepossession_" type="editorial"
+                        ><p>Prepossession: having take possession beforehand. Source: Oxford English
+                        Dictionary</p></note>
+
+                <note xml:id="disesteem" target="disesteem_" type="editorial"><p>Disregard, low
+                        esteem, and/or low expectations. Source: Oxford English
+                    Dictionary</p></note>
+
+            </div>
+        </back>
+    </text>
+
+</TEI>

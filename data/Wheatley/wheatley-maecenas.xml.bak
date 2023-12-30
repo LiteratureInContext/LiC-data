@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-maecenas">
+
+   <!--TEI Header BEGINS-->
+   <teiHeader>
+
+
+      <fileDesc>
+         <!--BEGINS File Description -->
+         <titleStmt>
+            <title type="main">"To Maecenas" </title>
+            <author>
+               <persName type="lcnaf" key="n50016726">
+                  <name>
+                     <forename>Phillis</forename>
+                     <surname>Wheatley</surname>
+                  </name>
+               </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename> Tonya</forename>
+                     <surname> Howe </surname>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+               <name ref="editors.xml#JW">James West</name>
+               <name ref="editors.xml#AR">Amy Ridderhof</name>
+            </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>Marymount University Department of Literature and Languages</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington, VA </addrLine>
+               <addrLine>22207</addrLine>
+               <addrLine>thowe@marymount.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+
+         </publicationStmt>
+
+
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <title>"To Macenas"</title>
+               </analytic>
+               <monogr>
+                  <author>
+                        <name>
+                           <forename>Phillis</forename>
+                           <surname>Wheatley</surname>
+                        </name>
+                  </author>
+                  <title>Poems on Various Subjects, Religious and Moral</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="TGN" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>Printed for A. Bell</publisher>
+                     <publisher>bookseller, Aldgate</publisher>
+                     <date when="1773">1773</date>
+                     <note>Page images are sourced from two copies of the first edition housed in
+                        the Library of Congress.</note>
+                  </imprint>
+
+                  <imprint>
+
+                     <pubPlace>Ann Arbor, MI</pubPlace>
+                     <publisher>University of Michigan Humanities Text Initiative</publisher>
+                     <date when="1999">1999</date>
+                     <note><ref
+                           target="https://quod.lib.umich.edu/a/amverse/BAP5379.0001.001?view=toc"
+                           >Online SGML text from the University of Michigan HTI</ref>. SGML markup
+                        edited to conform to LiC parameters, including changes to element and
+                        attribute case, ligatures, and other special html characters. </note>
+                  </imprint>
+                  <extent>[9],124p., 18cm </extent>
+
+                  <biblScope>pp 9-12</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+
+
+      <profileDesc>
+         <!--BEGINS Profile Description  -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <channel mode="w">print</channel>
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+         </textDesc>
+
+         <settingDesc>
+            <setting>
+               <time from="1761" to="1765">mid 18th century</time>
+               <!-- Used the date of her enslavement -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+
+
+
+      <encodingDesc>
+         <!-- BEGINS Encoding Description -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <!--BEGINS Revision Description -->
+         <change when="2018-07-01" who="editors.xml#JW">First pass XML file</change>
+         <change when="2018-07-01" who="editors.xml#AR">First pass XML file</change>
+         <change when="2018-07-05" who="editors.xml#TH">XML updates; updated teiHeader</change>
+         <change when="2018-07-10" who="editors.xml#JW">Added annotations</change>
+         <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
+         <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution
+            responsibility details</change>
+         <change when="2019-06-09" who="editors.xml#TH">Added annotations</change>
+         <change when="2019-09-19" who="editors.xml#TH">Commented out titlepage</change>
+         <change when="2023-05-19" who="editors.xml#TH">Updated note style</change>
+      </revisionDesc>
+
+
+   </teiHeader>
+   <!--TEI Header Ends -->
+
+
+
+   <!--Text Begins -->
+
+   <text>
+      <!-- <front>
+         <div type="frontispiece">
+            <pb n="[frontispiece]" facs="pageImages/WP-FP.jpg"/>
+         </div>
+         <pb n="[titlepage]" facs="pageImages/WP-TP.jpg"/>
+
+         <titlePage>
+            <docTitle>
+               <titlePart>POEMS <lb/>ON <lb/>VARIOUS SUBJECTS, <lb/>RELIGIOUS AND
+                  MORAL.<lb/></titlePart>
+            </docTitle>
+            <byline>BY</byline>
+            <lb/>
+            <docAuthor><hi rend="italic">PHILLIS WHEATLEY</hi>,</docAuthor>
+            <lb/>
+            <docAuthor>
+               <title>NEGRO SERVANT to Mr. JOHN WHEATLEY, <lb/>of BOSTON, in NEW ENGLAND.</title>
+            </docAuthor>
+            <lb/>
+            <docImprint>
+               <pubPlace><hi rend="italic">LONDON:</hi></pubPlace>
+               <lb/>
+               <publisher>Printed for A. BELL, Bookseller, Aldgate; and sold by<lb/> Messrs. COX and
+                  BERRY, King-Street, <hi rend="italic">BOSTON.</hi>
+               </publisher>
+               <lb/>
+               <lb/>
+               <date>M DCC LXXIII.</date>
+            </docImprint>
+         </titlePage>
+
+      </front> -->
+
+
+      <body>
+        
+         <div type="poem">
+            <pb n="9" facs="pageImages/WP-0009.jpg"/>
+            <head type="title">TO MAECENAS.</head>
+            <lg>
+               <l n="1"><ref target="Maecenas" corresp="_Maecenas">MAECENAS</ref><note xml:id="Maecenas"
+                  target="_Maecenas" type="editorial" resp="editors.xml#TH"><graphic
+                        url="notes/008.JPG"/>Maecenas was the wealthy patron of classical Roman
+                     poets Virgil and Horace, whom Wheatley draws on in complex ways. Wheatley's
+                     poem "To Maecenas" opens her collection, which position gives it a powerful
+                     significance as she claims the right to speak within this tradition. Like <ref
+                        target="http://data.perseus.org/texts/urn:cts:latinLit:phi0893.phi001.perseus-eng1"
+                        >Horace's Odes to Maecenas</ref>, Wheatley's offers praise to her patron,
+                     but does so in ways that are fraught with the equivocalities of being an
+                     enslaved African working within the languge and culture of the colonial master. For a deeper
+                     reading of "To Maecenas," see Paula Bennett's journal article, "Phillis
+                     Wheatley's Vocation and the Paradox of the 'Afric Muse.'" Following other
+                     scholars, Bennett identifies Wheatley's poet-patron as Mather Byles, one of the
+                     signatories verifying her authorship. The image included here shows the
+                     attestation to the public, included in the 1773 edition of Wheatley's poems,
+                     certifying that they were indeed written by "PHILLIS, a young Negro Girl, who
+                     was but a few Years since, brought an uncultivated Barbarian from <hi
+                        rend="italic">Africa</hi>,...and now is, under the Disadvantage of serving
+                     as a Slave in a Family in [Boston]." Note Bales' name.</note>, you, beneath the myrtle shade,</l>
+               <l n="2">Read o'er what poets sung, and shepherds play'd.</l>
+               <l n="3">What felt those poets but you feel the same?</l>
+               <l n="4">Does not your soul possess the sacred flame?</l>
+               <l n="5">Their noble strains your equal genius shares</l>
+               <l n="6">In softer language, and diviner airs.</l>
+               
+            </lg>
+            <lg>
+               <l rend="indent" n="7">While <ref target="_Homer" corresp="Homer"><hi rend="italic"
+                  >Homer</hi></ref><note xml:id="Homer" target="_Homer" type="editorial"
+                     resp="editors.xml#TH">Homer is the ancient Greek poet of <hi rend="italic">The
+                        Oddyssey</hi> and <hi rend="italic">The Illiad</hi>.</note> paints, lo!
+                  circumfus'd in air,</l>
+               <l n="8">Celestial Gods in mortal forms appear;</l>
+               <pb n="10" facs="pageImages/WP-0010.jpg"/>
+               <l n="9">Swift as they move hear each recess rebound,</l>
+               <l n="10">Heav'n quakes, earth trembles, and the shores resound.</l>
+               <l n="11">Great Sire of verse, before my mortal eyes,</l>
+               <l n="12">The lightnings blaze across the vaulted skies,</l>
+               <l n="13">And, as the thunder shakes the heav'nly plains,</l>
+               <l n="14">A deep-felt horror thrills through all my veins.</l>
+               <l n="15">When gentler strains demand thy graceful song,</l>
+               <l n="16">The length'ning line moves languishing along.</l>
+               <l n="17">When <ref target="_Patroclus" corresp="Patroclus">great <hi rend="italic"
+                        >Patroclus</hi> courts <hi rend="italic">Achilles'</hi> aid</ref><note
+                           xml:id="Patroclus" target="_Patroclus" type="editorial" resp="editors.xml#TH"><graphic
+                        url="notes/41768.jpg"/>Achilles is the main character of <hi rend="italic"
+                        >The Illiad</hi>, which tells the story of the Trojan War and, specifically,
+                     Achilles' wrath. Achilles and Patroclus are lovers and friends; angered by
+                     Agammemnon, Achilles refuses to fight, but allows Patroclus to wear his armor
+                     and lead the Myrmidons against the Trojans. When Patroclus is killed by Hector,
+                     Achilles is grief-stricken and, enraged, he returns to battle to destroy the
+                     Trojans. The image included here, Gavin Hamilton's <hi rend="italic">Achilles
+                        Lamenting the Death of Patroclus</hi> (1760-1763), is housed in <ref
+                        target="https://www.nationalgalleries.org/art-and-artists/5009/achilles-lamenting-death-patroclus"
+                        >National Galleries, Scotland</ref>.</note>,</l>
+               <l n="18">The grateful tribute of my tears is paid;</l>
+               <l n="19">Prone on the shore he feels the pangs of love,</l>
+               <l n="20">And <ref target="_Pelides" corresp="Pelides">stern <hi rend="italic"
+                  >Pelides</hi></ref><note xml:id="Pelides" target="_Pelides" type="editorial"
+                     resp="editors.xml#TH">Pelides is Achilles' father; therefore, it is also
+                     another way of referring to Achilles himself. Achilles is frequently described
+                     as "stern" by Homer.</note> tend'rest passions move.</l>
+            </lg>
+            <lg>
+               <l rend="indent" n="21"><ref target="_Maro" corresp="Maro">Great <hi rend="italic"
+                  >Maro's </hi>strain</ref><note xml:id="Maro" target="_Maro" type="editorial"
+                     resp="editors.xml#TH">Publius Vergilius Maro, more commonly known as Virgil,
+                     the Augustan Roman poet famed for his Eclogues and the epic poem <hi
+                        rend="italic">The Aeneid</hi>.</note> in heav'nly numbers flows,</l>
+               <l n="22"><ref target="_nine" corresp="nine">The <hi rend="italic">Nine</hi>
+                  inspire</ref><note xml:id="nine" target="_nine" type="editorial"
+                     resp="editors.xml#TH">The nine muses in Greco-Roman mythology are goddesses,
+                     daughters of Zeus and Mnemosyne who inspire those in the arts and
+                     sciences.</note>, and all the bosom glows.</l>
+               <l n="23">O could I rival thine and <hi rend="italic">Virgil</hi>'s page,</l>
+               <l n="24">Or claim the <hi rend="italic">Muses</hi> with <ref target="_Mantua"
+                  corresp="Mantua">the <hi rend="italic">Mantuan</hi> Sage</ref><note xml:id="Mantua"
+                     target="_Mantua" type="editorial" resp="editors.xml#TH">Mantua is a city in Italy,
+                     and the home of Virgil; the Mantuan sage is the poet Virgil.</note>;</l>
+               <l n="25">Soon the same beauties should my mind adorn,</l>
+               <l n="26">And the same ardors in my soul should burn:</l>
+               <l n="27">Then should my song in bolder notes arise,</l>
+               <l n="28">And all my numbers pleasingly surprize;</l>
+               <pb n="11" facs="pageImages/WP-0011.jpg"/>
+               <l n="29">But here I sit, and mourn a grov'ling mind,</l>
+               <l n="30">That <ref target="_fain" corresp="fain">fain</ref><note xml:id="fain"
+                     target="_fain" type="gloss" resp="editors.xml#TH">Meaning "[g]ladly,
+                     willingly, with pleasure," according to the OED (fain, adv.B).</note> would
+                  mount, and ride upon the wind.</l>
+            </lg>
+            <lg>
+               <l rend="indent" n="31">Not you, my friend, these plaintive strains become,</l>
+               <l n="32">Not you, whose bosom is the <hi rend="italic">Muses</hi> home;</l>
+               <l n="33">When they from <ref target="_Helicon" corresp="Helicon">tow'ring <hi rend="italic"
+                  >Helicon</hi></ref><note xml:id="Helicon" target="_Helicon" type="editorial"
+                     resp="editors.xml#TH">Mount Helicon in Greece is a mountain believed to be the
+                     home of the muses and hence a place sacred to poetry.</note> retire,</l>
+               <l n="34">They fan in you the bright immortal fire,</l>
+               <l n="35">But I less happy, cannot raise the song,</l>
+               <l n="36">The <ref target="_faltering" corresp="faltering">fault'ring</ref><note xml:id="faltering"
+                  target="_faltering" type="gloss" resp="editors.xml#TH">An alternate spelling and
+                     contraction, for meter, of "faltering," meaning unsteady or staggering.</note>
+                  music dies upon my tongue.</l>
+            </lg>
+            <lg>
+               <l rend="indent" n="37">The <ref target="_Terence" corresp="Terence">happier <hi
+                  rend="italic">Terence</hi></ref><note xml:id="Terence" target="_Terence"
+                     type="editorial" resp="editors.xml#TH">Publius Terentius Afer, better known as
+                     Terence, is a famous Roman comic playwright, born in northern Africa. As the
+                        <hi rend="italic"><ref target="https://www.britannica.com/biography/Terence"
+                           >Encylopedia Britannica</ref></hi>notes, Terence was enslaved and later
+                     freed by a Roman senator. Wheatley suggests a connection between herself and
+                     Terence, both of African origin; yet, Terence is "happier"--both in his poetic
+                     skill, and perhaps also in having been freed.</note><ref target="_auth1"
+                     corresp="auth1">*</ref>
+                  <note xml:id="auth1" target="_auth1" type="authorial">An <hi rend="italic">African</hi>
+                     by birth. [Wheatley's note.]</note> all the choir inspir'd,</l>
+               <l n="38">His soul replenish'd, and his bosom fir'd;</l>
+               <l n="39">But say, ye <hi rend="italic">Muses</hi>, why this partial grace,</l>
+               <l n="40">To one alone of <hi rend="italic">Afric</hi>'s sable race;</l>
+               <l n="41">From age to age transmitting thus his name</l>
+               <l n="42">With the first glory in the rolls of fame?</l>
+            </lg>
+            <lg>
+               <l rend="indent" n="43">Thy virtues, great <hi rend="italic">Maecenas!</hi> shall be
+                  sung</l>
+               <l n="44">In praise of him, from whom those virtues sprung:</l>
+               <pb n="12" facs="pageImages/WP-0012.jpg"/>
+               <l n="45">While blooming wreaths around thy temples spread,</l>
+               <l n="46">I'll snatch a <ref target="_laurel" corresp="laurel">laurel</ref><note
+                  xml:id="laurel" target="_laurel" type="editorial" resp="editors.xml#TH"><graphic
+                        url="notes/mw05086.jpg"/>The leaves of the bay laurel tree were a
+                     conventional symbol of poetic fame and acheivement originating in the
+                     mythological tale of <ref
+                        target="https://www.britannica.com/topic/Daphne-Greek-mythology">Daphne and
+                        Apollo</ref>. The image included here is a portrait of the 18th century poet
+                     Alexander Pope, wearing a crown of laurel. The portrait (c.1737), by Jonathan
+                     Richardson, is housed in the <ref
+                        target="https://www.npg.org.uk/collections/search/portrait/mw05086">National
+                        Portrait Gallery, London</ref>.</note> from thine honour'd head,</l>
+               <l n="47">While you indulgent smile upon the deed.</l>
+            </lg>
+
+
+
+            <lg>
+               <l rend="indent" n="48">As long as <ref target="_Thames" corresp="Thames"><hi
+                  rend="italic">Thames</hi></ref><note xml:id="Thames" target="_Thames"
+                     type="editorial" resp="editors.xml#TH">The Thames is a major river flowing
+                     through southern England and London.</note> in streams majestic flows,</l>
+               <l n="49">Or <ref target="_Naiads" corresp="Naiads"><hi rend="italic"
+                  >Naiads</hi></ref><note xml:id="Naiads" target="_Naiads" type="editorial"
+                     resp="editors.xml#TH"><graphic url="notes/00085101.jpg"/>In Greco-Roman
+                     mythology, naiads are female freshwater nymphs. The image included here, by
+                     Jean-Francois de Troy, shows part of the Ovidian story of Pan and Syrinx
+                     (1722-1724). De Troy's <hi rend="italic">Pan and Syrinx</hi> is housed in the
+                        <ref
+                        target="http://www.getty.edu/art/collection/objects/732/jean-francois-de-troy-pan-and-syrinx-french-1722-1724/"
+                        >Getty Museum</ref>. </note> in their oozy beds repose</l>
+               <l n="50">While <ref target="_Apollo" corresp="Apollo"><hi rend="italic"
+                  >Phoebus</hi></ref><note xml:id="Apollo" target="_Apollo" type="editorial"
+                     resp="editors.xml#TH">Phoebus Apollo is an important god in the Greco-Roman
+                     tradition. He is associated with both the sun and with music and poetry.</note>
+                  reigns above the starry train,</l>
+               <l n="51">While <ref target="_Aurora" corresp="Aurora">bright <hi rend="italic"
+                  >Aurora</hi></ref><note xml:id="Aurora" target="_Aurora" type="editorial"
+                     resp="editors.xml#TH">In Greco-Roman mythology, Aurora (called Eos in the
+                     Greek) personifies the dawn.</note> purples o'er the main,</l>
+               <l n="52">So long, great Sir, the muse thy praise shall sing,</l>
+               <l n="53">So long thy praise shall make <ref target="_Parnassus" corresp="Parnassus"><hi
+                  rend="italic">Parnassus</hi></ref><note xml:id="Parnassus" target="_Parnassus"
+                     type="editorial" resp="editors.xml#TH">Parnassus is a mountain in Greece that
+                     was seen as the home of the gods, particularly Dionysus and Apollo, as well as
+                     the Muses. The Muses are also associated with Mount Helicon.</note> ring:</l>
+               <l n="54">Then grant, <hi rend="italic">Maecenas</hi>, thy paternal rays,</l>
+               <l n="55">Hear me propitious, and defend my lays.</l>
+            </lg>
+         </div>
+
+      </body>
+
+
+   </text>
+
+
+</TEI>

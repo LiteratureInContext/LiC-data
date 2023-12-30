@@ -1,0 +1,1991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="chaucer-miller">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">The Miller's Prologue and Tale</title>
+                <author>
+                    <persName type="lcnaf" key="n79027228">
+                        <name>
+                            <forename>Geoffrey</forename>
+                            <surname>Chaucer</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0002-1040-1671">
+                        <name ref="editors.xml#AJB">
+                            <forename>Austin</forename>
+                            <surname>Benson</surname>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#AJB">Austin Benson</name>
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22204-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>The Miller's Tale and Prologue</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n79027228">
+                                <name>
+                                    <forename>Geoffrey</forename>
+                                    <surname>Chaucer</surname>
+                                </name>
+                            </persName>
+                        </author>
+                    
+                        <title>The Complete Works of Geoffrey Chaucer</title>
+                       
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7011931">Oxford</placeName>
+                            </pubPlace>
+                            <publisher>Clarendon Press</publisher>
+                            <date when="1900" timeline="1476">1900</date>
+                            <note>Text for this digital edition drawn from <ref
+                                    target="https://hdl.handle.net/2027/coo1.ark:/13960/t8df7b62n"
+                                    >Walter Skeat, <hi rend="italic">The Complete Works of Geoffrey
+                                        Chaucer, Edited from Numerous Manuscripts</hi>. Vol. 4.
+                                    London: Oxford University Press, 1900.</ref>
+                            </note>
+                            <note>The Canterbury Tales, which remain possibly unfinished, were written in Middle English between 1387 and 1400. It was printed by William Caxton in 1476-1477. Read more about the early print history of the text at the <ref target="https://www.bl.uk/collection-items/first-printed-edition-of-the-canterbury-tales">British Library</ref>.</note>
+                        </imprint>
+                        <extent/>
+                        <biblScope/>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="poem">
+                <channel mode="w">Manuscript</channel>
+                <constitution type="composite"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness/>
+                <purpose type="entertain" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7011781">London</name>
+                    <time when="1400">1400</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature of the 18th century. This project is funded by the National Endowment
+                    for the Humanities and developed by faculty at The University of Virginia and
+                    Marymount University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com. </p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <pb n="TP"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart>
+                        <ref target="intro_" corresp="intro">THE COMPLETE WORKS<lb/> OF <lb/>
+                            GEOFFREY CHAUCER<lb/></ref></titlePart>
+                    <titlePart>
+                        <hi rend="italic">EDITED, FROM NUMEROUS MANUSCRIPTS</hi>
+                        <lb/> BY THE <lb/>
+                    </titlePart>
+                </docTitle>
+                <docAuthor>REV. <ref target="skeat_" corresp="skeat">WALTER W. SKEAT</ref>, M.A.
+                    <lb/> Litt.D., LL.D., D.C.L., PH.D. <lb/> ERLINGTON AND BOSWORTH PROFESSOR OF
+                    ANGLO-SAXON <lb/> AND FELLOW OF CHRIST'S COLLEGE, CAMBRIDGE </docAuthor>
+                <titlePart> ****<lb/>
+                </titlePart>
+                <titlePart> THE CANTERBURY TALES: TEXT <lb/>
+                </titlePart>
+                <epigraph>
+                    <quote>
+                        <lg>
+                            <l>'Let every felawe telle his tale aboute,</l>
+                            <l>And lat see now who shal the soper winne.'</l>
+                        </lg>
+                    </quote>
+                    <bibl>
+                        <persName/>
+                        <note><hi rend="italic">The Knightes Tale;</hi> A890 </note>
+                    </bibl>
+                    <lb/>
+                </epigraph>
+                <titlePart> SECOND EDITION <lb/>
+                </titlePart>
+                <docImprint>
+                    <pubPlace>
+                        <placeName type="tgn" key="7011781">OXFORD</placeName>
+                    </pubPlace>
+                    <publisher>AT THE CLARENDON PRESS </publisher>
+                    <date when="1900">MDCCCC</date>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <pb n="89"/>
+                <head>THE MILLER'S PROLOGUE.<lb/>Here folwen the wordes bitwene the Host and
+                    <lb/>the Millere.</head>
+                <lg>
+                    <l n="3109">Whan that the Knight had thus his tale y-told,</l>
+                    <l n="3110">In al the <ref target="route_" corresp="route">route</ref> nas ther
+                        yong ne old</l>
+                    <l n="3111">That he ne seyde it was a noble storie,</l>
+                    <l n="3112">And worthy for to drawen to memorie;</l>
+                    <l n="3113">And namely the <ref target="gentils_" corresp="gentils"
+                            >gentils</ref> everichoon.</l>
+                    <l n="3114">Our Hoste lough and swoor, ‘so moot I goon,</l>
+                    <l n="3115">This gooth aright; <ref target="unbokeled_" corresp="unbokeled"
+                            >unbokeled</ref> is the male;</l>
+                    <l n="3116">Lat see now who shal telle another tale:</l>
+                    <l n="3117">For trewely, the game is wel bigonne.</l>
+                    <l n="3118">Now telleth ye, sir Monk, if that ye conne,</l>
+                    <l n="3119">Sumwhat, to <ref target="quyte_" corresp="quyte">quyte</ref> with
+                        the Knightes tale.’</l>
+                    <l n="3120">The Miller, that for-dronken was al pale,</l>
+                    <l n="3121">So that <ref target="unnethe_" corresp="unnethe">unnethe</ref> up-on
+                        his hors he sat,</l>
+                    <l n="3122">He nolde avalen neither hood ne hat,</l>
+                    <l n="3123">Ne abyde no man for his curteisye,</l>
+                    <l n="3124">But in <ref target="pilate_" corresp="pilate">Pilates</ref> vois he
+                        gan to crye,</l>
+                    <l n="3125">And swoor by <ref target="curse_" corresp="curse">armes and by blood
+                            and bones</ref>,</l>
+                    <l n="3126">‘I can a noble tale for <ref target="nones_" corresp="nones">the
+                            nones</ref>,</l>
+                    <l n="3127">With which I wol now quyte the Knightes tale.’</l>
+                </lg>
+                <lg>
+                    <l n="3128">Our Hoste saugh that he was dronke of ale,</l>
+                    <l n="3129">And seyde: ‘abyd, Robin, my leve brother,</l>
+                    <l n="3130">Som bettre man shal telle us first another:</l>
+                    <l n="3131">Abyd, and lat us werken thriftily.’</l>
+                </lg>
+                <lg>
+                    <pb n="90"/>
+                    <l n="3132">‘By goddes soul,’ quod he, ‘that wol nat I;</l>
+                    <l n="3133">For I wol speke, or elles go my wey.’</l>
+                    <l n="3134">Our Hoste answerde: ‘tel on, a devel wey!</l>
+                    <l n="3135">Thou art a fool, thy wit is overcome.’</l>
+                </lg>
+                <lg>
+                    <l n="3136">‘Now herkneth,’ quod the Miller, ‘alle and some!</l>
+                    <l n="3137">But first I make a protestacioun</l>
+                    <l n="3138">That I am dronke, <ref target="soun_" corresp="soun">I knowe it by
+                            my soun</ref>;</l>
+                    <l n="3139">And therfore, if that I misspeke or seye,</l>
+                    <l n="3140">Wyte it the ale of Southwerk, I yow preye;</l>
+                    <l n="3141">For I wol telle a legende and a lyf</l>
+                    <l n="3142">Bothe of a Carpenter, and of his wyf,</l>
+                    <l n="3143">How that a clerk hath <ref target="cappe_" corresp="cappe">set the
+                            wrightes cappe</ref>.’</l>
+                </lg>
+                <lg>
+                    <l n="3144">The Reve answerde and seyde, ‘stint thy clappe,</l>
+                    <l n="3145">Lat be thy lewed dronken harlotrye.</l>
+                    <l n="3146">It is a sinne and eek a greet folye</l>
+                    <l n="3147">To <ref target="apeiren_" corresp="apeiren">apeiren</ref> any man,
+                        or him diffame,</l>
+                    <l n="3148"><ref target="swich_fame_" corresp="swich_fame">And eek to bringen
+                            wyves in swich fame</ref>.</l>
+                    <l n="3149">Thou mayst y-nogh of othere thinges seyn.’</l>
+                </lg>
+                <lg>
+                    <l n="3150">This dronken Miller spak ful sone ageyn,</l>
+                    <l n="3151">And seyde, ‘<ref target="leve_" corresp="leve">leve</ref> brother
+                        Osewold,</l>
+                    <l n="3152"><ref target="who_hath_" corresp="who_hath">Who hath no wyf, he is no
+                            cokewold.</ref></l>
+                    <l n="3153">But I sey nat therfore that thou art oon;</l>
+                    <l n="3154">Ther been ful gode wyves many oon,</l>
+                    <l n="3155">And ever a thousand gode ayeyns oon badde,</l>
+                    <l n="3156">That knowestow wel thy-self, but-if thou madde.</l>
+                    <l n="3157">Why artow angry with my tale now?</l>
+                    <l n="3158">I have a wyf, pardee, as well as thou,</l>
+                    <l n="3159">Yet nolde I, for the oxen in my plogh,</l>
+                    <l n="3160">Taken up-on me more than y-nogh,</l>
+                    <l n="3161">As demen of my-self that I were oon;</l>
+                    <l n="3162">I wol beleve wel that <ref target="noon_" corresp="noon">I am
+                            noon</ref>.</l>
+                    <l n="3163">An housbond shal nat been inquisitif</l>
+                    <l n="3164"><ref target="privetee_" corresp="privetee">Of goddes privetee, nor
+                            of his wyf</ref>.</l>
+                    <l n="3165">So he may finde goddes <ref target="foyson_" corresp="foyson"
+                            >foyson,</ref> there,</l>
+                    <l n="3166">Of the remenant nedeth nat enquere.’</l>
+                </lg>
+                <lg>
+                    <pb n="91"/>
+                    <l n="3167">What sholde I more seyn, but this Millere</l>
+                    <l n="3168">He nolde his wordes for no man forbere,</l>
+                    <l n="3169">But tolde his cherles tale in his manere;</l>
+                    <l n="3170">Me thinketh that I shal reherce it here.</l>
+                    <l n="3171"><ref target="apology_" corresp="apology">And ther-fore every gentil
+                            wight I preye</ref>,</l>
+                    <l n="3172">For goddes love, demeth nat that I seye</l>
+                    <l n="3173">Of evel entente, but that I moot reherce</l>
+                    <l n="3174">Hir tales alle, be they bettre or werse,</l>
+                    <l n="3175">Or elles falsen som of my matere.</l>
+                    <l n="3176">And therfore, who-so list it nat y-here,</l>
+                    <l n="3177"><ref target="leef_" corresp="leef">Turne over the leef, and chese
+                            another tale</ref>;</l>
+                    <l n="3178">For he shal finde y-nowe, grete and smale,</l>
+                    <l n="3179">Of <ref target="storial_" corresp="storial">storial</ref> thing that
+                        toucheth <ref target="gentillesse_" corresp="gentillesse"
+                        >gentillesse</ref>,</l>
+                    <l n="3180">And eek moralitee and holinesse;</l>
+                    <l n="3181">Blameth nat me if that ye chese amis.</l>
+                    <l n="3182">The Miller is a cherl, ye knowe wel this;</l>
+                    <l n="3183">So was the Reve, and othere many mo,</l>
+                    <l n="3184">And harlotrye they tolden bothe two.</l>
+                    <l n="3185">Avyseth yow and putte me out of blame;</l>
+                    <l n="3186">And eek men shal nat make ernest of game.</l>
+                </lg>
+                <closer>Here endeth the prologe.</closer>
+            </div>
+            <div>
+                <pb n="92"/>
+                <head>THE MILLERES TALE. <lb/>Here biginneth the Millere his tale.</head>
+                <lg>
+                    <l n="3187">Whylom ther was dwellinge at <ref target="oxenford_"
+                            corresp="oxenford">Oxenford</ref></l>
+                    <l n="3188">A riche <ref target="gnof_" corresp="gnof">gnof</ref>, <ref
+                            target="gestes_" corresp="gestes">that gestes heeld to bord</ref>,</l>
+                    <l n="3189">And of his craft he was a Carpenter.</l>
+                    <l n="3190">With him ther was dwellinge a povre <ref target="scoler_"
+                            corresp="scoler">scoler</ref>,</l>
+                    <l n="3191">Had <ref target="art_" corresp="art">lerned art</ref>, but al his
+                            <ref target="fantasye_" corresp="fantasye">fantasye</ref></l>
+                    <l n="3192">Was turned for to lerne <ref target="astrologye_"
+                            corresp="astrologye">astrologye</ref>,</l>
+                    <l n="3193">And coude <ref target="certeyn_" corresp="certeyn">a certeyn</ref>
+                        of conclusiouns</l>
+                    <l n="3194">To demen by interrogaciouns,</l>
+                    <l n="3195">If that men axed him in certein houres,</l>
+                    <l n="3196">Whan that men sholde have <ref target="droghte_" corresp="droghte"
+                            >droghte or elles shoures</ref>,</l>
+                    <l n="3197">Or if men axed him what sholde bifalle</l>
+                    <l n="3198">Of every thing, I may nat rekene hem alle.</l>
+                </lg>
+                <lg>
+                    <l n="3199">This clerk was <ref target="cleped_" corresp="cleped">cleped</ref>
+                        hende Nicholas;</l>
+                    <l n="3200">Of <ref target="derne_" corresp="derne">derne</ref> love he <ref
+                            target="coude_" corresp="coude">coude</ref> and of <ref target="solas_"
+                            corresp="solas">solas</ref>;</l>
+                    <l n="3201">And ther-to he was <ref target="sleigh_" corresp="sleigh">sleigh and
+                            ful privee</ref>,</l>
+                    <l n="3202">And lyk a mayden meke for to see.</l>
+                    <l n="3203">A chambre hadde he in that hostelrye</l>
+                    <l n="3204">Allone, with-outen any companye,</l>
+                    <l n="3205"><ref target="ydight_" corresp="ydight">Ful fetisly y-dight with
+                            herbes swote</ref>;</l>
+                    <l n="3206">And he him-self as swete as is the <ref target="rote_"
+                            corresp="rote">rote</ref></l>
+                    <l n="3207"><ref target="licorys_" corresp="licorys">Of licorys, or any
+                            cetewale</ref>.</l>
+                    <l n="3208">His <ref target="almageste_" corresp="almageste">Almageste</ref> and
+                        bokes grete and smale,</l>
+                    <l n="3209">His <ref target="astrelabie_" corresp="astrelabie">astrelabie</ref>,
+                        longinge for his art,</l>
+                    <l n="3210">His <ref target="augrim_" corresp="augrim">augrim-stones</ref> layen
+                        faire a-part</l>
+                    <l n="3211">On shelves couched at his beddes heed:</l>
+                    <l n="3212">His presse y-covered with a <ref target="falding_" corresp="falding"
+                            >falding reed</ref>.</l>
+                    <l n="3213">And al above ther lay a gay <ref target="sautrye_" corresp="sautrye"
+                            >sautrye</ref>,</l>
+                    <l n="3214">On which he made a nightes melodye</l>
+                    <pb n="93"/>
+                    <l n="3215">So swetely, that al the chambre rong;</l>
+                    <l n="3216">And <ref target="angelus_" corresp="angelus"><hi rend="italic"
+                                >Angelus ad virginem</hi></ref> he song;</l>
+                    <l n="3217">And after that he song the <ref target="kinges_" corresp="kinges"
+                            >kinges note</ref>;</l>
+                    <l n="3218">Ful often blessed was his mery throte.</l>
+                    <l n="3219">And thus this swete clerk his tyme spente</l>
+                    <l n="3220"><ref target="after_" corresp="after">After his freendes finding and
+                            his rente</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="3221">This Carpenter had wedded newe a wyf</l>
+                    <l n="3222">Which that he lovede more than his lyf;</l>
+                    <l n="3223">Of eightetene yeer she was of age.</l>
+                    <l n="3224"><ref target="ialous_" corresp="ialous">Ialous</ref> he was, and
+                        heeld hir <ref target="narwe_" corresp="narwe">narwe in cage</ref>,</l>
+                    <l n="3225">For she was wilde and yong, and he was old</l>
+                    <l n="3226">And demed him-self ben lyk a cokewold.</l>
+                    <l n="3227">He knew nat <ref target="catoun_" corresp="catoun">Catoun</ref>, for
+                        his wit was rude,</l>
+                    <l n="3228">That bad man sholde wedde his similitude.</l>
+                    <l n="3229"><ref target="estaat_" corresp="estaat">Men sholde wedden after hir
+                            estaat</ref>,</l>
+                    <l n="3230">For youthe and elde is often at debaat.</l>
+                    <l n="3231">But sith that he was fallen in the snare,</l>
+                    <l n="3232">He moste endure, as other folk, his care.</l>
+                </lg>
+                <lg>
+                    <l n="3233">Fair was this yonge wyf, and ther-with-al</l>
+                    <l n="3234">As any <ref target="wesele_" corresp="wesele">wesele</ref> hir body
+                        gent and smal.</l>
+                    <l n="3235">A <ref target="ceynt_" corresp="ceynt">ceynt</ref> she werede barred
+                        al of silk,</l>
+                    <l n="3236">A <ref target="barmclooth_" corresp="barmclooth">barmclooth</ref>
+                        eek as whyt as morne milk</l>
+                    <l n="3237">Up-on hir <ref target="lendes_" corresp="lendes">lendes</ref>, ful
+                        of many a <ref target="gore_" corresp="gore">gore.</ref></l>
+                    <l n="3238">Whyt was hir smok, and <ref target="brouded_" corresp="brouded"
+                            >brouded al bifore</ref></l>
+                    <l n="3239">And eek bihinde, on hir coler aboute,</l>
+                    <l n="3240">Of col-blak silk, with-inne and eek with-oute.</l>
+                    <l n="3241">The <ref target="tapes_" corresp="tapes">tapes of hir whyte
+                            voluper</ref></l>
+                    <l n="3242">Were of the same suyte of hir coler;</l>
+                    <l n="3243">Hir <ref target="filet_" corresp="filet">filet</ref> brood of silk,
+                        and set ful hye:</l>
+                    <l n="3244">And sikerly she hadde a <ref target="likerous_" corresp="likerous"
+                            >likerous yë</ref>.</l>
+                    <l n="3245">Ful <ref target="smale_" corresp="smale">smale y-pulled were hir
+                            browes two</ref>,</l>
+                    <l n="3246">And tho were bent, and <ref target="sloo_" corresp="sloo">blake as
+                            any sloo</ref>.</l>
+                    <l n="3247">She was ful more blisful on to see</l>
+                    <l n="3248">Than is the newe <ref target="pere_" corresp="pere">pere-ionette
+                            tree</ref>;</l>
+                    <l n="3249"><ref target="wether_" corresp="wether">And softer than the wolle is
+                            of a wether</ref>.</l>
+                    <l n="3250">And by hir girdel heeng a purs of lether</l>
+                    <pb n="94"/>
+                    <l n="3251">Tasseld with silk, and perled with <ref target="latoun_"
+                            corresp="latoun">latoun</ref>.</l>
+                    <l n="3252">In al this world, to seken up and doun,</l>
+                    <l n="3253">There nis no man so wys, that coude thenche</l>
+                    <l n="3254"><ref target="popelote_" corresp="popelote">So gay a popelote, or
+                            swich a wenche.</ref></l>
+                    <l n="3255">Ful brighter was the shyning of hir <ref target="hewe_"
+                            corresp="hewe">hewe</ref></l>
+                    <l n="3256"><ref target="noble_" corresp="noble">Than in the tour the noble
+                            y-forged newe</ref>.</l>
+                    <l n="3257">But of hir song, it was as loude and <ref target="yerne_"
+                            corresp="yerne">yerne</ref></l>
+                    <l n="3258"><ref target="swalwe_" corresp="swalwe">As any swalwe sittinge on a
+                            berne</ref>.</l>
+                    <l n="3259">Ther-to she coude skippe and make game,</l>
+                    <l n="3260">As any kide or calf folwinge his dame.</l>
+                    <l n="3261">Hir mouth was swete as <ref target="bragot_" corresp="bragot">bragot
+                            or the meeth</ref>,</l>
+                    <l n="3262">Or hord of apples leyd in hey or heeth.</l>
+                    <l n="3263"><ref target="winsinge_" corresp="winsinge">Winsinge she was</ref>,
+                        as is a Ioly colt,</l>
+                    <l n="3264">Long as a mast, and upright as a bolt.</l>
+                    <l n="3265">A brooch she baar up-on hir lowe coler,</l>
+                    <l n="3266"><ref target="bocler_" corresp="bocler">As brood as is the bos of a
+                            bocler</ref>.</l>
+                    <l n="3267">Hir shoes were laced on hir legges hye;</l>
+                    <l n="3268"><ref target="prymerole_" corresp="prymerole">She was a prymerole, a
+                            pigges-nye</ref></l>
+                    <l n="3269">For any lord to leggen in his bedde,</l>
+                    <l n="3270">Or yet for any good yeman to wedde.</l>
+                </lg>
+                <lg>
+                    <l n="3271">Now sire, and eft sire, so bifel the cas,</l>
+                    <l n="3272">That on a day this <ref target="hende_" corresp="hende">hende</ref>
+                        Nicholas</l>
+                    <l n="3273">Fil with this yonge wyf to <ref target="rage_" corresp="rage">rage
+                            and pleye</ref>,</l>
+                    <l n="3274">Whyl that hir housbond was at <ref target="oseneye_"
+                            corresp="oseneye">Oseneye</ref>,</l>
+                    <l n="3275">As clerkes ben ful subtile and ful <ref target="queynte_"
+                            corresp="queynte">queynte</ref>;</l>
+                    <l n="3276"><ref target="caughte_" corresp="caughte">And prively he caughte hir
+                            by the queynte</ref>,</l>
+                    <l n="3277">And seyde, ‘y-wis, but if ich have my wille,</l>
+                    <l n="3278">For derne love of thee, lemman, <ref target="spille_"
+                            corresp="spille">I spille</ref>.’</l>
+                    <l n="3279">And heeld hir harde by the haunche-bones,</l>
+                    <l n="3280">And seyde, ‘lemman, love me al at-ones,</l>
+                    <l n="3281">Or I wol dyen, also god me save!’</l>
+                    <l n="3282">And she sprong as a colt doth <ref target="trave_" corresp="trave"
+                            >in the trave</ref>,</l>
+                    <l n="3283">And with hir heed she wryed faste awey,</l>
+                    <l n="3284">And seyde, ‘I wol nat kisse thee, by my fey,</l>
+                    <l n="3285">Why, lat be,’ quod she, ‘lat be, Nicholas,</l>
+                    <pb n="95"/>
+                    <l n="3286">Or I wol crye out “harrow” and “allas.”</l>
+                    <l n="3287">Do wey your handes for your curteisye!’</l>
+                </lg>
+                <lg>
+                    <l n="3288">This Nicholas gan mercy for to crye,</l>
+                    <l n="3289">And spak so faire, and <ref target="profred_" corresp="profred"
+                            >profred hir so faste</ref>,</l>
+                    <l n="3290">That she hir love him graunted atte laste,</l>
+                    <l n="3291">And swoor hir ooth, by <ref target="thomas_" corresp="thomas">seint
+                            Thomas of Kent</ref>,</l>
+                    <l n="3292">That she wol been at his comandement,</l>
+                    <l n="3293"><ref target="leyser_" corresp="leyser">Whan that she may hir leyser
+                            wel espye</ref>.</l>
+                    <l n="3294">‘Myn housbond is so ful of Ialousye,</l>
+                    <l n="3295">That but ye wayte wel and been privee,</l>
+                    <l n="3296"><ref target="deed_" corresp="deed">I woot right wel I nam but
+                            deed</ref>,’ quod she.</l>
+                    <l n="3297">‘Ye moste been ful derne, as in this cas.’</l>
+                </lg>
+                <lg>
+                    <l n="3298">‘Nay ther-of care thee noght,’ quod Nicholas,</l>
+                    <l n="3299">‘<ref target="litherly_" corresp="litherly">A clerk had litherly
+                            biset his whyle</ref>,</l>
+                    <l n="3300">But-if he coude a Carpenter bigyle.’</l>
+                    <l n="3301">And thus they been acorded and y-sworn</l>
+                    <l n="3302">To wayte a tyme, as I have told biforn.</l>
+                    <l n="3303">Whan Nicholas had doon thus everydeel,</l>
+                    <l n="3304">And <ref target="thakked_" corresp="thakked">thakked hir aboute the
+                            lendes weel</ref>,</l>
+                    <l n="3305">He kist hir swete, and taketh his sautrye,</l>
+                    <l n="3306">And pleyeth faste, and maketh melodye.</l>
+                </lg>
+                <lg>
+                    <l n="3307">Than fil it thus, that to the parish-chirche,</l>
+                    <l n="3308">Cristes owne werkes for to wirche,</l>
+                    <l n="3309">This gode wyf wente on an haliday;</l>
+                    <l n="3310">Hir forheed shoon as bright as any day,</l>
+                    <l n="3311">So was it wasshen whan she leet hir werk.</l>
+                </lg>
+                <lg>
+                    <l n="3312">Now was ther of that chirche a parish-clerk,</l>
+                    <l n="3313">The which that was y-cleped Absolon.</l>
+                    <l n="3314"><ref target="crul_" corresp="crul">Crul was his heer, and as the
+                            gold it shoon</ref>,</l>
+                    <l n="3315">And <ref target="strouted_" corresp="strouted">strouted as a fanne
+                            large and brode</ref>;</l>
+                    <l n="3316">Ful streight and even lay his <ref target="shode_" corresp="shode"
+                            >Ioly shode</ref>.</l>
+                    <l n="3317"><ref target="rode_" corresp="rode">His rode was reed, his eyen greye
+                            as goos</ref>;</l>
+                    <l n="3318">With <ref target="powles_" corresp="powles">Powles window corven on
+                            his shoos</ref>,</l>
+                    <l n="3319">In hoses rede he wente fetisly.</l>
+                    <l n="3320">Y-clad he was ful smal and proprely,</l>
+                    <l n="3321"><ref target="kirtel_" corresp="kirtel">Al in a kirtel of a light
+                            wachet</ref>;</l>
+                    <l n="3322">Ful faire and thikke been the <ref target="poyntes_"
+                            corresp="poyntes">poyntes</ref> set.</l>
+                    <pb n="96"/>
+                    <l n="3323">And ther-up-on he hadde a gay <ref target="surplys_"
+                            corresp="surplys">surplys</ref></l>
+                    <l n="3324">As whyt as is the blosme up-on the rys.</l>
+                    <l n="3325">A mery child he was, so god me save,</l>
+                    <l n="3326"><ref target="laten_" corresp="laten">Wel coude he laten blood and
+                            clippe and shave</ref>,</l>
+                    <l n="3327"><ref target="chartre_" corresp="chartre">And make a chartre of lond
+                            or acquitaunce</ref>.</l>
+                    <l n="3328">In twenty manere coude he trippe and daunce</l>
+                    <l n="3329">After the scole of Oxenforde tho,</l>
+                    <l n="3330">And with his legges casten to and fro,</l>
+                    <l n="3331">And pleyen songes on a small <ref target="rubible_"
+                            corresp="rubible">rubible</ref>;</l>
+                    <l n="3332">Ther-to he song som-tyme a loud <ref target="quinible_"
+                            corresp="quinible">quinible</ref>;</l>
+                    <l n="3333">And as wel coude he pleye on his <ref target="giterne_"
+                            corresp="giterne">giterne</ref>.</l>
+                    <l n="3334">In al the toun nas brewhous ne taverne</l>
+                    <l n="3335">That he ne visited with his solas,</l>
+                    <l n="3336">Ther any <ref target="gaylard" corresp="gaylard">gaylard
+                            tappestere</ref> was.</l>
+                    <l n="3337">But sooth to seyn, he was somdel <ref target="squaymous_"
+                            corresp="squaymous">squaymous</ref></l>
+                    <l n="3338">Of farting, and of speche <ref target="daungerous_"
+                            corresp="daungerous">daungerous</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="3339">This Absolon, that Iolif was and gay,</l>
+                    <l n="3340">Gooth with a <ref target="sencer_" corresp="sencer">sencer</ref> on
+                        the haliday,</l>
+                    <l n="3341">Sensinge the wyves of the parish faste;</l>
+                    <l n="3342">And many a lovely look on hem he caste,</l>
+                    <l n="3343">And namely on this carpenteres wyf.</l>
+                    <l n="3344">To loke on hir him thoughte a mery lyf,</l>
+                    <l n="3345">She was so propre and swete and likerous.</l>
+                    <l n="3346">I dar wel seyn, if she had been a mous,</l>
+                    <l n="3347">And he a cat, <ref target="hente_" corresp="hente">he wolde hir
+                            hente anon</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="3348">This parish-clerk, this Ioly Absolon,</l>
+                    <l n="3349">Hath in his herte swich a love-longinge,</l>
+                    <l n="3350">That of no wyf ne took he noon offringe;</l>
+                    <l n="3351">For curteisye, he seyde, he wolde noon.</l>
+                    <l n="3352">The mone, whan it was night, ful brighte shoon,</l>
+                    <l n="3353">And Absolon his giterne hath y-take,</l>
+                    <l n="3354">For paramours, he thoghte for to wake.</l>
+                    <l n="3355">And forth he gooth, Iolif and amorous,</l>
+                    <l n="3356">Til he cam to the carpenteres hous</l>
+                    <l n="3357">A litel after cokkes hadde y-crowe;</l>
+                    <l n="3358">And dressed him up by a <ref target="windowe_" corresp="windowe"
+                            >shot-windowe</ref></l>
+                    <pb n="97"/>
+                    <l n="3359">That was up-on the carpenteres wal.</l>
+                    <l n="3360">He singeth in his vois gentil and smal,</l>
+                    <l n="3361">‘Now, dere lady, if thy wille be,</l>
+                    <l n="3362">I preye yow that ye wol <ref target="rewe_" corresp="rewe">rewe on
+                            me</ref>,’</l>
+                    <l n="3363">Ful wel acordaunt to his <ref target="giterninge_"
+                            corresp="giterninge">giterninge</ref>.</l>
+                    <l n="3364">This carpenter awook, and herde him singe,</l>
+                    <l n="3365">And spak un-to his wyf, and seyde anon,</l>
+                    <l n="3366">‘What! Alison! herestow nat Absolon</l>
+                    <l n="3367">That chaunteth thus under our <ref target="boure_" corresp="boure"
+                            >boures wal</ref>?’</l>
+                    <l n="3368">And she answerde hir housbond ther-with-al,</l>
+                    <l n="3369">‘Yis, god wot, Iohn, I here it every-del.’</l>
+                </lg>
+                <lg>
+                    <l n="3370">This passeth forth; <ref target="bet_" corresp="bet">what wol ye bet
+                            than wel</ref>?</l>
+                    <l n="3371">Fro day to day this Ioly Absolon</l>
+                    <l n="3372">So woweth hir, that him is wo bigon.</l>
+                    <l n="3373">He waketh al the night and al the day;</l>
+                    <l n="3374">He kempte hise lokkes brode, and made him gay;</l>
+                    <l n="3375">He woweth hir by <ref target="brocage_" corresp="brocage">menes and
+                            brocage</ref>,</l>
+                    <l n="3376">And swoor he wolde been hir owne page;</l>
+                    <l n="3377">He singeth, brokkinge as a nightingale;</l>
+                    <l n="3378">He sente hir piment, meeth, and spyced ale,</l>
+                    <l n="3379">And wafres, pyping hote out of the glede;</l>
+                    <l n="3380"><ref target="mede_" corresp="mede">And for she was of toune, he
+                            profred mede</ref>.</l>
+                    <l n="3381">For som folk wol ben wonnen for richesse,</l>
+                    <l n="3382">And som for strokes, and som for gentillesse.</l>
+                </lg>
+                <lg>
+                    <l n="3383">Somtyme, to shewe his lightnesse and maistrye,</l>
+                    <l n="3384"><ref target="herod_" corresp="herod">He pleyeth Herodes</ref> on a
+                        scaffold hye.</l>
+                    <l n="3385">But what availleth him as in this cas?</l>
+                    <l n="3386">She loveth so this hende Nicholas,</l>
+                    <l n="3387">That Absolon may blowe the bukkes horn;</l>
+                    <l n="3388">He ne hadde for his labour but a scorn;</l>
+                    <l n="3389">And thus she maketh Absolon hir <ref target="ape_" corresp="ape"
+                            >ape</ref>,</l>
+                    <l n="3390">And al his ernest turneth til a <ref target="jape_" corresp="jape"
+                            >Iape</ref>.</l>
+                    <l n="3391">Ful sooth is this proverbe, it is no lye,</l>
+                    <l n="3392">Men seyn right thus, ‘<ref target="proverb_" corresp="proverb"
+                            >alwey</ref> the nye slye</l>
+                    <pb n="98"/>
+                    <l n="3393">Maketh the ferre leve to be looth.’</l>
+                    <l n="3394">For though that Absolon be wood or wrooth,</l>
+                    <l n="3395">By-cause that he fer was from hir sighte,</l>
+                    <l n="3396">This nye Nicholas stood in his lighte.</l>
+                </lg>
+                <lg>
+                    <l n="3397">Now bere thee wel, thou hende Nicholas!</l>
+                    <l n="3398">For Absolon may waille and singe ‘allas.’</l>
+                    <l n="3399">And so bifel it on a Saterday,</l>
+                    <l n="3400">This carpenter was goon til Osenay;</l>
+                    <l n="3401">And hende Nicholas and Alisoun</l>
+                    <l n="3402">Acorded been to this conclusioun,</l>
+                    <l n="3403">That Nicholas shal <ref target="wyle_" corresp="wyle">shapen him a
+                            wyle</ref></l>
+                    <l n="3404">This sely Ialous housbond to bigyle;</l>
+                    <l n="3405">And if so be the game wente aright,</l>
+                    <l n="3406">She sholde slepen in his arm al night,</l>
+                    <l n="3407">For this was his desyr and hir also.</l>
+                    <l n="3408">And right anon, with-outen wordes mo,</l>
+                    <l n="3409">This Nicholas no lenger wolde tarie,</l>
+                    <l n="3410">But doth ful softe un-to his chambre carie</l>
+                    <l n="3411">Bothe mete and drinke for a day or tweye,</l>
+                    <l n="3412">And to hir housbonde bad hir for to seye,</l>
+                    <l n="3413">If that he axed after Nicholas,</l>
+                    <l n="3414">She sholde seye she niste where he was,</l>
+                    <l n="3415">Of al that day she saugh him nat with yë;</l>
+                    <l n="3416">She trowed that he was in maladye,</l>
+                    <l n="3417">For, for no cry, hir mayde coude him calle;</l>
+                    <l n="3418">He nolde answere, for no-thing that mighte falle.</l>
+                </lg>
+                <lg>
+                    <l n="3419">This passeth forth al thilke Saterday,</l>
+                    <l n="3420">That Nicholas stille in his chambre lay,</l>
+                    <l n="3421">And eet and sleep, or dide what him leste,</l>
+                    <l n="3422">Til Sonday, that the sonne gooth to reste.</l>
+                </lg>
+                <lg>
+                    <l n="3423">This sely carpenter hath greet merveyle</l>
+                    <l n="3424">Of Nicholas, or what thing mighte him eyle,</l>
+                    <l n="3425">And seyde, ‘I am adrad, by seint Thomas,</l>
+                    <l n="3426">It stondeth nat aright with Nicholas.</l>
+                    <l n="3427">God shilde that he deyde sodeynly!</l>
+                    <l n="3428"><ref target="tikel_" corresp="tikel">This world is now ful
+                            tikel</ref>, sikerly;</l>
+                    <l n="3429">I saugh to-day a cors y-born to chirche</l>
+                    <pb n="99"/>
+                    <l n="3430">That now, on Monday last, I saugh him wirche.</l>
+                </lg>
+                <lg>
+                    <l n="3431">Go up,’ quod he un-to his knave anoon,</l>
+                    <l n="3432">‘Clepe at his dore, or knokke with a stoon,</l>
+                    <l n="3433">Loke how it is, and tel me boldely.’</l>
+                </lg>
+                <lg>
+                    <l n="3434">This knave gooth him up ful sturdily,</l>
+                    <l n="3435">And at the chambre-dore, whyl that he stood,</l>
+                    <l n="3436">He cryde and knokked as that he were wood:—</l>
+                    <l n="3437">‘What! how! what do ye, maister Nicholay?</l>
+                    <l n="3438">How may ye slepen al the longe day?’</l>
+                </lg>
+                <lg>
+                    <l n="3439">But al for noght, he herde nat a word;</l>
+                    <l n="3440">An hole he fond, ful lowe up-on a bord,</l>
+                    <l n="3441">Ther as the cat was wont in for to crepe;</l>
+                    <l n="3442">And at that hole he looked in ful depe,</l>
+                    <l n="3443">And at the laste he hadde of him a sighte.</l>
+                    <l n="3444">This Nicholas sat gaping ever up-righte,</l>
+                    <l n="3445"><ref target="kyked_" corresp="kyked">As he had kyked on the newe
+                            mone</ref>.</l>
+                    <l n="3446">Adoun he gooth, and tolde his maister sone</l>
+                    <l n="3447">In what array he saugh this ilke man.</l>
+                </lg>
+                <lg>
+                    <l n="3448">This carpenter to blessen him bigan,</l>
+                    <l n="3449">And seyde, ‘help us, <ref target="frideswyde_" corresp="frideswyde"
+                            >seinte Frideswyde!</ref></l>
+                    <l n="3450">A man woot litel what him shal bityde.</l>
+                    <l n="3451">This man is falle, with his astromye,</l>
+                    <l n="3452">In som <ref target="woodnesse_" corresp="woodnesse">woodnesse</ref>
+                        or in som agonye;</l>
+                    <l n="3453">I thoghte ay wel how that it sholde be!</l>
+                    <l n="3454">Men sholde nat knowe of goddes privetee.</l>
+                    <l n="3455">Ye, blessed be alwey a <ref target="lewed_" corresp="lewed"
+                            >lewed</ref> man,</l>
+                    <l n="3456">That noght but oonly his bileve can!</l>
+                    <l n="3457">So ferde another clerk with astromye;</l>
+                    <l n="3458">He walked in the feeldes for to prye</l>
+                    <l n="3459">Up-on the sterres, what ther sholde bifalle,</l>
+                    <l n="3460"><ref target="marle_" corresp="marle">Til he was in a marle-pit
+                            y-falle</ref>;</l>
+                    <l n="3461">He saugh nat that. But yet, by seint Thomas,</l>
+                    <l n="3462">Me reweth sore of hende Nicholas.</l>
+                    <l n="3463">He shal be <ref target="rated_" corresp="rated">rated of his
+                            studying</ref>,</l>
+                    <l n="3464">If that I may, by Iesus, hevene king!</l>
+                </lg>
+                <lg>
+                    <l n="3465">Get me a staf, that I may <ref target="underspore_"
+                            corresp="underspore">underspore</ref>,</l>
+                    <pb n="100"/>
+                    <l n="3466">Whyl that thou, Robin, hevest up the dore.</l>
+                    <l n="3467">He shal out of his studying, as I gesse’—</l>
+                    <l n="3468">And to the chambre-dore he gan him dresse.</l>
+                    <l n="3469">His knave was a strong <ref target="carl_" corresp="carl">carl</ref>
+                        for the nones,</l>
+                    <l n="3470">And by the haspe he haf it up atones;</l>
+                    <l n="3471">In-to the floor the dore fil anon.</l>
+                    <l n="3472">This Nicholas sat ay as stille as stoon,</l>
+                    <l n="3473">And ever gaped upward in-to the eir.</l>
+                    <l n="3474">This carpenter wende he were in despeir,</l>
+                    <l n="3475">And hente him by the sholdres mightily,</l>
+                    <l n="3476">And shook him harde, and cryde <ref target="spitously_"
+                            corresp="spitously">spitously</ref>,</l>
+                    <l n="3477">‘What! Nicholay! what, how! what! loke adoun!</l>
+                    <l n="3478">Awake, and thenk on Cristes passioun;</l>
+                    <l n="3479"><ref target="elves_" corresp="elves">I crouche thee from elves and
+                            fro wightes!</ref>’</l>
+                    <l n="3480">Ther-with the <ref target="nightspel_" corresp="nightspel"
+                            >night-spel</ref> seyde he anon-rightes</l>
+                    <l n="3481">On foure halves of the hous aboute,</l>
+                    <l n="3482">And on the threshfold of the dore with-oute:—</l>
+                    <l n="3483">‘Iesu Crist, and <ref target="benedict_" corresp="benedict">seynt
+                            Benedight</ref>,</l>
+                    <l n="3484">Blesse this hous from every wikked wight,</l>
+                    <l n="3485">For nightes verye, the white <ref target="paternoster_"
+                            corresp="paternoster"><hi rend="italic">pater-noster</hi></ref>!</l>
+                    <l n="3486">Where wentestow, <ref target="sister_" corresp="sister">seynt Petres
+                            soster</ref>?’</l>
+                </lg>
+                <lg>
+                    <l n="3487">And atte laste this hende Nicholas</l>
+                    <l n="3488">Gan for to syke sore, and seyde, ‘allas!</l>
+                    <l n="3489">Shal al the world be lost eftsones now?’</l>
+                </lg>
+                <lg>
+                    <l n="3490">This carpenter answerde, ‘what seystow?</l>
+                    <l n="3491">What! thenk on god, as we don, men that <ref target="swinke_"
+                            corresp="swinke">swinke</ref>.’</l>
+                </lg>
+                <lg>
+                    <l n="3492">This Nicholas answerde, ‘fecche me drinke;</l>
+                    <l n="3493">And after wol I speke in privetee</l>
+                    <l n="3494">Of certeyn thing that toucheth me and thee;</l>
+                    <l n="3495">I wol telle it non other man, certeyn.’</l>
+                </lg>
+                <lg>
+                    <l n="3496">This carpenter goth doun, and comth ageyn,</l>
+                    <l n="3497">And broghte of mighty ale a large quart;</l>
+                    <l n="3498">And whan that ech of hem had dronke his part,</l>
+                    <pb n="101"/>
+                    <l n="3499">This Nicholas his dore faste shette,</l>
+                    <l n="3500">And doun the carpenter by him he sette.</l>
+                </lg>
+                <lg>
+                    <l n="3501">He seyde, ‘Iohn, myn hoste lief and dere,</l>
+                    <l n="3502">Thou shall <ref target="trouthe_" corresp="trouthe">up-on thy
+                            trouthe swere me here</ref>,</l>
+                    <l n="3503">That to no wight thou shalt this conseil wreye;</l>
+                    <l n="3504">For it is Cristes conseil that I seye,</l>
+                    <l n="3505">And if thou telle it man, thou are forlore;</l>
+                    <l n="3506">For this vengaunce thou shalt han therfore,</l>
+                    <l n="3507">That if thou wreye me, thou shalt be wood!’</l>
+                    <l n="3508">‘Nay, Crist forbede it, for his holy blood!’</l>
+                    <l n="3509">Quod tho this sely man, ‘I nam no <ref target="labbe_"
+                            corresp="labbe">labbe</ref>,</l>
+                    <l n="3510">Ne, though I seye, I nam nat lief to gabbe.</l>
+                    <l n="3511">Sey what thou wolt, I shal it never telle</l>
+                    <l n="3512">To child ne wyf, by him that harwed helle!’</l>
+                </lg>
+                <lg>
+                    <l n="3513">‘Now John,’ quod Nicholas, ‘I wol nat lye;</l>
+                    <l n="3514">I have y-founde in myn astrologye,</l>
+                    <l n="3515">As I have loked in the mone bright,</l>
+                    <l n="3516">That now, a Monday next, at quarter-night,</l>
+                    <l n="3517">Shal falle a reyn and that so wilde and wood,</l>
+                    <l n="3518">That half so greet was never <ref target="noe_" corresp="noe">Noës
+                            flood</ref>.</l>
+                    <l n="3519">This world,’ he seyde, ‘in lasse than in an hour</l>
+                    <l n="3520">Shal al be dreynt, so hidous is the shour;</l>
+                    <l n="3521">Thus shal mankynde drenche and lese hir lyf.’</l>
+                </lg>
+                <lg>
+                    <l n="3522">This carpenter answerde, ‘allas, my wyf!</l>
+                    <l n="3523">And shal she drenche? allas! myn Alisoun!’</l>
+                    <l n="3524">For sorwe of this he fil almost adoun,</l>
+                    <l n="3525">And seyde, ‘is ther no remedie in this cas?’</l>
+                </lg>
+                <lg>
+                    <l n="3526">‘Why, yis, for gode,’ quod hende Nicholas,</l>
+                    <l n="3527">‘If thou wolt werken after <ref target="lore_" corresp="lore">lore
+                            and reed</ref>;</l>
+                    <l n="3528">Thou mayst nat werken after thyn owene heed.</l>
+                    <l n="3529">For thus seith <ref target="salomon_" corresp="salomon"
+                            >Salomon</ref>, that was ful trewe,</l>
+                    <l n="3530">“Werk al by conseil, and thou shalt nat rewe.”</l>
+                    <l n="3531">And if thou werken wolt by good conseil,</l>
+                    <l n="3532">I undertake, with-outen mast and seyl,</l>
+                    <l n="3533">Yet shal I saven hir and thee and me</l>
+                    <l n="3534">Hastow nat herd how saved was Noë,</l>
+                    <pb n="102"/>
+                    <l n="3535">Whan that our lord had warned him biforn</l>
+                    <l n="3536">That al the world with water sholde be lorn?’</l>
+                </lg>
+                <lg>
+                    <l n="3537">‘Yis,’ quod this carpenter, ‘ful yore ago.’</l>
+                </lg>
+                <lg>
+                    <l n="3538">‘Hastow nat herd,’ quod Nicholas, ‘also</l>
+                    <l n="3539">The sorwe of Noë with his felawshipe,</l>
+                    <l n="3540"><ref target="noahwife_" corresp="noahwife">Er that he mighte gete
+                            his wyf to shipe</ref>?</l>
+                    <l n="3541">Him had be lever, I dar wel undertake,</l>
+                    <l n="3542">At thilke tyme, than alle hise wetheres blake,</l>
+                    <l n="3543">That she hadde had a ship hir-self allone.</l>
+                    <l n="3544">And ther-fore, wostou what is best to done?</l>
+                    <l n="3545">This asketh haste, and of an hastif thing</l>
+                    <l n="3546">Men may nat preche or maken tarying.</l>
+                </lg>
+                <lg>
+                    <l n="3547">Anon go gete us faste in-to this in</l>
+                    <l n="3548"><ref target="kimelin_" corresp="kimelin">A kneding-trogh, or elles a
+                            kimelin</ref>,</l>
+                    <l n="3549">For ech of us, but loke that they be large,</l>
+                    <l n="3550">In whiche we mowe swimme as in a barge,</l>
+                    <l n="3551">And han ther-inne <ref target="vitaille_" corresp="vitaille"
+                            >vitaille</ref> suffisant</l>
+                    <l n="3552">But for a day; fy on the remenant!</l>
+                    <l n="3553">The water shal aslake and goon away</l>
+                    <l n="3554">Aboute pryme up-on the nexte day.</l>
+                    <l n="3555">But Robin may nat wite of this, thy knave,</l>
+                    <l n="3556">Ne eek thy mayde Gille I may nat save;</l>
+                    <l n="3557">Axe nat why, for though thou aske me,</l>
+                    <l n="3558">I wol nat tellen goddes privetee.</l>
+                    <l n="3559">Suffiseth thee, but if thy wittes madde,</l>
+                    <l n="3560">To han as greet a grace as Noë hadde.</l>
+                    <l n="3561">Thy wyf shal I wel saven, out of doute,</l>
+                    <l n="3562">Go now thy wey, and speed thee heer-aboute.</l>
+                </lg>
+                <lg>
+                    <l n="3563">But whan thou hast, for hir and thee and me,</l>
+                    <l n="3564">Y-geten us thise kneding-tubbes three,</l>
+                    <l n="3565">Than shaltow hange hem in the roof ful hye,</l>
+                    <l n="3566">That no man of our purveyaunce spye.</l>
+                    <l n="3567">And whan thou thus hast doon as I have seyd,</l>
+                    <l n="3568">And hast our vitaille faire in hem y-leyd,</l>
+                    <l n="3569">And eek an ax, <ref target="corde_" corresp="corde">to smyte the
+                            corde atwo</ref></l>
+                    <l n="3570">When that the water comth, that we may go,</l>
+                    <pb n="103"/>
+                    <l n="3571">And broke an hole an heigh, up-on the gable,</l>
+                    <l n="3572">Unto the gardin-ward, over the stable,</l>
+                    <l n="3573">That we may frely passen forth our way</l>
+                    <l n="3574">Whan that the grete shour is goon away—</l>
+                    <l n="3575">Than shaltow swimme as myrie, I undertake,</l>
+                    <l n="3576">As doth the whyte doke after hir drake.</l>
+                    <l n="3577">Than wol I clepe, “how! Alison! how! John!</l>
+                    <l n="3578">Be myrie, for the flood wol passe anon.”</l>
+                    <l n="3579">And thou wolt seyn, “hayl, maister Nicholay!</l>
+                    <l n="3580">Good morwe, I se thee wel, for it is day.”</l>
+                    <l n="3581">And than shul we be lordes al our lyf</l>
+                    <l n="3582">Of al the world, as Noë and his wyf.</l>
+                </lg>
+                <lg>
+                    <l n="3583">But of o thyng I warne thee ful right,</l>
+                    <l n="3584">Be wel avysed, on that ilke night</l>
+                    <l n="3585">That we ben entred in-to shippes bord,</l>
+                    <l n="3586">That noon of us ne speke nat a word,</l>
+                    <l n="3587">Ne clepe, ne crye, but been in his preyere;</l>
+                    <l n="3588">For it is goddes owne heste dere.</l>
+                </lg>
+                <lg>
+                    <l n="3589">Thy wyf and thou mote hange <ref target="atwinne_" corresp="atwinne"
+                            >fer a-twinne</ref>,</l>
+                    <l n="3590">For that bitwixe yow shal be no sinne</l>
+                    <l n="3591">No more in looking than ther shal in dede;</l>
+                    <l n="3592">This ordinance is seyd, go, god thee spede!</l>
+                    <l n="3593">Tomorwe at night, whan men ben alle aslepe,</l>
+                    <l n="3594">In-to our kneding-tubbes wol we crepe,</l>
+                    <l n="3595">And sitten ther, abyding goddes grace.</l>
+                    <l n="3596">Go now thy wey, I have no lenger space</l>
+                    <l n="3597">To make of this no lenger sermoning.</l>
+                    <l n="3598">Men seyn thus, “send the wyse, and sey no-thing;”</l>
+                    <l n="3599">Thou art so wys, it nedeth thee nat teche;</l>
+                    <l n="3600">Go, save our lyf, and that I thee biseche.’</l>
+                </lg>
+                <lg>
+                    <l n="3601">This sely carpenter goth forth his wey.</l>
+                    <l n="3602">Ful ofte he seith ‘allas’ and ‘weylawey,’</l>
+                    <l n="3603">And to his wyf he tolde his privetee;</l>
+                    <l n="3604">And she was war, and knew it bet than he,</l>
+                    <l n="3605">What al this queynte cast was for to seye.</l>
+                    <l n="3606">But nathelees she ferde as she wolde deye,</l>
+                    <pb n="104"/>
+                    <l n="3607">And seyde, ‘allas! go forth thy wey anon,</l>
+                    <l n="3608">Help us to scape, or we ben lost echon;</l>
+                    <l n="3609">I am thy trewe verray wedded wyf;</l>
+                    <l n="3610">Go, dere spouse, and help to save our lyf.’</l>
+                </lg>
+                <lg>
+                    <l n="3611">Lo! which a greet thyng is affeccioun!</l>
+                    <l n="3612">Men may dye of imaginacioun,</l>
+                    <l n="3613">So depe may impressioun be take.</l>
+                    <l n="3614">This sely carpenter biginneth quake;</l>
+                    <l n="3615">Him thinketh verraily that he may see</l>
+                    <l n="3616">Noës flood come walwing as the see</l>
+                    <l n="3617">To drenchen Alisoun, his hony dere.</l>
+                    <l n="3618">He wepeth, weyleth, maketh sory chere,</l>
+                    <l n="3619">He syketh with ful many a sory swogh.</l>
+                    <l n="3620">He gooth and geteth him a kneding-trogh,</l>
+                    <l n="3621">And after that a tubbe and a kimelin,</l>
+                    <l n="3622">And prively he sente hem to his in,</l>
+                    <l n="3623">And heng hem in the roof in privetee.</l>
+                    <l n="3624">His owne hand he made laddres three,</l>
+                    <l n="3625">To climben by the ronges and the stalkes</l>
+                    <l n="3626">Un-to the tubbes hanginge in the <ref target="balkes_"
+                            corresp="balkes">balkes</ref>,</l>
+                    <l n="3627">And hem vitailled, bothe trogh and tubbe,</l>
+                    <l n="3628">With breed and chese, and good ale in a Iubbe,</l>
+                    <l n="3629">Suffysinge right y-nogh as for a day.</l>
+                    <l n="3630">But er that he had maad al this array,</l>
+                    <l n="3631">He sente his knave, and eek his wenche also,</l>
+                    <l n="3632">Up-on his nede to London for to go.</l>
+                    <l n="3633">And on the Monday, whan it drow to night,</l>
+                    <l n="3634">He shette his dore with-oute candel-light,</l>
+                    <l n="3635">And dressed al thing as it sholde be.</l>
+                    <l n="3636">And shortly, up they clomben alle three;</l>
+                    <l n="3637">They sitten stille wel a furlong-way.</l>
+                </lg>
+                <lg>
+                    <l n="3638">‘Now, <ref target="paternoster_" corresp="paternoster"><hi
+                                rend="italic">Pater-noster</hi></ref>, clom!’ seyde Nicholay,</l>
+                    <l n="3639">And ‘clom,’ quod John, and ‘clom,’ seyde Alisoun.</l>
+                    <l n="3640">This carpenter seyde his devocioun,</l>
+                    <l n="3641">And stille he sit, and biddeth his preyere,</l>
+                    <pb n="105"/>
+                    <l n="3642">Awaytinge on the reyn, if he it here.</l>
+                </lg>
+                <lg>
+                    <l n="3643">The dede sleep, for wery bisinesse,</l>
+                    <l n="3644">Fil on this carpenter right, as I gesse,</l>
+                    <l n="3645">Aboute corfew-tyme, or litel more;</l>
+                    <l n="3646"><ref target="travail_" corresp="travail">For travail of his
+                            goost</ref> he groneth sore,</l>
+                    <l n="3647">And eft he <ref target="routeth_" corresp="routeth">routeth</ref>,
+                        for his heed mislay.</l>
+                    <l n="3648">Doun of the laddre stalketh Nicholay,</l>
+                    <l n="3649">And Alisoun, ful softe adoun she spedde;</l>
+                    <l n="3650">With-outen wordes mo, they goon to bedde</l>
+                    <l n="3651">Ther-as the carpenter is wont to lye.</l>
+                    <l n="3652">Ther was the revel and the melodye;</l>
+                    <l n="3653">And thus lyth Alison and Nicholas,</l>
+                    <l n="3654">In bisinesse of mirthe and of solas,</l>
+                    <l n="3655">Til that the <ref target="laudes_" corresp="laudes">belle of
+                            laudes</ref> gan to ringe,</l>
+                    <l n="3656">And freres in the chauncel gonne singe.</l>
+                </lg>
+                <lg>
+                    <l n="3657">This parish-clerk, this amorous Absolon,</l>
+                    <l n="3658">That is for love alwey so wo bigon,</l>
+                    <l n="3659">Up-on the Monday was at Oseneye</l>
+                    <l n="3660">With companye, him to disporte and pleye,</l>
+                    <l n="3661">And axed up-on cas a cloisterer</l>
+                    <l n="3662">Ful prively after Iohn the carpenter;</l>
+                    <l n="3663">And he drough him a-part out of the chirche,</l>
+                    <l n="3664">And seyde, ‘I noot, I saugh him here nat wirche</l>
+                    <l n="3665">Sin Saterday; I trow that he be went</l>
+                    <l n="3666">For timber, ther our abbot hath him sent;</l>
+                    <l n="3667">For he is wont for timber for to go,</l>
+                    <l n="3668">And dwellen at the grange a day or two;</l>
+                    <l n="3669">Or elles he is at his hous, certeyn;</l>
+                    <l n="3670">Wher that he be, I can nat sothly seyn.’</l>
+                </lg>
+                <lg>
+                    <l n="3671">This Absolon ful Ioly was and light,</l>
+                    <l n="3672">And thoghte, ‘now is tyme wake al night;</l>
+                    <l n="3673">For sikirly I saugh him nat stiringe</l>
+                    <l n="3674">Aboute his dore sin day bigan to springe.</l>
+                    <l n="3675">So moot I thryve, I shal, at cokkes crowe,</l>
+                    <l n="3676">Ful prively knokken at his windowe</l>
+                    <l n="3677">That stant ful lowe up-on his boures wal.</l>
+                    <pb n="106"/>
+                    <l n="3678">To Alison now wol I tellen al</l>
+                    <l n="3679">My love-longing, for yet I shal nat misse</l>
+                    <l n="3680">That at the leste wey I shal hir kisse.</l>
+                    <l n="3681">Som maner confort shal I have, parfay,</l>
+                    <l n="3682">My mouth hath icched al this longe day;</l>
+                    <l n="3683">That is a signe of kissing atte leste.</l>
+                    <l n="3684">Al night me mette eek, I was at a feste.</l>
+                    <l n="3685">Therfor I wol gon slepe an houre or tweye,</l>
+                    <l n="3686">And al the night than wol I wake and pleye.’</l>
+                </lg>
+                <lg>
+                    <l n="3687">Whan that the firste cok hath crowe, anon</l>
+                    <l n="3688">Up rist this Ioly lover Absolon,</l>
+                    <l n="3689">And him arrayeth gay, at <ref target="pointdevys_"
+                            corresp="pointdevys">point-devys</ref>.</l>
+                    <l n="3690">But first he cheweth greyn and lycorys,</l>
+                    <l n="3691">To smellen swete, er he had kembd his heer.</l>
+                    <l n="3692">Under his tonge a trewe love he beer,</l>
+                    <l n="3693">For ther-by wende he to ben gracious.</l>
+                    <l n="3694">He rometh to the carpenteres hous,</l>
+                    <l n="3695">And stille he stant under the shot-windowe;</l>
+                    <l n="3696">Un-to his brest it raughte, it was so lowe;</l>
+                    <l n="3697">And softe he cogheth with a semi-soun—</l>
+                    <l n="3698">‘What do ye, hony-comb, swete Alisoun?</l>
+                    <l n="3699">My faire brid, my swete cinamome,</l>
+                    <l n="3700">Awaketh, lemman myn, and speketh to me!</l>
+                    <l n="3701">Wel litel thenken ye up-on my wo,</l>
+                    <l n="3702">That for your love I swete ther I go.</l>
+                    <l n="3703">No wonder is thogh that I swelte and swete;</l>
+                    <l n="3704">I moorne <ref target="tete_" corresp="tete">as doth a lamb after the
+                            tete</ref>.</l>
+                    <l n="3705">Y-wis, lemman, I have swich love-longinge,</l>
+                    <l n="3706">That lyk a turtel trewe is my moorninge;</l>
+                    <l n="3707">I may nat ete na more than a mayde.’</l>
+                </lg>
+                <lg>
+                    <l n="3708">‘Go fro the window, Iakke fool,’ she sayde,</l>
+                    <l n="3709">‘As help me god, it wol nat be “com ba me,”</l>
+                    <l n="3710">I love another, and elles I were to blame,</l>
+                    <l n="3711">Wel bet than thee, by Iesu, Absolon!</l>
+                    <l n="3712">Go forth thy wey, or I wol caste a ston,</l>
+                    <pb n="107"/>
+                    <l n="3713">And lat me slepe, <ref target="devel_" corresp="devel">a twenty
+                            devel wey</ref>!’</l>
+                </lg>
+                <lg>
+                    <l n="3714">‘Allas,’ quod Absolon, ‘and weylawey!</l>
+                    <l n="3715">That trewe love was ever so yvel biset!</l>
+                    <l n="3716">Than kisse me, sin it may be no bet,</l>
+                    <l n="3717">For Iesus love and for the love of me.'</l>
+                </lg>
+                <lg>
+                    <l n="3718">‘Wiltow than go thy wey ther-with?’ quod she.</l>
+                </lg>
+                <lg>
+                    <l n="3719">‘Ye, certes, lemman,’ quod this Absolon.</l>
+                </lg>
+                <lg>
+                    <l n="3720">‘Thanne make thee redy,’ quod she, ‘I come anon;’</l>
+                    <l n="3721">And un-to Nicholas she seyde stille,</l>
+                    <l n="3722">‘Now hust, and thou shall laughen al thy fille.’</l>
+                </lg>
+                <lg>
+                    <l n="3723">This Absolon doun sette him on his knees,</l>
+                    <l n="3724">And seyde, ‘I am a lord at alle degrees;</l>
+                    <l n="3725">For after this I hope ther cometh more!</l>
+                    <l n="3726">Lemman, thy grace, and swete brid, thyn ore!’</l>
+                </lg>
+                <lg>
+                    <l n="3727">The window she undoth, and that in haste,</l>
+                    <l n="3728">‘Have do,’ quod she, ‘com of, and speed thee faste,</l>
+                    <l n="3729">Lest that our neighebores thee espye.’</l>
+                </lg>
+                <lg>
+                    <l n="3730">This Absolon gan wype his mouth ful drye;</l>
+                    <l n="3731"><ref target="derk_" corresp="derk">Derk was the night as pich, or as
+                            the cole</ref>,</l>
+                    <l n="3732">And at the window <ref target="hole_" corresp="hole">out she putte
+                            hir hole</ref>,</l>
+                    <l n="3733">And Absolon, him fil no bet ne wers,</l>
+                    <l n="3734">But with his mouth he kiste hir naked <ref target="ers_"
+                            corresp="ers">ers</ref></l>
+                    <l n="3735">Ful savourly, er he was war of this.</l>
+                </lg>
+                <lg>
+                    <l n="3736">Abak he sterte, and thoghte it was amis,</l>
+                    <l n="3737"><ref target="berd_" corresp="berd">For wel he wiste a womman hath no
+                            berd</ref>;</l>
+                    <l n="3738">He felte a thing al rough and long y-herd,</l>
+                    <l n="3739">And seyde, ‘fy! allas! what have I do?’</l>
+                </lg>
+                <lg>
+                    <l n="3740">‘Tehee!’ quod she, and clapte the window to;</l>
+                    <l n="3741">And Absolon goth forth a sory pas.</l>
+                </lg>
+                <lg>
+                    <l n="3742">‘A berd, a berd!’ quod hende Nicholas,</l>
+                    <l n="3743">‘By goddes <ref target="corpus_" corresp="corpus"><hi rend="italic"
+                                >corpus</hi></ref>, this goth faire and weel!’</l>
+                </lg>
+                <lg>
+                    <l n="3744">This sely Absolon herde every deel,</l>
+                    <l n="3745">And on his lippe he gan for anger byte;</l>
+                    <l n="3746">And to him-self he seyde, ‘I shal thee quyte!’</l>
+                </lg>
+                <lg>
+                    <l n="3747">Who rubbeth now, who froteth now his lippes</l>
+                    <pb n="108"/>
+                    <l n="3748">With dust, with sond, with straw, with clooth, with chippes,</l>
+                    <l n="3749">But Absolon, that seith ful ofte, ‘allas!</l>
+                    <l n="3750">My soule bitake I un-to Sathanas,</l>
+                    <l n="3751">But me wer lever than al this toun,’ quod he,</l>
+                    <l n="3752">‘<ref target="despyt_" corresp="despyt">Of this despyt awroken for
+                            to be</ref>!</l>
+                    <l n="3753">Allas!’ quod he, ‘allas! I ne hadde y-bleynt!’</l>
+                    <l n="3754">His hote love was cold and al y-queynt;</l>
+                    <l n="3755">For fro that tyme that he had kiste hir ers,</l>
+                    <l n="3756"><ref target="kers_" corresp="kers">Of paramours he sette nat a
+                            kers</ref>,</l>
+                    <l n="3757">For he was heled of his maladye;</l>
+                    <l n="3758">Ful ofte paramours he gan deffye,</l>
+                    <l n="3759">And weep as dooth a child that is y-bete.</l>
+                    <l n="3760">A softe paas he wente over the strete</l>
+                    <l n="3761">Un-til a smith men cleped daun Gerveys,</l>
+                    <l n="3762">That in his forge smithed plough-harneys;</l>
+                    <l n="3763"><ref target="shaar_" corresp="shaar">He sharpeth shaar and culter
+                            bisily</ref>.</l>
+                    <l n="3764">This Absolon knokketh al esily,</l>
+                    <l n="3765">And seyde, ‘undo, Gerveys, and that anon.’</l>
+                </lg>
+                <lg>
+                    <l n="3766">‘What, who artow?’ ‘It am I, Absolon.’</l>
+                    <l n="3767">‘What, Absolon! for Cristes swete tree,</l>
+                    <l n="3768">Why ryse ye so <ref target="rathe_" corresp="rathe">rathe</ref>, ey,
+                            <ref target="benedicite_" corresp="benedicite"><hi rend="italic"
+                                >benedicite!</hi></ref></l>
+                    <l n="3769">What eyleth yow? som gay gerl, god it woot,</l>
+                    <l n="3770">Hath broght yow thus up-on the <ref target="viritoot_"
+                            corresp="viritoot">viritoot</ref>;</l>
+                    <l n="3771">By <ref target="note_" corresp="note">sëynt Note</ref>, ye woot wel
+                        what I mene.’</l>
+                </lg>
+                <lg>
+                    <l n="3772">This Absolon ne roghte nat a bene</l>
+                    <l n="3773">Of al his pley, no word agayn he yaf;</l>
+                    <l n="3774">He hadde more tow on his distaf</l>
+                    <l n="3775">Than Gerveys knew, and seyde, ‘freend so dere,</l>
+                    <l n="3776">That <ref target="culter_" corresp="culter">hote culter</ref> in the
+                        chimenee here,</l>
+                    <l n="3777">As lene it me, I have ther-with to done,</l>
+                    <l n="3778">And I wol bringe it thee agayn ful sone.’</l>
+                </lg>
+                <lg>
+                    <l n="3779">Gerveys answerde, ‘certes, were it gold,</l>
+                    <l n="3780">Or in a poke nobles alle untold,</l>
+                    <l n="3781">Thou sholdest have, as I am trewe smith;</l>
+                    <l n="3782">Ey, Cristes foo! what wol ye do ther-with?’</l>
+                </lg>
+                <lg>
+                    <pb n="109"/>
+                    <l n="3783">‘Ther-of,’ quod Absolon, ‘be as be may;</l>
+                    <l n="3784">I shal wel telle it thee to-morwe day’—</l>
+                    <l n="3785">And caughte the culter by the colde stele.</l>
+                    <l n="3786">Ful softe out at the dore he gan to stele,</l>
+                    <l n="3787">And wente un-to the carpenteres wal.</l>
+                    <l n="3788">He cogheth first, and knokketh ther-with-al</l>
+                    <l n="3789">Upon the windowe, right as he dide er.</l>
+                </lg>
+                <lg>
+                    <l n="3790">This Alison answerde, ‘Who is ther</l>
+                    <l n="3791">That knokketh so? I warante it a theef.’</l>
+                </lg>
+                <lg>
+                    <l n="3792">‘Why, nay,’ quod he, ‘god woot, my swete leef,</l>
+                    <l n="3793">I am thyn Absolon, my dereling!</l>
+                    <l n="3794">Of gold,’ quod he, ‘I have thee broght a ring;</l>
+                    <l n="3795">My moder yaf it me, so god me save,</l>
+                    <l n="3796">Ful fyn it is, and ther-to wel y-grave;</l>
+                    <l n="3797">This wol I yeve thee, if thou me kisse!’</l>
+                </lg>
+                <lg>
+                    <l n="3798">This Nicholas was risen for to pisse,</l>
+                    <l n="3799">And thoghte he wolde amenden al the Iape,</l>
+                    <l n="3800">He sholde kisse his ers er that he scape.</l>
+                    <l n="3801">And up the windowe dide he hastily,</l>
+                    <l n="3802"><ref target="outhisers_" corresp="outhisers">And out his ers he
+                            putteth prively</ref></l>
+                    <l n="3803">Over the buttok, to the haunche-bon;</l>
+                    <l n="3804">And ther-with spak this clerk, this Absolon,</l>
+                    <l n="3805">‘Spek, swete brid, I noot nat wher thou art.’</l>
+                </lg>
+                <lg>
+                    <l n="3806"><ref target="fart_" corresp="fart">This Nicholas anon leet flee a
+                            fart</ref>,</l>
+                    <l n="3807">As greet as it had been a thonder-dent,</l>
+                    <l n="3808">That with the strook he was almost y-blent;</l>
+                    <l n="3809">And he was redy with his iren hoot,</l>
+                    <l n="3810"><ref target="smoot_" corresp="smoot">And Nicholas amidde the ers he
+                            smoot</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="3811"><ref target="skin_" corresp="skin">Of gooth the skin an hande-brede
+                            aboute</ref>,</l>
+                    <l n="3812">The hole culter brende so his toute,</l>
+                    <l n="3813">And for the smert he wende for to dye.</l>
+                    <l n="3814">As he were wood, for wo he gan to crye—</l>
+                    <l n="3815">Help! water! water! help, for goddes herte!’</l>
+                </lg>
+                <lg>
+                    <l n="3816">This carpenter out of his slomber sterte,</l>
+                    <l n="3817">And herde oon cryen ‘water’ as he were wood,</l>
+                    <pb n="110"/>
+                    <l n="3818">And thoghte, ‘Allas! <ref target="nowelis_" corresp="nowelis">now
+                            comth Nowelis flood</ref>!’</l>
+                    <l n="3819">He sit him up with-outen wordes mo,</l>
+                    <l n="3820">And with his ax he smoot the corde a-two,</l>
+                    <l n="3821">And doun goth al; he fond neither to selle,</l>
+                    <l n="3822">Ne breed ne ale, til he cam to the celle</l>
+                    <l n="3823">Up-on the floor; <ref target="aswowne_" corresp="aswowne">and ther
+                            aswowne he lay</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="3824">Up sterte hir Alison, and Nicholay,</l>
+                    <l n="3825">And cryden ‘out’ and ‘harrow’ in the strete.</l>
+                    <l n="3826">The neighebores, bothe smale and grete,</l>
+                    <l n="3827">In ronnen, for to <ref target="gauren_" corresp="gauren"
+                            >gauren</ref> on this man,</l>
+                    <l n="3828">That yet aswowne he lay, bothe pale and wan;</l>
+                    <l n="3829">For with the fal <ref target="brosten_" corresp="brosten">he brosten
+                            hadde his arm</ref>;</l>
+                    <l n="3830">But stonde he moste un-to his owne harm.</l>
+                    <l n="3831">For whan he spak, he was anon bore doun</l>
+                    <l n="3832">With hende Nicholas and Alisoun.</l>
+                    <l n="3833">They tolden every man that he was wood,</l>
+                    <l n="3834">He was agast so of ‘Nowelis flood’</l>
+                    <l n="3835">Thurgh fantasye, that of his vanitee</l>
+                    <l n="3836">He hadde y-boght him kneding-tubbes three,</l>
+                    <l n="3837">And hadde hem hanged in the roof above;</l>
+                    <l n="3838">And that he preyed hem, for goddes love,</l>
+                    <l n="3839">To sitten in the roof, <ref target="companye_" corresp="companye"
+                                ><hi rend="italic">par companye</hi></ref>.</l>
+                </lg>
+                <lg>
+                    <l n="3840">The folk gan laughen at his fantasye;</l>
+                    <l n="3841">In-to the roof they <ref target="kyken_" corresp="kyken">kyken and
+                            they gape</ref>,</l>
+                    <l n="3842">And turned al his harm un-to a Iape.</l>
+                    <l n="3843">For what so that this carpenter answerde,</l>
+                    <l n="3844"><ref target="reson_" corresp="reson">It was for noght, no man his
+                            reson herde</ref>;</l>
+                    <l n="3845">With othes grete he was so sworn adoun,</l>
+                    <l n="3846">That he was holden wood in al the toun;</l>
+                    <l n="3847">For every clerk anon-right heeld with other.</l>
+                    <l n="3848">They seyde, ‘<ref target="wood_" corresp="wood">the man is wood, my
+                            leve brother</ref>;’</l>
+                    <l n="3849">And every wight gan laughen of this stryf.</l>
+                </lg>
+                <lg>
+                    <l n="3850">Thus <ref target="swyved_" corresp="swyved">swyved was the
+                            carpenteres wyf</ref>,</l>
+                    <pb n="111"/>
+                    <l n="3851">For al his keping and his Ialousye;</l>
+                    <l n="3852">And Absolon hath kist hir <ref target="nether_" corresp="nether"
+                            >nether yë</ref>;</l>
+                    <l n="3853">And Nicholas is <ref target="toute_" corresp="toute">scalded in the
+                            toute</ref>.</l>
+                    <l n="3854">This tale is doon, and god save al the <ref target="route_"
+                            corresp="route">route</ref>!</l>
+                </lg>
+                <closer>Here endeth the Millere his tale.</closer>
+            </div>
+        </body>
+        <back>
+            <div>
+                <note xml:id="intro" target="intro_" type="editorial" resp="editors.xml#AJB"><p>
+                        <hi rend="italic">The Miller's Tale</hi> is the second of the tales told
+                        among the company of pilgrims on their way to Canterbury. It immediately
+                        follows <hi rend="italic">The Knight's Tale</hi>, a traditional chivalric
+                        romance set in Classical Greece. The Miller's Tale, by contrast, is a <ref
+                            target="https://www.britannica.com/art/fabliau"><hi rend="italic"
+                                >fabliau</hi></ref>, a poetic genre recounting sexually explicit,
+                        satirical narratives. It is very much an inversion of the high style of the
+                        preceding tale, and sets the tone for the juxtaposition of style and genre
+                        that characterizes the whole of <hi rend="italic">The Canterbury
+                        Tales</hi>.</p></note>
+                <note xml:id="skeat" target="skeat_" type="editorial" resp="editors.xml#AJB"
+                        ><p>Walter William Skeat (1835–1912) was one of the most prolific and
+                        learned philologists of his time. While he was most famous for his <hi
+                            rend="italic">Etymological Dictionary of the English Language</hi>, his
+                        edition of <hi rend="italic">The Canterbury Tales</hi> was an academic
+                        standard until the publication of Larry Benson's <hi rend="italic">The
+                            Riverside Chaucer</hi>. </p></note>
+                <note xml:id="gentils" target="gentils_" type="gloss" resp="editors.xml#AJB"><p>
+                        Members of the nobility. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="unbokeled" target="unbokeled_" type="editorial" resp="editors.xml#AJB"
+                        ><p> Literally, 'the bag is unbuckled.' Figuratively, 'the game has now
+                        properly begun.' </p></note>
+                <note xml:id="quyte" target="quyte_" type="editorial" resp="editors.xml#AJB"><p> A
+                        semantically loaded word, simultaneously meaning 'pay for,' 'take revenge
+                        on,' or 'reward,' depending on the context. Source: Middle English
+                        Dictionary. </p></note>
+                <note xml:id="unnethe" target="unnethe_" type="gloss" resp="editors.xml#AJB"><p>
+                        Uneasily. That is to say, the Miller is so drunk that he is having trouble
+                        sitting on his horse. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="pilate" target="pilate_" type="editorial" resp="editors.xml#AJB"><p>
+                        Pontius Pilate, the Roman official who condemned Christ to be crucified. In
+                        medieval mystery plays, actors playing Pontius Pilate would speak in a
+                        booming, commanding voice. </p></note>
+                <note xml:id="curse" target="curse_" type="editorial" resp="editors.xml#AJB"><p> The
+                        'armes' here are the <hi rend="italic">arma Christi</hi>, or the weapons
+                        with which Christ was wounded during the Passion. To swear by the arms, as
+                        well as Christ's blood and bones, was seen as a particularly vulgar curse in
+                        the Middle Ages. </p></note>
+                <note xml:id="nones" target="nones_" type="gloss" resp="editors.xml#AJB"><p> 'For
+                        this occasion.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="soun" target="soun_" type="gloss" resp="editors.xml#AJB"><p> 'I know
+                        it by my sound.' That is to say, the Miller can tell that he is drunk by the
+                        quality of his speech. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="cappe" target="cappe_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Set the carpenter's cap,' i.e., performed a trick on him. Source: Middle
+                        English Dictionary. </p></note>
+                <note xml:id="apeiren" target="apeiren_" type="editorial" resp="editors.xml#AJB"><p>
+                        To harm a person's reputation. Here the Reve is arguing that it is sinful to
+                        tell debaucherous stories of people doing evil things. Source: Middle
+                        English Dictionary. </p></note>
+                <note xml:id="swich_fame" target="swich_fame_" type="editorial"
+                    resp="editors.xml#AJB"><p> 'To bring wives into such [ill] fame.' The Miller's
+                        transgression is especially egregious because he is bringing into question
+                        the reputation of wives and, by proxy, the institution of marriage.
+                    </p></note>
+                <note xml:id="leve" target="leve_" type="gloss" resp="editors.xml#AJB"><p> Dear.
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="who_hath" target="who_hath_" type="editorial" resp="editors.xml#AJB"
+                        ><p> 'He who has no wife cannot be made into a cuckold.' That is to say,
+                        your wife can never cheat on you if you never get married in the first
+                        place. </p></note>
+                <note xml:id="noon" target="noon_" type="editorial" resp="editors.xml#AJB"><p> The
+                        Miller chooses to believe he is not a cuckold, not because he implicitly
+                        trusts his wife, but because doing so would bring him more trouble than he
+                        thinks it is worth. </p></note>
+                <note xml:id="privetee" target="privetee_" type="editorial" resp="editors.xml#AJB"
+                        ><p> 'A husband must not be inquisitive / About God's secrets or those of
+                        his wife.' That is to say, it is wise for a husband never to pry after his
+                        wife's secrets, lest he discover something he would rather not know.
+                    </p></note>
+                <note xml:id="foyson" target="foyson_" type="editorial" resp="editors.xml#AJB"><p>
+                        God's plenty. That is to say, if a husband is emotionally and sexually
+                        satisfied in his marriage, he does not need to inquire any deeper into his
+                        wife's activities. </p></note>
+                <note xml:id="apology" target="apology_" type="editorial" resp="editors.xml#AJB"><p>
+                        Here Chaucer apologizes to the reader for the bawdy content of the upcoming
+                        tale, and, in an especially metatextual moment, reminds the reader that, if
+                        they are squeamish, they can simply turn the page to another, more
+                        respectable tale. </p></note>
+                <note xml:id="leef" target="leef_" type="editorial" resp="editors.xml#AJB"><p> The
+                        piece of parchment on which the text is written. </p></note>
+                <note xml:id="storial" target="storial_" type="editorial" resp="editors.xml#AJB"><p>
+                        Historically true; truthful; drawn from Scripture. This portion of Chaucer's
+                        apology is tongue-in-cheek, since none but two of the tales (the Monk's and
+                        the Parson's) can be described in this way. </p></note>
+                <note xml:id="gentillesse" target="gentillesse_" type="gloss" resp="editors.xml#AJB"
+                        ><p> Nobility; kindness; gentleness. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="oxenford" target="oxenford_" type="gloss" resp="editors.xml#AJB"><p>
+                        The city of Oxford, home to the University of Oxford. </p></note>
+                <note xml:id="gnof" target="gnof_" type="gloss" resp="editors.xml#AJB"><p> An
+                        ill-mannered churl. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="gestes" target="gestes_" type="gloss" resp="editors.xml#AJB"><p> 'That
+                        boarded guests.' That is to say, he rents a room in his house. </p></note>
+                <note xml:id="scoler" target="scoler_" type="gloss" resp="editors.xml#AJB"><p>
+                        Scholar. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="art" target="art_" type="editorial" resp="editors.xml#AJB"><p> One of
+                        the seven fields of university study: grammar, rhetoric, logic (the
+                        trivium), and arithmetic, geometry, astronomy, and music (the quadrivium).
+                    </p></note>
+                <note xml:id="fantasye" target="fantasye_" type="gloss" resp="editors.xml#AJB"><p>
+                        Inclination or desire. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="astrologye" target="astrologye_" type="editorial"
+                    resp="editors.xml#AJB"><p> While not in the trivium or quadrivium, astrology was
+                        seen as a legitimate field of inquiry in the Middle Ages—though not, it
+                        should be noted, for the purposes of prophecy or fortune-telling.</p></note>
+                <note xml:id="certeyn" target="certeyn_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Ascertain conclusions.' That is to say, Nicholas is claiming he can use
+                        astrology to see into the future. </p></note>
+                <note xml:id="droghte" target="droghte_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Drought or [rain] showers.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="cleped" target="cleped_" type="gloss" resp="editors.xml#AJB"><p>
+                        Called; named. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="derne" target="derne_" type="gloss" resp="editors.xml#AJB"><p> Secret.
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="coude" target="coude_" type="gloss" resp="editors.xml#AJB"><p> Know
+                        about; understand. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="solas" target="solas_" type="gloss" resp="editors.xml#AJB"><p> Joy;
+                        pleasure. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="sleigh" target="sleigh_" type="gloss" resp="editors.xml#AJB"><p> 'Sly
+                        and very secretive.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="ydight" target="ydight_" type="gloss" resp="editors.xml#AJB"><p> 'Very
+                        artfully decorated with sweet herbs.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="rote" target="rote_" type="gloss" resp="editors.xml#AJB"><p> Root.
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="licorys" target="licorys_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Licorice or zedoary,' two sweet-smelling herbs. </p></note>
+                <note xml:id="almageste" target="almageste_" type="editorial" resp="editors.xml#AJB"
+                        ><p> The Almagest is a classical textbook of astronomy written by Ptolemy,
+                        and was one of the standard astronomical treatises of the Middle Ages.
+                    </p></note>
+                <note xml:id="astrelabie" target="astrelabie_" type="editorial"
+                    resp="editors.xml#AJB"><p> An astrolabe is a versatile tool for determining the
+                        position and movements of celestial bodies. Chaucer himself wrote a treatise
+                        on its use.</p></note>
+                <note xml:id="augrim" target="augrim_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Algorithm-stones,' or stones marked with numbers and tables to assist with
+                        calculation. </p></note>
+                <note xml:id="falding" target="falding_" type="gloss" resp="editors.xml#AJB"><p> 'A
+                        red cloak.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="sautrye" target="sautrye_" type="editorial" resp="editors.xml#AJB"><p>
+                        A Psalter, or a manuscript containing the Book of Psalms. Source: Middle
+                        English Dictionary. </p></note>
+                <note xml:id="angelus" target="angelus_" type="editorial" resp="editors.xml#AJB"><p>
+                        The <hi rend="italic">angelus</hi> is a Christian prayer to the Virgin Mary
+                        that makes special reference to the archangel Gabriel's visitiation to Mary
+                        at the Annunciation. </p></note>
+                <note xml:id="kinges" target="kinges_" type="editorial" resp="editors.xml#AJB"><p>
+                        There are two interpretations of the phrase 'Kinges Noot.' It either refers
+                        generally to a song about kings (e.g., a romance), or to a particular song
+                        called the 'King's Note.' </p></note>
+                <note xml:id="after" target="after_" type="gloss" resp="editors.xml#AJB"><p> 'Living
+                        on his friends' support and his income.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="ialous" target="ialous_" type="gloss" resp="editors.xml#AJB"><p>
+                        Jealous. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="narwe" target="narwe_" type="gloss" resp="editors.xml#AJB"><p> 'In a
+                        narrow cage.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="catoun" target="catoun_" type="editorial" resp="editors.xml#AJB"><p>
+                        Cato the Elder was a Roman statesman and historian. </p></note>
+                <note xml:id="estaat" target="estaat_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Estaat' typically refers to one's social class. Here, however, it refers to
+                        one's age. That is, the Miller is citing Cato's proverb that individuals of
+                        similar ages should marry. </p></note>
+                <note xml:id="wesele" target="wesele_" type="gloss" resp="editors.xml#AJB"><p>
+                        Weasel. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="ceynt" target="ceynt_" type="gloss" resp="editors.xml#AJB"><p> A belt.
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="barmclooth" target="barmclooth_" type="gloss" resp="editors.xml#AJB"
+                        ><p> An apron. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="lendes" target="lendes_" type="gloss" resp="editors.xml#AJB"><p>
+                        Loins. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="gore" target="gore_" type="gloss" resp="editors.xml#AJB"><p> A skirt.
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="brouded" target="brouded_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Embroidered all in the front.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="tapes" target="tapes_" type="gloss" resp="editors.xml#AJB"><p> 'The
+                        ribbons of her white cap.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="filet" target="filet_" type="gloss" resp="editors.xml#AJB"><p>
+                        Headband. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="likerous" target="likerous_" type="gloss" resp="editors.xml#AJB"><p> A
+                        lascivious eye. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="smale" target="smale_" type="gloss" resp="editors.xml#AJB"><p> 'Her
+                        two brows were plucked very thin.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="sloo" target="sloo_" type="gloss" resp="editors.xml#AJB"><p> 'Black as
+                        any sloe.' A sloe is the fruit of the blackthorn bush. Source: Middle
+                        English Dictionary. </p></note>
+                <note xml:id="pere" target="pere_" type="gloss" resp="editors.xml#AJB"><p> An
+                        early-ripening pear tree. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="wether" target="wether_" type="gloss" resp="editors.xml#AJB"><p> 'And
+                        softer than the wool is of a sheep.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="latoun" target="latoun_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Latoun' is latten, an alloy of copper, tin, and other minerals. On
+                        Alisoun's purse, the latten is fashioned in the shape of pearls. Source:
+                        Middle English Dictionary. </p></note>
+                <note xml:id="popelote" target="popelote_" type="gloss" resp="editors.xml#AJB"><p>
+                        'So lovely a darling, or such a wench.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="hewe" target="hewe_" type="gloss" resp="editors.xml#AJB"><p> Hue;
+                        complexion. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="noble" target="noble_" type="gloss" resp="editors.xml#AJB"><p> 'Than
+                        the new-forged noble in the tower.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="yerne" target="yerne_" type="gloss" resp="editors.xml#AJB"><p> Lively.
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="swalwe" target="swalwe_" type="gloss" resp="editors.xml#AJB"><p> 'As
+                        any swallow sitting on a barn.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="bragot" target="bragot_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Bragget or mead.' Bragget is a beverage made of ale and honey. Source:
+                        Middle English Dictionary. </p></note>
+                <note xml:id="winsinge" target="winsinge_" type="gloss" resp="editors.xml#AJB"><p>
+                        Skittish. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="bocler" target="bocler_" type="gloss" resp="editors.xml#AJB"><p> 'As
+                        broad as is the ornament on a buckler.' A buckler is a small shield. Source:
+                        Middle English Dictionary. </p></note>
+                <note xml:id="prymerole" target="prymerole_" type="gloss" resp="editors.xml#AJB"><p>
+                        'She was a primrose, a pig's eye.' The pig's eye, known today as a pigsney
+                        or a cuckoo flower, is a delicate white flower. </p></note>
+                <note xml:id="hende" target="hende_" type="gloss" resp="editors.xml#AJB"><p> Clever.
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="rage" target="rage_" type="gloss" resp="editors.xml#AJB"><p> 'Flirt
+                        and play.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="oseneye" target="oseneye_" type="editorial" resp="editors.xml#AJB"><p>
+                        Osney is a community just to the West of Oxford. </p></note>
+                <note xml:id="queynte" target="queynte_" type="gloss" resp="editors.xml#AJB"><p>
+                        Clever. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="caughte" target="caughte_" type="editorial" resp="editors.xml#AJB"><p>
+                        'And in secret he seized her by the genitals.' 'Queynte' is cognate with the
+                        modern English expletive for a vagina. Source: Middle English
+                        Dictionary.</p></note>
+                <note xml:id="spille" target="spille_" type="gloss" resp="editors.xml#AJB"><p> 'I
+                        die.' That is to say, if he doesn't have her love, he will die. </p></note>
+                <note xml:id="trave" target="trave_" type="gloss" resp="editors.xml#AJB"><p> 'In the
+                        enclosure.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="profred" target="profred_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Proffered [himself] to her so earnestly.' Source: Middle English
+                        Dictionary. </p></note>
+                <note xml:id="thomas" target="thomas_" type="editorial" resp="editors.xml#AJB"><p>
+                        St. Thomas of Canterbury, also known as St. Thomas à Becket, was a
+                        twelfth-century English bishop who was murdered on the order of King Henry
+                        II. </p></note>
+                <note xml:id="leyser" target="leyser_" type="gloss" resp="editors.xml#AJB"><p> 'When
+                        she can best espie her opportunity.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="deed" target="deed_" type="gloss" resp="editors.xml#AJB"><p> 'I right
+                        well know I am dead.' That is to say, Alisoun believes John will kill her if
+                        he finds out about her adultery. </p></note>
+                <note xml:id="litherly" target="litherly_" type="gloss" resp="editors.xml#AJB"><p>
+                        'A clerk has badly used his time / If he could not beguile a carpenter.'
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="thakked" target="thakked_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Patted her about the loins.' That is to say, after he touched her
+                        intimately. </p></note>
+                <note xml:id="crul" target="crul_" type="gloss" resp="editors.xml#AJB"><p> 'Curly
+                        was his hair, and it shone like gold.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="strouted" target="strouted_" type="gloss" resp="editors.xml#AJB"><p>
+                        'It [his hair] stretched out like a large, wide fan.' Source: Middle English
+                        Dictionary. </p></note>
+                <note xml:id="shode" target="shode_" type="gloss" resp="editors.xml#AJB"><p> 'The
+                        handsome parting of his hair.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="rode" target="rode_" type="gloss" resp="editors.xml#AJB"><p> 'His face
+                        was red, his eyes gray as a goose.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="powles" target="powles_" type="editorial" resp="editors.xml#AJB"><p>
+                        St. Paul's Cathedral in London was famous for its rose-windows, for which
+                        was named a form of leather working in the production of shoes. </p></note>
+                <note xml:id="kirtel" target="kirtel_" type="editorial" resp="editors.xml#AJB"><p>
+                        'All in a blue tunic.' Blue was a very expensive dye in this period. That
+                        Absolon wears it simultaneously marks his wealth and his preoccupation with
+                        material goods. </p></note>
+                <note xml:id="poyntes" target="poyntes_" type="gloss" resp="editors.xml#AJB"><p>
+                        Stitches. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="surplys" target="surplys_" type="gloss" resp="editors.xml#AJB"><p> A
+                        surplice, i.e., a liturgical garment. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="laten" target="laten_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Well could he let blood and give haircuts and shave.' In addition to his
+                        other responsiblities, Absolon also serves as a local doctor and barber.
+                    </p></note>
+                <note xml:id="chartre" target="chartre_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Make a charter of land or acquittance.' That is to say, as a parish clerk,
+                        Absolon serves as a local scribe, especially for legal writs. </p></note>
+                <note xml:id="rubible" target="rubible_" type="gloss" resp="editors.xml#AJB"><p> A
+                        kind of fiddle or lute. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="quinible" target="quinible_" type="gloss" resp="editors.xml#AJB"><p>
+                        Falsetto. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="giterne" target="giterne_" type="gloss" resp="editors.xml#AJB"><p>
+                        Guitar. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="gaylard" target="gaylard_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Gaily-dressed barmaid.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="squaymous" target="squaymous_" type="gloss" resp="editors.xml#AJB"><p>
+                        Squeamish. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="daungerous" target="daungerous_" type="gloss" resp="editors.xml#AJB"
+                        ><p> Difficult; critical. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="sencer" target="sencer_" type="editorial" resp="editors.xml#AJB"><p> A
+                        censer, i.e. a tool used in the Mass for burning incense. It could be
+                        carried and swung, and incense would thus be cast on parishioners during
+                        Mass. Here Chaucer is charging this act with a sexual undertone. </p></note>
+                <note xml:id="hente" target="hente_" type="gloss" resp="editors.xml#AJB"><p> 'He
+                        would have grabbed her right away.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="windowe" target="windowe_" type="windowe" resp="editors.xml#AJB"><p>
+                        'Casement-window,' i.e. a window attached to its frame by hinges. Source:
+                        Middle English Dictionary. </p></note>
+                <note xml:id="rewe" target="rewe_" type="gloss" resp="editors.xml#AJB"><p> 'Have
+                        pity on me.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="giterninge" target="giterninge_" type="gloss" resp="editors.xml#AJB"
+                        ><p> Guitar-playing. Literally, 'guitar-ing.' Source: Middle English
+                        Dictionary. </p></note>
+                <note xml:id="boure" target="boure_" type="gloss" resp="editors.xml#AJB"><p> 'The
+                        wall of our bedroom.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="bet" target="bet_" type="gloss" resp="editors.xml#AJB"><p> 'What more
+                        would you have?' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="brocage" target="brocage_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Intermediaries and go-betweens.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="mede" target="mede_" type="gloss" resp="editors.xml#AJB"><p> 'And
+                        because she was from the town, he offered her money.' That is to say,
+                        Absolon tries to pay Alisoun to have sex with him. </p></note>
+                <note xml:id="herod" target="herod_" type="editorial" resp="editors.xml#AJB"><p>
+                        That is to say, Absolon unsuccessfully tries to impress Alisoun by playing
+                        the role of Herod in the local Church play. </p></note>
+                <note xml:id="ape" target="ape_" type="gloss" resp="editors.xml#AJB"><p> Fool.
+                        Source: Middle English Dictionary </p></note>
+                <note xml:id="jape" target="jape_" type="gloss" resp="editors.xml#AJB"><p> Joke.
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="proverb" target="proverb_" type="editorial" resp="editors.xml#AJB"><p>
+                        Literally, 'The nearby sly one always makes the distant beloved hated.' That
+                        is to say, when one's beloved is away, one is easily wooed by someone crafty
+                        and nearby. </p></note>
+                <note xml:id="wyle" target="wyle_" type="gloss" resp="editors.xml#AJB"><p> 'Devise a
+                        trick.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="tikel" target="tikel_" type="gloss" resp="editors.xml#AJB"><p>
+                        Literally, 'this world is now very ticklish.' That is to say, there are many
+                        strange things happening. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="kyked" target="kyked_" type="gloss" resp="editors.xml#AJB"><p> 'As if
+                        he had gazed upon the new moon.' </p></note>
+                <note xml:id="frideswyde" target="frideswyde_" type="editorial"
+                    resp="editors.xml#AJB"><p> St. Frideswide was an eight-century English princess
+                        and abbess who founded a priory in the city of Oxford. She is frequently
+                        invoked as the patroness of the city and University of Oxford. </p></note>
+                <note xml:id="woodnesse" target="woodnesse_" type="gloss" resp="editors.xml#AJB"><p>
+                        Madness. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="lewed" target="lewed_" type="gloss" resp="editors.xml#AJB"><p>
+                        Uneducated; ignorant. Souce: Middle English Dictionary </p></note>
+                <note xml:id="marle" target="marle_" type="gloss" resp="editors.xml#AJB"><p> A
+                        fertilzer pit. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="rated" target="rated_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Scolded.' That is to say, John intends to warn Nicholas that studying
+                        astrology has brought him into contact with demons. </p></note>
+                <note xml:id="underspore" target="underspore_" type="gloss" resp="editors.xml#AJB"
+                        ><p> That is, pry the door open from below. Source: Middle English
+                        Dictionary. </p></note>
+                <note xml:id="carl" target="carl_" type="gloss" resp="editors.xml#AJB"><p> 'A man,
+                        usually of low estate.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="spitously" target="spitously_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Piteously; pitifully.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="elves" target="elves_" type="gloss" resp="editors.xml#AJB"><p> 'I
+                        bless you against elves and evil creatures.' </p></note>
+                <note xml:id="nightspel" target="nightspel_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Night-charm.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="sister" target="sister_" type="editorial" resp="editors.xml#AJB"><p>
+                        Scholars are uncertain about the reference Chaucer is making here. There are
+                        no references in surviving late antique or medieval sources to Saint Peter
+                        having a sister. </p></note>
+                <note xml:id="swinke" target="swinke_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Work'. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="trouthe" target="trouthe_" type="editorial" resp="editors.xml#AJB"><p>
+                        An individual's 'trouthe' (cognate to the modern term 'truth') refers to one
+                        innate sense of dignity and honesty. It was, and occasionally still is, used
+                        in wedding vows (e.g., 'I plight thee my <hi rend="italic">troth</hi>.')
+                    </p></note>
+                <note xml:id="labbe" target="labbe_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Blabbermouth'. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="noe" target="noe_" type="editorial" resp="editors.xml#AJB"><p> In his
+                        scheme to have sex with Alisoun, Nicholas is trying to convince John that
+                        God has revealed to him that the world will soon be flooded and the human
+                        race destroyed, as it was in Genesis 6–9. Nicholas' ploy here is especially
+                        ironic given that the Genesis narrative ends with God promising never to
+                        flood the earth again. </p></note>
+                <note xml:id="lore" target="lore_" type="gloss" resp="editors.xml#AJB"><p> 'Learning
+                        and counsel.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="salomon" target="salomon_" type="editorial" resp="editors.xml#AJB"><p>
+                        King Solomon, the son of King David and the third king of Israel. Solomon is
+                        the purported author of the Book of Proverbs in the Hebrew Bible and the
+                        Christian Old Testament, known principally known for his wisdom. </p></note>
+                <note xml:id="noahwife" target="noahwife_" type="editorial" resp="editors.xml#AJB"
+                        ><p> According to a popular apocryphal medieval legend, Noah's wife was
+                        hesitant to board the ark, preferring instead to gossip with the other wives
+                        in her village. </p></note>
+                <note xml:id="kimelin" target="kimelin_" type="editorial" resp="editors.xml#AJB"><p>
+                        A kneading trough was a large hollow table used to knead large quantities of
+                        dough <hi rend="italic">en masse</hi>. A 'kimelin' refers to a vat used for
+                        brewing beer. These are meant to be humorous reversals of Noah's Ark.
+                    </p></note>
+                <note xml:id="vitaille" target="vitaille_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Food'; cognate to the modern term 'victuals.' Source: Middle English
+                        Dictionary. </p></note>
+                <note xml:id="corde" target="corde_" type="editorial" resp="editors.xml#AJB"><p>
+                        Absolon has instructed John to tie bathtubs onto his roof, to store food and
+                        drink in them, and to cut the rope holding them when the 'flood' begins.
+                    </p></note>
+                <note xml:id="atwinne" target="atwinne_" type="gloss" resp="editors.xml#AJB"><p> Far
+                        apart. Absolon wants to make sure that John doesn't hear him and Alisoun
+                        leave their tubs to have sex. </p></note>
+                <note xml:id="balkes" target="balkes_" type="gloss" resp="editors.xml#AJB"><p> The
+                        beams of the roof. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="benedict" target="benedict_" type="editorial" resp="editors.xml#AJB"><p>
+                        <ref target="https://www.britannica.com/biography/Saint-Benedict-of-Nursia"
+                            >Saint Benedict of Nursia</ref> (ca. 480–547) is an early Christian
+                        saint who founded the monastic order known as the Benedictines. He is widely
+                        venerated as one of the fathers of Western monasticism. </p></note>
+                <note xml:id="paternoster" target="paternoster_" type="editorial"
+                    resp="editors.xml#AJB"><p> The <hi rend="italic">Pater Noster</hi> is the Our
+                        Father, one of the most fundamental Christian prayers. </p></note>
+                <note xml:id="travail" target="travail_" type="editorial" resp="editors.xml#AJB"><p>
+                        'For suffering of his spirit.' Chaucer is engaging in a bit of wordplay
+                        here, as 'travail' can also refer to the physical labor involved with
+                        preparing for the 'flood.' </p></note>
+                <note xml:id="routeth" target="routeth_" type="gloss" resp="editors.xml#AJB"><p> 'To
+                        snore.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="laudes" target="laudes_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Lauds' is the second canonical hour in church time, occuring around 6:00
+                        AM. The bells of the local parish church would ring at this hour to signal
+                        the beginning of the day. </p></note>
+                <note xml:id="pointdevys" target="pointdevys_" type="gloss" resp="editors.xml#AJB"
+                        ><p> 'In every detail.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="tete" target="tete_" type="editorial" resp="editors.xml#AJB"><p> 'I
+                        mourn as a lamb does for the teat.' 'Tete' here is a double entendre,
+                        inflected by Absolon's sexual interest in Alisoun. Source: Middle English
+                        Dictionary.</p></note>
+                <note xml:id="devel" target="devel_" type="gloss" resp="editors.xml#AJB"><p> 'In the
+                        name of twenty devils!' A curse. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="derk" target="derk_" type="gloss" resp="editors.xml#AJB"><p> 'The
+                        night was dark as pitch or coal.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="hole" target="hole_" type="gloss" resp="editors.xml#AJB"><p> 'Anus.'
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>. </p></note>
+                <note xml:id="ers" target="ers_" type="gloss" resp="editors.xml#AJB"><p> 'Ass.'
+                        Source: <ref target="https://quod.lib.umich.edu/m/middle-english-dictionary"
+                            > Middle English Dictionary</ref>.' </p></note>
+                <note xml:id="berd" target="berd_" type="gloss" resp="editors.xml#AJB"><p> 'For well
+                        he knew that no woman had a beard.' This is to say, Absolon can tell
+                        something is amiss because he can feel Alisoun's pubic hair. </p></note>
+                <note xml:id="corpus" target="corpus_" type="gloss" resp="editors.xml#AJB"><p>
+                        Latin, meaning 'body.' Nicholas is swearing upon God's body, i.e., the
+                        Eucharist. </p></note>
+                <note xml:id="despyt" target="despyt_" type="editorial" resp="editors.xml#AJB"><p>
+                        'I entrust my soul to Saton if I would not rather see all this town avenged
+                        after this insult.' Absolon's phrasing here is extremely convoluted,
+                        reflecting his furious and irrational state. </p></note>
+                <note xml:id="kers" target="kers_" type="gloss" resp="editors.xml#AJB"><p> 'He did
+                        not consider sexual encounters to be worth a watercress.' Source: Middle
+                        English Dictionary. </p></note>
+                <note xml:id="shaar" target="shaar_" type="gloss" resp="editors.xml#AJB"><p> 'He
+                        sharpens ploughshares and plough-blades busily.' Source: Middle English
+                        Dictionary. </p></note>
+                <note xml:id="rathe" target="rathe_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Early.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="benedicite" target="benedicite_" type="gloss" resp="editors.xml#AJB"
+                        ><p> Latin, meaning 'bless me!' </p></note>
+                <note xml:id="viritoot" target="viritoot_" type="editorial" resp="editors.xml#AJB"
+                        ><p> This is the only recorded instance of the word 'viritoot' in the
+                        English language. <ref target="https://www.jstor.org/stable/25096210">There
+                            is no consensus among scholars about what the word means</ref>, though
+                        most translate it as some form of 'upon the move.' </p></note>
+                <note xml:id="note" target="note_" type="editorial" resp="editors.xml#AJB"><p> St.
+                        Neot (d. 877) was an English monk at Glastonbury Abbey. He is a patron of
+                        fish and fisherman. </p></note>
+                <note xml:id="culter" target="culter_" type="gloss" resp="editors.xml#AJB"><p> 'Hot
+                        plough-blade.' Absolon intends to attack Alisoun with a red-hot piece of
+                        metal. </p></note>
+                <note xml:id="outhisers" target="outhisers_" type="gloss" resp="editors.xml#AJB"><p>
+                        'He secretly put out his ass.' Nicholas is hoping to trick Absolon in the
+                        same manner as Alisoun. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="fart" target="fart_" type="editorial" resp="editors.xml#AJB"><p> This
+                        scene is an even bawdier repetition of Absolon's kiss with Alisoun; here
+                        Alisoun's calling out to Absolon is replaced with Nicholas farting.
+                    </p></note>
+                <note xml:id="smoot" target="smoot_" type="gloss" resp="editors.xml#AJB"><p> 'And he
+                        smote Nicholas in the middle of his ass.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="skin" target="skin_" type="gloss" resp="editors.xml#AJB"><p> 'Off goes
+                        the skin, about the breadth of a hand.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="nowelis" target="nowelis_" type="editorial" resp="editors.xml#AJB"><p>
+                        The flood narrative of the Book of Genesis, chapters 6–9. God floods the
+                        earth, sparing only the lives of Noah, his wife, his sons, and his sons'
+                        wives, who together repopulate the earth. </p></note>
+                <note xml:id="aswowne" target="aswowne_" type="gloss" resp="editors.xml#AJB"><p>
+                        'And there in a swoon he lay.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="gauren" target="gauren_" type="gloss" resp="editors.xml#AJB"><p> 'To
+                        gawk.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="brosten" target="brosten_" type="gloss" resp="editors.xml#AJB"><p> 'He
+                        had broken his arm.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="companye" target="companye_" type="gloss" resp="editors.xml#AJB"><p>
+                        French, 'to keep him company.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="kyken" target="kyken_" type="gloss" resp="editors.xml#AJB"><p> 'Stare'
+                        and 'gape.' Source: Middle English Dictionary </p></note>
+                <note xml:id="reson" target="reson_" type="editorial" resp="editors.xml#AJB"><p>
+                        'Reson' here can refer either to John's literal reason for having fallen
+                        from the roof, or to his sanity. Source: Middle English
+                    Dictionary</p></note>
+                <note xml:id="wood" target="wood_" type="gloss" resp="editors.xml#AJB"><p> 'The man
+                        is mad, my dear brother.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="swyved" target="swyved_" type="gloss" resp="editors.xml#AJB"><p>
+                        'Swyved,' here is an expletive referring to sexual intercourse. Chaucer
+                        writes the Miller with an explicit lexicon to reinforce the bawdiness of his
+                        tale. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="nether" target="nether_" type="gloss" resp="editors.xml#AJB"><p>
+                        Literally, 'lower eye,' i.e., his anus. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="toute" target="toute_" type="gloss" resp="editors.xml#AJB"><p>
+                        Literally, 'burned on the rear.' Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+                <note xml:id="route" target="route_" type="gloss" resp="editors.xml#AJB"><p> Company
+                        of people, i.e., the pilgrims. Source: <ref
+                            target="https://quod.lib.umich.edu/m/middle-english-dictionary"> Middle
+                            English Dictionary</ref>. </p></note>
+            </div>
+        </back>
+    </text>
+</TEI>
