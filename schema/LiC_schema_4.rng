@@ -1147,13 +1147,20 @@
   <define name="graphic">
     <element name="graphic">
       <optional>
-        <attribute name="alt"/>
+        <attribute name="alt">
+          <data type="string"></data>
+        </attribute>
+        
       </optional>
       <optional>
-        <attribute name="desc"/>
+        <attribute name="desc">
+          <data type="string"></data>
+        </attribute>
       </optional>
       <optional>
-        <attribute name="source"/>
+        <attribute name="source">
+          <data type="anyURI"></data>
+        </attribute>
       </optional>
       <optional>
         <attribute name="style">
