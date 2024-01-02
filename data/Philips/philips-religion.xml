@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+
 
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="philips-religion">
@@ -27,7 +29,7 @@
 
                 <respStmt>
                     <resp>Transcription, correction, editorial commentary, and markup</resp>
-                    <name>Staff and Research Assistants at The University of Virginia</name>
+                    <name ref="editors.xml#UVAstudstaff">Staff and Research Assistants at The University of Virginia</name>
                     <name>John O'Brien</name>
                     <name>Sara Brunstetter</name>
                     <name>Rachel Retica</name>
@@ -98,7 +100,7 @@
                             </note>
                         </imprint>
                         <extent>[36], 198, [8], 112, [2] p. : port. ; 2⁰.</extent>
-                        <biblScope/>
+                        <biblScope>pp 59-61</biblScope>
                     </monogr>
                 </biblStruct>
 
