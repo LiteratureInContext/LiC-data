@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wharton-ladys-maids">
     <!--TEI Header BEGINS-->
     <teiHeader xml:lang="en">
@@ -11,9 +11,9 @@
                 <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
                 <author>
                     <persName type="lcnaf" key="n79151500">
-                        <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
-                        <forename>Edith</forename>
-                        <surname>Wharton</surname>
+                        <name><forename>Edith</forename>
+                            <surname>Wharton</surname>
+                        </name>
                     </persName>
                 </author>
                 <editor>
@@ -76,7 +76,10 @@
                     <monogr>
                         <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
                         <author>
-                            <persName/>
+                            <persName type="lcnaf" key="n79151500">
+                                <name><forename>Edith</forename></name>
+                                <surname>Wharton</surname>
+                            </persName>
                         </author>
                         <title>Scribner’s Magazine</title>
                         <imprint>
@@ -88,20 +91,16 @@
                             <publisher>Charles Scribner’s Sons</publisher>
                             <!-- Insert publsher of earliest/first edition. -->
                             <date when="1902">1902</date>
-                            <!-- Insert year of earliest/first edition. Note the attribute @when. -->
-
-                            <note>Page images are drawn from <ref
-                                    target="https://catalog.hathitrust.org/Record/000505912"
-                                    >HathiTrust</ref>'s digitized copy of Scribner's, Volume 32,
-                                sourced from the Univeristy of Chicago.</note>
-                            <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
                             <note>Text for this digital edition drawn from <ref
                                     target="https://www.gutenberg.org/files/4519/4519-h/4519-h.htm#bell"
                                     >Project Gutenberg</ref>, marked up in XML and checked against
-                                page images from HathiTrust. </note>
+                                page images from HathiTrust. Page images are drawn from <ref
+                                    target="https://catalog.hathitrust.org/Record/000505912"
+                                    >HathiTrust</ref>'s digitized copy of Scribner's, Volume 32,
+                                sourced from the Univeristy of Chicago.</note>
                         </imprint>
 
-                        <biblScope unit="volume">XXXII</biblScope>
+                        <biblScope unit="volume">Volume XXXII </biblScope>
                         <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
                         <biblScope>pp 549-560</biblScope>
                     </monogr>
@@ -225,17 +224,18 @@
         <body>
             <div>
                 <pb n="549" facs="pageImages/Bell_549.jpg"/>
-                <head type="title"><ref target="a0001" corresp="n0001">THE LADY’S MAID’S
+                <head type="title"><ref target="_intro" corresp="intro">THE LADY’S MAID’S
                     BELL</ref></head>
 
-                <head type="sub">By <ref target="a0002" corresp="n0002">Edith Wharton</ref></head>
+                <head type="sub">By <ref target="_wharton" corresp="wharton">Edith
+                    Wharton</ref></head>
 
 
                 <div type="part">
                     <head>I</head>
 
 
-                    <p>IT was the autumn after I had the <ref target="a0003" corresp="n0003">
+                    <p>IT was the autumn after I had the <ref target="_typhoid" corresp="typhoid">
                             typhoid</ref>. I'd been three months in hospital, and when I came out I
                         looked so weak and tottery that the two or three ladies I applied to were
                         afraid to engage me. Most of my money was gone, and after I'd boarded for
@@ -250,28 +250,30 @@
                         you. Come in tomorrow and we'll talk about it." </p>
                     <p>The next day, when I called, she told me the lady she'd in mind was a niece
                         of hers, a Mrs. Brympton, a youngish lady, but something of an invalid, who
-                        lived all the year round at her <ref target="a0004" corresp="n0004">
-                            country-place</ref> on the <placeName>Hudson</placeName>, owing to not
-                        being able to stand the fatigue of town life.</p>
+                        lived all the year round at her <ref target="_country-place"
+                            corresp="country-place"> country-place</ref> on the <placeName
+                            type="tgn" key="7013729">Hudson</placeName>, owing to not being able to
+                        stand the fatigue of town life.</p>
                     <p> "Now, Hartley," Mrs. Railton said, in that cheery way that always made me
                         feel things must be going to take a turn for the better—"now understand me;
                         it's not a cheerful place I'm sending you to. The house is big and gloomy;
-                        my niece is nervous, <ref target="a0005" corresp="n0005"> vaporish</ref>;
-                        her husband—well, he's generally away; and the two children are dead. A year
-                        ago, I would as soon have thought of shutting a rosy active girl like you
-                        into a vault; but you're not particularly brisk yourself just now, are you?
-                        and a quiet place, with country air and wholesome food and early hours,
-                        ought to be the very thing for you. Don't mistake me," she added, for I
-                        suppose I looked a trifle downcast; "you may find it dull, but you won't be
-                        unhappy. My niece is an angel. Her former maid, who died last spring, had
-                        been with her twenty years and worshipped the ground she walked on. She's a
-                        kind mistress to all, and where the mistress is kind, as you know, the
-                        servants are generally good-humored, so you'll probably get on well enough
-                        with the rest of the household. And you're the very woman I want for my
-                        niece: quiet, well-mannered, and educated above your station. You read aloud
-                        well, I think? That's a good thing; my niece likes to be read to. She wants
-                        a maid that can be something of a companion: her last was, and I can't say
-                        how she misses her. It's a lonely life . . . Well, have you decided?"</p>
+                        my niece is nervous, <ref target="_vaporish" corresp="vaporish"
+                            >vaporish</ref>; her husband—well, he's generally away; and the two
+                        children are dead. A year ago, I would as soon have thought of shutting a
+                        rosy active girl like you into a vault; but you're not particularly brisk
+                        yourself just now, are you? and a quiet place, with country air and
+                        wholesome food and early hours, ought to be the very thing for you. Don't
+                        mistake me," she added, for I suppose I looked a trifle downcast; "you may
+                        find it dull, but you won't be unhappy. My niece is an angel. Her former
+                        maid, who died last spring, had been with her twenty years and worshipped
+                        the ground she walked on. She's a kind mistress to all, and where the
+                        mistress is kind, as you know, the servants are generally good-humored, so
+                        you'll probably get on well enough with the rest of the household. And
+                        you're the very woman I want for my niece: quiet, well-mannered, and
+                        educated above your station. You read aloud well, I think? That's a good
+                        thing; my niece likes to be read to. She wants a maid that can be something
+                        of a companion: her last was, and I can't say how she misses her. It's a
+                        lonely life . . . Well, have you decided?"</p>
                     <p>"Why, ma'am," I said, "I'm not afraid of solitude."</p>
                     <p>"Well, then, go; my niece will take you on my recommendation. I'll telegraph
                         her at once and you can take the afternoon train. She has no one to wait on
@@ -282,7 +284,7 @@
                         quick-like—"and when he's there," says she suddenly, "you've only to keep
                         out of his way."</p>
                     <p>I took the afternoon train and got out at D—— station at about four o'clock.
-                        A <ref target="a0006" corresp="n0006"> groom in a dog-cart</ref> was
+                        A <ref target="_dog-cart" corresp="dog-cart">groom in a dog-cart</ref> was
                         waiting, and we drove off at a smart pace. It was a dull October day, with
                         rain hanging close overhead, and by the time we turned into the
                             <placeName>Brympton Place</placeName> woods the daylight was almost
@@ -336,9 +338,9 @@
                         with, and if I'd known, I shouldn't have taken the place. But there I was,
                         and there was no use pulling a long face over it; and not being one to ask
                         questions, I waited to see what would turn up.</p>
-                    <p>When tea was over, the house-maid said to the <ref target="a0007"
-                            corresp="n0007"> footman</ref>: "Has Mr. Ranford gone?" and when he said
-                        yes, she told me to come up with her to Mrs. Brympton.</p>
+                    <p>When tea was over, the house-maid said to the <ref target="_footman"
+                            corresp="footman">footman</ref>: "Has Mr. Ranford gone?" and when he
+                        said yes, she told me to come up with her to Mrs. Brympton.</p>
                     <p>Mrs. Brympton was lying down in her bedroom. Her lounge stood near the fire
                         and beside it was a shaded lamp. She was a delicate-looking lady, but when
                         she smiled I felt there was nothing I wouldn't do for her. She spoke very
@@ -359,8 +361,8 @@
                     <p>"No—Agnes will fetch you," says she quickly, and took up her book again.</p>
                     <p>Well—that was certainly strange: a <pb n="551" facs="pageImages/Bell_551.jpg"
                         />lady's maid having to be fetched by the house-maid whenever her lady
-                        wanted her! I wondered if there were no <ref target="a0008" corresp="n0008">
-                            bells</ref>in the house; but the next day I satisfied myself that there
+                        wanted her! I wondered if there were no <ref target="_bells" corresp="bells"
+                            >bells</ref>in the house; but the next day I satisfied myself that there
                         was one in every room, and a special one ringing from my mistress's room to
                         mine; and after that it did strike me as queer that, whenever Mrs. Brympton
                         wanted anything, she rang for Agnes, who had to walk the whole length of the
@@ -581,8 +583,8 @@
                         matches. At length I struck a light and jumped out of bed. I began to think
                         I must have been dreaming; but I looked at the bell against the wall, and
                         there was the little hammer still quivering.</p>
-                    <p>I was just beginning to<ref target="a0009" corresp="n0009"> huddle</ref> on
-                        my clothes when I heard another sound. This time it was the door of the
+                    <p>I was just beginning to <ref target="_huddle" corresp="huddle">huddle</ref>
+                        on my clothes when I heard another sound. This time it was the door of the
                         locked room opposite mine softly opening and closing. I heard the sound
                         distinctly, and it frightened me so that I stood stock still. Then I heard a
                         footstep hurrying down the passage toward the main house. The floor being
@@ -766,11 +768,11 @@
                         village, and I couldn't but think there was a change in him too ; but I set
                         it down to my disordered fancy.</p>
                     <p>The weeks passed, and Mr. Brympton had now been a month absent. We heard he
-                        was cruising with a friend in the <placeName><ref target="a0010"
-                                corresp="n0010">West Indies</ref></placeName>, and Mr. Wace said
-                        that was a long way off, but though you had the wings of a dove and went to
-                        the uttermost parts of the earth, you couldn't get away from the Almighty.
-                        Agnes said that as long as he stayed away from
+                        was cruising with a friend in the <placeName type="tgn" key="4001894"><ref
+                                target="_Indies" corresp="Indies">West Indies</ref></placeName>, and
+                        Mr. Wace said that was a long way off, but though you had the wings of a
+                        dove and went to the uttermost parts of the earth, you couldn't get away
+                        from the Almighty. Agnes said that as long as he stayed away from
                             <placeName>Brympton</placeName>, the Almighty might have him and welcome
                         ; and this raised a laugh, though Mrs. Blinder tried to look shocked, and
                         Mr. Wace said the bears would eat us.</p>
@@ -799,19 +801,19 @@
                         passage. This time I wasn't afraid to follow—I felt that I must know what
                         she wanted. I sprang up and ran out. She was at the other end of the
                         passage, and I expected her to take the turn toward my mistress's room ; but
-                        instead of that she pushed open the door that led to the<ref target="a0011"
-                            corresp="n0011">backstairs</ref>. I followed her down the stairs, and
-                        across the passageway to the back door. The kitchen and hall were empty at
-                        that hour, the servants being off duty, except for the footman, who was in
-                        the pantry. At the door she stood still a moment, with another look at me;
-                        then she turned the handle, and stepped out. For a minute I hesitated. Where
-                        was she leading me to ? The door had closed softly after her, and I opened
-                        it and looked out, half-expecting to find that she had disappeared. But I
-                        saw her a few yards off, hurrying across the court-yard to the path through
-                        the woods. Her figure looked black and lonely in the snow, and for a second
-                        my heart failed me and I thought of turning back. But all the while she was
-                        drawing me after her; and catching up an old shawl of Mrs. Blinder's I ran
-                        out into the open.</p>
+                        instead of that she pushed open the door that led to the <ref
+                            target="_backstairs" corresp="backstairs">backstairs</ref>. I followed
+                        her down the stairs, and across the passageway to the back door. The kitchen
+                        and hall were empty at that hour, the servants being off duty, except for
+                        the footman, who was in the pantry. At the door she stood still a moment,
+                        with another look at me; then she turned the handle, and stepped out. For a
+                        minute I hesitated. Where was she leading me to ? The door had closed softly
+                        after her, and I opened it and looked out, half-expecting to find that she
+                        had disappeared. But I saw her a few yards off, hurrying across the
+                        court-yard to the path through the woods. Her figure looked black and lonely
+                        in the snow, and for a second my heart failed me and I thought of turning
+                        back. But all the while she was drawing me after her; and catching up an old
+                        shawl of Mrs. Blinder's I ran out into the open.</p>
                     <p>Emma Saxon was in the wood-path now. She walked on steadily, and I followed
                         at the same pace, till we passed out of the gates and reached the high-road.
                         Then she struck across the open fields to the village. By this time the
@@ -822,27 +824,28 @@
                         none but us two in it, and no help in the wide world.</p>
                     <p>Once I tried to go back ; but she turned and looked at me, and it was as if
                         she had dragged me with ropes. After that I followed her like a dog. We came
-                        to the village, and she led me through it, past the church and the<ref
-                            target="a0012" corresp="n0012"> blacksmith's shop</ref>, and down the
-                        lane to Mr. Ranford's. Mr. Ranford's house stands close to the road: a plain
-                        old-fashioned building, with a <pb n="559" facs="pageImages/Bell_559.jpg"
-                        />flagged path leading to the door between box-borders. The lane was
-                        deserted, and as I turned into it, I saw Emma Saxon pause under the old elm
-                        by the gate. And now another fear came over me. I saw that we had reached
-                        the end of our journey, and that it was my turn to act. All the way from
-                            <placeName>Brympton</placeName> I had been asking myself what she wanted
-                        of me, but I had followed in a trance, as it were, and not till I saw her
-                        stop at Mr. Ranford's gate did my brain begin to clear itself. It stood a
-                        little way off in the snow, my heart beating fit to strangle me, and my feet
-                        frozen to the ground; and she stood under the elm and watched me.</p>
+                        to the village, and she led me through it, past the church and the <ref
+                            target="_blacksmith" corresp="blacksmith">blacksmith's shop</ref>, and
+                        down the lane to Mr. Ranford's. Mr. Ranford's house stands close to the
+                        road: a plain old-fashioned building, with a <pb n="559"
+                            facs="pageImages/Bell_559.jpg"/>flagged path leading to the door between
+                        box-borders. The lane was deserted, and as I turned into it, I saw Emma
+                        Saxon pause under the old elm by the gate. And now another fear came over
+                        me. I saw that we had reached the end of our journey, and that it was my
+                        turn to act. All the way from <placeName>Brympton</placeName> I had been
+                        asking myself what she wanted of me, but I had followed in a trance, as it
+                        were, and not till I saw her stop at Mr. Ranford's gate did my brain begin
+                        to clear itself. It stood a little way off in the snow, my heart beating fit
+                        to strangle me, and my feet frozen to the ground; and she stood under the
+                        elm and watched me.</p>
                     <p>I knew well enough that she hadn't led me there for nothing. I felt there was
                         something I ought to say or do—but how was I to guess what it was? I had
                         never thought harm of my mistress and Mr. Ranford, but I was sure now that,
                         from one cause or another, some dreadful thing hung over them. <hi
                             rend="italic">She</hi> knew what it was; she would tell me if she could;
                         perhaps she would answer if I questioned her.</p>
-                    <p>It turned me faint to think of speaking to her; but I<ref target="a0013"
-                            corresp="n0013"> plucked up heart</ref> and dragged myself across the
+                    <p>It turned me faint to think of speaking to her; but I <ref target="_plucked"
+                            corresp="plucked">plucked up heart</ref> and dragged myself across the
                         few yards between us. As I did so, I heard the house-door open, and saw Mr.
                         Ranford approaching. He looked handsome and cheerful, as my mistress had
                         looked that morning, and at sight of him the blood began to flow again in my
@@ -887,8 +890,8 @@
                         seemed to be covered with glue—I thought I should never get into my clothes.
                         At last I opened my door and peered down the passage. As far as my
                         candle-flame carried, I could see nothing unusual ahead of me. I hurried on,
-                        breathless ; but as I pushed open the<ref target="a0014" corresp="n0014"
-                            >baize door</ref>leading to the main hall my heart stood still, for
+                        breathless ; but as I pushed open the <ref target="_baize" corresp="baize"
+                            >baize door</ref> leading to the main hall my heart stood still, for
                         there at the head of the stairs was Emma <pb n="560"
                             facs="pageImages/Bell_560.jpg"/>Saxon, peering dreadfully down into the
                         darkness.</p>
@@ -935,9 +938,10 @@
                         door.</p>
                     <p>At that moment I heard a slight noise inside. Slight as it was, he heard it
                         too, and tore the door open; but as he did so he dropped back. On the <ref
-                            target="a0015" corresp="n0015"> threshold</ref>stood Emma Saxon. All was
-                        dark behind her but I saw her plainly, and so did he. He threw up his hands
-                        as if to hide his face from her; and when I looked again she was gone.</p>
+                            target="_threshold" corresp="threshold">threshold</ref> stood Emma
+                        Saxon. All was dark behind her but I saw her plainly, and so did he. He
+                        threw up his hands as if to hide his face from her; and when I looked again
+                        she was gone.</p>
                     <p>He stood motionless, as if the strength had run out of him; and in the
                         stillness my mistress suddenly raised herself, and opening her eyes fixed a
                         look on him. Then she fell back, and I saw the death-flutter pass over her.
@@ -963,49 +967,52 @@
 
         <back>
             <div>
-                <note xml:id="n0001" target="a0001" type="editorial" resp="editors.xml#EP">A classic
-                    ghost story first published in the November 1902 issue of Scribner's Magazine.
-                    It is about Alice Hartley who begins a job in a secluded country house as a
-                    caregiver to a woman who is ill and shortly thereafter makes troubling
+                <note xml:id="intro" target="_intro" type="editorial" resp="editors.xml#EP">A
+                    classic ghost story first published in the November 1902 issue of Scribner's
+                    Magazine. It is about Alice Hartley who begins a job in a secluded country house
+                    as a caregiver to a woman who is ill and shortly thereafter makes troubling
                     observations of the house, the marriage of her mistress, and the previous
                     caregiver who recently died. Strange noises, sightings of the deceased maid, her
-                    locked room, and ringing sound of a bell create an air of drama and mystery.<ref
+                    locked room, and ringing sound of a bell create an air of drama and mystery. To
+                    listen to an audio recording of <ref
                         target="https://play.google.com/store/audiobooks/details/Edith_Wharton_The_Lady_s_Maid_s_Bell?id=AQAAAIAvOi66EM"
-                        >The Lady’ Maid’s Bell</ref>.</note>
+                        >The Lady’ Maid’s Bell</ref>, see this link to Google Play.</note>
 
-                <note xml:id="n0002" target="a0002" type="editorial" resp="editors.xml#EP">Edith
-                    Wharton (1862-1937) was born into New York’s upper-class society. She broke
-                    through strict social limitations placed on women at the time, writing more than
-                    40 books, including novels and short stories, as well as works on architecture,
-                    interior design, and travel. Among her most notable works are, The Age of
-                    Innocence, Ethan Frome, and The House of Mirth. Wharton was the first woman to
-                    receive the Pulitzer Prize for Fiction. She received three nominations for the
-                    Nobel Prize in Literature, received an honorary Doctorate of Letters from Yale
-                    University, and full membership in the American Academy of Arts and Letters.
-                    Read more about her life in<ref
+                <note xml:id="wharton" target="_wharton" type="editorial" resp="editors.xml#EP"
+                    >Edith Wharton (1862-1937) was born into New York’s upper-class society. She
+                    broke through strict social limitations placed on women at the time, writing
+                    more than 40 books, including novels and short stories, as well as works on
+                    architecture, interior design, and travel. Among her most notable works are, The
+                    Age of Innocence, Ethan Frome, and The House of Mirth. Wharton was the first
+                    woman to receive the Pulitzer Prize for Fiction. She received three nominations
+                    for the Nobel Prize in Literature, received an honorary Doctorate of Letters
+                    from Yale University, and full membership in the American Academy of Arts and
+                    Letters. Read more about her life at <ref
                         target="https://www.edithwharton.org/discover/edith-wharton/">Edith
-                        Wharton</ref>. </note>
+                        Wharton</ref>.</note>
 
-                <note xml:id="n0003" target="a0003" type="editorial" resp="editors.xml#EP">A
+                <note xml:id="typhoid" target="_typhoid" type="editorial" resp="editors.xml#EP">A
                     systemic infection with symptoms including fever, headache, nausea, and
                     diarrhea. Caused by contaminated food or water. Severity varies, sometimes with
                     serious complications and can be fatal.</note>
-                <note xml:id="n0004" target="a0004" type="editorial" resp="editors.xml#EP"
-                    >Extravagant estate with luxurious mansion, landscaping and domestic staff on a
-                    very large, remote property.</note>
-                <note xml:id="n0005" target="a0005" type="editorial" resp="editors.xml#EP">Feeling
-                    faint, nervous, or depressed.</note>
-                <note xml:id="n0006" target="a0006" type="editorial" resp="editors.xml#EP"
-                        ><p>"Large, four-wheeled carriages for a single, pair or team of horses,
+                <note xml:id="country-place" target="_country-place" type="editorial"
+                    resp="editors.xml#EP">Extravagant estate with luxurious mansion, landscaping and
+                    domestic staff on a very large, remote property.</note>
+                <note xml:id="vaporish" target="_vaporish" type="editorial" resp="editors.xml#EP"
+                    >Feeling faint, nervous, or depressed.</note>
+                <note xml:id="dog-cart" target="_dog-cart" type="editorial" resp="editors.xml#EP"
+                            ><p><graphic
+                            url="https://hartlandcarriages.co.uk/wp-content/uploads/2016/08/p4300816.jpg"
+                            alt="Photograph of a back-to-back dog cart via Hartland Carriages"
+                            source="https://www.nationaltrustcollections.org.uk/object/272875.1"
+                        />"Large, four-wheeled carriages for a single, pair or team of horses,
                         driven by grooms who also manage the stables. They are named as such,
                         because they were originally designed to carry not only passengers, but also
                         dogs. They perform well on country terrain, so were very popular with
-                        country estates, even in the age of motor vehicles".<ref
+                        country estates, even in the age of motor vehicles" (<ref
                             target="https://www.nationaltrustcollections.org.uk/object/272875.1">
-                            Groom in a dog-cart</ref>.</p>
-                    <p><graphic
-                            url="https://hartlandcarriages.co.uk/wp-content/uploads/2016/08/p4300816.jpg"
-                        />According to the UK <ref
+                            National Trust</ref>).</p>
+                    <p>According to the UK <ref
                             target="https://www.nationaltrustcollections.org.uk/object/272875.1"
                             >National Trust</ref>, a dog cart was a "large, sporting, four-wheeled
                         carriage," considered "the ultimate" conveyance of the time. They are named
@@ -1013,79 +1020,78 @@
                         countryside. The image included here, from <ref
                             target="https://hartlandcarriages.co.uk/portfolio-item/back-to-back-dog-cart/"
                             >Hartland Carriages</ref>, shows a back-to-back dog cart. </p></note>
-                <note xml:id="n0007" target="a0007" type="editorial" resp="editors.xml#EP">A
+                <note xml:id="footman" target="_footman" type="editorial" resp="editors.xml#EP">A
                     uniformed worker with duties such as setting and waiting tables, serving food,
-                    clearing tables, opening and closing doors, and carrying luggage.<ref
+                    clearing tables, opening and closing doors, and carrying luggage (<ref
                         target="https://www.pbs.org/manorhouse/thepeople/charlie_duties.html"
-                        >Footman</ref>.</note>
-                <note xml:id="n0008" target="a0008" type="editorial" resp="editors.xml#EP">Country
+                        >PBS</ref>).</note>
+                <note xml:id="bells" target="_bells" type="editorial" resp="editors.xml#EP">Country
                     house design of this era typically included a servant’s hall, located in a
                     separate wing of the house. This required a bell to be used by members of the
                     household to summon staff for a wanted service. Bell types included sprung
-                    bells, bell pulls and electric bells. <ref
+                    bells, bell pulls and electric bells (<ref
                         target="https://www.nationaltrust.org.uk/features/did-you-ring-sir-country-house-communication-through-the-ages"
-                        > Bells</ref>.</note>
+                        >National Trust</ref>).</note>
 
 
-                <note xml:id="n0009" target="a0009" type="editorial" resp="editors.xml#ALB">To <ref
-                        target="https://www.wordreference.com/definition/huddle">huddle</ref>
+                <note xml:id="huddle" target="_huddle" type="editorial" resp="editors.xml#ALB">To
+                        <ref target="https://www.wordreference.com/definition/huddle">huddle</ref>
                     usually means to gather in a cluster or group but it also meant "to put on
                     (clothes) with careless haste," an outdated expression today.</note>
 
-                <note xml:id="n0010" target="a0010" type="editorial" resp="editors.xml#ALB">The West
-                    Indies are a chain of islands in the Caribbean Sea and Atlantic Ocean,
+                <note xml:id="Indies" target="_Indies" type="editorial" resp="editors.xml#ALB">The
+                    West Indies--a name given to the area by the British who had a notable colonial
+                    presence there--are a chain of islands in the Caribbean Sea and Atlantic Ocean,
                     stretching from the Bahamas to the northern tip of South America, an attractive
                     holiday destination with a warm climate and beautiful beaches. It includes 13
                     independent island countries and hundreds more smaller dependencies located in
                     three major Archipelagos: the Greater Antilles, the Lesser Antilles, and the
-                    Lucayan Archipelago.<ref
+                    Lucayan Archipelago (<ref
                         target="https://www.britannica.com/place/West-Indies-island-group-Atlantic-Ocean"
-                        >West Indies</ref>.</note>
+                        >Britannica</ref>).</note>
 
-                <note xml:id="n0011" target="a0011" type="editorial" resp="editors.xml#ALB">In a
-                    castle or a large manor house it was very important for the servants to keep out
-                    of sight, to be able to come and go without disturbing their employers. They
-                    were not allowed to use the traditional hallways and staircases but had their
-                    own passageways and backstairs. Inconspicuous doors in the public rooms led to
-                    their servants hallways and kitchens, whereby they entered as quietly and
-                    unobtrusively as possible to serve their employers.<ref
-                        target="    https://www.britannica.com/place/West-Indies-island-group-Atlantic-Ocean"
-                        >Backstairs</ref>. </note>
-                <note xml:id="n0012" target="a0012" type="editorial" resp="editors.xml#ALB">A
-                    metalsmith who works with wrought iron or steel using red hot fire to heat and
-                    shape the metal, makes repairs, tools and objects from weapons to decorative
-                    iron grates. Horseshoes are made by blacksmiths called farriers. Up until about
-                    the beginning of the 20th century, this shop was a common sight in farming and
-                    rural areas and in towns and villages. Today, artisans have revived this ancient
-                        tradition.<ref
+                <note xml:id="backstairs" target="_backstairs" type="editorial"
+                    resp="editors.xml#ALB">In a castle or a large manor house it was very important
+                    for the servants to keep out of sight, to be able to come and go without
+                    disturbing their employers. They were not allowed to use the traditional
+                    hallways and staircases but had their own passageways and backstairs.
+                    Inconspicuous doors in the public rooms led to their servants hallways and
+                    kitchens, whereby they entered as quietly and unobtrusively as possible to serve
+                    their employers.</note>
+                <note xml:id="blacksmith" target="_blacksmith" type="editorial"
+                    resp="editors.xml#ALB">A metalsmith who works with wrought iron or steel using
+                    red hot fire to heat and shape the metal, makes repairs, tools and objects from
+                    weapons to decorative iron grates. Horseshoes are made by blacksmiths called
+                    farriers. Up until about the beginning of the 20th century, this shop was a
+                    common sight in farming and rural areas and in towns and villages. Today,
+                    artisans have revived this ancient tradition (<ref
                         target="https://www.alamy.com/stock-photo/19th-century-blacksmith.html"
-                        >Blacksmith’s shop </ref>.</note>
+                        >Alamy</ref>).</note>
 
-                <note xml:id="n0013" target="a0013" type="editorial" resp="editors.xml#ALB">This is
-                    an old fashioned expression, also used in Shakespeare’s Much Ado About Nothing.
-                    It means to force yourself to become brave enough to do something; to summon
-                        courage.<ref
+                <note xml:id="plucked" target="_plucked" type="editorial" resp="editors.xml#ALB"
+                    >This is an old fashioned expression, also used in Shakespeare’s <hi
+                        rend="italic">Much Ado About Nothing</hi>, meaning to force yourself to
+                    become brave enough to do something; to summon courage (<ref
                         target="https://idiomorigins.org/origin/pluck-up-courageheartnervespirits-etc"
-                        >Plucked up heart</ref>.</note>
+                        >Idiom Origins</ref>).</note>
 
-                <note xml:id="n0014" target="a0014" type="editorial" resp="editors.xml#ALB"
+                <note xml:id="baize" target="_baize" type="editorial" resp="editors.xml#ALB"
                     >Reference most often used in regard to servants. It is a sturdy green wool
                     cloth that is attached to the side of a swing door. Popular during the mid-18th
                     and 19th century, also in Jane Austen’s world, this insulating fabric prevented
                     noises from disturbing individuals on either side. It also refers to the
-                    metaphorical dividing line between two domains, master and servant.<ref
+                    metaphorical dividing line between two domains, master and servant (<ref
                         target="  https://www.baizewoolfabrics.co.uk/product-insights/green-baize-doors/"
-                        >Baize door</ref>.</note>
-                <note xml:id="n0015" target="a0015" type="editorial" resp="editors.xml#ALB">In
-                    Gothic tales it is the liminal space between good and evil. Liminal comes from
-                    the Latin limen, which literally means "threshold." It refers to someone or
+                        >Baize Wool Fabrics</ref>).</note>
+                <note xml:id="threshold" target="_threshold" type="editorial" resp="editors.xml#ALB"
+                    >In Gothic tales it is the liminal space between good and evil. Liminal comes
+                    from the Latin limen, which literally means "threshold." It refers to someone or
                     something being on a boundary between two things - often two extremes, like a
                     transitory, 'in-between' state. Manuel Aguirre (Liminal Terror: The Poetics of
                     Gothic Space), a literary critic, cites liminality as a defining feature of
                     Gothic literature. Doors and windows are often literal and metaphorical
-                        thresholds.<ref
-                        target=" https://www.thegothiclibrary.com/gothic-vocab-liminal"
-                        >Threshold</ref>.</note>
+                    thresholds (<ref target=" https://www.thegothiclibrary.com/gothic-vocab-liminal"
+                        >Gothic Library</ref>).</note>
             </div>
         </back>
     </text>

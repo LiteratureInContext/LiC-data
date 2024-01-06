@@ -1,36 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="philips-death">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>"Death"</title>
-                
+
                 <author>
-                   
                     <persName type="lcnaf" key="n83206561">
                         <name>
                             <forename>Katherine</forename>
                             <surname>Philips</surname>
                         </name>
                     </persName>
-                   
                 </author>
-                
+
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name>
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
+                        </name>
+                    </persName>
+                </editor>
+
                 <respStmt>
                     <resp>Transcription, correction, editorial commentary, and markup</resp>
                     <name>Staff and Research Assistants at The University of Virginia</name>
                     <name>John O'Brien</name>
                     <name>Sara Brunstetter</name>
+                    <name>Rachel Retica</name>
                 </respStmt>
+
                 <sponsor/>
                 <funder>National Endowment for the Humanities</funder>
             </titleStmt>
-            
+
             <publicationStmt>
                 <publisher>Literature in Context</publisher>
-             
-             
+
                 <address>
                     <addrLine>University of Virginia Department of English</addrLine>
                     <addrLine>P. O. Box 400121</addrLine>
@@ -39,14 +49,14 @@
                     <addrLine>jobrien@virginia.edu</addrLine>
                     <addrLine>lic.open.anthology@gmail.com</addrLine>
                 </address>
-               
+
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                        License </licence>
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
                 </availability>
             </publicationStmt>
-            
+
             <sourceDesc>
                 <biblStruct>
                     <analytic>
@@ -59,33 +69,48 @@
                                 <surname>Philips</surname>
                             </name>
                         </author>
-                        <title type="main">Poems by the most deservedly admired Mrs. Katherine Philips, the matchless Orinda</title>
-                        <title type="sub">to which is added Monsieur Corneille's Pompey &amp; Horace, tragedies; with several other translations out of French</title>
-                        
+                        <title type="main">Poems by the most deservedly admired Mrs. Katherine
+                            Philips, the matchless Orinda</title>
+                        <title type="sub">to which is added Monsieur Corneille's Pompey &amp;
+                            Horace, tragedies; with several other translations out of French</title>
+
                         <imprint>
                             <pubPlace>
                                 <placeName type="TGN" key="7011781">London</placeName>
                             </pubPlace>
                             <publisher>Printed by J.M. for H. Herringman</publisher>
                             <date when="1667">1667</date>
-                            <note resp="editors.xml#JOB">This text is based on transcriptions created by the Early English Books Online Texts Creation Partnership, a library-based project directed by the University of Michigan and Oxford University. <ref target="http://name.umdl.umich.edu/A54716.0001.001
-                                ">Their digital text</ref> was produced from the 1667 edition, published by Henry Herringman in London in 1667, three years after Philips's death, but with the collaboration of her late husband. We have also consulted <hi rend="italics">The Collected Works of Katherine Philips</hi>, edited by Patrick Thomas (Essex: Stump Cross Books, 1990), which takes Philips's manuscript versions of her poems as its copytext. Annotations have been provided by faculty and students at the University of Virginia. For a full description of this object, see <ref target="http://estc.bl.uk/R19299">its ESTC entry</ref>.
+                            <note resp="editors.xml#JOB">This text is based on transcriptions
+                                created by the Early English Books Online Texts Creation
+                                Partnership, a library-based project directed by the University of
+                                Michigan and Oxford University. <ref
+                                    target="http://name.umdl.umich.edu/A54716.0001.001
+                                ">Their digital text</ref> was
+                                produced from the 1667 edition, published by Henry Herringman in
+                                London in 1667, three years after Philips's death, but with the
+                                collaboration of her late husband. We have also consulted <hi
+                                    rend="italics">The Collected Works of Katherine Philips</hi>,
+                                edited by Patrick Thomas (Essex: Stump Cross Books, 1990), which
+                                takes Philips's manuscript versions of her poems as its copytext.
+                                Annotations have been provided by faculty and students at the
+                                University of Virginia. For a full description of this object, see
+                                    <ref target="http://estc.bl.uk/R19299">its ESTC entry</ref>.
                             </note>
-                        </imprint>     
-                        <extent>[36], 198, [8], 112, [2] p. :  port. ;  2⁰.</extent>
-                        <biblScope></biblScope>
+                        </imprint>
+                        <extent>[36], 198, [8], 112, [2] p. : port. ; 2⁰.</extent>
+                        <biblScope/>
                     </monogr>
-                </biblStruct>    
-                
-              
-            </sourceDesc>        
+                </biblStruct>
+            </sourceDesc>
         </fileDesc>
-        
+
         <profileDesc>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
+
             <creation/>
+
             <textDesc n="poem">
                 <channel mode="w">print</channel>
                 <constitution type="single"/>
@@ -99,27 +124,27 @@
             <settingDesc>
                 <setting>
                     <name type="tgn" key="7011781">London, England</name>
-                    <name type="tgn" key="7001306">Dulin, Ireland</name>
-                    <time from="1631" to="1664">During her life time: 1631-1664.</time>
+                    <name type="tgn" key="7001306">Dublin, Ireland</name>
+                    <time from="1631" to="1664">During her lifetime: 1631-1664.</time>
                 </setting>
             </settingDesc>
         </profileDesc>
-        
+
         <encodingDesc>
-            <!-- BEGINS Encoding Description -->
             <projectDesc>
-                <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
-                    project, which provides an accessible, curated, and marked-up selection of primary
-                    sources relevant to the study and the teaching of British and American literature of
-                    the 18th century. This project is funded by the National Endowment for the Humanities
-                    and developed by faculty at The University of Virginia and Marymount University. </p>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                        Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
             </projectDesc>
             <editorialDecl>
                 <interpretation>
-                    <p>Research informing these annotations draws on publicly-accessible resources, with
-                        links provided where possible. Annotations have also included common knowledge,
-                        defined as information that can be found in multiple reliable sources. If you
-                        notice an error in these annotations, please contact
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
                         lic.open.anthology@gmail.com.</p>
                 </interpretation>
                 <normalization>
@@ -127,17 +152,17 @@
                         silently modernized and ligatured forms are not encoded.</p>
                 </normalization>
                 <hyphenation>
-                    <p>Hyphenation has not been retained, except where necessary for the sense of the
-                        word.</p>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
                 </hyphenation>
                 <segmentation>
-                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
-                        not. Where pages break in the middle of a word, the complete word has been
-                        indicated prior to the page beginning. </p>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
                 </segmentation>
                 <correction>
-                    <p>Materials have been transcribed from and checked against first editions, where
-                        possible. See the Sources section.</p>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
                 </correction>
             </editorialDecl>
             <tagsDecl>
@@ -161,64 +186,77 @@
             </classDecl>
         </encodingDesc>
     </teiHeader>
-    
-    
-    
-    
-  <text>
-      <body>
-          <div>
-             
-              <pb n="119" facs="pageImages/Philips-p119.jpg"/>   
-              <head type="title">Death.</head>
-    <lg type="Stanza">
-        <l n="1"><ref target="a001" corresp="n001">How weak a Star doth rule Mankind</ref><note xml:id="n001" target="a001">Our sun compared to others in the universe is considered weak, and yet if it explodes mankind dies.</note>,</l> 
-        <l n="2">Which owes its ruine to the same</l> 
-        <l n="3">Causes which Nature had design'd</l> 
-        <l n="4">To cherish and preserve the frame!</l>
-    </lg>
-              
-    <lg>
-        <l n="5"><ref target="a002" corresp="n002">As Commonwealths may be secure, And so our bodies turn traitorous</ref><note xml:id="a002" target="n002">We don’t fear outside violence but fear what is in our bodies. Such as mental illness, disease, or aging.</note></l> 
-            <l n="6">And no remote Invasion dread;</l>
-            <l n="7">Yet may a sadder fall endure</l> 
-            <l n="8">From Traitors in their bosom bred:</l>
-    </lg>
-              
-              <pb n="120" facs="pageImages/Philips-p120.jpg"/>
-              
-    <lg>
-        <l n="9"><ref target="a003" corresp="n003">So while we feel no violence,</ref><note xml:id="n003" target="a003">(DRAFT-I worry this is too interpretive)We are not privy to the knowledge of the world in that we can sense things for example a volcano erupting.</note></l> 
-        <l n="10">And on our active Health do trust,</l> 
-        <l n="11"><ref target="a004" corresp="n004">A secret hand</ref><note xml:id="n004" target="a004">Death or time.</note>doth snatch us hence,</l>
-        <l n="12"><ref target="a005" corresp="n005">And tumbles us into the dust</ref><note xml:id="n005" target="a005">Biblical reference, we start as dust, and then return to dust.</note>.</l>
-    </lg>
-    <lg>
-        <l n="13"><ref target="a006" corresp="n006">Yet carelesly</ref><note xml:id="n006" target="a006">(DRAFT)As if we are untouchable by death.</note>we run our race,</l> 
-        <l n="14">As if we could Death's summons wave;</l> 
-        <l n="15">And think not on <ref target="a007" corresp="n007">the narrow space</ref><note xml:id="n007" target="a007">(DRAFT)The narrow space refers to the limited lifespan.</note></l> 
-        <l n="16"><ref target="a008" corresp="n008">Between a Table and a Grave</ref><note xml:id="n008" target="a008">A table in which you theoretically enter the world on, and a grave in which you exit the world in.</note>.</l>
-    </lg>
-    <lg>
-        <l n="17">But since we cannot Death reprieve,</l> 
-        <l n="18">Our Souls and Fame we ought to mind,</l> 
-        <l n="19">For they our Bodies will survive;</l> 
-        <l n="20">That goes beyond, this stays behind.</l>
-    </lg>
-    <lg>
-        <l n="21">If I be sure my Soul is safe,</l> 
-        <l n="22">And that my Actions will provide</l> 
-        <l n="23">My Tomb a nobler <ref target="a009" corresp="n009">Epitaph</ref><note xml:id="n009" target="a009">An inscription or written tribute in memory of a person on a tombstone. Source: Oxford English Dictionary</note>,</l> 
-        <l n="24"><ref target="a010" corresp="n010">Then</ref><note xml:id="n010" target="a010">(DRAFT) Is this supposed to read "then" or was this a mistake.</note>that I onely liv'd and dy’d.</l>
-    </lg>
-    <lg>
-        <l n="25">So that in various accidents</l> 
-        <l n="26">I Conscience may and Honour keep;</l> 
-        <l n="27">I with that ease and innocence</l> 
-        <l n="28">Shall die, as Infants go to sleep</l>
-    </lg>
 
-          </div>
-      </body>
-  </text>  
+
+
+
+    <text>
+        <body>
+            <div>
+
+                <pb n="119" facs="pageImages/Philips-p119.jpg"/>
+                <head type="title">Death.</head>
+                <lg type="Stanza">
+                    <l n="1"><ref target="_Star" corresp="Star">How weak a Star doth rule
+                            Mankind</ref><note xml:id="Star" target="_Star">Compared to the
+                            universe's other stars, the sun was considered weak.</note>,</l>
+                    <l n="2">Which owes its ruine to the same</l>
+                    <l n="3">Causes which Nature had design'd</l>
+                    <l n="4">To cherish and preserve the frame!</l>
+                </lg>
+
+                <lg>
+                    <l n="5">As Commonwealths may be secure,</l>
+                    <l n="6">And no remote Invasion dread;</l>
+                    <l n="7">Yet may a sadder fall endure</l>
+                    <l n="8">From Traitors in their bosom bred:</l>
+                </lg>
+
+                <pb n="120" facs="pageImages/Philips-p120.jpg"/>
+
+                <lg>
+                    <l n="9">So while we feel no violence,</l>
+                    <l n="10">And on our active Health do trust,</l>
+                    <l n="11">A secret hand doth snatch us hence,</l>
+                    <l n="12">And tumbles us into the dust.</l>
+                </lg>
+                <lg>
+                    <l n="13">Yet carelesly we run our race,</l>
+                    <l n="14">As if we could Death's summons wave;</l>
+                    <l n="15">And think not on <ref target="_narrowspace" corresp="narrow_space">the
+                            narrow space</ref><note xml:id="narrow_space" target="_narrowspace">
+                            i.e. a limited lifespan; from the table, where life begins, to the
+                            grave, where it ends.</note></l>
+                    <l n="16">Between a Table and a Grave.</l>
+                </lg>
+                <lg>
+                    <l n="17">But since we cannot Death reprieve,</l>
+                    <l n="18">Our Souls and Fame we ought to mind,</l>
+                    <l n="19">For they our Bodies will survive;</l>
+                    <l n="20">That goes beyond, this stays behind.</l>
+                </lg>
+                <lg>
+                    <l n="21">If I be sure my Soul is safe,</l>
+                    <l n="22">And that my Actions will provide</l>
+                    <l n="23">My Tomb a nobler <ref target="_epitaph" corresp="Epitaph"
+                            >Epitaph,</ref><note xml:id="Epitaph" target="_epitaph">A tribute
+                            written in memory of a deceased person, often as an inscription on a
+                            tombstone (Oxford English Dictionary).</note></l>
+                    <l n="24">Then that I onely liv'd and dy’d.</l>
+                </lg>
+                <lg>
+                    <l n="25">So that in various <ref target="_Accidents" corresp="Accidents"
+                            >accidents</ref><note xml:id="Accidents" target="_Accidents">Events that
+                            happen by chance or without expectation. Sometimes with a negative
+                            connotation, as in being unfortunate or unforeseen (Oxford English
+                            Dictionary).</note>
+                    </l>
+                    <l n="26">I Conscience may and Honour keep;</l>
+                    <l n="27">I with that ease and innocence</l>
+                    <l n="28">Shall die, as Infants go to sleep.</l>
+                </lg>
+
+            </div>
+        </body>
+    </text>
 </TEI>

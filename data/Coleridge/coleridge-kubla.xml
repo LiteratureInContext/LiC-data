@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="coleridge-kubla">
+   
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"Kubla Khan: A Vision"</title>
+            <author>
+              
+               <persName type="lcnaf" key="n78095462">     
+                 <name>           
+                     <forename>Samuel Taylor</forename> 
+                    <surname>Coleridge</surname></name>
+                   
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="000000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+             
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#StudStaff"
+                  >Students and Staff of the University of Virginia</name>
+               
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            
+            <address>
+               <addrLine>University of Virginia Department of English</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA</addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title>"Kubla Khan: A Vision"</title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Samuel Taylor</forename>
+                        <surname>Coleridge</surname>
+                      
+                     </name>
+                  </author>
+
+                  <title>Cristabel, Kubla Khan: A Vision, The Pains of Sleep</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781"
+                           >London</placeName>
+                     </pubPlace>
+                     <publisher>John Murray</publisher>
+                     <date when="1816">1816</date>
+                     <note>"Kubla Khan" was first published in 1816, in a volume containing three poems by Coleridge: this one, "Cristabel" and "The Pains of Sleep." We are reproducing the text of that first printing, which Coleridge did not alter much afterwards. Coleridge's claim that the poem was originally written 1798 seems entirely plausible, but is impossible to prove. We do know that the "poet of great and deserved celebrity" mentioned in Coleridge's prefatory note was Byron, who heard Coleridge recite the poem in 1815 or 1816, urged him to publish it, and probably helped him get the volume of poems published with the prestigious London publisher John Murray, who was Byron's publisher as well. Our page images are from the Google Books version of the first edition.</note>
+                     
+                    
+                  </imprint>
+
+                 
+
+                  <extent></extent>
+                  <biblScope>51-58</biblScope>
+                 
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            
+            <channel mode="w">print</channel>
+            
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="fiction"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+       
+         </textDesc>
+
+         <settingDesc>
+
+            <setting/>
+               
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2023-11-20" who="editors.xml#JOB"
+            >John O'Brien created Literature in Context edition.</change>
+        
+      </revisionDesc>
+
+   </teiHeader>
+
+   <text>
+      
+      <front>
+         <pb n="" facs="pageImages/50.png"/>
+         
+         <titlePage>
+            <titlePart>
+               <lb/><hi rend="goth">Kubla Khan:</hi>
+               <lb/> <hi rend="small caps">OR</hi>
+               <lb/> A VISION IN A DREAM<lb/>
+            </titlePart>
+            <docImprint></docImprint>
+         </titlePage>
+         
+      </front>
+
+      <body>
+        
+         <div type="poem">
+        
+            <pb n="" facs="pageImages/51.png"/>
+            
+
+         <head type="sub"><hi rend="small caps">OF THE</hi><lb/>
+         FRAGMENT OF KUBLA KHAN</head>
+            <lb/>
+          <p>The following fragment is here published at the request
+          of a poet of great and deserved celebrity, and,
+          as far as the Author's own opinions are concerned, rather as
+          a psychological curiosity, than on the ground of any supposed
+          poetic merits.</p>
+          
+          <p>In the summer of the year 1797, the Author, then in ill
+          health, had retired to a lonely farm-house between Porlock
+          and Linton, on the Exmoor confines of Somerset and Devonshire.
+          In 
+          
+             <pb n="52" facs="pageImages/52.png"/>
+             consequence of a slight indisposition, an <ref target="anodyne_" corresp="anodyne">anodyne</ref><note xml:id="anodyne"
+                target="anodyne_">The "anodyne" was almost certainly laudanum, which combined powdered opium and 
+             alchohol. Laudanum was widely prescribed in this period for a variety of illnesses; Coleridge became
+             addicted to the drug.</note>
+          had been prescribed, from the effects of which he fell asleep
+          in his chair at the moment that he was reading the following
+          sentence, or words of the same substance, in <ref target="Purchas_" corresp="Purchas">"Purchas's
+             Pilgrimage:"</ref><note xml:id="Purchas"
+                target="Purchas_"><ref target="https://www.google.com/books/edition/Purchas_His_Pilgrimage_Or_Relations_of_t/jkZpAAAAcAAJ?hl=en"><hi rend="italic">Purchas His Pilgrimage</hi></ref>, a compilation of travel narratives assembled by Samuel Purchas and published in 1626.</note> "Here the Khan Kubla commanded a palace
+          to be built, and a stately garden thereunto. And thus ten
+          miles of fertile ground were inclosed with a wall." The
+          Author continued for about three hours in a profound sleep,
+          at least of the external senses, during which time he has the
+          most vivid confidence, that he could not have composed less
+          than from two to three hundred lines; if that indeed can
+          be called composition in which all the images rose up before
+          him as things, with a parallel production of the correspondent
+          expressions, without any sensation or consciousness of effort.
+          On awaking he appeared to himself to have a distinct recollection
+          of the whole, and taking his pen, ink, and paper, instantly
+          and eagerly wrote down the lines that are here preserved. At
+          this 
+          
+             <pb n="53" facs="pageImages/53.png"/>
+          moment he was unfortunately called out by a person on
+          business from Porlock, and detained by him above an hour,
+          and on his return to his room, found, to his no small surprise
+          and mortification, that though he still retained some vague
+          and dim recollection of the general purport of the vision, yet,
+          with the exception of some eight or ten scattered lines and
+          images, all the rest had passed away like the images on the
+          surface of a stream into which a stone has been cast, but, alas!
+          without the after restoration of the latter:</p>
+          
+          <div type="poem">
+          <lg type="stanza">
+              <l rend="indent">Then all the charm</l>
+              <l>Is broken—all that phantom-world so fair</l>
+              <l>Vanishes, and a thousand circlets spread,</l>
+              <l>And each mis-shape the other. Stay awhile,</l>
+              <l>Poor youth! who scarcely dar'st lift up thine eyes—</l>
+              <l>The stream will soon renew its smoothness, soon</l>
+              <l>The visions will return! And lo, he stays,</l>
+              <l>And soon the fragments dim of lovely forms</l>
+              <l>Come trembling back, unite, and now once more</l>
+              <l>The pool becomes a mirror.</l></lg></div>
+          
+            <p>Yet from the still surviving recollections in his    <pb n="54" facs="pageImages/54.png"/>
+               mind, the Author has frequently purposed to finish for himself what had
+          been originally, as it were, given to him. Σαμερον αδιον ασω: but the to-morrow is yet to come.</p>
+          
+          <p>As a contrast to this vision, I have annexed a fragment of a
+          very different character, describing with equal fidelity the
+          dream of pain and disease.</p>
+          
+            <pb n="55" facs="pageImages/55.png"/>
+          <head>KUBLA KHAN.</head>
+          <div type="stanza">
+             <lg><l>In Xanadu did <hi rend="small caps">Kubla Khan</hi></l>
+              <l>A stately pleasure-dome decree:</l>
+                <l>Where <hi rend="small caps">Alph</hi>, the sacred river, ran</l>
+              <l n="5">Through caverns measureless to man</l>
+              <l rend="indent">Down to a sunless sea.</l>
+              <l>So twice five miles of fertile ground</l>
+              <l>With walls and towers were girdled round:</l>
+                <pb n="56" facs="pageImages/56.png"/>
+              <l>And there were gardens bright with sinuous rills,</l>
+              <l>Where blossomed many an incense-bearing tree;</l>
+              <l n="10"> And here were forests ancient as the hills,</l>
+              <l>Enfolding sunny spots of greenery.</l></lg>
+             
+             <lg type="stanza">
+              <l>But oh! that deep romantic chasm which slanted</l>
+              <l>Down the green hill athwart a cedarn cover!</l>
+              <l>A savage place! as holy and enchanted</l>
+              <l n="15">As e'er beneath a waning moon was haunted</l>
+              <l>By woman wailing for her demon-lover!</l>
+              <l>And from this chasm, with ceaseless turmoil seething,</l>
+              <l>As if this earth in fast thick pants were breathing,</l>
+              <l>A mighty fountain momently was forced:</l>
+              <l n="20">Amid whose swift half-intermitted Burst</l>
+              <l>Huge fragments vaulted like rebounding hail,</l>
+              <l>Or chaffy grain beneath the thresher's flail:</l>
+              <l>And 'mid these dancing rocks at once and ever</l>
+              <l>It flung up momently the sacred river.</l>
+                
+                <pb n="57" facs="pageImages/57.png"/>
+              <l n="25">Five miles meandering with a mazy motion</l>
+              <l>Through wood and dale the sacred river ran,</l>
+              <l>Then reached the caverns measureless to man</l>
+              <l>And sank in tumult to a lifeless ocean:</l>
+              <l>And 'mid this tumult Kubla heard from far</l>
+              <l n="30">Ancestral voices prophesying war!</l></lg>
+             
+             <lg type="stanza">
+              <l rend="indent">The shadow of the dome of pleasure</l>
+             <l rend="indent">Floated midway on the waves;</l>
+             <l rend="indent">Where was heard the mingled measure</l>
+             <l rend="indent">From the fountain and the caves.</l>
+              <l n="35">It was a miracle of rare device,</l>
+              <l>A sunny pleasure-dome with caves of ice!</l>
+             </lg>
+             
+             <lg type="stanza">
+                <l rend="indent">A damsel with a dulcimer</l>
+                <l rend="indent">In a vision once I saw:</l>
+                <l rend="indent">It was an Abyssinian maid,</l>
+                <l rend="indent" n="40">And on her dulcimer she played,</l>
+                <pb n="58" facs="https://lic-assets-staging.s3.amazonaws.com/coleridge-kubla/pageImages/58.png"/>
+                <l rend="indent">Singing of Mount Abora.</l>
+                <l rend="indent">Could I revive within me</l>
+                   <l rend="indent">Her symphony and song,</l>
+                      <l rend="indent">To such a deep delight 'twould win me,</l>
+              <l n="45">That with music loud and long,</l>
+              <l>I would build that dome in air,</l>
+              <l>That sunny dome! those caves of ice!</l>
+              <l>And all who heard should see them there,</l>
+              <l>And all should cry, Beware! Beware!</l>
+              <l n="50"> His flashing eyes, his floating hair!</l>
+              <l> Weave a circle round him thrice,</l>
+              <l> And close your eyes with holy dread,</l>
+              <l>For he on honey-dew hath fed,</l>
+              <l>And drunk the milk of Paradise.</l>
+          </lg> </div></div>
+      </body>
+   </text>
+</TEI>
+
+
+

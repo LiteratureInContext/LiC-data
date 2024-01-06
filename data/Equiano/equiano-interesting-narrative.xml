@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="equiano-interesting-narrative">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>The interesting narrative of the life of Olaudah Equiano: or Gustavus Vassa, the
-               African.</title>
+            <title>The interesting narrative of the life of Olaudah Equiano: or Gustavus Vassa, the African.</title>
             <author>
                <persName type="lcnaf" key="n50027909">
                   <name>
-                     <forename>Olaudah </forename>
+                     <forename>Olaudah</forename>
                      <surname>Equiano</surname>
                   </name>
                </persName>
@@ -26,12 +25,12 @@
             <respStmt>
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name>Staff and Research Assistants at The University of Virginia</name>
-               <name ref="editors.xml#SB"><forename>Sara </forename>
-                  <surname>Brunstetter</surname></name>
-               <name ref="editors.xml#JOB"><forename> John </forename>
-                  <surname> O'Brien</surname></name>
-               <name ref="editors.xml#AB"><forename> Austin </forename>
-                  <surname>Benson</surname></name>
+               <name ref="editors.xml#SB">Sara 
+                 Brunstetter</name>
+               <name ref="editors.xml#JOB">John
+                  O'Brien</name>
+               <name ref="editors.xml#AB">Austin
+                  Benson</name>
             </respStmt>
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
@@ -60,20 +59,14 @@
                         <name>
                            <forename>Olaudah</forename>
                            <surname>Equiano</surname>
-                           <date when="1745">Birth: 1745</date>
-                           <date when="1797-03-31">Death: 1797 March 31</date>
-                           <roleName>Explorer, Writer, Merchant, and Abolitionist</roleName>
-                           <affiliation>Married</affiliation>
-                           <country>England</country>
                         </name>
                      </persName>
                   </author>
                   <title type="main">The Interesting Narrative of the Life of Olaudah
-                     Equiano</title>
-                  <title type="sub">Gustavus Vassa, the African. Written by himself</title>
+                     Equiano: or Gustavus Vassa, the African</title>
                   <imprint>
                      <pubPlace>
-                        <placeName type="country" key="eng">England</placeName>
+                        <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
                      <publisher>Olaudah Equiano</publisher>
                      <date when="1789">1789</date>
@@ -169,64 +162,92 @@
             </taxonomy>
          </classDecl>
       </encodingDesc>
+      
       <profileDesc>
          <langUsage>
             <language ident="eng">eng</language>
          </langUsage>
+         <creation/>
+         <textDesc n="memoir">
+            
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single work</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="entertain" degree="medium"/>
+         </textDesc>
+         
+         <settingDesc>
+            
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <name type="tgn" key="7005332">Bahamas</name>
+               <name type="tgn" key="7007712">South Carolina</name>
+               <name type="tgn" key="7593183">Arctic</name>
+               <name type="tgn" key="1000182">Nigeria</name>
+               <time from="1750" to="1800">Early 18th Century</time>
+               
+            </setting>
+            
+         </settingDesc>
       </profileDesc>
    </teiHeader>
-   <text xml:lang="eng">
+   <text>
       <front>
          <div type="frontispiece">
-            <pb n="[frontispiece]" facs="pageImages/Equiano-vol1-pI.jpg"/>
+            <pb n="[Frontispiece]" facs="pageImages/Equiano-vol1-pI.jpg"/>
             <head type="sub"><hi rend="italic">Olaudah Equiano</hi><lb/> or<lb/> Gustavus Vassa,<lb/>
                <hi rend="italic">the African</hi><lb/></head>
             <head type="sub"><hi rend="italic">Published March 1 1789 by G. Vassa</hi></head>
          </div>
-         <pb n="[TP]" facs="pageImages/Equiano-vol1-pII.jpg"/>
+         <pb n="[Title Page]" facs="pageImages/Equiano-vol1-pII.jpg"/>
          <titlePage>
             <docTitle>
                <titlePart> THE<lb/>INTERESTING NARRATIVE<lb/> OF<lb/> THE LIFE <lb/>OF <lb/>OLAUDAH
                   EQUIANO,<lb/> OR <lb/>GUSTAVUS VASSA,<lb/> THE AFRICAN.<lb/></titlePart>
             </docTitle>
-            <docAuthor><hi rend="italic">WRITTEN BY HIMSELF.<lb/></hi></docAuthor>
+            <docAuthor><hi rend="italic">WRITTEN BY HIMSELF.</hi></docAuthor><lb/>
             <titlePart> VOL 1.<lb/></titlePart>
             <epigraph>
                <quote>
-                  <p><hi rend="italic">Behold, God is my salvation; I will trust and not be afraid,
+                 <hi rend="italic">Behold, God is my salvation; I will trust and not be afraid,
                         for the Lord Jehovah is my strength and my song; he also is become my
                         salvation.</hi>
-                  </p>
-                  <p>
+                  
                      <hi rend="italic">And in that day shall ye say, Praise the Lord, call upon his
                         name, declare his doings among the people,</hi>
-                  </p>
+                  
                   <bibl>Isaiah xii. 2, 4.<lb/></bibl>
                </quote>
             </epigraph>
             <titlePart> SECOND EDITION.<lb/></titlePart>
             <docImprint>
                <pubPlace> LONDON:<lb/></pubPlace>
-               <publisher> Printed and sold for the AUTHOR, by T. Wilkins, No. 23, Aldermanbury;
+               <publisher>Printed and sold for the AUTHOR, by T. Wilkins, No. 23, Aldermanbury;
                   sold also by Mr. Johnson, St. Paul's Church-Yard; Mr. Buckland, Paternoster-Row;
                   Messrs. Robson and Clark, Bond-street; Mr. Davis, opposite Gray's-Inn, Holborn;
-                  Mr. Matthews, strand; Mr Stockdale, Piccadilly; Mr. Richardson, Royal Exchange;
+                  Mr. Matthews, Strand; Mr Stockdale, Piccadilly; Mr. Richardson, Royal Exchange;
                   Mr. Kearsley, Fleet-street; and the Booksellers in Oxford and
-                  Cambridge.</publisher></docImprint>
-            <note><hi rend="italic">[Entered at stationers-hall.</hi>]</note>
+                  Cambridge.</publisher>
+               <hi rend="italic">[Entered at stationers-hall.</hi>]</docImprint>
          </titlePage>
          <div type="dedication">
             <pb n="iii" facs="pageImages/Equiano-vol1-pIII.jpg"/>
             <head>To the Lords spiritual and Temporal, and the Commons of the Parliament of Great
                Britain.</head>
             <opener>
-               <salute><hi rend="italic">My Lords and Gentlemen</hi>,</salute>
+               <salute>My Lords and Gentlemen,</salute>
             </opener>
             <p>PERMIT me, with the greatest deference and respect, to lay at your feet the following
                genuine Narrative; the chief design of which is to excite in your august assemblies a
                sense of compassion for the miseries which the Slave-Trade has entailed on my
                unfortunate countrymen. By the horrors of that trade was I first torn away from all
-               the tender connex ons that were naturally dear to my heart; but these, <pb n="iv"
+               the tender connexions that were naturally dear to my heart; but these, <pb n="iv"
                   facs="pageImages/Equiano-vol1-pIV.jpg"/> through the mysterious ways of
                Providence, I ought to regard as infinitely more than compensated by the introduction
                I have thence obtained to the knowledge of the Christian religion, and of a nation
@@ -246,8 +267,8 @@
             <closer>
                <signed>I am, MY LORDS AND GENTLEMEN, Your most obedient, And devoted humble servant,
                   OLAUDAH EQUIANO, OR GUSTAVUS VASSA.</signed>
-               <dateline>No. 10, Union-Street, Mary-le-bone, <date>Dec. 24, 1789.</date>
-               </dateline>
+               <date>No. 10, Union-Street, Mary-le-bone, Dec. 24, 1789.
+               </date>
             </closer>
          </div>
          <div type="list_of_subscribers">
@@ -761,20 +782,21 @@
                      between Admiral Boscawen and Monsieur Le Clue</hi> — Page 130</l>
                <l>CHAP. V. <hi rend="italic">Various interesting instances of oppression, cruelty,
                      and extortion</hi> — Page 180</l>
-               <l>CHAP. VI. <hi rend="italic">Favourable change in the author's situ ation—He
+               <l>CHAP. VI. <hi rend="italic">Favourable change in the author's situation—He
                      commences merchant with threepence</hi> — Page 227</l>
             </lg>
          </div>
       </front>
       <body>
          <div type="volume" n="1">
+            <pb n="1"/>
             <head type="title">
-               <pb n="1"
+             
                   facs="https://lic-assets-staging.s3.amazonaws.com/equiano-interesting-narrative/pageImages/Equiano-vol1-p1.jpg"
                /> THE LIFE, &amp;c.</head>
             <div n="1" type="chapter">
                <head>CHAPTER I.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author's account of his country, and their manners and
                         customs, Administration of Justice—Embrenché—Marriage ceremony, and public
@@ -782,10 +804,10 @@
                         Buildings—Commerce—Agriculture—War and religion—superstition of the
                         natives—Funeral ceremonies of the priests or magicians—Curious mode of
                         discovering poison—some hints concerning the origin of the author's
-                        countrymen, with the opi<g ref="char:EOLhyphen"/>nions of different writers
+                        countrymen, with the opinions of different writers
                         on that subject.</hi>
                   </p>
-               </argument>
+               
                <p>I BELIEVE it is difficult for those who publish their own memoirs to escape the
                   imputation of vanity; nor is this <pb n="2" facs="pageImages/Equiano-vol1-p2.jpg"
                   /> the only disadvantage under which they labour: it is also their misfortune,
@@ -1174,40 +1196,34 @@
                   young woman had been poisoned, but it was not known by whom: the doctor ordered
                   the corpse to be taken up by <pb n="35" facs="pageImages/Equiano-vol1-p35.jpg"/>
                   some persons, and carried to the grave. As soon as the bearers had raised it on
-                  their shoulders, they seemed seized with some* sudden impulse, and ran to and fro
+                  their shoulders, they seemed seized with <ref target="impulse_" corresp="impulse">some* sudden impulse,</ref><note xml:id="impulse" target="impulse_">See also Leiut. Matthew's Voyage, p. 123. [Equiano's note] Equiano is referring to John Matthews, <ref target="https://www.google.com/books/edition/A_Voyage_to_the_River_Sierra_Leone/j9sTAAAAYAAJ?hl=en"><hi rend="italic">A Voyage to the River Sierra-Leone</hi></ref> (London: B. White and Son; and J. Sewell, 1788).</note> and ran to and fro
                   unable to stop themselves. At last, after having passed through a number of thorns
                   and prickly bushes unhurt, the corpse fell from them close to a house, and defaced
                   it in the fall; and the owner being taken up, he immediately confessed the
-                  poisoning†.</p>
-               <note type="footnote"><p>* See also Leiut. Matthew's Voyage, p. 123. [Equiano's note]
-                  </p></note>
-               <note type="footnote" n="†" place="bottom"><p>† An instance of this kind happened at
-                     Montserrat in the West Indies in the year 1763. I then belonged to the Charming
+                  <ref target="poisoning_" corresp="poisoning">poisoning.†</ref><note xml:id="poisoning" target="poisoning_"> An instance of this                       kind happened at Montserrat in the West Indies in the year 1763. I then belonged to the Charming
                      Sally, Capt. Doran.—The chief mate, Mr. Mansfield, and some of the crew being
-                     one day on shore, were present at the burying of a poisoned negro girl? Though
+                     one day on shore, were present at the burying of a poisoned negro girl. Though
                      they had often heard of the circumstance of the running in such cases, and had
                      even seen it, they imagined it to be a trick of the corpse-bearers. The mate
                      therefore desired two of the sailors to take up the coffin, and carry it to the
                      grave. The sailors, who were all of the same opinion, readily obeyed; but they
-                     had scaretly raised it to their shoulders, before they began to run
-                     furiously</p>
-               </note>
+                     had scarcely raised it to their shoulders, before they began to run
+                     furiously about, quite unable to direct
+                     themselves, till, at last, without intention, they came to the hut of him
+                     who had poisoned the girl. The coffin then immediately fell from their
+                     shoulders against the hut, and damaged part of the wall. The owner of the
+                     hut was taken into custody on this, and confessed the poisoning.— I give this
+                     story as it was related by the mate and crew on their return to the ship.
+                     The credit which is due to it I leave with the reader. [Equiano's
+                     note]</note></p>
                <pb n="36" facs="pageImages/Equiano-vol1-p36.jpg"/>
-               <p>The natives are extremely cautions about poison. When they buy any eatable the
+               <p>The natives are extremely cautious about poison. When they buy any eatable the
                   seller kisses it all round before the buyer, to shew him it is not poisoned; and
                   the same is done when any meat or drink is presented, particularly to a stranger.
                   We have serpents of different kinds, some of which are esteemed ominous when they
                   appear in our houses, and these we never molest. I remember two of those ominous
                   snakes, each of which was as thick as the calf of a man's leg, and in colour
-                  resembling a dolphin in the water, crept at different times into my <note
-                     type="footnote" n="†" place="bottom"><p> about, quite unable to direct
-                        themselves, till, at last, without intention, they came to the hut of him
-                        who had poisoned the girl. The coffin then immediately fell from their
-                        shoulders against the hut, and damaged part of the wall. The owner of the
-                        hut was taken into custody on this, and confessed the poisoning.—I give this
-                        story as it was related by the mate and crew on their return to the ship.
-                        The credit which is due to it I leave with the reader. [Equiano's
-                     note]</p></note>
+                  resembling a dolphin in the water, crept at different times into my 
                   <pb n="37" facs="pageImages/Equiano-vol1-p37.jpg"/> mother's night-house, where I
                   always lay with her, and coiled themselves into folds, and each time they crowed
                   like a cock. I was desired by some of our wise men to touch these, that I might be
@@ -1255,19 +1271,16 @@
                   Species, has ascertained the cause in a manner that at once solves every objection
                   on that account, and, on my mind at least, <pb n="41"
                      facs="pageImages/Equiano-vol1-p41.jpg"/> has produced the fullest conviction. I
-                  shall therefore refer to that performance for the theory*, contenting myself with
-                  extricating a fact as related by Dr. Mitchel†. <quote>"The Spaniards, who have
+                  shall therefore refer to that performance for the <ref target="theory_" corresp="theory">theory*</ref><note xml:id="theory" target="theory_">* Page 178 to 216. [Equiano's
+                     note]</note>, contenting myself with
+                  extricating a fact as related by <ref target="Mitchel_" corresp="Mitchel">Dr. Mitchel†.</ref><note xml:id="Mitchel" target="Mitchel_">† Philos. Trans. No. 476, Sect. 4, cited by Mr
+                     Clarkson, p. 205. [Equiano's note] </note> "The Spaniards, who have
                      inhabited America, under the torrid zone, for any time, are become as dark
                      coloured as our native Indians of Virginia; of which <hi rend="italic">I myself
-                        have been a witness.</hi>"</quote> There is also another instance‡ of a
+                        have been a witness.</hi>" There is also another <ref target="instance_" corresp="instance">instance‡</ref><note xml:id="instance" target="instance_">‡ Same page. [Equiano's note]</note>of a
                   Portuguese settlement at Mitomba, a river in Sierra Leona; where the inhabitants
                   are bred from a mixture of the first Portuguese discoverers with the natives, and
-                  are now become in their complexion, and in the woolly quality of their <note
-                     type="footnote" n="*" place="bottom"><p>* Page 178 to 216. [Equiano's
-                     note]</p></note>
-                  <note n="†" place="bottom"><p>† Philos. Trans. No. 476, Sect. 4, cited by Mr
-                        Clarkson, p. 205.</p></note>
-                  <note n="‡" place="bottom"><p>‡ Same page.</p></note>
+                  are now become in their complexion, and in the woolly quality of their 
                   <pb n="42" facs="pageImages/Equiano-vol1-p42.jpg"/> hair, <hi rend="italic"
                      >perfect negroes,</hi> retaining however a smattering of the Portuguese
                   language.</p>
@@ -1277,8 +1290,7 @@
                   on account of their colour. Surely the minds of the Spaniards did not change with
                   their complexions! Are there not causes enough to which the apparent inferiority
                   of an African may be ascribed without limiting the goodness of God and supposing
-                  he forbore to stamp understanding on certainly his own image because <quote
-                     rend="inline">"carved in ebony."</quote> Might it not naturally be ascribed to
+                  he forbore to stamp understanding on certainly his own image because "carved in ebony." Might it not naturally be ascribed to
                   their situation? When they come among Europeans, they are ignorant of their <pb
                      n="43" facs="pageImages/Equiano-vol1-p43.jpg"/> language, religion, manners,
                   and customs. Are any pains taken to teach them these? Are they treated as men?
@@ -1294,16 +1306,15 @@
                   acknowledge, that understanding is not confined to feature or colour. If, when
                   they look round the <pb n="44" facs="pageImages/Equiano-vol1-p44.jpg"/> world,
                   they feel exultation, let it be tempered with benevolence to others, and gratitude
-                  to God, <quote rend="inline margQuotes">"who hath made of one blood all nations of
-                     men for to dwell on all the face of the earth*; and whose wisdom is not our
-                     wisdom, neither are our ways his ways."</quote>
+                  to God, "who hath made of one blood all nations of
+                  men for to dwell on all the face of the <ref target="earth_" corresp="earth">earth*</ref><note xml:id="earth" target="earth_">* Acts xvii. 26. [Equiano's note]</note>; and whose wisdom is not our
+                     wisdom, neither are our ways his ways."
                </p>
-               <note type="footnote" n="*" place="margin"><p>* Acts xvii. 26.</p></note>
             </div>
             <div n="2" type="chapter">
                <pb n="45" facs="pageImages/Equiano-vol1-p45.jpg"/>
                <head>CHAP. II.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author's birth and parentage—His being kidnapped with his
                         sister—Their separation—Surprise at meeting again—Are finally
@@ -1312,7 +1323,7 @@
                         him—He sails for the West Indies—Horrors of a slave ship—Arrives at
                         Barbadoes, where the cargo is sold and dispersed.</hi>
                   </p>
-               </argument>
+               
                <p>I HOPE the reader will not think I have trespassed on his patience in introducing
                   myself to him with some account of the manners and customs of my country. They had
                   been implanted <pb n="46" facs="pageImages/Equiano-vol1-p46.jpg"/> in me with
@@ -1651,13 +1662,12 @@
                      facs="pageImages/Equiano-vol1-p76.jpg"/> nothing less than to be treated in the
                   same manner. I could not help expressing my fears and apprehensions to some of my
                   countrymen: I asked them if these people had no country, but lived in this hollow
-                  place (the ship)? they told me they did not, but came from a distant one. <quote
-                     rend="inline margsglQuotes">'Then,'</quote> said I, <quote
-                     rend="inline margsglQuotes">'how comes it in all our country we never heard of
-                     them?'</quote> They told me because they lived so very far off. I then asked
-                  where were their women? had they any like themselves? I was told they had: <quote
-                     rend="inline margsglQuotes">'And why,'</quote> said I, <quote
-                     rend="inline margsglQuotes">'do we not see them?'</quote> they answered,
+                  place (the ship)? they told me they did not, but came from a distant one. 
+                    'Then,' said I, 
+                     'how comes it in all our country we never heard of
+                     them?' They told me because they lived so very far off. I then asked
+                  where were their women? had they any like themselves? I was told they had: 
+                     'And why,'said I, 'do we not see them?' they answered,
                   because they were left behind. I asked how the vessel could go? they told me they
                   could not tell; but that there were cloth put upon the masts by the help of the
                   ropes I saw, and then the vessel went on; and the white men had some spell or
@@ -1795,7 +1805,7 @@
             <div n="3" type="chapter">
                <pb n="89" facs="pageImages/Equiano-vol1-p89.jpg"/>
                <head>CHAP. III.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author is carried to Virginia—His distress—surprise at
                         seeing a picture and a watch—Is bought by Captain Pascal, and sets out for
@@ -1803,7 +1813,7 @@
                         of snow—Is sent to Guernsey, and in some time goes on board a ship of war
                         with his master—some account of the expedition against Louisbourg under the
                         command of Admiral Boscawen, in</hi> 1758.</p>
-               </argument>
+               
                <p>I now totally lost the small remains of comfort I had enjoyed in conversing with
                   my countrymen; the women too, who used to wash and take care of me, were all gone
                   different <pb n="90" facs="pageImages/Equiano-vol1-p90.jpg"/> ways, and I never
@@ -2077,9 +2087,9 @@
                   French-built frigate. We got all things immediately ready for fighting; and I now
                   expected I should be gratified in seeing an engagement, which I had so long wished
                   for in vain. But the very moment the word of command was given to fire, we heard
-                  those on board the other ship cry <quote rend="inline">'Haul down the
-                     jib;'</quote> and in that instant she hoisted English colours. There was
-                  instantly with us an amazing cry of—<quote rend="inline">'Avast!'</quote> or stop
+                  those on board the other ship cry 'Haul down the
+                     jib;' and in that instant she hoisted English colours. There was
+                  instantly with us an amazing cry of—'Avast!' or stop
                   firing; and I think one or two guns had been let off, but happily they did no
                   mischief. We had hailed them several times; but they not hearing, we received no
                   answer, which was the cause of our firing. The boat was then sent <pb n="115"
@@ -2253,7 +2263,7 @@
             <div n="4" type="chapter">
                <pb n="130" facs="pageImages/Equiano-vol1-p130.jpg"/>
                <head>CHAP. IV.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author is baptized—Narrowly escapes drowning—Goes on an
                         expedition to the Mediterranean—Incidents he met with there—Is witness to an
@@ -2273,7 +2283,7 @@
                         Deptford to be paid off, and when he arrives there he is suddenly seized by
                         his master and carried forcibly on board a West India ship and sold.</hi>
                   </p>
-               </argument>
+               
                <p>IT was now between two and three years since I first came to England, a great part
                   of which I had spent at sea; so that I became inured to that service, and began to
                   consider myself as happily situated; for my master treated me always extremely
@@ -2360,14 +2370,12 @@
                   all his other things, to my master: these he afterwards gave to me, and I regarded
                   them as a memorial of my friend, whom I loved, and grieved for, as a brother.</p>
                <p>While we were at Gibralter, I saw a soldier hanging by the heels, at one of the
-                  moles*: I thought this a strange sight, as I had seen a man hanged in London by
+                  <ref target="moles_" corresp="moles">moles*</ref><note xml:id="moles" target="moles_">*He had drowned himself in endeavouring to desert. [Equiano's note] "Moles" are large stone piers or wharfs.</note>: I thought this a strange sight, as I had seen a man hanged in London by
                   his neck. At another time I saw the master of a frigate towed to shore on a
                   grating, by several of the men of war's boats, and discharged the fleet, which I
                   understood was a mark of disgrace for cowardice. On board the same ship there was
                   also a sailor hung up at the yard-arm.</p>
-               <p>After lying at Gibralter for some <note type="footnote" n="*" place="bottom"><p>
-                        *He had drowned himself in endeavouring to desert. [Equiano's
-                     note]</p></note>
+               <p>After lying at Gibralter for some
                   <pb n="140" facs="pageImages/Equiano-vol1-p140.jpg"/> time, we sailed up the
                   Mediterranean a considerable way above the Gulf of Lyons; where we were one night
                   overtaken with a terrible gale of wind, much greater than any I had ever yet
@@ -2556,9 +2564,8 @@
                   bed, and endeavoured to compose himself to sleep, but to no purpose; his mind
                   still continuing in a state of agony. By this time it was exactly half after seven
                   in the morning: I was then under the half-deck at the great cabin door; and all at
-                  once I heard the people in the waist cry out, most fearfully—<quote
-                     rend="inline margsglQuotes">'The Lord have mercy upon us! We are all lost! The
-                     Lord have mercy upon us!'</quote> Mr. Mondle hearing the cries, immediately ran
+                  once I heard the people in the waist cry out, most fearfully—'The Lord have mercy upon us! We are all lost! The
+                     Lord have mercy upon us!' Mr. Mondle hearing the cries, immediately ran
                   out of his cabin; and we were instantly struck by the Lynne, a fortygun ship,
                   Captain Clark, which nearly ran us down. This ship had just put about, and was by
                   the wind, but had not got full headway, or we must all <pb n="157"
@@ -2697,28 +2704,25 @@
                <p>We had different commanders while we were at this place, Commodores stanhope,
                   Dennis, Lord Howe, &amp;c. From hence, before the spanish war began, our ship and
                   the Wasp sloop were sent to St. Sebastian in spain, by Commodore Stanhope; and
-                  Commodore Dennis afterwards sent our ship as a cartel to Bayonne in France*, after
-                     <note type="footnote" n="*" place="bottom"><p>* Among others whom we brought
-                        from Bayonne, were two gentlemen, who had been in the West</p></note>
-                  <pb n="169" facs="pageImages/Equiano-vol1-p169.jpg"/> which † we went in February
+                  Commodore Dennis afterwards sent our ship as a cartel to <ref target="Bayonne_" corresp="Bayonne">Bayonne in France*</ref><note xml:id="Bayonne" target="Bayonne_">* Among others whom we brought
+                     from Bayonne, were two gentlemen, who had been in the West Indies, where they sold slaves; and they confessed they had made at one time a false bill of sale, and sold two Portuguese white men among a lot of
+                     slaves. [Equiano's note]</note>, after
+                  <pb n="169" facs="pageImages/Equiano-vol1-p169.jpg"/> <ref target="which_" corresp="which">which †</ref><note xml:id="which" target="which_">† Some people have it, that sometimes shortly before
+                     persons die, their ward has been seen; that is, some spirit exactly in their
+                     likeness, though they are themselves at other places at the same time. One
+                     day while we were at Bayonne, Mr. Mondle saw one of our men, as he thought,
+                     in the gun-room; and a little after, coming on the quarter-deck, he spoke of
+                     some circumstances of this man to some of the officers. They told him that
+                     the man was then out of the ship, in one of the boats with the Lieutenant:
+                     but Mr. Mondle would not believe it, and we searched the ship, when he found
+                     the man was actually out of her; and when the boat returned some time
+                     afterwards, we found the man had been drowned at the very time Mr. Mondle
+                     thought he saw him. [Equiano's note] </note> we went in February
                   in 1762, to Belle-Isle, and there stayed till the summer, when we lest it, and
                   returned to Portsmouth.</p>
                <p>After our ship was fitted out again for service, in September she went to
-                  Guernsey, where I was very glad to see <note type="footnote" n="*" place="bottom"
-                        ><p>Indies, where they sold slaves; and they confessed they had made at one
-                        time a false bill of sale, and sold two Portuguese white men among a lot of
-                        slaves.</p></note>
-                  <note n="†" place="bottom"><p>† Some people have it, that sometimes shortly before
-                        persons die, their ward has been seen; that is, some spirit exactly in their
-                        likeness, though they are themselves at other places at the same time. One
-                        day while we were at Bayonne, Mr. Mondle saw one of our men, as he thought,
-                        in the gun-room; and a little after, coming on the quarter-deck, he spoke of
-                        some circumstances of this man to some of the officers. They told him that
-                        he man was then out of the ship, in one of the coats with the Lieutenant:
-                        but Mr. Mondle would not believe it, and we searched the ship, when he found
-                        the man was actually out of her; and when the boat returned some time
-                        afterwards, we found the man had been drowned at the very time Mr. Mondle
-                        thought he saw him.</p></note>
+                  Guernsey, where I was very glad to see 
+                
                   <pb n="170" facs="pageImages/Equiano-vol1-p170.jpg"/> my old hostess, who was now
                   a widow, and my former little charming companion, her daughter. I spent some time
                   here very happily with them, till October, when we had orders to repair to
@@ -2785,7 +2789,7 @@
                   West Indiamen; for he was resolved to put me on board the first vessel he could
                   get to receive me. The boat's crew, who pulled against <pb n="176"
                      facs="pageImages/Equiano-vol1-p176.jpg"/>their will, became quite faint
-                  disserent times, and would have gone ashore; but he would not let them. Some of
+                  different times, and would have gone ashore; but he would not let them. Some of
                   them strove then to cheer me, and told me he could not sell me, and that they
                   would stand by me, which revived me a little; and I still entertained hopes; for
                   as they pulled along he asked some vessels to receive me, but they would not. But,
@@ -2793,20 +2797,15 @@
                   going away the next tide for the West Indies; her name was the Charming Sally,
                   Captain James Doran; and my master went on board and agreed with him for me; and
                   in a little time I was sent sor into the cabin. When I came there Captain Doran
-                  asked me if I knew him: I answered that I did not; <quote rend="inline"
-                     >'Then,'</quote> said he, <quote rend="inline margQuotes">'you are now my
-                     slave.'</quote> I told him my master could not sell me <pb n="177"
-                     facs="pageImages/Equiano-vol1-p177.jpg"/> to him, nor to any one else. <quote
-                     rend="inline">'Why,'</quote> said he, <quote rend="inline margQuotes">'did not
-                     your master buy you?'</quote> I confessed he did. <quote
-                     rend="inline margsglQuotes">'But I have served him,'</quote> said I, <quote
-                     rend="inline margsglQuotes">'many years, and he has taken all my wages and
+                  asked me if I knew him: I answered that I did not; 'Then,' said he, 'you are now my
+                     slave.' I told him my master could not sell me <pb n="177"
+                     facs="pageImages/Equiano-vol1-p177.jpg"/> to him, nor to any one else. 'Why,' said he, 'did not
+                     your master buy you?' I confessed he did. 'But I have served him,' said I,' many years, and he has taken all my wages and
                      prize-money, for I only got one sixpence during the war; besides this I have
                      been baptized; and by the laws of the land no man has a right to sell
-                     me:'</quote> And I added, that I had heard a lawyer and others at different
-                  times tell my master so. They both then said that those people who told me so were
-                  not my friends; but I replied—<quote rend="inline margsglQuotes">'It was very
-                     extraordinary that other people did not know the law as well as they.'</quote>
+                     me:' And I added, that I had heard a lawyer and others at different
+                  times tell my master so. They both then said that those people who told me so were not my friends; but I replied—'It was very
+                     extraordinary that other people did not know the law as well as they.'
                   Upon this Captain Doran said I talked too much English; and if I did not behave
                   myself well, and be quiet, he had a method on board to make me. I was too well
                   convinced of his power over me to doubt what he said; <pb n="178"
@@ -2815,9 +2814,9 @@
                   shudder. However, before I retired I told them that as I could not get any right
                   among men here I hoped I should hereafter in Heaven; and I immediately left the
                   cabin, filled with resentment and sorrow. The only coat I had with me my master
-                  took away with him, and said, <quote rend="inline margsglQuotes">"If your
+                  took away with him, and said, "If your
                      prize-money had been 10,000l. I had a right to it all, and would have taken
-                     it.'</quote> I had about nine guineas, which, during my long sea-faring life, I
+                     it.' I had about nine guineas, which, during my long sea-faring life, I
                   had scraped together from trifling perquisites and little ventures; and I hid it
                   that instant, lest my master should take that from me likewise, still hoping that
                   by some means or other I should make my escape to the snore; and indeed some of my
@@ -2833,7 +2832,7 @@
             <div n="5" type="chapter">
                <pb n="180" facs="pageImages/Equiano-vol1-p180.jpg"/>
                <head>CHAP. V.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author's reflections on his situation—Is deceived by a
                         promise of being delivered—His despair at sailing for the West
@@ -2843,7 +2842,7 @@
                         the year</hi> 1763 <hi rend="italic">to</hi> 1766<hi rend="italic">—Address
                         on it to the planters.</hi>
                   </p>
-               </argument>
+               
                <p>THUS, at the moment I expected all my toils to end, was I plunged, as I supposed,
                   in a new slavery; in comparison of which all my service hitherto <pb n="181"
                      facs="pageImages/Equiano-vol1-p181.jpg"/> had been perfect freedom; and whose
@@ -2884,7 +2883,7 @@
                   boat; and promised me, time after time, that it was hourly to come off. When he
                   had the watch upon deck I watched also; and looked long enough, but all in vain; I
                   could never see either the boat or my guinea again. And what I thought was still
-                  the worst of all, the fellow gave information, as I after wards found, all the
+                  the worst of all, the fellow gave information, as I afterwards found, all the
                   while to the mates, of my intention to go off, if I could in any way do it; but,
                   rogue like, he never told them he had got a guinea from me to procure my escape.
                   However, after we had sailed, and his trick was made known to the ship's crew, I
@@ -2899,23 +2898,22 @@
                   very intimate with my former master: I used to sell and take care of a great deal
                   of property for her, in different ships; and in return she always shewed great
                   friendship for me, and used to tell my master that she would take me away to live
-                  with her: but, un fortunately for me, a disagreement soon afterwards took place
+                  with her: but, unfortunately for me, a disagreement soon afterwards took place
                   between them; and she was succeeded in my master's <pb n="186"
-                     facs="pageImages/Equiano-vol1-p186.jpg"/> good graces by another lady, who ap
-                  peared sole mistress of the Aetna, and mostly lodged on board. I was not so great
+                     facs="pageImages/Equiano-vol1-p186.jpg"/> good graces by another lady, who appeared sole mistress of the Aetna, and mostly lodged on board. I was not so great
                   a favourite with this lady as with the former; she had conceived a pique against
                   me on some occasion when she was on board, and she did not fail to instigate my
-                  master to treat me in the manner he did*.</p>
+                  master to treat me in the manner he <ref target="did_" corresp="did">did*</ref>.<note xml:id="did" corresp="did">*Thus was I
+                     sacrificed to the envy and resentment of this woman for knowing that the
+                     lady whom she had succeeded in my master's good graces designed to take me
+                     into her service; which, had I once got on shore, she would not have been
+                     able to prevent. She felt her pride alarmed at the superiority of her rival
+                     in being attended by a black servant: it was not less to prevent this than
+                     to be revenged on me, that she caused the captain to treat me thus
+                     cruelly. [Equiano's note.]</note></p>
                <p>However, the next morning, the 30th of December, the wind being brisk and
                   easterly, the Aeolus frigate, which was to escort the convoy, made a signal for
-                  failing. All the ships <note type="footnote" n="*" place="bottom"><p>* Thus was I
-                        sacrificed to the envy and resent ment of this woman for knowing that the
-                        lady whom she had succeeded in my master's good graces designed to take me
-                        into her service; which, had I once got on shore, she would not have been
-                        able to present. she felt her pride alarmed at the superiority of her rival
-                        in being attended by a black servant: it was not less to prevent this than
-                        to be revenged on me, that she caused the captain to treat me thus
-                        cruelly.</p></note>
+                  failing. All the ships
                   <pb n="187" facs="pageImages/Equiano-vol1-p187.jpg"/> then got up their anchors;
                   and, before any of my friends had an opportunity to come off to my relief, to my
                   inexpressible anguish our ship had got under way. What tumultuous emotions
@@ -2927,17 +2925,13 @@
                   and wished I had never been born. I was ready to curse the tide that bore us, the
                   gale that wasted my prison, and even the ship that conducted us; and I called on
                   death to relieve me from the horrors I felt and dreaded, <pb n="188"
-                     facs="pageImages/Equiano-vol1-p188.jpg"/> that I might be in that place<quote>
+                     facs="pageImages/Equiano-vol1-p188.jpg"/> that I might be in that place
+                  <lb/><quote>
                      <lg>
                         <l>"Where slaves are free, and men oppress no more,</l>
                         <l>"Fool that I was, inur'd so long to pain,</l>
                         <l>"To trust to hope, or dream of joy again.</l>
-                        <l>"* * * * * * * * * <expan>
-                              <am>
-                                 <g ref="char:rdagger"/>
-                              </am>
-                              <ex>††</ex>
-                           </expan> * * * * * *</l>
+                        <l>"* * * * * * * * * * * * * * * * * *</l>
                         <l>"Now dragged once more beyond the western main,</l>
                         <l>"To groan beneath some dastard planter's chain;</l>
                         <l>"Where my poor countrymen in bondage wait</l>
@@ -2945,26 +2939,21 @@
                         <l>"Hard ling'ring fate! while, ere the dawn of day,</l>
                         <l>"Rous'd by the lash they go their cheerless way;</l>
                         <l>"And as their soul with shame and anguish burn,</l>
-                        <l>"salute with groans unwelcome morn's return,</l>
+                        <l>"Salute with groans unwelcome morn's return,</l>
                         <l>"And, chiding ev'ry hour the slow-pac'd sun,</l>
                         <l>"Pursue their toils till all his race is run.</l>
                         <l>"No eye to mark their sufferings with a tear;</l>
                         <l>"No friend to comfort, and no hope to cheer:</l>
                         <l>"Then, like the dull unpity'd brutes, repair</l>
-                        <l>"To stalls as wretched, and as course a fare,</l>
+                        <l>"To stalls as wretched, and as coarse a fare,</l>
                         <l>"Thank heaven one day of mis'ry was o'er,</l>
-                        <l>"Then sink to sleep, and wish to wake no more‡.</l>
-                     </lg>
-                  </quote>
-                  <note type="footnote" n="‡" place="bottom">‡ "The Dying Negro," a poem originally
-                     published in 177 d3. Perhaps it may not be deemed impertinent here to add, that
-                     this elegant and pathetic little poem was occasioned, as appears by the
-                     advertisement prefixed to it, by the following incident. <quote rend="inline"
-                        >"A black, who, a few days before had ran away from his master, and got
-                        himself christened, with intent to marry a white woman his fellow-servant,
-                        being taken and sent on board a ship in the Thames, took an opportunity of
-                        shooting himself through the head."</quote>
-                  </note>
+                        <l>"Then sink to sleep, and wish to wake no <ref target="more_" corresp="more">more‡</ref>.<note xml:id="more" target="more_">‡ "The Dying Negro," a poem originally
+                           published in 1773. Perhaps it may not be deemed impertinent here to add, that
+                           this elegant and pathetic little poem was occasioned, as appears by the
+                           advertisement prefixed to it, by the following incident. "A black, who, a few days before had ran away from his master,                            and got himself christened, with intent to marry a white woman his fellow-servant,
+                           being taken and sent on board a ship in the Thames, took an opportunity of
+                           shooting himself through the head." [Equiano's note] Equiano is quoting (imperfectly) from <ref target="https://www.google.com/books/edition/The_Dying_Negro_a_Poem/toQuAAAAMAAJ?hl=en"><hi rend="italic">"The Dying Negro, A Poem"</hi></ref>, by Thomas Day and John Bicknell; as he notes, the poem was first published in 1773, and widely reprinted afterwards.</note></l>
+                     </lg></quote>
                   <pb n="189" facs="pageImages/Equiano-vol1-p189.jpg"/> The turbulence of my
                   emotions however naturally gave way to calmer thoughts, and I soon perceived what
                   fate had decreed no mortal on earth could prevent. The convoy sailed on without
@@ -2973,7 +2962,7 @@
                   went down and was ingulfed in the dark recesses of the ocean. The convoy was
                   immediately thrown into great confusion till it was day-light; and the Aeolus was
                   illumined with lights to prevent any farther mischief. On the 13th of Febru ary
-                  1763, from the mast head, we des cried our destined island Montserrat: and soon
+                  1763, from the mast head, we descried our destined island Montserrat: and soon
                   after I beheld those <quote>
                      <lg>
                         <l>"Regions of sorrow, doleful shades, where peace</l>
@@ -2988,7 +2977,7 @@
                   misery, stripes, and chains; and, in the first paroxysm of my grief, I called upon
                   God's thunder, and his avenging power, to direct the stroke of death to me, rather
                   than permit me to become a slave, and be sold from lord to lord.</p>
-               <p>In this state of my mind our ship came to an anchor, and soon after dis charged
+               <p>In this state of my mind our ship came to an anchor, and soon after discharged
                   her cargo. I now knew what it was to work hard; I was made to help to unload and
                   load the ship. And, to comfort me in my distress in that time, two of the sailors
                   robbed me of all my money, and ran away from the ship. I had been so long used to
@@ -3060,8 +3049,7 @@
                   me, and belonged to other gentlemen on the <pb n="197"
                      facs="pageImages/Equiano-vol1-p197.jpg"/> island: those poor souls had never
                   more than nine-pence per day, and seldom more than six-pence, from their masters
-                  or owners, though they earned them three or four pisterines<note n="*"
-                     place="bottom">These pisterines are of the value of a shilling.</note>: for it
+                  or owners, though they earned them three or four <ref target="pisterines_" corresp="pisterines">pisterines</ref><note xml:id="pisterines" target="pisterines_">These pisterines are of the value of a shilling. [Equiano's note.]</note>: for it
                   is a common practice in the West Indies for men to purchase slaves though they
                   have not plantations themselves, in order to let them out to planters and
                   merchants at so much a piece by the day, and they give what allowance they chuse
@@ -3203,18 +3191,15 @@
                   profited. To the honour of humanity, I knew several gentlemen who managed their
                   estates in this manner; and they found that benevolence was their true interest.
                      <pb n="210" facs="pageImages/Equiano-vol1-p210.jpg"/> And, among many I could
-                  mention in several of the islands, I knew one in Montserrat* whose slaves looked
+                  mention in several of the islands, I knew <ref target="one_" corresp="one">one in Montserrat*</ref> whose slaves looked
                   remarkably well, and never needed any fresh supplies of negroes; and there are
                   many other estates, especially in Barbadoes, which, from such judicious treatment,
                   need no fresh stock of negroes at any time. I have the honour of knowing a most
-                  worthy and humane gentleman, who is a native of Barbadoes, and has estates there†.
-                  This gentleman has written a treatise on the usage of his own slaves. He allows
+                  worthy and humane <ref target="gentleman_" corresp="gentleman">gentleman</ref>, who is a native of Barbadoes, and has estates there. This gentleman has written a treatise on the usage of his own slaves. He allows
                   them two hours for refreshment at mid-day; and many other indulgencies and
                   comforts, particularly in their lying; and, besides this, he raises more
-                  provisions on his estate than they can destroy; so that by these attentions <note
-                     type="footnote" n="*" place="bottom"><p>* Mr. Durbury, and many others,
-                        Montserrat.</p></note>
-                  <note n="†" place="bottom"><p>† Sir Philip Gibbes, Baronet, Barbadoes.</p></note>
+                  provisions on his estate than they can destroy; so that by these attentions <note xml:id="one" target="one_">* Mr. Durbury, and many others, Montserrat. [Equiano's note]</note>
+                  <note xml:id="gentleman" target="gentleman_">Sir Philip Gibbes, Baronet, Barbadoes. [Equiano's note.}</note>
                   <pb n="211" facs="pageImages/Equiano-vol1-p211.jpg"/> he saves the lives of his
                   negroes, and keeps them healthy, and as happy as the condition of slavery can
                   admit. I myself, as shall appear in the sequel, managed an estate, where, by those
@@ -3229,7 +3214,7 @@
                   Indies, yet this <pb n="212" facs="pageImages/Equiano-vol1-p212.jpg"/> island
                   requires 1000 negroes annually to keep up the original stock, which is only
                   80,000. so that the whole term of a negro's life may be said to be there but
-                  sixteen years*? And yet the climate here is in every respect the same as that from
+                  sixteen <ref target="years_" corresp="years">years*</ref>? And yet the climate here is in every respect the same as that from
                   which they are taken, except in being more wholesome. Do the British colonies
                   decrease in this manner? And yet what a prodigious difference is there between an
                   English and West India climate?</p>
@@ -3238,7 +3223,7 @@
                   of a London ship: but fate did not favour the poor oppressed man; for, being
                   discovered when the vessel was under sail, he was delivered up again to his
                   master. This <hi rend="italic">Christian</hi>
-                  <note n="*" place="bottom">* Benezet's Account of Guinea, p. 16.</note>
+                  <note xml:id="years" target="years_">* Benezet's Account of Guinea, p. 16. [Equiano's note]. Anthony Benezet's <ref target="https://www.gutenberg.org/files/11489/11489-h/11489-h.htm"><hi rend="italic">Some Historical Account of Guinea</hi></ref>,first published in Philadelphia in 1771, was a widely-known and much reprinted text in this period.</note>
                   <pb n="213" facs="pageImages/Equiano-vol1-p213.jpg"/>
                   <hi rend="italic">master</hi> immediately pinned the wretch down to the ground at
                   each wrist and ancle, and then took some sticks of sealing wax, and lighted them,
@@ -3308,7 +3293,7 @@
                   universally known, that it might seem impertinent to quote the following extract,
                   if some people had not been hardy enough of late to assert that negroes are on the
                   same footing in that respect as Europeans. By the 329th Act, page 125, of the
-                  Assembly of Barbadoes, it is enacted <quote rend="inline margsglQuotes">'That if
+                  Assembly of Barbadoes, it is enacted 'That if
                      any negro, or other slave, under punishment by his master, or his order, for
                      running away, or any other crime or misdemeanor towards his said master,
                      unfortunately shall suffer in life or member, no person whatsoever <pb n="219"
@@ -3316,7 +3301,7 @@
                      any man shall out of <hi rend="italic">wantonness, or only of
                         bloody-mindedness, or cruel iniention, wilfully kill a negro, or other
                         slave, of his own, he shall pay into the public treasury fifteen pounds
-                        sterling.</hi>'</quote> And it is the same in most, if not all, of the West
+                        sterling.</hi>' And it is the same in most, if not all, of the West
                   India islands. Is not this one of the many acts of the islands which call loudly
                   for redress? And do not the Assembly which enacted it deserve the appellation of
                   savages and brutes rather than of christians and men? It is an act at once
@@ -3358,13 +3343,11 @@
                   master, he used to employ his few leisure moments to go a fishing. When he had
                   caught any fish, his master would frequently take them from him without paying
                   him; and at other times some other white people would serve him in the same
-                  manner. One day he said to me, very movingly, <quote rend="inline margsglQuotes"
-                     >'sometimes when a white man take away my fish I go to my maser, and he get me
+                  manner. One day he said to me, very movingly, 'sometimes when a white man take away my fish I go to my maser, and he get me
                      my right; <pb n="223" facs="pageImages/Equiano-vol1-p223.jpg"/> and when my
                      maser by strength take away my fishes, what me must do? I can't go to any body
-                     to be righted; then,'</quote> said the poor man, looking up above, <quote
-                     rend="inline margsglQuotes">'I must look up to God Mighty in the top for
-                     right.'</quote> This artless tale moved me much, and I could not help feeling
+                     to be righted; then,' said the poor man, looking up above, 'I must look up to God Mighty in the top for
+                     right.' This artless tale moved me much, and I could not help feeling
                   the just cause Moses had in redressing his brother against the Egyptian. I
                   exhorted the man to look up still to the God on the top, since there was no
                   redress below. Though I little thought then that I myself should more than once
@@ -3425,7 +3408,7 @@
             <div n="6" type="chapter">
                <pb n="228" facs="pageImages/Equiano-vol1-p228.jpg"/>
                <head>CHAP. VI.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">some account of Brimstone-Hill in Mont<g ref="char:EOLhyphen"
                         />serrat—Favourable change in the author's situation—He commences merchant
@@ -3435,7 +3418,7 @@
                         West Indies—Remarkable instance of kidnapping a free mulatto—Ths author is
                         nearly murdered by Doctor Perkins in savannah.</hi>
                   </p>
-               </argument>
+               
                <p>IN the precedeing chapter I have set before the reader a few of those many
                   instances of oppression, extortion, and cruelty, which I have been a witness <pb
                      n="229" facs="pageImages/Equiano-vol1-p229.jpg"/> to in the West Indies: but,
@@ -3611,10 +3594,10 @@
                   comparison of the West Indies. My mind was therefore hourly replete with
                   inventions and thoughts of being freed, and, if possible, by honest and honourable
                   means; for I always remembered the old adage; and I trust it has ever been my
-                  ruling principle, that <quote rend="inline margQuotes">"Honesty <pb n="244"
-                        facs="pageImages/Equiano-vol1-p244.jpg"/> is the best policy;"</quote> and
-                  likewise that other golden precept—<quote rend="inline margQuotes">"To do unto all
-                     men as I would they should do unto me."</quote> However, as I was from early
+                  ruling principle, that "Honesty <pb n="244"
+                        facs="pageImages/Equiano-vol1-p244.jpg"/> is the best policy;" and
+                  likewise that other golden precept—"To do unto all
+                     men as I would they should do unto me." However, as I was from early
                   years a predestinarian, I thought whatever fate had determined must ever come to
                   pass; and therefore, if ever it were my lot to be freed nothing could prevent me,
                   although I should at present see no means or hope to obtain my freedom; on the
@@ -3702,7 +3685,7 @@
                   mildly treated, should prefer even the misery of slavery to such a mockery of
                   freedom? I was now completely disgusted with the West Indies, and thought I never
                   should be entirely free until I had left them.</p>
-               <quote>
+              
                   <pb n="252" facs="pageImages/Equiano-vol1-p252.jpg"/>
                   <lg>
                      <l>"With thoughts like these my anxious boding mind</l>
@@ -3712,7 +3695,7 @@
                      <l>"Where nor complexion, wealth, or station, can</l>
                      <l>"Protect the wretch who makes a slave of man."</l>
                   </lg>
-               </quote>
+               
                <p>I determined to make every exertion to obtain my freedom, and to return to Old
                   England. For this purpose I thought a knowledge of navigation might be of use to
                   me; for, though I did not intend to run away unless I should be ill used; yet, in
@@ -3737,8 +3720,8 @@
                   to go with them, for they regarded me; and swore to protect me, if I would go:
                   and, as the fleet was to sail the next day, I really believe I could have got safe
                   to Europe at that time. However, as my master was kind, I would not attempt to
-                  leave him; still remembering the old maxim, that <quote rend="inline">'honesty is
-                     the best policy,'</quote> I suffered them to go without me. Indeed my captain
+                  leave him; still remembering the old maxim, that \'honesty is
+                     the best policy,'  I suffered them to go without me. Indeed my captain
                   was much afraid of my leaving him and the vessel at that time, as I had so fair an
                   opportunity: but, I thank God, this fidelity of mine turned out much to my
                   advantage hereafter, when I did not in the least think of it; and made me so much
@@ -3774,12 +3757,12 @@
                   merchandize in readiness, one Sunday my master sent for me to his house. When I
                   came there I found him and the captain together; and, on my going in, I was struck
                   with astonishment at his telling me he heard that I meant to run away from him
-                  when I got to Philadelphia: <quote rend="inline">'And therefore,'</quote> said he,
-                     <quote rend="inline">'I must sell you again: you cost me a great deal of money,
+                  when I got to Philadelphia: 'And therefore,' said he,
+                     'I must sell you again: you cost me a great deal of money,
                      no less than <pb n="258" facs="pageImages/Equiano-vol1-p258.jpg"/> forty pounds
                      sterling; and it will not do to lose so much. You are a valuable
-                     fellow,'</quote> continued he; <quote rend="inline">'and I can get any day for
-                     you one hundred guineas, from many gentlemen in this island.'</quote> And then
+                     fellow,' continued he; 'and I can get any day for
+                     you one hundred guineas, from many gentlemen in this island.' And then
                   he told me of Captain Doran's brother-in-law, a severe master, who ever wanted to
                   buy me to make me his overseer. My captain also said he could get much more than a
                   hundred guineas for me in Carolina. This I knew to be a fact; for the gentleman
@@ -3833,8 +3816,8 @@
                   gladdened my poor heart beyond measure; though <pb n="263"
                      facs="pageImages/Equiano-vol1-p263.jpg"/> indeed it was no more than the very
                   idea I had formed in my mind of my master long before, and I immediately made him
-                  this reply: <quote rend="inline">'sir, I always had that very thought of you,
-                     indeed I had, and that made me so diligent in serving you.'</quote> He then
+                  this reply: 'sir, I always had that very thought of you,
+                     indeed I had, and that made me so diligent in serving you.' He then
                   gave me a large piece of silver coin, such as I never had seen or had before, and
                   told me to get ready for the voyage, and he would credit me with a tierce of
                   sugar, and another of rum; he also said that he had two amiable sisters in
@@ -3964,11 +3947,11 @@
             <trailer>END OF THE FIRST VOLUME.</trailer>
          </div>
          <div type="volume" n="2">
-            <head type="title">
-               <pb n="1" facs="pageImages/Equiano-vol2-p1.jpg"/> THE LIFE, &amp;c.</head>
+            
+            <pb n="1" facs="pageImages/Equiano-vol2-p1.jpg"/> <head type="title">THE LIFE, &amp;c.</head>
             <div n="7" type="chapter">
                <head>CHAP. VII.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author's disgust at the West Indies—Forms schemes to
                         obtain his freedom—Ludicrous disappointment he and his Cap tain meet with in
@@ -3981,7 +3964,7 @@
                      <hi rend="italic">as usual—His venture of turkies—sails for Montserrat, and on
                         his passage his friend the Captain, falls ill and dies.</hi>
                   </p>
-               </argument>
+               
                <p>EVERY day now brought me nearer my freedom, and I was impatient till we proceeded
                   again to sea, that I might have an opportunity of getting a sum large enough to
                   purchase it. I was not long ungratified; for, in the begin ing of the year 1766,
@@ -4075,9 +4058,8 @@
                      facs="pageImages/Equiano-vol2-p10.jpg"/> was very sleepy, and wished he would
                   take somebody else with him; or else, as the man was dead, and could want no
                   farther attendance, to let all things remain as they were till the next morn ing.
-                     <quote rend="inline margsglQuotes">'No, no,'</quote> said he, <quote
-                     rend="inline margsglQuotes">'we will have the money to night, I cannot wait
-                     till to-morrow; so let us go.'</quote> Accordingly I got up and struck a light,
+                    'No, no,' said he, 'we will have the money to night, I cannot wait
+                     till to-morrow; so let us go.' Accordingly I got up and struck a light,
                   and away we both went, and saw the man as dead as we could wish. The Captain said
                   he would give him a grand burial, in gratitude for the promised treasure; and
                   desired that all the things belonging to the deceased might be brought forth.
@@ -4087,8 +4069,7 @@
                      n="11" facs="pageImages/Equiano-vol2-p11.jpg"/> took them one out of the other.
                   At last, when we came to the smallest, and had opened it, we perceived it to be
                   full of papers, and supposed to be notes; at the sight of which our hearts leapt
-                  for joy; and that instant the Captain clap ping his hands, cried out, <quote
-                     rend="inline margsglQuotes">'Thank God here it is.'</quote> But when we came to
+                  for joy; and that instant the Captain clap ping his hands, cried out, 'Thank God here it is.' But when we came to
                   the supposed treasure and long-looked-for bounty, (alas! alas! how uncertain and
                   deceitful are all human affairs!) what had we found? While we thought we were
                   embracing a substance, we grasped an empty nothing. The whole amount in the nest
@@ -4110,23 +4091,20 @@
                      facs="pageImages/Equiano-vol2-p13.jpg"/> I prayed him to be as good as his
                   offer to me, when he was pleased to promise me my freedom as soon as I could
                   purchase it. This speech seemed to con found him; he began to recoil; and my heart
-                  that instant sunk within me. <quote rend="inline">'What,'</quote> said he, <quote
-                     rend="inline margsglQuotes">'give you your freedom? Why, where did you get the
-                     money? Have you got forty-pounds sterling?'</quote>
-                  <quote rend="inline margsglQuotes">'Yes, sir,'</quote> I answered. <quote
-                     rend="inline margsglQuotes">'How did you get it?'</quote> replied he. I told
+                  that instant sunk within me. 'What,' said he, 'give you your freedom? Why, where did you get the
+                     money? Have you got forty-pounds sterling?'
+                  'Yes, sir,' I answered. 'How did you get it?' replied he. I told
                   him, very honestly. The Captain then said he knew I got the money very honestly
                   and with much in dustry, and that I was particularly careful. On which my master
                   replied, I got money much faster than he did; and said he would not have made me
-                  the promise which he did if he had thought I should have got money so soon. <quote
-                     rend="inline margsglQuotes">'Come, come,'</quote> said my worthy Captain,
-                  clapping my master on the back, <quote rend="inline margsglQuotes">'Come, <pb
+                  the promise which he did if he had thought I should have got money so soon. 'Come, come,' said my worthy Captain,
+                  clapping my master on the back, 'Come, <pb
                         n="14" facs="pageImages/Equiano-vol2-p14.jpg"/> Robert, (which was his name)
                      I think you must let him have his freedom;—you have laid your money out very
                      well; you have received good interest for it all this time, and here is now the
                      principal at last. I know Gustavas has earned you more than an hundred a-year,
                      and he will still save you money, as he will not leave you:—Come, Robert, take
-                     the money.'</quote> My master then said, he would not be worse than his
+                     the money.' My master then said, he would not be worse than his
                   promise; and, taking the money, told me to go to the secretary at the Register
                   Office, and get my <ref target="manumission_" corresp="manumission"
                      >manumission</ref> drawn up. These words of my master were like a voice from
@@ -4140,8 +4118,8 @@
                   able, I rose with a heart full of affection and reverence, and left the room, in
                   order to obey my master's joyful mandate of going to the Register Of fice. As I
                   was leaving the house I called to mind the words of the Psalmist, in the 126th
-                  Psalm, and like him, <quote rend="inline margsglQuotes">'I glorified God in my
-                     heart, in whom I trusted.'</quote> These words had been impressed on my mind
+                  Psalm, and like him, 'I glorified God in my
+                     heart, in whom I trusted.' These words had been impressed on my mind
                   from the very day I was forced from Deptford to the present hour; and I now saw
                   them, as I thought, fulfilled and verified. My imagination was all rapture as I
                   flew to the Register Office; and, in this respect, <pb n="16"
@@ -4155,10 +4133,8 @@
                   more embraces his beloved mistress, after she has been ravished from his arms!—All
                   within my breast was tumult, wildness, and delirium! My feet scarcely touched the
                   ground; for they were winged with joy, and, like Elijah, <ref target="elijah_"
-                     corresp="elijah">as he rose to Heaven</ref>, they <quote
-                     rend="inline margsglQuotes">'were with lightning sped as I went on.'</quote>
-                  Every one I met I told of <note type="footnote" n="*" place="bottom"><p>* Note by
-                        Equinao: Acts xii. 9.</p></note>
+                     corresp="elijah">as he rose to Heaven</ref>, they 'were with lightning sped as I went on.'
+                  Every one I met I told of <note xml:id="elijah" target="elijah_">Acts xii. 9. [Equiano's note]</note>
                   <pb n="17" facs="pageImages/Equiano-vol2-p17.jpg"/> my happiness and blazed about
                   the virtue of my amiable master and captain.</p>
                <p>When I got to the office and acquainted the Register with my errand, he
@@ -4176,7 +4152,7 @@
                   has something peculiar in it, and expresses the absolute power and dominion one
                   man claims over his fellow. I shall beg leave to present it before my readers at
                   full length:</p>
-               <quote>
+             
                   <p>
                      <hi rend="italic">Montserrat</hi>.—To all men unto whom these presents shall
                      come; I Robert King, of the parish of st. Anthony in the said island, merchant,
@@ -4199,7 +4175,7 @@
                   <p>Registered the within manumission at full length, this eleventh day of July,
                      1766, in liber D.</p>
                   <p>TERRY LEGAY, Register. </p>
-               </quote>
+               
                <p>
                   <pb n="20" facs="pageImages/Equiano-vol2-p20.jpg"/> In short, the fair as well as
                   black people immediately styled me by a new appellation, to me the most desirable
@@ -4208,9 +4184,8 @@
                   females, who formerly stood aloof, now began to relax and appear less coy; but my
                   heart was still fixed on London, where I hoped to be ere long. So that my worthy
                   captain and his owner my late master, finding that the bent of my mind was towards
-                     <hi rend="italic">London</hi>, said to me, <quote rend="inline margsglQuotes"
-                     >'We hope you won't leave us, but that you will still be with the
-                     vessels.'</quote> Here gratitude bowed me down; and none but the generous mind
+                     <hi rend="italic">London</hi>, said to me, 'We hope you won't leave us, but that you will still be with the
+                     vessels.' Here gratitude bowed me down; and none but the generous mind
                   can judge of my feelings, struggling between in clination and duty. However,
                   notwithstanding my wish to be in London, I obediently answered my benefactors <pb
                      n="21" facs="pageImages/Equiano-vol2-p21.jpg"/> that I would go in the vessel,
@@ -4364,11 +4339,10 @@
                   for this just and benevolent man ever appeared much concerned about the welfare of
                   what he was intrusted with. When this dear friend found the symptoms of death
                   approaching, he called me by my name; and, when I came to him, he asked (with
-                  almost his last breath) if he had ever done me any harm? <quote
-                     rend="inline margsglQuotes">'God forbid I should think so,'</quote> replied I,
-                     <quote rend="inline margsglQuotes">'I should <pb n="34"
+                  almost his last breath) if he had ever done me any harm? 'God forbid I should think so,' replied I,
+                     'I should <pb n="34"
                         facs="pageImages/Equiano-vol2-p34.jpg"/> then be the most ungrateful of
-                     wretches to the best of benefactors.'</quote> While I was thus expressing my
+                     wretches to the best of benefactors.' While I was thus expressing my
                   affection and sorrow by his bedside, he expired without saying another word; and
                   the day following we committed his body to the deep. Every man on board loved him,
                   and regretted his death; but I was exceedingly affected at it, and found that I
@@ -4407,7 +4381,7 @@
             <div n="8" type="chapter">
                <pb n="37" facs="pageImages/Equiano-vol2-p37.jpg"/>
                <head>CHAP. VIII.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author, to oblige Mr. King, once more embarks for Georgia
                         in one of his vessels—A new captain is appointed—They sail, and steer a new
@@ -4423,7 +4397,7 @@
                      <hi rend="italic">to kidnap him—Officiates as a parson at a funeral
                         ceremony—Bids adieu to Georgia, and sails for Martinico.</hi>
                   </p>
-               </argument>
+               
                <p>As I had now, by the death of my captain, lost my great benefactor and friend, I
                   had little inducement to remain longer in the West Indies, except my gratitude to
                   Mr. King, which I thought I had pretty well discharged in bringing back his vessel
@@ -4448,8 +4422,8 @@
                   was pumping the vessel a little after eight o'clock, just before I went off the
                   deck, as is the custom; and being weary with the duty of the day, and tired at the
                   pump, (for we made a good deal of water) I began to express my impatience, and
-                  uttered with an oath, <quote rend="inline margsglQuotes">'Damn the vessel's bottom
-                     out.'</quote> But my conscience instantly smote me for the expression. When I
+                  uttered with an oath, 'Damn the vessel's bottom
+                     out.' But my conscience instantly smote me for the expression. When I
                   left the deck I went to bed, and had scarcely fallen asleep when I dreamed the
                   same dream again about the ship as I had dreamt the two preceeding nights. At
                   twelve o'clock the watch was changed; and, as I had always the charge of the
@@ -4472,9 +4446,8 @@
                   all around us. I was exceedingly alarmed at this; and the captain having not yet
                   come on the deck I lost all patience; and, growing quite enraged, I ran down to
                   him again, and asked him why he did not come up, and what he could mean by all
-                  this? <quote rend="inline margsglQuotes">'The breakers,'</quote> said I, <quote
-                     rend="inline margsglQuotes">'are round us, and the vessel is almost on the
-                     rock.'</quote> With that he came on the deck with me, and we tried to put the
+                  this? 'The breakers,' said I, 'are round us, and the vessel is almost on the
+                     rock.' With that he came on the deck with me, and we tried to put the
                   vessel about, and get her out of the current, but all to no purpose, the wind
                   being very small. We then called all hands up immediately; and after a little we
                   got up one end of a cable, and fastened it to the anchor. By this time the surf
@@ -4576,9 +4549,9 @@
                   what they were: our captain swore they were cannibals. This created a great panic
                   among us; and we held a consultation how to act. The captain wanted to go to a key
                   that was within sight, but a great way off; but I was against it, as in so doing
-                  we should not be able to save all the people; <quote rend="inline margsglQuotes"
-                     >'And therefore,'</quote> said I, <quote rend="inline margsglQuotes">'let us go
-                     on shore here, and perhaps these cannibals may take to the water.'</quote>
+                  we should not be able to save all the people; 
+                    'And therefore,'said I, 'let us go
+                     on shore here, and perhaps these cannibals may take to the water.'
                   <pb n="52" facs="pageImages/Equiano-vol2-p52.jpg"/> Accordingly we steered toward
                   them; and when we approached them, to our very great joy and no less wonder, they
                   walked off one after the other very deliberately; and at last they took flight and
@@ -4637,8 +4610,7 @@
                      n="57" facs="pageImages/Equiano-vol2-p57.jpg"/> who drank above a quart of it
                   as eagerly as if had been wine. We tried to catch fish, but could not; and we now
                   began to repine at our fate, and abandon ourselves to despair; when, in the midst
-                  of our murmuring, the captain all at once cried out. <quote
-                     rend="inline margsglQuotes">'A sail! a sail! a sail!'</quote> This gladdening
+                  of our murmuring, the captain all at once cried out. 'A sail! a sail! a sail!' This gladdening
                   sound was like a reprieve to a convict, and we all instantly turned to look at it;
                   but in a little time some of us began to be afraid it was not a sail. However, at
                   a venture, we embarked and steered after it; and, in half an hour to our
@@ -4763,9 +4735,9 @@
                   soon got her again refitted. some of the people swore that we had spells set upon
                   us by somebody in Montserrat; and others that we had witches and wizzards amongst
                   the poor helpless slaves; and that we never should arrive safe at Georgia. But
-                  these things did not de ter me; I said, <quote rend="inline margsglQuotes">'Let us
+                  these things did not de ter me; I said, 'Let us
                      again face the winds and seas, and swear not, but trust to God, and he will
-                     deliver us.'</quote> We therefore once more set sail; and, <pb n="69"
+                     deliver us.'  We therefore once more set sail; and, <pb n="69"
                      facs="pageImages/Equiano-vol2-p69.jpg"/> with hard labour in seven days time
                   arrived safe at Georgia.</p>
                <p>After our arrival we went up to the town of savannah; and the same even ing I went
@@ -4783,11 +4755,9 @@
                   the man of the house was not free, and had his master to protect him, they did not
                   take the same liberty with him they did with me. I told them that I was a free
                   man, and just arrived from Providence; that we were not making any noise, and that
-                  I was not a stranger in that place, but was very well known there: <quote
-                     rend="inline">'Besides,'</quote> said I, <quote rend="inline margsglQuotes"
-                     >'what will you do with me?'</quote>—<quote rend="inline margsglQuotes">'That
-                     you shall see,'</quote> replied they, <quote rend="inline margsglQuotes">'but
-                     you must go to the watch-house with us.'</quote> Now whether they meant to get
+                  I was not a stranger in that place, but was very well known there: 'Besides,' said I, 'what will you do with me?'—'That
+                     you shall see,'replied they, 'but
+                     you must go to the watch-house with us.' Now whether they meant to get
                   money from me or not I was at a loss to know; but I thought immediately of the
                   oranges and limes at santa Cruz: and seeing that nothing would pacify them I went
                      <pb n="71" facs="pageImages/Equiano-vol2-p71.jpg"/> with them to the
@@ -4806,9 +4776,8 @@
                   disagreeable incident I met with while I was in this place; for, one day, while I
                   was a little way out of the town of savannah, I was beset by two white men, who
                   meant to play their usual tricks with me in the way of kidnapping. As soon as
-                  these men accosted me, one of them said to the other, <quote
-                     rend="inline margsglQuotes">'This is the very fellow we are looking for, that
-                     you lost:'</quote> and the other swore immediately that I was the identical
+                  these men accosted me, one of them said to the other, 'This is the very fellow we are looking for, that
+                     you lost:' and the other swore immediately that I was the identical
                   person. On this they made up to me, and were about to handle me; but I told them
                   to be still and keep off; for I had seen those kind of tricks played upon other
                   free blacks, and they must not think to serve me so. At this they paused a little,
@@ -4837,7 +4806,7 @@
             <div n="9" type="chapter">
                <pb n="75" facs="pageImages/Equiano-vol2-p75.jpg"/>
                <head>CHAP. IX.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author arrives at Martinico—Meets with new
                         difficulties—Gets to Montserrat, where he takes leave of his old master, and
@@ -4849,7 +4818,7 @@
                         account of that voyage, and the dangers the author was in—He returns to
                         England.</hi>
                   </p>
-               </argument>
+               
                <p>I THUs took a final leave of Georgia; for the treatment I had received in it <pb
                      n="76" facs="pageImages/Equiano-vol2-p76.jpg"/> disgusted me very much against
                   the place; and when I left it and sailed for Martinico I determined never more to
@@ -4923,13 +4892,12 @@
                   and begged he would excuse me. I then requested he would be kind enough to give me
                   a certificate of my behaviour while in his service, which he very readily comp ied
                   with, and gave me the following:</p>
-               <floatingText type="letter">
+               <floatingText>
                   <body>
                      <opener>
                         <dateline>
-                           <hi rend="italic">Montserrat,</hi>
-                           <date>
-                              <hi rend="italic">January</hi> 26, 1767.</date>
+                           Montserrat, 
+                          January 26, 1767.
                         </dateline>
                      </opener>
                      <p>The bearer hereof, Gustavus Vasa, was my slave for upwards of three years,
@@ -4973,9 +4941,9 @@
                   expressed great wonder, and freely acknowledged it did their cousin, Capt. Pascal,
                   no honour. He then visited there frequently; and I met him four or five days after
                   in Greenwich park. When he saw me he appeared a good deal surprised, and asked me
-                  how I came back? I answered, <quote rend="inline margsglQuotes">'In a
-                     ship.'</quote> To which he replied dryly, <quote rend="inline margsglQuotes">'I
-                     suppose you did not walk back to London on the water.'</quote> As I saw, by his
+                  how I came back? I answered, 'In a
+                     ship.' To which he replied dryly, 'I
+                     suppose you did not walk back to London on the water.'As I saw, by his
                   manner, that he did not seem to be sorry for his behaviour to me, and that I had
                   not much reason to expect any favour from him, I told him that he <pb n="86"
                      facs="pageImages/Equiano-vol2-p86.jpg"/> had used me very ill, after I had been
@@ -4984,10 +4952,8 @@
                   Miss Guerin's house, and asked him for my prize-money. He said there was none due
                   to me; for, if my prize-money had been 10,000l. he had a right to it all. I told
                   him I was informed otherwise: on which he bade me defiance; and in a bantering
-                  tone, desired me to commence a law suit against him for it: <quote
-                     rend="inline margsglQuotes">'There are lawyers enough,'</quote> said he, <quote
-                     rend="inline margsglQuotes">'that will take the cause in hand, and you had
-                     better try it.'</quote> I told him then that I would try it, which enraged him
+                  tone, desired me to commence a law suit against him for it: 'There are lawyers enough,' said he, 'that will take the cause in hand, and you had
+                     better try it.' I told him then that I would try it, which enraged him
                   very much; however, out of regard to the ladies, I remained still, and never made
                   any farther demand of my right. some time afterwards these sriendly ladies asked
                      <pb n="87" facs="pageImages/Equiano-vol2-p87.jpg"/> me what I meant to do with
@@ -5361,7 +5327,7 @@
             <div n="10" type="chapter">
                <pb n="120" facs="pageImages/Equiano-vol2-p120.jpg"/>
                <head>CHAP. X.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author leaves Doctor Irving, and engages on board a
                         Turkey ship—Account of a black man's being kidnapped on board and sent to
@@ -5369,7 +5335,7 @@
                         freedom—some account of the manner of the author's conversion to the faith
                         of Jesus Christ.</hi>
                   </p>
-               </argument>
+               
                <p>Our voyage to the North Pole being ended, I returned to London with Doctor Irving,
                   with whom I continued for some time, during which I began seriously to reflect on
                   the dangers I had escaped, particularly those of my last voyage, which made a
@@ -5480,21 +5446,20 @@
                   late captain, Mr. Hughes, and others. All this appeared <pb n="130"
                      facs="pageImages/Equiano-vol2-p130.jpg"/> to be against me, and the only
                   comfort I then experienced was, in reading the holy scriptures, where I saw that
-                     <quote rend="inline margsglQuotes">'there is no new thing under the
-                     sun,'</quote> Eccles. i. 9; and what was appointed for me I must submit to.
+                     'there is no new thing under the
+                     sun,' Eccles. i. 9; and what was appointed for me I must submit to.
                   Thus I continued to travel in much heaviness, and fre quently murmured against the
                   Almighty, particularly in his providential dealings; and, awful to think! I be gan
                   to blaspheme, and wished often to be any thing but a human being. In these severe
-                  conflicts the Lord answered me by awful <quote rend="inline margsglQuotes"
-                     >'visions of the night, when deep sleep falleth upon men, in slumberings upon
-                     the bed,'</quote> Job xxxiii. 15. He was pleased, in much mercy, to give me to
+                  conflicts the Lord answered me by awful 'visions of the night, when deep sleep falleth upon men, in slumberings upon
+                     the bed,' Job xxxiii. 15. He was pleased, in much mercy, to give me to
                   see, and in some measure understand, the great and awful scene of the
-                  judgment-day, that <quote rend="inline margsglQuotes">'no unclean person, no
-                     unholy thing, can enter into the kingdom of God,</quote> Eph. <pb n="131"
+                  judgment-day, that 'no unclean person, no
+                     unholy thing, can enter into the kingdom of God, Eph. <pb n="131"
                      facs="pageImages/Equiano-vol2-p131.jpg"/> v. 5. I would then, if it had been
                   possible, have changed my nature with the meanest worm on the earth; and was ready
-                  to say to the mountains and rocks <quote rend="inline margsglQuotes">'fall on
-                     me,'</quote> Rev. vi. 16; but all in vain. I then in the greatest agony
+                  to say to the mountains and rocks 'fall on
+                     me,'  Rev. vi. 16; but all in vain. I then in the greatest agony
                   requested the divine Creator, that he would grant me a small space of time to
                   repent of my follies and vile iniquities, which I felt were grievous. The Lord, in
                   his manifold mercies, was pleased to grant my request, and being yet in a state of
@@ -5516,8 +5481,8 @@
                   that I was still in nature's darkness. At length I hated <pb n="133"
                      facs="pageImages/Equiano-vol2-p133.jpg"/> the house in which I lodged, because
                   God's most holy name was blasphemed in it; then I saw the word of God verified,
-                  viz. <quote rend="inline margsglQuotes">'Before they call, I will answer; and
-                     while they are yet speaking, I will hear.'</quote>
+                  viz. 'Before they call, I will answer; and
+                     while they are yet speaking, I will hear.'
                </p>
                <p>I had a great desire to read the bible the whole day at home; but not having a
                   convenient place for retirement, I left the house in the day, rather than stay
@@ -5532,10 +5497,9 @@
                   minister; he joined our discourse, and asked me some few questions; among others,
                   where I heard the gospel preached? I knew not what he meant by hearing the gospel;
                   I told him I had read the gospel: and he asked where I went to church, or whether
-                  I went at all or not? To which I replied <quote rend="inline margsglQuotes">'I
-                     attended st. James's, st. Martin's, and st. Ann's soho;'</quote>—<quote
-                     rend="inline">'so,'</quote> said he, <quote rend="inline margsglQuotes">'you
-                     are a churchman?'</quote>I answered, I was. He then invited me to a love feast
+                  I went at all or not? To which I replied 'I
+                     attended St. James's, St. Martin's, and St. Ann's soho;' 'so,' said he, 'you
+                     are a churchman?' I answered, I was. He then invited me to a love feast
                   at his chapel that evening. I ac cepted the offer, and thanked him; and soon after
                   he went away, I had some further discourse with the old Christian, added to some
                   profitable reading, which made me exceedingly happy. When I left him he reminded
@@ -5563,7 +5527,7 @@
                   as not to know what to think of the com pany; my heart was attracted, and my <pb
                      n="137" facs="pageImages/Equiano-vol2-p137.jpg"/> affections were enlarged. I
                   wished to be as happy as them, and was persuaded in my mind that they were
-                  different from the world <quote rend="inline">'that lieth in wickedness,'</quote>
+                  different from the world 'that lieth in wickedness,'
                   1 John v. 19. Their language and singing, &amp;c. did well harmonize; I was
                   entirely overcome, and wished to live and die thus. Lastly, some persons in the
                   place produced some neat baskets full of buns, which they distributed about; and
@@ -5592,7 +5556,7 @@
                   I knew not how, with any <pb n="139" facs="pageImages/Equiano-vol2-p139.jpg"/>
                   propriety, to return to my lodgings, where the name of God was continually
                   profaned, at which I felt the greatest horror; I paused in my mind for some time,
-                  not knowing what to do; whe ther to hire a bed elsewhere, or go home again. At
+                  not knowing what to do; whether to hire a bed elsewhere, or go home again. At
                   last fearing an evil report might arise, I went home, with a farewel to
                   card-playing and vain jesting, &amp;c. I saw that time was very short, eternity
                   long, and very near; and I viewed those persons alone blessed who were found ready
@@ -5604,8 +5568,7 @@
                   sat down and we conversed much about soul matters, &amp;c. Their discourse was
                   amazingly delightful, edifying, and pleasant. I knew not at last how to leave this
                   agreeable pair, till time summoned me away. As I was going they lent me a little
-                  book, entitled <quote rend="inline margQuotes">"The conversion of an In<g
-                        ref="char:EOLhyphen"/>dian."</quote> It was in questions and answers. The
+                  book, entitled "The conversion of an Indian." It was in questions and answers. The
                   poor man came over the sea to London, to inquire after the Christian's God, who,
                   (through rich mercy) he found, and had not his journey in vain. The above book was
                   of great use to me, and at that time was a means of strengthening my faith;
@@ -5631,22 +5594,20 @@
                   without offending in one point. I thought this sounded very strange, and puzzled
                   me much for many weeks; for I thought it a hard saying. I then asked my friend Mr.
                   L—d, who was a clerk in a chapel, why the commandments of God were given, if we
-                  could not be saved by them? To which he replied, <quote
-                     rend="inline margsglQuotes">'The law is a schoolmaster to bring us to
-                     Christ,'</quote> who alone could and did keep the commandments, and fulfilled
+                  could not be saved by them? To which he replied, 'The law is a schoolmaster to bring us to
+                     Christ,' who alone could and did keep the commandments, and fulfilled
                   all their requirements for his elect people, even those to whom he had given <pb
                      n="143" facs="pageImages/Equiano-vol2-p143.jpg"/> a living faith, and the sins
                   of those chosen vessels <hi rend="italic">were already</hi> atoned for and
                   forgiven them whilst living; and if I did not experience the same before my exit,
-                  the Lord would say at that great day to me, <quote rend="inline">'Go, ye
-                     cursed,'</quote> &amp;c. &amp;c. for God would appear faithful in his judgments
+                  the Lord would say at that great day to me, 'Go, ye
+                     cursed,' &amp;c. &amp;c. for God would appear faithful in his judgments
                   to the wicked, as he would be faithful in shewing mercy to those were ordained to
                   it before the world was; therefore Christ Jesus seemed to be all in all to that
                   man's soul. I was much wounded at this discourse, and brought into such a dilemma
                   as I never expected. I asked him, if <hi rend="italic">he</hi> was to die that
-                  moment, whether he was sure to enter the kingdom of God? and added, <quote
-                     rend="inline">'Do you <hi rend="italic">know</hi> that your sins are forgiven
-                     you?'</quote> He answered in the affirmative. Then confusion, anger, and
+                  moment, whether he was sure to enter the kingdom of God? and added, 'Do you <hi rend="italic">know</hi> that your sins are forgiven
+                     you?' He answered in the affirmative. Then confusion, anger, and
                   discontent seized me, and I staggered much at this sort of doctrine; it <pb
                      n="144" facs="pageImages/Equiano-vol2-p144.jpg"/> brought me to a stand, not
                   knowing which to believe, whether salvation by works, or by faith only in Christ.
@@ -5655,8 +5616,8 @@
                   was very mysterious; but he said it was really matter of fact, and quoted many
                   portions of scripture immediately to the point, to which I could make no reply. He
                   then desired me to pray to God to shew me these things. I answered, that I prayed
-                  to God every day? He said, <quote rend="inline margsglQuotes">'I perceive you are
-                     a churchman.</quote> I answered, I was. He then entreated me to beg of God to
+                  to God every day? He said, 'I perceive you are
+                     a churchman. I answered, I was. He then entreated me to beg of God to
                   shew me what I was, and the true state of my soul. I thought the prayer very short
                   and odd; so we parted for that time. I weighed all these things well over, and
                   could not help thinking how it was possible for a man to know <pb n="145"
@@ -5676,17 +5637,14 @@
                   I went to the chapel, and, though much distressed, I addressed the reverend
                   gentleman, thinking if I was not right, he would endeavour to convince me of it.
                   When I conversed with him, the first thing he asked me, was, what I knew of
-                  Christ? I told him I believed in him, and had been baptized in his name. <quote
-                     rend="inline">'Then,'</quote> said he, <quote rend="inline margsglQuotes">'when
+                  Christ? I told him I believed in him, and had been baptized in his name. 'Then,' said he, 'when
                      were you brought to the knowledge of God? and how were you convinced of
-                     sin?'</quote> I knew not what he meant by these questions; I told him I kept
+                     sin?' I knew not what he meant by these questions; I told him I kept
                   eight commandments out of ten; but that I sometimes swore on board ship, and
                   sometimes when on shore, and broke the sabbath. He then asked me if I could read?
-                  I answered, <quote rend="inline">'Yes.'</quote>—<quote rend="inline"
-                     >'Then,'</quote> said he, <quote rend="inline margsglQuotes">'do you not read
+                  I answered, 'Yes.' 'Then,' said he, 'do you not read
                      in the bible <pb n="147" facs="pageImages/Equiano-vol2-p147.jpg"/> he that
-                     offends in one point is guilty of all?'</quote> I said, <quote rend="inline"
-                     >'Yes.'</quote> Then he assured me, that one sin unatoned for was as sufficient
+                     offends in one point is guilty of all?' I said, 'Yes.' Then he assured me, that one sin unatoned for was as sufficient
                   to damn a soul as one leak was to sink a ship. Here I was struck with awe; for the
                   minister exhorted me much, and reminded me of the shortness of time, and the
                   length of eternity, and that no unregenerate soul, or any thing unclean, could
@@ -5708,9 +5666,8 @@
                   and wished I had never been born; confusion seized me, and I wished to be
                   annihilated. One day I was standing on the very edge of the stern of the ship,
                   thinking to drown <pb n="149" facs="pageImages/Equiano-vol2-p149.jpg"/> myself;
-                  but this scripture was instantly impressed on my mind—<quote
-                     rend="inline margsglQuotes">'That no murderer hath eternal life abiding in
-                     him,'</quote> 1 John iii. 15. Then I paused, and thought myself the unhappiest
+                  but this scripture was instantly impressed on my mind—'That no murderer hath eternal life abiding in
+                     him,' 1 John iii. 15. Then I paused, and thought myself the unhappiest
                   man living. Again I was convinced that the Lord was better to me than I deserved,
                   and I was better off in the world than many. After this I began to fear death; I
                   fretted, mourned, and prayed, till I became a burden to others, but more so to
@@ -5757,8 +5714,8 @@
                   the eye of faith the crucified Saviour bleeding on the cross on mount Calvary: the
                   scriptures became an unsealed book, I saw myself a condemned criminal under the
                   law, <pb n="153" facs="pageImages/Equiano-vol2-p153.jpg"/> which came with its
-                  full force to my conscience, and when <quote rend="inline margsglQuotes">'the
-                     commandment came sin revived, and I died.'</quote> I saw the Lord Jesus Christ
+                  full force to my conscience, and when 'the
+                     commandment came sin revived, and I died.' I saw the Lord Jesus Christ
                   in his humiliation, loaded and bearing my reproach, sin, and shame. I then clearly
                   perceived that by the deeds of the law no flesh living could be justified. I was
                   then convinced that by the first Adam sin came, and by the second Adam (the Lord
@@ -5769,7 +5726,7 @@
                   purposes. The word of God was sweet to my taste, yea sweeter than honey and the
                   honeycomb. Christ was revealed to my soul as the chiefest among ten thousand.
                   These heavenly moments <pb n="154" facs="pageImages/Equiano-vol2-p154.jpg"/> were
-                  really as life to the dead, and what John calls an earnest of the spirit*. This
+                  really as life to the dead, and what John calls an earnest of the <ref target="spirit_" corresp="spirit">spirit*</ref>. This
                   was indeed unspeakable, and I firmly believe undeniable by many. Now every leading
                   providential circumstance that happened to me, from the day I was taken from my
                   parents to that hour, was then in my view, as if it had but just then occurred. I
@@ -5778,8 +5735,7 @@
                   it; this mercy melted me down. When I considered my poor wretched state I wept,
                   seeing what a great debtor I was to sovereign free grace. Now the Ethiopian was
                   willing to be saved by Jesus Christ, the sinner's only surety, and also to rely on
-                  none other person or thing for salvation. <note type="footnote" n="*"
-                     place="bottom"><p>* John xvi. 13, 14. &amp;c.</p></note>
+                  none other person or thing for salvation. <note xml:id="spirit" target="spirit_">* John xvi. 13, 14. &amp;c. [Equiano's note]</note>
                   <pb n="155" facs="pageImages/Equiano-vol2-p155.jpg"/> Self was obnoxious, and good
                   works he had none, for it is God that worketh in us both to will and to do. Oh!
                   The amazing things of that hour can never be told—it was joy in the Holy Ghost! I
@@ -5816,16 +5772,14 @@
                   of it as it is in Jesus—that the same spirit enabled me to act faith upon the
                   promises that were precious to me, and enabled me to believe to the salvation of
                   my soul. By free grace I was persuaded that I had a part in the first
-                  resurrection, and was enlightened with the <quote rend="inline">'light of the
-                     living,'</quote> Job xxxiii. 30. <pb n="158"
+                  resurrection, and was enlightened with the 'light of the
+                     living,' Job xxxiii. 30. <pb n="158"
                      facs="pageImages/Equiano-vol2-p158.jpg"/> I wished for a man of God with whom I
                   might converse: my soul was like the chariots of <ref target="aminadab_"
                      corresp="aminadab">Aminadab</ref>, Canticles vi. 12. These among others, were
-                  the precious promises that were so powerfully applied to me: <quote
-                     rend="inline margsglQuotes">'All things whatsoever ye shall ask in prayer,
-                     believing, ye shall receive,'</quote> Matt. xxi. 22. <quote
-                     rend="inline margsglQuotes">'Peace I leave with you, my peace I give unto
-                     you,'</quote> John xiv. 27. I saw the blessed Redeemer to be the fountain of
+                  the precious promises that were so powerfully applied to me: 'All things whatsoever ye shall ask in prayer,
+                     believing, ye shall receive,' Matt. xxi. 22. 'Peace I leave with you, my peace I give unto
+                     you,' John xiv. 27. I saw the blessed Redeemer to be the fountain of
                   life, and the well of salvation. I experienced him to be all in all; he had
                   brought me by a way that I knew not, and he had made crooked paths straight. Then
                   in his name I set up my Ebenezer, saying, Hitherto he hath helped me: and could
@@ -5833,12 +5787,11 @@
                   teaching of that all-glorious Deity, the great One in Three, and Three in One,
                   confirmed in the truths of the bible, those oracles <pb n="159"
                      facs="pageImages/Equiano-vol2-p159.jpg"/> of everlasting truth, on which every
-                  soul living must stand or fall eternally, agreeable to Acts iv. 12. <quote
-                     rend="inline margsglQuotes">'Neither is there salvation in any other, for there
+                  soul living must stand or fall eternally, agreeable to Acts iv. 12. 'Neither is there salvation in any other, for there
                      is none other name under heaven given among men whereby we must be saved, but
-                     only Christ Jesus.'</quote> May God give the reader a right understanding in
-                  these facts! <quote rend="inline margsglQuotes">'To him that believeth, all things
-                     are possible, but to them that are unbelieving nothing is pure,</quote> Titus
+                     only Christ Jesus.' May God give the reader a right understanding in
+                  these facts! 'To him that believeth, all things
+                     are possible, but to them that are unbelieving nothing is pure, Titus
                   i. 15.</p>
                <p>During this period we remained at Cadiz until our ship got <ref target="laden_"
                      corresp="laden">laden</ref>. We sailed about the fourth of November; and,
@@ -5864,12 +5817,14 @@
                   in spirit, making melody in my heart to the God of all my mercies, Now my whole
                   wish was to be dissolved, and to be with Christ—but, alas! I must wait mine
                   appointed time.</p>
-               <floatingText type="poem">
+               <floatingText>
                   <body>
                      <pb n="162" facs="pageImages/Equiano-vol2-p162.jpg"/>
+                     <div>
                      <head>MISCELLANEOUS VERSES, OR, Reflections on the state of my Mind during my
                         first Convictions, of the Necessity of believing the Truth, and experiencing
-                        the inestimable Benefits of Christianity.</head>
+                        the inestimable Benefits of Christianity.</head></div>
+                     <div>
                      <lg>
                         <l>Well may I say my life has been</l>
                         <l>One scene of sorrow and of pain;</l>
@@ -5920,8 +5875,8 @@
                         <l>Clouded and darken'd most my years.</l>
                      </lg>
                      <lg>
-                        <l>'sighs now no more would be confin'd—</l>
-                        <l>' They breath'd the trouble of my mind:'</l>
+                        <l>'Sighs now no more would be confin'd—</l>
+                        <l>'They breath'd the trouble of my mind:'</l>
                         <l>I wish'd for death, but check'd the word,</l>
                         <l>And often pray'd unto the Lord.</l>
                      </lg>
@@ -6027,8 +5982,8 @@
                      <lg>
                         <l>Bless'd be thy name, for now I know</l>
                         <l>I and my works can nothing do;</l>
-                        <l>" The Lord alone can ransom man—</l>
-                        <l>" For this the spotless Lamb was slain!"</l>
+                        <l>"The Lord alone can ransom man—</l>
+                        <l>"For this the spotless Lamb was slain!"</l>
                      </lg>
                      <lg>
                         <l>When sacrifices, works, and pray'r,</l>
@@ -6040,16 +5995,16 @@
                         <l>He dy'd for all who ever saw</l>
                         <l>No help in them, nor by the law:—</l>
                         <l>I this have seen; and gladly own</l>
-                        <l>" salvation is by Christ alone*!"</l>
-                     </lg>
+                        <l>"Salvation is by Christ <ref target="alone_" corresp="alone">alone*</ref>!"</l>
+                     </lg></div>
                   </body>
                </floatingText>
-               <note n="*" place="bottom"><p>* Act. iv. 12. [Equiano's Note]</p></note>
+               <note xml:id="alone" target="alone_">* Act. iv. 12. [Equiano's Note]</note>
             </div>
             <pb n="167" facs="pageImages/Equiano-vol2-p167.jpg"/>
             <div n="11" type="chapter">
                <head>CHAP. XI.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">The author embarks on board a ship bound for Cadiz—Is near
                         being shipwrecked—Goes to Malaga—Remarkable fine cathedral there—The author
@@ -6069,7 +6024,7 @@
                         board—Instances of bad treatment—Meets Doctor Irving—Gets to Jamaica—Is
                         cheated by his captain—Leaves the Doctor and goes for England.</hi>
                   </p>
-               </argument>
+               
                <p>WHEN our ship was got ready for sea again, I was intreated by the captain to go in
                   her once more; but, as I felt myself now as happy as I could with to be in this
                   life, I for some time refused; however, the advice of my friends at last
@@ -6088,14 +6043,14 @@
                      facs="pageImages/Equiano-vol2-p170.jpg"/> these words were that instant in my
                   mind: <quote>
                      <lg>
-                        <l>" Christ is my pilot wise, my compass is his word;</l>
-                        <l>" My soul each storm desies, while I have such a Lord.</l>
-                        <l>" I trust his faithfulness and power,</l>
-                        <l>" To save me in the trying hour.</l>
-                        <l>" Though rocks and quicksands deep through all my passage lie,</l>
-                        <l>" Yet Christ shall safely keep and guide me with his eye,</l>
-                        <l>" How can I sink with such a prop,</l>
-                        <l>" That bears the world and all things up?"</l>
+                        <l>"Christ is my pilot wise, my compass is his word;</l>
+                        <l>"My soul each storm desies, while I have such a Lord.</l>
+                        <l>"I trust his faithfulness and power,</l>
+                        <l>"To save me in the trying hour.</l>
+                        <l>"Though rocks and quicksands deep through all my passage lie,</l>
+                        <l>"Yet Christ shall safely keep and guide me with his eye,</l>
+                        <l>"How can I sink with such a prop,</l>
+                        <l>"That bears the world and all things up?"</l>
                      </lg>
                   </quote>
                </p>
@@ -6133,8 +6088,7 @@
                   crafty I might catch some with <ref target="guile_" corresp="guile">guile</ref>;
                   but I began to think that it would be only hypocrisy in me to embrace his offer,
                   as I could not in conscience conform to the opinions of his church. I was
-                  therefore enabled to regard the word of God, which says, <quote rend="inline"
-                     >'Come out from amongst them,'</quote> and refused Father Vincent's offer. so
+                  therefore enabled to regard the word of God, which says, 'Come out from amongst them,' and refused Father Vincent's offer. so
                   we parted without conviction on either side.</p>
                <p>Having taken at this place some fine wines, fruits, and money, we proceeded to
                   Cadiz, where we took about two tons more of money, &amp;c. and then sailed for
@@ -6151,7 +6105,7 @@
                   gentleman with some boldness, and said we had not the least cause to murmur, for
                   that the Lord was better to us than we deserved, and that he had done all things
                   well. I expected that the captain <pb n="175"
-                     facs="pageImages/Equiano-vol2-p175.jpg"/> would be veay angry with me for
+                     facs="pageImages/Equiano-vol2-p175.jpg"/> would be very angry with me for
                   speaking, but he replied not a word. However, before that time on the following
                   day, being the 21st of June, much to our great joy and astonishment, we saw the
                   providential hand of our benign Creator, whose ways with his blind creatures are
@@ -6174,30 +6128,28 @@
                   thanked God for their deliverance; and I trust that my prayers were not wanting
                   amongst them at the same <pb n="177" facs="pageImages/Equiano-vol2-p177.jpg"/>
                   time. This mercy of the Lord quite melted me, and I recollected his words, which I
-                  faw thus verified in the 107th Psalm, <quote rend="inline margsglQuotes">'O give
+                  faw thus verified in the 107th Psalm, 'O give
                      thanks unto the Lord, for he is good, for his mercy endureth for ever. Hungry
                      and thirsty, their souls fainted in them. They cried unto the Lord in their
                      trouble, and he delivered them out of their distressess. And he led them forth
                      by the right way, that they might go to a city of habitation. O that men would
                      praise the Lord for his goodness and for his wonderful works to the children of
                      men! For he satisfieth the longing soul, and silleth the hungry soul with
-                     goodness.</quote>
-               </p>
+                     goodness. </p>      
+                 <p> 'Such as sit in darkness and in the shadow of
+                     death:</p>
+               
                <p>
-                  <quote rend="inline margsglQuotes">'such as sit in dardness and in the shadow of
-                     death:</quote>
-               </p>
-               <p>
-                  <quote rend="inline margsglQuotes">'Then they cried unto the Lord in their
+                  'Then they cried unto the Lord in their
                      trouble, and he saved them out of their distresses. They that go down <pb
                         n="178" facs="pageImages/Equiano-vol2-p178.jpg"/> to the sea in ships; that
                      do business in great waters: these see the works of the Lord, and his wonders
                      in the deep. Whoso is wise and will observe these things, even they shall
-                     understand the loving kindness of the Lord.'</quote>
-               </p>
-               <p>The poor distressed captain said, <quote rend="inline margsglQuotes">'that the
+                     understand the loving kindness of the Lord.' </p>
+              
+               <p>The poor distressed captain said, 'that the
                      Lord is good; for, seeing that I am not fit to die, he there fore gave me a
-                     space of time to repent.'</quote> I was very glad to hear this expression, and
+                     space of time to repent.' I was very glad to hear this expression, and
                   took an opportunity when convenient of talking to him on the providence of God.
                   They told us they were Portuguese, and were in a brig loaded with corn, which
                   shifted that morning at five o'clock, owing to which the vessel sunk that instant
@@ -6256,8 +6208,7 @@
                   would not drink nor carouse with these ungodly actors, nor would he be with me,
                   even at prayers. This grieved me very much. I endeavoured to persuade him as well
                   as I could, but he would not come; and entreated him very much to tell me his
-                  reasons for acting thus. At last he asked me, <quote rend="inline margsglQuotes"
-                     >'How comes it that all the white men on board who can read and write, and
+                  reasons for acting thus. At last he asked me, <quote>'How comes it that all the white men on board who can read and write, and
                      observe the sun, <pb n="184" facs="pageImages/Equiano-vol2-p184.jpg"/> and know
                      all things, yet swear, lie, and get drunk, only excepting yourself?'</quote> I
                   answered him, the reason was, that they did not fear God; and that if any one of
@@ -6332,8 +6283,7 @@
                   met any nation that were so simple in their manners as these people, or had so
                   little ornament in their houses. Neither had they, as I ever could learn, one word
                   expressive of an oath. The worst word I ever heard amongst them when they were
-                  quarrelling, was one that they had got from the English, which was <quote
-                     rend="inline">'you rascal.'</quote> I never saw any mode of worship among them;
+                  quarrelling, was one that they had got from the English, which was <quote>'you rascal.'</quote> I never saw any mode of worship among them;
                   but in this they were not worse than their European brethren or neighbours, for I
                   am sorry to say that there was not one white person in our dwelling, nor <pb
                      n="191" facs="pageImages/Equiano-vol2-p191.jpg"/> any where else, that I saw,
@@ -6446,8 +6396,7 @@
                   in the ground were washed away. I thought this was in some measure a judgment upon
                   us for working on sundays, and it hurt my mind very much. I often wished to leave
                   this place and sail for Europe; for our mode of procedure and living in this
-                  heathenish form was very irksome to me. The word of God saith, <quote
-                     rend="inline margsglQuotes">'What does it avail a man if he gain the whole
+                  heathenish form was very irksome to me. The word of God saith, <quote>'What does it avail a man if he gain the whole
                      world, and lose his own soul?'</quote> This was much and hea vily impressed on
                   my mind; and though <pb n="201" facs="pageImages/Equiano-vol2-p201.jpg"/> I did
                   not know how to speak to the Doctor for my discharge, it was disagreeable for me
@@ -6455,7 +6404,7 @@
                   for it. He was very unwilling at sirst to grant my request; but I gave him so many
                   reasons for it, that at last he consented to my going, and gave me the follow ing
                   certificate of my behaviour:</p>
-               <floatingText type="letter">
+               <floatingText>
                   <body>
                      <p>The bearer, Gustavus Vassa, has served me several years with strict honesty,
                         sobriety, and fidelity. I can, therefore with justice recommend him for
@@ -6464,11 +6413,11 @@
                         he is perfectly trust-worthy.</p>
                      <closer>
                         <signed>CHARLES IRVING.</signed>
-                        <dateline>
+                        <placeName>
                            <hi rend="italic">Musquito shore,</hi>
-                           <date>
-                              <hi rend="italic">June</hi> 15, 1776.</date>
-                        </dateline>
+                          
+                              <hi rend="italic">June</hi> 15, 1776.
+                        </placeName>
                      </closer>
                   </body>
                </floatingText>
@@ -6500,7 +6449,7 @@
                   swore that I should not. I said I had been twice amongst the Turks, yet had never
                   seen any such usage with them, and much less could I have expected any thing of
                   this kind among the Christians. This incensed him exceedingly; and, with a volley
-                  of oaths and imprecations, he replied, <quote rend="inline margsglQuotes"
+                  of oaths and imprecations, he replied, <quote>
                      >'Christians! damn you, you are one of st. Paul's men; but by G—, except you
                      have st. Paul's or st. Peter's faith, and walk upon the water to the shore, you
                      shall not go out of the vessel;'</quote> which I now learnt was going amongst
@@ -6607,7 +6556,7 @@
                   I wanted to go to Jamaica in the other vessel; but he would not listen to me; and,
                   seeing me resolved <pb n="214" facs="pageImages/Equiano-vol2-p214.jpg"/> to go in
                   a day or two, he got the vessel to sail, intending to carry me away against my
-                  will. This treatment mortified me<g ref="char:cmbAbbrstroke">̄</g> extremely. I
+                  will. This treatment mortified me extremely. I
                   immediately, according to an agreement I had made with the captain of the Indian
                   Queen, called for her boat, which was lying near us, and it came alongside; and,
                   by the means of a north-pole shipmate which I met with in the sloop I was in, I
@@ -6664,10 +6613,8 @@
                      facs="pageImages/Equiano-vol2-p219.jpg"/> and prayed to God, who gave me a mind
                   which rested solely on himself. I prayed for resignation, that his will might be
                   done: and the following two portions of his holy word, which oc cured to my mind,
-                  buoyed up my hope, and kept me from taking the life of this wicked man. <quote
-                     rend="inline margsglQuotes">'He hath determined the times before appointed, and
-                     set bounds to our habitations,'</quote> Acts xvii. 26. And, <quote
-                     rend="inline margsglQuotes">'Who is there among you that feareth the Lord, that
+                  buoyed up my hope, and kept me from taking the life of this wicked man. <quote>'He hath determined the times before appointed, and
+                     set bounds to our habitations,'</quote> Acts xvii. 26. And, <quote>'Who is there among you that feareth the Lord, that
                      obeyeth the voice of his servant, that walketh in darkness and hath no light?
                      let him trust in the name of the Lord, and stay upon his God,'</quote> Isaiah
                   l. 20. And thus by the grace of God I was enabled to do. I found him a present
@@ -6734,15 +6681,15 @@
             <div n="12" type="chapter">
                <pb n="225" facs="pageImages/Equiano-vol2-p225.jpg"/>
                <head>CHAP. XII.</head>
-               <argument>
+               
                   <p>
                      <hi rend="italic">Different transactions of the author's life till the present
                         time—His application to the late Bishop of London to be appointed a
                         missionary to Africa—some account of his share in the conduct of the late
                         expedition to Sierra Leone—Petition to the Queen—Conclusion.</hi>
                   </p>
-               </argument>
-               <p>sUCH were the various fares which I was a witness to, and the fortune I
+               
+               <p>SUCH were the various scenes which I was a witness to, and the fortune I
                   experienced until the year 1777. Since that period, my life has been more uniform,
                   and the incidents of it fewer, than in any other equal number of years preceding;
                   I therefore hasten to the conclusion of a narrative, which I <pb n="226"
@@ -6778,14 +6725,14 @@
                   Governor's proposal to go to Africa in hope of doing good, if possible, amongst my
                   countrymen; so, in order to have me sent out properly, we immediately wrote the
                   following letters to the late Bishop of London:</p>
-               <floatingText type="letter">
+               <floatingText>
                   <body>
                      <pb n="229" facs="pageImages/Equiano-vol2-p229.jpg"/>
-                     <head>
+                     <opener>
                         <hi rend="italic">To the Right Reverend Father in God,</hi> ROBERT, <hi
                            rend="italic">Lord Bishop of London:</hi>
-                     </head>
-                     <head>The MEMORIAL of Gustavus Vassa</head>
+                     </opener>
+                     <opener>The MEMORIAL of Gustavus Vassa</opener>
                      <opener>SHEWETH,</opener>
                      <p>THAT your memorialist is a native of Africa, and has a knowledge of the
                         manners and customs of the inhabitants of that country.</p>
@@ -6809,11 +6756,11 @@
                         undertaking.</p>
                      <closer>
                         <signed>Gustavus Vassa.</signed>
-                        <dateline>At Mr. Guthrie's, Taylor, No. 17, Hedge-lane.</dateline>
+                        <placeName>At Mr. Guthrie's, Taylor, No. 17, Hedge-lane.</placeName>
                      </closer>
                   </body>
                </floatingText>
-               <floatingText type="letter">
+               <floatingText>
                   <body>
                      <pb n="231" facs="pageImages/Equiano-vol2-p231.jpg"/>
                      <opener>
@@ -6830,8 +6777,8 @@
                      <closer>
                         <signed>I have the honour to be, My Lord, Your Lordship's Humble and
                            obedient servant, MATT. MACNAMARA.</signed>
-                        <dateline>Grove, <date>11th March 1779.</date>
-                        </dateline>
+                        <placeName>Grove, 11th March 1779.
+                        </placeName>
                      </closer>
                   </body>
                </floatingText>
@@ -6840,12 +6787,11 @@
                   accompanied by the following from Doctor Wallace, who had resided in Africa for
                   many years, and whose sentiments on the subject of an African mission were the
                   same with Governor Macnamara's.</p>
-               <floatingText type="letter">
+               <floatingText>
                   <body>
                      <opener>
                         <dateline>
-                           <date>
-                              <hi rend="italic">March</hi> 13, 1779.</date>
+                          March 13, 1779.
                         </dateline>
                         <salute>MY LORD,</salute>
                      </opener>
@@ -6913,7 +6859,7 @@
                   free-school they had erected for every denomination of black people, whose minds
                   are cultivated here, and forwarded to virtue; and thus they are made useful
                   members of the community. Does not the success of this practice say loudly to the
-                  planters, in the language of scripture—<quote rend="inline margQuotes">"Go ye and
+                  planters, in the language of scripture—<quote>"Go ye and
                      do likewise!"</quote>
                </p>
                <p>In October 1585, I was accompanied by some of the Africans, and presented this
@@ -6947,10 +6893,10 @@
                      facs="pageImages/Equiano-vol2-p240.jpg"/> by the hand in a solemn manner,the
                   man declares to this purpose:</p>
                <p>
-                  <quote rend="inline">"Friends, in the fear of the Lord, and in the presence of
+                  "Friends, in the fear of the Lord, and in the presence of
                      this assembly, whom I desire to be my witnesses, I take this my friend, M. N.
                      to be my wife; promising, through divine assistance, to be unto her a loving
-                     and faithful husband till death separate us:"</quote> and the woman makes the
+                     and faithful husband till death separate us:" and the woman makes the
                   like declaration. Then the two first sign their names to the record, and as many
                   more witnesses as have a mind. I had the honour to subscribe mine to a register in
                   Gracechurch-Court, Lombard-street.—My hand is ever free—if any female Debonair
@@ -6984,12 +6930,11 @@
                   intended expedition; and they accordingly appointed me in November 1786, to that
                   office, and gave me sufficient power to act for the government in the capacity of
                   commissary, having received my warrant and the following order.</p>
-               <quote>
-                  <floatingText type="order">
+                  <floatingText>
                      <body>
 
-                        <head>By the principal Officers and Commissioners of his Majesty's
-                           Navy.</head>
+                        <opener>By the principal Officers and Commissioners of his Majesty's
+                           Navy.</opener>
                         <p>WHEREAs you were directed, by our warrant of the 4th of last month, to
                            receive into your charge from Mr. Joseph Irwin, the surplus provisions
                            remaining of what was provided for the voyage, as well as the provisions
@@ -7014,11 +6959,13 @@
                            1787.</p>
                         <closer>
                            <signed>
-                              <lg>
-                                 <l>J. HINSLOW,</l>
-                                 <l>GEO. MARSH,</l>
-                                 <l>W. PALMER.</l>
-                              </lg>
+                              <lb/>
+                              <persName>J.HINSLOW,</persName>
+                              <lb/>
+                              <persName>GEO. MARSH,</persName>
+                              <lb/>
+                              <persName>W. PALMER.</persName>
+                              <lb/>
                            </signed>
                            <salute>To Mr. Gustavus Vassa, Commissary of Provisions and stores for
                               the Black Poor going to sierra Leona.</salute>
@@ -7026,7 +6973,6 @@
 
                      </body>
                   </floatingText>
-               </quote>
                <p>I proceeded immediately to the executing of my duty on board the vessels destined
                   for the voyage, where I continued till the March following.</p>
                <p>During my continuanee in the employment of government, I was struck with the
@@ -7078,7 +7024,7 @@
                <p>I should not have been so ample in my account of this transaction, had not the
                   share I bore in it been made the subject of partial animadversion, and even my
                   dismission from my employment <pb n="250" facs="pageImages/Equiano-vol2-p250.jpg"
-                  /> thought worthy of being made by some a matter of public triumph*. The motives
+                  /> thought worthy of being made by some a matter of public <ref target="triumph_" corresp="triumph">triumph*</ref>. The motives
                   which might influence any person to descend to a petty contest with an obscure
                   African, and to seek gratification by his depression, perhaps it is not proper
                   here to inquire into or relate, even if its detection were necessary to my
@@ -7087,20 +7033,18 @@
                   behaviour of the Commissioners of the Navy to me entitle me to make this
                   assertion; for after I had been dismissed, March 24, I drew up a memorial
                   thus:</p>
-               <note type="footnote" n="*" place="bottom"><p>* See the Public Advertiser, July 14,
-                     1787. [Equiano's Note]</p></note>
-               <quote>
-                  <floatingText type="petition">
+               <note xml:id="triumph" target="triumph_">* See the Public Advertiser, July 14,
+                     1787. [Equiano's Note]</note>
+                  <floatingText>
                      <body>
 
                         <pb n="251" facs="pageImages/Equiano-vol2-p251.jpg"/>
-                        <head>To the Right Honourable the Lords Com<g ref="char:EOLhyphen"
-                           />missioners of his Majesty's Treasury:</head>
-                        <head>
+                        <opener>To the Right Honourable the Lords Commissioners of his Majesty's Treasury:</opener>
+                        <opener>
                            <hi rend="italic">The Memorial and Petition of</hi> GUSTAVUS VASSA <hi
                               rend="italic">a black Man, late Commissary to the black Poor going
-                              to</hi> AFRICA.</head>
-                        <opener>HUMBLY sHEWETH,</opener>
+                              to</hi> AFRICA.</opener>
+                        <opener>HUMBLY SHEWETH,</opener>
                         <p>THAT your Lordships memorialist was, by the Honourable the Commissioners
                            of his Majesty's Navy on the 4th of December last, appointed to the above
                            employment by warrant from that board;</p>
@@ -7123,8 +7067,7 @@
                            tended to defeat your Lordships humane intentions, and to put the
                            government to a very considerable <pb n="253"
                               facs="pageImages/Equiano-vol2-p253.jpg"/> additional expence, he
-                           created a number of enemies, whose misrepre<g ref="char:EOLhyphen"
-                           />sentations, he has too much reason to believe, laid the foundation of
+                           created a number of enemies, whose misrepresentations, he has too much reason to believe, laid the foundation of
                            his dismission. Unsupported by friends; and unaided by the advantages of
                            a liberal education, he can only hope for redress from the justice of his
                            cause, in addition to the mortification of having been removed from his
@@ -7145,16 +7088,16 @@
                            the above referred-to account, amounting to 32l. 4s. and also the wages
                            intended, which is most humbly submitted.</p>
                         <closer>
-                           <dateline>
+                           <placeName>
                               <hi rend="italic">London,</hi>
-                              <date>
-                                 <hi rend="italic">May</hi> 12, 1787.</date>
-                           </dateline>
+                             
+                                 <hi rend="italic">May</hi> 12, 1787.
+                           </placeName>
                         </closer>
 
                      </body>
                   </floatingText>
-               </quote>
+               
                <p>The above petition was delivered into the hands of their Lordships, who were kind
                   enough, in the space of some few months afterwards, without hearing, to order me
                   50l. sterling—that is, 18l. wages for the time (upwards of four <pb n="255"
@@ -7166,23 +7109,23 @@
                   injured countrymen.</p>
                <p>March the 21st, 1788, I had the honour of presenting the Queen with a petition on
                   behalf of my African brethren, which was received most graciously by Her
-                  Majesty*:</p>
-               <quote>
-                  <floatingText type="petition">
+                  <ref target="Majesty_" corresp="Majesty">Majesty*</ref>:</p>
+               
+                  <floatingText>
                      <body>
 
-                        <head>
+                        <opener>
                            <hi rend="italic">To the</hi> QUEEN's <hi rend="italic">most Excellent
                               Majesty.</hi>
-                        </head>
+                        </opener>
                         <opener>
                            <salute>MADAM,</salute>
                         </opener>
                         <p>YOUR Majesty's well known benevolence and humanity emboldens</p>
                      </body>
                   </floatingText>
-                  <note type="footnote" n="*" place="bottom">* At the request of some of my most
-                     particular friends, I take the liberty of inserting it here.</note>
+                  <note xml:id="Majesty" corresp="Majesty_">* At the request of some of my most
+                     particular friends, I take the liberty of inserting it here. [Equiano's note]</note>
                   <pb n="256" facs="pageImages/Equiano-vol2-p256.jpg"/>
                   <floatingText>
                      <body>
@@ -7196,8 +7139,7 @@
                         <p>The oppression and cruelty exercised to the unhappy negroes there, have
                            at length reached the British legislature, and they are now deliberating
                            on its redress; even several persons of pro perty in slaves in the West
-                           Indies, have petitioned parliament against its con<g ref="char:EOLhyphen"
-                           />tinuance, sensible that it is as impolitic as it is unjust—and what is
+                           Indies, have petitioned parliament against its continuance, sensible that it is as impolitic as it is unjust—and what is
                            inhuman must ever be unwise.</p>
                         <p>
                            <pb n="257" facs="pageImages/Equiano-vol2-p257.jpg"/> Your Majesty's
@@ -7221,12 +7163,11 @@
                         <closer>
                            <signed>I am your Majesty's most dutiful and devoted servant to command,
                               GUSTAVUS VASSA, The Oppressed Ethiopian.</signed>
-                           <dateline>No. 53. Baldwin's Gardens.</dateline>
+                           <placeName>No. 53. Baldwin's Gardens.</placeName>
                         </closer>
 
                      </body>
                   </floatingText>
-               </quote>
                <p>The negro consolidated act, made by the assembly of Jamaica last year, and the new
                   act of amendment now in agitation there, contain a proof of the existence of those
                   charges that have been made against the <pb n="259"
@@ -7245,29 +7186,26 @@
                   benevolence and solid merit of the legislature. It is a pursuit of substantial
                   greatness.—May the time come—at least the speculation to me is pleasing—when the
                   sable people shall gratefully commemorate the au spicious aera of extensive
-                  freedom. Then shall those persons* particularly be named with praise and honour,
+                  freedom. Then shall those <ref target="persons_" corresp="persons">persons*</ref> particularly be named with praise and honour,
                   who generously proposed and stood forth in the cause of humanity, liberty, and
                   good policy; and brought to the car of the legislature designs worthy of royal
                   patronage and adoption. May Heaven make the British senators the dispersers of
-                  light, liberty, and science, to the uttermost parts of the earth: <note n="*"
-                     place="bottom"><p>* Granville sharp, <abbr>Esq</abbr> the Reverend Thomas
-                        Clarkson; the Reverend James Ramsay; our ap proved friends, men of virtue,
+                  light, liberty, and science, to the uttermost parts of the earth: <note xml:id="persons" target="persons_"><p>* Granville Sharp, <abbr>Esq</abbr> the Reverend Thomas
+                        Clarkson; the Reverend James Ramsay; our approved friends, men of virtue,
                         are an honour to their country, ornamental to human nature, happy in
-                        themselves, and benefactors to mankind!</p></note>
+                        themselves, and benefactors to mankind! [Equiano's note]</p></note>
                   <pb n="261" facs="pageImages/Equiano-vol2-p261.jpg"/> then will be glory to God on
                   the highest, on earth peace, and good-will to men:—Glory, honour, peace, &amp;c.
                   to every soul of man that worketh good, to the Britons first, (because to them the
-                  Gospel is preached) and also to the nations. <quote rend="inline margsglQuotes"
-                     >'Those that honour their Maker have mercy on the poor.'</quote>
-                  <quote rend="inline margsglQuotes">'It is righteousness exalteth a nation, but sin
+                  Gospel is preached) and also to the nations. <quote>'Those that honour their Maker have mercy on the poor.'
+                  'It is righteousness exalteth a nation, but sin
                      is a reproach to any people; destruction shall be to the workers of iniquity,
                      and the wicked shall fall by their own wickedness.'</quote> May the blessings
                   of the Lord be upon the heads of all those who commiserated the cases of the
                   oppressed negroes, and the fear of God prolong their days; and may their
-                  expectations be filled with gladness! <quote rend="inline margsglQuotes">'The
-                     liberal devise liberal things, and by liberal things shall stand,'</quote>
-                  Isaiah xxxii. 8. They can say with pious Job, <quote rend="inline margsglQuotes"
-                     >'Did not I weep for <pb n="262" facs="pageImages/Equiano-vol2-p262.jpg"/> him
+                  expectations be filled with gladness! 'The
+                     liberal devise liberal things, and by liberal things shall stand,'
+                  Isaiah xxxii. 8. They can say with pious Job, <quote>'Did not I weep for <pb n="262" facs="pageImages/Equiano-vol2-p262.jpg"/> him
                      that was in trouble? was not my soul grieved for the poor?'</quote> Job xxx.
                   25.</p>
                <p>As the inhuman traffic of slavery is to be taken into the consideration of the
@@ -7340,8 +7278,8 @@
                      facs="pageImages/Equiano-vol2-p268.jpg"/> and religion; and in this light,
                   every circumstance I have related was to me of importance. After all, what makes
                   any event important, unless by its observation we become better and wiser, and
-                  learn <quote rend="inline margsglQuotes">'to do justly, to love mercy, and to walk
-                     humbly before God?'</quote> To those who are possessed of this spirit, there is
+                  learn 'to do justly, to love mercy, and to walk
+                     humbly before God?' To those who are possessed of this spirit, there is
                   scarcely any book or incident so trifling that does not afford some profit, while
                   to others the experience of ages seems of no use; and even to pour out to them the
                   treasures of wisdom is throwing the jewels of instruction away.</p>

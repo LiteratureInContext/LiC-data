@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="philips-dearest-lucasia">
     <!-- branch 'development' of https://github.com/LiteratureInContext/LiC-data.git -->
     <teiHeader>
@@ -14,11 +16,12 @@
                         </name>
                     </persName>
                 </author>
+
                 <editor>
                     <persName type="orcid" key="0000-0001-6453-8721">
                         <name>
-                            <forename> John </forename>
-                            <surname> O'Brien </surname>
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
                         </name>
                     </persName>
                 </editor>
@@ -39,8 +42,8 @@
 
             <publicationStmt>
                 <publisher>Literature in Context</publisher>
-                <distributor>
-                    <orgName>Literature in context</orgName>
+               
+                    
                     <address>
                         <addrLine>University of Virginia Department of English</addrLine>
                         <addrLine>P. O. Box 400121</addrLine>
@@ -49,17 +52,13 @@
                         <addrLine>jobrien@virginia.edu</addrLine>
                         <addrLine>lic.open.anthology@gmail.com</addrLine>
                     </address>
-                </distributor>
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> Published by
                         Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
                         Unported License</licence>
-                    <p>While free, this text is still incomplete and requires standardization of its
-                        annotation scheme.</p>
+                   
                 </availability>
-                <authority>
-                    <idno>Philips-dearest-lucasia</idno>
-                </authority>
+               
 
             </publicationStmt>
 
@@ -129,7 +128,7 @@
             <settingDesc>
                 <setting>
                     <name type="tgn" key="7011781">London, England</name>
-                    <name type="tgn" key="7001306">Dulin, Ireland</name>
+                    <name type="tgn" key="7001306">Dublin, Ireland</name>
                     <time from="1631" to="1664">During her lifetime: 1631-1664.</time>
                 </setting>
             </settingDesc>
@@ -199,12 +198,10 @@
             <div type="poem">
                 <pb n="22" facs="pageImages/Philips-p22.jpg"/>
                 <head type="title"><ref target="Lucasia" corresp="Lucasia">Content, To my dearest
-                        Lucasia</ref><note xml:id="Lucasia" target="Lucasia"> "Lucasia" refers to Ann
-                        Owen, Philips's closest friend and the person to whom many of her poems are
-                        addressed. The poem is a meditation on what true "contentment" might consist
-                        of, and ultimately finds that contentment is best found in the kind of true
-                        friendship that "Orinda," Philips's coterie name for herself and "Lucasia"
-                        share.</note></head>
+                        Lucasia</ref><note xml:id="Lucasia" target="Lucasia"> "Lucasia" refers to
+                        Ann Owen, Philips's closest friend and the person to whom many of her poems
+                        are addressed. The poem is a meditation on where and how they might find
+                        true "contentment."</note></head>
                 <lg type="stanza">
                     <l>Content, the false World's best disguise,</l>
                     <l>The search and faction of the Wise </l>
@@ -212,14 +209,14 @@
                         <note xml:id="abstruse" target="abstruse">Difficult to understand; obscure,
                             recondite. (Oxford English Dictionary)</note> and hid in night,</l>
                     <l>That, like that <ref target="Red-Cross" corresp="Red-Cross">Fairy Red-cross
-                            Knight</ref><note xml:id="Red-Cross" target="Red-Cross">The Red Cross Knight is
-                            the protagonist of Book I of Edmund Spenser's <hi rend="italic">The
-                                Faerie Queene</hi>, published in the 1590s. Philips is referring to
-                            a passage where the Red Cross Knight mistakes "treacherous falsehood" in
-                            the form of a character named Duessa for the "clear Truth" of Fidessa.
-                            The Red Cross Knight is a symbol for purity and the Anglican church, and
-                            Duessa can be read as a symbol of the false or duplicitous Roman
-                            Catholic church.</note>,</l>
+                            Knight</ref><note xml:id="Red-Cross" target="Red-Cross">The Red Cross
+                            Knight is the protagonist of Book I of Edmund Spenser's <hi
+                                rend="italic">The Faerie Queene</hi>, published in the 1590s.
+                            Philips is referring to a passage where the Red Cross Knight mistakes
+                            "treacherous falsehood" in the form of a character named Duessa for the
+                            "clear Truth" of Fidessa. The Red Cross Knight is a symbol for purity
+                            and the Anglican church, and Duessa can be read as a symbol of the false
+                            or duplicitous Roman Catholic church.</note>,</l>
                     <l>Who treacherous Falshood for clear Truth had got,</l>
                     <l>Men think they have it when they have it not.</l>
                 </lg>
@@ -266,13 +263,14 @@
                 <lg type="stanza">
                     <l>Some think the Camp Content does know,</l>
                     <l>And that she sits o'th'Victor's brow:</l>
-                    <l>But in his <ref target="Laurel" corresp="Laurel">Laurel</ref><note xml:id="Laurel"
-                            target="Laurel">The foliage of the laurel tree is an emblem of victory or
-                            of distinction in poetry, as well as military conquest. (Oxford English
-                            Dictionary)</note> there is seen</l>
-                    <l>Often a <ref target="Cypress-bow" corresp="Cypress-bow">Cypress-bow</ref><note
-                        xml:id="Cypress-bow" target="Cypress-bow">Cypress is a common material for archery
-                            bows, but also associated with mourning.</note> between.</l>
+                    <l>But in his <ref target="Laurel" corresp="Laurel">Laurel</ref><note
+                            xml:id="Laurel" target="Laurel">The foliage of the laurel tree is an
+                            emblem of victory or of distinction in poetry, as well as military
+                            conquest. (Oxford English Dictionary)</note> there is seen</l>
+                    <l>Often a <ref target="Cypress-bow" corresp="Cypress-bow"
+                            >Cypress-bow</ref><note xml:id="Cypress-bow" target="Cypress-bow"
+                            >Cypress is a common material for archery bows, but also associated with
+                            mourning.</note> between.</l>
 
                     <pb n="24" facs="pageImages/Philips-p24.jpg"/>
                     <l>Nor will Content her self in that place give,</l>
@@ -283,25 +281,22 @@
                     <l>But yet the most Discreet believe,</l>
                     <l>The Schools this Jewel do receive,</l>
                     <l>And thus far's true without dispute,</l>
-                    <l>Knowledge is still the sweetest <ref target="Fruit" corresp="Fruit"
-                        >fruit</ref><note xml:id="Fruit" target="Fruit">Reference to the fruit of
-                            the Tree of Knowledge in the book of Genesis.</note>.</l>
+                    <l>Knowledge is still the sweetest fruit</l>
                     <l>But whilst men seek for Truth they lose their Peace;</l>
-                    <l><ref target="Ecclesiastes" corresp="Ecclesiastes">And who heaps Knowledge, Sorrow doth
-                        increase</ref><note xml:id="Ecclesiastes" target="Ecclesiastes">Philips is quoting the
-                            book of Ecclesiastes 1:18.</note>.</l>
+                    <l><ref target="Ecclesiastes" corresp="Ecclesiastes">And who heaps Knowledge,
+                            Sorrow doth increase</ref><note xml:id="Ecclesiastes"
+                            target="Ecclesiastes">Ecclesiastes 1:18.</note>.</l>
                 </lg>
 
                 <lg type="stanza">
-                    <l>But now some sullen <ref target="Hermite" corresp="Hermite">Hermite</ref><note
-                        xml:id="Hermite" target="Hermite">A hermit, one who from religious motives has
-                            retired into solitary life (Oxford English Dictionary).</note>
-                        smiles,</l>
+                    <l>But now some sullen <ref target="Hermite" corresp="Hermite"
+                            >Hermite</ref><note xml:id="Hermite" target="Hermite"> Alternative
+                            spelling for hermit: one who from religious motives has retired into
+                            solitary life (Oxford English Dictionary).</note> smiles,</l>
                     <l>And thinks he all the World beguiles,</l>
                     <l>And that his <ref target="Cell" corresp="Cell">Cell and Dish</ref><note
-                        xml:id="Cell" target="Cell">Reference to the frugal nature of the life
-                            of a religious hermit who would have a single dish for eating and live
-                            in a cell.</note> contain</l>
+                            xml:id="Cell" target="Cell">Refers to the religious hermits who slept in
+                            a cell and used one dish for meals.</note> contain</l>
                     <l>What all mankind wish for in vain.</l>
                     <l>But yet his pleasure's follow'd with a Groan,</l>
                     <l>For man was never born to be alone.</l>
@@ -333,16 +328,17 @@
                     <l>The Trifles which the most betray;</l>
                     <l>With innocence and perfect friendship fir'd</l>
                     <l>By Vertue joyn'd, and by our Choice <ref target="retired" corresp="retired"
-                        >retir'd.</ref><note xml:id="retired" target="retired">Retired in the sense of
-                            having retired to the countryside, where Philips and Owen were living,
-                            having left London during the Civil War.</note></l>
+                            >retir'd.</ref><note xml:id="retired" target="retired">Retired in the
+                            sense of having retired to the countryside, where Philips and Owen were
+                            living, having left London during the Civil War.</note></l>
                 </lg>
 
                 <lg type="stanza">
                     <l>Whose Mirrours are the crystal Brooks,</l>
                     <l>Or else each others Heart and Looks;</l>
                     <l>Who cannot wish for other things</l>
-                    <l><ref target="Then" corresp="Then">Then</ref><note xml:id="Then" target="Then">"Then" as in "Than that which privacy and friendship bring."</note> Privacy and Friendship brings:</l>
+                    <l><ref target="Then" corresp="Then">Then</ref><note xml:id="Then" target="Then">"Then" as in "Than":"Than that which privacy and friendship
+                            bring."</note> Privacy and Friendship brings:</l>
                     <l>Whose thoughts and persons chang'd and mixt are one,</l>
                     <l>Enjoy Content, or else the World hath none.</l>
                 </lg>

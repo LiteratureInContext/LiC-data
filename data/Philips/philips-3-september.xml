@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="philips-3-september">
-<teiHeader>
-    <fileDesc>
-        <titleStmt>
-            <title>"On the 3. of September, 1651"</title>
-            
-            <author>
-                <persName type="lcnaf" key="n83206561">
-                    <name>
-                        <forename>Katherine</forename>
-                        <surname>Philips</surname>
-                        <date when="1631-01-01">Birth: January 1, 1631 or 1632</date>
-                        <date when="1664-06-02">Death: June 2, 1664</date>           
-                        <roleName>The Matchless Orinda</roleName>
-                        <affiliation>Married</affiliation>
-                        <country>England</country>
-                    </name>
-                </persName>
-            </author>
-            
-            <respStmt>
-                <resp>Transcription, correction, editorial commentary, and markup</resp>
-                <name>Staff and Research Assistants at The University of Virginia</name>
-                <name>John O'Brien</name>
-                <name>Sara Brunstetter</name>
-            </respStmt>
-            <sponsor/>
-            <funder>National Endowment for the Humanities</funder>
-        </titleStmt>
-        
-        <publicationStmt>
-            <publisher>Literature in Context</publisher>
-           
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"On the 3. of September, 1651"</title>
+
+                <author>
+                    <persName type="lcnaf" key="n83206561">
+                        <name>
+                            <surname>Philips</surname>
+                            <forename>Katherine</forename>
+                        </name>
+                    </persName>
+                </author>
+
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name>
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
+                        </name>
+                    </persName>
+                </editor>
+
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Staff and Research Assistants at The University of Virginia</name>
+                    <name>John O'Brien</name>
+                    <name>Sara Brunstetter</name>
+                    <name>Rachel Retica</name>
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+
                 <address>
                     <addrLine>University of Virginia Department of English</addrLine>
                     <addrLine>P. O. Box 400121</addrLine>
@@ -40,185 +47,225 @@
                     <addrLine>jobrien@virginia.edu</addrLine>
                     <addrLine>lic.open.anthology@gmail.com</addrLine>
                 </address>
-               
-           
-            <availability status="free">
-                <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-                    Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                    License </licence>
-            </availability>
-        </publicationStmt>
-        
-        <sourceDesc>
-            <biblStruct>
-                <analytic>
-                    <title>"On the 3. of September, 1651"</title>
-                </analytic>
-                <monogr>
-                    <author>
-                        <name>
-                            <forename>Katherine</forename>
-                            <surname>Philips</surname>
-                        </name>
-                    </author>
-                    <title type="main">Poems by the most deservedly admired Mrs. Katherine Philips, the matchless Orinda</title>
-                    <title type="sub">to which is added Monsieur Corneille's Pompey &amp; Horace, tragedies; with several other translations out of French</title>
-                    
-                    <imprint>
-                        <pubPlace>
-                            <placeName type="TGN" key="7011781">London</placeName>
-                        </pubPlace>
-                        <publisher>Printed by J.M. for H. Herringman</publisher>
-                        <date when="1667">1667</date>
-                        <note resp="editors.xml#JOB">This text is based on transcriptions created by the Early English Books Online Texts Creation Partnership, a library-based project directed by the University of Michigan and Oxford University. <ref target="http://name.umdl.umich.edu/A54716.0001.001
-                            ">Their digital text</ref> was produced from the 1667 edition, published by Henry Herringman in London in 1667, three years after Philips's death, but with the collaboration of her late husband. We have also consulted <hi rend="italics">The Collected Works of Katherine Philips</hi>, edited by Patrick Thomas (Essex: Stump Cross Books, 1990), which takes Philips's manuscript versions of her poems as its copytext. Annotations have been provided by faculty and students at the University of Virginia. For a full description of this object, see <ref target="http://estc.bl.uk/R19299">its ESTC entry</ref>.
-                        </note>
-                    </imprint>     
-                    <extent>[36], 198, [8], 112, [2] p. :  port. ;  2⁰.</extent>
-                    <biblScope></biblScope>
-                </monogr>
-            </biblStruct>   
-        </sourceDesc>        
-    </fileDesc>
-    
-    <profileDesc>
-        <langUsage>
-            <language ident="en">English</language>
-        </langUsage>
-        <creation/>
-        <textDesc n="poem">
-            <channel mode="w">print</channel>
-            <constitution type="single"/>
-            <derivation type="original"/>
-            <domain/>
-            <factuality type="fiction"/>
-            <interaction/>
-            <preparedness type="prepared"/>
-            <purpose type="entertain" degree="high"/>
-        </textDesc>
-        <settingDesc>
-            <setting>
-                <name type="tgn" key="7011781">London, England</name>
-                <name type="tgn" key="7001306">Dulin, Ireland</name>
-                <time from="1631" to="1664">During her life time: 1631-1664.</time>
-            </setting>
-        </settingDesc>
-    </profileDesc>
-    
-    <encodingDesc>
-        <!-- BEGINS Encoding Description -->
-        <projectDesc>
-            <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
-                project, which provides an accessible, curated, and marked-up selection of primary
-                sources relevant to the study and the teaching of British and American literature of
-                the 18th century. This project is funded by the National Endowment for the Humanities
-                and developed by faculty at The University of Virginia and Marymount University. </p>
-        </projectDesc>
-        <editorialDecl>
-            <interpretation>
-                <p>Research informing these annotations draws on publicly-accessible resources, with
-                    links provided where possible. Annotations have also included common knowledge,
-                    defined as information that can be found in multiple reliable sources. If you
-                    notice an error in these annotations, please contact
-                    lic.open.anthology@gmail.com.</p>
-            </interpretation>
-            <normalization>
-                <p>Original spelling and capitalization is retained, though the long s has been
-                    silently modernized and ligatured forms are not encoded.</p>
-            </normalization>
-            <hyphenation>
-                <p>Hyphenation has not been retained, except where necessary for the sense of the
-                    word.</p>
-            </hyphenation>
-            <segmentation>
-                <p>Page breaks have been retained. Catchwords, signatures, and running headers have
-                    not. Where pages break in the middle of a word, the complete word has been
-                    indicated prior to the page beginning. </p>
-            </segmentation>
-            <correction>
-                <p>Materials have been transcribed from and checked against first editions, where
-                    possible. See the Sources section.</p>
-            </correction>
-        </editorialDecl>
-        <tagsDecl>
-            <namespace name="http://www.tei-c.org/ns/1.0">
-                <tagUsage gi="div">Unnumbered divs used.</tagUsage>
-            </namespace>
-        </tagsDecl>
-        <classDecl>
-            <taxonomy xml:id="lcnaf">
-                <bibl>Library of Congress Name Authority File</bibl>
-            </taxonomy>
-            <taxonomy xml:id="lcc">
-                <bibl>Library of Congress Classification</bibl>
-            </taxonomy>
-            <taxonomy xml:id="tgn">
-                <bibl>Getty Thesaurus of Geographic Names</bibl>
-            </taxonomy>
-            <taxonomy xml:id="orcid">
-                <bibl>Open Researcher and Contributor ID</bibl>
-            </taxonomy>
-        </classDecl>
-    </encodingDesc>
-</teiHeader>
 
-<text>
-    <body>
-        <div type="poem">                   
-       <pb n="13" facs="pageImages/Philips-p13.jpg"/>     
-            <head type="title"><hi rend="italic">On the 3. of</hi> September, <ref target="a001" corresp="n001">1651</ref><note xml:id="n001" target="a001">This date marks the Battle of Worcester where Oliver Cromwell and his men defeated Charles II and the Royalists, thus marking the end of the English Civil War. Source: Wikipedia</note></head>
-           
-    <lg type="stanza">
-        <l n="1">As when the glorious <ref target="a002" corresp="n002">Magazine of Light</ref><note xml:id="n002" target="a002">Magazine of light refers to the sun as an arsenal container of light</note></l>
-        <l n="2">Approaches to his Canopy of Night</l>
-        <l n="3">He with the new splendor clothes his dying Rays,</l>
-        <l n="4">And double brightness to his Beams conveys;</l>
-        <l n="5">And (as to <ref target="a003" corresp="n003">brave</ref><note xml:id="n003" target="a003">Brave here means to defy. Source: Oxford English Dictionary</note> and check his ending fate)</l>
-        <l n="6">Puts on his highest look in's lowest state</l>
-        
-        <pb n="14" facs="pageImages/Philips-p14.jpg"/>
-        
-        <l n="7">Dreft in such terrour as to make us all</l>
-        <l n="8">Be <ref target="a004" corresp="n004"><hi style="italics">Anti-Persians</hi></ref><note xml:id="n004" target="a004">(DRAFT-Is this right?)Anti-Persians, i.e. those against the sun. They are "rooting" for the sun to set. It was thought that Persians worshipped the sun. (Encyclopedia Britannica) </note> and adore his Fall</l>
-        <l n="9">Then quits the world depriving it of Day</l>
-        <l n="10">While Every Herb and Plant does droop away;</l>
-        <l n="11">So when our gasping <hi style="italics">English</hi> Royalty</l>
-        <l n="12">Perciev'd her <ref target="a005" corresp="n005">Period</ref><note xml:id="n005" target="a005">End. Source: Oxford English Dictionary</note> was now drawing nigh,</l>
-        <l n="13">She summons her whole strength to give one blow,</l>
-        <l n="14">To raise her self, or pull down others too.</l>
-        <l n="15">Big with revenge and hope she now spake more</l>
-        <l n="16">Of terror than in many months before;</l>
-        <l n="17">And musters her Attendants or to fave</l>
-        <l n="18">Her from, or else attend her to, the Grave:</l>
-        <l n="19">Yet but enjoy'd the miserable fate</l>
-        <l n="20">Of setting Majesty, to die in State.</l>
-        <l n="21"><ref target="a006" corresp="n006">Unhappy Kings, who cannot keep a Throne</ref><note xml:id="n006" target="a006">(DRAFT) I would like something on this but I can't figure out the kings this refers to</note>,</l>
-        <l n="22">Nor be so fortunate to fall alone!</l>
-        <l n="23">Thier weight sinks others: <ref target="a007" corresp="n007"><hi style="italics">Pompey</hi> could not fly</ref>,<note xml:id="n007" target="a007">Pompey was assassinated while fleeing to Egypt in 48 BCE, and was replaced by Caesar. Source: Wikipedia</note></l>
-        <l n="24">But half the World must bear him company;</l>
-        <l n="25">And captiv'd <ref target="a008" corresp="n008"><hi style="italics">Sampson</hi></ref><note xml:id="n008" target="a008">(DRAFT-I would love to have this double checked)Sampson is a nazirite who was gifted with superhuman strength. He was famed for killing a lion with his bare hands, and being taken captive and tortured after being betrayed by his lover Delilah. Source: Wikipedia</note> could not life conclude,</l>
-        <l n="26">Unless attended with a multitude.</l>
-        <l n="27">Who'd trust to greatness now, <ref target="a009" corresp="n009">whose food is air</ref>,<note xml:id="n009" target="a009">Who survives on nothing or who has false hope.</note></l>
-        <l n="28">Whose ruine sudden, and whose end despair?</l>
-        <l n="29">Who would presume upon his Glorious Birth,</l>
-        <l n="30">Or quarrel for a spacious share of Earth</l>
-        <l n="31">That sees such <ref target="a010" corresp="n010">Diadems</ref><note xml:id="n010" target="a010">Crowns. Source: Oxford English Dictionary</note> become so cheap,</l>
-        <l n="32">And Heros tumble in a common heap?</l>
-        <l n="33">Oh give me Vertue then, which sums up all,</l>
-        <l n="34">And firmly stands when Crowns and Scepters fall.</l>
-    </lg>
-        </div>
-    </body>
-</text>
+
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"On the 3. of September, 1651"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <name>
+                                <forename>Katherine</forename>
+                                <surname>Philips</surname>
+                            </name>
+                        </author>
+                        <title type="main">Poems by the most deservedly admired Mrs. Katherine
+                            Philips, the matchless Orinda</title>
+                        <title type="sub">to which is added Monsieur Corneille's Pompey &amp;
+                            Horace, tragedies; with several other translations out of French</title>
+
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="TGN" key="7011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Printed by J.M. for H. Herringman</publisher>
+                            <date when="1667">1667</date>
+                            <note resp="editors.xml#JOB">This text is based on transcriptions
+                                created by the Early English Books Online Texts Creation
+                                Partnership, a library-based project directed by the University of
+                                Michigan and Oxford University. <ref
+                                    target="http://name.umdl.umich.edu/A54716.0001.001">Their
+                                    digital text</ref> was produced from the 1667 edition, published
+                                by Henry Herringman in London in 1667, three years after Philips's
+                                death, but with the collaboration of her late husband. We have also
+                                consulted <hi rend="italics">The Collected Works of Katherine
+                                    Philips</hi>, edited by Patrick Thomas (Essex: Stump Cross
+                                Books, 1990), which takes Philips's manuscript versions of her poems
+                                as its copytext. Annotations have been provided by faculty and
+                                students at the University of Virginia. For a full description of
+                                this object, see <ref target="http://estc.bl.uk/R19299">its ESTC
+                                    entry</ref>. </note>
+                        </imprint>
+                        <extent>[36], 198, [8], 112, [2] p. : port. ; 2⁰.</extent>
+                        <biblScope>pp 13-14</biblScope>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="poem">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>
+                    <name type="tgn" key="7001306">Dublin, Ireland</name>
+                    <time from="1631" to="1664">During her lifetime: 1631-1664.</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                        Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <div type="poem">
+                <pb n="13" facs="pageImages/Philips-p13.jpg"/>
+                <head type="title"><hi rend="italic">On the 3. of</hi> September, <ref
+                        target="aSeptember" corresp="September">1651</ref><note xml:id="September"
+                        target="aSeptember">On September 3rd, 1651, Oliver Cromwell and his men
+                        defeated Charles II and the Royalists in the battle of Worcester, the last
+                        major battle of the English Civil War.</note></head>
+
+                <lg type="stanza">
+                    <l n="1">As when the glorious <ref target="aMagazine" corresp="Magazine"
+                            >Magazine</ref><note xml:id="Magazine" target="aMagazine">A storehouse
+                            or repository. In military use, a storeroom for arms and explosives
+                            (Oxford English Dictionary).</note> of Light</l>
+                    <l n="2">Approches to his Canopy of Night</l>
+                    <l n="3">He with the new splendour clothes his dying Rays,</l>
+                    <l n="4">And double brightness to his Beams conveys;</l>
+                    <l n="5">And (as to <ref target="aBrave" corresp="Brave">brave</ref><note
+                            xml:id="Brave" target="aBrave"> To defy (Oxford English
+                            Dictionary).</note> and <ref target="aCheck" corresp="Check"
+                            >check</ref><note xml:id="Check" target="aCheck">to stop sharply (Oxford
+                            English Dictionary)</note> his ending fate)</l>
+                    <l n="6">Puts on his highest look in's lowest state,</l>
+
+                    <pb n="14" facs="pageImages/Philips-p14.jpg"/>
+
+                    <l n="7">Drest in such terrour as to make us all</l>
+                    <l n="8">Be <ref target="aAnti-Persians" corresp="Anti-Persians"><hi
+                                rend="italic">Anti-Persians</hi></ref><note xml:id="Anti-Persians"
+                            target="aAnti-Persians">Persians had the reputation of being
+                            sun-worshippers. Anti-Persians, therefore, would be anti-sun, depicted
+                            here as though they were rooting for it to set (Encyclopedia Britannica).
+                        </note> and adore his Fall;</l>
+                    <l n="9">Then quits the world depriving it of Day,</l>
+                    <l n="10">While Every Herb and Plant does droop away:</l>
+                    <l n="11">So when our gasping <hi rend="italic">English</hi> Royalty</l>
+                    <l n="12">Perceiv'd her <ref target="aPeriod" corresp="Period">Period</ref><note
+                            xml:id="Period" target="aPeriod">An end, a conclusion; the point of
+                            completion of a process (OED).</note> was now drawing nigh,</l>
+                    <l n="13">She summons her whole strength to give one blow,</l>
+                    <l n="14">To raise her self, or pull down others too.</l>
+                    <l n="15">Big with revenge and hope she now spake more</l>
+                    <l n="16">Of terror than in many months before;</l>
+                    <l n="17">And musters her Attendants, or to save</l>
+                    <l n="18">Her from, or else attend her to, the Grave:</l>
+                    <l n="19">Yet but enjoy'd the miserable fate</l>
+                    <l n="20">Of setting Majesty, to die in State.</l>
+                    <l n="21">Unhappy Kings, who cannot keep a Throne,</l>
+                    <l n="22">Nor be so fortunate to fall alone!</l>
+                    <l n="23">Their weight sinks others: <ref target="aPompey" corresp="Pompey"><hi
+                                rend="italic">Pompey</hi> could not fly</ref>,<note
+                            xml:id="Pompey" target="aPompey">Pompey, a Roman statesman and general,
+                            was a popular figure in literature for his spectacular fall from power.
+                            After Caesar defeated him in the Battle of Pharsalus, concluding the
+                            civil war, Pompey fled to Egypt, where he was assassinated by Lucius
+                            Septimius, his former colleague.</note></l>
+                    <l n="24">But half the World must bear him company;</l>
+                    <l n="25">And captiv'd <ref target="aSampson" corresp="Sampson"><hi
+                                rend="italic">Sampson</hi></ref><note xml:id="Sampson"
+                            target="aSampson">In the Bible, Sampson ("man of the sun"), a Judge of
+                            the ancient Israelites and blessed with superhuman strength, was taken
+                            captive and tortured by the Philistines after Delilah betrayed him. He
+                            took his revenge during a well-attended sacrifice, when he was summoned
+                            to give a performance and instead destroyed the temple's columns,
+                            killing himself and all of the Philistines within.</note> could not life
+                        conclude,</l>
+                    <l n="26">Unless attended with a multitude.</l>
+                    <l n="27">Who'd trust to greatness now, <ref target="aAir" corresp="nAir">whose
+                            food is air</ref>,<note xml:id="nAir" target="aAir">Who survives on
+                            nothing or who has false hope.</note></l>
+                    <l n="28">Whose ruine sudden, and whose end despair?</l>
+                    <l n="29">Who would presume upon his Glorious Birth,</l>
+                    <l n="30">Or quarrel for a spacious share of Earth</l>
+                    <l n="31">That sees such <ref target="aDiadems" corresp="Diadems"
+                            >Diadems</ref><note xml:id="Diadems" target="aDiadems">Crowns (Oxford
+                            English Dictionary).</note> become so cheap,</l>
+                    <l n="32">And Heros tumble in a common heap?</l>
+                    <l n="33">Oh give me Vertue then, which sums up all,</l>
+                    <l n="34">And firmly stands when Crowns and Scepters fall.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
 
 </TEI>
-
-
-
-
-
-
-
-
-
-

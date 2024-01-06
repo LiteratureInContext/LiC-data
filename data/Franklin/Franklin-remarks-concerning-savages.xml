@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="remarks-concerning-the-savages">
     <teiHeader>
         <fileDesc>
@@ -22,14 +22,14 @@
                     </persName>
                 </editor>
                 <respStmt>
-                    <resp> Transcription, correction, editorial commentary, and markup </resp>
-                    <name ref="editors.xmlAJB"> Austin Benson
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#AJB">Austin Benson
                     </name>
                 </respStmt>
                 <funder> National Endowment for the Humanities </funder>
             </titleStmt>
             <publicationStmt>
-                <publisher> Literature in Context </publisher>
+                <publisher>Literature in Context</publisher>
                 <address>
                     <addrLine> University of Virginia Department of English </addrLine>
                     <addrLine> Bryan Hall 219 </addrLine>
@@ -56,14 +56,14 @@
                         <author>
                             <forename>Benjamin</forename>
                             <surname>Franklin</surname>
-                            <addName></addName>
+                           
                         </author>
-                        <title> REMARKS CONCERNING THE SAVAGES OF NORTH-AMERICA </title>
+                        <title>Remarks Concerning the Savages of North-America</title>
                         <imprint>
                             <pubPlace>
-                                <placeName type="tgn" key="7617217"> Passy </placeName>
+                                <placeName type="tgn" key="7617217">Passy</placeName>
                             </pubPlace>
-                            <publisher> Passy Press </publisher>
+                            <publisher>Passy Press</publisher>
                             <date when="1784">1784</date>
                             <note></note>
                         </imprint>
@@ -163,12 +163,14 @@
         <!-- & and &c. are rendered as 'and' and 'etc.', respectively, and marked 
             with a comment indicating the original reading -->
         <front>
-            <pb n="[TP]"/>
+            <pb n=""/>
             <titlePage>
                 <docTitle>
-                    <titlePart> REMARKS <lb/> CONCERNING THE SAVAGES <lb/> OF NORTH-AMERICA
+                    <titlePart>REMARKS <lb/> CONCERNING THE SAVAGES <lb/> OF NORTH-AMERICA
                     </titlePart>
                 </docTitle>
+                <docAuthor/>
+                <docImprint></docImprint>
             </titlePage>
         </front>
         <body>
