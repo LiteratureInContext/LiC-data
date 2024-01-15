@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-distress">
+   
+   <!--TEI Header BEGINS-->
+   <teiHeader>
+      
+      
+      <fileDesc> <!--BEGINS File Description -->
+             <titleStmt>
+                <title type="main">
+                   "NIOBE in Distress for her Children slain by APOLLO, from Ovid's Metamorphoses, Book VI. and from a view of the Painting of Mr. Richard Wilson" </title>
+                <author>
+                   <persName type="lcnaf" key="n50016726">
+                      <name>
+                         <forename>Phillis</forename>
+                         <surname>Wheatley</surname>
+                      </name>
+                   </persName>
+                </author>
+                      <editor>
+                         <persName type="orcid" key="0000-0002-7400-4093">
+                            <name ref="editors.xml#TH">
+                               <forename> Tonya</forename>
+                               <surname> Howe </surname>
+                            </name>
+                         </persName>
+                      </editor>
+                      <respStmt>
+                         <resp>Transcription, correction, editorial commentary, and markup</resp>
+                         <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+                         <name ref="editors.xml#JW">James West</name>
+                         <name ref="editors.xml#AR">Amy Ridderhof</name>
+                      </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+             </titleStmt>
+         
+         
+             <publicationStmt>
+                      <publisher>Literature in Context</publisher>
+                       <address>
+                          <addrLine>Marymount University Department of Literature and Languages</addrLine>
+                          <addrLine>2807 N. Glebe Road</addrLine>
+                          <addrLine>Arlington, VA </addrLine>
+                          <addrLine>22207</addrLine>
+                          <addrLine>thowe@marymount.edu</addrLine>
+                          <addrLine>lic.open.anthology@gmail.com</addrLine>
+                       </address>
+                      <availability status="free">
+                         <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                            License </licence>
+                      </availability>
+                     
+             </publicationStmt>
+         
+         
+             <sourceDesc>
+                    <biblStruct>
+                       <analytic>
+                          <title>"NIOBE in Distress for her Children slain by APOLLO, from Ovid's Metamorphoses, Book VI. and from a view of the Painting of Mr. Richard Wilson"</title>
+                       </analytic>
+                       <monogr>
+                          <author>
+                                <name>
+                                   <forename>Phillis</forename>
+                                   <surname>Wheatley</surname>
+                                </name>
+                          </author>
+                          <title>Poems on Various Subjects, Religious and Moral</title>
+                          
+                          <imprint>
+                             <pubPlace>
+                                <placeName type="TGN" key="7011781">London</placeName>
+                             </pubPlace>
+                             <publisher>Printed for A. Bell</publisher>
+                             <publisher>bookseller, Aldgate</publisher>
+                             <date when="1773">1773</date>
+                             <note>Page images are sourced from two copies of the first edition housed in the Library of Congress.</note>
+                          </imprint>
+                          
+                          <imprint>
+                           
+                             <pubPlace>Ann Arbor, MI</pubPlace>
+                             <publisher>University of Michigan Humanities Text Initiative</publisher>
+                             <date when="1999">1999</date>
+                             <note><ref target="https://quod.lib.umich.edu/a/amverse/BAP5379.0001.001?view=toc">Online SGML text from the University of Michigan HTI</ref>. SGML markup edited to conform to LiC parameters,
+                                including changes to element and attribute case, ligatures, and other
+                                special html characters. </note>
+                          </imprint>
+                          <extent>[9],124p., 18cm </extent>
+
+                          <biblScope>pp 101-113</biblScope>
+                       </monogr>
+                    </biblStruct>
+             </sourceDesc>
+      </fileDesc>
+      
+      
+      <profileDesc>  <!--BEGINS Profile Description  --> 
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="poem">
+            <channel mode="w">print</channel>
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+         </textDesc>
+         
+         <settingDesc>
+            <setting>
+
+               <time from="1761" to="1765">mid 18th century</time>
+               <!-- Used the date of her enslavement -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+      
+      
+      
+      <encodingDesc>  <!-- BEGINS Encoding Description -->
+              <projectDesc> <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi> project,
+                 which provides an accessible, curated, and marked-up selection of primary sources
+                 relevant to the study and the teaching of British and American literature of the 18th
+                 century. This project is funded by the National Endowment for the Humanities and
+                 developed by faculty at The University of Virginia and Marymount University. </p>
+              </projectDesc>
+              <editorialDecl>
+                 <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                       links provided where possible. Annotations have also included common knowledge,
+                       defined as information that can be found in multiple reliable sources. If you
+                       notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+                    </p>
+                 </interpretation>
+                 <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                       silently modernized and ligatured forms are not encoded.</p>
+                 </normalization>
+                 <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                       word.</p>
+                 </hyphenation>
+                 <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                       not. Where pages break in the middle of a word, the complete word has been
+                       indicated prior to the page beginning.</p>
+                 </segmentation>
+                 <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                       possible. See the Sources section.</p>
+                 </correction>
+              </editorialDecl>
+              <tagsDecl>
+                 <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                 </namespace>
+              </tagsDecl>
+              <classDecl>
+                 <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                 </taxonomy>
+              </classDecl>
+      </encodingDesc>
+      
+      
+      <revisionDesc>  <!--BEGINS Revision Description -->
+         <change when="2018-07-01" who="editors.xml#JW">First pass XML file</change>
+         <change when="2018-07-01" who="editors.xml#AR">First pass XML file</change>
+         <change when="2018-07-05" who="editors.xml#TH">XML updates; updated teiHeader</change>
+         <change when="2018-07-10" who="editors.xml#JW">Added annotations</change>
+         <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
+         <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
+         <change when="2019-09-19" who="editors.xml#TH">Commented out titlepage</change>
+         <change when="2023-05-19" who="editors.xml#TH">Updated note style</change>
+      </revisionDesc>
+      
+      
+   </teiHeader>
+   <!--TEI Header Ends -->
+   
+   
+   
+   <!--Text Begins -->
+   
+   <text>
+            <!-- <front>
+                      <div type="frontispiece" >
+                         <pb n="[frontispiece]" facs="pageImages/WP-FP.jpg"/>
+                      </div>
+                      <pb n="[titlepage]" facs="pageImages/WP-TP.jpg"/>
+                  
+                      <titlePage>
+                           <docTitle>
+                              <titlePart>POEMS <lb/>ON <lb/>VARIOUS SUBJECTS, <lb/>RELIGIOUS AND MORAL.<lb/></titlePart>
+                           </docTitle>
+                           <byline>BY</byline>
+                           <lb/>
+                           <docAuthor><hi rend="italic">PHILLIS WHEATLEY</hi>,</docAuthor>
+                           <lb/>
+                           <docAuthor>
+                              <title>NEGRO SERVANT to Mr. JOHN WHEATLEY, <lb/>of BOSTON, in NEW
+                                 ENGLAND.</title>
+                           </docAuthor>
+                           <lb/>
+                           <docImprint>
+                              <pubPlace><hi rend="italic">LONDON:</hi></pubPlace>
+                              <lb/>
+                              <publisher>Printed for A. BELL, Bookseller, Aldgate; and sold by<lb/>
+                                 Messrs. COX and BERRY, King-Street, <hi rend="italic">BOSTON.</hi>
+                             </publisher>
+                              <lb/>
+                              <date>M DCC LXXIII.</date>
+                              
+                           </docImprint>
+                     </titlePage>
+                
+           </front> -->
+      
+         
+            <body>
+               
+               <div type="poem">
+            <pb n="101" facs="pageImages/WP-0101.jpg"/>
+            <head type="title">NIOBE in Distress for her Children slain by APOLLO, from <hi rend="italic"
+                  >Ovid's</hi> Metamorphoses, Book VI. and from a view of the Painting of Mr. <hi
+                  rend="italic">Richard Wilson.</hi></head>
+
+            <lg >
+               <l n="1">APOLLO's wrath to man the dreadful spring</l>
+               <l n="2">Of ills innum'rous, tuneful goddess, sing!</l>
+               <l n="3">Thou who did'st first th' ideal pencil give,</l>
+               <l n="4">And taught'st the painter in his works to live,</l>
+               <l n="5">Inspire with glowing energy of thought,</l>
+               <l n="6">What <hi rend="italic">Wilson</hi> painted, and what <hi rend="italic"
+                     >Ovid</hi> wrote.</l>
+               <l n="7">Muse! lend thy aid, nor let me sue in vain,</l>
+               <l n="8">Tho' last and meanest of the rhyming train!</l>
+               <l n="9">O guide my pen in lofty strains to show</l>
+               <l n="10">The <hi rend="italic">Phrygian</hi> queen, all beautiful in woe.</l>
+            </lg>
+            <lg>
+               <l rend="indent" n="11">'Twas where <hi rend="italic">Maeonia</hi> spreads her
+                  wide domain</l>
+               <l n="12"><hi rend="italic">Niobe</hi> dwelt, and held her potent reign:</l>
+               <l n="13">See in her hand the regal sceptre shine,</l>
+               <l n="14">The wealthy heir of <hi rend="italic">Tantalus</hi> divine,</l>
+               <pb n="102" facs="pageImages/WP-0102.jpg"/>
+               <l n="15">He most distinguish'd by <hi rend="italic">Dodonean Jove</hi>,</l>
+               <l n="16">To approach the tables of the gods above:</l>
+               <l n="17">Her grandsire <hi rend="italic">Atlas</hi>, who with mighty pains</l>
+               <l n="18">Th' ethereal axis on his neck sustains:</l>
+               <l n="19">Her other gran sire on the throne on
+                  high</l>
+               <l n="20">Rolls the loud-pealing thunder thro' the sky.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="21">Her spouse, <hi rend="italic">Amphion</hi>, who from <hi
+                     rend="italic">Jove</hi> too springs,</l>
+               <l n="22">Divinely taught to sweep the sounding strings.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="23">Seven sprightly sons the royal bed adorn,</l>
+               <l n="24">Seven daughters beauteous as the op'ning morn,</l>
+               <l n="25">As when <hi rend="italic">Aurora</hi> fills the ravish'd sight,</l>
+               <l n="26">And decks the orient realms with rosy light</l>
+               <l n="27">From their bright eyes the living splendors play,</l>
+               <l n="28">Nor can beholders bear the flashing ray.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="29">Wherever, <hi rend="italic">Niobe</hi>, thou turn'st
+                  thine eyes,</l>
+               <l n="30">New beauties kindle, and new joys arise!</l>
+               <l n="31">But thou had'st far the happier mother prov'd,</l>
+               <l n="32">If this fair offspring had been less belov'd:</l>
+               <pb n="103" facs="pageImages/WP-0103.jpg"/>
+               <l n="33">What if their charms exceed <hi rend="italic">Aurora's</hi> teint,</l>
+               <l n="34">No words could tell them, and no pencil paint,</l>
+               <l n="35">Thy love too vehement hastens to destroy</l>
+               <l n="36">Each blooming maid, and each celestial boy.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="37">Now <hi rend="italic">Manto</hi> comes, endu'd with
+                  mighty skill,</l>
+               <l n="38">The past to explore, the future to reveal.</l>
+               <l n="39">Thro' <hi rend="italic">Thebes'</hi> wide streets <hi rend="italic"
+                     >Tiresia's</hi> daughter came,</l>
+               <l n="40">Divine <hi rend="italic">Latona's</hi> mandate to proclaim:</l>
+               <l n="41">The Theban maids to hear the orders ran,</l>
+               <l n="42">When thus <hi rend="italic">Maeonia's</hi> prophetess began:</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="43">"Go, <hi rend="italic">Thebans!</hi> great <hi
+                     rend="italic">Latona's</hi> will obey,</l>
+               <l n="44">"And pious tribute at her altars pay:</l>
+               <l n="45">"With rights divine, the goddess be implor'd,</l>
+               <l n="46">"Nor be her sacred offspring unador'd."</l>
+               <l n="47">Thus <hi rend="italic">Manto</hi> spoke. The <hi rend="italic"
+                     >Theban</hi> maids obey,</l>
+               <l n="48">And pious tribute to the goddess pay.</l>
+               <l n="49">The rich perfumes ascend in waving spires,</l>
+               <l n="50">And altars blaze with consecrated fires;</l>
+               <l n="51">The fair assembly moves with graceful air,</l>
+               <l n="52">And leaves of laurel bind the flowing hair.</l>
+            </lg>
+            <pb n="104" facs="pageImages/WP-0104.jpg"/>
+            <lg >
+               <l rend="indent" n="53"><hi rend="italic">Niobe</hi> comes with all her royal
+                  race,</l>
+               <l n="54">With charms unnumber'd, and superior grace:</l>
+               <l n="55">Her <hi rend="italic">Phrygian</hi> garments of delightful hue,</l>
+               <l n="56">Inwove with gold, refulgent to the view,</l>
+               <l n="57">Beyond description beautiful she moves</l>
+               <l n="58">Like heav'nly Venus, 'midst her smiles and loves:</l>
+               <l n="59">She views around the supplicating train,</l>
+               <l n="60">And shakes her graceful head with stern disdain,</l>
+               <l n="61">Proudly she turns around her lofty eyes,</l>
+               <l n="62">And thus reviles celestial deities:</l>
+               <l n="63">"What madness drives the <hi rend="italic">Theban</hi> ladies fair</l>
+               <l n="64">"To give their incense to surrounding air?</l>
+               <l n="65">"Say why this new sprung deity preferr'd?</l>
+               <l n="66">"Why vainly fancy your petitions heard?</l>
+               <l n="67">"Or say why <hi rend="italic">Coeus'</hi> offspring is obey'd,</l>
+               <l n="68">"While to my goddesship no tribute's paid?</l>
+               <l n="69">"For me no altars blaze with living fires,</l>
+               <l n="70">"No bullock bleeds, no frankincense transpires,</l>
+               <l n="71">"Tho' <hi rend="italic">Cadmus'</hi> palace, not unknown to fame,</l>
+               <l n="72">"And <hi rend="italic">Phrygian</hi> nations all revere my name.</l>
+               <pb n="105" facs="pageImages/WP-0105.jpg"/>
+               <l n="73">"Where'er I turn my eyes vast wealth I find.</l>
+               <l n="74">"Lo! here an empress with a goddess join'd.</l>
+               <l n="75">"What, shall a <hi rend="italic">Titaness</hi> be deify'd,</l>
+               <l n="76">"To whom the spacious earth a couch deny'd?</l>
+               <l n="77">"Nor heav'n, nor earth, nor sea receiv'd your queen,</l>
+               <l n="78">"Till pitying <hi rend="italic">Delos</hi> took the wand'rer in.</l>
+               <l n="79">"Round me what a large progeny is spread!</l>
+               <l n="80">"No frowns of fortune has my soul to dread.</l>
+               <l n="81">"What if indignant she decrease my train</l>
+               <l n="82">"More than <hi rend="italic">Latona's</hi> number will remain?</l>
+               <l n="83">"Then hence, ye <hi rend="italic">Theban</hi> dames, hence haste
+                  away,</l>
+               <l n="84">"Nor longer off'rings to <hi rend="italic">Latona</hi> pay?</l>
+               <l n="85">"Regard the orders of <hi rend="italic">Amphion's</hi> spouse,</l>
+               <l n="86">"And take the leaves of laurel from your brows."</l>
+               <l n="87"><hi rend="italic">Niobe</hi> spoke. The <hi rend="italic">Theban</hi>
+                  maids obey'd,</l>
+               <l n="88">Their brows unbound, and left the rights unpaid.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="89">The angry goddess heard, then silence broke</l>
+               <l n="90">On <hi rend="italic">Cynthus'</hi> summit, and indignant spoke;</l>
+               <pb n="106" facs="pageImages/WP-0106.jpg"/>
+               <l n="91">"<hi rend="italic">Phoebus!</hi> behold, thy mother in disgrace,</l>
+               <l n="92">"Who to no goddess yields the prior place</l>
+               <l n="93">"Except to <hi rend="italic">Juno's</hi> self, who reigns above,</l>
+               <l n="94">"The spouse and sister of the thund'ring <hi rend="italic"
+                  >Jove</hi>.</l>
+               <l n="95">"<hi rend="italic">Niobe</hi>, sprung from <hi rend="italic"
+                     >Tantalus</hi>, inspires</l>
+               <l n="96">"Each <hi rend="italic">Theban</hi> bosom with rebellious fires;</l>
+               <l n="97">"No reason her imperious temper quells,</l>
+               <l n="98">"But all her father in her tongue rebels;</l>
+               <l n="99">"Wrap her own sons for her blaspheming breath,</l>
+               <l n="100">"<hi rend="italic">Apollo!</hi> wrap them in the shades of death."</l>
+               <l n="101"><hi rend="italic">Latona</hi> ceas'd, and ardent thus replies</l>
+               <l n="102">The God, whose glory decks th' expanded skies.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="103">"Cease thy complaints, mine be the task assign'd</l>
+               <l n="104">"To punish pride, and scourge the rebel mind."</l>
+               <l n="105">This <hi rend="italic">Phoebe</hi> join'd. -- They wing their instant
+                  flight;</l>
+               <l n="106"><hi rend="italic">Thebes</hi> trembled as th' immortal pow'rs
+                  alight.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="107">With clouds incompass'd glorious <hi rend="italic"
+                     >Phoebus</hi> stands;</l>
+               <l n="108">The feather'd vengeance quiv'ring in his hands.</l>
+            </lg>
+            <pb n="109" facs="pageImages/WP-0107.jpg"/>
+            <lg >
+               <l rend="indent" n="110">Near <hi rend="italic">Cadmus'</hi> walls a plain
+                  extended lay,</l>
+               <l n="111">Where <hi rend="italic">Thebes'</hi> young princes pass'd in sport the
+                  day:</l>
+               <l n="112">There the bold coursers bounded o'er the plains,</l>
+               <l n="113">While their great masters held the golden reins.</l>
+               <l n="114"><hi rend="italic">Ismenus</hi> first the racing pastime led,</l>
+               <l n="115">And rul'd the fury of his flying steed.</l>
+               <l n="116">"Ah me," he sudden cries, with shrieking breath,</l>
+               <l n="117">While in his breast he feels the shaft of death;</l>
+               <l n="118">He drops the bridle on his courser's mane,</l>
+               <l n="119">Before his eyes in shadows swims the plain,</l>
+               <l n="120">He, the first-born of great <hi rend="italic">Amphion's</hi> bed,</l>
+               <l n="121">Was struck the first, first mingled with the dead.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="122">Then didst thou, <hi rend="italic">Sipylus</hi>, the
+                  language hear</l>
+               <l n="123">Of fate portentous whistling in the air:</l>
+               <l n="124">As when th' impending storm the sailor sees</l>
+               <l n="125">He spreads his canvas to the fav'ring breeze,</l>
+               <pb n="108" facs="pageImages/WP-0108.jpg"/>
+               <l n="126">So to thine horse thou gav'st the golden reins,</l>
+               <l n="127">Gav'st him to rush impetuous o'er the plains:</l>
+               <l n="128">But ah! a fatal shaft from <hi rend="italic">Phoebus'</hi> hand</l>
+               <l n="129">Smites through thy neck, and sinks thee on the sand.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="130">Two other brothers were at <hi rend="italic"
+                     >wrestling</hi> found,</l>
+               <l n="131">And in their pastime claspt each other round:</l>
+               <l n="132">A shaft that instant from <hi rend="italic">Apollo's</hi> hand</l>
+               <l n="133">Transfixt them both, and stretcht them on the sand:</l>
+               <l n="134">Together they their cruel fate bemoan'd,</l>
+               <l n="135">Together languish'd, and together groan'd:</l>
+               <l n="136">Together too th' unbodied spirits fled,</l>
+               <l n="137">And sought the gloomy mansions of the dead.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="138"><hi rend="italic">Alphenor</hi> saw, and trembling at the
+                  view,</l>
+               <l n="139">Beat his torn breast, that chang'd its snowy hue.</l>
+               <l n="140">He flies to raise them in a kind embrace;</l>
+               <l n="141">A brother's fondness triumphs in his face:</l>
+               <l n="142"><hi rend="italic">Alphenor</hi> fails in this fraternal deed,</l>
+               <l n="143">A dart dispatch'd him (so the fates decreed:)</l>
+               <pb n="109" facs="pageImages/WP-0109.jpg"/>
+               <l n="144">Soon as the arrow left the deadly wound,</l>
+               <l n="145">His issuing entrails smoak'd upon the ground.</l>
+            </lg>
+            <lg>
+               <l rend="indent" n="146">What woes on blooming <hi rend="italic">Damasichon</hi>
+                  wait!</l>
+               <l n="147">His sighs portend his near impending fate.</l>
+               <l n="148">Just where the well-made leg begins to be,</l>
+               <l n="149">And the soft sinews form the supple knee,</l>
+               <l n="150">The youth sore wounded by the <hi rend="italic">Delian</hi> god</l>
+               <l n="151">Attempts t' extract the crime-avenging rod,</l>
+               <l n="152">But, whilst he strives the will of fate t' avert,</l>
+               <l n="153">Divine <hi rend="italic">Apollo</hi> sends a second dart;</l>
+               <l n="154">Swift thro' his throat the feather'd mischief flies,</l>
+               <l n="155">Bereft of sense, he drops his head, and dies.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="156">Young <hi rend="italic">Ilioneus</hi>, the last, directs
+                  his pray'r,</l>
+               <l n="157">And cries, "My life, ye gods celestial! spare."</l>
+               <l n="158"><hi rend="italic">Apollo</hi> heard, and pity touch'd his heart,</l>
+               <l n="159">But ah! too late, for he had sent the dart:</l>
+               <l n="160">Thou too, O <hi rend="italic">Ilioneus</hi>, art doom'd to fall,</l>
+               <l n="161">The fates refuse that arrow to recal.</l>
+            </lg>
+            <pb n="110" facs="pageImages/WP-0110.jpg"/>
+            <lg >
+               <l rend="indent" n="162">On the swift wings of ever-flying <hi rend="italic"
+                     >Fame</hi></l>
+               <l n="163">To <hi rend="italic">Cadmus'</hi> palace soon the tidings came:</l>
+               <l n="164"><hi rend="italic">Niobe</hi> heard, and with indignant eyes</l>
+               <l n="165">She thus express'd her anger and surprize:</l>
+               <l n="166">"Why is such privilege to them allow'd?</l>
+               <l n="167">"Why thus insulted by the <hi rend="italic">Delian</hi> god?</l>
+               <l n="168">"Dwells there such mischief in the pow'rs above?</l>
+               <l n="169">"Why sleeps the vengeance of immortal <hi rend="italic">Jove?</hi>"</l>
+               <l n="170">For now <hi rend="italic">Amphion</hi> too, with grief oppress'd,</l>
+               <l n="171">Had plung'd the deadly dagger in his breast.</l>
+               <l n="172"><hi rend="italic">Niobe</hi> now, less haughty than before,</l>
+               <l n="173">With lofty head directs her steps no more.</l>
+               <l n="174">She, who late told her pedigree divine,</l>
+               <l n="175">And drove the <hi rend="italic">Thebans</hi> from <hi rend="italic"
+                     >Latona's</hi> shrine,</l>
+               <l n="176">How strangely chang'd! -- yet beautiful in woe,</l>
+               <l n="177">She weeps, nor weeps unpity'd by the foe.</l>
+               <l n="178">On each pale corse the wretched mother spread</l>
+               <l n="179">Lay overwhelm'd with grief, and kiss'd her dead,</l>
+               <l n="180">Then rais'd her arms, and thus, in accents slow,</l>
+               <l n="181">"Be sated cruel <hi rend="italic">Goddess!</hi> with my woe;</l>
+               <pb n="111" facs="pageImages/WP-0111.jpg"/>
+               <l n="182">"If I've offended, let these streaming eyes,</l>
+               <l n="183">"And let this sev'nfold funeral suffice:</l>
+               <l n="184">"Ah! take this wretched life you deign'd to save,</l>
+               <l n="185">"With them I too am carried to the grave.</l>
+               <l n="186">"Rejoice triumphant, my victorious foe,</l>
+               <l n="187">"But show the cause from whence your triumphs flow?</l>
+               <l n="188">"Tho' I unhappy mourn these children slain,</l>
+               <l n="189">"Yet greater numbers to my lot remain."</l>
+               <l n="190">She ceas'd, the bow-string twang'd with awful sound,</l>
+               <l n="200">Which struck with terror all th' assembly round,</l>
+               <l n="201">Except the queen, who stood unmov'd alone,</l>
+               <l n="202">By her distresses more presumptuous grown.</l>
+               <l n="203">Near the pale corses stood their sisters fair</l>
+               <l n="204">In sable vestures and dishevell'd hair;</l>
+               <l n="205">One, while she draws the fatal shaft away,</l>
+               <l n="206">Faints, falls, and sickens at the light of day.</l>
+               <l n="207">To sooth her mother, lo! another flies,</l>
+               <l n="208">And blames the fury of inclement skies,</l>
+               <l n="209">And, while her words a filial pity show,</l>
+               <l n="210">Struck dumb -- indignant seeks the shades below.</l>
+               <pb n="112" facs="pageImages/WP-0112.jpg"/>
+               <l n="211">Now from the fatal place another flies,</l>
+               <l n="212">Falls in her flight, and languishes, and dies.</l>
+               <l n="213">Another on her sister drops in death;</l>
+               <l n="214">A fifth in trembling terrors yields her breath;</l>
+               <l n="215">While the sixth seeks some gloomy cave in vain,</l>
+               <l n="216">Struck with the rest, and mingl'd with the slain.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="217">One only daughter lives, and she the least;</l>
+               <l n="218">The queen close clasp'd the daughter to her breast:</l>
+               <l n="219">"Ye heav'nly pow'rs, ah spare me one," she cry'd,</l>
+               <l n="220">"Ah! spare me one," the vocal hills reply'd:</l>
+               <l n="221">In vain she begs, the <hi rend="italic">Fates</hi> her suit deny,</l>
+               <l n="222">In her embrace she sees her daughter die.</l>
+            </lg>
+            <lg >
+               <l rend="indent" n="223"><ref target="_auth1" corresp="auth1">*</ref>
+                  <note xml:id="auth1" target="_auth1" type="authorial"><p>This Verse to the End is ther
+                     Work of another Hand. [Wheatley's note.]</p></note> "The queen of all her family bereft,</l>
+               <l n="224">"Without or husband, son, or daughter left,</l>
+               <l n="225">"Grew stupid at the shock. The passing air</l>
+               <l n="226">"Made no impression on her stiff'ning hair.</l>
+               <pb n="113" facs="pageImages/WP-0113.jpg"/>
+               <l n="227">"The blood forsook her face: amidst the flood</l>
+               <l n="228">"Pour'd from her cheeks, quite fix'd her eye-balls stood.</l>
+               <l n="229">"Her tongue, her palate both obdurate grew,</l>
+               <l n="230">"Her curdled veins no longer motion knew;</l>
+               <l n="231">"The use of neck, and arms, and feet was gone,</l>
+               <l n="232">"And ev'n her bowels hard'ned into stone:</l>
+               <l n="233">"A marble statue now the queen appears,</l>
+               <l n="234">"But from the marble steal the silent tears."</l>
+            </lg>
+         </div>
+      
+            </body>
+         
+      
+   </text>
+
+
+</TEI>

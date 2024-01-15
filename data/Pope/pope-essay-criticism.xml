@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="pope-essay-criticism"> 
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">"An Essay on Criticism"</title>
+                <author>
+                    <persName type="lcnaf" key="79084387">
+                        <name>
+                        <forename>Alexander</forename> 
+                        <surname>Pope</surname> 
+                        </name>
+                    </persName>
+                </author> 
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
+                        </name>
+                    </persName>
+                </editor>       
+                <respStmt>              
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>             <name>The Text Creation Partnership and Students and Staff of The University of Virginia</name>        
+                </respStmt>             
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>      
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia</addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA 22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <extent/>
+                </bibl>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="79084387">
+                                <name>
+                                    <forename>Alexander</forename>
+                                    <surname>Pope</surname>
+                                </name>
+                            </persName>
+                        </author>  
+                        <title>"An Essay on Criticism"</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7011781">London</placeName>
+                            </pubPlace>
+                            <publisher>W. Lewis</publisher>
+                            <date when="1711">1711</date>
+                            <note>
+                                <p>Our edition is built from the version produced by the Text Creation Partnership. We have changed the long "s" in the original to a modern "s."</p>
+                            </note>
+                        </imprint>
+                    </monogr> 
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            
+            <creation/>
+            
+            <textDesc n="poem">
+                
+                <channel mode="w">print</channel>
+                <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+                <constitution type="single">single poem</constitution>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="inapplicable"/>
+                <interaction/>
+                <preparedness type="new"/>
+                <purpose type="instruct"/>
+                <purpose type="entertain" degree="medium"/>
+            </textDesc>     
+            <settingDesc>         
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>              
+                    <time from="1700" to="1750">early 18th Century</time>               
+                </setting>             
+            </settingDesc>
+        </profileDesc> 
+        <encodingDesc>      
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, reliable, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature. This project is was initially funded by the National Endowment for the
+                    Humanities and developed by faculty at The University of Virginia and Marymount
+                    University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                        not.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section for more information.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Numbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgm">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+         <revisionDesc>
+            <change when="2023-08-08" who="editors.xml#JOB"
+                >Adapted TCP edition for Literature in Context use.</change>
+            <change when="0000-00-00" who="xxxx"/>
+        </revisionDesc>  
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+            <docTitle>
+                <titlePart type="main"><ref target="title_" corresp="title">AN 
+                    <lb/>
+                    ESSAY 
+                    <lb/>ON 
+                    <lb/>CRITICISM</ref><note resp="editors.xml#JOB" xml:id="title" target="title_"><p><graphic
+                    url="https://lic-assets-staging.s3.amazonaws.com/pope-essay-criticism/pageImages/essay-title-page.png"/>Alexander Pope published this poem in 1711, but he said that it was “Written in the Year 1709,” and it is likely that some parts of poem date to a couple of years even earlier than that, when Pope was still in his teens. By 1711, Pope had become well known in the literary circles in London coffee houses, where he got to know more established writers like William Wycherley, the author of <hi rend="italic">The Country Wife</hi>, who was by now an old man. Like other writers of the period, Pope circulated his works in manuscript form among friends and other poets, seeking feedback. But he was also eager to see those works, once they had been sufficiently polished through multiple revisions, get into the world in print form. Pope’s first significant publication was a series of <hi rend="italic">Pastorals</hi>, poems about the countryside, that were printed as part of a collection of works by several poets in 1709. These poems are fine, but they do not make Pope stand out from the crowd. </p>   
+                        <p><hi rend="italic">An Essay on Criticism</hi> was designed, though, to make a splash. In it, Pope takes on both his fellow poets and the critical establishment, offering his own argument about what both groups ought to be doing, a manifesto for poetry in what was still a new century. The idea of a kind of manifesto written in verse seems odd to us now, but it would have made perfect sense to Pope. His model was the <hi rend="italic">Ars Poetica</hi> (The Art of Poetry) by the Roman poet Horace, written in 19 B. C. E. Horace’s poem was widely read and admired by  writers in the late seventeenth century in France and England, and several poets came out with their own poetical treatises in imitation of the <hi rend="italic">Ars Poetica</hi>. Pope’s is more or less the last of these verse treatises. Like Horace, Pope is conversational; the poem starts with a contraction ("'Tis") and seems designed to make it seem like we are coming into a fairly casual chat about contemporary poetry. But <hi rend="italic">An Essay on Criticism</hi> goes on to offer some pretty stern advice; Pope is setting down strict rules for how poets and (especially) critics should conduct themselves, and it is not surprising that established writers found the young poet to be pretty presumptuous. And there is more than a little justice in the reservations that contemporary readers expressed about Pope's argument. It is hard to imagine how to <hi rend="italic">follow</hi> Pope’s advice here; the ideal poet described by the poem is an almost impossible goal, perhaps only one that could be realized by a poet as talented as Pope himself. Which might be the point.</p>
+      <p><hi rend="italic">An Essay on Criticism</hi> made the splash among readers and critics that Pope intended. The poem was widely read and discussed, and, although it was published anonymously, it did not take long for people who cared about poetry to figure out that the twenty-three-year old Pope was the author. Not everyone <hi rend="italic">liked</hi> what he had to say, and it was easy to see his confidence as a kind of arrogance. But no one could ignore how beautifully Pope crafted his heroic couplets, which are themselves the best argument he could offer that he was a uniquely skilled artists, one who would have to be reckoned with.</p></note></titlePart>
+            </docTitle>
+            <lb/>
+                <lb/>
+    <byline>
+        Written by Mr. POPE
+    </byline>
+                <lb/>
+                <lb/>
+                <epigraph>
+                    <q xml:lang="lat">
+                     <ref target="Si_" corresp="Si"><hi rend="italic">—Si quid novisti rectius istis,</hi><lb/>
+                       <hi rend="italic">Candidus imperti; si non, his utere mecum.</hi></ref>
+                        <note xml:id="Si" target="Si_" type="gloss" resp="#JOB">"If you can improve on these rules, tell me; if not, join with me in following them." from Horace's <hi rend="italic">Ars Poetica</hi></note></q></epigraph>
+                        
+<lb/>
+                        <byline>HORAT.</byline>
+                <lb/>
+    <lb/>
+                <docImprint>The SECOND EDITION.
+                    <lb/>
+                <lb/>
+                    <pubPlace>LONDON</pubPlace>: 
+                   
+                    <lb/>Printed for <publisher><hi rend="italic">W. Lewis</hi></publisher> in <hi rend="italic">Russel-Street Covent-Garden.</hi> <docDate>MDCCXIII</docDate> </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="1"/><head>AN <lb/>ESSAY<lb/> ON <lb/><hi rend="italic">CRITICISM.</hi></head>
+           <div type="poem">
+            <lg type="verse_paragraph"><l>'TIS hard to say, if greater Want of Skill</l>
+<l>Appear in <hi rend="italic">Writing</hi> or in <hi rend="italic">Judging</hi> ill;</l>
+<l>But, of the two, less dang'rous is th' Offence,</l>
+<l>To tire our <hi rend="italic">Patience</hi>, than mis-lead our <hi rend="italic">Sense.</hi></l>
+<l>Some few in <hi rend="italic">that</hi>, but Numbers err in <hi rend="italic">this</hi>,</l>
+<l>Ten Censure wrong for one who Writes amiss;</l>
+<l>A <hi rend="italic">Fool</hi> might once <hi rend="italic">himself</hi> alone expose,</l>
+<l>Now <hi rend="italic">One</hi> in <hi rend="italic">Verse</hi> makes many more in <hi rend="italic">Prose.</hi></l>
+</lg>
+<lg><pb n="2"/><l>'Tis with our <hi rend="italic">Judgments</hi> as our <hi rend="italic">Watches</hi>, none</l>
+<l>Go just <hi rend="italic">alike</hi>, yet each believes his <hi rend="italic">own.</hi></l>
+<l>In <hi rend="italic">Poets</hi> as true <hi rend="italic">Genius</hi> is but rare,</l>
+<l>True <hi rend="italic">Taste</hi> as seldom is the <hi rend="italic">Critick</hi>'s Share;</l>
+<l>Both must alike from Heav'n derive their Light,</l>
+<l>These <hi rend="italic">born</hi> to Judge, as well as those to Write.</l>
+<l> Let such teach others who themselves excell,</l>
+<l>And <hi rend="italic">censure freely</hi> who have <hi rend="italic">written well.</hi></l>
+<l><hi rend="italic">Authors</hi> are partial to their <hi rend="italic">Wit</hi>, 'tis true,</l>
+<l>But are not <hi rend="italic">Criticks</hi> to their <hi rend="italic">Judgment</hi> too?</l>
+</lg>
+<lg><l>Yet if we look more closely, we shall find</l>
+<l>Most have the <hi rend="italic">Seeds</hi> of Judgment in their Mind;</l>
+<l>Nature affords at least a <hi rend="italic">glimm'ring Light</hi>;</l>
+<l>The <hi rend="italic">Lines</hi>, tho' touch'd but <hi rend="italic">faintly</hi>, are drawn <hi rend="italic">right.</hi></l>
+<l>But as the slightest Sketch, if justly trac'd,</l>
+<l>Is by ill <hi rend="italic">Colouring</hi> but the more disgrac'd,</l>
+<l>So by <hi rend="italic">false Learning</hi> is good Sense defac'd.</l>
+<l>Some are bewilder'd in the Maze of Schools,</l>
+<l>And some made <hi rend="italic">Coxcombs</hi> Nature meant but <hi rend="italic">Fools.</hi></l>
+    <pb n="3"/>
+    <l>In search of <hi rend="italic">Wit</hi> these lose their <hi rend="italic">common Sense</hi>,</l>
+<l>And then turn Criticks in their own Defence:</l>
+<l>Those hate as <hi rend="italic">Rivals</hi> all that write; and others</l>
+<l>But envy <hi rend="italic">Wits</hi>, as <hi rend="italic">Eunuchs</hi> envy <hi rend="italic">Lovers.</hi></l>
+<l>All <hi rend="italic">Fools</hi> have still an Itching to deride,</l>
+<l>And fain <hi rend="italic">wou'd be</hi> upon the <hi rend="italic">Laughing Side</hi>:</l>
+<l>If <hi rend="italic">Maevius</hi> Scribble in <hi rend="italic">Apollo</hi>'s spight,</l>
+<l>There are, who <hi rend="italic">judge</hi> still worse than he can <hi rend="italic">write.</hi></l>
+</lg>
+<lg><l>Some have at first for <hi rend="italic">Wits</hi>, then <hi rend="italic">Poets</hi> past,</l>
+<l>Turn'd <hi rend="italic">Criticks</hi> next, and prov'd plain <hi rend="italic">Fools</hi> at last.</l>
+<l>Some neither can for <hi rend="italic">Wits</hi> nor <hi rend="italic">Criticks</hi> pass,</l>
+<l>As heavy Mules are neither <hi rend="italic">Horse</hi> nor <hi rend="italic">Ass.</hi></l>
+<l>Those half-learn'd Witlings, num'rous in our Isle,</l>
+<l>As half-form'd Infects on the Banks of <hi rend="italic">Nile</hi>;</l>
+<l>Unfinish'd Things, one knows not what to call,</l>
+<l>Their Generation's so <hi rend="italic">equivocal</hi>:</l>
+<l>To tell 'em, wou'd a hundred Tongues require,</l>
+<l>Or one vain Wit's, that might a hundred tire.</l>
+</lg>
+<lg><l>But <hi rend="italic">you</hi> who seek to <hi rend="italic">give</hi> and <hi rend="italic">merit</hi> Fame,</l>
+<l>And justly bear a Critick's noble Name,</l>
+<l>Be sure <hi rend="italic">your self</hi> and your own <hi rend="italic">Reach</hi> to know,</l>
+<l>How far your <hi rend="italic">Genius</hi>, <hi rend="italic">Taste</hi>, and <hi rend="italic">Learning</hi> go;</l>
+    <l> <pb n="4"/>
+Launch not beyond your Depth, but be discreet,</l>
+<l>And mark <hi rend="italic">that Point</hi> where Sense and Dulness meet.</l>
+<l>Nature to all things fix'd the Limits fit,</l>
+<l>And wisely curb'd proud Man's pretending Wit.</l>
+<l>As on the Land while <hi rend="italic">here</hi> the Ocean gains,</l>
+<l>In <hi rend="italic">other Parts</hi> it leaves wide sandy Plains;</l>
+<l>Thus in the Soul while <hi rend="italic">Memory</hi> prevails,</l>
+<l>The solid Pow'r of <hi rend="italic">Understanding</hi> fails;</l>
+<l>Where Beams of warm <hi rend="italic">Imagination</hi> play,</l>
+<l>The <hi rend="italic">Memory</hi>'s soft Figures melt away.</l>
+<l>One <hi rend="italic">Science</hi> only will one <hi rend="italic">Genius</hi> fit;</l>
+<l>So <hi rend="italic">vast</hi> is Art, so <hi rend="italic">narrow</hi> Human Wit:</l>
+<l>Not only bounded to <hi rend="italic">peculiar Arts</hi>,</l>
+<l>But <hi rend="italic">oft</hi> in <hi rend="italic">those</hi>, confin'd to <hi rend="italic">single Parts.</hi></l>
+<l>Like Kings we lose the Conquests gain'd before,</l>
+<l>By vain Ambition still t'extend them more.</l>
+<l>Each might his <hi rend="italic">sev'ral Province</hi> well command,</l>
+<l>Wou'd all but <hi rend="italic">stoop</hi> to what they <hi rend="italic">understand.</hi></l>
+</lg>
+<lg><l>First follow NATURE, and your Judgment frame</l>
+<l>By her just Standard, which is still the same:</l>
+<l><hi rend="italic">Unerring Nature</hi>, still divinely bright,</l>
+<l>One <hi rend="italic">clear</hi>, <hi rend="italic">unchang'd</hi>, and <hi rend="italic">Universal</hi> Light,</l>
+    <l> <pb n="5"/>
+Life, Force, and Beauty, must to all impart,</l>
+<l>At once the <hi rend="italic">Source</hi>, and <hi rend="italic">End</hi>, and <hi rend="italic">Test</hi> of <hi rend="italic">Art.</hi></l>
+<l>That <hi rend="italic">Art</hi> is best which most resembles <hi rend="italic">Her</hi>;</l>
+<l>Which still <hi rend="italic">presides</hi>, yet never does <hi rend="italic">Appear</hi>:</l>
+<l>In some fair Body thus the sprightly Soul</l>
+<l>With Spirits feeds, with Vigour fills the whole,</l>
+<l>Each Motion guides, and ev'ry Nerve sustains;</l>
+<l><hi rend="italic">It self unseen</hi>, but in th' <hi rend="italic">Effects</hi>, remains.</l>
+<l>There are whom Heav'n has blest with store of Wit,</l>
+<l>Yet want as much again to manage it;</l>
+<l>For <hi rend="italic">Wit</hi> and <hi rend="italic">Judgment</hi> ever are at strife,</l>
+<l>Tho' meant each other's Aid, like <hi rend="italic">Man</hi> and <hi rend="italic">Wife.</hi></l>
+<l>'Tis more to <hi rend="italic">guide</hi> than <hi rend="italic">spur</hi> the Muse's Steed;</l>
+<l>Restrain his Fury, than provoke his Speed;</l>
+<l>The winged Courser, like a gen'rous Horse,</l>
+<l>Shows most true Mettle when you <hi rend="italic">check</hi> his Course.</l>
+</lg>
+<lg><l>Those RULES of old <hi rend="italic">discover'd</hi>, not <hi rend="italic">devis'd</hi>,</l>
+<l>Are <hi rend="italic">Nature</hi> still, but <hi rend="italic">Nature Methodiz'd</hi>:</l>
+<l><hi rend="italic">Nature</hi>, like <hi rend="italic">Monarchy</hi>, is but restrain'd</l>
+<l>By the same Laws which first <hi rend="italic">herself</hi> ordain'd.</l>
+</lg>
+<lg><l>First learned <hi rend="italic">Greece</hi> just Precepts did indite,</l>
+<l>When to repress, and when indulge our Flight.</l>
+    <l> <pb n="6"/>
+High on <hi rend="italic">Parnassus'</hi> Top her <hi rend="italic">Sons</hi> she show'd,</l>
+<l>And pointed out those arduous Paths they trod,</l>
+<l>Held from afar, aloft, th' Immortal Prize,</l>
+<l>And urg'd the rest by equal Steps to rise.</l>
+<l>From great <hi rend="italic">Examples</hi> useful <hi rend="italic">Rules</hi> were giv'n;</l>
+<l>She drew from <hi rend="italic">them</hi> what they deriv'd from <hi rend="italic">Heav'n.</hi></l>
+<l>The gen'rous Critick fann'd the <hi rend="italic">Poet's Fire</hi>,</l>
+<l>And taught the World, <hi rend="italic">with Reason</hi> to <hi rend="italic">Admire.</hi></l>
+<l>Then Criticism the Muses Handmaid prov'd,</l>
+<l>To dress her Charms, and make her more belov'd:</l>
+<l>But following Wits from that Intention stray'd;</l>
+<l>Who cou'd not win the <hi rend="italic">Mistress</hi>, woo'd the <hi rend="italic">Maid</hi>,</l>
+<l><hi rend="italic">Set up themselves</hi>, and drove a <hi rend="italic">sep'rate</hi> Trade;</l>
+<l>Against the Poets <hi rend="italic">their own Arms</hi> they turn'd,</l>
+<l>Sure to hate most the Men from whom they <hi rend="italic">learn'd.</hi></l>
+<l>So modern <hi rend="italic">Pothecaries</hi>, taught the Art</l>
+<l>By <hi rend="italic">Doctor's Bills</hi> to play the <hi rend="italic">Doctor's Part</hi>,</l>
+<l>Bold in the Practice of <hi rend="italic">mistaken Rules</hi>,</l>
+<l>Prescribe, apply, and call their <hi rend="italic">Masters Fools.</hi></l>
+<l><hi rend="italic">Some</hi> on the Leaves of ancient Authors prey,</l>
+<l>Nor <hi rend="italic">Time</hi> nor <hi rend="italic">Moths</hi> e'er spoil'd so much as they.</l>
+    <l> <pb n="7"/><hi rend="italic">Some</hi> dryly plain, without Invention's Aid,</l>
+<l>Write dull <hi rend="italic">Receits</hi> how Poems may be made.</l>
+<l>These lost the Sense, their Learning to display,</l>
+<l>And those explain'd the Meaning quite away.</l>
+</lg>
+<lg><l><hi rend="italic">You</hi> then whose Judgment the right Course wou'd steer,</l>
+<l>Know well each ANCIENT's proper <hi rend="italic">Character</hi>;</l>
+<l>His <hi rend="italic">Fable</hi>, <hi rend="italic">Subject</hi>, <hi rend="italic">Scope</hi> in ev'ry Page;</l>
+<l><hi rend="italic">Religion</hi>, <hi rend="italic">Country</hi>, <hi rend="italic">Genius</hi> of his <hi rend="italic">Age</hi>:</l>
+<l>Without all these at once before your Eyes,</l>
+<l><hi rend="italic">Cavil</hi> you may, but never <hi rend="italic">Criticize.</hi></l>
+<l>Be HOMER's Works your <hi rend="italic">Study</hi>, and <hi rend="italic">Delight</hi>,</l>
+<l>Read them by Day, and meditate by Night;</l>
+<l>Thence form your Judgment, thence your Notions bring,</l>
+<l>And trace the Muses <hi rend="italic">upward</hi> to their <hi rend="italic">Spring.</hi></l>
+<l>Still with <hi rend="italic">It self</hi> compar'd, his <hi rend="italic">Text</hi> peruse;</l>
+<l>And let your <hi rend="italic">Comment</hi> be the <hi rend="italic">Mantuan Muse.</hi></l>
+</lg>
+<lg><l> When first young <hi rend="italic">Maro</hi> sung of <hi rend="italic">Kings</hi> and <hi rend="italic">Wars</hi>,</l>
+<l>Ere warning <hi rend="italic">Phoebus</hi> touch'd his trembling Ears,</l>
+<l>Perhaps he seem'd <hi rend="italic">above</hi> the Critick's Law,</l>
+<l>And but from <hi rend="italic">Nature's Fountains</hi> scorn'd to draw:</l>
+    <l> <pb n="8"/>
+But when t'examine ev'ry Part he came,</l>
+<l><hi rend="italic">Nature</hi> and <hi rend="italic">Homer</hi> were, he found, the <hi rend="italic">same</hi>:</l>
+<l>Convinc'd, amaz'd, he checkt the bold Design,</l>
+<l>And did his Work to Rules as strict confine,</l>
+<l>As if the <hi rend="italic">Stagyrite</hi> o'erlook'd each Line.</l>
+<l>Learn hence for Ancient <hi rend="italic">Rules</hi> a just Esteem;</l>
+<l>To copy <hi rend="italic">Nature</hi> is to copy <hi rend="italic">Them.</hi></l>
+</lg>
+<lg><l>Some Beauties yet, no Precepts can declare,</l>
+<l>For there's a <hi rend="italic">Happiness</hi> as well as <hi rend="italic">Care.</hi></l>
+<l><hi rend="italic">Musick</hi> resembles <hi rend="italic">Poetry</hi>, in each</l>
+<l>Are nameless <hi rend="italic">Graces</hi> which no Methods teach,</l>
+<l>And which a <hi rend="italic">Master-Hand</hi> alone can reach.</l>
+<l> If, where the <hi rend="italic">Rules</hi> not far enough extend,</l>
+<l>(Since Rules were made but to promote their End)</l>
+<l>Some Lucky LICENCE answers to the full</l>
+<l>Th'Intent propos'd, <hi rend="italic">that Licence</hi> is a <hi rend="italic">Rule.</hi></l>
+<l>Thus <hi rend="italic">Pegasus</hi>, a nearer way to take,</l>
+<l>May boldly deviate from the common Track.</l>
+<l>Great Wits sometimes may <hi rend="italic">gloriously offend</hi>,</l>
+<l>And <hi rend="italic">rise</hi> to Faults true Criticks <hi rend="italic">dare not</hi> mend;</l>
+    <l> <pb n="9"/>
+From vulgar Bounds with <hi rend="italic">brave Disorder</hi> part,</l>
+<l>And <hi rend="italic">snatch</hi> a <hi rend="italic">Grace</hi> beyond the Reach of Art,</l>
+<l>Which, without passing thro' the <hi rend="italic">Judgment</hi>, gains</l>
+<l>The <hi rend="italic">Heart</hi>, and all its End <hi rend="italic">at once</hi> attains.</l>
+<l>In <hi rend="italic">Prospects</hi>, thus, some <hi rend="italic">Objects</hi> please our Eyes,</l>
+<l>Which <hi rend="italic">out of</hi> Nature's <hi rend="italic">common Order</hi> rise,</l>
+<l>The shapeless <hi rend="italic">Rock</hi>, or hanging <hi rend="italic">Precipice.</hi></l>
+<l>But Care in Poetry must still be had,</l>
+<l>It asks <hi rend="italic">Discretion</hi> ev'n in <hi rend="italic">running Mad</hi>:</l>
+<l>And tho' the <hi rend="italic">Ancients</hi> thus their <hi rend="italic">Rules</hi> invade,</l>
+<l>(As <hi rend="italic">Kings</hi> dispense with <hi rend="italic">Laws</hi> Themselves have made)</l>
+<l><hi rend="italic">Moderns</hi>, beware! Or if you must offend</l>
+<l>Against the <hi rend="italic">Precept</hi>, ne'er transgress its <hi rend="italic">End</hi>;</l>
+<l>Let it be <hi rend="italic">seldom</hi>; and <hi rend="italic">compell'd by Need</hi>;</l>
+<l>And have, at least, <hi rend="italic">Their Precedent</hi> to plead.</l>
+<l>The Critick else proceeds without Remorse,</l>
+<l>Seizes your Fame, and puts his Laws in force.</l>
+</lg>
+<lg><l>I know there are, to whose presumptuous Thoughts</l>
+<l>Those <hi rend="italic">Freer Beauties</hi>, ev'n in <hi rend="italic">Them</hi>, seem Faults.</l>
+<l>Some Figures <hi rend="italic">monstrous</hi> and <hi rend="italic">mis-shap'd</hi> appear,</l>
+<l>Consider'd <hi rend="italic">singly</hi>, or beheld too <hi rend="italic">near</hi>,</l>
+    <l> <pb n="10"/>
+Which, but <hi rend="italic">proportion'd</hi> to their <hi rend="italic">Light</hi>, or <hi rend="italic">Place</hi></l>
+<l>Due Distance <hi rend="italic">reconciles</hi> to Form and Grace.</l>
+<l>A prudent Chief not always must display</l>
+<l>His Pow'rs in <hi rend="italic">equal Ranks</hi>, and <hi rend="italic">fair Array</hi>,</l>
+<l>But with th' <hi rend="italic">Occasion</hi> and the <hi rend="italic">Place</hi> comply,</l>
+<l><hi rend="italic">Conceal</hi> his Force, nay seem sometimes to <hi rend="italic">Fly.</hi></l>
+<l>Those oft are <hi rend="italic">Stratagems</hi> which <hi rend="italic">Errors</hi> seem,</l>
+<l>Nor is it <hi rend="italic">Homer Nods</hi>, but <hi rend="italic">We</hi> that <hi rend="italic">Dream.</hi></l>
+</lg>
+<lg><l>Still green with Bays each <hi rend="italic">ancient</hi> Altar stands,</l>
+<l>Above the reach of <hi rend="italic">Sacrilegious</hi> Hands;</l>
+<l>Secure from <hi rend="italic">Flames</hi>, from <hi rend="italic">Envy's</hi> fiercer Rage,</l>
+<l>Destructive <hi rend="italic">War</hi>, and all-devouring <hi rend="italic">Age.</hi></l>
+<l>See, from <hi rend="italic">each Clime</hi> the Learn'd their Incense bring;</l>
+<l>Hear, in <hi rend="italic">all Tongues</hi> consenting <hi rend="italic">Paeans</hi> ring!</l>
+<l>In Praise so just, let ev'ry Voice be join'd,</l>
+<l>And fill the <hi rend="italic">Gen'ral Chorus</hi> of <hi rend="italic">Mankind</hi>!</l>
+<l>Hail <hi rend="italic">Bards Triumphant</hi>! born in happier Days;</l>
+<l><hi rend="italic">Immortal</hi> Heirs of <hi rend="italic">Universal</hi> Praise!</l>
+<l>Whose Honours with Increase of Ages grow,</l>
+<l>As Streams roll down, <hi rend="italic">enlarging</hi> as they flow!</l>
+<l>Nations <hi rend="italic">unborn</hi> your mighty Names shall sound,</l>
+<l>And Worlds applaud that must not yet be <hi rend="italic">found</hi>!</l>
+    <l> <pb n="11"/>
+Oh may some Spark of <hi rend="italic">your</hi> Coelestial Fire</l>
+<l>The last, the meanest of your Sons inspire,</l>
+<l>(That on weak Wings, from far, pursues your Flights;</l>
+<l><hi rend="italic">Glows</hi> while he <hi rend="italic">reads</hi>, but <hi rend="italic">trembles</hi> as he <hi rend="italic">writes</hi>)</l>
+<l>To teach vain Wits a Science <hi rend="italic">little known</hi>,</l>
+<l>T'admire Superior Sense, and <hi rend="italic">doubt</hi> their own!</l>
+</lg>
+<lg><l>OF all the Causes which conspire to blind</l>
+<l>Man's erring Judgment, and misguide the Mind,</l>
+<l>What the weak Head with strongest Byass rules,</l>
+<l>Is <hi rend="italic">Pride</hi>, the <hi rend="italic">never-failing Vice of Fools.</hi></l>
+<l>Whatever Nature has in <hi rend="italic">Worth</hi> deny'd,</l>
+<l>She gives in large Recruits of <hi rend="italic">needful Pride</hi>;</l>
+<l>For as in <hi rend="italic">Bodies</hi>, thus in <hi rend="italic">Souls</hi>, we find</l>
+<l>What wants in <hi rend="italic">Blood</hi> and <hi rend="italic">Spirits</hi>, swell'd with <hi rend="italic">Wind</hi>:</l>
+<l><hi rend="italic">Pride</hi>, where <hi rend="italic">Wit</hi> fails, steps in to our Defence,</l>
+<l>And fills up all the <hi rend="italic">mighty Void</hi> of <hi rend="italic">Sense</hi>!</l>
+<l>If once right Reason drives that Cloud away,</l>
+<l><hi rend="italic">Truth</hi> breaks upon us with <hi rend="italic">resistless Day</hi>;</l>
+<l>Trust not your self; but your Defects to know,</l>
+<l>Make use of ev'ry <hi rend="italic">Friend—</hi>and ev'ry <hi rend="italic">Foe.</hi></l>
+</lg>
+    <lg> <pb n="12"/><l>A <hi rend="italic">little Learning</hi> is a dang'rous Thing;</l>
+<l>Drink deep, or taste not the <hi rend="italic">Pierian</hi> Spring:</l>
+<l>There <hi rend="italic">shallow Draughts</hi> intoxicate the Brain,</l>
+<l>And drinking <hi rend="italic">largely</hi> sobers us again.</l>
+<l>Fir'd with the Charms fair <hi rend="italic">Science</hi> does impart,</l>
+<l>In <hi rend="italic">fearless Youth</hi> we tempt the Heights of Art,</l>
+<l>While from the bounded <hi rend="italic">Level</hi> of our Mind,</l>
+<l><hi rend="italic">Short Views</hi> we take, nor see the <hi rend="italic">Lengths behind</hi>;</l>
+<l>But <hi rend="italic">more advanc'd</hi>, behold with strange Surprize</l>
+<l>New, distant Scenes of <hi rend="italic">endless</hi> Science rise!</l>
+<l>So pleas'd at first the towring <hi rend="italic">Alps</hi> we try,</l>
+<l>Mount o'er the Vales, and seem to tread the Sky,</l>
+<l>Th' <hi rend="italic">Eternal Snows</hi> appear already past,</l>
+<l>And the first <hi rend="italic">Clouds</hi> and <hi rend="italic">Mountains</hi> seem the last:</l>
+<l>But <hi rend="italic">those attain'd</hi>, we tremble to survey</l>
+<l>The growing Labours of the lengthen'd Way,</l>
+<l>Th' <hi rend="italic">increasing</hi> Prospect tires our wandring Eyes,</l>
+<l>Hills peep o'er Hills, and <hi rend="italic">Alps</hi> on <hi rend="italic">Alps</hi> arise!</l>
+</lg>
+<lg><l> A perfect Judge will <hi rend="italic">read</hi> each Work of Wit</l>
+<l>With the same Spirit that its Author <hi rend="italic">writ</hi>,</l>
+    <l> <pb n="13"/>
+Survey the <hi rend="italic">Whole</hi>, nor seek slight Faults to find;</l>
+<l>Where <hi rend="italic">Nature moves</hi>, and <hi rend="italic">Rapture warms</hi> the Mind;</l>
+<l>Nor lose, for that malignant <hi rend="italic">dull Delight</hi>,</l>
+<l>The <hi rend="italic">gen'rous Pleasure</hi> to be charm'd with Wit.</l>
+<l>But in such Lays as neither <hi rend="italic">ebb</hi>, nor <hi rend="italic">flow</hi>,</l>
+<l><hi rend="italic">Correctly cold</hi>, and <hi rend="italic">regularly low</hi>,</l>
+<l>That shunning Faults, one quiet <hi rend="italic">Tenour</hi> keep;</l>
+<l>We cannot <hi rend="italic">blame</hi> indeed—but we may <hi rend="italic">sleep.</hi></l>
+<l>In Wit, as Nature, what affects our Hearts</l>
+<l>Is not th' Exactness of peculiar Parts;</l>
+<l>'Tis not a <hi rend="italic">Lip</hi>, or <hi rend="italic">Eye</hi>, we Beauty call,</l>
+<l>But the joint Force and full <hi rend="italic">Result</hi> of <hi rend="italic">all.</hi></l>
+<l>Thus when we view some well proportion'd Dome,</l>
+<l>(The <hi rend="italic">World</hi>'s just Wonder, and ev'n <hi rend="italic">thine</hi>, O <hi rend="italic">Rome</hi>!)</l>
+<l>No single Parts unequally surprize;</l>
+<l>All comes <hi rend="italic">united</hi> to th' admiring Eyes;</l>
+<l>No monstrous Height, or Breadth, or Length ap|pear;</l>
+<l>The <hi rend="italic">Whole</hi> at once is <hi rend="italic">Bold</hi>, and <hi rend="italic">Regular.</hi></l>
+</lg>
+<lg><l>Whoever thinks a faultless Piece to see,</l>
+<l>Thinks what ne'er was, nor is, nor e'er shall be.</l>
+<l>In ev'ry Work regard the <hi rend="italic">Writer's End</hi>,</l>
+<l>Since none can compass more than they <hi rend="italic">Intend</hi>;</l>
+    <l> <pb n="14"/>
+And if the <hi rend="italic">Means</hi> be just, the <hi rend="italic">Conduct</hi> true,</l>
+<l>Applause, in spite of trivial Faults, is due.</l>
+<l>As Men of Breeding, oft the Men of Wit</l>
+<l>T' avoid <hi rend="italic">great Errors</hi>, must the <hi rend="italic">less</hi> commit,</l>
+<l>Neglect the Rules each <hi rend="italic">Verbal Critick</hi> lays,</l>
+<l>For <hi rend="italic">not</hi> to know some Trifles, is a Praise.</l>
+<l>Most Criticks fond of some subservient Art,</l>
+<l>Still make the <hi rend="italic">Whole</hi> depend upon a <hi rend="italic">Part</hi>,</l>
+<l>They talk of <hi rend="italic">Principles</hi>, but Parts they prize,</l>
+<l>And All to <hi rend="italic">one lov'd Folly</hi> Sacrifice.</l>
+</lg>
+<lg><l>Once on a time, <hi rend="italic">La Mancha</hi>'s Knight, they say,</l>
+<l>A certain <hi rend="italic">Bard</hi> encountring on the Way,</l>
+<l>Discours'd in Terms as just, with Looks as Sage,</l>
+<l>As e'er cou'd <hi rend="italic">D----s</hi>, of the Laws o'th' Stage;</l>
+<l>Concluding all were desp'rate Sots and Fools,</l>
+<l>That durst depart from <hi rend="italic">Aristotle</hi>'s Rules.</l>
+<l>Our Author, happy in a Judge so nice,</l>
+<l>Produc'd his Play, and beg'd the Knight's Advice;</l>
+<l>Made him observe the <hi rend="italic">Subject</hi> and the <hi rend="italic">Plot</hi>,</l>
+<l>The <hi rend="italic">Manners</hi>, P<hi rend="italic">assions</hi>, <hi rend="italic">Unities</hi>, what not?</l>
+<l>All which, exact to <hi rend="italic">Rule</hi> were brought about,</l>
+<l>Were but a <hi rend="italic">Combate in the Lists</hi> left out.</l>
+    <l> <pb n="15"/><hi rend="italic">What! Leave the Combate out?</hi> Exclaims the Knight;</l>
+<l>Yes, or we must renounce the <hi rend="italic">Stagyrite.</hi></l>
+<l><hi rend="italic">Not so by Heav'n</hi> (he answers in a Rage)</l>
+<l><hi rend="italic">Knights, Squires, and Steeds, must enter on the Stage.</hi></l>
+<l>The Stage can ne'er so vast a Throng contain.</l>
+<l><hi rend="italic">Then build a New, or act it in a Plain.</hi></l>
+</lg>
+<lg><l>Thus Criticks, of less <hi rend="italic">Judgment</hi> than <hi rend="italic">Caprice</hi>,</l>
+<l><hi rend="italic">Curious</hi>, not <hi rend="italic">Knowing</hi>; not <hi rend="italic">exact</hi>, but <hi rend="italic">nice</hi>;</l>
+<l>Form <hi rend="italic">short Ideas</hi>; and offend in <hi rend="italic">Arts</hi></l>
+<l>(As most in <hi rend="italic">Manners</hi>) by a <hi rend="italic">Love to Parts.</hi></l>
+<l>Some to <hi rend="italic">Conceit</hi> alone their Taste confine,</l>
+<l>And glitt'ring Thoughts struck out at ev'ry Line;</l>
+<l>Pleas'd with a Work where nothing's just or fit;</l>
+<l>One <hi rend="italic">glaring Chaos</hi> and <hi rend="italic">wild Heap</hi> of <hi rend="italic">Wit.</hi></l>
+<l>Poets like Painters, thus, unskill'd to trace</l>
+<l>The <hi rend="italic">naked Nature</hi> and the <hi rend="italic">living Grace</hi>,</l>
+<l>With <hi rend="italic">Gold</hi> and <hi rend="italic">Jewels</hi> cover ev'ry Part,</l>
+<l>And hide with <hi rend="italic">Ornaments</hi> their <hi rend="italic">Want of Art.</hi></l>
+</lg><l><hi rend="italic">True Wit</hi> is <hi rend="italic">Nature</hi> to Advantage drest,</l>
+<l>What oft was <hi rend="italic">Thought</hi>, but ne'er so well <hi rend="italic">Exprest</hi>;</l>
+    <l> <pb n="16"/><hi rend="italic">Something</hi>, whose <hi rend="italic">Truth</hi> convinc'd at Sight we find,</l>
+<l>That gives us back the Image of our Mind.</l>
+<l>As Shades more sweetly recommend the Light,</l>
+<l>So modest Plainness sets off sprightly Wit:</l>
+<l>For <hi rend="italic">Works</hi> may have more <hi rend="italic">Wit</hi> than does 'em good,</l>
+<l>As <hi rend="italic">Bodies</hi> perish through Excess of <hi rend="italic">Blood.</hi></l>
+
+<lg><l>Others for <hi rend="italic">Language</hi> all their Care express,</l>
+<l>And value <hi rend="italic">Books</hi>, as Women <hi rend="italic">Men</hi>, for <hi rend="italic">Dress</hi>:</l>
+<l>Their Praise is still<hi rend="italic">—The</hi> Style <hi rend="italic">is excellent</hi>:</l>
+<l>The <hi rend="italic">Sense</hi>, they humbly take upon Content.</l>
+<l><hi rend="italic">Words</hi> are like <hi rend="italic">Leaves</hi>; and where they most a|bound,</l>
+<l>Much <hi rend="italic">Fruit</hi> of <hi rend="italic">Sense</hi> beneath is rarely found.</l>
+<l><hi rend="italic">False Eloquence</hi>, like the <hi rend="italic">Prismatic Glass</hi>,</l>
+<l>Its gawdy Colours spreads on <hi rend="italic">ev'ry place</hi>;</l>
+<l>The Face of Nature we no more survey;</l>
+<l>All glares <hi rend="italic">alike</hi>, without <hi rend="italic">Distinction</hi> gay:</l>
+<l>But <hi rend="italic">true Expression</hi>, like th'unchanging <hi rend="italic">Sun</hi>,</l>
+<l><hi rend="italic">Clears</hi>, and <hi rend="italic">improves</hi> whate'er it shines upon,</l>
+<l>It <hi rend="italic">gilds</hi> all Objects, but it <hi rend="italic">alters</hi> none.</l>
+<l>Expression is the <hi rend="italic">Dress</hi> of Thought, and still</l>
+<l>Appears more <hi rend="italic">decent</hi> as more <hi rend="italic">suitable</hi>;</l>
+    <l> <pb n="17"/>
+A vile Conceit in pompous Words exprest,</l>
+<l>Is like a Clown in regal Purple drest:</l>
+<l>For diff'rent <hi rend="italic">Styles</hi> with diff'rent <hi rend="italic">Subjects</hi> sort,</l>
+<l>As several Garbs with Country, Town, and Court.</l>
+<l> Some by <hi rend="italic">Old Words</hi> to Fame have made Pretence;</l>
+<l>Ancients in <hi rend="italic">Phrase</hi>, meer Moderns in their <hi rend="italic">Sense</hi>!</l>
+<l>Such <hi rend="italic">labour'd Nothings</hi>, in so <hi rend="italic">strange</hi> a Style,</l>
+<l><hi rend="italic">Amaze</hi> th' unlearn'd, and make the Learned <hi rend="italic">Smile.</hi></l>
+<l>Unlucky, as <hi rend="italic">Fungoso</hi> in the Play,</l>
+<l>These Sparks with aukward Vanity display</l>
+<l>What the Fine Gentlemen wore <hi rend="italic">Yesterday</hi>:</l>
+<l>And but so mimick ancient Wits at best,</l>
+<l>As Apes our Grandsires, in their <hi rend="italic">Doublets</hi> drest.</l>
+<l>In <hi rend="italic">Words</hi>, as <hi rend="italic">Fashions</hi>, the same Rule will hold;</l>
+<l>Alike Fantastick, if <hi rend="italic">too New</hi>, or <hi rend="italic">Old</hi>;</l>
+<l>Be not the <hi rend="italic">first</hi> by whom the <hi rend="italic">New</hi> are try'd,</l>
+<l>Nor yet the <hi rend="italic">last</hi> to lay the <hi rend="italic">Old</hi> aside.</l>
+</lg>
+<lg><l><hi rend="italic">Numbers</hi> judge a Poet's Song,</l>
+<l>And <hi rend="italic">smooth</hi> or <hi rend="italic">rough</hi>, with such, is <hi rend="italic">right</hi> or <hi rend="italic">wrong</hi>;</l>
+<l>In the bright <hi rend="italic">Muse</hi> tho' thousand <hi rend="italic">Charms</hi> conspire,</l>
+<l>Her <hi rend="italic">Voice</hi> is all these tuneful Fools admire;</l>
+<l>Who haunt <hi rend="italic">Parnassus</hi> but to please their Ear,</l>
+<l>Not mend their Minds; as some to <hi rend="italic">Church</hi> repair,</l>
+<l>Not for the <hi rend="italic">Doctrine</hi>, but the <hi rend="italic">Musick</hi> there.</l>
+<l>These <hi rend="italic">Equal Syllables</hi> alone require,</l>
+<l> Tho' oft the Ear the <hi rend="italic">open Vowels</hi> tire;</l>
+<l>While <hi rend="italic">Expletives</hi> their feeble Aid <hi rend="italic">do</hi> join;</l>
+<l>And ten low Words oft creep in one dull Line;</l>
+<l>While they ring round the same <hi rend="italic">unvary'd</hi> Chimes,</l>
+<l>With sure <hi rend="italic">Returns</hi> of <hi rend="italic">still-expected</hi> Rhymes.</l>
+<l>Where-e'er you find <hi rend="italic">the cooling Western Breeze</hi>,</l>
+<l>In the next Line, it <hi rend="italic">whispers thro' the Trees</hi>;</l>
+<l>If Chrystal Streams <hi rend="italic">with pleasing Murmurs creep</hi>,</l>
+<l>The Reader's threaten'd (not in vain) with <hi rend="italic">Sleep.</hi></l>
+<l>Then, at the <hi rend="italic">last</hi>, and <hi rend="italic">only</hi> Couplet fraught</l>
+<l>With some <hi rend="italic">unmeaning</hi> Thing they call a <hi rend="italic">Thought</hi>,</l>
+    <l> <pb n="19"/>
+A <hi rend="italic">needless Alexandrine</hi> ends the Song,</l>
+<l>That like a wounded Snake, drags its slow Length along.</l>
+<l>Leave such to tune their own dull Rhimes, and know</l>
+<l>What's <hi rend="italic">roundly smooth</hi>, or <hi rend="italic">languishingly slow</hi>;</l>
+<l>And praise the <hi rend="italic">Easie Vigor</hi> of a Line,</l>
+<l>Where <hi rend="italic">Denham</hi>'s Strength, and <hi rend="italic">Waller</hi>'s Sweet|ness join.</l>
+<l>'Tis not enough no Harshness gives Offence,</l>
+<l>The <hi rend="italic">Sound</hi> must seem an <hi rend="italic">Eccho</hi> to the <hi rend="italic">Sense.</hi></l>
+<l><hi rend="italic">Soft</hi> is the Strain when <hi rend="italic">Zephyr</hi> gently blows,</l>
+<l>And the <hi rend="italic">smooth Stream</hi> in <hi rend="italic">smoother Numbers</hi> flows;</l>
+<l>But when loud Surges lash the sounding Shore,</l>
+<l>The <hi rend="italic">hoarse</hi>, <hi rend="italic">rough Verse</hi> shou'd like the <hi rend="italic">Torrent</hi> roar.</l>
+<l>When <hi rend="italic">Ajax</hi> strives, some Rock's vast Weight to throw,</l>
+<l>The Line too <hi rend="italic">labours</hi>, and the Words move <hi rend="italic">slow</hi>;</l>
+<l>Not so, when swift <hi rend="italic">Camilla</hi> scours the Plain,</l>
+<l>Flies o'er th' unbending Corn, and skims along the Main.</l>
+<l>Hear how <hi rend="italic">Timotheus'</hi> various Lays surprize,</l>
+<l>And bid Alternate Passions fall and rise!</l>
+    <l> <pb n="20"/>
+While, at each Change, the Son of <hi rend="italic">Lybian Jove</hi></l>
+<l>Now burns with Glory, and then melts with Love;</l>
+<l>Now his fierce Eyes with sparkling Fury glow,</l>
+<l>Now Sighs steal out, and <hi rend="italic">Tears begin to flow</hi>:</l>
+<l><hi rend="italic">Persians</hi> and <hi rend="italic">Greeks</hi> like Turns of Nature found,</l>
+<l>And the World's Victor stood subdu'd by <hi rend="italic">Sound</hi>!</l>
+<l><hi rend="italic">The Pow'r of Musick</hi> all our Hearts allow;</l>
+<l>And what <hi rend="italic">Timotheus</hi> was, is <hi rend="italic">Dryden</hi> now.</l>
+</lg>
+<lg><l>Avoid <hi rend="italic">Extreams</hi>; and shun the Fault of such,</l>
+<l>Who still are pleas'd <hi rend="italic">too little</hi>, or <hi rend="italic">too much.</hi></l>
+<l>At ev'ry Trifle scorn to take Offence,</l>
+<l>That always shows <hi rend="italic">Great Pride</hi>, or <hi rend="italic">Little Sense</hi>;</l>
+<l>Those <hi rend="italic">Heads</hi>, as <hi rend="italic">Stomachs</hi>, are not sure the best,</l>
+<l>Which nauseate all, and nothing can digest.</l>
+<l>Yet let not each gay <hi rend="italic">Turn</hi> thy Rapture move,</l>
+<l>For Fools <hi rend="italic">Admire</hi>, but Men of Sense <hi rend="italic">Approve</hi>;</l>
+<l>As things seem <hi rend="italic">large</hi> which we thro' <hi rend="italic">Mists</hi> descry,</l>
+<l><hi rend="italic">Dulness</hi> is ever apt to <hi rend="italic">Magnify.</hi></l>
+</lg>
+<lg><l>Some the <hi rend="italic">French</hi> Writers, some our <hi rend="italic">own</hi> despise;</l>
+<l>The <hi rend="italic">Ancients</hi> only, or the <hi rend="italic">Moderns</hi> prize.</l>
+<l>(Thus <hi rend="italic">Wit</hi>, like <hi rend="italic">Faith</hi>, by each Man is apply'd</l>
+<l>To <hi rend="italic">one small Sect</hi>, and All are <hi rend="italic">damn'd beside</hi>.)</l>
+    <l> <pb n="21"/>
+Meanly they seek the Blessing to confine,</l>
+<l>And force <hi rend="italic">that Sun</hi> but on a <hi rend="italic">Part</hi> to Shine,</l>
+<l>Which not alone the <hi rend="italic">Southern Wit</hi> sublimes,</l>
+<l>But ripens Spirits in cold <hi rend="italic">Northern Climes</hi>;</l>
+<l>Which from the first has shone on <hi rend="italic">Ages past</hi>,</l>
+<l>Enlights the <hi rend="italic">present</hi>, and shall warm the <hi rend="italic">last.</hi></l>
+<l>(Tho' <hi rend="italic">each</hi> may feel <hi rend="italic">Increases</hi> and <hi rend="italic">Decays</hi>,</l>
+<l>And see now <hi rend="italic">clearer</hi> and now <hi rend="italic">darker Days</hi>)</l>
+<l>Regard not then if Wit be <hi rend="italic">Old</hi> or <hi rend="italic">New</hi>,</l>
+<l>But blame the <hi rend="italic">False</hi>, and value still the <hi rend="italic">True.</hi></l>
+</lg>
+<lg><l>Some ne'er advance a Judgment of their own,</l>
+<l>But <hi rend="italic">catch</hi> the <hi rend="italic">spreading Notion</hi> of the Town;</l>
+<l>They reason and conclude by <hi rend="italic">Precedent</hi>,</l>
+<l>And own <hi rend="italic">stale Nonsense</hi> which they ne'er invent.</l>
+<l>Some judge of Author's <hi rend="italic">Names</hi>, not <hi rend="italic">Works</hi>, and then</l>
+<l>Nor praise nor damn the <hi rend="italic">Writings</hi>, but the <hi rend="italic">Men.</hi></l>
+<l>Of all this <hi rend="italic">Servile Herd</hi> the worst is He</l>
+<l>That in <hi rend="italic">proud Dulness</hi> joins with <hi rend="italic">Quality</hi>,</l>
+<l>A constant Critick at the Great-man's Board,</l>
+<l>To fetch and carry Nonsense for my Lord.</l>
+<l>What woful stuff this Madrigal wou'd be,</l>
+<l>In some starv'd Hackny Soneteer, or me?</l>
+    <l> <pb n="22"/>
+But let a <hi rend="italic">Lord</hi> once own the happy Lines,</l>
+<l>How the Wit <hi rend="italic">brightens</hi>! How the Style <hi rend="italic">refines</hi>!</l>
+<l>Before <hi rend="italic">his</hi> sacred Name flies ev'ry Fault,</l>
+<l>And each <hi rend="italic">exalted</hi> Stanza <hi rend="italic">teems</hi> with <hi rend="italic">Thought</hi>!</l>
+</lg>
+<lg><l>The <hi rend="italic">Vulgar</hi> thus through <hi rend="italic">Imitation</hi> err;</l>
+<l>As oft the <hi rend="italic">Learn'd</hi> by being <hi rend="italic">Singular</hi>;</l>
+<l>So much they scorn the Crowd, that if the Throng</l>
+<l>By <hi rend="italic">Chance</hi> go right, they <hi rend="italic">purposely</hi> go wrong:</l>
+<l>So Schismatics the <hi rend="italic">plain Believers</hi> quit,</l>
+<l>And are but damn'd for having <hi rend="italic">too much Wit.</hi></l>
+</lg>
+<lg><l>Some praise at Morning what they blame at Night;</l>
+<l>But always think the <hi rend="italic">last</hi> Opinion <hi rend="italic">right.</hi></l>
+<l>A Muse by these is like a Mistress us'd,</l>
+<l>This hour she's <hi rend="italic">idoliz'd</hi>, the next <hi rend="italic">abus'd</hi>;</l>
+<l>While their weak Heads, like Towns unfortify'd,</l>
+<l>'Twixt Sense and Nonsense daily change their Side.</l>
+<l>Ask them the Cause; <hi rend="italic">They're wiser still</hi>, they say;</l>
+<l>And still To Morrow's wiser than To Day.</l>
+<l>We think our <hi rend="italic">Fathers</hi> Fools, so wise we grow;</l>
+<l>Our wiser <hi rend="italic">Sons</hi>, no doubt, will think <hi rend="italic">us</hi> so.</l>
+<l>Once <hi rend="italic">School-Divines</hi> this zealous Isle o'erspread;</l>
+<l>Who knew most <hi rend="italic">Sentences</hi> was deepest read;</l>
+    <l> <pb n="23"/>
+Faith, Gospel, All, seem'd made to be <hi rend="italic">disputed</hi>,</l>
+<l>And none had <hi rend="italic">Sense enough to be Confuted</hi>:</l>
+<l><hi rend="italic">Scotists</hi> and <hi rend="italic">Thomists</hi>, now, in Peace remain,</l>
+<l>Amidst their <hi rend="italic">kindred</hi> Cobwebs in <hi rend="italic">Duck-Lane.</hi></l>
+<l>If <hi rend="italic">Faith</hi> it self has <hi rend="italic">diff'rent Dresses</hi> worn,</l>
+<l>What wonder <hi rend="italic">Modes</hi> in <hi rend="italic">Wit</hi> shou'd take their Turn?</l>
+<l>Oft, leaving what is Natural and fit,</l>
+<l>The <hi rend="italic">currant Folly</hi> proves our <hi rend="italic">ready Wit</hi>,</l>
+<l>And Authors think their Reputation safe,</l>
+<l>Which lives as long as <hi rend="italic">Fools</hi> are pleas'd to <hi rend="italic">Laugh.</hi></l>
+</lg>
+<lg><l>Some valuing those of their own <hi rend="italic">Side</hi>, or <hi rend="italic">Mind</hi>,</l>
+<l>Still make themselves the measure of Mankind;</l>
+<l>Fondly we think we honour Merit then,</l>
+<l>When we but praise <hi rend="italic">Our selves</hi> in <hi rend="italic">Other Men.</hi></l>
+<l>Parties in <hi rend="italic">Wit</hi> attend on those of <hi rend="italic">State</hi>,</l>
+<l>And publick Faction doubles private Hate.</l>
+<l><hi rend="italic">Pride</hi>, <hi rend="italic">Malice</hi>, <hi rend="italic">Folly</hi>, against <hi rend="italic">Dryden</hi> rose,</l>
+<l>In various Shapes of <hi rend="italic">Parsons</hi>, <hi rend="italic">Criticks</hi>, <hi rend="italic">Beaus</hi>;</l>
+<l>But <hi rend="italic">Sense</hi> surviv'd, when <hi rend="italic">merry Jests</hi> were past;</l>
+<l>For rising Merit will <hi rend="italic">buoy up</hi> at last.</l>
+<l>Might he return, and bless once more our Eyes,</l>
+<l>New <hi rend="italic">S-----s</hi> and new <hi rend="italic">M-----ns</hi> must arise:</l>
+    <l> <pb n="24"/>
+Nay shou'd great <hi rend="italic">Homer</hi> lift his awful Head,</l>
+<l><hi rend="italic">Zoilus</hi> again would start up from the Dead.</l>
+<l><hi rend="italic">Envy</hi> will <hi rend="italic">Merit</hi>, as its <hi rend="italic">Shade</hi>, pursue;</l>
+<l>But like a Shadow, <hi rend="italic">proves</hi> the <hi rend="italic">Substance</hi> too.</l>
+<l>For envy'd <hi rend="italic">Wit</hi>, like <hi rend="italic">Sol</hi> eclips'd, makes known</l>
+<l>Th' <hi rend="italic">opposing Body</hi>'s Grossness, not its <hi rend="italic">own.</hi></l>
+<l>When first that Sun too powerful Beams displays,</l>
+<l>It draws up Vapours which obscure its Rays;</l>
+<l>But ev'n those Clouds at last adorn its Way,</l>
+<l>Reflect new Glories, and augment the Day.</l>
+</lg>
+<lg><l>Be thou the <hi rend="italic">first</hi> true Merit to befriend,</l>
+<l><hi rend="italic">His</hi> Praise is lost, who stays till <hi rend="italic">All</hi> commend.</l>
+<l>Short is the Date, alas, of Modern Rhymes,</l>
+<l>And 'tis but just to let 'em live <hi rend="italic">betimes.</hi></l>
+<l>No longer now that Golden Age appears,</l>
+<l>When <hi rend="italic">Patriarch-Wits</hi> surviv'd a <hi rend="italic">thousand Years</hi>;</l>
+<l>Now Length of <hi rend="italic">Fame</hi> (our second Life) is lost,</l>
+<l>And bare <hi rend="italic">Threescore</hi> is all ev'n That can boast:</l>
+<l>Our Sons their Father's <hi rend="italic">failing Language</hi> see,</l>
+<l>And such as <hi rend="italic">Chancer</hi> is, shall <hi rend="italic">Dryden</hi> be.</l>
+<l>So when the faithful Pencil has design'd</l>
+<l>Some <hi rend="italic">fair Idea</hi> of the Master's Mind,</l>
+    <l> <pb n="25"/>
+Where a <hi rend="italic">new World</hi> leaps out at his command,</l>
+<l>And ready Nature waits upon his Hand;</l>
+<l>When the ripe Colours <hi rend="italic">soften</hi> and <hi rend="italic">unite</hi>,</l>
+<l>And sweetly <hi rend="italic">melt</hi> into just Shade and Light,</l>
+<l>When mellowing Time does full Perfection give,</l>
+<l>And each Bold Figure just begins to <hi rend="italic">Live</hi>;</l>
+<l>The <hi rend="italic">treach'rous Colours</hi> in few Years decay,</l>
+<l>And all the bright Creation fades away!</l>
+</lg>
+<lg><l>Unhappy <hi rend="italic">Wit</hi>, like most mistaken Things,</l>
+<l>Attones not for that <hi rend="italic">Envy</hi> which it brings.</l>
+<l>In <hi rend="italic">Youth</hi> alone its empty Praise we boast,</l>
+<l>But soon the short-liv'd Vanity is lost!</l>
+<l>Like some fair <hi rend="italic">Flow'r</hi> that in the <hi rend="italic">Spring</hi> does rise,</l>
+<l>And gaily blooms, but ev'n in blooming <hi rend="italic">dies.</hi></l>
+<l>What is this <hi rend="italic">Wit</hi> which does our Cares employ?</l>
+<l>The <hi rend="italic">Owner</hi>'s <hi rend="italic">Wife</hi>, that <hi rend="italic">other Men</hi> enjoy;</l>
+<l>'Tis most our <hi rend="italic">Trouble</hi> when 'tis most <hi rend="italic">admir'd</hi>;</l>
+<l>The more we <hi rend="italic">give</hi>, the more is still <hi rend="italic">requir'd</hi>:</l>
+<l>The Fame with Pains we gain, but lose with ease;</l>
+<l>Sure <hi rend="italic">some</hi> to <hi rend="italic">vex</hi>, but never <hi rend="italic">all</hi> to <hi rend="italic">please</hi>;</l>
+<l>'Tis what the <hi rend="italic">Vicious fear</hi>, the <hi rend="italic">Virtuous shun</hi>;</l>
+<l>By <hi rend="italic">Fools</hi> 'tis <hi rend="italic">hated</hi>, and by <hi rend="italic">Knaves undone</hi>!</l>
+</lg>
+    <lg> 
+        <pb n="26"/><l>Too much does <hi rend="italic">Wit</hi> from <hi rend="italic">Ign'rance</hi> undergo,</l>
+<l>Ah let not <hi rend="italic">Learning</hi> too commence its Foe!</l>
+<l>Of old, those met <hi rend="italic">Rewards</hi> who cou'd <hi rend="italic">excell</hi>,</l>
+<l>And such were <hi rend="italic">Prais'd</hi> as but <hi rend="italic">endeavour'd well</hi>:</l>
+<l>Tho' <hi rend="italic">Triumphs</hi> were to <hi rend="italic">Gen'rals</hi> only due,</l>
+<l><hi rend="italic">Crowns</hi> were reserv'd to grace the <hi rend="italic">Soldiers</hi> too▪</l>
+<l>Now, they who reach <hi rend="italic">Parnassus'</hi> lofty Crown,</l>
+<l>Employ their Pains to spurn some others down;</l>
+<l>And while Self-Love each jealous Writer rules,</l>
+<l><hi rend="italic">Contending Wits</hi> become the <hi rend="italic">Sport of Fools.</hi></l>
+<l>But still the <hi rend="italic">Worst</hi> with most Regret commend,</l>
+<l>For each <hi rend="italic">Ill Author</hi> is as bad a <hi rend="italic">Friend.</hi></l>
+<l>To what base Ends, and by what abject Ways,</l>
+<l>Are Mortals urg'd by <hi rend="italic">Sacred Lust</hi> of <hi rend="italic">Praise?</hi></l>
+<l>Ah ne'er so <hi rend="italic">dire</hi> a <hi rend="italic">Thirst</hi> of Glory boast,</l>
+<l>Nor in the <hi rend="italic">Critick</hi> let the <hi rend="italic">Man</hi> be lost!</l>
+<l><hi rend="italic">Good-Nature</hi> and <hi rend="italic">Good-Sense</hi> must ever join;</l>
+<l>To Err is <hi rend="italic">Humane</hi>; to Forgive, <hi rend="italic">Divine.</hi></l>
+<l>But if in <hi rend="italic">Noble Minds</hi> some Dregs remain,</l>
+<l>Not yet purg'd off, of Spleen and sow'r Disdain,</l>
+<l>Discharge that Rage on more provoking Crimes,</l>
+<l>Nor fear a Dearth in these Flagitious Times.</l>
+        <l> <pb n="27"/>
+No Pardon vile <hi rend="italic">Obscenity</hi> should find,</l>
+<l>Tho' <hi rend="italic">Wit</hi> and <hi rend="italic">Art</hi> conspire to move your Mind;</l>
+<l>But <hi rend="italic">Dulness</hi> with <hi rend="italic">Obscenity</hi> must prove</l>
+<l>As Shameful sure as <hi rend="italic">Impotence</hi> in <hi rend="italic">Love.</hi></l>
+<l>In the fat Age of Pleasure, Wealth, and Ease,</l>
+<l>Sprung the rank Weed, and thriv'd with large In|crease;</l>
+<l>When <hi rend="italic">Love</hi> was all an easie Monarch's Care;</l>
+<l>Seldom at <hi rend="italic">Council</hi>, never in a <hi rend="italic">War</hi>:</l>
+<l><hi rend="italic">Jilts</hi> rul'd the State, and Statesmen <hi rend="italic">Farces</hi> writ;</l>
+<l>Nay <hi rend="italic">Wits</hi> had <hi rend="italic">Pensions</hi>, and <hi rend="italic">young Lords</hi> had <hi rend="italic">Wit</hi>:</l>
+<l>The Fair sate panting at a <hi rend="italic">Courtier</hi>'s <hi rend="italic">Play</hi>,</l>
+<l>And not a Mask went <hi rend="italic">un-improv'd</hi> away:</l>
+<l>The modest Fan was lifted up no more,</l>
+<l>And Virgins <hi rend="italic">smil'd</hi> at what they <hi rend="italic">blush'd</hi> before—</l>
+<l>The following Licence of a Foreign Reign</l>
+<l>Did all the Dregs of bold <hi rend="italic">Socinus</hi> drain;</l>
+<l>Then <hi rend="italic">first</hi> the <hi rend="italic">Belgian Morals</hi> were extoll'd;</l>
+<l>We their <hi rend="italic">Religion</hi> had, and they our <hi rend="italic">Gold</hi>:</l>
+<l>Then Unbelieving Priests reform'd the Nation,</l>
+<l>And taught more <hi rend="italic">Pleasant</hi> Methods of Salvation;</l>
+<l>Where Heav'ns free Subjects might their <hi rend="italic">Rights</hi> dis|pute,</l>
+<l>Lest <hi rend="italic">God himself</hi> shou'd seem too <hi rend="italic">Absolute.</hi></l>
+        <l> <pb n="28"/><hi rend="italic">Pulpits</hi> their <hi rend="italic">Sacred Satire</hi> learn'd to spare,</l>
+<l>And Vice <hi rend="italic">admir'd</hi> to find a Flatt'rer <hi rend="italic">there</hi>!</l>
+<l>Encourag'd thus, Wit<hi rend="italic">'s Titans</hi> brav'd the Skies</l>
+<l>And the Press groan'd with Licenc'd <hi rend="italic">Blasphemies—</hi></l>
+<l>These Monsters, Criticks! with your Darts engage,</l>
+<l>Here point your Thunder, and exhaust your Rage</l>
+<l>Yet shun their Fault, who, <hi rend="italic">Scandalously nice</hi>,</l>
+<l>Will needs <hi rend="italic">mistake</hi> an Author <hi rend="italic">into Vice</hi>;</l>
+<l>All seems Infected that th' Infected spy,</l>
+<l>As all looks yellow to the Jaundic'd Eye.</l>
+</lg>
+<lg><l>Learn then what <hi rend="italic">Morals</hi> Criticks ought to show,</l>
+<l>For 'tis but <hi rend="italic">half</hi> a <hi rend="italic">Judge's Task</hi>, to <hi rend="italic">Know.</hi></l>
+<l>'Tis not enough, Wit, Art, and Learning join;</l>
+<l>In all you speak, let Truth and Candor shine:</l>
+<l>That not alone what to your <hi rend="italic">Judgment</hi>'s due,</l>
+<l>All may allow; but seek your <hi rend="italic">Friendship</hi> too.</l>
+</lg>
+<lg><l>Be <hi rend="italic">silent</hi> always when you <hi rend="italic">doubt</hi> your Sense;</l>
+<l>And speak, tho' <hi rend="italic">sure</hi>, with <hi rend="italic">seeming Diffidence</hi>:</l>
+<l>Some positive, persisting Fops we know,</l>
+<l>That, if <hi rend="italic">once wrong</hi>, will needs be <hi rend="italic">always so</hi>;</l>
+<l>But you, with Pleasure own your Errors past,</l>
+<l>And make, each Day, a <hi rend="italic">Critick</hi> on the last.</l>
+</lg>
+    <lg> <pb n="29"/><l>'Tis not enough your Counsel still be <hi rend="italic">true</hi>;</l>
+<l><hi rend="italic">Blunt Truths</hi> more Mischief than <hi rend="italic">nice Falshoods</hi> do;</l>
+<l>Men must be <hi rend="italic">taught</hi> as if you taught them not;</l>
+<l>And things <hi rend="italic">ne'er known</hi> propos'd as Things <hi rend="italic">forgot.</hi></l>
+<l>Without <hi rend="italic">Good Breeding</hi>, Truth is not approv'd;</l>
+<l><hi rend="italic">That</hi> only makes <hi rend="italic">Superior</hi> Sense <hi rend="italic">belov'd.</hi></l>
+</lg>
+<lg><l>Be Niggards of Advice on no Pretence;</l>
+<l>For the <hi rend="italic">worst Avarice</hi> is that of <hi rend="italic">Sense.</hi></l>
+<l>With mean Complacence ne'er betray your Trust,</l>
+<l>Nor be so <hi rend="italic">Civil</hi> as to prove <hi rend="italic">Unjust</hi>:</l>
+<l>Fear not the Anger of the Wise to raise;</l>
+<l>Those best can <hi rend="italic">bear Reproof</hi>, who <hi rend="italic">merit Praise.</hi></l>
+</lg>
+<lg><l>'Twere well, might Criticks still this Freedom take;</l>
+<l>But <hi rend="italic">Appius</hi> reddens at each Word you speak,</l>
+<l>And <hi rend="italic">stares</hi>, <hi rend="italic">Tremendous</hi>! with a threatning Eye;</l>
+<l>Like some <hi rend="italic">fierce Tyrant</hi> in <hi rend="italic">Old Tapestry</hi>!</l>
+<l>Fear most to tax an <hi rend="italic">Honourable</hi> Fool,</l>
+<l>Whose Right it is, <hi rend="italic">uncensur'd</hi> to be dull;</l>
+<l>Such without <hi rend="italic">Wit</hi> are Poets when they please,</l>
+<l>As without <hi rend="italic">Learning</hi> they can take <hi rend="italic">Degrees.</hi></l>
+<l>Leave dang'rous <hi rend="italic">Truths</hi> to unsuccessful <hi rend="italic">Satyrs</hi>,</l>
+<l>And <hi rend="italic">Flattery</hi> to fulsome <hi rend="italic">Dedicators</hi>,</l>
+    <l> <pb n="30"/>
+Whom, when they <hi rend="italic">Praise</hi>, the World believes no more,</l>
+<l>Than when they promise to give <hi rend="italic">Scribling</hi> o'er.</l>
+<l>'Tis best sometimes your Censure to restrain,</l>
+<l>And <hi rend="italic">charitably</hi> let the <hi rend="italic">dull</hi> be <hi rend="italic">vain.</hi></l>
+<l>Your Silence there is better than your <hi rend="italic">Spite</hi>,</l>
+<l>For who can <hi rend="italic">rail</hi> so long as they can <hi rend="italic">write?</hi></l>
+<l>Still humming on, their drowzy Course they keep,</l>
+<l>And <hi rend="italic">lash'd</hi> so long, like <hi rend="italic">Tops</hi>, are lash'd <hi rend="italic">asleep.</hi></l>
+<l><hi rend="italic">False Steps</hi> but help them to renew the Race,</l>
+<l>As after <hi rend="italic">Stumbling</hi>, Jades will mend their Pace.</l>
+<l>What Crouds of these, impenitently bold,</l>
+<l>In <hi rend="italic">Sounds</hi> and jingling Syllables grown old,</l>
+<l>Still run on Poets, in a raging Vein,</l>
+<l>Ev'n to the Dregs and <hi rend="italic">Squeezings</hi> of the <hi rend="italic">Brain</hi>;</l>
+<l>Strain out the last, dull droppings of their Sense,</l>
+<l>And Rhyme with all the <hi rend="italic">Rage</hi> of <hi rend="italic">Impotence</hi>!</l>
+</lg>
+<lg><l>Such shameless <hi rend="italic">Bards</hi> we have; and yet 'tis true,</l>
+<l>There are as mad, abandon'd <hi rend="italic">Criticks</hi> too.</l>
+<l> The Bookful Blockhead, ignorantly read,</l>
+<l>With <hi rend="italic">Loads</hi> of <hi rend="italic">Learned Lumber</hi> in his Head,</l>
+    <l> <pb n="31"/>
+With his own Tongue still edifies his Ears,</l>
+<l>And always <hi rend="italic">List'ning to Himself</hi> appears.</l>
+<l>All Books he reads, and all he reads assails,</l>
+<l>From <hi rend="italic">Dryden</hi>'s <hi rend="italic">Fables</hi> down to <hi rend="italic">D------y</hi>'s <hi rend="italic">Tales.</hi></l>
+<l>With <hi rend="italic">him</hi>, most Authors steal their Works, or buy;</l>
+<l><hi rend="italic">Garth</hi> did not write his own <hi rend="italic">Dispensary.</hi></l>
+<l>Name a new <hi rend="italic">Play</hi>, and <hi rend="italic">he</hi>'s the <hi rend="italic">Poet's Friend</hi>,</l>
+<l>Nay show'd his Faults—but <hi rend="italic">when wou'd Poets mend?</hi></l>
+<l>No Place so Sacred from such Fops is barr'd,</l>
+<l>Nor is <hi rend="italic">Paul</hi>'s <hi rend="italic">Church</hi> more safe than <hi rend="italic">Paul</hi>'s <hi rend="italic">Church|yard</hi>:</l>
+<l>Nay, fly to <hi rend="italic">Altars</hi>; there they'll talk you dead;</l>
+<l>For <hi rend="italic">Fools</hi> rush in where <hi rend="italic">Angels</hi> fear to tread.</l>
+<l>Distrustful <hi rend="italic">Sense</hi> with modest Caution speaks;</l>
+<l>It still <hi rend="italic">looks home</hi>, and short Excursions makes;</l>
+<l>But <hi rend="italic">ratling Nonsense</hi> in full <hi rend="italic">Vollies</hi> breaks;</l>
+<l>And never shock'd, and never turn'd aside,</l>
+<l><hi rend="italic">Bursts out</hi>, resistless, with a thund'ring Tyde!</l>
+</lg>
+<lg><l>But where's the Man, who Counsel <hi rend="italic">can</hi> bestow,</l>
+<l>Still <hi rend="italic">pleas'd</hi> to <hi rend="italic">teach</hi>, and yet not <hi rend="italic">proud</hi> to <hi rend="italic">know?</hi></l>
+<l>Unbiass'd, or by <hi rend="italic">Favour</hi>, or by <hi rend="italic">Spite</hi>;</l>
+<l>Not <hi rend="italic">dully</hi> prepossest, or <hi rend="italic">blindly</hi> right;</l>
+<l>Tho' Learn'd, <hi rend="italic">well-bred</hi>; and tho' well-bred, <hi rend="italic">sin|cere</hi>;</l>
+<l><hi rend="italic">Modestly bold</hi>, and <hi rend="italic">Humanly severe?</hi></l>
+    <l> <pb n="32"/>
+Who to a <hi rend="italic">Friend</hi> his <hi rend="italic">Faults</hi> can freely show,</l>
+<l>And gladly praise the <hi rend="italic">Merit</hi> of a <hi rend="italic">Foe?</hi></l>
+<l>Blest with a <hi rend="italic">Taste</hi> exact, yet unconfin'd;</l>
+<l>A <hi rend="italic">Knowledge</hi> both of <hi rend="italic">Books</hi> and <hi rend="italic">Humankind</hi>;</l>
+<l>Gen'rous <hi rend="italic">Converse</hi>; a <hi rend="italic">Soul</hi> exempt from <hi rend="italic">Pride</hi>;</l>
+<l>And <hi rend="italic">Love to Praise</hi>, with <hi rend="italic">Reason</hi> on his Side?</l>
+</lg>
+<lg><l>Such once were <hi rend="italic">Criticks</hi>; such the Happy <hi rend="italic">Few</hi>,</l>
+<l><hi rend="italic">Athens</hi> and <hi rend="italic">Rome</hi> in better Ages knew.</l>
+<l>The mighty <hi rend="italic">Stagyrite</hi> first left the Shore,</l>
+<l>Spread all his Sails, and durst the Deeps explore;</l>
+<l>He steer'd securely, and discover'd far,</l>
+<l><hi rend="italic">Led</hi> by the Light of the <hi rend="italic">Maeonian Star.</hi></l>
+<l>Poets, a <hi rend="italic">Race</hi> long unconfin'd and free,</l>
+<l>Still fond and proud of <hi rend="italic">Savage Liberty</hi>,</l>
+<l>Receiv'd his Laws; and stood convinc'd 'twas fit</l>
+<l>Who conquer'd <hi rend="italic">Nature</hi>, shou'd preside o'er <hi rend="italic">Wit.</hi></l>
+</lg>
+<lg><l><hi rend="italic">Horace</hi> still charms with graceful Negligence,</l>
+<l>And without Method <hi rend="italic">talks</hi> us into Sense,</l>
+<l>Does like a <hi rend="italic">Friend</hi>, familiarly convey</l>
+<l>The <hi rend="italic">truest Notions</hi> in the <hi rend="italic">easiest way.</hi></l>
+<l>He, who supream in Judgment, as in Wit,</l>
+<l>Might boldly censure, as he boldly writ,</l>
+    <l> <pb n="33"/>
+Yet judg'd with Coolness tho' he sung with Fire,</l>
+<l>His <hi rend="italic">Precepts</hi> teach but what his <hi rend="italic">Works</hi> inspire.</l>
+<l><hi rend="italic">Our Criticks</hi> take a contrary Extream,</l>
+<l>They <hi rend="italic">judge</hi> with <hi rend="italic">Fury</hi>, but they <hi rend="italic">write</hi> with <hi rend="italic">Fle'me</hi>:</l>
+<l>Nor suffers <hi rend="italic">Horace</hi> more in wrong <hi rend="italic">Translations</hi></l>
+<l>By <hi rend="italic">Wits</hi>, than <hi rend="italic">Criticks</hi> in as wrong <hi rend="italic">Quotations.</hi></l>
+</lg>
+<lg><l>See <hi rend="italic">Dionysius Homer</hi>'s Thoughts refine,</l>
+<l>And call new Beauties forth from ev'ry Line!</l>
+</lg>
+<lg><l>Fancy and Art in gay <hi rend="italic">Petronius</hi> please,</l>
+<l>The <hi rend="italic">Scholar's Learning</hi>, with the <hi rend="italic">Courtier's Ease.</hi></l>
+</lg>
+<lg><l>In grave <hi rend="italic">Quintilian</hi>'s copious Work we find</l>
+<l>The justest <hi rend="italic">Rules</hi>, and clearest <hi rend="italic">Method</hi> join'd.</l>
+<l>Thus <hi rend="italic">useful Arms</hi> in Magazines we place,</l>
+<l>All rang'd in <hi rend="italic">Order</hi>, and dispos'd with <hi rend="italic">Grace</hi>,</l>
+<l>Nor thus alone the curious Eye to please,</l>
+<l>But to be <hi rend="italic">found</hi>, when Need requires, with Ease.</l>
+</lg>
+<lg><l>The <hi rend="italic">Muses</hi> sure <hi rend="italic">Longinus</hi> did inspire,</l>
+<l>And blest <hi rend="italic">their Critick</hi> with a <hi rend="italic">Poet's</hi> Fire.</l>
+<l>An ardent <hi rend="italic">Judge</hi>, who zealous in his Trust,</l>
+<l>With <hi rend="italic">Warmth</hi> gives Sentence, yet is always <hi rend="italic">Just</hi>;</l>
+<l>Whose own <hi rend="italic">Example</hi> strengthens all his Laws,</l>
+<l>And <hi rend="italic">Is himself</hi> that great <hi rend="italic">Sublime</hi> he draws.</l>
+</lg>
+    <lg> <pb n="34"/><l>Thus long succeeding Criticks justly reign'd,</l>
+<l><hi rend="italic">Licence</hi> repress'd, and useful <hi rend="italic">Laws</hi> ordain'd.</l>
+<l><hi rend="italic">Learning</hi> and <hi rend="italic">Rome</hi> alike in Empire grew,</l>
+<l>And <hi rend="italic">Arts</hi> still <hi rend="italic">follow'd</hi> where her <hi rend="italic">Eagles flew.</hi></l>
+<l>From the same Foes, at last, both felt their Doom,</l>
+<l>And the same Age saw <hi rend="italic">Learning</hi> fall, and <hi rend="italic">Rome.</hi></l>
+<l>With <hi rend="italic">Tyranny</hi>, then <hi rend="italic">Superstition</hi> join'd,</l>
+<l>As that the <hi rend="italic">Body</hi>, this enslav'd the <hi rend="italic">Mind</hi>;</l>
+<l>Much was <hi rend="italic">Believ'd</hi>, but little <hi rend="italic">understood</hi>,</l>
+<l>And to be <hi rend="italic">dull</hi> was constru'd to be <hi rend="italic">good</hi>;</l>
+<l>A second Deluge Learning thus o'er-run,</l>
+<l>And the <hi rend="italic">Monks</hi> finish'd what the <hi rend="italic">Goths</hi> begun.</l>
+</lg>
+<lg><l>At length <hi rend="italic">Erasmus</hi>, that <hi rend="italic">great</hi>, <hi rend="italic">injur'd</hi> Name,</l>
+<l>(The <hi rend="italic">Glory</hi> of the Priesthood, and the <hi rend="italic">Shame</hi>!)</l>
+<l>Stemm'd the wild Torrent of a <hi rend="italic">barb'rous Age</hi>,</l>
+<l>And drove those <hi rend="italic">Holy Vandals</hi> off the Stage.</l>
+</lg>
+<lg><l>But see! each <hi rend="italic">Muse</hi>, in <hi rend="italic">Leo</hi>'s Golden Days,</l>
+<l>Starts from her Trance, and trims her wither'd Bays!</l>
+<l><hi rend="italic">Rome</hi>'s ancient <hi rend="italic">Genius</hi>, o'er its <hi rend="italic">Ruins</hi> spread,</l>
+<l>Shakes off the Dust, and rears his rev'rend Head!</l>
+<l>Then <hi rend="italic">Sculpture</hi> and her <hi rend="italic">Sister-Arts</hi> revive;</l>
+<l>Stones leap'd to <hi rend="italic">Form</hi>, and <hi rend="italic">Rocks</hi> began to <hi rend="italic">live</hi>;</l>
+    <l> <pb n="35"/>
+With <hi rend="italic">sweeter Notes</hi> each <hi rend="italic">rising Temple</hi> rung;</l>
+<l>A <hi rend="italic">Raphael</hi> painted, and a <hi rend="italic">Vida</hi> sung!</l>
+<l>Immortal <hi rend="italic">Vida</hi>! on whose honour'd Brow</l>
+<l>The Poet's <hi rend="italic">Bays</hi> and Critick's <hi rend="italic">Ivy</hi> grow:</l>
+<l><hi rend="italic">Cremona</hi> now shall ever boast thy Name,</l>
+<l>As next in Place to <hi rend="italic">Mantua</hi>, next in Fame!</l>
+</lg>
+<lg><l>But soon by Impious Arms from <hi rend="italic">Latium</hi> chas'd,</l>
+<l>Their <hi rend="italic">ancient Bounds</hi> the banish'd Muses past;</l>
+<l>Thence Arts o'er all the <hi rend="italic">NorthernWorld</hi> advance;</l>
+<l>But <hi rend="italic">Critic Learning</hi> flourish'd most in <hi rend="italic">France.</hi></l>
+<l>The <hi rend="italic">Rules</hi>, a Nation born to serve, obeys,</l>
+<l>And <hi rend="italic">Boileau</hi> still in Right of <hi rend="italic">Horace</hi> sways.</l>
+<l>But <hi rend="italic">we</hi>, brave <hi rend="italic">Britains</hi>, <hi rend="italic">Foreign Laws</hi> despis'd,</l>
+<l>And kept <hi rend="italic">unconquer'd</hi>, and <hi rend="italic">unciviliz'd</hi>,</l>
+<l>Fierce for the <hi rend="italic">Liberties of Wit</hi>, and bold,</l>
+<l>We <hi rend="italic">still</hi> defy'd the <hi rend="italic">Romans</hi>, as <hi rend="italic">of old.</hi></l>
+<l>Yet <hi rend="italic">some</hi> there were, among the <hi rend="italic">sounder Few</hi></l>
+<l>Of those who <hi rend="italic">less presum'd</hi>, and <hi rend="italic">better knew</hi>,</l>
+<l>Who durst assert the <hi rend="italic">juster Ancient Cause</hi>,</l>
+<l>And here restor'd Wit's <hi rend="italic">Fundamental Laws.</hi></l>
+    <l> <pb n="36"/>
+Such was <hi rend="italic">Roscommon—</hi>not more learn'd than good,</l>
+<l>With Manners gen'rous as his Noble Blood;</l>
+<l>To him the Wit of <hi rend="italic">Greece</hi> and <hi rend="italic">Rome</hi> was known,</l>
+<l>And ev'ry Author's Merit, but his own.</l>
+<l>Such late was <hi rend="italic">Walsh</hi>,—the Muses Judge and Friend,</l>
+<l>Who justly knew to blame or to commend;</l>
+<l>To Failings mild, but zealous for Desert;</l>
+<l>The <hi rend="italic">clearest Head</hi>, and the <hi rend="italic">sincerest Heart.</hi></l>
+<l>This humble Praise, lamented Shade! receive,</l>
+<l>This Praise at least a grateful Muse may give!</l>
+<l>The Muse, whose early Voice you taught to Sing,</l>
+<l>Prescrib'd her Heights, and prun'd her tender Wing,</l>
+<l>(Her Guide now lost) no more attempts to rise,</l>
+<l>But in low Numbers short Excursions tries.</l>
+<l>Content, if hence th' Unlearn'd their Wants may view,</l>
+<l>The Learn'd reflect on what before they knew.</l>
+<l>Careless of <hi rend="italic">Censure</hi>, nor too fond of <hi rend="italic">Fame</hi>,</l>
+<l>Still pleas'd to <hi rend="italic">praise</hi>, yet not afraid to <hi rend="italic">blame</hi>;</l>
+<l>Averse alike to <hi rend="italic">Flatter</hi>, or <hi rend="italic">Offend</hi>,</l>
+<l>Not <hi rend="italic">free</hi> from Faults, nor yet too vain to <hi rend="italic">mend.</hi></l>
+</lg>
+               <p>FINIS.</p>
+           </div></body>
+    </text>
+    
+</TEI>

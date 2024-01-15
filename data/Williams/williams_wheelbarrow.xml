@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="williams_wheelbarrow">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"XXII [The Red Wheelbarrow]"</title>
+            <author>
+               <persName type="lcnaf" key="n79060075">
+                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
+                  <name>
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                     <forename>William Carlos</forename> 
+                     <surname>Williams</surname>
+                  </name>
+              </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name>
+                     <forename>Tonya</forename>
+                     <surname>Howe</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <!-- edit this content to reflect this digital edition -->
+               <resp>Transcription, editorial commentary, and markup</resp>
+               <name ref="editors.xml#UVAstudstaff">Students and Staff at the University of Virginia</name>
+               <name ref="editors.xml#ARH">Andrew Rivard Hill</name>
+               <name ref="editors.xml#TH">Tonya Howe</name>
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>University of Virginia Department of English</addrLine>
+               <addrLine>P. O. Box 400l2l</addrLine>
+               <addrLine>Charlottesville, VA </addrLine>
+               <addrLine>22904-4l2l</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>tml.howe@gmail.com</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+
+            <biblStruct>
+               <analytic><title>"XXII [The Red Wheelbarrow]"</title></analytic>
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>William Carlos</forename>
+                        <surname>Williams</surname>
+                     </name>
+                  </author>
+
+                  <title>Spring and All</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="city" key="7008038"
+                           >Paris</placeName>
+                     </pubPlace>
+                     <publisher>Contact Publishing Company</publisher>
+                     <date when="1923">1923</date>
+                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <!-- Add additional NOTE elements as needed  -->
+                     <note>The poem entitled the "Red Wheelbarrow" appears on p. 74. Interestingly, it has no title. Instead, it is numbered XXII. Page images have been sourced from <ref target="https://search.lib.virginia.edu/sources/uva_library/items/u863455">the first edition, housed in the Special Collections at The University of Virginia</ref>. The first edition was printed in a small run of 300 copies by Maurice Darantiere, a well-known modernist printer, at his press in Dijon.</note> 
+                  </imprint>
+
+                  
+                  <extent>[5], 93 [1] p., 19 cm.</extent>
+                  <biblScope>p 74</biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               
+               <time from="1900" to="1930">Early 20th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and George Mason
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2023-10-27" who="editors.xml#TH"
+            >Major updates to metadata and TEI header</change>
+         
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <titlePage>
+            <pb n="[TP]"/>
+            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
+            <titlePart><hi rend="italic">Spring and All</hi><lb/></titlePart>
+            <titlePart/>
+            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
+            <titlePart><lb/>
+            </titlePart>
+            <docImprint>
+               
+            </docImprint>
+         </titlePage>
+      </front>
+      <body>
+         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
+
+<pb n="74"/>
+         <div type="poem">
+            <!-- Note structure for prose; div type can be chapter, story, and so on. There may be standard attribute content; use your best judgement, and we can look at it later! -->
+            <head type="main">XXII [The Red Wheelbarrow]</head>
+               <lg>
+                           <l n="1">so much depends</l>
+                           <l n="2">upon</l></lg>
+                        
+                           <lg><l n="3">a red wheel</l>
+                              <l n="4">barrow</l></lg>
+                        
+                           <lg><l n="5">glazed with rain</l>
+                              <l n="6">water</l></lg>
+                        
+                           <lg><l n="7">beside the white</l>
+                              <l n="8">chickens</l></lg>
+
+
+         </div>
+
+      </body>
+<back>
+   <div type="back_matter"> <!-- include any back matter -->
+      <p></p>
+   </div>
+</back>
+
+   </text>
+</TEI>

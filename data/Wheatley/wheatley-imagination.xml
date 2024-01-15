@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-imagination">
+   
+   <!--TEI Header BEGINS-->
+   <teiHeader>
+      
+      
+      <fileDesc> <!--BEGINS File Description -->
+             <titleStmt>
+                <title type="main">"On IMAGINATION" </title>
+                <author>
+                   <persName type="lcnaf" key="n50016726">
+                      <name>
+                         <forename>Phillis</forename>
+                         <surname>Wheatley</surname>
+                      </name>
+                   </persName>
+                </author>
+                      <editor>
+                         <persName type="orcid" key="0000-0002-7400-4093">
+                            <name ref="editors.xml#TH">
+                               <forename>Tonya</forename>
+                               <surname>Howe </surname>
+                            </name>
+                         </persName>
+                      </editor>
+                      <respStmt>
+                         <resp>Transcription, correction, editorial commentary, and markup</resp>
+                         <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+                         <name ref="editors.xml#JW">James West</name>
+                         <name ref="editors.xml#AR">Amy Ridderhof</name>
+                      </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+             </titleStmt>
+         
+         
+             <publicationStmt>
+                      <publisher>Literature in Context</publisher>
+                       <address>
+                          <addrLine>Marymount University Department of Literature and Languages</addrLine>
+                          <addrLine>2807 N. Glebe Road</addrLine>
+                          <addrLine>Arlington, VA </addrLine>
+                          <addrLine>22207</addrLine>
+                          <addrLine>thowe@marymount.edu</addrLine>
+                          <addrLine>lic.open.anthology@gmail.com</addrLine>
+                       </address>
+                      <availability status="free">
+                         <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                            License </licence>
+                      </availability>
+                     
+             </publicationStmt>
+         
+         
+             <sourceDesc>
+                    <biblStruct>
+                       <analytic>
+                          <title>"On IMAGINATION"</title>
+                       </analytic>
+                       <monogr>
+                          <author>
+                                <name>
+                                   <forename>Phillis</forename>
+                                   <surname>Wheatley</surname>
+                                </name>
+                          </author>
+                          <title>Poems on Various Subjects, Religious and Moral</title>
+                          
+                          <imprint>
+                             <pubPlace>
+                                <placeName type="TGN" key="7011781">London</placeName>
+                             </pubPlace>
+                             <publisher>Printed for A. Bell</publisher>
+                             <publisher>bookseller, Aldgate</publisher>
+                             <date when="1773">1773</date>
+                             <note>Page images are sourced from two copies of the first edition housed in the Library of Congress.</note>
+                          </imprint>
+                          
+                          <imprint>
+                           
+                             <pubPlace>Ann Arbor, MI</pubPlace>
+                             <publisher>University of Michigan Humanities Text Initiative</publisher>
+                             <date when="1999">1999</date>
+                             <note><ref target="https://quod.lib.umich.edu/a/amverse/BAP5379.0001.001?view=toc">Online SGML text from the University of Michigan HTI</ref>. SGML markup edited to conform to LiC parameters,
+                                including changes to element and attribute case, ligatures, and other
+                                special html characters. </note>
+                          </imprint>
+                          <extent>[9],124p., 18cm </extent>
+
+                          <biblScope>pp 65-68</biblScope>
+                       </monogr>
+                    </biblStruct>
+             </sourceDesc>
+      </fileDesc>
+      
+      
+      <profileDesc>  <!--BEGINS Profile Description  --> 
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="poem">
+            <channel mode="w">print</channel>
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+         </textDesc>
+         
+         <settingDesc>
+            <setting>
+
+               <time from="1761" to="1765">mid 18th century</time>
+               <!-- Used the date of her enslavement -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+      
+      
+      
+      <encodingDesc>  <!-- BEGINS Encoding Description -->
+              <projectDesc> <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi> project,
+                 which provides an accessible, curated, and marked-up selection of primary sources
+                 relevant to the study and the teaching of British and American literature of the 18th
+                 century. This project is funded by the National Endowment for the Humanities and
+                 developed by faculty at The University of Virginia and Marymount University. </p>
+              </projectDesc>
+              <editorialDecl>
+                 <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                       links provided where possible. Annotations have also included common knowledge,
+                       defined as information that can be found in multiple reliable sources. If you
+                       notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+                    </p>
+                 </interpretation>
+                 <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                       silently modernized and ligatured forms are not encoded.</p>
+                 </normalization>
+                 <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                       word.</p>
+                 </hyphenation>
+                 <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                       not. Where pages break in the middle of a word, the complete word has been
+                       indicated prior to the page beginning.</p>
+                 </segmentation>
+                 <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                       possible. See the Sources section.</p>
+                 </correction>
+              </editorialDecl>
+              <tagsDecl>
+                 <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                 </namespace>
+              </tagsDecl>
+              <classDecl>
+                 <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                 </taxonomy>
+                 <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                 </taxonomy>
+              </classDecl>
+      </encodingDesc>
+      
+      
+      <revisionDesc>  <!--BEGINS Revision Description -->
+         <change when="2018-07-01" who="editors.xml#JW">First pass XML file</change>
+         <change when="2018-07-01" who="editors.xml#AR">First pass XML file</change>
+         <change when="2018-07-05" who="editors.xml#TH">XML updates; updated teiHeader</change>
+         <change when="2018-07-10" who="editors.xml#JW">Added annotations</change>
+         <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
+         <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
+         <change when="2019-09-19" who="editors.xml#TH">Commented out titlepage</change>
+      </revisionDesc>
+      
+      
+   </teiHeader>
+   <!--TEI Header Ends -->
+   
+   
+   
+   <!--Text Begins -->
+   
+   <text>
+            <!-- <front>
+                      <div type="frontispiece" >
+                         <pb n="[frontispiece]" facs="pageImages/WP-FP.jpg"/>
+                      </div>
+                      <pb n="[titlepage]" facs="pageImages/WP-TP.jpg"/>
+                  
+                      <titlePage>
+                           <docTitle>
+                              <titlePart>POEMS <lb/>ON <lb/>VARIOUS SUBJECTS, <lb/>RELIGIOUS AND MORAL.<lb/></titlePart>
+                           </docTitle>
+                           <byline>BY</byline>
+                           <lb/>
+                           <docAuthor><hi rend="italic">PHILLIS WHEATLEY</hi>,</docAuthor>
+                           <lb/>
+                           <docAuthor>
+                              <title>NEGRO SERVANT to Mr. JOHN WHEATLEY, <lb/>of BOSTON, in NEW
+                                 ENGLAND.</title>
+                           </docAuthor>
+                           <lb/>
+                           <docImprint>
+                              <pubPlace><hi rend="italic">LONDON:</hi></pubPlace>
+                              <lb/>
+                              <publisher>Printed for A. BELL, Bookseller, Aldgate; and sold by<lb/>
+                                 Messrs. COX and BERRY, King-Street, <hi rend="italic">BOSTON.</hi>
+                             </publisher>
+                              <lb/>
+                              <date>M DCC LXXIII.</date>
+                              
+                           </docImprint>
+                     </titlePage>
+                
+           </front> -->
+      
+         
+            <body>
+               
+               <div type="poem">
+                  <pb n="65" facs="pageImages/WP-0065.jpg"/>
+                  <head type="title">On IMAGINATION.</head>
+                  
+                  <lg >
+                     <l n="1">THY various works, imperial queen, we see,</l>
+                     <l n="2">How bright their forms! how deck'd with pomp by thee!</l>
+                     <l n="3">Thy wond'rous acts in beauteous order stand,</l>
+                     <l n="4">And all attest how potent is thine hand.</l>
+                  </lg>
+                  <lg >
+                     <l rend="indent" n="5">From <hi rend="italic">Helicon's</hi> refulgent heights
+                        attend,</l>
+                     <l n="6">Ye sacred choir, and my attempts befriend:</l>
+                     <l n="7">To tell her glories with a faithful tongue,</l>
+                     <l n="8">Ye blooming graces, triumph in my song.</l>
+                  </lg>
+                  <lg >
+                     <l rend="indent" n="9">Now here, now there, the roving <hi rend="italic"
+                        >Fancy</hi> flies,</l>
+                     <l n="10">Till some lov'd object strikes her wand'ring eyes,</l>
+                     <l n="11">Whose silken fetters all the senses bind,</l>
+                     <l n="12">And soft captivity involves the mind.</l>
+                  </lg>
+                  <pb n="66"  facs="pageImages/WP-0066.jpg"/>
+                  <lg >
+                     <l rend="indent" n="13"><hi rend="italic">Imagination!</hi> who can sing thy
+                        force?</l>
+                     <l n="14">Or who describe the swiftness of thy course?</l>
+                     <l n="15">Soaring through air to find the bright abode,</l>
+                     <l n="16">Th' empyreal palace of the thund'ring God,</l>
+                     <l n="17">We on thy pinions can surpass the wind,</l>
+                     <l n="18">And leave the rolling universe behind:</l>
+                     <l n="19">From star to star the mental optics rove,</l>
+                     <l n="20">Measure the skies, and range the realms above.</l>
+                     <l n="21">There in one view we grasp the mighty whole,</l>
+                     <l n="22">Or with new worlds amaze th' unbounded soul.</l>
+                  </lg>
+                  <lg >
+                     <l rend="indent" n="23">Though <hi rend="italic">Winter</hi> frowns to <hi
+                        rend="italic">Fancy's</hi> raptur'd eyes</l>
+                     <l n="24">The fields may flourish, and gay scenes arise;</l>
+                     <l n="25">The frozen deeps may break their iron bands,</l>
+                     <l n="26">And bid their waters murmur o'er the sands.</l>
+                     <l n="27">Fair <hi rend="italic">Flora</hi> may resume her fragrant reign,</l>
+                     <l n="28">And with her flow'ry riches deck the plain;</l>
+                     <l n="29"><hi rend="italic">Sylvanus</hi> may diffuse his honours round,</l>
+                     <l n="30">And all the forest may with leaves be crown'd:</l>
+                     <pb n="67" facs="pageImages/WP-0067.jpg"/>
+                     <l n="31">Show'rs may descend, and dews their gems disclose,</l>
+                     <l n="32">And nectar sparkle on the blooming rose.</l>
+                  </lg>
+                  <lg >
+                     <l rend="indent" n="33">Such is thy pow'r, nor are thine orders vain,</l>
+                     <l n="34">O thou the leader of the mental train:</l>
+                     <l n="35">In full perfection all thy works are wrought,</l>
+                     <l n="36">And thine the sceptre o'er the realms of thought.</l>
+                     <l n="37">Before thy throne the subject-passions bow,</l>
+                     <l n="38">Of subject-passions sov'reign ruler Thou;</l>
+                     <l n="39">At thy command joy rushes on the heart,</l>
+                     <l n="40">And through the glowing veins the spirits dart.</l>
+                  </lg>
+                  <lg  >
+                     <l rend="indent" n="41"><hi rend="italic">Fancy</hi> might now her silken pinions
+                        try</l>
+                     <l n="42">To rise from earth, and sweep th' expanse on high;</l>
+                     <l n="43">From <hi rend="italic">Tithon's</hi> bed now might <hi rend="italic"
+                        >Aurora</hi> rise,</l>
+                     <l n="44">Her cheeks all glowing with celestial dies,</l>
+                     <l n="45">While a pure stream of light o'erflows the skies.</l>
+                     <l n="46">The monarch of the day I might behold,</l>
+                     <l n="47">And all the mountains tipt with radiant gold,</l>
+                     <pb n="68" facs="pageImages/WP-0068.jpg"/>
+                     <l n="48">But I reluctant leave the pleasing views,</l>
+                     <l n="49">Which <hi rend="italic">Fancy</hi> dresses to delight the <hi
+                        rend="italic">Muse;</hi></l>
+                     <l n="50"><hi rend="italic">Winter</hi> austere forbids me to aspire,</l>
+                     <l n="51">And northern tempests damp the rising fire;</l>
+                     <l n="52">They chill the tides of <hi rend="italic">Fancy's</hi> flowing sea,</l>
+                     <l n="53">Cease then, my song, cease the unequal lay.</l>
+                  </lg>
+               </div>
+      
+            </body>
+         
+      
+   </text>
+
+
+</TEI>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0"  xml:id="bradstreet-childhood">
+    
+    <teiHeader> 
+        <fileDesc>
+            <titleStmt>
+                <title>"Childhood"</title>
+                <author>
+                    <persName type="lcnaf" key="n79145303">
+                        <name>
+                            <forename>Anne</forename>
+                            <surname>Bradstreet</surname>
+                        </name>
+                    </persName>
+                    
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB" >
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Staff and Research Assistants at The University of Virginia</name>
+                    <name>John O'Brien</name>
+                    <name>Sara Brunstetter</name>
+                </respStmt>
+                    <sponsor/>
+                    <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>   <biblStruct>
+                <analytic><title>"Childhood"</title></analytic>
+                <monogr>
+                    <author>
+                        <persName type="lcnaf" key="n79145303">
+                            <name>
+                                <forename>Anne</forename>
+                                <surname>Bradstreet</surname>
+                            </name>
+                        </persName>
+                    </author>
+                    <title type="main">Several Poems Compiled with Great Variety of Wit and Learning</title>
+                    
+                    <imprint>
+                        <pubPlace>
+                            <placeName key="7013445">Boston</placeName>
+                        </pubPlace>
+                        <publisher>John Foster</publisher>
+                        <date when="1678">1678</date>
+                        <note resp="editors.xml#JOB">
+                            Our texts are taken from the <ref target="http://name.umdl.umich.edu/A29149.0001.001">Text Creation Partnership's digital edition of <hi rend="italic">Several poems compiled with great variety of wit and learning</hi></ref> published in Boston in 1678. This text is sometimes referred to by its alternate title, and the sobriquet given to Anne Bradstreet, "The Tenth Muse". Title page drawn from the University of Pennsylvania's <hi rend="italic">Celebration of Women Writers</hi>.</note>
+                    </imprint>    
+                    <extent>pp 45-48</extent>
+                </monogr>
+            </biblStruct>
+            </sourceDesc>        
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="poem">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="prepared"/> <!-- I would say this is unknown -->
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7014203">New England</name> 
+                    <time from="1600" to="1700">Seventeenth Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        <encodingDesc>
+            <!-- BEGINS Encoding Description -->
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of primary
+                    sources relevant to the study and the teaching of British and American literature of
+                    the 18th century. This project is funded by the National Endowment for the Humanities
+                    and developed by faculty at The University of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                        not. Where pages break in the middle of a word, the complete word has been
+                        indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        
+      
+        
+    </teiHeader>
+    <!--TEI Header Ends -->
+    
+    
+    <text>
+        <front>
+            <pb n="[TP]" facs="pageImages/bradstreet_TP.jpeg"/>
+            <titlePage>
+                <titlePart>SEVERAL<lb/>
+                    
+                    POEMS<lb/>
+                    
+                    Compiled with great variety of Wit and<lb/>
+                    Learning, full of Delight;<lb/>
+                    Wherein especially is contained a compleat<lb/>
+                    Discourse, and Description of<lb/>
+                    
+                    The Four {	ELEMENTS<lb/>
+                    CONSTITUTIONS,<lb/>
+                    AGES of Man,<lb/>
+                    SEASONS of the Year.<lb/><lb/>
+                    Together with an exact Epitome of<lb/>
+                    the three first <hi rend="italic">Monarchyes</hi><lb/><lb/>
+                    
+                    Viz, The {	ASSYRIAN,<lb/>
+                    PERSIAN,<lb/>
+                    GRECIAN.<lb/>
+                    <hi rend="italic">And beginning of the</hi> Romane Common-wealth<lb/>
+                    <hi rend="italic">to the end of their last King:</hi><lb/>
+                    
+                    With diverse other pleasant &amp; serious <hi rend="italic">Poems</hi>,<lb/>
+                    
+                    By a Gentlewoman in <hi rend="italic">New-England</hi>.<lb/>
+                    
+                    <hi rend="italic">The second Edition, Corrected by the Author,<lb/>
+                    and enlarged by an Addition of several other<lb/>
+                    Poems found amongst her Papers<lb/>
+                    after her Death.</hi><lb/>
+                </titlePart>
+                <titlePart>
+                    <hi rend="italic">Boston</hi>, Printed by <hi rend="italic">John Foster</hi>, 1678.</titlePart>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <pb n="45"/>
+                <head type="main"><ref target="title_" corresp="title">Childhood</ref><note xml:id="title" target="title_">This poem is the first of four poems in a larger work called <hi rend="italic">Of the Four Ages of Man</hi>.</note></head>
+                
+                
+                <lg>
+                    <l n="1">Ah me! conceiv'd in sin, and born in sorrow,</l>
+                    <l n="2">A nothing, here to day, but gone to morrow.</l>
+                    <l n="3">Whose mean beginning, blushing cann't reveale,</l>
+                    <l n="4">But night and darkenesse, must with shame conceal.</l>
+                    <l n="5">My mothers <ref target="breeding_" corresp="breeding">breeding sickness</ref><note xml:id="breeding" target="breeding_">Breeding sickness is referring to her pregnancy. Source: Oxford English Dictionary</note>, I will spare;</l>
+                    <l n="6">Her nine months weary burden not declare.</l>	   
+                    <l n="7">To shew her bearing pangs, I should do wrong,</l>
+                    <l n="8">To tel that paine, which cann't be told by tongue;</l>
+                    <l n="9">With tears into this world I did arrive</l>
+                    <l n="10">My mother still did waste, as I did thrive:</l>
+                    <pb n="46"/>
+                    <l n="11">Who yet with love, and all <ref target="alacrity_" corresp="alacrity">alacrity</ref><note xml:id="alacrity" target="alacrity_">Alacrity means cheerful readiness or willingness. Source: Oxford English Dictionary</note>,</l>                
+                    <l n="12">Spending was willing, to be spent for me;</l>
+                    <l n="13">With wayward cryes, I did disturb her rest;</l>
+                    <l n="14">Who sought still to appease me, with her brest,</l>
+                    <l n="15">With weary armes, she danc'd, and <ref target="by_" corresp="by"><hi rend="italic">By, By</hi></ref><note xml:id="by" target="by_">"By, By" is the title of a song, probably a lullaby.</note>, sung,</l>      
+                    <l n="16">When wretched I (ungrate) had done the wrong!</l>
+                    <l n="17">When Infancy was past, my Childishnesse,</l>
+                    <l n="18">Did act al folly, that it could expresse.</l>             
+                    <l n="19">My sillinesse did only take delight,</l>
+                    <l n="20">In that which riper age did scorn, and slight:</l>
+                    <l n="21">In Rattles, Bables, and such toyish fluffe.</l>	   
+                    <l n="22">My then ambitious thoughts, were low enough.</l>
+                    <l n="23">My high borne soule, so straitly was confin'd</l>
+                    <l n="24">That its own worth, it did not know, nor mind.</l>
+                    <l n="25">This little house of flesh, did spacious count:</l>
+                    <l n="26">Through ignorance, all troubles did surmount.</l>
+                    <l n="27">Yet this advantage, had mine ignorance,</l>
+                    <l n="28">Freedome from Envy, and from Arrogance,</l>
+                    <l n="29">How to be rich, or great. I did not <ref target="carke_" corresp="carke">carke</ref><note xml:id="carke" target="carke_">To cark means to labour anxiously. Source: Oxford English Dictionary</note>;</l>
+                    <l n="30">A Baron or a Duke, ne'r made my mark.</l>
+                    <l n="31">Nor studious was, Kings favours how to buy,</l>
+                    <l n="32">With costly presents, or base flattery.</l>
+                    <l n="33">No office covered, wherein I might</l>
+                    <l n="34">Make strong my selfe, and turne aside weak right.</l>
+                    <l n="35">No malice bare, to this, or that great Peer,</l>
+                    <l n="36">Nor unto buzzing whisperors, gave ear.</l>
+                    <l n="37">I gave no hand, nor vote, for death, or life:</l>
+                    <l n="38"><ref target="authority_" corresp="authority">I'd nought to do,'twixt Prince, and peoples strife.</ref><note xml:id="authority" target="authority_">Bradstreet had no place in disputes between the people and the royal family. This is likely an allusion to the English Civil War, which she discussed in other poems. (Bradstreet,"A Dialogue between Old England and New; concerning their present Troubles”)</note></l>    
+                    <l n="39">No <ref target="statist_" corresp="statist">Statist</ref><note xml:id="statist" target="statist_">A statist is someone who believes that the state should control either economic or social policy, or both, to some degree. Source: Wikipedia</note> I: nor <ref target="martialist_" corresp="martialist">Marti'list</ref><note xml:id="martialist" target="martialist_">Martialist is another word for soldier. Source: Oxford English Dictionary</note> i'th'field;</l>
+                    <l n="40">Where e're I went, mine innocence was shield.</l><pb n="47"/>
+                    <l n="41">My quarrels, not for <ref target="diadem_" corresp="diadem">Diadems</ref><note xml:id="diadem" target="diadem">This use of diadem, which is another word for crown, is likely a metonym for royalty. She did not fight for royalty as a child.</note> did rise;</l>
+                    <l n="42">But for an Apple, Plumbe, or some such prize,</l>
+                    <l n="43">My stroks did cause no death, nor wounds, nor skars.</l>
+                    <l n="44">My little wrath did cease soon as my wars.</l>
+                    <l n="45">My duel was no challenge, nor did seek.</l>
+                    <l n="46">My foe should <ref target="weltering_" corresp="weltering">weltering</ref><note xml:id="weltering" target="weltering_">To welter means to wither. Source: Oxford English Dictionary</note>, with his <ref target="bowels_" corresp="bowels">bowels reek.</ref><note xml:id="bowels" target="bowels_">This line is likely referring to when a person's bowels empty after they die.</note></l>
+                    <l n="47">I had no <ref target="suits_" corresp="suits">Suits at law</ref><note xml:id="suits" target="suits">Suits at law refers to lawsuits. Bradstreet had no legal troubles as a child.</note>, neighbours to vex.</l>
+                    <l n="48">Nor evidence for land, did me perplex.</l>
+                    <l n="49">I fear'd no stormes, nor al the windes that blows,</l>
+                    <l n="50">I had no ships at Sea, no <ref target="fraughts_" corresp="fraughts">fraughts</ref><note xml:id="fraughts" target="fraughts">Fraught is equivalent to the modern word freight. Source: Oxford English Dictionary</note> to loose.</l>
+                    <l n="51">I fear'd no drought, nor wet, I had no crop,</l>
+                    <l n="52">Nor yet on future things did place my hope.</l>
+                    <l n="53">This was mine innocence, but oh the seeds,</l>
+                    <l n="54">Lay raked up, of all the cursed weeds,</l>
+                    <l n="55">Which sprouted forth, in my <ref target="insuing_" corresp="insuing">insuing</ref><note xml:id="insuing" target="insuing_">Insuing is equivalent to the modern word ensuing, meaning following. Source: Oxford English Dictionary</note> age,</l>
+                    <l n="56">As he can tell, that next comes on the stage.</l>
+                    <l n="57">But yet let me relate, before I go,</l>
+                    <l n="58">The sins, and dangers I am subject to.</l>
+                    <l n="59">From birth stayned, with <ref target="sin_" corresp="sin"><hi rend="italic">Adams</hi> sinfull fact</ref><note xml:id="sin" target="sin_">Adam's sinful fact refers to original sin from the Creation story of the Book of Genesis.</note>;</l>      
+                    <l n="60">From thence I<ref target="gan_" corresp="gan">'gan</ref><note xml:id="gan" target="gan_">'gan is an abbreviation of "began".</note> to sin, as soon as act.</l>
+                    <l n="61">A perverse will, a love to what's forbid:</l>
+                    <l n="62">A serpents sting in pleasing face lay hid.</l>
+                    <l n="63">A lying tongue as soon as it could speak,</l>
+                    <l n="64">And <ref target="fifth_" corresp="fifth">fift Commandement</ref><note xml:id="fifth" target="fifth">Anne Bradstreet was Puritan. The Fifth Commandment refers to "Honoring thy father and mother." Source: Wikipedia</note> do daily break.</l>
+                    <l n="65">Oft stubborn, peevish, sullen, pout, and cry:</l>
+                    <l n="66">Then nought can please, and yet I know not why.</l>
+                    <l n="67">As many was my sins, so dangers too:</l>
+                    <l n="68">For sin brings sorrow, sicknesse, death, and woe.</l>
+                    <l n="69">And though I misse, the tossings of the mind:</l>
+                    <l n="70">Yet griefs, in my fraile flesh, I still do find.</l><pb n="48"/>
+                    <l n="71">What gripes of wind, mine infancy did pain?</l>
+                    <l n="72">What tortures I, in breeding teeth sustain?</l>
+                    <l n="73">What <ref target="crudities_" corresp="crudities">crudities</ref><note xml:id="crudities" target="crudities_">Imperfect Humours or indigestibles. Source: Oxford English Dictionary</note> my cold stomach hath bred?</l>
+                    <l n="74">Whence vomits, wormes, and <ref target="flux_" corresp="flux">flux</ref><note xml:id="flux" target="flux_">Flux is an abnormally copious flowing of blood, excrement, etc. from the bowels or other organs. Source: Oxford English Dictionary</note> have issued?</l>
+                    <l n="75">What breaches, knocks, and falls I daily have?</l>
+                    <l n="76">And some perhaps, I carry to my grave.</l>
+                    <l n="77">Sometimes in fire, sometimes in waters fall:</l>
+                    <l n="78">Strangely preserv'd, yet mind it not at all.</l>
+                    <l n="79">At home, abroad, my danger's manifold.</l>
+                    <l n="80">That wonder tis, my glasse till now doth hold.</l>    
+                    <l n="81">I've done, unto my elders I give way.</l>
+                    <l n="82"><ref target="little_" corresp="little">For 'tis but little, that a child can say.</ref><note xml:id="little" target="little_">After this, Bradstreet begins the second poem in <hi rend="italic">Of the Four Ages of Man</hi>, "Youth."</note></l>
+                        
+                </lg>
+                
+                
+                
+            </div>
+        </body>
+    </text>
+    
+</TEI>
+
+
+
+
+
+
+
+
+
+
+
