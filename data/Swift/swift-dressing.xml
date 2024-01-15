@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="swift-dressing"> 
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"The Lady's Dressing-Room"</title>
+            <author>
+                <persName type="lcnaf" key="n97925119">
+                  <name>
+                     <forename>Jonathan</forename> 
+                     <surname>Swift</surname>
+                  </name>
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+              
+               <name>The Text Creation Partnership and Students and Staff of The University of Virginia</name>
+              
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>University of Virginia</addrLine>
+               <addrLine>Department of English</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA 22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                     <title>"The Lady's Dressing-Room"</title>
+               </analytic>
+               <monogr>
+                  <author>
+                      <persName type="lcnaf" key="n97925119">
+                        <name>
+                           <forename>Jonathan</forename>
+                           <surname>Swift</surname>
+                        </name>
+                     </persName>
+                  </author>
+                  <title>"The Lady's Dressing-Room"</title>
+               <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>J. Roberts</publisher>
+                     <date when="1732">1732</date>
+                     <note>
+                        <p>.</p>
+                        <p>This poem was incredibly popular from the moment it was published in June 1732. It was first issued as a pamphlet by the London publisher J. Roberts, who printed up 750 copies, a lot for a first run of a poem even now. He had to go back to press almost immediately because it sold so well. The poem was also reprinted immediately in newspapers and periodicals, and then printed in various editions of Swift's works and in anthologies ever since. Our edition follows that first edition, and was keyed for the purposes of the Literature in Context project. We include Swift's notes, which identify where he is quoting from texts such as John Milton's <hi rend="italic">Paradise Lost</hi>.</p>
+                     </note>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="entertain" degree="high"/>
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               
+               
+               <time from="1700" to="1750">Early 18th Century</time>
+   
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+        
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2023-09-20" who="editors.xml#JOB">created edition for Literature in context use</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+     
+      <front>
+         <titlePage>
+      <docTitle>
+         <titlePart>The
+            <lb/>Lady's 
+            <lb/>Dressing-Room
+         <lb/>To which is added, A
+         <lb/>POEM
+         <lb/>ON
+         <lb/>Cutting down the Old Thorn at <hi rend="italic">Market Hill.</hi></titlePart>
+        </docTitle>
+            <lb/>
+            <docAuthor>By the Rev. Dr. S____T.</docAuthor>
+            <lb/>
+            <docImprint>
+               
+               <pubPlace>LONDON</pubPlace>: 
+               
+               <lb/>Printed for <publisher>J. Roberts</publisher> at the <hi rend="italic">Oxford Arms</hi> in <hi rend="italic">Warwick Lane</hi> <lb/>
+               <docDate>MDCCXXXIII</docDate> <lb/>
+               (Price Six Pence.)</docImprint></titlePage></front>
+      <body> 
+         <div type="text">
+               <lg>
+                  <l>Five Hours (and who can do it less in?)</l>
+                  <l>By haughty <hi rend="italic">Caelia</hi> spent in Dressing;</l>
+                  <l>The Goddess from her Chamber issues</l>
+                  <l>Array'd in Lace, Brocade and Tissues:</l>
+                  <l><hi rend="italic">Strephon</hi>, who found the Room was void,</l>
+                  <l>And <hi rend="italic">Betty</hi>otherwise employ'd</l>
+                  <l>Stole in, and took a strict Survey,</l>
+                  <l>Of all the Litter, as it lay.</l>
+                  <l>Whereof, to make the Matter clear,</l>
+                  <l>An <hi rend="italic">Inventory</hi> follows here.</l>
+               </lg>
+               <lg>
+                  <l>And first, a dirty Smock appear'd</l>
+                  <l>Beneath the Armpits well besmear'd</l>
+                  <l><hi rend="italic">Strephon</hi>, the Rogue, display'd it wide,</l>
+                  <l>And turn'd it round on ev'ry Side:</l>
+                  <l>In such a Case, few Words are best,</l>
+                  <l>And <hi rend="italic">Strephon</hi> bids us guess the rest;</l>
+                  <l>But swears how damnably the Men lye,</l>
+                  <l>In calling <hi rend="italic">Caelia</hi> sweet and cleanly.</l>
+               </lg>
+               <lg>
+                  <l>Now listen, while he next produces</l>
+                  <l>The various Combs for various Uses,</l>
+                  <l>Fill'd up with Dirt so closely fixt,</l>
+                  <l>No Brush cou'd force a Way betwixt.</l>
+                  <l>A Paste of Composition rare,</l>
+                  <l>Sweat, Dandriff, Powder, Lead and Hair</l>
+                  <l>A Forehead-Cloath with Oyl upon't</l>
+                  <l>To smooth the Wrinkles on her Front:</l>
+                  <l>Here, Alum Flower to stop the Steams,</l>
+                  <l>Exhal'd from sour unsavoury Streams;</l>
+                  <l>There, Night-Gloves made of <hi rend="italic">Tripsey's</hi> Hide,</l>
+                  <l>Bequeath'd by <hi rend="italic">Tripsey</hi> when she dy'd</l>
+                  <l>With Puppy-Water, Beauty's Help,</l>
+                  <l>Distill'd from <hi rend="italic">Tripsey's</hi> darling Whelp</l>
+                  <l>Here gally-pots and Vials plac't,</l>
+                  <l>Some filld' with Washes, some with Paste;</l>
+                  <l>Some with Pomatums, Paints, and Slops,</l>
+                  <l>And Ointments good for scabby Chops.</l>
+                  <l>Hard by, a filty Bason stands</l>
+                  <l>Foul'd with the scou'ring of her Hands;</l>
+                  <l>The Bason takes whatever comes,</l>
+                  <l>The Scrapings from her Teeth and Gums,</l>
+                  <l>A nasty Compound of all Hues,</l>
+                  <l>For here she spits, and here she spues.</l>         
+               </lg>
+               <lg>
+                   <l>But O! it turn'd poor <hi rend="italic">Strephon's</hi> Bowels,</l>
+                   <l>When he beheld and smelt the Towels;</l>
+                  <l>Begumm'd besmatter'd, and beslim'd;</l>
+                  <l>With Dirt, and Sweat and Ear-wax grim'd.</l>
+                  <l>No Object <hi rend="italic">Strephon's</hi> Eye escapes;</l>
+                  <l>Here, Pettycoats in frowsy Heaps;</l>
+                  <l>Nor be the Handkerchiefs forgot,</l>
+                  <l>All varnish'd o'er with Snuff and Snot.</l>
+                  <l>The Stockings why should I expose</l>
+                  <l>Stain'd with the Moisture of her Toes;,</l>
+                  <l>Or greasy Coifs, and Pinners reeking,</l>
+                  <l>Which <hi rend="italic">Caelia</hi> slept at least a Week in</l>
+                  <l>A Pair of Tweezers next he found</l>
+                  <l>To pluck her Brows in Arches found;</l>
+                  <l>Or Hairs that sink the Forehead low,</l>
+                  <l>Or on her Chin like Bristles grow.</l>
+               </lg>
+               <lg>
+                  <l>The Virtues we must not let pass,</l>
+                  <l>Of <hi rend="italic">Caelia's</hi> magnifying Glass;</l>
+                  <l>When frighted <hi rend="italic">Strephon</hi> cast his Eye on't,</l>
+                  <l>It shew'd the Visage of a Gyant:</l>
+                  <l>A Glass that can to Sight disclose</l>
+                  <l>The smallest Worm in <hi rend="italic">Caelia's</hi> Nose,</l>
+                  <l>And faithfully direct her Nail</l>
+                  <l>To squeeze it out from Head to Tail;</l>
+                  <l>For, catch it nicely by the Head,</l>
+                  <l>It must come out, alive or dead.</l>
+               </lg>
+               <lg>
+                  <l>Why <hi rend="italic">Strephon</hi>, will you tell the rest?</l>
+                  <l>And must you needs describe the Chest?</l>
+                  <l>That careless Wench! No Creature warn her,</l>
+                  <l>To move it out from yonder Corner</l>
+                  <l>But leave it standing full in Sight,</l>
+                  <l>For you to exercise your Spite!</l>
+                  <l>In vain the Workman shew'd his Wit,</l>
+                  <l>With Rings and Hinges counterfeit</l>
+                  <l>To make it seem in this Disguise,</l>
+                  <l>A Cabinet to vulger Eyes;</l>
+                  <l>Which <hi rend="italic">Strephon</hi> ventured to look in,</l>
+                  <l>Resolv'd to go thro' <hi rend="italic">thick and thin</hi>,</l>
+                  <l>He lifts the Lid: There need no more,</l>
+                  <l>He smelt it all the Time before.</l>
+               </lg>
+               <lg>
+                  <l>As, from within <hi rend="italic">Pandora's</hi> Box,</l>
+                  <l>When <hi rend="italic">Epimetheus</hi> op'd the Locks</l>
+                  <l>A sudden universal Crew</l>
+                  <l>Of human Evils, upward flew;</l>
+                  <l>He still was comforted to find,</l>
+                  <l>That <hi rend="italic">Hope</hi> at last remain'd behind.</l>
+               </lg>
+               <lg>
+                  <l>So, <hi rend="italic">Strephon</hi>, lifting up the Lid,</l>
+                  <l>To view what in the Chest was hid,</l>
+                  <l>Teh Vapours flew from out the Vent;</l>
+                  <l>But <hi rend="italic">Strephon</hi>, cautious, never meant</l>
+                  <l>The Bottom of the <hi rend="italic">Pan</hi> to grope</l>
+                  <l>And foul his Hands in search of <hi rend="italic">Hope</hi>.</l>
+               </lg>
+               <lg>
+                  <l>O! NE'ER may such a vile Machine</l>
+                  <l>Be once in <hi rend="italic">Caelia's</hi> Chamber seen!</l>
+                  <l>O! may she better learn to keep</l>
+                  <l><ref target="Secrets_of_the_hoary_deep_" corresp="Secrets_of_the_hoary_deep">"Those Secrets of the hoary Deep!</ref><note xml:id="Secrets_of_the_hoary_deep" target="Secrets_of_the_hoary_deep_">Milton [Swift's note.]</note></l>
+               </lg>
+               <lg>
+                  <l>As Mutton-Cutlets, <hi rend="italic"> prime of Meat</hi>,</l>
+                  <l>Which tho' with Art you salt and beat,</l>
+                  <l>As Laws of Cookery Require,</l>
+                  <l>And roast them at the clearest Fire;</l>
+                  <l>If from <hi rend="italic">a-down</hi> the hopeful Chops,</l>
+                  <l>The Fat upon a Cinder drops,</l>
+                  <l>To stinking Smoke it turns the Flame,</l>
+                  <l>Pois'ning the Flesh from whence it came,</l>
+                  <l>And up exhales a greazy Stench,</l>
+                  <l>For which you curse the careless Wench:</l>
+                  <l>So, Things which must not be exprest,</l>
+                  <l>When <hi rend="italic">plumpt</hi> into the reeking Chest</l>
+                  <l>Send up an excremental Smell,</l>
+                  <l>To taint the Parts from whence they fell;</l>
+                  <l>The Pettycoats and Gown perfume,</l>
+                  <l>And waft a Stink round ev'ry Room.</l>
+               </lg>
+                <lg>
+                     <l>THUS finishing his grand Survey,</l>
+                     <l>The Swain disgusted slunk away.</l>
+                     <l>Repeating in his amorous Fits,</l>
+                     <l>Oh! <hi rend="italic">Caelia, Caelia, Caelia,</hi> shits!</l>
+                  </lg>
+                  <lg>
+                     <l>But <hi rend="italic">Vengeance,</hi> Goddess, never sleeping,</l>
+                     <l>Soon punish'd <hi rend="italic">Strephon</hi> for his peeping.</l>
+                     <l>His foul Imagination links</l>
+                     <l>Each Dame he sees with all her Stinks;</l>
+                      <l>And, if unsavoury Odours Fly,</l>
+                      <l>Conceives a Lady standing by.</l>
+                      <l>All Women his Description fits,</l>
+                      <l>And both Ideas jump like Wits,</l>
+                      <l>by vicious Fancy coupled fast,</l>
+                      <l>And still appearing in <hi rend="italic">Contrast</hi>.</l>
+                  </lg>
+                  <lg>
+                     <l>I PITY wretched <hi rend ="italic">Strephon</hi>, blind</l>
+                     <l>To all the Charms of Woman-Kind.</l>
+                     <l>Should I the <hi rend="italic">Queen of Love</hi> refuse,</l>
+                     <l>Because she rose from stinking Ooze?</l>
+                    <l>To him that looks behind the Scene,</l>
+                    <l><hi rend="italic">Statira's</hi> but some pocky Quean.</l>
+                  </lg>
+                <lg>
+                    <l>When <hi rend="italic">Caelia</hi> all her Glory shows,</l>
+                    <l>If <hi rend="italic">Strephon</hi> would but stop his Nose,</l>
+                    <l>who now so impiously blasphemes</l>
+                    <l>Her Ointments, Daubs, and Paints, and Creams;</l>
+                    <l>With which he makes so foul a Rout;</l>
+                    <l>He soon would learn to think like me,</l>
+                    <l>And bless his ravish'd Eyes to see</l>
+                    <l>Such Order from Confusion sprung,</l>
+                    <l>Such gaudy <hi rend="italic">Tulips</hi> rais'd from <hi rend="italic">Dung</hi>.</l>         
+                </lg>
+         </div>
+      </body>                     
+   </text>
+</TEI>
+

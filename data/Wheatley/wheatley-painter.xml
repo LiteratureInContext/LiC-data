@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-painter">
+
+   <!--TEI Header BEGINS-->
+   <teiHeader>
+
+
+      <fileDesc>
+         <!--BEGINS File Description -->
+         <titleStmt>
+            <title type="main"> "To S. M. a young African Painter, on seeing his Works"</title>
+            <author>
+               <persName type="lcnaf" key="n50016726">
+                  <name>
+                     <forename>Phillis</forename>
+                     <surname>Wheatley</surname>
+                  </name>
+               </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename> Tonya</forename>
+                     <surname> Howe </surname>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#MUstudstaff">Students of Marymount University</name>
+               <name ref="editors.xml#JW">James West</name>
+               <name ref="editors.xml#AR">Amy Ridderhof</name>
+            </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>Marymount University Department of Literature and Languages</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington, VA </addrLine>
+               <addrLine>22207</addrLine>
+               <addrLine>thowe@marymount.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+
+         </publicationStmt>
+
+
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <title>"To S. M. a young African Painter, on seeing his Works"</title>
+               </analytic>
+               <monogr>
+                  <author>
+                        <name>
+                           <forename>Phillis</forename>
+                           <surname>Wheatley</surname>
+                        </name>
+                  </author>
+                  <title>Poems on Various Subjects, Religious and Moral</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="TGN" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>Printed for A. Bell</publisher>
+                     <publisher>bookseller, Aldgate</publisher>
+                     <date when="1773">1773</date>
+                     <note>Page images are sourced from two copies of the first edition housed in
+                        the Library of Congress.</note>
+                  </imprint>
+
+                  <imprint>
+
+                     <pubPlace>Ann Arbor, MI</pubPlace>
+                     <publisher>University of Michigan Humanities Text Initiative</publisher>
+                     <date when="1999">1999</date>
+                     <note><ref
+                           target="https://quod.lib.umich.edu/a/amverse/BAP5379.0001.001?view=toc"
+                           >Online SGML text from the University of Michigan HTI</ref>. SGML markup
+                        edited to conform to LiC parameters, including changes to element and
+                        attribute case, ligatures, and other special html characters. </note>
+                  </imprint>
+                  <extent>[9],124p., 18cm </extent>
+
+                  <biblScope>pp 114-115</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+
+
+      <profileDesc>
+         <!--BEGINS Profile Description  -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <channel mode="w">print</channel>
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+         </textDesc>
+
+         <settingDesc>
+            <setting>
+
+               <time from="1761" to="1765">mid 18th century</time>
+               <!-- Used the date of her enslavement -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+
+
+
+      <encodingDesc>
+         <!-- BEGINS Encoding Description -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <!--BEGINS Revision Description -->
+         <change when="2018-07-01" who="editors.xml#JW">First pass XML file</change>
+         <change when="2018-07-01" who="editors.xml#AR">First pass XML file</change>
+         <change when="2018-07-05" who="editors.xml#TH">XML updates; updated teiHeader</change>
+         <change when="2018-07-10" who="editors.xml#JW">Added annotations</change>
+         <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
+         <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution
+            responsibility details</change>
+         <change when="2019-06-09" who="editors.xml#TH">Added annotations</change>
+         <change when="2019-09-19" who="editors.xml#TH">Commented out titlepage</change>
+         <change when="2023-05-19" who="editors.xml#TH">Updated note style</change>
+      </revisionDesc>
+
+
+   </teiHeader>
+   <!--TEI Header Ends -->
+
+
+
+   <!--Text Begins -->
+
+   <text>
+      <!-- <front>
+         <div type="frontispiece">
+            <pb n="[frontispiece]" facs="pageImages/WP-FP.jpg"/>
+         </div>
+         <pb n="[titlepage]" facs="pageImages/WP-TP.jpg"/>
+
+         <titlePage>
+            <docTitle>
+               <titlePart>POEMS <lb/>ON <lb/>VARIOUS SUBJECTS, <lb/>RELIGIOUS AND
+                  MORAL.<lb/></titlePart>
+            </docTitle>
+            <byline>BY</byline>
+            <lb/>
+            <docAuthor><hi rend="italic">PHILLIS WHEATLEY</hi>,</docAuthor>
+            <lb/>
+            <docAuthor>
+               <title>NEGRO SERVANT to Mr. JOHN WHEATLEY, <lb/>of BOSTON, in NEW ENGLAND.</title>
+            </docAuthor>
+            <lb/>
+            <docImprint>
+               <pubPlace><hi rend="italic">LONDON:</hi></pubPlace>
+               <lb/>
+               <publisher>Printed for A. BELL, Bookseller, Aldgate; and sold by<lb/> Messrs. COX and
+                  BERRY, King-Street, <hi rend="italic">BOSTON.</hi>
+              </publisher>
+               <lb/>
+               <date>M DCC LXXIII.</date>
+            </docImprint>
+         </titlePage>
+
+      </front> -->
+
+
+      <body>
+
+         <div type="poem">
+            <pb n="114" facs="pageImages/WP-0114.jpg"/>
+            <head type="title">To <ref target="_SM" corresp="SM">S. M.</ref><note xml:id="SM" target="_SM"
+                  type="editorial" resp="editors.xml#TH"><p>According to <hi rend="italic">Africana:
+                     The Encyclopedia of the African and African American Experience</hi>, Scipio
+                  Moorhead was an enslaved artist, principally known for his painting of Phillis
+                  Wheatley, which became the basis for the frontispiece to her 1773 collection of
+                  poems. The frontispiece is included in this database. While no signed paintings by
+                  Moorhead survive, this poem by Wheatley may describe two of his works. Moorhead
+                  was owned by the Presbyterian minister John Moorhead of Boston and was likely
+                  tutored by Sarah Moorhead (<ref
+                     target="https://books.google.com/books?id=TMZMAgAAQBAJ">Appiah and Gates
+                     62</ref>).</p></note> a young <hi rend="italic">African</hi> Painter, on seeing his
+               Works.</head>
+
+            <lg>
+               <l n="1">TO show the lab'ring bosom's deep intent,</l>
+               <l n="2">And thought in living characters to paint,</l>
+               <l n="3">When first thy pencil did those beauties give,</l>
+               <l n="4">And breathing figures learnt from thee to live,</l>
+               <l n="5">How did those prospects give my soul delight,</l>
+               <l n="6">A new creation rushing on my sight?</l>
+               <l n="7">Still, wond'rous youth! each noble path pursue,</l>
+               <l n="8">On deathless glories fix thine ardent view:</l>
+               <l n="9">Still may the painter's and the poet's fire</l>
+               <l n="10">To aid thy pencil, and thy verse conspire!</l>
+               <l n="11">And may the charms of each seraphic theme</l>
+               <l n="12">Conduct thy footsteps to immortal fame!</l>
+               <l n="13">High to the blissful wonders of the skies</l>
+               <l n="14">Elate thy soul, and raise thy wishful eyes.</l>
+               <l n="15">Thrice happy, when exalted to survey</l>
+               <l n="16"><ref target="_city" corresp="city">That splendid city</ref><note
+                  xml:id="city" target="_city" type="editorial" resp="editors.xml#TH">Wheatley
+                     refers to the heavenly city of "New Jerusalem," described in Revelation 21. As
+                     many scholars have noted, Christianity offered a not uncomplicated narrative of
+                     salvation and hope that was particularly resonant for the enslaved. She
+                     continues this metaphor of future bliss crowning current woe throughout this
+                     and other poems; see, for instance, lines 23-28, below.</note>, crown'd with
+                  endless day,</l>
+               <l n="17">Whose twice six gates on radiant hinges ring:</l>
+               <l n="18">Celestial <hi rend="italic">Salem</hi> blooms in endless spring.</l>
+            </lg>
+            <pb n="115" facs="pageImages/WP-0115.jpg"/>
+            <lg>
+               <l rend="indent" n="19">Calm and serene thy moments glide along,</l>
+               <l n="20">And may the muse inspire each future song!</l>
+               <l n="21">Still, with the sweets of contemplation bless'd,</l>
+               <l n="22">May peace with balmy wings your soul invest!</l>
+               <l n="23">But when these shades of time are chas'd away,</l>
+               <l n="24">And darkness ends in everlasting day,</l>
+               <l n="25">On what seraphic pinions shall we move,</l>
+               <l n="26">And view the landscapes in the realms above?</l>
+               <l n="27">There shall thy tongue in heav'nly murmurs flow,</l>
+               <l n="28">And there my muse with heav'nly transport glow:</l>
+               <l n="29">No more to tell of <ref target="_Damon" corresp="_Damon"><hi rend="italic"
+                  >Damon's</hi> tender sighs</ref><note xml:id="Damon" target="_Damon"
+                     type="editorial" resp="editors.xml#TH">Damon is a typical name for a male lover
+                     in pastoral poetry, poetry that imagines romantic conflicts in bucolic or
+                     country settings. Wheatley frequently both references and draws on classical
+                     pastoral poetry throughout her <hi rend="italic">Poems</hi>. For a deeper
+                     reading of Wheatley's use of the pastoral, see <ref
+                        target="https://www.jstor.org/stable/2739444">John C. Shield's scholarly
+                        essay, "Phillis Wheatley's Subversive Pastoral."</ref></note>,</l>
+               <l n="30">Or rising radiance of <ref target="_Aurora" corresp="Aurora"><hi rend="italic"
+                  >Aurora's</hi> eyes</ref><note xml:id="Aurora" target="_Aurora" type="editorial"
+                     resp="editors.xml#TH">In Greco-Roman mythology, Aurora (called Eos in the
+                     Greek) personifies the dawn.</note>,</l>
+               <l n="31">For nobler themes demand a nobler strain,</l>
+               <l n="32">And purer language on th' ethereal plain.</l>
+               <l n="33">Cease, gentle muse! the solemn gloom of night</l>
+               <l n="34">Now seals the fair creation from my sight.</l>
+            </lg>
+         </div>
+
+      </body>
+
+
+   </text>
+
+
+</TEI>

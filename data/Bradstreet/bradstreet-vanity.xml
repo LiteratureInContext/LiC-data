@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="bradstreet-vanity">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>"The Vanity of All Worldly Things"</title>
+                    
+                    <author>
+                        
+                        <persName type="lcnaf" key="n79145303">
+                            <name>
+                                <forename>Anne</forename>
+                                <surname>Bradstreet</surname>
+                            </name>
+                        </persName>
+                    </author>
+                    <editor>
+                        <persName type="orcid" key="0000-0001-6453-8721">
+                            <name ref="editors.xml#JOB" >
+                                <surname>O'Brien</surname>
+                                <forename>John</forename>
+                            </name>
+                        </persName>
+                    </editor>
+                    <respStmt>
+                        <resp>Transcription, correction, editorial commentary, and markup</resp>
+                        <name>Staff and Research Assistants at The University of Virginia</name>
+                        <name>John O'Brien</name>
+                        <name>Sara Brunstetter</name>
+                    </respStmt>
+                    <sponsor/>
+                    <funder>National Endowment for the Humanities</funder>
+                </titleStmt>
+                <publicationStmt>
+                    <publisher>Literature in Context</publisher>
+                    
+                    <address>
+                        <addrLine>University of Virginia Department of English</addrLine>
+                        <addrLine>P. O. Box 400121</addrLine>
+                        <addrLine>Charlottesville, VA </addrLine>
+                        <addrLine>22904-4121</addrLine>
+                        <addrLine>jobrien@virginia.edu</addrLine>
+                        <addrLine>lic.open.anthology@gmail.com</addrLine>
+                    </address>
+                    
+                    <availability status="free">
+                        <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                            License </licence>
+                    </availability>
+                </publicationStmt>
+                <sourceDesc>
+                    
+                    <biblStruct>
+                        <analytic><title>"The Vanity of All Worldy Things"</title></analytic>
+                        <monogr>
+                            <author>
+                                <persName type="lcnaf" key="n79145303">
+                                    <name>
+                                        <forename>Anne</forename>
+                                        <surname>Bradstreet</surname>
+                                    </name>
+                                </persName>
+                            </author>
+                            <title type="main">Several Poems Compiled with Great Variety of Wit and Learning</title>
+                            
+                            <imprint>
+                                <pubPlace>
+                                    <placeName key="7013445">Boston</placeName>
+                                </pubPlace>
+                                <publisher>John Foster</publisher>
+                                <date when="1678">1678</date>
+                                <note resp="editors.xml#JOB">
+                                    Our texts are taken from the <ref target="http://name.umdl.umich.edu/A29149.0001.001">Text Creation Partnership's digital edition of <hi rend="italic">Several poems compiled with great variety of wit and learning</hi></ref> published in Boston in 1678. This text is sometimes referred to by its alternate title, and the sobriquet given to Anne Bradstreet, "The Tenth Muse". Title page drawn from the University of Pennsylvania's <hi rend="italic">Celebration of Women Writers</hi>.</note>
+                            </imprint>    
+                            <extent>pp 233-235</extent>
+                        </monogr>
+                    </biblStruct>    
+                </sourceDesc>        
+            </fileDesc>
+            
+            <profileDesc>
+                <langUsage>
+                    <language ident="en">English</language>
+                </langUsage>
+                <creation/>
+                <textDesc n="poem">
+                    <channel mode="w">print</channel>
+                    <constitution type="single"/>
+                    <derivation type="original"/>
+                    <domain/>
+                    <factuality type="fiction"/>
+                    <interaction/>
+                    <preparedness type="prepared"/> <!-- I would say this is unknown -->
+                    <purpose type="entertain" degree="high"/>
+                    <purpose type="inform" degree="high"/>
+                </textDesc>
+                <settingDesc>
+                    <setting>
+                        <name type="tgn" key="7014203">New England</name> 
+                        <time from="1600" to="1700">Seventeenth Century</time>
+                    </setting>
+                </settingDesc>
+            </profileDesc>
+            
+            <encodingDesc>
+                <!-- BEGINS Encoding Description -->
+                <projectDesc>
+                    <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                        project, which provides an accessible, curated, and marked-up selection of primary
+                        sources relevant to the study and the teaching of British and American literature of
+                        the 18th century. This project is funded by the National Endowment for the Humanities
+                        and developed by faculty at The University of Virginia and Marymount University. </p>
+                </projectDesc>
+                <editorialDecl>
+                    <interpretation>
+                        <p>Research informing these annotations draws on publicly-accessible resources, with
+                            links provided where possible. Annotations have also included common knowledge,
+                            defined as information that can be found in multiple reliable sources. If you
+                            notice an error in these annotations, please contact
+                            lic.open.anthology@gmail.com.</p>
+                    </interpretation>
+                    <normalization>
+                        <p>Original spelling and capitalization is retained, though the long s has been
+                            silently modernized and ligatured forms are not encoded.</p>
+                    </normalization>
+                    <hyphenation>
+                        <p>Hyphenation has not been retained, except where necessary for the sense of the
+                            word.</p>
+                    </hyphenation>
+                    <segmentation>
+                        <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                            not. Where pages break in the middle of a word, the complete word has been
+                            indicated prior to the page beginning. </p>
+                    </segmentation>
+                    <correction>
+                        <p>Materials have been transcribed from and checked against first editions, where
+                            possible. See the Sources section.</p>
+                    </correction>
+                </editorialDecl>
+                <tagsDecl>
+                    <namespace name="http://www.tei-c.org/ns/1.0">
+                        <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                    </namespace>
+                </tagsDecl>
+                <classDecl>
+                    <taxonomy xml:id="lcnaf">
+                        <bibl>Library of Congress Name Authority File</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="lcc">
+                        <bibl>Library of Congress Classification</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="tgn">
+                        <bibl>Getty Thesaurus of Geographic Names</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="orcid">
+                        <bibl>Open Researcher and Contributor ID</bibl>
+                    </taxonomy>
+                </classDecl>
+            </encodingDesc>
+        </teiHeader>
+        
+        <text><front>
+            <pb n="[TP]" facs="pageImages/bradstreet_TP.jpeg"/>
+            <titlePage>
+                <titlePart>SEVERAL<lb/>
+                    
+                    POEMS<lb/>
+                    
+                    Compiled with great variety of Wit and<lb/>
+                    Learning, full of Delight;<lb/>
+                    Wherein especially is contained a compleat<lb/>
+                    Discourse, and Description of<lb/>
+                    
+                    The Four {	ELEMENTS<lb/>
+                    CONSTITUTIONS,<lb/>
+                    AGES of Man,<lb/>
+                    SEASONS of the Year.<lb/><lb/>
+                    Together with an exact Epitome of<lb/>
+                    the three first <hi rend="italic">Monarchyes</hi><lb/><lb/>
+                    
+                    Viz, The {	ASSYRIAN,<lb/>
+                    PERSIAN,<lb/>
+                    GRECIAN.<lb/>
+                    <hi rend="italic">And beginning of the</hi> Romane Common-wealth<lb/>
+                    <hi rend="italic">to the end of their last King:</hi><lb/>
+                    
+                    With diverse other pleasant &amp; serious <hi rend="italic">Poems</hi>,<lb/>
+                    
+                    By a Gentlewoman in <hi rend="italic">New-England</hi>.<lb/>
+                    
+                    <hi rend="italic">The second Edition, Corrected by the Author,<lb/>
+                        and enlarged by an Addition of several other<lb/>
+                        Poems found amongst her Papers<lb/>
+                        after her Death.</hi><lb/>
+                </titlePart>
+                <titlePart>
+                    <hi rend="italic">Boston</hi>, Printed by <hi rend="italic">John Foster</hi>, 1678.</titlePart>
+            </titlePage>
+        </front>    
+
+  
+
+        <body>
+            <div>
+                <pb n="233"/>
+                <head type="main">The Vanity of All Wordly Things</head>
+
+                
+                <lg>
+                    <l n="1">As he said vanity, so vain say I</l>
+                    <l n="2">O vanity, O vain all under skie,</l>
+                    <l n="3">Where is the man can say, lo, I have found</l>
+                    <l n="4">On brittle earth, a consolation sound?</l>
+                    <l n="5">What is't in honour, to be set on high?</l>
+                    <l n="6">No, they like beasts, and sonnes of men shall die,</l>
+                    <l n="7">And whilst they live, how oft doth turn their State?</l>
+                    <l n="8">He's now a slave, that was a Prince of late.</l>
+                    <l n="9">What is't in wealth, great treasures for to gain?</l>
+                    <l n="10">No, that's but labour anxious, care and pain.</l>
+                    <l n="11">He heaps up riches, and he heaps us sorrow,</l>
+                    <l n="12">Its his to day, but who's his heire to morrow?</l>
+                    <l n="13">What then? content in pleasures canst thou find?</l>
+                    <l n="14">More vain then all, that's but to grasp the wind</l>
+                    <l n="15">The sensuall senses for a time they please,</l>
+                    <l n="16">Mean while the conscience rage, who shall appease?</l>
+                    <pb n="234"/>
+                    <l n="17">What is't in beauty? no, that's but a snare,</l>
+                    <l n="18">They'r foul enough to day, that once was fair,</l>
+                    <l n="19">What, Is't in flowring youth, or manly age?</l>
+                    <l n="20">The first is prone to vice, the last to rage.</l>
+                    <l n="21">Where is it then? in wisdome, learning, arts?</l>
+                    <l n="22">Sure if on earth, it must be in those parts;</l>
+                    <l n="23">Yet these, the wisest man of men did find,</l>
+                    <l n="24">But vanity, vexation of the mind,</l>
+                    <l n="25">And he that knows the most doth still bemoan,</l>
+                    <l n="26">He knows not all, there there is to be known,</l>
+                    <l n="27">What is it then? to do as Stoicks tell,</l>
+                    <l n="28">Nor laugh, nor weep, let things go ill or well:</l>
+                    <l n="29">Such stoicks are but stocks, such teaching vain:</l>
+                    <l n="30">While man is man, he shall have ease or pain.</l>
+                    <l n="31">If not in honour, beauty, age, nor treasure,</l>
+                    <l n="32">Nor yet in learning, wisdome, youth nor pleasure,</l>
+                    <l n="33">Where shall I cimbe, sound, seek, search or find,</l>
+                    <l n="34">That <ref target="summum_" corresp="summum"><hi rend="italics">summum Bonum</hi></ref><note xml:id="summum" target="summum">This phrase, coined by Cicero, 
+                        means "the highest good." Source: Oxford English Dictionary</note>which may stay my mind?</l>
+                    <l n="35">There is a path, no vultures eye hath seen.</l>
+                    <l n="36">Where lions fierce, nor lions whelps hath been,</l>
+                    <l n="37">Which leads unto that living Christall fount,</l>
+                    <l n="38">Who drinks thereof, the world doth naught account.</l>
+                    <l n="39">The depth, and sea, hath said its not in me,</l>    
+                    <l n="40">With pearl and gold it shall not valued be:</l>
+                    <l n="41">For <hi rend="italics">Saphyre</hi>, <hi rend="italics">Onix</hi>,<hi rend="italics">Topas</hi>,
+                        who will change,</l>    
+                    <l n="42">Its hid fro meyes of men, they count it strange,</l>
+                    <l n="43">Death and destruction, the fame hath heard,</l>    
+                    <l n="44">But where, and what it is, from heaven's declar'd</l>
+                    <l n="45">It brings to honour, which shall not decay,</l>
+                    <l n="46">It steeres with wealth, which time cann't wear away.</l>
+                    <pb n="235"/>
+                    <l n="47">It yeeldeth pleasures, farre beyond conceit,</l>
+                    <l n="48">And truly beautifies without deceit.</l>
+                    <l n="49">Nor strength nor widsome, nor fresh youth shall fade,</l>
+                    <l n="50">Nor death shall see, but are immortal made,</l>
+                    <l n="51">This pearl of price, this tree of life, this spring,</l>
+                    <l n="52">Who is possessed of, shall reign a King,</l>
+                    <l n="53">Nor change of state, nor cares shall ever see,</l>
+                    <l n="54">But wear his Crown unto eternitie</l>
+                    <l n="55">This satiates the soul, this stayes the mind,</l>
+                    <l n="56">The rest's but vanity, and vain we find.</l>
+                    
+                </lg>
+                
+            </div>
+        </body>
+    </text>
+    
+</TEI>
+
+
+
+
+
+
+
+
+
+
+

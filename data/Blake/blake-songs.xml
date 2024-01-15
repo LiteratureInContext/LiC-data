@@ -1,0 +1,1449 @@
+<?xml version="1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="blake-songs">
+<teiHeader type="migrated" creator="Etext">
+<fileDesc>
+<titleStmt>
+<title type="main">Songs of innocence and of experience : shewing the two contrary states of the human soul 1789-1794 / W. Blake</title>
+<title type="sort">songs of innocence and of experience shewing the two contrary states of the human soul 1789 1794 w blake</title>
+<author>Blake, William, 1757-1827</author>
+<respStmt>
+<resp>Creation of machine-readable version:</resp>
+<name>Judy Boss</name>
+<resp>Conversion to TEI.2-conformant markup:</resp>
+<name>University of Virginia Library Electronic Text Center.</name>
+</respStmt>
+</titleStmt>
+<extent>ca. <num type="kilobytes">45</num> kilobytes</extent>
+<publicationStmt>
+<publisher>University of Virginia Library</publisher>
+<pubPlace>Charlottesville, Virginia</pubPlace>
+<idno type="ETC">BlaSong</idno>
+<date value="2000">2000</date>
+<availability status="public">
+<p n="copyright">Copyright &copy; 2000 by the Rector and Visitors of the University of Virginia</p>
+<p n="access">Publicly accessible</p>
+</availability>
+<idno type="uva-pid">uva-lib:475738</idno>
+</publicationStmt>
+<seriesStmt>
+<title>University of Virginia Library, Text collection</title>
+<idno type="uva-set">UVA-LIB-Text</idno>
+</seriesStmt>
+<sourceDesc>
+<biblFull>
+<titleStmt>
+<title type="main">Songs of innocence and of experience : shewing the two contrary states of the human soul</title>
+<title type="sort">songs of innocence and of experience shewing the two contrary states of the human soul</title>
+<author>W Blake</author>
+</titleStmt>
+<extent>54 pp.</extent>
+<publicationStmt>
+<publisher>W Blake</publisher>
+<pubPlace>London</pubPlace>
+<date value="1789" certainty="ca">1789, 1794</date>
+<idno type="callNo">Source copy consulted: UVa Clemons Library call no. PR4144 .S7 1977</idno>
+</publicationStmt>
+<notesStmt>
+<note>
+<p>The text is based on the Dover edition, first published in 1992. Pagination is based on the 1977 facsimile edition edited by
+Sir Geoffrey Keynes and published by Oxford University Press.</p>
+</note>
+</notesStmt>
+</biblFull>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<projectDesc>
+<p>Prepared for the University of Virginia Library Electronic Text Center.</p>
+</projectDesc>
+<editorialDecl>
+<p>All unambiguous end-of-line hyphens have been removed, and the  trailing part of a word has been joined to the preceding line.</p>
+<p id="ETC">Some keywords in the header are a local Electronic Text Center scheme  to aid in establishing analytical groupings.</p>
+</editorialDecl>
+</encodingDesc>
+<profileDesc>
+<creation>
+<date value="1789" certainty="ca">1789, 1794</date>
+</creation>
+<langUsage>
+<language id="eng" usage="main">English</language>
+</langUsage>
+<textClass>
+<keywords>
+<term>fiction</term>
+<term>poetry</term>
+<term>masculine</term>
+</keywords>
+</textClass>
+</profileDesc>
+<revisionDesc>
+<change>
+<date value="2000-06">June, 2000</date>
+<respStmt>
+<resp>corrector</resp>
+<name>Kristin H. Jensen</name>
+</respStmt>
+<item>Added TEI header and tags.</item>
+</change>
+<change>
+<date value="2005-06">June 2005</date>
+<respStmt>
+<resp>corrector</resp>
+<name>John Ivor Carlson</name>
+</respStmt>
+<item>Converted sgml to xml.</item>
+</change>
+<change>
+<date value="2007-09">September 2007</date>
+<respStmt>
+<resp>Migration</resp>
+<name>Ethan Gruber, University of Virginia Library</name>
+</respStmt>
+<item>Converted XML markup from TEI Lite to uva-dl-tei (TEI P4 with local customizations).</item>
+</change>
+<change>
+<date value="2008-01">January 2008</date>
+<respStmt>
+<resp>Migration</resp>
+<name>Greg Murray, University of Virginia Library</name>
+</respStmt>
+<item>Programmatically updated TEI header markup (but not header content) for minimal compliance with current QA requirements.</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text id="d1">
+<body id="d2">
+
+<div1 type="book" id="d3">
+<head>Songs of Innocence</head>
+
+<pb n="4"/>
+<div2 type="poem" id="d4">
+<head>Introduction</head>
+<lg type="stanza">
+<l>Piping down the valleys wild,
+</l><l>Piping songs of pleasant glee,
+</l><l>On a cloud I saw a child,
+</l><l>And he laughing said to me:
+</l></lg>
+<lg type="stanza">
+<l>"Pipe a song about a Lamb!"
+</l><l>So I piped with merry chear.
+</l><l>"Piper, pipe that song again;"
+</l><l>So I piped, he wept to hear.
+</l></lg><lg type="stanza">
+<l>"Drop thy pipe, thy happy pipe;
+</l><l>Sing thy songs of happy chear:"
+</l><l>So I sung the same again,
+</l><l>While he wept with joy to hear.
+</l></lg><lg type="stanza">
+<l>"Piper, sit thee down and write
+</l><l>In a book, that all may read."
+</l><l>So he vanis'd from my sight,
+</l><l>And I pluck'd a hollow reed,
+</l></lg><lg type="stanza">
+<l>And I made a rural pen,
+</l><l>And I stain'd the water clear,
+</l><l>And I wrote my happy songs
+</l><l>Every child may joy to hear.
+</l></lg></div2>
+
+<pb n="5"/>
+<div2 type="poem" id="d5">
+<head>The Shepherd</head>
+<lg type="stanza">
+<l>How sweet is the Shepherd's sweet lot!
+</l><l>From the morn to the evening he strays;
+</l><l>He shall follow his sheep all the day,
+</l><l>And his tongue shall be filled with praise.
+</l></lg><lg type="stanza">
+<l>For he hears the lamb's innocent call,
+</l><l>And he hears the ewe's tender reply;
+</l><l>He is watchful while they are in peace,
+</l><l>For they know when their Shepherd is nigh.
+</l></lg></div2>
+
+<pb n="6"/>
+<div2 type="poem" id="d6">
+<head>The Ecchoing Green</head>
+<lg type="stanza">
+<l>The Sun does arise,
+</l><l>And make happy the skies;
+</l><l>The merry bells ring
+</l><l>To welcome the Spring;
+</l><l>The sky-lark and thrush,
+</l><l>The birds of the bush,
+</l><l>Sing louder around
+</l><l>To the bells' chearful sound,
+</l><l>While our sports shall be seen
+</l><l>On the Ecchoing Green.
+</l></lg><lg type="stanza">
+<l>Old John, with white hair,
+</l><l>Does laugh away care,
+</l><l>Sitting under the oak,
+</l><l>Among the old folk.
+<pb n="7"/>
+</l><l>They laugh at our play,
+</l><l>And soon they all say:
+</l><l>"Such, such were the joys
+</l><l>When we all, girls &amp; boys,
+</l><l>In our youth time were seen
+</l><l>On the Ecchoing Green."
+</l></lg><lg type="stanza">
+<l>Till the little ones, weary,
+</l><l>No more can be merry;
+</l><l>The sun does descend,
+</l><l>And our sports have an end.
+</l><l>Round the laps of their mothers
+</l><l>Many sisters and brothers,
+</l><l>Like birds in their nest,
+</l><l>Are ready for rest,
+</l><l>And sport no more seen
+</l><l>On the darkening Green.
+</l></lg></div2>
+
+<pb n="8"/>
+<div2 type="poem" id="d7">
+<head>The Lamb</head>
+<lg type="stanza">
+<l rend="indent">Little lamb, who made thee?
+</l><l rend="indent">Dost thou know who made thee?
+</l><l>Gave thee life &amp; bid thee feed,
+</l><l>By the stream &amp; o'er the mead;
+</l><l>Gave thee clothing of delight,
+</l><l>Softest clothing, wooly, bright;
+</l><l>Gave thee such a tender voice,
+</l><l>Making all the vales rejoice?
+</l><l rend="indent">Little Lamb, who made thee?
+</l><l rend="indent">Dost thou know who made thee?
+</l></lg><lg type="stanza">
+<l rend="indent">Little Lamb, I'll tell thee,
+</l><l rend="indent">Little Lamb, I'll tell thee:
+</l><l>He is called by thy name,
+</l><l>For he calls himself a Lamb.
+</l><l>He is meek &amp; he is mild;
+</l><l>He became a little child.
+</l><l>I a child &amp; thou a lamb.
+</l><l>We are called by his name.
+</l><l rend="indent">Little Lamb, God bless thee!
+</l><l rend="indent">Little Lamb, God bless thee!</l>
+</lg></div2>
+
+<pb n="9"/>
+<div2 type="poem" id="d8">
+<head>The Little Black Boy</head>
+<lg type="stanza">
+<l>My mother bore me in the southern wild,
+</l><l>And I am black, but O! my soul is white;
+</l><l>White as an angel is the English child,
+</l><l>But I am black as if bereav'd of light.
+</l></lg><lg type="stanza">
+<l>My mother taught me underneath a tree,
+</l><l>And, sitting down before the heat of day,
+</l><l>She took me on her lap and kissed me,
+</l><l>And pointing to the east began to say:
+</l></lg><lg type="stanza">
+<l>"Look on the rising sun: there God does live,
+</l><l>And gives his light, and gives his heat away;
+</l><l>And flowers and trees and beasts and men recieve
+</l><l>Comfort in morning, joy in the noonday.
+</l></lg><lg type="stanza">
+<l>"And we are put on earth a little space,
+</l><l>That we may learn to bear the beams of love;
+</l><l>And these black bodies and this sunburnt face
+</l><l>Is but a cloud, and like a shady grove.
+</l></lg>
+<pb n="10"/>
+<lg type="stanza">
+<l>"For when our souls have learn'd the heat to bear,
+</l><l>The cloud will vanish; we shall hear his voice,
+</l><l>Saying: 'Come out from the grove, my love &amp; care,
+</l><l>And round my golden tent like lambs rejoice.'"
+</l></lg><lg type="stanza">
+<l>Thus did my mother say, and kissed me;
+</l><l>And thus I say to little English boy.
+</l><l>When I from black and he from white cloud free,
+</l><l>And round the tent of God like lambs we joy,
+</l></lg><lg type="stanza">
+<l>I'll shade him from the heat, till he can bear
+</l><l>To lean in joy upon our father's knee;
+</l><l>And then I'll stand and stroke his silver hair,
+</l><l>And be like him, and he will then love me.
+</l></lg></div2>
+
+<pb n="11"/>
+<div2 type="poem" id="d9">
+<head>The Blossom</head>
+<lg type="stanza">
+<l>Merry Merry Sparrow!
+</l><l>Under leaves so green,
+</l><l>A happy Blossom
+</l><l>Sees you, swift as arrow,
+</l><l>Seek your cradle narrow
+</l><l>Near my Bosom.
+</l></lg><lg type="stanza">
+<l>Pretty Pretty Robin!
+</l><l>Under leaves so green,
+</l><l>A happy Blossom
+</l><l>Hears you sobbing, sobbing,
+</l><l>Pretty Pretty Robin,
+</l><l>Near my Bosom.
+</l></lg></div2>
+
+<pb n="12"/>
+<div2 type="poem" id="d10">
+<head>The Chimney Sweeper</head>
+<lg type="stanza">
+<l>When my mother died I was very young,
+</l><l>And my father sold me while yet my tongue
+</l><l>Could scarcely cry "'weep! 'weep! 'weep! 'weep!"
+</l><l>So your chimneys I sweep &amp; in soot I sleep.
+</l></lg><lg type="stanza">
+<l>There's little Tom Dacre, who cried when his head,
+</l><l>That curl'd like a lamb's back, was shav'd: so I said
+</l><l>"Hush, Tom! never mind it, for when your head's bare
+</l><l>You know that the soot cannot spoil your white hair."
+</l></lg><lg type="stanza">
+<l>And so he was quiet &amp; that very night,
+</l><l>As Tom was a-sleeping, he had such a  sight!
+</l><l>That thousands of sweepers, Dick, Joe, Ned &amp; jack,
+</l><l>Were all of them lock'd up in coffins of black.
+</l></lg><lg type="stanza">
+<l>And by came an Angel who had a bright key,
+</l><l>And he open'd the coffins &amp; set them all free;
+</l><l>Then down a green plain leaping, laughing, they run,
+</l><l>And wash in a river, and shine in the Sun.
+</l></lg><lg type="stanza">
+<l>Then naked &amp; white, all their bags left behind,
+</l><l>They rise upon clouds and sport in the wind;
+</l><l>And the Angel told Tom, if he'd be a good boy,
+</l><l>He'd have God for his father &amp; never want joy.
+</l></lg><lg type="stanza">
+<l>And so Tom awoke; and we rose in the dark,
+</l><l>And got with our bags &amp; our brushes to work.
+</l><l>Tho' the morning was cold, Tom was happy &amp; warm;
+</l><l>So if all do their duty they need not fear harm.
+</l></lg></div2>
+
+<pb n="13"/>
+<div2 type="poem" id="d11">
+<head>The Little Boy Lost</head>
+<lg type="stanza">
+<l>"Father! father! where are you going?
+</l><l>O do not walk so fast.
+</l><l>Speak, father, speak to your little boy,
+</l><l>Or else I shall be lost."
+</l></lg><lg type="stanza">
+<l>The night was dark, no father was there;
+</l><l>The child was wet with dew;
+</l><l>The mire was deep, &amp; the child did weep,
+</l><l>And away the vapour flew.
+</l></lg></div2>
+
+<pb n="14"/>
+<div2 type="poem" id="d12">
+<head>The Little Boy Found</head>
+<lg type="stanza">
+<l>The little boy lost in the lonely fen,
+</l><l>Led by the wand'ring light,
+</l><l>Began to cry; but God, ever nigh,
+</l><l>Appear'd like his father, in white.
+</l></lg><lg type="stanza">
+<l>He kissed the child, &amp; by the hand led,
+</l><l>And to his mother brought,
+</l><l>Who in sorrow pale, thro' the lonely dale,
+</l><l>Her little boy weeping sought.
+</l></lg></div2>
+
+<pb n="15"/>
+<div2 type="poem" id="d13">
+<head>Laughing Song</head>
+<lg type="stanza">
+<l>When the green woods laugh with the voice of joy,
+</l><l>And the dimpling stream runs laughing by;
+</l><l>When the air does laugh with our merry wit,
+</l><l>And the green hill laughs with the noise of it;
+</l></lg><lg type="stanza">
+<l>When the meadows laugh with lively green,
+</l><l>And the grasshopper laughs in the merry scene,
+</l><l>When Mary and Susan and Emily
+</l><l>With their sweet round mouths sing "Ha, Ha, He!"
+</l></lg><lg type="stanza">
+<l>When the painted birds laugh in the shade,
+</l><l>Where our table with cherries and nuts is spread,
+</l><l>Come live &amp; be merry, and join with me,
+</l><l>To sing the sweet chorus of "Ha, Ha, He!"
+</l></lg></div2>
+
+<pb n="16"/>
+<div2 type="poem" id="d14">
+<head>A CRADLE SONG</head>
+<lg type="stanza">
+<l>Sweet dreams form a shade
+</l><l>O'er my lovely infant's head;
+</l><l>Sweet dreams of pleasant streams
+</l><l>By happy, silent, moony beams.
+</l></lg><lg type="stanza">
+<l>Sweet sleep with soft down
+</l><l>Weave thy brows an infant crown.
+</l><l>Sweet sleep, Angel mild,
+</l><l>Hover o'er my happy child.
+</l></lg><lg type="stanza">
+<l>Sweet smiles in the night
+</l><l>Hover over my delight;
+</l><l>Sweet smiles, Mother's smiles,
+</l><l>All the livelong night beguiles.
+</l></lg><lg type="stanza">
+<l>Sweet moans, dovelike sighs,
+</l><l>Chase not slumber from thy eyes.
+</l><l>Sweet moans, sweeter smiles,
+</l><l>All the dovelike moans beguiles.
+</l></lg><lg type="stanza">
+<l>Sleep sleep, happy child,
+</l><l>All creation slept and smil'd;
+</l><l>Sleep sleep, happy sleep,
+</l><l>While o'er thee thy mother weep.
+</l></lg><lg type="stanza">
+<l>Sweet babe, in thy face
+</l><l>Holy image I can trace.
+</l><l>Sweet babe, once like thee,
+</l><l>Thy maker lay and wept for me,
+</l></lg>
+<pb n="17"/>
+<lg type="stanza">
+<l>Wept for me, for thee, for all,
+</l><l>When he was an infant small.
+</l><l>Thou his image ever see,
+</l><l>Heavenly face that smiles on thee,
+</l></lg><lg type="stanza">
+<l>Smiles on thee, on me, on all;
+</l><l>Who became an infant small.
+</l><l>Infant smiles are his own smiles;
+</l><l>Heaven &amp; earth to peace beguiles.
+</l></lg></div2>
+
+<pb n="18"/>
+<div2 type="poem" id="d15">
+<head>The Divine Image</head>
+<lg type="stanza">
+<l>To Mercy, Pity, Peace, and Love
+</l><l>All pray in their distress;
+</l><l>And to these virtues of delight
+</l><l>Return their thankfulness.
+</l></lg><lg type="stanza">
+<l>For Mercy, Pity, Peace, and Love
+</l><l>Is God, our father dear,
+</l><l>And Mercy, Pity, Peace, and Love
+</l><l>Is Man, his child and care.
+</l></lg><lg type="stanza">
+<l>For Mercy has a human heart,
+</l><l>Pity a human face,
+</l></lg><lg type="stanza">
+<l>And Love, the human form divine,
+</l><l>And Peace, the human dress.
+</l></lg><lg type="stanza">
+<l>Then every man, of every clime
+</l><l>That prays in his distress,
+</l><l>Prays to the human form divine,
+</l><l>Love, Mercy, Pity, Peace.
+</l></lg><lg type="stanza">
+<l>And all must love the human form,
+</l><l>In heathen, turk, or jew;
+</l><l>Where Mercy, Love &amp; Pity dwell
+</l><l>There God is dwelling too.
+</l></lg></div2>
+
+<pb n="19"/>
+<div2 type="poem" id="d16">
+<head>HOLY THURSDAY</head>
+<lg type="stanza">
+<l>'Twas on a Holy Thursday, their innocent faces clean,
+</l><l>The children walking two &amp; two, in red &amp; blue &amp; green,
+</l><l>Grey-headed beadles walk'd before, with wands as white as snow,
+</l><l>Till into the high dome of Paul's they like Thames' waters flow
+</l></lg><lg type="stanza">
+<l>O what a multitude they seem'd, these flowers of London town!
+</l><l>Seated in companies they sit with radiance all their own.
+</l><l>The hum of multitudes was there, but multitudes of lambs,
+</l><l>Thousands of little boys &amp; girls raising their innocent hands.
+</l></lg><lg type="stanza">
+<l>Now like a mighty wind they raise to heaven the voice of song,
+</l><l>Or like harmonious thunderings the seats of heaven among.
+</l><l>Beneath them sit the aged men, wise guardians of the poor;
+</l><l>Then cherish pity, lest you drive an angel from your door.
+</l></lg></div2>
+
+<pb n="20"/>
+<div2 type="poem" id="d17">
+<head>Night</head>
+<lg type="stanza">
+<l>The sun descending in the west,
+</l><l>The evening star does shine;
+</l><l>The birds are silent in their nest,
+</l><l>And I must seek for mine.
+</l><l>The moon like a flower,
+</l><l>In heaven's high bower,
+</l><l>With silent delight
+</l><l>Sits and smiles on the night.
+</l></lg><lg type="stanza">
+<l>Farewell, green fields and happy groves,
+</l><l>Where flocks have took delight;
+</l><l>Where lambs have nibbled, silent moves
+</l><l>The feet of angels bright;
+</l><l>Unseen they pour blessing,
+</l><l>And joy without ceasing,
+</l><l>On each bud and blossom,
+</l><l>And each sleeping bosom.
+</l></lg><lg type="stanza">
+<l>They look in every thoughtless nest,
+</l><l>Where birds are cover'd warm;
+</l><l>They visit caves of every beast,
+</l><l>To keep them all from harm;
+</l><l>If they see any weeping
+</l><l>That should have been sleeping,
+</l><l>They pour sleep on their head
+</l><l>And sit down by their bed.
+</l></lg>
+<pb n="21"/>
+<lg type="stanza">
+<l>When wolves and tygers howl for prey,
+</l><l>They pitying stand and weep;
+</l><l>Seeking to drive their thirst away,
+</l><l>And keep them from the sheep.
+</l><l>But if they rush dreadful,
+</l><l>The angels, most heedful,
+</l><l>Recieve each mild spirit,
+</l><l>New worlds to inherit.
+</l></lg><lg type="stanza">
+<l>And there the lion's ruddy eyes
+</l><l>Shall flow with tears of gold,
+</l><l>And pitying the tender cries,
+</l><l>And walking round the fold,
+</l><l>Saying "Wrath, by his meekness,
+</l><l>And, by his health, sickness
+</l><l>Is driven away
+</l><l>From our immortal day.
+</l></lg><lg type="stanza">
+<l>"And now beside thee, bleating lamb,
+</l><l>I can lie down and sleep;
+</l><l>Or think on him who bore thy name,
+</l><l>Graze after thee and weep.
+</l><l>For, wash'd in life's river,
+</l><l>My bright mane for ever
+</l><l>Shall shine like the gold
+</l><l>As I guard o'er the fold."
+</l></lg></div2>
+
+<pb n="22"/>
+<div2 type="poem" id="d18">
+<head>Spring</head>
+<lg type="stanza">
+<l rend="indent">Sound the Flute!
+</l><l rend="indent">Now it's mute.
+</l><l rend="indent">Birds delight
+</l><l rend="indent">Day and Night;
+</l><l rend="indent">Nightingale
+</l><l rend="indent">In the dale,
+</l><l rend="indent">Lark in Sky,
+</l><l rend="indent">Merrily,
+</l><l>Merrily, Merrily, to welcome in the Year.</l>
+</lg><lg type="stanza">
+<l rend="indent">Little Boy,
+</l><l rend="indent">Full of joy;
+</l>
+<pb n="23"/>
+<l rend="indent">Little Girl,
+</l><l rend="indent">Sweet and small;
+</l><l rend="indent">Cock does crow,
+</l><l rend="indent">So do you;
+</l><l rend="indent">Merry voice,
+</l><l rend="indent">Infant noise,
+</l><l>Merrily, Merrily, to welcome in the Year.</l>
+</lg><lg type="stanza">
+<l rend="indent">Little Lamb,
+</l><l rend="indent">Here I am;
+</l><l rend="indent">Come and lick
+</l><l rend="indent">My white neck;
+</l><l rend="indent">Let me pull
+</l><l rend="indent">Your soft Wool;
+</l><l rend="indent">Let me kiss
+</l><l rend="indent">Your soft face:
+</l><l>Merrily, Merrily, we welcome in the Year.</l>
+</lg></div2>
+
+<pb n="24"/>
+<div2 type="poem" id="d19">
+<head>Nurse's Song</head>
+<lg type="stanza">
+<l>When the voices of children are heard on the green,
+</l><l>And laughing is heard on the hill,
+</l><l>My heart is at rest within my breast,
+</l><l>And everything else is still.
+</l></lg><lg type="stanza">
+<l>"Then come home, my children, the sun is gone down,
+</l><l>And the dews of night arise;
+</l><l>Come, come, leave off play, and let us away
+</l><l>Till the morning appears in the skies."
+</l></lg><lg type="stanza">
+<l>"No, no, let us play, for it is yet day,
+</l><l>And we cannot go to sleep;
+</l><l>Besides, in the sky the little birds fly,
+</l><l>And the hills are all cover'd with sheep."
+</l></lg><lg type="stanza">
+<l>"Well, well, go &amp; play till the light fades away,
+</l><l>And then go home to bed."
+</l><l>The little ones leaped &amp; shouted &amp; laugh'd
+</l><l>And all the hills ecchoed.
+</l></lg></div2>
+
+<pb n="25"/>
+<div2 type="poem" id="d20">
+<head>Infant Joy</head>
+<lg type="stanza">
+<l>"I have no name:
+</l><l>I am but two days old."
+</l><l>What shall I call thee?
+</l><l>"I happy am,
+</l><l>Joy is my name."
+</l><l>Sweet joy befall thee!
+</l></lg><lg type="stanza">
+<l>Pretty joy!
+</l><l>Sweet joy, but two days old.
+</l><l>Sweet joy I call thee:
+</l><l>Thou dost smile,
+</l><l>I sing the while,
+</l><l>Sweet joy befall thee!
+</l></lg></div2>
+
+<pb n="26"/>
+<div2 type="poem" id="d21">
+<head>A Dream</head>
+<lg type="stanza">
+<l>Once a dream did weave a shade
+</l><l>O'er my Angel-guarded bed,
+</l><l>That an Emmet lost its way
+</l><l>Where on grass methought I lay.
+</l></lg><lg type="stanza">
+<l>Troubled, 'wilder'd, and forlorn,
+</l><l>Dark, benighted, travel-worn,
+</l><l>Over many a tangled spray,
+</l><l>All heart-broke I heard her say:
+</l></lg><lg type="stanza">
+<l>"O, my children! do they cry?
+</l><l>Do they hear their father sigh?
+</l><l>Now they look abroad to see:
+</l><l>Now return and weep for me."
+</l></lg><lg type="stanza">
+<l>Pitying, I drop'd a tear;
+</l><l>But I saw a  glow-worm  near,
+</l><l>Who replied: "What wailing wight
+</l><l>Calls the watchman of the night?
+</l></lg><lg type="stanza">
+<l>"I am set to light the ground,
+</l><l>While the beetle goes his round:
+</l><l>Follow now the beetle's hum;
+</l><l>Little wanderer, hie thee home."
+</l></lg></div2>
+
+<pb n="27"/>
+<div2 type="poem" id="d22">
+<head>On Another's Sorrow</head>
+<lg type="stanza">
+<l>Can I see another's woe,
+</l><l>Can I see another's grief,
+</l><l>And not be in sorrow too?
+</l><l>And not seek for kind relief?
+</l></lg><lg type="stanza">
+<l>Can I see a falling tear,
+</l><l>Can a father see his child
+</l><l>And not feel my sorrow's share?
+</l><l>Weep, nor be with sorrow fill'd?
+</l></lg><lg type="stanza">
+<l>Can a mother sit and hear
+</l><l>An infant groan, an infant fear?
+</l><l>No, no! never can it be!
+</l><l>Never, never can it be!
+</l></lg><lg type="stanza">
+<l>And can he who smiles on all
+</l><l>Hear the wren with sorrows small,
+</l><l>Hear the small bird's grief &amp; care,
+</l><l>Hear the woes that infants bear,
+</l></lg><lg type="stanza">
+<l>And not sit beside the nest,
+</l><l>Pouring pity in their breast;
+</l><l>And not sit the cradle near,
+</l><l>Weeping tear on infant's tear;
+</l></lg><lg type="stanza">
+<l>And not sit both night &amp; day,
+</l><l>Wiping all our tears away?
+</l><l>O! no, never can it be!
+</l><l>Never, never can it be!
+</l></lg><lg type="stanza">
+<l>He doth give his joy to all;
+</l><l>He becomes an infant small;
+</l><l>He becomes a man of woe;
+</l><l>He doth feel the sorrow too.
+</l></lg><lg type="stanza">
+<l>Think not thou canst sigh a sigh,
+</l><l>And thy maker is not by;
+</l><l>Think not thou canst weep a tear,
+</l><l>And thy maker is not near.
+</l></lg><lg type="stanza">
+<l>O! he gives to us his joy
+</l><l>That our grief he may destroy;
+</l><l>Till our grief is fled &amp; gone
+</l><l>He doth sit by us and moan.
+</l></lg></div2>
+
+</div1>
+<div1 type="book" id="d23">
+<head>Songs of Experience</head>
+
+<pb n="30"/>
+<div2 type="poem" id="d24">
+<head>Introduction</head>
+<lg type="stanza">
+<l>Hear the voice of the Bard!
+</l><l>Who Present, Past, &amp; Future, sees;
+</l><l>Whose ears have heard
+</l><l>The Holy Word
+</l><l>That walk'd among the ancient trees,
+</l></lg><lg type="stanza">
+<l>Calling the lapsed Soul,
+</l><l>And weeping in the evening dew;
+</l><l>That might controll
+</l><l>The starry pole,
+</l><l>And fallen, fallen light renew!
+</l></lg><lg type="stanza">
+<l>"O Earth, O Earth, return!
+</l><l>"Arise from out the dewy grass;
+</l><l>"Night is worn,
+</l><l>"And the morn
+</l><l>"Rises from the slumberous mass.
+</l></lg><lg type="stanza">
+<l>"Turn away no more;
+</l><l>"Why wilt thou turn away?
+</l><l>"The starry floor,
+</l><l>"The wat'ry shore,
+</l><l>"Is giv'n thee till the break of day."
+</l></lg></div2>
+
+<pb n="31"/>
+<div2 type="poem" id="d25">
+<head>EARTH'S Answer</head>
+<lg type="stanza">
+<l>Earth rais'd up her head
+</l><l>From the darkness dread &amp; drear.
+</l><l>Her light fled,
+</l><l>Stony dread!
+</l><l>And her locks cover'd with grey despair.
+</l></lg><lg type="stanza">
+<l>"Prison'd on wat'ry shore,
+</l><l>"Starry jealousy does keep my den:
+</l><l>"Cold and hoar,
+</l><l>"Weeping o'er,
+</l><l>"I hear the Father of the ancient men.
+</l></lg><lg type="stanza">
+<l>"Selfish father of men!
+</l><l>"Cruel, jealous, selfish fear!
+</l><l>"Can delight,
+</l><l>"Chain'd in night,
+</l><l>"The virgins of youth and morning bear?
+</l></lg><lg type="stanza">
+<l>"Does spring hide its joy
+</l><l>"When buds and blossoms grow?
+</l><l>"Does the sower
+</l><l>"Sow by night,
+</l><l>"Or the plowman in darkness plow?
+</l></lg><lg type="stanza">
+<l>"Break this heavy chain
+</l><l>"That does freeze my bones around.
+</l><l>"Selfish! vain!
+</l><l>"Eternal bane!
+</l><l>"That free Love with bondage bound."
+</l></lg></div2>
+
+<pb n="32"/>
+<div2 type="poem" id="d26">
+<head>The CLOD &amp; the PEBBLE</head>
+<lg type="stanza">
+<l>"Love seeketh not Itself to please,
+</l><l>"Nor for itself hath any care,
+</l><l>"But for another gives its ease,
+</l><l>"And builds a Heaven in Hell's despair."
+</l></lg><lg type="stanza">
+<l>So sang a little Clod of Clay
+</l><l>Trodden with the cattle's feet,
+</l><l>But a Pebble of the brook
+</l><l>Warbled out these metres meet:
+</l></lg><lg type="stanza">
+<l>"Love seeketh only Self to please,
+</l><l>"To bind another to its delight,
+</l><l>"Joys in another's loss of ease,
+</l><l>"And builds a Hell in Heaven's despite."
+</l></lg></div2>
+
+<pb n="33"/>
+<div2 type="poem" id="d27">
+<head>HOLY THURSDAY</head>
+<lg type="stanza">
+<l>Is this a holy thing to see
+</l><l>In a rich and fruitful land,
+</l><l>Babes reduc'd to misery,
+</l><l>Fed with cold and usurous hand?
+</l></lg><lg type="stanza">
+<l>Is that trembling cry a song?
+</l><l>Can it be a song of joy?
+</l><l>And so many children poor?
+</l><l>It is a land of poverty!
+</l></lg><lg type="stanza">
+<l>And their sun does never shine,
+</l><l>And their fields are bleak &amp; bare,
+</l><l>And their ways are fill'd with thorns:
+</l><l>It is eternal winter there.
+</l></lg><lg type="stanza">
+<l>For where-e'er the sun does shine,
+</l><l>And where-e'er the rain does fall,
+</l><l>Babe can never hunger there,
+</l><l>Nor poverty the mind appall.
+</l></lg></div2>
+
+<pb n="34"/>
+<div2 type="poem" id="d28">
+<head>The Little Girl Lost</head>
+<lg type="stanza">
+<l>In futurity
+</l><l>I prophetic see
+</l><l>That the earth from sleep
+</l><l>(Grave the sentence deep)
+</l></lg><lg type="stanza">
+<l>Shall arise and seek
+</l><l>For her maker meek;
+</l><l>And the desart wild
+</l><l>Become a garden mild.
+</l></lg><lg type="stanza">
+<l>In the southern clime,
+</l><l>Where the summer's prime
+</l><l>Never fades away,
+</l><l>Lovely Lyca lay.
+</l></lg><lg type="stanza">
+<l>Seven summers old
+</l><l>Lovely Lyca told;
+</l><l>She had wander'd long
+</l><l>Hearing wild birds' song.
+</l></lg><lg type="stanza">
+<l>"Sweet sleep, come to me
+</l><l>Underneath this tree.
+</l><l>Do father, mother, weep?
+</l><l>Where can Lyca sleep?
+</l></lg><lg type="stanza">
+<l>"Lost in desart  wild
+</l><l>Is your little child.
+</l><l>How can Lyca sleep
+</l><l>If her mother weep?
+</l></lg><lg type="stanza">
+<l>"If her heart does ake
+</l><l>Then let Lyca wake;
+</l><l>If my mother sleep,
+</l><l>Lyca shall not weep.
+</l></lg><lg type="stanza">
+<l>"Frowning, frowning night,
+</l><l>O'er this desart bright,
+</l><l>Let thy moon arise
+</l><l>While I close my eyes."
+</l></lg><lg type="stanza">
+<l>Sleeping Lyca lay
+</l><l>While the beasts of prey,
+</l><l>Come from caverns deep,
+</l><l>View'd the maid asleep.
+</l></lg><lg type="stanza">
+<l>Thhe kingly lion stood,
+</l><l>And the virgin view'd,
+</l><l>Then he gambol'd round
+</l><l>O'er the hallow'd ground.
+</l></lg>
+<pb n="35"/>
+<lg type="stanza">
+<l>Leopards, tygers, play
+</l><l>Round her as she lay,
+</l><l>While the lion old
+</l><l>Bow'd his mane of gold
+</l></lg><lg type="stanza">
+<l>And her bosom lick,
+</l><l>And upon her neck
+</l><l>From his eyes of flame
+</l><l>Ruby tears there came;
+</l></lg><lg type="stanza">
+<l>While the lioness
+</l><l>Loos'd her slender dress,
+</l><l>And naked they convey'd
+</l><l>To caves the sleeping maid.
+</l></lg></div2>
+
+<div2 type="poem" id="d29">
+<head>The Little Girl Found</head>
+<lg type="stanza">
+<l>All the night in woe
+</l><l>Lyca's parents go
+</l><l>Over vallies deep,
+</l><l>While the desarts weep.
+</l></lg><lg type="stanza">
+<l>Tired and woe-begone,
+</l><l>Hoarse with making moan,
+</l><l>Arm in arm seven days
+</l><l>They trac'd the desart ways.
+</l></lg><lg type="stanza">
+<l>Seven nights they sleep
+</l><l>Among shadows deep,
+</l><l>And dream they see their child
+</l><l>Starv'd in desart wild.
+</l></lg><lg type="stanza">
+<l>Pale, thro' pathless ways
+</l><l>The fancied image strays
+</l>
+<pb n="36"/>
+<l>Famish'd, weeping, weak,
+</l><l>With hollow piteous shriek.
+</l></lg><lg type="stanza">
+<l>Rising from unrest,
+</l><l>The trembling woman prest
+</l><l>With feet of weary woe:
+</l><l>She could no further go.
+</l></lg><lg type="stanza">
+<l>In his arms he bore
+</l><l>Her, arm'd with sorrow sore;
+</l><l>Till before their way
+</l><l>A couching lion lay.
+</l></lg><lg type="stanza">
+<l>Turning back was vain:
+</l><l>Soon his heavy mane
+</l><l>Bore them to the ground.
+</l><l>Then he stalk'd around,
+</l></lg><lg type="stanza">
+<l>Smelling to his prey;
+</l><l>But their fears allay
+</l><l>When he licks their hands,
+</l><l>And silent by them stands.
+</l></lg><lg type="stanza">
+<l>They look upon his eyes
+</l><l>Fill'd with deep surprise;
+</l><l>And wondering behold
+</l><l>A Spirit arm'd in gold.
+</l></lg><lg type="stanza">
+<l>On his head a crown;
+</l><l>On his shoulders down
+</l><l>Flow'd his golden hair.
+</l><l>Gone was all their care.
+</l></lg><lg type="stanza">
+<l>"Follow me," he said;
+</l><l>"Weep not for the maid;
+</l><l>In my palace deep
+</l><l>Lyca lies asleep."
+</l></lg><lg type="stanza">
+<l>Then they followed
+</l><l>Where the vision led,
+</l><l>And saw their sleeping child
+</l><l>Among tygers wild.
+</l></lg><lg type="stanza">
+<l>To this day they dwell
+</l><l>In a lonely dell;
+</l><l>Nor fear the wolvish howl
+</l><l>Nor the lions' growl.
+</l></lg></div2>
+
+<pb n="37"/>
+<div2 type="poem" id="d30">
+<head>THE Chimney Sweeper</head>
+<lg type="stanza">
+<l>A little black thing among the snow,
+</l><l>Crying ''weep! 'weep!' in notes of woe!
+</l><l>"Where are thy father &amp; mother? say?"
+</l><l>"They are both gone up to the church to pray.
+</l></lg><lg type="stanza">
+<l>"Because I was happy upon the heath,
+</l><l>"And smil'd among the winter's snow,
+</l><l>"They clothed me in the clothes of death,
+</l><l>"And taught me to sing the notes of woe.
+</l></lg><lg type="stanza">
+<l>"And because I am happy &amp; dance &amp; sing,
+</l><l>"They think they have done me no injury,
+</l><l>"And are gone to praise God &amp; his Priest &amp; King,
+</l><l>"Who make up a heaven of our misery.
+</l></lg></div2>
+
+<pb n="38"/>
+<div2 type="poem" id="d31">
+<head>NURSE'S Song</head>
+<lg type="stanza">
+<l>When the voices of children are heard on the green
+</l><l>And whisp'rings are in the dale,
+</l><l>The days of my youth rise fresh in my mind,
+</l><l>My face turns green and pale.
+</l></lg><lg type="stanza">
+<l>Then come home, my children, the sun is gone down,
+</l><l>And the dews of night arise;
+</l><l>Your spring &amp; your day are wasted in play,
+</l><l>And your winter and night in disguise.
+</l></lg></div2>
+
+<pb n="39"/>
+<div2 type="poem" id="d32">
+<head>The SICK ROSE</head>
+<lg type="stanza">
+<l>O Rose, thou art sick!
+</l><l>The invisible worm
+</l><l>That flies in the night,
+</l></lg><lg type="stanza">
+<l>In the howling storm,
+</l></lg><lg type="stanza">
+<l>Has found out thy bed
+</l><l>Of crimson joy:
+</l><l>And his dark secret love
+</l><l>Does thy life destroy.
+</l></lg></div2>
+
+<pb n="40"/>
+<div2 type="poem" id="d33">
+<head>THE FLY</head>
+<lg type="stanza">
+<l>Little Fly,
+</l><l>Thy summer's play
+</l><l>My thoughtless hand
+</l><l>Has brush'd away.
+</l></lg><lg type="stanza">
+<l>Am not I
+</l><l>A fly like thee?
+</l><l>Or art not thou
+</l><l>A man like me?
+</l></lg><lg type="stanza">
+<l>For I dance,
+</l><l>And drink, &amp; sing,
+</l><l>Till some blind hand
+</l><l>Shall brush my wing.
+</l></lg><lg type="stanza">
+<l>If thought is life
+</l><l>And strength &amp; breath,
+</l><l>And the want
+</l><l>Of thought is death;
+</l></lg><lg type="stanza">
+<l>Then am I
+</l><l>A happy fly,
+</l><l>If I live
+</l><l>Or if I die.
+</l></lg></div2>
+
+<pb n="41"/>
+<div2 type="poem" id="d34">
+<head>The Angel</head>
+<lg type="stanza">
+<l>I Dreamt a Dream! what can it mean?
+</l><l>And that I was a maiden Queen,
+</l><l>Guarded by an Angel mild:
+</l><l>Witless woe was ne'er beguil'd!
+</l></lg><lg type="stanza">
+<l>And I wept both night and day,
+</l><l>And he wip'd my tears away,
+</l><l>And I wept both day and night,
+</l><l>And hid from him my heart's delight.
+</l></lg><lg type="stanza">
+<l>So he took his wings and fled;
+</l><l>Then the morn blush'd rosy red;
+</l><l>I dried my tears, &amp; arm'd my fears
+</l><l>With ten thousand shields and spears.
+</l></lg><lg type="stanza">
+<l>Soon my Angel came again:
+</l><l>I was arm'd, he came in vain;
+</l><l>For the time of youth was fled,
+</l><l>And grey hairs were on my head.
+</l></lg></div2>
+
+<pb n="42"/>
+<div2 type="poem" id="d35">
+<head>The Tyger</head>
+<lg type="stanza">
+<l>Tyger! Tyger! burning bright
+</l><l>In the forests of the night,
+</l><l>What immortal hand or eye
+</l><l>Could frame thy fearful symmetry?
+</l></lg><lg type="stanza">
+<l>In what distant deeps or skies
+</l><l>Burnt the fire of thine eyes?
+</l><l>On what wings dare he aspire?
+</l><l>What the hand dare sieze the fire?
+</l></lg><lg type="stanza">
+<l>And what shoulder, &amp; what art,
+</l><l>Could twist the sinews of thy heart?
+</l><l>And when thy heart began to beat,
+</l><l>What dread hand? &amp; what dread feet?
+</l></lg><lg type="stanza">
+<l>What the hammer? what the chain?
+</l><l>In what furnace was thy brain?
+</l><l>What the anvil? what dread grasp
+</l><l>Dare its deadly terrors clasp?
+</l></lg><lg type="stanza">
+<l>When the stars threw down their spears,
+</l><l>And water'd heaven with their tears,
+</l><l>Did he smile his work to see?
+</l><l>Did he who made the Lamb make thee?
+</l></lg><lg type="stanza">
+<l>Tyger! Tyger! burning bright
+</l><l>In the forests of the night,
+</l><l>What immortal hand or eye
+</l><l>Dare frame thy fearful symmetry?
+</l></lg></div2>
+
+<pb n="43"/>
+<div2 type="poem" id="d36">
+<head>My Pretty ROSE TREE</head>
+<lg type="stanza">
+<l>A flower was offer'd to me,
+</l><l>Such a flower as May never bore;
+</l><l>But I said "I've a Pretty Rose-tree,"
+</l><l>And I passed the sweet flower o'er.
+</l></lg><lg type="stanza">
+<l>Then I went to my Pretty Rose-tree,
+</l><l>To tend her by day and by night;
+</l><l>But my Rose turn'd away with jealousy,
+</l><l>And her thorns were my only delight.
+</l></lg></div2>
+
+<div2 type="poem" id="d37">
+<head>AH! SUN-FLOWER</head>
+<lg type="stanza">
+<l>Ah, Sun-flower, weary of time,
+</l><l>Who countest the steps of the Sun,
+</l><l>Seeking after that sweet golden clime
+</l><l>Where the traveller's journey is done:
+</l></lg><lg type="stanza">
+<l>Where the Youth pined away with desire,
+</l><l>And the pale Virgin shrouded in snow
+</l><l>Arise from their graves, and aspire
+</l><l>Where my Sun-flower wishes to go.
+</l></lg></div2>
+
+<div2 type="poem" id="d38">
+<head>THE LILLY</head>
+<lg type="stanza">
+<l>The modest Rose puts forth a thorn,
+</l><l>The humble Sheep a threat'ning horn;
+</l><l>While the Lilly white shall in Love delight,
+</l><l>Nor a thorn, nor a threat, stain her beauty bright.
+</l></lg></div2>
+
+<pb n="44"/>
+<div2 type="poem" id="d39">
+<head>The GARDEN of LOVE</head>
+<lg type="stanza">
+<l>I went to the Garden of Love,
+</l><l>And saw what I never had seen:
+</l><l>A Chapel was built in the midst,
+</l><l>Where I used to play on the green.
+</l></lg><lg type="stanza">
+<l>And the gates of this Chapel were shut,
+</l><l>And "Thou shalt not" writ over the door;
+</l><l>So I turn'd to the Garden of Love
+</l><l>That so many sweet flowers bore;
+</l></lg><lg type="stanza">
+<l>And I saw it was filled with graves,
+</l><l>And tomb-stones where flowers should be;
+</l><l>And Priests in black gowns were walking their rounds,
+</l><l>And binding with briars my joys &amp; desires.
+</l></lg></div2>
+
+<pb n="45"/>
+<div2 type="poem" id="d40">
+<head>The Little Vagabond</head>
+<lg type="stanza">
+<l>Dear Mother, dear Mother, the Church is cold,
+</l><l>But the Ale-house is healthy &amp; pleasant &amp; warm;
+</l><l>Besides I can tell where I am used well,
+</l><l>Such usage in heaven will never do well.
+</l></lg><lg type="stanza">
+<l>But if at the Church they would give us some Ale,
+</l><l>And a pleasant fire our souls to regale,
+</l><l>We'd sing and we'd pray all the live-long day,
+</l><l>Nor ever once wish from the Church to stray
+</l></lg><lg type="stanza">
+<l>Then the Parson might preach, &amp; drink, &amp; sing,
+</l><l>And we'd be as happy as birds in the spring;
+</l><l>And modest dame Lurch, who is always at Church,
+</l><l>Would not have bandy children, nor fasting, nor birch.
+</l></lg><lg type="stanza">
+<l>And God, like a father rejoicing to see
+</l><l>His children as pleasant and happy as he,
+</l><l>Would have no more quarrel with the Devil or the Barrel,
+</l><l>But kiss him, &amp; give him both drink and apparel.
+</l></lg></div2>
+
+<pb n="46"/>
+<div2 type="poem" id="d41">
+<head>LONDON</head>
+<lg type="stanza">
+<l>I wander thro' each charter'd street,
+</l><l>Near where the charter'd Thames does flow,
+</l><l>And mark in every face I meet
+</l><l>Marks of weakness, marks of woe.
+</l></lg><lg type="stanza">
+<l>In every cry of every Man,
+</l><l>In every Infant's cry of fear,
+</l><l>In every voice, in every ban,
+</l><l>The mind-forg'd manacles I hear.
+</l></lg><lg type="stanza">
+<l>How the Chimney-sweeper's cry
+</l><l>Every black'ning Church appalls;
+</l><l>And the hapless Soldier's sigh
+</l><l>Runs in blood down Palace walls.
+</l></lg><lg type="stanza">
+<l>But most thro' midnight streets I hear
+</l><l>How the youthful Harlot's curse
+</l><l>Blasts the new born Infant's tear,
+</l><l>And blights with plagues the Marriage hearse.
+</l></lg></div2>
+
+<pb n="47"/>
+<div2 type="poem" id="d42">
+<head>The Human Abstract</head>
+<lg type="stanza">
+<l>Pity would be no more
+</l><l>If we did not make somebody Poor;
+</l><l>And Mercy no more could be
+</l><l>If all were as happy as we.
+</l></lg><lg type="stanza">
+<l>And mutual fear brings peace,
+</l><l>Till the selfish loves increase:
+</l><l>Then Cruelty knits a snare,
+</l><l>And spreads his baits with care.
+</l></lg><lg type="stanza">
+<l>He sits down with holy fears,
+</l><l>And waters the ground with tears;
+</l><l>Then Humility takes its root
+</l><l>Underneath his foot.
+</l></lg><lg type="stanza">
+<l>Soon spreads the dismal shade
+</l><l>Of Mystery over his head;
+</l><l>And the Catterpiller and Fly
+</l><l>Feed on the Mystery.
+</l></lg><lg type="stanza">
+<l>And it bears the fruit of Deceit,
+</l><l>Ruddy and sweet to eat;
+</l><l>And the Raven his nest has made
+</l><l>In its thickest shade.
+</l></lg><lg type="stanza">
+<l>The Gods of the earth and sea
+</l><l>Sought thro' Nature to find this Tree;
+</l><l>But their search was all in vain:
+</l><l>There grows one in the Human Brain.
+</l></lg></div2>
+
+<pb n="48"/>
+<div2 type="poem" id="d43">
+<head>INFANT SORROW</head>
+<lg type="stanza">
+<l>My mother groan'd! my father wept.
+</l><l>Into the dangerous world I leapt:
+</l><l>Helpless, naked, piping loud:
+</l><l>Like a fiend hid in a cloud.
+</l></lg><lg type="stanza">
+<l>Struggling in my father's hands,
+</l><l>Striving against my swadling bands,
+</l><l>Bound and weary I thought best
+</l><l>To sulk upon my mother's breast.
+</l></lg></div2>
+
+<pb n="49"/>
+<div2 type="poem" id="d44">
+<head>A POISON TREE</head>
+<lg type="stanza">
+<l>I was angry with my friend:
+</l><l>I told my wrath, my wrath did end.
+</l><l>I was angry with my foe:
+</l><l>I told it not, my wrath did grow.
+</l></lg><lg type="stanza">
+<l>And I water'd it in fears,
+</l><l>Night &amp; morning with my tears;
+</l><l>And I sunned it with smiles,
+</l><l>And with soft deceitful wiles.
+</l></lg><lg type="stanza">
+<l>And it grew both day and night,
+</l><l>Till it bore an apple bright;
+</l><l>And my foe beheld it shine,
+</l><l>And he knew that it was mine,
+</l></lg><lg type="stanza">
+<l>And into my garden stole
+</l><l>When the night had veil'd the pole:
+</l><l>In the morning glad I see
+</l><l>My foe outstretch'd beneath the tree.
+</l></lg></div2>
+
+<pb n="50"/>
+<div2 type="poem" id="d45">
+<head>A Little BOY Lost</head>
+<lg type="stanza">
+<l>"Nought loves another as itself,
+</l><l>"Nor venerates another so,
+</l><l>"Nor is it possible to Thought
+</l><l>"A greater than itself to know:
+</l></lg><lg type="stanza">
+<l>"And Father, how can I love you
+</l><l>"Or any of my brothers more?
+</l><l>"I love you like the little bird
+</l><l>"That picks up crumbs around the door."
+</l></lg><lg type="stanza">
+<l>The Priest sat by and heard the child,
+</l><l>In trembling zeal he siez'd his hair:
+</l><l>He led him by his little coat,
+</l><l>And all admir'd the Priestly care.
+</l></lg><lg type="stanza">
+<l>And standing on the altar high,
+</l><l>"Lo! what a fiend is here!" said he,
+</l><l>"One who sets reason up for judge
+</l><l>"Of our most holy Mystery."
+</l></lg><lg type="stanza">
+<l>The weeping child could not be heard,
+</l><l>The weeping parents wept in vain;
+</l><l>They strip'd him to his little shirt,
+</l><l>And bound him in an iron chain;
+</l></lg><lg type="stanza">
+<l>And burn'd him in a holy place,
+</l><l>Where many had been burn'd before:
+</l><l>The weeping parents wept in vain.
+</l><l>Are such things done on Albion's shore?
+</l></lg></div2>
+
+<pb n="51"/>
+<div2 type="poem" id="d46">
+<head>A Little GIRL Lost</head>
+<lg type="stanza">
+<l><hi rend="italic">Children of the future Age</hi>
+</l><l><hi rend="italic">Reading this indignant page,</hi>
+</l><l><hi rend="italic">Know that in a former time</hi>
+</l><l><hi rend="italic">Love! sweet Love! was thought a crime.</hi>
+</l></lg><lg type="stanza">
+<l>In the Age of Gold,
+</l><l>Free from winter's cold,
+</l><l>Youth and maiden bright
+</l><l>To the holy light,
+</l><l>Naked in the sunny beams delight.
+</l></lg><lg type="stanza">
+<l>Once a youthful pair,
+</l><l>Fill'd with softest care,
+</l><l>Met in garden bright
+</l><l>Where the holy light
+</l><l>Had just remov'd the curtains of the night.
+</l></lg><lg type="stanza">
+<l>There, in rising day
+</l><l>On the grass they play;
+</l><l>Parents were afar,
+</l><l>Strangers came not near,
+</l><l>And the maiden soon forgot her fear.
+</l></lg><lg type="stanza">
+<l>Tired with kisses sweet,
+</l><l>They agree to meet
+</l><l>When the silent sleep
+</l><l>Waves o'er heaven's deep,
+</l><l>And the weary tired wanderers weep.
+</l></lg><lg type="stanza">
+<l>To her father white
+</l><l>Came the maiden bright;
+</l><l>But his loving look,
+</l><l>Like the holy book,
+</l><l>All her tender limbs with terror shook.
+</l></lg><lg type="stanza">
+<l>"Ona! pale and weak!
+</l><l>"To thy father speak:
+</l><l>"O, the trembling fear!
+</l><l>"O, the dismal care!
+</l><l>"That shakes the blossoms of my hoary hair."
+</l></lg></div2>
+
+<pb n="52"/>
+<div2 type="poem" id="d47">
+<head>To Tirzah</head>
+<p>[<hi rend="italic">Probably added about 1801</hi>]</p>
+<lg type="stanza">
+<l>Whate'er is Born of Mortal Birth
+</l><l>Must be consumed with the Earth
+</l><l>To rise from Generation free:
+</l><l>Then what have I to do with thee?
+</l></lg><lg type="stanza">
+<l>The Sexes sprung from Shame &amp; Pride,
+</l><l>Blow'd in the morn; in evening died;
+</l><l>But Mercy chang'd Death into Sleep;
+</l><l>The Sexes rose to work &amp; weep.
+</l></lg><lg type="stanza">
+<l>Thou, Mother of my Mortal part,
+</l><l>With cruelty didst mould my Heart,
+</l><l>And with false self-decieving tears
+</l><l>Didst bind my Nostrils, Eyes, &amp; Ears:
+</l></lg><lg type="stanza">
+<l>Didst close my Tongue in senseless clay,
+</l><l>And me to Mortal Life betray.
+</l><l>The Death of Jesus set me free:
+</l><l>Then what have I to do with thee?
+</l></lg></div2>
+
+<pb n="53"/>
+<div2 type="poem" id="d48">
+<head>The School Boy</head>
+<lg type="stanza">
+<l>I love to rise in a summer morn
+</l><l>When the birds sing on every tree;
+</l><l>The distant huntsman winds his horn,
+</l><l>And the sky-lark sings with me.
+</l><l>O! what sweet company.
+</l></lg><lg type="stanza">
+<l>But to go to school in a summer morn,
+</l><l>O! it drives all joy away;
+</l></lg>
+<lg type="stanza">
+<l>Under a cruel eye outworn,
+</l><l>The little ones spend the day
+</l><l>In sighing and dismay.
+</l></lg><lg type="stanza">
+<l>Ah! then at times I drooping sit,
+</l><l>And spend many an anxious hour,
+</l><l>Nor in my book can I take delight,
+</l><l>Nor sit in learning's bower,
+</l><l>Worn thro'with the dreary shower.
+</l></lg><lg type="stanza">
+<l>How can the bird that is born for joy
+</l><l>Sit in a cage and sing?
+</l><l>How can a child, when fears annoy,
+</l><l>But droop his tender wing,
+</l><l>And forget his youthful spring?
+</l></lg><lg type="stanza">
+<l>O! father &amp; mother, if buds are nip'd
+</l><l>And blossoms blown away,
+</l><l>And if the tender plants are strip'd
+</l><l>Of their joy in the springing day,
+</l><l>By sorrow and care's dismay,
+</l></lg><lg type="stanza">
+<l>How shall the summer arise in joy,
+</l><l>Or the summer fruits appear?
+</l><l>Or how shall we gather what griefs destroy,
+</l><l>Or bless the mellowing year,
+</l><l>When the blasts of winter appear?
+</l></lg></div2>
+
+<pb n="54"/>
+<div2 type="poem" id="d49">
+<head>The Voice of the Ancient Bard</head>
+<lg type="stanza">
+<l>Youth of delight, come hither,
+</l><l>And see the opening morn,
+</l><l>Image of truth new-born.
+</l><l>Doubt is fled &amp; clouds of reason,
+</l><l>Dark disputes &amp; artful teazing.
+</l><l>Folly is an endless maze,
+</l><l>Tangled roots perplex her ways.
+</l><l>How many have fallen there!
+</l><l>They stumble all night over bones of the dead,
+</l><l>And feel they know not what but care,
+</l><l>And wish to lead others, when they should be led.
+</l></lg></div2>
+
+</div1>
+</body>
+</text>
+</TEI>

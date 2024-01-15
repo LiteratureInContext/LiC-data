@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="headnote-shakespeare">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Headnote for Shakespeare</title>
+                <author>
+                    <name>                               
+                        <forename>Tonya</forename>
+                        <surname>Howe</surname>
+                    </name>
+                    <name>                               
+                        <forename>Leane</forename>
+                        <surname>Dondapati</surname>
+                    </name>       
+                </author>
+                <respStmt>
+                    <resp>Headnote</resp>
+                    <name ref="editors.xml#TH">Tonya Howe</name>
+                    <name ref="editors.xml#LD">Leane Dondapati</name>
+                </respStmt>            
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>VIVA</funder>
+                <principal ref="editors.xml#JOB">John O'Brien</principal>
+                <principal ref="editors.xml#TH">Tonya Howe</principal>
+                <principal ref="editors.xml#CR">Christine Ruotolo</principal>             
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <publisher></publisher>
+                <date>2022-11-19</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>
+                        <name>                               
+                            <forename>Tonya</forename>
+                            <surname>Howe</surname>
+                        </name>
+                        <name>                               
+                            <forename>Leane</forename>
+                            <surname>Dondapati</surname>
+                        </name>                 
+                    </author>
+                    <title>William Shakespeare</title>
+                </bibl>
+                <listRelation>
+                    <relation type="headnote" passive="#headnote-shakespeare" active="#shakespeare-tempest"/>
+                </listRelation>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p/>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change type="reminder">Please be sure to update the publication date when changes are made here!</change>
+            <change resp="editors.xml#TH" when="2022-11-19">First draft XML</change>
+            <change when="2024-01-04" who="editors.xml#TH">Added attribute material to
+                images</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+    <body>
+        
+        <p>        <graphic url="https://anthologyassetsdev.lib.virginia.edu/headnote-shakespeare/pageImages/William-Shakespeare.jpg" style="float:right" width="300px" source="https://www.npg.org.uk/collections/search/portrait/mw11574" alt="Chandos portrait of William Shakespeare, National Portrait Gallery UK" desc="Chandos portrait of William Shakespeare (National Portrait Gallery, UK)"/>The widely celebrated Renaissance English playwright, poet, and actor William Shakespeare (1564-1616) was born in Stratford-upon-Avon to John and Mary Shakespeare. He wrote professionally during the Elizabethan (during the reign of Queen Elizabeth I) and Jacobian (the reign of King James I) ages. His father held a civic position in Stratford, which likely enabled him to have his children somewhat educated at the local grammar school. At the age of eighteen, Shakespeare wed Anne Hathaway. Six months later, Susanna was born, and in 1585, the fraternal twins, Hamnet (who died at the age of 11 years) and Judith.
+    </p>        
+<p>        During the Elizabethan period, acting was becoming newly professionalized, but it was still a suspect profession, associated with vagrancy—as the public playhouse was with disruption, noise, theft, and undesirables. Shakespeare was an actor before he became more associated with writing, and his experience as an actor informed his playwriting career. 
+</p>        
+<p>        Shakespeare’s first works to be published were the poems “Venus and Adonis” (1593) and “The Rape of Lucrece” (1594). He co-founded The Lord Chamberlain’s Men (later called The King’s Men), an acting company for whom he produced dramas regularly. Queen Elizabeth I invested actively in theatre, and sometimes attended public performances. Shakespeare remained with the company for the rest of his life, becoming part of the syndicates that helped establish The Globe and the Blackfriars Theatres. His plays were performed in both the public and private playhouses of London, but <hi rend="italic">The Tempest</hi> was first performed at Whitehall Palace, on November 1, 1611.
+</p>        
+<p>        Throughout his career, Shakespeare published 38 plays and 154 sonnets as well as other poems. While about half his plays were published in quarto form during his lifetime, almost all were published or republished in the First Folio of 1623 (the page images in our digital edition are from the First Folio, as digitized by the Folger Shakespeare Library). Only 230 of the first 1000 printed folios have survived. 
+</p>        
+<p>        Unlike many writers of his era, Shakespeare lived to see great popular success in his own lifetime. During the Elizabethan period, he was not the most critically-acclaimed playwright--that honor went to Christopher Marlowe, who died just before Shakespeare began writing in earnest. During the 18th century, Shakespeare’s reputation as the Bard was solidified, in part by the work of actor and playwright David Garrick--before that, he was an important national poet, but not the icon he is today. His work is set apart by its broad appeal—he drew from many popular ballads and reworked well-known contemporary tales, and did not depend on the more fully-formed classical education that informed Marlowe’s works. He was linguistically innovative, delighting in wordplay and developing new words that continue to shape our vocabulary today. Shakespeare died at the age of 52 and is buried at the Holy Trinity Church in Stratford. His final play was <hi rend="italic">The Tempest</hi>, published posthumously, in the First Folio.  
+</p>        
+<p>        Among the many critical approaches to <hi rend="italic">The Tempest</hi> available, it is often discussed in terms of political power and the nature of governance, exploration and imperial expansion, wrath and forgiveness, and theatricality or authorship itself. In the play, Prospero’s power in Milan is usurped by his brother, Antonio, and he and his daughter Miranda are cast adrift and exiled. They come to rest on the shores of an unnamed Mediterranean island, though this island often stands in for the New World that was then being colonised by England. In this reading, Ariel and Caliban, who was born on the island, are representatives of the land’s native inhabitants. One reason to think of the text in this way is because a historical model for Prospero, John Dee, was an advisor to Elizabeth I, and he is known to have advocated for the imperial expansion of England into the Atlantic. The wreck of the Sea Venture, a ship bound with supplies for Jamestown in 1609, is also a possible warrant. Several conversations in <hi rend="italic">The Tempest</hi> suggest that the nature of good governance is of special thematic importance to the play. 
+</p>        
+<p>        The usurped, patriarchal figure Prospero is consumed with wrath and a desire for revenge against those who cast him out (even though he fully admits he was paying more attention to his books than his state); this underlines another popular reading of the play, which focuses on the value of forgiveness, perhaps related to the question of good governance. The tool of Prospero’s revenge is the magical conjuration of <hi rend="italic">The Tempest</hi> that wreaks havoc on his enemies. However, over the course of the play, he forgives Antonio and casts aside his power.  This approach to <hi rend="italic">The Tempest</hi> is of less interest to contemporary scholars, who tend today to be more focused on the politics of the play--or the complications to the narrative of forgiveness posed by the marriage orchestrated between Ferdinand and Miranda, among other such complications. 
+</p>        
+<p>        Some scholars have examined Prospero, the powerful magician, father, and stage-director at the center of the play, as a stand-in for Shakespeare himself. In this reading, Prospero’s magic is a kind of stagecraft, and it derives from his books and “secret studies.” Through his magic he governs the behavior and worldview of others, and shapes the perceptions of the audience. The several references to the real-time performance of the play also encourages us to see it as a meditation on theatricality and stagecraft. Given that this is Shakespeare’s last play, and that Prospero is the central agent in its action, many have read Prospero’s renunciation of magic as Shakespeare’s own farewell to the stage. However, as noted above, biographical knowledge of the author is sparse, and this is one interpretation among many.
+</p>        
+        <p>        The image included here, via the <ref target="https://www.npg.org.uk/collections/search/portrait/mw11574">National Portrait Gallery UK</ref>, is the “Chandos Portrait” of Shakespeare, named after an early owner of the painting. It was likely painted by John Taylor from life, though its exact date of creation is unknown.
+</p>    </body> 
+    </text>
+    
+        </TEI>
