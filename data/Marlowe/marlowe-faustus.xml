@@ -2,13 +2,55 @@
 
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="marlowe-faustus">
-   <teiHeader>
+   <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
-            <title>The tragicall history of D. Faustus As it hath bene acted by the right honorable the Earle of Nottingham his seruants. Written by Ch. Marl.</title>
-            <title>Doctor Faustus</title>
-            <author>Marlowe, Christopher, 1564-1593.</author>
+            <title type="main">The tragicall history of Doctor Faustus</title>
+            <author>
+               <persName type="lcnaf" key="n78088956">    
+                  <name ref="xxx.xml">           
+                     <forename>Christopher</forename> 
+                     <surname>Marlowe</surname>             
+                  </name>              
+               </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="0000-0001-6453-8721">
+                  <name ref="editors.JOB #">
+                     <surname/>
+                     <forename/>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+              
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#JOB"
+                  >Text Creation Partnership and Students and Staff at the University of Virginia</name>
+
+            </respStmt>
+            
+            <sponsor/>
+            <funder>National Endowmen for the Humanities</funder>
+     
          </titleStmt>
+         
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>University of Virginia</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA</addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+         
          <editionStmt>
             <edition>
                <date>1604</date>
