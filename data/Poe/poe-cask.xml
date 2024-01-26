@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="poe-the-cask">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">"The Cask of Amontillado"</title>
+                <author>
+                    <persName type="lcnaf" key="n79029745">
+                        <name>
+                            <forename>Edgar Allan</forename>
+                            <surname>Poe</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0002-7400-4093">
+                        <name ref="editors.xml#TH">
+                            <forename>Tonya</forename>
+                            <surname>Howe</surname>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup by</resp>
+                    <name ref="editors.xml#UVAstudentsstaff">Students and Staff of The University of
+                        Virginia</name>
+                    <name ref="editors.xml#VBS">Veronica Scott</name>
+                </respStmt>
+                <sponsor/>
+                <funder/>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine> University of Virginia Department of English </addrLine>
+                    <addrLine> Bryan Hall 219 </addrLine>
+                    <addrLine> PO Box 400121 </addrLine>
+                    <addrLine> Charlottesville, VA 22904-4121 </addrLine>
+                    <addrLine> 434-924-7105 </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"The Cask of Amontillado"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName><name>
+                                <forename>Edgar Allan</forename>
+                                <surname>Poe</surname>
+                            </name></persName>
+                        </author>
+                        <title>Godey's Lady's Book</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7014406">Philadelphia</placeName>
+                            </pubPlace>
+                            <publisher>Open Court Publishing Co</publisher>
+                            <date when="1846">1846</date>
+                            <note>Text for this digital edition drawn from <ref
+                                target="http://xroads.virginia.edu/~Hyper/POE/cask.html">The
+                                University of Virginia's etext center</ref> and checked against the first
+                                edition text using <ref target="https://archive.org/details/sim_godeys-magazine_1846-11_33_5/page/216/mode/2up">
+                                The Internet Archive</ref>. Page images are drawn from <ref
+                                target="https://archive.org/details/sim_godeys-magazine_1846-11_33_5/page/216/mode/2up"
+                                >The Internet Archive</ref>'s copy of <hi rend="italic">Godey's Magazine and Lady's Book</hi></note>
+                        </imprint>
+                        <biblScope unit="volume">Volume XXXIII, Issue 5 </biblScope>
+                        <biblScope>pp 216-218</biblScope>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="tale">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="low"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <time from="1700" to="1840">Early 19th Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, reliable, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature. This project is was initially funded by the National Endowment for the
+                    Humanities and developed by faculty at The University of Virginia and Marymount
+                    University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                        not.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section for more information.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2023-05-30" who="editors.xml#VBS">Initial XML file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <pb n="216" facs="pageImages/poe-cask-216.png"/>
+                <titlePart>THE CASK OF AMONTILLADO.</titlePart>
+                <lb/>
+                <lb/>
+                <docAuthor>BY EDGAR A. POE</docAuthor>
+                <lb/>
+                <docImprint/>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <p>
+                    THE thousand injuries of Fortunato I had borne as I best could, but when 
+                    he ventured upon insult I vowed revenge. You, who so well know the nature of my soul,
+                    will not suppose, however, that I gave utterance to a threat. <hi rend="italic">At length</hi> I would be avenged;
+                    this was a point definitely, settled-- but the very definitiveness with which
+                    it was resolved precluded the idea of risk. I must not only punish but punish with impunity.
+                    A wrong is <ref target="unredressed_" corresp="unredressed">unredressed</ref> when retribution overtakes its redresser.
+                    It is equally unredressed when the avenger fails to make himself felt as such to him who had done wrong.
+                </p>
+                <p>
+                    It must be understood that neither by word nor deed had I given Fortunato cause to doubt my good will.
+                    I continued, as was wont, to smile in his face, and he did not perceive that my smile <hi rend="italic">now</hi> was
+                    at the thought of his immolation.
+                </p>
+                <p>
+                    He had a weak point--this Fortunato--although in other regards he was a man to be respected and even feared.
+                    He prided himself on his connoisseurship in wine. Few Italians have the virtuoso spirit.
+                    For the most part their enthusiasm is adopted to suit the time and opportunity, to practice imposture upon
+                    the British and Austrian <hi rend="italic">millionaires</hi>. In painting and <ref target="gemmary_" corresp="gemmary">gemmary</ref>,
+                    Fortunato, like his countrymen, was a quack, but in the matter of old wines he was sincere.
+                    In this respect I did not differ from him materially;--I was skilful in the Italian vintages myself,
+                    and bought largely whenever I could.
+                </p>
+                <p>
+                    It was about dusk, one evening during the supreme madness of the carnival season, that I encountered my friend.
+                    He accosted me with excessive warmth, for he had been drinking much. The man wore <ref target="motley_" corresp="motley">motley</ref>.
+                    He had on a tight-fitting parti-striped dress, and his head was surmounted by the conical cap and bells.
+                    I was so pleased to see him that I thought I should never have done wringing his hand.
+                </p>
+                <p>
+                    I said to him--"My dear Fortunato, you are luckily met. How remarkably well you are looking to-day. But I have
+                    received a pipe of what passes for Amontillado, and I have my doubts."
+                </p>
+                <p>
+                    "How?" said he. "Amontillado? A pipe? Impossible! And in the middle of the carnival!"
+                </p>
+                <p>
+                    "I have my doubts," I replied; "and I was silly enough to pay the full Amontillado price without consulting
+                    you in the matter. You were not to be found, and I was fearful of losing a bargin."
+                </p>
+                <p>
+                    "Amontillado!"
+                </p>
+                <p>
+                    "I have my doubts."
+                </p>
+                <p>
+                    "Amontillado!"
+                </p>
+                <p>
+                    "And I must satisfy them."
+                </p>
+                <p>
+                    "Amontillado!"
+                </p>
+                <p>
+                    "As you are engaged, I am on my way to Luchresi. If any one has a critical turn it is he. He will tell me--"
+                </p>
+                <p>
+                    "Luchresi cannot tell Amontillado from Sherry."
+                </p>
+                <p>
+                    "And yet some fools will have it that his taste is a match for your own."
+                </p>
+                <p>
+                    "Come, let us go."
+                </p>
+                <p>
+                    "Whither?"
+                </p>
+                <p>
+                    "To your vaults."
+                </p>
+                <p>
+                    "My friend, no; I will not impose upon your good nature. I perceive you have an engagement. Luchresi--"
+                </p>
+                <p>
+                    "I have no engagement;--come."
+                </p>
+                <p>
+                    "My friend, no. It is not the engagement, but the severe cold with which I perceive you are afflicted.
+                    The vaults are insufferably damp. They are encrusted with <ref target="nitre_" corresp="nitre">nitre</ref>."
+                </p>
+                <p>
+                    "Let us go, nevertheless. The cold is merely nothing. Amontillado! You have been imposed upon. And as for Luchresi,
+                    he cannot distinguish Sherry from Amontillado."
+                </p>
+                <p>
+                    Thus speaking, Fortunato possessed himself of my arm; and putting on a mask of black silk and drawing a
+                    <ref target="roquelaire_" corresp="roquelaire"><hi rend="italic">roquelaire</hi></ref> closely around my person, I suffered him to hurry
+                    me to my <ref target="palazzo_" corresp="palazzo">palazzo</ref>.
+                </p>
+                <p>
+                    There were not attendants at home; they had <ref target="absconded_" corresp="absconded">absconded</ref> to make merry
+                    in honour of the time. I had told them that I should not return until the morning, and had given them explicit orders
+                    not to stir from the house. The orders were sufficient, I well knew, to insure their immediate disappearance, one and all,
+                    as soon as my back was turned.
+                </p>
+                <p>
+                    I took from their sconces two <ref target="flambeaux_" corresp="flambeaux">flambeaux</ref>, and giving one to Fortunato,
+                    bowed him through several suites of rooms to the archway that led into the vaults. I passed down a long and winding staircase,
+                    requesting him to be cautious as he followed. We came at length to the foot of the descent,
+                    and stood together upon the damp ground of the catacombs of the Montresors.
+                </p>
+                <p>
+                    The gait of my friend was unsteady, and the bells upon his cap jingled as he strode.
+                </p>
+                <p>
+                    "The pipe," he said.
+                </p>
+                <p>
+                    "It is farther on," said I; "but observe the white web-work which gleams from these cavern walls."
+                </p>
+                <p>
+                    He turned towards me, and looked into my eyes with two filmy orbs that distilled the
+                    <ref target="rheum_" corresp="rheum">rheum</ref> of intoxication.
+                </p>
+                <p>
+                    "Nitre?" he asked, at length.
+                </p>
+                <p>
+                    "Nitre," I replied. "How long have you had that cough?"
+                </p>
+                <pb n="217" facs="pageImages/poe-cask-217.png"/>
+                <p>
+                    "Ugh! ugh! ugh!--ugh! ugh! ugh!--ugh! ugh! ugh!--ugh! ugh! ugh!--ugh! ugh! ugh!"
+                </p>
+                <p>
+                    My poor friend found it impossible to reply for many minutes.
+                </p>
+                <p>
+                    "It is nothing," he said, at last.
+                </p>
+                <p>
+                    "Come," I said, with decision, "we will go back; your health is precious. You are rich, respected, admired, beloved; you are happy,
+                    as I once was. You are a man to be missed. For me it is no matter. We will go back; you will be ill, and I cannot be responsible.
+                    Besides, there is Luchresi--"
+                </p>
+                <p>
+                    "Enough," he said; "the cough is a mere nothing; it will not kill me. I shall not die of a cough."
+                </p>
+                <p>
+                    "True--true," I replied; "and, indeed, I had no intention of alarming you unnecessarily--but you should use all proper caution.
+                    A draught of this <ref target="medoc_" corresp="medoc">Medoc</ref> will defend us from the damps.
+                </p>
+                <p>
+                    Here I knocked off the neck of a bottle which I drew from a long row of its fellows that lay upon the mould.
+                </p>
+                <p>
+                    "Drink," I said, presenting him the wine.
+                </p>
+                <p>
+                    He raised it to his lips with a leer. He paused and nodded to me familiarly, while his bells jingled.
+                </p>
+                <p>
+                    "I drink," he said, "to the buried that repose around us."
+                </p>
+                <p>
+                    "And I to your long life."
+                </p>
+                <p>
+                    He again took my arm, and we proceeded.
+                </p>
+                <p>
+                    "These vaults," he said, "are extensive."
+                </p>
+                <p>
+                    "The Montresors," I replied, "were a great and numerous family."
+                </p>
+                <p>
+                    "I forget your arms."
+                </p>
+                <p>
+                    "A huge human foot d'or, in a field azure; the foot crushes a serpent rampant whose fangs are imbedded in the heel."
+                </p>
+                <p>
+                    "And the motto?"
+                </p>
+                <p>
+                    "<ref target="nemo_" corresp="nemo"><hi rend="italic">Nemo me impune lacessit</hi></ref>."
+                </p>
+                <p>
+                    "Good!" he said.
+                </p>
+                <p>
+                    The wine sparkled in his eyes and the bells jingled. My own fancy grew warm with the Medoc. We had passed through long walls
+                    of piled skeletons, with casks and <ref target="puncheons_" corresp="puncheons">puncheons</ref> intermingling, into the inmost
+                    recesses of the catacombs. I paused again, and this time I made bold to seize Fortunato by an arm above the elbow.
+                </p>
+                <p>
+                    "The nitre!" I said; "see, it increases. It hangs like moss upon the vaults. We are below the river's bed. The drops of moisture trickle
+                    among the bones. Come, we will go back ere it is too late. Your cough--"
+                </p>
+                <p>
+                    "It is nothing," he said; "let us go on. But first, another draught of the Medoc."
+                </p>
+                <p>
+                    I broke and reached him a flaçon of De Grâve. He emptied it at a breath. His eyes flashed with a fierce light. He laughed and threw the
+                    bottle upwards with a gesticulation I did not understand.
+                </p>
+                <p>
+                    I looked at him in surprise. He repeated the movement--a grotesque one.
+                </p>
+                <p>
+                    "You do not comprehend?" he said.
+                </p>
+                <p>
+                    "Not I," I replied.
+                </p>
+                <p>
+                    "Then you are not of the brotherhood."
+                </p>
+                <p>
+                    "How?"
+                </p>
+                <p>
+                    "You are not of the masons."
+                </p>
+                <p>
+                    "Yes, yes," I said; "yes, yes."
+                </p>
+                <p>
+                    "You? Impossible! A mason?"
+                </p>
+                <p>
+                    "A mason," I replied.
+                </p>
+                <p>
+                    "A sign," he said, "a sign."
+                </p>
+                <p>
+                    "It is this," I answered, producing from beneath the folds of my <ref target="roquelaire" corresp="roquelaire"><hi rend="italic">roquelaire</hi></ref>
+                    a trowel.
+                </p>
+                <p>
+                    "You jest," he exclaimed, recoiling a few paces. "But let us proceed to the Amontillado."
+                </p>
+                <p>
+                    "Be it so," I said, replacing the tool beneath the cloak and again offering him my arm. He leaned upon it heavily. We continued our rout in
+                    search of the Amontillado. We passed through a range of low arches, descended, passed on, and descending again, arrived at a deep crypt,
+                    in which the foulness of the air caused our flambeaux rather to glow than flame.
+                </p>
+                <p>
+                    At the most remote end of the crypt there appeared another less spacious. Its walls had been lined with human remains,
+                    piled to the vault overhead, in the fashion of the great catacombs of Paris. Three sides of this interior crypt were still ornamented in this manner.
+                    From the fourth side the bones had been thrown down, and lay promiscuously upon the earth, forming at one point a mound of some size.
+                    Within the wall thus exposed by the displacing of the bones, we perceived a still interior crypt or recess, in depth about four feet,
+                    in width three, in height six or seven. It seemed to have been constructed for no especial use within itself, but formed merely the interval between
+                    two of the colossal supports of the roof of the catacombs, and was backed by one of their circumscribing walls of solid granite.
+                </p>
+                <p>
+                    It was in vain that Fortunato, uplifting his dull torch, endeavoured to pry into the depth of the recess. Its termination the feeble light did not
+                    enable use to see.
+                </p>
+                <p>
+                    "Proceed," I said; "herein is the Amontillado. As for Luchresi--"
+                </p>
+                <p>
+                    "He is an ignoramus," interrupted my friend, as he stepped unsteadily forward, while I followed immediately at his heels.
+                    In an instant he had reached the extremity of the <ref target="niche_" corresp="niche">niche</ref>,
+                    and finding his progress arrested by the rock, stood stupidly bewildered. A moment more and I had
+                    <ref target="fettered_" corresp="fettered">fettered</ref> him to the granite. In its surface were two iron staples, distant from each other
+                    about two feet, horizontally. From one of these depended a short chain, from the other a padlock. Throwing the links about his waist,
+                    it was but the work of a few seconds to secure it. He was too much astounded to resit. Withdrawing the key I stepped back from the recess.
+                </p>
+                <p>
+                    "Pass your hand," I said, "over the wall; you cannot help feeling the nitre. Indeed it is <hi rend="italic">very</hi> damp.
+                    Once more let me <hi rend="italic">implore</hi> you to return. No? Then I must positively leave you.
+                    But I will first render you all the little attentions in my power."
+                </p>
+                <p>
+                    "The Amontillado!" ejaculated my friend, not yet recovered from his astonishment.
+                </p>
+                <pb n="218" facs="pageImages/poe-cask-218.png"/>
+                <p>
+                    "True," I replied, "the Amontillado."
+                </p>
+                <p>
+                    As I said these words I busied myself among the pile of bones of which I have before spoken. Throwing them aside, I soon uncovered
+                    a quantity of building stone and mortar. With these materials and with the aid of my trowel, I began vigorously to wall up the entrance of the niche.
+                </p>
+                <p>
+                    I had scarcely laid the first tier of the masonry when I discovered that the intoxication of Fortunato had in a great measure worn off.
+                    The earliest indication I had of this was a low moaning cry from the depth of the recess. It was <hi rend="italic">not</hi> the cry of a drunken man.
+                    There was then a long and <ref target="obstinate_" corresp="obstinate">obstinate</ref> silence. I laid the second tier, and the third, and the fourth;
+                    and then I heard the furious vibrations of the chain. The noise lasted for several minutes, duing which, that I might hearken to it with the more
+                    satisfaction, I ceased my labours and sat down upon the bones. When at last the clanking subsided, I resumed the trowel, and finished without
+                    interruption the fifth, the sixth, and the seventh tier. The wall was now nearly upon a level with my breast.
+                    I again paused, and holding the flambeaux over the mason-work, threw a few feeble rays upon the figure within.
+                </p>
+                <p>
+                    A succession of loud and shrill screams, bursting suddenly from the throat of the chained form, seemed to thrust me violently back. For a brief moment
+                    I hesitated, I trembled. Unsheathing my rapier, I began to grope with it about the recess; but the thought of an instant reassured me.
+                    I placed my hand upon the solid fabric of the catacombs, and felt satisfied. I reapproached the wall. I replied to the yells of him who clamoured.
+                    I re-echoed, I aided, I surpassed them in volume and in strength. I did this, and the clamourer grew still.
+                </p>
+                <p>
+                    It was now midnight, and my task was drawing to a close. I had completed the eight, the ninth, and the tenth tier.
+                    I had finished a portion of the last and eleventh; there remained but a single stone to be fitted and plastered in.
+                    I struggled with its weight; I placed it it partially in its destined position. But now there came from out the niche
+                    a low laugh that erected the hairs upon my head. It was succeeded by a sad voice, which I had difficulty in recognizing as
+                    that of the noble Fortunato. The voice said--
+                </p>
+                <p>
+                    "Ha! ha! ha!--he! he! he!--a very good joke, indeed--an excellent jest. We will have many a rich laugh about it at the palazzo--he!
+                    he! he--over our wine--he! he! he"
+                </p>
+                <p>
+                    "The Amontillado!" I said.
+                </p>
+                <p>
+                    "He! he! he!--he! he! he!--yes, the Amontillado. But is it not getting late? Will not they be awaiting us at the palazzo,
+                    the Lady Fortunato and the rest? Let us be gone."
+                </p>
+                <p>
+                    "Yes," I said, "let us be gone."
+                </p>
+                <p>
+                    "<hi rend="italic">For the love of God, Montresor!</hi>"
+                </p>
+                <p>
+                    "Yes," I said, "for the love of God!"
+                </p>
+                <p>
+                    But to these words I hearkened in vain for a reply. I grew impatient. I called aloud--
+                </p>
+                <p>
+                    "Fortunato!"
+                </p>
+                <p>
+                    No answer. I called again--
+                </p>
+                <p>
+                    "Fortunato!"
+                </p>
+                <p>
+                    No answer still. I thrust a torch through the remaining aperture and let it fall within. There came forth in return only a jingling of the bells.
+                    My heart grew sick; it was the dampness of the catacombs that made it so. I hastened to make an end of my labour.
+                    I forced the last stone into position; I plastered it up. Against the new masonry I re-erected the old rampart of bones. For the half
+                    of a century no mortal has disturbed them. <ref target="requiesat_" corresp="requiesat"><hi rend="italic">In pace requiescat!</hi></ref>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div>
+                <note xml:id="unredressed" target="unredressed_" type="gloss" resp="editors.xml#VBS"><p>Not redressed; not set right; uncorrected; unrecompensed.
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="gemmary" target="gemmary_" type="gloss" resp="editors.xml#VBS"><p>Of or pertaining to gems; concerned with or skilled in gems.
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="motley" target="motley_" type="gloss" resp="editors.xml#VBS"><p>Cloth woven from threads of two or more colours; a piece of this cloth.
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="nitre" target="nitre_" type="gloss" resp="editors.xml#VBS"><p>Originally: †natron, native sodium carbonate (obsolete).
+                    In later use: sodium or potassium nitrate; spec. potassium nitrate (saltpetre). <!-- TODO: double check -->
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="roquelaire" target="roquelaire_" type="gloss" resp="editors.xml#VBS"><p>A man's knee-length cloak with a cape collar,
+                    fashionable during the 18th cent. Source: Oxford English Dictionary.</p></note>
+                <note xml:id="roquelaire" target="roquelaire_" type="gloss" resp="editors.xml#VBS"><p>A man's knee-length cloak with a cape collar,
+                    fashionable during the 18th cent. Source: Oxford English Dictionary.</p></note>
+                <note xml:id="palazzo" target="palazzo_" type="gloss" resp="editors.xml#VBS"><p>A palatial mansion, esp. in Italy; (in extended use)
+                    any large and imposing building or residence. Source: Oxford English Dictionary.</p></note>
+                <note xml:id="absconded" target="absconded_" type="gloss" resp="editors.xml#VBS"><p>To hide, conceal; to obscure.
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="flambeaux" target="flambeaux_" type="gloss" resp="editors.xml#VBS"><p>A torch; esp. one made of several thick wicks dipped in wax;
+                    a lighted torch. Source: Oxford English Dictionary.</p></note>
+                <note xml:id="rheum" target="rheum_" type="gloss" resp="editors.xml#VBS"><p>Watery or mucous secretions,
+                    esp. as collecting in or dripping from the eyes, nose, or mouth, originally believed to originate in the brain or head and to be
+                    capable of causing disease; †a secretion of this nature (obsolete). In early use also: †a flow or flux (of humours) (obsolete).
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="medoc" target="medoc_" type="gloss" resp="editors.xml#VBS"><p>Red wine produced in Médoc; (as a count noun) a wine produced in this region.
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="puncheon" target="puncheon_" type="gloss" resp="editors.xml#VBS"><p>Originally: a large barrel or cask,
+                    esp. one of definite capacity, varying for different liquids and commodities (now historical). Now: spec. a cask used for fermenting or ageing wine.
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="roquelaire" target="roquelaire_" type="gloss" resp="editors.xml#VBS"><p>A man's knee-length cloak with a cape collar, fashionable during the 18th cent.
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="niche" target="niche_" type="gloss" resp="editors.xml#VBS"><p>A shallow ornamental recess or hollow set into a wall,
+                    usually for the purpose of containing a statue or other decorative object. Source: Oxford English Dictionary.</p></note>
+                <note xml:id="fettered" target="fettered_" type="gloss" resp="editors.xml#VBS"><p>To bind with or as with fetters; to chain, fasten, shackle.
+                    Source: Oxford English Dictionary.</p></note>
+                <note xml:id="obstinate" target="obstinate_" type="gloss" resp="editors.xml#VBS"><p>Firmly adhering to an opinion or chosen course of action
+                    despite argument, persuasion, or entreaty; inflexible, resolute, stubborn, self-willed; indicative of or characterized by inflexibility
+                    or stubbornness. Usually with pejorative connotation. Source: Oxford English Dictionary.</p></note>
+                <note xml:id="requiesat" target="requiesat_" type="gloss" resp="editors.xml#VBS"><p>Latin for "Rest in peace".</p></note>
+                <note xml:id="nemo" target="nemo_" type="gloss" resp="editors.xml#VBS"><p>Latin for "No one attacks me with impunity".</p></note>
+            </div>
+        </back>
+    </text>
+</TEI>

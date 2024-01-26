@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shakespeare-tempest">
    <!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
 
@@ -556,7 +557,7 @@
                   <l n="1">If <ref target="Dee_" corresp="Dee">by your art, my dearest
                         father</ref><note xml:id="Dee" target="Dee_" type="editorial"
                         resp="editors.xml#MUStudStaff"><graphic
-                           url="notes/british-museum-john-dees-37447001.jpeg"/>It is often thought
+                           url="notes/british-museum-john-dees-37447001.jpeg" alt="Photograph showing alchemical items belonging to John Dee, used in early modern magic, from the British Library." desc="Dee's spirit mirror and other alchemical objects" source="https://www.bl.uk/collection-items/john-dees-spirit-mirror"/>It is often thought
                         that Prospero was modeled by Shakespeare on <persName type="lcnaf"
                            key="n79006490"><name>John Dee</name></persName>, a well-known polymath,
                         magus, and advisor to Queen Elizabeth I. According to the <ref
@@ -1055,7 +1056,7 @@
                <stage>
                   <ref target="ariel_" corresp="ariel">Enter Ariel</ref>
                   <note xml:id="ariel" target="ariel_" type="editorial" resp="editors.xml#LD"
-                        ><graphic url="notes/DP859557.jpeg"/>After Miranda falls asleep, Prospero is
+                     ><graphic url="notes/DP859557.jpeg" alt="Late 18th century engraving showing Miranda, Prospero, Caliban, and Ariel" desc="Late 18th century engraving from the Metropolitan Museum of Art showing Miranda, Prospero, Caliban, and Ariel" source="https://www.metmuseum.org/art/collection/search/365591"/>After Miranda falls asleep, Prospero is
                      typically understood to put his magical robe back on as Ariel comes onto the
                      stage. The image here, an engraving after Henry Fusili, shows a late 18th
                      century rendition of Miranda, Prospero, Caliban, and the airy spirit Ariel
@@ -2071,7 +2072,7 @@
                   <speaker>Sebastian</speaker>
                   <l n="16">A <ref target="dollar_" corresp="dollar">dollar</ref><note
                         xml:id="dollar" target="dollar_" type="gloss" resp="editors.xml#LD">
-                        <graphic url="notes/Thaler.jpeg"/>According to the OED, a dollar is the
+                     <graphic url="notes/Thaler.jpeg" alt="A photographic representation of thalers" desc="A photographic representation of thalers from Wikimedia Commons" source="https://commons.wikimedia.org/wiki/File:Thaler.jpeg"/>According to the OED, a dollar is the
                         English word for the thaler, a German coin of varying value used from the
                         16th century. The image here, sourced from <ref
                            target="https://commons.wikimedia.org/wiki/File:Thaler.jpeg">Wikimedia
@@ -4158,7 +4159,7 @@
                <stage>Thunder and lightning. Enter Ariel, like a <ref target="harpy_"
                      corresp="harpy">harpy</ref>
                   <note xml:id="harpy" target="harpy_" type="editorial" resp="editors.xml#LD"
-                        ><graphic url="notes/16027.jpg"/>Ariel appears in the form of a harpy, a
+                     ><graphic url="notes/16027.jpg" alt="An illustration of a harpy from 1642" desc="Illustration of a harpy from Monstrorum Historia (1642)" source="https://www.worldhistory.org/Harpy"/>Ariel appears in the form of a harpy, a
                      greedy and fearsome mythological creature that metes out divine justice and
                      vengeance. Harpies have the head and body of a woman and the wings and claws of
                      a bird. Ariel is imagined as wreaking the 'divine' vengeance of Prospero. This
@@ -4381,7 +4382,7 @@
                   <l n="42">Bestow upon the eyes of this young couple</l>
                   <l n="43"><ref target="masque_" corresp="masque">Some vanity of mine
                         art</ref><note xml:id="masque" target="masque_" type="editorial"
-                        resp="editors.xml#LD"><p><graphic url="notes/fiery_spirit.png"/>Prospero
+                           resp="editors.xml#LD"><p><graphic url="notes/fiery_spirit.png" alt="A colored illustration showing an athletic young man dressed in fluttering fabric that resembles flames" source="https://www.jstor.org/stable/41830403"/>Prospero
                            plans to use his magic to create the fantastic entertainment of a masque
                            for the young couple. According to <ref
                               target="https://www.hrp.org.uk/banqueting-house/history-and-stories/the-masque/"
@@ -4412,10 +4413,10 @@
                            key collection of masque designs, now hosted in JSTOR. The image included
                            here, from that illustrated catalog of masque designs, shows a page
                            dressed as a fiery spirit. </p>
-                        <p> Brunel University <placeName type="tgn" key="7011781">London</placeName> has produced a <ref
+                       <!-- <p> Brunel University <placeName type="tgn" key="7011781">London</placeName> has produced a <ref
                               target="https://www.youtube.com/watch?v=OoGbujLw688">360° video of a
                               modern version of a 17th century court masque</ref>, performed in the
-                           Royal Banqueting House; the video is accessible via YouTube. </p></note>:
+                           Royal Banqueting House; the video is accessible via YouTube. </p> --> </note>:
                      it is my promise,</l>
                   <l n="44">And they expect it from me.</l>
                </sp>

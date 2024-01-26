@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<!-- <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/LiteratureInContext/LiC-app/master/resources/css/style.css"?> 
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/LiteratureInContext/LiC-app/master/resources/xslt/html/html2tei.xsl"?> -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="austen-sanditon-ms">
    <!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
 
@@ -82,8 +85,8 @@
                   <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
                   <author>
                      <!-- Note authority and key. -->
-                     <forename>Austen</forename>
-                     <surname>Jane</surname>
+                     <forename>Jane</forename>
+                     <surname>Austen</surname>
                   </author>
                   <author>
                         <forename>Anna</forename>
@@ -95,14 +98,13 @@
                      <pubPlace>NA</pubPlace><publisher>NA</publisher>
                      <date when="1817">1817</date>
                      <date when="2010">2010</date>
-                     <note>Page breaks derived from the manuscript version available at <ref target="https://janeausten.ac.uk/manuscripts/sanditon/b1-front_cover.html">Jane Austen Fiction Manuscripts: A Digital Edition</ref>. Facsimile page images of the manuscript are available here. The original manuscript is held at King's College, Cambridge.</note>
+                     <note>Page breaks derived from the manuscript version available at <ref target="https://janeausten.ac.uk/manuscripts/sanditon/b1-front_cover.html">Jane Austen Fiction Manuscripts: A Digital Edition</ref>. Facsimile page images of the manuscript are available there. The original manuscript is held at King's College, Cambridge.</note>
                   </imprint>
                   <imprint>
                      <!-- Indicate any other imprint "witnesses" or "surrogates" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->                                                    
                      <publisher>Oxford Text Archive</publisher>
                      <date when="1993">1993</date>
-                     <note>The base SGML for this digital edition drawn from the OTA edition (<ref
-                        target="http://hdl.handle.net/20.500.12024/1525">
+                     <note>The base SGML for this digital edition drawn from the OTA edition (<ref target="http://hdl.handle.net/20.500.12024/1525">
                         http://hdl.handle.net/20.500.12024/1525</ref>).</note>
                   </imprint>                
              
@@ -124,7 +126,7 @@
          <creation/>
          <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
 
-         <textDesc n="novel">
+         <textDesc n="novella">
             <!-- Acceptable values include novel, novella, poem, essay. -->
             <channel mode="w">manuscript</channel>
             <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
@@ -241,8 +243,9 @@
             <milestone n="1" unit="Booklet"/>
             <pb n="[b1-1]"/>
             <dateline>Jan: 27.-1817.</dateline>
-            <p>1</p>
             <div type="chapter">
+               <head type="main">[Chapter 1]</head>
+               <head type="sub">1</head>
                <p> A gentleman and a lady travelling from Tunbridge towards that part of the Sussex
                   coast which lies between Hastings and Eastbourne, being induced by business to
                   quit the high road and attempt a very rough lane, were overturned in toiling up
@@ -430,7 +433,7 @@
                   carried into the house and his carriage wheeled off to a vacant barn. </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chapter 2.—</head>
+               <head type="main">Chapter 2.—</head>
                <p> The acquaintance, thus oddly begun, was neither short nor unimportant. For a
                   whole fortnight the travellers were fixed at Willingden, Mr. Parker's sprain
                   proving too serious for him to move sooner. He had fallen into very good hands.
@@ -542,7 +545,7 @@
                   spend even five shilling at Brinshore. </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chapter 3.</head>
+               <head type="main">Chapter 3.</head>
                <p> Every neighbourhood should have a great lady. The great lady of Sanditon was Lady
                   Denham; and in their journey from Willingden to the coast, Mr. Parker gave
                   Charlotte a more detailed account of her than had been called for before. She had
@@ -675,7 +678,7 @@
             <milestone n="2" unit="Booklet"/>
             <pb n="[b2-1]"/>
             <div type="chapter">
-               <head type="chapter">Chapter 4.</head>
+               <head type="main">Chapter 4.</head>
                <p> "And whose very snug-looking place is this?" said Charlotte as, in a sheltered
                   dip within two miles of the sea, they passed close by a moderate-sized house, well
                   fenced and planted, and rich in the garden, orchard and meadows which are the best
@@ -816,7 +819,7 @@
                   sparkling in sunshine and freshness. </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chapter 5.</head>
+               <head type="main">Chapter 5.</head>
                <p> When they met before dinner, Mr. Parker was looking over letters. "Not a line
                   from Sidney!" said he. "He is an idle fellow. I sent him an account of my <pb
                      n="[b2-10]"/> accident from Willingden and thought he would have vouchsafed me
@@ -931,7 +934,7 @@
                   still—Morgan with his "Dinner on table." </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chap: 6.</head>
+               <head type="main">Chap: 6.</head>
                <p> The Party were very soon moving after dinner. Mr. Parker could not be satisfied
                   without an early visit to the library and the library subscription book; and
                   Charlotte was glad to see as much and as quickly as possible where all was new.
@@ -1070,7 +1073,7 @@
                   But since you are so very neighbourly, I believe Miss Clara and I must stay." </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chapter 7.</head>
+               <head type="main">Chapter 7.</head>
                <p> The popularity of the Parkers brought them some visitors the very next morning;
                   amongst them, Sir Edward Denham and his sister who having been at Sanditon House,
                   drove on to pay their compliments; and the duty of letter writing being
@@ -1301,7 +1304,7 @@
                   coinciding with her. Thus it is, when rich people are sordid." </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chapter 8.</head>
+               <head type="main">Chapter 8.</head>
                <p> The two ladies continued walking together till rejoined by the others, who, as
                   they issued from the library, were followed by a young Whitby running off with
                   five volumes under his arm to Sir Edward's gig; <pb n="[b2-41]"/> and Sir Edward,
@@ -1385,7 +1388,7 @@
                   ruin and disgrace for the object of his affections to the more renowned. </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chapter 9.</head>
+               <head type="main">Chapter 9.</head>
                <p> One day, soon after Charlotte's arrival at Sanditon she had the pleasure of
                   seeing, just as she ascended from the sands to the Terrace, a gentleman's carriage
                   with post horses standing at the door of the hotel, as very lately arrived and by
@@ -1433,7 +1436,7 @@
                <milestone n="3" unit="Booklet"/>
                <pb n="[b3-1]"/>
                <dateline>March 1st.</dateline>
-               <p>2</p>
+               <head type="sub">2</head>
                <p> with a thousand regrets at being so poor a creature that she could not come with
                   me. And as for poor Arthur, he would not have been unwilling himself, but there is
                   so much wind that I did not think he could safely venture for I am <hi
@@ -1560,7 +1563,7 @@
                   managed it all." </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chapter 10.</head>
+               <head type="main">Chapter 10.</head>
                <p> It was not a week since Miss Diana Parker had been told by her feelings that the
                   sea air would probably, in her present state, be the death of her; and now she was
                   at Sanditon, intending to make some stay and without appearing to have the
@@ -1769,7 +1772,7 @@
                   investigate the truth and offer her services. </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chapter 11.</head>
+               <head type="main">Chapter 11.</head>
                <p> It would not do. Not all that the whole Parker race could say among themselves
                   could produce a happier catastrophe than that the family from Surrey and the
                   family from Camberwell were one and the same. The rich West Indians and the young
@@ -1856,7 +1859,7 @@
                   to the ascent of the hill. </p>
             </div>
             <div type="chapter">
-               <head type="chapter">Chap: 12.</head>
+               <head type="main">Chap: 12.</head>
                <p> Charlotte had been ten days at Sanditon without seeing Sanditon House, every <pb
                      n="[b3-31]"/> attempt at calling on Lady Denham having been defeated by meeting
                   with her beforehand. But now it was to be more resolutely undertaken, at a more

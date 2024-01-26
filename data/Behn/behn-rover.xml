@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="behn-rover">
    <teiHeader>
       <!--TEI Header BEGINS-->
@@ -30,10 +30,9 @@
             <respStmt>
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name>Staff and Research Assistants at the University of Virginia</name>
-               <name ref="editors.xml#SB"
-                  ><forename>Sara</forename><surname>Brunstetter</surname></name>
-               <name ref="editors.xml#JOB"
-                  ><forename>John</forename><surname>O'Brien</surname></name>
+               <name ref="editors.xml#SB">Sara Brunstetter</name>
+               <name ref="editors.xml#JOB">John O'Brien</name>
+                 
             </respStmt>
             <funder>National Endowment for the Humanities</funder>
          </titleStmt>
@@ -75,7 +74,7 @@
                      <pubPlace>
                         <placeName type="tgn" key="7011781"> London </placeName>
                      </pubPlace>
-                     <publisher> Printed for John Amery </publisher>
+                     <publisher>Printed for John Amery</publisher>
                      <date when="1677"> 1677 </date>
                      <note resp="editors.xml#JOB"> Our text is based on the Text Creation
                         Partnership’s digital edition, which was produced from microfilm scans of
@@ -204,7 +203,7 @@
             <docImprint>
                <pubPlace><placeName type="tgn" key="7011781"><hi rend="italic"
                      >LONDON</hi></placeName></pubPlace>, <lb/> Printed for <publisher><hi
-                     rend="italic">John Amery</hi>, </publisher><pubPlace>at the <hi rend="italic"
+                     rend="italic">John Amery</hi>,</publisher><pubPlace>at the <hi rend="italic"
                      >Peacock</hi>, against<lb/> St. <hi rend="italic">Dunstan'</hi>s Church in <hi
                      rend="italic">Fleet-street</hi></pubPlace>. <docDate>1677</docDate>
             </docImprint>
@@ -8676,7 +8675,7 @@
                   explains why so many characters in the play have been traveling back and forth
                   between Naples and places like Madrid and Pamplona. Image: Claude Vernet, View of
                   the Bay of Naples, 1747 (Wikimedia Commons). <graphic
-                     url="images/Naples-vernet.jpg" style="float:right" width="500px"/></p></note>
+                     url="notes/Naples-vernet.jpg"/></p></note>
 
             <note resp="editors.xml#UVAstudstaff" type="gloss" xml:id="intro" target="intro_"><p>A
                   rover is a pirate, or a person who aimlessly wanders and roams. The Cavaliers were

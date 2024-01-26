@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="poe-usher">
   <teiHeader xml:lang="en">
     <fileDesc>
@@ -55,13 +55,18 @@
           </analytic>
           <monogr>
             <author>
-              <persName/>
+              <persName type="lcnaf" key="n79029745">
+                <name ref="poe.xml">
+                  <forename>Edgar Allan</forename>
+                  <surname>Poe</surname>
+                </name>
+              </persName>
             </author>
             <title>Burton's Gentleman's Magazine</title>
             <imprint>
               <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
               <pubPlace>
-                <placeName type="tgn" key="7014406">7014406</placeName>
+                <placeName type="tgn" key="7014406">Philadelphia</placeName>
                 <!-- Note authority and key. -->
               </pubPlace>
               <publisher>W.E. Burton</publisher>
@@ -79,7 +84,7 @@
                   >https://docsouth.unc.edu/southlit/poe/poe.html#poe64</ref> and checked against
                 the HathiTrust first edition.</note>
             </imprint>
-            <biblScope unit="volume">V</biblScope>
+            <biblScope unit="volume">Volume V </biblScope>
             <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
             <biblScope>pp 145-152</biblScope>
           </monogr>

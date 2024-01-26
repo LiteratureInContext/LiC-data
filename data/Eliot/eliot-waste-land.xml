@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="eliot-waste-land">
    <!-- this xml:id is important; it is the unique identifier for the text, added according to the model author-titleword, as in haywood-fantomina -->
 
@@ -11,12 +11,11 @@
             <author>
                <persName type="lcnaf" key="n79006870">
                   <name><forename>T.S.</forename><surname>Eliot</surname></name>
-                  
                </persName>
-               
+
             </author>
-            
-            
+
+
             <editor>
                <persName type="orcid" key="0000-0002-7400-4093">
                   <name ref="editors.xml#TH">
@@ -32,6 +31,8 @@
                <name ref="editors.xml#MUStudStaff">Students and Staff of Marymount University</name>
                <name ref="editors.xml#GG">Greg Gillespie</name>
                <name ref="editors.xml#TH">Tonya Howe</name>
+               <name ref="editors.xml#ZO">Zafit Olea</name>
+               <name ref="editors.xml#CP">Caroline Peloquin</name>
                <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
             </respStmt>
 
@@ -64,32 +65,30 @@
 
                <monogr>
                   <author>
-                   <name><forename>TS</forename>
-                     <surname>Eliot</surname></name>
-                     
+                     <name><forename>TS</forename>
+                        <surname>Eliot</surname></name>
+
                   </author>
 
-                  <title>The Waste
-                     Land</title>
+                  <title>The Waste Land</title>
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="7007567">New
-                           York</placeName>
+                        <placeName type="tgn" key="7007567">New York</placeName>
                      </pubPlace>
-                     <publisher>Boni and
-                        Liverwright</publisher>
+                     <publisher>Boni and Liverwright</publisher>
                      <date when="1922">1922</date>
-                     <note>This
-                        digital edition was transcribed and formatted to the first American edition.
-                        Facsimile page images of this source text are available at <ref target="https://archive.org/details/wasteland01elio/page/n7/mode/2up">Internet Archive</ref>.</note>
-                     
+                     <note>This digital edition was transcribed and formatted to the first American
+                        edition. Facsimile page images of this source text are available at <ref
+                           target="https://archive.org/details/wasteland01elio/page/n7/mode/2up"
+                           >Internet Archive</ref>.</note>
+
                      <note/>
                   </imprint>
 
                   <extent>64 pages ; 20 cm</extent>
-                  
-                  
+
+
 
                </monogr>
 
@@ -108,9 +107,9 @@
          <creation/>
 
          <textDesc n="poem">
-            
+
             <channel mode="w">print</channel>
-            
+
             <constitution type="single">single poem</constitution>
             <derivation type="original"/>
             <domain/>
@@ -119,24 +118,24 @@
             <preparedness type="revised"/>
             <purpose type="express"/>
             <purpose type="entertain" degree="medium"/>
-            
+
          </textDesc>
 
          <settingDesc>
 
             <setting>
                <name type="tgn" key="7011781">London, England</name>
-               
-              
+
+
                <time from="1914" to="1925">Early 20th Century</time>
-               
+
             </setting>
 
          </settingDesc>
       </profileDesc>
 
       <encodingDesc>
-         
+
          <projectDesc>
             <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
                project, which provides an accessible, reliable, curated, and marked-up selection of
@@ -193,29 +192,35 @@
 
       <revisionDesc>
          <change when="2022-12-10" who="editors.xml#GG">Initial markup</change>
-         <change when="2022-12-16" who="editors.xml#TH">Additional and corrected markup, header info</change>
+         <change when="2022-12-16" who="editors.xml#TH">Additional and corrected markup, header
+            info</change>
       </revisionDesc>
 
    </teiHeader>
 
-   
+
 
    <text>
 
       <front>
          <titlePage>
             <pb n="[TP]" facs="pageImages/wasteland01elio_Page_09.jpg"/>
-            
+
             <titlePart>THE WASTE LAND<lb/></titlePart>
             <titlePart>BY<lb/> T. S. ELIOT<lb/></titlePart>
-            
+
             <epigraph>
                <quote>
                   <ref target="epigraph_" corresp="epigraph"><lg>
-                     <l>"Nam Sibyllam quidem Cumis ego ipse oculis meis</l>
-                     <l>vidi in ampulla pendere, et cum illi pueri dicerent:</l>
-                     <l>Σίβυλλα τί θέλεις; respondebat illa: ἀποθανεῖν θέλω."</l>
-                  </lg></ref><note xml:id="epigraph" target="epigraph_" resp="editors.xml#TH" type="editorial">This is a quote from the first-century Roman prose work <hi rend="italic">Satyricon</hi> (c.54-68) believed to be by Gaius Petronius (27-66CE). Eliot translated the epigraph as follows: "I saw with my own eyes the Sibyl at Cumae hanging in a cage, and when the boys said to her: 'Sibyl, what do you want?' she answered: 'I want to die.'"</note>
+                        <l>"Nam Sibyllam quidem Cumis ego ipse oculis meis</l>
+                        <l>vidi in ampulla pendere, et cum illi pueri dicerent:</l>
+                        <l>Σίβυλλα τί θέλεις; respondebat illa: ἀποθανεῖν θέλω."</l>
+                     </lg></ref><note xml:id="epigraph" target="epigraph_" resp="editors.xml#TH"
+                     type="editorial">This is a quote from the first-century Roman prose work <hi
+                        rend="italic">Satyricon</hi> (c.54-68) believed to be by Gaius Petronius
+                     (27-66CE). Eliot translated the epigraph as follows: "I saw with my own eyes
+                     the Sibyl at Cumae hanging in a cage, and when the boys said to her: 'Sibyl,
+                     what do you want?' she answered: 'I want to die.'"</note>
                </quote>
 
             </epigraph>
@@ -224,28 +229,78 @@
          </titlePage>
       </front>
       <body>
-         
+
          <div type="poem">
-            
+
             <pb n="9" facs="pageImages/wasteland01elio_Page_13.jpg"/>
 
 
             <div type="canto" n="1">
                <head type="sub">I. THE BURIAL OF THE DEAD</head>
                <lg>
-                  <l n="1">APRIL is the cruellest month, breeding</l>
+                  <l n="1"><ref target="_Chaucer" corresp="Chaucer">APRIL is the cruellest
+                        month</ref>, breeding</l>
+                  <note xml:id="Chaucer" target="_Chaucer" type="editorial" resp="editors.xml#TH"
+                        >The first line of <hi rend="italic">The Waste Land</hi> alludes to the
+                        General Prologue of Geoffrey Chaucer's <hi rend="italic">Canterbury
+                           Tales</hi>, which opens with a "description of Spring characteristic of
+                        dream visions of secular love" (<ref
+                           target="https://chaucer.fas.harvard.edu/pages/general-prologue"
+                           >Harvard</ref>). Chaucer's poem begins, in modern English, as follows: <quote><lg>
+                              <l>When April with its sweet-smelling showers</l>
+
+                              <l>THas pierced the drought of March to the root,</l>
+
+                              <l>And bathed every vein (of the plants) in such liquid</l>
+
+                              <l>By which power the flower is created;</l>
+
+                              <l>When the West Wind also with its sweet breath</l>
+
+                              <l>In every wood and field has breathed life into</l>
+
+                              <l>The tender new leaves, and the young sun</l>
+
+                              <l>Has run half its course in Aries,</l>
+
+                              <l>And small fowls make melody,</l>
+
+                              <l>Those that sleep all the night with open eyes</l>
+
+                              <l>(So Nature incites them in their hearts),</l>
+
+                              <l>Then folk long to go on pilgrimages,</l>
+
+                              <l>And professional pilgrims to seek foreign shores,</l>
+
+                              <l>To distant shrines, known in various lands.... (<ref
+                           target="https://chaucer.fas.harvard.edu/pages/general-prologue-0">General
+                                 Prologue, 1-14</ref>)</l>
+                           </lg></quote>You might consider how Eliot's version compares to
+                        this source text.</note>
                   <l n="2">Lilacs out of the dead land, mixing</l>
                   <l n="3">Memory and desire, stirring</l>
                   <l n="4">Dull roots with spring rain.</l>
                   <l n="5">Winter kept us warm, covering</l>
                   <l n="6">Earth in forgetful snow, feeding</l>
                   <l n="7">A little life with dried tubers.</l>
-                  <l n="8">Summer surprised us, coming over the <placeName key="7004706" type="tgn">Starnbergersee</placeName></l>
+                  <l n="8">Summer surprised us, coming over the <placeName key="7004706" type="tgn"
+                        >Starnbergersee</placeName></l>
                   <l n="9">With a shower of rain; we stopped in the colonnade,</l>
                   <l n="10">And went on in sunlight, into the Hofgarten, </l>
                   <pb n="10" facs="pageImages/wasteland01elio_Page_14.jpg"/>
                   <l n="11">And drank coffee, and talked for an hour.</l>
-                  <l n="12">Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.</l>
+                  <l n="12"><ref target="_identity" corresp="identity">Bin gar keine Russin, stamm’
+                        aus Litauen, echt deutsch.</ref></l>
+                  <note xml:id="identity" target="_identity" type="editorial" resp="critic.xml#ZO">
+                     In this passage, the female speaker's statement, "I am not Russian at all; I
+                        come from Lithuania, really German," introduces the theme of fragmentation
+                        and displacement that permeates the poem. The speaker's identity is shaped
+                        by multiple cultural influences, resulting in a fragmented sense of self.
+                        She does not fully identify as Russian, Lithuanian, or German, but as a
+                        hybrid of all three. This complex identity further highlights the themes of
+                        displacement and cultural conflict throughout the work.
+                  </note>
                   <l n="13">And when we were children, staying at the archduke’s,</l>
                   <l n="14">My cousin’s, he took me out on a sled,</l>
                   <l n="15">And I was frightened. He said, Marie,</l>
@@ -270,15 +325,37 @@
                   <l n="30">I will show you fear in a handful of dust.</l>
                </lg>
                <lg>
-                  <l n="31" rend="indent3"><hi rend="italic"><ref target="Wagner_" corresp="Wagner">Frisch</ref> weht der Wind</hi></l>
+                  <l n="31" rend="indent3"><hi rend="italic"><ref target="Wagner_" corresp="Wagner"
+                           >Frisch</ref> weht der Wind</hi></l>
                   <l n="32" rend="indent3"><hi rend="italic">Der-Heimat zu</hi></l>
                   <l n="33" rend="indent3"><hi rend="italic">Mein Irisch Kind,</hi></l>
                   <l n="34" rend="indent3"><hi rend="italic">Wo weilest du?</hi></l>
                </lg>
-               <note xml:id="Wagner" target="Wagner_" type="editorial" resp="editors.xml#TH"><graphic url="notes/John_william_waterhouse_tristan_and_isolde_with_the_potion.jpeg"/>These lines are quoted from Richard Wagner's <hi rend="italic">Tristan und Isolde</hi> (1865), a German opera based on a 12th century chivalric tragic poem <hi rend="italic">Tristan and Iseult</hi>. There are multiple different versions of the story, but at root, it is a Celtic legend about tragic love; the knight Tristan has been tasked with accompanying the Irish maiden Iseult to be married to his uncle, the King of Cornwall. On the way, Tristan and Iseult fall deeply in love, which causes many tempestuous problems. The story became very popular in the ninteenth and early twentieth centuries, especially among the Pre-Raphaelites, a group of artists and writers influenced by Romanticism who sought inspiration in Italian Renaissance art and medieval courtly themes. The image included here, by the Pre-Raphaelite painter John William Waterhouse, is <hi rend="italic">Tristan and Isolde with the Potion</hi> (1916), via <ref target="https://commons.wikimedia.org/wiki/File:John_william_waterhouse_tristan_and_isolde_with_the_potion.jpg">Wikimedia Commons</ref>.  Tristan and Iseult are on the ship heading for Cornwall and Iseult's marriage; they are drinking a love potion. The lines are from the first act of <hi rend="italic">Tristan und Isolde</hi>, and are sung by an anonymous sailor about his lover, left behind in Ireland. Translated, the lines read "Fresh blows the wind / 
-                  homeward: /
-                  my Irish maid, /
-                  where do you linger?" A later line (42, below) from the same opera, "Empty and desolate is the sea," sandwiches Eliot's description of the first meeting between the "hyacinth girl" (36) and her lover, who remembers being struck by her and feeling "neither / Living nor dead" (39-40).  (</note>
+               <note xml:id="Wagner" target="Wagner_" type="editorial" resp="editors.xml#TH"
+                     ><graphic
+                     url="notes/John_william_waterhouse_tristan_and_isolde_with_the_potion.jpeg"
+                  />These lines are quoted from Richard Wagner's <hi rend="italic">Tristan und
+                     Isolde</hi> (1865), a German opera based on a 12th century chivalric tragic
+                  poem <hi rend="italic">Tristan and Iseult</hi>. There are multiple different
+                  versions of the story, but at root, it is a Celtic legend about tragic love; the
+                  knight Tristan has been tasked with accompanying the Irish maiden Iseult to be
+                  married to his uncle, the King of Cornwall. On the way, Tristan and Iseult fall
+                  deeply in love, which causes many tempestuous problems. The story became very
+                  popular in the ninteenth and early twentieth centuries, especially among the
+                  Pre-Raphaelites, a group of artists and writers influenced by Romanticism who
+                  sought inspiration in Italian Renaissance art and medieval courtly themes. The
+                  image included here, by the Pre-Raphaelite painter John William Waterhouse, is <hi
+                     rend="italic">Tristan and Isolde with the Potion</hi> (1916), via <ref
+                     target="https://commons.wikimedia.org/wiki/File:John_william_waterhouse_tristan_and_isolde_with_the_potion.jpg"
+                     >Wikimedia Commons</ref>. Tristan and Iseult are on the ship heading for
+                  Cornwall and Iseult's marriage; they are drinking a love potion. The lines are
+                  from the first act of <hi rend="italic">Tristan und Isolde</hi>, and are sung by
+                  an anonymous sailor about his lover, left behind in Ireland. Translated, the lines
+                  read "Fresh blows the wind / homeward: / my Irish maid, / where do you linger?" A
+                  later line (42, below) from the same opera, "Empty and desolate is the sea,"
+                  sandwiches Eliot's description of the first meeting between the "hyacinth girl"
+                  (36) and her lover, who remembers being struck by her and feeling "neither /
+                  Living nor dead" (39-40). (</note>
                <lg>
                   <l n="35">“You gave me hyacinths first a year ago;</l>
                   <l n="36">“They called me the hyacinth girl."</l>
@@ -291,10 +368,27 @@
                   <l n="42">Oed’ und leer das Meer.</l>
                </lg>
                <lg>
-                  <l n="43">Madame Sosostris, famous clairvoyante,</l>
+                  <l n="43">Madame Sosostris, famous <ref target="_clairvoyant"
+                        corresp="clairvoyant">clairvoyante</ref>,</l>
+                  <note xml:id="clairvoyant" target="_clairvoyant" type="gloss"
+                     resp="editors.xml#CP">
+                     This noun comes from the word "clairvoyance", which in the French means
+                        clear-sighted. A clairvoyant is what we would now call a psychic, someone
+                        who can see things that are not physically there. Madame Sosostris is a
+                        fortune teller who has a reputation as "the wisest woman in Europe." The -e
+                        is added to the word clairvoyant to make it feminine in the French (OED).
+                  </note>
                   <l n="44">Had a bad cold, nevertheless</l>
                   <l n="45">Is known to be the wisest woman in Europe,</l>
-                  <l n="46">With a wicked <ref target="cards_" corresp="cards">pack of cards</ref><note xml:id="cards" target="cards_" type="editorial" resp="editors.xml#TH">A character in Eliot's poem visits a famous fortune teller, and the following lines describe the tarot cards she received at a reading. According to Elizabeth DeBold of the <ref target="https://collation.folger.edu/2021/02/fortunes-fools-early-tarot-cards/">Folger Shakespeare Library</ref>, tarot originated in 14th-century Egypt, and traveled to Europe during the Renaissance.</note>. Here, said she,</l>
+                  <l n="46">With a wicked <ref target="cards_" corresp="cards">pack of
+                        cards</ref><note xml:id="cards" target="cards_" type="editorial"
+                        resp="editors.xml#TH">A character in Eliot's poem visits a famous fortune
+                        teller, and the following lines describe the tarot cards she received at a
+                        reading. According to Elizabeth DeBold of the <ref
+                           target="https://collation.folger.edu/2021/02/fortunes-fools-early-tarot-cards/"
+                           >Folger Shakespeare Library</ref>, tarot originated in 14th-century
+                        Egypt, and traveled to Europe during the Renaissance.</note>. Here, said
+                     she,</l>
                   <l n="47">Is your card, the drowned Phoenician Sailor,</l>
                   <l n="48">(Those are pearls that were his eyes. Look!)</l>
                   <l n="49">Here is Belladonna, the Lady of the Rocks,</l>
@@ -304,7 +398,13 @@
                   <l n="52">And here is the one-eyed merchant, and this card,</l>
                   <l n="53">Which is blank, is something he carries on his back,</l>
                   <l n="54">Which I am forbidden to see. I do not find</l>
-                  <l n="55">The Hanged Man. Fear death by water.</l>
+                  <l n="55">The Hanged Man. Fear <ref target="_water" corresp="water">death by
+                        water</ref>.</l>
+                  <note xml:id="water" target="_water" type="editorial" resp="editors.xml#CP">
+                     Water is a prevalent motif throughout <hi rend="italic">The Waste
+                        Land</hi>. Water is often associated with regeneration/rebirth, but here and
+                        elsewhere, it is associated with death. 
+                  </note>
                   <l n="56">I see crowds of people, walking round in a ring.</l>
                   <l n="57">Thank you. If you see dear Mrs. Equitone,</l>
                   <l n="58">Tell her I bring the horoscope myself:</l>
@@ -314,23 +414,47 @@
                   <l n="60">Unreal City,</l>
                   <l n="61">Under the brown fog of a winter dawn,</l>
                   <pb n="15" facs="pageImages/wasteland01elio_Page_18.jpg"/>
-                  <l n="62">A crowd flowed over <placeName type="tgn" key="7011781">London</placeName> Bridge, so many,</l>
+                  <l n="62">A crowd flowed over <placeName type="tgn" key="7011781"
+                        >London</placeName> Bridge, so many,</l>
                   <l n="63">I had not thought death had undone so many.</l>
                   <l n="64">Sighs, short and infrequent, were exhaled,</l>
                   <l n="65">And each man fixed his eyes before his feet.</l>
                   <l n="66">Flowed up the hill and down King William Street,</l>
-                  <l n="67">To where <ref target="woolnoth_" corresp="woolnoth">Saint Mary Woolnoth</ref><note xml:id="woolnoth" target="woolnoth_" type="editorial" resp="editors.xml#TH"><graphic url="notes/St_Mary_Woolnoth_Church_LCCN2014719561.jpg"/>Saint Mary Woolnoth is an Anglican church in London, first built in the 12th century, then rebuilt on several occasions. The photograph included here, from about 1900, originally from the Library of Congress, shows the church in its modern form, designed by Nicholas Hawksmoore and opened in 1727. This is likely very close to what Eliot would have seen. It is possible that the site had been a place of worship for 2000 years (<ref target="https://en.wikipedia.org/wiki/St_Mary_Woolnoth">Wikipedia</ref>). </note> kept the hours</l>
+                  <l n="67">To where <ref target="woolnoth_" corresp="woolnoth">Saint Mary
+                        Woolnoth</ref><note xml:id="woolnoth" target="woolnoth_" type="editorial"
+                        resp="editors.xml#TH"><graphic
+                           url="notes/St_Mary_Woolnoth_Church_LCCN2014719561.jpg"/>Saint Mary
+                        Woolnoth is an Anglican church in London, first built in the 12th century,
+                        then rebuilt on several occasions. The photograph included here, from about
+                        1900, originally from the Library of Congress, shows the church in its
+                        modern form, designed by Nicholas Hawksmoore and opened in 1727. This is
+                        likely very close to what Eliot would have seen. It is possible that the
+                        site had been a place of worship for 2000 years (<ref
+                           target="https://en.wikipedia.org/wiki/St_Mary_Woolnoth">Wikipedia</ref>).
+                     </note> kept the hours</l>
                   <l n="68">With a dead sound on the final stroke of nine.</l>
                   <l n="69">There I saw one I knew, and stopped him, crying: “Stetson!</l>
-                  <l n="70">“You who were with me in the ships at <ref target="mylae_" corresp="mylae">Mylae</ref><note xml:id="mylae" target="mylae_" type="editorial" resp="editors.xml#TH"><ref target="https://en.wikipedia.org/wiki/Battle_of_Mylae">The Battle of Mylae</ref>, a naval battle won in 260BCE by Roman naval forces.</note>!</l>
+                  <l n="70">“You who were with me in the ships at <ref target="mylae_"
+                        corresp="mylae">Mylae</ref><note xml:id="mylae" target="mylae_"
+                        type="editorial" resp="editors.xml#TH"><ref
+                           target="https://en.wikipedia.org/wiki/Battle_of_Mylae">The Battle of
+                           Mylae</ref>, a naval battle won in 260BCE by Roman naval
+                     forces.</note>!</l>
                   <pb n="17" facs="pageImages/wasteland01elio_Page_21.jpg"/>
                   <l n="71">“That corpse you planted last year in your garden,</l>
                   <l n="72">“Has it begun to sprout? Will it bloom this year?</l>
                   <l n="73">“Or has the sudden frost disturbed its bed?</l>
                   <l n="74">“O keep the Dog far hence, that’s friend to men,</l>
                   <l n="75">“Or with his nails he’ll dig it up again!</l>
-                  <l n="76">“<hi rend="italic"><ref target="baudelaire_" corresp="baudelaire">You! hypocrite lecteur!—mon semblable,—mon
-                     frère!</ref><note xml:id="baudelaire" target="baudelaire_" type="editorial" resp="editors.xml#TH">This is an allusion to the last line of Charles Baudelaire's introductory poem "Au Lecteur [To the Reader]" from his collection <hi rend="italic">Fleurs du mal [Flowers of Evil</hi> (1857-1868). The line reads, "Hypocritical reader, --my twin, --my brother!" You can read Baudelaire's poems <ref target="https://fleursdumal.org/">online</ref>.</note></hi>"</l>
+                  <l n="76">“<hi rend="italic"><ref target="baudelaire_" corresp="baudelaire">You!
+                           hypocrite lecteur!—mon semblable,—mon frère!</ref><note
+                           xml:id="baudelaire" target="baudelaire_" type="editorial"
+                           resp="editors.xml#TH">This is an allusion to the last line of Charles
+                           Baudelaire's introductory poem "Au Lecteur [To the Reader]" from his
+                           collection <hi rend="italic">Fleurs du mal [Flowers of Evil</hi>
+                           (1857-1868). The line reads, "Hypocritical reader, --my twin, --my
+                           brother!" You can read Baudelaire's poems <ref
+                              target="https://fleursdumal.org/">online</ref>.</note></hi>"</l>
                </lg>
 
             </div>
@@ -342,7 +466,24 @@
                   <l n="77">The Chair she sat in, like a burnished throne,</l>
                   <l n="78">Glowed on the marble, where the glass</l>
                   <l n="79">Held up by standards wrought with fruited vines</l>
-                  <l n="80">From which a golden Cupidon peeped out</l>
+                  <l n="80">From which a golden <ref target="_cupidon" corresp="cupidon"
+                        >Cupidon</ref> peeped out</l>
+                  <note xml:id="cupidon" target="_cupidon" type="editorial" resp="critic.xml#ZO">
+                     <graphic url="notes/Eros_bow_Musei_Capitolini_MC410.jpeg"/>The scene
+                        described by the speaker features banners adorned with fruit-bearing vines
+                        and a standard depicting a golden "Cupidon," an alternate name for the Roman
+                        god of love, Cupid. The use of Cupidon in this context evokes themes of
+                        desire, fertility, and the pursuit of romantic love. The image of Cupidon
+                        peeking out from behind the banner may also imply a sense of voyeurism or
+                        hidden desire, contributing to an undercurrent of sexual tension in the
+                        scene. This lush, sensual imagery is suggestive of the speaker's heightened
+                        sensibility, and highlights the poem's themes of passion and desire. The
+                        image included here, via <ref
+                           target="https://en.wikipedia.org/wiki/Cupid#/media/File:Eros_bow_Musei_Capitolini_MC410.jpg"
+                           >Wikipedia</ref>, shows a Roman copy of an original Greek sculpture of
+                           <hi rend="italic">Eros Stringing His Bow</hi>.
+                  </note>
+
                   <l n="81">(Another hid his eyes behind his wing)</l>
                   <l n="82">Doubled the flames of sevenbranched candelabra</l>
                   <l n="83">Reflecting light upon the table as</l>
@@ -363,7 +504,20 @@
                   <pb n="19" facs="pageImages/wasteland01elio_Page_23.jpg"/>
                   <l n="97">Above the antique mantel was displayed</l>
                   <l n="98">As though a window gave upon the sylvan scene</l>
-                  <l n="99">The change of <ref target="philomel_" corresp="philomel">Philomel</ref><note xml:id="philomel" target="philomel_" type="editorial" resp="editors.xml#TH">An allusion to the ancient Greek story of Philomela, which was recounted in Ovid's <hi rend="italic"><ref target="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0028">Metamorphoses</ref> 6.412-674</hi>. In the story, Tereus, King of Thrace, marries the Athenian Procne. Procne asks her husband to bring her sister, Philomela, to visit her in Thrace. Tereus rapes Philomela, and to keep her from telling her sister of the assault, he cuts out her tongue. Philomela communicates her story to Procne by weaving a tapestry showing the events. The two sisters avenge the abuse by killing Itys, Procne and Tereus' son, and baking him into a pie which Tereus eats. The women flee, pursued by Tereus; the gods transform the three into birds--Philomela becomes the sweet-singing nightingale. </note>, by the barbarous king</l>
+                  <l n="99">The change of <ref target="philomel_" corresp="philomel"
+                        >Philomel</ref><note xml:id="philomel" target="philomel_" type="editorial"
+                        resp="editors.xml#TH">An allusion to the ancient Greek story of Philomela,
+                        which was recounted in Ovid's <hi rend="italic"><ref
+                              target="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0028"
+                              >Metamorphoses</ref> 6.412-674</hi>. In the story, Tereus, King of
+                        Thrace, marries the Athenian Procne. Procne asks her husband to bring her
+                        sister, Philomela, to visit her in Thrace. Tereus rapes Philomela, and to
+                        keep her from telling her sister of the assault, he cuts out her tongue.
+                        Philomela communicates her story to Procne by weaving a tapestry showing the
+                        events. The two sisters avenge the abuse by killing Itys, Procne and Tereus'
+                        son, and baking him into a pie which Tereus eats. The women flee, pursued by
+                        Tereus; the gods transform the three into birds--Philomela becomes the
+                        sweet-singing nightingale. </note>, by the barbarous king</l>
                   <l n="100">So rudely forced; yet there the nightingale</l>
                   <l n="101">Filled all the desert with inviolable voice</l>
                   <l n="102">And still she cried, and still the world pursues,</l>
@@ -400,11 +554,27 @@
                <lg>
 
                   <l n="124">I remember</l>
-                  <l n="125"><ref target="pearls_" corresp="pearls">Those are pearls that were his eyes.</ref><note xml:id="pearls" target="pearls_" type="editorial" resp="editors.xml#TH">Throughout <hi rend="italic">The Waste Land</hi>, Eliot refers to Shakespeare's <hi rend="italic"><ref target="https://anthology.lib.virginia.edu/work/Shakespeare/shakespeare-tempest">The Tempest</ref></hi>. This is an allusion to I.ii.394-398, when Ariel sings about a drowned man undergoing "a sea-change / Into something rich and strange." The words suggest the fate of Ferdinand's father, whom he believes lost at sea.</note></l>
+                  <l n="125"><ref target="pearls_" corresp="pearls">Those are pearls that were his
+                        eyes.</ref><note xml:id="pearls" target="pearls_" type="editorial"
+                        resp="editors.xml#TH">Throughout <hi rend="italic">The Waste Land</hi>,
+                        Eliot refers to Shakespeare's <hi rend="italic"><ref
+                              target="https://anthology.lib.virginia.edu/work/Shakespeare/shakespeare-tempest"
+                              >The Tempest</ref></hi>. This is an allusion to I.ii.394-398, when
+                        Ariel sings about a drowned man undergoing "a sea-change / Into something
+                        rich and strange." The words suggest the fate of Ferdinand's father, whom he
+                        believes lost at sea.</note></l>
                   <l n="126">“Are you alive, or not? Is there nothing in your head?"</l>
                </lg>
                <l n="127">But</l>
-               <l n="128">O O O O <ref target="rag_" corresp="rag">that Shakespeherian Rag</ref>—</l><note xml:id="rag" target="rag_" type="editorial" resp="editors.xml#TH">Though Eliot has made changes to the language, <hi rend="italic">That Shakespearian Rag</hi> is a ragtime tune from 1912 (Parker, <ref target="https://theworld.com/~raparker/exploring/thewasteland/exsongs.html#Shakesperian_Rag">"Songs in T.S. Eliot's <hi rend="italic">The Waste Land</hi>"</ref>). <ref target="https://www.britannica.com/art/ragtime">Ragtime</ref> was a projenitor of jazz, the rhythms of which influenced Eliot's style. </note>
+               <l n="128">O O O O <ref target="rag_" corresp="rag">that Shakespeherian
+                  Rag</ref>—</l>
+               <note xml:id="rag" target="rag_" type="editorial" resp="editors.xml#TH">Though Eliot
+                  has made changes to the language, <hi rend="italic">That Shakespearian Rag</hi> is
+                  a ragtime tune from 1912 (Parker, <ref
+                     target="https://theworld.com/~raparker/exploring/thewasteland/exsongs.html#Shakesperian_Rag"
+                     >"Songs in T.S. Eliot's <hi rend="italic">The Waste Land</hi>"</ref>). <ref
+                     target="https://www.britannica.com/art/ragtime">Ragtime</ref> was a projenitor
+                  of jazz, the rhythms of which influenced Eliot's style. </note>
                <l n="129">It’s so elegant</l>
                <l n="130">So intelligent</l>
                <pb n="22" facs="pageImages/wasteland01elio_Page_26.jpg"/>
@@ -417,10 +587,16 @@
                <l n="137">And we shall play a game of chess,</l>
                <l n="138">Pressing lidless eyes and waiting for a knock upon the door.</l>
 
-               <l n="139">When Lil’s husband got <ref target="demobbed_" corresp="demobbed">demobbed</ref><note xml:id="demobbed" target="demobbed_" type="editorial" resp="editors.xml#TH">Colloquial British expression for "demobilized," specifically, released from military service. Lil's husband likely served in World War I (1914-1918).</note>, I said—</l>
+               <l n="139">When Lil’s husband got <ref target="demobbed_" corresp="demobbed"
+                     >demobbed</ref><note xml:id="demobbed" target="demobbed_" type="editorial"
+                     resp="editors.xml#TH">Colloquial British expression for "demobilized,"
+                     specifically, released from military service. Lil's husband likely served in
+                     World War I (1914-1918).</note>, I said—</l>
                <pb n="23" facs="pageImages/wasteland01elio_Page_27.jpg"/>
                <l n="140"> I didn’t mince my words, I said to her myself,</l>
-               <l n="141"><ref target="hurry_" corresp="hurry">HURRY UP PLEASE IT’S TIME</ref><note xml:id="hurry" target="hurry_" type="editorial" resp="editors.xml#TH">The barkeep is informing the patrons of closing time.</note></l>
+               <l n="141"><ref target="hurry_" corresp="hurry">HURRY UP PLEASE IT’S TIME</ref><note
+                     xml:id="hurry" target="hurry_" type="editorial" resp="editors.xml#TH">The
+                     barkeep is informing the patrons of closing time.</note></l>
                <l n="142">Now Albert’s coming back, make yourself a bit smart.</l>
                <l n="143">He’ll want to know what you done with that money he gave you</l>
                <l n="144">To get yourself some teeth. He did, I was there.</l>
@@ -440,7 +616,10 @@
                <l n="157">(And her only thirty-one.)</l>
                <l n="158">I can’t help it, she said, pulling a long face,</l>
                <pb n="25" facs="pageImages/wasteland01elio_Page_29.jpg"/>
-               <l n="159">It’s them <ref target="pills_" corresp="pills">pills</ref><note xml:id="pills" target="pills_" type="gloss" resp="editors.xml#TH">The speaker is referring to medication that induces abortion.</note> I took, to bring it off, she said.</l>
+               <l n="159">It’s them <ref target="pills_" corresp="pills">pills</ref><note
+                     xml:id="pills" target="pills_" type="gloss" resp="editors.xml#TH">The speaker
+                     is referring to medication that induces abortion.</note> I took, to bring it
+                  off, she said.</l>
                <l n="160">(She’s had five already, and nearly died of young George.)</l>
                <l n="161">The chemist said it would be all right, but I’ve never been the same.</l>
                <l n="162">You are a proper fool, I said.</l>
@@ -464,7 +643,8 @@
                   <l n="173">THE river’s tent is broken: the last fingers of leaf</l>
                   <l n="174">Clutch and sink into the wet bank. The wind</l>
                   <l n="175">Crosses the brown land, unheard. The nymphs are departed.</l>
-                  <l n="176">Sweet <placeName type="tgn" key="7011913">Thames</placeName>, run softly, till I end my song.</l>
+                  <l n="176">Sweet <placeName type="tgn" key="7011913">Thames</placeName>, run
+                     softly, till I end my song.</l>
                   <l n="177">The river bears no empty bottles, sandwich papers,</l>
                   <l n="178">Silk handkerchiefs, cardboard boxes, cigarette ends</l>
                   <l n="179">Or other testimony of summer nights. The nymphs are departed.</l>
@@ -472,7 +652,14 @@
                   <l n="180">And their friends, the loitering heirs of city directors;</l>
                   <l n="181">Departed, have left no addresses.</l>
                   <l n="182">By the waters of Leman I sat down and wept . . .</l>
-                  <l n="183"><ref target="spenser_" corresp="spenser">Sweet Thames, run softly till I end my song,</ref><note xml:id="spenser" target="spenser_" type="gloss" resp="editors.xml#TH">An allusion to Edmund Spenser's poem <ref target="https://www.poetryfoundation.org/poems/45217/prothalamion-56d224a0e2feb">"Prothalamion"</ref> (1596), which celebrates the marriage of two "nymphs." Nymphs are female water spirits of classical myth, but the word also suggests young women in general. A prothalamion is a type of poem that celebrates a coming marriage.</note></l>
+                  <l n="183"><ref target="spenser_" corresp="spenser">Sweet Thames, run softly till
+                        I end my song,</ref><note xml:id="spenser" target="spenser_" type="gloss"
+                        resp="editors.xml#TH">An allusion to Edmund Spenser's poem <ref
+                           target="https://www.poetryfoundation.org/poems/45217/prothalamion-56d224a0e2feb"
+                           >"Prothalamion"</ref> (1596), which celebrates the marriage of two
+                        "nymphs." Nymphs are female water spirits of classical myth, but the word
+                        also suggests young women in general. A prothalamion is a type of poem that
+                        celebrates a coming marriage.</note></l>
                   <l n="184">Sweet Thames, run softly, for I speak not loud or long.</l>
                   <l n="185">But at my back in a cold blast I hear</l>
                   <l n="186">The rattle of the bones, and chuckle spread from ear to ear.</l>
@@ -494,9 +681,31 @@
                   <l n="199">O the moon shone bright on Mrs. Porter</l>
                   <l n="200">And on her daughter</l>
                   <pb n="30" facs="pageImages/wasteland01elio_Page_34.jpg"/>
-                  <l n="201">They wash their feet in soda water</l>
-                  <l n="202"><hi rend="italic">Et O ces voix d’enfants, chantant dans la
-                        coupole!</hi></l>
+                  <l n="201">They wash their feet in soda water</l> 
+                  <l n="202"><hi rend="italic"><ref target="_Verlaine" corresp="Verlaine">Et O ces
+                           voix d’enfants, chantant dans la coupole!</ref></hi></l>
+                  <note xml:id="Verlaine" target="_Verlaine" type="editorial" resp="editors.xml#ZO">
+                     In this line, the speaker directly
+                        alludes to the last line of the French poet Paul Verlaine’s sonnet
+                        "Parsifal": "And, O those children's voices singing in the dome!" The sonnet
+                        is a meditation on art and the power of music; it reflects the poet's
+                        response to hearing <ref target="https://en.wikipedia.org/wiki/Parsifal"
+                           >Richard Wagner's opera <hi rend="italic">Parsifal</hi></ref>, which is a
+                        major intertext to Eliot's poem. The use of this allusion adds an extra
+                        layer of meaning to the poem. The inclusion of French in the midst of an
+                        English poem could also suggest a sense of cultural dislocation or
+                        separation. Additionally, the image of children's voices singing in a dome
+                        may represent a symbol of purity and innocence that contrasts with the
+                        themes of corruption and decay present elsewhere in the poem. To learn more
+                        about Verlaine, see <ref
+                           target="https://www.poetryfoundation.org/poets/paul-verlaine">the Poetry
+                           Foundation</ref>. To learn more about Wagner's role in "The Waste Land,"
+                        see this scholarly essay by Philip Waldron, <ref
+                           target="https://www.jstor.org/stable/3831390">"The Music of Poetry:
+                           Wagner in <hi rend="italic">The Waste Land</hi>."</ref>. You can read
+                        Verlaine's poem in the original French and in English translation <ref
+                           target="https://www.monsalvat.no/verlaine.htm">here</ref>.
+                  </note>
                </lg>
 
                <lg>
@@ -509,7 +718,8 @@
                <lg>
                   <l n="207">Unreal City</l>
                   <l n="208">Under the brown fog of a winter noon</l>
-                  <l n="209">Mr. Eugenides, the <placeName type="tgn" key="7002543" cert="medium">Smyrna</placeName> merchant</l>
+                  <l n="209">Mr. Eugenides, the <placeName type="tgn" key="7002543" cert="medium"
+                        >Smyrna</placeName> merchant</l>
                   <l n="210">Unshaven, with a pocket full of currants</l>
                   <l n="211">C.i.f. London: documents at sight,</l>
                   <l n="212">Asked me in demotic French</l>
@@ -521,7 +731,12 @@
                   <l n="215">At the violet hour, when the eyes and back</l>
                   <l n="216">Turn upward from the desk, when the human engine waits</l>
                   <l n="217">Like a taxi throbbing waiting,</l>
-                  <l n="218">I <ref>Tiresias</ref><note>In Greek mythology, Tiresias is a blind prophet who also lived as both a man and a woman. He was instrumental in the action of Sophocles' Oedipus plays, and he also appeared in Homer's <hi rend="italic">Odyssey</hi>.</note>, though blind, throbbing between two lives,</l>
+                  <l n="218">I <ref target="_tiresias" corresp="tiresias">Tiresias</ref><note
+                        xml:id="tiresias" target="_tiresias" resp="editors.xml#TH" type="editorial"
+                        >In Greek mythology, Tiresias is a blind prophet who also lived as both a
+                        man and a woman. He was instrumental in the action of Sophocles' Oedipus
+                        plays, and he also appeared in Homer's <hi rend="italic"
+                        >Odyssey</hi>.</note>, though blind, throbbing between two lives,</l>
                   <l n="219">Old man with wrinkled female breasts, can see</l>
                   <l n="200">At the violet hour, the evening hour that strives</l>
                   <l n="221">Homeward, and brings the sailor home from sea,</l>
@@ -535,10 +750,18 @@
                   <l n="228">I Tiresias, old man with wrinkled dugs</l>
                   <l n="229">Perceived the scene, and foretold the rest—</l>
                   <l n="230">I too awaited the expected guest.</l>
-                  <l n="231">He, the young man carbuncular, arrives,</l>
+                  <l n="231">He, the young man <ref target="_carbuncular" corresp="carbuncular"
+                        >carbuncular</ref>, arrives,</l>
+                  <note xml:id="carbuncular" target="_carbuncular" type="gloss"
+                     resp="editors.xml#CP">
+                     Used here as an adjective, "carbuncular" comes from the word "carbuncle,"
+                        which is an lesion on the skin that is irritated and filled with pus, and
+                        overall is unpleasant to look at (OED n3). 
+                  </note>
                   <l n="232">A small house agent’s clerk, with one bold stare,</l>
                   <l n="233">One of the low on whom assurance sits</l>
-                  <l n="234">As a silk hat on a <placeName type="tgn" key="7010443">Bradford</placeName> millionaire.</l>
+                  <l n="234">As a silk hat on a <placeName type="tgn" key="7010443"
+                        >Bradford</placeName> millionaire.</l>
                   <l n="235">The time is now propitious, as he guesses,</l>
                   <l n="236">The meal is ended, she is bored and tired,</l>
                   <pb n="33" facs="pageImages/wasteland01elio_Page_37.jpg"/>
@@ -550,7 +773,8 @@
                   <l n="242">And makes a welcome of indifference.</l>
                   <l n="243">(And I Tiresias have foresuffered all</l>
                   <l n="244">Enacted on this same divan or bed;</l>
-                  <l n="245">I who have sat by <placeName type="tgn" key="7029383">Thebes</placeName> below the wall</l>
+                  <l n="245">I who have sat by <placeName type="tgn" key="7029383"
+                        >Thebes</placeName> below the wall</l>
                   <l n="246">And walked among the lowest of the dead.)</l>
                   <l n="247">Bestows one final patronising kiss,</l>
                   <l n="248">And gropes his way, finding the stairs unlit . . .</l>
@@ -591,8 +815,10 @@
                   <l n="273">The barges wash</l>
                   <pb n="36" facs="pageImages/wasteland01elio_Page_40.jpg"/>
                   <l n="274">Drifting logs</l>
-                  <l n="275">Down <placeName type="tgn" key="7018915">Greenwich</placeName> reach</l>
-                  <l n="276">Past the <placeName type="tgn" key="1006968">Isle of Dogs</placeName>.</l>
+                  <l n="275">Down <placeName type="tgn" key="7018915">Greenwich</placeName>
+                     reach</l>
+                  <l n="276">Past the <placeName type="tgn" key="1006968">Isle of
+                     Dogs</placeName>.</l>
                   <l n="277" rend="indent3">Weialala leia</l>
                   <l n="278" rend="indent3">Wallala leialala</l>
                   <l n="279">Elizabeth and Leicester</l>
@@ -613,20 +839,36 @@
 
                <lg>
                   <l n="292">“Trams and dusty trees.</l>
-                  <l n="293"><placeName type="tgn" key="7462493">Highbury</placeName> bore me. <placeName type="tgn" key="7018903">Richmond</placeName> and <placeName type="tgn" key="4005652" cert="medium">Kew</placeName></l>
+                  <l n="293"><placeName type="tgn" key="7462493">Highbury</placeName> bore me.
+                        <placeName type="tgn" key="7018903">Richmond</placeName> and <placeName
+                        type="tgn" key="4005652" cert="medium">Kew</placeName></l>
                   <l n="294">Undid me. By Richmond I raised my knees</l>
                   <l n="295">Supine on the floor of a narrow canoe."</l>
                </lg>
 
                <lg>
-                  <l n="296">“My feet are at Moorgate, and my heart</l>
+                  <l n="296">“My feet are at <ref target="_Moorgate" corresp="Moorgate"
+                        >Moorgate</ref>, and my heart</l>
+                  <note xml:id="Moorgate" target="_Moorgate" type="editorial" resp="editors.xml#CP">
+                     <graphic url="notes/Moorgate_gate.jpeg"/>Dating back to the Medieval period,
+                        Moorgate was the last of the old gates to be built in the Roman defense wall
+                        that surrounded the fort of Londinium, now London. The original Roman walls
+                        were built 100-400 CE, but Moorgate was originally a secondary gate that was
+                        expanded in 1415. It led to the marshy Moorfields area in the north of
+                        London. It was demolished in 1762. To learn more about the <ref
+                           target="https://en.wikipedia.org/wiki/London_Wall">London Wall, see
+                           Wikipedia</ref>. The image here, also via <ref
+                           target="https://en.wikipedia.org/wiki/Moorgate">Wikipedia</ref>, shows an
+                        18th-century engraving depicting Moorgate before it was demolished. 
+                  </note>
+
                   <l n="297">Under my feet. After the event</l>
                   <l n="298">He wept. He promised ‘a new start’.</l>
                   <l n="299">I made no comment. What should I resent?"</l>
                   <l n="300">“On Margate Sands.</l>
                   <l n="301">I can connect</l>
                   <l n="302">Nothing with nothing.</l>
-                  <pb n="38" facs="pageImages/wasteland01elio_Page_42.jpg"/>    
+                  <pb n="38" facs="pageImages/wasteland01elio_Page_42.jpg"/>
                   <l n="303">The broken fingernails of dirty hands.</l>
                   <l n="304">My people humble people who expect</l>
                   <l n="305">Nothing."</l>
@@ -634,7 +876,24 @@
                </lg>
 
                <lg>
-                  <l n="307">To <placeName type="tgn" key="7016143">Carthage</placeName> then I came</l>
+                  <l n="307">To <placeName type="tgn" key="7016143"><ref target="_Carthage"
+                           corresp="Carthage">Carthage</ref></placeName> then I came</l>
+                  <note xml:id="Carthage" target="_Carthage" type="editorial" resp="editors.xml#ZO">
+                     <graphic url="notes/Carthage_National_Museum_representation_of_city.jpeg"
+                        />This is a reference to the ancient city of Carthage, which was located in
+                        what is now Tunisia. Carthage was a major center of trade and civilization
+                        in the ancient Mediterranean world, but it was destroyed by the Romans in
+                        the Punic Wars in the 2nd century BCE. The use of Carthage in the poem may
+                        suggest themes of destruction, decay, and the decline of civilization. The
+                        city of Carthage has been interpreted as a symbol of the failure and fall of
+                        human civilizations, which can serve as a warning for modern society. The
+                        image included in this annotation, <ref
+                           target="https://commons.wikimedia.org/wiki/File:Carthage_National_Museum_representation_of
+                           _city.jpg">via Wikimedia Commons</ref>, shows
+                        a representation of the ancient city from the Carthage National Museum in
+                        Tunisia.
+                  </note>
+
                </lg>
                <lg>
                   <l n="308">Burning burning burning burning</l>
@@ -680,7 +939,7 @@
                <lg>
                   <l n="331">Here is no water but only rock</l>
                   <l n="332">Rock and no water and the sandy road</l>
-               
+
                   <l n="333">The road winding above among the mountains</l>
                   <l n="334">Which are mountains of rock without water</l>
                   <l n="335">If there were water we should stop and drink</l>
@@ -730,8 +989,11 @@
                   <l n="371">What is the city over the mountains</l>
                   <l n="372">Cracks and reforms and bursts in the violet air</l>
                   <l n="373">Falling towers</l>
-                  <l n="374"><placeName type="tgn" key="7001371">Jerusalem</placeName> <placeName type="tgn" key="7001393">Athens</placeName> <placeName type="tgn" key="7001188">Alexandria</placeName></l>
-                  <l n="375"><placeName type="tgn" key="7003321">Vienna</placeName> <placeName type="tgn" key="7011781">London</placeName></l>
+                  <l n="374"><placeName type="tgn" key="7001371">Jerusalem</placeName>
+                     <placeName type="tgn" key="7001393">Athens</placeName>
+                     <placeName type="tgn" key="7001188">Alexandria</placeName></l>
+                  <l n="375"><placeName type="tgn" key="7003321">Vienna</placeName>
+                     <placeName type="tgn" key="7011781">London</placeName></l>
                   <l n="376">Unreal</l>
                </lg>
 
@@ -818,10 +1080,7 @@
          </div>
       </body>
       <back>
-         <div>
-            
-            
-         </div>
+         <div> </div>
       </back>
 
    </text>

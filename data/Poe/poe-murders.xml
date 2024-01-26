@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="poe-murders">
  <teiHeader xml:lang="en">
   <fileDesc>
@@ -9,9 +9,9 @@
     <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
     <author>
      <persName type="lcnaf" key="n79029745">
-      <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
+      <name>
       <forename>Edgar Allan</forename>
-      <surname>Poe</surname>
+      <surname>Poe</surname></name>
      </persName>
     </author>
     <editor>
@@ -73,7 +73,11 @@
      <monogr>
       <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
       <author>
-       <persName/>
+       <persName type="lcnaf" key="n79029745">
+        <name>
+         <forename>Edgar Allan</forename>
+         <surname>Poe</surname></name>
+       </persName>
       </author>
       <title>Graham’s Lady’s and Gentleman’s Magazine</title>
       <imprint>
@@ -94,7 +98,7 @@
 
       </imprint>
 
-      <biblScope unit="volume">XVIII</biblScope>
+      <biblScope unit="volume">Volume XVIII </biblScope>
       <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible. Delete unused. -->
       <biblScope>pp 166-179</biblScope>
      </monogr>

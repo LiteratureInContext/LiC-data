@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wheatley-majesty">
    
    <!--TEI Header BEGINS-->
@@ -188,6 +189,7 @@
          <change when="2018-07-15" who="editors.xml#TH">Updated XML</change>
          <change when="2019-01-18" who="editors.xml#TH">Added editorial and contribution responsibility details</change>
          <change when="2019-09-19" who="editors.xml#TH">Commented out titlepage</change>
+         <change when="2023-05-19" who="editors.xml#TH">Updated note style</change>
       </revisionDesc>
       
       
@@ -223,7 +225,7 @@
                               <lb/>
                               <publisher>Printed for A. BELL, Bookseller, Aldgate; and sold by<lb/>
                                  Messrs. COX and BERRY, King-Street, <hi rend="italic">BOSTON.</hi>
-                              </publisher>
+                             </publisher>
                               <lb/>
                               <date>M DCC LXXIII.</date>
 
@@ -252,8 +254,8 @@
                         reward!</l>
                      <l n="7">Rule thou in peace, our father, and our lord!</l>
                      <l n="8">Midst the remembrance of thy favours past,</l>
-                     <l n="9">The meanest peasants most admire the last.<note n="*" >The
-                        Repeal of the Stamp Act.</note></l>
+                     <l n="9">The meanest peasants most admire the last.<ref target="_auth1" corresp="auth1">*</ref><note xml:id="auth1" target="_auth1" type="authorial">The
+                        Repeal of the Stamp Act. [Wheatley's note.]</note></l>
                      <l n="10">May <hi rend="italic">George</hi>, belov'd by all the nations
                         round,</l>
                      <l n="11">Live with heav'ns choicest constant blessings crown'd!</l>

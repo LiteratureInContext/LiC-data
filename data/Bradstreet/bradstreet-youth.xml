@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"  xml:id="bradstreet-youth">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">Youth</title>
-                
-                <author>
-                    <persName type="lcnaf" key="n79145303">
-                        <name>
-                              <forename>Anne</forename>
-                              <surname>Bradstreet</surname>
-                         </name>
-                    </persName>
-                   
-                </author>
-                
-                <respStmt>
-                    <resp>Transcription, correction, editorial commentary, and markup</resp>
-                    <name>Staff and Research Assistants at The University of Virginia</name>
-                    <name>John O'Brien</name>
-                    <name>Sara Brunstetter</name>
-                </respStmt>
-                <sponsor/>
-                <funder>National Endowment for the Humanities</funder>
-            </titleStmt>
-            
-            <publicationStmt>
-                <publisher>Literature in Context</publisher>
-               
+    <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="bradstreet-youth">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>"Youth"</title>
+                    
+                    <author>
+                        
+                        <persName type="lcnaf" key="n79145303">
+                            <name>
+                                <forename>Anne</forename>
+                                <surname>Bradstreet</surname>
+                            </name>
+                        </persName>
+                    </author>
+                    <editor>
+                        <persName type="orcid" key="0000-0001-6453-8721">
+                            <name ref="editors.xml#JOB" >
+                                <surname>O'Brien</surname>
+                                <forename>John</forename>
+                            </name>
+                        </persName>
+                    </editor>
+                    <respStmt>
+                        <resp>Transcription, correction, editorial commentary, and markup</resp>
+                        <name>Staff and Research Assistants at The University of Virginia</name>
+                        <name>John O'Brien</name>
+                        <name>Sara Brunstetter</name>
+                    </respStmt>
+                    <sponsor/>
+                    <funder>National Endowment for the Humanities</funder>
+                </titleStmt>
+                <publicationStmt>
+                    <publisher>Literature in Context</publisher>
+                    
                     <address>
                         <addrLine>University of Virginia Department of English</addrLine>
                         <addrLine>P. O. Box 400121</addrLine>
@@ -36,129 +43,168 @@
                         <addrLine>jobrien@virginia.edu</addrLine>
                         <addrLine>lic.open.anthology@gmail.com</addrLine>
                     </address>
-               
-                <availability status="free">
-                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                        License </licence>
-                </availability>
-            </publicationStmt>
+                    
+                    <availability status="free">
+                        <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                            License </licence>
+                    </availability>
+                </publicationStmt>
+                <sourceDesc>
+                    
+                    <biblStruct>
+                        <analytic><title>"Youth"</title></analytic>
+                        <monogr>
+                            <author>
+                                <persName type="lcnaf" key="n79145303">
+                                    <name>
+                                        <forename>Anne</forename>
+                                        <surname>Bradstreet</surname>
+                                    </name>
+                                </persName>
+                            </author>
+                            <title type="main">Several Poems Compiled with Great Variety of Wit and Learning</title>
+                            
+                            <imprint>
+                                <pubPlace>
+                                    <placeName key="7013445">Boston</placeName>
+                                </pubPlace>
+                                <publisher>John Foster</publisher>
+                                <date when="1678">1678</date>
+                                <note resp="editors.xml#JOB">
+                                    Our texts are taken from the <ref target="http://name.umdl.umich.edu/A29149.0001.001">Text Creation Partnership's digital edition of <hi rend="italic">Several poems compiled with great variety of wit and learning</hi></ref> published in Boston in 1678. This text is sometimes referred to by its alternate title, and the sobriquet given to Anne Bradstreet, "The Tenth Muse". Title page drawn from the University of Pennsylvania's <hi rend="italic">Celebration of Women Writers</hi>.</note>
+                            </imprint>    
+                            <extent>pp 48-51</extent>
+                        </monogr>
+                    </biblStruct>    
+                </sourceDesc>        
+            </fileDesc>
             
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <author>
-                            <persName type="lcnaf" key="n79145303">
-                                <name>
-                                    <forename>Anne</forename>
-                                    <surname>Bradstreet</surname>
-                                </name>
-                            </persName>
-                        </author>
-                        <title type="main">Youth</title>
-                        
-                        <imprint>
-                            <pubPlace>
-                                <placeName type="country" key="6000236">American Colonies</placeName>
-                            </pubPlace>
-                            <publisher></publisher>
-                            <date when="1678">1678</date>
-                            <note resp="editors.xml#JOB">
-                                Our texts are taken from the Text Creation Partnership's digital edition of "Several poems compiled with great variety of wit and learning, full of delight, wherein especially is contained a compleat discourse, and description of the four elements constitutions, ages of man, seasons of the year. : Together with an exact epitome of the three first monarchyes viz. the Assyrian, Persian, Grecian. And beginning of the Romane Common-Wealth to the end of their last king:  with diverse other pleasant &amp; serious poems,  by a gentlewoman in New-England," published in Boston in 1678. 
-                            </note>
-                        </imprint>  
-                        <extent></extent>
-                    </monogr>
-                </biblStruct>    
-            </sourceDesc>        
-        </fileDesc>
+            <profileDesc>
+                <langUsage>
+                    <language ident="en">English</language>
+                </langUsage>
+                <creation/>
+                <textDesc n="poem">
+                    <channel mode="w">print</channel>
+                    <constitution type="single"/>
+                    <derivation type="original"/>
+                    <domain/>
+                    <factuality type="fiction"/>
+                    <interaction/>
+                    <preparedness type="prepared"/> <!-- I would say this is unknown -->
+                    <purpose type="entertain" degree="high"/>
+                    <purpose type="inform" degree="high"/>
+                </textDesc>
+                <settingDesc>
+                    <setting>
+                        <name type="tgn" key="7014203">New England</name> 
+                        <time from="1600" to="1700">Seventeenth Century</time>
+                    </setting>
+                </settingDesc>
+            </profileDesc>
+            
+            <encodingDesc>
+                <!-- BEGINS Encoding Description -->
+                <projectDesc>
+                    <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                        project, which provides an accessible, curated, and marked-up selection of primary
+                        sources relevant to the study and the teaching of British and American literature of
+                        the 18th century. This project is funded by the National Endowment for the Humanities
+                        and developed by faculty at The University of Virginia and Marymount University. </p>
+                </projectDesc>
+                <editorialDecl>
+                    <interpretation>
+                        <p>Research informing these annotations draws on publicly-accessible resources, with
+                            links provided where possible. Annotations have also included common knowledge,
+                            defined as information that can be found in multiple reliable sources. If you
+                            notice an error in these annotations, please contact
+                            lic.open.anthology@gmail.com.</p>
+                    </interpretation>
+                    <normalization>
+                        <p>Original spelling and capitalization is retained, though the long s has been
+                            silently modernized and ligatured forms are not encoded.</p>
+                    </normalization>
+                    <hyphenation>
+                        <p>Hyphenation has not been retained, except where necessary for the sense of the
+                            word.</p>
+                    </hyphenation>
+                    <segmentation>
+                        <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                            not. Where pages break in the middle of a word, the complete word has been
+                            indicated prior to the page beginning. </p>
+                    </segmentation>
+                    <correction>
+                        <p>Materials have been transcribed from and checked against first editions, where
+                            possible. See the Sources section.</p>
+                    </correction>
+                </editorialDecl>
+                <tagsDecl>
+                    <namespace name="http://www.tei-c.org/ns/1.0">
+                        <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                    </namespace>
+                </tagsDecl>
+                <classDecl>
+                    <taxonomy xml:id="lcnaf">
+                        <bibl>Library of Congress Name Authority File</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="lcc">
+                        <bibl>Library of Congress Classification</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="tgn">
+                        <bibl>Getty Thesaurus of Geographic Names</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="orcid">
+                        <bibl>Open Researcher and Contributor ID</bibl>
+                    </taxonomy>
+                </classDecl>
+            </encodingDesc>
+        </teiHeader>
         
-        <profileDesc>
-            <langUsage>
-                <language ident="en">English</language>
-            </langUsage>
-            <creation/>
-            <textDesc n="poem">
-                <channel mode="w">print</channel>
-                <constitution type="single"/>
-                <derivation type="original"/>
-                <domain/>
-                <factuality type="fiction"/>
-                <interaction/>
-                <preparedness type="prepared"/> <!-- I would say this is unknown -->
-                <purpose type="entertain" degree="high"/>
-            </textDesc>
-            <settingDesc>
-                <setting>
-                    <name type="tgn" key="7014203">New England</name> 
-                    <date from="1600" to="1700">Seventeenth Century</date>
-                </setting>
-            </settingDesc>
-        </profileDesc>
-        
-        <encodingDesc>
-            <!-- BEGINS Encoding Description -->
-            <projectDesc>
-                <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
-                    project, which provides an accessible, curated, and marked-up selection of primary
-                    sources relevant to the study and the teaching of British and American literature of
-                    the 18th century. This project is funded by the National Endowment for the Humanities
-                    and developed by faculty at The University of Virginia and Marymount University. </p>
-            </projectDesc>
-            <editorialDecl>
-                <interpretation>
-                    <p>Research informing these annotations draws on publicly-accessible resources, with
-                        links provided where possible. Annotations have also included common knowledge,
-                        defined as information that can be found in multiple reliable sources. If you
-                        notice an error in these annotations, please contact
-                        lic.open.anthology@gmail.com.</p>
-                </interpretation>
-                <normalization>
-                    <p>Original spelling and capitalization is retained, though the long s has been
-                        silently modernized and ligatured forms are not encoded.</p>
-                </normalization>
-                <hyphenation>
-                    <p>Hyphenation has not been retained, except where necessary for the sense of the
-                        word.</p>
-                </hyphenation>
-                <segmentation>
-                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
-                        not. Where pages break in the middle of a word, the complete word has been
-                        indicated prior to the page beginning. </p>
-                </segmentation>
-                <correction>
-                    <p>Materials have been transcribed from and checked against first editions, where
-                        possible. See the Sources section.</p>
-                </correction>
-            </editorialDecl>
-            <tagsDecl>
-                <namespace name="http://www.tei-c.org/ns/1.0">
-                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
-                </namespace>
-            </tagsDecl>
-            <classDecl>
-                <taxonomy xml:id="lcnaf">
-                    <bibl>Library of Congress Name Authority File</bibl>
-                </taxonomy>
-                <taxonomy xml:id="lcc">
-                    <bibl>Library of Congress Classification</bibl>
-                </taxonomy>
-                <taxonomy xml:id="tgn">
-                    <bibl>Getty Thesaurus of Geographic Names</bibl>
-                </taxonomy>
-                <taxonomy xml:id="orcid">
-                    <bibl>Open Researcher and Contributor ID</bibl>
-                </taxonomy>
-            </classDecl>
-        </encodingDesc>
-    </teiHeader>
-    
-    <text>
-        <body>
-            <div>
-                
-                <head>Youth</head>
-                <head>Anne Bradstreet</head>
+        <text><front>
+            <pb n="[TP]" facs="pageImages/bradstreet_TP.jpeg"/>
+            <titlePage>
+                <titlePart>SEVERAL<lb/>
+                    
+                    POEMS<lb/>
+                    
+                    Compiled with great variety of Wit and<lb/>
+                    Learning, full of Delight;<lb/>
+                    Wherein especially is contained a compleat<lb/>
+                    Discourse, and Description of<lb/>
+                    
+                    The Four {	ELEMENTS<lb/>
+                    CONSTITUTIONS,<lb/>
+                    AGES of Man,<lb/>
+                    SEASONS of the Year.<lb/><lb/>
+                    Together with an exact Epitome of<lb/>
+                    the three first <hi rend="italic">Monarchyes</hi><lb/><lb/>
+                    
+                    Viz, The {	ASSYRIAN,<lb/>
+                    PERSIAN,<lb/>
+                    GRECIAN.<lb/>
+                    <hi rend="italic">And beginning of the</hi> Romane Common-wealth<lb/>
+                    <hi rend="italic">to the end of their last King:</hi><lb/>
+                    
+                    With diverse other pleasant &amp; serious <hi rend="italic">Poems</hi>,<lb/>
+                    
+                    By a Gentlewoman in <hi rend="italic">New-England</hi>.<lb/>
+                    
+                    <hi rend="italic">The second Edition, Corrected by the Author,<lb/>
+                        and enlarged by an Addition of several other<lb/>
+                        Poems found amongst her Papers<lb/>
+                        after her Death.</hi><lb/>
+                </titlePart>
+                <titlePart>
+                    <hi rend="italic">Boston</hi>, Printed by <hi rend="italic">John Foster</hi>, 1678.</titlePart>
+            </titlePage>
+        </front>    
+<body>
+            
+            
+                <div type="poem">
+                <head type="main">Youth</head>
+
                 
                 <lg>
               <l n="1">MY goodly cloathing, and my beauteous skin,</l>
@@ -174,7 +220,7 @@
               <l n="11">The manners of the Court, I likewise know,</l> 
               <l n="12">Nor ignorant what they in Country do;</l> 
               <l n="13">The brave attempts of valiant Knights I prize,</l> 
-              <l n="14">That dare climbe <ref target="a001" corresp="n001">Battlements</ref><note xml:id="n001" target="a001">The summit of a mountain or a parapet at the top of a wall. Source: Oxford English Dictionary</note>, rear'd to the skies;</l> 
+                    <l n="14">That dare climbe <ref target="battlements_" corresp="battlements_">Battlements</ref><note xml:id="battlements" target="battlements_">The summit of a mountain or a parapet at the top of a wall. Source: Oxford English Dictionary</note>, rear'd to the skies;</l> 
               <l n="15">The snorting Horse, the Trumpet, Drum I like,</l> 
               <l n="16">The glistring Sword, and wel advanced Pike;</l>
               <l n="17">I cannot lye in trench, before a Town,</l> 
@@ -218,7 +264,7 @@
               <l n="55">For sure my suit more then my vertues shine;</l> 
               <l n="56">If any time from company I spare,</l>
               <l n="57">'Tis spent in curling, frisling up my hair;</l>
-              <l n="58">Some young Adonis I do strive to be,</l>                                               <l n="59"><ref target="a002" corresp="n002">Sardana Pallas</ref><note xml:id="n002" target="a002">(DRAFT)When I look this up I just get referenced back to the poem</note>, now survives in me:</l>
+                    <l n="58">Some young Adonis I do strive to be,</l>                                               <l n="59"><ref target="Sardanapallas_" corresp="Sardanapallas">Sardana Pallas</ref><note xml:id="Sardanapallas" target="Sardanapallas_">Sardanapallas is legendary tragic king of Assyria. Source: <ref target="https://www.britannica.com/topic/Sardanapalus-legendary-king-of-Assyria">Encyclopedia Brittanica</ref>.</note>, now survives in me:</l>
                   <l n="60">Cards, Dice, and Oaths, concomitant, I love;</l> 
                   <l n="61">To Masques, to Playes, to Taverns stil I move;</l> 
                   <l n="62">And in a word, if what I am you'd heare,</l> 
@@ -232,15 +278,15 @@
                   <l n="70">Though dangers do attend me every houre,</l> 
                   <l n="71">And gastly death oft threats me with her power,</l> 
                   <l n="72">Sometimes by wounds in idle combates taken,</l> 
-                  <l n="73">Sometimes by <ref target="a003" corresp="n003">Agues</ref><note  xml:id="n003" target="a003">Sickness with a high fever. Source: Oxford english Dictionary</note> all my body shaken;</l> 
+                    <l n="73">Sometimes by <ref target="agues_" corresp="agues">Agues</ref><note  xml:id="agues" target="agues">Sickness with a high fever. Source: Oxford english Dictionary</note> all my body shaken;</l> 
                   <l n="74">Sometimes by Feavers, all my moisture drinking,</l> 
                   <l n="75">My heart lyes frying, and my eyes are sinking;</l> 
-                  <l n="76">Sometimes the Cough, Stitch, painful <ref target="a004" corresp="n004">Plurisie</ref><note xml:id="n004" target="a004">Pleurisy is chest pains often with coughing and inflammation. Source: Oxford English Dictionary</note>,</l> 
+                    <l n="76">Sometimes the Cough, Stitch, painful <ref target="plurisie_" corresp="plurisie">Plurisie</ref><note xml:id="plurisie" target="plurisie_">Pleurisy is an illness characterized by chest pains often accompanied with coughing and inflammation. Source: Oxford English Dictionary</note>,</l> 
                   <l n="77">With sad affrights of death, doth menace me;</l>
                   <l n="78">Sometimes the loathsome Pox, my face be-mars,</l> 
                   <l n="79">With ugly marks of his eternal scars;</l>
                   <l n="80">Sometimes the Phrensie, strangely madds my Brain,</l>
-                  <l n="81">That oft for it, in <ref target="a005" corresp="n005">Bedlam</ref><note xml:id="n005" target="a005">Bethlehem. Source: Oxford English Dictionary</note> I remain.</l> 
+                    <l n="81">That oft for it, in <ref target="bedlam_" corresp="bedlam">Bedlam</ref><note xml:id="bedlam" target="bedlam_">A truncation of Bethlehem Hospital, a facility for the supposed insane. Source: Oxford English Dictionary</note> I remain.</l> 
                   <l n="82">Too many's my Diseases to recite,</l> 
                   <l n="83">That wonder 'tis I yet behold the light,</l> 
                   <l n="84">That yet my bed in darknesse is not made,</l> 
@@ -251,8 +297,7 @@
                   <l n="89">Child-hood and youth is vaine, yea vanity.</l>
                 </lg>
                 
-                
-            </div>
+                </div>
         </body>
     </text>
     
