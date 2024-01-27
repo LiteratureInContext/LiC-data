@@ -1,0 +1,524 @@
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="chopin-hour">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">"Hills Like White Elephants"</title>
+                <author>
+                    <persName type="lcnaf" key="n78078534">
+                        <name ref="hemingway.xml">
+                            <forename>Ernest</forename>
+                            <surname>Hemingway</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName>
+                        <name ref="editors.xml#NWB">
+                            <surname>Buford</surname>
+                            <forename>Nial</forename>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, and markup</resp>
+                    <name ref="editors.xml#UVAstudentsstaff">Students and Staff of The University of
+                        Virginia</name>
+                    <name ref="editors.xml#NWB">Nial Buford</name>
+                    
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22204-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by Literature
+                        in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported License
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"Hills Like White Elephants"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n78078534">
+                                <name ref="hemingway.xml">
+                                    <forename>Ernest</forename>
+                                    <surname>Hemingway</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title>Transition</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7008038">Paris</placeName>
+                            </pubPlace>
+                            <publisher>Eugene Jolas</publisher>
+                            <date when="1927">1927</date>
+                            <note>Text for this digital edition drawn from <ref
+                                target="https://www.gutenberg.org/ebooks/69683">Project Gutenberg's ditigital version of 
+                                <hi rend="italic">Men Without Women</hi></ref> Page images are drawn from 
+                                Hathitrust's digitized copy of 
+                                <ref target="https://catalog.hathitrust.org/Record/010317195"><hi rend="italic">transition
+                                </hi></ref>, sourced from the University of California and digitized by Google.</note>       
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="tale">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="low"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="1000095"> Spain</name>
+                    <time from="1900" to="1950">Early Twentieth Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of primary sources
+                    relevant to the study and the teaching of British and American literature of the 18th,
+                    19th, and 20th centuries. This project is funded by the National Endowment for the Humanities and
+                    developed by faculty at The University of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+                    </p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation is retained.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2023" who="editors.xml#HAS">Initial XML file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <pb n="[TP]" facs="pageImages/tp.jpg"/>
+            <titlePage>
+                <titlePart>
+                    
+                   HILLS LIKE WHITE ELEPHANTS</titlePart>
+                <lb/>
+                <lb/>
+                <docAuthor>By Ernest Hemingway</docAuthor>
+                <docImprint/>
+            </titlePage>
+        </front>
+        <body>
+            <pb n="9" facs="pageImages/0009.jpg"/>
+            <div>
+              <p>The hills across the valley of the Ebro were
+long and white. On this side there was no
+shade and no trees and the station was between
+two lines of rails in the sun. Close against the
+side of the station there was the warm shadow
+of the building and a curtain, made of strings of
+bamboo beads, hung across the open door into
+the bar, to keep out flies. The American and
+the girl with him sat at a table in the shade,
+outside the building. It was very hot and the
+express from Barcelona would come in forty
+minutes. It stopped at this junction for two
+minutes and went on to Madrid.</p>
+
+<p>“What should we drink?” the girl asked.
+She had taken off her hat and put it on the
+table.</p>
+
+<p>“It’s pretty hot,” the man said.</p>
+
+<p>“Let’s drink beer.”</p>
+
+<p>“Dos cervezas,” the man said into the curtain.</p>
+
+<p>“Big ones?” a woman asked from the doorway.</p>
+
+<p>“Yes. Two big ones.”</p>
+
+<p>The woman brought two glasses of beer and
+two felt pads. She put the felt pads and the
+beer glasses on the table and looked at the man
+and the girl. The girl was looking off at the
+line of hills. They were white in the sun and
+the country was brown and dry.</p>
+
+                <pb n="10" facs="pageImages/0010.jpg"/>
+
+<p>“They look like white elephants,” she said.</p>
+
+<p>“I’ve never seen one,” the man drank his
+beer.</p>
+
+<p>“No, you wouldn’t have.”</p>
+
+<p>“I might have,” the man said. “Just because
+you say I wouldn’t have doesn’t prove
+anything.”</p>
+
+<p>The girl looked at the bead curtain.
+“They’ve painted something on it,” she said.
+“What does it say?”</p>
+
+<p>“Anis del Toro. It’s a drink.”</p>
+
+<p>“Could we try it?”</p>
+
+<p>The man called “Listen” through the curtain.
+The woman came out from the bar.</p>
+
+<p>“Four reales.”</p>
+
+<p>“We want two Anis del Toro.”</p>
+
+<p>“With water?”</p>
+
+<p>“Do you want it with water?”</p>
+
+<p>“I don’t know,” the girl said. “Is it good
+with water?”</p>
+
+<p>“It’s all right.”</p>
+
+<p>“You want them with water?” asked the
+woman.</p>
+
+<p>“Yes, with water.”</p>
+
+<p>“It tastes like licorice,” the girl said and put
+the glass down.</p>
+
+<p>“That’s the way with everything.”</p>
+
+<p>“Yes,” said the girl. “Everything tastes of
+licorice. Especially all the things you’ve waited
+so long for, like absinthe.”</p>
+
+<p>“Oh, cut it out.”</p>
+
+<p>“You started it,” the girl said. “I was being
+amused. I was having a fine time.”</p>
+
+<p>“Well, let’s try and have a fine time.”</p>
+
+<p>“All right. I was trying. I said the mountains
+looked like white elephants. Wasn’t that
+bright?”</p>
+
+<p>“That was bright.”</p>
+
+<p>“I wanted to try this new drink. That’s all
+we do, isn’t it—look at things and try new
+drinks?”</p>
+
+<p>“I guess so.”</p>
+
+<p>The girl looked across at the hills.</p>
+
+<p>“They’re lovely hills,” she said. “They
+don’t really 
+
+    <pb n="11" facs="pageImages/0011.jpg"/>
+
+look like white elephants. I just
+meant the coloring of their skin through the
+trees.”</p>
+
+<p>“Should we have another drink?”</p>
+
+<p>“All right.”</p>
+
+<p>The warm wind blew the bead curtain against
+the table.</p>
+
+<p>“The beer’s nice and cool,” the man said.</p>
+
+<p>“It’s lovely,” the girl said.</p>
+
+<p>“It’s really an awfully simple operation, Jig,”
+the man said. “It’s not really an operation at
+all.”</p>
+
+<p>The girl looked at the ground the table legs
+rested on.</p>
+
+<p>“I know you wouldn’t mind it, Jig. It’s
+really not anything. It’s just to let the air in.”</p>
+
+<p>The girl did not say anything.</p>
+
+<p>“I’ll go with you and I’ll stay with you all
+the time. They just let the air in and then it’s
+all perfectly natural.”</p>
+
+<p>“Then what will we do afterward?”</p>
+
+<p>“We’ll be fine afterward. Just like we were
+before.”</p>
+
+<p>“What makes you think so?”</p>
+
+<p>“That’s the only thing that bothers us. It’s
+the only thing that’s made us unhappy.”</p>
+
+<p>The girl looked at the bead curtain, put her
+hand out and took hold of two of the strings of
+beads.</p>
+
+<p>“And you think then we’ll be all right and
+be happy.”</p>
+
+<p>“I know we will. You don’t have to be
+afraid. I’ve known lots of people that have
+done it.”</p>
+
+<p>“So have I,” said the girl. “And afterward
+they were all so happy.”</p>
+
+<p>“Well,” the man said, “if you don’t want
+to you don’t have to. I wouldn’t have you do
+it if you didn’t want to. But I know it’s perfectly
+simple.”</p>
+
+<p>“And you really want to?”</p>
+
+<p>“I think it’s the best thing to do. But I don’t
+want you to do it if you don’t really want to.”</p>
+
+<p>“And if I do it you’ll be happy and things
+will be like they were and you’ll love me?”</p>
+
+<p>“I love you now. You know I love you.”</p>
+
+                <pb n="12" facs="pageImages/0012.jpg"/>
+
+<p>“I know. But if I do it, then it will be nice
+again if I say things are like white elephants,
+and you’ll like it?”</p>
+
+<p>“I’ll love it. I love it now but I just can’t
+think about it. You know how I get when I
+worry.”</p>
+
+<p>“If I do it you won’t ever worry?”</p>
+
+<p>“I won’t worry about that because it’s perfectly
+simple.”</p>
+
+<p>“Then I’ll do it. Because I don’t care about
+me.”</p>
+
+<p>“What do you mean?”</p>
+
+<p>“I don’t care about me.”</p>
+
+<p>“Well, I care about you.”</p>
+
+<p>“Oh, yes. But I don’t care about me. And
+I’ll do it and then everything will be fine.”</p>
+
+<p>“I don’t want you to do it if you feel that
+way.”</p>
+
+<p>The girl stood up and walked to the end of
+the station. Across, on the other side, were
+fields of grain and trees along the banks of the
+Ebro. Far away, beyond the river, were mountains.
+The shadow of a cloud moved across the
+field of grain and she saw the river through the
+trees.</p>
+
+<p>“And we could have all this,” she said. “And
+we could have everything and every day we
+make it more impossible.”</p>
+
+<p>“What did you say?”</p>
+
+<p>“I said we could have everything.”</p>
+
+<p>“We can have everything.”</p>
+
+<p>“No, we can’t.”</p>
+
+<p>“We can have the whole world.”</p>
+
+<p>“No, we can’t.”</p>
+
+<p>“We can go everywhere.”</p>
+
+<p>“No, we can’t. It isn’t ours any more.”</p>
+
+<p>“It’s ours.”</p>
+
+<p>“No, it isn’t. And once they take it away,
+you never get it back.”</p>
+
+<p>“But they haven’t taken it away.”</p>
+
+<p>“We’ll wait and see.”</p>
+
+<p>“Come on back in the shade,” he said. “You
+mustn’t feel that way.”</p>
+                
+                <pb n="13" facs="pageImages/0013.jpg"/>
+
+<p>“I don’t feel any way,” the girl said. “I
+just know things.”</p>
+
+<p>“I don’t want you to do anything that you
+don’t want to do——”</p>
+
+<p>“Nor that isn’t good for me,” she said. “I
+know. Could we have another beer?”</p>
+
+<p>“All right. But you’ve got to realize——”</p>
+
+<p>“I realize,” the girl said. “Can’t we maybe
+stop talking?”</p>
+
+<p>They sat down at the table and the girl
+looked across at the hills on the dry side of the
+valley and the man looked at her and at the
+table.</p>
+
+<p>“You’ve got to realize,” he said, “that I don’t
+want you to do it if you don’t want to. I’m
+perfectly willing to go through with it if it
+means anything to you.”</p>
+
+<p>“Doesn’t it mean anything to you? We could
+get along.”</p>
+
+<p>“Of course it does. But I don’t want anybody
+but you. I don’t want any one else. And
+I know it’s perfectly simple.”</p>
+
+<p>“Yes, you know it’s perfectly simple.”</p>
+
+<p>“It’s all right for you to say that, but I do
+know it.”</p>
+
+<p>“Would you do something for me now?”</p>
+
+<p>“I’d do anything for you.”</p>
+
+<p>“Would you please please please please
+please please please stop talking?”</p>
+
+<p>He did not say anything but looked at the
+bags against the wall of the station. There
+were labels on them from all the hotels where
+they had spent nights.</p>
+
+<p>“But I don’t want you to,” he said, “I don’t
+care anything about it.”</p>
+
+<p>“I’ll scream,” the girl said.</p>
+
+<p>The woman came out through the curtains
+with two glasses of beer and put them down on
+the damp felt pads. “The train comes in five
+minutes,” she said.</p>
+
+<p>“What did she say?” asked the girl.</p>
+                
+                <pb n="14" facs="pageImages/0014.jpg"/>
+
+<p>“That the train is coming in five minutes.”</p>
+
+<p>The girl smiled brightly at the woman, to
+thank her.</p>
+
+<p>“I’d better take the bags over to the other
+side of the station,” the man said. She smiled
+at him.</p>
+
+<p>“All right. Then come back and we’ll finish
+the beer.”</p>
+
+<p>He picked up the two heavy bags and carried
+them around the station to the other tracks. He
+looked up the tracks but could not see the train.
+Coming back, he walked through the barroom,
+where people waiting for the train were drinking.
+He drank an Anis at the bar and looked
+at the people. They were all waiting reasonably
+for the train. He went out through the
+bead curtain. She was sitting at the table and
+smiled at him.</p>
+
+<p>“Do you feel better?” he asked.</p>
+
+<p>“I feel fine,” she said. “There’s nothing
+wrong with me. I feel fine.”</p>
+            </div>
+        </body>
+        <back>
+            <div> </div>
+        </back>
+        
+    </text>
+</TEI>

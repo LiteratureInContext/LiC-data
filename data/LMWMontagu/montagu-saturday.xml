@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="montagu-saturday">
+   <!-- The xml:id is essential to the functioning of LiC; it must be consistent throughout, because it serves as the xml filename. Please use lower-case only, in the format author-short-title. Do not use spaces or special characters. Hyphens should be used to separate words.  -->
+
+   <!--TEI Header BEGINS-->
+   <teiHeader xml:lang="en">
+
+      <fileDesc>
+         <!--BEGINS File Description -->
+         <titleStmt>
+            <title type="main">"Saturday. The Small-Pox"</title>
+            <!-- The main title here should be in quotation marks if it is embedded in a larger container; no quotation marks if it was published originally as a stand-alone source. -->
+            <author>
+               <persName type="lcnaf" key="n50004183">
+                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. The key should be the unique identifier for the element currently being described. -->
+                  <name>
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model; ignore if irrelevant. -->
+                     <addName>Lady</addName>
+                     <forename>Mary</forename>
+                     <surname>Wortley Montagu</surname>
+                  </name>
+               </persName>
+            </author>
+            <editor>
+               <persName type="orcid" key="0000-0002-5987-8542">
+                  <!-- This is the ORCID and key for the general editor of this text, usually the faculty member overseeing its production. -->
+                  <name ref="editors.xml#LR">
+                     <!-- Here, we reference basic identification information in the editors.xml page. This information is also aggregated and visible in the project contributors.  -->
+                     <surname>Runge</surname>
+                     <forename>Laura</forename>
+                  </name>
+               </persName>
+            </editor>
+            <respStmt>
+               <resp>Correction, editorial commentary, and markup</resp>
+               <!-- If the responsibilities of the named student editors below are different, please indicate that here. -->
+               <name ref="editors.xml#BehnBurney19">Workshop participants at the Behn/Burney
+                  Conference 2019</name>
+               <!-- Each document in LiC may have more than one name. Names of contributors should be added as separate name elements, keyed to the identifying information in editors.xml. -->
+               <name ref="editors.xml#LR">Laura Runge</name>
+               <name ref="editors.xml#MN">Mona Narain</name>
+               <!-- ADD YOUR NAMES HERE, USING THIS MODEL; ADD YOUR PERSONAL INFORMATION TO THE FILE EDITORS.XML -->
+               <name ref="editors.xml#SS">Shea Stuart</name>
+               <name ref="editors.xml#EMNK">Emily MN Kugler</name>
+            </respStmt>
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+            <!-- Do not alter. -->
+         </titleStmt>
+
+
+         <publicationStmt>
+            <!-- This element expresses the publication details of this particular etext. -->
+            <publisher>Literature in Context</publisher>
+            <!-- Do not alter. -->
+            <address>
+               <!-- Use the address information for your university. -->
+               <addrLine>Marymount University Department of Literature and Languages</addrLine>
+               <addrLine>2807 N. Glebe Road</addrLine>
+               <addrLine>Arlington, VA </addrLine>
+               <addrLine>22207</addrLine>
+               <addrLine>thowe@marymount.edu</addrLine>
+               <!-- Add your email address.  -->
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+               <!-- Do not alter. -->
+            </address>
+            <availability status="free">
+               <!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+
+         <sourceDesc>
+            <!-- This element expresses the source information and "witnesses" or "surrogates" used in the construction of this etext, and to which this etext refers. -->
+
+            <biblStruct>
+               <analytic>
+                  <!-- If the text you're encoding is part of a larger whole (a poem from a larger book, for instance), indicate the title of the part in this analytic/title element, in quotation marks. If you are encoding a whole stand-alone publication, please cut the analytic element. -->
+                  <title>"Saturday. The Small-Pox"</title>
+               </analytic>
+               <monogr>
+                  <!-- This element expresses source information for the larger whole (a novel, or the larger book from which your poem was drawn).  -->
+                  <author>
+                     <addName>Lady</addName>
+                     <forename>Mary Wortley</forename>
+                     <surname>Montagu</surname>
+                  </author>
+                  <title>Six Town Eclogues with some other POEMS</title>
+                  <imprint>
+                     <!-- IMPORTANT: place the earliest/first edition, and ideally your source, in the first imprint "witness" element. -->
+                     <pubPlace>
+                        <placeName type="tgn" key="7011798">London</placeName>
+                        <!-- Note authority and key. -->
+                     </pubPlace>
+                     <publisher>M. Cooper</publisher>
+                     <!-- Insert publisher of earliest/first edition. -->
+                     <date when="1747">1747</date>
+                     <!-- Insert date of earliest/first edition. Note the attribute @when. -->
+                     <note source="ESTC">Rt. Hon. L. M. W. M. = Right Honourable Lady Mary Wortley
+                        Montagu. With a half-title.</note>
+                     <!-- Add as many or as few note elements here as necessary. If the note has been drawn from a particular source, as here, indicate that as modeled. -->
+                     <note>Page images are drawn from the first printed edition, available via
+                        Google Books at <ref target="https://books.google.com/books?id=m6tYAAAAcAAJ"
+                           >https://books.google.com/books?id=m6tYAAAAcAAJ</ref>. This edition is
+                        also available in ECCO.</note>
+                     <!-- Always add a note clarifying where your page images are drawn from, and be sure to indicate permissions. -->
+                     <note>For more information about this item, see the ESTC entry at <ref
+                           target="http://estc.bl.uk/T79456">http://estc.bl.uk/T79456</ref>. </note>
+                     <!-- If links are available, indicate them using this model. -->
+                  </imprint>
+                  <imprint>
+                     <pubPlace key="7011931">Oxford, UK</pubPlace>
+                     <publisher>ECCO-TCP</publisher>
+                     <date>n.d.</date>
+                     <note>Base XML for this edition drawn from the ECCO-TCP edition of <hi
+                           rend="italic">A Collection of Poems in Three Volumes. By Several
+                           Hands.</hi> London: printed by J. Hughs, for R. Dodsley, 1748., available
+                        at <ref
+                           target="https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/K092784.001"
+                           >https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/K092784.001</ref>.
+                        XML edited to conform to page images.</note>
+                  </imprint>
+                  <imprint>
+                     <!-- Indicate any other imprint "witnesses" used in the construction of this digital edition, including any existing XML, plaintext, or other documents used directly. -->
+                     <pubPlace key="7014406">Philadelphia, PA</pubPlace>
+                     <publisher>Eighteenth-Century Poetry Archive</publisher>
+                     <date>n.d.</date>
+                     <note>Text, facsimile, visualization, and modeling of the 1763 edition from <hi
+                           rend="italic">A Collection of Poems in Six Volumes. By Several
+                           Hands.</hi> Vol. I. London: printed by J. Hughs, for R. and J. Dodsley,
+                        1763 [1st ed. 1758], pp. 82-104., available at <ref
+                           target="https://www.eighteenthcenturypoetry.org/works/o5152-w0110.shtml#o5152-w0116"
+                           >
+                           https://www.eighteenthcenturypoetry.org/works/o5152-w0110.shtml#o5152-w0116
+                        </ref>.</note>
+                  </imprint>
+                  <extent>48p.; 4⁰.</extent>
+                  <!-- Indicate the physical size and shape of the earliest/first edition. Often, this information is available in the catalog record for that item. -->
+                  <!-- Indicate any information about the location of the analytic/contained text in the larger container here; multiple biblScope elements are permissible, as for volumes. Delete unused. -->
+                  <biblScope>pp 32-37</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+
+      </fileDesc>
+      <!-- Don't forget to close out all your elements! -->
+
+
+
+      <profileDesc>
+         <!--BEGINS Profile Description. This element expresses somewhat interpretive aspects of the text, which will be used to help limit searches, generate timelines and maps, and so on.   -->
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+         <!-- This element indicates when the text was composed, if known. For more information on the profileDesc, see TEI P5 guidelines.  -->
+
+         <textDesc n="poem">
+            <!-- Acceptable values include novel, novella, poem, essay. -->
+            <channel mode="w">print</channel>
+            <!-- This element and attribute expresses that this text was WRITTEN, and the enclosed text "print" provides further information that this was printed. A written text might also be a manuscript. If you are working with a manuscript, see the TEI P5 guidelines on msDesc. The msDesc element must occur within the sourceDesc element. At this time, however, LiC is set up to privilege print. -->
+            <constitution type="single"/>
+            <!-- See the textDesc guidelines for valid values. Usually, constitution will be single; however, there may be cases where you are excerpting and combining parts of a longer text, as one often finds in print anthologies. In that case, use FRAGS. -->
+            <derivation type="original"/>
+            <!-- See the textDesc guidelines for sample values. Usually, derivation will be original; however, in the event of an adaptation of an earlier source, you might use another value, like ABRIDGEMENT, REVISION, or TRANSLATION. -->
+            <domain/>
+            <!-- Typically unnecessary for this project; however, the empty domain element must be retained for validation. -->
+            <factuality type="inapplicable"/>
+            <!-- See the textDesc guidelines for more information. -->
+            <interaction/>
+            <!-- Typically unnecessary for this project; however, the empty domain element must be retained for validation. -->
+            <preparedness/>
+            <!-- Typically unnecessary for this project; however, the empty domain element must be retained for validation. -->
+            <purpose type="entertain" degree="high"/>
+            <!-- See the TEI guidelines for more information. -->
+            <purpose type="inform" degree="low"/>
+            <!-- Multiple purpose types may or may not be appropriate. -->
+         </textDesc>
+
+         <settingDesc>
+            <!-- If no settingDesc is necessary, render this an empty element and delete nested content. -->
+            <setting>
+               <name type="tgn" key="7011798">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               <time from="1690" to="1724">Early 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+         </settingDesc>
+      </profileDesc>
+
+
+
+      <encodingDesc>
+         <!-- BEGINS Encoding Description. This is a description of the encoding practices of LiC. Please adhere to these editorial directives regarding interpretation, normalization, hyphenation, segmentation, and correction. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, curated, and marked-up selection of primary
+               sources relevant to the study and the teaching of British and American literature of
+               the 18th century. This project is funded by the National Endowment for the Humanities
+               and developed by faculty at The University of Virginia and Marymount University. </p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+               </p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not. Where pages break in the middle of a word, the complete word has been
+                  indicated prior to the page beginning.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <!-- Do not cut or alter. Adhere to the instructions regarding DIVs. -->
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <!-- We here define the authority files used throughout the application and data. -->
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgn">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+            <taxonomy xml:id="estc">
+               <bibl>English Short Title Catalog</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+
+      <revisionDesc>
+         <!--BEGINS Revision Description -->
+         <change when="2019-10-12" who="editors.xml#TH">Began base XML in preparation for
+            Behn/Burney 2019.</change>
+         <!-- Indicate all substantive changes to the document using the model here. -->
+
+      </revisionDesc>
+
+
+   </teiHeader>
+   <!--TEI Header Ends -->
+
+
+
+
+
+   <text>
+      <!-- Here begins the encoding of the text itself. -->
+      <front>
+         <!-- Include any front matter here, especially title pages. Titlepages should be encoded to resemble, as closely as possible, the physical page used in this edition. While this digital edition is not a diplomatic edition, we seek a general consistency with the look and feel of the page. Line breaks and capitalization are most relevant. -->
+         <pb n="[TP]" facs="pageImages/TP.jpg"/>
+         <!-- Indicate all page beginnings using this format. Note that the attribute N should indicate page number. If no page number exists, supply one indicating your addition in [brackets]. The attribute FACS should reference the page image (see below for cases of images in notes) in the AWS server structure. Note that this construction implies the addition of prior file structure information, part of which is the xml:id for this particular file. Accuracy and consistency are essential. Use lowercase in your attributes, following the model here. -->
+         <titlePage>
+            <!-- Begins the title page encoding. Encode the title page with line breaks where indicated on the title page. Use CAPITALS where appropriate. -->
+            <docTitle>
+               <!-- Separate the parts of your title page or front information in DOCTITLE, DOCAUTHOR, DOCIMPRINT, and DOCDATE. Multiple parts of a title are indicated with TITLEPART. See the TEI titlePage guidelines for more information. -->
+               <titlePart>SIX <lb/>TOWN ECLOGUES <lb/>
+               </titlePart>
+               <titlePart>With some other <lb/> POEMS<lb/>
+                  <!-- Note that this example has two titleParts spanning lines. -->
+               </titlePart>
+            </docTitle>
+            <docAuthor>By <ref target="montagu_" corresp="montagu">the Rt. Hon. L.<hi rend="italic">
+                     M. W. M.</hi></ref><lb/><note xml:id="montagu" target="montagu_"
+                  type="editorial" resp="editors.xml#TH"><graphic
+                     url="notes/Jonathan_Richardson_d._J._001.jpg"/><p>Lady Mary Wortley Montagu, born
+                  Pierrepont (1689-1762), was an eccentric woman and talented writer who has not
+                  received as much attention as her friends and contemporaries, like Alexander Pope,
+                  with whom she had a close relationship before it turned acrimonious. Montagu was a
+                  member of the aristocracy, daughter of the Earl of Kingston and Lady Mary Fielding
+                  (yes, she was related to the Henry Fielding of <hi rend="italic">Tom Jones</hi>
+                  fame!). She fled an arranged marriage and eloped with Edward Wortley Montagu. Most
+                  remember her as a letter-writer, whose letters were designed for posthumous
+                  publication. Most significant in these letters are those typically referred to as
+                  the "Turkish Embassy" letters, because they discuss her experience traveling to
+                  and living in Contantinople (now Istanbul) with her husband, who served as
+                  ambassador to Turkey from 1716-1718.</p>
+                        <p>Her "Town Eclogues," from which this
+                  selection is taken, are a series of six adaptations of the Roman poet Virgil’s
+                  Eclogues, written in 37BCE. An "eclogue" is a kind of poem that presents a snippet
+                  (or a "selection") of life. In Virgil’s eclogues—a series of 10 poems—rural
+                  herdsman sing and discuss their experiences, often relating to the turbulent time
+                  in Rome just as the Roman Empire was emerging. In the early 18th century,
+                  "Augustan" British poets saw themselves as modern inheritors of a Roman tradition
+                  inaugurated by Augustus, the first Emperor of Rome.</p> 
+                        <p>Montagu’s eclogues focus
+                  similarly on a turbulent, transitional era characterized by the social, political,
+                  and economic structures of rapid commercialization in the England and the United
+                  Kingdom. These "Town Eclogues" offer a series of six poems, which you can read in
+                  their entirety on <ref
+                     target="https://www.eighteenthcenturypoetry.org/works/o5152-w0110.shtml"
+                     >Eighteenth-Century Poetry Archive.</ref> The poems are organized by days of
+                  the week and discuss themes of sexuality, relationships between men and women,
+                  illness, and fashionable society. In this poem, "Saturday; or the Small-Pox," the
+                  poetic speaker recounts the character Flavia’s thoughts about her smallpox scars,
+                  which were shared by Mary Wortley Montagu herself—Montagu suffered from smallpox
+                  in her youth, which marked her for the rest of her life. During her travels to
+                  Turkey, she witnessed the act of inoculation for smallpox, which she employed to
+                  inoculate her children. She brought word of the innovation back to England, though
+                  she is not credited with its popularization. To read more about Montagu’s
+                  connection with the smallpox vaccine, read <ref
+                     target="https://theconversation.com/lady-mary-wortley-montagu-the-forgotten-immunisation-pioneer-164256"
+                     >Tom Solomon’s article on <hi rend="italic">The Conversation</hi></ref>. </p>
+                        <p>In
+                  1736, Montagu fell in love with an Italian writer, and she left her husband and
+                  family to live with him on the Continent, under cover of traveling for health
+                  reasons. He never caught up with her in Italy, however, and she traveled through
+                  France and Italy in the 40s and 50s, living for a decade with an Italian Count.
+                  After her husband died in 1761, she returned to London, and died of cancer shortly
+                  after. Her letters were published in 1763, but the first complete modern edition
+                  was published in the 1960s. The portrait of Montagu included here was painted in
+                  1725 by Jonathan Richardson. It is currently in the collection of the Earl of
+                  Harrowby, Stafford (<ref
+                     target="https://commons.wikimedia.org/wiki/File:Jonathan_Richardson_d._J._001.jpg"
+                     >via Wikimedia Commons</ref>).</p></note>
+            </docAuthor>
+            <docImprint>
+               <!-- Here begins imprint information included in the text pictured. -->
+               <pubPlace><placeName type="tgn" key="7011798"><hi rend="italic"
+                     >LONDON</hi></placeName></pubPlace>:<lb/>
+               <!-- LOOK UP THE PLACE NAME IN THE GETTY THESAURUS OF GEOGRAPHIC NAMES AND INDICATE THE KEY HERE. -->
+               <!-- Note the continued use of line breaks. -->
+               <publisher>Printed for <persName>M. Cooper</persName> in <placeName>
+                     <hi rend="italic">Pater-noster-Row</hi></placeName>.</publisher>
+            </docImprint>
+            <docDate>
+               <date>1747</date>. </docDate>
+
+         </titlePage>
+      </front>
+
+      <body>
+         <!-- Here begins the body of the text to be encoded. -->
+         <div>
+            <div type="eclogue">
+               <!-- THIS DIV DERIVED FROM ECCO-TCP XML. SHOULD BE UPDATED TO REFLECT LIC PRINCIPLES. -->
+               <pb n="32" facs="pageImages/032.jpg"/>
+               <!-- CORRECT PAGE NUMBERINGS TO REFERENCE OUR PAGE IMAGES -->
+               <head>SATURDAY.<lb/><ref target="smallpox_" corresp="smallpox">The
+                  SMALL-POX</ref>.</head>
+               <note xml:id="smallpox" target="smallpox_" type="editorial"
+                  resp="editors.xml#BehnBurney19">Smallpox is an infectious disease caused by the
+                  variola virus, which ravaged many parts of the world until its eradication in
+                  1980. Throughout the eighteenth century, over 400,000 people died in Europe from
+                  the disease. It is characterized by pus-filled blisters that form on the skin,
+                  before hardening and falling off; smallpox often caused severe scarring and even
+                  blindness among those who survived. The virus was used as a biological weapon,
+                  notably by the British against Native Americans in Pontiac's War of the 1760s. The
+                  disease was 90% fatal among the Amerindian population, causing mass destruction.
+                  Before a vaccine was developed, the virus was managed through a process of
+                  inoculation--also called variolation--whereby a small amount of infected fluid,
+                  often from a cow, was introduced to a healthy person's body, causing an immune
+                  response. This process of inoculation was practiced in Asia and Africa, before
+                  appearing in the Ottoman Empire, where Mary Wortley Montagu witnessed the
+                  procedure. To read more, see <ref
+                     target="https://theconversation.com/lady-mary-wortley-montagu-the-forgotten-immunisation-pioneer-164256"
+                     >Tom Solomon’s article on <hi rend="italic">The Conversation</hi></ref>.</note>
+               <stage>FLAVIA.</stage>
+               <!-- WHAT DO WE DO WITH THIS? -->
+               <lg n="1">
+                  <l n="1">THE wretched FLAVIA on her couch reclin'd,</l>
+                  <!-- A BIT TEDIOUS, BUT NEED TO ADD N="1" AND SO ON TO EACH LINE. USE <HI REND="INDENT"/> TO INDICATE ANY INDENTATION. -->
+                  <l n="2">Thus breath'd the anguish of a wounded mind;</l>
+                  <!-- REMEMBER THE LIC EDITORIAL GUIDELINES ABOUT LONG-S CHARACTERS, LIGATURES, AND SO ON. SILENTLY MODERNIZE. -->
+                  <l n="3">A glass revers'd in her right hand she bore,</l>
+                  <l n="4">For now she shun'd the face she sought before.</l>
+               </lg>
+               <lg n="2">
+                  <l n="5" rend="indent">'How am I chang'd! alas! how am I grown</l>
+                  <l n="6">'A frightful spectre, to myself unknown!</l>
+                  <l n="7">'Where's my complexion? where my radiant bloom,</l>
+                  <l n="8">'That promis'd happiness for years to come?</l>
+                  <l n="9">'Then with what pleasure I this face survey'd!</l>
+                  <l n="10">'To look once more, my visits oft delay'd!</l>
+                  <l n="11">'Charm'd with the view, a fresher red would rise,</l>
+                  <l n="12">'And a new life shot sparkling from my eyes!</l>
+               </lg>
+               <pb n="33" facs="pageImages/033.jpg"/>
+               <!-- THE ECCO-TCP PROJECT USED THIS INFORMATION TO DESIGNATE PAGE NUMBERS AND OTHER RENDITION ELEMENTS. WE ARE NOT. CUT WHAT IS UNNECESSARY. -->
+               <lg n="3">
+                  <l n="13" rend="indent">'Ah! faithless glass, my wonted bloom restore;</l>
+                  <l n="14">'Alas! I rave, that bloom is now no more!</l>
+                  <l n="15">'The greatest good the Gods on men bestow,</l>
+                  <l n="16">'Ev'n youth itself, to me is useless now.</l>
+                  <l n="17">'There was a time (oh! that I cou'd forget!)</l>
+                  <l n="18">'When <ref target="opera-tickets_" corresp="opera-tickets">opera-tickets</ref> pour’d
+                     before my feet;</l>
+                  <note xml:id="opera-tickets" target="opera-tickets_" type="editorial" resp="editors.xml#TH">Opera was
+                     a fashionable entertainment past-time in the eighteenth century. Opera stars
+                     were celebrities, often extravagantly-compensated, and also the subject of some
+                     criticism, as <ref target="https://journals.openedition.org/1718/409">Michael
+                        Burden</ref> describes in "Opera, Excess, and the Discourse of Luxury in
+                     Eighteenth-Century England." Here, Flavia claims that "opera-tickets pour'd
+                     before [her] feet," which would have been an extravagance, indeed. According to
+                     Judith Milhous and Robert Hume, throughout much of the period ticket prices
+                     were fixed at 1s 6d or 5s, for pit/boxes or gallery seating, respectively. "A
+                     season subscription for fifty nights," they note, "was 15 [guineas]" (<ref
+                        target="http://www.jstor.org/stable/831805">79</ref>). For more information
+                     on eighteenth-century opera, see <ref
+                        target="http://www.vam.ac.uk/content/articles/0-9/18th-century-opera/">this
+                        overview from the Victoria and Albert Museum</ref>. For more information on
+                     cost of living in the early eighteenth century, see the <ref
+                        target="https://www.oldbaileyonline.org/static/Coinage.jsp">discussion of
+                        coinage at the Old Bailey Online</ref>.</note>
+                  <l n="19">'And at <ref target="ring_" corresp="ring">the ring</ref>, where
+                     brightest beauties shine,</l>
+                  <note xml:id="ring" target="ring_" type="editoral" resp="editors.xml#LR"><graphic
+                        url="notes/Hyde_Park_London_from_1833_Schmollinger_map.jpg"/>The "ring"
+                     referred to a circular path in Hyde Park where fashionable people would walk,
+                     ride, or take a carriage ride. It was a place to be seen. You can see a
+                     rendering of the Ring in the detail, included here, of the 1833 map of London
+                     engraved by William Smollinger. For more information on Hyde Park, see <ref
+                        target="https://en.wikipedia.org/wiki/Hyde_Park,_London"> article from
+                        Wikipedia</ref>.</note>
+                  <l n="20">'The earliest cherries of the spring were mine.</l>
+                  <l n="21">'Witness, <ref target="Lilly_" corresp="Lilly">O
+                        <persName>Lilly</persName>; and thou, <persName type="lcnaf" key="n50016854"
+                           >Motteux</persName></ref>, tell</l>
+                  <note xml:id="Lilly" target="Lilly_" type="gloss" resp="editors.xml#LR">Charles
+                     Lilly, also known as Charles Lille, "<ref
+                        target="http://www.perfumeintelligence.co.uk/library/perfume/l/l11/l11p1.htm"
+                        >opened a perfume shop on The Strand in London in 1708 where he sold ‘snuffs
+                        and perfumes that refresh the brain.’</ref>" Peter Motteux, author, also
+                     owned an "India house" on Leadenhall Street that sold oriental goods. For more
+                     information about Motteux and his shop, see <ref
+                        target="https://en.wikipedia.org/wiki/Peter_Anthony_Motteux">Wikipedia</ref>
+                     and <ref
+                        target="https://www.british-history.ac.uk/old-new-london/vol2/pp183-194"
+                        >British History Online</ref>.</note>
+
+                  <l n="22">'How much <ref target="Japan_" corresp="Japan">japan</ref> these eyes have
+                     made ye sell.</l>
+                  <note xml:id="Japan" target="Japan_" type="gloss" resp="editors.xml#LR">Japanese
+                     artifacts with painted or vanished design. A fashionable item that would be
+                     found in Motteux's store. For more information, see <ref
+                        target="https://www.vam.ac.uk/articles/east-asian-lacquer-influence">this
+                        article on East Asian lacquer from the Victoria and Albert
+                     Museum</ref>.</note>
+                  <l n="23">'With what contempt ye saw me oft despise</l>
+                  <l n="24">'The humble offer of the raffled prize;</l>
+                  <l n="25">'For at the raffle still each prize I bore,</l>
+                  <l n="26">'With scorn rejected, or with triumph wore!</l>
+                  <l n="27">'Now beauty's fled, and presents are no more!</l>
+               </lg>
+               <lg n="4">
+                  <l n="28" rend="indent">'For me the Patriot has the house forsook,</l>
+                  <l n="29">'And left debates to catch a passing look:</l>
+                  <l n="30">'For me the Soldier has soft verses writ;</l>
+                  <l n="31">'For me the <ref target="beau_" corresp="beau_">Beau</ref> has aim'd to be
+                     a wit.</l>
+                  <note xml:id="beau" target="beau_">From the French, a beau is a ladies' man, or a suitor, often very fashionable (OED). </note>
+                  <pb n="34" facs="pageImages/034.jpg"/>
+                  <l n="32">'For me the <ref target="wit_" corresp="wit">Wit</ref> to nonsense was
+                     betray'd;</l>
+                  <note xml:id="wit" target="wit_">Used here as a noun, a wit was (usually) a man known for cleverness or wittiness (OED).</note>
+                  <l n="33">'The Gamester has for me his <ref target="dun_" corresp="dun">dun</ref>
+                     delay'd,</l>
+                  <note xml:id="dun" target="dun_" type="gloss" resp="editors.xml#BehnBurney19"
+                     >Used here as a noun, a dun in this sense is a demand for payment of a debt (OED).</note>
+                  <l n="34">'And overseen the card I would have pay'd.</l>
+                  <l n="35">'The bold and haughty by success made vain,</l>
+                  <l n="36">'Aw'd by my eyes, have trembled to complain:</l>
+                  <l n="37">'The bashful 'Squire touch'd by a wish unknown,</l>
+                  <l n="38">'Has dar'd to speak with spirit not his own;</l>
+                  <l n="39">'Fir'd by one wish, all did alike adore;</l>
+                  <l n="40">'Now beauty's fled, and lovers are no more!</l>
+               </lg>
+               <lg n="5">
+                  <l n="41" rend="indent">'As round the room I turn my weeping eyes,</l>
+                  <l n="42">'New unaffected scenes of sorrow rise!</l>
+                  <l n="43">'Far from my sight that killing picture bear,</l>
+                  <l n="44">'The face disfigure, and the canvas tear!</l>
+                  <l n="45">'That picture, which with pride I us'd to show,</l>
+                  <l n="46">'The lost resemblance but upbraids me now.</l>
+                  <l n="47">'And thou, my <ref target="toilette_" corresp="toilette">toilette</ref>! where I
+                     oft have sate,</l>
+                  <note xml:id="toilette" target="toilette_" type="gloss" resp="editors.xml#BehnBurney19"
+                     >Flavia's toilette is her dressing table. The word is used in multiple senses, either to refer to the location of the action of dressing and readying oneself for the day or as a collective term for the items of dressing or applying makeup (OED). </note>
+                  <l n="48">'While hours unheeded pass'd in deep debate,</l>
+                  <l n="49">'How curls should fall, or where a <ref target="patch_" corresp="patch"
+                        >patch</ref> to place;</l>
+                  <note xml:id="patch" target="patch_" type="editorial" resp="editors.xml#TH"
+                     ><graphic url="notes/PLL_Fig_042-edited-709x1024.jpeg"/>A patch in this sense has a specific historical meaning, now obsolete. In the 17th and 18th centuries, it was common for fasionable people to wear "patches," or small pieces of black silk or velvet, sometimes cut into shapes. These patches--called "les mouches" in French, because they resembled a fly--would be worn on the face, sometimes to cover a blemish or simply for fashionable purposes, as an artificial beauty mark. Patches were also sometimes used to declare a particular loyalty or party. To learn more about patches, see the <hi rend="italic">Collector's Weekly</hi> article, <ref target="https://www.collectorsweekly.com/articles/sexy-face-stickers/">"That Time the French Aristocracy Was Obsessed With Sexy Face Stickers."</ref> The image included here, from that article (via the Metropolitan Museum of Art), is an engraving showing a fashionable young woman at her toilette; she has two patches on her cheek. Engraving “The Morning: The Woman at Her Toilet” by Gilles-Edme Petit, c. 1745-1760.</note>
+                  <l n="50">'If blue or scarlet best became my face;</l>
+                  <pb n="35" facs="pageImages/035.jpg"/>
+                  <l n="51">'Now on some happier <ref target="nymph_" corresp="nymph">nymph</ref> your
+                     aid bestow;</l>
+                  <note xml:id="nymph" target="nymph_" type="gloss" resp="editors.xml#TH">According to
+                     the OED, "nymph" (n1. 1-3) is a poetic way of describing a beautiful young
+                     woman. It derives from classical mythology, but also can suggest an ironic
+                     usage.</note>
+
+                  <l n="52">'On fairer heads, ye useless jewels, glow!</l>
+                  <l n="53">'No borrow'd lusture can my charms restore;</l>
+                  <l n="54">'Beauty is fled, and dress is now no more!</l>
+               </lg>
+               <lg n="6">
+                  <l n="55" rend="indent">'Ye meaner beauties, I permit ye shine;</l>
+                  <l n="56">'Go, triumph in the hearts that once were mine;</l>
+                  <l n="57">'But 'midst your triumphs with confusion know,</l>
+                  <l n="58">''Tis to my ruin all your arms ye owe.</l>
+                  <l n="59">'Would pitying heav'n restore my wonted mein,</l>
+                  <l n="60">'Ye still might move unthought-of and unseen:</l>
+                  <l n="61">'But oh! how vain, how wretched is the boast</l>
+                  <l n="62">'Of beauty faded, and of empire lost!</l>
+                  <l n="63">'What now is left but weeping, to deplore</l>
+                  <l n="64">'My beauty fled, and empire now no more!</l>
+               </lg>
+               <lg n="7">
+                  <l rend="indent" n="65">'Ye, cruel Chymists, what with-held your aid!</l>
+                  <l n="66">'Could no <ref target="pomatums_" corresp="pomatums">pomatums</ref> save a
+                     trembling maid?</l>
+                  <note xml:id="pomatums" target="pomatums_" type="gloss" resp="editors.xml#TH">Pomatum, or pomade, refers to a cosmetic applied to the face--often, it was made with lead, and used to add a whiteness to the skin (OED).</note>
+                  <l n="67">'How false and trifling is that art ye boast;</l>
+                  <l n="68">'No art can give me back my beauty lost.</l>
+                  <l n="69">'In tears, surrounded by my friends I lay,</l>
+                  <l n="70">'Mask'd o'er and trembled at the
+                     sight of day;</l>
+                  <pb n="36" facs="pageImages/036.jpg"/>
+                  <l n="71">'<ref target="Mirmilio_" corresp="Mirmilio">MIRMILIO</ref> came my fortune to
+                     deplore,</l>
+                  <note xml:id="Mirmilio" target="Mirmilio_" type="editorial" resp="editors.xml#TH">In these
+                     lines, Montagu invokes characters from Samuel Garth's popular early mock-epic
+                     poem, "The Dispensary" (1699). According to <ref
+                        target="https://www.rcplondon.ac.uk/news/dispensary-sir-samuel-garth-s-mock-heroic-poem"
+                        >Sarah Gillam, writing for the Royal College of Physicians</ref>, Mirmillo
+                     likely represents William Gibbons, one of the physicians caught up in the late
+                     17th century dispute about whether to open a free dispensary for the health of
+                     the poor in London.</note>
+                  <l n="72">'(A golden headed cane well carv'd he bore)</l>
+                  <l n="73">'Cordials, he cried, my spirits must restore:</l>
+                  <l n="74">'Beauty is fled, and spirit is no more!</l>
+               </lg>
+               <lg n="8">
+                  <l n="75" rend="indent">'<ref target="Galen_" corresp="Galen">GALEN</ref>, the grave;
+                     <ref target="Squirt_" corresp="Squirt">officious SQUIRT</ref>, was there,</l>
+                  <note xml:id="Galen" target="Galen_" type="editorial">While not referenced in Garth's
+                     "Dispensary," <ref target="https://en.wikipedia.org/wiki/Galen">Galen</ref> is
+                     a Greek physician (129-216 CE) known for pioneering work in anatomy, among
+                     other branches of medicine and philosophy. His humoral work was highly
+                     influential in the Medieval and Early Modern periods.</note>
+                  <note xml:id="Squirt" target="Squirt_" type="editorial" resp="editors.xml#TH">Another
+                     character in Garth's "Dispensary," Squirt--always designated there
+                     "officious"--is an assistant to Horoscope, the chief apothecary in the poem,
+                     who revives his master with a squirt from a urinal <ref
+                        target="https://quod.lib.umich.edu/e/eebo/A42418.0001.001?rgn=main;view=fulltext"
+                        >at the end of Canto II</ref>: <quote><lg><l>Oft he essay'd the Magus to
+                           restore,</l>
+                        <l>By Salt of Succinum's prevailing pow'r;</l>
+                        <l>But still supine the solid Lumber lay,</l>
+                        <l>An Image of scarce animated Clay; </l><l>Till Fates, indulgent when
+                           Disasters call, </l><l>Bethought th' Assistant of a Urinal; </l><l>Whose
+                           Steam the Wight no sooner did receive, </l><l>But rowz'd, and blest the
+                           Stale Restorative. </l><l>The Springs of Life their former Vigour feel,
+                           </l><l>Such Zeal he had for that vile Urensil.</l></lg></quote>
+                  </note>
+                  <l n="76">'With fruitless grief and unavailing care:</l>
+                  <l n="77">'<ref target="Machaon_" corresp="Machaon">MACHAON</ref> too, the great MACHAON,
+                     known</l>
+                  <note xml:id="Machaon" target="Machaon_" type="editorial" resp="editors.xml#TH">Another
+                     character in Garth's "Dispensary," Machaon there represents a late
+                     seventeenth-century physician Sir Thomas Millington (<ref
+                        target="https://www.rcplondon.ac.uk/news/dispensary-sir-samuel-garth-s-mock-heroic-poem"
+                        >Gillum</ref>). Machaon is also the name of a mythic figure, the son of the
+                     Greco-Roman god of medicine <ref
+                        target="https://en.wikipedia.org/wiki/Asclepius">Asclepius</ref>. In <hi
+                        rend="italic">The Illiad</hi>, Machaon was the surgeon for the Greek army
+                     during the Trojan War.</note>
+                  <l n="78">'By his red cloak and his superior frown;</l>
+                  <l n="79"> 'And why, he cry'd, this grief and this despair?</l>
+                  <l n="80">'You shall again be well, again be fair;</l>
+                  <l n="81">'Believe my oath; (with that an oath he swore)</l>
+                  <l n="82">'False was his oath; my beauty is no more!</l>
+               </lg>
+               <lg n="9">
+                  <l rend="indent" n="83">'Cease, hapless maid no more thy tale pursue,</l>
+                  <l n="84">'Forsake mankind, and bid the world adieu!</l>
+                  <l n="85">'Monarchs and beauties rule with equal sway;</l>
+                  <l n="86">'All strive to serve, and glory to obey:</l>
+                  <l n="87">'Alike unpitied when depos'd they grow;</l>
+                  <l n="88">'Men mock the idol of their former vow.</l>
+               </lg>
+               <lg n="10">
+                  <l rend="indent" n="89">'Adieu! ye parks!—in some obscure recess,</l>
+                  <l n="90">'Where gentle streams will weep at my distress,</l>
+                  <pb n="37" facs="pageImages/037.jpg"/>
+                  <l n="91">'Where no false friend will in my grief take part,</l>
+                  <l n="92">'And mourn my ruin with a joyful heart;</l>
+                  <l n="93">'There let me live in some deserted place,</l>
+                  <l n="94">'There hide in shades this lost inglorious face.</l>
+                  <l n="95">'Ye operas, circles, I no more must view!</l>
+                  <l n="96">'My toilette, patches, all the world adieu!</l>
+               </lg>
+               <!-- COULD ADD A <MILESTONE> ELEMENT TO INDICATE PRINTERS MARKS AND ORNAMENTS; SEE TEI P5 GUIDELINES. -->
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

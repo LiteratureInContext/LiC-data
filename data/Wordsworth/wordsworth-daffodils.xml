@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wordsworth-daffodils">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">"I wandered lonely as a cloud"</title>
+                <author>
+                    <persName type="lcnaf" key="79006595">
+                        <name>
+                            <forename>William</forename>
+                            <surname>Wordsworth</surname>
+                        </name>
+                    </persName>       
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    
+                    <name ref="editors.xml#UVAstudstaff">Students and Staff of The University of Virginia</name>
+                    
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+                
+            </titleStmt>
+            
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA</addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"I wandered lonely as a cloud"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <name>
+                                <forename>William</forename>
+                                <surname>Wordsworth</surname> 
+                            </name>
+                        </author>
+                        <title>Poems</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7011781">London</placeName> 
+                            </pubPlace>
+                            <publisher>Longman, Hurst, Rees, and Orme</publisher>
+                            <date when="1807">1807</date>
+                            <note></note>       
+                        </imprint>
+                        
+                        <biblScope>pp 49-50</biblScope>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="poem">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness/>
+                
+                <purpose type="entertain" degree="high"/>
+                
+                <purpose type="inform" degree="low"/>
+                
+            </textDesc>
+            
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="1100066"></name>
+                    <time>Late 18th Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+            
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of primary
+                    sources relevant to the study and the teaching of British and American literature of
+                    the 18th century. This project is funded by the National Endowment for the Humanities
+                    and developed by faculty at The University of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact lic.open.anthology@gmail.com.
+                    </p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                        not. Where pages break in the middle of a word, the complete word has been
+                        indicated prior to the page beginning.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="snac">
+                    <bibl>Social Networks and Archival Context ID</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        
+        
+        <revisionDesc>
+            
+            <change when="2023-11-27" who="editors.xml#JOB">created LiC edition</change>
+        </revisionDesc>          
+    </teiHeader>          
+    <text>
+        <body>
+            <pb n="" facs="pageImages/daffodils.jpg"/>
+            <div type="poem">
+            <lg type="stanza">
+                <l>I wandered lonely as a Cloud</l>
+                <l>That floats on high o'er Vales and Hills,</l>
+                <l>When all at once I saw a crowd</l>
+                <l>A host of dancing Daffodils;</l>
+                <l>Along the Lake, beneath the trees,</l>
+                <l>Ten thousand dancing in the breeze.</l></lg>
+                
+                <lg type="stanza">
+                 <l>The waves beside them danced, but they</l>   
+                  <l>Outdid the sparkling waves in glee:--</l>
+                    <l>A Poet could not but be gay</l>
+                    <l>In such a laughing company:</l>
+                    <l>I gaz'd--and gaz'd--but little thought</l>
+                    <l>What wealth the show to me had brought:</l></lg>
+                    
+                    <lg type="stanza">
+                    <l>For oft when on my Couch I lie</l>
+                    <l>In vacant or in pensive mood</l>
+                    <l>They flash upon that inward eye</l>
+                    <l>Which is the bliss of solitude,</l>
+                    <l>And then my heart with pleasure fills,</l>
+                    <l>And dances with the Daffodils.</l>
+                    
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
+
