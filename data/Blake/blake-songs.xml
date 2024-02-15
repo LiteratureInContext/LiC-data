@@ -1,14 +1,27 @@
 <?xml version="1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="blake-songs">
-<teiHeader type="migrated" creator="Etext">
+<teiHeader xml:lang="en">
 <fileDesc>
 <titleStmt>
-<title type="main">Songs of innocence and of experience : shewing the two contrary states of the human soul 1789-1794 / W. Blake</title>
-<title type="sort">songs of innocence and of experience shewing the two contrary states of the human soul 1789 1794 w blake</title>
-<author>Blake, William, 1757-1827</author>
+<title type="main">Songs of innocence and of experience</title>
+<author>
+    <persName type="lcnaf" key="n78095331">
+        <forename>William</forename>
+        <surname>Blake</surname>
+        
+    </persName>
+    </author>
+    <editor>
+        <persName type="orcid" key="0000-0001-6453-8721">
+            <name ref="editors.xml#JOB">
+                <surname>O'Brien</surname>
+                <forename>John</forename>
+            </name>
+        </persName>
+    </editor>
 <respStmt>
-<resp>Creation of machine-readable version:</resp>
+<resp>Transcription, correction, editorial commentary and markup</resp>
 <name>Judy Boss</name>
 <resp>Conversion to TEI.2-conformant markup:</resp>
 <name>University of Virginia Library Electronic Text Center.</name>
