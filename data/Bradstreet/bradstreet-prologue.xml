@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="bradstreet-prologue">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>"The Prologue"</title>
+                    
+                    <author>
+                        
+                        <persName type="lcnaf" key="n79145303">
+                            <name>
+                                <forename>Anne</forename>
+                                <surname>Bradstreet</surname>
+                            </name>
+                        </persName>
+                    </author>
+                    <editor>
+                        <persName type="orcid" key="0000-0001-6453-8721">
+                            <name ref="editors.xml#JOB" >
+                                <surname>O'Brien</surname>
+                                <forename>John</forename>
+                            </name>
+                        </persName>
+                    </editor>
+                    <respStmt>
+                        <resp>Transcription, correction, editorial commentary, and markup</resp>
+                        <name>Staff and Research Assistants at The University of Virginia</name>
+                        <name>John O'Brien</name>
+                        <name>Sara Brunstetter</name>
+                    </respStmt>
+                    <sponsor/>
+                    <funder>National Endowment for the Humanities</funder>
+                </titleStmt>
+                <publicationStmt>
+                    <publisher>Literature in Context</publisher>
+                    
+                    <address>
+                        <addrLine>University of Virginia Department of English</addrLine>
+                        <addrLine>P. O. Box 400121</addrLine>
+                        <addrLine>Charlottesville, VA </addrLine>
+                        <addrLine>22904-4121</addrLine>
+                        <addrLine>jobrien@virginia.edu</addrLine>
+                        <addrLine>lic.open.anthology@gmail.com</addrLine>
+                    </address>
+                    
+                    <availability status="free">
+                        <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                            Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                            License </licence>
+                    </availability>
+                </publicationStmt>
+                <sourceDesc>
+                    
+                    <biblStruct>
+                        <analytic><title>"The Prologue"</title></analytic>
+                        <monogr>
+                            <author>
+                                <persName type="lcnaf" key="n79145303">
+                                    <name>
+                                        <forename>Anne</forename>
+                                        <surname>Bradstreet</surname>
+                                    </name>
+                                </persName>
+                            </author>
+                            <title type="main">Several Poems Compiled with Great Variety of Wit and Learning</title>
+                            
+                            <imprint>
+                                <pubPlace>
+                                    <placeName key="7013445">Boston</placeName>
+                                </pubPlace>
+                                <publisher>John Foster</publisher>
+                                <date when="1678">1678</date>
+                                <note resp="editors.xml#JOB">
+                                    Our texts are taken from the <ref target="http://name.umdl.umich.edu/A29149.0001.001">Text Creation Partnership's digital edition of <hi rend="italic">Several poems compiled with great variety of wit and learning</hi></ref> published in Boston in 1678. This text is sometimes referred to by its alternate title, and the sobriquet given to Anne Bradstreet, "The Tenth Muse". Title page drawn from the University of Pennsylvania's <hi rend="italic">Celebration of Women Writers</hi>.</note>
+                            </imprint>    
+                            <extent>pp 3-4</extent>
+                        </monogr>
+                    </biblStruct>    
+                </sourceDesc>        
+            </fileDesc>
+            
+            <profileDesc>
+                <langUsage>
+                    <language ident="en">English</language>
+                </langUsage>
+                <creation/>
+                <textDesc n="poem">
+                    <channel mode="w">print</channel>
+                    <constitution type="single"/>
+                    <derivation type="original"/>
+                    <domain/>
+                    <factuality type="fiction"/>
+                    <interaction/>
+                    <preparedness type="prepared"/> <!-- I would say this is unknown -->
+                    <purpose type="entertain" degree="high"/>
+                    <purpose type="inform" degree="high"/>
+                </textDesc>
+                <settingDesc>
+                    <setting>
+                        <name type="tgn" key="7014203">New England</name> 
+                        <time from="1600" to="1700">Seventeenth Century</time>
+                    </setting>
+                </settingDesc>
+            </profileDesc>
+            
+            <encodingDesc>
+                <!-- BEGINS Encoding Description -->
+                <projectDesc>
+                    <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                        project, which provides an accessible, curated, and marked-up selection of primary
+                        sources relevant to the study and the teaching of British and American literature of
+                        the 18th century. This project is funded by the National Endowment for the Humanities
+                        and developed by faculty at The University of Virginia and Marymount University. </p>
+                </projectDesc>
+                <editorialDecl>
+                    <interpretation>
+                        <p>Research informing these annotations draws on publicly-accessible resources, with
+                            links provided where possible. Annotations have also included common knowledge,
+                            defined as information that can be found in multiple reliable sources. If you
+                            notice an error in these annotations, please contact
+                            lic.open.anthology@gmail.com.</p>
+                    </interpretation>
+                    <normalization>
+                        <p>Original spelling and capitalization is retained, though the long s has been
+                            silently modernized and ligatured forms are not encoded.</p>
+                    </normalization>
+                    <hyphenation>
+                        <p>Hyphenation has not been retained, except where necessary for the sense of the
+                            word.</p>
+                    </hyphenation>
+                    <segmentation>
+                        <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                            not. Where pages break in the middle of a word, the complete word has been
+                            indicated prior to the page beginning. </p>
+                    </segmentation>
+                    <correction>
+                        <p>Materials have been transcribed from and checked against first editions, where
+                            possible. See the Sources section.</p>
+                    </correction>
+                </editorialDecl>
+                <tagsDecl>
+                    <namespace name="http://www.tei-c.org/ns/1.0">
+                        <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                    </namespace>
+                </tagsDecl>
+                <classDecl>
+                    <taxonomy xml:id="lcnaf">
+                        <bibl>Library of Congress Name Authority File</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="lcc">
+                        <bibl>Library of Congress Classification</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="tgn">
+                        <bibl>Getty Thesaurus of Geographic Names</bibl>
+                    </taxonomy>
+                    <taxonomy xml:id="orcid">
+                        <bibl>Open Researcher and Contributor ID</bibl>
+                    </taxonomy>
+                </classDecl>
+            </encodingDesc>
+        </teiHeader>
+        
+        <text><front>
+            <pb n="[TP]" facs="pageImages/bradstreet_TP.jpeg"/>
+            <titlePage>
+                <titlePart>SEVERAL<lb/>
+                    
+                    POEMS<lb/>
+                    
+                    Compiled with great variety of Wit and<lb/>
+                    Learning, full of Delight;<lb/>
+                    Wherein especially is contained a compleat<lb/>
+                    Discourse, and Description of<lb/>
+                    
+                    The Four {	ELEMENTS<lb/>
+                    CONSTITUTIONS,<lb/>
+                    AGES of Man,<lb/>
+                    SEASONS of the Year.<lb/><lb/>
+                    Together with an exact Epitome of<lb/>
+                    the three first <hi rend="italic">Monarchyes</hi><lb/><lb/>
+                    
+                    Viz, The {	ASSYRIAN,<lb/>
+                    PERSIAN,<lb/>
+                    GRECIAN.<lb/>
+                    <hi rend="italic">And beginning of the</hi> Romane Common-wealth<lb/>
+                    <hi rend="italic">to the end of their last King:</hi><lb/>
+                    
+                    With diverse other pleasant &amp; serious <hi rend="italic">Poems</hi>,<lb/>
+                    
+                    By a Gentlewoman in <hi rend="italic">New-England</hi>.<lb/>
+                    
+                    <hi rend="italic">The second Edition, Corrected by the Author,<lb/>
+                        and enlarged by an Addition of several other<lb/>
+                        Poems found amongst her Papers<lb/>
+                        after her Death.</hi><lb/>
+                </titlePart>
+                <titlePart>
+                    <hi rend="italic">Boston</hi>, Printed by <hi rend="italic">John Foster</hi>, 1678.</titlePart>
+            </titlePage>
+        </front>
+            
+        <body>
+            <div>
+                <pb n="3"/>
+                <head>The Prologue</head>
+                <lg><head type="sub">1.</head>
+               
+                <l>TO sing of Wars, of Captains, and of Kings,</l>
+                <l>Of Cities founded, Common-wealths begun,</l>
+                <l>For my mean pen are too superiour things:</l>
+                <l>Or how they all, or each their dates have run</l>
+                <l>Let Poets and Historians set these forth,</l>
+                <l>My obscure Lines shall not so dim their worth.</l></lg>
+                <lg><head type="sub">2.</head>
+                    <l>But when my wondring eyes and envious heart</l>
+                    <l>Great Bartas sugar'd lines, do but read o're</l>
+                    <l>Fool I do grudg the Muses did not part</l>
+                    <l>'Twixt him and me that overfluent store,</l>
+                    <l>A Bartas can, do what a Bartas will</l>
+                    <l>But simple I according to my skill.</l></lg>
+                <lg>
+                <head type="sub">3.</head>
+                    <l>From school-boyes tongue no rhet'rick we expect</l>
+                    <l>Nor yet a sweet Consort from broken strings,</l>
+                    <l>Nor perfect beauty, where's a main defect:</l>
+                    <l>My foolish, broken blemish'd Muse so sings</l>
+                    <l>And this to mend, alas, no Art is able,</l>
+                    <l>'Cause nature, made it so irreparable.</l></lg>
+                <lg><head type="sub">4.</head>
+                    <l>Nor can I, like that fluent sweet tongu'd Greek,</l>
+                    <l>Who lisp'd at first, in future times speak plain</l>
+                    <l>By Art he gladly found what he did seek</l>
+                    <l>A full requital of his, striving pain</l>
+                <pb n="4"/>
+                    <l>Art can do much, but this maxime's most sure</l>
+                    <l>A weak or wounded brain admits no cure.</l></lg>
+                <lg><head type="sub">5.</head>
+                    <l>I am obnoxious to each carping tongue</l>
+                    <l>Who says my hand a nee•le better fits,</l>
+                    <l>A Poets pen all scorn I should thus wrong,</l>
+                    <l>For such despite they cast on Female wits:</l>
+                    <l>If what I do prove well, it won't advance,</l>
+                    <l>They'l say it's stoln, or else it was by chance.</l></lg>
+                <lg><head type="sub">6.</head>
+                    <l>But sure the Antique Greeks were far more mild</l>
+                    <l>Else of our Sexe, why feigned they those Nine</l>
+                    <l>And poesy made, Calliop•'s own Child;</l>
+                    <l>So 'mongst the rest they placed the Arts Divine.</l>
+                    <l>But this weak knot, they will full soon untie,</l>
+                    <l>The Greeks did nought, but play the fools &amp; lye.</l></lg>
+               <lg> <head type="sub">7.</head>
+                   <l>Let Greeks be Greeks, and women what they are</l>
+                   <l>Men have precedency and still excell,</l>
+                   <l>It is but vain unjustly to wage warre;</l>
+                   <l>Men can do best, and women know it well</l>
+                   <l>Preheminence in all and each is yours;</l>
+                   <l>Yet grant some small acknowledgement of ours.</l></lg>
+                <lg><head type="sub">8.</head>
+                    <l>And oh ye high flown quills that soar the Skies,</l>
+                    <l>And ever with your prey still catch your praise,</l>
+                    <l>If e're you daigne these lowly lines your eyes</l>
+                    <l>Give Thyme or Parsley wreath I ask no bayes,</l>
+                    <l>This mean and unrefined ure of mine</l>
+                    <l>Will make you glistring gold, but more to shine:</l></lg>
+                
+            </div>
+        </body>
+    </text>
+</TEI>
