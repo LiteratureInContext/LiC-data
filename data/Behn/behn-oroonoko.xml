@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+
  
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="behn-oroonoko">
 
@@ -82,23 +84,22 @@
                         </name>
                      </persName>
                   </author>
-                  <title type="main">Oroonoko</title>
-                  <title type="sub">; or, The Royal Slave; a True History</title>
+                  <title type="main">Oroonoko:</title>
+                  <title type="sub">or, The Royal Slave; a True History</title>
                   <imprint>
                      <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
                      <publisher>Printed for William Canning</publisher>
                      <date when="1688">1688</date>
-                     <note resp="editors.xml#JOB"> This edition has been prepared from the edition
-                        undertaken by the Oxford Text Archive, which reproduces the copy of the
-                        first edition in the Huntington Library, San Marino, California. This is
-                        Oxford Text Archive record number A27305. We corrected errors in the Oxford
-                        Text Archive against the Google Books digitized page images of the first
-                        edition: </note>
+                     <note resp="editors.xml#JOB">This edition has been prepared from the edition
+                        undertaken by the <ref target="http://hdl.handle.net/20.500.12024/A27305">Oxford Text Archive</ref>, which reproduces the copy of the
+                        first edition in the Huntington Library, San Marino, California. We corrected errors in the Oxford
+                        Text Archive against the <ref target="https://www.google.com/books/edition/Oroonoko_or_the_Royal_Slave_A_true_histo/wehmAAAAcAAJ">Google Books digitized page images of the first
+                        edition</ref>. Page images have been drawn from this Google Books edition.</note>
                   </imprint>
                   <extent>[14], 239 [i.e. 223] p.</extent>
-                  <biblScope unit="Filler"/>
+                
                   <biblScope/>
                </monogr>
             </biblStruct>
@@ -204,7 +205,7 @@
    </teiHeader>
    <!--TEI Header Ends -->
 
-   <text xml:lang="eng">
+   <text>
       <front>
          <pb n="[TP]" facs="pageImages/TP.jpg"/>
          <titlePage>
@@ -215,7 +216,7 @@
 
             <titlePart>By Mrs. <hi rend="italic">A. BEHN.</hi><lb/><lb/></titlePart>
 
-            <titlePart><hi rend="italic">LONDON,</hi> Printed for <hi rend="italic">Will. Canning,</hi> at his
+            <titlePart><hi rend="italic">LONDON,</hi><lb/>Printed for <hi rend="italic">Will. Canning,</hi> at his
                Shop in <lb/>the <hi rend="italic">Temple-Cloysters.</hi> 1688.</titlePart>
 
             <lb/>
@@ -268,7 +269,7 @@
                of your Religion and Country; to both which you are a useful and necessary Honour:
                They both want such Supporters; and 'tis only Men of so elevated Parts,<pb n="[vi]"/> and fine
                Knowledge; such noble Principles of Loyalty and Religion this Nation Sighs for. Where
-               shall we find a Man so Young, like St. <hi rend="italic">Augustine,</hi> in the midst of all his
+               shall we find a Man so Young, like St. Augustine, in the midst of all his
                Youth and Gaiety, Teaching the World divine Precepts, true Notions of Faith, and
                Excellent Morality, and, at the same time, be also a perfect Pattern of all that
                accomplish a Great Man? You have, my Lord, all that refin'd Wit that Charms, and the
@@ -313,7 +314,7 @@
             
             <closer>
             <lb/>
-               <salute><hi>My Lord,</hi></salute>
+               <salute><hi rend="italic">My Lord,</hi></salute>
                <lb/> Your Lordship's most oblig'd<lb/>and obedient Servant, <lb/>
                <lb/>
                <signed><hi rend="italic">A. BEHN.</hi></signed>
@@ -322,9 +323,9 @@
          </div>
       </front>
 
-      <pb n="[1]"/>
+   
       <body>
-
+         <pb n="[1]"/>
          <div type="text">
          <head type="main">THE<lb/>HISTORY<lb/>OF THE<lb/>Royal Slave.</head>
          
@@ -393,8 +394,8 @@
                   Anne Bracegirdle, performing in John Dryden's play <hi rend="italic">The Indian Queen,</hi>
                   wearing the feathered headress referred to in this passage. Whether this headdress
                   was the same one that Behn brought back to England from Surinam in the 1660s is
-                  impossible to know at this point. <figure><graphic
-                        url="http://virginia-anthology.org/wp-content/uploads/2016/01/Indianqueen.jpg"/></figure> (Folger Shakespeare Library)</note> infinitely admir'd by Persons
+                  impossible to know at this point. <graphic
+                        url="http://virginia-anthology.org/wp-content/uploads/2016/01/Indianqueen.jpg"/>(Folger Shakespeare Library)</note> infinitely admir'd by Persons
                of Quality; and were unimitable. Besides these, a thousand little Knacks, and
                Rarities in Nature, and some of Art; as their Baskets, Weapons, Aprons,
                   <hi rend="italic">&amp;c.</hi> We dealt with 'em with Beads of all Colours, Knives, Axes, Pins
@@ -494,9 +495,9 @@
                   1660s, when this story is set, both English and Dutch slave traders used the fort
                   at Coramantien. By the late seventeenth century, it was controlled by the Dutch,
                   who renamed it Fort Amsterdam. Its ruins can still be visited today.
-                        <figure><graphic
+                        <graphic
                         url="http://virginia-anthology.org/wp-content/uploads/2016/01/FortAmsterdamCormantine-300x206.jpg"
-                     /></figure>
+                     />
                </note>, a Country of <hi rend="italic">Blacks</hi> so called, was one of those places in which
                they found the most advantageous Trading for these Slaves; and thither most of our
                great Traders in that Merchandice traffick'd; for that Nation is very war-like and
@@ -566,7 +567,7 @@
             <pb n="20"/>
             <p> This great and just Character of <hi rend="italic">Oroonoko</hi> gave me an extream Curiosity to
                see him, especially when I knew he spoke <ref target="a012" corresp="n012">French and
-                  English</ref><note xml:id="n012" target="a012 a013" type="editorial"
+                  English</ref><note xml:id="n012" target="a012" type="editorial"
                   resp="editors.xml#UVAstudstaff">Behn's emphasis on Oroonoko's knowledge of French
                   and English associates him with civilized Europeans; eloquent Africans in European
                   literature were often imagined as here, as more European than African.</note>, and
