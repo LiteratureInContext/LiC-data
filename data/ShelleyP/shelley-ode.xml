@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shelley-ode">
+   <!-- this xml:id is important; it is the unique identifier for the text, added according to the model author-titleword, as in haywood-fantomina -->
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Ode to the West Wind</title>
+            <author>
+               <persName type="lcnaf" key="FILL-IN">
+                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
+                  <name ref="xxx.xml">
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                     <forename>Percy Bysshe</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
+                     <surname>Shelley</surname>
+                  </name>
+              
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename>Tonya</forename>
+                     <surname>Howe</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <!-- edit this content to reflect this digital edition -->
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#XXX"
+                  ><?oxy-placeholder content="Students and Staff of UNIVERSITY NAME"?></name>
+               <name ref="editors.xml#XX"><?oxy-placeholder content="Firstname Lastname"?></name>
+               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
+               <addrLine>Address line 2</addrLine>
+               <addrLine>Address line 3</addrLine>
+               <addrLine>Address line 4</addrLine>
+               <addrLine>Email</addrLine>
+               <!-- cut unused or add additional addrLines -->
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title><?oxy-placeholder content="Title of Contained Document in Quotation Marks. If this is a stand-alone monograph, cut the <analytic> tag."?></title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Percy Bysshe</forename>
+                        <surname>Shelley</surname>
+                        
+                     </name>
+                  </author>
+
+                  <title><?oxy-placeholder content="Title of the Monograph/Container"?></title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="000"
+                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                     </pubPlace>
+                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
+                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
+                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <!-- Add additional NOTE elements as needed  -->
+                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                  </imprint>
+
+                  <imprint>
+                     <pubPlace/>
+                     <publisher/>
+                     <date/>
+                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
+                  </imprint>
+
+                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               <name type="tgn" key="7011197">Bath, England</name>
+               <time from="1690" to="1724">Early 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="0000-00-00" who="editors.xml#XX"
+            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
+         <change when="0000-00-00" who="xxxx"/>
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <titlePage>
+            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
+            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
+            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
+            <titlePart/>
+            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
+            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
+                  resp="XXX"/><lb/>
+               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
+            </titlePart>
+            <docImprint>
+               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
+               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
+                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
+               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
+                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
+                     Browne</hi></publisher>
+               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
+                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+            </docImprint>
+         </titlePage>
+      </front>
+      <body>
+         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
+         <div type="poem">
+            <!-- note structure for poetry -->
+            <pb n="200" facs="images/FN-200.jpg"/>
+            
+         
+         </div>
+
+          <head type="title">ODE TO THE WEST WIND.[1]</head>
+          <div type="canto" n="1">
+              <head type="sub">I.</head>
+              <lg met="iambic pentameter">
+
+          <l>O, wild West Wind, thou breath of Autumn's being,</l>
+          <l>Thou, from whose unseen presence the leaves dead</l>
+          <l>Are driven, like ghosts from an enchanter fleeing,</l>
+
+          <l>Yellow, and black, and pale, and hectic red,</l>
+          <l>Pestilence-stricken multitudes: O, thou,</l>
+          <l>Who chariotest to their dark wintry bed</l>
+
+          <l>The winged seeds, where they lie cold and low,</l>
+          <l>Each like a corpse within its grave, until</l>
+          <l>Thine azure sister of the spring shall blow</l>
+
+          <l>Her clarion o'er the dreaming earth, and fill</l>
+          <l>(Driving sweet buds like flocks to feed in air)</l>
+          <l>With living hues and odours plain and hill:</l>
+
+          <l>Wild Spirit, which art moving every where;</l>
+                  <l>Destroyer and preserver; hear, O, hear!</l></lg></div>
+
+                  <div type="canto" n="2">
+                      <head type="sub">II.</head>
+
+<lg>
+          <l>Thou on whose stream, 'mid the steep sky's commotion,</l>
+          <l>Loose clouds like earth's decaying leaves are shed,</l>
+    <l>Shook from the tangled boughs of Heaven and Ocean,</l></lg>
+    <lg>
+          <l>Angels of rain and lightning: there are spread</l>
+          <l>On the blue surface of thine airy surge,</l>
+        <l>Like the bright hair uplifted from the head</l></lg>
+        <lg>
+          <l>Of some fierce Mænad, even from the dim verge</l>
+          <l>Of the horizon to the zenith's height</l>
+            <l>The locks of the approaching storm. Thou dirge</l></lg>
+            <lg>
+          <l>Of the dying year, to which this closing night</l>
+          <l>Will be the dome of a vast sepulchre,</l>
+                <l>Vaulted with all thy congregated might</l></lg>
+
+          <lg><l>Of vapours, from whose solid atmosphere</l>
+                      <l>Black rain, and fire, and hail will burst: O, hear!</l></lg></div>
+
+                      <div type="canto" n="3">
+                          <head type="sub">III.</head>
+
+                          <lg>
+          <l>Thou who didst waken from his summer dreams</l>
+          <l>The blue Mediterranean, where he lay,</l>
+                              <l>Lulled by the coil of his crystalline streams,</l></lg>
+                              <lg>
+          <l>Beside a pumice isle in Baiæ's bay,</l>
+          <l>And saw in sleep old palaces and towers</l>
+                                  <l>Quivering within the wave's intenser day,</l></lg>
+                                  <lg>
+          <l>All overgrown with azure moss and flowers</l>
+          <l>So sweet, the sense faints picturing them! Thou</l>
+                                      <l>For whose path the Atlantic's level powers</l></lg>
+                                      <lg>
+          <l>Cleave themselves into chasms, while far below</l>
+          <l>The sea-blooms and the oozy woods which wear</l>
+                                          <l>The sapless foliage of the ocean, know</l></lg>
+
+                                          <lg>
+          <l>Thy voice, and suddenly grow grey with fear,</l>
+                                              <l>And tremble and despoil themselves: O, hear!</l></lg></div>
+
+                          <div type="canto" n="4">
+                              <head type="sub">IV.</head>
+
+                              <lg>
+          <l>If I were a dead leaf thou mightest bear;</l>
+          <l>If I were a swift cloud to fly with thee;</l>
+                                  <l>A wave to pant beneath thy power, and share</l></lg>
+                                  <lg>
+          <l>The impulse of thy strength, only less free</l>
+          <l>Than thou, O, uncontroulable! If even</l>
+                                      <l>I were as in my boyhood, and could be</l></lg>
+                                      <lg>
+          <l>The comrade of thy wanderings over heaven,</l>
+          <l>As then, when to outstrip thy skiey speed</l>
+          <l>Scarce seemed a vision; I would ne'er have striven</l>
+                                          <l>As thus with thee in prayer in my sore need.</l></lg>
+                                                                                                                                                                                                                      <lg><l>Oh! lift me as a wave, a leaf, a cloud!</l>
+                                                                                                                                                                                                                          <l>I fall upon the thorns of life! I bleed!</l></lg>
+                                                                                                                                                                                                                          <lg>
+                                                                                                                                                                                                                          <l>A heavy weight of hours has chained and bowed</l>
+                                                                                                                                                                                                                              <l>One too like thee: tameless, and swift, and proud.</l></lg></div>
+
+
+                                                                                                                                                                                                                          <div type="canto" n="5">
+                                                                                                                                                                                                                              <head type="sub">V.</head>
+
+
+                                                                                                                                                                                                                              <lg>                                                                                                                                                                                                      <l>Make me thy lyre, even as the forest is:</l>
+                                                                                                                                                                                                                          <l>What if my leaves are falling like its own!</l>
+                                                                                                                                                                                                                                  <l>The tumult of thy mighty harmonies</l></lg>
+
+                                                                                                                                                                                                                                  <lg>                                                                                                                                                                                                       <l>Will take from both a deep, autumnal tone,</l>
+                                                                                                                                                                                                                          <l>Sweet though in sadness. Be thou, spirit fierce,</l>
+                                                                                                                                                                                                                                      <l>My spirit! Be thou me, impetuous one!</l></lg>
+
+                                                                                                                                                                                                                                      <lg>                                                                                                                                                                                                          <l>Drive my dead thoughts over the universe</l>
+                                                                                                                                                                                                                          <l>Like withered leaves to quicken a new birth!</l>
+                                                                                                                                                                                                                                          <l>And, by the incantation of this verse,</l></lg>
+
+                                                                                                                                                                                                                                          <lg>                                                                                                                                                                                                      <l>Scatter, as from an unextinguished hearth</l>
+                                                                                                                                                                                                                          <l>Ashes and sparks, my words among mankind!</l>
+                                                                                                                                                                                                                                              <l>Be through my lips to unawakened earth</l></lg>
+
+                                                                                                                                                                                                                                              <lg>                                                                                                                                                                                                       <l>The trumpet of a prophecy! O, wind,</l>
+                                                                                                                                                                                                                              <l>If Winter comes, can Spring be far behind?</l></lg></div>
+
+<p>1. This poem was conceived and chiefly written in a wood that skirts the Arno, near Florence, and on a day when that tempestuous wind, whose temperature is at once mild and animating, was collecting the vapours which pour down the autumnal rains. They began, as I foresaw, at sunset with a violent tempest of hail and rain, attended by that magnificent thunder and lightning peculiar to the Cisalpine regions.
+    The phenomenon alluded to at the conclusion of the third stanza is well known to naturalists. The vegetation at the bottom of the sea, of rivers, and of lakes, sympathises with that of the land in the change of seasons, and is consequently influenced by the winds which announce it.</p>
+      </body>
+
+
+   </text>
+</TEI>
+
+
+
