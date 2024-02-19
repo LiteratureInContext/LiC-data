@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shelley-ode">
-   <!-- this xml:id is important; it is the unique identifier for the text, added according to the model author-titleword, as in haywood-fantomina -->
+   
    <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
@@ -10,7 +10,7 @@
                 <persName type="lcnaf" key="n79054060">
                  
                   <name ref="xxx.xml">
-                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                     
                      <forename>Percy Bysshe</forename> 
                      <surname>Shelley</surname>
                   </name>
@@ -19,7 +19,7 @@
             </author>
 
             <editor>
-               <persName type="orcid" key="0000-0002-7400-4093">
+               <persName type="orcid" key="0000-0001-6453-8721">
                   <name ref="editors.xml#TH">
                      <forename>John</forename>
                      <surname>O'Brioen</surname>
@@ -28,9 +28,9 @@
             </editor>
 
             <respStmt>
-               <!-- edit this content to reflect this digital edition -->
+               
                <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name ref="editors.xml#XXX"
+               <name ref="editors.xml#JOB"
                   >Students and Staff at the University of Virginia</name>
               
             </respStmt>
@@ -83,15 +83,15 @@
                            >London</placeName>
                      </pubPlace>
                      <publisher>C. and J. Ollier</publisher>
-                     <date when="000">1820</date>
-                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <date when="1820">1820</date>
+                     <note>"Ode to the West Wind" was first published in a volume entitled <hi rend="italic">Prometheus Unbound: A Lyrical Drama, in Four Acts, With Other Poems</hi>, published by the London publisher partnership of the brothers Charles and James Ollier. We have taken our edition from the Google Books version. </note>
                      
                   </imprint>
 
                  
 
                   <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
-                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                  <biblScope>188-192</biblScope>
                   <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
 
                </monogr>
@@ -134,7 +134,7 @@
       </profileDesc>
 
       <encodingDesc>
-         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+        
          <projectDesc>
             <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
                project, which provides an accessible, reliable, curated, and marked-up selection of
@@ -190,9 +190,8 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="0000-00-00" who="editors.xml#XX"
-            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
-         <change when="0000-00-00" who="xxxx"/>
+         <change when="2024-02-19" who="editors.xml#JOB"
+            >created Literature in Context Edition</change>
       </revisionDesc>
 
    </teiHeader>
@@ -203,14 +202,19 @@
 
      
       <body>
-         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
+       
          <div type="poem">
             
             
          
          </div>
+         <pb n="188" facs="pageImages/188.png"/>
+         
+         
 
-          <head type="title">ODE TO THE WEST WIND.[1]</head>
+         <head type="title">ODE TO THE WEST WIND.<ref target="Ode_" corresp="Ode">*</ref> <note xml:id="Ode" target="Ode_"><p>*This poem was conceived and chiefly written in a wood that skirts the Arno, near Florence, and on a day when that tempestuous wind, whose temperature is at once mild and animating, was collecting the vapours which pour down the autumnal rains. They began, as I foresaw, at sunset with a violent tempest of hail and rain, attended by that magnificent thunder and lightning peculiar to the Cisalpine regions.</p>
+            <p>The phenomenon alluded to at the conclusion of the third stanza is well known to naturalists. The vegetation at the bottom of the sea, of rivers, and of lakes, sympathises with that of the land in the change of seasons, and is consequently influenced by the winds which announce it.</p></note></head>
+         <head> <ref target="Audio_" corresp="Audio">[Audio File]</ref><note xml:id="Audio" target="Audio_"><graphic url=" https://lic-assets-staging.s3.amazonaws.com/shelley-ode/shelleyselectedpoems_03_shelley.mp3"></graphic>Librivox recording of "Ode to the West Wind," read by Leonard Wilson</note></head>
           <div type="canto" n="1">
               <head type="sub">I.</head>
               <lg met="iambic pentameter">
@@ -219,6 +223,7 @@
           <l>Thou, from whose unseen presence the leaves dead</l>
           <l>Are driven, like ghosts from an enchanter fleeing,</l></lg>
 
+             <pb n="189" facs="pageImages/189.png"/>
           <lg><l>Yellow, and black, and pale, and hectic red,</l>
           <l>Pestilence-stricken multitudes: O, thou,</l>
               <l>Who chariotest to their dark wintry bed</l></lg>
@@ -246,6 +251,7 @@
           <l>On the blue surface of thine airy surge,</l>
         <l>Like the bright hair uplifted from the head</l></lg>
         <lg>
+           <pb n="190" facs="pageImages/190.png"/>
           <l>Of some fierce Mænad, even from the dim verge</l>
           <l>Of the horizon to the zenith's height</l>
             <l>The locks of the approaching storm. Thou dirge</l></lg>
@@ -273,6 +279,8 @@
           <l>So sweet, the sense faints picturing them! Thou</l>
                                       <l>For whose path the Atlantic's level powers</l></lg>
                                       <lg>
+                                         
+                                         <pb n="191" facs="pageImages/191.png"/>
           <l>Cleave themselves into chasms, while far below</l>
           <l>The sea-blooms and the oozy woods which wear</l>
                                           <l>The sapless foliage of the ocean, know</l></lg>
@@ -300,7 +308,8 @@
                                                                                                                                                                                                                       <lg><l>Oh! lift me as a wave, a leaf, a cloud!</l>
                                                                                                                                                                                                                           <l>I fall upon the thorns of life! I bleed!</l></lg>
                                                                                                                                                                                                                           <lg>
-                                                                                                                                                                                                                          <l>A heavy weight of hours has chained and bowed</l>
+                                                                                                                                                                                                                             <pb n="192" facs="pageImages/192.png"/> 
+                                                                                                                                                                                                                             <l>A heavy weight of hours has chained and bowed</l>
                                                                                                                                                                                                                               <l>One too like thee: tameless, and swift, and proud.</l></lg></div>
 
 
@@ -327,11 +336,10 @@
                                                                                                                                                                                                                                               <lg>                                                                                                                                                                                                       <l>The trumpet of a prophecy! O, wind,</l>
                                                                                                                                                                                                                               <l>If Winter comes, can Spring be far behind?</l></lg></div>
 
-<p>1. This poem was conceived and chiefly written in a wood that skirts the Arno, near Florence, and on a day when that tempestuous wind, whose temperature is at once mild and animating, was collecting the vapours which pour down the autumnal rains. They began, as I foresaw, at sunset with a violent tempest of hail and rain, attended by that magnificent thunder and lightning peculiar to the Cisalpine regions.
-    The phenomenon alluded to at the conclusion of the third stanza is well known to naturalists. The vegetation at the bottom of the sea, of rivers, and of lakes, sympathises with that of the land in the change of seasons, and is consequently influenced by the winds which announce it.</p>
+       
       </body>
 
-
+     
    </text>
 </TEI>
 
