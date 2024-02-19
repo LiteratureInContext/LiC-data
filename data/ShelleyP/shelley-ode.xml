@@ -7,11 +7,11 @@
          <titleStmt>
             <title type="main">Ode to the West Wind</title>
             <author>
-               <persName type="lcnaf" key="FILL-IN">
-                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
+                <persName type="lcnaf" key="n79054060">
+                 
                   <name ref="xxx.xml">
                      <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
-                     <forename>Percy Bysshe</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
+                     <forename>Percy Bysshe</forename> 
                      <surname>Shelley</surname>
                   </name>
               
@@ -21,8 +21,8 @@
             <editor>
                <persName type="orcid" key="0000-0002-7400-4093">
                   <name ref="editors.xml#TH">
-                     <forename>Tonya</forename>
-                     <surname>Howe</surname>
+                     <forename>John</forename>
+                     <surname>O'Brioen</surname>
                   </name>
                </persName>
             </editor>
@@ -31,9 +31,8 @@
                <!-- edit this content to reflect this digital edition -->
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#XXX"
-                  ><?oxy-placeholder content="Students and Staff of UNIVERSITY NAME"?></name>
-               <name ref="editors.xml#XX"><?oxy-placeholder content="Firstname Lastname"?></name>
-               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+                  >Students and Staff at the University of Virginia</name>
+              
             </respStmt>
 
             <sponsor/>
@@ -63,7 +62,7 @@
 
                <analytic>
                  
-                  <title><?oxy-placeholder content="Title of Contained Document in Quotation Marks. If this is a stand-alone monograph, cut the <analytic> tag."?></title>
+                  <title>"Ode to the West Wind"></title>
                 
                </analytic>
                  
@@ -76,26 +75,20 @@
                      </name>
                   </author>
 
-                  <title><?oxy-placeholder content="Title of the Monograph/Container"?></title>
+                  <title>Prometheus Unbound: A Lyrical Drama, in Four Acts, With Other Poems</title>
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000"
-                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                         <placeName type="tgn" key="77011781"
+                           >London</placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
-                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
+                     <publisher>C. and J. Ollier</publisher>
+                     <date when="000">1820</date>
                      <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
-                     <!-- Add additional NOTE elements as needed  -->
-                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                     
                   </imprint>
 
-                  <imprint>
-                     <pubPlace/>
-                     <publisher/>
-                     <date/>
-                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
-                  </imprint>
+                 
 
                   <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
                   <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
@@ -134,11 +127,7 @@
          <settingDesc>
 
             <setting>
-               <name type="tgn" key="7011781">London, England</name>
-               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="7011197">Bath, England</name>
-               <time from="1690" to="1724">Early 18th Century</time>
-               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+               
             </setting>
 
          </settingDesc>
@@ -212,34 +201,11 @@
 
    <text>
 
-      <front>
-         <titlePage>
-            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
-            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
-            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
-            <titlePart/>
-            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
-            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
-                  resp="XXX"/><lb/>
-               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
-            </titlePart>
-            <docImprint>
-               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
-               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
-                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
-                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
-                     Browne</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
-                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
-            </docImprint>
-         </titlePage>
-      </front>
+     
       <body>
          <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
          <div type="poem">
-            <!-- note structure for poetry -->
-            <pb n="200" facs="images/FN-200.jpg"/>
+            
             
          
          </div>
@@ -251,21 +217,21 @@
 
           <l>O, wild West Wind, thou breath of Autumn's being,</l>
           <l>Thou, from whose unseen presence the leaves dead</l>
-          <l>Are driven, like ghosts from an enchanter fleeing,</l>
+          <l>Are driven, like ghosts from an enchanter fleeing,</l></lg>
 
-          <l>Yellow, and black, and pale, and hectic red,</l>
+          <lg><l>Yellow, and black, and pale, and hectic red,</l>
           <l>Pestilence-stricken multitudes: O, thou,</l>
-          <l>Who chariotest to their dark wintry bed</l>
+              <l>Who chariotest to their dark wintry bed</l></lg>
 
-          <l>The winged seeds, where they lie cold and low,</l>
+              <lg><l>The winged seeds, where they lie cold and low,</l>
           <l>Each like a corpse within its grave, until</l>
-          <l>Thine azure sister of the spring shall blow</l>
+                  <l>Thine azure sister of the spring shall blow</l></lg>
 
-          <l>Her clarion o'er the dreaming earth, and fill</l>
+                  <lg><l>Her clarion o'er the dreaming earth, and fill</l>
           <l>(Driving sweet buds like flocks to feed in air)</l>
-          <l>With living hues and odours plain and hill:</l>
+          <l>With living hues and odours plain and hill:</l></lg>
 
-          <l>Wild Spirit, which art moving every where;</l>
+                      <lg><l>Wild Spirit, which art moving every where;</l>
                   <l>Destroyer and preserver; hear, O, hear!</l></lg></div>
 
                   <div type="canto" n="2">
