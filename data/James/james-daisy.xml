@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="james-daisy">
-                         <teiHeader xml:lang="en">
-                                                  <fileDesc>
-                                                                           <titleStmt>
+<teiHeader xml:lang="en">
+ <fileDesc>
+ <titleStmt>
                                                                                                     <title type="main">Daisy Miller: A Study</title>
                                                                                                     <author>
                                                                                                                              <persName type="lcnaf" key="FILL-IN">
-                                                                                                                                                      <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
+                                                                                                                                               
                                                                                                                                                       <name ref="xxx.xml">
-                                                                                                                                                                               <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
-                                                                                                                                                                               <forename>XXX</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
-                                                                                                                                                                               <surname>XXX</surname>
-                                                                                                                                                                               <addName>xxx</addName>
+                                                                                                                                                                              
+                                                                                                                                                                               <forename>Henry</forename> 
+                                                                                                                                                                               <surname>James</surname>
+                                                                                                                                                                          
                                                                                                                                                       </name>
                                                                                                                                                       
                                                                                                                              </persName>
@@ -37,7 +37,7 @@
                                                                                                     </respStmt>
                                                                                                     
                                                                                                     <sponsor/>
-                                                                                                    <funder><?oxy-placeholder content="Who is funding this work?"?></funder>
+                                                                                                    <funder>National Endowment for the Humanities</funder>
                                                                            </titleStmt>
                                                                            
                                                                            <publicationStmt>
@@ -61,19 +61,14 @@
                                                                                                     
                                                                                                     <biblStruct>
                                                                                                                              
-                                                                                                                             <analytic>
-                                                                                                                                                      
-                                                                                                                                                      <title><?oxy-placeholder content="Title of Contained Document in Quotation Marks. If this is a stand-alone monograph, cut the <analytic> tag."?></title>
-                                                                                                                                                      
-                                                                                                                             </analytic>
-                                                                                                                             
+                                                                                                     
                                                                                                                              <monogr>
-                                                                                                                                                      <author>
-                                                                                                                                                                               <name>
+                                                                                                                                           <author>
+                                                                                                                   <name>
                                                                                                                                                                                                         <forename>Henry</forename>
                                                                                                                                                                                                         <surname>James</surname>
                                                                                                           
-                                                                                                                                                                               </name>
+                                                                                                                         </name>
                                                                                                                                                       </author>
                                                                                                                                                       
                                                                                                                                                       <title>Daisy Miller: A Study</title>
