@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="yeats-second-coming">
+ 
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+<title type="main">"The Second Coming"</title>
+<author>
+   <persName type="lcnaf" key="n78095579">
+      
+      <name>
+       
+         <forename>William Butler</forename> 
+         <surname>Yeats</surname>
+         
+      </name>
+  
+   </persName>
+</author>
+
+ <editor>
+    <persName type="orcid" key="0000-0002-7400-4093">
+       <name ref="editors.xml#TH">
+          <surname>Howe</surname>
+          <forename>Tonya</forename>
+       </name>
+    </persName>
+ </editor>
+
+<respStmt>
+   <resp>Transcription, correction, editorial commentary, and markup</resp>
+   <name ref="editors.xml#UVAStudStaff"
+      >Students and Staff of the University of Virginia</name>
+   
+</respStmt>
+
+<sponsor/>
+<funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+          <publicationStmt>
+  <publisher>Literature in Context</publisher>
+  <address>
+      <addrLine>University of Virginia</addrLine>
+      <addrLine>P. O. Box 400121</addrLine>
+      <addrLine>Charlottesville, VA</addrLine>
+      <addrLine>22904-4121</addrLine>
+      <addrLine>lic.open.anthology@gmail.com</addrLine>
+  </address>
+  <availability status="free">
+      <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+          Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+          License </licence>
+  </availability>
+          </publicationStmt>
+
+         <sourceDesc>
+
+<biblStruct>
+   <analytic>
+      <title>"Easter, 1916"</title>
+   </analytic>
+   <monogr>
+      <author>
+         <name>
+<forename>William Butler</forename>
+<surname>Yeats</surname>
+         </name>
+      </author>
+      <title>Michael Robartes and the Dancer</title>
+      <imprint>
+         <pubPlace>
+ <placeName type="tgn" key="7001306">[Dublin] Churchtown and Dundrum</placeName>
+         </pubPlace>
+         <publisher>The Cuala Press</publisher>
+         <date when="1920">1920</date>
+         <note>Yeats' poem was initially printed in <hi rend="italic">The Dial</hi>, and then subsequently published in <hi rend="italic">Michael Robartes and the Dancer</hi> (Cuala Press, 1920). Cuala Press was an important private Arts and Crafts press in Ireland, set up by Yeats' sisters, Elizabeth and Susan, and associated with the Irish Literary Revival of the early 20th century. This digital edition uses the first printing in <hi rend="italic">Michael Robartes and the Dancer</hi>, available on Google Books (<ref target="https://www.google.com/books/edition/Michael_Robartes_and_the_Dancer/dWs6AQAAMAAJ">https://www.google.com/books/edition/Michael_Robartes_and_the_Dancer/dWs6AQAAMAAJ</ref>). For more information about the Cuala Press, see <ref target="https://digitalcollections.tcd.ie/collections/ms35tg81f?locale=en">The Library of Trinity College, Dublin</ref>.</note>
+         <!-- Add additional NOTE elements as needed  -->
+
+      </imprint>
+      <imprint>
+         <pubPlace/>
+         <publisher/>
+         <date/>
+         <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
+      </imprint>
+      <extent></extent>
+      <biblScope>pp 19-20</biblScope>
+
+   </monogr>
+</biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+<language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+<!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+<channel mode="w">print</channel>
+<!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+<constitution type="single">single poem</constitution>
+<derivation type="original"/>
+<domain/>
+<factuality type="inapplicable"/>
+<interaction/>
+<preparedness type="revised"/>
+<purpose type="express"/>
+
+<!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+<setting>
+   
+   <time from="1910" to="1920">Early 20th Century</time>
+   <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+</setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+<p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+   project, which provides an accessible, reliable, curated, and marked-up selection of
+   primary sources relevant to the study and the teaching of British and American
+   literature. This project is was initially funded by the National Endowment for the
+   Humanities and developed by faculty at The University of Virginia and Marymount
+   University.</p>
+         </projectDesc>
+         <editorialDecl>
+<interpretation>
+   <p>Research informing these annotations draws on publicly-accessible resources, with
+      links provided where possible. Annotations have also included common knowledge,
+      defined as information that can be found in multiple reliable sources. If you
+      notice an error in these annotations, please contact
+      lic.open.anthology@gmail.com.</p>
+</interpretation>
+<normalization>
+   <p>Original spelling and capitalization is retained, though the long s has been
+      silently modernized and ligatured forms are not encoded.</p>
+</normalization>
+<hyphenation>
+   <p>Hyphenation has not been retained, except where necessary for the sense of the
+      word.</p>
+</hyphenation>
+<segmentation>
+   <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+      not.</p>
+</segmentation>
+<correction>
+   <p>Materials have been transcribed from and checked against first editions, where
+      possible. See the Sources section for more information.</p>
+</correction>
+         </editorialDecl>
+         <tagsDecl>
+<namespace name="http://www.tei-c.org/ns/1.0">
+   <tagUsage gi="div">Numbered divs used.</tagUsage>
+</namespace>
+         </tagsDecl>
+         <classDecl>
+<taxonomy xml:id="lcnaf">
+   <bibl>Library of Congress Name Authority File</bibl>
+</taxonomy>
+<taxonomy xml:id="lcc">
+   <bibl>Library of Congress Classification</bibl>
+</taxonomy>
+<taxonomy xml:id="tgm">
+   <bibl>Getty Thesaurus of Geographic Names</bibl>
+</taxonomy>
+<taxonomy xml:id="orcid">
+   <bibl>Open Researcher and Contributor ID</bibl>
+</taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2024-02-25" who="editors.xml#TH"
+>transcribed for Literature in Context edition</change>
+         
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <titlePage>
+
+
+<titlePart>MICHAEL ROBARTES AND THE<lb/>DANCER, BY WILLIAM BUTLER<lb/>YEATS.</titlePart>
+ 
+<docImprint>
+   <publisher>THE CUALA PRESS<lb/></publisher>
+   <pubPlace key="7001306">CHURCHTOWN<lb/>DUDNRUM</pubPlace>
+   <docDate>JUNE 1924</docDate>
+   
+</docImprint>
+         </titlePage>
+      </front>
+      <body>
+         <pb n="19"/>
+         <div type="poem">
+<head type="title">THE SECOND COMING.</head>
+
+
+<lg><l n="1">Turning and turning in the widening gyre   </l>
+ <l n="1">The falcon cannot hear the falconer;</l>
+ <l n="2">Things fall apart; the centre cannot hold; </l>
+ <l n="3">Mere anarchy is loosed upon the world,</l>
+ <l n="4">The blood-dimmed tide is loosed, and everywhere  </l>
+ <l n="5">The ceremony of innocence is drowned;   </l>
+ <l n="6">The best lack all conviction, while the worst   </l>
+ <l n="7">Are full of passionate intensity.</l></lg>
+ <lg>
+ <l n="8">Surely some revelation is at hand;  </l>
+ <l n="9">Surely the Second Coming is at hand.   </l>
+ <l n="10">The Second Coming! Hardly are those words out</l>
+ <l n="11">When a vast image out of Spiritus Mundi   </l>
+ <l n="12">Troubles my sight: a waste of desert sand   </l>
+ <l n="13">A shape with lion body and the head of a man,  </l>
+ <l n="14">A gaze blank and pitiless as the sun,   </l>
+ <l n="15">Is moving its slow thighs, while all about it</l>
+    <l n="16">Wind shadows the indignant desert birds.   </l><pb n="20"/>
+   <l n="17">The darkness drops again but now I know</l>
+   <l n="18">That twenty centuries of stony sleep</l>
+   <l n="19">Were vexed to nightmare by a rocking cradle,</l>
+   <l n="20">And what rough beast, its hour come round at last,  </l>
+   <l n="21">Slouches toward Bethlehem to be born?   </l>
+ </lg>
+
+   </div>
+      </body>
+
+   </text>
+</TEI>
+
+
