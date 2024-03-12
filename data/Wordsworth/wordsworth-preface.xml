@@ -21,7 +21,16 @@
                      <forename>John</forename>
                   </name>
                </persName>
+               
+               <persName>
+                  <name ref="editors.xml#CO">
+                     <surname>Christiana</surname>
+                     <forename>Ogbolu</forename>
+                  </name>
+               </persName>
             </editor>
+            
+           
 
             <respStmt>
                
@@ -77,11 +86,11 @@
                      <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
+                     <publisher>T. N. Longman and O. Rees</publisher>
                      <date when="1800">1800</date>
-                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <note>Our text is built from the Project Gutenberg transcription.</note>
                      <!-- Add additional NOTE elements as needed  -->
-                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                     <note>Page images are taken from the Internet Archive digital surrogate of the sectond edition, published in 1800.</note>
                   </imprint>
 
                   <imprint>
@@ -196,7 +205,7 @@
       <revisionDesc>
          <change when="2024-02" who="editors.xml#JOB"
             >Began formatting Literature in Context edition</change>
-         <change when="2024-3" who="Christiana Ogbolu added page numbers and page images"/>
+         <change when="2024-3" who="editors.xml#CO">Christiana Ogbolu added page numbers</change>
       </revisionDesc>
 
    </teiHeader>
@@ -210,19 +219,26 @@
             <pb n="Title Page" facs="pageImages/TP"/>
            
             <titlePart>LYRICAL BALLADS,<lb/>
+               <lb/>
             WITH<lb/>
+               
             <hi rend="italic">OTHER POEMS.</hi>
+               <lb/>
             <lb/>IN TWO VOLUMES.<lb/>
+               <lb/>
             BY W. WORDSWORTH.</titlePart>
             
            
             <titlePart>
                
-               
+               <ref target="epigraph_" corresp="epigraph">Quam nihil ad genium, Papiniane, tuum!</ref><note xml:id="epigraph" target="epigraph_">A translation of this Latin sentence would be something like "How worthless this would be to your taste, Papinian!" What does Wordsworth mean by this? It's not really clear, and the line seems almost like an inside joke. Papinian was a Roman judge who was remembered as an expert on Roman law, so there's some kind of joke about how the poems that follow in effect go against the rules. It's just possible that there's a joke here, too, on the the poet Alexander Pope, the greatest English poet of the eighteenth century, whose "taste" would clearly be challenged by Wordsworth and Coleridge's poetry.</note><lb/>
+               VOL. I<lb/>
+               SECOND EDITION.
+               <lb/>
               
             </titlePart>
             <docImprint>
-               <pubPlace><placeName type="tgn" key="000"/><hi rend="italic">LONDON</hi><lb/></pubPlace>
+               <pubPlace><placeName type="tgn" key="7011781"/><hi rend="italic">LONDON</hi><lb/></pubPlace>
                <publisher>PRINTED FOR T.N. LONGMAN AND O.REES, PATERNOSTER-ROW,<lb/>
                BY BIGGS AND CO. BRISTOL</publisher><lb/>
                <date>1800.</date>
