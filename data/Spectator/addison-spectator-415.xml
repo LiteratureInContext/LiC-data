@@ -1,0 +1,212 @@
+
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="addison-spectator-412">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"[The Spectator] Issue 415, Thursday, June 26, 1712"</title>
+                <author>
+                    <persName type="lcnaf" key="n80051828">
+                        <name>
+                            <forename>Joseph</forename>
+                            <surname>Addison</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Staff and Research Assistants at The University of Virginia</name>
+                    <name ref="editors.xml#SB"><forename>Sara </forename>
+                        <surname>Brunstetter</surname></name>
+                    <name ref="editors.xml#JOB"><forename>John </forename>
+                        <surname> O'Brien</surname></name>
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"Issue 415, Thursday, June 26, 1712"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n80051828">
+                                <name>
+                                    <forename>Joseph</forename>
+                                    <surname>Addison</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title>The Spectator</title>
+                        
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="77011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Samuel Buckley</publisher>
+                            <date when="1711">1712</date>
+                            <note resp="editors.xml#JOB"> The texts for <hi rend="italic"> The
+                                Spectator</hi> are taken from Project Gutenberg's digital
+                                edition, which uses the 1891 printing of the three-volume collected
+                                edition of <hi rend="italic"> The Spectator</hi> edited by Henry
+                                Morley and printed by George Routledge and Sons. That is in turn a
+                                reprint of Morley's 1883 edition, which was published as part of <hi
+                                    rend="italic">Morley's Universal Library</hi>, a series offering
+                                inexpensive reprints of canonical texts. The annotations have been
+                                added by students and faculty at the University of Virginia. </note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="essay">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="mixed"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="medium"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="77011781">London</name>
+                    <time when="1711">1712</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                    Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        
+   <body>
+    <head>No. 415
+    Thursday, June 26, 1712
+
+    
+    
+    Adde tot egregias urbes, operumque laborem.
+    
+    Virg.translation</head>
+    
+    
+    <p>Having already shewn how the Fancy is affected by the Works of Nature, and afterwards considered in general both the Works of Nature and of Art, how they mutually assist and compleat each other, in forming such Scenes and Prospects as are most apt to delight the Mind of the Beholder, I shall in this Paper throw together some Reflections on that Particular Art, which has a more immediate Tendency, than any other, to produce those Primary Pleasures of the Imagination, which have hitherto been the Subject of this Discourse. The Art I mean is that of Architecture, which I shall consider only with regard to the Light in which the foregoing Speculations have placed it, without entring into those Rules and Maxims which the great Masters of Architecture have laid down, and explained at large in numberless Treatises upon that Subject.</p>
+    
+    <p>Greatness, in the Works of Architecture, may be considered as relating to the Bulk and Body of the Structure, or to the Manner in which it is built. As for the first, we find the Ancients, especially among the Eastern Nations of the World, infinitely superior to the Moderns.</p>
+    
+    <p> Not to mention the Tower of Babel, of which an old Author says, there were the Foundations to be seen in his time, which looked like a spacious Mountain; what could be more noble than the Walls of Babylon, its hanging Gardens, and its Temple to Jupiter Belus, that rose a Mile high by Eight several Stories, each Story a Furlong in Height, and on the Top of which was the Babylonian Observatory; I might here, likewise, take Notice of the huge Rock that was cut into the Figure of Semiramis, with the smaller Rocks that lay by it in the Shape of Tributary Kings; the prodigious Basin, or artificial Lake, which took in the whole Euphrates, till such time as a new Canal was formed for its Reception, with the several Trenches through which that River was conveyed. I know there are persons who look upon some of these Wonders of Art as Fabulous, but I cannot find any Grand1 for such a Suspicion, unless it be that we have no such Works among us at present. There were indeed many greater Advantages for Building in those Times, and in that Part of the World, than have been met with ever since. The Earth was extremely fruitful, Men lived generally on Pasturage, which requires a much smaller number of Hands than Agriculture: There were few Trades to employ the busie Part of Mankind, and fewer Arts and Sciences to give Work to Men of Speculative Tempers; and what is more than all the rest, the Prince was absolute; so that when he went to War, he put himself at the Head of a whole People: As we find Semiramis leading her three2 Millions to the Field, and yet over-powered by the Number of her Enemies. 'Tis no wonder, therefore, when she was at Peace, and turned her Thoughts on Building, that she could accomplish so great Works, with such a prodigious Multitude of Labourers: Besides that, in her Climate, there was small Interruption of Frosts and Winters, which make the Northern Workmen lie half the Year Idle. I might mention too, among the Benefits of the Climate, what Historians say of the Earth, that it sweated out a Bitumen or natural kind of Mortar, which is doubtless the same with that mentioned in Holy Writ, as contributing to the Structure of Babel. Slime they used instead of Mortar.</p>
+    
+    <p>In Egypt we still see their Pyramids, which answer to the Descriptions that have been made of them; and I question not but a traveller might find out some Remains of the Labyrinth that covered a whole Province, and had a hundred Temples disposed among its several Quarters and Divisions.</p>
+    
+    <p>The Wall of China is one of these Eastern Pieces of Magnificence, which makes a Figure even in the Map of the World, altho an Account of it would have been thought Fabulous, were not the Wall it self still extant.</p>
+    
+    <p>We are obliged to Devotion for the noblest Buildings that have adornd the several Countries of the World. It is this which has set Men at work on Temples and Publick Places of Worship, not only that they might, by the Magnificence of the Building, invite the Deity to reside within it, but that such stupendous Works might, at the same time, open the Mind to vast Conceptions, and fit it to converse with the Divinity of the Place. For every thing that is Majestick imprints an Awfulness and Reverence on the Mind of the Beholder, and strikes in with the Natural Greatness of the Soul.</p>
+    
+    <p>In the Second place we are to consider Greatness of Manner in Architecture, which has such Force upon the Imagination, that a small Building, where it appears, shall give the Mind nobler Ideas than one of twenty times the Bulk, where the Manner is ordinary or little. Thus, perhaps, a Man would have been more astonished with the Majestick Air that appeared in one of Lysippus's3 Statues of Alexander, tho' no bigger than the Life, than he might have been with Mount Athos, had it been cut into the Figure of the Hero, according to the Proposal of Phidias4, with a River in one Hand, and a City in the other.</p>
+    
+    <p>Let any one reflect on the Disposition of Mind he finds in himself, at his first Entrance into the Pantheon at Rome, and how his Imagination is filled with something Great and Amazing; and, at the same time, consider how little, in proportion, he is affected with the Inside of a Gothick Cathedral, tho' it be five times larger than the other; which can arise from nothing else, but the Greatness of the Manner in the one, and the Meanness in the other.</p>
+    
+    <p>I have seen an Observation upon this Subject in a French Author, which very much pleased me. It is in Monsieur Freart's Parallel of the Ancient and Modern Architecture. I shall give it the Reader with the same Terms of Art which he has made use of. I am observing (says he) a thing which, in my Opinion, is very curious, whence it proceeds, that in the same Quantity of Superficies, the one Manner seems great and magnificent, and the other poor and trifling; the Reason is fine and uncommon. I say then, that to introduce into Architecture this Grandeur of Manner, we ought so to proceed, that the Division of the Principal Members of the Order may consist but of few Parts, that they be all great and of a bold and ample Relievo, and Swelling; and that the Eye, beholding nothing little and mean, the Imagination may be more vigorously touched and affected with the Work that stands before it. For example; In a Cornice, if the Gola or Cynatium of the Corona, the Coping, the Modillions or Dentelli, make a noble Show by their graceful Projections, if we see none of that ordinary Confusion which is the Result of those little Cavities, Quarter Rounds of the Astragal and I know not how many other intermingled Particulars, which produce no Effect in great and massy Works, and which very unprofitably take up place to the Prejudice of the Principal Member, it is most certain that this Manner will appear Solemn and Great; as on the contrary, that it will have but a poor and mean Effect, where there is a Redundancy of those smaller Ornaments, which divide and scatter the Angles of the Sight into such a Multitude of Rays, so pressed together that the whole will appear but a Confusion.</p>
+    
+    <p>Among all the Figures in Architecture, there are none that have a greater Air than the Concave and the Convex, and we find in all the Ancient and Modern Architecture, as well in the remote Parts of China, as in Countries nearer home, that round Pillars and Vaulted Roofs make a great Part of those Buildings which are designed for Pomp and Magnificence. The Reason I take to be, because in these Figures we generally see more of the Body, than in those of other Kinds. There are, indeed, Figures of Bodies, where the Eye may take in two Thirds of the Surface; but as in such Bodies the Sight must split upon several Angles, it does not take in one uniform Idea, but several Ideas of the same kind. Look upon the Outside of a Dome, your Eye half surrounds it; look up into the Inside, and at one Glance you have all the Prospect of it; the entire Concavity falls into your Eye at once, the Sight being as the Center that collects and gathers into it the Lines of the whole Circumference: In a Square Pillar, the Sight often takes in but a fourth Part of the Surface: and in a Square Concave, must move up and down to the different Sides, before it is Master of all the inward Surface. For this Reason, the Fancy is infinitely more struck with the View of the open Air, and Skies, that passes through an Arch, than what comes through a Square, or any other Figure. The Figure of the Rainbow does not contribute less to its Magnificence, than the Colours to its Beauty, as it is very poetically described by the Son of Sirach: Look upon the Rainbow and praise him that made it; very beautiful it is in its Brightness; it encompasses the Heavens with a glorious Circle, and the Hands of the most High5 have bended it.</p>
+    
+    <p>Having thus spoken of that Greatness which affects the Mind in Architecture, I might next shew the Pleasure that arises in the Imagination from what appears new and beautiful in this Art; but as every Beholder has naturally a greater Taste of these two Perfections in every Building which offers it self to his View, than of that which I have hitherto considered, I shall not trouble my Reader with any Reflections upon it. It is sufficient for my present Purpose, to observe, that there is nothing in this whole Art which pleases the Imagination, but as it is Great, Uncommon, or Beautiful.</p>
+    
+    <p>O.</p>
+   </body>
+    </text>
+</TEI>
