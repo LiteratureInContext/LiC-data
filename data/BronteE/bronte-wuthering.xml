@@ -29,8 +29,8 @@
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#UVAstudstaff">Students and Staff at the University of
                   Virginia</name>
-               <name ref="editors.xml#UVAstudstaff">Eden Elias</name>
-               <name ref="editors.xml#UVAstudstaff">Humzah Syed</name>
+               <name ref="editors.xml#EE">Eden Elias</name>
+               <name ref="editors.xml#HS">Humzah Syed</name>
 
             </respStmt>
 
@@ -78,10 +78,9 @@
                      <publisher>Thomas Cautley Newby</publisher>
                      <date when="1847">1847</date>
                      <note>This digital edition is based on the edition created for the University of
-                        Virginia Etext Center in the 1990s. Punctuation was modernized, but otherwise the text is 
-                     that of the first edition.</note>
-                     <!-- Add additional NOTE elements as needed  -->
-                     <note>Page images have been sourced from the Internet Archive copy of the first edition of 1847.</note>
+                        Virginia Etext Center in the 1990s. Punctuation was modernized, but otherwise the text is that of the first edition.</note>
+                     
+                     <note>Page images have been sourced from the Internet Archive copy of the first edition of 1847. The audio files are provided by Librivox; the Librivox chapter divisions are slightly different from the chapter divisions in our text, but the reading is continuous.</note>
                   </imprint>
 
              
@@ -215,6 +214,7 @@
             Edition</change>
          <change when="2023-4-5" who="editors.xml#Eden Elias">Eden Elias added page numbers to volume a</change>
          <change when="2023-4-5" who="editors.xml#HS">Humzah Syed added page numbers to volume 2</change>
+         <change when="2023-4-9" who="editors.xml#JOB">John O'Brien added links to audio files</change>
       </revisionDesc>
 
    </teiHeader>
@@ -251,10 +251,14 @@
          <div type="volume" n="1">
             <pb n="1" facs="pageImages/I.9.jpg"/>
             <head>WUTHERING HEIGHTS</head>
+            <lb/>
 
             <div type="chapter" n="1.1">
                <head>Chapter I</head>
-
+               <lb/>
+               <head><ref target="Audio_" corresp="Audio">
+                  [Audio File]</ref><note xml:id="Audio" target="Audio_">  
+                     <graphic url="https://lic-assets-staging.s3.amazonaws.com/bronte-wuthering/WutheringHeightsPart1_librivox.m4b"/>Librivox recording of Part One.</note></head><lb/>
                <p>1801. ---I have just returned from a visit to my landlord--- the solitary
                   neighbour that I shall be troubled with. This is certainly a beautiful country! In
                   all England, I do not believe that I could have fixed on a situation so completely
@@ -4932,6 +4936,11 @@
             </div>
             <div type="chapter" n="2.3">
                <head>Chapter 2.3</head>
+               <lb/>
+               
+               <head><ref target="Audio_" corresp="Audio">
+                  [Audio File]</ref><note xml:id="Audio" target="Audio_">  
+                     <graphic url="https://lic-assets-staging.s3.amazonaws.com/bronte-wuthering/WutheringHeightsPart2_librivox.m4b"/>Librivox recording of Part Two.</note></head><lb/>
                <pb n="II.33" facs="pageImages/II.41.png"/>
                <p>That Friday made the last of our fine days, for a month. In the evening, the
                   weather broke; the wind shifted from south to north-east, and brought rain first,
