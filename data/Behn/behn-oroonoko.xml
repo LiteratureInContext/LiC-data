@@ -8,7 +8,7 @@
       <fileDesc>
          
          <titleStmt>
-            <title type="main">Oroonoko, or, The royal slave: A True History</title>
+            <title type="main">Oroonoko, or, The Royal Slave: A True History</title>
 
             <author>
 
@@ -35,7 +35,7 @@
 
             <respStmt>
                <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name>Students of The University of Virginia</name>
+               <name>Students and Staff of the University of Virginia</name>
                <name>Malcolm Bare</name>
                <name>Ankita Chakrabarti</name>
                <name>Neal Curtis</name>
@@ -96,7 +96,7 @@
                         first edition in the Huntington Library, San Marino, California. This is
                         Oxford Text Archive record number A27305. We corrected errors in the Oxford
                         Text Archive against the Google Books digitized page images of the first
-                        edition: </note>
+                        edition.</note>
                   </imprint>
                   <extent>[14], 239 [i.e. 223] p.</extent>
                   <biblScope unit="Filler"/>
@@ -107,8 +107,7 @@
       </fileDesc>
 
       <profileDesc>
-         <!--BEGINS Profile Description  -->
-         <!--This Profile Desc is all wrong, must be adapted to this text  -->
+         
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
@@ -198,6 +197,8 @@
          <!--This must also be completed -->
          <change when="2019" who="editors.xml#JOB">Initial XML</change>
          <change when="2022" who="editors.xml#TH">Added missing page breaks, and title page. Corrected encoding for italics. Corrected spacing in front pages.</change>
+         <change when="2024-02" who="editors.xml#AR">corrected code for annotations.</change>
+         <change when="2024-04" who="editors.xml#JOB">General clean up and formatting; adding location data</change>
       </revisionDesc>
 
 
@@ -207,7 +208,7 @@
 
    <text xml:lang="eng">
       <front>
-         <pb n="[TP]" facs="pageImages/TP.jpg"/>
+         <pb n="[Title Page]" facs="pageImages/TP.jpg"/>
          <titlePage>
 
             <titlePart>OROONOKO:<lb/>OR, THE<lb/>Royal Slave.</titlePart>
@@ -328,7 +329,7 @@
 
          <div type="text">
          <head type="main">THE<lb/>HISTORY<lb/>OF THE<lb/>Royal Slave.</head>
-         
+         <lb/>
             <p>I do not pretend, in giving you the History of this <hi rend="italic">Royal Slave,</hi> to
                entertain my Reader with the Adventures of a feign'd <hi rend="italic">Hero,</hi> whose Life and
                Fortunes Fancy may manage at the Poets Pleasure; nor in relating the Truth, design to
@@ -337,10 +338,10 @@
                natural Intrigues; there being enough of Reality to support it, and to render it
                diverting, without the Addition of Invention.</p>
 
-            <p>I was my self an <ref target="Eye-Witness_" corresp="Eye-Witness">Eye-Witness</ref><note
+            <p>I was my self an <ref target="Eye-Witness_" corresp="Eye-Witness">Eye-Witness,</ref><note
                xml:id="Eye-Witness" target="Eye-Witness_" type="editorial" resp="editors.xml#UVAstudstaff">Not
                   only one who has observed something firsthand, but in a legal sense, one who is
-                  "able to describe or testify to it." Source: Oxford English Dictionary</note>, to
+                  "able to describe or testify to it." Source: Oxford English Dictionary</note> to
                a great part, of what you will find here set down; and what I cou'd not be Witness
                of, I receiv'd from the Mouth of the chief Actor in this History, the <hi rend="italic">Hero</hi>
                himself, who gave us the whole Transactions of his Youth; and though I shall omit,
@@ -351,11 +352,11 @@
                this great Man, were curious to gather every Circumstance of his Life.</p>
 
             <p>The Scene of the last part of his Adventures lies in a Colony in <hi rend="italic">America,</hi>
-               called <ref target="Surinam_" corresp="Surinam">Surinam,</ref>
+               called <placeName type="tgn" key="7015386"><ref target="Surinam_" corresp="Surinam">Surinam,</ref>
                <note xml:id="Surinam" target="Surinam_" type="editorial" resp="editors.xml#UVAstudstaff">A
                   colony neighbored by Brazil to the south and Guiana to the West. At the time of
                   the action of the story, the colony was in British control, but it was lost to the
-                  Dutch shortly thereafter</note> in the <hi rend="italic">West-Indies.</hi>
+                  Dutch shortly thereafter</note></placeName> in the <hi rend="italic">West-Indies.</hi>
             </p>
 
             <p>But before I give you the Story of this <hi rend="italic">Gallant Slave,</hi> 'tis fit I tell you
@@ -391,11 +392,12 @@
                presented to me, and I gave 'em to the King's Theatre, and it was the Dress of the
                   <ref target="Queen_" corresp="Queen">Indian Queen</ref><note xml:id="Queen"
                   target="Queen_" type="editorial" resp="editors.xml#UVAstudstaff">Here is an image of
-                  Anne Bracegirdle, performing in John Dryden's play <hi rend="italic">The Indian Queen,</hi>
-                  wearing the feathered headress referred to in this passage. Whether this headdress
-                  was the same one that Behn brought back to England from Surinam in the 1660s is
+                  the actresses Anne Bracegirdle, performing in John Dryden's play <hi rend="italic">The Indian Queen,</hi> (1664) while wearing the feathered headress referred to in this passage. Whether this headdress
+                  was something that Behn herself brought back to England from Surinam in the 1660s is
                   impossible to know at this point. <figure><graphic
-                        url="http://virginia-anthology.org/wp-content/uploads/2016/01/Indianqueen.jpg"/></figure> (Folger Shakespeare Library)</note> infinitely admir'd by Persons
+                     url="https://lic-assets-staging.s3.amazonaws.com/behn-oroonoko/notes/bracegirdle.jpg" alt="Image of Anne Bracegirdle dressed as a native American woman"
+                     source="British Library"
+                     desc="Engraving of Anne Bracegirdle dressed as a native American woman"/></figure> (courtesey British Library under CC BY-NC-SA 4.0)</note> infinitely admir'd by Persons
                of Quality; and were unimitable. Besides these, a thousand little Knacks, and
                Rarities in Nature, and some of Art; as their Baskets, Weapons, Aprons,
                   <hi rend="italic">&amp;c.</hi> We dealt with 'em with Beads of all Colours, Knives, Axes, Pins
@@ -488,17 +490,18 @@
                more or less of either Sex, you are oblig'd to be contented with your Lot.</p>
 
             <pb n="14"/>
-            <p><ref target="Coramantien_" corresp="Coramantien">Coramantien</ref><note xml:id="Coramantien" target="Coramantien_"
-                  type="editorial" resp="editors.xml#UVAstudstaff">Coramantien was the name both of
-                  slave-trading castle, depicted here, and of the coastal area of what is now the
+            <p><placename type="tgn" key="7015386"><ref target="Coramantien_" corresp="Coramantien">Coramantien</ref><note xml:id="Coramantien" target="Coramantien_"
+                  type="editorial" resp="editors.xml#UVAstudstaff">Coramantien, or Kormantine, was the name both of a slave-trading castle, depicted here, and of the coastal area of what is now the
                   nation of Ghana where several such fortified trading posts were located. In the
                   1660s, when this story is set, both English and Dutch slave traders used the fort
                   at Coramantien. By the late seventeenth century, it was controlled by the Dutch,
                   who renamed it Fort Amsterdam. Its ruins can still be visited today.
                         <figure><graphic
-                        url="http://virginia-anthology.org/wp-content/uploads/2016/01/FortAmsterdamCormantine-300x206.jpg"
-                     /></figure>
-               </note>, a Country of <hi rend="italic">Blacks</hi> so called, was one of those places in which
+                           url="https://lic-assets-staging.s3.amazonaws.com/behn-oroonoko/notes/FortAmsterdamCormantine.jpeg" alt="Engraving of fortress known as Coramantien"
+                           source="Wikimedia Commons"
+                           desc="Engraving of Coramantien"
+                        /></figure>
+            </note></placename>, a Country of <hi rend="italic">Blacks</hi> so called, was one of those places in which
                they found the most advantageous Trading for these Slaves; and thither most of our
                great Traders in that Merchandice traffick'd; for that Nation is very war-like and
                brave; and having a continual Campaign, being always in Hostility with one
