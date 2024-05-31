@@ -81,39 +81,21 @@
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000"
-                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                        <placeName type="tgn" key="7007567"
+                           >New York</placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
-                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
-                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
+                     <publisher>Harcourt, Brace &amp; World</publisher>
+                     <date when="1925">1925</date>
+                     <note><hi rend="italic">Mrs Dalloway</hi> was published in 1925 in both London and New York. Our edition was transcribed from a copy of the New York edition digitized as part of the Google Books project and currently housed by the Hathi Trust. The transcription was originally done by Project Gutenberg, in particular by Carla Foust, Emmanuel Ackerman and the Online Distributed Proofreading Team at https://www.pgdp.net.</note>
                      <!-- Add additional NOTE elements as needed  -->
-                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                     <note>Page images are from the Hathi Trust.</note>
                   </imprint>
 
-                  <imprint>
-                     <pubPlace/>
-                     <publisher/>
-                     <date/>
-                     <note>
-                        This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook.
-                        Title: Mrs. Dalloway
-                        
-                        The Project Gutenberg eBook of Mrs. Dalloway
-                        Author: Virginia Woolf
-                        
-                        Release date: October 13, 2023 [eBook #71865]
-                        
-                        Language: English
-                        
-                        Original publication: New York: Harcourt, Brace and World, Inc, 1925
-                        
-                        Credits: Carla Foust, Emmanuel Ackerman and the Online Distributed Proofreading Team at https://www.pgdp.net (This book was produced from images made available by the HathiTrust Digital Library.)</note>
-                  </imprint>
+                  
 
-                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
-                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
-                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+                  <extent></extent>
+                  <biblScope></biblScope>
+                  
 
                </monogr>
 
@@ -130,7 +112,7 @@
 
          <creation/>
 
-         <textDesc n="poem">
+         <textDesc n="novel">
             <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
             <channel mode="w">print</channel>
             <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
@@ -141,7 +123,7 @@
             <interaction/>
             <preparedness type="revised"/>
             <purpose type="express"/>
-            <purpose type="inform" degree="medium"/>
+            <purpose type="entertain" degree="high"/>
             <!-- interpretation in the textDesc will be necessary -->
          </textDesc>
 
@@ -149,9 +131,9 @@
 
             <setting>
                <name type="tgn" key="7011781">London, England</name>
-               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="7011197">Bath, England</name>
-               <time from="1690" to="1724">Early 18th Century</time>
+              
+               
+               <time from="1890" to="1925">Early twentieth century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
             </setting>
 
@@ -215,7 +197,7 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="0000-00-00" who="editors.xml#XX"
+         <change when="0000-00-00" who="editors.xml#CO"
             ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
          <change when="0000-00-00" who="xxxx"/>
       </revisionDesc>
@@ -227,24 +209,19 @@
 
       <front>
          <titlePage>
-            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
-            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
-            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
-            <titlePart/>
-            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
-            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
-                  resp="XXX"/><lb/>
-               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
+            <pb n="Title Page" facs="pageImages/TP.jpg"/>
+            
+            <titlePart>MRS. DALLOWAY<lb/><lb/><lb/><lb/></titlePart>
+            <titlePart><hi rend="italic">by</hi></titlePart>
+            
+            <titlePart>VIRGINIA WOOLF
             </titlePart>
+            
+            <lb/><lb/><lb/><lb/><lb/><lb/><lb/>
             <docImprint>
-               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
-               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
-                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
-                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
-                     Browne</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
-                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+               <pubPlace><placeName type="tgn" key="7007567"/><hi rend="italic">New York</hi></pubPlace>
+               <lb/>  <publisher>HARCOURT, BRACE &amp; WORLD, INC.</publisher>
+                      <lb/>
             </docImprint>
          </titlePage>
       </front>
