@@ -77,8 +77,8 @@
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000"
-                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                        <placeName type="tgn" key="7007567"
+                           >New York</placeName>
                      </pubPlace>
                      <publisher>Wiley and Putnam</publisher>
                      <date when="1846">1846</date>
@@ -87,12 +87,6 @@
                      <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
                   </imprint>
 
-                  <imprint>
-                     <pubPlace/>
-                     <publisher/>
-                     <date/>
-                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
-                  </imprint>
 
                   <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
                   <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
@@ -131,9 +125,8 @@
          <settingDesc>
 
             <setting>
-               <name type="tgn" key="7011781">New York</name>
-               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-              
+               <name type="tgn" key="7007567">New York</name>
+               
                <time from="1600" to="1700">sseventeenth century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
             </setting>
@@ -212,17 +205,21 @@
       <front>
          <titlePage>
             <pb n="Title Page" facs="pageImages/tp"/>
-            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
-            <titlePart>Mosses from an Old Manse<lb/></titlePart>
+           
+            <titlePart>MOSSES<lb/>
+               from <lb/>AN OLD MANSE.<lb/></titlePart>
             <titlePart/>
-            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
-            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
-                  resp="XXX"/><lb/>
-               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
+            <lb/>
+            <titlePart>BY NATHANIEL HAWTHORNE.<lb/><lb/>
+               IN TWO PARTS<lb/>
+               PART I.
+               <lb/>
+               <lb/>
+              
             </titlePart>
             <docImprint>
-               <pubPlace><placeName type="tgn" key="000"/>New York</pubPlace>
-               <lb/> <publisher>Wiley and Putnam</publisher>
+               <pubPlace><placeName type="tgn" key="7007567"/>NEW YORK.</pubPlace>
+               <lb/> <publisher>WILEY AND PUTNAM</publisher>
                <docDate>1846</docDate>. <lb/>
             </docImprint>
          </titlePage>
