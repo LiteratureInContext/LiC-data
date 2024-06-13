@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="johnson-london">
     <!-- Header / Metadata -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>"London: A Poem, in Imitation of the Third Satire of Juvenal"</title>
+                <title>London: A Poem, in Imitation of the Third Satire of Juvenal</title>
 
                 <author>
 
@@ -76,8 +76,8 @@
                                 </name>
                             </persName>
                         </author>
-                        <title type="main">"London: A Poem, in Imitation of the Third Satire of
-                            Juvenal"</title>
+                        <title type="main">London: A Poem, in Imitation of the Third Satire of
+                            Juvenal</title>
                         <imprint>
                             <pubPlace>
                                 <placeName type="tgn" key="7011781">London</placeName>
@@ -90,7 +90,7 @@
                                 Katelyn Hebel, Brandan Hummel, Lauren Marrero, Maureen O'Connor, and
                                 Erica Seymour. They used the TypeWright tool in 18thConnect to edit
                                 from the copy of the first edition available in the
-                                Eighteenth-Century Collections Online database. </note>
+                                Eighteenth-Century Collections Online database. Title page image sourced from Harvard University.</note>
                             <!-- https://link.gale.com/apps/doc/CB0127828133/ECCO?u=viva_uva&sid=bookmark-ECCO&xid=67d6dcae&pg=1 -->
                         </imprint>
                     </monogr>
@@ -180,12 +180,13 @@
         </encodingDesc>
         <revisionDesc>
             <change when="9-9-2022" who="John O'Brien"/>
+            <change when="2024-01-03" who="editors.xml#TH">Added page image and source note</change>
         </revisionDesc>
     </teiHeader>
 
     <text>
         <front>
-            <pb n="[TP]"/>
+            <pb n="[TP]" facs="pageImages/london-tp.png"/>
             <titlePage>
                 <docTitle>
                     <titlePart>

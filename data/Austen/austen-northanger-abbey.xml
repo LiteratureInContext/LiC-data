@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="austen-northanger-abbey">
 
 <teiHeader xml:lang="en">
@@ -28,9 +28,9 @@
 
 <respStmt>
   <!-- Creation of machine-readable version and the first markup was performed by the University of Virginia Library Electronic Text Center in 1994. David Seamon checked the tagging in 1995. Lorrie Chisolm added the original TEI header in 2005. John Ivor Carlson converted the sgml file to TEI in 2005. -->
-   <resp>See Source Texts for details about original XML. Correction, editorial commentary, and subsequent markup for this edition</resp>
+   <resp>Correction, editorial commentary, and subsequent markup for this edition</resp>
     
-  <name ref="editors.xml#UVAstudents staff">Students and Staff of The University of Virginia</name>
+  <name ref="editors.xml#UVAstudstaff">Students and Staff of The University of Virginia</name>
    
 </respStmt>
   <sponsor/>
@@ -186,7 +186,7 @@
 <text>
   <front>
     <pb n="" facs="pageImages/tp.jpg"/><titlePage><docTitle><titlePart>NORTHANGER ABBEY:<lb/>AND<lb/>PERSUASION.<lb/><lb/></titlePart></docTitle>
-    <docAuthor>BY THE AUTHOR OF "PRIDE AND PREJUDICE,"<lb/><lb/>"MANSFIELD-PARK," &amp;c.<lb/><lb/></docAuthor>
+    <docAuthor>BY THE AUTHOR OF "PRIDE AND PREJUDICE,"<lb/>"MANSFIELD-PARK," &amp;c.<lb/><lb/></docAuthor>
     <titlePart>WITH A BIOGRAPHICAL NOTICE OF THE<lb/>AUTHOR.<lb/><lb/></titlePart>
     <titlePart>IN FOUR VOLUMES.<lb/></titlePart>
     <titlePart>VOL. I.<lb/><lb/></titlePart>
@@ -399,7 +399,7 @@ happiness.
 <p>In addition to what has been already said of Catherine Morland's
 personal and mental endowments, when about
 to be launched into all the difficulties and dangers of
-a six weeks' residence in Bath, it may be stated, for the
+a six weeks' residence in <placeName type="tgn" key="7011197">Bath</placeName>, it may be stated, for the
 reader's more certain information, lest the following pages
 should otherwise fail of giving any idea of what her
 character is meant to be; that her heart was affectionate,

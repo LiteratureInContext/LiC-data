@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="addison-spectator-411">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"[The Spectator] Issue 411, Saturday, June 21, 1712"</title>
+                <author>
+                    <persName type="lcnaf" key="n80051828">
+                        <name>
+                            <forename>Joseph</forename>
+                            <surname>Addison</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Project Gutenberg and Staff and Research Assistants at The University of Virginia</name>
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"Issue 411, Saturday, June 21, 1712"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n80051828">
+                                <name>
+                                    <forename>Joseph</forename>
+                                    <surname>Addison</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title>The Spectator</title>
+                        
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="77011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Samuel Buckley</publisher>
+                            <date when="1711">1712</date>
+                            <note resp="editors.xml#JOB"> The texts for <hi rend="italic"> The
+                                Spectator</hi> are taken from Project Gutenberg's digital
+                                edition, which uses the 1891 printing of the three-volume collected
+                                edition of <hi rend="italic"> The Spectator</hi> edited by Henry
+                                Morley and printed by George Routledge and Sons. That is in turn a
+                                reprint of Morley's 1883 edition, which was published as part of <hi
+                                    rend="italic">Morley's Universal Library</hi>, a series offering
+                                inexpensive reprints of canonical texts. The annotations have been
+                                added by students and faculty at the University of Virginia. Page images have been 
+                                souced from the Huntington Library in San Marino, California.</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="essay">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="mixed"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="medium"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="77011781">London</name>
+                    <time when="1712">1712</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                    Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+
+<text>
+    <body>
+        <pb n="Recto" facs="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/411r.jpg"/>
+        
+        <head><ref target="Spectator_" corresp="Spectator">THE SPECTATOR, #411</ref><note xml:id="Spectator" target="Spectator_">Issues number 411 to 421 of the <hi rend="italic">Spectator</hi>, all of them written by Joseph Addison, have become known as the "Pleasures of the Imagination" series. They were originally written as one essay, perhaps when Addison was a student at Oxford. The original manuscript still exists, and is housed now at Harvard University. Addison revised the essay, and broke up it up into separate parts for publication in the <hi rend="italic">Spectator</hi>. Collectively, the series has become known as one of the most important and influential aesthetic treatises in English from the eighteenth century. </note></head>
+        <head type="sub"><hi rend="italic">June 24, 1712</hi></head>
+       
+        <head><ref target="Lucretius_" corresp="Lucretius"><hi rend="italic">Avia Pieridum peragro loca, nullius ante<lb/>
+            Trita solo; juvat integros accedere fonteis;<lb/>
+            Atque haurire:</hi>—---------------Lucr.</ref><note
+                xml:id="Lucretius" target="Lucretius_">"A pathless country of the Pierides I traverse, where no other foot has ever trod. I love to approach virgin springs, and there to drink." From Lucretius, <hi rend="italic">De Rerum Natura.</hi></note></head>
+
+<div type="essay">
+    <p>Our Sight is the most perfect and most delightful of all our Senses. It fills the Mind with the largest Variety of Ideas, converses with its Objects at the greatest Distance, and continues the longest in Action without being tired or satiated with its proper Enjoyments. The Sense of Feeling can indeed give us a Notion of Extension, Shape, and all other Ideas that enter at the Eye, except Colours; but at the same time it is very much streightned and confined in its Operations, to the number, bulk, and distance of its particular Objects. Our Sight seems designed to supply all these Defects, and may be considered as a more delicate and diffusive kind of Touch, that spreads it self over an infinite Multitude of Bodies, comprehends the largest Figures, and brings into our reach some of the most remote Parts of the Universe.</p>
+
+    <p>It is this Sense which furnishes the Imagination with its Ideas; so that by the Pleasures of the Imagination or Fancy (which I shall use promiscuously) I here mean such as arise from visible Objects, either when we have them actually in our View, or when we call up their Ideas in our Minds by Paintings, Statues, Descriptions, or any the like Occasion. We cannot indeed have a single Image in the Fancy that did not make its first Entrance through the Sight; but we have the Power of retaining, altering and compounding those Images, which we have once received, into all the varieties of Picture and Vision that are most agreeable to the <hi rend="italic">Imagination</hi>; for by this Faculty a Man in a Dungeon is capable of entertaining himself with Scenes and Landskips more beautiful than any that can be found in the whole Compass of Nature.</p>
+
+        <p>There are few Words in the <hi rend="italic">English</hi> Language which are employed in a more loose and uncircumscribed Sense than those of the <hi rend="italic">Fancy</hi> and the <hi rend="italic">Imagination</hi>. I therefore thought it necessary to fix and determine the Notion of these two Words, as I intend to make use of them in the Thread of my following Speculations, that the Reader may conceive rightly what is the Subject which I proceed upon. I must therefore desire him to remember, that by the Pleasures of the Imagination, I mean only such Pleasures as arise originally from Sight, and that I divide these Pleasures into two Kinds: My Design being first of all to Discourse of those Primary Pleasures of the Imagination, which entirely proceed from such Objects as are before our1 Eyes; and in the next place to speak of those Secondary Pleasures of the Imagination which flow from the Ideas of visible Objects, when the Objects are not actually before the Eye, but are called up into our Memories, or formed into agreeable Visions of Things that are either Absent or Fictitious.</p>
+
+        <p>The Pleasures of the Imagination, taken in the full Extent, are not so gross as those of Sense, nor so refined as those of the Understanding. The last are, indeed, more preferable, because they are founded on some new Knowledge or Improvement in the Mind of Man; yet it must be confest, that those of the Imagination are as great and as transporting as the other. A beautiful Prospect delights the Soul, as much as a Demonstration; and a Description in <hi rend="italic">Homer</hi> has charmed more Readers than a Chapter in <hi rend="italic">Aristotle</hi>. Besides, the Pleasures of the Imagination have this Advantage, above those of the Understanding, that they are more obvious, and more easie to be acquired. It is but opening the Eye, and the Scene enters. The Colours paint themselves on the Fancy, with very little Attention of Thought or Application of Mind in the Beholder. We are struck, we know not how, with the Symmetry of any thing we see, and immediately assent to the Beauty of an Object, without enquiring into the particular Causes and Occasions of it.</p>
+
+    <p>A Man of a Polite Imagination is let into a great many Pleasures, that the Vulgar are not capable of receiving. He can converse with a Picture, and find an agreeable Companion in a Statue. He meets with a secret Refreshment in a Description, and of
+        <pb n="Verso" facs="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/411v.jpg"/>-ten feels a greater Satisfaction in the Prospect of Fields and Meadows, than another does in the Possession. It gives him, indeed, a kind of Property in every thing he sees, and makes the most rude uncultivated Parts of Nature administer to his Pleasures: So that he looks upon the World, as it were in another Light, and discovers in it a Multitude of Charms, that conceal themselves from the generality of Mankind.</p>
+
+    <p>There are, indeed, but very few who know how to be idle and innocent, or have a Relish of any Pleasures that are not Criminal; every Diversion they take is at the Expence of some one Virtue or another, and their very first Step out of Business is into Vice or Folly. A Man should endeavour, therefore, to make the Sphere of his innocent Pleasures as wide as possible, that he may retire into them with Safety, and find in them such a Satisfaction as a wise Man would not blush to take. Of this Nature are those of the Imagination, which do not require such a Bent of Thought as is necessary to our more serious Employments, nor, at the same time, suffer the Mind to sink into that Negligence and Remissness, which are apt to accompany our more sensual Delights, but, like a gentle Exercise to the Faculties, awaken them from Sloth and Idleness, without putting them upon any Labour or Difficulty.</p>
+
+        <p>We might here add, that the Pleasures of the Fancy are more conducive to Health, than those of the Understanding, which are worked out by Dint of Thinking, and attended with too violent a Labour of the Brain. Delightful Scenes, whether in Nature, Painting, or Poetry, have a kindly Influence on the Body, as well as the Mind, and not only serve to clear and brighten the Imagination, but are able to disperse Grief and Melancholy, and to set the Animal Spirits in pleasing and agreeable Motions. For this Reason Sir <ref target="Bacon_" corresp="Bacon"><hi rend="italic">Francis Bacon</hi>, in his Essay upon Health</ref><note xml:id="Bacon" target="Bacon_">Addison is alluding to an essay called "Of Regimen" by the English philosopher and politician Sir Francis Bacon (1561-1626), an essay probably written in about 1597: "There is a wisdom in this beyond the rules of physic: a man's own observation, what he finds good of, and what he finds hurt of, is the best physic to preserve health; but it is a safer conclusion to say, 'This agreeth not well with me, therefore I will not continue it;' than this, "I find no offence of this, therefore I may use it:" for strength of nature in youth passeth over many excesses which are owing a man till his age. Discern of the coming on of years, and think not to do the same things still; for age will not be defied. Beware of sudden change in any great point of diet, and, if necessity enforce it, fit the best to it; for it is a secret both in nature and state, that it is safer to change many things than one. Examine thy customs of diet, sleep, exercise, apparel, and the like; and try, in any thing thou shalt judge hurtful, to discontinue it by little and little; but so, as if thou dost find any inconvenience by the change, thou come back to it again: for it is hard to distinguish that which is generally held good and wholesome, from that which is good particularly, and fit for thine own body. To be free-minded and cheerfully disposed at hours of meat and of sleep, and of exercise, is one of the best precepts of long lasting. As for the passions and studies of the mind, avoid envy, anxious fears, anger, fretting inwards, subtle and knotty inquisitions, joys and exhilarations in excess, sadness not communicated. Entertain hopes, mirth rather than joy, variety of delights, rather than surfeit of them; wonder and admiration, and therefore novelties; studies that fill the mind with splendid and illustrious objects, as histories, fables, and contemplations of nature. If you fly physic in health altogether, it will be too strange for your body when you shall need it; if you make it too familiar, it will work no extraordinary effect when sickness cometh. I commend rather some diet for certain seasons, than frequent use of physic, except it be grown into a custom; for those diets alter the body more, and trouble it less. Despise no new accident in your body, but ask opinion of it. In sickness, respect health principally; and in health, action: for those that put their bodies to endure in health, may, in most sicknesses which are not very sharp, be cured only with diet and tendering. Celsus could never have spoken it as a physician, had he not been a wise man withal, when he giveth it for one of the great precepts of health and lasting, that a man do vary and interchange contraries, but with an inclination to the more benign extreme: use fasting and full eating, but rather full eating; watching and sleep, but rather sleep; sitting and exercise, but rather exercise, and the like: so shall nature be cherished, and yet taught masteries. Physicians are some of them so pleasing and conformable to the humour of the patient, as they press not the true cure of the disease: and some other are so regular in proceeding according to art for the disease, as they respect not sufficiently the condition of the patient. Take one of a middle temper; or, if it may not be found in one man, combine two of either sort; and forget not to call as well the best acquainted with your body, as the best reputed of for his faculty." [source: Wikimedia Commons}</note>, has not thought it improper to prescribe to his Reader a Poem or a Prospect, where he particularly dissuades him from knotty and subtile Disquisitions, and advises him to pursue Studies that fill the Mind with splendid and illustrious Objects, as Histories, Fables, and Contemplations of Nature.</p>
+
+    <p>I have in this Paper, by way of Introduction, settled the Notion of those Pleasures of the <hi rend="italic">Imagination</hi> which are the Subject of my present Undertaking, and endeavoured, by several Considerations, to recommend to my Reader the Pursuit of those Pleasures. I shall, in my next Paper, examine the several Sources from whence these Pleasures are derived.</p>
+
+    <p>O.</p>
+</div>
+    </body>
+    </text>
+</TEI>

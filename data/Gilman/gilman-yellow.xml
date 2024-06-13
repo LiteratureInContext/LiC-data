@@ -1,5 +1,5 @@
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="melville-bartelby">
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="gilman-yellow">
     <teiHeader xml:lang="en">
         <fileDesc>
             <titleStmt>
@@ -14,7 +14,7 @@
                 </author>
                 <editor>
                     <persName>
-                        <name ref="editors.xml#NXB">
+                        <name ref="editors.xml#NWB">
                             <surname>Buford</surname>
                             <forename>Nial</forename>
                         </name>
@@ -24,7 +24,7 @@
                     <resp>Transcription, correction, and markup</resp>
                     <name ref="editors.xml#UVAstudentsstaff">Students and Staff of The University of
                         Virginia</name>
-                    <name ref="editors.xml#NXB">Nial Buford</name>
+                    <name ref="editors.xml#NWB">Nial Buford</name>
                     
                 </respStmt>
                 <sponsor/>
@@ -69,11 +69,13 @@
                             <date when="1853">1892</date>
                             <note>Text for this digital edition drawn from <ref
                                 target="https://www.gutenberg.org/ebooks/1952">Project Gutenberg's ditigital version,</ref> and checked against
-                                Hathitrust's digitized copy of <ref target="https://catalog.hathitrust.org/Record/006786569">
-                                    <hi rend="italic">New England Magazine</hi></ref>, sourced from Cornell University. 
-                                Page images are also drawn from drawn from Hathitrust's copy. </note>
+                                Internet Archive's digitized copy of <ref target="https://archive.org/details/nby_573949/a5_115_1892_pg_647_o2.jpg">
+                                    <hi rend="italic">New England Magazine</hi></ref>, sourced from the Newberry Library. 
+                                Page images are also drawn from drawn from the Internet Archive's copy. </note>
                         </imprint>
+                        <biblScope>pp 647-656</biblScope>
                     </monogr>
+                    
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
@@ -167,7 +169,7 @@
         </front>
         <body>
             <pb n="647" facs="pageImages/0647.jpg"/>
-<p>
+<div><p>
 It is very seldom that mere ordinary people like John and myself secure
 ancestral halls for the summer.
 </p>
@@ -338,7 +340,7 @@ word.
 We have been here two weeks, and I haven’t felt like writing before,
 since that first day.
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 I am sitting by the window now, up in this atrocious nursery, and there is
 nothing to hinder my writing as much as I please, save lack of strength.
@@ -517,7 +519,7 @@ behind that silly and conspicuous front design.
 <p>
 There’s sister on the stairs!
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 Well, the Fourth of July is over! The people are gone and I am tired out. John
 thought it might do me good to see a little company, so we just had mother and
@@ -610,7 +612,7 @@ common centre and rush off in headlong plunges of equal distraction.
 <p>
 It makes me tired to follow it. I will take a nap, I guess.
 </p>
-        <p>*    *   *   *   *   *</p>
+        </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 I don’t know why I should write this.
 </p>
@@ -692,7 +694,7 @@ And it is like a woman stooping down and creeping about behind that pattern. I
 don’t like it a bit. I wonder—I begin to think—I wish John
 would take me away from here!
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 It is so hard to talk with John about my case, because he is so wise, and
 because he loves me so.
@@ -872,7 +874,7 @@ more careful!
 Did not that sound innocent? But I know she was studying that pattern, and I am
 determined that nobody shall find it out but myself!
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 Life is very much more exciting now than it used to be. You see I have
 something more to expect, to look forward to, to watch. I really do eat better,
@@ -891,7 +893,7 @@ want to take me away.
 I don’t want to leave now until I have found it out. There is a week
 more, and I think that will be enough.
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 I’m feeling ever so much better! I 
     <pb n="654" facs="pageImages/0654.jpg"/>
@@ -961,7 +963,7 @@ over.
 I wonder how it was done and who did it, and what they did it for. Round and
 round and round—round and round and round—it makes me dizzy!
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 I really have discovered something at last.
 </p>
@@ -992,7 +994,7 @@ upside-down, and makes their eyes white!
 <p>
 If those heads were covered or taken off it would not be half so bad.
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 I think that woman gets out in the daytime!
 </p>
@@ -1042,7 +1044,7 @@ turn!
 I have watched her sometimes away off in the open country, creeping as fast as
 a cloud shadow in a high wind.
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 If only that top pattern could be gotten off from the under one! I mean to try
 it, little by little.
@@ -1080,7 +1082,7 @@ months.
 It only interests me, but I feel sure John and Jennie are secretly affected by
 it.
 </p>
-            <p>*    *   *   *   *   *</p>
+            </div><div><head type="sub">*    *   *   *   *   *</head>
 <p>
 Hurrah! This is the last day, but it is enough. John is to stay in town over
 night, and won’t be out until this evening.
@@ -1267,6 +1269,7 @@ back!”
 Now why should that man have fainted? But he did, and right across my path by
 the wall, so that I had to creep over him every time!
 </p>
+            </div>
         </body>
     </text>
 </TEI>

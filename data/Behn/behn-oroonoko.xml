@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="behn-oroonoko">
 
 
    <teiHeader>
-      <!--TEI Header BEGINS-->
+      
       <fileDesc>
-         <!--BEGINS File Description -->
+         
          <titleStmt>
-            <title type="main">Oroonoko, or, The royal slave: A True History</title>
+            <title type="main">Oroonoko, or, The Royal Slave: A True History</title>
 
             <author>
 
@@ -35,7 +36,7 @@
 
             <respStmt>
                <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name>Students of The University of Virginia</name>
+               <name>Students and Staff of the University of Virginia</name>
                <name>Malcolm Bare</name>
                <name>Ankita Chakrabarti</name>
                <name>Neal Curtis</name>
@@ -46,6 +47,7 @@
                <name>Kristian Smith</name>
                <name>Michael Van Hoose</name>
                <name>Alissa Winn</name>
+               <name>Agnes Redvil</name>
             </respStmt>
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
@@ -95,7 +97,7 @@
                         first edition in the Huntington Library, San Marino, California. This is
                         Oxford Text Archive record number A27305. We corrected errors in the Oxford
                         Text Archive against the Google Books digitized page images of the first
-                        edition: </note>
+                        edition.</note>
                   </imprint>
                   <extent>[14], 239 [i.e. 223] p.</extent>
                   <biblScope unit="Filler"/>
@@ -106,8 +108,7 @@
       </fileDesc>
 
       <profileDesc>
-         <!--BEGINS Profile Description  -->
-         <!--This Profile Desc is all wrong, must be adapted to this text  -->
+         
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
@@ -128,8 +129,8 @@
 
          <settingDesc>
             <setting>
-               <name type="tgn" key="7011781">London, England</name>
-               <time when="1688">1688</time>
+               <name type="tgn" key="7015386">Surinam</name>
+               <time when="1664">1664</time>
             </setting>
          </settingDesc>
       </profileDesc>
@@ -197,6 +198,8 @@
          <!--This must also be completed -->
          <change when="2019" who="editors.xml#JOB">Initial XML</change>
          <change when="2022" who="editors.xml#TH">Added missing page breaks, and title page. Corrected encoding for italics. Corrected spacing in front pages.</change>
+         <change when="2024-02" who="editors.xml#AR">corrected code for annotations.</change>
+         <change when="2024-04" who="editors.xml#JOB">General clean up and formatting; adding location data</change>
       </revisionDesc>
 
 
@@ -204,9 +207,9 @@
    </teiHeader>
    <!--TEI Header Ends -->
 
-   <text xml:lang="eng">
+   <text>
       <front>
-         <pb n="[TP]" facs="pageImages/TP.jpg"/>
+         <pb n="[Title Page]" facs="pageImages/TP.jpg"/>
          <titlePage>
 
             <titlePart>OROONOKO:<lb/>OR, THE<lb/>Royal Slave.</titlePart>
@@ -256,9 +259,8 @@
                or lye neglected there, however deserving an immortal Fame; for Men of eminent Parts
                are as Exemplary as even Monarchs themselves; and Virtue is a noble Lesson to be
                learn'd, and 'tis by Comparison we can Judge and Chuse. 'Tis by such illustrious <ref
-                  target="a002" corresp="n002">Presidents</ref>
-               <note xml:id="n002" target="a002" type="editorial" resp="editors.xml#UVAstudstaff"
-                  >Precedents. Source: Oxford English Dictionary</note>, as your Lordship, the World
+                  target="Presidents_" corresp="Presidents">Presidents</ref>
+               <note xml:id="Presidents" target="Presidents_" type="editorial" resp="editors.xml#UVAstudstaff">Precedents. Source: Oxford English Dictionary</note>, as your Lordship, the World
                can be Better'd and Refin'd; when a great part of the lazy Nobility <pb n="[v] - breaks after 'Nobi'"/>lity shall, with
                Shame, behold the admirable Accomplishments of a Man so Great, and so Young.</hi></p>
 
@@ -269,7 +271,7 @@
                of your Religion and Country; to both which you are a useful and necessary Honour:
                They both want such Supporters; and 'tis only Men of so elevated Parts,<pb n="[vi]"/> and fine
                Knowledge; such noble Principles of Loyalty and Religion this Nation Sighs for. Where
-               shall we find a Man so Young, like St. <hi rend="italic">Augustine,</hi> in the midst of all his
+               shall we find a Man so Young, like St. <persName><hi rend="italic">Augustine</hi></persName>, in the midst of all his
                Youth and Gaiety, Teaching the World divine Precepts, true Notions of Faith, and
                Excellent Morality, and, at the same time, be also a perfect Pattern of all that
                accomplish a Great Man? You have, my Lord, all that refin'd Wit that Charms, and the
@@ -322,13 +324,13 @@
             </closer>
          </div>
       </front>
-
-      <pb n="[1]"/>
       <body>
+      <pb n="[1]"/>
+      
 
          <div type="text">
          <head type="main">THE<lb/>HISTORY<lb/>OF THE<lb/>Royal Slave.</head>
-         
+         <lb/>
             <p>I do not pretend, in giving you the History of this <hi rend="italic">Royal Slave,</hi> to
                entertain my Reader with the Adventures of a feign'd <hi rend="italic">Hero,</hi> whose Life and
                Fortunes Fancy may manage at the Poets Pleasure; nor in relating the Truth, design to
@@ -337,10 +339,10 @@
                natural Intrigues; there being enough of Reality to support it, and to render it
                diverting, without the Addition of Invention.</p>
 
-            <p>I was my self an <ref target="a003" corresp="n003">Eye-Witness</ref><note
-                  xml:id="n003" target="a003" type="editorial" resp="editors.xml#UVAstudstaff">Not
+            <p>I was my self an <ref target="Eye-Witness_" corresp="Eye-Witness">Eye-Witness,</ref><note
+               xml:id="Eye-Witness" target="Eye-Witness_" type="editorial" resp="editors.xml#UVAstudstaff">Not
                   only one who has observed something firsthand, but in a legal sense, one who is
-                  "able to describe or testify to it." Source: Oxford English Dictionary</note>, to
+                  "able to describe or testify to it." Source: Oxford English Dictionary</note> to
                a great part, of what you will find here set down; and what I cou'd not be Witness
                of, I receiv'd from the Mouth of the chief Actor in this History, the <hi rend="italic">Hero</hi>
                himself, who gave us the whole Transactions of his Youth; and though I shall omit,
@@ -351,9 +353,8 @@
                this great Man, were curious to gather every Circumstance of his Life.</p>
 
             <p>The Scene of the last part of his Adventures lies in a Colony in <hi rend="italic">America,</hi>
-               called <ref target="a004" corresp="n004">Surinam,</ref>
-               <note xml:id="n004" target="a004" type="editorial" resp="editors.xml#UVAstudstaff">A
-                  colony neighbored by Brazil to the south and Guiana to the West. At the time of
+               called <placeName type="tgn" key="7015386"><ref target="Surinam_" corresp="Surinam">Surinam,</ref></placeName>
+               <note xml:id="Surinam" target="Surinam_" type="editorial" resp="editors.xml#UVAstudstaff">The name for land that had been carved out as a colony neighbored by Brazil to the south and Guiana to the West. At the time of
                   the action of the story, the colony was in British control, but it was lost to the
                   Dutch shortly thereafter</note> in the <hi rend="italic">West-Indies.</hi>
             </p>
@@ -363,14 +364,14 @@
                of there, are not <hi rend="italic">Natives</hi> of the place; for those we live with in perfect
                Amity, without daring to command 'em; but on the contrary, caress 'em with all the
                brotherly and friendly Affection in the World; trading with 'em for their Fish,
-               Venison, Buffilo's, Skins, and little Rarities; as <ref target="a005" corresp="n005"
-                  >Marmosets</ref><note xml:id="n005" target="a005" type="editorial"
+               Venison, Buffilo's, Skins, and little Rarities; as <ref target="Marmosets_" corresp="Marmosets"
+                  >Marmosets</ref><note xml:id="Marmosets" target="Marmosets_" type="editorial"
                   resp="editors.xml#UVAstudstaff">A particularly tiny species of monkey that is,
                   indeed, about the size of a mouse. Notably adorable.</note>, a sort of
                   <hi rend="italic">Monkey</hi> as <pb n="4"/>big as a Rat or Weesel, but of a marvellous and
                delicate shape, and has Face and Hands like an Humane Creature: and <ref
-                  target="a006" corresp="n006">Cousheries,</ref>
-               <note xml:id="n006" target="a006" type="editorial" resp="editors.xml#UVAstudstaff">It
+                  target="Cousheries_" corresp="Cousheries">Cousheries,</ref>
+               <note xml:id="Cousheries" target="Cousheries_" type="editorial" resp="editors.xml#UVAstudstaff">It
                   is not clear what kind of animal Behn is referring to here, but it probably a
                   species of feline.</note> a little Beast in the form and fashion of a Lion, as big
                as a Kitten; but so exactly made in all parts like that noble Beast, that it is it in
@@ -378,8 +379,8 @@
                   <hi rend="italic">Muckaws,</hi> and a thousand other Birds and Beasts of wonderful and
                surprizing Forms, Shapes, and Colours. For Skins of prodigious Snakes, of which there
                are some threescore Yards in length; as is the Skin of one that may be seen at His
-               Majesty's <ref target="a007" corresp="n007">Antiquaries:</ref><note xml:id="n007"
-                  target="a007" type="editorial" resp="editors.xml#UVAstudstaff">An "antiquary" was
+               Majesty's <ref target="Antiquaries_" corresp="Antiquaries">Antiquaries:</ref><note xml:id="Antiquaries"
+                  target="Antiquaries_" type="editorial" resp="editors.xml#UVAstudstaff">An "antiquary" was
                   a collection of unusual and exotic items. Janet Todd suggests that this could be a
                   reference to the museum of the Royal Society in London. The singular form
                   "antiquary" could describe a collector of antiques or rare objects.</note> Where
@@ -389,19 +390,20 @@
                Shapes, make themselves little short Habits of 'em, and glorious Wreaths for their
                Heads, Necks, Arms and Legs, whose Tinctures are unconceivable. I had a Set of these
                presented to me, and I gave 'em to the King's Theatre, and it was the Dress of the
-                  <ref target="a008" corresp="n008">Indian Queen</ref><note xml:id="n008"
-                  target="a008" type="editorial" resp="editors.xml#UVAstudstaff">Here is an image of
-                  Anne Bracegirdle, performing in John Dryden's play <hi rend="italic">The Indian Queen,</hi>
-                  wearing the feathered headress referred to in this passage. Whether this headdress
-                  was the same one that Behn brought back to England from Surinam in the 1660s is
-                  impossible to know at this point. <figure><graphic
-                        url="http://virginia-anthology.org/wp-content/uploads/2016/01/Indianqueen.jpg"/></figure> (Folger Shakespeare Library)</note> infinitely admir'd by Persons
+                  <ref target="Queen_" corresp="Queen">Indian Queen</ref><note xml:id="Queen"
+                  target="Queen_" type="editorial" resp="editors.xml#UVAstudstaff">Here is an image of
+                  the actresses Anne Bracegirdle, dressed as the title role in John Dryden's play <hi rend="italic">The Indian Queen,</hi> (1664) while wearing the feathered headress referred to in this passage. Whether this headdress
+                  was something that Behn herself brought back to England from Surinam in the 1660s is
+                  impossible to know at this point. <graphic
+                     url="https://lic-assets-staging.s3.amazonaws.com/behn-oroonoko/notes/bracegirdle.jpg" alt="Image of Anne Bracegirdle dressed as a native American woman" width="300px" style="float:right"
+                     source="British Library under CC BY-NC-SA 4.0"
+                     desc="Engraving of Anne Bracegirdle dressed as a native American woman"/> (courtesy British Library under CC BY-NC-SA 4.0)</note> infinitely admir'd by Persons
                of Quality; and were unimitable. Besides these, a thousand little Knacks, and
                Rarities in Nature, and some of Art; as their Baskets, Weapons, Aprons,
                   <hi rend="italic">&amp;c.</hi> We dealt with 'em with Beads of all Colours, Knives, Axes, Pins
-               and Needles; which they us'd only as Tools to drill <ref target="a009" corresp="n009"
+               and Needles; which they us'd only as Tools to drill <ref target="Holes_" corresp="Holes"
                   >Holes</ref>
-               <note xml:id="n009" target="a009" type="editorial" resp="editors.xml#UVAstudstaff"
+               <note xml:id="Holes" target="Holes_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >Behn is describing the process of piercing ears and other parts of the
                   body</note> with in their Ears, Noses and Lips, where they hang a great many
                little things; as long Beads, bits of Tin,<pb n="6"/>Brass, or Silver, beat thin; and
@@ -488,17 +490,13 @@
                more or less of either Sex, you are oblig'd to be contented with your Lot.</p>
 
             <pb n="14"/>
-            <p><ref target="a010" corresp="n010">Coramantien</ref><note xml:id="n010" target="a010"
-                  type="editorial" resp="editors.xml#UVAstudstaff">Coramantien was the name both of
-                  slave-trading castle, depicted here, and of the coastal area of what is now the
+            <p><ref target="Coramantien_" corresp="Coramantien">Coramantien</ref><note xml:id="Coramantien" target="Coramantien_" type="editorial" resp="editors.xml#UVAstudstaff">Coramantien, or Kormantine, was the name both of a slave-trading castle, depicted here, and of the coastal area of what is now the
                   nation of Ghana where several such fortified trading posts were located. In the
                   1660s, when this story is set, both English and Dutch slave traders used the fort
                   at Coramantien. By the late seventeenth century, it was controlled by the Dutch,
                   who renamed it Fort Amsterdam. Its ruins can still be visited today.
-                        <figure><graphic
-                        url="http://virginia-anthology.org/wp-content/uploads/2016/01/FortAmsterdamCormantine-300x206.jpg"
-                     /></figure>
-               </note>, a Country of <hi rend="italic">Blacks</hi> so called, was one of those places in which
+                        <graphic
+                           url="https://lic-assets-staging.s3.amazonaws.com/behn-oroonoko/notes/FortAmsterdamCormantine.jpeg" alt="Engraving of fortress known as Coramantien"  width="300px" style="float:right" source="Wikimedia Commons" desc="Wikimedia Commons"/></note>, a Country of <hi rend="italic">Blacks</hi> so called, was one of those places in which
                they found the most advantageous Trading for these Slaves; and thither most of our
                great Traders in that Merchandice traffick'd; for that Nation is very war-like and
                brave; and having a continual Campaign, being always in Hostility with one
@@ -507,8 +505,8 @@
                not ransom themselves. Of these Slaves so taken, the General only has all the profit;
                and of these Generals, our Captains and Masters of Ships buy all their Freights.</p>
 
-            <p>The King of <hi rend="italic">Coramantien</hi> was himself a Man of a Hundred and<pb n="15"/> odd
-               Years old, and had no Son, though he had many beautiful <hi rend="italic">Black-</hi>Wives; for
+            <p>The King of <placeName type="tgn" key="7015386"><hi rend="italic">Coramantien</hi></placeName> was himself a Man of a Hundred and<pb n="15"/> odd
+               Years old, and had no Son, though he had many beautiful <hi rend="italic">Black </hi>Wives; for
                most certainly, there are Beauties that can charm of that Colour. In his younger
                Years he had had many gallant Men to his Sons, thirteen of which died in Battel,
                conquering when they fell; and he had only left him for his Successor, one
@@ -553,9 +551,9 @@
                cou'd not have produc'd a braver Man, both for Greatness of Courage and Mind, a
                Judgment more solid, a Wit more quick, and a Conversation more sweet and diverting.
                He knew almost as much as if he had read much: He had heard of, and admir'd the
-                  <hi rend="italic">Romans;</hi> he had heard of the late <ref target="a011" corresp="n011">Civil
+                  <hi rend="italic">Romans;</hi> he had heard of the late <ref target="Civil_" corresp="Civil">Civil
                   Wars</ref> in <hi rend="italic">England,</hi>
-               <note xml:id="n011" target="a011" type="editorial" resp="editors.xml#UVAstudstaff"
+               <note xml:id="Civil" target="Civil_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >The English Civil Wars of 1642 1649 between the supporters of the Stuart monarchy
                   and the supporters of Parliament, which led to the execution of Charles I in
                   1649.</note> and the deplorable Death of our great Monarch; and wou'd discourse of
@@ -566,8 +564,8 @@
 
             <pb n="20"/>
             <p> This great and just Character of <hi rend="italic">Oroonoko</hi> gave me an extream Curiosity to
-               see him, especially when I knew he spoke <ref target="a012" corresp="n012">French and
-                  English</ref><note xml:id="n012" target="a012 a013" type="editorial"
+               see him, especially when I knew he spoke <ref target="French_" corresp="French">French and
+                  English</ref><note xml:id="French" target="French_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Behn's emphasis on Oroonoko's knowledge of French
                   and English associates him with civilized Europeans; eloquent Africans in European
                   literature were often imagined as here, as more European than African.</note>, and
@@ -575,21 +573,21 @@
                surpriz'd when I saw him, as if I had heard nothing of him; so beyond all Report I
                found him. He came into the Room, and address'd himself to me, and some other Women,
                with the best Grace in the World. He was pretty tall, but of a Shape the most exact
-               that can be fansy'd: The most famous <ref target="a014" corresp="n014">Statuary</ref>
-               <note xml:id="n014" target="a014" type="editorial" resp="editors.xml#UVAstudstaff">An
+               that can be fansy'd: The most famous <ref target="Statuary_" corresp="Statuary">Statuary</ref>
+               <note xml:id="Statuary" target="Statuary_" type="editorial" resp="editors.xml#UVAstudstaff">An
                   artist who makes statues, a sculptor of statues. Source: Oxford English
                   Dictionary</note>cou'd not form the Figure of a Man more admirably turn'd from
                Head to Foot. His Face was not of that brown, rusty Black which most of that Nation
                are, but a perfect Ebony, or polish'd Jett. His Eyes were the most<pb n="21"/><ref
-                  target="a015" corresp="n015">awful</ref>
-               <note xml:id="n015" target="a015" type="editorial" resp="editors.xml#UVAstudstaff"
+                  target="awful_" corresp="awful">awful</ref>
+               <note xml:id="awful" target="awful_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >awe-inspiring</note>that cou'd be seen, and very piercing; the White of 'em being
                like Snow, as were his Teeth. His Nose was rising and <hi rend="italic">Roman,</hi> instead of
                   <hi rend="italic">African</hi> and flat. His Mouth, the finest shap'd that cou'd be seen; far
                from those great turn'd Lips, which are so natural to the rest of the
                   <hi rend="italic">Negroes.</hi> The whole Proportion and Air of his Face was so noble, and
-               exactly form'd, that, <ref target="a016" corresp="n016">bating</ref>
-               <note xml:id="n016" target="a016" type="editorial" resp="editors.xml#UVAstudstaff"
+               exactly form'd, that, <ref target="bating_" corresp="bating">bating</ref>
+               <note xml:id="bating" target="bating_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >excepting</note>his Colour, there cou'd be nothing in Nature more beautiful,
                agreeable and handsome. There was no one Grace wanting, that bears the Standard of
                true Beauty: His Hair came down to his Shoulders, by the Aids of Art; which was, by
@@ -599,9 +597,9 @@
                speak, wou'd have been convinc'd of their Errors, that all fine Wit is confin'd to
                the <hi rend="italic">White</hi> Men, especially to those of <hi rend="italic">Christendom;</hi> and wou'd have
                confess'd that <hi rend="italic">Oroonoko</hi> was as capable even of reigning well, and of
-               governing as wisely, had as great a Soul, as <ref target="a017" corresp="n017"
+               governing as wisely, had as great a Soul, as <ref target="politick_" corresp="politick"
                   >politick</ref>
-               <note xml:id="n017" target="a017" type="editorial" resp="editors.xml#UVAstudstaff"
+               <note xml:id="politick" target="politick" type="editorial" resp="editors.xml#UVAstudstaff"
                   >prudent, shrewd, sagacious. Source: Oxford English Dictionary</note>Maxims, and
                was as sensible of Power as any Prince civiliz'd in the most refin'd Schools of
                Humanity and Learning, or the most Illustrious Courts.</p>
@@ -748,8 +746,8 @@
                the Storm wou'd fall on the Prince; she therefore said a thousand things to appease
                the raging of his Flame, and to prepare him to hear who it was with Calmness; but
                before she spoke, he imagin'd who she meant, but wou'd not seem to do so, but
-               commanded her to lay aside her <ref target="a018" corresp="n018">Mantle</ref>
-               <note xml:id="n018" target="a018" type="editorial" resp="editors.xml#UVAstudstaff">a
+               commanded her to lay aside her <ref target="Mantle_" corresp="Mantle">Mantle</ref>
+               <note xml:id="Mantle" target="Mantle_" type="editorial" resp="editors.xml#UVAstudstaff">a
                   protective cloak or garment; a loose, sleeveless cloak. Source: Oxford English
                   Dictionary</note>, and suffer her self to receive his Caresses; or, by his Gods,
                he swore, that happy Man whom she was going to name shou'd die, though it were even
@@ -762,14 +760,14 @@
 
             <p>In this time the Prince, who was return'd from Hunting, went to visit his
                   <hi rend="italic">Imoinda,</hi> but found her gone; and not only so, but heard she had receiv'd
-               the <ref target="a019" corresp="n019">Royal Veil</ref>
-               <note xml:id="n019" target="a019" type="editorial" resp="editors.xml#UVAstudstaff">A
+               the <ref target="Royal_" corresp="Royal">Royal Veil</ref>
+               <note xml:id="Royal" target="Royal_" type="editorial" resp="editors.xml#UVAstudstaff">A
                   veil delivered by the king as an invitation to his harem.</note>. This rais'd him
                to a Storm; and in his Madness, they had much ado to save him from laying violent
                Hands on himself. Force first prevail'd, and then Reason: They urg'd all to him, that
                might oppose his Rage; but nothing weigh'd so greatly with him as the King's Old Age
-               uncapable of <ref target="a020" corresp="n020">injuring him</ref>
-               <note xml:id="n020" target="a020" type="editorial" resp="editors.xml#UVAstudstaff"
+               uncapable of <ref target="injuring_" corresp="injuring">injuring him</ref>
+               <note xml:id="injuring" target="injuring_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >That is, the King is impotent. It's notable that the narrator thinks first of the
                   potential cost to Oroonoko rather than the cost to Imoinda.</note> with
                   <hi rend="italic">Imoinda.</hi> He wou'd give way to that Hope, because it pleas'd him most, and
@@ -798,8 +796,8 @@
                being his lawful Wife, by solemn Contract, 'twas he was the injur'd Man, and might,
                if he so pleas'd, take <hi rend="italic">Imoinda</hi> back, the <pb n="39"/>Breach of the Law being
                on his Grand-father's side; and that if he cou'd circumvent him, and redeem her from
-               the <ref target="a021" corresp="n021">Otan</ref>
-               <note xml:id="n021" target="a021" type="editorial" resp="editors.xml#UVAstudstaff"
+               the <ref target="Otan_" corresp="Otan">Otan</ref>
+               <note xml:id="Otan" target="Otan_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >"Otan" seems to be derived from the Turkish word "odan," referring to a room or
                   small enclosure in a harem. This is one of the moments when this part of the
                   story, though set in Africa, feels more like an "Oriental" tale.</note>, which is
@@ -821,8 +819,8 @@
             <p>While <hi rend="italic">Oroonoko</hi> felt all the Agonies of Love, and suffer'd under a Torment
                the most painful in the World, the old King was not exempted from his share of
                Affliction. He was troubl'd for having been forc'd by an irresistable Passion, to rob
-               his <ref target="a022" corresp="n022">Son</ref>
-               <note xml:id="n022" target="a022" type="editorial" resp="editors.xml#UVAstudstaff"
+               his <ref target="Son_" corresp="Son">Son</ref>
+               <note xml:id="Son" target="Son_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >Oroonoko is actually his grandson.</note> of a Treasure, he knew, cou'd not but
                be extreamly dear to him, since she was the most beautiful that ever had been seen;
                and had besides, all the Sweetness and Innocence of Youth and Modesty, with a Charm
@@ -915,9 +913,9 @@
                and she danc'd, <hi rend="italic">Onahal</hi> was retir'd to a Window with <hi rend="italic">Aboan.</hi>
             </p>
 
-            <p>This <hi rend="italic">Onahal,</hi> as I said, was one of the <ref target="a023" corresp="n023"
+            <p>This <hi rend="italic">Onahal,</hi> as I said, was one of the <ref target="Cast-Mistress_" corresp="Cast-Mistress"
                   >Cast-Mistresses</ref>
-               <note xml:id="n023" target="a023" type="editorial" resp="editors.xml#UVAstudstaff"
+               <note xml:id="Cast-Mistress" target="Cast-Mistress_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >Discarded, former mistresses</note> of the old King; and 'twas these (now past
                their Beauty) that were made Guardians, or Governants to the new, and the young Ones;
                and whose Business it was, to teach them all those wanton Arts of Love, with which
@@ -1170,9 +1168,9 @@
             <p>The old King, nevertheless, executed this with a great deal of Reluctancy; but he
                believ'd he had made a very great Conquest over himself, when he had once resolv'd,
                and had perform'd what he resolv'd. He believ'd now, that his Love had been unjust;
-               and that he cou'd not expect the Gods, or <ref target="a024" corresp="n024">Captain
+               and that he cou'd not expect the Gods, or <ref target="Clouds_" corresp="Clouds">Captain
                   of the Clouds</ref>
-               <note xml:id="n024" target="a024" type="editorial" resp="editors.xml#UVAstudstaff"
+               <note xml:id="Clouds" target="Clouds_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >Here Behn seems to be informed by knowledge of African religious traditions, as
                   such references to a sky deity appear there, but we do not know her source for
                   this term.</note>, (as they call the unknown Power) shou'd suffer a better
@@ -1228,8 +1226,8 @@
             <p>
                <hi rend="italic">Oroonoko</hi> bad him return his Duty to his Lord and Master; and to assure him,
                there was no Account of Revenge to be adjusted between them; if there were, 'twas he
-               was the Agressor, and that Death wou'd be just, and, <ref target="a025"
-                  corresp="n025">maugre</ref><note xml:id="n025" target="a025" type="editorial"
+               was the Agressor, and that Death wou'd be just, and, <ref target="maugre_"
+                  corresp="maugre">maugre</ref><note xml:id="maugre" target="maugre_" type="editorial"
                   resp="editors.xml#UVAstudstaff">In spite of</note> his Age, wou'd see him righted;
                and he was contented to leave his Share of <pb n="76"/>Glory to Youths more
                fortunate, and worthy of that Favour from the Gods. That henceforth he wou'd never
@@ -1326,7 +1324,7 @@
                their Prince: So that what with those Amuzements abroad, and others at home, that is,
                within their Tents, with the Perswasions, Arguments and Care of his Friends and
                Servants that he more peculiarly priz'd, he wore off in time a great part of that
-                  <ref target="a026" corresp="n026">Shagrien</ref><note xml:id="n026" target="a026"
+                  <ref target="Shagrien_" corresp="Shagrien">Shagrien</ref><note xml:id="Shagrien" target="Shagrien_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Chagrin; that is, disappointment
                   or vexation</note>, and Torture of Despair,<pb n="85"/> which the first Efforts of
                   <hi rend="italic">Imoinda</hi>'s Death had given him: Insomuch as having receiv'd a thousand
@@ -1344,7 +1342,7 @@
                young Victor, who was not only return'd triumphant, but belov'd like a Deity, when
                there arriv'd in the Port an <hi rend="italic">English</hi> Ship.</p>
 
-            <p><ref target="a027" corresp="n027">This Person</ref><note xml:id="n027" target="a027"
+            <p><ref target="Person_" corresp="Person">This Person</ref><note xml:id="Person" target="Person_"
                   type="editorial" resp="editors.xml#UVAstudstaff">The commander of the ship</note>
                had often before been in these Countries, and was very well known to
                   <hi rend="italic">Oroonoko,</hi> with whom he had traffick'd for Slaves, and had us'd to do the
@@ -1431,8 +1429,8 @@
                those Men under his Command.</p>
 
             <p>This was deliver'd to the still doubting <hi rend="italic">Captain,</hi> who could not resolve to
-               trust a <hi rend="italic">Heathen</hi> he said, upon his <ref target="a028" corresp="n028"
-                  >Parole</ref><note xml:id="n028" target="a028" type="editorial"
+               trust a <hi rend="italic">Heathen</hi> he said, upon his <ref target="Parole_" corresp="Parole"
+                  >Parole</ref><note xml:id="Parole" target="Parole_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Pledge, oath</note>, a Man that had no sence or
                notion of the God that he Worshipp'd. <hi rend="italic">Oroonoko</hi> then replied, He was very
                sorry to hear that the <hi rend="italic">Captain</hi> pretended to the Knowledge and Worship of any
@@ -1503,8 +1501,8 @@
                of those Plantations where I then chanc'd to be, the Captain, who had given the Word,
                order'd his Men to bring up those noble Slaves in Fetters, whom I have spoken of; and
                having put 'em, some in one, and some in other Lots, with Women and Children (which
-               they call <ref target="a029" corresp="n029">Pickaninies</ref><note xml:id="n029"
-                  target="a029" type="editorial" resp="editors.xml#UVAstudstaff">Dark-skinned
+               they call <ref target="Pickaninies_" corresp="Pickaninies">Pickaninies</ref><note xml:id="Pickaninies"
+                  target="Pickaninies_" type="editorial" resp="editors.xml#UVAstudstaff">Dark-skinned
                   children, usually of African descent. The term is likely a pidgin form of the
                   Portuguese word pequenino.</note>,) they sold 'em off, as Slaves, to several
                Merchants and Gentlemen; not <pb n="101"/>putting any two in one Lot, because they
@@ -1530,13 +1528,13 @@
 
             <p>The Gentleman that bought him was a young <hi rend="italic">Cornish</hi> Gentleman, whose Name was
                   <hi rend="italic">Trefry;</hi> a Man of great Wit, and fine Learning, and was carry'd into those
-               Parts by the <ref target="a030" corresp="n030">Lord—Governor</ref><note xml:id="n030"
-                  target="a030" type="editorial" resp="editors.xml#UVAstudstaff">Lord Willoughby was
+               Parts by the <ref target="Lord_" corresp="Lord">Lord—Governor</ref><note xml:id="Lord"
+                  target="Lord_" type="editorial" resp="editors.xml#UVAstudstaff">Lord Willoughby was
                   the governor of Surinam and the owner of the Parham plantation. Trefy was there to
                   oversee the plantation in Willoughby's absence.</note>, to manage all his Affairs.
                He reflecting on the last Words of <hi rend="italic">Oroonoko</hi> to the <pb n="103"/>Captain, and
-               beholding the Richness of his <ref target="a031" corresp="n031">Vest</ref><note
-                  xml:id="n031" target="a031" type="editorial" resp="editors.xml#UVAstudstaff"
+               beholding the Richness of his <ref target="Oroonoko_" corresp="Oroonoko">Vest</ref><note
+                  xml:id="Oroonoko" target="Oroonoko_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >clothing</note>, no sooner came into the Boat, but he fix'd his Eyes on him; and
                finding something so extraordinary in his Face, his Shape and Mien, a Greatness of
                Look, and Haughtiness in his Air, and finding he spoke <hi rend="italic">English,</hi> had a great
@@ -1569,8 +1567,8 @@
                their Condition, and that he shou'd have an Account of 'em.</p>
 
             <p>Though, as <hi rend="italic">Oroonoko</hi> afterwards said, he had little Reason to credit the
-               Words of a <ref target="a032" corresp="n032">Backearary</ref><note xml:id="n032"
-                  target="a032" type="editorial" resp="editors.xml#UVAstudstaff">An altered from of
+               Words of a <ref target="Backearary_" corresp="Backearary">Backearary</ref><note xml:id="Backearary"
+                  target="Backearary_" type="editorial" resp="editors.xml#UVAstudstaff">An altered from of
                   bakra, buckra, or buccra, a word used in Surinam for master.</note>, yet he knew
                not why; but he saw a kind<pb n="106"/> of Sincerity, and awful Truth in the Face of
                   <hi rend="italic">Trefry;</hi> he saw an Honesty in his Eyes, and he found him wise and witty
@@ -1578,8 +1576,8 @@
                   be a Knave or Villain.</hi>
             </p>
 
-            <p>In their passage up the <ref target="a033" corresp="n033">River</ref><note
-                  xml:id="n033" target="a033" type="editorial" resp="editors.xml#UVAstudstaff">The
+            <p>In their passage up the <ref target="River_" corresp="River">River</ref><note
+                  xml:id="River" target="River_" type="editorial" resp="editors.xml#UVAstudstaff">The
                   Suriname River</note>, they put in at several Houses for Refreshment; and ever
                when they landed, numbers of People wou'd flock to behold this Man; not but their
                Eyes were daily entertain'd with the sight of Slaves, but the Fame of
@@ -1589,8 +1587,8 @@
                his Person in the Minute he sold him. When he found his<pb n="107"/> Habit made him
                liable, as he thought, to be gaz'd at the more, he begg'd <hi rend="italic">Trefry</hi> to give him
                something more befitting a Slave; which he did, and took off his Robes. Nevertheless,
-               he shone through all; and his <ref target="a034" corresp="n034">Osenbrigs</ref><note
-                  xml:id="n034" target="a034" type="editorial" resp="editors.xml#UVAstudstaff">A
+               he shone through all; and his <ref target="Osenbrigs_" corresp="Osenbrigs">Osenbrigs</ref><note
+                  xml:id="Osenbrigs" target="Osenbrigs_" type="editorial" resp="editors.xml#UVAstudstaff">A
                   kind of coarse linen used for hard-wearing clothing that was produced in
                   Osnabruck, Germany. Source: Oxford English Dictionary</note> (a sort of brown
                   <hi rend="italic">Holland</hi> Suit he had on) cou'd not conceal the Graces of his Looks and
@@ -1605,8 +1603,8 @@
                <pb n="108"/> I ought to tell you, that the <hi rend="italic">Christians</hi> never buy any Slaves
                but they give 'em some Name of their own, their native ones being likely very
                barbarous, and hard to pronounce; so that Mr. <hi rend="italic">Trefry</hi> gave <hi rend="italic">Oroonoko</hi>
-               that of <ref target="a035" corresp="n035">Caesar</ref><note xml:id="n035"
-                  target="a035" type="editorial" resp="editors.xml#UVAstudstaff">Slaves were often
+               that of <ref target="Caesar_" corresp="Caesar">Caesar</ref><note xml:id="Caesar"
+                  target="Caesar_" type="editorial" resp="editors.xml#UVAstudstaff">Slaves were often
                   given the names of powerful Romans, which was often a way of mocking their
                   profound lack of power. Here, too, as Janet Todd notes, Behn sometimes referred to
                   James II as Caesar, so this forms another link between Oroonoko and the Stuart
@@ -1617,8 +1615,8 @@
                that might have given him his due. But his Misfortune was, to fall in an obscure
                World, that afforded only a Female Pen to celebrate his Fame; though I doubt not but
                it had liv'd from others Endeavours, if the <hi rend="italic">Dutch,</hi> who, immediately after
-               his <pb n="109"/>Time, took that <ref target="a036" corresp="n036">Country</ref><note
-                  xml:id="n036" target="a036" type="editorial" resp="editors.xml#UVAstudstaff"
+               his <pb n="109"/>Time, took that <ref target="Country_" corresp="Country">Country</ref><note
+                  xml:id="Country" target="Country_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >Surinam was turned over to the Dutch in the Treaty of Breda in 1667, just after
                   the action of this story takes place.</note>, had not kill'd, banish'd and
                dispers'd all those that were capable of giving the World this great Man's Life, much
@@ -1627,8 +1625,8 @@
 
             <p>For the future therefore, I must call <hi rend="italic">Oroonoko, Caesar,</hi> since by that Name
                only he was known in our Western World, and by that Name he was receiv'd on Shoar at
-                  <ref target="a037" corresp="n037">Parham-House</ref><note xml:id="n037"
-                  target="a037" type="editorial" resp="editors.xml#UVAstudstaff">The main house on
+                  <ref target="Parham_" corresp="Parham">Parham-House</ref><note xml:id="Parham"
+                  target="Parham_" type="editorial" resp="editors.xml#UVAstudstaff">The main house on
                   the Parham plantation.</note>, where he was destin'd a Slave. But if the King
                himself (God bless him) had come a-shore, there cou'd not have been greater
                Expectations by all the whole Plantation, and those neighbouring ones, than was on
@@ -1661,8 +1659,8 @@
                last they prevail'd with 'em, and they prepar'd all their barbarous Musick, and every
                one kill'd and dress'd something of his own Stock (for every Family has their Land
                apart, on which, at their leisuretimes, they breed all eatable things;) and clubbing
-               it together, made a most magnificent Supper, inviting their <ref target="a038"
-                  corresp="n038">Grandee</ref><note xml:id="n038" target="a038" type="editorial"
+               it together, made a most magnificent Supper, inviting their <ref target="Grandee_"
+                  corresp="Grandee">Grandee</ref><note xml:id="Grandee" target="Grandee_" type="editorial"
                   resp="editors.xml#UVAstudstaff">A Spanish or Portugese nobleman of the highest
                   rank. Source: Oxford English Dictionary</note> Captain, their <hi rend="italic">Prince,</hi> to
                honour it with his Presence; which he did, and several <hi rend="italic">English</hi> with him;
@@ -1672,7 +1670,7 @@
 
             <p>
                <pb n="129"/>
-               <ref target="a039" corresp="n039"/><note xml:id="n039" target="a039" type="editorial"
+               <ref target="Eye-Witnesses_" corresp="Eye-Witnesses"/><note xml:id="Eye-Witnesses" target="Eye-Witnesses_" type="editorial"
                   resp="editors.xml#UVAstudstaff">In the first edition, there is a page number skip
                   from page 112 to page 129. One possible explanation for this as that a sheet,
                   which would have had exactly sixteen pages in the original octavo format of this
@@ -1760,8 +1758,8 @@
             </p>
 
             <p>
-               <hi rend="italic">Trefry</hi> was infinitely pleas'd with this <ref target="a040" corresp="n040"
-                  >Novel</ref><note xml:id="n040" target="a040" type="editorial"
+               <hi rend="italic">Trefry</hi> was infinitely pleas'd with this <ref target="Novel_" corresp="Novel"
+                  >Novel</ref><note xml:id="Novel" target="Novel_" type="editorial"
                   resp="editors.xml#UVAstudstaff">To Behn and her readers, the word "novel" would
                   have been associated with short romantic stories set among the aristocracy; the
                   story of Oroonoko and Imoinda that Trefry has just heard fits that definition.
@@ -1786,19 +1784,19 @@
                   <hi rend="italic">Clemene</hi> was <hi rend="italic">Imoinda,</hi> we cou'd not enough admire her.</p>
 
             <p>I had forgot to tell you, that <pb n="139"/> those who are Nobly born of that
-               Country, are so delicately <ref target="a041" corresp="n041">Cut and Rac'd</ref><note
-                  xml:id="n041" target="a041" type="editorial" resp="editors.xml#UVAstudstaff">To
+               Country, are so delicately <ref target="Cut_" corresp="Cut">Cut and Rac'd</ref><note
+                  xml:id="Cut" target="Cut_" type="editorial" resp="editors.xml#UVAstudstaff">To
                   cut or slash (a shoe, item of clothing) for decorative purposes. Source: Oxford
                   English Dictionary, “race”)</note> all over the fore-part of the Trunk of their
-               Bodies, that it looks as if it were <ref target="a042" corresp="n042"
-                  >Japan'd</ref><note xml:id="n042" target="a042" type="editorial"
+               Bodies, that it looks as if it were <ref target="Japan_" corresp="Japan"
+                  >Japan'd</ref><note xml:id="Japan" target="Japan_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Lacquered, or covered with a glossy material; in
                   this period, highly-lacquered glossy black surfaces were associated with Japan,
                   which exported such goods to Europe.</note>; the Works being raised like high
                Poynt round the Edges of the Flowers: Some are only Carv'd with a little Flower, or
                Bird, at the Sides of the Temples, as was <hi rend="italic">Caesar;</hi> and those who are so
-               Carv'd over the Body, resemble our Ancient <ref target="a043" corresp="n043"
-                  >Picts,</ref><note xml:id="n043" target="a043" type="editorial"
+               Carv'd over the Body, resemble our Ancient <ref target="Picts_" corresp="Picts"
+                  >Picts,</ref><note xml:id="Picts" target="Picts_" type="editorial"
                   resp="editors.xml#UVAstudstaff">The Picts were an ancient tribe in the northern
                   part of Britain who were known to paint and tattoo their bodies. The engravings of
                   Picts in Thomas Hariot’s A Brief and True Report of the New Found Land of Virginia
@@ -1862,8 +1860,8 @@
                us'd to exercise himself in such Actions and Sports as this World afforded, as
                Running, Wrastling, Pitching the Bar, Hunting and Fishing,<pb n="146"/> Chasing and
                Killing <hi rend="italic">Tigers</hi> of a monstrous Size, which this Continent affords in
-               abundance; and wonderful <hi rend="italic">Snakes,</hi> such as <ref target="a044" corresp="n044"
-                  >Alexander</ref><note xml:id="n044" target="a044" type="editorial"
+               abundance; and wonderful <hi rend="italic">Snakes,</hi> such as <ref target="Alexander_" corresp="Alexander"
+                  >Alexander</ref><note xml:id="Alexander" target="Alexander_" type="editorial"
                   resp="editors.xml#UVAstudstaff">The reference here is to Alexander the Great, who
                   by legend met Thallestris, the Queen of the Amazons, a race of female warriors,
                   whose home was near the river Jaxartes, which reportedly had brightly-colored
@@ -1908,8 +1906,8 @@
                   May</hi> and <hi rend="italic">June;</hi> the Shades are perpetual, the Trees, bearing at once
                all degrees of Leaves and Fruit,<pb n="150"/> from blooming Buds to ripe Autumn;
                Groves of Oranges, Limons, Citrons, Figs, Nutmegs, and noble Aromaticks, continually
-               bearing their Fragrancies. The Trees appearing all like <ref target="a045"
-                  corresp="n045">Nosegays</ref><note xml:id="n045" target="a045" type="editorial"
+               bearing their Fragrancies. The Trees appearing all like <ref target="Nosegays_"
+                  corresp="Nosegays">Nosegays</ref><note xml:id="Nosegays" target="Nosegays_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Fragrant bouquets</note> adorn'd with Flowers of
                different kind; some are all White, some Purple, some Scarlet, some Blew, some
                Yellow; bearing, at the same time, Ripe Fruit and Blooming Young, or producing every
@@ -1938,8 +1936,8 @@
                behind 'em with lofty Trees of a Thousand rare<pb n="153"/> Forms and Colours, that
                the Prospect was the most raving that Sands can create. On the Edge of this white
                Rock, towards the River, was a Walk or Grove of Orange and Limon Trees, about half
-               the length of the <ref target="a046" corresp="n046">Mall</ref> here<note
-                  xml:id="n046" target="a046" type="editorial" resp="editors.xml#UVAstudstaff">Pall
+               the length of the <ref target="Mall_" corresp="Mall">Mall</ref> here<note
+                  xml:id="Mall" target="Mall_" type="editorial" resp="editors.xml#UVAstudstaff">Pall
                   Mall, one of the straightest avenues in London, well known in Behn's era as a
                   place for the socially ambitious to promenade.</note>, whose Flowery and Fruity
                bear Branches meet at the top, and hinder'd the Sun, whose Rays are very fierce
@@ -1954,22 +1952,22 @@
                cover'd that Rock but all things by Nature there are Rare, Delightful and Wonderful.
                But to our Sports;</p>
 
-            <p>Sometimes we wou'd go surprizing, and in search of young <ref target="a047"
-                  corresp="n047">Tigers</ref><note xml:id="n047" target="a047" type="editorial"
+            <p>Sometimes we wou'd go surprizing, and in search of young <ref target="Tigers_"
+                  corresp="Tigers">Tigers</ref><note xml:id="Tigers" target="Tigers_" type="editorial"
                   resp="editors.xml#UVAstudstaff">There are, of course, no tigers in Surinam, so
                   either Behn is thinking of some other kind of large carnivore such a jaguar (which
                   does exist in Surinam), or is fancifully adding this detail.</note> in their Dens,
                watching when the old Ones went forth to forage for Prey; and oftentimes we have been
                in great Danger, and have fled apace for our Lives, when surpriz'd by the <ref
-                  target="a048" corresp="n048">Dams</ref><note xml:id="n048" target="a048"
+                  target="Dams_" corresp="Dams">Dams</ref><note xml:id="Dams" target="Dams_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Mothers</note>. But once, above
                all other times, we went on this Design, and <hi rend="italic">Caesar</hi> was with us, who had no
                   sooner<pb n="155"/>stol'n a young <hi rend="italic">Tiger</hi> from her Nest, but going off, we
                incounter'd the Dam, bearing a Buttock of a Cow, which he had torn off with his
                mighty Paw, and going with it towards his <hi rend="italic">Den;</hi> we had only four Women,
                   <hi rend="italic">Caesar,</hi> and an English Gentleman, Brother to <hi rend="italic">Harry Martin,</hi> the
-               great <ref target="a049" corresp="n049">Oliverian;</ref><note xml:id="n049"
-                  target="a049" type="editorial" resp="editors.xml#UVAstudstaff">Follower of Oliver
+               great <ref target="Oliverian_" corresp="Oliverian">Oliverian;</ref><note xml:id="Oliverian"
+                  target="Oliverian_" type="editorial" resp="editors.xml#UVAstudstaff">Follower of Oliver
                   Cromwell, the leader of the Parliamentary forces in the Civil War and head of the
                   Commonwealth government that ruled England in the 1650s.</note> we found there was
                no escaping this inrag'd and ravenous Beast. However, we Women fled as fast as we
@@ -2038,8 +2036,8 @@
                fine Discourses; of Accidents in War, and Strange Escapes.</p>
 
             <p>At other times he wou'd go a Fishing; and discoursing on that Diversion, he found we
-               had in that Country a very Strange Fish, call'd, a <ref target="a050" corresp="n050"
-                  >Numb Eel,</ref><note xml:id="n050" target="a050" type="editorial"
+               had in that Country a very Strange Fish, call'd, a <ref target="Numb_" corresp="Numb"
+                  >Numb Eel,</ref><note xml:id="Numb" target="Numb_" type="editorial"
                   resp="editors.xml#UVAstudstaff">An electric eel</note> (an <hi rend="italic">Eel</hi> of which I
                have eaten) that while it is alive, it has a quality so Cold, that those who are
                Angling, though with a Line of never so great a length, with a Rod <pb n="163"/>at
@@ -2067,8 +2065,8 @@
                Refresh'd; and not a little Asham'd to find he shou'd be overcome by an <hi rend="italic">Eel;</hi>
                and that all the People, who heard his Defiance, wou'd Laugh at him. But we cheared
                him up; and he, being convinc'd, we had the <hi rend="italic">Eel</hi> at Supper; which was a
-               quarter of an <ref target="a051" corresp="n051">Ell</ref><note xml:id="n051"
-                  target="a051" type="editorial" resp="editors.xml#UVAstudstaff">An ell is a unit of
+               quarter of an <ref target="Ell_" corresp="Ell">Ell</ref><note xml:id="Ell"
+                  target="Ell_" type="editorial" resp="editors.xml#UVAstudstaff">An ell is a unit of
                   measurement; it varied from place to place and at different times, but an English
                   ell of this period would have been about 45 inches</note> about, and most delicate
                Meat; and was of the more Value, since it cost so<pb n="166"/>Dear, as almost the
@@ -2122,8 +2120,8 @@
                Faces, feeling our Breasts and Arms, taking up one Petticoat, then wondering to see
                another; admiring our Shooes and Stockings, but more our Garters, which we gave 'em;
                and they ty'd about their Legs, being Lac'd with Silver Lace at the ends, for they
-               much Esteem any <ref target="a052" corresp="n052">shining things</ref><note
-                  xml:id="n052" target="a052" type="editorial" resp="editors.xml#UVAstudstaff"
+               much Esteem any <ref target="shining_" corresp="shining">shining things</ref><note
+                  xml:id="shining" target="shining" type="editorial" resp="editors.xml#UVAstudstaff"
                   >Behn’s description of Native American gentleness and fascination with European
                   dress and trinkets is an exploitive theme common throughout early colonial
                   American literature. In most of the colonial writings regarding Native Americans,
@@ -2140,7 +2138,7 @@
                Commerce with 'em; for they love not to go far from home, and we never go to them)
                when they saw him therefore they set up a new Joy; and cry'd, in their Language,
                   <hi rend="italic">Oh! here's our</hi>
-               <ref target="a053" corresp="n053">Tiguamy</ref><note xml:id="n053" target="a053"
+               <ref target="Tiguamy_" corresp="Tiguamy">Tiguamy</ref><note xml:id="Tiguamy" target="Tiguamy_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Janet Todd notes that the phrase
                   "Amora tiguamy" appears in Antione Biet’s <hi rend="italic">Voyage de la France
                      équixonale en l’isle de Cayenne</hi> (1654, pp. 395-7). Todd argues that Behn
@@ -2156,22 +2154,22 @@
                Life, and War, as they cou'd do? if we cou'd Hunt, Swim, and do a thousand things
                they use? He answer'd 'em, We cou'd. Then <pb n="173"/>they invited us into their
                Houses, and dress'd Venison and Buffelo for us; and, going out, gathered a Leaf of a
-               Tree, call'd a <ref target="a054" corresp="n054">Sarumbo</ref><note xml:id="n054"
-                  target="a054">Todd notes that Behn borrowed the word sarumbo from Biet as well;
+               Tree, call'd a <ref target="Sarumbo_" corresp="Sarumbo">Sarumbo</ref><note xml:id="Sarumbo"
+                  target="Sarumbo_">Todd notes that Behn borrowed the word sarumbo from Biet as well;
                   Biet observes that these large leaves were used as napkins.</note> Leaf, of Six
                Yards long, and spread it on the Ground for a Table-Cloth; and cutting another in
                pieces instead of Plates, setting us on little bow <hi rend="italic">Indian</hi> Stools, which they
                cut out of one intire piece of Wood, and Paint, in a sort of Japan Work: They serve
-               every one their <ref target="a055" corresp="n055">Mess</ref><note xml:id="n055"
-                  target="a055">A serving of food; a course; or a meal. Source: Oxford English
+               every one their <ref target="Mess_" corresp="Mess">Mess</ref><note xml:id="Mess"
+                  target="Mess_">A serving of food; a course; or a meal. Source: Oxford English
                   Dictionary</note> on these pieces of Leaves, and it was very good, but too high
                season'd with Pepper. When we had eat, my Brother, and I, took out our Flutes, and
                play'd to 'em, which gave 'em new Wonder; and I soon perceiv'd, by an admiration,
                that is natural to these<pb n="174"/> People; and by the extream Ignorance and
                Simplicity of 'em, it were not difficult to establish any unknown or extravagant
                Religion among them; and to impose any Notions or Fictions upon 'em. For seeing a
-               Kinsman of mine set some Paper a Fire, with a <ref target="a056" corresp="n056"
-                  >Burning-glass</ref><note xml:id="n056" target="a056">A lens, by which the rays of
+               Kinsman of mine set some Paper a Fire, with a <ref target="Burning_" corresp="Burning"
+                  >Burning-glass</ref><note xml:id="Burning" target="Burning_">A lens, by which the rays of
                   the sun may be concentrated on an object, so as to burn it if combustible. Source:
                   Oxford English Dictionary</note>, a Trick they had never before seen, they were
                like to have Ador'd him for a God; and beg'd he wou'd give them the Characters or
@@ -2182,8 +2180,8 @@
                their <hi rend="italic">Indian Peeie</hi> a Youth of about Sixteen Years old, as handsom as Nature
                cou'd make a Man. They consecrate a beautiful Youth from his Infancy, and all Arts
                are us'd to compleat him in the finest manner, both in Beauty and Shape: He is bred
-               to all the little Arts and cunning they are capable of; to all the <ref target="a057"
-                  corresp="n057">Legerdemain</ref><note xml:id="n057" target="a057">Juggling or
+               to all the little Arts and cunning they are capable of; to all the <ref target="Legerdemain_"
+                  corresp="Legerdemain">Legerdemain</ref><note xml:id="Legerdemain" target="Legerdemain_">Juggling or
                   conjuring tricks. Deception, from the French leger de main, literally "light of
                   hand."</note> Tricks, and Slight of Hand, whereby he imposes upon the Rabble; and
                is both a Doctor in Physick and Divinity. And by these Tricks makes the Sick believe
@@ -2191,7 +2189,7 @@
                or odd Flies, or Worms, or any Strange thing; and though<pb n="176"/>they have
                besides undoubted good Remedies, for almost all their Diseases, they cure the Patient
                more by Fancy than by Medicines; and make themselves Fear'd, Lov'd, and <ref
-                  target="a058" corresp="n058">Reverenc'd</ref>.<note xml:id="n058" target="a058"
+                  target="Reverenc_" corresp="Reverenc">Reverenc'd</ref>.<note xml:id="Reverenc" target="Reverenc_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Behn describes the tribe as
                   passing down its highest artistic and scientific knowledge to a select member who
                   undergoes rigorous training from youth. This pattern relates to ideal models of
@@ -2208,8 +2206,8 @@
                Humane and Noble; but some wanted their Noses, some their Lips, some both Noses and
                Lips, some their Ears, and others Cut through each Cheek, with long Slashes, through
                which their Teeth appear'd; they had other several formidable Wounds and Scars, or
-               rather Dismemberings; they had <ref target="a059" corresp="n059">Comitias,</ref><note
-                  xml:id="n059" target="a059" type="editorial" resp="editors.xml#UVAstudstaff">Todd
+               rather Dismemberings; they had <ref target="Comitias_" corresp="Comitias">Comitias,</ref><note
+                  xml:id="Comitias" target="Comitias_" type="editorial" resp="editors.xml#UVAstudstaff">Todd
                   notes that Behn may have borrowed from Biet yet again. Biet claims Indians wore a
                   small piece of clothing called a camison.</note> or little Aprons before 'em; and
                Girdles of Cotton, with their Knives naked,<pb n="178"/> stuck in it; a Bow at their
@@ -2234,7 +2232,7 @@
 
             <p>In this Voyage <hi rend="italic">Caesar</hi> begot so good an understanding between the
                   <hi rend="italic">Indians</hi> and the <hi rend="italic">English,</hi> that there were no more Fears, or <ref
-                  target="a060" corresp="n060">Heart-burnings</ref><note xml:id="n060" target="a060"
+                  target="Heartburn_" corresp="Heartburn">Heart-burnings</ref><note xml:id="Heartburn" target="Heartburn_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Jealousy, resentment, or
                   discontent; grudges. Source: Oxford English Dictionary</note> during our stay; but
                we had a perfect, open, and free Trade with 'em: Many things Remarkable, and worthy
@@ -2248,21 +2246,21 @@
                that is, of a larger Size, and other sort of Features, than those of our Country: Our
                   <hi rend="italic">Indian Slaves,</hi> that Row'd us, ask'd 'em some Questions, but they cou'd
                not understand us; but shew'd us a long Cotton String, with several Knots on it; and
-               told us, they had been coming from the Mountains so many <ref target="a061"
-                  corresp="n061">Moons</ref><note xml:id="n061" target="a061" type="editorial"
+               told us, they had been coming from the Mountains so many <ref target="Moons_"
+                  corresp="Moons">Moons</ref><note xml:id="Moons" target="Moons_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Months</note> as there were Knots; they were
                habited in Skins of a strange Beast, and brought along with 'em Bags of Gold Dust;
                which, as well as they cou'd give us to understand, came streaming in<pb n="182"/>
                little small Chanels down the high Mountains, when the Rains fell; and offer'd to be
-               the Convoy to any Body, or Persons, that wou'd go to the <ref target="a062"
-                  corresp="n062">Mountains</ref><note xml:id="n062" target="a062" type="editorial"
+               the Convoy to any Body, or Persons, that wou'd go to the <ref target="Mountains"
+                  corresp="Mountains">Mountains</ref><note xml:id="Mountains" target="Mountains_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Europeans still believed that a golden city, or El
                   Dorado, existed in the South American mountains</note>. We carry'd these Men up to
                   <hi rend="italic">Parham,</hi> where they were kept till the Lord Governour came: And because
                all the Country was mad to be going on this Golden Adventure, the Governour, by his
                Letters, commanded (for they sent some of the Gold to him) that a Guard shou'd be set
-               at the Mouth of the River of <ref target="a063" corresp="n063">Amazons</ref><note
-                  xml:id="n063" target="a063" type="editorial" resp="editors.xml#UVAstudstaff">Todd
+               at the Mouth of the River of <ref target="Amazons_" corresp="Amazons">Amazons</ref><note
+                  xml:id="Amazons" target="Amazons_" type="editorial" resp="editors.xml#UVAstudstaff">Todd
                   explains that this is a geographic blunder. The mouth of the Amazon is in Brazil,
                   but cartographers had drawn it as the south-eastern border of “Guiana” throughout
                   the seventeenth century.</note>, (a River so call'd, almost as broad as the River
@@ -2299,7 +2297,7 @@
 
             <p>
                <hi rend="italic">Caesar,</hi> having singl'd out these Men from the Women and Children, made an
-                  <ref target="a064" corresp="n064">Harangue</ref><note xml:id="n064" target="a064"
+                  <ref target="Harangue_" corresp="Harangue">Harangue</ref><note xml:id="Harangue" target="Harangue"
                   type="editorial" resp="editors.xml#UVAstudstaff">A tirade. The term first appears
                   c1450, but only in Scottish writings. It was not used in England until c1600. It
                   derives from medieval Latin harenga, which shares the current definition, and the
@@ -2314,7 +2312,7 @@
                an Ass, or Dog, or Horse having done his Duty, cou'd lye down<pb n="187"/> in
                Retreat, and rise to Work again, and while he did his Duty indur'd no Stripes; but
                Men, Villanous, Senseless Men, such as they, Toyl'd on all the tedious Week till
-               Black <ref target="a065" corresp="n065">Friday</ref><note xml:id="n065" target="a065"
+               Black <ref target="Friday_" corresp="Friday">Friday</ref><note xml:id="Friday" target="Friday_"
                   type="editorial" resp="editors.xml#UVAstudstaff">The Day of Judgment.</note>; and
                then, whether they Work'd or not, whether they were Faulty or Meriting, they
                promiscuously, the Innocent with the Guilty, suffer'd the infamous Whip, the sordid
@@ -2323,8 +2321,8 @@
                those Tyrants, that impose it; <hi rend="italic">And why,</hi> said he, <hi rend="italic">my dear Friends and
                   Fellow-sufferers, shou'd we be Slaves to an unknown People? Have they Vanquish'd
                   us Nobly in Fight? Have they Won</hi><pb n="188"/><hi rend="italic"> us in Honourable Battel?
-                  And are we, by the chance of War, become their <ref target="a066" corresp="n066"
-                     >Slaves</ref>?<note xml:id="n066" target="a066" type="editorial"
+                  And are we, by the chance of War, become their <ref target="Slaves_" corresp="Slaves"
+                     >Slaves</ref>?<note xml:id="Slaves" target="Slaves_" type="editorial"
                      resp="editors.xml#UVAstudstaff">Oroonoko here is expressing what was known as
                      the "just war" doctrine of slavery, that those who lost a war could rightly be
                      enslaved. It is on this basis that Oroonoko himself owns slaves. The
@@ -2333,7 +2331,7 @@
                      commerce are not.</note> This wou'd not anger a Noble Heart, this wou'd not
                   animate a Souldiers Soul; no, but we are Bought and Sold like Apes, or Monkeys, to
                   be the Sport of Women, Fools and Cowards; and the Support of Rogues, <ref
-                     target="a067" corresp="n067">Runagades</ref><note xml:id="n067" target="a067"
+                     target="Runagades_" corresp="Runagades">Runagades</ref><note xml:id="Runagades" target="Runagades_"
                      type="editorial" resp="editors.xml#UVAstudstaff">Renegades</note>, that have
                   abandon'd their own Countries, for Rapin, Murders, Thefts and Villanies: Do you
                   not hear every Day how they upbraid each other with infamy of Life, below the
@@ -2346,8 +2344,8 @@
             </p>
 
             <p>After this he wou'd have proceeded, but was interrupted by a tall <hi rend="italic">Negro</hi> of
-               some more Quality than the rest, his Name was <ref target="a068" corresp="n068"
-                  >Tuscan;</ref><note xml:id="n068" target="a068" type="editorial"
+               some more Quality than the rest, his Name was <ref target="Tuscan_" corresp="Tuscan"
+                  >Tuscan;</ref><note xml:id="Tuscan" target="Tuscan_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Tuscan’s name derives from the late Latin Tuscānus
                   meaning “of or belonging to the Tuscī or Thuscī, a people of ancient Italy (called
                   also Etruscī Etruscans).” Source: Oxford English Dictionary The Etruscans
@@ -2375,9 +2373,9 @@
 
             <p>To which they all Agreed,—and Bowed. After this, he spoke of the Impassable Woods and
                Rivers; and convinc'd 'em, the more Danger, the more Glory. He told them that he had
-               heard of one <hi rend="italic">Hannibal</hi> a great Captain, had <ref target="a069" corresp="n069"
-                  >Cut his Way</ref> through Mountains of solid Rocks<note xml:id="n069"
-                  target="a069" type="editorial" resp="editors.xml#UVAstudstaff">According to the
+               heard of one <hi rend="italic">Hannibal</hi> a great Captain, had <ref target="cut-his-way_" corresp="cut-his-way_"
+                  >Cut his Way</ref> through Mountains of solid Rocks<note xml:id="cut-his-way"
+                  target="cut-his-way_" type="editorial" resp="editors.xml#UVAstudstaff">According to the
                   Roman historian Plutarch, the Carthaginian general Hannibal used vinegar and fire
                   to burn his way through the Alps to attack the Roman army.</note>; and shou'd a
                few Shrubs oppose them; which they cou'd Fire before 'em? No, 'twas a trifling Excuse
@@ -2414,28 +2412,28 @@
                the Neighbouring ones; and we had by Noon about Six hundred Men, they call the
                   <hi rend="italic">Militia</hi> of the County, that came to assist us in the persute of the
                   Fugitives:<pb n="195"/> But never did one see so comical an Army march forth to
-               War. The Men, of any <ref target="a070" corresp="n070">fashion</ref><note
-                  xml:id="n070" target="a070" type="editorial" resp="editors.xml#UVAstudstaff">Of
+               War. The Men, of any <ref target="fashion_" corresp="fashion">fashion</ref><note
+                  xml:id="fashion" target="fashion_" type="editorial" resp="editors.xml#UVAstudstaff">Of
                   high social standing; the upper class</note>, wou'd not concern themselves, though
                it were almost the common Cause; for such Revoltings are very ill Examples, and have
                very fatal Consequences oftentimes in many Colonies: But they had a Respect for
                   <hi rend="italic">Caesar,</hi> and all hands were against the <hi rend="italic">Parhamites,</hi> as they
                call'd those of <hi rend="italic">Parham Plantation;</hi> because they did not, in the first place,
                love the Lord Governor; and secondly, they wou'd have it, that <hi rend="italic">Caesar</hi> was
-                  <ref target="a071" corresp="n071">Ill us'd</ref><note xml:id="n071" target="a071"
+                  <ref target="Ill_" corresp="Ill">Ill us'd</ref><note xml:id="Ill" target="Ill_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Poorly treated</note>, and <ref
-                  target="a072" corresp="n072">Baffl'd with</ref><note xml:id="n072" target="a072"
+                  target="Baffled_" corresp="Baffled">Baffl'd with</ref><note xml:id="Balffed" target="Baffled_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Subjected to public disgrace.
                   Source: Oxford English Dictionary</note>; and 'tis not impossible but some of the
                best in the Country was of his Council in this Flight, and depriving us of all
                   the<hi rend="italic">Slaves;</hi> so that they<pb n="196"/>of the better sort wou'd not meddle
-               in the matter. The <ref target="a074" corresp="a074">Deputy Governor</ref>, of whom I
+               in the matter. The <ref target="Deputy_" corresp="Deputy">Deputy Governor</ref>, of whom I
                have had no great occasion to speak, and who was the most Fawning fair-tongu'd Fellow
                in the World, and one that pretended the most Friendship to <hi rend="italic">Caesar,</hi> was now
                the only violent Man against him; and though he had nothing, and so need fear
                nothing, yet talk'd and look'd bigger than any Man: He was a Fellow, whose Character
-               is not fit to be mention'd with the worst of the <hi rend="italic">Slaves.</hi><note xml:id="n074"
-                  target="a074" type="editorial" resp="editors.xml#UVAstudstaff">William Byam is a
+               is not fit to be mention'd with the worst of the <hi rend="italic">Slaves.</hi><note xml:id="Deputy"
+                  target="Deputy_" type="editorial" resp="editors.xml#UVAstudstaff">William Byam is a
                   real historical personage, noted both in Antione Biet’s Voyage de la France
                   équixonale en l’isle de Cayenne (1654) and Henry Adis’s A Letter Sent from
                   Syrrinam (1664). As deputy governor of Surinam, Byam ruled the colony in the
@@ -2453,13 +2451,13 @@
                   Attempts of John Allin (1665) defending the need for harsh measures to govern the
                   unruly colonists and accusing Allin of insurrection.</note> This Fellow wou'd lead
                his Army forth to meet <hi rend="italic">Caesar;</hi> or rather to persue him; most of their Arms
-               were of those sort of cruel Whips they call <ref target="a075" corresp="n075">Cat
-                  with Nine Tayls</ref><note xml:id="n075" target="a075" type="editorial"
+               were of those sort of cruel Whips they call <ref target="Cat_" corresp="Cat">Cat
+                  with Nine Tayls</ref><note xml:id="Cat" target="Cat_" type="editorial"
                   resp="editors.xml#UVAstudstaff">More commonly known as a cat-o'-nine-tails, a whip
                   with nine knotted lashes, often used for corporal punishment in the British
                   military until 1881. Source: Oxford English Dictionary</note>; some had rusty<pb
-                  n="197"/> useless Guns for show; others old <ref target="a076" corresp="n076"
-                  >Basket-hilts</ref><note xml:id="n076" target="a076" type="editorial"
+                  n="197"/> useless Guns for show; others old <ref target="Basket-hilts_" corresp="Basket-hilts"
+                  >Basket-hilts</ref><note xml:id="Basket-hilts" target="Basket-hilts_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Defensive hilts on the handle of a sword
                   consisting of narrow plates of steel curved into the shape of a basket</note>,
                whose Blades had never seen the Light in this Age; and others had long Staffs, and
@@ -2467,8 +2465,8 @@
                such a Batail; for he foresaw, and knew, if by fighting they put the <hi rend="italic">Negroes</hi>
                into dispair, they were a sort of sullen Fellows, that wou'd drown, or kill
                themselves, before they wou'd yield; and he advis'd that fair means was best: But
-                  <hi rend="italic">Byam</hi> was one that abounded in his own <ref target="a077" corresp="n077"
-                  >Wit</ref><note xml:id="n077" target="a077" type="editorial"
+                  <hi rend="italic">Byam</hi> was one that abounded in his own <ref target="Wit_" corresp="Wit"
+                  >Wit</ref><note xml:id="Wit" target="Wit_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Followed his own judgment</note>, and wou'd take
                his own Measures.</p>
 
@@ -2507,12 +2505,12 @@
                look'd upon this Action, as Gallant and Brave; however tending to the prejudice of
                his Lord and Master, who wou'd by it have lost so considerable a number of
                   <hi rend="italic">Slaves;</hi> that this Flight of his shou'd be look'd on as a heat of Youth,
-               and rashness of a too forward Courage, and an <ref target="a078" corresp="n078"
-                  >unconsider'd</ref><note xml:id="n078" target="a078" type="editorial"
+               and rashness of a too forward Courage, and an <ref target="unconsidered_" corresp="unconsidered"
+                  >unconsider'd</ref><note xml:id="unconsidered" target="unconsidered_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Unpremeditated</note> impatience of Liberty, and
                no more; and that he labour'd in vain to accomplish that which they wou'd effectually
-                  perform,<pb n="202"/>as soon as any Ship arriv'd that wou'd <ref target="a079"
-                  corresp="n079">touch on</ref><note xml:id="n079" target="a079" type="editorial"
+                  perform,<pb n="202"/>as soon as any Ship arriv'd that wou'd <ref target="touch_"
+                  corresp="touch">touch on</ref><note xml:id="touch" target="touch_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Draw near to</note> his Coast. <hi rend="italic">So that if you
                   will be pleas'd,</hi> continued he, <hi rend="italic">to surrender your self, all imaginable
                   Respect shall be paid you; and your Self, your Wife, and Child, if it be here
@@ -2520,8 +2518,8 @@
                Composition; though <hi rend="italic">Byam</hi> urg'd, If he persu'd, and went on in his Design, he
                wou'd inevitably Perish, either by great <hi rend="italic">Snakes,</hi> wild Beasts, or Hunger; and
                he ought to have regard to his Wife, whose Condition required ease, and not the
-               fatigues of <ref target="a080" corresp="n080">tedious</ref><note xml:id="n080"
-                  target="a080" type="editorial" resp="editors.xml#UVAstudstaff">Tiresome,
+               fatigues of <ref target="tedious_" corresp="tedious">tedious</ref><note xml:id="tedious"
+                  target="tedious_" type="editorial" resp="editors.xml#UVAstudstaff">Tiresome,
                   exhausting</note> Travel; where she cou'd not be secur'd from being devoured. But
                   <hi rend="italic">Caesar</hi> told him, there was no Faith in the White Men, or the Gods they
                   Ador'd;<pb n="203"/> who instructed 'em in Principles so false, that honest Men
@@ -2550,8 +2548,8 @@
                   <hi rend="italic">Tuscan</hi>'s Pardon was put in, and they Surrender to the Governor, who
                walked peaceably down into the <hi rend="italic">Plantation</hi> with 'em, after giving order to
                bury their dead. <hi rend="italic">Caesar</hi> was very much toyl'd with the bustle of the Day; for
-               he had fought like a <ref target="a081" corresp="n081">Fury</ref><note xml:id="n081"
-                  target="a081" type="editorial" resp="editors.xml#UVAstudstaff">An allusion to the
+               he had fought like a <ref target="Fury_" corresp="Fury">Fury</ref><note xml:id="Fury"
+                  target="Fury_" type="editorial" resp="editors.xml#UVAstudstaff">An allusion to the
                   Furies, three mythical Greek goddesses of vengeance and punishment, best known for
                   punishing those who swear false oaths and, especially, those who kill their own
                   kin.</note>, and what Mischief was done he and <hi rend="italic">Tuscan</hi> perform'd <pb
@@ -2594,8 +2592,8 @@
                   <hi rend="italic">Caesar</hi> was taken, and Whipt like a common <hi rend="italic">Slave.</hi> We met on the
                River with Colonel <hi rend="italic">Martin,</hi> a Man of great Gallantry, Wit, and<pb n="210"
                />Goodness, and whom I have celebrated in a Character of my New <hi rend="italic">Comedy,</hi> by
-               his own Name, in memory of so brave a <ref target="a082" corresp="n082"
-                  >Man</ref><note xml:id="n082" target="a082" type="editorial"
+               his own Name, in memory of so brave a <ref target="Man_" corresp="Man"
+                  >Man</ref><note xml:id="Man" target="Man_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Todd notes that a Colonel Marten of the Surinam
                   militia appears in multiple historical accounts of the colony, although the
                   authority under which he was styled colonel is dubious. In contrast to Behn’s
@@ -2643,26 +2641,26 @@
                Oroonoko <hi rend="italic">scorns to live with the Indignity that was put on</hi> Caesar. All we<pb
                   n="214"/> cou'd do cou'd get no more Words from him; and we took care to have him
                put immediately into a healing Bath, to rid him of his Pepper; and order'd a <ref
-                  target="a083" corresp="n083">Chirurgeon</ref><note xml:id="n083" target="a083"
+                  target="Chirurgeon_" corresp="Chirurgeon">Chirurgeon</ref><note xml:id="Chirurgeon" target="Chirurgeon"
                   type="editorial" resp="editors.xml#UVAstudstaff">Surgeon</note> to anoint him with
                healing Balm, which he suffer'd, and in some time he began to be able to Walk and
                Eat; we fail'd not to visit him every Day, and, to that end, had him brought to an
-                  <ref target="a084" corresp="n084">apartment</ref><note xml:id="n084" target="a084"
+                  <ref target="apartment_" corresp="apartment">apartment</ref><note xml:id="apartment" target="apartment_"
                   type="editorial" resp="editors.xml#UVAstudstaff">A room in a house designed for
                   the use of a particular person</note> at <hi rend="italic">Parham.</hi>
             </p>
 
             <p>The <hi rend="italic">Governor</hi> was no sooner recover'd, and had heard of the <ref
-                  target="a085" corresp="n085">menaces</ref><note xml:id="n085" target="a085"
+                  target="menaces_" corresp="menaces">menaces</ref><note xml:id="menaces" target="menaces_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Threats</note> of
                   <hi rend="italic">Caesar,</hi> but he call'd his Council; who (not to disgrace them, or <ref
-                  target="a086" corresp="n086">Burlesque</ref><note xml:id="n086" target="a086"
+                  target="Burlesque_" corresp="Burlesque">Burlesque</ref><note xml:id="Burlesque" target="Burlesque_"
                   type="editorial" resp="editors.xml#UVAstudstaff">To mockingly imitate, deride, or
                   amuse. Source: Oxford English Dictionary</note> the Government there) consisted of
-               such notorious Villains as <ref target="a087" corresp="n087">Newgate</ref><note
-                  xml:id="n087" target="a087" type="editorial" resp="editors.xml#UVAstudstaff">The
-                  central prison in London</note> never <ref target="a088" corresp="n088"
-                  >transported</ref><note xml:id="n088" target="a088" type="editorial"
+               such notorious Villains as <ref target="Newgate_" corresp="Newgate">Newgate</ref><note
+                  xml:id="Newgate" target="Newgate_" type="editorial" resp="editors.xml#UVAstudstaff">The
+                  central prison in London</note> never <ref target="transported_" corresp="transported"
+                  >transported</ref><note xml:id="transported" target="transported_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Throughout this period, many criminals found
                   guilty of crimes against property in Britain were sentenced by being "transported"
                   or exiled for a period of years to the colonies.</note>; and possibly originally
@@ -2676,16 +2674,16 @@
                it might be their own Cases; and that <hi rend="italic">Caesar</hi> ought to be made an Example to
                all the <hi rend="italic">Negroes,</hi> to fright 'em from daring to threaten their Betters, their
                   Lords<pb n="216"/> and Masters; and, at this rate, no Man was safe from his own
-                  <hi rend="italic">Slaves;</hi> and concluded, <ref target="a089" corresp="n089">nemine
-                  contradicente</ref><note xml:id="n089" target="a089" type="editorial"
+                  <hi rend="italic">Slaves;</hi> and concluded, <ref target="nemine_" corresp="nemine">nemine
+                  contradicente</ref><note xml:id="nemine" target="nemine_" type="editorial"
                   resp="editors.xml#UVAstudstaff">With no one speaking to the contrary.</note> that
                   <hi rend="italic">Caesar</hi> shou'd be Hang'd.</p>
 
             <p>
                <hi rend="italic">Trefry</hi> then thought it time to use his Authority; and told <hi rend="italic">Byam</hi> his
                Command did not extend to his Lord's <hi rend="italic">Plantation;</hi> and that <hi rend="italic">Parham</hi>
-               was as much exempt from the Law as <ref target="a090" corresp="n090"
-                  >White-hall;</ref><note xml:id="n090" target="a090" type="editorial"
+               was as much exempt from the Law as <ref target="White-hall_" corresp="White-hall"
+                  >White-hall;</ref><note xml:id="White-hall" target="White-hall_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Offices of government in Whitehall, London.
                   Trefry's implication is that Byam, although governor of Surinam, remains as
                   subordinate to the King as any civil servant back in Great Britain.</note> and
@@ -2711,7 +2709,7 @@
                   <hi rend="italic">Caesar</hi> did not at all doubt, if he once recover'd Strength, but he shou'd
                find an opportunity of being Reveng'd on him: Though, after such a Revenge, he cou'd
                not hope to Live; for if he escap'd the Fury of the <hi rend="italic">English</hi>
-               <ref target="a091" corresp="n091">Mobile</ref><note xml:id="n091" target="a091"
+               <ref target="Mobile_" corresp="Mobile">Mobile</ref><note xml:id="Mobile" target="Mobile_"
                   type="editorial" resp="editors.xml#UVAstudstaff">The mob, the rabble; the common
                   people, the populace. Source: Oxford English Dictionary</note>, who perhaps wou'd
                have been glad of the occasion to have kill'd him, he was resolv'd not to survive his
@@ -2750,8 +2748,8 @@
                Wife, if he love her, she dyes by his Hand; if not, he sells her, or suffers some
                other to kill her. It being thus; you may believe the Deed was soon resolv'd on; and
                'tis not to be doubted, but the Parting, the eternal Leave taking of Two such Lovers,
-               so greatly Born, so <ref target="a092" corresp="n092">Sensible</ref><note
-                  xml:id="n092" target="a092" type="editorial" resp="editors.xml#UVAstudstaff"
+               so greatly Born, so <ref target="Sensible_" corresp="Sensible">Sensible</ref><note
+                  xml:id="Sensible" target="Sensible_" type="editorial" resp="editors.xml#UVAstudstaff"
                   >Capable of delicate or tender feeling. Source: Oxford English Dictionary</note>,
                so Beautiful, so Young, and so Fond, must be very Moving, as the Relation of it was
                to me afterwards.</p>
@@ -2763,8 +2761,8 @@
                breaking within, gave the Fatal Stroke; first, cutting her Throat, and then severing
                her, yet Smiling, Face from that Delicate Body, pregnant as it was with Fruits of
                tend' rest Love. As soon as he had done, he laid the Body decently on Leaves and
-               Flowers; of which he made a Bed, and conceal'd it under the same <ref target="a093"
-                  corresp="n093">cover-lid</ref><note xml:id="n093" target="a093" type="editorial"
+               Flowers; of which he made a Bed, and conceal'd it under the same <ref target="cover-lid_"
+                  corresp="cover-lid">cover-lid</ref><note xml:id="cover-lid" target="cover-lid_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Coverlet, blanket</note> of Nature; only her Face
                he left yet bare to look on: But when he found she was Dead, and past all Retrieve,
                never more<pb n="224"/> to bless him with her Eyes, and soft Language; his Grief
@@ -2873,8 +2871,8 @@
                not think so poorly of him, or of his love to <hi rend="italic">Imoinda,</hi> to <pb n="235"
                />imagine we cou'd Flatter him to Life again; but the Chirurgeon assur'd him, he
                cou'd not Live, and therefore he need not Fear. We were all (but <hi rend="italic">Caesar)</hi>
-               afflicted at this News; and the Sight was <ref target="a094" corresp="n094"
-                  >gashly</ref><note xml:id="n094" target="a094" type="editorial"
+               afflicted at this News; and the Sight was <ref target="gashly_" corresp="gashly"
+                  >gashly</ref><note xml:id="gashly" target="gashly_" type="editorial"
                   resp="editors.xml#UVAstudstaff">Ghastly</note>; his Discourse was sad; and the
                earthly Smell about him so strong, that I was perswaded to leave the Place for some
                time; (being my self-but Sickly, and very apt to fall into Fits of dangerous Illness
@@ -2886,7 +2884,7 @@
                <hi rend="italic">Governor</hi> taking <hi rend="italic">Trefry,</hi> about some pretended earnest Business, a
                Days Journy up the River; having communicated his Design to one <hi rend="italic">Banister,</hi> a
                wild <hi rend="italic">Irish</hi>
-               <ref target="a095" corresp="n095">Man</ref><note xml:id="n095" target="a095"
+               <ref target="Banister_" corresp="Banister">Man</ref><note xml:id="Banister" target="Banister_"
                   type="editorial" resp="editors.xml#UVAstudstaff">Major James Bannister was
                   responsible for negotiating with the Dutch when England ceded Surinam in 1667.
                   According to Todd, in 1671, he led “about a hundred families to Jamaica where he

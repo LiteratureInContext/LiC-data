@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shelley-frankenstein-1818">
 
    <!--TEI Header BEGINS here-->
@@ -315,7 +315,7 @@
             <docTitle>
 
 
-               <titlePart type="main">FRANKENSTEIN;<lb/> OR,<lb/> THE MODERN <ref target="a001"
+               <titlePart type="main">FRANKENSTEIN;<lb/> OR,<lb/> THE MODERN <ref target="prometheus_"
                      corresp="prometheus">PROMETHEUS.</ref><lb/></titlePart>
 
 
@@ -471,12 +471,12 @@
                <publisher rend="caps">
                   <ref target="publisher_" corresp="publisher">LACKINGTON, HUGHES, HARDING, MAVOR,
                      &amp; JONES</ref>
-               </publisher>
+              </publisher>
                <note xml:id="publisher" target="publisher_" type="editorial" resp="editors.xml#TH">
                   <p>
                      <graphic
                         url="https://www.bl.uk/britishlibrary/~/media/bl/global/dl%20romantics%20and%20victorians/collection-items-manual/consumerism-books-lackington-allen-074521.jpg"
-                        style="float:right" width="300px"/>
+                        />
                      <hi rend="italic">Frankenstein; or, the Modern Prometheus</hi>, was published
                      by the Lackington firm, founded by James Lackington in 1774. Advertised as "The
                      Cheapest Bookseller in the World," Lackington's business--which both sold and
@@ -589,9 +589,9 @@
                <ref target="william_godwin_" corresp="william_godwin">WILLIAM GODWIN</ref>
                <note xml:id="william_godwin" target="william_godwin_" type="editorial"
                   resp="editors.xml#AR">
-                  <graphic style="float:right"
+                  <graphic 
                      url="https://upload.wikimedia.org/wikipedia/commons/a/a8/William_Godwin_by_Henry_William_Pickersgill.jpg"
-                     width="300px"/> Mary Shelley dedicated Frankenstein to her father, <ref
+                     /> Mary Shelley dedicated Frankenstein to her father, <ref
                      target="http://shelleysghost.bodleian.ox.ac.uk/william-godwin-index">William
                      Godwin</ref>, the well known author of <ref
                      target="http://oll.libertyfund.org/titles/godwin-an-enquiry-concerning-political-justice-vol-i"
@@ -671,9 +671,9 @@
             <p><ref target="mary_shelley_" corresp="mary_shelley">THE AUTHOR</ref>
                <note xml:id="mary_shelley" target="mary_shelley_" type="editorial"
                   resp="editors.xml#TH">
-                  <graphic style="float:right"
+                  <graphic 
                      url="https://collectionimages.npg.org.uk/large/mw05761/Mary-Wollstonecraft-Shelley.jpg"
-                     width="300px"/> Mary Wollstonecraft Shelley was born on August 30, 1797, in
+                     /> Mary Wollstonecraft Shelley was born on August 30, 1797, in
                      <placeName type="tgn" key="7011781">London</placeName>, England, to William
                   Godwin and famed feminist writer Mary Wollstonecraft—the author of <hi
                      rend="italic">The Vindication of the Rights of Woman</hi> (1792). Mary had a
@@ -745,9 +745,9 @@
                      key="n50037924"> Darwin </persName>
                </ref>
                <note xml:id="erasmus_darwin" target="erasmus_darwin_" type="editorial"
-                  resp="editors.xml#AF"><graphic style="float:right"
+                  resp="editors.xml#AF"><graphic 
                      url="https://collectionimages.npg.org.uk/large/mw01731/Erasmus-Darwin.jpg"
-                     width="300px"/>
+                     />
                   <ref target="https://www.britannica.com/biography/Erasmus-Darwin">Erasmus
                      Darwin</ref> (1731-1802), grandfather of Charles Darwin, was a physician and
                   poet (pictured above is a reprint in the National Portrait Gallery, London by
@@ -839,7 +839,7 @@
                <note xml:id="william_shakespeare" target="william_shakespeare_" type="editorial"
                   resp="editors.xml#AF"><graphic
                      url="https://www.folger.edu/sites/default/files/TitlePageFirstFolio_005198.jpg"
-                     width="300px"/> William Shakespeare (1564-1616) is one of the greatest writers
+                     /> William Shakespeare (1564-1616) is one of the greatest writers
                   in the English language, known for composing 37 plays, 154 sonnets, and two long
                   narrative poems (pictured above is a digital print of Earl of Warwick’s 1623 first
                   folio of William Shakespeare’s works via the Folger Shakespeare Library).
@@ -906,7 +906,7 @@
                <note xml:id="midsummer" target="midsummer_" type="editorial" resp="editors.xml#AF">
                   <graphic
                      url="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Oberon%2C_Titania_and_Puck_with_Fairies_Dancing._William_Blake._c.1786.jpg/800px-Oberon%2C_Titania_and_Puck_with_Fairies_Dancing._William_Blake._c.1786.jpg"
-                     style="float:right" width="300px"/>
+                     />
                   <hi rend="italic">
                      <ref target="http://shakespeare.mit.edu/midsummer/full.html">Midsummer Night’s
                         Dream</ref>
@@ -941,7 +941,7 @@
                <note xml:id="john_milton" target="john_milton_" type="editorial"
                   resp="editors.xml#TH"><graphic
                      url="https://upload.wikimedia.org/wikipedia/commons/0/0c/John_Milton_portrait_painting.jpg"
-                     width="300px"/>John Milton (1608-1674) was an English poet most notably known
+                     />John Milton (1608-1674) was an English poet most notably known
                   for <ref
                      target="https://www.dartmouth.edu/~milton/reading_room/pl/intro/text.shtml"><hi
                         rend="italic">Paradise Lost</hi></ref>, a twelve-volume epic poem in blank
@@ -1076,9 +1076,9 @@
                   the pole is the seat of frost and desolation; it ever presents itself to my
                   imagination as the region of beauty and delight <note xml:id="artic"
                      target="artic_" type="editorial" resp="editors.xml#TH">
-                     <graphic style="float:right"
+                     <graphic 
                         url="https://upload.wikimedia.org/wikipedia/commons/a/a2/John_Ross_%281777-1856%29%2C_by_British_school_of_the_19th_century.jpg"
-                        width="300px"/>
+                        />
                      <ref
                         target="https://www.newyorker.com/magazine/2017/04/24/literatures-arctic-obsession"
                         rend="rightAlign"> According to Kathryn Shultz in "Literature's Arctic
@@ -1174,9 +1174,7 @@
                   accounts of the various voyages which have been made in the prospect of arriving
                   at the <placeName type="tgn" key="7029367">North Pacific Ocean</placeName> through
                   the seas which surround the pole. You may remember that a history of all the
-                  voyages made for purposes of discovery <ref target="a022" corresp="n022"/>
-                  <note xml:id="n022" target="a022" type="editorial" resp="editors.xml#">INSERT NOTE
-                     HERE AND PLACE REF TAG AROUND REF WORDS</note> composed the whole of our good
+                  voyages made for purposes of discovery composed the whole of our good
                   uncle <persName>Thomas</persName>'s library. My education was neglected, yet I was
                   passionately fond of reading. These volumes were my study day and night, and my
                   familiarity with them increased that regret which I had felt, as a child, on
@@ -1338,10 +1336,7 @@
                   twenty-eight, and am in reality more illiterate than many school-boys of fifteen.
                   It is true that I have thought more, and that my day dreams are more extended and
                   magnificent; but they want (as the painters call it) keeping; and I greatly need a
-                  friend who would have sense enough not to despise me as romantic <ref
-                     target="a024" corresp="n024"/>
-                  <note xml:id="n024" target="a024" type="editorial" resp="editors.xml#">INSERT NOTE
-                     HERE AND PLACE REF TAG AROUND REF WORDS</note> , and affection <pb n="[1.13]"
+                  friend who would have sense enough not to despise me as romantic, and affection <pb n="[1.13]"
                      facs="pageImages/vol1/13.jpg"/> enough for me to endeavour to regulate my
                   mind.</p>
 
@@ -1400,7 +1395,7 @@
                   <ref target="the_Mariner_" corresp="the_Mariner"> but I shall kill no albatross </ref>
                   <note xml:id="the_Mariner" target="the_Mariner_" type="editorial"
                      resp="editors.xml#AF">
-                     <graphic style="float:right" width="300px"
+                     <graphic 
                         url="https://upload.wikimedia.org/wikipedia/commons/2/26/Rime_of_the_Ancient_Mariner-Albatross-Dore.jpg"
                      />In this excerpt from <ref
                         target="https://www.poetryfoundation.org/poets/samuel-taylor-coleridge"
@@ -1853,7 +1848,7 @@
                            resp="editors.xml#AF">
                            <graphic
                               url="https://ebooks.adelaide.edu.au/c/coleridge/samuel_taylor/rime/plates/plate02.jpg"
-                              width="300px" style="float:right"/> This is a reference to Samuel
+                              /> This is a reference to Samuel
                            Taylor Coleridge’s 1798 poem, <ref
                               target="https://rpo.library.utoronto.ca/poems/rime-ancient-mariner-text-1834">
                               <hi rend="italic">Rime of the Ancient Mariner</hi></ref>. Coleridge’s
@@ -2133,7 +2128,7 @@
                         resp="editors.xml#AF">
                         <graphic
                            url="https://upload.wikimedia.org/wikipedia/commons/8/84/Jean_Auguste_Dominique_Ingres_-_Roger_Delivering_Angelica.jpg"
-                           width="300px"/>
+                           />
                         <hi rend="italic"><ref
                               target="http://www.sacred-texts.com/neu/orl/index.htm">Orlando
                               Furioso</ref></hi> is an epic poem published in 1532 by the Italian
@@ -2161,9 +2156,9 @@
                         </note>,<ref target="Robin_Hood_" corresp="Robin_Hood">
                         <persName type="lcnaf" key="n79069719"> Robin Hood </persName></ref>
                      <note xml:id="Robin_Hood" target="Robin_Hood_" type="editorial"
-                        resp="editors.xml#AF"><graphic style="float:right"
+                        resp="editors.xml#AF"><graphic 
                            url="https://upload.wikimedia.org/wikipedia/commons/f/f7/Richard_The_Lionheart_-_Robinhood.jpg"
-                           width="300px"/> Robin Hood is a legendary outlaw who stole from the rich
+                           /> Robin Hood is a legendary outlaw who stole from the rich
                         to give to the poor. Numerous ballads have been written about the character,
                         who may have been based on a <ref
                            target="https://www.history.com/topics/british-history/robin-hood">real
@@ -2181,9 +2176,9 @@
                         <persName>Amadis</persName>
                      </ref>
                      <note xml:id="Amadis_de_Gaula" target="Amadis_de_Gaula_" type="editorial"
-                        resp="editors.xml#AF"><graphic style="float:right"
+                        resp="editors.xml#AF"><graphic 
                            url="https://cdn.britannica.com/668x448/59/143359-004-9F9322AE.jpg"
-                           width="300px"/>
+                           />
                         <ref target="https://www.britannica.com/topic/Amadis-of-Gaul">Amadís de
                            Gaula</ref> is a prose romance composed in Spain or Portugal in the 13th
                         or 14th century (title page of the 1533 Spanish edition by Olaf Simons
@@ -2203,9 +2198,9 @@
                         <persName>St. George</persName>
                      </ref>
                      <note xml:id="St._George" target="St._George_" type="editorial"
-                        resp="editors.xml#AF"><graphic style="float:right"
+                        resp="editors.xml#AF"><graphic 
                            url="https://s3.amazonaws.com/lic-assets-staging/Shelley/notes/E10529.jpg"
-                           width="300px"/> St. George, a converted Roman soldier martyred for his
+                           /> St. George, a converted Roman soldier martyred for his
                         newfound Christian faith, is often depicted slaying a dragon, a symbolic
                         rendering of the triumph of Christianity over evil. Not only is St. George
                         the patron saint of England, but by the 14th century, he had been declared
@@ -2282,7 +2277,7 @@
                      </ref>
                      <note xml:id="Cornelius_Agrippa" target="Cornelius_Agrippa_" type="editorial"
                         resp="editors.xml#NPD">
-                        <graphic style="float:right" width="300px"
+                        <graphic 
                            url="https://upload.wikimedia.org/wikipedia/commons/4/46/Heinrich_Cornelius_Agrippa00.jpg"/>
                         <ref
                            target="https://www.britannica.com/biography/Heinrich-Cornelius-Agrippa-von-Nettesheim"
@@ -2318,7 +2313,7 @@
                      <note xml:id="Chimerical" target="Chimerical_" type="editorial"
                         resp="editors.xml#AF"><graphic
                            url="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Ligozzi_%28Una_quimera%29.jpg/800px-Ligozzi_%28Una_quimera%29.jpg"
-                           style="float:right" width="300px"/> Chimeric or chimerical was defined by
+                           /> Chimeric or chimerical was defined by
                            <ref
                            target="https://www.independent.co.uk/arts-entertainment/books/news/samuel-johnson-google-doodle-who-was-he-dictionary-james-boswell-writer-publisher-wit-a7952616.html"
                            >Samuel Johnson</ref> in his <ref
@@ -2347,7 +2342,7 @@
                      <note xml:id="Paracelsus" target="Paracelsus_" type="editorial"
                         resp="editors.xml#AF"><graphic
                            url="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Paracelsus.jpg/800px-Paracelsus.jpg"
-                           style="float:right" width="300px"/>
+                           />
                         <ref target="https://www.britannica.com/biography/Paracelsus"
                            >Paracelsus</ref>, the adopted name of Philippus Aureolus Theophrastus
                         Bombastus von Hohenheim (1490-1541), was Swiss physician, alchemist, and
@@ -2364,9 +2359,9 @@
                         <persName type="lcnaf" key="n81007973">Albertus Magnus</persName>
                      </ref>
                      <note xml:id="Albertus_Magnus" target="Albertus_Magnus_" type="editorial"
-                        resp="editors.xml#AF"><graphic style="float:right"
+                        resp="editors.xml#AF"><graphic 
                            url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Vincenzo_onofri%2C_sant%27alberto_magno%2C_1493.JPG/800px-Vincenzo_onofri%2C_sant%27alberto_magno%2C_1493.JPG"
-                           width="300px"/>
+                           />
                         <ref target="https://plato.stanford.edu/entries/albert-great/">Albertus
                            Magnus</ref> (c. 1200-1280), teacher of St. Thomas Aquinas, was a German
                         Catholic Dominican Friar. He was canonized a saint in 1931 (despite
@@ -2471,7 +2466,7 @@
                      <note xml:id="Boyles_Law" target="Boyles_Law_" type="editorial"
                         resp="editors.xml#AF"><graphic
                            url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/An_Experiment_on_a_Bird_in_an_Air_Pump_by_Joseph_Wright_of_Derby%2C_1768.jpg/800px-An_Experiment_on_a_Bird_in_an_Air_Pump_by_Joseph_Wright_of_Derby%2C_1768.jpg"
-                           style="float:right" width="300px"/>
+                           />
                         <ref target="https://www.sciencehistory.org/historical-profile/robert-boyle"
                            >Robert Boyle (1627-1691)</ref>, the first modern chemist and originator
                         of <ref target="https://www.merriam-webster.com/dictionary/Boyle's%20law"
@@ -2520,7 +2515,7 @@
                      <note xml:id="The_Swiss_Alps" target="The_Swiss_Alps_" type="editorial"
                         resp="editors.xml#AF"><graphic
                            url="https://upload.wikimedia.org/wikipedia/commons/d/d8/Francis_Towne_001.jpg"
-                           style="float:right" width="300px"/>The Swiss Alps (including the Central
+                           />The Swiss Alps (including the Central
                         and the Bernese Alps) are a region in central Europe with expansive
                         mountains, considered both beautiful and dangerous, that span most the
                         southern and eastern area of Switzerland. The Jura are a range of mountains
@@ -2559,7 +2554,7 @@
                      <note xml:id="Ben_Franklin_experiments" target="Ben_Franklin_experiments_"
                         type="editorial" resp="editors.xml#AF"><graphic
                            url="https://static.scientificamerican.com/sciam/assets/media/promo/upload/miq611cart1.jpg"
-                           style="float:right" width="300px"/> This is a direct allusion to
+                           /> This is a direct allusion to
                         experiments performed by Benjamin Franklin and other scientists during the
                         eighteenth and nineteenth centuries. Ben Franklin was a contemporary of Mary
                         Shelley’s parents, and he influenced the world of politics, culture, and
@@ -2662,7 +2657,7 @@
                         type="editorial" resp="editors.xml#AF">
                         <graphic
                            url="https://upload.wikimedia.org/wikipedia/commons/8/80/Th%C3%A9%C3%A2tre-anatomique-Padoue.JPG"
-                           style="float:right" width="300px"/> Victor Frankenstein attends the <ref
+                           /> Victor Frankenstein attends the <ref
                            target="http://knarf.english.upenn.edu/V1notes/univers.html">University
                            of Ingolstadt</ref>, a university founded in 1472, known for its focus on
                         the natural sciences. The university had a massive chemistry laboratory and
@@ -2838,7 +2833,7 @@
                         resp="editors.xml#AF">
                         <graphic
                            url="http://www.britishmuseum.org/collectionimages/AN00048/AN00048580_001_l.jpg"
-                           style="float:right" width="300px"/> Sir Humphrey Davy (1778-1829) was a
+                           /> Sir Humphrey Davy (1778-1829) was a
                         Cornish scientist as well as poet, and according to Richard Holmes’ <ref
                            target="http://clinchem.aaccjnls.org/content/57/11/1625">"Humphrey Davy
                            and the Chemical Moment,"</ref> is best known today for his work on
@@ -2941,7 +2936,7 @@
                         <note xml:id="the_Microscope" target="the_Microscope_" type="editorial"
                            resp="editors.xml#AF"><graphic
                               url="https://www.bl.uk/britishlibrary/~/media/bl/global/dl%20shakespeare/renaissance%20items/micrographia-by-robert-hooke-435_e_19_facing_p210.jpg"
-                              style="float:right" width="300px"/> While the idea of lenses and
+                              /> While the idea of lenses and
                            magnification dates far back in time, the earliest known examples of
                            compound microscopes appeared in Europe around 1620, as explained in
                            David Bardell’s article “<ref
@@ -2988,7 +2983,7 @@
                         <note xml:id="Circulation_of_the_Blood" target="Circulation_of_the_Blood_"
                            type="editorial" resp="editors.xml#TH"><graphic
                               url="http://www.indiana.edu/~liblilly/anatomia/bloodcirc/images/qp101-h3_00002.jpg"
-                              style="float:right" width="300px"/> The circulation of the blood in
+                              /> The circulation of the blood in
                            the body was first demonstrated by William Harvey (1578-1657) in the
                            early 17th century, though his seminal work on the subject, <hi
                               rend="italic">Exercitatio Anatomica de Motu Cordis et Sanguinis in
@@ -3059,10 +3054,7 @@
                      his advice concerning the books I ought to procure.</p>
                   <p><said who="#waldman">"I am happy,"</said> said <persName>M. Waldman</persName>,
                         <said who="#waldman">"to have gained a disciple; and if your application
-                        equals your ability, I have no doubt of your success. Chemistry <ref
-                           target="a054" corresp="n054"/>
-                        <note xml:id="n054" target="a054" type="editorial" resp="editors.xml#"
-                           >INSERT NOTE HERE AND PLACE REF TAG AROUND REF WORDS</note> is that
+                        equals your ability, I have no doubt of your success. Chemistry is that
                         branch of natural philosophy in which the greatest improvements have been
                         and may be made; it is on that account that I have made it my peculiar
                         study; but at the same time I have not neglected the other branches of
@@ -3399,9 +3391,7 @@
                      him while unfinished; he was ugly then; but when those muscles and joints were
                      rendered capable of motion, it became a thing such as even <persName
                         type="lcnaf" key="n78095495">Dante</persName>
-                     <ref target="a055" corresp="n055"/>
-                     <note xml:id="n055" target="a055" type="editorial" resp="editors.xml#">INSERT
-                        NOTE HERE AND PLACE REF TAG AROUND REF WORDS</note> could not have
+                      could not have
                      conceived.</p>
                   <p>I passed the night wretchedly. Sometimes my pulse beat so quickly and <pb
                         n="[1.102]" facs="pageImages/vol1/102.jpg"/> hardly, that I felt the
@@ -3700,13 +3690,13 @@
                            little tale: for <persName>Justine</persName> was a great favourite of
                            your's; and I recollect you once remarked, that if you were in an ill
                            humour, one glance from <persName>Justine</persName> could dissipate it,
-                           for the same reason that <ref target="a056" corresp="n056">
+                           for the same reason that <ref target="Ariosto_" corresp="Ariosto">
                               <persName type="n79041715" key="n79041715"> Ariosto </persName>
                            </ref> gives concerning the beauty of <persName>Angelica</persName>
-                           <note xml:id="n056" target="a056" type="editorial" resp="editors.xml#AF">
+                           <note xml:id="Ariosto" target="Ariosto_" type="editorial" resp="editors.xml#AF">
                               <graphic
                                  url="http://www.britishmuseum.org/collectionimages/AN01270/AN01270858_001_l.jpg"
-                                 style="float:right" width="300px"/> Victor references <ref
+                                 /> Victor references <ref
                                  target="https://www.britannica.com/biography/Ludovico-Ariosto"
                                  >Ludovico Ariosto (1474-1533)</ref>, an Italian poet from the 16th
                               century, when talking about Justine’s "frank-hearted and happy"
@@ -4113,9 +4103,9 @@
                         time is the only consolation. Those maxims of the Stoics, that death was no
                         evil, and that the mind of man ought to be superior to despair on the
                         eternal absence of a beloved object, ought not to be urged. Even <ref
-                           target="a057" corresp="n057"> Cato </ref>
-                        <note xml:id="n057" target="a057" type="editorial" resp="editors.xml#AF">
-                           <graphic style="float:right" width="300px"
+                           target="_cato" corresp="cato"> Cato </ref>
+                        <note xml:id="cato" target="_cato" type="editorial" resp="editors.xml#AF">
+                           <graphic 
                               url="http://www.britishmuseum.org/collectionimages/AN00530/AN00530505_001_l.jpg"/>
                            <ref
                               target="https://www.britannica.com/biography/Marcus-Porcius-Cato-Roman-senator-95-46-BC"
@@ -4149,11 +4139,11 @@
                   <p>I remained two days at <placeName type="tgn" key="7007299"
                      >Lausanne</placeName>, in this painful state of mind. I contemplated the lake:
                      the waters were placid; all around was calm, and the snowy <pb n="[1.143]"
-                        facs="pageImages/vol1/143.jpg"/> mountains, <quote>"<ref target="a057a"
-                           corresp="n058a">the palaces of nature</ref>,"</quote> were not changed.
+                        facs="pageImages/vol1/143.jpg"/> mountains, <quote>"<ref target="_Byron"
+                           corresp="Byron">the palaces of nature</ref>,"</quote> were not changed.
                      By degrees the calm and heavenly scene restored me, and I continued my journey
                      towards <placeName type="tgn" key="7003746">Geneva</placeName>.</p><note
-                     xml:id="n057a" target="a057a" type="editorial" resp="editors.xml#TH">An
+                     xml:id="Byron" target="_Byron" type="editorial" resp="editors.xml#TH">An
                      allusion to <hi rend="italic">Childe Harold's Pilgrimage</hi> (1812-1818), a
                      somewhat autobiographical narrative poem in four cantos by Romantic poet <ref
                         target="https://en.wikipedia.org/wiki/Lord_Byron">George Gordon Lord Byron
@@ -4229,7 +4219,7 @@
                         resp="editors.xml#AF">
                         <graphic
                            url="https://upload.wikimedia.org/wikipedia/commons/c/ce/Genf_panorama.jpg"
-                           style="float:right" width="300px"/>
+                           />
                         <ref target="https://www.britannica.com/place/Switzerland">Switzerland</ref>
                         is not only the setting of most of the novel but also the place that
                         inspired Mary Shelley to write <hi rend="italic">Frankenstein</hi>. As
@@ -6230,7 +6220,7 @@
                            type="editorial" resp="editors.xml#AF">
                            <graphic
                               url="https://upload.wikimedia.org/wikipedia/commons/0/0f/Goethe_1774.JPG"
-                              style="float:right" width="300px"/>
+                              />
                            <hi rend="italic"><ref
                                  target="https://ebooks.adelaide.edu.au/g/goethe/sorrows-of-young-werther/"
                                  >The Sorrows of Young Werther</ref></hi> is an epistolary novel by

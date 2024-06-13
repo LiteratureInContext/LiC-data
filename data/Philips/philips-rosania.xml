@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="philips-rosania">
     <teiHeader>
@@ -7,9 +9,7 @@
                 <title>"Rosania to Lucasia on her Letters"</title>
 
                 <author>
-                    <trait type="gender">
-                        <desc>Female</desc>
-                    </trait>
+                   
                     <persName type="lcnaf" key="n83206561">
                         <name>
                             <forename>Katherine</forename>
@@ -21,8 +21,8 @@
                 <editor>
                     <persName type="orcid" key="0000-0001-6453-8721">
                         <name>
-                            <forename> John </forename>
-                            <surname> O'Brien </surname>
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
                         </name>
                     </persName>
                 </editor>
@@ -35,12 +35,12 @@
                     <name ref="editors.xml#SB">Sara Brunstetter</name>
 
                 </respStmt>
+                <funder>National Endowment for the Humanities</funder>
             </titleStmt>
 
             <publicationStmt>
                 <publisher>Literature in Context</publisher>
-                <distributor>
-                    <orgName>Literature in context</orgName>
+                
                     <address>
                         <addrLine>University of Virginia Department of English</addrLine>
                         <addrLine>P. O. Box 400121</addrLine>
@@ -49,16 +49,14 @@
                         <addrLine>jobrien@virginia.edu</addrLine>
                         <addrLine>lic.open.anthology@gmail.com</addrLine>
                     </address>
-                </distributor>
 
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> Published by
                         Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
                         Unported License</licence>
-                    <p>While free, this text is still incomplete and requires standardization of its
-                        annotation scheme.</p>
+                    
                 </availability>
-                <date>2018</date>
+               
             </publicationStmt>
 
             <sourceDesc>
@@ -102,7 +100,7 @@
                             </note>
                         </imprint>
                         <extent>[36], 198, [8], 112, [2] p. : port. ; 2⁰.</extent>
-                        <biblScope/>
+                        <biblScope>pp 144-145</biblScope>
                     </monogr>
                 </biblStruct>
 

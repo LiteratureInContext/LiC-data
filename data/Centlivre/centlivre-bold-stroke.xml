@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="centlivre-bold-stroke">
 <teiHeader xml:lang="en">
 <fileDesc>
 <titleStmt>
-<title>A bold stroke for a wife: a comedy ; as it is acted at the Theatre Royal in Lincoln's-Inn-Fields.</title>
+    <title>A Bold Stroke for a Wife: A Comedy ; as it is Acted at the Theatre Royal in Lincoln's-Inn-Fields</title>
 <author>
     <persName type="lcnaf" key="n81114005">
         <name>
@@ -46,9 +46,7 @@
     </publicationStmt>
     <sourceDesc>                    
         <biblStruct>
-            <analytic>
-                <title>"A bold stroke for a wife: a comedy ; as it is acted at the Theatre Royal in Lincoln's-Inn-Fields."</title>
-            </analytic>
+            
             <monogr>
                 <author>
                     <persName type="lcnaf" key="n81114005">
@@ -58,7 +56,7 @@
                         </name>
                     </persName>
                 </author>
-                <title type="main">A bold stroke for a wife: a comedy ; as it is acted at the Theatre Royal in Lincoln's-Inn-Fields.</title>
+                <title type="main">A Bold Stroke for a Wife: A Comedy ; as it is Acted at the Theatre Royal in Lincoln's-Inn-Fields</title>
                 <imprint>
                     <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
@@ -159,11 +157,10 @@
 <text>
     <front>
       <div type="frontispiece">
-        <pb facs="centlivre-cover.png"/>
-        <pb facs="centlivre-j-clark.png"/>
-        <p>J. Clark</p>
+        <pb n="[Frontispiece]" facs="pageImages/centlivre-fp.png"/>
+        
       </div>
-      <pb facs="centlivre-title.png"/>
+        <pb n="[TP]" facs="pageImages/centlivre-tp.png"/>
       <titlePage>
         <titlePart>
             A<lb/>
@@ -186,7 +183,7 @@
         <byline/>
       </titlePage>
       <div type="dedication">
-        <pb facs="centlivre-a3.png" n="A3"/>
+        <pb facs="pageImages/centlivre-ii.png" n="A3"/>
         <head>
           To His Grace<lb/>
           PHILIP,<lb/>
@@ -200,7 +197,7 @@
         IT has ever been the Custom of Poets to shelter Productions of this Nature under the Patronage of the brightest Men of their Time;
         and 'tis observ'd, that the Muses always met the kindest Reception from Persons of the greatest Merit. The World will do me Justice as to the Choice of my Patron, but will, I fear, blame
         </p>
-        <pb facs="centlivre-a3-2.png"/>
+        <pb facs="pageImages/centlivre-iii.png"/>
         <head><hi rend="italic">DEDICATION.</hi><lb/></head>
         <p>
         blame my rash Attempt, in daring to Address Your Grace, and offer at a Work too difficult for our ablest Pens,
@@ -217,7 +214,7 @@
         <p>
         Your good Sense, and real Love for your Country, taught Your Grace to persevere in the Principles of your Glorious
         </p>
-        <pb facs="centlivre-a4.png" n="A4"/>
+        <pb facs="pageImages/centlivre-iv.png" n="A4"/>
         <head><hi rend="italic">DEDICATION.</hi><lb/></head>
         <p>
         Ancestors, by adhering to the Defender of our Religion and Laws: and the penetrating Wisdom of Your Royal Master,
@@ -238,7 +235,7 @@
         <p>
         That
         </p>
-        <pb facs="centlivre-a4-2.png"/>
+        <pb facs="pageImages/centlivre-v.png"/>
         <head><hi rend="italic">DEDICATION.</hi><lb/></head>
         <p>
         That Your Grace has a high Esteem for Learning, particularly appears by the large Progress you have made therein: and your Love for the Muses shews a Sweetness of Temper, and
@@ -258,7 +255,7 @@
         To be distinguish'd by Persons of Your Grace's Character, is not only the highest Ambition, but the greatest
         Reputation to an Author; and it is not the least of my Vanities, to have it known to the Publick I had Your Grace's Leave to prefix Your Name to this Comedy. I
         </p>
-        <pb facs="centlivre-a5.png"/>
+        <pb facs="pageImages/centlivre-vi.png"/>
         <head><hi rend="italic">DEDICATION.</hi><lb/></head>
         <p>
         I wish I were capable to cloath the following Scenes in such a Dress, as might be worthy to appear before Your Grace, and draw Your Attention as much as Your Grace's admirable
@@ -278,7 +275,7 @@
         </closer>
         </div>
         <div type="prologue">
-        <pb facs="centlivre-prologue-1.png"/>
+        <pb facs="pageImages/centlivre-vii.png"/>
         <head>PROLOGUE,</head>
         <p>By a GENTLEMAN.</p>
         <sp style="prose">
@@ -310,7 +307,7 @@
         <l>Is it their Courage, that they bravely dare</l>
         <l>To storm the Sex at once?—Egad, 'tis there:</l>
         </sp>
-        <pb facs="centlivre-prologue-2.png"/>
+        <pb facs="pageImages/centlivre-prologue-2.png"/>
         <head>PROLOGUE.</head>
         <sp style="prose">
         <l>
@@ -343,7 +340,7 @@
         </sp>
         </div>
         <div type="dramatis_personae">
-        <pb facs="centlivre-dramatis-personae.png"/>
+        <pb facs="pageImages/centlivre-viii.png"/>
         <head>Dramatis Personae.</head>
         <head>Men.</head>
         <castList>
@@ -415,7 +412,7 @@
         </div>
         </front>
         <body>
-        <pb facs="centlivre-1.png" n="1"/>
+        <pb facs="pageImages/centlivre-1.png" n="1"/>
         <head>
             <hi rend="italic">A Bold Stroke for a WIFE.</hi>
         </head>
@@ -465,7 +462,7 @@
         <sp>
         <speaker>Free.</speaker>
         </sp>
-        <pb n="2" facs="centlivre-2.png"/>
+        <pb n="2" facs="pageImages/centlivre-2.png"/>
         <head>
         <hi rend="italic">A Bold Stroke for a Wife.</hi>
         </head>
@@ -569,7 +566,7 @@
         <sp>
         <speaker>Col.</speaker>
         </sp>
-        <pb n="3" facs="centlivre-3.png"/>
+        <pb n="3" facs="pageImages/centlivre-3.png"/>
         <head>
         <hi rend="italic">A Bold Stroke for a Wife.</hi>
         </head>
@@ -675,7 +672,7 @@
         <sp>
         <speaker>Sack.</speaker>
         </sp>
-        <pb n="4" facs="centlivre-4.png"/>
+        <pb n="4" facs="pageImages/centlivre-4.png"/>
         <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <sp>
         <speaker>Sack.</speaker>
@@ -742,7 +739,7 @@
         in his Face and his Heels;</l>
         <l>he</l>
         </sp>
-        <pb n="5" facs="centlivre-5.png"/>
+        <pb n="5" facs="pageImages/centlivre-5.png"/>
         <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <sp>
         <l>
@@ -829,7 +826,7 @@
         <sp>
         <speaker>Col</speaker>
         </sp>
-        <pb n="6" facs="centlivre-6.png"/>
+        <pb n="6" facs="pageImages/centlivre-6.png"/>
         <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <sp>
         <speaker>Col</speaker>
@@ -934,7 +931,7 @@
         <sp>
         <speaker>Sack.</speaker>
         </sp>
-        <pb n="7" facs="centlivre-7.png"/>
+        <pb n="7" facs="pageImages/centlivre-7.png"/>
         <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <sp>
         <speaker>Sack.</speaker>
@@ -1026,7 +1023,7 @@
         <sp>
         <speaker>Mrs.</speaker>
         </sp>
-        <pb n="8" facs="centlivre-8.png"/>
+        <pb n="8" facs="pageImages/centlivre-8.png"/>
         <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <sp>
         <speaker>Mrs. Lov.</speaker>
@@ -1116,7 +1113,7 @@
         <l>out
         </l>
         </sp>
-        <pb n="9" facs="centlivre-9.png"/>
+        <pb n="9" facs="pageImages/centlivre-9.png"/>
         <head><hi rend="italic">A Bold Stroke For A Wife.</hi></head>
         <sp>
         <l>
@@ -1168,7 +1165,7 @@
         <trailer>The End of the First ACT.</trailer>
         </div>
         <p>ACT</p>
-        <pb n="10" facs="centlivre-10.png"/>
+        <pb n="10" facs="pageImages/centlivre-10.png"/>
         <head><hi rend="italic">A Bold Stroke for a Wife.</hi></head>
         <div n="2" type="act">
         <head>ACT II.</head>
@@ -7424,7 +7421,7 @@
         </body>
         <back>
         <div type="epilogue">
-        <pb facs="centlivre-epilogue-1"/>
+        <pb facs="pageImages/centlivre-epilogue-1"/>
         <head>
             EPILOGUE,<lb/>
             <byline>Written by Mr. SEWELL.</byline><lb/>
@@ -7459,7 +7456,7 @@
         Bess<hi rend="italic">'s Ruff,</hi>
         </l>
         <l><hi rend="italic">Not that I'd take 'em—may do well enough;</hi></l>
-        <pb facs="centlivre-epilogue-2"/>
+        <pb facs="pageImages/centlivre-epilogue-2"/>
         <head>EPILOGUE.</head>
         <l>
         <hi rend="italic">No—my ambitious Spirit's far above</hi>
