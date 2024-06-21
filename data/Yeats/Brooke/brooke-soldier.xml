@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="brooke-soldier">
+ 
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+<title type="main">"The Soldier"</title>
+<author>
+   <persName type="lcnaf" key="n80057200">
+      
+      <name>
+       
+         <forename>Rupert</forename> 
+         <surname>Brooke</surname>
+         
+      </name>
+  
+   </persName>
+</author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <surname>Howe</surname>
+                     <forename>Tonya</forename>
+                  </name>
+               </persName>
+            </editor>
+
+<respStmt>
+   <resp>Transcription, correction, editorial commentary, and markup</resp>
+   <name ref="editors.xml#UVAStudStaff"
+      >Students and Staff of the University of Virginia</name>
+   
+</respStmt>
+
+<sponsor/>
+<funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+          <publicationStmt>
+  <publisher>Literature in Context</publisher>
+  <address>
+      <addrLine>University of Virginia</addrLine>
+      <addrLine>P. O. Box 400121</addrLine>
+      <addrLine>Charlottesville, VA</addrLine>
+      <addrLine>22904-4121</addrLine>
+      <addrLine>lic.open.anthology@gmail.com</addrLine>
+  </address>
+  <availability status="free">
+      <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+          Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+          License </licence>
+  </availability>
+          </publicationStmt>
+
+         <sourceDesc>
+
+<biblStruct>
+   <analytic>
+      <title>"The Soldier"</title>
+   </analytic>
+   <monogr>
+      <author>
+         <name>
+<forename>Rupert</forename>
+<surname>Brooke</surname>
+         </name>
+      </author>
+      <title>1914, and Other Poems</title>
+      <imprint>
+         <pubPlace>
+            <placeName type="tgn" key="7011781">London</placeName>
+         </pubPlace>
+         <publisher>Sidgwick &amp; Jackson</publisher>
+         <date when="1915">1915</date>
+         <note>"The Soldier" was originally published the fifth of a series of six poems under the title "1914" in Rupert Brooke's posthumous volume <hi rend="italic">1914, and Other Poems</hi>, published in 1915. Our edition has been transcribed from the Internet Archive's copy of the first edition.</note>
+         <!-- Add additional NOTE elements as needed  -->
+
+      </imprint>
+      <imprint>
+         <pubPlace/>
+         <publisher/>
+         <date/>
+         <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
+      </imprint>
+      <extent></extent>
+      <biblScope>pp 9-11</biblScope>
+
+   </monogr>
+</biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+<language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+<!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+<channel mode="w">print</channel>
+<!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+<constitution type="single">single poem</constitution>
+<derivation type="original"/>
+<domain/>
+<factuality type="inapplicable"/>
+<interaction/>
+<preparedness type="revised"/>
+<purpose type="express"/>
+
+<!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+<setting>
+   
+   <time from="1914" to="1914">1914</time>
+   <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+</setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+<p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+   project, which provides an accessible, reliable, curated, and marked-up selection of
+   primary sources relevant to the study and the teaching of British and American
+   literature. This project is was initially funded by the National Endowment for the
+   Humanities and developed by faculty at The University of Virginia and Marymount
+   University.</p>
+         </projectDesc>
+         <editorialDecl>
+<interpretation>
+   <p>Research informing these annotations draws on publicly-accessible resources, with
+      links provided where possible. Annotations have also included common knowledge,
+      defined as information that can be found in multiple reliable sources. If you
+      notice an error in these annotations, please contact
+      lic.open.anthology@gmail.com.</p>
+</interpretation>
+<normalization>
+   <p>Original spelling and capitalization is retained, though the long s has been
+      silently modernized and ligatured forms are not encoded.</p>
+</normalization>
+<hyphenation>
+   <p>Hyphenation has not been retained, except where necessary for the sense of the
+      word.</p>
+</hyphenation>
+<segmentation>
+   <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+      not.</p>
+</segmentation>
+<correction>
+   <p>Materials have been transcribed from and checked against first editions, where
+      possible. See the Sources section for more information.</p>
+</correction>
+         </editorialDecl>
+         <tagsDecl>
+<namespace name="http://www.tei-c.org/ns/1.0">
+   <tagUsage gi="div">Numbered divs used.</tagUsage>
+</namespace>
+         </tagsDecl>
+         <classDecl>
+<taxonomy xml:id="lcnaf">
+   <bibl>Library of Congress Name Authority File</bibl>
+</taxonomy>
+<taxonomy xml:id="lcc">
+   <bibl>Library of Congress Classification</bibl>
+</taxonomy>
+<taxonomy xml:id="tgm">
+   <bibl>Getty Thesaurus of Geographic Names</bibl>
+</taxonomy>
+<taxonomy xml:id="orcid">
+   <bibl>Open Researcher and Contributor ID</bibl>
+</taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2024-02-25" who="editors.xml#JOB"
+>transcribed for Literature in Context edition</change>
+         
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <titlePage>
+
+
+            <titlePart>1914<lb/>AND OTHER POEMS<lb/>BY RUPERT BROOKE<lb/><lb/><lb/><lb/></titlePart>
+            
+<docImprint>
+   <pubPlace key="7011781">LONDON</pubPlace>
+   <publisher>SIDGWICK &amp; JACKSON, LTD.<lb/></publisher>
+   <pubPlace>3 ADAM STREET ADELPHI W. C.</pubPlace>
+   <docDate>1915</docDate>
+   
+</docImprint>
+         </titlePage>
+      </front>
+      <body>
+         <pb n="15"/>
+         <div type="poem">
+           <head type="title">V. THE SOLDIER</head>
+
+           
+<lg><l n="1">If I should die, think only this of me:</l>
+            <l n="2" rend="indent">That there's some corner of a foreign field</l>
+            <l n="3">That is for ever England. There shall be</l>
+            <l n="4" rend="indent">In that rich earth a richer dust concealed;  </l>
+            <l n="5">A dust whom England bore, shaped, made aware. </l>
+            <l n="6" rend="indent">Gave, once, her flowers to love, her ways to roam, </l>
+            <l n="7">A body of England's, breathing English air,</l>
+            <l n="8" rend="indent">Washed by the rivers, blest by suns of home.</l>
+</lg>
+            
+            <lg>
+            <l n="9">And think, this heart, all evil shed away,</l>
+            <l n="10" rend="indent">A pulse in the eternal mind, no less</l>
+            <l n="11" rend="indent2">Gives somewhere back the thoughts by England given;  </l>
+            <l n="12">Her sights and sounds; dreams happy as her day; </l>
+            <l n="13" rend="indent">And laughter, learnt of friends; and gentleness </l>
+            <l n="14" rend="indent2">In hearts at peace, under an English heaven.</l>
+             </lg>
+
+   </div>
+      </body>
+
+   </text>
+</TEI>
+
+
