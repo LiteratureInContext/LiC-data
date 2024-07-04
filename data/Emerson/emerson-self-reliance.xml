@@ -7,12 +7,12 @@
          <titleStmt>
             <title type="main">Self-Reliance</title>
             <author>
-               <persName type="lcnaf" key="FILL-IN">
+             <persName type="lcnaf" key="n78085476">
                   <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
                   <name>
-                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
-                     <forename>Ralph</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
-                     <surname>Waldo Emerson</surname>
+                     
+                     <forename>Ralph Waldo</forename> 
+                     <surname>Emerson</surname>
                     
                   </name>
               
@@ -31,23 +31,23 @@
             <respStmt>
                <!-- edit this content to reflect this digital edition -->
                <resp>Transcription, correction, editorial commentary, and markup</resp>
-               <name ref="editors.xml#XXX"
-                  ><?oxy-placeholder content="Students and Staff of UNIVERSITY NAME"?></name>
-               <name ref="editors.xml#XX"><?oxy-placeholder content="Firstname Lastname"?></name>
+               <name ref="editors.xml#StudStaffUVa"
+                  >Students and Staff at the University of Virginia</name>
+               <name ref="editors.xml#SB">Spencer Brown</name>
                <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
             </respStmt>
 
             <sponsor/>
-            <funder><?oxy-placeholder content="Who is funding this work?"?></funder>
+            <funder>National Endowment for the Humanities</funder>
          </titleStmt>
 
          <publicationStmt>
             <publisher>Literature in Context</publisher>
             <address>
-               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
-               <addrLine>Address line 2</addrLine>
-               <addrLine>Address line 3</addrLine>
-               <addrLine>Address line 4</addrLine>
+               <addrLine>Department of English</addrLine>
+               <addrLine>The University of Virginia</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottresville, VA, 22904-4121</addrLine>
                <addrLine>Email</addrLine>
                <!-- cut unused or add additional addrLines -->
             </address>
@@ -64,28 +64,28 @@
 
                <analytic>
                  
-                  <title>Self-Relian ce</title>
+                  <title>Self-Reliance</title>
                 
                </analytic>
                  
                <monogr>
                   <author>
                      <name>
-                        <forename>Ralph</forename>
-                        <surname>Waldo Emerson</surname>
+                        <forename>Ralph Waldo</forename>
+                        <surname>Emerson</surname>
                         
                      </name>
                   </author>
 
-                  <title><?oxy-placeholder content="Title of the Monograph/Container"?></title>
+                  <title>Essays</title>
 
                   <imprint>
                      <pubPlace>
                         <placeName type="tgn" key="000"
                            ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
-                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
+                     <publisher>J. Munro &amp; Company</publisher>
+                     <date when="1841">1841</date>
                      <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
                      <!-- Add additional NOTE elements as needed  -->
                      <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
@@ -123,7 +123,7 @@
                     Digitized by:  Internet Archive</note>
                   </imprint>
 
-                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                  <extent></extent>
                   <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
                   <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
 
@@ -251,13 +251,9 @@
             </titlePart>
             <docImprint>
                <pubPlace><placeName type="tgn" key="000"/></pubPlace>
-               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
-                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
-                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
-                     Browne</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
-                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+             <publisher>J. Munro &amp; Company</publisher>
+               <pubPlace>Boston</pubPlace>
+             <docDate>1841</docDate>. <lb/>
             </docImprint>
          </titlePage>
       </front>
