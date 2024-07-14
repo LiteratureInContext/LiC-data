@@ -3,17 +3,17 @@
 
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="hawthorne-rappacini">
-   <!-- this xml:id is important; it is the unique identifier for the text, added according to the model author-titleword, as in haywood-fantomina -->
+  
    <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
             <title type="main">Rappacini's Daughter</title>
             <author>
-               <persName type="lcnaf" key="FILL-IN">
-                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
-                  <name ref="xxx.xml">
-                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
-                     <forename>Nathaniel</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
+               <persName type="lcnaf" key="n79007728">
+                 
+                  <name>
+                   
+                     <forename>Nathaniel</forename> 
                      <surname>Hawthorne</surname>
                      
                   </name>
@@ -35,23 +35,23 @@
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#StudStaffUVA"
                   >Students and Staff of the University of Virginia</name>
-               <name ref="editors.xml#XX">Gretchen Maune</name>
+               <name ref="editors.xml#GM">Gretchen Maune</name>
                <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
             </respStmt>
 
             <sponsor/>
-            <funder>National Endowmen for the Humanities</funder>
+            <funder>National Endowment for the Humanities</funder>
          </titleStmt>
 
          <publicationStmt>
             <publisher>Literature in Context</publisher>
             <address>
-               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
-               <addrLine>Address line 2</addrLine>
-               <addrLine>Address line 3</addrLine>
-               <addrLine>Address line 4</addrLine>
-               <addrLine>Email</addrLine>
-               <!-- cut unused or add additional addrLines -->
+               <addrLine>University of Virginia Department of English</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA </addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
             </address>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
@@ -66,44 +66,38 @@
 
                <analytic>
                  
-                  <title>Young Goodman Brown</title>
+                  <title>Rappacini's Daughter</title>
                 
                </analytic>
                  
                <monogr>
                   <author>
-                     <name>
-                        <forename>Nathaniel</forename>
-                        <surname>Hawthorne</surname>
-                        
-                     </name>
+                     <persName type="lcnaf" key="n79007728">
+                        <name>
+                           <forename>Nathaniel</forename>
+                           <surname>Hawthorne</surname>
+                           
+                        </name></persName>
                   </author>
-
-                  <title><?oxy-placeholder content="Title of the Monograph/Container"?></title>
-
+                  
+                  <title>Mosses from an Old Manse</title>
+                  
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000"
-                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                        <placeName type="tgn" key="7007567"
+                           >New York</placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
-                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
-                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
-                     <!-- Add additional NOTE elements as needed  -->
-                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                     <publisher>Wiley and Putnam</publisher>
+                     <date when="1846">1846</date>
+                     <note>"Rappacini's Daughter" was first published  in the <hi rend="italic">United States Magazine and Democratic Review</hi> in December 1844. The story was republished in 1846 in Hawthorne's short story collection <hi rend="italic">Mosses from an Old Manse</hi>. Our text and page images are taken from the Hathi Trust copy of the first edition, originally digitized as part of the Google Books project.</note>
+                     
                   </imprint>
-
-                  <imprint>
-                     <pubPlace/>
-                     <publisher/>
-                     <date/>
-                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
-                  </imprint>
-
-                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
-                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
-                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
-
+                  
+                  
+                  <extent></extent>
+                  <biblScope>85-118</biblScope>
+                  
+                  
                </monogr>
 
             </biblStruct>
@@ -119,11 +113,11 @@
 
          <creation/>
 
-         <textDesc n="poem">
+         <textDesc n="story">
             <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
             <channel mode="w">print</channel>
             <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
-            <constitution type="single">single poem</constitution>
+            <constitution type="single">single story</constitution>
             <derivation type="original"/>
             <domain/>
             <factuality type="inapplicable"/>
@@ -137,10 +131,10 @@
          <settingDesc>
 
             <setting>
-               <name type="tgn" key="7011781">London, England</name>
+               <name type="tgn" key="7011781">Padua, Italy</name>
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="7011197">Bath, England</name>
-               <time from="1690" to="1724">Early 18th Century</time>
+               
+               <time from="1500" to="1600">Sixteenth Century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
             </setting>
 
@@ -204,9 +198,9 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="0000-00-00" who="editors.xml#XX"
-            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
-         <change when="0000-00-00" who="xxxx"/>
+         <change when="2024-6" who="editors.xml#GM"
+            >Gretchen Maune created this Literature in Context edition</change>
+         <change when="2024-07" who="JOB">John O'Brien added header and formatting.</change>
       </revisionDesc>
 
    </teiHeader>
@@ -217,34 +211,33 @@
 
       <front>
          <titlePage>
-            <pb n="[TP]" facs="pageImages/FN-TP-1714.jpg"/>
-            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
-            <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?><lb/></titlePart>
+            <pb n="Title Page" facs="https://lic-assets-staging.s3.amazonaws.com/hawthorne-rappacini/pageImages/titlepage.jpg"/>
+            
+            <titlePart>MOSSES<lb/>
+               FROM <lb/>AN OLD MANSE.<lb/></titlePart>
             <titlePart/>
-            <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
-            <titlePart><ref target="aXX" corresp="nXX"/><note xml:id="nXX" corresp="aXX" type="XXX"
-                  resp="XXX"/><lb/>
-               <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
+            <lb/>
+            <byline>BY NATHANIEL HAWTHORNE.</byline><lb/><lb/>
+            <titlePart>IN TWO PARTS<lb/>
+               PART I.
+               <lb/>
+               <lb/>
+               
             </titlePart>
             <docImprint>
-               <pubPlace><placeName type="tgn" key="000"/></pubPlace>
-               <lb/> Printed by <publisher><hi rend="italic">J. B.</hi></publisher> and sold by
-                     <publisher><hi rend="italic">W. Taylor</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Ship</hi> in <hi rend="italic"
-                     >Paternoster-Row</hi></pubPlace>, and <publisher><hi rend="italic">Jonas
-                     Browne</hi></publisher>
-               <pubPlace>at the <hi rend="italic">Black Swan </hi> without <hi rend="italic"
-                     >Temple-bar</hi></pubPlace>. <docDate>1714</docDate>. <lb/>
+               <pubPlace><placeName type="tgn" key="7007567"/>NEW YORK.</pubPlace>
+               <lb/> <publisher>WILEY AND PUTNAM</publisher>
+               <docDate>1846</docDate>. <lb/>
             </docImprint>
          </titlePage>
       </front>
       <body>
-         <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
-         
+        
 
          <div type="chapter">
-          
-            <p><pb n="85" facs="pageImages/85.jpg."/>A YOUNG man, named Giovanni Guasconti, came, very long ago,
+            <pb n="85" facs="pageImages/85.jpg."/>
+          <head>RAPPACINI'S DAUGHTER</head>
+            <p><lb/>A YOUNG man, named Giovanni Guasconti, came, very long ago,
 from the more southern region of Italy, to pursue his studies at
 the University of Padua. Giovanni, who had but a scanty supply
 of gold ducats in his pocket, took lodgings in a high and gloomy
