@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="defoe-crusoe">
 
    <teiHeader xml:lang="en">
@@ -76,7 +76,7 @@
                      </pubPlace>
                      <publisher>William Taylor</publisher>
                      <date when="1719-04-25">1719</date>
-                     <note resp="editors.xml#JOB">This edition is based on the Text Creation Partnership version.</note>
+                     <note resp="editors.xml#JOB">This edition is based on the Text Creation Partnership version, which reproduces the first edition of 1719.</note>
                   </imprint>
                </monogr>
             </biblStruct>
@@ -251,8 +251,7 @@
                Prospect of raising my Fortunes by Application and Industry,
                with a Life of Ease and Pleasure. He told me it was for Men of desperate Fortunes on
                one Hand, or of aspiring, superior Fortunes on the other, who went abroad upon
-               Adventures, to rise by Enterprize, and make themselves famous in Undertakings of a Nature out of the common Road; <pb n="3"
-                  /> that these things were all either too far above me, or
+               Adventures, to rise by Enterprize, and make themselves famous in Undertakings of a Nature out of the common Road; <pb n="3"/> that these things were all either too far above me, or
                too far below me; that mine was the <ref target="middleclass_" corresp="middleclass"
                   >middle State</ref><note resp="editors.xml#UVAstudstaff" xml:id="middleclass"
                   target="middleclass_" type="gloss">A social middle class between the gentry and
@@ -260,9 +259,9 @@
                   professional class. Source: Oxford English Dictionary</note>, or what might be
                called the upper Station of <hi>Low Life,</hi> which he had found by long Experience
                was the best State in the World, the most suited to human Happiness, not exposed to
-               the Miseries and Hardships, the Labour and Sufferings of the <ref target="chanick_"
-                  corresp="chanick">mechanick</ref><note
-                  resp="editors.xml#UVAstudstaff" xml:id="chanick" target="chanick_" type="gloss"
+               the Miseries and Hardships, the Labour and Sufferings of the <ref target="mechanick_"
+                  corresp="mechanick">mechanick</ref><note
+                  resp="editors.xml#UVAstudstaff" xml:id="mechanick" target="mechanick_" type="gloss"
                   >Manual laboring. Source: Oxford English Dictionary</note> Part of Mankind, and
                not embarass'd with the Pride, Luxury, Ambition and Envy of the upper Part of Mankind. He told me, I might judge of the
                Happiness of this State, by this one thing, <hi>viz.</hi> That this was the State of
@@ -2313,10 +2312,11 @@
                   comfort my self as well as I could, and to set the good
                against the Evil, that I might have something to distinguish my Case from worse, and
                I stated it very impartially, like Debtor and Creditor, the Comforts I enjoy'd,
-               against the Miseries I suffer'd, Thus, 
+               against the Miseries I suffer'd, Thus, </p>
+            
                   <floatingText>
                      <body>
-                        <div type="miseries">
+                        <div type="list">
                            <head>Evil.</head>
                            <p>I am cast upon a horrible desolate Island,
                               void of all hope of Recovery.</p>
@@ -2352,7 +2352,7 @@
                      </body>
                   </floatingText>
               
-            </p>
+            
             <p>Upon the whole, here was an undoubted Testimony, that there
                was scarce any Condition in the World so miserable, but there was something
                      <hi>Negative</hi> or something <hi>Positiv</hi> to be
@@ -2447,8 +2447,9 @@
                for having no more Ink I was forc'd to leave it off.</p>
             <p>The <hi>JOURNAL.</hi>
             </p>
-            <p>
+           
                <head> <ref target="Audio7_" corresp="Audio7">[Audio File]</ref><note xml:id="Audio7" target="Audio7_"><graphic url="https://lic-assets-staging.s3.amazonaws.com/defoe-crusoe/soundFiles/robinsoncrusoe_07_defoe_64kb.mp3"></graphic>Librivox recording, read by Mark F. Smith</note></head>
+            <p>
                <hi>September</hi> 30, 1659. I poor miserable <hi>Robinson Crusoe,</hi> being
                shipwreck'd, during a dreadful Storm, in the offing, came on Shore on this dismal
                unfortunate Island, which I call'd <hi>the Island of Despair,</hi> all the rest of the Ship's Company being drown'd, and my self almost
@@ -3616,50 +3617,52 @@
             </p>
             <p>I found now, That the Seasons of the Year might generally be divided, not into
                   <hi>Summer</hi> and <hi>Winter,</hi> as in <hi>Europe</hi>; but into the Rainy
-               Seasons, and the Dry Seasons, which were generally thus, <list>
-                  <item>Half <hi>February,</hi> Rainy, the <hi>Sun</hi> being then on, or near the
+               Seasons, and the Dry Seasons, which were generally thus, </p>
+            <p><lg type="list">
+                  <l>Half <hi>February,</hi> Rainy, the <hi>Sun</hi> being then on, or near the
                         <hi>Equinox.</hi>
-                  </item>
-                  <item>
+                  </l>
+                  <l>
                      <hi>March,</hi> Rainy, the <hi>Sun</hi> being then on, or near the
                         <hi>Equinox.</hi>
-                  </item>
-                  <item>Half <hi>April,</hi> Rainy, the <hi>Sun</hi> being then on, or near the
+                  </l>
+                  <l>Half <hi>April,</hi> Rainy, the <hi>Sun</hi> being then on, or near the
                         <hi>Equinox.</hi>
-                  </item>
-                  <item>Half <hi>April,</hi> Dry, the <hi>Sun</hi> being then to the <hi>North</hi>
-                     of the Line.</item>
-                  <item>
+                  </l>
+                  <l>Half <hi>April,</hi> Dry, the <hi>Sun</hi> being then to the <hi>North</hi>
+                     of the Line.</l>
+                  <l>
                      <hi>May,</hi> Dry, the <hi>Sun</hi> being then to the <hi>North</hi> of the
-                     Line.</item>
-                  <item>
+                     Line.</l>
+                  <l>
                      <hi>June,</hi> Dry, the <hi>Sun</hi> being then to the <hi>North</hi> of the
-                     Line.</item>
-                  <item>
+                     Line.</l>
+                  <l>
                      <hi>July,</hi> Dry, the <hi>Sun</hi> being then to the <hi>North</hi> of the
-                     Line.</item>
-                  <item>Half <hi>August,</hi> Dry, the <hi>Sun</hi> being then to the <hi>North</hi>
-                     of the Line.</item>
-                  <item>
-                     <pb n="125" />Half <hi>August,</hi> Rainy, the
-                        <hi>Sun</hi> being then come back.</item>
-                  <item>
-                     <hi>September,</hi> Rainy, the <hi>Sun</hi> being then come back.</item>
-                  <item>Half <hi>October,</hi> Rainy, the <hi>Sun</hi> being then come back.</item>
-                  <item>Half <hi>October,</hi> Dry, the <hi>Sun</hi> being then to the
-                        <hi>South</hi> of the Line.</item>
-                  <item>
+                     Line.</l>
+                  <l>Half <hi>August,</hi> Dry, the <hi>Sun</hi> being then to the <hi>North</hi>
+                     of the Line.</l>
+                 
+                     <pb n="125" />
+               <l>Half <hi>August,</hi> Rainy, the
+                        <hi>Sun</hi> being then come back.</l>
+                  <l>
+                     <hi>September,</hi> Rainy, the <hi>Sun</hi> being then come back.</l>
+                  <l>Half <hi>October,</hi> Rainy, the <hi>Sun</hi> being then come back.</l>
+                  <l>Half <hi>October,</hi> Dry, the <hi>Sun</hi> being then to the
+                        <hi>South</hi> of the Line.</l>
+                  <l>
                      <hi>November,</hi> Dry, the <hi>Sun</hi> being then to the <hi>South</hi> of
-                     the Line.</item>
-                  <item>
+                     the Line.</l>
+                  <l>
                      <hi>December,</hi> Dry, the <hi>Sun</hi> being then to the <hi>South</hi> of
-                     the Line.</item>
-                  <item>
+                     the Line.</l>
+                  <l>
                      <hi>January,</hi> Dry, the <hi>Sun</hi> being then to the <hi>South</hi> of the
-                     Line.</item>
-                  <item>Half <hi>February,</hi> Dry, the <hi>Sun</hi> being then to the
-                        <hi>South</hi> of the Line.</item>
-               </list>
+                     Line.</l>
+                  <l>Half <hi>February,</hi> Dry, the <hi>Sun</hi> being then to the
+                        <hi>South</hi> of the Line.</l>
+               </lg>
             </p>
             <p>The Rainy Season sometimes held longer or shorter, as the Winds happen'd to blow; but
                this was the general Observation I made: After I had found by Experience, the ill
@@ -5203,13 +5206,9 @@
                Thoughts, that I was so happy as not to be thereabouts at that Time, or that they did
                not see my Boat, by which they would have concluded that some Inhabitants <pb n="182"
                   />
-               <gap reason="duplicate" extent="1 page">
-                  <desc>〈1 page duplicate〉</desc>
-               </gap>
+               
                <pb n="183" />
-               <gap reason="duplicate" extent="1 page">
-                  <desc>〈1 page duplicate〉</desc>
-               </gap>
+               
                <pb n="184" /> had been in the Place, and perhaps have
                search'd farther for me: Then terrible Thoughts rack'd my Imagination about their
                having found my Boat, and that there were People here; and that if so, I should
@@ -7664,20 +7663,21 @@
                with all his might off to those two who were left in the <hi>Canoe,</hi> which three
                in the <hi>Canoe,</hi> with one wounded, who we know not
                whether he dy'd or no, were all that escap'd our Hands of one and twenty: The Account
-               of the Rest is as follows; <list>
-                  <item>3 Kill'd at our first Shot from the Tree.</item>
-                  <item>2 Kill'd at the next Shot.</item>
-                  <item>2 Kill'd by <hi>Friday</hi> in the Boat.</item>
-                  <item>2 Kill'd by <hi>Ditto,</hi> of those at first wounded.</item>
-                  <item>1 Kill'd by <hi>Ditto,</hi> in the Wood.</item>
-                  <item>
-                     <pb n="281"/>3 Kill'd by the <hi>Spaniard.</hi>
-                  </item>
-                  <item>4 Kill'd, being found dropp'd here and there of their Wounds, or kill'd by
-                        <hi>Friday</hi> in his Chase of them.</item>
-                  <item>4 Escap'd in the Boat, whereof one wounded if not dead.</item>
-                  <item>21 In all.</item>
-               </list>
+               of the Rest is as follows;</p> 
+            <p><lg type="list">
+                  <l>3 Kill'd at our first Shot from the Tree.</l>
+                  <l>2 Kill'd at the next Shot.</l>
+                  <l>2 Kill'd by <hi>Friday</hi> in the Boat.</l>
+                  <l>2 Kill'd by <hi>Ditto,</hi> of those at first wounded.</l>
+                  <l>1 Kill'd by <hi>Ditto,</hi> in the Wood.</l>
+                 
+                  <pb n="281"/> <l>3 Kill'd by the <hi>Spaniard.</hi></l>
+                  
+                  <l>4 Kill'd, being found dropp'd here and there of their Wounds, or kill'd by
+                        <hi>Friday</hi> in his Chase of them.</l>
+                  <l>4 Escap'd in the Boat, whereof one wounded if not dead.</l>
+                  <l>21 In all.</l>
+               </lg>
             </p>
             <p>Those that were in the <hi>Canoe,</hi> work'd hard to get out of Gun-Shot; and though
                   <hi>Friday</hi> made two or three Shot at them, I did not find that he hit any of
@@ -9783,25 +9783,6 @@
             <trailer>FINIS.</trailer>
          </div>
       </body>
-      <back>
-         <div type="errata">
-            <head>ERRATA.</head>
-            <p>
-               <hi>PAge 7. Line 11. for 1601, read 1651. Ibid. l. 26. f.</hi> which <hi>1.</hi> to
-               which. <hi>p. 9. the last l. but one, f.</hi> Wretch, <hi>r.</hi> hardned Wretch.
-                  <hi>ib. f.</hi> the hardned Danger <hi>r.</hi> the Danger. <hi>p. 274. l. 13.
-                  dele</hi> else. <hi>p. 277. l. 9. f.</hi> bad <hi>r.</hi> bid. <hi>p. 288. l. 31
-                  dele</hi> which is near that Number. <hi>p. 290. l. 30. f.</hi> to my <hi>r.</hi>
-               by my. <hi>p. 320. l. 27. f.</hi> five of them <hi>r.</hi> those five. <hi>ib. l. 29.
-                  f.</hi> five of them <hi>r.</hi> those five. <hi>p. 321. l. 11. f.</hi> Apartment
-                  <hi>r.</hi> Bower. <hi>l. 12. dele</hi> the single Man taken in the Boat <hi>5.
-                  ib. l. 14. f.</hi> thirteen <hi>r.</hi> twelve. <hi>ib. l. f.</hi> and the two
-                  <hi>r.</hi> for. <hi>p. 322. l. 7. f.</hi> six <hi>r.</hi> five. <hi>p. 329. l.
-                  29. f.</hi> taken <hi>r.</hi> taken on Board. <hi>p. 331. l. 14. f.</hi> giving
-                  <hi>r.</hi> given. <hi>p. 334. l. 17. f.</hi> the time <hi>r.</hi> that time.
-                  <hi>p. 360. f.</hi> Bourdeaux <hi>r.</hi> Thoulouse.
-                  <hi>p. 362. l. 15. f.</hi> Sisters <hi>r.</hi> Brothers.</p>
-         </div>
-      </back>
+  
    </text>
 </TEI>
