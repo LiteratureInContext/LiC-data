@@ -179,7 +179,7 @@
             <taxonomy xml:id="lcc">
                <bibl>Library of Congress Classification</bibl>
             </taxonomy>
-            <taxonomy xml:id="tgm">
+            <taxonomy xml:id="tgn">
                <bibl>Getty Thesaurus of Geographic Names</bibl>
             </taxonomy>
             <taxonomy xml:id="orcid">
@@ -189,9 +189,9 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="0000-00-00" who="editors.xml#XX"
-            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
-         <change when="0000-00-00" who="xxxx"/>
+         <change when="2024-07-25" who="editors.xml#TH"
+            >First pass partial markup</change>
+         <change when="2024-07-30" who="editors.xml#TH">Added remaining pages in XML and placenames, as well as minor updates to the header.</change>
       </revisionDesc>
 
    </teiHeader>
@@ -208,22 +208,20 @@
                OF BEING EARNEST<lb/></titlePart>
             <titlePart>A TRIVIAL COMEDY FOR<lb/>SERIOUS PEOPLE<lb/></titlePart>
             <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
-            <titlePart><ref target="XXX" corresp="nXX">BY<lb/>THE AUTHOR OF<lb/>LADY WINDERMERE'S
-                  FAN</ref><lb/><lb/><lb/><lb/>
+            <titlePart>BY<lb/>THE AUTHOR OF<lb/>LADY WINDERMERE'S
+                  FAN<lb/><lb/><lb/><lb/>
                <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
-               <note xml:id="nXX" corresp="XXX" type="XXX" resp="XXX">Content of note here. The note
-                  element can appear almost anywhere--it's easiest to keep it near the
-                  reference.</note>
+               
             </titlePart>
             <docImprint>
                <pubPlace><placeName type="tgn" key="7011781"/>London</pubPlace>
-               <lb/> Printed by <publisher>LEONARD SMITHERS AND CO</publisher>
+               <lb/> Printed by <publisher>LEONARD SMITHERS AND CO<lb/></publisher>
                <pubPlace>5 Old Bond Street W</pubPlace>, <docDate>MDCCCXCIX</docDate>. <lb/><lb/>
             </docImprint>
          </titlePage>
          <pb n="[Dedication]" facs="pageImages/iv-dedication.jpg"/>
          <div type="dedication">
-            <head type="sub">TO<lb/>ROBERT BALDWIN ROSS<lb/>IN APPRECIATION<lb/>IN
+            <head type="sub">TO<lb/><persName type="lcnaf" key="n82041096">ROBERT BALDWIN ROSS</persName><lb/>IN APPRECIATION<lb/>IN
                AFFECTION<lb/></head>
          </div>
          <pb n="[Printing Note]" facs="pageImages/vii-print-number.jpg"/>
@@ -237,24 +235,24 @@
             <head type="sub">LONDON: ST. JAMES'S THEATRE<lb/><hi rend="italic">Lessee and Manager:
                   Mr. George Alexander<lb/>February 14th, 1895</hi><lb/></head>
             <castList>
-               <castItem><role>JOHN WORTHING, J.P.</role><actor xml:id="xxx"><hi rend="italic">Mr.
-                        George Alexander</hi></actor></castItem>
+               <castItem><role>JOHN WORTHING, J.P.</role><actor xml:id="xxx"><hi rend="italic"><persName type="lcnaf" key="no92012322">Mr.
+                        George Alexander</persName></hi></actor></castItem>
                <castItem><role>ALGERNON MONCRIEFF</role><actor xml:id="xxx"><hi rend="italic">Mr.
-                        Allen Aynesworth</hi></actor></castItem>
+                  <persName key="n2010026539" type="lcnaf">Allen Aynesworth</persName></hi></actor></castItem>
                <castItem><role>REV. CANON CHAUSBLE, D.D.</role><actor xml:id="xxx"><hi rend="italic"
-                        >Mr. H. H. Vincent</hi></actor></castItem>
-               <castItem><role>MERRIMAN (Butler)</role><actor xml:id="xxx"><hi rend="italic">Mr.
-                        Frank Dyall</hi></actor></castItem>
-               <castItem><role>LANE (Manservant)</role><actor xml:id="xxx"><hi rend="italic">Mr. F.
-                        Kinsey Peile</hi></actor></castItem>
-               <castItem><role>LADY BRACKNELL</role><actor xml:id="xxx"><hi rend="italic">Miss Rose
-                        Leclercq</hi></actor></castItem>
+                        ><persName>Mr. H. H. Vincent</persName></hi></actor></castItem>
+               <castItem><role>MERRIMAN (Butler)</role><actor xml:id="xxx"><hi rend="italic"><persName>Mr.
+                        Frank Dyall</persName></hi></actor></castItem>
+               <castItem><role>LANE (Manservant)</role><actor xml:id="xxx"><hi rend="italic"><persName type="lcnaf" key="n82228601">Mr. F.
+                        Kinsey Peile</persName></hi></actor></castItem>
+               <castItem><role>LADY BRACKNELL</role><actor xml:id="xxx"><hi rend="italic"><persName type="lcnaf" key="no91014455">Miss Rose
+                        Leclercq</persName></hi></actor></castItem>
                <castItem><role>HON. GWENDOLEN FAIRFAX</role><actor xml:id="xxx"><hi rend="italic"
-                        >Miss Irene Vanbrugh</hi></actor></castItem>
-               <castItem><role>CECILY CARDEW</role><actor xml:id="xxx"><hi rend="italic">Miss Evelyn
-                        Millard</hi></actor></castItem>
+                  ><persName type="lcnaf" key="no2009023854">Miss Irene Vanbrugh</persName></hi></actor></castItem>
+               <castItem><role>CECILY CARDEW</role><actor xml:id="xxx"><hi rend="italic"><persName type="lcnaf" key="no2009002498">Miss Evelyn
+                        Millard</persName></hi></actor></castItem>
                <castItem><role>MISS PRISM (Governess)</role><actor xml:id="xxx"><hi rend="italic"
-                        >Mrs. George Canninge</hi></actor></castItem>
+                  ><persName type="lcnaf" key="n82201194" cert="medium">Mrs. George Canninge</persName></hi></actor></castItem>
             </castList>
          </div>
 
