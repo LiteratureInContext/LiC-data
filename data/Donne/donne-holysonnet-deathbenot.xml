@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="donne-sunnerising">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"Holy Sonnet: Death be not proud"</title>
+            <author>
+               <persName type="lcnaf" key="79069876">
+                  <name>
+                     <forename>Jeohn</forename>
+                     <surname>Donne</surname>
+                  </name>
+               </persName>
+            </author>
+            
+            
+            <editor>
+               <persName type="orcid" key="000000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
+            </editor>
+            
+            <respStmt>
+               
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#StudStaff">Students and Staff of the University of
+                  Virginia</name>
+               
+            </respStmt>
+            
+            
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+         
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            
+            <address>
+               <addrLine>University of Virginia Department of English</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA</addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+         
+         <sourceDesc>
+            
+            <biblStruct>
+               
+               <analytic>
+                  
+                  <title>"Holy Sonnet: Death be not proud"</title>
+                  
+               </analytic>
+               
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>John</forename>
+                        <surname>Donne</surname>
+                     </name>
+                  </author>
+                  
+                  <title>Poems, by J. D., With Elegies on the Authors Death</title>
+                  
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>M. F. for John Marriot</publisher>
+                     <date when="1633">1633</date>
+                     <note>We have taken our text from the Text Creation Partnership's digitized
+                        version of the 1633 edition of Donne's poems:
+                        https://github.com/textcreationpartnership/A69225/blob/master/A69225.xml.
+                        Donne's poems circulated in manuscript during his life time, and were not
+                        issued in a print version until this edition, which came out after Donne's
+                        death in 1632. The long "s" of the original has been modernized, but we have
+                        otherwise kept the original spelling. The title page has been sourced from <ref target="https://specialcollections.princeton.edu/2023/05/a-donne-deal/">Princeton University Special Collections</ref>.</note>
+                     
+                     
+                  </imprint>
+                  
+                  
+                  
+                  <extent/>
+                  <biblScope>200</biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+                  
+               </monogr>
+               
+            </biblStruct>
+            
+         </sourceDesc>
+         
+      </fileDesc>
+      
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="poem">
+            
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="entertain" degree="high"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+         
+         <settingDesc>
+            
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               
+               <time from="1600" to="1633">Early 17th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+            
+         </settingDesc>
+      </profileDesc>
+      
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      
+      <revisionDesc>
+         <change when="2024-06-13" who="editors.xml#RR">Rachel Retica created LIC edition.</change>
+      </revisionDesc>
+   </teiHeader>
+   
+   <text>
+      <front><pb n="[TP]" facs="pageImages/Donne_poems_cover.jpg"/>
+         <titlePage>
+            
+            <titlePart>POEMS,<lb/><hi rend="italic">By </hi>J. D[onne].<lb/>WITH<lb/>ELEGIES<lb/>ON THE AUTHOR'S<lb/>Death.<lb/><lb/></titlePart>
+            <docImprint><pubPlace><placeName type="tgn" key="7011781">LONDON.<lb/></placeName></pubPlace>
+               <publisher>Printed by <hi rend="italic">M. F. </hi>for [J]OHN MARRIOT,<lb/>and are to be sold at his shop in St <hi rend="italic">Dunstans</hi><lb/>Church-yard in <hi rend="italic">Fleet-street. </hi></publisher><docDate>1633.</docDate></docImprint>
+            
+            
+         </titlePage>
+      </front>
+      <body>
+         <div type="poem">
+
+               <head>VI.</head>
+            <l n="1">Death be not proud, though some have called thee</l>
+            <l n="2">Mighty and dreadfull, for, thou art not soe,</l>
+            <l n="3">For, those, whom thou think'st, thou dost overthrow,</l>
+            <l n="4">Die not, poore death, nor yet canst thou kill mee;</l>
+            <l n="5">From rest and sleepe, which but thy pictures bee,</l>
+            <l n="6">Much pleasure, then from thee, much more must flow,</l>
+            <l n="7">And soonest our best men with thee doe goe,</l>
+            <l n="8">Rest of their bones, and soules deliverie</l>
+            <l n="9">Thou art slave to Fate, chance, kings, and desperate men,</l>
+            <l n="10">And doth with poyson, warre, and sicknesse dwell.</l>
+            <l n="11">And poppie, or charmes can make us sleepe as well,</l>
+            <l n="12">And better then thy stroake; why swell'st thou then?</l>
+            <l n="13">One short sleepe past, wee wake eternally,</l>
+            <l n="14">And death shall be no more, death thou shalt die.</l>
+            </div>

@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="douglass-oration">
+ 
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Oration ["What to the Slave is the Fourth of July?"]</title>
+             <author>
+                 <persName type="lcnaf" key="n80013236">
+                     <name>
+                         <forename>Frederick</forename>
+                         <surname>Douglass</surname>
+                     </name>
+                 </persName>
+             </author>
+             <editor>
+                 <persName type="orcid" key="0000-0001-6453-8721">
+                     <name>
+                         <forename>John</forename>
+                         <surname>O'Brien</surname>
+                     </name>
+                 </persName>
+             </editor>
+
+             <respStmt>
+                 <resp>Transcription, correction, editorial commentary, and markup</resp>
+                 <name ref="editors.xml#UVastudstaff"> Students and Staff of the University of
+                     Virginia </name>
+                 <name>Humzah Syed</name>
+             </respStmt>
+             <funder> National Endowment for the Humanities </funder>
+         </titleStmt>
+          <publicationStmt>
+              <publisher>Literature in Context</publisher>
+              <address>
+                  <addrLine> University of Virginia Department of English </addrLine>
+                  <addrLine> Bryan Hall 219 </addrLine>
+                  <addrLine> PO Box 400121 </addrLine>
+                  <addrLine> Charlottesville, VA 22904-4121 </addrLine>
+                  <addrLine> 434-924-7105 </addrLine>
+              </address>
+              <availability status="free">
+                  <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> Published by
+                      Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                      Unported Licence </licence>
+              </availability>
+          </publicationStmt>
+
+         <sourceDesc>
+
+             <biblStruct>
+                 <monogr>
+                     <author>
+                         <forename>Frederick</forename>
+                         <surname>Douglass</surname>
+                     </author>
+                     <title>Oration</title>
+                     <imprint>
+                         <pubPlace>
+                             <placeName type="tgn" key="7014348">Rochester</placeName>
+                         </pubPlace>
+                         <publisher>Lee, Mann &amp; Co.</publisher>
+                         <date when="1845">1852</date>
+                         <note resp="editors.xml#JOB">This edition is based on the Hathi Trust digital copy of the book, which was digitized by Google from a print copy in the Indiana University Library. We have formatted the text for our edition, and proofread against the original.</note>
+                     </imprint>
+                     <extent/>
+                     <biblScope/>
+                 </monogr>
+             </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+       <profileDesc>
+           <langUsage>
+               <language ident="en">English</language>
+           </langUsage>
+           <creation/>
+           <textDesc n="essay">
+               <channel mode="w">Print</channel>
+               <constitution type="single"/>
+               <derivation type="original"/>
+               <domain/>
+               <factuality type="fact"/>
+               <interaction/>
+               <preparedness/>
+               <purpose type="inform" degree="high"/>
+           </textDesc>
+           <settingDesc>
+               <setting>
+                   <name type="tgn" key="7014348">Rochester</name>
+                   <time when="1852">1852</time>
+               </setting>
+           </settingDesc>
+       </profileDesc>
+       <encodingDesc>
+           <projectDesc>
+               <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                   project, which provides an accessible, curated, and marked-up selection of
+                   primary sources relevant to the study and the teaching of British and American
+                   literature of the 18th century. This project is funded by the National Endowment
+                   for the Humanities and developed by faculty at The University of Virginia and
+                   Marymount University. </p>
+           </projectDesc>
+           <editorialDecl>
+               <interpretation>
+                   <p>Research informing these annotations draws on publicly-accessible resources,
+                       with links provided where possible. Annotations have also included common
+                       knowledge, defined as information that can be found in multiple reliable
+                       sources. If you notice an error in these annotations, please contact
+                       lic.open.anthology@gmail.com. </p>
+               </interpretation>
+               <normalization>
+                   <p>Original spelling and capitalization is retained, though the long s has been
+                       silently modernized and ligatured forms are not encoded.</p>
+               </normalization>
+               <hyphenation>
+                   <p>Hyphenation has not been retained, except where necessary for the sense of
+                       the word.</p>
+               </hyphenation>
+               <segmentation>
+                   <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                       have not. Where pages break in the middle of a word, the complete word has
+                       been indicated prior to the page beginning.</p>
+               </segmentation>
+               <correction>
+                   <p>Materials have been transcribed from and checked against first editions,
+                       where possible. See the Sources section.</p>
+               </correction>
+           </editorialDecl>
+           <tagsDecl>
+               <namespace name="http://www.tei-c.org/ns/1.0">
+                   <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+               </namespace>
+           </tagsDecl>
+           <classDecl>
+               <taxonomy xml:id="lcnaf">
+                   <bibl>Library of Congress Name Authority File</bibl>
+               </taxonomy>
+               <taxonomy xml:id="lcc">
+                   <bibl>Library of Congress Classification</bibl>
+               </taxonomy>
+               <taxonomy xml:id="tgn">
+                   <bibl>Getty Thesaurus of Geographic Names</bibl>
+               </taxonomy>
+               <taxonomy xml:id="orcid">
+                   <bibl>Open Researcher and Contributor ID</bibl>
+               </taxonomy>
+           </classDecl>
+       </encodingDesc>
+       
+
+      <revisionDesc>
+         <change when="2024-07" who="editors.xml#HS"
+            >Humzah Syed created Literature in Context Edition</change>
+         <change when="2024-08" who="editors.xml#JOB">John O'Brien added header information and checked for compliance with TEI schema.</change>
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <titlePage>
+            <pb n="Title Page"/>
+            
+            <titlePart>ORATION,<lb/>
+                DELIVERED IN CORINTHIAN HALL, ROCHESTER<lb/></titlePart><lb/>
+             <titlePart>BY FREDERICK DOUGLASS<lb/></titlePart><lb/>
+             <lb/>
+             <titlePart>JULY 5TH, 1852<lb/></titlePart><lb/>
+             <titlePart>Published by Request<lb/></titlePart>
+            <docImprint>
+                <pubPlace><placeName type="tgn" key="7014348"/>ROCHESTER: <lb/></pubPlace>
+                <lb/> PRINTED BY <publisher>LEE, MANN &amp; CO. AMERICAN BUILDING <lb/></publisher>
+                     <docDate>1852</docDate>. <lb/>
+            </docImprint>
+         </titlePage>
+      </front>
+      <body>
+         
+
+
+<pb/>
+
+          <p>FREDERICK DOUGLASS ESQ.:</p>
+    <p><hi rend="italic">Dear Sir</hi>-The Ladies of the "Rochester Anti Slavery Sewing Society,"
+desire me to return you their most sincere thanks for the eloquent and able
+address delivered in Corinthian Hall, on the 5th of July. Anticipating its
+speedy publication in Pamphlet form, they request that you will furnish them
+with one hundred copies for distribution.</p>
+
+    <p><lg><l rend="indent5">
+        In behalf of the Society,</l>
+        <l rend="indent5">SUSAN F. PORTER, President.</l></lg></p>
+
+
+
+        <pb n="3"/>
+<p>ORATION.</p>
+<p>Mr. President, Friends and Fellow Citizens:
+HE who could address this audience without a
+quailing sensation, has stronger nerves than I have.
+I do not remember ever to have appeared as a speaker
+before any assembly more shrinkingly, nor with greater distrust of my ability, than I do this day. A
+feeling has crept over me, quite unfavorable to the
+exercise of my limited powers of speech. The task
+before me is one which requires much previous
+thought and study for its proper performance. I
+know that apologies of this sort are generally considered flat and unmeaning. I trust, however, that
+mine will not be so considered. Should I seem at
+ease, my appearance would much misrepresent me.
+The little experience I have had in addressing public meetings, in country school houses, avails me
+nothing on the present occasion.</p>
+<p>The papers and placards say, that I am to deliver
+a 4th July oration. This certainly, sounds large, and
+out of the common way, for me. It is true that I
+have often had the privilege to speak in this beautiful Hall, and to address many who now honor me with
+their presence. But neither their familiar faces, nor
+the perfect gage I think I have of Corinthian Hall,
+seems to free me from embarrassment.</p>
+<p>The fact is, ladies and gentlemen, the distance between this platform and the slave plantation, from
+which I escaped, is considerable and the difficulties
+        
+
+
+<pb n="4"/>
+    
+to be overcome in getting from the latter to the former,
+are by no means slight. That I am here to-day, is, to
+me, a matter of astonishment as well as of gratitude.
+You will not, therefore, be surprised, if in what I
+have to say, I evince no elaborate preparation, nor
+grace my speech with any high sounding exordium.
+With little experience and with less learning, I have
+been able to throw my thoughts hastily and imperfectly together; and trusting to your patient and gen-
+erous indulgence, I will proceed to lay them before
+you.</p>
+<p>This, for the purpose of this celebration, is the 4th
+of July. It is the birthday of your National Independence, and of your political freedom. This, to you,
+is what the Passover was to the emancipated people
+of God. It carries your minds back to the day, and
+to the act of your great deliverance; and to the signs,
+and to the wonders, associated with that act,and that
+day. This celebration also marks the beginning of
+another year of your national life; and reminds you
+that the Republic of America is now 76 years old.
+I am glad, fellow-citizens, that your nation is so
+young. Seventy-six years, though a good old age
+for a man, is but a mere speck in the life of a nation.
+Three score years and ten is the allotted time for individual men; but nations number their years by
+thousands. According to this fact, you are, even now
+only in the beginning of you national career, still lingering in the period of childhood. I repeat, I am glad
+this is so. There is hope in the thought, and hope is
+much needed, under the dark clouds which lower
+above the horizon. The eye of the reformer is met
+with angry flashes, portending disastrous times; but
+
+    <pb n="5"/>
+    
+his heart may well beat lighter at the thought
+that America is young, and that she is still in
+the impressible stage of her existence. May he
+not hope that high lessons of wisdom, of justice
+and of truth, will yet give direction to her des-
+tiny? Were the nation older, the patriot's heart
+might be sadder, and the reformer's brow heavier.
+Its future might be shrouded in gloom, and the
+hope of its prophets go out in sorrow. There is con-
+solation in the thought, that America is young.-
+Great streams are not easily turned from channels,
+worn deep in the course of ages. They may some
+times rise in quiet and stately majesty, and inundate
+the land, refreshing and fertilizing the earth with
+their mysterious properties. They may also rise in
+wrath and fury, and bear away, on their angry waves,
+the accumulated wealth of years of toil and hardship.
+They, however, gradually flow back to the same old
+channel, and flow on as serenely as ever. But, while
+the river may not be turned aside, it may dry up, and
+leave nothing behind but the withered branch, and
+the unsightly rock, to howl in the abyss-sweeping
+wind, the sad tale of departed glory. As with rivers
+so with nations.</p>
+<p>Fellow-citizens, I shall not presume to dwell at
+length on the associations that cluster about this day.
+The simple story of it is, that, 76 years ago, the
+people of this country were British subjects. The
+style and title of your "sovereign people" (in which
+you now glory) was not then born. You were under
+the British Crown. Your fathers esteemed the Eng-
+lish Government as the home government; and
+England as the fatherland. This home government,
+
+    <pb n="6"/>
+    
+you know, although a considerable distance from
+your home, did, in the exercise of its parental prero
+gatives, impose upon its colonial children, such re-
+straints, burdens and limitations, as, in its mature
+judgment, it deemed wise, right and proper.</p>
+<p>But, your fathers, who had not adopted the fashionable idea of this day, of the infallibility of government, and the absolute character of its acts, presumed
+to differ from the home government in respect to the
+wisdom and the justice of some of those burdens
+and restraints. They went so far in their excitement
+as to pronounce the measures of government unjust,
+unreasonable, and oppressive, and altogether such as
+ought not to be quietly submitted to. I scarcely
+need say, fellow-citizens, that my opinion of those
+measures fully accords with that of your fathers.
+Such a declaration of agreement on my part, would
+not be worth much to anybody. It would, certainly,
+prove nothing, as to what part I might have taken,
+had I lived during the great controversy of 1776.
+To say <hi rend="italic">now</hi> that America was right, and England
+wrong, is exceedingly easy. Everybody can say it;
+the dastard, not less than the noble brave, can flippantly discant on the tyranny of England towards
+the American Colonies. It is fashionable to do so;
+but there was a time when, to pronounce against
+England, and in favor of the cause of the colonies,
+tried men's souls. They who did so were accounted
+in their day, plotters of mischief, agitators and rebels,
+dangerous men. To side with the right, against the
+wrong, with the weak against the strong, and with
+the oppressed against the oppressor! <hi rend="italic">here</hi> lies the
+merit, and the one which, of all others, seems un-
+
+    <pb n="7"/>
+    
+fashionable in our day. The cause of liberty may be
+stabbed by the men who glory in the deeds of your
+fathers. But, to proceed.</p>
+<p>Feeling themselves harshly and unjustly treated,
+by the home government, your fathers, like men of
+honesty, and men of spirit, earnestly sought redress.
+They petitioned and remonstrated; they did so in a
+decorous, respectful, and loyal manner, Their conduct
+was wholly unexceptionable. This, however, did not
+answer the purpose. They saw themselves treated
+with sovereign indifference, coldness and scorn. Yet
+they persevered. They were not the men to look back.</p>
+<p>As the sheet anchor takes a firmer hold, when the
+ship is tossed by the storm, so did the cause of your
+fathers grow stronger, as it breasted the chilling blasts
+of kingly displeasure. The greatest and best of Brit
+ish statesmen admitted its justice, and the loftiest
+eloquence of the British Senate came to its support.
+But, with that blindness which seems to be the unvarying characteristic of tyrants, since Pharoah and his
+hosts were drowned in the Red sea, the British Government persisted in the exactions complained of.</p>
+<p>The madness of this course, we believe, is admitted
+now, even by England; but we fear the lesson is
+wholly lost on our present rulers.</p>
+<p>Oppression makes a wise man mad. Your fathers
+were wise men, and if they did not go mad, they
+became restive under this treatment. They felt themselves the victims of grievous wrongs, wholly incurable in their colonial capacity. With brave men
+there is always a remedy for oppression. Just here,
+the idea of a total separation of the colonies from the
+crown was born! It was a startling idea, much more</p>
+
+
+        <pb n="8"/>
+        
+
+<p>so, than we, at this distance of time, regard it. The
+timid and the prudent (as has been intimated) of
+that day, were, of course, shocked and alarmed by it.
+Such people lived then, had lived before, and will,
+probably, ever have a place on this planet; and their
+course, in respect to any great change, (no matter
+how great the good to be attained, or the wrong to
+be redressed by it,) may be calculated with as much
+precision as can be the course of the stars. They
+hate all changes, but silver, gold and copper change!
+Of this sort of change they are always strongly in
+favor.</p>
+<p>These people were called tories in the days of your
+fathers; and the appellation, probably, conveyed the
+same idea that is meant by a more modern, though a
+somewhat less euphonious term, which we often find
+in our papers, applied to some of our old politicians.</p>
+<p>Their opposition to the then dangerous thought
+was earnest and powerful; but, amid.all their terror
+and affrighted vociferations against it, the alarming
+and revolutionary idea moved on, and the country
+with it.</p>
+<p>On the 2d of July, 1776, the old Continental.
+Congress, to the dismay of the lovers of ease, and
+the worshippers of property, clothed that dreadful
+idea with all the authority of national sanction. They
+did so in the form of a resolution; and as we seldom
+hit upon resolutions, drawn up in our day, whose
+transparency is at all equal to this, it may refresh
+your minds and help my story if I read it.</p>
+<p>Resolved, That these united colonies are, and of right, ought to be free and
+Independent States; that they are absolved from all allegiance to the British
+Crown; and that all political connection between them and the State of Great
+Britain is, and ought to be, dissolved.</p>
+        
+        <pb n="9"/>
+        
+<p>Citizens, your fathers made good that resolution.
+They succeeded; and to-day you reap the fruits of
+their success. The freedom gained is yours; and
+you, therefore, may properly celebrate this anniversary. The 4th of July is the first great fact in your
+nation's history-the very ring-bolt in the chain of
+your yet undeveloped destiny.</p>
+<p>Pride and patriotism, not less than gratitude,
+prompt you to celebrate and to hold it in perpetual
+remembrance. I have said that the Declaration of
+Independence is the RINGBOLT to the chain of your
+nation's destiny; so, indeed, I regard it. The principles contained in that instrument are saving princi-
+ples. Stand by those principles, be true to them on
+all occasions, in all places, against all, foes, and at
+whatever cost.</p>
+<p>From the round top of your ship of state, dark
+and threatening clouds may be seen. Heavy billows,
+like mountains in the distance, disclose to the leeward
+huge forms of flinty rocks! That <hi rend="italic">bolt</hi> drawn, that
+chain broken, and all is lost. <hi rend="italic">Cling to this day-
+cling to it</hi>, and to its principles, with the grasp of a
+storm-tossed mariner to a spar at midnight.</p>
+<p>The coming into being of a nation, in any circumstances, is an interesting event. But, besides general
+considerations, there were peculiar circumstances
+which make the advent of this republic an event of
+special attractiveness.</p>
+<p>The whole scene, as I look back to it, was simple,
+dignified and sublime.</p>
+<p>The population of the country, at the time, stood
+at the insignificant number of three millions. The
+country was poor in the munitions of war. The
+
+    <pb n="10"/>
+    
+population was weak and scattered, and the country
+a wilderness unsubdued. There were then no means
+of concert and combination, such as exist now. Neither steam nor lightning had then been reduced to
+order and discipline. From the Potomac to the
+Delaware was a journey of many days. Under these,
+and innumerable other disadvantages, your fathers
+declared for liberty and independence and triumphed.</p>
+<p>Fellow Citizens, I am not wanting in respect for
+the fathers of this republic. The signers of the Declaration of Independence were brave men. They
+were great men too-great enough to give fame to a
+great age. It does not often happen to a nation to.
+raise, at one time, such a number of truly great men.
+The point from which I am compelled to view them
+is not, certainly the most favorable; and yet I cannot contemplate their great deeds with less than
+admiration. They were statesmen, patriots and
+heroes, and for the good they did, and the principles
+they contended for, I will unite with you to honor
+their memory.</p>
+<p>They loved their country better than their own
+private interests; and, though this is not the highest
+form of human excellence, all will concede that it is
+a rare virtue, and that when it is exhibited, it ought
+to command respect. He who will, intelligently, lay
+down his life for his country, is a man whom it is not
+in human nature to despise. Your fathers staked
+their lives, their fortunes, and their sacred honor, on
+the cause of their country. In their admiration of
+liberty, they lost sight of all other interests.</p>
+<p>They were peace men; but they preferred revolution to peaceful submission to bondage. They were
+
+    <pb n="11"/>
+    
+
+quiet men; but they did not shrink from agitating
+against oppression. They showed forbearance; but
+that they knew its limits. They believed in order;
+but not in the order of tyranny. With them, noth-
+ing was "settled" that was not right. With them,
+justice, liberty and humanity were "final," not
+slavery and oppression. You may well cherish the
+memory of such men. They were great in their
+day and generation. Their solid manhood stands
+out the more as we contrast it with these degenerate times.</p>
+<p>How circumspect, exact and proportionate were all
+their movements! How unlike the politicians of an
+hour! Their statesmanship looked beyond the pass-
+ing moment, and stretched away in strength into the
+distant future. They seized upon eternal principles,
+and set a glorious example in their defence. Mark
+them!</p>
+<p>Fully appreciating the hardships to be encountered,
+firmly believing in the right of their cause, honorably
+inviting the scrutiny of an on-looking world, reverently appealing to heaven to attest their sincerity,
+soundly comprehending the solemn responsibility
+they were about to assume, wisely measuring the
+terrible odds against them, your fathers, the fathers
+of this republic, did, most deliberately, under the
+inspiration of a glorious patriotism, and with a sub-
+lime faith in the great principles of justice and free-
+dom, lay deep, the corner-stone of the national super-
+estructure, which has risen and still rises in grandeur
+around you.</p>
+<p>Of this fundamental work, this day is the anniversary. Our eyes are met with demonstrations of
+
+    <pb n="12"/>
+    
+
+
+joyous enthusiasm. Banners and penants wave exultingly on the breeze. The din of business, too, is
+hushed. Even mammon seems to have quitted his
+grasp on this day. The ear-piercing fife and the
+stirring drum unite their accents with the ascending
+peal of a thousand church bells. Prayers are made,
+hymns are sung, and sermons are preached in honor of
+this day; while the quick martial tramp of a great
+and multitudinous nation, echoed back by all the
+hills, valleys and mountains of a vast continent, be-
+speak the occasion one of thrilling and universal
+`interest—a nation's jubilee.</p>
+<p>Friends and citizens, I need not enter further into
+the causes which led to this anniversary. Many of
+you understand them better than I do. You could
+instruct me in regard to them. That is a branch of
+knowledge in which you feel, perhaps, a much deeper
+interest than your speaker. The causes which led
+to the separation of the colonies from the British
+crown have never lacked for a tongue.
+They have all been taught in your common schools, narrated at
+your firesides, unfolded from your pulpits, and thun-
+dered from your legislative halls, and are as familiar
+to you as household words. They form the staple
+of your national poetry and eloquence.</p>
+<p>I remember, also, that, as a people, Americans are
+remarkably familiar with all facts which make in
+in their own favor. This is esteemed by some as a
+national trait-perhaps a national weakness. It is a
+fact, that whatever makes for the wealth or for the
+reputation of Americans, and can be had cheap! will
+be found by Americans. I shall not be charged with
+slandering Americans, if I say I think the Ameri-
+
+    <pb n="13"/>
+    
+can side of any question may be safely left in American hands.</p>
+<p>I leave, therefore, the great deeds of your fathers
+to other gentlemen whose claim to have been regularly descended will be less likely to be disputed
+than mine!<lb/></p>
+          <head>THE PRESENT.<lb/></head>
+<p>My business, if I have any here to-day, is with the
+present. The accepted time with God and his cause
+is the ever-living now.<lb/></p>
+<p><lg><l rend="indent3">"Trust no future, however pleasant,</l>
+    <l rend="indent3">Let the dead past bury its dead;</l>
+    <l rend="indent3">Act, act in the living present,</l>
+    <l rend="indent3">Heart within, and God overhead."</l></lg><lb/></p>
+
+<p>We have to do with the past only as we can make
+it useful to the present and to the future. To all inspiring motives, to noble deeds which can be gained
+from the past, we are welcome. But now is the time,
+the important time. Your fathers have lived, died,
+and have done their work, and have done much of it
+well. You live and must die, and you must do your
+work. You have no right to enjoy a child's share in
+the labor of your fathers, unless your children are to
+be blest by your labors. You have no right to wear
+out and waste the hard-earned fame of your fathers
+to cover your indolence. Sydney Smith tells us that
+men seldom eulogize the wisdom and virtues of their
+fathers, but to excuse some folly or wickedness of
+their own. This truth is not a doubtful one. There
+are illustrations of it near and remote, ancient and
+modern. It was fashionable, hundreds of years ago,</p>
+        
+        <pb n="14"/>
+        
+<p>for the children of Jacob to boast, we have "Abraham to our father," when they had long lost Abra-
+ham's faith and spirit. That people contented them-
+selves under the shadow of Abraham's great name,
+while they repudiated the deeds which made his
+name great. Need I remind you that a similar thing
+is being done all over this country to-day? Need I
+tell you that the Jews are not the only people who
+built the tombs of the prophets, and garnished the
+sepulchres of the righteous? Washington could not
+die till he had broken the chains of his slaves. Yet
+his monument is built up by the price of human
+blood, and the traders in the bodies and souls of men,
+shout "We have Washington to "our father."-
+Alas! that it should be so; yet so it is.<lb/></p>
+        
+<p><lg><l rend="indent3">"The evil that men do, lives after them,</l>
+    <l rend="indent3">The good is oft' interred with their bones."</l></lg><lb/></p>
+
+<p>Fellow-citizens, pardon me, allow me to ask, why
+am I called upon to speak here to-day? What have
+I, or those I represent, to do with your national independence? Are the great principles of political free-
+dom and of natural justice, embodied in that Declaration of Independence, extended to us?, and am I,
+therefore, called upon to bring our humble offering
+to the national altar, and to confess the benefits and
+express devout gratitude for the blessings resulting
+from your independence to us?</p>
+<p>Would to God, both for your sakes and ours, that
+an affirmative answer could be truthfully returned to
+these questions! Then would my task be light, and
+my burden easy and delightful. For who is there so
+cold, that a nation's sympathy could not warm him?</p>
+        
+        <pb n="15"/>
+        
+<p>Who so obdurate and dead to the claims of gratitude, that would not thankfully acknowledge such
+priceless benefits? Who so stolid and selfish, that
+would not give his voice to swell the hallelujahs of a
+nation's jubilee, when the chains of servitude had
+been torn from his limbs? I am not that man. In a
+case like that, the dumb might eloquently speak,
+and the "lame man leap as an hart."</p>
+
+<p>But, such is not the state of the case. I say it with
+a sad sense of the disparity between us. I am not
+included within the pale of this glorious anniversary!
+Your high independence only reveals the immeasurable distance between us. The blessings in which
+you, this day, rejoice, are not enjoyed in common.
+The rich inheritance of justice, liberty, prosperity
+and independence, bequeathed by your fathers, is
+shared by you, not by me. The sunlight that brought
+life and healing to you, has brought stripes and death
+upon
+This Fourth July is <hi rend="italic">yours</hi>, not <hi rend="italic">mine</hi>. You
+may rejoice, I must mourn. To drag a man in fetters
+into the grand illuminated temple of liberty, and call
+him to join you in joyous anthems, were inhuman mockery and sacrilegious irony. Do you mean
+citizens, to mock me, by asking me to speak to-day?
+If so, there is a parallel to your conduct. And let me
+warn you that it is dangerous to copy the example
+of a nation whose crimes, towering up to hehvéd,
+were thrown down by the breath of the Almighty,
+burying that nation in irrecoverable ruin! I can to
+day take up the plaintivé lament of a peeled and
+woe-smitten people!</p>
+          <p>"By the rivers of Babylon, there we sat down. Yea! we wept when we remembered Zion.
+          We
+
+
+        <pb n="16"/>
+        
+hanged our harps upon the willows in the midst
+thereof. For there, they that carried us away captive,"
+required of us a song; and they who wasted us required of us mirth, saying, Sing us one of the songs
+of Zion, How can we sing the Lord's song in a strange
+land? If I forget thee, O Jerusalem, let my right
+hand forget her cunning. If I do not remember thee,
+let my tongue cleave to the roof of my mouth."</p>
+<p>Fellow citizens; above your national, tumultous
+joy, I hear the mournful wail of millions! whose
+chains, heavy and grievous yesterday, are, to-day,
+rendered more intolerable by the jubilee shouts that
+reach them. If I do forget, if I do not faithfully remember those bleeding children of sorrow this day,
+may my right hand forget her cunning, and may my
+tongue cleave to the roof of my mouth!" To forget.
+them, to pass lightly over their wrongs, and to chime
+in with the popular theme, would be treason most
+scandalous and shocking, and would make me a re-
+proach before God and the world. My subject, then,
+fellow-citizens, is AMERICAN SLAVERY. I shall see, this
+day, and its popular characteristics, from the slave's
+point of view. Standing, there, identified with the
+American bondman, making his wrongs mine, I do
+not hesitate to declare, with all my soul, that the
+character and conduct of this nation never looked
+blacker to me than on this 4th of July! Whether we
+turn to the declarations of the past, or to the professions of the present, the conduct of the nation seems
+equally hideous and revolting. America is false to the
+past, false to the present, and solemnly binds herself
+to be false to the future. Standing with God and the
+crushed and bleeding slave on this occasion, I will, in
+
+    <pb n="17"/>
+    
+the name of humanity which is outraged, in the name
+of liberty which is fettered, in the name of the constitution and the Bible, which are disregarded and
+trampled upon, dare to call in question and to denounce, with all the emphasis I can command, everything that serves to perpetuate slavery--the great sin
+and shame of America! "I will not equivocate; I
+will not excuse;" I will use the severest language I
+can command; and yet not one word shall escape me
+that any man, whose judgment is not blinded by pre-
+judice, or who is not at heart a slaveholder, shall not
+confess to be right and just.</p>
+<p>But I fancy I hear some one of my audience say, it is
+just in this circumstance that you and your brother abolitionists fail to make a favorable impression on the
+public mind. Would you argue more, and denounce
+less, would you persuade more, and rebuke less, your
+cause would be much more likely to succeed. But, I
+submit, where all is plain there is nothing to be argued.
+What point in the anti-slavery creed would you have
+me argue? On what branch of the subject do the
+people of this country need light? Must I under-
+take to prove that the slave is a man?
+That point
+is conceded already. Nobody doubts it. The slaveholders themselves acknowledge it in the enactment
+of laws for their government. They acknowledge it
+when they punish disobedience on the part of the
+slave. There are seventy-two crimes in the State of
+Virginia, which, if committed by a black man, (no
+matter how ignorant he be,) subject him to the pun-
+ishment of death; while only two of the same crimes
+will subject a white man to the like punishment.-
+What is this but the acknowledgement that the slave
+
+    <pb n="18"/>
+    
+is a moral, intellectual and responsible being. The
+manhood of the slave is conceded. It is admitted in
+the fact that Southern statute books are covered with
+enactments forbidding, under severe fines and penalties, the teaching of the slave to read or to write.-
+When you can point to any such laws, in reference
+to the beasts of the field, then I may consent to
+argue the manhood of the slave. When the dogs
+in your streets, when the fowls of the air, when the
+cattle on your hills, when the fish of the sea, and the
+reptiles that crawl, shall be unable to distinguish the
+slave from a brute, then will I argue with you that
+the slave is a man!</p>
+
+
+<p>For the present, it is enough to affirm the equal
+manhood of the negro race.
+Is it not astonishing
+that, while we are ploughing, planting and reaping,
+using all kinds of mechanical tools, erecting houses,
+constructing bridges, building ships, working in metals of brass, iron, copper, silver and gold; that,
+while we are reading, writing and cyphering, acting
+as clerks, merchants and secretaries, having among us
+lawyers, doctors, ministers, poets, authors, editors, orators and teachers; that, while we are engaged in all
+manner of enterprises common to other men, digging
+gold in California, capturing the whale in the Pacific,
+feeding sheep and cattle on the hill-side, living, moving, acting, thinking, planning, living in families as
+husbands, wives and children, and, above all, confessing and worshipping the Christian's God, and look
+ing hopefully for life and immortality beyond the
+grave, we are called upon to prove that we are men!</p>
+<p>Would you have me argue that man is entitled to
+liberty? that he is the rightful owner of his own
+
+    <pb n="19"/>
+    
+
+body? You have already declared it. Must I argue.
+the wrongfulness of slavery? Is that a question for
+Republicans? Is it to be settled by the rules of
+logic and argumentation, as a matter beset with great
+difficulty, involving a doubtful application of the
+principle of justice, hard to be understood? How
+should I look to-day, in the presence of Americans,
+dividing, and subdividing a discourse, to show that
+men have a natural right to freedom? speaking of it
+relatively, and positively, negatively, and affirma-
+tively. To do so, would be to make myself ridicu-
+lous, and to offer an insult to your understanding.--
+There is not a man beneath the canopy of heaven,
+that does not know that slavery is wrong for him.</p>
+<p>What, am I to argue that it is wrong to make men
+brutes, to rob them of their liberty, to work them
+without wages, to keep them ignorant of their relations to their fellow men, to beat them with sticks,
+to flay their flesh with the lash, to load their limbs
+with irons, to hunt them with dogs, to sell them at
+auction, to sunder their families, to knock out their
+teeth, to burn their flesh, to starve them into obedience and submission to their masters? Must I
+argue that a system thus marked with blood, and
+stained with pollution, is wrong? No I will not.
+I have better employment for my time and strength,
+than such arguments would imply.</p>
+<p>What, then, remains to be argued? Is it that
+slavery is not divine;, that God did not establish it;
+that our doctors of divinity are mistaken? There
+is blasphemy in the thought. That which is inhuman, cannot be divine! Who can reason on such a
+proposition? They that can, may; I cannot. The
+time for such argument is past.</p>
+        
+        <pb n="20"/>
+        
+
+<p>At a time like this, scorching irony, not convincing argument, is needed. O! had I the ability, and
+could I reach the nation's ear, I would, to day, pour
+out a fiery stream of biting ridicule, blasting reproach,
+withering sarcasm, and stern rebuke. For it is not
+light that is needed, but fire; it is not the gentle
+shower, but thunder. We need the storm, the whirlwind, and the earthquake. The feeling of the nation
+must be quickened; the conscience of the nation
+must be roused; the propriety of the nation must
+be startled; the hypocrisy of the nation must be
+exposed; and its crimes against God and man must
+be proclaimed and denounced.</p>
+<p>What, to the American slave, is your 4th of July?
+I answer; a day that reveals to him, more than all
+other days in the year, the gross injustice and cruelty
+to which he is the constant victim. To him, your
+celebration is a sham; your boasted liberty, an unholy license; your national greatness, swelling vanity;
+your sounds of rejoicing are empty and heartless;
+your denunciations of tyrants, brass fronted impudence; your shouts of liberty and equality, hollow
+mockery; your prayers and hymns, your sermons
+and thanksgivings, with all your religious parade,
+and solemnity, are, to him, mere bombast, fraud,
+deception, impiety, and hypocrisy—a thin veil to
+cover up crimes which would disgrace a nation of
+savages. There is not a nation on the earth guilty
+of practices, more shocking and bloody, than are the
+people of these United States, at this very hour.</p>
+<p>Go where you may, search where you will, roam
+.through all the monarchies and despotisms of the old
+world, travel through South America, search out ev-
+
+    <pb n="21"/>
+    
+ery abuse, and when you have found the last, lay
+your facts by the side of the every day practices of
+this nation, and you will say with me, that, for revolt
+ing barbarity and shameless hypocrisy, America
+reigns without a rival.<lb/></p>
+          <head>THE INTERNAL SLAVE TRADE.<lb/></head>
+<p>Take the American slave-trade, which we are told
+by the papers, is especially prosperous just now. Ex-
+Senator Benton tells us that the price of men was
+never higher than now. He mentions the fact to show
+that slavery is in no danger. This trade is one of the
+peculiarities of American institutions. It is carried
+on in all the large towns and cities in one half of this
+confederacy; and millions are pocketed every year, by
+dealers in this horrid traffic. In several states, this
+trade is a chief source of wealth. It is called (in contradistinction to the foreign slave-trade) <hi rend="italic">"the internal
+slave-trade."</hi> It is, probably, called so, too, in order
+to divert from it the horror with which the foreign
+slave-trade is contemplated. That trade has long since
+been denounced by this government, as piracy. It
+has been denounced with burning words, from the
+high places of the nation, as an execrable traffic. To
+arrest it, to put an end to it, this nation keeps a squadron, at immense cost, on the coast of Africa. Everywhere, in this country, it is safe to speak of this foreign slave-trade, as a most inhuman traffic, opposed
+alike to the laws of God and of man. The duty to extirpate and destroy it, is admitted even by our DOCTORS OF DIVINITY. In order to put an end to it, some
+of these last have consented that their colored brethren (nominally free) should leave this country, and
+
+    <pb n="22"/>
+    
+establish themselves on the western coast of Africa!
+It is, however, a notable fact, that, while so much ex-
+ecration is poured out by Americans, upon those en-
+gaged in the foreign slave-trade, the men engaged in
+the slave-trade between the states pass without con-
+demnation, and their business is deemed honorable</p>
+<p>Behold the practical operation of this internal
+slave-trade, the American slave-trade, sustained by
+American politics and American religion. Here you
+will see men and women, reared like swine, for the
+market. You know what is a swine-drover? I will
+show you a man-drover. They inhabit all our Southern States. They perambulate the country, and
+crowd the highways of the nation, with droves of
+human stock. You will see one of these human flesh
+jobbers, armed with pistol, whip and bowie-knife, driving a company of a hundred men, women, and children, from the Potomac to the slave market at New
+Orleans. These wretched people are to be sold singly,
+or in lots, to suit purchasers. They are food for the
+​cotton-field, and the deadly sugar-mill. Mark the sad
+procession, as it moves wearily along, and the inhuman wretch who drives them. Hear his savage yells
+and his blood-chilling oaths, as he hurries on his affrighted captives! There, see the old man, withlocks
+thinned and gray. Cast one glance, if you please,
+upon that young mother, whose shoulders are bare to
+the scorching sun, her briny tears falling on the brow of the babe in her arms. See, too, that girl of thirteen, weeping, yes! weeping, as she thinks of the
+mother from whom she has been torn! The drove
+moves tardily. Heat and sorrow have nearly con-
+sumed their strength; suddenly you hear a quick
+
+    <pb n="23"/>
+    
+
+snap, like the discharge of a rifle; the fetters clank,
+and the chain rattles simultaneously; your ears are
+saluted with a scream, that seems to have torn its
+way to the centre of your soul! The crack you
+heard, was the sound of the slave-whip; the scream
+you heard, was from the woman you saw with the
+babe. Her speed had faltered under the weight of
+her child and her chains! that gash on her shoulder
+tells her to move on. Follow this drove to New Orleans. Attend the auction; see men examined like
+horses; see the forms of women rudely and brutally
+exposed to the shocking gaze of American slave-buyers. See this drove sold and separated for ever; and
+never forget the deep, sad sobs that arose from that
+scattered multitude. Tell me citizens, WHERE, under
+the sun, you can witness a spectacle more fiendish and
+shocking. Yet this is but a glance at the American
+slave-trade, as it exists, at this moment, in the ruling
+part of the United States.</p>
+<p>I was born amid such sights and scenes. To me
+the American slave-trade is a terrible reality. When
+a child, my soul was often pierced with a sense of its
+horrors. I lived on Philpot Street, Fell's Point, Baltimore, and have watched from the wharves, the slave
+ships in the Basin, anchored from the shore, with
+their cargoes of human flesh, waiting for favorable
+winds to waft them down the Chesapeake. There
+was, at that time, a grand slave mart kept at the
+head of Pratt Street, by Austin Woldfolk. His agents
+were sent into every town and county in Maryland
+announcing their arrival, through the papers, and on
+flaming <hi rend="italic"> "hand-bills,"</hi> headed CASH FOR NEGROES. These
+men were generally well dressed men, and very cap-
+
+    <pb n="24"/>
+    
+tivating in their manners. Ever ready to drink, to
+treat, and to gamble. The fate of many a slave has
+depended upon the turn of a single card; and manya child has been snatched from the arms of its moth-
+er, by bargains arranged in a state of brutal drunk-
+enness.</p>
+<p>The flesh-mongers gather up their victims by dozens, and drive them, chained, to the general depot at
+Baltimore. When a sufficient number have been collected here, a ship is chartered, for the purpose of
+conveying the forlorn crew to Mobile, or to New Orleans. From the slave prison to the ship, they are
+usually driven in the darkness of night; for since the
+anti-slavery agitation, a certain caution is observed.</p>
+<p>In the deep still darkness of midnight, I have
+been often aroused by the dead heavy footsteps, and
+the pitious cries of the chained gangs that passed our
+door. The anguish of my boyish heart was intense;
+and I was often consoled, when speaking to my mistress in the morning, to hear her say that the custom
+was very wicked; that she hated to hear the rattle
+of the chains, and the heart-rending cries. I was
+glad to find one who sympathised with me in my
+horror.</p>
+<p>Fellow-citizens, this murderous traffic is, to-day, in
+active operation in this boasted republic. In the solitude of my spirit, I see clouds of dust raised on the
+highways of the South; I see the bleeding footsteps;
+I hear the doleful wail of fettered humanity, on the way
+to the slave-markets, where the victims are to be sold ·
+like <hi rend="italic">horses</hi>, <hi rend= "italic">sheep</hi>, and <hi rend= "italic">swine</hi>, knocked off to the highest bidder. There I see the tenderest ties ruthlessly
+broken, to gratify the lust, caprice and rapacity of
+
+    <pb n="25"/>
+    
+the buyers and sellers of men. My soul sickens at
+the sight.<lb/></p>
+<p><lg><l rend="indent3">"Is this the land your Fathers loved,</l>
+    <l rend="indent3">The freedom which they toiled to win?</l>
+    <l rend="indent3">Is this the earth whereon they moved?.</l>
+        <l rend="indent3">Are these the graves they slumber in ?"</l></lg></p>
+
+<p>​But a still more inhuman, disgraceful, and scan-
+dalous state of things remains to be presented.</p>
+<p>By an act of the American Congress, not yet two
+years old, slavery has been nationalized in its most
+horrible and revolting form. By that act, Mason &amp;
+Dixon's line has been obliterated; New York has beome as Virginia; and the power to hold, hunt, and
+sell men, women and children, as slaves, remains no
+longer a mere state institution, but is now an institution of the whole United States. The power is co-ex-
+tensive with the star-spangled banner, and American
+Christianity. Where these go, may also go the merciless slave-hunter. Where these are, man is not sacred.
+He is a bird for the sportsman's gun. By that most
+foul and fiendish of all human decrees, the liberty
+and person of every man are put in peril. Your
+broad republican domain is hunting ground for <hi rend="italic">men</hi>.
+    <hi rend="italic">Not</hi> for thieves and robbers, enemies of society, merely, but for men guilty of no crime. Your law-makers have commanded all good citizens to engage in
+this hellish sport. Your President, your Secretary
+of State, your <hi rend="italic">lords, nobles</hi>, and ecclesiastics, enforce,
+as a duty you owe to your free and glorious country,
+and to your God, that you do this accursed thing.
+Not fewer than forty Americans, have, within the
+past two years, been hunted down, and, without a
+moment's warning, hurried away in chains, and con-
+
+    <pb n="26"/>
+    
+signed to slavery, and excruciating torture. Some
+of these have had wives and children, dependent on
+them for bread; but of this, no account was made.
+prey, stands superior to the right of marriage, 
+and to all rights in this republic, the rights of God included! For black men
+there are neither law, justice, humanity, nor religion.
+The Fugitive Slave Law makes MERCY TO THEM, A
+CRIME and bribes the judge, who tries them. An
+American JUDGE GETS TEN DOLLARS FÖR EVERY VICTIM
+HE CONSIGNS to slavery, and five, when he fails to do
+So. The oath of any two villians is sufficient, under
+this hell-black enactment, to send the most pious and
+exemplary black man into the remorseless jaws of
+slavery! His own testimony is nothing. He can
+bring no witnessess for himself. The minister of
+American justice is bound, by the law to hear but
+one side; and that side, is the side of the oppressor.
+Let this damning fact be perpetually told. Let it be
+thundered around the world, that, in tyrant-killing,
+king-hating, people-loving, democratic, Christian
+America, the seats of justice are filled with judges,
+who hold their offices under an open and palpable
+bribe, and are bound, in deciding in the case of a
+man's liberty, to hear only his accusers!</p>
+<p>In glaring violation of justice, in shameless disregard of the forms of administering law, in cunning.
+arrangement to entrap the defenceless, and in diabol-
+ical intent, this Fugitive Slave Law stands alone in
+the annals of tyrannical legislation. I doubt if there
+be another nation on the globe, having the brass and
+the baseness to put such a law on the statute-book.
+If any man in this assembly thinks differently from
+
+    <pb n="27"/>
+    
+
+me in this matter, and feels able to disprove my
+statements, I will gladly confront him at any suitable
+time and place he may select.<lb/></p>
+          <head>RELIGIOUS LIBERTY.<lb/></head>
+<p>I take this law to be one of the grossest infringe-
+ments of Christian Liberty, and, if the churches and
+ministers of our country were not stupidly blind, or
+most wickedly indifferent, they, too, would so re-
+gard it.</p>
+<p>At the very moment that they are thanking God
+for the enjoyment of civil and religious liberty, and
+for the right to worship God according to the dictates
+of their own consciences, they are utterly silent in
+respect to a law which robs religion of its chief significance, and makes it utterly worthless to a world
+lying in wickedness. Did this law concern the "<hi rend="italic">mint</hi>,
+    <hi rend="italic">anise</hi> and <hi rend="italic">cummin</hi>"-abridge the right to sing psalms,
+to partake of the sacrament, or to engage in any of
+the ceremonies of religion, it would be smitten by the
+thunder of a thousand pulpits. A general shout would
+go up from the church, demanding <hi rend="italic">repeal, repeal,
+instant repeal</hi>!—And it would go hard with that
+politician who presumed to solicit the votes of the
+people without inscribing this motto on his banner.
+Further, if this demand were not complied with,
+another Scotland would be added to the history of
+religious liberty, and the stern old covenanters would
+be thrown into the shade. A John Knox would be
+seen at every church door, and heard from every
+pulpit, and Fillmore would have no more quarter than
+was shown by Knox, to the beautiful, but threacherous
+Queen Mary of Scotland.--The fact that the church
+
+    <pb n="28"/>
+    
+of our country, (with fractional exceptions,) does not
+esteem "the Fugitive Slave Law" as a declaration of
+war against religious liberty, implies that that church
+regards religion simply as a form of worship, an empty
+ceremony, and <hi rend="italic">not</hi> a vital principle, requiring active
+benevolence, justice, love and good will towards man.
+It esteems sacrifice above mercy; psalm-singing above
+right doing; solemn meetings above practical righteousness. A worship that can be conducted by
+persons who refuse to give shelter to the houseless,
+to give bread to the hungry, clothing to the naked,
+and who enjoin obedience to a law forbidding these
+acts of mercy, is a curse, not a blessing to mankind.
+The Bible addresses all such persons as "scribes,
+pharisees, hypocrites, who pay tithe of mint, anise,
+and cummin, and have omitted the weightier matters
+of the law, judgment, mercy and faith."<lb/></p>
+          <head>THE CHURCH RESPONSIBLE.<lb/></head>
+<p>But the church of this country is not only indifferent to the wrongs of the slave, it actually takes sides
+with the oppressors. It has made itself the bulwark
+of American slavery, and the shield of American
+slave-hunters. Many of its most eloquent Divines,
+who stand as the very lights of the church, have
+shamelessly given the sanction of religion, and the
+bible, to the whole slave system. They have
+taught that man may, properly, be a slave; that the
+relation of master and slave is ordained of God; that
+to send back an escaped bondman to his master is
+clearly the duty of all the followers of the Lord Jesus
+Christ; and this horrible blasphemy is palmed off
+upon the world for christianity.</p>
+        
+        <pb n="29"/>
+        
+<p>For my part, I would say, welcome infidelity!
+welcome atheism! welcome anything! in preference
+to the gospel, <hi rend="italic">as preached by those Divines!</hi> They
+convert the very name of religion into an engine of
+tyranny, and barbarous cruelty, and serve to confirm
+more infidels, in this age, than all the infidel writings
+of Thomas Paine, Voltaire, and Bolingbroke, put
+together, have done? These ministers make religion
+a cold and flinty-hearted thing, having neither prin-
+ciples of right action, nor bowels of compassion. They
+strip the love of God of its beauty, and leave the
+throne of religion a huge, horrible, repulsive form.
+It is a religion for oppressors, tyrants, man-stealers,
+and <hi rend="italic">thugs</hi>. It is not that "<hi rend="italic">pure and undefiled religion</hi>" which is from above, and which is "first pure,
+then peaceable, easy to be entreated, full of mercy and
+good fruits, <hi rend="italic">without partiality, and without hypocrisy</hi>."
+But a religion which favors the rich against the poor;
+which exalts the proud above the humble; which
+divides mankind into two classes, tyrants and slaves;
+which says to the man in chains, <hi>stay there</hi>; and to
+    the oppressor, <hi rend="italic">oppress on</hi>; it is a religion which may
+be professed and enjoyed by all the robbers and
+enslavers of mankind; it makes God a respecter of
+persons, denies his fatherhood of the race, and tram-
+ples in the dust the great truth of the brotherhood
+of man.
+All this we affirm to be true of the popular
+church, and the popular worship of our land and
+nation—a religion, a church and a worship which, on
+the authority of inspired wisdom, we pronounce to be
+an abomination in the sight of God. In the language
+of Isaiah, the American church might be well addressed, "Bring no more vain oblations; incense is an
+
+    <pb n="30"/>
+    
+abomination unto me: the new moons and Sabbaths,
+the calling of assemblies, I cannot away with; it is
+iniquity, even the solemn meeting. Your new moons,
+and your appointed feasts soul hateth. They are
+a trouble to me; I am weary to bear them; and when
+ye spread forth your hands I will hide mine eyes
+you. Yea! when ye make many prayers, I will
+not hear.
+YOUR HANDS ARE FULL OF
+BLOOD; cease to do evil, learn to do well; seek
+judgment; relieve the oppressed; judge for the
+fatherless; plead for the widow."</p>
+<p>The American church is guilty, when viewed in
+connection with what it is doing to uphold slavery;
+but it is superlatively guilty when viewed in connection with its ability to abolish slavery.</p>
+<p>The sin of which it is guilty is one of omission as
+'well as of commission. Albert Barnes but uttered
+what the common sense of every man at all observant
+of the actual state of the case will receive as truth,
+when he declared that "There is no power out of the
+church that could sustain slavery an hour, if it were
+not sustained in it."</p>
+<p>Let the religious press, the pulpit, the sunday
+school, the conference meeting, the great ecclesiastical, missionary, bible and tract associations of the
+land array their immense powers against slavery,
+and slave-holding; and the whole system of crime and
+blood would be scattered to the winds, and that they
+do not do this involves them in the most awful: responsibility of which the mind can conceive.</p>
+<p>In prosecuting the anti-slavery enterprise, we have
+been asked to spare the church, to spare the ministry;
+but how, we ask, could such a thing be done? We are
+
+    <pb n="31"/>
+    
+met on the threshold of our efforts for the redemption
+of the slave, by the church and ministry of the country, in battle arrayed against us; and we are compelled
+to fight or flee. From what quarter, I beg to know,
+has proceeded a fire so deadly upon our ranks, during
+the last two years, as from the Northern pulpit? As
+the champions of oppressors, the chosen men of
+American theology have appeared-men, honored
+for their so called piety, and their real learning. The
+LORDS of Buffalo, the SPRINGS of New York, the LATHROPS of Auburn, the CoXES and SPENCERS of Brook-
+lyn, the GANNETS and SHARPS of Boston,the DEWEYS Of
+Washington, and other great religious lights of the
+land, have, in utter denial of the authority of Him,
+by whom they professed to be called to the ministry,
+deliberately taught us, against the example of the
+Hebrews, and against the remonstrance of the Apostles, they teach <hi rend="italic">that we ought to obey man's law before
+the law of God."</hi></p>
+<p>My spirit wearies of such blasphemy; and how
+such men can be supported, as the "standing types and
+representatives of Jesus Christ," is a mystery which I
+leave others to penetrate. In speaking of the Amer-
+ican church, however, let it be distinctly understood
+that I mean the great mass of the religious organiza-
+tions of our land. There are exceptions, and I thank
+God that there are. Noble men may be found, scat-
+tered all over these Northern States, of whom Henry
+Ward Beecher, of Brooklyn, Samuel J. May, of
+Syracuse, and my esteemed friend on the platform,
+are shining examples; and let me say further, that,
+upon these men lies the duty to inspire our ranks
+* Rev. R. R. Raymond.
+·
+
+    <pb n="32"/>
+    
+with high religious faith and zeal, and to cheer us on -
+in the great mission of the slave's redemption from
+his chains.<lb/></p>
+<head>RELIGION IN ENGLAND AND RELIGION IN
+    AMERICA<lb/></head>
+<p>One is struck with the difference between the
+attitude of the American church towards the anti-slavery movement, and that occupied by the churches
+in England towards a similar movement in that
+country. There, the church, true to its mission of
+ameliorating, elevating, and improving the condition
+of mankind, came forward promptly, bound up the
+wounds of the West Indian slave, and restored him
+to his liberty. There, the question of emancipation
+was a high religious question. It was demanded, in
+the name of humanity, and according to the law of
+the living God. The Sharps, the Clarksons, the
+Wilberforces, the Buxtons, the Burchells and the
+Knibbs, were alike famous for their piety, and for
+their philanthropy. The anti-slavery movement <hi rend="italic">there</hi>,
+was not an anti church movement, for the reason that
+the church took its full share in prosecuting that
+movement: and the anti-slavery movement in this
+country will cease to be an anti-church movement,
+when the church of this country shall assume a
+favorable, instead of a hostile position towards that
+movement.</p>
+<p>Americans! your republican politics, not less than
+your republican religion, are flagrantly inconsistent.
+You boast of your love of liberty, your superior
+civilization, and your pure christianity, while the
+whole political power of the nation, (as embodied in
+
+    <pb n="33"/>
+    
+
+the two great political parties, is solemnly pledged to
+support and perpetuate the enslavement of three
+millions of your countrymen. You hurl your anathemas at the crowned headed tyrants of Russia and
+Austria, and pride yourselves on your Democratic
+institutions, while you yourselves consent to be the
+mere <hi rend="italic">tools</hi> and <hi rend="italic">body guards</hi> of the tyrants of Virginia
+and Carolina. You invite to your shores fugitives of
+oppression from abroad, honor them with banquets,
+greet them with ovations, cheer them, toast them,
+salute them, protect them, and pour out your money
+to them like water; but the fugitives from your own
+land, you advertise, hunt, arrest, shoot and kill. You
+glory in your refinement, and your universal educa-
+tion; yet you maintain a system as barbarous and
+dreadful, as ever stained the character of a nation-
+a system begun in avarice, supported in pride, and
+perpetuated in cruelty. You shed tears over fallen
+Hungary, and make the sad story of her wrongs
+the
+theme of your poets, statesmen and orators, till your
+gallant sons are ready to fly to arms to vindicate her
+cause against her oppressors; but, in regard to the
+ten thousand wrongs of the American slave, you
+would enforce the strictest silence, and would hail
+him as an enemy of the nation who dares to make
+those wrongs the subject of public discourse!
+are all on fire at the mention of liberty for France or
+for Ireland; but are as cold as an iceberg at the
+thought of liberty for the enslaved of America.
+You discourse eloquently on the dignity of labor;
+yet, you sustain a system which, in its very essence,
+casts a stigma upon labor. You can bare your bosom
+to the storm of British artillery, to throw off a three-
+
+
+    <pb n="34"/>
+    
+
+penny tax on tea; and yet wring the last hard earned.
+farthing from the grasp of the black laborers of your
+country. You profess to believe "that, of one blood,
+God made all nations of men to dwell on the face of
+all the earth," and hath commanded all men, everywhere to love one another; yet you notoriously hate,
+(and glory in your hatred,) all men whose skins are
+not colored like your own. You declare, before the
+world, and are understood by the world to declare,
+that you "<hi rend="italic">hold these truths to be self evident, that all
+men are created equal; and are endowed by their
+Creator with certain inalienable rights; and that,
+among these are, life, liberty, and the pursuit of happiness</hi>; and yet, you hold securely, in a bondage,
+    which according to your own Thomas Jefferson, “<hi rend="italic">is
+worse than ages of that which your fathers rose in
+rebellion to oppose</hi>," a seventh part of the inhabitants
+of your country.</p>
+
+
+<p>Fellow-citizens! I will not enlarge further on your
+national inconsistencies. The existence of slavery in
+this country brands your republicanism as a sham,
+your humanity as a base pretence, and your christianity as a lie. It destroys your moral power abroad
+it corrupts your politicians at home. It saps the
+foundation of religion; it makes your name a hissing, and a bye-word to a mocking earth. It is the
+antagonistic force in your government, the only thing
+that seriously disturbs and endangers your <hi rend="italic">Union.</hi>
+It fetters your progress; it is the enemy of improve-
+ment, the deadly foe of education; it fosters pride;
+it breeds insolence; it promotes vice; it shelters
+crime; it is a curse to the earth that supports it;
+and yet, you cling to it, as if it were the sheet an-
+
+    <pb n="35"/>
+    
+chor of all your hopes. Oh! be warned! be warned!
+a horrible reptile is coiled up in your nation's bosom;
+the venomous creature is nursing at the tender breast
+of your youthful republic; <hi rend="italic">for the love of God, tear
+    away</hi>, and fling from you the hidious monster, and
+    <hi rend="italic">let the weight of twenty millions, crush and destroy it
+forever!</hi> <lb/></p>
+          <head>THE CONSTITUTION.<lb/></head>
+<p>But it is answered in reply to all this, that pre-
+cisely what I have now denounced is, in fact, guaran-
+teed and sanctioned by the Constitution of the Uni-
+ted States; that, the right to hold, and to hunt slaves
+is a part of that Constitution framed by the illus-
+trious Fathers of this Republic.</p>
+<p><hi rend="italic">Then</hi>, I dare to affirm, notwithstanding all I have
+said before, your fathers stooped, basely stooped.<lb/></p>
+<p><lg><l rend="indent3">"To palter with us in a double sense:</l>
+    <l rend="indent3">And keep the word of promise to the ear,</l>
+    <l rend="indent3">But break it to the heart."</l></lg><lb/></p>
+<p>And instead of being the honest men I have be-
+fore declared them to be, they were the veriest imposters that ever practised on mankind. <hi rend="italic">This</hi> is the
+inevitable conclusion, and from it there is no escape;
+but I differ from those who charge this baseness on
+the framers of the Constitution of the United States.
+<hi rend="italic">It is a slander upon their memory</hi>, at least, so I be
+lieve. There is not time now to argue the constitu-
+tional question at length; nor have I the ability to
+discuss it as it ought to be discussed. The subject
+has been handled with masterly power by Lysander
+Spooner, Esq., by William Goodell, by Samuel E
+Sewall, Esq., and last, though not least, by Gerritt
+Smith, Esq. These gentlemen have, as I think, fully
+
+
+    <pb n="36"/>
+    
+and clearly vindicated the Constitution from any design to support slavery for an hour.</p>
+<p>Fellow-citizens! there is no matter in respect to
+which, the people of the North have allowed them-
+selves to be so ruinously imposed upon, as that of
+the pro-slavery character of the Constitution. In
+<hi rend="italic">that</hi> instrument I hold there is neither warrant, license, nor sanction of the hateful thing; but inter-
+    preted, as it <hi rend="italic">ought</hi> to be interpreted, the Constitution is a GLORIOUS LIBERTY DOCUMENT. Read its
+preamble, consider its purposes. Is slavery among
+them? Is it at the gateway? or is it in the temple?
+it is neither. While I do not intend to argue this
+question on the present occasion, let me ask, if it be
+not somewhat, singular that, if the Constitution were
+intended to be, by its framers and adopters, a slave-holding instrument, why neither <hi rend="italic">slavery, slaveholding</hi>,
+nor <hi>slave</hi> can anywhere be found in it. What would
+    be thought of an instrument, drawn up, <hi rend="italic">legally</hi> drawn
+up,
+for the purpose of entitling the city of Rochester to a track of land, in which no mention of land
+was made? Now, there are certain rules of interpretation, for the proper understanding of all legal
+instruments. These rules are well established. They
+are plain, common-sense rules, such as you and I,
+and all of us, can understand and apply, without.
+having passed years in the study of law. I scout the
+idea that the question of the constitutionality, or unconstitutionality of slavery, is not a question for the
+people. I hold that every American citizen has a
+right to form an opinion of the constitution, and to
+propagate that opinion, and to use all honorable
+means to make his opinion the prevailing one. With-
+
+
+    <pb n="37"/>
+    
+out this right, the liberty of an American citizen
+would be as insecure as that of a Frenchman. Ex-Vice-President Dallas tells us that the constitution
+is an object to which no American mind can be too
+attentive, and no American heart too devoted. He
+further says, the constitution, in its words, is plain
+and intelligible, and is meant for the home-bred, unsophisticated understandings of our fellow-citizens.
+Senator Berrien tells us that the Constitution is the
+fundamental law, that which controls all others.
+The charter of our liberties, which every citizen has
+a person al interest in understanding thoroughly.
+The testimony of Senator Breese, Lewis Cass, and
+many others that might be named, who are every-
+where esteemed as sound lawyers, so regard the
+constitution. I take it, therefore, that it is not presumption in a private citizen to form an opinion of
+that instrument.</p>
+<p>Now, take the constitution according to its plain
+reading, and I defy the presentation of a single pro-slavery clause in it. On the other hand it will be
+found to contain principles and purposes, entirely
+hostile to the existence of slavery.</p>
+<p>I have detained my audience entirely too long al-
+ready. At some future period I will gladly avail.myself of an opportunity to give this subject a full and
+fair discussion.</p>
+<p>Allow me to say, in conclusion, notwithstanding-
+the dark picture I have this day presented, of the
+state of the nation, I do not despair of this country.
+There are forces in operation, which must inevitably,
+work the downfall of slavery. "<hi rend="italic">The arm of the Lord
+is not shortened</hi>," and the doom of slavery is certain.
+
+
+    <pb n="38"/>
+    
+    I, therefore, leave off where I began, with <hi rend="italic">hope</hi>."
+While drawing encouragement from "the Declaration of Independence," the great principles it contains, and the genius of American Institutions, my
+spirit is also cheered by the obvious tendencies of
+the age. Nations do not now stand in the same
+relation to each other that they did ages ago. No
+nation can now shut itself up, from the surrounding
+world, and trot round in the same old path of its fathers without interference. The time <hi rend="italic">was</hi> when such
+could be done. Long established customs of hurtful
+character could formerly fence themselves in, and do
+their evil work with social impunity. Knowledge
+was then confined and enjoyed by the privileged
+few, and the multitude walked on in mental darkness.
+But a change has now come over the affairs of mankind. Walled cities and empires have become unfashionable. The arm of commerce has borne away
+the gates of the strong city. Intelligence is penetrating the darkest corners of the globe. It makes its
+pathway over and under the sea, as well as on the
+earth. Wind, steam, and lightning are its chartered
+agents. Oceans no longer divide, but link nations
+together. From Boston to London is now a holiday
+excursion. Space is comparatively annihilated.—
+Thoughts expressed on one side of the Atlantic, are
+distinctly heard on the other.</p>
+<p>The far off and almost fabulous Pacific rolls in
+    grandeur at our feet. The Celestial Empire, the mystery of ages, is being solved. The fiat of the Almighty, "<hi rend="italic">Let there be Light</hi>," has not yet spent its
+force. No abuse, no outrage whether in taste, sport
+or avarice, can now hide itself from the all-pervading
+
+
+
+    <pb n="39"/>
+    
+light. The iron shoe, and crippled foot of China must
+be seen, in contrast with nature. <hi rend="italic">Afric must rise
+and put on her yet unwoven garment.
+"Ethiopia
+shall stretch out her hand unto God.</hi>" In the fervent
+aspirations of William Lloyd Garrison, I say, and let
+every heart join in saying it:<lb/></p>
+<p><lg><l rend="indent3">God speed the year of jubilee</l>
+    <l rend="indent4">The wide world o'er!</l>
+    <l rend="indent3">When from their galling chains set free,</l>
+    <l rend="indent3">Th' oppress'd shall vilely bend the knee,</l>
+    <l rend="indent3">And wear the yoke of tyranny</l>
+    <l rend="indent4">Like brutes no more.</l>
+    <l rend="indent3">That year will come, and freedom's reign,</l>
+    <l rend="indent3">To man his plundered rights again</l>
+    <l rend="indent4">Restore.</l></lg></p>
+          <p><lg><l rend="indent3">God speed the day when human blood</l>
+              <l rend="indent4">Shall cease to flow!</l>
+              <l rend="indent3">In every clime be understood,</l>
+              <l rend="indent3">The claims of human brotherhood,</l>
+              <l rend="indent3">And each return for evil, good,</l>
+              <l rend="indent4">Not blow for blow;</l>
+              <l rend="indent3">That day will come all feuds to end,</l>
+              <l rend="indent3">And change into a faithful friend</l>
+              <l rend="indent4">Each foe.</l></lg></p>
+          <p><lg><l rend="indent3">God speed the hour, the glorious hour,</l>
+              <l rend="indent4">When none on earth</l>
+              <l rend="indent3">Shall exercise a lordly power,</l>
+              <l rend="indent3">Nor in a tyrant's presence cower;</l>
+              <l rend="indent3">But all to manhood's stature tower,</l>
+              <l rend="indent4">By equal birth!</l>
+              <l rend="indent3">THAT HOUR WILL COME, to each, to all,</l>
+              <l rend="indent3">And from his prison-house, the thrall</l>
+              <l rend="indent4">Go forth.</l></lg></p>
+          <p><lg><l rend="indent3">Until that year, day, hour, arrive,</l>
+              <l rend="indent3">With head, and heart, and hand I'll strive,</l>
+              <l rend="indent3">To break the rod, and rend the gyve,</l>
+              <l rend="indent3">The spoiler of his prey deprive--</l>
+              <l rend="indent4">So witness Heaven!</l>
+              <l rend="indent3">And never from my chosen post,</l>
+              <l rend="indent3">Whate'er the peril or the cost,</l>
+              <l rend="indent4">Be driven.</l></lg></p>
+
+    </body>
+    
+    
+</text>
+</TEI>
