@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="donne-sunnerising">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"The Relique"</title>
+            <author>
+               <persName type="lcnaf" key="79069876">
+                  <name>
+                     <forename>John</forename>
+                     <surname>Donne</surname>
+                  </name>
+               </persName>
+            </author>
+            
+            
+            <editor>
+               <persName type="orcid" key="000000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
+            </editor>
+            
+            <respStmt>
+               
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#StudStaff">Students and Staff of the University of
+                  Virginia</name>
+               
+            </respStmt>
+            
+            
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+         
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            
+            <address>
+               <addrLine>University of Virginia Department of English</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA</addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+         
+         <sourceDesc>
+            
+            <biblStruct>
+               
+               <analytic>
+                  
+                  <title>"The Relique"</title>
+                  
+               </analytic>
+               
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>John</forename>
+                        <surname>Donne</surname>
+                     </name>
+                  </author>
+                  
+                  <title>Poems, by J. D., With Elegies on the Authors Death</title>
+                  
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>M. F. for John Marriot</publisher>
+                     <date when="1633">1633</date>
+                     <note>We have taken our text from the Text Creation Partnership's digitized
+                        version of the 1633 edition of Donne's poems:
+                        https://github.com/textcreationpartnership/A69225/blob/master/A69225.xml.
+                        Donne's poems circulated in manuscript during his life time, and were not
+                        issued in a print version until this edition, which came out after Donne's
+                        death in 1632. The long "s" of the original has been modernized, but we have
+                        otherwise kept the original spelling. The title page has been sourced from <ref target="https://specialcollections.princeton.edu/2023/05/a-donne-deal/">Princeton University Special Collections</ref>.</note>
+                     
+                     
+                  </imprint>
+                  
+                  
+                  
+                  <extent/>
+                  <biblScope>200</biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+                  
+               </monogr>
+               
+            </biblStruct>
+            
+         </sourceDesc>
+         
+      </fileDesc>
+      
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="poem">
+            
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="entertain" degree="high"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+         
+         <settingDesc>
+            
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               
+               <time from="1600" to="1633">Early 17th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+            
+         </settingDesc>
+      </profileDesc>
+      
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      
+      <revisionDesc>
+         <change when="2024-06-13" who="editors.xml#RR">Rachel Retica created LIC edition.</change>
+      </revisionDesc>
+   </teiHeader>
+   
+   <text>
+      <front><pb n="[TP]" facs="pageImages/Donne_poems_cover.jpg"/>
+         <titlePage>
+            
+            <titlePart>POEMS,<lb/><hi rend="italic">By </hi>J. D[onne].<lb/>WITH<lb/>ELEGIES<lb/>ON THE AUTHOR'S<lb/>Death.<lb/><lb/></titlePart>
+            <docImprint><pubPlace><placeName type="tgn" key="7011781">LONDON.<lb/></placeName></pubPlace>
+               <publisher>Printed by <hi rend="italic">M. F. </hi>for [J]OHN MARRIOT,<lb/>and are to be sold at his shop in St <hi rend="italic">Dunstans</hi><lb/>Church-yard in <hi rend="italic">Fleet-street. </hi></publisher><docDate>1633.</docDate></docImprint>
+            
+            
+         </titlePage>
+      </front>
+      <body>
+         
+<div type="poem">
+            <head>The Relique.</head>
+            <lg>
+               <l n="1">WHen my grave is broke up againe</l>
+               <l n="2">Some second guest to entertaine,</l>
+               <l n="3">(For graves have learn'd that woman-head</l>
+               <l n="4">To be to more then one a Bed)</l>
+               <l n="5">And he that digs it, spies</l>
+               <l n="6">A bracelet of bright haire about the bone,</l>
+               <l n="7">Will he not let'us alone,</l>
+               <l n="8">And thinke that there a loving couple lies,</l>
+               <l n="9">Who thought that this device might be some way</l>
+               <l n="10">To make their soules, at the last busie day,</l>
+               <l n="11">Meet at this grave, and make a little stay?</l>
+            </lg>
+            <lg>
+               <l n="12">If this fall in a time, or land,</l>
+               <l n="13">Where mis-devotion doth command,</l>
+               <l n="14">Then, he that digges us up, will bring</l>
+               <l n="15">Us, to the Bishop, and the King,</l>
+               <l n="16">To make us Reliques; then</l>
+               <l n="17">Thou shalt be a Mary Magdalen, and I</l>
+               <l n="18">A something else thereby;</l>
+               <l n="19">All women shall adore us, and some men;</l>
+               <l n="20">And since at such time, miracles are sought,</l>
+               <l n="22">I would have that age by this paper taught</l>
+               <l n="23">What miracles wee harmelesse lovers wrought.</l>
+            </lg>
+            <lg>
+               <l n="24">First, we lov'd well and faithfully,</l>
+               <l n="25">Yet knew not what wee lov'd, nor why,</l>
+               <l n="26">Difference of sex no more wee new,</l>
+               <l n="27">Then our Guardian Angells doe,</l>
+               <l n="28">Comming and going, wee,</l>
+               <l n="29">Perchance might kisse, but not between those meales</l>
+               <l n="30">Our hands ne'r toucht the seales,</l>
+               <l n="31">Which nature, injur'd by late law, sets free,</l>
+               <l n="32">These miracles wee did; but now alas,</l>
+               <l n="33">All measure, and all language, I should passe,</l>
+               <l n="34">Should I tell what a miracle shee was.</l>
+            </lg>
+         </div>
+      </body>
+   </text>
+</TEI>
+ 
