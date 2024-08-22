@@ -31,13 +31,13 @@
              </editor>
 
             <respStmt>
-               <!-- edit this content to reflect this digital edition -->
+             
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#StudStaffUVa"
                   >University of Virginia</name>
                <name ref="editors.xml#HS">Humzah Syed</name>
                 <name ref="editors.xml#LR">Lizzie Rusnak</name>
-               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+              
             </respStmt>
 
             <sponsor/>
@@ -82,18 +82,17 @@
                      </name>
                   </author>
 
-                  <title><?oxy-placeholder content="Title of the Monograph/Container"?></title>
+                  <title>Incidents in the Life of a Slave Girl</title>
 
                   <imprint>
                      <pubPlace>
                          <placeName type="tgn" key="7013445"
-                           >Bostom</placeName>
+                           >Boston</placeName>
                      </pubPlace>
                      <publisher>Published by the Author</publisher>
                      <date when="1861">1861</date>
-                     <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
-                     <!-- Add additional NOTE elements as needed  -->
-                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                     <note><hi rend="italic">Incidents in the Life of a Slave Girl</hi> was first published in Boston in 1861. Our edition is based on the version encoded in TEI in 2003 as part of the Documenting the American South Project, supported by the Library of Congress's Ameritech Digital Library Competition. Their edition was scanned from a copy of the first edition in the University of North Carolina Library. </note>
+                     
                   </imprint>
 
                   <imprint>
@@ -207,9 +206,14 @@
       </encodingDesc>
 
       <revisionDesc>
-         <change when="0000-00-00" who="editors.xml#XX"
-            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
-         <change when="0000-00-00" who="xxxx"/>
+          <change when="2003-01" who="Natalia Smith"
+          >created TEI conformant encoding and performed final proofing</change>
+          <change when="1998-01" who="Ji-Hae Yoon"
+              >coded the text from an OCR prepared by Charleen Hempel</change>
+         <change when="2024-07" who="editors.xml#HS"
+            >corrected pagination for half of text</change>
+          <change when="2024-08" who="editors.xml#LR">corrected pagination for other half of text</change>
+          <change when="2024-08" who="editors.xml#JOB">added header</change>
       </revisionDesc>
 
    </teiHeader>
@@ -228,7 +232,7 @@ IN THE
 LIFE OF A SLAVE GIRL.<lb/>
 </titlePart>
 </docTitle>
-<docAuthor>WRITTEN BY HERSELF.</docAuthor><lb/>
+           <docAuthor><ref target="Jacobs_" corresp="Jacobs">WRITTEN BY HERSELF.</ref><note xml:id="Jacobs" target="Jacobs_">Because in most places in the US in this period, enslaved people were not allowed by law to learn to read, texts that were written by formerly enslaved people like Jacobs made a point of stressing that the author had overcome this prohibition in written the work in their own words.</note></docAuthor><lb/>
 <epigraph>
     <lb/>
 <bibl>“Northerners know nothing at all about Slavery. They think it is perpetual bondage only. They have no conception of the depth of
@@ -243,7 +247,7 @@ LIFE OF A SLAVE GIRL.<lb/>
 <bibl>ISAIAH xxxii. 9.</bibl>
 </epigraph>
            <lb/><lb/>
-           <docAuthor>EDITED BY L. MARIA CHILD.</docAuthor><lb/>
+           <docAuthor><ref target="Child_" corresp="Child">EDITED BY L. MARIA CHILD.</ref><note xml:id="Child" target="Child">Lydia Maria Child (1802-1880) was one of the most famous writers of this period, author of many novels and of a best-selling domestic manual, <hi rend="italic">The American Frugal Housewife.</hi>. She became a leading writer for the abolitionist movement. She helped Jacobs prepare the manuscript for publication and arranged to have it printed and sold after the first publisher got cold feet.  </note></docAuthor><lb/>
 <docImprint>
     <pubPlace>BOSTON:</pubPlace><lb/>
     <publisher>PUBLISHED FOR THE AUTHOR.</publisher><lb/>
@@ -266,7 +270,7 @@ LIFE OF A SLAVE GIRL.<lb/>
 <p>I wish I were more competent to the task I have undertaken. But I trust my readers will excuse deficiencies in consideration of circumstances. I was born and reared in Slavery; and I remained in a Slave State twenty-seven years. Since I have been at the North, it has been necessary for me to work diligently for my own support, and the education of my children. This has not left me much leisure to make up for the loss of early opportunities to improve myself; and it has compelled me to write these pages at irregular intervals, whenever I could snatch an hour from household duties.</p>
     <pb n="6" facs="12.jpg"/>
 <p>When I first arrived in Philadelphia, Bishop Paine advised me to publish a sketch of my life, but I told him I was altogether incompetent to such an undertaking. Though I have improved my mind somewhat since that time, I still remain of the same opinion; but I trust my motives will excuse what might otherwise seem presumptuous. I have not written my experiences in order to attract attention to myself; on the contrary, it would have been more pleasant to me to have been silent about my own history. Neither do I care to excite sympathy for my own sufferings. But I do earnestly desire to arouse the women of the North to a realizing sense of the condition of two millions of women at the South, still in bondage, suffering what I suffered, and most of them far worse. I want to add my testimony to that of abler pens to convince the people of the Free States what Slavery really is. Only by experience can any one realize how deep, and dark, and foul is that pit of abominations. May the blessing of God rest on this imperfect effort in behalf of my persecuted people!</p>
-<signed>LINDA BRENT.</signed>
+    <signed><ref target="Brent_" corresp="Brent">LINDA BRENT.</ref><note xml:id="Brent" target="Brent_">Jacobs's pseudonym. Her name and the name of the other real people in the book were disguised, since they were still alive, and at this moment at the start of the American Civil War, there was no way of knowing whether they would be in a position at some point to exact retribution for exposing their brutality.</note></signed>
 </div>
     <pb n="7" facs="13.jpg"/>
 <div type="introduction">
