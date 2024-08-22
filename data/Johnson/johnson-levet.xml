@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="johnson-levet">
+   
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"On the Death of Dr. Robert Levet"</title>
+            <author>
+               <persName type="lcnaf" key="FILL-IN">
+                 
+                  <name>
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                     <forename>Samuel</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
+                     <surname>Johnson</surname>
+                    
+                  </name>
+              
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename>Tonya</forename>
+                     <surname>Howe</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <!-- edit this content to reflect this digital edition -->
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#XXX"
+                  ><?oxy-placeholder content="Students and Staff of UNIVERSITY NAME"?></name>
+               <name ref="editors.xml#XX"><?oxy-placeholder content="Firstname Lastname"?></name>
+               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+            </respStmt>
+
+            <sponsor/>
+            <funder><?oxy-placeholder content="Who is funding this work?"?></funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
+               <addrLine>Address line 2</addrLine>
+               <addrLine>Address line 3</addrLine>
+               <addrLine>Address line 4</addrLine>
+               <addrLine>Email</addrLine>
+               <!-- cut unused or add additional addrLines -->
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title>"On the Death of Dr. Robert Levet"</title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Samuel</forename>
+                        <surname>Johnson</surname>
+                       
+                     </name>
+                  </author>
+
+                  <title>"On the Death of Dr. Robert Levet"</title>
+
+                  <imprint>
+                     <pubPlace>
+                         <placeName type="tgn" key="7011781"
+                           >London</placeName>
+                     </pubPlace>
+                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
+                     <date when="1783">1783</date>
+                     <note>This poem was first published in the <hi rend="italic">Gentleman's Magazine</hi> for August 1783. Our version is transcribed from that edition</note>
+                    
+                  </imprint>
+
+                  
+
+                  <extent/>
+                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="0000-00-00" who="editors.xml#XX"
+            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
+         <change when="0000-00-00" who="xxxx"/>
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+       <body>
+
+      <front>
+      
+         <titlePage/>
+          <pb/>
+          <docAuthor/>
+          <docImprint/>
+   
+      </front>
+         <div type="poem">
+        
+            <pb/> 
+             <head><ref target="Levet_" corresp="Levet">On the Death of Dr. Robert Levet</ref><note xml:id="Levet" corresp="Levet_"><p>Samuel Johnson hated being alone. So from middle age onward, and particularly after the death of his wife Elizabeth in 1752, Johnson shared his house with a number of people, a group that included (at various times): Francis Barber, his Jamaica-born servant; Anna Williams, a blind poet who served as housekeeper and habitually stayed up to drink tea with Johnson before he went to bed; Elisabeth Desmoulins, the daughter of Johnson’s godfather who had been a companion to his late wife; and Poll Carmichael, a Scottish-born woman who may have been a prostitute. It was an odd group, united largely in their dependence on Johnson and their mutual dislike of each other, but collectively they maintained Johnson’s household and kept him company.</p>
+                 
+                 <p>The longest-standing member of Johnson’s household was Robert Levet (1705-1782), who had a room in Johnson’s house for decades, perhaps starting as early as the late 1740s. What we know of Levet comes primarily from Johnson’s literary friends, who generally found their friendship to be an odd one. Levet was not formally educated, and was by all accounts fairly uncouth; scarred by smallpox, he was physically unattractive as well. James Boswell quoted Johnson as saying that “Levet is a brutal fellow; but I have a good regard for him, for his brutality is in his manners and not in his mind.” Johnson admired Levet’s piety and generosity. Levet had spent some time in Paris, where he waited tables at coffeehouses frequented by physicians. He got interested in medicine; he listened in on conversations and attended some lectures. Upon his return to London in the 1740s, he set up a medical practice among the poor, which he continued to his death. Johnson remarked that Levet’s patients often had nothing to pay him with but some gin, so he sometimes came home quite drunk after making his rounds; “perhaps the only man,” Johnson said, “who ever became intoxicated through motives of prudence.”</p> 
+                 
+                 <p>After Levet died of an apparent and unexpected heart attack in January 1782, Johnson wrote this moving elegy for his friend. Johnson never intended this poem for the press, but the manuscript made its way to the <hi rend="italic">Gentleman’s Magazine</hi>, which published it in August 1783. Our text is taken from that printing.</p>
+             </note></head>
+            
+<lg><l>Condemn’d to hope’s delusive mine,</l>
+<l>As we toil from day to day,</l>
+<l>By sudden blasts, or slow decline,</l>
+<l>Our social comforts drop away.</l></lg>
+
+<lg><l>Well tried through many a varying year,</l>
+<l>See Levet to the grave descend;</l>
+<l>Officious, innocent, sincere,</l>
+<l>Of ev’ry friendless name the friend.</l></lg>
+
+<lg><l>Yet still he fills affection’s eye,</l>
+<l>Obscurely wise, and coarsely kind;</l>
+<l>Nor, lettered arrogance, deny</l>
+<l>Thy praise to merit unrefined.</l></lg>
+
+<lg><l>When fainting nature call’d for aid,</l>
+<l>And hov’ring death prepar’d the blow,</l>
+<l>His vig’rous remedy display’d</l>
+<l>The power of art without the show.</l></lg>
+
+<lg><l>In misery’s darkest caverns known,</l>
+<l>His useful care was ever nigh,</l>
+<l>Where hopeless anguish pour’d his groan,</l>
+<l>And lonely want retir’d to die.</l></lg>
+
+<lg><l>No summons mock’d by chill delay,</l>
+<l>No petty gain disdain’d by pride;</l>
+<l>The modest wants of every day</l>
+<l>The toil of ev’ry day supplied.</l></lg>
+
+<lg><l>His virtues walk’d their narrow round,</l>
+<l>Nor made a pause, nor left a void;</l>
+<l>And sure th’ Eternal Maker found</l>
+<l>The single talent well employ’d.</l></lg>
+
+<lg><l>The busy day, the peaceful night,</l>
+<l>Unfelt, uncounted, glided by;</l>
+<l>His frame was firm, his powers were bright,</l>
+<l>Tho’ now his eightieth year was nigh.</l></lg>
+
+<lg><l>Then with no throbbing fiery pain,</l>
+<l>No cold gradations of decay,</l>
+<l>Death broke at once the vital chain,</l>
+<l>And freed his soul the nearest way.</l></lg>
+             
+         </div>
+       </body>
+   </text>
+</TEI>
+
