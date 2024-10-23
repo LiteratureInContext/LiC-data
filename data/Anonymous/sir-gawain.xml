@@ -1,0 +1,3102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sir-gawain">
+   
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Sir Gawain and the Green Knight</title>
+            <author>
+                <persName type="lcnaf" key="n87930409">
+                 
+                  <name>Anonymous   
+                  </name>
+              
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename>Tonya</forename>
+                     <surname>Howe</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <!-- edit this content to reflect this digital edition -->
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#UVAStudStaff"
+                  >Students and Staff at the University of Virginia</name>
+               <name ref="editors.xml#GM">Gretchen Maune</name>
+               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
+               <addrLine>Address line 2</addrLine>
+               <addrLine>Address line 3</addrLine>
+               <addrLine>Address line 4</addrLine>
+               <addrLine>Email</addrLine>
+               <!-- cut unused or add additional addrLines -->
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        Anonymous
+                     </name>
+                  </author>
+
+                  <title>Sir Gawain and the Green Knight</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="000"
+                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                     </pubPlace>
+                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
+                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
+                  	<note>Translated by A. S. Kline © 2007 All Rights Reserved
+                  		This work may be freely reproduced, stored, and transmitted, electronically or otherwise, for any non-commercial purpose.</note>
+                     <!-- Add additional NOTE elements as needed  -->
+                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                  </imprint>
+
+                  <imprint>
+                     <pubPlace/>
+                     <publisher/>
+                     <date/>
+                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
+                  </imprint>
+
+                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               <name type="tgn" key="7011197">Bath, England</name>
+               <time from="1690" to="1724">Early 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="0000-00-00" who="editors.xml#XX"
+            ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
+         <change when="0000-00-00" who="xxxx"/>
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+       <front><div></div></front>
+      <body>
+        
+     
+
+<head type="title">Sir Gawain and the Green Knight</head>
+
+
+         <div type="part"><head>Part I</head>
+
+     			<head>1</head>
+     
+      	<lg><l>Soon as the siege and assault had ceased at Troy, </l>
+      		<l>the burg broken and burnt to brands and ashes, </l>
+      		<l>the traitor who trammels of treason there wrought </l>
+      		<l>was tried for his treachery, the foulest on earth.</l>
+      		<l>It was Aeneas the noble and his high kin</l>
+      		<l>who then subdued provinces, lords they became,</l>
+      		<l>well-nigh of all the wealth in the Western Isles:</l>
+      		<l>forth rich Romulus to Rome rapidly came,</l>
+      		<l>with great business that burg he builds up first,</l>
+      		<l>and names it with his name, as now it has;</l>
+      		<l>Ticius to Tuscany, and townships begins;</l>
+      		<l>Langobard in Lombardy lifts up homes;</l>
+      		<l>and fared over the French flood Felix Brutus</l>
+      		<l>on many banks all broad Britain he settles </l>
+      		<l rend="indent">then, </l>
+      		<l rend="indent">where war and wreck and wonder </l>
+      		<l rend="indent">betimes have worked within, </l>
+      		<l rend="indent">and oft both bliss and blunder </l>
+      		<l rend="indent">have held sway swiftly since. </l></lg>
+
+			      <head>2</head>
+
+         <lg><l>And when this Britain was built by this baron rich,</l>
+            <l>bold men were bred therein, of battle beloved,</l>
+            <l>in many a troubled time turmoil that wrought.</l>
+            <l>More flames on this fold have fallen here oft</l>
+            <l>than any other I know of, since that same time.</l>
+            <l>But of all that here built, of Britain the kings,</l>
+            <l>ever was Arthur highest, as I have heard tell.</l>
+            <l>And so of earnest adventure I aim to show,</l>
+            <l>that astonishes sight as some men do hold it,</l>
+            <l>an outstanding action of Arthur’s wonders.</l>
+            <l>If you will list to this lay but a little while,</l>
+            <l>I’ll tell it straight, as I in town heard it,</l> 
+            <l rend="indent">with tongue;</l>
+            <l rend="indent">as it was said and spoken</l>
+            <l rend="indent">in story staunch and strong,</l>
+            <l rend="indent">with linked letters loaded,</l>
+            <l rend="indent">as in this land so long.</l></lg>
+
+			      <head>3</head>
+
+         <lg><l>This king lay at Camelot nigh on Christmas</l>
+            <l> with many lovely lords, of leaders the best,</l>
+            <l>reckoning of the Round Table all the rich brethren,</l>
+            <l>with right ripe revel and reckless mirth.</l>
+            <l>There tourneyed tykes by times full many,</l>
+            <l>jousted full jollily these gentle knights, </l>
+            <l>then carried to court, their carols to make. </l>
+            <l>For there the feast was alike full fifteen days,</l>
+            <l>with all the meat and mirth men could devise:</l>
+            <l>such clamour and glee glorious to hear,</l>
+            <l>dear din in the daylight, dancing of nights;</l>
+            <l>all was happiness high in halls and chambers</l>
+            <l>with lords and ladies, as liked them all best.</l>
+            <l>With all that’s well in the world were they together,</l>
+            <l>the knights best known under the Christ Himself,</l>
+            <l>and the loveliest ladies that ever life honoured,</l>
+            <l>and he the comeliest king that the court rules.</l>
+            <l>For all were fair folk and in their first age </l>
+            <l rend="indent">still,</l>
+            <l rend="indent">the happiest under heaven,</l>
+            <l rend="indent">king noblest in his will;</l>
+            <l rend="indent">that it were hard to reckon</l>
+            <l rend="indent">so hardy a host on hill.</l></lg>
+
+			      <head>4</head>
+
+         <lg><l>While New Year was so young it was new come in,</l>
+            <l>that day double on the dais was the dole served,</l>
+            <l>for the king was come with knights into the hall,</l>
+            <l>and chanting in the chapel had chimed to an end.</l> 
+            <l>Loud cry was there cast of clerics and others,</l>
+            <l>Noel nurtured anew, and named full oft;</l>
+            <l>and see the rich run forth to render presents,</l>
+            <l>yelled their gifts on high, yield them to hand,</l>
+            <l>argued busily about those same gifts.</l>
+            <l>Ladies laughed out loud, though they had lost,</l>
+            <l>while he that won was not wrath, that you’ll know.</l>
+            <l>All this mirth they made at the meal time.</l>
+            <l>When they had washed well they went to be seated,</l>
+            <l>the best of the barons above, as it seemed best;</l>
+            <l>with Guinevere, full gaily, gracing their midst,</l>
+            <l>dressed on the dais there, adorned all about –</l>
+            <l>splendid silk by her sides, and sheer above</l>
+            <l>of true Toulouse, of Tartar tapestries plenty,</l>
+            <l>that were embroidered, bright with the best gems</l>
+            <l>that might be price-proved with pennies</l> 
+            <l rend="indent">any a day.</l>
+            <l rend="indent">the comeliest to descry</l>
+            <l rend="indent">glanced there with eyen grey;</l>
+            <l rend="indent">a seemlier ever to the sight,</l>
+            <l rend="indent">sooth might no man say. </l></lg> 
+
+			      <head>5</head>
+
+         <lg><l>But Arthur would not eat till all were served,</l>
+            <l>he was so joyous a youth, and somewhat boyish:</l>
+            <l>he liked his life lively, he loved the less</l>
+            <l>either to long lie idle or to long sit,</l>
+            <l>so busied him his young blood and his brain wild.</l>
+            <l>And also another matter moved him so,</l>
+            <l>that he had nobly named he would never eat</l>
+            <l>on such dear days, before he had been advised,</l>
+            <l>of some adventurous thing, an unknown tale,</l>
+            <l>of some mighty marvel, that he might believe,</l>
+            <l>of ancestors, arms, or other adventures;</l>
+            <l>or else till someone beseeched for some sure knight</l>
+            <l>to join with him in jousting, in jeopardy to lay,</l>
+            <l>lay down life for life, allow each to the other,</l>
+            <l>as fortune might favour them, a fair advantage.</l>
+            <l>This was the king’s custom when he in court was,</l>
+            <l>at each fine feast among his many friends</l>
+            <l rend="indent">in hall.</l>
+            <l rend="indent">Therefore with fearless face</l>
+            <l rend="indent">he stands straight and tall;</l>
+            <l rend="indent">full lively at that New Year</l>
+            <l rend="indent">much mirth he makes with all.</l></lg>
+
+			      <head>6</head>
+
+         <lg><l>Thus there stands straight and tall the king himself,</l>
+            <l>talking at the high table of trifles full courtly.</l>
+            <l>There good Gawain was graced by Guinevere beside,</l>
+            <l>and Agravain a la dure main on the other side sits,</l>
+            <l>both the king’s sister-sons and full sure knights;</l>
+            <l>Bishop Baldwin above, he begins the table,</l>
+            <l>and Ywain, Urien’s son, ate alongside him.</l>
+            <l>These sat high on the dais and deftly served,</l>
+            <l>and many another sat sure at the side-tables.</l> 
+            <l>Then the first course came with crack of trumpets,</l>
+            <l>with many a banner full bright that thereby hung;</l>
+            <l>new noise of kettledrums and noble pipes,</l>
+            <l>wild warbles and wide wakened echoes,</l>
+            <l>that many a heart full high heaved at their notes.</l>
+            <l>Dainties drawn in therewith of full dear meats,</l>
+            <l>foods of the freshest, and in such files of dishes</l>
+            <l>they find no room to place them people before</l>
+            <l>and to set the silver that holds such servings </l>
+            <l rend="indent">on cloth.</l>
+            <l rend="indent">Each his load as he liked himself,</l>
+            <l rend="indent">there ladled and nothing loath;</l>
+            <l rend="indent">Every two had dishes twelve,</l>
+            <l rend="indent">good beer and bright wine both.</l></lg>
+         
+
+			      <head>7</head>
+
+         <lg><l>Now will I of their service say you no more,</l>
+            <l>for each man may well know no want was there</l>
+            <l>another noise full new neared with speed,</l>
+            <l>that would give the lord leave to take meat.</l>
+            <l>For scarce was the noise not a while ceased,</l>
+            <l>and the first course in the court duly served,</l>
+            <l>there hales in at the hall door a dreadful man,</l>
+            <l>the most in the world’s mould of measure high,</l>
+            <l>from the nape to the waist so swart and so thick,</l>
+            <l>and his loins and his limbs so long and so great</l>
+            <l>half giant on earth I think now that he was;</l>
+            <l>but the most of man anyway I mean him to be,</l>
+            <l>and that the finest in his greatness that might ride,</l>
+            <l>for of back and breast though his body was strong,</l>
+            <l>both his belly and waist were worthily small,</l>
+            <l>and his features all followed his form made </l>
+            <l rend="indent">and clean.</l> 
+            <l rend="indent">Wonder at his hue men displayed,</l>
+            <l rend="indent">set in his semblance seen;</l>
+            <l rend="indent">he fared as a giant were made,</l>
+            <l rend="indent">and over all deepest green.</l></lg>
+	
+
+			      <head>8</head>
+
+         <lg><l>And all garbed in green this giant and his gear:</l>
+            <l>a straight coat full tight that stuck to his sides,</l>
+            <l>a magnificent mantle above, masked within</l>
+            <l>with pelts pared pertly, the garment agleam</l>
+            <l>with blithe ermine full bright, and his hood both,</l>
+            <l>that was left from his locks and laid on his shoulders;</l>
+            <l>neat, well-hauled hose of that same green</l>
+            <l>that clung to his calves and sharp spurs under</l>
+            <l>of bright gold, on silk stockings rich-barred,</l>
+            <l>and no shoes under sole where the same rides.</l>
+            <l>And all his vesture verily was bright verdure,</l>
+            <l>both the bars of his belt and other bright stones,</l>
+            <l>that were richly rayed in his bright array</l>
+            <l>about himself and his saddle, on silk work,</l>
+            <l>it were tortuous to tell of these trifles the half,</l>
+            <l>embroidered above with birds and butterflies,</l>
+            <l>with gay gaudy of green, the gold ever inmost.</l>
+            <l>The pendants of his harness, the proud crupper,</l>
+            <l>his bridle and all the metal enamelled was then;</l>
+            <l>the stirrups he stood on stained with the same,</l>
+            <l>and his saddle bows after, and saddle skirts,</l>
+            <l>ever glimmered and glinted all with green stones.</l>
+            <l>The horse he rode on was also of that hue,</l>
+            <l rend="indent">certain:</l>
+            <l rend="indent">A green horse great and thick,</l>
+            <l rend="indent">a steed full strong to restrain,</l>
+            <l rend="indent">in broidered bridle quick –</l>
+            <l rend="indent">to the giant he brought gain.</l></lg>
+	
+
+			      <head>9</head>
+
+         <lg><l>Well garbed was this giant geared in green,</l>
+            <l>and the hair of his head like his horse’s mane.</l>
+            <l>Fair fanned-out flax enfolds his shoulders;</l>
+            <l>A beard big as a bush over his breast hangs,</l>
+            <l>that with the haul of hair that from his head reaches</l>
+            <l>was clipped all round about above his elbows,</l>
+            <l>that half his hands thereunder were hid in the wise</l>
+            <l>of a king’s broad cape that’s clasped at his neck.</l>
+            <l>The mane of that mighty horse was much alike,</l>
+            <l>well crisped and combed, with knots full many</l>
+            <l>plaited in thread of gold about the fair green,</l>
+            <l>here a thread of the hair, and there of gold.</l>
+            <l>The tail and his forelock twinned, of a suit,</l>
+            <l>and bound both with a band of a bright green,</l>
+            <l>dressed with precious stones, as its length lasted;</l>
+            <l>then twined with a thong, a tight knot aloft,</l>
+            <l>where many bells bright of burnished gold ring.</l>
+            <l>Such a man on a mount, such a giant that rides,</l>
+            <l>was never before that time in hall in sight of human</l> 
+            <l rend="indent">eye.</l>
+            <l rend="indent">He looked as lightning bright,</l>
+            <l rend="indent">said all that him descried;</l>
+            <l rend="indent">it seemed that no man might</l>
+            <l rend="indent">his mighty blows survive.</l></lg>
+
+
+			      <head>10</head>
+
+         <lg><l>And yet he had no helm nor hauberk, neither,</l>
+            <l>nor protection, nor no plate pertinent to arms,</l>
+            <l>nor no shaft, nor no shield, to strike and smite,</l>
+            <l>but in his one hand he held a holly branch,</l>
+            <l>that is greatest in green when groves are bare,</l>
+            <l>and an axe in his other, one huge, monstrous,</l>
+            <l>a perilous spar to expound in speech, who might.</l>
+            <l>The head of an ell-rod its large length had,</l>
+            <l>the spike all of green steel and of gold hewn,</l>
+            <l>the blade bright burnished with a broad edge</l>
+            <l>as well shaped to sheer as are sharp razors.</l>
+            <l>The shaft of a strong staff the stern man gripped,</l>
+            <l>that was wound with iron to the wand’s end,</l>
+            <l>and all engraved with green in gracious workings;</l>
+            <l>a cord lapped it about, that linked at the head,</l>
+            <l>and so around the handle looped full oft,</l>
+            <l>with tried tassels thereto attached enough</l>
+            <l>on buttons of the bright green broidered full rich.</l>
+            <l>This stranger rides in and the hall enters,</l>
+            <l>driving to the high dais, danger un-fearing.</l>
+            <l>Hailed he never a one, but high he overlooked.</l>
+            <l>The first word that he spoke: ‘Where is,’ he said,</l>
+            <l>‘the governor of this throng? Gladly I would</l>
+            <l>see that soul in sight and with himself speak</l>
+            <l rend="indent">reason.’</l>
+            <l rend="indent">On knights he cast his eyes,</l>
+            <l rend="indent">And rolled them up and down.</l>
+            <l rend="indent">He stopped and studied ay</l>
+            <l rend="indent">who was of most renown.</l></lg>
+
+			      <head>11</head>
+
+         <lg><l>There was a looking at length the man to behold,</l>
+            <l>for each man marvelled what it might mean</l>
+            <l>for a rider and his horse to own such a hue</l>
+            <l>as grew green as the grass and greener it seemed,</l>
+            <l>than green enamel on gold glowing the brighter.</l>
+            <l>All studied that steed, and stalked him near,</l>
+            <l>with all the wonder of the world at what he might do.</l>
+            <l>for marvels had they seen but such never before;</l>
+            <l>and so of phantom and fairie the folk there it deemed.</l>
+            <l>Therefore to answer was many a knight afraid,</l>
+            <l>and all stunned at his shout and sat stock-still</l>
+            <l>in a sudden silence through the rich hall;</l>
+            <l>as all had slipped into sleep so ceased their noise</l>
+            <l rend="indent">and cry.</l>
+            <l rend="indent">I think it not all in fear,</l>
+            <l rend="indent">but some from courtesy;</l>
+            <l rend="indent">to let him all should revere</l> 
+            <l rend="indent">speak to him firstly.</l></lg>
+
+			      <head>12</head>
+
+         <lg><l>Then Arthur before the high dais that adventure beholds,</l>
+            <l>and, gracious, him reverenced, a-feared was he never,</l>
+            <l>and said: ‘Sir, welcome indeed to this place,</l>
+            <l>the head of this house, I, Arthur am named.</l>
+            <l>Alight swiftly adown and rest, I thee pray,</l>
+            <l>and what thy will is we shall wait after.’</l>
+            <l>‘Nay, so help me,’ quoth the man, ‘He that on high sits:</l>
+            <l>to wait any while in this way, it was not my errand.</l>
+            <l>But as the light of thee, lord, is lifted so high,</l>
+            <l>and thy burg and thy barons the best, men hold,</l>
+            <l>strongest under steel gear on steeds to ride,</l>
+            <l>the wisest and worthiest of the world’s kind,</l>
+            <l>proof to play against in other pure sports,</l>
+            <l>and here is shown courtesy, as I have heard said,</l>
+            <l>so then I wandered hither, indeed, at this time.</l>
+            <l>You may be sure by this branch that I bear here</l>
+            <l>that I pass by in peace and no plight seek.</l>
+            <l>For were I found here, fierce, and in fighting wise,</l>
+            <l>I had a hauberk at home and a helm both,</l>
+            <l>a shield and a sharp spear, shining bright,</l>
+            <l>and other weapons to wield, I well will, too;</l>
+            <l>but as I wish no war, I wear the softer.</l>
+            <l>But if you be as bold as all bairns tell,</l>
+            <l>you will grant me goodly the gift that I ask</l>
+            <l rend="indent">by right.’</l>
+            <l rend="indent">Arthur answered there,</l>
+            <l rend="indent">and said: ‘Sir courteous knight,</l>
+            <l rend="indent">if you crave battle bare,</l>
+            <l rend="indent">here fails you not the fight.’</l></lg>
+
+			      <head>13</head>
+
+         <lg><l>‘Nay, follow I no fight, in faith I thee tell.</l>
+            <l>About on these benches are but beardless children;</l>
+            <l>if I were clasped in armour on a high steed,</l>
+            <l>here is no man to match me, his might so weak.</l>
+            <l>From thee I crave in this court a Christmas gift,</l>
+            <l>for it is Yule and New Year, and here many young men.</l>
+            <l>If any so hardy in this house holds himself,</l>
+            <l>is so bold of blood, hot-brained in his head,</l>
+            <l>that dare staunchly strike a stroke for another,</l>
+            <l>I shall give him as gift this weapon so rich,</l>
+            <l>this blade, that is heavy enough to handle as he likes,</l>
+            <l>and I will bear the first blow, as bare as I sit.</l>
+            <l>If any friend be so fell as to fare as I say,</l>
+            <l>Leap lightly to me; latch on to this weapon –</l>
+            <l>I quit claim for ever, he keeps it, his own. </l>
+            <l>And I will stand his stroke straight, on this floor,</l>
+            <l>if you will grant me the gift to give him another,</l>
+            <l rend="indent">again;</l>
+            <l rend="indent">and yet give him respite</l>
+            <l rend="indent">a twelvemonth and a day.</l>
+            <l rend="indent">Now hurry, let’s see aright</l>
+            <l rend="indent">dare any herein aught say.’</l></lg>
+         
+
+			      <head>14</head>
+
+         <lg><l>If he had stunned them at first, stiller were then</l>
+            <l>all the host in the hall, the high and the low.</l>
+            <l>The man on his mount he turned in his saddle,</l>
+            <l>and roundly his red eyes he rolled about,</l>
+            <l>bent his bristling brows, burning green,</l>
+            <l>waving his beard about waiting who would rise.</l>
+            <l>When none would come to his call he coughed full high,</l>
+            <l>and cleared his throat full richly, ready to speak:</l>
+            <l>‘What, is this Arthur’s house,’ quoth the horseman then,</l>
+            <l>‘that all the rumour runs of, through realms so many?</l>
+            <l>Where now your superiority and your conquests,</l>
+            <l>your grinding down and your anger, your great words?</l>
+            <l>Now is the revel and the renown of the Round Table</l>
+            <l>overthrown with the word of a wanderer’s speech,</l>
+            <l>for all duck down in dread without dint of a blow!’</l>
+            <l>With this he laughed so loud that the lord grieved;</l>
+            <l>the blood shot for shame into his fair face</l>
+            <l rend="indent">and there,</l>
+            <l rend="indent">he waxed as wrath as wind;</l>
+            <l rend="indent">so did all that there were.</l>
+            <l rend="indent">The king, so keen by kind,</l>
+            <l rend="indent">then stood that strong man near.</l></lg>
+
+			      <head>15</head>
+
+         <lg><l>And said: ‘Horseman, by heaven you ask as a fool,</l>
+            <l>and as a folly you fain, to find it me behoves.</l>
+            <l>I know no guest that’s aghast at your great words.</l>
+            <l>Give me now your weapon, upon God’s name,</l>
+            <l>and I shall bear you the boon you’d be having.’</l>
+            <l>lightly he leaped to him and caught at his hand;</l>
+            <l>then fiercely the other fellow on foot alighted.</l>
+            <l>Now has Arthur his axe, and the helm grips,</l>
+            <l>and strongly stirs it about, to strike with a thought.</l>
+            <l>The man before him drew himself to full height,</l>
+            <l>higher than any in the house by a head and more.</l>
+            <l>With stern face where he stood he stroked his beard,</l>
+            <l>and with fixed countenance tugged at his coat,</l>
+            <l>no more moved or dismayed by mighty blows</l>
+            <l>than if any man to the bench had brought him a drink</l>
+            <l rend="indent">of wine.</l>
+            <l rend="indent">Gawain, that sat by the queen,</l>
+            <l rend="indent">to the king he did incline:</l>
+            <l rend="indent">‘I beseech in plain speech</l>
+            <l rend="indent">that this mêlée be mine’</l></lg>
+	
+
+			      <head>16</head>
+
+         <lg><l>‘Would you, worthiest lord,’ quoth Gawain to the king,</l>
+            <l>‘bid me bow from this bench and stand by you there,</l>
+            <l>that I without villainy might void this table,</l>
+            <l>and if my liege lady liked it not ill,</l>
+            <l>I would come counsel you before your court rich.</l>
+            <l>For I think it not seemly, as it is true known,</l>
+            <l>that such an asking is heaved so high in your hall,</l>
+            <l>that you yourself are tempted, to take it to yourself,</l>
+            <l>while so many bold men about you on benches sit,</l>
+            <l>that under heaven, I hope, are none higher of will,</l>
+            <l>nor better of body on fields where battle is raised.</l>
+            <l>I am the weakest, I know, and of wit feeblest.</l>
+            <l>least worth the loss of my life, who’d learn the truth.</l>
+            <l>Only inasmuch as you are my uncle, am I praised:</l>
+            <l>No bounty but your blood in my body I know.</l>
+            <l>And since this thing is folly and naught to you falls,</l>
+            <l>and I have asked it of you first, grant it to me;</l>
+            <l>and if my cry be not comely, let this court be free</l>
+            <l rend="indent">of blame.’</l>
+            <l rend="indent">Nobles whispered around,</l>
+            <l rend="indent">and after counselled the same,</l>
+            <l rend="indent">to free the king and crown,</l>
+            <l rend="indent">and give Gawain the game.</l></lg>
+
+			      <head>17</head>
+
+         <lg><l>Then commanded the king the knight for to rise,</l>
+            <l>and he readily up-rose and prepared him fair,</l>
+            <l>knelt down before the king, and caught the weapon;</l>
+            <l>and he lightly left it him, and lifted up his hand</l>
+            <l>and gave him God’s blessing, and gladly him bade</l>
+            <l>that his heart and his hand should hardy be, both.</l>
+            <l>‘Take care, cousin,’ quoth the king, ‘how you set on,</l>
+            <l>and if you read him aright, readily I trow,</l>
+            <l>that you shall abide the blow he shall bring after.’</l>
+            <l>Gawain goes to the giant, with weapon in hand,</l>
+            <l>and boldly abides him, never bothered the less.</l>
+            <l>Then to Sir Gawain says the knight in the green:</l>
+            <l>‘Re-affirm we our oaths before we go further.</l>
+            <l>First I entreat you, man, how are you named,</l>
+            <l>that tell me truly, then, so trust it I may.’</l>
+            <l>‘In God’s faith,’ quoth the good knight, ‘Gawain am I,</l>
+            <l>that bear you this buffet, whatever befalls after,</l>
+            <l>and at this time twelvemonth take from thee another</l>
+            <l>with what weapon you wilt, and no help from any</l>
+            <l rend="indent">alive.’</l>
+            <l rend="indent">The other replies again:</l>
+            <l rend="indent">‘Sir Gawain, may I so thrive,</l>
+            <l rend="indent">if I am not wondrous fain</l>
+            <l rend="indent">for you this blow to drive.’</l></lg>
+     
+     
+                 <head>18</head>
+     
+         <lg><l>‘By God,’ quoth the green knight, ‘Sir Gawain, I like</l>
+            <l>That I’ll face first from your fist what I found here.</l>
+            <l>And you have readily rehearsed, with reason full true,</l>
+            <l>clearly all the covenant that I the king asked,</l>
+            <l>save that you shall secure me, say, by your troth,</l>
+            <l>that you shall seek me yourself, where so you think</l>
+            <l>I may be found upon field, and fetch you such wages</l>
+            <l>as you deal me today before this dear company.’</l>
+            <l>‘Where should I seek,’ quoth Gawain, ‘where is your place?</l>
+            <l>I know nothing of where you walk, by Him that wrought me,</l>
+            <l>nor do I know you, knight, your court or your name.</l>
+            <l>But teach me truly the track, tell me how you are named,</l>
+            <l>and I shall wind all my wit to win me thither;</l>
+            <l>and that I swear you in truth, and by my sure honour.’</l>
+            <l>‘That is enough this New Year, it needs no more,’</l>
+            <l>quoth the giant in the green to courteous Gawain:</l>
+            <l>‘if I shall tell you truly, when you have tapped me</l>
+            <l>and you me smoothly have smitten, I swiftly you teach, </l>
+            <l>of my house and my home and my own name.</l>
+            <l>Then may you find how I fare, and hold to your word;</l>
+            <l>and if I spend no speech, then it speeds you the better,</l>
+            <l>for you may linger in your land and seek no further –</l>
+            <l rend="indent">but oh!</l>
+            <l rend="indent">Take now your grim steel to thee,</l>
+            <l rend="indent">and see how you fell oaks.’</l>
+            <l rend="indent">‘Gladly, sir, indeed,’</l>
+            <l rend="indent">quoth Gawain; his axe he strokes.</l></lg>
+
+
+			         <head>19</head>
+
+         <lg><l>The green knight on his ground graciously stands:</l>
+            <l>with a little lean of the head, flesh he uncovers;</l>
+            <l>his long lovely locks he laid over his crown,</l>
+            <l>and let the naked neck to the stroke show.</l>
+            <l>Gawain gripped his axe and glanced it on high,</l>
+            <l>his left foot on the field before him he set,</l>
+            <l>letting it down lightly light on the naked,</l>
+            <l>that the sharp of the steel sundered the bones,</l>
+            <l>and sank through the soft flesh, sliced it in two,</l>
+            <l>that the blade of the bright steel bit in the ground.</l>
+            <l>The fair head from the frame fell to the earth,</l>
+            <l>that folk flailed it with their feet, where it forth rolled;</l>
+            <l>the blood burst from the body, the bright on the green.</l>
+            <l>Yet nevertheless neither falters nor falls the fellow,</l>
+            <l>but stoutly he started forth on strong shanks,</l>
+            <l>and roughly he reached out, where the ranks stood,</l>
+            <l>latched onto his lovely head, and lifted it so;</l>
+            <l>and then strode to his steed, the bridle he catches,</l>
+            <l>steps into stirrup and strides him aloft,</l>
+            <l>and his head by the hair in his hand holds.</l>
+            <l>and as steady and staunch him in his saddle sat</l>
+            <l>as if no mishap had him ailed, though headless now</l>
+            <l rend="indent">instead.</l>
+            <l rend="indent">He twined his trunk about,</l>
+            <l rend="indent">that ugly body that bled;</l>
+            <l rend="indent">many of him had doubt,</l>
+            <l rend="indent">ere ever his speech was said.</l></lg>
+
+
+			         <head>20</head>
+
+         <lg><l>For the head in his hand he holds up even,</l>
+            <l>towards the dearest on dais addresses the face;</l>
+            <l>and it lifted its eyelids, and looked full wide,</l>
+            <l>and made this much with its mouth, as you may now hear;</l>
+            <l>‘Look, Gawain, be you geared to go as you promised,</l>
+            <l>and look out loyally till you me, lord, find,</l>
+            <l>as you swore oath in this hall, these knights hearing.</l>
+            <l>To the green chapel you go, I charge you, to find</l>
+            <l>such a dint as you dealt – deserved you have –</l>
+            <l>to be readily yielded on New Year’s morn.</l>
+            <l>The knight of the green chapel, men know me as, many;</l>
+            <l>therefore to find me, if you fain it, you’ll fail never.</l>
+            <l>Come then, or be called recreant it behoves you.’</l>
+            <l>With a rough rasping the reins he twists,</l>
+            <l>hurled out the hall door, his head in his hand,</l>
+            <l>that the fire of the flint flew from fleet hooves.</l>
+            <l>to what land he came no man there knew,</l>
+            <l>no more than they knew where he had come from</l>
+            <l rend="indent">what then?</l>
+            <l rend="indent">The king and Gawain there</l>
+            <l rend="indent">at that green man laugh and grin;</l>
+            <l rend="indent">yet broadcast it was abroad</l>
+            <l rend="indent">as a marvel among those men.</l></lg>
+
+
+			         <head>21</head>
+
+         <lg><l>Though Arthur the high king at heart had wonder,</l>
+            <l>he let no semblance be seen, but said aloud</l>
+            <l>to the comely queen, with courteous speech:</l>
+            <l>‘Dear dame, today dismay you never;</l>
+            <l>well become us these crafts at Christmas,</l>
+            <l>larking at interludes, to laugh and to sing</l>
+            <l>among the courtly carols of lords and ladies.</l>
+            <l>Nevertheless my meat I may now me address,</l>
+            <l>for I have seen my marvel, I may not deny.’</l>
+            <l>He glanced at Sir Gawain and graciously said:</l>
+            <l>‘Now sir, hang up your axe that has hewn enough.’</l>
+            <l>And it adorned the dais, hung on display,</l>
+            <l>where all men might marvel and on it look,</l>
+            <l>and by true title thereof to tell the wonder.</l>
+            <l>Then they went to the board these two together,</l>
+            <l>the king and the godly knight, and keen men them served</l>
+            <l>of all dainties double, as dearest might fall,</l>
+            <l>with all manner of meat and minstrelsy both.</l>
+            <l>Full well they whiled that day till it worked its end</l>
+            <l rend="indent">on land</l>
+            <l rend="indent">Now think well, Sir Gawain,</l>
+            <l rend="indent">lest by peril unmanned,</l>
+            <l rend="indent">this adventure to sustain,</l>
+            <l rend="indent">you have taken in hand.</l></lg>
+
+         </div>
+<div type="part"><head>Part II</head>
+
+     			<head>22</head>
+     
+         <lg><l>This gift of adventure has Arthur thus on the first</l>
+            <l>of the young year, for he yearned exploits to hear.</l>
+            <l>Though words were wanting when they went to sit,</l>
+            <l>now are they stoked with stern work, fullness to hand.</l>
+            <l>Gawain was glad to begin those games in hall,</l>
+            <l>yet if the end be heavy, have you no wonder;</l>
+            <l>though men be merry in mind when they have strong ale,</l>
+            <l>a year turns full turn, and yields never a like;</l>
+            <l>the form of its finish foretold full seldom.</l>
+            <l>For this Yuletide passed by, and the year after,</l>
+            <l>and each season slips by pursuing another:</l>
+            <l>after Christmas comes crabbed Lenten time,</l>
+            <l>that forces on flesh fish and food more simple.</l>
+            <l>But then the weather of the world with winter it fights,</l>
+            <l>cold shrinks down, clouds are uplifted,</l>
+            <l>shining sheds the rain in showers full warm,</l>
+            <l>falls upon fair flats, flowers there showing.</l>
+            <l>Both ground and groves green is their dress,</l>
+            <l>birds begin to build and brightly sing they</l>
+            <l>the solace of the soft summer ensuing after</l>
+            <l rend="indent">on bank;</l>
+            <l rend="indent">and blossoms bloom to blow</l>
+            <l rend="indent">by hedges rich and rank,</l>
+            <l rend="indent">while noble notes do flow</l>
+            <l rend="indent">in woodland free and frank.</l></lg>
+
+
+               <head>23</head>
+
+         <lg><l>After, in season of summer with the soft winds,</l>
+            <l>when Zephyrus sighs himself on seeds and herbs;</l>
+            <l>well-away is the wort that waxes out there,</l>
+            <l>when the dunking dew drops from the leaves,</l>
+            <l>biding a blissful blush of the bright sun.</l>
+            <l>But then hies Harvest and hardens it soon,</l>
+            <l>warns it before the winter to wax full ripe;</l>
+            <l>then drives with drought the dust for to rise,</l>
+            <l>from the face of the field to fly full high;</l>
+            <l>wild wind from the welkin wrestles the sun,</l>
+            <l>the leaves lance then from linden, light on the ground,</l>
+            <l>and all grey is the grass, that green was ere;</l>
+            <l>then all ripens and rots, that rose up at first.</l>
+            <l>And thus wears the year into yesterdays many,</l>
+            <l>and winter walks again, as the world’s way is,</l>
+            <l rend="indent">I gauge,</l>
+            <l rend="indent">till Michaelmas moon</l>
+            <l rend="indent">threatens a wintry age.</l>
+            <l rend="indent">Then thinks Gawain full soon,</l>
+            <l rend="indent">of his wearisome voyage.</l></lg>
+         
+
+			      <head>24</head>
+
+         <lg><l>Yet till All-Hallows with Arthur he lingers,</l>
+            <l>and he made a feast on that day for the knight’s sake,</l>
+            <l>with much revel and rich of the Round Table.</l>
+            <l>Knights full courteous and comely ladies,</l>
+            <l>all for love of that lad in longing they were;</l>
+            <l>but nevertheless they named nothing but mirth,</l>
+            <l>many joyless for that gentle soul jokes made there.</l>
+            <l>For, after meat, with mourning he makes to his uncle,</l>
+            <l>and speaks his departure, and openly says:</l>
+            <l>‘Now, liege lord of my life, I ask you leave.</l>
+            <l>You know the cost in this case, care I no more</l>
+            <l>to tell you the trial thereof, naught but a trifle;</l>
+            <l>but I am bound to bear it, be gone, and tomorrow,</l>
+            <l>to seek the giant in the green, as God will me guide.’</l>
+            <l>Then the best of the burg were brought together,</l>
+            <l>Ywain and Eric and others full many,</l>
+            <l>Sir Dodinal le Sauvage, the Duke of Clarence,</l>
+            <l>Lancelot and Lionel and Lucan the Good,</l>
+            <l>Sir Bors and Sir Bedivere, big men both,</l>
+            <l>and many other men, with Mador de la Porte.</l>
+            <l>All this courtly company came the king near,</l>
+            <l>for to counsel the knight, with care in their hearts.</l>
+            <l>There was much dark dolefulness deep in the hall,</l>
+            <l>that so worthy as Gawain should wend on that errand,</l>
+            <l>to endure a dreadful dint, and no more with sword</l>
+            <l rend="indent">wander.</l>
+            <l rend="indent">The knight made yet good cheer,</l>
+            <l rend="indent">and said: ‘Why should I falter?</l>
+            <l rend="indent">Such destinies foul or fair</l>
+            <l rend="indent">what can men do but suffer?’</l></lg>
+         
+
+			      <head>25</head>
+
+         <lg><l>He dwelt there all that day, and dressed on the morn,</l>
+            <l> asks early for his arms, and all were they brought.</l>
+            <l>First a crimson carpet, cast over the floor,</l>
+            <l>and much was the gilded gear that gleamed thereon.</l>
+            <l>The strong man steps there, and handles the steel,</l>
+            <l>dressed in a doublet of silk of Turkestan,</l>
+            <l>and then a well-crafted cape, clasped at the top,</l>
+            <l>that with a white ermine was trimmed within.</l>
+            <l>Then set they the plate shoes on his strong feet,</l>
+            <l>his legs lapped in steel with lovely greaves,</l>
+            <l>with knee-pieces pinned thereto, polished full clean,</l>
+            <l>about his knees fastened with knots of gold;</l>
+            <l>then the cuisses, that cunningly enclosed</l>
+            <l>his thick-thewed thighs, attached with thongs;</l>
+            <l>and then the hauberk linked with bright steel rings</l>
+            <l>over rich wear, wrapped round the warrior;</l>
+            <l>and well-burnished bracelets over both arms,</l>
+            <l>elbow-pieces good and gay, and gloves of plate,</l>
+            <l>and all the goodly gear that should bring him gain</l>
+            <l rend="indent">that tide;</l>
+            <l rend="indent">with rich coat armour,</l>
+            <l rend="indent">his gold spurs set with pride,</l>
+            <l rend="indent">girt with a blade full sure</l>
+            <l rend="indent">with silk sword-belt at his side.</l></lg>
+
+			      <head>26</head>
+
+         <lg><l>When he was hasped in armour, his harness was rich;</l>
+            <l> the least laces or loops gleamed with gold.</l>
+            <l>So harnessed as he was he hears the Mass,</l>
+            <l>offered and honoured at the high altar,</l>
+            <l>then he comes to the king and his companions,</l>
+            <l>takes his courteous leave of lords and ladies;</l>
+            <l>and they him kiss and convey, commend him to Christ.</l>
+            <l>By then Gringolet was game, girt with a saddle</l>
+            <l>that gleamed full gaily with many gold fringes,</l>
+            <l>everywhere nailed full new, for that noted day;</l>
+            <l>the bridle barred about, with bright gold bound;</l>
+            <l>the apparel of the breast-guard and proud skirts,</l>
+            <l>crupper, caparison, in accord with the saddle-bows;</l>
+            <l>and all was arrayed with rich red gold nails,</l>
+            <l>that all glittered and glinted as gleam of the sun.</l>
+            <l>Then hefts he the helm, and hastily it kisses,</l>
+            <l>that was strongly stapled and stuffed within.</l>
+            <l>It was high on his head, clasped behind,</l>
+            <l>with a light covering over the face-guard,</l>
+            <l>embroidered and bound with the best gems</l>
+            <l>on broad silken border, and birds on the seams,</l>
+            <l>such as parrots painted preening between,</l>
+            <l>turtle-doves, true-love knots, so thick entailed</l>
+            <l>as many burdened with it had been seven winters</l>
+            <l rend="indent">in town.</l>
+            <l rend="indent">The circlet of greater price</l>
+            <l rend="indent">that embellished his crown,</l>
+            <l rend="indent">of diamonds all devised</l>
+            <l rend="indent">that were both bright and brown.</l></lg>
+         
+
+			      <head>27</head>
+
+         <lg><l>Then they showed him the shield that was of shining gules,</l>
+            <l>with the pentangle painted there in pure gold hues.</l>
+            <l>He brandishes it by the baldric, casts it about his neck,</l>
+            <l>that suited the wearer seemly and fair.</l>
+            <l>And why the pentangle applies to that prince noble,</l>
+            <l>I intend to tell, though I tarry more than I should.</l>
+            <l>It is a sign Solomon settled on some while back,</l>
+            <l>in token of truth, by the title that it has,</l>
+            <l>for it is a figure that has five points,</l>
+            <l>and each line overlaps and locks with another,</l>
+            <l>and everywhere it is endless, and English call it</l>
+            <l>over all the land, as I here, the Endless Knot. </l>
+            <l>For so it accords with this knight and his bright arms,</l>
+            <l>forever faithful in five ways, and five times so,</l> 
+            <l>Gawain was for good known, and, as purified gold,</l>
+            <l>void of every villainy, with virtues adorned</l>
+            <l rend="indent">all, so.</l>
+            <l rend="indent">And thus the pentangle new</l>
+            <l rend="indent">he bore on shield and coat,</l>
+            <l rend="indent">as title of trust most true</l>
+            <l rend="indent">and gentlest knight of note.</l></lg>
+
+
+			      <head>28</head>
+
+         <lg><l>First he was found faultless in his five senses,</l>
+            <l>and then failed never the knight in his five fingers,</l>
+            <l>and all his trust in the field was in the five wounds</l>
+            <l>that Christ caught on the cross, as the creed tells.</l>
+            <l>And wheresoever this man in mêlée was stood, </l>
+            <l>his first thought was that, over all other things,</l>
+            <l>all his force in fight he found in the five joys</l>
+            <l>that holy Heaven’s Queen had of her child;</l>
+            <l>for this cause the knight fittingly had</l>
+            <l>on the inner half of his shield her image painted,</l>
+            <l>that when he beheld her his boldness never failed.</l>
+            <l>The fifth five that I find the knight used</l>
+            <l>was Free-handedness and Friendship above all things;</l>
+            <l>his Continence and Courtesy corrupted were never,</l>
+            <l>and Piety, that surpasses all points – these pure five</l>
+            <l>were firmer founded in his form than another.</l>
+            <l>Now all these five-folds, forsooth, were fused in this knight,</l>
+            <l>and each one joined to another that none end had,</l>
+            <l>and fixed upon five points that failed never,</l>
+            <l>never confused on one side, nor sundered neither,</l>
+            <l>without end at any angle anywhere, I find,</l>
+            <l>wherever its guise begins or glides to an end.</l>
+            <l>Therefore on his shining shield shaped was the knot</l>
+            <l>royally with red gold upon red gules,</l>
+            <l>thus is the pure pentangle called by the people</l>
+            <l rend="indent">of lore.</l>
+            <l rend="indent">Now geared was Gawain gay,</l>
+            <l rend="indent">lifted his lance right there,</l>
+            <l rend="indent">and gave them all good day –</l>
+            <l rend="indent">as he thought, for evermore.</l></lg>
+         
+
+			      <head>29</head>
+
+         <lg><l>He struck the steed with the spurs, and sprang on his way</l>
+            <l>so strongly the stone-fire sparked out thereafter.</l>
+            <l>All that saw the seemly sight sighed in their hearts,</l>
+            <l>and said softly the same thing all to each other,</l>
+            <l>in care of that comely knight: ‘By Christ, ‘tis pity,</l>
+            <l>that you, lord, shall be lost, who art of life noble!</l>
+            <l>To find his fellow in field, in faith, is not easy.</l>
+            <l>Warily to have wrought would wiser have been,</l>
+            <l>to have dealt yon dear man a dukedom of worth.</l>
+            <l>A loyal leader of this land’s lances in him well seems,</l>
+            <l>and so had better have been than brought to naught,</l>
+            <l>beheaded by an elvish man, out of arrogant pride.</l>
+            <l>Who knew any king ever such counsel to take</l>
+            <l>as knights in altercations in Christmas games?’</l>
+            <l>Well was the water warm much wept from eyen,</l>
+            <l>when that seemly sire spurred from the court</l>
+            <l rend="indent">that day.</l>
+            <l rend="indent">He made no delay,</l>
+            <l rend="indent">but swiftly went his way;</l>
+            <l rend="indent">Many a wild path he strayed,</l>
+            <l rend="indent">so the books do say.</l></lg>
+         
+
+                     <head>30</head>
+
+         <lg><l>Now rides this knight through the realm of Logres,</l>
+            <l>Sir Gawain, in God’s name, yet no game it thought.</l>
+            <l>Oft friendless alone he lay long a-nights,</l>
+            <l>where he found no fare that he liked before him.</l>
+            <l>He had no friend but his steed by furze and down,</l>
+            <l>and no one but God to speak with on the way,</l>
+            <l>till that he neared full nigh to northern Wales.</l>
+            <l>All the Isle of Anglesey on the left hand he held,</l>
+            <l>and fared over the fords by the forelands,</l>
+            <l>over at Holyhead, till he reached the bank</l>
+            <l>in the wilderness of Wirral – few thereabouts</l>
+            <l>that either God or other with good heart loved.</l>
+            <l>And ever he asked as he fared, of fellows he met,</l>
+            <l>if they had heard any word of a knight in green,</l>
+            <l>on any ground thereabout, of the green chapel;</l>
+            <l>and all met him with nay, that never in their lives</l>
+            <l>saw they ever a sign of such a one, hued</l>
+            <l rend="indent">in green.</l>
+            <l rend="indent">The knight took pathways strange</l>
+            <l rend="indent">by many a bank un-green;</l>
+            <l rend="indent">his cheerfulness would change,</l>
+            <l rend="indent">ere might that chapel be seen.</l></lg>
+         
+
+			         <head>31</head>
+
+         <lg><l>Many cliffs he over-clambered in countries strange,</l>
+            <l>far flying from his friends forsaken he rides.</l>
+            <l>at every twist of the water where the way passed</l>
+            <l>he found a foe before him, or freakish it were,</l>
+            <l>and so foul and fell he was beholden to fight.</l>
+            <l>So many marvels by mountain there the man finds,</l>
+            <l>it would be tortuous to tell a tenth of the tale.</l>
+            <l>Sometimes with dragons he wars, and wolves also,</l>
+            <l>sometimes with wild woodsmen haunting the crags,</l>
+            <l>with bulls and bears both, and boar other times,</l>
+            <l>and giants that chased after him on the high fells.</l>
+            <l>had he not been doughty, enduring, and Duty served,</l>
+            <l>doubtless he had been dropped and left for dead,</l>
+            <l>for war worried him not so much but winter was worse,</l>
+            <l>when the cold clear water from the clouds shed,</l>
+            <l>and froze ere it fall might to the fallow earth.</l>
+            <l>Near slain by the sleet he slept in his steel</l>
+            <l>more nights than enough in the naked rocks,</l>
+            <l>where clattering from the crest the cold burn runs,</l>
+            <l>and hung high over his head in hard icicles.</l>
+            <l>Thus in peril and pain, and plights full hard</l>
+            <l>covers the country this knight till Christmas Eve</l>
+            <l rend="indent">alone.</l>
+            <l rend="indent">The knight that eventide</l>
+            <l rend="indent">to Mary made his moan,</l>
+            <l rend="indent">to show him where to ride,</l>
+            <l rend="indent">and guide him to some home.</l></lg>
+	
+
+			         <head>32</head>
+
+         <lg><l>By a mount in the morn merrily he rides</l>
+            <l>into a forest full deep, wonderfully wide,</l>
+            <l>high hills on either hand, and woodlands under</l>
+            <l>of hoar oaks full huge a hundred together.</l>
+            <l>The hazel and the hawthorn were tangled and twined,</l>
+            <l>with rough ragged moss ravelled everywhere,</l>
+            <l>with many birds un-blithe upon bare twigs,</l>
+            <l>that piteously they piped for pinch of the cold.</l>
+            <l>The gallant on Gringolet glides them under</l>
+            <l>through many a marsh and mire, a man alone,</l>
+            <l>full of care lest to his cost he never should</l>
+            <l>see the service of that Sire, that on that self night,</l>
+            <l>of a bright maid was born, our burden to quell.</l>
+            <l>And therefore sighing he said; ‘I beseech thee, Lord,</l>
+            <l>and Mary, that is mildest mother so dear,</l>
+            <l>of some harbour where highly I might hear Mass,</l>
+            <l>and thy Matins tomorrow, meekly I ask,</l>
+            <l>and thereto promptly I pray my Pater and Ave</l>
+            <l rend="indent">and Creed.’</l>
+            <l rend="indent">He rode as he prayed,</l>
+            <l rend="indent">And cried for his misdeeds;</l>
+            <l rend="indent">He crossed himself always,</l>
+            <l rend="indent">And said: ‘Christ’s Cross me speed!’</l></lg>
+         
+
+			      <head>33</head>
+
+         <lg><l>Now he had signed himself times but three,</l>
+            <l>when he was aware in the wood of a wall in a moat,</l>
+            <l>above a level, on high land locked under boughs</l>
+            <l>of many broad set boles about by the ditches:</l>
+            <l>a castle the comeliest that ever knight owned,</l>
+            <l>perched on a plain, a park all about,</l>
+            <l>with a pointed palisade, planted full thick,</l>
+            <l>encircling many trees in more than two miles.</l>
+            <l>The hold on the one side the knight assessed,</l>
+            <l>as it shimmered and shone through the shining oaks.</l>
+            <l>Then humbly has off with his helm, highly he thanks</l>
+            <l>Jesus and Saint Julian, that gentle are both,</l>
+            <l>that courtesy had him shown, and his cry hearkened.</l>
+            <l>'Now hospitality,’ he said, ‘I beseech you grant!’</l>
+            <l>Then goads he on Gringolet, with his gilded heels,</l>
+            <l>and he by chance there has chosen the chief way,</l>
+            <l>that brought the man bravely to the bridge’s end</l>
+            <l rend="indent">in haste.</l>
+            <l rend="indent">The drawbridge was upraised,</l>
+            <l rend="indent">the gates were firm and fast,</l>
+            <l rend="indent">the walls were well arrayed –</l>
+            <l rend="indent">it trembled at no wind’s blast.</l></lg>
+
+
+			      <head>34</head>
+
+         <lg><l>The knight stuck to his steed, that hugged the bank,</l>
+            <l>of the deep double ditch driven round the place.</l>
+            <l>The wall washed in the water wonderfully deep,</l>
+            <l>and then a full huge height it haled up aloft,</l>
+            <l>of hard hewn stone to the entablature,</l>
+            <l>embedded under the battlements in best style;</l>
+            <l>and there were turrets full tall towering between,</l>
+            <l>with many lovely loopholes clean interlocked:</l>
+            <l>a better barbican that knight never beheld.</l>
+            <l>And innermost he beheld a hall full high,</l>
+            <l>towers trim between, crenellated full thick,</l>
+            <l>fair finials that fused, and fancifully long,</l>
+            <l>with carven copes, cunningly worked.</l>
+            <l>Chalk white chimneys he descried enough,</l>
+            <l>on tower rooftops that gleamed full white.</l>
+            <l>So many painted pinnacles powdered there</l>
+            <l>among castle crenellations, clustered so thick,</l>
+            <l>that pared out of paper purely it seemed.</l>
+            <l>the fair knight on the horse it fine enough thought,</l>
+            <l>if he might contrive to come the cloister within,</l>
+            <l>to harbour in that hostel while Holy Day lasted,</l>
+            <l rend="indent">all content.</l>  
+            <l rend="indent">He called and soon there came</l>
+            <l rend="indent">a porter pure pleasant.</l>
+            <l rend="indent">From the wall his errand he craved,</l>
+            <l rend="indent">and hailed the knight errant.</l></lg> 
+	
+
+			      <head>35</head>
+
+         <lg><l>‘Good sir,’ quoth Gawain, ‘will you do my errand</l>
+            <l>to the high lord of this house, harbour to crave?’</l>
+            <l>‘Yes, by Saint Peter,’ quoth the porter, ‘for I believe</l>
+            <l>That you’ll be welcome to dwell as long as you like.’</l>
+            <l>Then the welcomer on the wall went down swiftly,</l>
+            <l>and folk freely him with, to welcome the knight.</l>
+            <l>They let down the great drawbridge and dignified</l>
+            <l>knelt down on their knees upon the cold earth</l>
+            <l>to welcome this knight as they thought the worthiest way.</l>
+            <l>They yielded him the broad gate, opened wide,</l>
+            <l>and he them raised rightly and rode over the bridge.</l>
+            <l>Several then seized his saddle, while he alighted,</l>
+            <l>and then strong men enough stabled his steed.</l> 
+            <l>Knights and their squires came down then</l>
+            <l>for to bring this bold man blithely to hall,</l>
+            <l>When he lifted his helmet, they hastened forward</l>
+            <l>to heft it from his hand, the guest to serve;</l>
+            <l>his blade and his blazon both they took.</l>
+            <l>then hailed he full handily the host each one,</l>
+            <l>and many proud men pressed close, that prince to honour.</l>
+            <l>All clasped in his noble armour to hall they him brought,</l>
+            <l>where a fair fire on a hearth fiercely flamed.</l>
+            <l>Then the lord of that land left his chamber</l>
+            <l>for to meet with manners the man on the floor.</l>
+            <l>He said: ‘You are welcome to dwell as you like.</l>
+            <l>What is here, is all your own, to have at your will</l>
+            <l rend="indent">and wield you.</l>
+            <l rend="indent">‘Graunt merci,’ quoth Gawain,</l>
+            <l rend="indent">‘May Christ reward it you.’</l>
+            <l rend="indent">As friends that meet again</l>
+            <l rend="indent">Each clasped the other true.</l></lg> 
+         
+
+			      <head>36</head>
+
+         <lg><l>Gawain gazed on the gallant that goodly him greet,</l>
+            <l>and thought him a brave baron that the burg owned,</l>
+            <l>a huge man in truth, and mature in his years;</l>
+            <l>broad, bright was his beard and all beaver-hued,</l>
+            <l>stern, striding strongly on stalwart shanks,</l>
+            <l>face fell as the fire, and free of his speech;</l>
+            <l>and well he seemed to suit, as the knight thought,</l>
+            <l>the leading a lordship, along of lords full good.</l>
+            <l>The chief him led to a chamber, expressly commands</l>
+            <l>a lord be delivered to him, him humbly to serve;</l>
+            <l>and there were brave for his bidding a band of men,</l>
+            <l>that brought him to a bright bower, the bedding was noble,</l>
+            <l>of curtains of clear silk with clean gold hems,</l>
+            <l>and coverlets full curious with comely panels,</l>
+            <l>of bright ermine above embroidered sides,</l>
+            <l>curtains running on cords, red gold rings,</l>
+            <l>tapestries tied to the wall, of Toulouse, Turkestan,</l>
+            <l>and underfoot, on the floor, that followed suit.</l>
+            <l>There he was disrobed, with speeches of mirth,</l>
+            <l>the burden of his mail and his bright clothes.</l>
+            <l>Rich robes full readily retainers brought him,</l>
+            <l>to check and to change and choose of the best.</l>
+            <l>Soon as he held one, and hastened therein,</l>
+            <l>that sat on him seemly, with spreading skirts,</l>
+            <l>verdant in his visage Spring verily seemed</l>
+            <l>to well nigh everyone, in all its hues,</l>
+            <l>glowing and lovely, all his limbs under,</l>
+            <l>that a comelier knight never Christ made,</l>
+            <l rend="indent">they thought.</l>
+            <l rend="indent">However he came here,</l>
+            <l rend="indent">it seemed that he ought</l>
+            <l rend="indent">to be prince without peer</l>
+            <l rend="indent">on fields where fell men fought.</l></lg>  
+	
+
+			      <head>37</head>
+	
+         <lg><l>A chair before the chimney, where charcoal burned,</l>
+            <l>graciously set for Gawain, was gracefully adorned,</l>
+            <l>coverings on quilted cushions, cunningly crafted both.</l>
+            <l>And then a mighty mantle was on that man cast</l>
+            <l>of a brown silk, embroidered full rich,</l>
+            <l>and fair furred within with pelts of the best –</l>
+            <l>the finest ermine on earth – his hood of the same.</l>
+            <l>And he sat on that settle seemly and rich,</l>
+            <l>and chafed himself closely, and then his cheer mended.</l>
+            <l>Straightway a table on trestles was set up full fair,</l>
+            <l>clad with a clean cloth that clear white showed,</l>
+            <l>the salt-cellars, napkins and silvered spoons.</l>
+            <l>The knight washed at his will, and went to his meat.</l>
+            <l>Servants him served seemly enough</l>
+            <l>with several soups, seasoned of the best,</l>
+            <l>double bowlfuls, as fitting, and all kinds of fish,</l>
+            <l>some baked in bread, some browned on the coals,</l>
+            <l>some seethed, some in stews savoured with spices,</l>
+            <l>and sauces ever so subtle that the knight liked. </l>
+            <l>While he called it a feast full freely and oft</l>
+            <l>most politely, at which all spurred him on politely</l>
+            <l rend="indent">again:</l>
+            <l rend="indent">‘This penance now you take,</l>
+            <l rend="indent">after it shall amend.’</l>
+            <l rend="indent">That man much mirth did make,</l>
+            <l rend="indent">for the wine to his head did tend.</l></lg>  	
+
+                <head>38</head>
+
+         <lg><l>Then they sparred and parried in precious style</l>
+            <l>with private points put to the prince himself,</l>
+            <l>so he conceded courteously of that court he came,</l>
+            <l>where noble Arthur is headman himself alone,</l>
+            <l>that is the right royal king of the Round Table;</l>
+            <l>and that it is Gawain himself that in that house sits,</l>
+            <l>come there at Christmas, as chance has him driven.</l>
+            <l>When the lord learned what prince that he there had,</l>
+            <l>loud laughed he thereat, so delightful he thought it,</l>
+            <l>and all the men in that manse made it a joy</l>
+            <l>to appear in his presence promptly that time,</l>
+            <l>who all prize and prowess and purest ways</l>
+            <l>appends to his person, and praised is ever;</l>
+            <l>above all men upon earth his honour is most.</l>
+            <l>Each man full softly said to his neighbour:</l>
+            <l>‘Now shall we see show of seemliest manners</l>
+            <l>and the faultless phrases of noble speaking.</l>
+            <l>What superior speech is, unasked we shall learn,</l>
+            <l>since we have found this fine master of breeding.</l>
+            <l>God has given us of his goodly grace forsooth,</l>
+            <l>that such a guest as Gawain grants us to have,</l>
+            <l>when barons blithe at His birth shall sit</l>
+            <l rend="indent">and sing.</l>
+            <l rend="indent">The meaning of manners here</l>
+            <l rend="indent">this knight now shall us bring.</l>
+            <l rend="indent">I hope whoever may hear</l>
+            <l rend="indent">Shall learn of love-making.’</l></lg> 
+         
+
+			      <head>39</head>
+
+         <lg><l>When the dinner was done and the diners risen,</l>
+            <l>it was nigh on the night that the time was near.</l>
+            <l>Chaplains to the chapel took their course,</l>
+            <l>ringing all men, richly, as they rightly should,</l>
+            <l>to the holy evensong of that high eventide.</l>
+            <l>The lord goes thereto and the lady as well;</l>
+            <l>into a comely enclosure quietly she enters.</l>
+            <l>Gawain gaily goes forth and thither goes soon;</l>
+            <l>the lord grasps him by the gown and leads him to sit,</l>
+            <l>acknowledges him with grace, calls him by name,</l>
+            <l>and said he was the most welcome man in the world;</l>
+            <l>and he thanked him thoroughly, they clasped each other,</l>
+            <l>and sat with sober seeming the service through.</l>
+            <l>Then liked the lady to look on the knight;</l>
+            <l>and came from the close with many fine women.</l>
+            <l>She was the fairest in feature, in flesh and complexion,</l>
+            <l>and in compass and colour and ways, of all others,</l>
+            <l>and fairer than Guinevere, as the knight thought.</l>
+            <l>He strode through the chancel to squire the dame.</l>
+            <l>Another lady her led by the left hand,</l>
+            <l>who was older than her, and aged it seemed,</l>
+            <l>and highly honoured with her men about her.</l>
+            <l>Not alike though to look on those ladies were,</l>
+            <l>for if the one was fresh, the other was withered:</l>
+            <l>rich red in this one distinguished her,</l>
+            <l>rough wrinkled cheeks on that other, in rolls.</l>
+            <l>Kerchiefs on this one, with many clear pearls,</l>
+            <l>her breast and her bright throat bare displayed</l>
+            <l>shone sweeter than snow that’s shed on the hills;</l>
+            <l>that other swathed with a wimple wound at the throat,</l>
+            <l>clothed to her swarthy chin with chalk-white veils,</l>
+            <l>her forehead folded in silk, enveloped everywhere,</l>
+            <l>ringed and trellised with trefoils about,</l>
+            <l>that naught was bare of the lady but the black brows,</l>
+            <l>the two eyen and nose, the naked lips,</l>
+            <l>and those were sorry to see, and somewhat bleary –</l>
+            <l>a great lady on earth a man might her call,</l>
+            <l rend="indent">by God!</l>
+            <l rend="indent">Her body was short and thick,</l>
+            <l rend="indent">her buttocks big and broad;</l>
+            <l rend="indent">Much sweeter a sweet to lick</l>
+            <l rend="indent">the one at her side for sure.</l></lg>  
+	
+
+			        <head>40</head>
+
+         <lg><l>When Gawain gazed on that gracious-looking girl,</l>
+            <l>with leave asked of the lord he went to meet them.</l>
+            <l>The elder he hails, bowing to her full low;</l>
+            <l>the lovely-looking he laps a little in his arms,</l>
+            <l>he kisses her courteously and nobly he speaks.</l>
+            <l>They crave his acquaintance, and he quickly asks</l>
+            <l>to be their sworn servant, if they themselves wished.</l>
+            <l>They take him between them, and talking they lead him</l>
+            <l>to a chamber, to the chimney, and firstly they ask for</l>
+            <l>spices, which men unstintingly hastened to bring,</l>
+            <l>and the winning wine with them, every time.</l>
+            <l>The lord laughing aloft leaps full oft,</l>
+            <l>minding that mirth be made and many a time,</l>
+            <l>nobly lifted his hood, and on a spear hung it,</l>
+            <l>and wished him to win the worth and honour thereof</l>
+            <l>who most mirth might move at that Christmastide.</l>
+            <l>‘And I shall swear, by my faith, to strive with the best</l>
+            <l>before I lose the hood, with the help of my friends.’</l>
+            <l>Thus with laughing words the lord makes all merry,</l>
+            <l>for to gladden Sir Gawain with games in the hall</l>
+            <l rend="indent">that night.</l>
+            <l rend="indent">Till, when it was time,</l>
+            <l rend="indent">the lord demanded light.</l>
+            <l rend="indent">Gawain his way did find</l>
+            <l rend="indent">To bed as best he might.</l></lg>  
+
+
+			      <head>41</head>
+
+         <lg><l>On the morn, when each man minds that time</l>
+            <l>the dear Lord for our destiny to die was born,</l>
+            <l>joy waxes in each house in the world for His sake.</l>
+            <l>So did it there on that day with dainties many:</l>
+            <l>both when major and minor meals were eaten</l>
+            <l>deft men on the dais served of the best.</l>
+            <l>The old ancient wife highest she sits;</l>
+            <l>the lord, so I believe, politely beside her.</l>
+            <l>Gawain and the sweet lady together they sat</l>
+            <l>in the midst, as the masses came together;</l>
+            <l>and then throughout the hall, as seemed right,</l>
+            <l>each man in his degree was graciously served.</l>
+            <l>There was meat, there was mirth, there was much joy,</l>
+            <l>that it would be a trouble for me to tell all,</l>
+            <l>and however perchance I pined to make my point.</l>
+            <l>But yet I know Gawain and the sweet lady</l>
+            <l>such comfort of their company caught together</l>
+            <l>through their dear dalliance of courtly words,</l>
+            <l>with clean courteous chat, closed from filth,</l>
+            <l>their play surpassed every princely game with which it</l>
+            <l rend="indent">compares.</l>
+            <l rend="indent">Kettledrums and trumpets,</l>
+            <l rend="indent">much piping there of airs;</l>
+            <l rend="indent">Each man minded his,</l>
+            <l rend="indent">and those two minded theirs.</l></lg> 
+
+
+			      <head>42</head>
+
+         <lg><l>Much mirth was there driven that day and another,</l>
+            <l>and a third as thickly thronged came in thereafter;</l>
+            <l>The joy of St John’s Day was gentle to hear,</l>
+            <l>and was the last of the larking, the lords thought.</l>
+            <l>There were guests set to go on the grey morn,</l>
+            <l>so they stayed wonderfully waking and wine drank,</l>
+            <l>dancing the day in with noble carols.</l>
+            <l>At the last, when it was time, they took their leave,</l>
+            <l>each one to wend on his way into strange parts.</l>
+            <l>Gawain gave them good day, the good man grasps him,</l>
+            <l>and leads him to his own chamber, the chimney beside,</l>
+            <l>and there he grips him tight, heartily thanks him</l>
+            <l>for the fine favour that he had shown him,</l>
+            <l>so to honour his house on that Christmastide,</l>
+            <l>and embellish his burg with his bright cheer.</l>
+            <l>‘Indeed, sir, while I live, I am the better</l>
+            <l>for Gawain being my guest at God’s own feast.’</l>
+            <l>‘Graunt merci, sir,’ quoth Gawain, ‘in good faith it’s yours,</l>
+            <l>all the honour is your own – the High King requite you!</l>
+            <l>And I am here, at your will, to work your behest,</l>
+            <l>as I am beholden to do, in high things and low,</l>
+            <l rend="indent">by right.’</l>
+            <l rend="indent">The lord was at great pains</l>
+            <l rend="indent">To keep longer the knight;</l>
+            <l rend="indent">To him answers Gawain</l>
+            <l rend="indent">That by no means he might.</l></lg>  
+	
+
+			      <head>43</head>
+
+         <lg><l>Then the lord aimed full fair at him, asking</l>
+            <l>what daring deed had him driven at that dear time</l>
+            <l>so keenly from the king’s court to stray all alone,</l>
+            <l>before the holy holiday was haled out of town.</l>
+            <l>‘Forsooth, sir,’ quoth the knight, ‘you say but the truth,</l>
+            <l>a high errand and a hasty had me from those halls,</l>
+            <l>for I am summoned myself to seek for a place,</l>
+            <l>with no thought in the world where to go find it.</l>
+            <l>I would not dare fail find it by New Year’s morning</l>
+            <l>for all the land in Logres, so me our Lord help!</l>
+            <l>So, sir, this request I make of you here,</l>
+            <l>that you tell me true if ever you tale heard</l>
+            <l>of the green chapel, on what ground it stands,</l>
+            <l>and of the knight that keeps it, the colour of green.</l>
+            <l>There was established by statute a pact us between</l>
+            <l>both to meet at that mark, if I should live;</l>
+            <l>and of that same New Year but little is wanting,</l>
+            <l>and I would look on that lord, if God would let me,</l>
+            <l>more gladly, by God’s Son, than any goods gain.</l>
+            <l>So, indeed, by your leave, it behoves me to go.</l>
+            <l>Now to work this business I’ve barely three days,</l>
+            <l>and it’s fitter I fall dead than fail of my errand.’</l>
+            <l>Then, laughing, quoth the lord: ‘Now stay, it behoves you,</l>
+            <l>for I’ll teach you the trysting place ere the term’s end.</l>
+            <l>The green chapel upon ground grieve for no more;</l>
+            <l>but you shall be in your bed, sir, at your ease,</l>
+            <l>while day unfolds, and go forth on the first of the year,</l>
+            <l>and come to that mark at mid-morn, to act as you wish</l>
+            <l rend="indent">and when.</l>
+            <l rend="indent">Dwell until New Year’s Day,</l>
+            <l rend="indent">and rise and ride on then.</l>
+            <l rend="indent">You shall be shown the way;</l>
+            <l rend="indent">it is not two miles hence.’</l></lg> 
+	
+
+         <head>44</head>
+
+         <lg><l>Then was Gawain full glad, and gleefully he laughed:</l>
+           <l>‘Now I thank you thoroughly beyond all things;</l>
+           <l>now achieved is my goal, I shall at your will</l>
+           <l>dwell here, and do what else you deem fit.’</l>
+           <l>Then the lord seized him and set him beside,</l>
+           <l>and the ladies had fetched, to please him the better.</l>
+           <l>There was seemly solace by themselves still.</l>
+           <l>The lord lofted for love notes so merry,</l>
+           <l>as one that wanted his wits, nor knew what he did.</l>
+           <l>Then he cried to the knight, calling aloud:</l>
+           <l>‘You have deemed to do the deed that I bid.</l>
+           <l>Will you hold to this promise here and now?’</l>
+           <l>‘Yes, sire, indeed,’ said the knight and true,</l>
+           <l>‘While I bide in your burg, I’m at your behest.’</l>
+           <l>‘As you have travelled,’ quoth the lord, ‘from afar,</l>
+           <l>and since then waked with me, you are not well served</l>
+           <l>neither of sustenance nor of sleep, surely I know.</l>
+           <l>You shall linger in your room and lie there at ease</l>
+           <l>tomorrow till Mass, and then to meat wend</l>
+           <l>when you will, with my wife, that with you shall sit</l>
+           <l>and comfort you with company, till I come to court:</l>
+           <l rend="indent">time spend,</l>
+           <l rend="indent">And I shall early rise;</l>
+           <l rend="indent">a-hunting will I wend.’</l>
+           <l rend="indent">Gawain thinks it wise,</l>
+           <l rend="indent">as is fitting to him bends.</l></lg>
+
+         <head>45</head>
+
+        <lg><l>‘And further,’ quoth the lord, ‘a bargain we’ll make:</l>
+            <l>whatsoever I win in the wood is worthily yours;</l>
+            <l>and whatever here you achieve, exchange me for it.</l>
+            <l>Sweet sir, swap we so – swear it in truth –</l>
+            <l>whether, lord, that way lies worse or better.’</l>
+            <l>‘By God,’ quoth Gawain the good, ‘I grant it you,</l>
+            <l>and that you lust for to play, like it methinks.’</l>
+            <l>‘Who’ll bring us a beverage, this bargain to make?’</l>
+            <l>so said the lord of that land. They laughed each one,</l>
+            <l>they drank and dallied and dealt in trifles,</l>
+            <l>these lords and ladies, as long as they liked;</l>
+            <l>and then with Frankish faring, full of fair words,</l>
+            <l>they stopped and stood and softly spoke,</l>
+            <l>kissing full comely and taking their leave.</l>
+            <l>By many lively servants with flaming torches,</l>
+            <l>each brave man was brought to his bed at last</l>
+            <l rend="indent">full soft.</l>
+            <l rend="indent">To bed yet ere they sped,</l>
+            <l rend="indent">repeating the contract oft;</l>
+            <l rend="indent">the old lord of that spread</l>
+            <l rend="indent">could keep a game aloft.</l></lg>
+</div>
+
+         <div type="part">
+            <head>Part III</head>
+
+         <head>46</head>
+     
+   <lg><l>Full early before the day the folk were risen;</l>
+    <l>Guests who would go their grooms they called on,</l>
+    <l>and they busied them briskly the beasts to saddle,</l>
+    <l>tightening their tackle, trussing their baggage.</l>
+    <l>The richest ready themselves to ride all arrayed,</l>
+    <l>leaping up lightly, latched onto their bridles,</l>
+    <l>each rode out by the way that he most liked.</l>
+    <l>The beloved lord of the land was not the last</l>
+    <l>arrayed for the riding, with ranks full many;</l>
+    <l>ate a sop hastily, when he had heard Mass,</l>
+    <l>with horns to the hunting field he hastens away.</l>
+    <l>By the time that daylight gleamed upon earth,</l>
+    <l>he with his knights on high horses were.</l>
+    <l>Then the cunning hunters coupled their hounds,</l>
+    <l>unclosed the kennel door and called them out,</l>
+    <l>blew briskly on their bugles three bare notes;</l>
+    <l>braches bayed therefore, and bold noise made,</l>
+    <l>and men chastised and turned those that chasing went,</l>
+    <l>a hundred of hunters, as I have heard tell,</l>
+     <l rend="indent">of the best.</l>
+     <l rend="indent">To station, keepers strode,</l>
+     <l rend="indent">huntsmen leashes off-cast;</l>
+     <l rend="indent">great rumpus in that wood</l>
+     <l rend="indent">there rose with their good blasts.</l></lg>
+     
+         <head>47</head>
+     
+   <lg><l>At the first call of the quest quaked the wild;</l>
+   <l>deer drove for the dales, darting for dread,</l>
+   <l>hied to the high ground, but swiftly they were</l>
+   <l>stayed by the beaters, with their stout cries.</l>
+   <l>They let the harts with high branched heads have way,</l>
+   <l>the brave bucks also with their broad antlers;</l>
+   <l>for the noble lord had bidden that in close season</l>
+   <l>no man there should meddle with those male deer.</l>
+   <l>The hinds were held back with a ‘Hey’ and a ‘Ware!’</l>
+   <l>The does driven with great din to the deep coves.</l>
+   <l>There might men see, as they loosed, the slanting of arrows;</l>
+   <l>at each winding of the wood whistled a flight,</l>
+   <l>that bit into brown flanks, with broad blade-heads.</l>
+   <l>What screaming and bleeding, by banks they lay dying,</l>
+   <l>and ever the hounds in a rush hard on them followed,</l>
+   <l>hunters with high horn-calls hastened them after,</l>
+   <l>with such a crack and cry as cliffs were bursting.</l>
+   <l>What wild beasts so escaped the men shooting</l>
+   <l>were all dragged down and rent by the new reserves,</l>
+   <l> when hunted from high ground, and harried to water.</l>
+   <l> The lads were so skilled at the lower stations,</l>
+   <l> and the greyhounds so great, that gripped so quickly</l>
+   <l> and dragged them down, as swift I swear,</l>
+	 <l rend="indent">as sight.</l> 
+    <l rend="indent">In bliss without alloy</l>
+    <l rend="indent">the lord does spur or alight,</l>
+    <l rend="indent">and passes that day with joy</l>
+    <l rend="indent">and so to the dark night.</l></lg>
+     
+         <head>48</head>
+     
+    <lg><l>Thus larks the lord by linden-wood eaves,</l>
+    <l>while Gawain the good man gaily abed lies,</l>
+    <l>lurks till the daylight gleams on the walls,</l>
+    <l>under canopy full clear, curtained about.</l>
+    <l>And as in slumber he lay, softly he heard</l>
+    <l>a little sound at his door, and it slid open;</l>
+    <l>and he heaves up his head out of the clothes,</l>
+    <l>a corner of the curtain he caught up a little,</l>
+    <l>and watches warily to make out what it might be.</l>
+    <l>It was the lady, the loveliest to behold,</l>
+    <l>that drew the door after her full silent and still,</l>
+    <l>and bent her way to the bed; and the knight ashamed,</l>
+    <l>laid him down again lightly and feigned to sleep.</l>
+    <l>And she stepped silently and stole to his bed,</l>
+    <l>caught up the curtain and crept within,</l>
+    <l>and sat her full softly on the bedside</l>
+    <l>and lingered there long, to look when he wakened.</l>
+    <l>The lord lay low, lurked a full long while,</l>
+    <l>compassing in his conscience what this case might</l> 
+    <l>mean or amount to, marvelling in thought.</l>
+    <l>But yet he said to himself: ‘More seemly it were</l>
+    <l>to descry with speech, in a space, what she wishes.’</l>
+    <l>Then he wakened and wriggled and to her he turned,</l>
+    <l>and lifted his eyelids and let on he was startled,</l>
+    <l>and signed himself with his hand, as with prayer, to be</l>
+	 <l rend="indent">safer.</l>
+	 <l rend="indent">With chin and cheek full sweet,</l>
+	 <l rend="indent">both white and red together,</l>
+	 <l rend="indent">full graciously did she greet,</l>
+	 <l rend="indent">lips light with laughter.</l></lg>
+
+         <head>49</head>
+
+     <lg><l>‘Good morning, Sir Gawain,’ said that sweet lady,</l>
+     <l>‘You are a sleeper unsafe, that one may slip hither.</l>
+     <l>Now are you taken in a trice, lest a truce we shape,</l>
+     <l>I shall bind you in your bed, that you may trust.’</l>
+     <l>All laughing the lady made her light jests.</l>
+     <l>‘Good morrow, sweet,’ quoth Gawain the blithe,</l>
+     <l>‘I shall work your will, and that I well like,</l>
+     <l>for I yield me swiftly and sue for grace;</l>
+     <l>and that is the best, to my mind, since behoves I must.’</l>
+     <l>And thus he jested again with much blithe laughter.</l>
+     <l>‘But would you, lovely lady, but grant me leave</l>
+     <l>and release your prisoner and pray him to rise,</l>
+     <l>I would bound from this bed and dress me better,</l>
+     <l>I should discover more comfort in speaking with you.’</l>
+     <l>‘Nay, forsooth, beau sire,’ said that sweet,</l>
+     <l>‘You shall not rise from your bed. I charge you better:</l>
+     <l>I shall wrap you up here on this other side,</l>
+     <l>and then chat with my knight whom I have caught;</l>
+     <l>for I know well, indeed, Sir Gawain you are,</l>
+     <l>that all the world worships, wherever you ride.</l>
+     <l>Your honour, your courtesy, is nobly praised</l>
+     <l>among lords, among ladies, all who life bear.</l>
+     <l>And now you are here, indeed, and we on our own;</l>
+     <l>my lord and his lords are far off faring,</l>
+     <l>other knights are abed, and my ladies also,</l>
+     <l>the door drawn and shut with a strong hasp.</l>
+     <l>And since I have in this house him who all like,</l>
+     <l>I shall work my time well, while it lasts,</l>
+   	 <l rend="indent">with a tale.</l>
+   	 <l rend="indent">Your are welcome to my body,</l>
+   	 <l rend="indent">Your pleasure to take all;</l>
+   	 <l rend="indent">I must by necessity</l>
+   	 <l rend="indent">your servant be, and shall.</l></lg>
+
+         <head>50</head>
+
+     <lg><l>‘In good faith,’ quoth Gawain, ‘a gain’s that me thinks,</l>
+     <l>though I be not now him of whom you are speaking;</l>
+     <l>to reach to such reverence as you rehearse here,</l>
+     <l>I am all ways unworthy, I know well myself.</l>
+     <l>By God, I’d be glad though if you thought it fit</l>
+     <l>in speech or service that I might set myself</l>
+     <l>to the pleasing of your worth – that were a pure joy.’</l>
+     <l>‘In good faith, Sir Gawain,’ quoth the sweet lady,</l>
+     <l>‘The worth and the prowess that pleases all others,</l>
+     <l>if I slighted or thought light of it, that were little grace;</l>
+     <l>but there are ladies enough that would far rather </l>
+     <l>have you, dear man, to hold, as I have you here,</l>
+     <l>to dally dearly in your delightful words,</l>
+     <l>comfort themselves and ease their cares,</l>
+     <l>than make much of the treasure and gold they have.</l>
+     <l>But as I love that same Lord that the heavens rules,</l>
+     <l>I have wholly in my hand what all desire</l>
+     <l rend="indent">through grace.’</l>
+     <l rend="indent">She made him thus sweet cheer,</l>
+     <l rend="indent">who was so fair of face;</l>
+     <l rend="indent">the knight with speeches clear</l>
+     <l rend="indent">answered her every case.</l></lg>
+
+         <head>51</head>
+
+     <lg><l>‘Madam,’ quoth the merry man, ‘Mary give you grace,</l>
+     <l>for I have found, in good faith, your friendship is noble.</l>
+     <l>Others gain full much of other folks praise for their deeds,</l>
+     <l>but the deference they deal me is undeserved in my case.</l>
+     <l>It is honour to you that naught but good you perceive.’</l>
+     <l>‘By Mary,’ quoth the lady, ‘methinks it otherwise;</l>
+     <l>for were I worth all the wonder of women alive,</l>
+     <l>and all the wealth of the world were in my hand,</l>
+     <l>and I should bargain to win myself a brave lord,</l>
+     <l>with the qualities that I know of you, knight, here,</l>
+     <l>of beauty and debonair and blithe seeming,</l>
+     <l>that I hearkened to ere now and have here found true,</l>
+     <l>then should no errant on earth before you be chosen.’</l>
+     <l>‘Indeed, lady,’ quoth the knight, ‘you have done much better;</l>
+     <l>but I am proud of the value you place on me,</l>
+     <l>and, solemnly your servant, my sovereign I hold you,</l>
+     <l>and your knight I become, and Christ reward you!’</l>
+     <l>Thus they mulled many matters till mid-morn passed,</l>
+     <l>and ever the lady let fall that she loved him much;</l>
+     <l>yet the knight held to his guard, and acted full fair.</l>
+     <l>‘Though I were loveliest lady,’ so her mind had it,</l>
+     <l>‘the less is there love in his load’ – for his fate he sought</l>
+		 <l rend="indent">that one,</l>
+	    <l rend="indent">the stroke that should him cleave,</l>
+	    <l rend="indent">and it must needs be done.</l>
+	    <l rend="indent">The lady then sought to leave,</l>
+	    <l rend="indent">he granting her that boon.</l></lg> 
+
+         <head>52</head>
+
+     <lg><l>Then she gave him good day, with a laughing glance,</l>
+     <l>and stunned him as she stood there, with cutting words:</l>
+     <l>‘May He who speeds each speech reward you this sport!</l>
+     <l>But that you should be Gawain, it baffles the mind.’</l>
+     <l>‘Wherefore?’ quoth the knight, and urgently asked,</l>
+     <l>fearful lest he had failed in forms of politeness.</l>
+     <l>But the lady blessed him and spoke as follows:</l>
+     <l>‘One gracious as Gawain is rightly held to be,</l>
+     <l>with courtesy contained so clear in himself,</l>
+     <l>could not lightly have lingered so long with a lady,</l>
+     <l>but he had craved a kiss out of courtesy,</l>
+     <l>with some trifling touch at some tale’s end.’</l>
+     <l>Then quoth Gawain: ‘Indeed, let it be as you like;</l>
+     <l>I shall kiss at your command, as befits a knight,</l>
+     <l>and further, lest I displease you, so plead no more.’</l>
+     <l>She comes nearer at that, and catches him in her arms,</l>
+     <l>leans lovingly down, and the lord kisses.</l>
+     <l>They graciously commend to Christ one another;</l>
+     <l>and she goes out at the door with not a word more;</l>
+     <l>And he readies himself to rise and hurries anon,</l>
+     <l>calls to his chamberlain, chooses his clothes,</l>
+     <l>going forth, when he is ready, blithely to Mass.</l>
+     <l>And then he went to the noble meal that awaited,</l>
+     <l>and made merry all day till the moonrise,</l>
+   	 <l rend="indent">at games.</l>
+   	 <l rend="indent">Was never knight fairer sung</l>
+   	 <l rend="indent">between two such noble dames,</l>
+   	 <l rend="indent">the elder and the young;</l>
+   	 <l rend="indent">much joy had they of the same.</l></lg>
+
+         <head>53</head>
+
+     <lg><l>And ever the lord of the land intent on his games,</l>
+     <l>hunted, in holts and heath, for barren hinds,</l>
+     <l>Such a sum he there slew by the set of sun,</l>
+     <l>of does and other deer, it were deemed a wonder.</l>
+     <l>Then fiercely they flocked in, folk at the last,</l>
+     <l>and quickly of the quenched deer a heap they made.</l>
+     <l>The noblest sped there with servants enough,</l>
+     <l>gathered the quarry greatest in flesh that were there,</l>
+     <l>and had them deftly undone as custom demands.</l>
+     <l>Some that were there searched them in assay,</l>
+     <l>and two fingers of fat they found on the feeblest.</l>
+     <l>Then they slit the slot, and seized the first stomach,</l>
+     <l>shaved it with sharp knives, and knotted the sheared.</l>
+     <l>Then lopped off the four limbs and rent off the hide,</l>
+     <l>next broke they the belly, the bowels out-taking,</l>
+     <l>deftly, lest they undid and destroyed the knot.</l>
+     <l>They gripped the gullet, and swiftly severed</l>
+     <l>the weasand from the windpipe and whipped out the guts.</l>
+     <l>Then sheared out the shoulders with their sharp knives,</l>
+     <l>hauled them through a little hole, left the sides whole.</l>
+     <l>Then they slit up the breast and broke it in twain.</l>
+     <l>And again at the gullet one then began</l>
+     <l>rending all readily right to the fork,</l>
+     <l>voiding the entrails, and verily thereafter</l>
+     <l>all the membranes by the ribs readily loosened.</l>
+     <l>So too they cleared to the backbone, rightly,</l>
+     <l>even down to the haunch that hangs from the same,</l>
+     <l>and heaved it all up whole and hewed it off there.</l>
+     <l>and that they properly call the numbles, I deem,</l>
+     <l rend="indent">by kind.</l>
+     <l rend="indent">At the fork then of the thighs</l>
+     <l rend="indent">they loose the lappets behind;</l>
+     <l rend="indent">to hew it in two they hie,</l>
+     <l rend="indent">by the backbone it to unbind.</l></lg>
+
+         <head>54</head>
+
+     <lg><l>Both the head and the neck they hewed off then,</l>
+     <l>and after sundered the sides swift from the chine,</l>
+     <l>and the ravens’ fee they cast into a grove.</l>
+     <l>Then they skewered each thick flank by the ribs,</l>
+     <l>and hung each up by the hocks of the haunches,</l>
+     <l>every fellow taking his fee as it fell to him.</l>
+     <l>On a skin of the fair beast fed they their hounds</l>
+     <l>with the liver and lights, and the stomach lining,</l>
+     <l>and bread bathed in blood blent there among.</l>
+     <l>Boldly they blew the kill their hounds a-baying;</l>
+     <l>then rode home with the flesh tightly packed,</l>
+     <l>stalwartly sounding out many stout notes.</l>
+     <l>As the daylight was done, the company came</l>
+     <l>to the comely castle, where our knight bides</l>
+     <l rend="indent">all still,</l>
+     <l rend="indent">in bliss by bright fire set.</l>
+     <l rend="indent">The lord is come from the hill;</l>
+     <l rend="indent">when Gawain with him is met,</l>
+     <l rend="indent">there they but joy as they will.</l></lg>
+
+         <head>55</head>
+
+     <lg><l>Then the lord commanded all be summoned to the hall,</l>
+     <l>both the ladies, aloft, to descend with their maids.</l>
+     <l>Before all the folk on the floor, he bid men</l>
+     <l>verily his venison to bring there before him;</l>
+     <l>and all gaily in courtesy Gawain he called,</l>
+     <l>and tells over the tally of full fat beasts,</l>
+     <l>shows him the fine flesh shorn from the ribs.</l>
+     <l>‘How does this sport please you? Have I won praise?</l>
+     <l>Have I won thanks, thoroughly served by my craft?’</l>
+     <l>‘Yes, indeed,’ quoth the other, ‘here spoils are fairest</l>
+     <l>of all I have seen this seven-year in season of winter.’</l>
+     <l>‘And I give all this to you, Gawain,’ quoth the man then,</l>
+     <l>‘for according to covenant you may call it your own.’</l>
+     <l>‘That is so,’ quoth the knight, ‘I say you the same:</l>
+     <l>what I have worthily won this house within,</l>
+     <l>shall with as good a will be worthily yours.’</l>
+     <l>And he clasps his fair neck his arms within,</l>
+     <l>and kisses him in as comely a way as he can:</l>
+     <l>‘Take you there my prize, I received no more;</l>
+     <l>I would grant it all, though it were greater.’</l>
+     <l>‘That is good,’ quoth the lord, ‘many thanks therefore.</l>
+     <l>This may be the better gift, if you would tell me</l>
+     <l>where you won this same prize by your own wits.’</l>
+     <l>‘That was not pledged,’ quoth he, ‘ask me no more;</l>
+     <l>for you have taken what’s due, none other to you </l>
+       <l rend="indent">I owe.’</l>
+    	<l rend="indent">They laughed and made blithe</l>
+    	<l rend="indent">with words worth praise, and so</l>
+    	<l rend="indent">to supper then side by side,</l>
+    	<l rend="indent">with dainties in plenty go.</l></lg>
+
+         <head>56</head>
+
+     <lg><l>And then by the chimney in chamber sitting,</l>
+     <l>servants brought to them choice wines oft,</l>
+     <l>and in their banter they agreed in that morn</l>
+     <l>to fulfil the same bond they had made before:</l>
+     <l>what chance might betide, their prize to exchange,</l>
+     <l>each new thing they named, at night when they met.</l>
+     <l>They made accord of this covenant before all the court;</l>
+     <l>and beverage was brought forth in banter at this time.</l>
+     <l>Then they lovingly took their leave at the last,</l>
+     <l>each man at his leaving going brisk to his bed.</l>
+     <l>When the cock had crowed and cackled but thrice,</l>
+     <l>the lord leapt from his bed, the liegemen each one,</l>
+     <l>so that meat and a Mass were swiftly delivered,</l>
+     <l>the company off to the wood, ere daylight sprang,</l>
+	   <l rend="indent">to the chase.</l>
+	   <l rend="indent">Proudly with huntsmen and horns</l>
+		<l rend="indent">through wilds they passed apace,</l>
+		<l rend="indent">uncoupled among the thorns,</l>
+		<l rend="indent">the hounds ran headlong race.</l></lg>
+
+         <head>57</head>
+
+     <lg><l>Soon they called for a search by the marsh-side,</l>
+     <l>the huntsman urged on the first hounds up,</l>
+     <l>wild cries he uttered with wondrous noise.</l>
+     <l>The hounds that heard him hastened there swiftly,</l>
+     <l>and fell as fast to the trail, forty at once.</l>
+     <l>Then such a baying and clamour of gathered hounds</l>
+     <l>rose that the rocks rang out all about.</l>
+     <l>Huntsmen harried them with horn and by mouth;</l>
+     <l>then all in a pack they swung together</l>
+     <l>between a pool in that place and a cruel crag.</l>
+     <l>On a knoll by a cliff, at the marsh side,</l>
+     <l>where the rough rock had ruggedly fallen,</l>
+     <l>they sped to the finding, the huntsmen after.</l>
+     <l>They surrounded the crag and the knoll both,</l>
+     <l>while they made sure they had well within</l>
+     <l>the beast that was bayed at, there, by their bloodhounds.</l>
+     <l>Then they beat at the bushes and bade him rise up,</l>
+     <l>and he savagely swung athwart the huntsmen –</l>
+     <l>a most splendid boar it was, rushed out there,</l>
+     <l>solitary through age, long split from the herd,</l>
+     <l>but he was still mighty, the greatest of boars,</l>
+     <l>full grim when he grunted. Then grieved many</l>
+     <l>for three hounds at first thrust he felled to the earth,</l>
+     <l>and sped him forth at great speed all unscathed.</l>
+     <l>The hunt hallooed ‘Hi!’ full loud, and cried ‘Hey! Hey!</l>
+     <l>and horns to mouths, hastily recalled them.</l>
+     <l>Many were the merry cries of men and of hounds</l>
+     <l>that brisk chased the boar, with barking and clamour,</l>
+     <l rend="indent">to quell,</l>
+     <l rend="indent">Full oft he bides at bay</l>
+     <l rend="indent">and downs the dogs pell-mell;</l>
+     <l rend="indent">he harries the hounds, and they</l>
+     <l rend="indent">full piteously yowl and yell.</l></lg> 
+
+         <head>58</head>
+
+     <lg><l>Shaping to shoot him some shoved through then,</l>
+     <l>hurling their arrows at him, hitting him often;</l>
+     <l>but their points were parried by bristling flanks,</l>
+     <l>and their barbs would not bite there in his brow,</l>
+     <l>though the smooth shaft were shattered in pieces,</l>
+     <l>the head skipped away wherever it hit.</l>
+     <l>but when by dint of dire strokes they damaged him,</l>
+     <l>then, maddened by baiting, he rushes the men,</l>
+     <l>hurts them full heavily as forth he hies,</l>
+     <l>and many were awed at that and drew backwards.</l>
+     <l>But the lord on a lithe horse lunges after him,</l>
+     <l>as knight bold in the battle his bugle he blows,</l>
+     <l>rallied the hounds as he rode through rank thicket,</l>
+     <l>pursuing this wild swine till the sun had set.</l>
+     <l>The day with these same deeds they passed in this wise,</l>
+     <l>while our courteous knight lay in his bed,</l>
+     <l>Gawain gladly at home, in gear full rich</l>
+     <l rend="indent">of hue.</l>
+     <l rend="indent">The lady did not forget,</l>
+     <l rend="indent">to come to greet him too;</l>
+     <l rend="indent">full early she him beset</l>
+     <l rend="indent">to seek a change of mood.</l></lg>
+
+         <head>59</head>
+
+     <lg><l>She came to the curtain and peeped at the knight.</l>
+     <l>Sir Gawain welcomed her courteously first,</l>
+     <l>and she answered him again eager her words,</l>
+     <l>sits herself soft by his side, and sweetly she laughs,</l>
+     <l>and with a loving look she led with these words:</l>
+     <l>‘Sir, if you be Gawain, it’s a wonder methinks,</l>
+     <l>why one so well disposed always to good,</l>
+     <l>knows not how to manage his manners in company,</l>
+     <l>and if any teach you to know them, you cast them from mind.</l>
+     <l>You have swiftly forgot what but yesterday I taught</l>
+     <l>with all the truest tokens of talk that I could.’</l>
+     <l>‘What is that?’ quoth the knight, ‘Indeed I know not.</l>
+     <l>If it be truth that you breathe, the blame is mine own.’</l>
+     <l>‘Yet I taught you of kissing.’ quoth the fair dame,</l>
+     <l>‘where countenance is fair, quick make your claim;</l>
+     <l>that becomes every knight that courtesy uses.’</l>
+     <l>‘Unsay,’ quoth that brave man, ‘my dear, that speech,</l>
+     <l>for that I dare not do, lest I were denied;</l>
+     <l>if I were spurned, I’d be wrong, indeed, to have proffered.’</l>
+     <l>‘By my faith,’ quoth the lady, ‘you cannot be spurned;</l>
+     <l>you are strong enough to constrain by strength, if you like,</l>
+     <l>if any were so villainous as to deny you.’</l>
+     <l>‘Yes, by God,’ quoth Gawain, ‘true is your speech,</l>
+     <l>but threats do never thrive in the land where I live,</l>
+     <l>nor any gift that is given without a good will. </l>
+     <l>I am at your command, to kiss when you like;</l>
+     <l>you may lip when you will, and leave when you wish</l>
+     <l rend="indent">in a space.’</l>
+     <l rend="indent">The lady bends her adown</l>
+     <l rend="indent">and sweetly she kisses his face;</l>
+     <l rend="indent">much speech they there expound</l>
+     <l rend="indent">of love, its grief and grace.</l></lg>
+
+         <head>60</head>
+
+     <lg><l>‘I would know of you, knight,’ that lady then said,</l>
+     <l>‘if you are not angered by this, what is the reason</l>
+     <l>that so young and lively a one as you at this time,</l>
+     <l>so courteous, so knightly, as widely you’re known</l>
+     <l>(and from all chivalry to choose, the chief things praised</l>
+     <l>are the laws of loyal love, and the lore of arms; </l>
+     <l>for in telling those tales of the truest of knights,</l>
+     <l>all the title and text of their works is taken</l>
+     <l>from how lords hazard their lives for loyal love,</l>
+     <l>endured for that duty’s sake dreadful trials,</l>
+     <l>and after with valour avenged, and void their cares,</l>
+     <l>brought bliss to the bower by bounties their own)</l>
+     <l>and you, the knight, the noblest child of your age,</l>
+     <l>your high fame and honour told everywhere,</l>
+     <l>why I have sat by yourself here separately twice,</l>
+     <l>yet heard I never that your head held even a word</l>
+     <l>that ever belonged to love, the less nor the more. </l>
+     <l>And you, that are so courteous and coy of your vows,</l>
+     <l>ought, to a young thing, to yearn to show</l>
+     <l>and teach some tokens of true love’s craft</l>
+     <l>What! Are you ignorant, who garner all praise,</l>
+     <l>or else do you deem me too dull to heed your dalliance?</l>
+     <l rend="indent">For shame!</l>
+     <l rend="indent">I come hither single and sit</l>
+     <l rend="indent">to learn of you some game;</l>
+     <l rend="indent">do teach me of your wit,</l>
+     <l rend="indent">while my lord is away.’</l></lg>
+
+         <head>61</head>
+
+     <lg><l>‘In good faith,’ quoth Gawain, ‘may God reward you!</l>
+     <l>Great is the gladness, and pleasure to me,</l>
+     <l>that so worthy as you should wind her way hither,</l>
+     <l>at pains with so poor a man as to sport with your knight</l>
+     <l>with any show of favour – it sets me at ease.</l>
+     <l>But to take on the travail myself of expounding true love,</l>
+     <l>and touch on the themes of the texts and tales of arms</l>
+     <l>to you who, I know well, wield more skill</l>
+     <l>in that art, by half, than a hundred of such</l>
+     <l>as I am or ever shall be, on this earth where I live –</l>
+     <l>that were a manifold folly, my dear, by my troth.</l>
+     <l>I would your wishes work if ever I might,</l>
+     <l>as I am highly beholden, and evermore will</l>
+     <l>be servant to yourself, so save me God!’</l>
+     <l>Thus that lady framed her questions and tempted him oft,</l>
+     <l>for to win him to woe, whatever else she thought of;</l>
+     <l>but he defended himself so fairly no fault it seemed,</l>
+     <l>no evil on either hand, nor did they know aught </l>
+     <l rend="indent">but bliss.</l>
+     <l rend="indent">They laughed and larked full long;</l>
+     <l rend="indent">at the last she did him kiss,</l>
+     <l rend="indent">farewell was on her tongue,</l>
+     <l rend="indent">and went her way, with this. </l></lg>
+
+         <head>62</head>
+
+     <lg><l>Then bestirs him the knight and rises for Mass,</l>
+     <l>and then the dinner was done and duly served.</l>
+     <l>The knight with the ladies larked all day,</l>
+     <l>but the lord of the land gallops full oft,</l>
+     <l>hunts the ill-fated swine, that surges by banks</l>
+     <l>and bites the best of his hounds’ backs asunder</l>
+     <l>biding at bay, till bowmen bettered him,</l>
+     <l>made him head for the open, for all he could do,</l>
+     <l>so fast flew the arrows where those folk gathered.</l>
+     <l>But yet at times the bravest he made to start,</l>
+     <l>till at the last so weary he was he could not run,</l>
+     <l>but, with best haste he might, to a hole he wins</l>
+     <l>in the bank, by a rock where runs the burn.</l>
+     <l>He got the bank at his back, began to scrape,</l>
+     <l>the froth foamed from his mouth foul at the corners,</l>
+     <l>and he whet his white tusks. It was irksome then</l>
+     <l>to the all the beaters so bold that by him stood</l>
+     <l>to harass him from afar, but nigh him no man</l>
+     <l rend="indent">dared go.</l>
+     <l rend="indent">He had hurt so many before</l>
+     <l rend="indent">that all were then full loath</l>
+     <l rend="indent">to be torn by his tusks once more,</l>
+     <l rend="indent">that was fierce and frenzied both.</l></lg>
+
+         <head>63</head>
+
+     <lg><l>Till the lord came himself, urged on his horse,</l>
+     <l>saw the boar bide at bay, his men beside.</l>
+     <l>He alights lively adown, leaves his courser,</l>
+     <l>brings out a bright blade and boldly strides forth,</l>
+     <l>fast through the ford, where the fell foe bides.</l>
+     <l>The wild beast was wary of one with a weapon in hand,</l>
+     <l>his bristles rose high, so fiercely he snorts</l>
+     <l>that folk feared for the lord, lest worst him befell.</l>
+     <l>The swine straight away set on the man,</l>
+     <l>that the baron and boar were both in a heap,</l>
+     <l>in the white water. The worst had the creature,</l>
+     <l>For the man marked him well, as they first met,</l>
+     <l>set the sharp point firm in its chest-hollow,</l>
+     <l>hit him up to the hilt, so the heart burst asunder,</l>
+     <l>and he yielded him snarling, downstream was swept </l>
+      <l rend="indent">outright.</l>
+      <l rend="indent">A hundred hounds him rent,</l>
+      <l rend="indent">that bravely could him bite;</l>
+      <l rend="indent">beaters brought him to bank</l>
+      <l rend="indent">and the dogs to death, in fight.</l></lg>
+
+         <head>64</head>
+
+     <lg><l>There was blowing the kill on many brave horns,</l>
+     <l>hallooing on high as loud as men might;</l>
+     <l>Hounds bayed at the beast, as bid by their masters,</l>
+     <l>who of that hard chase were the chief huntsmen.</l>
+     <l>Then a man who was wisest in woodcraft</l>
+     <l>with loving care to undo the beast begins:</l>
+     <l>first he hews off his head and sets it on high,</l>
+     <l>then rends him roughly along the ridge of his back,</l>
+     <l>brings out the bowels, and broils them on coals,</l>
+     <l>with bread blent therewith his hounds rewards.</l>
+     <l>Then he breaks out the brawn in broad bright slabs,</l>
+     <l>and has out the entrails, as is seemly and right;</l>
+     <l>attaches the two halves wholly together,</l>
+     <l>and then on a strong stake stoutly them hangs.</l>
+     <l>Now with this same swine they set off for home;</l>
+     <l>the boar’s head was borne before the baron himself,</l>
+     <l>who felled him down by the ford through force of his hand</l>
+      <l rend="indent">so strong.</l>
+      <l rend="indent">Till he saw Sir Gawain</l>
+      <l rend="indent">in the hall it seemed full long;</l>
+      <l rend="indent">he calls, and he comes again</l>
+      <l rend="indent">for the dues that to him belong.</l></lg>
+
+         <head>65</head>
+
+     <lg><l>The lord, full loud he cried, laughed merrily</l>
+     <l>when he saw Sir Gawain; and with joy he speaks.</l>
+     <l>The good ladies were summoned, the household gathered;</l>
+     <l>he shows him the boar’s sides, and shapes him the tale</l>
+     <l>of the largeness and length, the malignity also,</l>
+     <l>of the war on the wild swine in woods where he fled.</l>
+     <l>So the other knight full nobly commended his deeds,</l>
+     <l>and praised it, the great merit that he had proved;</l>
+     <l>for such brawn from a beast, the brave knight said,</l>
+     <l>nor such flanks on a swine he’d not seen before.</l>
+     <l>Then they handled the huge head, the knight gave praise,</l>
+     <l>and showed horror at it, for the lord to hear.</l>
+     <l>‘Now Gawain,’ quoth the good man, ‘this game is your own,</l>
+     <l>by a firm and fast promise, as in faith you know.’</l>
+     <l>‘That is true,’ quoth the knight, ‘and as surely true</l>
+     <l>is that all I got I shall give you again, by my troth.’</l>
+     <l>He clasped the lord at the neck and gently kissed him,</l>
+     <l>and after that of the same he again served him there.</l>
+     <l>‘Now are we even quit,’ quoth the knight, ‘this eventide,</l>
+     <l>of all the covenants made here, since I came hither,</l>
+     <l rend="italic">by law.’</l>
+     <l rend="italic">The lord said: ‘By Saint Giles,</l>
+     <l rend="italic">you are the best that I know;</l>
+     <l rend="italic">you’ll be rich in a while,</l>
+     <l rend="italic">if your trade continues so.’</l></lg>
+
+         <head>66</head>
+
+     <lg><l>Then they set up tables on trestles aloft,</l>
+     <l>casting cloths on them. Clear light then</l>
+     <l>wakened the walls, waxen torches</l>
+     <l>servants set, and served food all about.</l>
+     <l>Much gladness and glee gushed out therein</l>
+     <l>round the fire on the floor, and in fulsome wise</l>
+     <l>at the supper and after, many noble songs,</l>
+     <l>such as Christmas carols and dances new,</l>
+     <l>with all manner of mirth that man may tell of,</l>
+     <l>and ever our courteous knight the lady beside.</l>
+     <l>Such sweetness to that man she showed all seemly,</l>
+     <l>with secret stolen glances, that stalwart knight to please,</l>
+     <l>that all wondering was the man, and wrath with himself;</l>
+     <l>but he could not out of breeding spurn her advances,</l>
+     <l>but dealt with her daintily, howsoever the deed might</l>
+     <l rend="indent">be cast.</l>
+     <l rend="indent">When they had dallied in hall</l>
+     <l rend="indent">as long as their will might last,</l>
+     <l rend="indent">to chamber the lord him called,</l>
+     <l rend="indent">and to the hearth they passed. </l></lg>
+
+         <head>67</head>
+
+     <lg><l>And there they drank and debated and decided anew</l>
+     <l>to act on the same terms on New Year’s Eve;</l>
+     <l>but the knight craved leave to go forth on the morn,</l>
+     <l>for it was nearing the time when he must go.</l>
+     <l>The lord persuaded him not to, pressed him to linger,</l>
+     <l>and said: ‘As I am true, I pledge you my troth</l>
+     <l>you shall gain the Green Chapel, and render your dues,</l>
+     <l>sir, by New Year’s light, long before prime. </l>
+     <l>And so go lie in your room and take your ease,</l>
+     <l>and I shall hunt in the holt and hold to the covenant,</l>
+     <l>exchanging what has chanced, when I spur hither;</l>
+     <l>for I have tested you twice, and faithful I find you.</l>
+     <l>Now:  “third time pays all,” think on that tomorrow;</l>
+     <l>Make we merry while we may, and mind only joy,</l>
+     <l>for a man may find sorrow whenever he likes.’</l>
+     <l>This was graciously granted and Gawain lingered;</l>
+     <l>Blithely they brought him drink, and bed-wards they went</l>
+     <l rend="indent">with light.</l>
+     <l rend="indent">Sir Gawain lies down and sleeps</l>
+     <l rend="indent">full still and soft all night;</l>
+     <l rend="indent">the lord who to woodcraft keeps,</l>
+     <l rend="indent">rises early and bright.</l></lg>
+
+         <head>68</head>
+
+     <lg><l>After Mass a morsel he and his men took;</l>
+     <l>merry was the morning, his mount he summoned.</l>
+     <l>All the men that a-horse were followed him after,</l>
+     <l>ready set on their steeds before the hall gates.</l>
+     <l>Fairest of fair was the field, for the frost clung.</l>
+     <l>In red ruddiness on wrack rises the sun,</l>
+     <l>and, full clear, casts the clouds from the welkin.</l>
+     <l>Huntsmen unleashed the hounds by a holt side;</l>
+     <l>rocks in woods rang out with the cry of the horns.</l>
+     <l>some hounds fell to the track where the fox lurked,</l>
+     <l>oft traversing the trail by dint of their wiles.</l>
+     <l>A little one cried scent, the huntsman to him called;</l>
+     <l>his fellows fell to, panting full thick,</l>
+     <l>running forth in a rabble on the right track.</l>
+     <l>And fox frisked before them; they found him soon,</l>
+     <l>and when they had him in sight pursued him fast,</l>
+     <l>marking him clearly with wrathful noise;</l>
+     <l>and he twists and turns through many a tangled grove,</l>
+     <l>doubles back and hearkens by hedges full often.</l>
+     <l>At the last by a little ditch he leaps over a thicket,</l>
+     <l>steals out full silent by the side of a valley,</l>
+     <l>thinks to slip from the wood by guile, from the hounds.</l>
+     <l>Then he came, ere he knew it, to a fine hunt-station,</l>
+     <l>where three hounds in a cleft threaten him together,</l>
+     <l rend="indent">all grey.</l>
+     <l rend="indent">There he started aside</l>
+     <l rend="indent">and boldly he did stray;</l>
+     <l rend="indent">with all the woe in life,</l>
+     <l rend="indent">to the wood he went away.</l></lg>
+
+         <head>69</head>
+
+    <lg><l>Then was it lively delight to list to the hounds,</l>
+    <l>when all the meet had met him, mingled together.</l>
+    <l>Such curses at that sight rained down on his head</l>
+    <l>as if all the clinging cliffs clattered down in a heap.</l>
+    <l>Here was he hallooed when huntsmen met him,</l>
+    <l>loud was he greeted with snarling speech;</l>
+    <l>there he was threatened and called thief often,</l>
+    <l>and ever the hounds at his tail, that he might not tarry.</l>
+    <l>Oft he was rushed at when he made for the open,</l>
+    <l>and often swerved back again, so wily was Reynard.</l>
+    <l>and so he led them astray, the lord and his liegemen,</l>
+    <l>in this manner by mountains till after mid-morning,</l>
+    <l>while the honoured knight at home happily slept</l>
+    <l>within the comely curtains, on that cold morn.</l>
+    <l>But the lady for love could get no sleep,</l>
+    <l>nor could the purpose impair pitched in her heart,</l>
+    <l>but rose up swiftly, and took herself thither</l>
+    <l>in a merry mantle, that reached the earth,</l>
+    <l>that was furred full fine with purest pelts;</l>
+    <l>without coif on her head, but the noblest gems</l>
+    <l>traced about her hair-net by twenties in clusters;</l>
+    <l>her fair face and her throat shown all naked,</l>
+    <l>her breast bare before, and her back the same.</l>
+    <l>She came in by the chamber door and closed it after,</l>
+    <l>threw open a window and to the knight called,</l>
+    <l>and roundly thus rebuked him with her rich words</l>
+     <l rend="indent">with cheer:</l>
+     <l rend="indent">‘Ah! Man, how can you sleep?</l>
+     <l rend="indent">This morning is so clear.’</l>
+     <l rend="indent">He was in slumber deep,</l>
+     <l rend="indent">and yet he could her hear.</l></lg>
+
+         <head>70</head>
+
+    <lg><l>In heavy depths of dreaming murmured that noble,</l>
+    <l>as one that was troubled with thronging thoughts,</l>
+    <l>of how destiny would that day deal him his fate</l>
+    <l>at the Green Chapel, where he must meet his man,</l>
+    <l>bound there to bear his buffet without more debate.</l>
+    <l>But when he had fully recovered his wits,</l>
+    <l>he started from dreaming and answered in haste.</l>
+    <l>The lovely lady with laughter so sweet,</l>
+    <l>bent over his fair face and fully him kissed.</l>
+    <l>He welcomed her worthily with noble cheer;</l>
+    <l>he saw her so glorious and gaily attired,</l>
+    <l>so faultless of feature and of such fine hue,</l>
+    <l>bright welling joy warmed all his heart.</l>
+    <l>With sweet smiling softly they slip into mirth,</l>
+    <l>that to all bliss and beauty, that breaks between them,</l>
+     <l rend="indent">they win.</l>
+     <l rend="indent">They spoke in words full good,</l>
+     <l rend="indent">much pleasure was therein;</l>
+     <l rend="indent">in great peril would have stood,</l>
+     <l rend="indent">kept not Mary her knight from sin.</l></lg>
+
+         <head>71</head>
+
+    <lg><l>For that peerless princess pressed him so closely,</l>
+    <l>urged him so near the edge, he felt it behoved him</l>
+    <l>either to bow to her love, or with loathing refuse her.</l>
+    <l>He cared for his courtesy, lest he were churlish,</l>
+    <l>and more for the mischief if he should work sin</l>
+    <l>and be traitor to that lord who held the dwelling.</l>
+    <l>‘God shield us!’ quoth the knight, ‘that must not befall!’</l>
+    <l>With loving laughter a little he put aside</l>
+    <l>all the special pleading that sprang from her mouth.</l>
+    <l>Quoth beauty to the brave: ‘Blame you deserve,</l>
+    <l>if you love not that live lady that you lie next,</l>
+    <l>who above all of the world is wounded in heart,</l>
+    <l>unless you have a leman, a lover, that you like better,</l>
+    <l>and firm of faith to that fair one, fastened so hard</l>
+    <l>that you list not to loose it – and that I believe.</l>
+    <l>If that you tell me that truly, I pray you;</l>
+    <l>by all the lovers alive, hide not the truth</l>
+     <l rend="indent">with guile.’</l>
+     <l rend="indent">The knight said: ‘By Saint John,’</l>
+     <l rend="indent">and gentle was his smile</l>
+     <l rend="indent">‘In faith I love no one,</l>
+     <l rend="indent">nor none will love the while.’</l></lg>
+
+         <head>72</head>
+
+    <lg><l>‘These words,’ said the lady, ‘are the worst words of all;</l>
+    <l>but I am answered forsooth, so that it grieves me.</l>
+    <l>Kiss me now gently, and I shall go hence;</l>
+    <l>I may but mourn upon earth, a maid that loves much.’</l>
+    <l>Sighing she stooped down, and sweetly him kissed,</l>
+    <l>and then she severs from him, and says as she stands:</l>
+    <l>‘Now, dear, at this our parting set me at ease:</l>
+    <l>give me something, a gift, if only your glove,</l>
+    <l>that I may think of you, man, my mourning to lessen.’</l>
+    <l>‘Now indeed,’ quoth the knight, ‘I would I had here</l>
+    <l>the dearest thing, for your sake, I own in the world,</l>
+    <l>for you have deserved, forsooth, and in excess,</l>
+    <l>a richer reward, by rights, than I might reckon;</l>
+    <l>but as a love-token, this would profit you little.</l>
+    <l>It is not to your honour to have at this time</l>
+    <l>a glove of Gawain’s giving to treasure;</l>
+    <l>and I am here on an errand in lands unknown,</l>
+    <l>and have no servants with sacks of precious things.</l>
+    <l>I dislike this, my lady, for your sake, at this time;</l>
+    <l>but each man must do as he must, take it not ill</l>
+     <l rend="indent">nor pine.’</l>
+     <l rend="indent">‘Nay, knight of high honours,’</l>
+     <l rend="indent">quoth that love-some lady fine,</l>
+     <l rend="indent">‘though I shall have naught of yours,</l>
+     <l rend="indent">yet shall you have of mine.’</l></lg>
+
+         <head>73</head>
+
+     <lg><l>She proffered him a rich ring of red gold work,</l>
+     <l>with a sparkling stone glittering aloft,</l>
+     <l>that blazed brilliant beams like the bright sun;</l>
+     <l>know you well that it’s worth was full huge.</l> 
+     <l>But the knight refused it and he readily said:</l>
+     <l>‘I’ll no gifts, before God, my dear, at this time;</l>
+     <l>I have none to give you, nor naught will I take.’</l>
+     <l>She offered it him eagerly, yet he her gift spurned,</l>
+     <l>and swore swiftly his oath that he would not seize it;</l>
+     <l>and she grieved he refused her, and said thereafter:</l>
+     <l>‘Since you reject my ring, too rich it may seem,</l>
+     <l>for you would not be so high beholden to me,</l>
+     <l>I shall give you my girdle: that profits you less.’</l>
+     <l>She loosed a belt lightly that lay round her sides,</l>
+     <l>looped over her kirtle beneath her bright mantle.</l>
+     <l>Gear it was of green silk and with gold trimmed,</l>
+     <l>at the edges embroidered, with finger-stitching;</l>
+     <l>and that she offered the knight, and blithely besought</l>
+     <l>that he would take it though it were unworthy.</l>
+     <l>but he said he might have nigh him in no wise</l>
+     <l>neither gold nor treasure, ere God sent him grace,</l>
+     <l>to achieve the errand he had chosen there. </l>
+     <l>‘And therefore, I pray you, be not displeased,</l>
+     <l>and let your gift go, for I swear it I can never </l>
+      <l rend="indent">you grant.</l>
+      <l rend="indent">To you I am deeply beholden,</l>
+      <l rend="indent">your kindness is so pleasant,</l>
+      <l rend="indent">and ever in heat and cold, then</l>
+      <l rend="indent">I’ll be your true servant.’</l></lg>
+
+         <head>74</head>
+
+     <lg><l>‘Now do you shun this silk,’ said the lady,</l>
+     <l>‘because it is simple in itself? And so it may seem.</l>
+     <l>Lo! It is slight indeed, and so is less worthy.</l>
+     <l>But whoso knew the worth woven therein</l>
+     <l>he would hold it in higher praise, perchance;</l>
+     <l>for whatever man is girt with this green lace,</l>
+     <l>while he has it closely fastened about him,</l>
+     <l>there is no man under heaven might hew him,</l>
+     <l>for he may not be slain by any sleight upon earth.’</l>
+     <l>Then the knight thought, and it came to his heart,</l>
+     <l>it was a jewel for the jeopardy judged upon him,</l>
+     <l>when he gained the Green Chapel, his fate to find;</l>
+     <l>if he might slip past un-slain, the sleight were noble.</l>
+     <l>Then he indulged her suit, and told her to speak.</l>
+     <l>And she pressed the belt on him urging it eagerly;</l>
+     <l>and he granted it, and she gave it him with goodwill,</l>
+     <l>and besought him, for her sake, never to reveal it,</l>
+     <l>but loyally conceal it from her lord. The knight agrees</l>
+     <l>that no one should know of it, indeed, but they two,</l>
+     <l rend="indent">betimes.</l>
+     <l rend="indent">He thanked her as he might,</l>
+     <l rend="indent">with all his heart and mind.</l>
+     <l rend="indent">By then the gallant knight,</l>
+     <l rend="indent">she had kissed three times. </l></lg>
+
+         <head>75</head>
+
+     <lg><l>Then took she her leave and left him there,</l>
+     <l>for more of that man she might not get.</l>
+     <l>When she is gone, Sir Gawain attires himself,</l>
+     <l>rises and dresses himself in noble array,</l>
+     <l>lays aside the love-lace the lady gave him,</l>
+     <l>hides it full handily where he might find it.</l>
+     <l>Then swiftly to the chapel took he his way,</l>
+     <l>privately approached a priest, and there prayed him</l>
+     <l>that he would enlighten his life and teach him better</l>
+     <l>how his soul might be saved when he went hence.</l>
+     <l>Then he shrove himself fully, eschewed his misdeeds</l>
+     <l>the major and minor, and mercy beseeches,</l>
+     <l>and calls on the priest for absolution;</l>
+     <l>and he absolved him surely and left him so pure</l>
+     <l>that Doomsday yet might be declared on the morn.</l>
+     <l>And then he made himself merry among the fair ladies,</l>
+     <l>with comely carols and all manner of joy,</l>
+     <l>more than ever before that day, till the dark night,</l>
+     <l rend="indent">in bliss.</l>
+     <l rend="indent">Each one had courtesy there</l>
+     <l rend="indent">of him, and said: ‘He is</l>
+     <l rend="indent">the merriest he was ever </l>
+     <l rend="indent">since he came hither, ere this.’</l></lg>
+     
+         <head>76</head>
+
+     <lg><l>Now long in that leisure there let him abide!</l>
+     <l>Yet is the lord on his land, pursuing his sport.</l>
+     <l>He has done for the fox that he followed so long.</l>
+     <l>As he spurred through a spinney to spy the shrew,</l>
+     <l>there where he heard the hounds harry him on,</l>
+     <l>Reynard came rushing through the rough grove,</l>
+     <l>and all the rabble in a race, right at his heels.</l>
+     <l>The lord, aware of the wild thing, warily waits,</l>
+     <l>and brandishes his bright blade, drives at the beast.</l>
+     <l>And it shunned the sharp edge and sought to retreat;</l>
+     <l>but a hound rushed at him, before ere he might,</l>
+     <l>and right before the horse’s feet they fell on him all</l>
+     <l>and worried the wily one with a wrathful noise.</l>
+     <l>The lord swiftly alighted then and latched on,</l>
+     <l>raised him full suddenly out of the ravening mouths,</l>
+     <l>holds him high over his head, halloos full loud,</l>
+     <l>while there bayed at him many brave hounds.</l>
+     <l>Huntsmen hied them thither with horns full many,</l>
+     <l>sounding the rally aright till they saw their lord.</l>
+     <l>When his noble company had all come in,</l>
+     <l>all that ever bore bugle blew at once,</l>
+     <l>and all the others hallooed who had no horn.</l>
+     <l>It was the merriest meet that ever men heard,</l>
+     <l>the ripe roar raised there for Reynard’s soul from every</l>
+     <l rend="indent">man’s throat.</l>
+     <l rend="indent">Their hounds they then reward,</l>
+     <l rend="indent">Their heads they fondle and stroke;</l>
+     <l rend="indent">and then they take Reynard</l>
+     <l rend="indent">and strip him of his coat.</l></lg>
+
+         <head>77</head>
+
+     <lg><l>And then they hurry for home, for it was nigh night,</l>
+     <l>striking up strongly on their stout horns.</l>
+     <l>The lord alights at last at his much-loved home,</l>
+     <l>finds fire upon hearth, the knight there beside,</l>
+     <l>Sir Gawain the good who glad was withal –</l>
+     <l>for among the ladies he was joyfully beloved.</l>
+     <l>He wore a gown of blue that reached to the ground.</l>
+     <l>His surcoat suited him well, all soft with fur,</l>
+     <l>and his hood of the same hung from his shoulder,</l>
+     <l>trimmed all with ermine were both all about.</l>
+     <l>He met with the lord in the midst of the floor,</l>
+     <l>and all with joy did him greet, and gladly he said:</l>
+     <l>‘I shall fulfil the first our contract now,</l>
+     <l>that we settled so speedily sparing no drink.’</l>
+     <l>Then he clasped the lord and kissed him thrice,</l>
+     <l>as strongly and steadily as he well could.</l>
+     <l>‘By Christ,’ quoth the other, ‘you’ve found much luck</l>
+     <l>in transacting this trade, if your profit was good.’</l>
+     <l>‘You need not care about profit,’ quick quoth the other,</l>
+     <l>‘as I’ve promptly paid over the profit I took.’</l>
+     <l>‘Marry,’ quoth the other, ‘my own falls behind,</l>
+     <l>for I have hunted all this day, and naught have I got</l>
+     <l>but this foul fox fell – the fiend take such goods! –</l>
+     <l>and that’s a poor price to pay for such precious things</l>
+     <l>as you so have given me here, three such kisses</l>
+     <l rend="indent">so good.’</l>
+     <l rend="indent">‘Enough,’ quoth Sir Gawain,</l>
+     <l rend="indent">‘I thank you, by the Rood.’</l>
+     <l rend="indent">And how the fox was slain</l>
+     <l rend="indent">the lord told as they stood.</l></lg>
+
+         <head>78</head>
+			
+     <lg><l>With mirth and minstrelsy, with meals at will,</l>
+     <l>they made as merry as any men might,</l>
+     <l>with laughter of ladies, and jesting with words.</l>
+     <l>Gawain and the good man so glad are they both:</l>
+     <l>must be, lest the diners are drunkards or dotards.</l>
+     <l>Both master and men played many jokes,</l>
+     <l>till the time it was come that they must sever;</l>
+     <l>his men at the last must go to their beds.</l>
+     <l>Then humbly his leave of the lord at first</l>
+     <l>takes the noble knight, and fairly him thanks:</l>
+     <l>‘For such a splendid sojourn as I have had here,</l>
+     <l>your honour at this high feast, the High King reward you!</l>
+     <l>I would give myself as one of your men, if you so like;</l>
+     <l>but I must needs, as you know, move on tomorrow,</l>
+     <l>if you’ll grant me a guide to show, as you promised,</l>
+     <l>the way to the Green Chapel, as God wills for me</l>
+     <l>to be dealt on New Year’s day the doom my fate brings.’</l>
+     <l>‘In good faith,’ quoth the good man, ‘by my goodwill</l>
+     <l>all that ever I promised you, I shall hold ready.’</l>
+     <l>Then he assigned him a servant to show him the way</l>
+     <l>and conduct him through the hills, so he’d not delay,</l>
+     <l>and faring through forest and thickset the shortest way</l>
+     <l rend="indent">he’d weave.</l>
+     <l rend="indent">The lord Gawain did thank,</l>
+     <l rend="indent">such honour he did receive.</l>
+     <l rend="indent">Then of the ladies of rank</l>
+     <l rend="indent">the knight must take his leave.</l></lg>
+
+         <head>79</head>
+
+     <lg><l>With sad care and kissing he spoke to them still,</l>
+     <l>and full heartfelt thanks he pressed on them:</l>
+     <l>and they yielded him again replies the same,</l>
+     <l>commending him to Christ then with frozen sighs.</l>
+     <l>So from the company he courteously parts;</l>
+     <l>each man that he met, he gave him his thanks</l>
+     <l>for his service and for the solicitous care</l>
+     <l>that they had shown busied about him in serving;</l>
+     <l>and all were as sorry to sever from him there</l>
+     <l>as if they had dwelt nobly with that knight ever.</l>
+     <l>Then the lads with lights led him to his chamber,</l>
+     <l>and blithely brought him to bed to be at his rest.</l>
+     <l>If he did not sleep soundly, I dare say nothing,</l>
+     <l>for he had much on the morrow to mind, if he would,</l>
+     <l rend="indent">in thought.</l>
+     <l rend="indent">Let him lie there quite still,</l>
+     <l rend="indent">he is near what he sought;</l>
+     <l rend="indent">and quiet you a while until</l>
+     <l rend="indent">I tell you of all that they wrought.</l></lg>
+         </div>
+
+         <div type="part">
+            <head>Part IV</head>
+            
+
+         <head>80</head>
+
+     <lg><l>Now nears the New Year and the night passes,</l>
+     <l>the day drives away dark, as the Deity bids.</l>
+     <l>But wild weather awoke in the world outside,</l>
+     <l>clouds cast cold keenly down to the earth,</l>
+     <l>with wind enough from the north, to flail the flesh.</l>
+     <l>The snow sleeted down sharp, and nipped the wild;</l>
+     <l>the whistling wind wailed from the heights</l>
+     <l>and drove each dale full of drifts full great.</l>
+     <l>The knight listened full well, as he lay in his bed.</l>
+     <l>Though he closes his lids, full little he sleeps;</l>
+     <l>with each cock that crew he well knew his tryst.</l>
+     <l>Deftly he dressed himself, ere the day sprang,</l>
+     <l>for there was a lighted lamp gleamed in his chamber.</l>
+     <l>He called to his servant who promptly replied,</l>
+     <l>and bade him bring coat of mail and saddle his mount;</l>
+     <l>the man rises up and fetches him his clothes,</l>
+     <l>and attires Sir Gawain in splendid style.</l>
+     <l>First he clad him in clothes to ward off the cold,</l>
+     <l>and then in his harness, that burnished was kept,</l>
+     <l>both his belly-armour and plate, polished full bright,</l>
+     <l>the rings of his rich mail-coat rubbed free of rust;</l>
+     <l>and all was as fresh as at first, and he to give thanks</l> 
+     <l rend="indent">was glad.</l>
+     <l rend="indent">He had put on each piece</l>
+     <l rend="indent">and in bright armour clad ;</l>
+     <l rend="indent">fairest from here to Greece,</l>
+     <l rend="indent">his steed to be brought he bade.</l></lg> 
+
+         <head>81</head>
+
+     <lg><l>While he wound himself in the most splendid weeds –</l>
+     <l>his coat-armour with its badge of clear deeds, </l>
+     <l>set out upon velvet, with virtuous stones</l>
+     <l>embellished and bound about it, embroidered seams, </l>
+     <l>and fair lined within with fine furs –</l>
+     <l>yet he forgot not the lace, the lady’s gift;</l>
+     <l>that Gawain did not fail of, for his own good.</l>
+     <l>when he had bound the blade on his smooth haunches,</l>
+     <l>then he wound the love-token twice him about,</l>
+     <l>swiftly swathed it about his waist sweetly that knight.</l>
+     <l>The girdle of green silk that gallant well suited,</l>
+     <l>upon that royal red cloth that rich was to show.</l>
+     <l>But it was not for its richness he wore this girdle,</l>
+     <l>nor for pride in the pendants, though polished they were,</l>
+     <l>and though the glittering gold gleamed at the ends,</l>
+     <l>but to save himself when it behoved him to suffer,</l>
+     <l>to abide baneful stroke without battling with blade</l>
+     <l rend="indent">or knife.</l>
+     <l rend="indent">With that the knight all sound,</l>
+     <l rend="indent">goes swift to risk his life;</l>
+     <l rend="indent">all the men of renown</l>
+     <l rend="indent">he thanks, prepares for strife.</l></lg>
+
+         <head>82</head>
+
+     <lg><l>Then was Gringolet readied, that was huge and great,</l>
+     <l>and had been stabled snugly and in secure wise;</l>
+     <l>he was eager to gallop, that proud horse then.</l>
+     <l>The knight went to him and gazed at his coat,</l>
+     <l>and said soberly to himself, and swore by the truth:</l>
+     <l>‘Here are many, in this motte, that of honour think.</l>
+     <l>The man who maintains it, joy may he have!</l>
+     <l>The fair lady through life may love her befall!</l>
+     <l>Thus if they for charity cherish a guest,</l>
+     <l>and hold honour in their hand, the Lord them reward</l>
+     <l>who upholds the heavens on high, and also you all!</l>
+     <l>And if I should live for any while upon earth,</l>
+     <l>I would grant you some reward readily, if I might.’</l>
+     <l>Then steps he into the stirrup and strides aloft.</l>
+     <l>His man showed him his shield; on shoulder he slung it,</l>
+     <l>gives spur to Gringolet with his gilded heels,</l>
+     <l>and he starts forth on the stones – pausing no longer</l>
+     <l rend="indent">to prance.</l>
+     <l rend="indent">His servant to horse got then,</l>
+     <l rend="indent">who bore his spear and lance.</l>
+     <l rend="indent">‘This castle to Christ I commend:</l>
+     <l rend="indent">May he grant it good chance!’</l></lg>
+
+         <head>83</head>
+
+     <lg><l>The drawbridge was let down, and the broad gates</l>
+     <l>unbarred and flung open upon both sides. </l>
+     <l>The knight blessed himself swiftly, and passed the boards;</l>
+     <l>praised the porter kneeling before the prince,</l>
+     <l>who gives him God and good-day, that Gawain He save;</l>
+     <l>and goes on his way with his one man,</l>
+     <l>who shall teach him the path to that perilous place</l>
+     <l>where the grievous blow he shall receive.</l>
+     <l>They brushed by banks where boughs were bare,</l>
+     <l>they climbed by cliffs where clung the cold.</l>
+     <l>the heavens were up high, but ugly there-under</l>
+     <l>mist moved on the moors, melted on mountains,</l>
+     <l>each hill had a hat, a mist-mantle huge.</l>
+     <l>Brooks boiled and broke their banks about,</l>
+     <l>sheer shattering on shores where they down-flowed.</l>
+     <l>Well wild was the way where they by woods rode,</l>
+     <l>till it was soon time that the sun in that season</l>
+     <l rend="indent">does rise.</l>
+     <l rend="indent">They were on a hill full high,</l>
+     <l rend="indent">the white snow lay beside;</l>
+     <l rend="indent">the man that rode him by</l>
+     <l rend="indent">bade his master abide.</l></lg>
+
+         <head>84</head>
+
+     <lg><l>‘For I have brought you hither, sir, at this time,</l>
+     <l>and now you are not far from that noted place</l>
+     <l>that you have sought and spurred so specially after.</l>
+     <l>But I must say, forsooth, that since I know you,</l>
+     <l>and you are a lord full of life whom I well love,</l>
+     <l>if you would hark to my wit, you might do better.</l>
+     <l>The place that you pace to full perilous is held;</l>
+     <l>there lives a man in that waste, the worst upon earth,</l>
+     <l>for he is strong and stern and loves to strike,</l>
+     <l>and more man he is than any upon middle-earth,</l>
+     <l>and his body bigger than the best four</l>
+     <l>that are in Arthur’s house, Hector, or others.</l>
+     <l>He makes it so to chance at the Green Chapel,</l>
+     <l>that none passes by that place so proud in arms</l>
+     <l>that he but does him to death by dint of his hand;</l>
+     <l>for he is a mighty man, and shows no mercy,</l>
+     <l>for be it churl or chaplain that rides by the chapel,</l>
+     <l>monk or priest of the Mass, or any man else,</l>
+     <l>he is as quick to kill him, as to live himself.</l>
+     <l>Therefore I say, as true as you sit in the saddle,</l>
+     <l>come there, and you will be killed, if he has his way,</l>
+     <l>trust me truly in that, though you had twenty lives</l>
+     <l rend="indent">to spend.</l>
+     <l rend="indent">He has lived here of yore,</l>
+     <l rend="indent">and battled to great extent.</l>
+     <l rend="indent">Against his blows full sore,</l>
+     <l rend="indent">you may not yourself defend.’</l></lg>
+
+         <head>85</head>
+
+     <lg><l>‘Therefore, good Sir Gawain, let him alone,</l>
+     <l>and go by some other way, for God’s own sake!</l>
+     <l>Course some other country where Christ might you speed.</l>
+     <l>And I shall hie me home again, and undertake</l>
+     <l>that I shall swear by God and all his good saints –</l>
+     <l>so help me God and the Holy things, and oaths enough –</l>
+     <l>that I shall loyally keep your secret, and loose no tale</l>
+     <l>that ever you fled from any man that I know of.’</l>
+     <l>‘Grant merci,’ quoth Gawain, and galled he said:</l>
+     <l>‘It is worthy of you, man, to wish for my good,</l>
+     <l>and loyally keep my secret I know that you would.</l>
+     <l>But, keep it ever so quiet, if I passed here,</l>
+     <l>and fled away in fear, in the form that you tell of,</l>
+     <l>I were a cowardly knight, I might not be excused.</l>
+     <l>For I will go to the chapel, whatever chance may befall,</l>
+     <l>and talk with that same fellow in whatever way I wish,</l>
+     <l>whether it’s weal or woe, as fate may to me</l>
+     <l rend="indent">behave.</l>
+     <l rend="indent">Though he be a stern fellow</l>
+     <l rend="indent">to manage, armed with a stave,</l>
+     <l rend="indent">full well does the Lord know</l>
+     <l rend="indent">His servants how to save.’</l></lg>
+
+         <head>86</head>
+
+     <lg><l>‘Marry!’ quoth the other man, ‘now you spell it out</l>
+     <l>that you will take all your own trouble on yourself,</l>
+     <l>if you will lose your life, I’ll not you delay.</l>
+     <l>Have your helm here on your head, your spear in your hand,</l>
+     <l>and ride down this same track by yon rock side,</l>
+     <l>till you’re brought to the bottom of the wild valley,</l>
+     <l>then look a little on the level, to your left hand,</l>
+     <l>and you shall see in that vale that selfsame chapel</l>
+     <l>and the burly giant on guard that it keeps.</l>
+     <l>Now farewell, in God’s name, Gawain the noble!</l>
+     <l>For all the gold in the ground I’d not go with you,</l>
+     <l>nor bear fellowship through this forest one foot further.’</l>
+     <l>With that the man in the wood tugs at his bridle,</l>
+     <l>hits his horse with his heels as hard as he might,</l>
+     <l>leaps away over the land, and leaves the knight there</l>
+     <l rend="indent">alone.</l>
+     <l rend="indent">‘By God’s self,’ quoth Gawain,</l>
+     <l rend="indent">‘I will neither weep nor groan;</l>
+     <l rend="indent">to God’s will I bend again</l>
+        <l rend="indent">and I am sworn as His own.’</l></lg>
+
+         <head>87</head>
+   
+     <lg><l>So he gives spur to Gringolet and picks up the path,</l>
+     <l>pushing on through, by a bank, at the side of a wood,</l>
+     <l>rode down the rough slope right to the dale.</l>
+     <l>And then he gazed all about, and wild it seemed,</l>
+     <l>and saw no sign of shelter anywhere near,</l>
+     <l>but high banks and steep upon either side,</l>
+     <l>and rough rugged crags with gnarled stones;</l>
+     <l>so the sky seemed to be grazed by their barbs.</l>
+     <l>Then he halted and reined in his horse awhile, </l>
+     <l>and scanned all about this chapel to find. </l>
+     <l>He saw no such thing either side, and thought it quite strange,</l>
+     <l>save a little mound, as it were, off in a field,</l>
+     <l>a bald barrow by a bank beside the burn,</l>
+     <l>by a force of the flood that flowed down there;</l>
+     <l>the burn bubbled therein as if it were boiling.</l>
+     <l>The knight urges on his mount and comes to the mound,</l>
+     <l>alights there lightly, and ties to a lime-tree </l>
+     <l>the reins of his horse round a rough branch.</l>
+     <l>Then he goes to the barrow, and about it he walked,</l>
+     <l>debating with himself what it might be.</l>
+     <l>It had a hole at each end and on either side,</l>
+     <l>and was overgrown with grass in great knots;</l>
+     <l>and all was hollow within, naught but an old cave,</l>
+     <l>or a crevice of an old crag – he could not distinguish</l>
+     <l rend="indent">it well.</l>
+     <l rend="indent">‘Who knows, Lord,’ quoth the gentle knight</l>
+     <l rend="indent">‘whether this be the Green Chapel?</l>
+     <l rend="indent">Here might about midnight</l>
+     <l rend="indent">the Devil his Matins tell!’</l></lg>
+     
+         <head>88</head>
+     
+     <lg><l>‘Now indeed,’ quoth Gawain, ‘desolation is here;</l>
+     <l>this oratory is ugly, with weeds overgrown;</l>
+     <l>well is it seemly for the man clad in green</l>
+     <l>to deal his devotion here in the devil’s wise.</l>
+     <l>Now I feel it’s the Fiend, in my five senses,</l>
+     <l>who set me this meeting to strike at me here.</l>
+     <l>This is a chapel of mischance – bad luck it betide!</l>
+     <l>It is the most cursed church that ever I came to.’</l>
+     <l>With high helm on his head, his lance in his hand,</l>
+     <l>he roamed up to the roof of that rough dwelling.</l>
+     <l>Then he heard from that high hill, from a hard rock</l>
+     <l>beyond the brook, on the bank, a wondrous brave noise.</l>
+     <l>What! It clanged through the cliff as if it would cleave it,</l>
+     <l>as if on a grindstone one ground a great scythe.</l>
+     <l>What! It whirred and whetted, as water in a mill.</l>
+     <l>What! It rushed and rang, revolting to hear.</l>
+     <l>Then ‘By God,’ quoth Gawain, ‘this here I believe</l>
+     <l>is arranged to reverence me, to greet rank</l>
+     <l rend="indent">by rote.</l>
+     <l rend="indent">‘Let God’s will work! “Alas” –</l>
+     <l rend="indent">will help me not a mote.</l>
+     <l rend="indent">My life though it be lost</l>
+     <l rend="indent">I dread no wondrous note.’</l></lg>
+     
+         <head>89</head>
+     
+     <lg><l>Then the knight called out loud on high;</l>
+     <l>‘Who stands in this stead, my tryst to uphold?</l>
+     <l>For now is good Gawain grounded right here.</l>
+     <l>If any man wills aught, wind hither fast,</l>
+     <l>either now or never his needs to further.’</l>
+     <l>‘Abide,’ quoth one on the bank above his head,</l>
+     <l>‘and you shall have all in haste I promised you once.’</l>
+     <l>Yet he then turned to his tumult swiftly a while,</l>
+     <l>and at whetting he worked, ere he would alight.</l>
+     <l>And then he thrust by a crag and came out by a hole,</l>
+     <l>whirling out of the rocks with a fell weapon,</l>
+     <l>a Danish axe new honed, for dealing the blow,</l>
+     <l>with a biting blade bow-bent to the haft,</l>
+     <l>ground on a grindstone, four feet broad –</l>
+     <l>no less, by that love-lace gleaming full bright.</l>
+     <l>And the giant in green was garbed as at first,</l>
+     <l>both the looks and the legs, the locks and the beard,</l>
+     <l>save that firm on his feet he finds his ground,</l>
+     <l>sets the haft to the stones and stalks beside it.</l>
+     <l>When he came to the water, he would not wade,</l>
+     <l>he hopped over on his axe and boldly he strides,</l>
+     <l>blazing with wrath, on a bit of field broad about</l>
+     <l rend="indent">in snow.</l>
+     <l rend="indent">Sir Gawain the man did greet,</l>
+     <l rend="indent">he bowed to him, nothing low;</l>
+     <l rend="indent">the other said: ‘Now, Sir Sweet,</l>
+     <l rend="indent">men may trust your word, I owe.’</l></lg>
+     
+         <head>90</head>
+     
+     <lg><l>‘Gawain,’ quoth the green man, ‘God may you guard!</l>
+     <l>Indeed you are welcome, knight, to my place,</l>
+     <l>and you have timed your travel as true man should.</l>
+     <l>And you know the covenant pledged between us:</l>
+     <l>at this time twelvemonth gone you took what befell,</l>
+     <l>that I should at this New Year promptly requite.</l>
+     <l>And we are in this valley verily alone;</l>
+     <l>here are no ranks to sever us, serve as you will.</l>
+     <l>Heft your helm off your head, and have here your pay.</l>
+     <l>Ask no more debate than I did of you then</l>
+     <l>when you whipped off my head at a single blow.’</l>
+     <l>‘Nay, by God,’ quoth Gawain, ‘who lent me a soul,</l>
+     <l>I shall bear you no grudge for the grief that befalls.</l>
+     <l>Strike but the one stroke, and I shall stand still</l>
+     <l>and offer no hindrance, come work as you like,</l>
+     <l rend="indent">I swear.’</l>
+     <l rend="indent">He leant down his neck, and bowed,</l>
+     <l rend="indent">and showed the white flesh all bare,</l>
+     <l rend="indent">as if he were no way cowed;</l>
+     <l rend="indent">for to shrink he would not dare.</l></lg>
+     
+         <head>91</head>
+     
+     <lg><l>Then the man in green readies him swiftly,</l>
+     <l>girds up his grim blade, to smite Gawain;</l>
+     <l>with all the strength in his body he bears it aloft,</l>
+     <l>manages it mightily as if he would mar him.</l>
+     <l>Had he driven it down as direly as he aimed,</l>
+     <l>one had been dead of the deed who was dauntless ever.</l>
+     <l>But Gawain glanced at the grim blade sideways,</l>
+     <l>as it came gliding down on him to destroy him,</l>
+     <l>and his shoulders shrank a little from the sharp edge.</l>
+     <l>The other man with a shrug the slice withholds,</l>
+     <l>and then reproves the prince with many proud words:</l>
+     <l>‘You are not Gawain,’ quoth the man, ‘held so great,</l>
+     <l>that was never afraid of the host by hill or by vale,</l>
+     <l>for now you flinch for fear ere you feel harm.</l>
+     <l>Such cowardice of that knight have I never heard.</l>
+     <l>I neither flinched nor fled, friend, when you let fly,</l>
+     <l>nor cast forth any quibble in King Arthur’s house.</l>
+     <l>My head flew off, at my feet, yet fled I never;</l>
+     <l>yet you, ere any harm haps, are fearful at heart. </l>
+     <l>And I ought to be branded the better man, I say,</l>
+     <l rend="indent">therefore.’</l>
+     <l rend="indent">Quoth Gawain: ‘I flinched once,</l>
+     <l rend="indent">Yet so will I no more;</l>
+     <l rend="indent">Though if my head fall on the stones,</l>
+     <l rend="indent">I cannot it restore.’</l></lg>
+     
+         <head>92</head>
+     
+     <lg><l>‘Be brisk, man, by your faith, and bring me to the point.</l>
+     <l>Deal me my destiny and do it out of hand,</l>
+     <l>for I shall stand your stroke, and start no more</l>
+     <l>till your axe has hit me – have here my troth.’</l>
+     <l>‘Have at you, then,’ quoth the other, and heaves it aloft</l>
+     <l>and glares as angrily as if he were mad.</l>
+     <l>He menaces him mightily, but touches him not,</l>
+     <l>swiftly withholding his hand ere it might hurt.</l>
+     <l>Gawain gravely it bides and moves not a muscle,</l>
+     <l>but stands still as a stone or the stump of a tree</l>
+     <l>that is riven in rocky ground with roots a hundred. </l>
+     <l>Then merrily again he spoke, the man in green:</l>
+     <l>‘So now you have your heart whole, it me behoves.</l>
+     <l>Hold you safe now the knighthood Arthur gave you,</l>
+     <l>and keep your neck from this cut, if ever it may!’</l>
+     <l>Gawain full fiercely with anger then said:</l>
+     <l>‘Why, thrash on, you wild man, threaten no longer;</l>
+     <l>it seems your heart is warring with your own self.’</l>
+     <l>‘Forsooth,’ quoth the other, ‘so fiercely you speak,</l>
+     <l>I’ll not a moment longer delay your errand</l>
+     <l rend="indent">I vow.’</l>
+     <l rend="indent">Then he takes up his stance to strike</l>
+     <l rend="indent">pouts lips and puckers his brow;</l>
+     <l rend="indent">Nothing there for him to like</l>
+     <l rend="indent">who hopes for no rescue now.</l></lg>
+     
+         <head>93</head>
+     
+     <lg><l>Up the weapon lifts lightly, is let down fair,</l>
+     <l>and the blade’s border beside the bare neck.</l>
+     <l>Though heaved heavily it hurt him not more,</l>
+     <l>but nicked him on the one side, and severed the skin.</l>
+     <l>The sharp edge sank in the flesh through the fair fat,</l>
+     <l>so that bright blood over his shoulders shot to the earth.</l>
+     <l>And when the knight saw his blood blotting the snow,</l>
+     <l>he spurted up, feet first, more than a spear-length,</l>
+     <l>seized swiftly his helm and on his head cast it,</l>
+     <l>shrugged with his shoulders his fine shield under,</l>
+     <l>broke out his bright sword, and bravely he spoke –</l>
+     <l>never since he was a babe born of his mother</l>
+     <l>had he ever in this world a heart half so blithe –</l>
+     <l>‘Back man, with your blade, and brandish no more!</l>
+     <l>I have received a stroke in this place without strife,</l>
+     <l>and if you offer another I’ll readily requite you</l>
+     <l>and yield it you swiftly again – of that be you sure –</l>
+     <l rend="indent">as foe.</l>
+     <l rend="indent">But one stroke to me here falls;</l>
+     <l rend="indent">the covenant stated so,</l>
+     <l rend="indent">arranged in Arthur’s halls,</l>
+     <l rend="indent">so lay your weapon, now, low!’</l></lg>
+     
+         <head>94</head>
+     
+     <lg><l>The other then turned away and on his axe rested,</l>
+     <l>set the haft to the earth and leant on the head,</l>
+     <l>and looked at the lord who held to his ground,</l>
+     <l>how doughty, and dread-less, enduring he stands</l>
+     <l>armed, without awe; in his heart he him liked.</l>
+     <l>Then he spoke merrily in a mighty voice,</l>
+     <l>and with a ringing roar to the knight he said:</l>
+     <l>‘Bold man be not so fierce in this field.</l>
+     <l>No man here has mistreated you, been unmannerly,</l>
+     <l>nor behaved but by covenant at King’s court made.</l>
+     <l>I hit with a stroke, and you have it, and are well paid;</l>
+     <l>I release you from the rest of all other rights.</l>
+     <l>If I had been livelier, a buffet perchance</l>
+     <l>I could have worked more wilfully, to bring you anger.</l>
+     <l>First I menaced you merrily with a single feint,</l>
+     <l>and rent you with no riving cut, rightly offered</l>
+     <l>for the pledge that we made on the very first night;</l>
+     <l>for you truthfully kept troth and dealt with me true,</l>
+     <l>all the gain you gave me, as good men should.</l>
+     <l>The next blow for the morn, man, I proffered;</l>
+     <l>you kissed my fair wife, the kisses were mine.</l>
+     <l>For both these days I brought you but two bare feints,</l>
+     <l rend="indent">without scathe.</l>
+     <l rend="indent">Truth for the truth restore,</l>
+     <l rend="indent">then man need dread no wraith.</l>
+     <l rend="indent">On the third you failed for sure,</l>
+     <l rend="indent">and so took that blow, in faith.’</l></lg>
+     
+         <head>95</head>
+     
+     <lg><l>‘For it is mine that you wear, that same woven girdle;</l>
+     <l>my own wife gave it you, I know it well forsooth.</l>
+     <l>Now, know I well your kisses and conduct too,</l>
+     <l>and the wooing of my wife; I wrought it myself.</l>
+     <l>I sent her to test you, and truly I think you</l>
+     <l>the most faultless man that was ever afoot.</l>
+     <l>As a pearl beside whitened pea is more precious,</l>
+     <l>so is Gawain, in good faith, beside other good knights.</l>
+     <l>But here sir you lacked a little, wanting in loyalty;</l>
+     <l>but that was for no wily work, nor wooing neither,</l>
+     <l>but for love of your life – so I blame you the less.’</l>
+     <l>The other strong man in study stood a great while,</l>
+     <l>so aggrieved that for grief he grimaced within.</l>
+     <l>All the blood of his breast burnt in his face,</l>
+     <l>that he shrank for shame at all the man said.</l>
+     <l>The first words the knight could frame on that field:</l>
+     <l>‘Curse upon cowardice and covetousness both!</l>
+     <l>In you are villainy and vice that virtue distress.’</l>
+     <l>Then he caught at the knot and pulled it loose,</l>
+     <l>and fair flung the belt at the man himself:</l>
+     <l>‘Lo! There’s the falseness, foul may it fall!</l>
+     <l>For fear of your knock cowardice me taught</l>
+     <l>to accord with covetousness, forsake my kind,</l>
+     <l>the largesse and loyalty that belongs to knights.</l>
+     <l>Now am I faulted and false, and ever a-feared;</l>
+     <l>from both treachery and untruth come sorrow</l>
+     <l rend="indent">and care!</l>
+     <l rend="indent">I confess to you knight, here, still,</l>
+     <l rend="indent">my fault in this affair;</l>
+     <l rend="indent">let me understand your will,</l>
+     <l rend="indent">and henceforth I shall beware.’</l></lg>
+     
+         <head>96</head>
+     
+     <lg><l>Then laughed that other lord and lightly said:</l>
+     <l>‘I hold it happily made whole, the harm that I had;</l>
+     <l>You are confessed so clean, cleared of your faults,</l>
+     <l>and have done penance plain at the point of my blade,</l>
+     <l>I hold you absolved of that sin, as pure and as clean,</l>
+     <l>as though you were never at fault since first you were born.</l>
+     <l>And I give you, sir, the girdle that is gold-hemmed.</l>
+     <l>As it is green as my gown, Sir Gawain, you may</l>
+     <l>think upon this same trial when you throng forth</l>
+     <l>among princes of price, and this the pure token</l>
+     <l>of the test at the Green Chapel to chivalrous knights.</l>
+     <l>And you shall this New Year come back to my castle,</l>
+     <l>and we shall revel away the remnant of this rich feast</l>
+     <l rend="indent">I mean’</l>
+     <l rend="indent">Thus urged him hard the lord,</l>
+     <l rend="indent">and said: ‘With my wife, I ween,</l>
+     <l rend="indent">we shall bring you in accord,</l>
+     <l rend="indent">who was your enemy keen.’</l></lg>
+     
+         <head>97</head>
+     
+     <lg><l>‘Nay, forsooth,’ quoth the knight, and seized his helm</l>
+     <l>doffed it deliberately, and dealt his thanks:</l>
+     <l>‘I have sojourned enough. May luck you betide,</l>
+     <l>and may He yield you reward that rewards all men!</l>
+     <l>And commend me to the courteous, your comely wife,</l>
+     <l>both the one and the other, my honoured ladies,</l>
+     <l>that thus their knight with a trick have cunningly beguiled.</l>
+     <l>But it is no wonder for a fool to run mad</l>
+     <l>and through wiles of woman be won to sorrow.</l>
+     <l>For so was Adam on earth with one beguiled,</l>
+     <l>and Solomon with many such, Samson too –</l>
+     <l>Delilah dealt him his doom – and David thereafter</l>
+     <l>was blinded by Bathsheba, and suffered much ill.</l>
+     <l>Since these were wounded with wiles, it were wise</l>
+     <l>to love them well and believe them not, if a lord could.</l>
+     <l>For these were the finest formerly, favoured by fate</l>
+     <l>excellently of all those under heaven’s rule </l>
+     <l rend="indent">ill used;</l>
+     <l rend="indent">And all these were beguiled</l>
+     <l rend="indent">with women that they used.</l>
+     <l rend="indent">If I am now beguiled</l>
+     <l rend="indent">I think I should be excused.’</l></lg>
+     
+         <head>98</head>
+     
+     <lg><l>‘For your girdle,’ quoth Gawain, ‘God reward you!</l>
+     <l>That I will wear with good will, not for the white gold,</l>
+     <l>nor the stuff, the silk, nor the slender pendants,</l>
+     <l>its worth, nor richness, nor for the fine working;</l>
+     <l>but as a sign of my sin I shall see it often</l>
+     <l>when I ride in renown, remorseful, remembering</l>
+     <l>the fault and the frailty of perverse flesh,</l>
+     <l>how it tends to entice to the tarnish of sin.</l>
+     <l>And thus when pride shall stir me in prowess of arms,</l>
+     <l>one look at this love-lace shall lower my heart.</l>
+     <l>But one thing I would you pray, displease you never:</l>
+     <l>Since you are lord of yonder land where I lingered</l>
+     <l>Say you by your knighthood – may He reward you</l>
+     <l>that upholds the heavens and on high sits –</l>
+     <l>how you tell your true name, and then no more?’</l>
+     <l>‘That shall I tell you truly,’ quoth the other then,</l>
+     <l>‘Bertilak de Hautdesert I am in this land,</l>
+     <l>through might of Morgan la Faye, that dwells in my house,</l>
+     <l>and is mistress of magic, by crafts well learned</l>
+     <l>the mysteries of Merlin, many has she taken,</l>
+     <l>for she has dealt in depths full dearly sometime</l>
+     <l>with that excellent sage, and that know all your knights</l>
+     <l rend="indent">at home.</l>
+     <l rend="indent">Morgan the Goddess</l>
+     <l rend="indent">therefore is now her name;</l>
+     <l rend="indent">none has such high haughtiness</l>
+     <l rend="indent">that she cannot make full tame.’</l></lg>
+     
+         <head>99</head>
+     
+     <lg><l>‘She sent me in this same wise to your wide hall</l>
+     <l>for to assay its pride, test if all that were truth</l>
+     <l>that runs on the great renown of the Round Table.</l>
+     <l>She worked all this wonder your wits to ravel,</l>
+     <l>to grieve Guinevere and to bring her to die</l>
+     <l>aghast at that same ghoul with his ghostly speech</l>
+     <l>with his head in his hand before the high table.</l>
+     <l>That is she that is at home, the ancient lady;</l>
+     <l>she is even your aunt, Arthur’s half-sister,</l>
+     <l>daughter of Tintagel’s Duchess that dear Uther after</l>
+     <l>had Arthur upon, who now is your king.</l>
+     <l>Therefore, sir, I entreat you, come to your aunt,</l>
+     <l>make merry in my house. My men do love you,</l>
+     <l>and I wish you as well, man, by my faith,</l>
+     <l>as any man under God, for your great truth.’</l>
+     <l>Yet Gawain denied him, nay, he would in no way.</l>
+     <l>They clasped and kissed, commending each other</l>
+     <l>to the Prince of Paradise, parted in the cold where</l>
+     <l rend="indent">they stood.</l>
+     <l rend="indent">Gawain on steed I ween</l>
+     <l rend="indent">to the King goes fast as he could,</l>
+     <l rend="indent">and the man in the emerald green</l>
+     <l rend="indent">whithersoever he would. </l></lg>
+     
+         <head>100</head>
+     
+     <lg><l>Wild ways in the world Gawain now rides,</l>
+     <l>on Gringolet, he whom grace had gifted with life.</l>
+     <l>Often he harboured in houses, and often outside,</l>
+     <l>had adventures much in the vales, often vanquisher,</l>
+     <l>that I do not at this time intend to recall.</l>
+     <l>The hurt was all whole that he had in his neck,</l>
+     <l>and the bright belt he bore all thereabout,</l>
+     <l>obliquely, as a baldric, bound at his side,</l>
+     <l>tied under his left arm, the lace, with a knot,</l>
+     <l>as token he was tainted with guilt of his fault.</l>
+     <l>And so he comes to the court, all safe and sound.</l>
+     <l>Delight dawned in that dwelling when the great knew</l>
+     <l>that good Gawain was come; and thought it gain.</l>
+     <l>The King kisses the knight, and the queen also,</l>
+     <l>and then many staunch knights sought to salute him,</l>
+     <l>to know how he had fared; and faithfully he tells</l>
+     <l>confessing all the cost of the cares he had suffered –</l>
+     <l>what chanced at the chapel, the cast of its lord,</l>
+     <l>the love of the lady, the lace at the last.</l>
+     <l>The nick in the neck he naked them showed,</l>
+     <l>that he had for his lie, from the lord’s hands,</l>
+     <l rend="indent">in blame.</l>
+     <l rend="indent">He was pained he must tell,</l>
+     <l rend="indent">he groaned for grief at the same;</l>
+     <l rend="indent">blood ran to his face pell-mell,</l>
+     <l rend="indent">when he showed the mark, for shame.</l></lg>
+     
+         <head>101</head>
+
+     <lg><l>‘Lo, Lord!’ quoth the knight, and handled the lace,</l>
+     <l>‘This is the belt of blame I bear at my neck,</l>
+     <l>this is the hurt and the harm that I have learned</l>
+     <l>through the cowardice and covetousness I caught there.</l>
+     <l>This is the token of the untruth I am taken in,</l>
+     <l>and I must needs it wear while I may last.</l>
+     <l>For none may hide harm done, and go unscathed,</l>
+     <l>for where it is once attached depart will it never.’</l>
+     <l>The King comforts the knight, and all the court also,</l>
+     <l>laughing loudly thereat, and lovingly agreeing,</l>
+     <l>those lords and ladies that belonged to the Table,</l>
+     <l>that each born to the brotherhood, a baldric should have,</l>
+     <l>a belt, oblique him about, of a bright green,</l>
+     <l>and that for the sake of the knight, the same hue.</l>
+     <l>For it was accorded to the renown of the Round Table,</l>
+     <l>and he that had it was honoured, evermore after,</l>
+     <l>as is borne out by the best book of romance.</l>
+     <l>Thus in Arthur’s day this adventure was tried,</l>
+     <l>the books of Brutus thereof bear witness.</l>
+     <l>Since Brutus, the bold baron, first bent hither,</l>
+     <l>after the siege and assault had ceased at Troy,</l>
+     <l rend="indent">there is,</l>
+     <l rend="indent">many an adventure born</l>
+     <l rend="indent">befallen such, ere this.</l>
+     <l rend="indent">Now who bears the crown of thorn,</l>
+     <l rend="indent">May He bring us to his bliss! AMEN.</l></lg>
+      
+      <l>HONY SOYT QUI MAL PENCE</l>
+
+</div>
+
+
+
+      </body>
+   </text>
+</TEI>
+
+
