@@ -1,0 +1,2301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="chaucer-prologue">
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">The Canterbury Tales: The Miller's Prologue and Tale</title>
+                <author>
+                    <persName type="lcnaf" key="n79027228">
+                        <name>
+                            <forename>Geoffrey</forename>
+                            <surname>Chaucer</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0002-1040-1671">
+                        <name ref="editors.xml#AJB">
+                            <forename>Austin</forename>
+                            <surname>Benson</surname>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#AJB">Austin Benson</name>
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22204-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title> The Canterbury Tales: The Wife of Bath's Prologue and Tale </title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n79027228">
+                                <name>
+                                    <forename>Geoffrey</forename>
+                                    <surname>Chaucer</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title>The Complete Works of Geoffrey Chaucer</title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7011931">Oxford</placeName>
+                            </pubPlace>
+                            <publisher>Clarendon Press</publisher>
+                            <date when="1900">1900</date>
+                            <note> Text for this digital edition drawn from <ref
+                                    target="https://hdl.handle.net/2027/coo1.ark:/13960/t8df7b62n"
+                                    >Walter Skeat, <hi rend="italic">The Complete Works of Geoffrey
+                                        Chaucer, Edited from Numerous Manuscripts</hi>. Vol. 4.
+                                    London: Oxford University Press, 1900. </ref>
+                            </note>
+                        </imprint>
+                        <extent/>
+                        <biblScope/>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="poem">
+                <channel mode="w">Manuscript</channel>
+                <constitution type="composite"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness/>
+                <purpose type="entertain" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7011781">London</name>
+                    <time when="1400">ca. 1400</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature of the 18th century. This project is funded by the National Endowment
+                    for the Humanities and developed by faculty at The University of Virginia and
+                    Marymount University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com. </p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <pb n="TP"/>
+            <titlePage>
+                <docTitle>
+                    <titlePart>
+                        <ref target="intro_" corresp="intro">THE COMPLETE WORKS<lb/> OF <lb/>
+                            GEOFFREY CHAUCER </ref></titlePart>
+                    <titlePart>
+                        <hi rend="italic">EDITED, FROM NUMEROUS MANUSCRIPTS</hi>
+                        <lb/> BY THE <lb/>
+                    </titlePart>
+                </docTitle>
+                <docAuthor>REV. <ref target="skeat_" corresp="skeat">WALTER W. SKEAT</ref>, M.A.
+                    <lb/> Litt.D., LL.D., D.C.L., PH.D. <lb/> ERLINGTON AND BOSWORTH PROFESSOR OF
+                    ANGLO-SAXON <lb/> AND FELLOW OF CHRIST'S COLLEGE, CAMBRIDGE </docAuthor>
+                <titlePart> ****<lb/>
+                </titlePart>
+                <titlePart> THE CANTERBURY TALES: TEXT <lb/>
+                </titlePart>
+                <epigraph>
+                    <quote>
+                        <lg>
+                            <l>'Let every felawe telle his tale aboute,</l>
+                            <l>And lat see now who shal the soper winne.'</l>
+                        </lg>
+                    </quote>
+                    <bibl>
+                        <persName/>
+                        <note><hi rend="italic">The Knightes Tale;</hi> A890 </note>
+                    </bibl>
+                    <lb/>
+                </epigraph>
+                <titlePart> SECOND EDITION <lb/>
+                </titlePart>
+                <docImprint>
+                    <pubPlace>
+                        <placeName type="tgn" key="7011781">OXFORD</placeName>
+                    </pubPlace>
+                    <publisher> AT THE CLARENDON PRESS </publisher>
+                    <date when="1900">MDCCCC</date>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <div>
+                <pb n="320"/>
+                <head>THE WIFE OF BATH'S PROLOGUE.<lb/>The Prologe of the Wyves Tale of
+                    Bathe.</head>
+                <lg>
+                    <l n="1">‘<ref target="experience_" corresp="experience">Experience, though noon
+                            auctoritee</ref></l>
+                    <l n="2">Were in this world, were right y-nough to me</l>
+                    <l n="3">To speke of wo that is in mariage;</l>
+                    <l n="4">For, lordinges, <ref target="twelf_" corresp="twelf">sith I twelf yeer
+                            was of age</ref>,</l>
+                    <l n="5">Thonked be god that is eterne on lyve,</l>
+                    <l n="6">Housbondes at chirche-dore I have had fyve;</l>
+                    <l n="7">For I so ofte have y-wedded be;</l>
+                    <l n="8">And alle were <ref target="degree_" corresp="degree">worthy men in hir
+                            degree</ref>.</l>
+                    <l n="9">But me was told certeyn, nat longe agon is,</l>
+                    <l n="10"><ref target="once_" corresp="once">That sith that Crist ne wente never
+                            but onis</ref></l>
+                    <l n="11">To <ref target="cana_" corresp="cana">wedding in the Cane of
+                            Galilee</ref>,</l>
+                    <l n="12">That by the same ensample taughte he me</l>
+                    <l n="13">That I ne sholde wedded be but ones.</l>
+                    <l n="14">Herke eek, lo! which a sharp word for the nones</l>
+                    <l n="15"><ref target="welle_" corresp="welle">Besyde a welle Iesus</ref>, god
+                        and man,</l>
+                    <l n="16">Spak in repreve of the Samaritan:</l>
+                    <l n="17">“Thou hast y-had fyve housbondes,” quod he,</l>
+                    <l n="18">“And thilke man, the which that hath now thee,</l>
+                    <l n="19">Is noght thyn housbond;” thus seyde he certeyn;</l>
+                    <l n="20"><ref target="mente_" corresp="mente">What that he mente ther-by, I can
+                            nat seyn;</ref></l>
+                    <pb n="321"/>
+                    <l n="21">But that I <ref target="axe_" corresp="axe">axe</ref>, why that the
+                        fifthe man</l>
+                    <l n="22">Was noon housbond to the Samaritan?</l>
+                    <l n="23"><ref target="many_" corresp="many">How manye mighte she have in
+                            mariage?</ref></l>
+                    <l n="24">Yet herde I never tellen in myn age</l>
+                    <l n="25">Upon this nombre diffinicioun;</l>
+                    <l n="26">Men may <ref target="devyne_" corresp="devyne">devyne</ref> and <ref
+                            target="glosen_" corresp="glosen">glosen up and doun</ref>.</l>
+                    <l n="27"><ref target="woot_" corresp="woot">But wel I woot expres, with-oute
+                            lye,</ref></l>
+                    <l n="28">God bad us for to <ref target="wexe_" corresp="wexe">wexe and
+                            multiplye</ref>;</l>
+                    <l n="29">That gentil text can I wel understonde.</l>
+                    <l n="30">Eek wel I <ref target="woot_" corresp="woot">woot</ref> he seyde, myn
+                        housbonde</l>
+                    <l n="31">Sholde <ref target="fader_" corresp="fader">lete fader and moder, and
+                            take me</ref>;</l>
+                    <l n="32">But of no nombre mencioun made he,</l>
+                    <l n="33">Of <ref target="bigamye_" corresp="bigamye">bigamye or of
+                            octogamye</ref>;</l>
+                    <l n="34">Why sholde men speke of it <ref target="vileinye_" corresp="vileinye"
+                            >vileinye?</ref></l>
+                </lg>
+                <lg>
+                    <l n="35">Lo, here the wyse king, dan <ref target="Salomon_" corresp="Salomon"
+                            >Salomon</ref>;</l>
+                    <l n="36">I trowe he hadde wyves <ref target="oon_" corresp="oon">mo than
+                            oon</ref>;</l>
+                    <l n="37">As, wolde god, it <ref target="leveful_" corresp="leveful"
+                            >leveful</ref> were to me</l>
+                    <l n="38">To be refresshed half so ofte as he!</l>
+                    <l n="39"><ref target="yifte_" corresp="yifte">Which yifte of god hadde he for
+                            alle his wyvis!</ref></l>
+                    <l n="40">No man hath swich, that in this world alyve is.</l>
+                    <l n="41">God <ref target="woot_" corresp="woot">woot</ref>, this noble king, as
+                        to my wit,</l>
+                    <l n="42">The firste night had many a <ref target="fit_" corresp="fit">mery
+                            fit</ref></l>
+                    <l n="43">With ech of hem, so wel was him on lyve!</l>
+                    <l n="44">Blessed be god that I have wedded fyve!</l>
+                    <l n="45">Welcome the sixte, whan that ever he shal.</l>
+                    <l n="46">For sothe, <ref target="chast_" corresp="chast">I wol nat kepe me
+                            chast in al</ref>;</l>
+                    <l n="47">Whan myn housbond is fro the world y-gon,</l>
+                    <l n="48">Som Cristen man shal wedde me anon;</l>
+                    <l n="49">For thanne <ref target="apostle_" corresp="apostle">thapostle</ref>
+                        seith, that I am free</l>
+                    <l n="50">To wedde, a goddes half, wher it lyketh me.</l>
+                    <l n="51">He seith that to be wedded is no sinne;</l>
+                    <l n="52"><ref target="brinne_" corresp="brinne">Bet is to be wedded than to
+                            brinne.</ref></l>
+                    <l n="53">What <ref target="rekketh_" corresp="rekketh">rekketh</ref> me, thogh
+                        folk seye vileinye</l>
+                    <l n="54">Of shrewed <ref target="Lameth_" corresp="Lameth">Lameth and his
+                            bigamye</ref>?</l>
+                    <pb n="322"/>
+                    <l n="55">I woot wel <ref target="Abraham_" corresp="Abraham">Abraham</ref> was
+                        an holy man,</l>
+                    <l n="56">And <ref target="Jacob_" corresp="Jacob">Iacob</ref> eek, as ferforth
+                        as I can;</l>
+                    <l n="57">And ech of hem hadde wyves mo than two;</l>
+                    <l n="58">And many another holy man also.</l>
+                    <l n="59">Whan saugh ye ever, in any maner age,</l>
+                    <l n="60">That hye god defended mariage</l>
+                    <l n="61"><ref target="word_" corresp="word">By expres word</ref>? I pray you,
+                        telleth me;</l>
+                    <l n="62">Or wher comanded he virginitee?</l>
+                    <l n="63">I woot as wel as ye, it is no drede,</l>
+                    <l n="64"><ref target="maydenhede_" corresp="maydenhede">Thapostel, whan he
+                            speketh of maydenhede</ref>;</l>
+                    <l n="65">He seyde, that precept ther-of hadde he noon.</l>
+                    <l n="66">Men may conseille a womman to been oon,</l>
+                    <l n="67">But <ref target="conseilling_" corresp="conseilling">conseilling is no
+                            comandement</ref>;</l>
+                    <l n="68">He putte it in our owene Iugement.</l>
+                    <l n="69">For hadde god comanded maydenhede,</l>
+                    <l n="70"><ref target="dampned_" corresp="dampned">Thanne hadde he dampned
+                            wedding with the dede</ref>;</l>
+                    <l n="71">And certes, <ref target="seed_" corresp="seed">if ther were no seed
+                            y-sowe</ref>,</l>
+                    <l n="72">Virginitee, wher-of than sholde it growe?</l>
+                    <l n="73">Poul dorste nat comanden atte leste</l>
+                    <l n="74">A thing of which his maister yaf noon heste.</l>
+                    <l n="75">The <ref target="dart_" corresp="dart">dart</ref> is set up for
+                        virginitee;</l>
+                    <l n="76">Cacche who so may, who renneth best lat see.</l>
+                </lg>
+                <lg>
+                    <l n="77">But this word is <ref target="take_" corresp="take">nat take of every
+                            wight</ref>,</l>
+                    <l n="78">But ther as god list give it of his might.</l>
+                    <l n="79">I woot wel, that <ref target="mayde_" corresp="mayde">thapostel was a
+                            mayde</ref>;</l>
+                    <l n="80">But natheless, thogh that he wroot and sayde,</l>
+                    <l n="81">He wolde that every wight were swich as he,</l>
+                    <l n="82">Al nis but conseil to virginitee;</l>
+                    <l n="83">And for to been a wyf, he yaf me leve</l>
+                    <l n="84">Of indulgence; so it is no repreve</l>
+                    <l n="85">To wedde me, if that my <ref target="make_" corresp="make">make</ref>
+                        dye,</l>
+                    <l n="86"><ref target="excepcioun_" corresp="excepcioun">With-oute excepcioun of
+                            bigamye</ref>.</l>
+                    <l n="87">Al were it good no womman for to touche,</l>
+                    <l n="88">He mente as in his bed or in his couche;</l>
+                    <l n="89">For peril is bothe <ref target="fyr_" corresp="fyr">fyr and tow</ref>
+                        tassemble;</l>
+                    <l n="90"><ref target="ensample_" corresp="ensample">Ye knowe what this ensample
+                            may resemble</ref>.</l>
+                    <pb n="323"/>
+                    <l n="91">This is al and som, he heeld virginitee</l>
+                    <l n="92">More parfit than wedding in <ref target="freletee_" corresp="freletee"
+                            >freletee</ref>.</l>
+                    <l n="93">Freeltee clepe I, but-if that he and she</l>
+                    <l n="94">Wolde leden al hir lyf in chastitee.</l>
+                </lg>
+                <lg>
+                    <l n="95">I graunte it wel, I have noon envye,</l>
+                    <l n="96"><ref target="preferre_" corresp="preferre">Thogh maydenhede preferre
+                            bigamye</ref>;</l>
+                    <l n="97">Hem lyketh to be clene, body and goost,</l>
+                    <l n="98">Of myn <ref target="estaat_" corresp="estaat">estaat I nil nat make no
+                            boost</ref>.</l>
+                    <l n="99">For wel ye knowe, a lord in his houshold,</l>
+                    <l n="100"><ref target="gold_" corresp="gold">He hath nat every vessel al of
+                            gold</ref>;</l>
+                    <l n="101">Somme been of <ref target="tree_" corresp="tree">tree</ref>, and doon
+                        hir lord servyse.</l>
+                    <l n="102">God clepeth folk to him in <ref target="sondry_" corresp="sondry"
+                            >sondry wyse</ref>,</l>
+                    <l n="103">And everich hath of god a <ref target="yifte_" corresp="yifte">propre
+                            yifte</ref>,</l>
+                    <l n="104">Som this, som that,—as him lyketh shifte.</l>
+                </lg>
+                <lg>
+                    <l n="105">Virginitee is greet perfeccioun,</l>
+                    <l n="106">And continence eek with devocioun.</l>
+                    <l n="107">But Crist, <ref target="welle_" corresp="welle">that of perfeccioun
+                            is welle</ref>,</l>
+                    <l n="108"><ref target="selle_" corresp="selle">Bad nat every wight he shold go
+                            selle</ref></l>
+                    <l n="109">All that he hadde, and give it to the pore,</l>
+                    <l n="110">And in swich wyse folwe hime and his fore.</l>
+                    <l n="111">He spak to hem that wolde live parfitly;</l>
+                    <l n="112">And lordinges, by your leve, that am nat I.</l>
+                    <l n="113">I wol bistowe the flour of al myn age</l>
+                    <l n="114">In the <ref target="actes_" corresp="actes">actes and in fruit</ref>
+                        of mariage.</l>
+                </lg>
+                <lg>
+                    <l n="115">Telle me also, to what <ref target="conclusioun_"
+                            corresp="conclusioun">conclusioun</ref></l>
+                    <l n="116">Were <ref target="membres_" corresp="membres">membres maad of
+                            generacioun</ref>,</l>
+                    <l n="117">And for what profit was a wight y-wroght?</l>
+                    <l n="118">Trusteth right wel, they wer nat maad for noght.</l>
+                    <l n="119">Glose who-so wole, and seye bothe up and doun,</l>
+                    <l n="120">That they were maked for <ref target="purgacioun_"
+                            corresp="purgacioun">purgacioun</ref></l>
+                    <l n="121">Of urine, and our bothe thinges smale</l>
+                    <l n="122">Were eek <ref target="femele_" corresp="femele">to knowe a femele
+                            from a male</ref>,</l>
+                    <l n="123">And for noone other cause: sey ye no?</l>
+                    <l n="124">The experience woot wel it is noght so;</l>
+                    <pb n="324"/>
+                    <l n="125">So that the <ref target="clerkes_" corresp="clerkes">clerkes</ref> be
+                        nat with me wrothe,</l>
+                    <l n="126">I sey this, that they maked been for bothe,</l>
+                    <l n="127">This is to seye, <ref target="office_" corresp="office">for office,
+                            and for ese</ref></l>
+                    <l n="128">Of engendrure, ther we nat god displese.</l>
+                    <l n="129">Why sholde men elles in hir bokes sette,</l>
+                    <l n="130"><ref target="dette_" corresp="dette">That man shal yelde to his wyf
+                            hir dette?</ref></l>
+                    <l n="131">Now wher-with sholde he make his payement,</l>
+                    <l n="132">If he ne used his sely instrument?</l>
+                    <l n="133">Than were they maad up-on a creature,</l>
+                    <l n="134">To purge uryne, and eek for engendrure.</l>
+                </lg>
+                <lg>
+                    <l n="135">But I seye noght that every wight is holde,</l>
+                    <l n="136">That hath swich <ref target="harneys_" corresp="harneys"
+                            >harneys</ref> as I to yow tolde,</l>
+                    <l n="137">To goon and usen hem in engendrure;</l>
+                    <l n="138">Than sholde men take of chastitee no <ref target="cure_"
+                            corresp="cure">cure</ref>.</l>
+                    <l n="139">Crist was a mayde, and shapen as a man,</l>
+                    <l n="140">And many a seint, sith that the world bigan,</l>
+                    <l n="141">Yet lived they ever in parfit chastitee.</l>
+                    <l n="142">I nil envye no virginitee;</l>
+                    <l n="143">Lat hem be breed of pured <ref target="whete_" corresp="whete"
+                            >whete-seed</ref>,</l>
+                    <l n="144">And lat us wyves hoten <ref target="barly_" corresp="barly"
+                            >barly-breed</ref>;</l>
+                    <l n="145">And yet with barly-breed, <ref target="Mark_" corresp="Mark"
+                            >Mark</ref> telle can,</l>
+                    <l n="146"><ref target="refresshed_" corresp="refresshed">Our lord Iesu
+                            refresshed many a man</ref>.</l>
+                    <l n="147">In swich estaat as god hath cleped us</l>
+                    <l n="148">I wol persevere, I nam nat <ref target="precious_" corresp="precious"
+                            >precious</ref>.</l>
+                    <l n="149">In wyfhode I wol use myn instrument</l>
+                    <l n="150">As frely as my maker hath it sent.</l>
+                    <l n="151">If I be <ref target="daungerous_" corresp="daungerous"
+                            >daungerous</ref>, god yeve me sorwe!</l>
+                    <l n="152">Myn housbond shal it have bothe eve and morwe,</l>
+                    <l n="153">Whan that him list com forth and paye his dette.</l>
+                    <l n="154">An housbonde I wol have, I nil nat lette,</l>
+                    <l n="155">Which shal be bothe <ref target="dettour_" corresp="dettour">my
+                            dettour</ref> and my <ref target="thral_" corresp="thral"
+                        >thral</ref>,</l>
+                    <l n="156">And have his <ref target="tribulacioun_" corresp="tribulacioun"
+                            >tribulacioun</ref> with-al</l>
+                    <l n="157">Up-on his flessh, whyl that I am his wyf.</l>
+                    <l n="158">I have the power duringe al my lyf</l>
+                    <l n="159">Up-on his propre body, and noght he.</l>
+                    <pb n="325"/>
+                    <l n="160">Right thus the apostel tolde it un-to me;</l>
+                    <l n="161">And <ref target="loveweel_" corresp="loveweel">bad our housbondes for
+                            to love us weel</ref>.</l>
+                    <l n="162">Al this sentence me lyketh every-deel’—</l>
+                </lg>
+                <lg>
+                    <l n="163">Up sterte the Pardoner, and that anon,</l>
+                    <l n="164">‘Now dame,’ quod he, ‘by god and by seint Iohn,</l>
+                    <l n="165">Ye been a noble <ref target="prechour_" corresp="prechour"
+                            >prechour</ref> in this cas!</l>
+                    <l n="166">I was aboute to wedde a wyf; allas!</l>
+                    <l n="167"><ref target="bye_" corresp="bye">What sholde I bye it on my flesh so
+                            dere?</ref></l>
+                    <l n="168">Yet hadde I lever wedde no wyf to-yere!’</l>
+                </lg>
+                <lg>
+                    <l n="169">‘Abyde!’ quod she, ‘my tale is nat bigonne;</l>
+                    <l n="170">Nay, thou shalt drinken of another <ref target="tonne_"
+                            corresp="tonne">tonne</ref></l>
+                    <l n="171">Er that I go, shal savoure wors than ale.</l>
+                    <l n="172">And whan that I have told thee forth my tale</l>
+                    <l n="173">Of tribulacioun in mariage,</l>
+                    <l n="174">Of which I am expert in al myn age,</l>
+                    <l n="175">This to seyn, my-self have been the whippe;—</l>
+                    <l n="176">Than maystow chese whether thou wolt sippe</l>
+                    <l n="177">Of thilke tonne that I shal abroche.</l>
+                    <l n="178">Be <ref target="war_" corresp="war">war</ref> of it, er thou to ny
+                        approche;</l>
+                    <l n="179">For I shal telle ensamples mo than ten.</l>
+                    <l n="180">'<ref target="whoso_" corresp="whoso">Who-so</ref> that nil be war by
+                        othere men,</l>
+                    <l n="181">By him shul othere men corrected be.'</l>
+                    <l n="182">The same wordes wryteth <ref target="ptolomy_" corresp="ptolomy"
+                            >Ptholomee</ref>;</l>
+                    <l n="183">Rede in his <ref target="almageste_" corresp="almageste"
+                            >Almageste</ref>, and take it there.’</l>
+                </lg>
+                <lg>
+                    <l n="184">‘Dame, I wolde praye yow, if your wil it were,’</l>
+                    <l n="185">Seyde this Pardoner, ‘as ye bigan,</l>
+                    <l n="186">Telle forth your tale, spareth for no man,</l>
+                    <l n="187">And teche us yonge men of your <ref target="praktike_"
+                            corresp="praktike">praktike</ref>.’</l>
+                </lg>
+                <lg>
+                    <l n="188">‘Gladly,’ quod she, ‘sith it may yow lyke.</l>
+                    <l n="189">But yet I praye to al this companye,</l>
+                    <l n="190">If that I speke after my <ref target="fantasye_" corresp="fantasye"
+                            >fantasye</ref>,</l>
+                    <l n="191"><ref target="agrief_" corresp="agrief">As taketh not a-grief of that
+                            I seye</ref>;</l>
+                    <l n="192"><ref target="entente_" corresp="entente">For myn entente nis but for
+                            to pleye</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="193"><ref target="now_" corresp="now">Now sires, now wol I telle forth my
+                            tale</ref>.—</l>
+                    <l n="194">As ever mote I drinken wyn or ale,</l>
+                    <pb n="326"/>
+                    <l n="195">I shal seye sooth, tho housbondes that I hadde,</l>
+                    <l n="196">As three of hem were gode and two were badde.</l>
+                    <l n="197"><ref target="three_" corresp="three">The three men were gode, and
+                            riche, and olde</ref>;</l>
+                    <l n="198"><ref target="unnethe_" corresp="unnethe">Unnethe mighte they the
+                            statut holde</ref></l>
+                    <l n="199">In which that they were bounden un-to me.</l>
+                    <l n="200"><ref target="pardee_" corresp="pardee">Ye woot wel what I mene of
+                            this, pardee!</ref></l>
+                    <l n="201">As help me god, I laughe whan I thinke</l>
+                    <l n="202"><ref target="swinke_" corresp="swinke">How pitously a-night I made
+                            hem swinke</ref>;</l>
+                    <l n="203">And by my fey, <ref target="stoor_" corresp="stoor">I tolde of it no
+                            stoor</ref>.</l>
+                    <l n="204">They had me yeven hir gold and hir tresoor;</l>
+                    <l n="205">Me neded nat do <ref target="diligence_" corresp="diligence">lenger
+                            diligence</ref></l>
+                    <l n="206">To winne hir love, or doon hem reverence.</l>
+                    <l n="207">They loved me so wel, by god above,</l>
+                    <l n="208"><ref target="deyntee_" corresp="deyntee">That I ne tolde no deyntee
+                            of hir love</ref>!</l>
+                    <l n="209"><ref target="wys_" corresp="wys">A wys womman wol sette hir ever in
+                            oon</ref></l>
+                    <l n="210">To gete hir love, ther as she hath noon.</l>
+                    <l n="211"><ref target="hoolly_" corresp="hoolly">But sith I hadde hem hoolly in
+                            myn hond</ref>,</l>
+                    <l n="212">And sith they hadde me yeven all hir lond,</l>
+                    <l n="213">What sholde I taken hede hem for to plese,</l>
+                    <l n="214">But it were for my profit and myn ese?</l>
+                    <l n="215">I sette hem so <ref target="awerke_" corresp="awerke">a-werke</ref>,
+                        by my fey,</l>
+                    <l n="216">That many a night they songen “weilawey!”</l>
+                    <l n="217"><ref target="bacoun_" corresp="bacoun">The bacoun was nat fet for
+                            hem</ref>, I trowe,</l>
+                    <l n="218">That som men han in <ref target="essex_" corresp="essex">Essex at
+                            Dunmowe</ref>.</l>
+                    <l n="219">I governed hem so wel, after my lawe,</l>
+                    <l n="220">That ech of hem ful blisful was and <ref target="fawe_"
+                            corresp="fawe">fawe</ref></l>
+                    <l n="221">To bringe me <ref target="gaye_" corresp="gaye">gaye</ref> thinges
+                        fro the fayre.</l>
+                    <l n="222">They were ful glad whan I spak to hem fayre;</l>
+                    <l n="223">For god it woot, <ref target="chidde_" corresp="chidde">I chidde hem
+                            spitously</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="224">Now herkneth, how I bar me proprely,</l>
+                    <l n="225">Ye wyse wyves, that can understonde.</l>
+                </lg>
+                <lg>
+                    <l n="226">Thus shul ye speke and <ref target="wrong_" corresp="wrong">bere hem
+                            wrong on honde</ref>;</l>
+                    <l n="227">For half so boldely can ther no man</l>
+                    <l n="228"><ref target="swere_" corresp="swere">Swere and lyen as a womman
+                            can</ref>.</l>
+                    <l n="229">I sey nat this by wyves that ben wyse,</l>
+                    <pb n="327"/>
+                    <l n="230">But-if it be whan they hem misavyse.</l>
+                    <l n="231">A wys wyf, if that she <ref target="can_" corresp="can">can hir
+                            good</ref>,</l>
+                    <l n="232">Shal beren him on hond the <ref target="cow_" corresp="cow">cow is
+                            wood</ref>,</l>
+                    <l n="233">And take witnesse of hir owene mayde</l>
+                    <l n="234">Of hir assent; but <ref target="herkneth_" corresp="herkneth"
+                            >herkneth how I sayde</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="235">‘Sir olde <ref target="kaynard_" corresp="kaynard">kaynard</ref>, is
+                        this thyn array?</l>
+                    <l n="236">Why is my <ref target="neighebore_" corresp="neighebore"
+                            >neighebores</ref> wyf so gay?</l>
+                    <l n="237">She is honoured over-al ther she goth;</l>
+                    <l n="238">I sitte at hoom, I have no <ref target="thrifty_" corresp="thrifty"
+                            >thrifty cloth</ref>.</l>
+                    <l n="239">What dostow at my neighebores hous?</l>
+                    <l n="240">Is she so fair? artow so amorous?</l>
+                    <l n="241"><ref target="mayde_" corresp="mayde">What rowne ye with our
+                            mayde?</ref>
+                        <hi rend="italic">benedicite</hi>!</l>
+                    <l n="242">Sir olde <ref target="lechour_" corresp="lechour">lechour</ref>, lat
+                        thy <ref target="japes_" corresp="japes">Iapes</ref> be!</l>
+                    <l n="243">And if I have a gossib or a freend,</l>
+                    <l n="244">With-outen gilt, <ref target="feend_" corresp="feend">thou chydest as
+                            a feend</ref>,</l>
+                    <l n="245">If that I walke or pleye un-to his hous!</l>
+                    <l n="246">Thou comest hoom as dronken as a mous,</l>
+                    <l n="247">And prechest on thy bench, with <ref target="preef_" corresp="preef"
+                            >yvel preef</ref>!</l>
+                    <l n="248">Thou seist to me, it is a greet meschief</l>
+                    <l n="249">To wedde a povre womman, <ref target="costage_" corresp="costage">for
+                            costage</ref>;</l>
+                    <l n="250">And if that she be riche, of heigh <ref target="parage_"
+                            corresp="parage">parage</ref>,</l>
+                    <l n="251">Than seistow that it is a tormentrye</l>
+                    <l n="252">To suffre hir <ref target="pryde_" corresp="pryde">pryde and hir
+                            malencolye</ref>.</l>
+                    <l n="253">And if that she be fair, thou <ref target="knave_" corresp="knave"
+                            >verray knave</ref>,</l>
+                    <l n="254">Thou seyst that every <ref target="holour_" corresp="holour"
+                            >holour</ref> wol hir have;</l>
+                    <l n="255">She may no whyle in chastitee abyde,</l>
+                    <l n="256">That is assailled up-on ech a syde.</l>
+                </lg>
+                <lg>
+                    <l n="257">Thou seyst, som folk desyre us for richesse,</l>
+                    <l n="258">Somme for our <ref target="shap_" corresp="shap">shap</ref>, and
+                        somme for our fairnesse;</l>
+                    <l n="259">And som, for she can outher singe or daunce,</l>
+                    <l n="260">And som, for gentillesse and <ref target="daliaunce_"
+                            corresp="daliaunce">daliaunce</ref>;</l>
+                    <l n="261">Som, for hir handes and hir armes smale;</l>
+                    <l n="262">Thus <ref target="devel_" corresp="devel">goth al to the devel</ref>
+                        by thy tale.</l>
+                    <l n="263">Thou seyst, <ref target="castel_" corresp="castel">men may nat kepe a
+                            castel-wal</ref>;</l>
+                    <pb n="328"/>
+                    <l n="264">It may so longe assailled been over-al.</l>
+                </lg>
+                <lg>
+                    <l n="265">And if that she be foul, thou seist that she</l>
+                    <l n="266">Coveiteth every man that she may se;</l>
+                    <l n="267">For as a <ref target="spaynel_" corresp="spaynel">spaynel</ref> she
+                        wol on him lepe,</l>
+                    <l n="268">Til that she finde som man hir to <ref target="chepe_"
+                            corresp="chepe">chepe</ref>;</l>
+                    <l n="269">Ne noon so <ref target="goos_" corresp="goos">grey goos</ref> goth
+                        ther in the lake,</l>
+                    <l n="270">As, seistow, that wol been with-oute make.</l>
+                    <l n="271">And seyst, it is an <ref target="welde_" corresp="welde">hard thing
+                            for to welde</ref></l>
+                    <l n="272">A thing that no man wol, his thankes, helde.</l>
+                    <l n="273">Thus seistow, <ref target="lorel_" corresp="lorel">lorel</ref>, whan
+                        thow goost to bedde;</l>
+                    <l n="274">And that no wys man nedeth for to wedde,</l>
+                    <l n="275">Ne no man that entendeth un-to hevene.</l>
+                    <l n="276">With wilde thonder-dint and firy <ref target="levene_"
+                            corresp="levene">levene</ref></l>
+                    <l n="277">Mote thy <ref target="welked_" corresp="welked">welked</ref> nekke be
+                        to-broke!</l>
+                </lg>
+                <lg>
+                    <l n="278">Thow seyst that dropping houses, and eek smoke,</l>
+                    <l n="279">And chyding wyves, maken men to flee</l>
+                    <l n="280">Out of hir owene hous; a! <hi rend="italic">benedicite</hi>!</l>
+                    <l n="281">What eyleth swich an old man for to chyde?</l>
+                </lg>
+                <lg>
+                    <l n="282">Thow seyst, we wyves wol our vyces hyde</l>
+                    <l n="283">Til we be fast, and than we wol hem shewe;</l>
+                    <l n="284">Wel may that be a proverbe of a shrewe!</l>
+                </lg>
+                <lg>
+                    <l n="285">Thou seist, that oxen, asses, hors, and houndes,</l>
+                    <l n="286">They been <ref target="assayed_" corresp="assayed">assayed at diverse
+                            stoundes</ref>;</l>
+                    <l n="287"><ref target="bacins_" corresp="bacins">Bacins</ref>, <ref
+                            target="lavours_" corresp="lavours">lavours</ref>, er that men hem
+                        bye,</l>
+                    <l n="288">Spones and stoles, and al swich housbondrye,</l>
+                    <l n="289">And so been pottes, clothes, and array;</l>
+                    <l n="290">But folk of wyves maken noon assay</l>
+                    <l n="291">Til they be wedded; olde dotard shrewe!</l>
+                    <l n="292">And than, seistow, we wol oure vices shewe.</l>
+                </lg>
+                <lg>
+                    <l n="293">Thou seist also, that it displeseth me</l>
+                    <l n="294">But-if that thou wolt preyse my beautee,</l>
+                    <l n="295">And but thou <ref target="poure_" corresp="poure">poure</ref> alwey
+                        up-on my face,</l>
+                    <l n="296">And <ref target="clepe_" corresp="clepe">clepe</ref> me “faire dame”
+                        in every place;</l>
+                    <l n="297">And but thou make a feste on thilke day</l>
+                    <l n="298">That I was born, and make me fresh and gay,</l>
+                    <pb n="329"/>
+                    <l n="299">And but thou do to my <ref target="norice_" corresp="norice"
+                            >norice</ref> honour,</l>
+                    <l n="300">And to my <ref target="chamberere_" corresp="chamberere">chamberere
+                            with-inne my bour</ref>,</l>
+                    <l n="301">And to my fadres folk and his allyes;—</l>
+                    <l n="302">Thus seistow, olde barel ful of lyes!</l>
+                </lg>
+                <lg>
+                    <l n="303">And yet of our apprentice Ianekyn,</l>
+                    <l n="304">For his <ref target="crisp_" corresp="crisp">crisp heer</ref>,
+                        shyninge as gold so fyn,</l>
+                    <l n="305">And for he <ref target="squiereth_" corresp="squiereth">squiereth me
+                            bothe up and doun</ref>,</l>
+                    <l n="306">Yet hastow caught a fals suspecioun;</l>
+                    <l n="307">I wol hym noght, thogh thou were deed to-morwe.</l>
+                </lg>
+                <lg>
+                    <l n="308">But tel me this, why hydestow, with sorwe,</l>
+                    <l n="309">The keyes of thy cheste awey fro me?</l>
+                    <l n="310">It is my good as wel as thyn, pardee.</l>
+                    <l n="311"><ref target="wenestow_" corresp="wenestow">What wenestow make an
+                            idiot of our dame</ref>?</l>
+                    <l n="312">Now by that lord, that called is seint Iame,</l>
+                    <l n="313">Thou shalt nat bothe, thogh that thou were <ref target="wood_"
+                            corresp="wood">wood</ref>,</l>
+                    <l n="314">Be maister of my body and of my good;</l>
+                    <l n="315"><ref target="forgo_" corresp="forgo">That oon</ref> thou shalt forgo,
+                            <ref target="maugree_" corresp="maugree">maugree thyne yën</ref>;</l>
+                    <l n="316"><ref target="enquere_" corresp="enquere">What nedeth thee of me to
+                            enquere or spyën?</ref></l>
+                    <l n="317">I trowe, thou woldest <ref target="loke_" corresp="loke">loke me in
+                            thy chiste</ref>!</l>
+                    <l n="318">Thou sholdest seye, “wyf, go wher thee liste,</l>
+                    <l n="319">Tak your disport, <ref target="talis_" corresp="talis">I wol nat leve
+                            no talis</ref>;</l>
+                    <l n="320">I knowe yow for a trewe wyf, dame Alis.”</l>
+                    <l n="321">We love no man that taketh kepe or charge</l>
+                    <l n="322">Wher that we goon, we wol ben at our large.</l>
+                </lg>
+                <lg>
+                    <l n="323">Of alle men y-blessed moot he be,</l>
+                    <l n="324">The wyse astrologien <ref target="ptolomy_" corresp="ptolomy">Dan
+                            Ptholome</ref>,</l>
+                    <l n="325">That seith this proverbe in his <ref target="almageste_"
+                            corresp="almageste">Almageste</ref>,</l>
+                    <l n="326">“Of alle men his wisdom is the hyeste,</l>
+                    <l n="327"><ref target="honde_" corresp="honde">That rekketh never who hath the
+                            world in honde</ref>.”</l>
+                    <l n="328">By this proverbe thou shalt understonde,</l>
+                    <l n="329">Have thou y-nogh, what thar thee recche or care</l>
+                    <l n="330">How merily that othere folkes fare?</l>
+                    <l n="331">For certeyn, olde dotard, by your leve,</l>
+                    <pb n="330"/>
+                    <l n="332">Ye shul have <ref target="queynte_" corresp="queynte">queynte</ref>
+                        right y-nough at eve.</l>
+                    <l n="333"><ref target="nigard_" corresp="nigard">He is to greet a nigard that
+                            wol werne</ref></l>
+                    <l n="334">A man to lighte his candle at his lanterne;</l>
+                    <l n="335">He shal have never the lasse light, pardee;</l>
+                    <l n="336">Have thou y-nough, thee thar nat pleyne thee.</l>
+                </lg>
+                <lg>
+                    <l n="337">Thou seyst also, that if we make us gay</l>
+                    <l n="338">With clothing and with precious array,</l>
+                    <l n="339">That it is peril of our chastitee;</l>
+                    <l n="340">And yet, with sorwe, thou most enforce thee,</l>
+                    <l n="341">And seye thise wordes in the apostles name,</l>
+                    <l n="342">“<ref target="habit_" corresp="habit">In habit</ref>, maad with
+                        chastitee and shame,</l>
+                    <l n="343">Ye wommen shul apparaille yow,” quod he,</l>
+                    <l n="344">“And noght in tressed heer and gay perree,</l>
+                    <l n="345">As perles, ne with gold, ne clothes riche;”</l>
+                    <l n="346"><ref target="rubriche_" corresp="rubriche">After thy text, ne after
+                            thy rubriche</ref></l>
+                    <l n="347">I wol nat wirche as muchel as a gnat.</l>
+                    <l n="348">Thou seydest this, that <ref target="cat_" corresp="cat">I was lyk a
+                            cat</ref>;</l>
+                    <l n="349">For who-so wolde senge a cattes skin,</l>
+                    <l n="350">Thanne wolde the cat wel dwellen in his in;</l>
+                    <l n="351">And if the cattes skin be slyk and gay,</l>
+                    <l n="352">She wol nat dwelle in house half a day,</l>
+                    <l n="353">But forth she wole, er any day be dawed,</l>
+                    <l n="354">To shewe hir skin, and <ref target="caterwawed_" corresp="caterwawed"
+                            >goon a-caterwawed</ref>;</l>
+                    <l n="355"><ref target="borel_" corresp="borel">This is to seye</ref>, if I be
+                        gay, sir shrewe,</l>
+                    <l n="356">I wol renne out, my borel for to shewe.</l>
+                </lg>
+                <lg>
+                    <l n="357">Sire olde fool, what eyleth thee to spyën?</l>
+                    <l n="358">Thogh thou preye <ref target="argus_" corresp="argus">Argus</ref>,
+                        with his hundred yën,</l>
+                    <l n="359">To be my warde-cors, as he can best,</l>
+                    <l n="360">In feith, he shal nat kepe me but me lest;</l>
+                    <l n="361">Yet coude I make his berd, so moot I thee.</l>
+                </lg>
+                <lg>
+                    <l n="362">Thou seydest eek, that ther ben <ref target="thinges_"
+                            corresp="thinges">thinges three</ref>,</l>
+                    <l n="363">The whiche thinges troublen al this erthe,</l>
+                    <l n="364">And that no wight ne may endure the ferthe;</l>
+                    <l n="365">O leve sir shrewe, Iesu shorte thy lyf!</l>
+                    <l n="366">Yet prechestow, and seyst, an hateful wyf</l>
+                    <l n="367">Y-rekened is for oon of thise meschances.</l>
+                    <pb n="331"/>
+                    <l n="368">Been ther none othere maner resemblances</l>
+                    <l n="369">That ye may lykne your parables to,</l>
+                    <l n="370">But-if a sely wyf be oon of tho?</l>
+                </lg>
+                <lg>
+                    <l n="371">Thou <ref target="lykenest_" corresp="lykenest">lykenest</ref>
+                        wommanes love to helle,</l>
+                    <l n="372">To bareyne lond, ther water may not dwelle.</l>
+                    <l n="373">Thou lyknest it also to wilde fyr;</l>
+                    <l n="374">The more it <ref target="brenneth_" corresp="brenneth"
+                        >brenneth</ref>, the more it hath desyr</l>
+                    <l n="375">To consume every thing that brent wol be.</l>
+                    <l n="376">Thou seyst, that right as wormes shende a tree,</l>
+                    <l n="377">Right so a wyf destroyeth hir housbonde;</l>
+                    <l n="378">This knowe they that been to wyves bonde.’</l>
+                </lg>
+                <lg>
+                    <l n="379"><ref target="lordinges_" corresp="lordinges">Lordinges, right thus,
+                            as ye have understonde</ref>,</l>
+                    <l n="380"><ref target="baronhonde_" corresp="baronhonde">Bar I stifly myne olde
+                            housbondes on honde</ref>,</l>
+                    <l n="381">That thus they seyden in hir dronkenesse;</l>
+                    <l n="382">And al was fals, but that I took witnesse</l>
+                    <l n="383">On Ianekin and on my nece also.</l>
+                    <l n="384">O lord, the peyne I dide hem and the wo,</l>
+                    <l n="385"><ref target="giltelees_" corresp="giltelees">Ful giltelees</ref>, by
+                        goddes swete pyne!</l>
+                    <l n="386">For as an hors I coude byte and whyne.</l>
+                    <l n="387">I coude <ref target="pleyne_" corresp="pleyne">pleyne</ref>, thogh I
+                        were in the <ref target="gilt_" corresp="gilt">gilt</ref>,</l>
+                    <l n="388">Or elles often tyme hadde I ben <ref target="spilt_" corresp="spilt"
+                            >spilt</ref>.</l>
+                    <l n="389"><ref target="mille_" corresp="mille">Who-so that first to mille
+                            comth, first grint</ref>;</l>
+                    <l n="390">I pleyned first, so was our werre y-stint.</l>
+                    <l n="391">They were ful glad to <ref target="excusen_" corresp="excusen"
+                            >excusen hem ful blyve</ref></l>
+                    <l n="392">Of thing of which they never agilte hir lyve.</l>
+                </lg>
+                <lg>
+                    <l n="393">Of wenches wolde I <ref target="beren_" corresp="beren">beren him on
+                            honde</ref>,</l>
+                    <l n="394">Whan that for syk <ref target="unnethes_" corresp="unnethes"
+                            >unnethes</ref> mighte he stonde.</l>
+                    <l n="395">Yet tikled it his herte, for that he</l>
+                    <l n="396">Wende that I hadde of him so greet <ref target="chiertee_"
+                            corresp="chiertee">chiertee</ref>.</l>
+                    <l n="397">I swoor that al my walkinge out by nighte</l>
+                    <l n="398">Was for tespye wenches that he <ref target="dighte_" corresp="dighte"
+                            >dighte</ref>;</l>
+                    <l n="399">Under that colour hadde I many a mirthe.</l>
+                    <l n="400">For al swich wit is yeven us in our birthe;</l>
+                    <pb n="332"/>
+                    <l n="401">Deceite, weping, <ref target="spinning_" corresp="spinning"
+                            >spinning</ref> god hath yive</l>
+                    <l n="402">To wommen kindely, whyl they may live.</l>
+                    <l n="403">And thus <ref target="avaunte_" corresp="avaunte">of o thing I
+                            avaunte me</ref>,</l>
+                    <l n="404">Atte ende I hadde the bettre in ech degree,</l>
+                    <l n="405">By sleighte, or force, or by som maner thing,</l>
+                    <l n="406">As by continuel murmur or grucching;</l>
+                    <l n="407"><ref target="namely_" corresp="namely">Namely a bedde</ref> hadden
+                        they meschaunce,</l>
+                    <l n="408">Ther wolde I chyde and do hem no plesaunce;</l>
+                    <l n="409">I wolde no lenger in the bed abyde,</l>
+                    <l n="410">If that I felte his arm over my syde,</l>
+                    <l n="411">Til he had maad his <ref target="raunson_" corresp="raunson"
+                            >raunson</ref> un-to me;</l>
+                    <l n="412">Than wolde I suffre him do his <ref target="nycetee_"
+                            corresp="nycetee">nycetee</ref>.</l>
+                    <l n="413">And ther-fore every man this tale I telle,</l>
+                    <l n="414"><ref target="winne_" corresp="winne">Winne who-so may, for al is for
+                            to selle</ref>.</l>
+                    <l n="415">With <ref target="emptyhand_" corresp="emptyhand">empty hand</ref>
+                        men may none haukes lure;</l>
+                    <l n="416">For winning wolde I al his lust endure,</l>
+                    <l n="417">And make me a <ref target="appetyt_" corresp="appetyt">feyned
+                            appetyt</ref>;</l>
+                    <l n="418">And yet <ref target="bacon_" corresp="bacon">in bacon</ref> hadde I
+                        never delyt;</l>
+                    <l n="419">That made me that ever I wolde hem chyde.</l>
+                    <l n="420">For <ref target="pope_" corresp="pope">thogh the pope</ref> had seten
+                        hem biside,</l>
+                    <l n="421">I wolde nat spare hem at hir owene bord.</l>
+                    <l n="422">For by my trouthe, <ref target="quitte_" corresp="quitte">I quitte
+                            hem word for word</ref>.</l>
+                    <l n="423">As help me verray god omnipotent,</l>
+                    <l n="424">Thogh I right now sholde make my testament,</l>
+                    <l n="425">I ne owe hem nat a word that it nis quit.</l>
+                    <l n="426">I broghte it so aboute by my wit,</l>
+                    <l n="427">That they moste yeve it up, as for the beste;</l>
+                    <l n="428">Or elles hadde we never been in reste.</l>
+                    <l n="429"><ref target="leoun_" corresp="leoun">For thogh he loked as a wood
+                            leoun</ref>,</l>
+                    <l n="430">Yet sholde he faille of his conclusioun.</l>
+                </lg>
+                <lg>
+                    <l n="431">Thanne wolde I seye, ‘gode lief, tak keep</l>
+                    <l n="432"><ref target="sheep_" corresp="sheep">How mekely loketh Wilkin oure
+                            sheep</ref>;</l>
+                    <l n="433">Com neer, my spouse, lat me <ref target="ba_" corresp="ba">ba</ref>
+                        thy cheke!</l>
+                    <l n="434">Ye sholde been al pacient and meke,</l>
+                    <l n="435">And han <ref target="conscience_" corresp="conscience">a swete spyced
+                            conscience</ref>,</l>
+                    <l n="436">Sith ye so preche of <ref target="Job_" corresp="Job">Iobes
+                            pacience</ref>.</l>
+                    <l n="437">Suffreth alwey, sin ye so wel can preche;</l>
+                    <pb n="333"/>
+                    <l n="438">And but ye do, certain we shal yow teche</l>
+                    <l n="439">That it is fair to have a wyf in pees.</l>
+                    <l n="440"><ref target="bowen_" corresp="bowen">Oon of us two moste bowen</ref>,
+                        doutelees;</l>
+                    <l n="441">And sith a man is more <ref target="resonable_" corresp="resonable"
+                            >resonable</ref></l>
+                    <l n="442">Than womman is, ye moste been suffrable.</l>
+                    <l n="443">What eyleth yow to grucche thus and grone?</l>
+                    <l n="444">Is it for ye wolde have my <ref target="queynte_" corresp="queynte"
+                            >queynte allone</ref>?</l>
+                    <l n="445">Why taak it al, lo, have it every-deel;</l>
+                    <l n="446"><ref target="peter_" corresp="peter">Peter</ref>! I <ref
+                            target="shrewe_" corresp="shrewe">shrewe yow but ye love it
+                        weel</ref>!</l>
+                    <l n="447">For if I wolde selle my <ref target="chose_" corresp="chose"><hi
+                                rend="italic">bele chose</hi></ref>,</l>
+                    <l n="448">I coude walke <ref target="fresh_" corresp="fresh">as fresh as is a
+                            rose</ref>;</l>
+                    <l n="449">But I wol kepe it for your owene <ref target="tooth_" corresp="tooth"
+                            >tooth</ref>.</l>
+                    <l n="450">Ye be to blame, by god, I sey yow sooth.’</l>
+                </lg>
+                <lg>
+                    <l n="451">Swiche maner wordes hadde we on honde.</l>
+                    <l n="452">Now wol I speken of my fourthe housbonde.</l>
+                </lg>
+                <lg>
+                    <l n="453">My fourthe housbonde was a <ref target="revelour_" corresp="revelour"
+                            >revelour</ref>,</l>
+                    <l n="454">This is to seyn, he hadde a <ref target="paramour_"
+                            corresp="paramour">paramour</ref>;</l>
+                    <l n="455">And I was yong and ful of <ref target="ragerye_" corresp="ragerye"
+                            >ragerye</ref>,</l>
+                    <l n="456">Stiborn and strong, and <ref target="pye_" corresp="pye">Ioly as a
+                            pye</ref>.</l>
+                    <l n="457">Wel coude I daunce to an harpe smale,</l>
+                    <l n="458">And singe, y-wis, as any nightingale,</l>
+                    <l n="459">Whan I had dronke a draughte of swete wyn.</l>
+                    <l n="460"><ref target="metellius_" corresp="metellius">Metellius</ref>, the
+                        foule cherl, the swyn,</l>
+                    <l n="461">That with a staf <ref target="birafte_" corresp="birafte">birafte his
+                            wyf hir lyf</ref>,</l>
+                    <l n="462">For she drank wyn, thogh I hadde been his wyf,</l>
+                    <l n="463">He sholde nat han daunted me fro drinke;</l>
+                    <l n="464">And, after wyn, on <ref target="venus_" corresp="venus">Venus</ref>
+                        moste I thinke:</l>
+                    <l n="465">For al <ref target="hayl_" corresp="hayl">so siker as cold engendreth
+                            hayl</ref>,</l>
+                    <l n="466">A likerous mouth moste han a likerous tayl.</l>
+                    <l n="467">In <ref target="vinolent_" corresp="vinolent">womman vinolent</ref>
+                        is no defence,</l>
+                    <l n="468">This knowen lechours by experience.</l>
+                </lg>
+                <lg>
+                    <l n="469">But, lord Crist! whan that <ref target="remembreth_"
+                            corresp="remembreth">it remembreth me</ref></l>
+                    <l n="470">Up-on my yowthe, and on my Iolitee,</l>
+                    <l n="471">It tikleth me <ref target="rote_" corresp="rote">aboute myn herte
+                            rote</ref>.</l>
+                    <l n="472">Unto this day it dooth myn herte <ref target="bote_" corresp="bote"
+                            >bote</ref></l>
+                    <l n="473">That I have had my world as in my tyme.</l>
+                    <l n="474">But age, allas! that al wol <ref target="envenyme_"
+                            corresp="envenyme">envenyme</ref>,</l>
+                    <pb n="334"/>
+                    <l n="475">Hath me biraft my beautee and my <ref target="pith_" corresp="pith"
+                            >pith</ref>;</l>
+                    <l n="476">Lat go, fare-wel, the devel go therwith!</l>
+                    <l n="477">The flour is goon, ther is na-more to telle,</l>
+                    <l n="478">The <ref target="bren_" corresp="bren">bren</ref>, as I best can, now
+                        moste I selle;</l>
+                    <l n="479">But yet to be right mery wol I fonde.</l>
+                    <l n="480">Now wol I tellen of my fourthe housbonde.</l>
+                </lg>
+                <lg>
+                    <l n="481">I seye, I hadde in herte greet <ref target="despyt_" corresp="despyt"
+                            >despyt</ref></l>
+                    <l n="482">That he of any other had delyt.</l>
+                    <l n="483">But he was quit, by god and by <ref target="joce_" corresp="joce"
+                            >seint Ioce</ref>!</l>
+                    <l n="484">I made him <ref target="croce_" corresp="croce">of the same wode a
+                            croce</ref>;</l>
+                    <l n="485">Nat of my body in no foul manere,</l>
+                    <l n="486">But certeinly, I made folk swich chere,</l>
+                    <l n="487">That <ref target="grece_" corresp="grece">in his owene grece I made
+                            him frye</ref></l>
+                    <l n="488">For angre, and for verray Ialousye.</l>
+                    <l n="489">By god, <ref target="purgatorie_" corresp="purgatorie">in erthe I was
+                            his purgatorie</ref>,</l>
+                    <l n="490">For which I hope his soule be in glorie.</l>
+                    <l n="491">For god it woot, he sat ful ofte and <ref target="song_"
+                            corresp="song">song</ref></l>
+                    <l n="492">Whan that his <ref target="shoo_" corresp="shoo">shoo</ref> ful
+                        bitterly him wrong.</l>
+                    <l n="493">Ther was no wight, save god and he, that wiste,</l>
+                    <l n="494">In many wyse, how sore I him twiste.</l>
+                    <l n="495">He deyde <ref target="jerusalem_" corresp="jerusalem">whan I cam fro
+                            Ierusalem</ref>,</l>
+                    <l n="496">And lyth y-grave <ref target="rode_" corresp="rode">under the
+                            rode-beem</ref>,</l>
+                    <l n="497">Al is his tombe noght so <ref target="curious_" corresp="curious"
+                            >curious</ref></l>
+                    <l n="498">As was <ref target="darius_" corresp="darius">the sepulcre of him,
+                            Darius</ref>,</l>
+                    <l n="499">Which that <ref target="appelles_" corresp="appelles">Appelles</ref>
+                        wroghte subtilly;</l>
+                    <l n="500">It nis but wast to burie him preciously.</l>
+                    <l n="501">Lat him fare-wel, god yeve his soule reste,</l>
+                    <l n="502">He is now <ref target="cheste_" corresp="cheste">in the grave and in
+                            his cheste</ref>.</l>
+                </lg>
+                <lg>
+                    <l n="503">Now of my fifthe housbond wol I telle.</l>
+                    <l n="504">God lete his soule never come in helle!</l>
+                    <l n="505">And yet was he to me the moste shrewe;</l>
+                    <l n="506">That <ref target="ribbes_" corresp="ribbes">fele I on my ribbes al by
+                            rewe</ref>,</l>
+                    <l n="507">And ever shal, un-to myn ending-day.</l>
+                    <l n="508">But in our bed he was so <ref target="bed_" corresp="bed">fresh and
+                            gay</ref>,</l>
+                    <l n="509">And ther-with-al so wel <ref target="glose_" corresp="glose">coude he
+                            me glose</ref>,</l>
+                    <l n="510">Whan that he wolde han my <ref target="belechose_"
+                            corresp="belechose"><hi rend="italic">bele chose</hi></ref>,</l>
+                    <l n="511">That <ref target="boon_" corresp="boon">thogh he hadde me bet on
+                            every boon</ref>,</l>
+                    <pb n="335"/>
+                    <l n="512">He coude winne agayn my love anoon.</l>
+                    <l n="513">I trowe I loved him beste, for that he</l>
+                    <l n="514">Was of his love <ref target="daungerous2_" corresp="daungerous2"
+                            >daungerous</ref> to me.</l>
+                    <l n="515">We wommen han, if that I shal nat lye,</l>
+                    <l n="516">In this matere a <ref target="fantasye2_" corresp="fantasye2">queynte
+                            fantasye</ref>;</l>
+                    <l n="517"><ref target="wayte_" corresp="wayte">Wayte</ref> what thing we may
+                        nat lightly have,</l>
+                    <l n="518">Ther-after wol we crye al-day and crave.</l>
+                    <l n="519">Forbede us thing, and that desyren we;</l>
+                    <l n="520"><ref target="prees_" corresp="prees">Prees</ref> on us faste, and
+                        thanne wol we flee.</l>
+                    <l n="521"><ref target="chaffare_" corresp="chaffare">With daunger oute we al
+                            our chaffare</ref>;</l>
+                    <l n="522">Greet <ref target="prees2_" corresp="prees2">prees</ref> at market
+                        maketh <ref target="dere_" corresp="dere">dere ware</ref>,</l>
+                    <l n="523"><ref target="cheep_" corresp="cheep">And to greet cheep is holde at
+                            litel prys</ref>;</l>
+                    <l n="524">This knoweth every womman that is wys.</l>
+                </lg>
+                <lg>
+                    <l n="525">My fifthe housbonde, god his soule blesse!</l>
+                    <l n="526">Which that I took <ref target="richesse_" corresp="richesse">for love
+                            and no richesse</ref>,</l>
+                    <l n="527">He som-tyme was a <ref target="oxenford_" corresp="oxenford">clerk of
+                            Oxenford</ref>,</l>
+                    <l n="528">And had left scole, and wente at hoom to bord</l>
+                    <l n="529">With my <ref target="gossib_" corresp="gossib">gossib</ref>,
+                        dwellinge in oure toun,</l>
+                    <l n="530">God have hir soule! hir name was Alisoun.</l>
+                    <l n="531">She knew myn herte and eek my <ref target="privetee_"
+                            corresp="privetee">privetee</ref></l>
+                    <l n="532">Bet than our parisshe-preest, so moot I thee!</l>
+                    <l n="533"><ref target="biwreyed_" corresp="biwreyed">To hir biwreyed I my
+                            conseil al</ref>.</l>
+                    <l n="534">For had myn housbonde pissed on a wal,</l>
+                    <l n="535">Or doon a thing that sholde han cost his lyf,</l>
+                    <l n="536">To hir, and to another worthy wyf,</l>
+                    <l n="537">And to my nece, which that I loved weel,</l>
+                    <l n="538">I wolde han told his conseil every-deel.</l>
+                    <l n="539">And so I dide ful often, god it woot,</l>
+                    <l n="540">That made his face ful often reed and hoot</l>
+                    <l n="541">For verray shame, and blamed him-self for he</l>
+                    <l n="542">Had told to me so greet a privetee.</l>
+                </lg>
+                <lg>
+                    <l n="543">And so bifel that ones, in a Lente,</l>
+                    <l n="544">(So often tymes I to my gossib wente,</l>
+                    <l n="545">For ever yet I lovede to be gay,</l>
+                    <l n="546">And for to walke, in March, Averille, and May,</l>
+                    <l n="547">Fro hous to hous, to here <ref target="sondry_" corresp="sondry"
+                            >sondry talis</ref>),</l>
+                    <pb n="336"/>
+                    <l n="548">That Iankin clerk, and my gossib dame Alis,</l>
+                    <l n="549">And I my-self, in-to the feldes wente.</l>
+                    <l n="550">Myn housbond was at London al that Lente;</l>
+                    <l n="551"><ref target="leyser_" corresp="leyser">I hadde the bettre leyser for
+                            to pleye</ref>,</l>
+                    <l n="552">And for to see, and eek for to be seye</l>
+                    <l n="553">Of <ref target="lusty_" corresp="lusty">lusty</ref> folk; what <ref
+                            target="grace_" corresp="grace">wiste I wher my grace</ref></l>
+                    <l n="554">Was shapen for to be, or in what place?</l>
+                    <l n="555">Therefore I made my visitaciouns,</l>
+                    <l n="556">To <ref target="vigils_" corresp="vigils">vigilies</ref> and to <ref
+                            target="procession_" corresp="procession">processiouns</ref>,</l>
+                    <l n="557">To preching eek and to thise pilgrimages,</l>
+                    <l n="558">To <ref target="pleyes_" corresp="pleyes">pleyes of miracles</ref>
+                        and mariages,</l>
+                    <l n="559">And wered upon my gaye scarlet <ref target="gytes_" corresp="gytes"
+                            >gytes</ref>.</l>
+                    <l n="560">Thise <ref target="wormes_" corresp="wormes">wormes</ref>, ne thise
+                        motthes, ne thise mytes,</l>
+                    <l n="561">Upon my peril, frete hem never a deel;</l>
+                    <l n="562">And wostow why? for they were used weel.</l>
+                </lg>
+                <lg>
+                    <l n="563">Now wol I tellen forth what happed me.</l>
+                    <l n="564">I seye, that in the feeldes walked we,</l>
+                    <l n="565">Til trewely we hadde swich <ref target="daliance_" corresp="daliance"
+                            >daliance</ref>,</l>
+                    <l n="566">This clerk and I, that of my purveyance</l>
+                    <l n="567">I spak to him, and seyde him, how that he,</l>
+                    <l n="568"><ref target="wedde_" corresp="wedde">If I were widwe, sholde wedde
+                            me</ref>.</l>
+                    <l n="569">For certeinly, I sey for no <ref target="bobance_" corresp="bobance"
+                            >bobance</ref>,</l>
+                    <l n="570">Yet was I never with-outen purveyance</l>
+                    <l n="571">Of mariage, nof othere thinges eek.</l>
+                    <l n="572"><ref target="leek_" corresp="leek">I holde a mouses herte nat worth a
+                            leek</ref>,</l>
+                    <l n="573">That hath but oon hole for to sterte to,</l>
+                    <l n="574">And if that faille, thanne is al y-do.</l>
+                </lg>
+                <lg>
+                    <l n="575">I <ref target="baronhonde_" corresp="baronhonde">bar him on
+                            honde</ref>, he hadde enchanted me;</l>
+                    <l n="576"><ref target="mydame_" corresp="mydame">My dame</ref> taughte me that
+                            <ref target="soutiltee_" corresp="soutiltee">soutiltee</ref>.</l>
+                    <l n="577">And eek I seyde, I <ref target="mette_" corresp="mette">mette</ref>
+                        of him al night;</l>
+                    <l n="578">He wolde han slayn me as I lay up-right,</l>
+                    <l n="579">And al my bed was ful of verray blood,</l>
+                    <l n="580">But yet I hope that he shal do me good;</l>
+                    <l n="581">For blood bitokeneth gold, as me was taught.</l>
+                    <l n="582">And al was fals, I dremed of it right naught,</l>
+                    <pb n="337"/>
+                    <l n="583">But as I folwed ay my dames lore,</l>
+                    <l n="584">As wel of this as of other thinges more.</l>
+                </lg>
+                <lg>
+                    <l n="585">But now sir, lat me see, what I shal seyn?</l>
+                    <l n="586">A! ha! by god, I have my tale ageyn.</l>
+                </lg>
+                <lg>
+                    <l n="587">Whan that my fourthe housbond was <ref target="onbere_"
+                            corresp="onbere">on bere</ref>,</l>
+                    <l n="588">I weep <ref target="algate_" corresp="algate">algate</ref>, and made
+                            <ref target="sory_" corresp="sory">sory chere</ref>,</l>
+                    <l n="589">As wyves moten, for it is <ref target="usage_" corresp="usage"
+                            >usage</ref>,</l>
+                    <l n="590">And with my coverchief covered my visage;</l>
+                    <l n="591"><ref target="purveyed_" corresp="purveyed">But for that I was
+                            purveyed of a make</ref>,</l>
+                    <l n="592">I weep but smal, and that I undertake.</l>
+                </lg>
+                <lg>
+                    <l n="593">To chirche was myn housbond born a-morwe</l>
+                    <l n="594">With neighebores, that for him maden sorwe;</l>
+                    <l n="595">And Iankin oure clerk was oon of tho.</l>
+                    <l n="596">As help me god, whan that I saugh him go</l>
+                    <l n="597">After the bere, me thoughte he hadde a paire</l>
+                    <l n="598">Of legges and of feet so clene and faire,</l>
+                    <l n="599">That al myn herte I yaf un-to his hold.</l>
+                    <l n="600">He was, I trowe, a twenty winter old,</l>
+                    <l n="601">And I was fourty, if I shal seye sooth;</l>
+                    <l n="602">But yet I hadde alwey a <ref target="tooth_" corresp="tooth">coltes
+                            tooth</ref>.</l>
+                    <l n="603"><ref target="gap_" corresp="gap">Gat-tothed</ref> I was, and that
+                        bicam me weel;</l>
+                    <l n="604"><ref target="prente_" corresp="prente">I hadde the prente of sëynt
+                            Venus seel</ref>.</l>
+                    <l n="605">As help me god, I was a lusty oon,</l>
+                    <l n="606">And faire and riche, and yong, and wel <ref target="bigoon_"
+                            corresp="bigoon">bigoon</ref>;</l>
+                    <l n="607">And trewely, as myne housbondes tolde me,</l>
+                    <l n="608">I had the beste <hi rend="italic"><ref target="quoniam_"
+                                corresp="quoniam">quoniam</ref></hi> mighte be.</l>
+                    <l n="609">For certes, <ref target="venerien_" corresp="venerien">I am al
+                            Venerien</ref></l>
+                    <l n="610">In felinge, and myn herte is Marcien.</l>
+                    <l n="611">Venus me yaf my lust, my <ref target="likerousnesse_"
+                            corresp="likerousnesse">likerousnesse</ref>,</l>
+                    <l n="612">And Mars yaf me my sturdy hardinesse.</l>
+                    <l n="613"><ref target="taur_" corresp="taur">Myn ascendent was Taur</ref>, and
+                        Mars ther-inne.</l>
+                    <l n="614">Allas! allas! that ever love was sinne!</l>
+                    <l n="615">I folwed ay myn inclinacioun</l>
+                    <l n="616">By vertu of my constellacioun;</l>
+                    <l n="617">That made me I coude noght withdrawe</l>
+                    <pb n="338"/>
+                    <l n="618">My <ref target="chambre_" corresp="chambre">chambre of Venus</ref>
+                        from a good felawe.</l>
+                    <l n="619">Yet have I <ref target="martes_" corresp="martes">Martes mark up-on
+                            my face</ref>,</l>
+                    <l n="620">And also <ref target="privee_" corresp="privee">in another privee
+                            place</ref>.</l>
+                    <l n="621">For, god so wis be my savacioun,</l>
+                    <l n="622">I ne loved never by no discrecioun,</l>
+                    <l n="623">But ever folwede myn appetyt,</l>
+                    <l n="624">Al were he short or long, or blak or whyt;</l>
+                    <l n="625">I took no kepe, so that he lyked me,</l>
+                    <l n="626">How pore he was, ne eek of what degree.</l>
+                </lg>
+                <lg>
+                    <l n="627">What sholde I seye, but, at the monthes ende,</l>
+                    <l n="628">This Ioly clerk Iankin, that was so hende,</l>
+                    <l n="629">Hath wedded me with greet solempnitee,</l>
+                    <l n="630">And to him yaf I al the lond and fee</l>
+                    <l n="631">That ever was me yeven ther-bifore;</l>
+                    <l n="632">But afterward repented me ful sore.</l>
+                    <l n="633"><ref target="list_" corresp="list">He nolde suffre nothing of my
+                            list</ref>.</l>
+                    <l n="634">By god, he smoot me ones on the <ref target="list2_" corresp="list2"
+                            >list</ref>,</l>
+                    <l n="635">For that <ref target="leef_" corresp="leef">I rente out of his book a
+                            leef</ref>,</l>
+                    <l n="636">That of the strook myn ere wex al deef.</l>
+                    <l n="637">Stiborn I was as is a leonesse,</l>
+                    <l n="638">And of my tonge a verray <ref target="jangleresse_"
+                            corresp="jangleresse">Iangleresse</ref>,</l>
+                    <l n="639">And walke I wolde, as I had doon biforn,</l>
+                    <l n="640">From hous to hous, al-though he had it sworn.</l>
+                    <l n="641">For which he often tymes wolde preche,</l>
+                    <l n="642">And me of <ref target="gestes_" corresp="gestes">olde Romayn gestes
+                            teche</ref>,</l>
+                    <l n="643">How he, <ref target="gallus_" corresp="gallus">Simplicius
+                            Gallus</ref>, lefte his wyf,</l>
+                    <l n="644">And hir forsook for terme of al his lyf,</l>
+                    <l n="645">Noght but for open-heeded he hir say</l>
+                    <l n="646">Lokinge out at his dore upon a day.</l>
+                </lg>
+                <lg>
+                    <l n="647">Another Romayn tolde he me by name,</l>
+                    <l n="648">That, for his wyf was at a someres game</l>
+                    <l n="649">With-oute his witing, he forsook hir eke.</l>
+                    <l n="650">And than wolde he up-on his <ref target="bible_" corresp="bible"
+                            >Bible</ref> seke</l>
+                    <l n="651">That ilke proverbe of <ref target="ecclesiastes_"
+                            corresp="ecclesiastes">Ecclesiaste</ref>,</l>
+                    <l n="652">Wher he comandeth and forbedeth faste,</l>
+                    <l n="653">Man shal nat suffre his wyf go roule aboute;</l>
+                    <pb n="339"/>
+                    <l n="654">Than wolde he seye right thus, with-outen doute,</l>
+                    <l n="655">“<ref target="salwes_" corresp="salwes">Who-so that buildeth his hous
+                            al of salwes</ref>,</l>
+                    <l n="656">And priketh his blinde hors over the falwes,</l>
+                    <l n="657">And suffreth his wyf to go seken halwes,</l>
+                    <l n="658">Is worthy to been hanged on the galwes!”</l>
+                    <l n="659">But al for noght, I sette noght an hawe</l>
+                    <l n="660">Of his proverbes nof his olde sawe,</l>
+                    <l n="661">Ne <ref target="corrected_" corresp="corrected">I wolde nat of him
+                            corrected be</ref>.</l>
+                    <l n="662">I hate him that my vices telleth me,</l>
+                    <l n="663">And so do mo, god woot! of us than I.</l>
+                    <l n="664">This made him with me wood al outrely;</l>
+                    <l n="665">I nolde noght forbere him in no cas.</l>
+                </lg>
+                <lg>
+                    <l n="666"> Now wol I seye yow sooth, by <ref target="thomas_" corresp="thomas"
+                            >seint Thomas</ref>,</l>
+                    <l n="667">Why that I rente out of his book a leef,</l>
+                    <l n="668">For which he smoot me so that I was deef.</l>
+                </lg>
+                <lg>
+                    <l n="669">He hadde a book that gladly, night and day,</l>
+                    <l n="670">For his <ref target="desport_" corresp="desport">desport</ref> he
+                        wolde rede alway.</l>
+                    <l n="671">He cleped it <ref target="valerie_" corresp="valerie">Valerie and
+                            Theofraste</ref>,</l>
+                    <l n="672">At whiche book he lough alwey ful faste.</l>
+                    <l n="673">And eek ther was som-tyme a clerk at Rome,</l>
+                    <l n="674">A cardinal, that highte <ref target="jerome_" corresp="jerome">Seint
+                            Ierome</ref>,</l>
+                    <l n="675">That made <ref target="jovinian_" corresp="jovinian">a book agayn
+                            Iovinian</ref>;</l>
+                    <l n="676">In whiche book eek ther was <ref target="tertulan_"
+                            corresp="tertulan">Tertulan</ref>,</l>
+                    <l n="677"><ref target="crisippus_" corresp="crisippus">Crisippus</ref>, <ref
+                            target="trotula_" corresp="trotula">Trotula</ref>, and <ref
+                            target="helowys_" corresp="helowys">Helowys</ref>,</l>
+                    <l n="678">That was abbesse nat fer fro Parys;</l>
+                    <l n="679">And eek the <ref target="parables_" corresp="parables">Parables of
+                            Salomon</ref>,</l>
+                    <l n="680"><ref target="ovid_" corresp="ovid">Ovydes Art</ref>, and bokes many
+                        on,</l>
+                    <l n="681">And alle thise wer bounden in o volume.</l>
+                    <l n="682">And every night and day was his custume,</l>
+                    <l n="683">Whan he had leyser and vacacioun</l>
+                    <l n="684">From other worldly occupacioun,</l>
+                    <l n="685">To reden on this book of <ref target="wyves_" corresp="wyves">wikked
+                            wyves</ref>.</l>
+                    <l n="686">He knew of hem mo legendes and lyves</l>
+                    <l n="687">Than been of gode wyves in the Bible.</l>
+                    <l n="688">For trusteth wel, it is an impossible</l>
+                    <l n="689">That any clerk wol speke good of wyves,</l>
+                    <pb n="340"/>
+                    <l n="690">But-if it be of holy seintes lyves,</l>
+                    <l n="691">Ne of noon other womman never the mo.</l>
+                    <l n="692">Who <ref target="leon_" corresp="leon">peyntede the leoun</ref>, tel
+                        me who?</l>
+                    <l n="693">By god, if wommen hadde writen stories,</l>
+                    <l n="694">As clerkes han with-inne hir oratories,</l>
+                    <l n="695">They wolde han writen of men more wikkednesse</l>
+                    <l n="696">Than all the mark of Adam may redresse.</l>
+                    <l n="697"><ref target="mercury_" corresp="mercury">The children of Mercurie and
+                            of Venus</ref></l>
+                    <l n="698">Been in hir wirking ful contrarious;</l>
+                    <l n="699">Mercurie loveth wisdom and science,</l>
+                    <l n="700">And Venus loveth ryot and dispence.</l>
+                    <l n="701">And, for hir diverse disposicioun,</l>
+                    <l n="702">Ech falleth in otheres exaltacioun;</l>
+                    <l n="703">And thus, god woot! Mercurie is desolat</l>
+                    <l n="704">In <ref target="pisces_" corresp="pisces">Pisces</ref>, wher Venus is
+                        exaltat;</l>
+                    <l n="705">And Venus falleth ther Mercurie is reysed;</l>
+                    <l n="706">Therfore no womman of no clerk is preysed.</l>
+                    <l n="707">The clerk, whan he is old, and may noght do</l>
+                    <l n="708">Of <ref target="werkes_" corresp="werkes">Venus werkes</ref> worth
+                        his olde sho,</l>
+                    <l n="709">Than sit he doun, and writ in his dotage</l>
+                    <l n="710">That wommen can nat kepe hir mariage!</l>
+                </lg>
+                <lg>
+                    <l n="711">But now to purpos, why I tolde thee</l>
+                    <l n="712">That I was beten for a book, pardee.</l>
+                    <l n="713">Up-on a night Iankin, that was our syre,</l>
+                    <l n="714">Redde on his book, as he sat by the fyre,</l>
+                    <l n="715">Of <ref target="eve_" corresp="eve">Eva</ref> first, that, for hir
+                        wikkednesse,</l>
+                    <l n="716">Was al mankinde broght to wrecchednesse,</l>
+                    <l n="717"><ref target="jesus_" corresp="jesus">For which that Iesu Crist
+                            him-self was slayn</ref>,</l>
+                    <l n="718">That boghte us with his herte-blood agayn.</l>
+                    <l n="719">Lo, here expres of womman may ye finde,</l>
+                    <l n="720">That womman was the los of al mankinde.</l>
+                </lg>
+                <lg>
+                    <l n="721">Tho redde he me how <ref target="sampson_" corresp="sampson"
+                            >Sampson</ref> loste his heres,</l>
+                    <l n="722">Slepinge, his lemman kitte hem with hir sheres;</l>
+                    <l n="723">Thurgh whiche tresoun loste he bothe his yën.</l>
+                    <pb n="341"/>
+                </lg>
+                <lg>
+                    <l n="724">Tho redde he me, if that I shal nat lyen,</l>
+                    <l n="725">Of <ref target="hercules_" corresp="hercules">Hercules</ref> and of
+                        his Dianyre,</l>
+                    <l n="726">That caused him to sette himself a-fyre.</l>
+                </lg>
+                <lg>
+                    <l n="727">No-thing forgat he the penaunce and wo</l>
+                    <l n="728">That <ref target="socrates_" corresp="socrates">Socrates</ref> had
+                        with hise wyves two;</l>
+                    <l n="729">How Xantippa caste pisse up-on his heed;</l>
+                    <l n="730">This sely man sat stille, as he were deed;</l>
+                    <l n="731">He wyped his heed, namore dorste he seyn</l>
+                    <l n="732">But “er that thonder stinte, comth a reyn.”</l>
+                </lg>
+                <lg>
+                    <l n="733">Of <ref target="phasipha_" corresp="phasipha">Phasipha</ref>, that
+                        was the quene of Crete,</l>
+                    <l n="734">For shrewednesse, him thoughte the tale swete;</l>
+                    <l n="735">Fy! spek na-more—it is a grisly thing—</l>
+                    <l n="736">Of hir horrible lust and hir lyking.</l>
+                </lg>
+                <lg>
+                    <l n="737">Of <ref target="clytemnestra_" corresp="clytemnestra"
+                            >Clitemistra</ref>, for hir lecherye,</l>
+                    <l n="738">That falsly made hir housbond for to dye,</l>
+                    <l n="739">He redde it with ful good devocioun.</l>
+                </lg>
+                <lg>
+                    <l n="740">He tolde me eek for what occasioun</l>
+                    <l n="741"><ref target="amphiorax_" corresp="amphiorax">Amphiorax</ref> at
+                        Thebes loste his lyf;</l>
+                    <l n="742">Myn housbond hadde a legende of his wyf,</l>
+                    <l n="743">Eriphilem, that for an ouche of gold</l>
+                    <l n="744">Hath prively un-to the Grekes told</l>
+                    <l n="745">Wher that hir housbonde hidde him in a place,</l>
+                    <l n="746">For which he hadde at Thebes sory grace.</l>
+                </lg>
+                <lg>
+                    <l n="747">Of <ref target="livia_" corresp="livia">Lyma</ref> tolde he me, and
+                        of <ref target="lucye_" corresp="lucye">Lucye</ref>,</l>
+                    <l n="748">They bothe made hir housbondes for to dye;</l>
+                    <l n="749">That oon for love, that other was for hate;</l>
+                    <l n="750">Lyma hir housbond, on an even late,</l>
+                    <l n="751">Empoysoned hath, for that she was his fo.</l>
+                    <l n="752">Lucya, likerous, loved hir housbond so,</l>
+                    <l n="753">That, for he sholde alwey up-on hir thinke,</l>
+                    <l n="754">She yaf him swich a maner love-drinke,</l>
+                    <l n="755">That he was deed, er it were by the morwe;</l>
+                    <l n="756">And thus algates housbondes han sorwe.</l>
+                </lg>
+                <lg>
+                    <l n="757">Than tolde he me, how oon <ref target="latumius_" corresp="latumius"
+                            >Latumius</ref></l>
+                    <l n="758">Compleyned to his felawe Arrius,</l>
+                    <pb n="342"/>
+                    <l n="759">That in his gardin growed swich a tree,</l>
+                    <l n="760">On which, he seyde, how that his wyves three</l>
+                    <l n="761">Hanged hem-self for herte despitous.</l>
+                    <l n="762">“O leve brother,” quod this Arrius,</l>
+                    <l n="763">“Yif me a plante of thilke blissed tree,</l>
+                    <l n="764">And in my gardin planted shal it be!”</l>
+                </lg>
+                <lg>
+                    <l n="765">Of latter date, of wyves hath he red,</l>
+                    <l n="766">That somme han slayn hir housbondes in hir bed,</l>
+                    <l n="767">And lete hir lechour dighte hir al the night</l>
+                    <l n="768">Whyl that the corps lay in the floor up-right.</l>
+                    <l n="769">And somme han drive nayles in hir brayn</l>
+                    <l n="770">Whyl that they slepte, and thus they han hem slayn.</l>
+                    <l n="771">Somme han hem yeve poysoun in hir drinke.</l>
+                    <l n="772">He spak more harm than herte may bithinke.</l>
+                    <l n="773">And ther-with-al, he knew of mo proverbes</l>
+                    <l n="774">Than in this world ther growen gras or herbes.</l>
+                    <l n="775">“<ref target="betis_" corresp="betis">Bet is</ref>,” quod he, “thyn
+                        habitacioun</l>
+                    <l n="776">Be with a leoun or a foul dragoun,</l>
+                    <l n="777">Than with a womman usinge for to chyde.</l>
+                    <l n="778"><ref target="betis2_" corresp="betis2">Bet is</ref>,” quod he, “hye
+                        in the roof abyde</l>
+                    <l n="779">Than with an angry wyf doun in the hous;</l>
+                    <l n="780">They been so wikked and contrarious;</l>
+                    <l n="781">They haten that hir housbondes loveth ay.”</l>
+                    <l n="782">He seyde, “a womman <ref target="shame_" corresp="shame">cast hir
+                            shame away</ref>,</l>
+                    <l n="783">Whan she cast of hir smok;” and forther-mo,</l>
+                    <l n="784">“A fair womman, <ref target="chaast_" corresp="chaast">but she be
+                            chaast also</ref>,</l>
+                    <l n="785">Is lyk a gold ring in a sowes nose.”</l>
+                    <l n="786">Who wolde wenen, or who wolde suppose</l>
+                    <l n="787">The wo that in myn herte was, and pyne?</l>
+                </lg>
+                <lg>
+                    <l n="788">And whan I saugh he wolde never fyne</l>
+                    <l n="789">To reden on this cursed book al night,</l>
+                    <l n="790">Al sodeynly three leves have I plight</l>
+                    <l n="791">Out of his book, right as he radde, and eke,</l>
+                    <l n="792"><ref target="cheke_" corresp="cheke">I with my fist so took him on
+                            the cheke</ref>,</l>
+                    <l n="793">That in our fyr he fil bakward adoun.</l>
+                    <l n="794">And he up-stirte as dooth a wood leoun,</l>
+                    <pb n="343"/>
+                    <l n="795">And with his fist he smoot me on the heed,</l>
+                    <l n="796">That in the floor <ref target="dead_" corresp="dead">I lay as I were
+                            deed</ref>.</l>
+                    <l n="797">And when he saugh how stille that I lay,</l>
+                    <l n="798">He was agast, and wolde han fled his way,</l>
+                    <l n="799">Til atte laste out of my swogh I breyde:</l>
+                    <l n="800">“O! <ref target="theef_" corresp="theef">hastow slayn me, false
+                            theef</ref>?” I seyde,</l>
+                    <l n="801">“And for my land thus hastow mordred me?</l>
+                    <l n="802">Er I be deed, yet wol I kisse thee.”</l>
+                </lg>
+                <lg>
+                    <l n="803">And neer he cam, and kneled faire adoun,</l>
+                    <l n="804">And seyde, “dere suster Alisoun,</l>
+                    <l n="805">As help me god, I shal thee never smyte;</l>
+                    <l n="806">That I have doon, <ref target="self_" corresp="self">it is thy-self
+                            to wyte</ref>.</l>
+                    <l n="807">Foryeve it me, and that I thee biseke”—</l>
+                    <l n="808">And yet eft-sones <ref target="cheke2_" corresp="cheke2">I hitte him
+                            on the cheke</ref>,</l>
+                    <l n="809">And seyde, “theef, thus muchel am I wreke;</l>
+                    <l n="810">Now wol I dye, I may no lenger speke.”</l>
+                    <l n="811">But atte laste, with muchel care and wo,</l>
+                    <l n="812">We fille acorded, by us selven two.</l>
+                    <l n="813"><ref target="brydel_" corresp="brydel">He yaf me al the brydel in myn
+                            hond</ref></l>
+                    <l n="814">To han the governance of hous and lond,</l>
+                    <l n="815">And of his <ref target="tonge_" corresp="tonge">tonge and of his hond
+                            also</ref>,</l>
+                    <l n="816">And made him <ref target="book_" corresp="book">brenne his book anon
+                            right tho</ref>.</l>
+                    <l n="817">And whan that I hadde geten un-to me,</l>
+                    <l n="818">By maistrie, al the soveraynetee,</l>
+                    <l n="819">And that he seyde, “myn owene trewe wyf,</l>
+                    <l n="820">Do as thee lust the terme of al thy lyf,</l>
+                    <l n="821">Keep thyn honour, and keep eek myn estaat”—</l>
+                    <l n="822">After that day we hadden never debaat.</l>
+                    <l n="823">God help me so, I was to him as kinde</l>
+                    <l n="824">As <ref target="denmark_" corresp="denmark">any wyf from Denmark
+                            un-to Inde</ref>,</l>
+                    <l n="825">And also trewe, and so was he to me.</l>
+                    <l n="826">I prey to god that sit in magestee,</l>
+                    <l n="827">So blesse his soule, for his mercy dere!</l>
+                    <l n="828">Now wol I seye my tale, if ye wol here.’</l>
+                </lg>
+                <pb n="344"/>
+                <head>Biholde <ref target="somonour_" corresp="somonour">the wordes bitween the
+                        Somonour and the Frere</ref>.</head>
+                <lg>
+                    <l n="829">The Frere lough, whan he hadde herd al this,</l>
+                    <l n="830">‘Now, dame,’ quod he, ‘so have I Ioye or blis,</l>
+                    <l n="831"><ref target="preamble_" corresp="preamble">This is a long preamble of
+                            a tale!</ref>’</l>
+                    <l n="832">And whan the Somnour herde the Frere gale,</l>
+                    <l n="833">‘Lo!’ quod the Somnour, ‘goddes armes two!</l>
+                    <l n="834"><ref target="entremette_" corresp="entremette">A frere wol entremette
+                            him ever-mo.</ref></l>
+                    <l n="835">Lo, gode men, a flye and eek a frere</l>
+                    <l n="836">Wol falle in every dish and eek matere.</l>
+                    <l n="837">What spekestow of preambulacioun?</l>
+                    <l n="838">What! amble, or trotte, or pees, or go sit doun;</l>
+                    <l n="839"><ref target="lettest_" corresp="lettest">Thou lettest our
+                            disport</ref> in this manere.’</l>
+                </lg>
+                <lg>
+                    <l n="840">‘Ye, woltow so, sir Somnour?’ quod the Frere,</l>
+                    <l n="841">‘Now, by my feith, I shal, er that I go,</l>
+                    <l n="842"><ref target="taleortwo_" corresp="taleortwo">Telle of a Somnour swich
+                            a tale or two</ref>,</l>
+                    <l n="843">That alle the folk shal laughen in this place.’</l>
+                </lg>
+                <lg>
+                    <l n="844">‘Now elles, Frere, I bishrewe thy face,’</l>
+                    <l n="845">Quod this Somnour, ‘and I bishrewe me,</l>
+                    <l n="846">But if <ref target="talestwo_" corresp="talestwo">I telle tales two
+                            or thre</ref></l>
+                    <l n="847">Of freres er I come to <ref target="sidingborne_"
+                            corresp="sidingborne">Sidingborne</ref>,</l>
+                    <l n="848">That I shal make thyn herte for to morne;</l>
+                    <l n="849">For wel I wool thy patience is goon.’</l>
+                </lg>
+                <lg>
+                    <l n="850">Our hoste cryde ‘pees! and that anoon!’</l>
+                    <l n="851">And seyde, ‘lat the womman telle hir tale.</l>
+                    <l n="852">Ye fare as folk that dronken been of ale.</l>
+                    <l n="853">Do, dame, tel forth your tale, and that is best.’</l>
+                </lg>
+                <lg>
+                    <l n="854">‘Al redy, sir,’ quod she, ‘right as yow lest,</l>
+                    <l n="855">If I have licence of this worthy Frere.’</l>
+                </lg>
+                <lg>
+                    <l n="856">‘Yis, dame,’ quod he, ‘tel forth, and I wol here.’</l>
+                </lg>
+                <closer>Here endeth the Wyf of Bathe hir Prologe.</closer>
+            </div>
+            <div>
+                <pb n="345"/>
+                <head>THE TALE OF THE WYF OF BATHE.<lb/>Here bigenneth the Tale of the Wyf of
+                    Bathe.</head>
+            </div>
+            <div>
+                <lg>
+                    <l n="857">In tholde dayes of the king Arthour,</l>
+                    <l n="858">Of which that <ref target="britons_" corresp="britons">Britons</ref>
+                        speken greet honour,</l>
+                    <l n="859">All was this land fulfild of fayerye.</l>
+                    <l n="860">The elf-queen, with hir Ioly companye,</l>
+                    <l n="861">Daunced ful ofte in many a grene mede;</l>
+                    <l n="862">This was the olde opinion, as I rede,</l>
+                    <l n="863">I speke of manye hundred yeres ago;</l>
+                    <l n="864">But now can no man see none elves mo.</l>
+                    <l n="865">For now the grete charitee and prayeres</l>
+                    <l n="866">Of <ref target="limitours_" corresp="limitours">limitours</ref> and
+                        othere <ref target="freres_" corresp="freres">holy freres</ref>,</l>
+                    <l n="867">That serchen every lond and every streem,</l>
+                    <l n="868">As thikke as motes in the sonne-beem,</l>
+                    <l n="869">Blessinge halles, chambres, kichenes, boures,</l>
+                    <l n="870">Citees, burghes, castels, hye toures,</l>
+                    <l n="871"><ref target="thrope_" corresp="thrope">Thropes</ref>, bernes,
+                        shipnes, dayeryes,</l>
+                    <l n="872">This maketh that ther been no fayeryes.</l>
+                    <l n="873">For ther as wont to walken was an elf,</l>
+                    <l n="874">Ther walketh now the limitour him-self</l>
+                    <l n="875">In <ref target="undermeles_" corresp="undermeles">undermeles</ref>
+                        and in morweninges,</l>
+                    <l n="876">And seyth his <ref target="matins_" corresp="matins">matins</ref> and
+                        his holy thinges</l>
+                    <l n="877">As he goth in his <ref target="limitacioun_" corresp="limitacioun"
+                            >limitacioun</ref>.</l>
+                    <l n="878">Wommen may go saufly up and doun,</l>
+                    <l n="879">In every bush, or under every tree;</l>
+                    <l n="880">Ther is noon other <ref target="incubus_" corresp="incubus"
+                            >incubus</ref> but he,</l>
+                    <l n="881"><ref target="dishonour_" corresp="dishonour">And he ne wol doon hem
+                            but dishonour</ref>. </l>
+                    <pb n="346"/>
+                </lg>
+                <lg>
+                    <l n="882">And so bifel it, that this king Arthour</l>
+                    <l n="883">Hadde in his hous a lusty bacheler,</l>
+                    <l n="884">That on a day cam rydinge fro river;</l>
+                    <l n="885">And happed that, allone as she was born,</l>
+                    <l n="886">He saugh a mayde walkinge him biforn,</l>
+                    <l n="887">Of whiche mayde anon, <ref target="heed_" corresp="heed">maugree hir
+                            heed</ref>,</l>
+                    <l n="888">By verray force <ref target="rafte_" corresp="rafte">he rafte hir
+                            maydenheed</ref>;</l>
+                    <l n="889">For which oppressioun was swich clamour</l>
+                    <l n="890">And swich pursute un-to the king Arthour,</l>
+                    <l n="891">That <ref target="deed_" corresp="deed">dampned was this knight for
+                            to be deed</ref></l>
+                    <l n="892">By cours of lawe, and sholde han lost his heed</l>
+                    <l n="893">Paraventure, swich was the statut tho;</l>
+                    <l n="894">But that <ref target="quene_" corresp="quene">the quene and othere
+                            ladies mo</ref></l>
+                    <l n="895">So longe preyeden the king of grace,</l>
+                    <l n="896">Til he his lyf him graunted in the place,</l>
+                    <l n="897">And <ref target="wille_" corresp="wille">yaf him to the quene al at
+                            hir wille</ref>,</l>
+                    <l n="898">To chese, whether she wolde him save or spille.</l>
+                </lg>
+                <lg>
+                    <l n="899">The quene thanketh the king with al hir might,</l>
+                    <l n="900">And after this thus spak she to the knight,</l>
+                    <l n="901">Whan that she saugh hir tyme, up-on a day:</l>
+                    <l n="902">‘Thou standest yet,’ quod she, ‘in swich array,</l>
+                    <l n="903">That of thy lyf yet hastow no suretee.</l>
+                    <l n="904">I grante thee lyf, if thou canst tellen me</l>
+                    <l n="905"><ref target="desyren_" corresp="desyren">What thing is it that wommen
+                            most desyren?</ref></l>
+                    <l n="906">Be war, and <ref target="yren_" corresp="yren">keep thy nekke-boon
+                            from yren</ref>.</l>
+                    <l n="907">And if thou canst nat tellen it anon,</l>
+                    <l n="908">Yet wol I yeve thee leve for to gon</l>
+                    <l n="909">A twelf-month and a day, to <ref target="seche_" corresp="seche"
+                            >seche and lere</ref></l>
+                    <l n="910">An answere suffisant in this matere.</l>
+                    <l n="911">And <ref target="suretee_" corresp="suretee">suretee</ref> wol I han,
+                        er that thou pace,</l>
+                    <l n="912">Thy body for to yelden in this place.’</l>
+                </lg>
+                <lg>
+                    <l n="913"> Wo was this knight and sorwefully he <ref target="syketh_"
+                            corresp="syketh">syketh</ref>;</l>
+                    <l n="914"> But what! he may nat do al as him lyketh.</l>
+                    <l n="915"> And at the laste, he chees him for to wende,</l>
+                    <l n="916"> And come agayn, right at the yeres ende,</l>
+                    <pb n="347"/>
+                    <l n="917"> With swich answere as god wolde him purveye;</l>
+                    <l n="918"> And taketh his leve, and wendeth forth his weye.</l>
+                </lg>
+                <lg>
+                    <l n="919"> He seketh every hous and every place,</l>
+                    <l n="920"> Wher-as he hopeth for to finde grace,</l>
+                    <l n="921"> To lerne, what thing wommen loven most;</l>
+                    <l n="922"> But he ne coude arryven in no cost,</l>
+                    <l n="923"> Wher-as he mighte finde in this matere</l>
+                    <l n="924"> Two creatures <ref target="fere_" corresp="fere">accordinge
+                            in-fere</ref>.</l>
+                </lg>
+
+                <lg>
+                    <l n="925">
+                        <ref target="seyde_" corresp="seyde">Somme seyde</ref>, wommen loven best
+                        richesse,</l>
+                    <l n="926"> Somme seyde, honour, somme seyde, Iolynesse;</l>
+                    <l n="927"> Somme, riche array, somme seyden, lust abedde,</l>
+                    <l n="928"> And ofte tyme to be widwe and wedde.</l>
+                </lg>
+                <lg>
+                    <l n="929"> Somme seyde, that our hertes been most esed,</l>
+                    <l n="930"> Whan that we been y-flatered and y-plesed.</l>
+                    <l n="931">
+                        <ref target="sothe_" corresp="sothe">He gooth ful ny the sothe</ref>, I wol
+                        nat lye;</l>
+                    <l n="932"> A man shal winne us best with flaterye;</l>
+                    <l n="933"> And with attendance, and with bisinesse,</l>
+                    <l n="934"> Been we <ref target="ylymed_" corresp="ylymed">y-lymed</ref>, bothe
+                        more and lesse.</l>
+                </lg>
+                <lg>
+                    <l n="935">And somme seyn, how that we loven best</l>
+                    <l n="936">For to be free, and do right as us lest,</l>
+                    <l n="937">And that no man repreve us of our vyce,</l>
+                    <l n="938">But seye that we be wyse, and <ref target="nyce_" corresp="nyce"
+                            >no-thing nyce</ref>.</l>
+                    <l n="939">For trewely, ther is noon of us alle,</l>
+                    <l n="940">If any wight wol <ref target="galle_" corresp="galle">clawe us on the
+                            galle</ref>,</l>
+                    <l n="941">That we nil kike, for he seith us sooth;</l>
+                    <l n="942">Assay, and he shal finde it that so dooth.</l>
+                    <l n="943">For be we never so vicious with-inne,</l>
+                    <l n="944">We wol been holden wyse, and clene of sinne.</l>
+                </lg>
+                <lg>
+                    <l n="945">And somme seyn, that greet delyt han we</l>
+                    <l n="946">For to ben holden stable and eek secree,</l>
+                    <l n="947">And in o purpos stedefastly to dwelle,</l>
+                    <l n="948">And nat biwreye thing that men us telle.</l>
+                    <l n="949">But that tale is nat worth a rake-stele;</l>
+                    <l n="950">Pardee, <ref target="hele_" corresp="hele">we wommen conne no-thing
+                            hele</ref>;</l>
+                    <l n="951">Witnesse on <ref target="Midas_" corresp="Midas">Myda</ref>; wol ye
+                        here the tale?</l>
+                </lg>
+                <lg>
+                    <l n="952"> Ovyde, amonges othere thinges smale,</l>
+                    <l n="953">Seyde, Myda hadde, under his longe heres,</l>
+                    <l n="954">Growinge up-on his heed two asses eres,</l>
+                    <pb n="348"/>
+                    <l n="955">The which vyce he hidde, as he best mighte,</l>
+                    <l n="956">Ful subtilly from every mannes sighte,</l>
+                    <l n="957">That, save his wyf, ther wiste of it na-mo.</l>
+                    <l n="958">He loved hir most, and trusted hir also;</l>
+                    <l n="959">He preyede hir, that to no creature</l>
+                    <l n="960"> She sholde tellen of his disfigure.</l>
+                </lg>
+                <lg>
+                    <l n="961">She swoor him ‘nay, for al this world to winne,</l>
+                    <l n="962">She nolde do that vileinye or sinne,</l>
+                    <l n="963">To make hir housbond han so foul a name;</l>
+                    <l n="964">She nolde nat telle it for hir owene shame.’</l>
+                    <l n="965">But nathelees, hir thoughte that she dyde,</l>
+                    <l n="966">That she so longe sholde a conseil hyde;</l>
+                    <l n="967"><ref target="swal_" corresp="swal">Hir thoughte it swal so sore
+                            aboute hir herte</ref>,</l>
+                    <l n="968">That nedely <ref target="asterte_" corresp="asterte">som word hir
+                            moste asterte</ref>;</l>
+                    <l n="969">And sith she dorste telle it to no man,</l>
+                    <l n="970">Doun to a <ref target="mareys_" corresp="mareys">mareys</ref> faste
+                        by she ran;</l>
+                    <l n="971">Til she came there, hir herte was a-fyre,</l>
+                    <l n="972">And, <ref target="myre_" corresp="myre">as a bitore bombleth in the
+                            myre</ref>,</l>
+                    <l n="973">She leyde hir mouth un-to the water doun:</l>
+                    <l n="974">‘Biwreye me nat, thou water, with thy soun,’</l>
+                    <l n="975">Quod she, ‘to thee I telle it, and namo;</l>
+                    <l n="976">Myn housbond hath longe asses eres two!</l>
+                    <l n="977">Now is myn herte all hool, now is it oute;</l>
+                    <l n="978">I mighte no lenger kepe it, out of doute,’</l>
+                    <l n="979">Heer may ye se, thogh we a tyme abyde,</l>
+                    <l n="980">Yet out it moot, we can no conseil hyde;</l>
+                    <l n="981">The remenant of the tale if ye wol here,</l>
+                    <l n="982">Redeth Ovyde, and ther ye may it lere.</l>
+                </lg>
+                <lg>
+                    <l n="983">This knight, of which my tale is specially,</l>
+                    <l n="984">Whan that he saugh he mighte nat come therby,</l>
+                    <l n="985">This is to seye, what wommen loven moost,</l>
+                    <l n="986">With-inne his brest ful sorweful was <ref target="goost_"
+                            corresp="goost">the goost</ref>;</l>
+                    <l n="987">But hoom he gooth, <ref target="soiourne_" corresp="soiourne">he
+                            mighte nat soiourne</ref>.</l>
+                    <l n="988">The day was come, that hoomward moste he tourne,</l>
+                    <l n="989">And in his wey it happed him to ryde,</l>
+                    <l n="990">In al this care, under a forest-syde,</l>
+                    <pb n="349"/>
+                    <l n="991">Wher-as he saugh up-on a daunce go</l>
+                    <l n="992">Of ladies foure and twenty, and yet mo;</l>
+                    <l n="993">Toward the whiche daunce he drow ful yerne,</l>
+                    <l n="994">In hope that som wisdom sholde he lerne.</l>
+                    <l n="995">But certeinly, er he came fully there,</l>
+                    <l n="996"><ref target="vanisshed_" corresp="vanisshed">Vanisshed was this
+                            daunce</ref>, he niste where.</l>
+                    <l n="997">No creature saugh he that bar lyf,</l>
+                    <l n="998">Save on the grene he saugh sittinge a wyf;</l>
+                    <l n="999"><ref target="fouler_" corresp="fouler">A fouler wight ther may no man
+                            devyse</ref>.</l>
+                    <l n="1000">Agayn the knight this olde wyf gan ryse,</l>
+                    <l n="1001">And seyde, ‘sir knight, heer-forth ne lyth no wey.</l>
+                    <l n="1002">Tel me, what that ye seken, by your fey?</l>
+                    <l n="1003">Paraventure it may the bettre be;</l>
+                    <l n="1004">Thise olde folk can muchel thing,’ quod she.</l>
+                </lg>
+                <lg>
+                    <l n="1005">‘My leve mooder,’ quod this knight certeyn,</l>
+                    <l n="1006">‘I nam but deed, but-if that I can seyn</l>
+                    <l n="1007">What thing it is that wommen most desyre;</l>
+                    <l n="1008"><ref target="wisse_" corresp="wisse">Coude ye me wisse, I wolde wel
+                            quyte your hyre.</ref>’</l>
+                </lg>
+                <lg>
+                    <l n="1009">‘<ref target="trouthe_" corresp="trouthe">Plighte me thy trouthe,
+                            heer in myn hand</ref>,’ quod she,</l>
+                    <l n="1010">‘The nexte thing that I requere thee,</l>
+                    <l n="1011">Thou shalt it do, if it lye in thy might;</l>
+                    <l n="1012">And I wol telle it yow er it be night.’</l>
+                    <l n="1013">‘Have heer my trouthe,’ quod the knight, ‘I grante.’ </l>
+                </lg>
+                <lg>
+                    <l n="1014">‘Thanne,’ quod she, ‘<ref target="avante_" corresp="avante">I dar me
+                            wel avante</ref>,</l>
+                    <l n="1015">Thy lyf is sauf, for I wol stonde therby,</l>
+                    <l n="1016">Up-on my lyf, the queen wol seye as I.</l>
+                    <l n="1017">Lat see which is the proudeste of hem alle,</l>
+                    <l n="1018">That wereth on <ref target="coverchief_" corresp="coverchief">a
+                            coverchief or a calle</ref>,</l>
+                    <l n="1019">That dar seye nay, of that I shal thee teche;</l>
+                    <l n="1020">Lat us go forth with-outen lenger speche.’</l>
+                    <l n="1021"><ref target="pistel_" corresp="pistel">Tho rouned she a pistel in
+                            his ere</ref>,</l>
+                    <l n="1022">And bad him to be glad, and have no fere.</l>
+                </lg>
+                <lg>
+                    <l n="1023">Whan they be comen to the court, this knight</l>
+                    <l n="1024">Seyde <ref target="hight_" corresp="hight">he had holde his day, as
+                            he hadde hight</ref>,</l>
+                    <l n="1025">And redy was his answere, as he sayde.</l>
+                    <l n="1026">Ful many a noble wyf, and many a mayde,</l>
+                    <l n="1027">And many a widwe, for that they ben wyse,</l>
+                    <pb n="350"/>
+                    <l n="1028"><ref target="justyse_" corresp="justyse">The quene hir-self sittinge
+                            as a Iustyse</ref>,</l>
+                    <l n="1029">Assembled been, his answere for to here;</l>
+                    <l n="1030">And afterward this knight was bode appere.</l>
+                </lg>
+                <lg>
+                    <l n="1031">To every wight comanded was silence,</l>
+                    <l n="1032">And that the knight sholde telle in audience,</l>
+                    <l n="1033">What thing that worldly wommen loven best.</l>
+                    <l n="1034">This knight ne stood nat <ref target="stille_" corresp="stille"
+                            >stille</ref> as doth a best,</l>
+                    <l n="1035">But to his questioun anon answerde</l>
+                    <l n="1036">With manly voys, that al the court it herde:</l>
+                </lg>
+                <lg>
+                    <l n="1037">‘My lige lady, generally,’ quod he,</l>
+                    <l n="1038">‘Wommen desyren to have sovereyntee</l>
+                    <l n="1039"><ref target="love_" corresp="love">As wel over hir housbond as hir
+                            love</ref>,</l>
+                    <l n="1040">And for to been in <ref target="maistrie_" corresp="maistrie"
+                            >maistrie</ref> him above;</l>
+                    <l n="1041">This is your moste desyr, thogh ye me kille,</l>
+                    <l n="1042"><ref target="wille_" corresp="wille">Doth as yow list, I am heer at
+                            your wille.</ref>’</l>
+                </lg>
+                <lg>
+                    <l n="1043">In al the court ne was ther wyf ne mayde,</l>
+                    <l n="1044">Ne widwe, that contraried that he sayde,</l>
+                    <l n="1045">But seyden, ‘he was worthy han his lyf.’</l>
+                </lg>
+                <lg>
+                    <l n="1046">And with that word up stirte the olde wyf,</l>
+                    <l n="1047">Which that the knight saugh sittinge in the grene:</l>
+                    <l n="1048">‘Mercy,’ quod she, ‘my sovereyn lady quene!</l>
+                    <l n="1049">Er that your court departe, do me right.</l>
+                    <l n="1050">I taughte this answere un-to the knight;</l>
+                    <l n="1051">For which he plighte me his trouthe there,</l>
+                    <l n="1052">The firste thing I wolde of him requere,</l>
+                    <l n="1053">He wolde it do, if it lay in his might.</l>
+                    <l n="1054">Bifore the court than preye I thee, sir knight,’</l>
+                    <l n="1055">Quod she, ‘that thou me take un-to thy wyf;</l>
+                    <l n="1056">For wel thou wost that I have kept thy lyf.</l>
+                    <l n="1057">If I sey fals, sey nay, up-on thy fey!’</l>
+                </lg>
+                <lg>
+                    <l n="1058">This knight answerde, ‘allas! and weylawey!</l>
+                    <l n="1059">I woot right wel that swich was my biheste.</l>
+                    <l n="1060">For goddes love, <ref target="chees_" corresp="chees">as chees a
+                            newe requeste</ref>;</l>
+                    <l n="1061">Tak al my good, and <ref target="body_" corresp="body">lat my body
+                            go.</ref>’ </l>
+                </lg>
+                <lg>
+                    <l n="1062">‘Nay than,’ quod she, ‘I shrewe us bothe two!</l>
+                    <l n="1063">For thogh that I be foul, and old, and pore,</l>
+                    <pb n="351"/>
+                    <l n="1064">I nolde for al the metal, ne for ore,</l>
+                    <l n="1065">That under erthe is grave, or lyth above,</l>
+                    <l n="1066">But-if thy wyf I were, <ref target="eek_" corresp="eek">and eek thy
+                            love</ref>.’</l>
+                </lg>
+                <lg>
+                    <l n="1067">‘My love?’ quod he; ‘nay, my dampnacioun!</l>
+                    <l n="1068">Allas! that any of my nacioun</l>
+                    <l n="1069">Sholde ever so foule disparaged be!’</l>
+                    <l n="1070">But al for noght, the ende is this, that he</l>
+                    <l n="1071">Constreyned was, he nedes moste hir wedde;</l>
+                    <l n="1072">And taketh his olde wyf, and gooth to bedde.</l>
+                </lg>
+                <lg>
+                    <l n="1073">Now wolden som men seye, paraventure,</l>
+                    <l n="1074">That, for my necligence, I do no cure</l>
+                    <l n="1075">To tellen yow the Ioye and al tharray</l>
+                    <l n="1076">That at the feste was that ilke day.</l>
+                    <l n="1077">To whiche thing shortly answere I shal;</l>
+                    <l n="1078">I seye, <ref target="feste_" corresp="feste">ther nas no Ioye ne
+                            feste at al</ref>,</l>
+                    <l n="1079">Ther nas but hevinesse and muche sorwe;</l>
+                    <l n="1080">For prively he wedded hir on a morwe,</l>
+                    <l n="1081">And al day after <ref target="oule_" corresp="oule">hidde him as an
+                            oule</ref>;</l>
+                    <l n="1082">So wo was him, his wyf looked so foule.</l>
+                </lg>
+                <lg>
+                    <l n="1083">Greet was the wo the knight hadde in his thoght,</l>
+                    <l n="1084">Whan he was with his wyf a-bedde y-broght;</l>
+                    <l n="1085">He walweth, and he turneth to and fro.</l>
+                    <l n="1086">His olde wyf lay smylinge evermo,</l>
+                    <l n="1087">And seyde, ‘o dere housbond, <hi rend="italic">benedicite</hi>!</l>
+                    <l n="1088">Fareth every knight thus with his wyf as ye?</l>
+                    <l n="1089">Is this the lawe of king Arthures hous?</l>
+                    <l n="1090">Is every knight of his so <ref target="dangerous_"
+                            corresp="dangerous">dangerous?</ref></l>
+                    <l n="1091">I am your owene love and eek your wyf;</l>
+                    <l n="1092">I am she, which that saved hath your lyf;</l>
+                    <l n="1093">And certes, yet dide I yow never unright;</l>
+                    <l n="1094">Why fare ye thus with me this firste night?</l>
+                    <l n="1095">Ye faren lyk a man had lost his wit;</l>
+                    <l n="1096">What is my gilt? for goddes love, tel me it,</l>
+                    <l n="1097">And it shal been amended, if I may.’</l>
+                </lg>
+                <lg>
+                    <l n="1098">‘Amended?’ quod this knight, ‘allas! nay, nay!</l>
+                    <l n="1099">It wol nat been amended never mo!</l>
+                    <l n="1100">Thou art so <ref target="loothly_" corresp="loothly">loothly</ref>,
+                        and so old also,</l>
+                    <pb n="352"/>
+                    <l n="1101">And ther-to comen of <ref target="kinde_" corresp="kinde">so lowe a
+                            kinde</ref>,</l>
+                    <l n="1102">That litel wonder is, <ref target="walwe_" corresp="walwe">thogh I
+                            walwe and winde</ref>.</l>
+                    <l n="1103"><ref target="breste_" corresp="breste">So wolde god myn herte wolde
+                            breste!</ref>’</l>
+                </lg>
+                <lg>
+                    <l n="1104">‘Is this,’ quod she, ‘the cause of your unreste?’</l>
+                </lg>
+                <lg>
+                    <l n="1105">‘Ye, certainly,’ quod he, ‘no wonder is.’</l>
+                </lg>
+                <lg>
+                    <l n="1106">‘Now, sire,’ quod she, ‘I coude amende al this,</l>
+                    <l n="1107">If that me liste, er it were dayes three,</l>
+                    <l n="1108">So wel ye mighte bere yow un-to me.</l>
+                </lg>
+                <lg>
+                    <l n="1109">But for ye speken of swich gentillesse</l>
+                    <l n="1110">As is descended out of old richesse,</l>
+                    <l n="1111">That therfore sholden ye be gentil men,</l>
+                    <l n="1112"><ref target="arrogance_" corresp="arrogance">Swich arrogance is nat
+                            worth an hen</ref>.</l>
+                    <l n="1113">Loke who that is most vertuous alway,</l>
+                    <l n="1114">Privee and apert, and most entendeth ay</l>
+                    <l n="1115">To do the gentil dedes that he can,</l>
+                    <l n="1116">And tak him for the grettest gentil man.</l>
+                    <l n="1117">Crist wol, we clayme of him our gentillesse,</l>
+                    <l n="1118">Nat of our eldres for hir old richesse.</l>
+                    <l n="1119">For <ref target="heritage_" corresp="heritage">thogh they yeve us al
+                            hir heritage</ref>,</l>
+                    <l n="1120">For which we clayme to been of heigh parage,</l>
+                    <l n="1121">Yet may they nat biquethe, for no-thing,</l>
+                    <l n="1122">To noon of us hir vertuous living,</l>
+                    <l n="1123">That made hem gentil men y-called be;</l>
+                    <l n="1124">And bad us folwen hem in swich degree.</l>
+                </lg>
+                <lg>
+                    <l n="1125">Wel can the wyse <ref target="florence_" corresp="florence">poete of
+                            Florence</ref>,</l>
+                    <l n="1126">That highte Dant, speken in this sentence;</l>
+                    <l n="1127">Lo in swich maner rym is Dantes tale:</l>
+                    <l n="1128">“<ref target="comedia_" corresp="comedia">Ful</ref> selde up ryseth
+                        by his branches smale</l>
+                    <l n="1129">Prowesse of man, for god, of his goodnesse,</l>
+                    <l n="1130">Wol that of him we clayme our gentillesse;”</l>
+                    <l n="1131">For of our eldres may we no-thing clayme</l>
+                    <l n="1132">But temporel thing, that man may hurte and mayme.</l>
+                </lg>
+                <lg>
+                    <l n="1133">Eek every wight wot this as wel as I,</l>
+                    <l n="1134"><ref target="gentillesse_" corresp="gentillesse">If gentillesse were
+                            planted naturelly</ref></l>
+                    <l n="1135">Un-to a certeyn linage, doun the lyne,</l>
+                    <l n="1136">Privee ne apert, than wolde they never fyne</l>
+                    <pb n="353"/>
+                    <l n="1137">To doon of gentillesse the faire offyce;</l>
+                    <l n="1138">They mighte do no vileinye or vyce.</l>
+                </lg>
+                <lg>
+                    <l n="1139">Tak fyr, and ber it in the derkeste hous</l>
+                    <l n="1140">Bitwix this and the mount of <ref target="caucasus_" corresp="Caucasus"
+                            >Caucasus</ref>,</l>
+                    <l n="1141">And lat men shette the dores and go thenne;</l>
+                    <l n="1142">Yet wol the fyr as faire lye and brenne,</l>
+                    <l n="1143">As twenty thousand men mighte it biholde;</l>
+                    <l n="1144">His office naturel ay wol it holde,</l>
+                    <l n="1145">Up peril of my lyf, til that it dye.</l>
+                </lg>
+                <lg>
+                    <l n="1146">Heer may ye see wel, how that <ref target="genterye_"
+                            corresp="genterye">genterye</ref></l>
+                    <l n="1147">Is nat annexed to possessioun,</l>
+                    <l n="1148">Sith folk ne doon hir operacioun</l>
+                    <l n="1149">Alwey, <ref target="fyr_" corresp="fyr">as dooth the fyr</ref>, lo!
+                        in his kinde.</l>
+                    <l n="1150">For, god it woot, men may wel often finde</l>
+                    <l n="1151">A lordes sone do shame and vileinye;</l>
+                    <l n="1152">And he that wol han prys of his gentrye</l>
+                    <l n="1153">For he was boren of a gentil hous,</l>
+                    <l n="1154">And hadde hise eldres noble and vertuous,</l>
+                    <l n="1155">And nil him-selven do no gentil dedis,</l>
+                    <l n="1156">Ne folwe his gentil auncestre that deed is,</l>
+                    <l n="1157">He nis nat gentil, be he duk or erl;</l>
+                    <l n="1158">For vileyns sinful dedes make a cherl.</l>
+                    <l n="1159">For <ref target="renomee_" corresp="renomee">gentillesse nis but
+                            renomee</ref></l>
+                    <l n="1160">Of thyne auncestres, for hir heigh bountee,</l>
+                    <l n="1161">Which is a <ref target="strange_" corresp="strange">strange</ref>
+                        thing to thy persone.</l>
+                    <l n="1162">Thy gentillesse cometh fro god allone;</l>
+                    <l n="1163">Than comth our verray gentillesse of grace,</l>
+                    <l n="1164">It was no-thing biquethe us with our place.</l>
+                </lg>
+                <lg>
+                    <l n="1165">Thenketh how noble, as seith <ref target="valerius_"
+                            corresp="valerius">Valerius</ref>,</l>
+                    <l n="1166">Was thilke <ref target="tullius_" corresp="tullius">Tullius
+                            Hostilius</ref>,</l>
+                    <l n="1167">That out of povert roos to heigh noblesse.</l>
+                    <l n="1168">Redeth <ref target="seneca_" corresp="seneca">Senek</ref>, and
+                        redeth eek <ref target="boethius_" corresp="boethius">Boëce</ref>,</l>
+                    <l n="1169">Ther shul ye seen expres that it no drede is,</l>
+                    <l n="1170">That he is gentil that doth gentil dedis;</l>
+                    <l n="1171">And therfore, leve housbond, I thus conclude,</l>
+                    <pb n="354"/>
+                    <l n="1172">Al were it that myne auncestres were rude,</l>
+                    <l n="1173">Yet may the hye god, and so hope I,</l>
+                    <l n="1174">Grante me grace to liven vertuously.</l>
+                    <l n="1175"><ref target="thanne_" corresp="thanne">Thanne am I gentil</ref>,
+                        whan that I biginne</l>
+                    <l n="1176">To liven vertuously and weyve sinne.</l>
+                </lg>
+                <lg>
+                    <l n="1177">And ther-as ye of povert me repreve,</l>
+                    <l n="1178">The hye god, on whom that we bileve,</l>
+                    <l n="1179"><ref target="povert_" corresp="povert">In wilful povert chees to
+                            live his lyf</ref>.</l>
+                    <l n="1180">And certes every man, mayden, or wyf,</l>
+                    <l n="1181">May understonde that Iesus, hevene king,</l>
+                    <l n="1182">Ne wolde nat chese a vicious living.</l>
+                    <l n="1183">Glad povert is an honest thing, certeyn;</l>
+                    <l n="1184">This wol Senek and othere clerkes seyn.</l>
+                    <l n="1185">Who-so that halt him payd of his poverte,</l>
+                    <l n="1186">I holde him riche, al hadde he nat a sherte.</l>
+                    <l n="1187">He that coveyteth is a povre wight,</l>
+                    <l n="1188">For he wolde han that is nat in his might.</l>
+                    <l n="1189">But he that noght hath, ne coveyteth have,</l>
+                    <l n="1190">Is riche, al-though ye holde him but a knave.</l>
+                </lg>
+                <lg>
+                    <l n="1191">Verray povert, it singeth proprely;</l>
+                    <l n="1192"><ref target="juvenal_" corresp="juvenal">Iuvenal</ref> seith of
+                        povert merily:</l>
+                    <l n="1193">“The povre man, whan he goth by the weye,</l>
+                    <l n="1194">Bifore the theves he may singe and pleye.”</l>
+                    <l n="1195">Povert is hateful good, and, as I gesse,</l>
+                    <l n="1196">A ful greet bringer out of bisinesse;</l>
+                    <l n="1197"><ref target="amender_" corresp="amender">A greet amender eek of
+                            sapience</ref></l>
+                    <l n="1198">To him that taketh it in pacience.</l>
+                    <l n="1199">Povert is this, <ref target="elenge_" corresp="elenge">al-though it
+                            seme elenge</ref>:</l>
+                    <l n="1200">Possessioun, that no wight wol chalenge.</l>
+                    <l n="1201">Povert ful ofte, whan a man is lowe,</l>
+                    <l n="1202">Maketh his god and eek him-self to knowe.</l>
+                    <l n="1203">Povert a spectacle is, as thinketh me,</l>
+                    <l n="1204"><ref target="frendes_" corresp="frendes">Thurgh which he may his
+                            verray frendes see</ref>.</l>
+                    <l n="1205">And therfore, sire, sin that I noght yow greve,</l>
+                    <l n="1206">Of my povert na-more ye me repreve.</l>
+                    <pb n="355"/>
+                </lg>
+                <lg>
+                    <l n="1207">Now, sire, of elde ye repreve me;</l>
+                    <l n="1208">And certes, sire, <ref target="thogh_" corresp="thogh">thogh noon
+                            auctoritee</ref></l>
+                    <l n="1209">Were in no book, ye gentils of honour</l>
+                    <l n="1210">Seyn that men sholde an old wight doon favour,</l>
+                    <l n="1211">And clepe him fader, for your gentillesse;</l>
+                    <l n="1212">And auctours shal I finden, as I gesse.</l>
+                </lg>
+                <lg>
+                    <l n="1213">Now ther ye seye, that I am foul and old,</l>
+                    <l n="1214"><ref target="cokewold_" corresp="cokewold">Than drede you noght to
+                            been a cokewold</ref>;</l>
+                    <l n="1215">For filthe and elde, al-so moot I thee,</l>
+                    <l n="1216">Been grete wardeyns up-on chastitee.</l>
+                    <l n="1217">But nathelees, sin I knowe your delyt,</l>
+                    <l n="1218">I shal fulfille your worldly appetyt.</l>
+                </lg>
+                <lg>
+                    <l n="1219">Chese now,’ quod she, ‘oon of thise thinges tweye,</l>
+                    <l n="1220">To han me foul and old til that I deye,</l>
+                    <l n="1221">And be to yow a trewe humble wyf,</l>
+                    <l n="1222">And never yow displese in al my lyf,</l>
+                    <l n="1223">Or elles ye wol han me yong and fair,</l>
+                    <l n="1224">And take your aventure of the repair</l>
+                    <l n="1225">That shal be to your hous, by-cause of me,</l>
+                    <l n="1226"><ref target="place_" corresp="place">Or in som other place</ref>,
+                        may wel be.</l>
+                    <l n="1227">Now chese your-selven, whether that yow lyketh.’</l>
+                </lg>
+                <lg>
+                    <l n="1228">This knight <ref target="avyseth_" corresp="avyseth">avyseth
+                            him</ref> and sore syketh,</l>
+                    <l n="1229">But atte laste he seyde in this manere,</l>
+                    <l n="1230">‘My lady and my love, and wyf so dere,</l>
+                    <l n="1231">I put me in your wyse governance;</l>
+                    <l n="1232">Cheseth your-self, which may be most plesance,</l>
+                    <l n="1233">And most honour to yow and me also.</l>
+                    <l n="1234"><ref target="fors_" corresp="fors">I do no fors the whether of the
+                            two</ref>;</l>
+                    <l n="1235">For as yow lyketh, it suffiseth me.’</l>
+                </lg>
+                <lg>
+                    <l n="1236">‘Thanne have I gete of yow maistrye,’ quod she,</l>
+                    <l n="1237">‘Sin I may chese, and governe as me lest?’</l>
+                </lg>
+                <lg>
+                    <l n="1238">‘Ye, certes, wyf,’ quod he, ‘I holde it best.’</l>
+                </lg>
+                <lg>
+                    <l n="1239">‘Kis me,’ quod she, ‘we be no lenger wrothe;</l>
+                    <l n="1240">For, by my trouthe, <ref target="bothe_" corresp="bothe">I wol be to yow bothe</ref>,</l>
+                    <l n="1241">This is to seyn, ye, bothe fair and good.</l>
+                    <l n="1242">I prey to god that I mot <ref target="wood_" corresp="wood">sterven wood</ref>,</l>
+                    <l n="1243">But I to yow be al-so good and trewe</l>
+                    <l n="1244">As ever was wyf, sin that the world was newe.</l>
+                    <pb n="356"/>
+                    <l n="1245">And, but I be to-morn as fair to sene</l>
+                    <l n="1246">As any lady, emperyce, or quene,</l>
+                    <l n="1247">That is bitwixe the est and eke the west,</l>
+                    <l n="1248">Doth with my lyf and deeth <ref target="lest_" corresp="lest">right as yow lest</ref>.</l>
+                    <l n="1249">Cast up the curtin, loke how that it is.’</l>
+                </lg>
+                <lg>
+                    <l n="1260">And whan the knight saugh verraily al this,</l>
+                    <l n="1251">That she so fair was, and so yong ther-to,</l>
+                    <l n="1252">For Ioye he hente hir in his armes two,</l>
+                    <l n="1253">His herte bathed in a bath of blisse;</l>
+                    <l n="1254">A thousand tyme a-rewe he gan hir kisse.</l>
+                    <l n="1255">And she obeyed him in every thing</l>
+                    <l n="1256">That mighte doon him plesance or lyking.</l>
+                </lg>
+                <lg>
+                    <l n="1257">And thus they live, un-to hir lyves ende,</l>
+                    <l n="1258">In parfit Ioye; and Iesu Crist us sende</l>
+                    <l n="1259">Housbondes meke, yonge, and fresshe a-bedde,</l>
+                    <l n="1260">And grace toverbyde hem that we wedde.</l>
+                    <l n="1261">And eek I preye Iesu shorte hir lyves</l>
+                    <l n="1262">That wol nat be governed by hir wyves;</l>
+                    <l n="1263">And olde and angry nigardes of dispence,</l>
+                    <l n="1264">God sende hem sone verray pestilence.</l>
+                </lg>
+                <closer>Here endeth the Wyves Tale of Bathe.</closer>
+            </div>
+        </body>
+        <back>
+            <div>
+                <note xml:id="intro" target="intro" type="editorial" resp="editors.xml#AJB">
+                    <p>
+                        <hi rend="italic">The Wife of Bath's Prologue</hi> and <hi rend="italic">
+                            The Wife of Bath's Tale</hi> are perhaps the most well-known sections of
+                            <hi rend="italic">The Canterbury Tales</hi>. The <hi rend="italic"
+                            >Prologue</hi> offers a substantial insight into Alison's (The Wife of
+                        Bath's) heterodox views on love and marriage as she recounts her five
+                        husbands and the trials of her marriages to them. The <hi rend="italic"
+                            >Tale</hi> enshrines Alison's philsoophy recounts the story of an
+                        Arthurian knight who, after committing an act of sexual assault, is forced
+                        to discover what women desire most. Alison's pragmatism and down-to-earth
+                        tone has made her one of the most memorable and beloved characters not only
+                        of <hi rend="italic">The Canterbury Tales</hi>, but of the whole of medieval
+                        literature.</p>
+                </note>
+                <note xml:id="skeat" target="skeat_" type="editorial" resp="editors.xml#AJB"
+                        ><p>Walter William Skeat (1835–1912) was one of the most prolific and
+                        learned philologists of his time. While he was most famous for his <hi
+                            rend="italic">Etymological Dictionary of the English Language</hi>, his
+                        edition of <hi rend="italic">The Canterbury Tales</hi> was an academic
+                        standard until the publication of Larry Benson's <hi rend="italic">The
+                            Riverside Chaucer</hi>. </p></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+                <note xml:id="" target="" type="" resp="editors.xml#AJB"><p/></note>
+
+            </div>
+        </back>
+    </text>
+</TEI>
