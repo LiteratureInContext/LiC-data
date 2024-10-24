@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sir-gawain">
    
    <teiHeader xml:lang="en">
@@ -30,29 +30,35 @@
                <name ref="editors.xml#UVAStudStaff"
                   >Students and Staff at the University of Virginia</name>
                <name ref="editors.xml#GM">Gretchen Maune</name>
-               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+            
             </respStmt>
 
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
          </titleStmt>
 
-         <publicationStmt>
-            <publisher>Literature in Context</publisher>
-            <address>
-               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
-               <addrLine>Address line 2</addrLine>
-               <addrLine>Address line 3</addrLine>
-               <addrLine>Address line 4</addrLine>
-               <addrLine>Email</addrLine>
-               <!-- cut unused or add additional addrLines -->
-            </address>
-            <availability status="free">
-               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
-                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
-                  License </licence>
-            </availability>
-         </publicationStmt>
+          <publicationStmt>
+              <!-- This element expresses the publication details of this particular etext. -->
+              <publisher>Literature in Context</publisher>
+              <!-- Do not alter. -->
+              <address>
+                  <!-- Use the address information for your university. -->
+                  <addrLine>Marymount University Department of Literature and Languages</addrLine>
+                  <addrLine>2807 N. Glebe Road</addrLine>
+                  <addrLine>Arlington, VA </addrLine>
+                  <addrLine>22207</addrLine>
+                  <addrLine>thowe@marymount.edu</addrLine>
+                  <!-- Add your email address.  -->
+                  <addrLine>lic.open.anthology@gmail.com</addrLine>
+                  <!-- Do not alter. -->
+              </address>
+              <availability status="free">
+                  <!-- All texts are licensed under this license. Individual images contained in notes should indicate source information and usage rights in line.  -->
+                  <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                      Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                      Unported License </licence>
+              </availability>
+          </publicationStmt>
 
          <sourceDesc>
 
@@ -71,22 +77,22 @@
 
                   <imprint>
                      <pubPlace>
-                        <placeName type="tgn" key="000"
-                           ><?oxy-placeholder content="Add unique id from the Getty Thesaurus of Geographic Names, at v"?></placeName>
+                        <placeName
+                           >N.P.</placeName>
                      </pubPlace>
-                     <publisher><?oxy-placeholder content="publisher lines as needed"?></publisher>
-                     <date when="000"><?oxy-placeholder content="Year of publication"?></date>
+                     <publisher>manuscript</publisher>
+                     <date when="1400">c.1400</date>
                   	<note>Translated by A. S. Kline © 2007 All Rights Reserved
                   		This work may be freely reproduced, stored, and transmitted, electronically or otherwise, for any non-commercial purpose.</note>
                      <!-- Add additional NOTE elements as needed  -->
-                     <note><?oxy-placeholder content="Where are page images sourced from? Add or delete NOTE elements as needed."?></note>
+                     
                   </imprint>
 
                   <imprint>
                      <pubPlace/>
                      <publisher/>
                      <date/>
-                     <note><?oxy-placeholder content="Add information for other copies, like digital surrogates available on the web. If a base reading text was used, add another IMPRINT element."?></note>
+                     <note></note>
                   </imprint>
 
                   <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
@@ -128,9 +134,7 @@
             <setting>
                <name type="tgn" key="7011781">London, England</name>
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-               <name type="tgn" key="7011197">Bath, England</name>
-               <time from="1690" to="1724">Early 18th Century</time>
-               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+             
             </setting>
 
          </settingDesc>
