@@ -1,72 +1,200 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="orig-51933-1428960760" version="5.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="johnson-rasselas">
+    
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title> The Prince of Abissinia. A tale. In two volumes. ... </title>
+                <title> The Prince of Abissinia </title>
+                <author>
+                    <persName  type="lcnaf" key="n78095825">
+                       
+                        <name>
+                           
+                            <forename>Samuel</forename> 
+                            <surname>Johnson</surname>
+                            
+                        </name>
+                        
+                    </persName>
+                </author>
+                
+                <editor>
+                    <persName type="orcid" key="0000-0002-7400-4093">
+                        <name ref="editors.xml#TH">
+                            <forename>Tonya</forename>
+                            <surname>Howe</surname>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                  
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#XXX"
+                        >Students and Staff at Texas Texas A&amp;M University and the Universtiiy of Virginia</name>
+                    
+                </respStmt>
+                
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+                
             </titleStmt>
-            <extent>166 300dpi TIFF page images</extent>
+            
             <publicationStmt>
-                <publisher>18thConnect</publisher>
-                <pubPlace>IDHMC, 4227 TAMU, College Station, TX 77843-4227</pubPlace>
-                <date>2010</date>
-                <idno type="ESTC">T057339</idno>
-                <idno type="bookID">0009200801</idno>
-                <availability>
-                    <p> These documents are available only to 18thConnect under the terms and
-                        conditions specified in the contract with Gale Cengage Learning dated June
-                        22-23, 2010. For more information, contact Laura Mandell at mandell@tamu.edu
-                    </p>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <biblFull>
-                    <titleStmt>
-                        <title> The Prince of Abissinia. A tale. In two volumes. ... </title>
-                        <author>Johnson, Samuel</author>
-                    </titleStmt>
-                    <extent>166 p.</extent>
-                    <publicationStmt>
-                        <publisher>printed for R. and J. Dodsley; and W. Johnston</publisher>
-                        <pubPlace>London</pubPlace>
-                        <date>1759</date>
-                    </publicationStmt>
-                </biblFull>
+                <biblStruct>
+                    <monogr>
+                        <author>
+                            <name>
+                                <forename>Samuel</forename>
+                                <surname>Johnson</surname>
+                            </name></author>
+                        <title>The Prince of Abissinia </title>
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="7011781">London</placeName></pubPlace>
+                                <publisher>printed for R. and J. Dodsley; and W. Johnston</publisher>
+                                <date when="1759">1759</date>
+                            <note> 18thConnect (http://www.18thConnect.org) is a scholarly community and online
+                                finding aid designed to make searchable all primary texts and peer-reviewed
+                                resources in the field of eighteenth-century studies. It is supported by the
+                                University of Virginia, NINES.org, the Initiative for Digital Humanities, Media,
+                                and Culture (IDHMC) at Texas A&amp;M University (http://idhmc.tamu.edu), and by
+                                the Advanced Research Constortium (ARC) (http://ar-c.org). These documents have been generated from 18thConnect's TypeWright tool and are
+                                based on the OCR output created by Gale/Cengage Learning for the Eighteenth
+                                Century Collections Online (ECCO) proprietary database product. The XSLT that
+                                converts the documents from Gale's OCR output XML format to TEI-A was written by
+                                Matthew Christy at the IDHMC, Texas A&amp;M University. The code is open source.</note>
+                        </imprint>
+                    </monogr>
+                    
+                   
+                </biblStruct>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            
+            <creation/>
+            
+            <textDesc n="tale">
+               
+                <channel mode="w">print</channel>
+                <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+                <constitution type="single">single tale</constitution>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="inapplicable"/>
+                <interaction/>
+                <preparedness type="revised"/>
+                <purpose type="express"/>
+                <purpose type="inform" degree="medium"/>
+                <!-- interpretation in the textDesc will be necessary -->
+            </textDesc>
+            
+            <settingDesc>
+                
+                <setting>
+                    <name type="tgn" key="7032930">Abyssinia</name>
+                    
+                    
+                    <time>unspecified</time>
+                    <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+                </setting>
+                
+            </settingDesc>
+        </profileDesc>
         <encodingDesc>
+            <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
             <projectDesc>
-                <p> 18thConnect (http://www.18thConnect.org) is a scholarly community and online
-                    finding aid designed to make searchable all primary texts and peer-reviewed
-                    resources in the field of eighteenth-century studies. It is supported by the
-                    University of Virginia, NINES.org, the Initiative for Digital Humanities, Media,
-                    and Culture (IDHMC) at Texas A&amp;M University (http://idhmc.tamu.edu), and by
-                    the Advanced Research Constortium (ARC) (http://ar-c.org). </p>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, reliable, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature. This project is was initially funded by the National Endowment for the
+                    Humanities and developed by faculty at The University of Virginia and Marymount
+                    University.</p>
             </projectDesc>
             <editorialDecl>
-                <p> These documents have been generated from 18thConnect's TypeWright tool and are
-                    based on the OCR output created by Gale/Cengage Learning for the Eighteenth
-                    Century Collections Online (ECCO) proprietary database product. The XSLT that
-                    converts the documents from Gale's OCR output XML format to TEI-A was written by
-                    Matthew Christy at the IDHMC, Texas A&amp;M University. The code is open source.
-                </p>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                        not.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section for more information.</p>
+                </correction>
             </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Numbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgm">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
         </encodingDesc>
+        
         <revisionDesc>
-            <change n="1" when="2010-10" who="#BPZ">
+            <change when="2010-10" who="#BPZ">
                 <label>Changed by</label>
                 <name xml:id="BPZ">Brian Pytlik Zillig</name>
                 <list>
                     <item>TEI-A Encoding, first pass, all ECCO documents</item>
                 </list>
             </change>
-            <change n="2" when="2012-03" who="#MJC">
+            <change when="2012-03" who="#MJC">
                 <label>Changed by</label>
                 <name xml:id="MJC">Matthew J. Christy</name>
                 <list>
                     <item> Revise XSLT to transform XMLs of corrected Gale OCR documents </item>
                 </list>
             </change>
-            <change n="3" when="2013-12" who="#MJC">
+            <change when="2013-12" who="#MJC">
                 <label>Changed by</label>
                 <name>Matthew J. Christy</name>
                 <list>
