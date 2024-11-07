@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="browninge-sonnets">
+   
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Sonnets from the Portuguese</title>
+            <author>
+               <persName type="lcnaf" key="n79067862">
+                  
+                  <name>
+                     <!-- If we use a separate file for author information, we reference it here, using the editors.xml model. -->
+                     <forename>Elizabeth Barrett</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
+                     <surname>Browning</surname>
+                    
+                  </name>
+              
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename>Tonya</forename>
+                     <surname>Howe</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <!-- edit this content to reflect this digital edition -->
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#StudStaffUVA"
+                  >Students and Staff of the University of Virginia></name>
+               <name ref="editors.xml#XX">Humzah Syed</name>
+               <!-- More names can be added as needed. Be sure to add a unique identifier pointing to further information about contributors in editors.xml.  -->
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            
+            <address>
+               <addrLine>Department of English, The University of Virginia</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA </addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            
+            
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title>Sonnets from the Portuguese</title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Elizabeth Barrett</forename>
+                        <surname>Browning</surname>
+                        
+                     </name>
+                  </author>
+
+                  <title>Sonnets from the Portuguese</title>
+
+                  <imprint>
+                    
+                  </imprint>
+
+                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                  <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               
+               <time from="1690" to="1724">Early 18th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2024-10" who="editors.xml#HZ"
+            >Humzah Syed encoded Literature in Context changes</change>
+         <change when="0000-00-00" who="xxxx"/>
+      </revisionDesc>
+
+   </teiHeader>
+
+
+   <text>
+
+     <front>
+        <div></div>
+     </front>
+     
+      <body>
+       <head>I</head>
+         <div>
+<lg type="sonnet">
+    <l n="1">I thought once how Theocritus had sung</l>
+    <l n="2">Of the sweet years, the dear and wished-for years,</l>
+    <l n="3">Who each one in a gracious hand appears</l>
+    <l n="4">To bear a gift for mortals, old or young:</l>
+    <l n="5">And, as I mused it in his antique tongue,</l>
+    <l n="6">I saw, in gradual vision through my tears,</l>
+    <l n="7">The sweet, sad years, the melancholy years,</l>
+    <l n="8">Those of my own life, who by turns had flung</l>
+    <l n="9">A shadow across me.  Straightway I was ’ware,</l>
+    <l n="10">So weeping, how a mystic Shape did move</l>
+    <l n="11">Behind me, and drew me backward by the hair;</l>
+    <l n="12">And a voice said in mastery, while I strove,—</l>
+    <l n="13">“Guess now who holds thee!”—“Death,” I said, But, there,</l>
+    <l n="14">The silver answer rang, “Not Death, but Love.”</l></lg>
+
+
+      <head>II</head>
+<lg type="sonnet">
+   <l n="15">But only three in all God’s universe</l>
+   <l n="16">Have heard this word thou hast said,—Himself, beside</l>
+   <l n="17">Thee speaking, and me listening! and replied</l>
+   <l n="18">One of us . . . that was God, . . . and laid the curse</l>
+   <l n="19">So darkly on my eyelids, as to amerce</l>
+   <l n="20">My sight from seeing thee,—that if I had died,</l>
+   <l n="21">The death-weights, placed there, would have signified</l>
+   <l n="22">Less absolute exclusion.  “Nay” is worse</l>
+   <l n="23">From God than from all others, O my friend!</l>
+   <l n="24">Men could not part us with their worldly jars,</l>
+   <l n="25">Nor the seas change us, nor the tempests bend;</l>
+   <l n="26">Our hands would touch for all the mountain-bars:</l>
+   <l n="27">And, heaven being rolled between us at the end,</l>
+   <l n="28">We should but vow the faster for the stars.</l></lg>
+
+   <head>III</head>
+   <lg type="sonnet">
+      <l n="29">Unlike are we, unlike, O princely Heart!</l>
+      <l n="30">Unlike our uses and our destinies.</l>
+      <l n="31">Our ministering two angels look surprise</l>
+      <l n="32">On one another, as they strike athwart</l>
+      <l n="33">Their wings in passing. Thou, bethink thee, art</l>
+      <l n="34">A guest for queens to social pageantries,</l>
+      <l n="35">With gages from a hundred brighter eyes</l>
+      <l n="36">Than tears even can make mine, to play thy part</l>
+      <l n="37">Of chief musician. What hast thou to do</l>
+      <l n="38">With looking from the lattice-lights at me,</l>
+      <l n="39">A poor, tired, wandering singer, singing through</l>
+      <l n="40">The dark, and leaning up a cypress tree?</l>
+      <l n="41">The chrism is on thine head,—on mine, the dew,—</l>
+      <l n="42">And Death must dig the level where these agree.</l>
+   </lg>
+
+   <head>IV</head>
+   <lg type="sonnet">
+      <l n="43">Thou hast thy calling to some palace-floor,</l>
+      <l n="44">Most gracious singer of high poems! where</l>
+      <l n="45">The dancers will break footing, from the care</l>
+      <l n="46">Of watching up thy pregnant lips for more.</l>
+      <l n="47">And dost thou lift this house’s latch too poor</l>
+      <l n="48">For hand of thine? and canst thou think and bear</l>
+      <l n="49">To let thy music drop here unaware</l>
+      <l n="50">In folds of golden fulness at my door?</l>
+      <l n="51">Look up and see the casement broken in,</l>
+      <l n="52">The bats and owlets builders in the roof!</l>
+      <l n="53">My cricket chirps against thy mandolin.</l>
+      <l n="54">Hush, call no echo up in further proof</l>
+      <l n="55">Of desolation! there’s a voice within</l>
+      <l n="56">That weeps . . . as thou must sing . . . alone, aloof.</l>
+   </lg>
+
+   <head>V</head>
+   <lg type="sonnet">
+      <l n="57">I lift my heavy heart up solemnly,</l>
+      <l n="58">As once Electra her sepulchral urn,</l>
+      <l n="59">And, looking in thine eyes, I over-turn</l>
+      <l n="60">The ashes at thy feet. Behold and see</l>
+      <l n="61">What a great heap of grief lay hid in me,</l>
+      <l n="62">And how the red wild sparkles dimly burn</l>
+      <l n="63">Through the ashen greyness. If thy foot in scorn</l>
+      <l n="64">Could tread them out to darkness utterly,</l>
+      <l n="65">It might be well perhaps. But if instead</l>
+      <l n="66">Thou wait beside me for the wind to blow</l>
+      <l n="67">The grey dust up, . . . those laurels on thine head,</l>
+      <l n="68">O my Belovëd, will not shield thee so,</l>
+      <l n="69">That none of all the fires shall scorch and shred</l>
+      <l n="70">The hair beneath. Stand further off then! go!</l>
+   </lg>
+
+   <head>VI</head>
+   <lg type="sonnet">
+      <l n="71">Go from me. Yet I feel that I shall stand</l>
+      <l n="72">Henceforward in thy shadow. Nevermore</l>
+      <l n="73">Alone upon the threshold of my door</l>
+      <l n="74">Of individual life, I shall command</l>
+      <l n="75">The uses of my soul, nor lift my hand</l>
+      <l n="76">Serenely in the sunshine as before,</l>
+      <l n="77">Without the sense of that which I forbore—</l>
+      <l n="78">Thy touch upon the palm. The widest land</l>
+      <l n="79">Doom takes to part us, leaves thy heart in mine</l>
+      <l n="80">With pulses that beat double. What I do</l>
+      <l n="81">And what I dream include thee, as the wine</l>
+      <l n="82">Must taste of its own grapes. And when I sue</l>
+      <l n="83">God for myself, He hears that name of thine,</l>
+      <l n="84">And sees within my eyes the tears of two.</l>
+   </lg>
+      
+   <head>VII</head>
+   <lg type="sonnet">
+      <l n="85">The face of all the world is changed, I think,</l>
+      <l n="86">Since first I heard the footsteps of thy soul</l>
+      <l n="87">Move still, oh, still, beside me, as they stole</l>
+      <l n="88">Betwixt me and the dreadful outer brink</l>
+      <l n="89">Of obvious death, where I, who thought to sink,</l>
+      <l n="90">Was caught up into love, and taught the whole</l>
+      <l n="91">Of life in a new rhythm. The cup of dole</l>
+      <l n="92">God gave for baptism, I am fain to drink,</l>
+      <l n="93">And praise its sweetness, Sweet, with thee anear.</l>
+      <l n="94">The names of country, heaven, are changed away</l>
+      <l n="95">For where thou art or shalt be, there or here;</l>
+      <l n="96">And this . . . this lute and song . . . loved yesterday,</l>
+      <l n="97">(The singing angels know) are only dear</l>
+      <l n="98">Because thy name moves right in what they say.</l>
+   </lg>
+
+   <head>VIII</head>
+   <lg type="sonnet">
+      <l n="99">What can I give thee back, O liberal</l>
+      <l n="100">And princely giver, who hast brought the gold</l>
+      <l n="101">And purple of thine heart, unstained, untold,</l>
+      <l n="102">And laid them on the outside of the wall</l>
+      <l n="103">For such as I to take or leave withal,</l>
+      <l n="104">In unexpected largesse? am I cold,</l>
+      <l n="105">Ungrateful, that for these most manifold</l>
+      <l n="106">High gifts, I render nothing back at all?</l>
+      <l n="107">Not so; not cold,—but very poor instead.</l>
+      <l n="108">Ask God who knows. For frequent tears have run</l>
+      <l n="109">The colours from my life, and left so dead</l>
+      <l n="110">And pale a stuff, it were not fitly done</l>
+      <l n="111">To give the same as pillow to thy head.</l>
+      <l n="112">Go farther! let it serve to trample on.</l>
+   </lg>
+
+   <head>X</head>
+   <lg type="sonnet">
+      <l n="127">Yet, love, mere love, is beautiful indeed</l>
+      <l n="128">And worthy of acceptation. Fire is bright,</l>
+      <l n="129">Let temple burn, or flax; an equal light</l>
+      <l n="130">Leaps in the flame from cedar-plank or weed:</l>
+      <l n="131">And love is fire. And when I say at need</l>
+      <l n="132">I love thee . . . mark! . . . I love thee—in thy sight</l>
+      <l n="133">I stand transfigured, glorified aright,</l>
+      <l n="134">With conscience of the new rays that proceed</l>
+      <l n="135">Out of my face toward thine. There’s nothing low</l>
+      <l n="136">In love, when love the lowest: meanest creatures</l>
+      <l n="137">Who love God, God accepts while loving so.</l>
+      <l n="138">And what I feel, across the inferior features</l>
+      <l n="139">Of what I am, doth flash itself, and show</l>
+      <l n="140">How that great work of Love enhances Nature’s.</l>
+   </lg>
+
+   <head>XI</head>
+   <lg type="sonnet">
+      <l n="141">And therefore if to love can be desert,</l>
+      <l n="142">I am not all unworthy. Cheeks as pale</l>
+      <l n="143">As these you see, and trembling knees that fail</l>
+      <l n="144">To bear the burden of a heavy heart,—</l>
+      <l n="145">This weary minstrel-life that once was girt</l>
+      <l n="146">To climb Aornus, and can scarce avail</l>
+      <l n="147">To pipe now ’gainst the valley nightingale</l>
+      <l n="148">A melancholy music,—why advert</l>
+      <l n="149">To these things? O Belovëd, it is plain</l>
+      <l n="150">I am not of thy worth nor for thy place!</l>
+      <l n="151">And yet, because I love thee, I obtain</l>
+      <l n="152">From that same love this vindicating grace</l>
+      <l n="153">To live on still in love, and yet in vain,—</l>
+      <l n="154">To bless thee, yet renounce thee to thy face.</l>
+   </lg>
+
+   <head>XII</head>
+   <lg type="sonnet">
+      <l n="155">Indeed this very love which is my boast,</l>
+      <l n="156">And which, when rising up from breast to brow,</l>
+      <l n="157">Doth crown me with a ruby large enow</l>
+      <l n="158">To draw men’s eyes and prove the inner cost,—</l>
+      <l n="159">This love even, all my worth, to the uttermost,</l>
+      <l n="160">I should not love withal, unless that thou</l>
+      <l n="161">Hadst set me an example, shown me how,</l>
+      <l n="162">When first thine earnest eyes with mine were crossed,</l>
+      <l n="163">And love called love. And thus, I cannot speak</l>
+      <l n="164">Of love even, as a good thing of my own:</l>
+      <l n="165">Thy soul hath snatched up mine all faint and weak,</l>
+      <l n="166">And placed it by thee on a golden throne,—</l>
+      <l n="167">And that I love (O soul, we must be meek!)</l>
+      <l n="168">Is by thee only, whom I love alone.</l>
+   </lg>
+
+   <head>XIII</head>
+   <lg type="sonnet">
+      <l n="169">And wilt thou have me fashion into speech</l>
+      <l n="170">The love I bear thee, finding words enough,</l>
+      <l n="171">And hold the torch out, while the winds are rough,</l>
+      <l n="172">Between our faces, to cast light on each?—</l>
+      <l n="173">I drop it at thy feet. I cannot teach</l>
+      <l n="174">My hand to hold my spirits so far off</l>
+      <l n="175">From myself—me—that I should bring thee proof</l>
+      <l n="176">In words, of love hid in me out of reach.</l>
+      <l n="177">Nay, let the silence of my womanhood</l>
+      <l n="178">Commend my woman-love to thy belief,—</l>
+      <l n="179">Seeing that I stand unwon, however wooed,</l>
+      <l n="180">And rend the garment of my life, in brief,</l>
+      <l n="181">By a most dauntless, voiceless fortitude,</l>
+      <l n="182">Lest one touch of this heart convey its grief.</l>
+   </lg>
+   
+   <head>XIV</head>
+   <lg type="sonnet">
+      <l n="183">If thou must love me, let it be for nought</l>
+      <l n="184">Except for love’s sake only. Do not say</l>
+      <l n="185">“I love her for her smile—her look—her way</l>
+      <l n="186">Of speaking gently,—for a trick of thought</l>
+      <l n="187">That falls in well with mine, and certes brought</l>
+      <l n="188">A sense of pleasant ease on such a day”—</l>
+      <l n="189">For these things in themselves, Belovëd, may</l>
+      <l n="190">Be changed, or change for thee,—and love, so wrought,</l>
+      <l n="191">May be unwrought so. Neither love me for</l>
+      <l n="192">Thine own dear pity’s wiping my cheeks dry,</l>
+      <l n="193">A creature might forget to weep, who bore</l>
+      <l n="194">Thy comfort long, and lose thy love thereby!</l>
+      <l n="195">But love me for love’s sake, that evermore</l>
+      <l n="196">Thou mayst love on, through love’s eternity.</l>
+   </lg>
+
+   <head>XV</head>
+   <lg type="sonnet">
+      <l n="197">Accuse me not, beseech thee, that I wear</l>
+      <l n="198">Too calm and sad a face in front of thine;</l>
+      <l n="199">For we two look two ways, and cannot shine</l>
+      <l n="200">With the same sunlight on our brow and hair.</l>
+      <l n="201">On me thou lookest with no doubting care,</l>
+      <l n="202">As on a bee shut in a crystalline;</l>
+      <l n="203">Since sorrow hath shut me safe in love’s divine,</l>
+      <l n="204">And to spread wing and fly in the outer air</l>
+      <l n="205">Were most impossible failure, if I strove</l>
+      <l n="206">To fail so. But I look on thee—on thee—</l>
+      <l n="207">Beholding, besides love, the end of love,</l>
+      <l n="208">Hearing oblivion beyond memory!</l>
+      <l n="209">As one who sits and gazes from above,</l>
+      <l n="210">Over the rivers to the bitter sea.</l>
+   </lg>
+      
+   <head>XVI</head>
+   <lg type="sonnet">
+      <l n="211">And yet, because thou overcomest so,</l>
+      <l n="212">Because thou art more noble and like a king,</l>
+      <l n="213">Thou canst prevail against my fears and fling</l>
+      <l n="214">Thy purple round me, till my heart shall grow</l>
+      <l n="215">Too close against thine heart henceforth to know</l>
+      <l n="216">How it shook when alone. Why, conquering</l>
+      <l n="217">May prove as lordly and complete a thing</l>
+      <l n="218">In lifting upward as in laying low!</l>
+      <l n="219">And as a vanquished soldier yields his sword</l>
+      <l n="220">To one who lifts him from the bloody earth,</l>
+      <l n="221">Even so, Belovëd, I at last record,</l>
+      <l n="222">Here ends my strife. If thou invite me forth,</l>
+      <l n="223">I rise above abasement at the word.</l>
+      <l n="224">Make thy love larger to enlarge my worth!</l>
+   </lg>
+
+   <head>XVII</head>
+   <lg type="sonnet">
+      <l n="225">My poet, thou canst touch on all the notes</l>
+      <l n="226">God set between His After and Before,</l>
+      <l n="227">And strike up and strike off the general roar</l>
+      <l n="228">Of the rushing worlds a melody that floats</l>
+      <l n="229">In a serene air purely.  Antidotes</l>
+      <l n="230">Of medicated music, answering for</l>
+      <l n="231">Mankind’s forlornest uses, thou canst pour</l>
+      <l n="232">From thence into their ears.  God’s will devotes</l>
+      <l n="233">Thine to such ends, and mine to wait on thine.</l>
+      <l n="234">How, Dearest, wilt thou have me for most use?</l>
+      <l n="235">A hope, to sing by gladly? or a fine</l>
+      <l n="236">Sad memory, with thy songs to interfuse?</l>
+      <l n="237">A shade, in which to sing—of palm or pine?</l>
+      <l n="238">A grave, on which to rest from singing?  Choose.</l>
+   </lg>
+
+   <head>XVIII</head>
+   <lg type="sonnet">
+      <l n="239">I never gave a lock of hair away</l>
+      <l n="240">To a man, Dearest, except this to thee,</l>
+      <l n="241">Which now upon my fingers thoughtfully</l>
+      <l n="242">I ring out to the full brown length and say</l>
+      <l n="243">“Take it.”  My day of youth went yesterday;</l>
+      <l n="244">My hair no longer bounds to my foot’s glee,</l>
+      <l n="245">Nor plant I it from rose- or myrtle-tree,</l>
+      <l n="246">As girls do, any more: it only may</l>
+      <l n="247">Now shade on two pale cheeks the mark of tears,</l>
+      <l n="248">Taught drooping from the head that hangs aside</l>
+      <l n="249">Through sorrow’s trick.  I thought the funeral-shears</l>
+      <l n="250">Would take this first, but Love is justified,—</l>
+      <l n="251">Take it thou,—finding pure, from all those years,</l>
+      <l n="252">The kiss my mother left here when she died.</l>
+   </lg>
+
+   <head>XIX</head>
+   <lg type="sonnet">
+      <l n="253">The soul’s Rialto hath its merchandize;</l>
+      <l n="254">I barter curl for curl upon that mart,</l>
+      <l n="255">And from my poet’s forehead to my heart</l>
+      <l n="256">Receive this lock which outweighs argosies,—</l>
+      <l n="257">As purply black, as erst to Pindar’s eyes</l>
+      <l n="258">The dim purpureal tresses gloomed athwart</l>
+      <l n="259">The nine white Muse-brows.  For this counterpart, . . .</l>
+      <l n="260">The bay crown’s shade, Belovëd, I surmise,</l>
+      <l n="261">Still lingers on thy curl, it is so black!</l>
+      <l n="262">Thus, with a fillet of smooth-kissing breath,</l>
+      <l n="263">I tie the shadows safe from gliding back,</l>
+      <l n="264">And lay the gift where nothing hindereth;</l>
+      <l n="265">Here on my heart, as on thy brow, to lack</l>
+      <l n="266">No natural heat till mine grows cold in death.</l>
+   </lg>
+
+   <head>XX</head>
+   <lg type="sonnet">
+      <l n="267">Belovëd, my Belovëd, when I think</l>
+      <l n="268">That thou wast in the world a year ago,</l>
+      <l n="269">What time I sat alone here in the snow</l>
+      <l n="270">And saw no footprint, heard the silence sink</l>
+      <l n="271">No moment at thy voice, but, link by link,</l>
+      <l n="272">Went counting all my chains as if that so</l>
+      <l n="273">They never could fall off at any blow</l>
+      <l n="274">Struck by thy possible hand,—why, thus I drink</l>
+      <l n="275">Of life’s great cup of wonder!  Wonderful,</l>
+      <l n="276">Never to feel thee thrill the day or night</l>
+      <l n="277">With personal act or speech,—nor ever cull</l>
+      <l n="278">Some prescience of thee with the blossoms white</l>
+      <l n="279">Thou sawest growing!  Atheists are as dull,</l>
+      <l n="280">Who cannot guess God’s presence out of sight.</l>
+   </lg>
+
+   <head>XXI</head>
+   <lg type="sonnet">
+      <l n="281">Say over again, and yet once over again,</l>
+      <l n="282">That thou dost love me.  Though the word repeated</l>
+      <l n="283">Should seem a “cuckoo-song,” as thou dost treat it,</l>
+      <l n="284">Remember, never to the hill or plain,</l>
+      <l n="285">Valley and wood, without her cuckoo-strain</l>
+      <l n="286">Comes the fresh Spring in all her green completed.</l>
+      <l n="287">Belovëd, I, amid the darkness greeted</l>
+      <l n="288">By a doubtful spirit-voice, in that doubt’s pain</l>
+      <l n="289">Cry, “Speak once more—thou lovest!”  Who can fear</l>
+      <l n="290">Too many stars, though each in heaven shall roll,</l>
+      <l n="291">Too many flowers, though each shall crown the year?</l>
+      <l n="292">Say thou dost love me, love me, love me—toll</l>
+      <l n ="293">The silver iterance!—only minding, Dear,</l>
+      <l n="294">To love me also in silence with thy soul.</l>
+   </lg>
+
+   <head>XXII</head>
+   <lg type="sonnet">
+      <l n="295">When our two souls stand up erect and strong,</l>
+      <l n="296">Face to face, silent, drawing nigh and nigher,</l>
+      <l n="297">Until the lengthening wings break into fire</l>
+      <l n="298">At either curvëd point,—what bitter wrong</l>
+      <l n="299">Can the earth do to us, that we should not long</l>
+      <l n="300">Be here contented?  Think!  In mounting higher,</l>
+      <l n="301">The angels would press on us and aspire</l>
+      <l n="302">To drop some golden orb of perfect song</l>
+      <l n="303">Into our deep, dear silence.  Let us stay</l>
+      <l n="304">Rather on earth, Belovëd,—where the unfit</l>
+      <l n="305">Contrarious moods of men recoil away</l>
+      <l n="306">And isolate pure spirits, and permit</l>
+      <l n="307">A place to stand and love in for a day,</l>
+      <l n="308">With darkness and the death-hour rounding it.</l>
+   </lg>
+
+   <head>XXIII</head>
+   <lg type="sonnet">
+      <l n="309">Is it indeed so?  If I lay here dead,</l>
+      <l n="310">Wouldst thou miss any life in losing mine?</l>
+      <l n="311">And would the sun for thee more coldly shine</l>
+      <l n="312">Because of grave-damps falling round my head?</l>
+      <l n="313">I marvelled, my Belovëd, when I read</l>
+      <l n="314">Thy thought so in the letter.  I am thine—</l>
+      <l n="315">But . . . so much to thee?  Can I pour thy wine</l>
+      <l n="316">While my hands tremble?  Then my soul, instead</l>
+      <l n="317">Of dreams of death, resumes life’s lower range.</l>
+      <l n="318">Then, love me, Love! look on me—breathe on me!</l>
+      <l n="319">As brighter ladies do not count it strange,</l>
+      <l n="320">For love, to give up acres and degree,</l>
+      <l n="321">I yield the grave for thy sake, and exchange</l>
+      <l n="322">My near sweet view of heaven, for earth with thee!</l>
+   </lg>
+
+   <head>XXIV</head>
+   <lg type="sonnet">
+      <l n="323">Let the world’s sharpness like a clasping knife</l>
+      <l n="324">Shut in upon itself and do no harm</l>
+      <l n="325">In this close hand of Love, now soft and warm,</l>
+      <l n="326">And let us hear no sound of human strife</l>
+      <l n="327">After the click of the shutting.  Life to life—</l>
+      <l n="328">I lean upon thee, Dear, without alarm,</l>
+      <l n="329">And feel as safe as guarded by a charm</l>
+      <l n="330">Against the stab of worldlings, who if rife</l>
+      <l n="331">Are weak to injure.  Very whitely still</l>
+      <l n="332">The lilies of our lives may reassure</l>
+      <l n="333">Their blossoms from their roots, accessible</l>
+      <l n="334">Alone to heavenly dews that drop not fewer;</l>
+      <l n="335">Growing straight, out of man’s reach, on the hill.</l>
+      <l n="336">God only, who made us rich, can make us poor.</l>
+   </lg>
+      
+   <head>XXV</head>
+   <lg type="sonnet">
+      <l n="337">A heavy heart, Belovëd, have I borne</l>
+      <l n="338">From year to year until I saw thy face,</l>
+      <l n="339">And sorrow after sorrow took the place</l>
+      <l n="340">Of all those natural joys as lightly worn</l>
+      <l n="341">As the stringed pearls, each lifted in its turn</l>
+      <l n="342">By a beating heart at dance-time.  Hopes apace</l>
+      <l n="343">Were changed to long despairs, till God’s own grace</l>
+      <l n="344">Could scarcely lift above the world forlorn</l>
+      <l n="345">My heavy heart.  Then thou didst bid me bring</l>
+      <l n="346">And let it drop adown thy calmly great</l>
+      <l n="347">Deep being!  Fast it sinketh, as a thing</l>
+      <l n="348">Which its own nature does precipitate,</l>
+      <l n="349">While thine doth close above it, mediating</l>
+      <l n="350">Betwixt the stars and the unaccomplished fate.</l>
+   </lg>
+
+   <head>XXVI</head>
+   <lg type="sonnet">
+      <l n="351">I lived with visions for my company</l>
+      <l n="352">Instead of men and women, years ago,</l>
+      <l n="353">And found them gentle mates, nor thought to know</l>
+      <l n="354">A sweeter music than they played to me.</l>
+      <l n="355">But soon their trailing purple was not free</l>
+      <l n="356">Of this world’s dust, their lutes did silent grow,</l>
+      <l n="357">And I myself grew faint and blind below</l>
+      <l n="358">Their vanishing eyes.  Then thou didst come—to be,</l>
+      <l n="359">Belovëd, what they seemed.  Their shining fronts,</l>
+      <l n="360">Their songs, their splendours, (better, yet the same,</l>
+      <l n="361">As river-water hallowed into fonts)</l>
+      <l n="362">Met in thee, and from out thee overcame</l>
+      <l n="363">My soul with satisfaction of all wants:</l>
+      <l n="364">Because God’s gifts put man’s best dreams to shame.</l>
+   </lg>
+
+   <head>XXVII</head>
+   <lg type="sonnet">
+      <l n="365">My own Belovëd, who hast lifted me</l>
+      <l n="366">From this drear flat of earth where I was thrown,</l>
+      <l n="367">And, in betwixt the languid ringlets, blown</l>
+      <l n="368">A life-breath, till the forehead hopefully</l>
+      <l n="369">Shines out again, as all the angels see,</l>
+      <l n="370">Before thy saving kiss!  My own, my own,</l>
+      <l n="371">Who camest to me when the world was gone,</l>
+      <l n="372">And I who looked for only God, found thee!</l>
+      <l n="373">I find thee; I am safe, and strong, and glad.</l>
+      <l n="374">As one who stands in dewless asphodel,</l>
+      <l n="375">Looks backward on the tedious time he had</l>
+      <l n="376">In the upper life,—so I, with bosom-swell,</l>
+      <l n="377">Make witness, here, between the good and bad,</l>
+      <l n="378">That Love, as strong as Death, retrieves as well.</l>
+   </lg>
+
+   <head>XXVIII</head>
+   <lg type="sonnet">
+      <l n="379">My letters! all dead paper, mute and white!</l>
+      <l n="380">And yet they seem alive and quivering</l>
+      <l n="381">Against my tremulous hands which loose the string</l>
+      <l n="382">And let them drop down on my knee to-night.</l>
+      <l n="383">This said,—he wished to have me in his sight</l>
+      <l n="384">Once, as a friend: this fixed a day in spring</l>
+      <l n="385">To come and touch my hand . . . a simple thing,</l>
+      <l n="386">Yet I wept for it!—this, . . . the paper’s light . . .</l>
+      <l n="387">Said, Dear I love thee; and I sank and quailed</l>
+      <l n="388">As if God’s future thundered on my past.</l>
+      <l n="389">This said, I am thine—and so its ink has paled</l>
+      <l n="390">With lying at my heart that beat too fast.</l>
+      <l n="391">And this . . . O Love, thy words have ill availed</l>
+      <l n="392">If, what this said, I dared repeat at last!</l>
+   </lg>
+
+   <head>XXIX</head>
+   <lg type="sonnet">
+      <l n="393">I think of thee!—my thoughts do twine and bud</l>
+      <l n="394">About thee, as wild vines, about a tree,</l>
+      <l n="395">Put out broad leaves, and soon there’s nought to see</l>
+      <l n="396">Except the straggling green which hides the wood.</l>
+      <l n="397">Yet, O my palm-tree, be it understood</l>
+      <l n="398">I will not have my thoughts instead of thee</l>
+      <l n="399">Who art dearer, better! Rather, instantly</l>
+      <l n="400">Renew thy presence; as a strong tree should,</l>
+      <l n="401">Rustle thy boughs and set thy trunk all bare,</l>
+      <l n="402">And let these bands of greenery which insphere thee,</l>
+      <l n="403">Drop heavily down,—burst, shattered everywhere!</l>
+      <l n="404">Because, in this deep joy to see and hear thee</l>
+      <l n="405">And breathe within thy shadow a new air,</l>
+      <l n="406">I do not think of thee—I am too near thee.</l>
+   </lg>
+      
+   <head>XXX</head>
+   <lg type="sonnet">
+      <l n="407">I see thine image through my tears to-night,</l>
+      <l n="408">And yet to-day I saw thee smiling. How</l>
+      <l n="409">Refer the cause?—Belovëd, is it thou</l>
+      <l n="410">Or I, who makes me sad? The acolyte</l>
+      <l n="411">Amid the chanted joy and thankful rite</l>
+      <l n="412">May so fall flat, with pale insensate brow,</l>
+      <l n="413">On the altar-stair. I hear thy voice and vow,</l>
+      <l n="414">Perplexed, uncertain, since thou art out of sight,</l>
+      <l n="415">As he, in his swooning ears, the choir’s amen.</l>
+      <l n="416">Belovëd, dost thou love? or did I see all</l>
+      <l n="417">The glory as I dreamed, and fainted when</l>
+      <l n="418">Too vehement light dilated my ideal,</l>
+      <l n="419">For my soul’s eyes? Will that light come again,</l>
+      <l n="420">As now these tears come—falling hot and real?</l>
+   </lg>
+
+   <head>XXXI</head>
+   <lg type="sonnet">
+      <l n="421">Thou comest! all is said without a word.</l>
+      <l n="422">I sit beneath thy looks, as children do</l>
+      <l n="423">In the noon-sun, with souls that tremble through</l>
+      <l n="424">Their happy eyelids from an unaverred</l>
+      <l n="425">Yet prodigal inward joy. Behold, I erred</l>
+      <l n="426">In that last doubt! and yet I cannot rue</l>
+      <l n="427">The sin most, but the occasion—that we two</l>
+      <l n="428">Should for a moment stand unministered</l>
+      <l n="429">By a mutual presence. Ah, keep near and close,</l>
+      <l n="430">Thou dove-like help! and when my fears would rise,</l>
+      <l n="431">With thy broad heart serenely interpose:</l>
+      <l n="432">Brood down with thy divine sufficiencies</l>
+      <l n="433">These thoughts which tremble when bereft of those,</l>
+      <l n="434">Like callow birds left desert to the skies.</l>
+   </lg>
+
+   <head>XXXII</head>
+   <lg type="sonnet">
+      <l n="435">The first time that the sun rose on thine oath</l>
+      <l n="436">To love me, I looked forward to the moon</l>
+      <l n="437">To slacken all those bonds which seemed too soon</l>
+      <l n="438">And quickly tied to make a lasting troth.</l>
+      <l n="439">Quick-loving hearts, I thought, may quickly loathe;</l>
+      <l n="440">And, looking on myself, I seemed not one</l>
+      <l n="441">For such man’s love!—more like an out-of-tune</l>
+      <l n="442">Worn viol, a good singer would be wroth</l>
+      <l n="443">To spoil his song with, and which, snatched in haste,</l>
+      <l n="444">Is laid down at the first ill-sounding note.</l>
+      <l n="445">I did not wrong myself so, but I placed</l>
+      <l n="446">A wrong on thee. For perfect strains may float</l>
+      <l n="447">’Neath master-hands, from instruments defaced,—</l>
+      <l n="448">And great souls, at one stroke, may do and doat.</l>
+   </lg>
+
+   <head>XXXIII</head>
+   <lg type="sonnet">
+      <l n="449">Yes, call me by my pet-name! let me hear</l>
+      <l n="450">The name I used to run at, when a child,</l>
+      <l n="451">From innocent play, and leave the cowslips plied,</l>
+      <l n="452">To glance up in some face that proved me dear</l>
+      <l n="453">With the look of its eyes. I miss the clear</l>
+      <l n="454">Fond voices which, being drawn and reconciled</l>
+      <l n="455">Into the music of Heaven’s undefiled,</l>
+      <l n="456">Call me no longer. Silence on the bier,</l>
+      <l n="457">While I call God—call God!—so let thy mouth</l>
+      <l n="458">Be heir to those who are now exanimate.</l>
+      <l n="459">Gather the north flowers to complete the south,</l>
+      <l n="460">And catch the early love up in the late.</l>
+      <l n="461">Yes, call me by that name,—and I, in truth,</l>
+      <l n="462">With the same heart, will answer and not wait.</l>
+   </lg>
+
+   <head>XXXIV</head>
+   <lg type="sonnet">
+      <l n="463">With the same heart, I said, I’ll answer thee</l>
+      <l n="464">As those, when thou shalt call me by my name—</l>
+      <l n="465">Lo, the vain promise! is the same, the same,</l>
+      <l n="466">Perplexed and ruffled by life’s strategy?</l>
+      <l n="467">When called before, I told how hastily</l>
+      <l n="468">I dropped my flowers or brake off from a game.</l>
+      <l n="469">To run and answer with the smile that came</l>
+      <l n="470">At play last moment, and went on with me</l>
+      <l n="471">Through my obedience. When I answer now,</l>
+      <l n="472">I drop a grave thought, break from solitude;</l>
+      <l n="473">Yet still my heart goes to thee—ponder how—</l>
+      <l n="474">Not as to a single good, but all my good!</l>
+      <l n="475">Lay thy hand on it, best one, and allow</l>
+      <l n="476">That no child’s foot could run fast as this blood.</l>
+   </lg>
+
+   <head>XXXV</head>
+   <lg type="sonnet">
+      <l n="477">If I leave all for thee, wilt thou exchange</l>
+      <l n="478">And be all to me? Shall I never miss</l>
+      <l n="479">Home-talk and blessing and the common kiss</l>
+      <l n="480">That comes to each in turn, nor count it strange,</l>
+      <l n="481">When I look up, to drop on a new range</l>
+      <l n="482">Of walls and floors, home than this?</l>
+      <l n="483">Nay, wilt thou fill that place by me which is</l>
+      <l n="484">Filled by dead eyes too tender to know change</l>
+      <l n="485">That’s hardest. If to conquer love, has tried,</l>
+      <l n="486">To conquer grief, tries more, as all things prove,</l>
+      <l n="487">For grief indeed is love and grief beside.</l>
+      <l n="488">Alas, I have grieved so I am hard to love.</l>
+      <l n="489">Yet love me—wilt thou? Open thy heart wide,</l>
+      <l n="490">And fold within, the wet wings of thy dove.</l>
+   </lg>
+
+   <head>XXXVI</head>
+   <lg type="sonnet">
+      <l n="491">When we met first and loved, I did not build</l>
+      <l n="492">Upon the event with marble. Could it mean</l>
+      <l n="493">To last, a love set pendulous between</l>
+      <l n="494">Sorrow and sorrow? Nay, I rather thrilled,</l>
+      <l n="495">Distrusting every light that seemed to gild</l>
+      <l n="496">The onward path, and feared to overlean</l>
+      <l n="497">A finger even. And, though I have grown serene</l>
+      <l n="498">And strong since then, I think that God has willed</l>
+      <l n="499">A still renewable fear . . . O love, O troth . . .</l>
+      <l n="500">Lest these enclaspëd hands should never hold,</l>
+      <l n="501">This mutual kiss drop down between us both</l>
+      <l n="502">As an unowned thing, once the lips being cold.</l>
+      <l n="503">And Love, be false! if he, to keep one oath,</l>
+      <l n="504">Must lose one joy, by his life’s star foretold.</l>
+   </lg>
+
+   <head>XXXVII</head>
+   <lg type="sonnet">
+      <l n="505">Pardon, oh, pardon, that my soul should make</l>
+      <l n="506">Of all that strong divineness which I know</l>
+      <l n="507">For thine and thee, an image only so</l>
+      <l n="508">Formed of the sand, and fit to shift and break.</l>
+      <l n="509">It is that distant years which did not take</l>
+      <l n="510">Thy sovranty, recoiling with a blow,</l>
+      <l n="511">Have forced my swimming brain to undergo</l>
+      <l n="512">Their doubt and dread, and blindly to forsake</l>
+      <l n="513">Thy purity of likeness and distort</l>
+      <l n="514">Thy worthiest love to a worthless counterfeit.</l>
+      <l n="515">As if a shipwrecked Pagan, safe in port,</l>
+      <l n="516">His guardian sea-god to commemorate,</l>
+      <l n="517">Should set a sculptured porpoise, gills a-snort</l>
+      <l n="518">And vibrant tail, within the temple-gate.</l>
+   </lg>
+
+   <head>XXXVIII</head>
+   <lg type="sonnet">
+      <l n="519">First time he kissed me, he but only kissed</l>
+      <l n="520">The fingers of this hand wherewith I write;</l>
+      <l n="521">And ever since, it grew more clean and white.</l>
+      <l n="522">Slow to world-greetings, quick with its “O, list,”</l>
+      <l n="523">When the angels speak. A ring of amethyst</l>
+      <l n="524">I could not wear here, plainer to my sight,</l>
+      <l n="525">Than that first kiss. The second passed in height</l>
+      <l n="526">The first, and sought the forehead, and half missed,</l>
+      <l n="527">Half falling on the hair. O beyond meed!</l>
+      <l n="528">That was the chrism of love, which love’s own crown,</l>
+      <l n="529">With sanctifying sweetness, did precede</l>
+      <l n="530">The third upon my lips was folded down</l>
+      <l n="531">In perfect, purple state; since when, indeed,</l>
+      <l n="532">I have been proud and said, “My love, my own.”</l>
+   </lg>
+
+   <head>XXXIX</head>
+   <lg type="sonnet">
+      <l n="533">Because thou hast the power and own’st the grace</l>
+      <l n="534">To look through and behind this mask of me,</l>
+      <l n="535">(Against which, years have beat thus blanchingly,</l>
+      <l n="536">With their rains,) and behold my soul’s true face,</l>
+      <l n="537">The dim and weary witness of life’s race,—</l>
+      <l n="538">Because thou hast the faith and love to see,</l>
+      <l n="539">Through that same soul’s distracting lethargy,</l>
+      <l n="540">The patient angel waiting for a place</l>
+      <l n="541">In the new Heavens,—because nor sin nor woe,</l>
+      <l n="542">Nor God’s infliction, nor death’s neighbourhood,</l>
+      <l n="543">Nor all which others viewing, turn to go,</l>
+      <l n="544">Nor all which makes me tired of all, self-viewed,—</l>
+      <l n="545">Nothing repels thee, . . . Dearest, teach me so</l>
+      <l n="546">To pour out gratitude, as thou dost, good!</l>
+   </lg>
+      
+   <head>XL</head>
+   <lg type="sonnet">
+      <l n="547">Oh, yes! they love through all this world of ours!</l>
+      <l n="548">I will not gainsay love, called love forsooth:</l>
+      <l n="549">I have heard love talked in my early youth,</l>
+      <l n="550">And since, not so long back but that the flowers</l>
+      <l n="551">Then gathered, smell still. Mussulmans and Giaours</l>
+      <l n="552">Throw kerchiefs at a smile, and have no ruth</l>
+      <l n="553">For any weeping. Polypheme’s white tooth</l>
+      <l n="554">Slips on the nut if, after frequent showers,</l>
+      <l n="555">The shell is over-smooth,—and not so much</l>
+      <l n="556">Will turn the thing called love, aside to hate</l>
+      <l n="557">Or else to oblivion. But thou art not such</l>
+      <l n="558">A lover, my Belovëd! thou canst wait</l>
+      <l n="559">Through sorrow and sickness, to bring souls to touch,</l>
+      <l n="560">And think it soon when others cry “Too late.”</l>
+   </lg>
+
+   <head>XLI</head>
+   <lg type="sonnet">
+      <l n="561">I thank all who have loved me in their hearts,</l>
+      <l n="562">With thanks and love from mine. Deep thanks to all</l>
+      <l n="563">Who paused a little near the prison-wall</l>
+      <l n="564">To hear my music in its louder parts</l>
+      <l n="565">Ere they went onward, each one to the mart’s</l>
+      <l n="566">Or temple’s occupation, beyond call.</l>
+      <l n="567">But thou, who, in my voice’s sink and fall</l>
+      <l n="568">When the sob took it, thy divinest Art’s</l>
+      <l n="569">Own instrument didst drop down at thy foot</l>
+      <l n="570">To harken what I said between my tears, . . .</l>
+      <l n="571">Instruct me how to thank thee! Oh, to shoot</l>
+      <l n="572">My soul’s full meaning into future years,</l>
+      <l n="573">That they should lend it utterance, and salute</l>
+      <l n="574">Love that endures, from life that disappears!</l>
+   </lg>
+
+   <head>XLII</head>
+   <lg type="sonnet">
+      <l n="575">My future will not copy fair my past—</l>
+      <l n="576">I wrote that once; and thinking at my side</l>
+      <l n="577">My ministering life-angel justified</l>
+      <l n="578">The word by his appealing look upcast</l>
+      <l n="579">To the white throne of God, I turned at last,</l>
+      <l n="580">And there, instead, saw thee, not unallied</l>
+      <l n="581">To angels in thy soul! Then I, long tried</l>
+      <l n="582">By natural ills, received the comfort fast,</l>
+      <l n="583">While budding, at thy sight, my pilgrim’s staff</l>
+      <l n="584">Gave out green leaves with morning dews impearled.</l>
+      <l n="585">I seek no copy now of life’s first half:</l>
+      <l n="586">Leave here the pages with long musing curled,</l>
+      <l n="587">And write me new my future’s epigraph,</l>
+      <l n="588">New angel mine, unhoped for in the world!</l>
+   </lg>
+
+   <head>XLIII</head>
+   <lg type="sonnet">
+      <l n="589">How do I love thee? Let me count the ways.</l>
+      <l n="590">I love thee to the depth and breadth and height</l>
+      <l n="591">My soul can reach, when feeling out of sight</l>
+      <l n="592">For the ends of Being and ideal Grace.</l>
+      <l n="593">I love thee to the level of everyday’s</l>
+      <l n="594">Most quiet need, by sun and candlelight.</l>
+      <l n="595">I love thee freely, as men strive for Right;</l>
+      <l n="596">I love thee purely, as they turn from Praise.</l>
+      <l n="597">I love thee with the passion put to use</l>
+      <l n="598">In my old griefs, and with my childhood’s faith.</l>
+      <l n="599">I love thee with a love I seemed to lose</l>
+      <l n="600">With my lost saints,—I love thee with the breath,</l>
+      <l n="601">Smiles, tears, of all my life!—and, if God choose,</l>
+      <l n="602">I shall but love thee better after death.</l>
+   </lg>
+
+   <head>XLIV</head>
+   <lg type="sonnet">
+      <l n="603">Belovëd, thou hast brought me many flowers</l>
+      <l n="604">Plucked in the garden, all the summer through,</l>
+      <l n="605">And winter, and it seemed as if they grew</l>
+      <l n="606">In this close room, nor missed the sun and showers.</l>
+      <l n="607">So, in the like name of that love of ours,</l>
+      <l n="608">Take back these thoughts which here unfolded too,</l>
+      <l n="609">And which on warm and cold days I withdrew</l>
+      <l n="610">From my heart’s ground. Indeed, those beds and bowers</l>
+      <l n="611">Be overgrown with bitter weeds and rue,</l>
+      <l n="612">And wait thy weeding; yet here’s eglantine,</l>
+      <l n="613">Here’s ivy!—take them, as I used to do</l>
+      <l n="614">Thy flowers, and keep them where they shall not pine.</l>
+      <l n="615">Instruct thine eyes to keep their colours true,</l>
+      <l n="616">And tell thy soul, their roots are left in mine.</l>
+   </lg>
+         </div>
+ </body>
+
+
+
+   </text>
+</TEI>
+
+
