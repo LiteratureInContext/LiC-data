@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0"  xml:id="bradstreet-dialogue">
+    
+    <teiHeader> 
+        <fileDesc>
+            <titleStmt>
+                <title>"A Dialogue between Old England and New"</title>
+                <author>
+                    <persName type="lcnaf" key="n79145303">
+                        <name>
+                            <forename>Anne</forename>
+                            <surname>Bradstreet</surname>
+                        </name>
+                    </persName>
+                    
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB" >
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Staff and Research Assistants at The University of Virginia</name>
+                    <name>John O'Brien</name>
+                    <name>Sara Brunstetter</name>
+                </respStmt>
+                    <sponsor/>
+                    <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>   <biblStruct>
+                <analytic><title>"A Dialogue Between Old England and New"</title></analytic>
+                <monogr>
+                    <author>
+                        <persName type="lcnaf" key="n79145303">
+                            <name>
+                                <forename>Anne</forename>
+                                <surname>Bradstreet</surname>
+                            </name>
+                        </persName>
+                    </author>
+                    <title type="main">Several Poems Compiled with Great Variety of Wit and Learning</title>
+                    
+                    <imprint>
+                        <pubPlace>
+                            <placeName key="7013445">Boston</placeName>
+                        </pubPlace>
+                        <publisher>John Foster</publisher>
+                        <date when="1678">1678</date>
+                        <note resp="editors.xml#JOB">
+                            Our texts are taken from the <ref target="http://name.umdl.umich.edu/A29149.0001.001">Text Creation Partnership's digital edition of <hi rend="italic">Several poems compiled with great variety of wit and learning</hi></ref> published in Boston in 1678. This text is sometimes referred to by its alternate title, and the sobriquet given to Anne Bradstreet, "The Tenth Muse". Title page drawn from the University of Pennsylvania's <hi rend="italic">Celebration of Women Writers</hi>.</note>
+                    </imprint>    
+                    <extent>pp 45-48</extent>
+                </monogr>
+            </biblStruct>
+            </sourceDesc>        
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="poem">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="prepared"/> <!-- I would say this is unknown -->
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7014203">New England</name> 
+                    <time from="1600" to="1700">Seventeenth Century</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        <encodingDesc>
+            <!-- BEGINS Encoding Description -->
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, curated, and marked-up selection of primary
+                    sources relevant to the study and the teaching of British and American literature of
+                    the 18th century. This project is funded by the National Endowment for the Humanities
+                    and developed by faculty at The University of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                        not. Where pages break in the middle of a word, the complete word has been
+                        indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        
+      
+        
+    </teiHeader>
+    <!--TEI Header Ends -->
+    
+    
+    <text>
+        <front>
+            <pb n="[Title Page]" facs="pageImages/bradstreet_TP.jpeg"/>
+            <titlePage>
+                <titlePart>SEVERAL<lb/>
+                    
+                    POEMS<lb/>
+                    
+                    Compiled with great variety of Wit and<lb/>
+                    Learning, full of Delight;<lb/>
+                    Wherein especially is contained a compleat<lb/>
+                    Discourse, and Description of<lb/>
+                    
+                    The Four {	ELEMENTS<lb/>
+                    CONSTITUTIONS,<lb/>
+                    AGES of Man,<lb/>
+                    SEASONS of the Year.<lb/><lb/>
+                    Together with an exact Epitome of<lb/>
+                    the three first <hi rend="italic">Monarchyes</hi><lb/><lb/>
+                    
+                    Viz, The {	ASSYRIAN,<lb/>
+                    PERSIAN,<lb/>
+                    GRECIAN.<lb/>
+                    <hi rend="italic">And beginning of the</hi> Romane Common-wealth<lb/>
+                    <hi rend="italic">to the end of their last King:</hi><lb/>
+                    
+                    With diverse other pleasant  &amp; serious <hi rend="italic">Poems</hi>,<lb/>
+                    
+                    By a Gentlewoman in <hi rend="italic">New-England</hi>.<lb/>
+                    
+                    <hi rend="italic">The second Edition, Corrected by the Author,<lb/>
+                    and enlarged by an Addition of several other<lb/>
+                    Poems found amongst her Papers<lb/>
+                    after her Death.</hi><lb/>
+                </titlePart>
+                <docImprint>
+                    <pubPlace><hi rend="italic">Boston</hi>, </pubPlace><publisher>Printed by <hi rend="italic">John Foster</hi>,</publisher> <docDate>1678.</docDate></docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <div type="poem">
+<pb n="192"/>
+<head>
+A Dialogue between Old
+<hi rend="italic">
+England
+</hi>
+and New; concerning their present Troubles,
+<ref target="Troubles_" corresp="Troubles"><hi rend="italic">Anno,</hi>
+    1642.</ref><note xml:id="Troubles" target="Troubles_">1642 marked the start of the English Civil War, a long and violent power conflict between the Royalist forces loyal to the Start monarchy headed by Charles I, and Parliamentary forces. The War would eventually end with the defeat of the Royalists and the execution of Charles, which took place in 1649. At the time of the writing of this poem (which might not have been exactly in 1642, but was probably pretty close to it), the outcome was undecided, but the fact that England had fallen into civil conflict was already reason for lamentation.</note>
+</head>
+                <lb/>
+<sp>
+<speaker>New-England.</speaker>
+<l>ALas dear Mother, fairest Queen and best,</l>
+<l>With honour, wealth, and peace, happy and blest;</l>
+<l>What ails thee hang thy head,  &amp; cross thine arms?</l>
+<l>And sit i'th' dust, to sigh these sad alarms?</l>
+<l>What deluge of new woes thus over-whelme</l>
+<l>The glories of thy ever famous Realme?</l>
+<l>What means this wailing tone, this mournful guise?</l>
+<l>Ah, tell thy daughter, she may sympathize.</l>
+</sp>
+<sp>
+<speaker>Old England.</speaker>
+<l>Art ignorant indeed of these my woes?</l>
+<l>Or must my forced tongue these griefs disclose?</l>
+<l>And must my self dissect my tatter'd state,</l>
+<l>Which 'mazed Christendome stands wondring at?</l>
+<l>And thou a Child, a Limbe and dost not feel</l>
+<l>My fainting weakned body now to reel?</l>
+<l>
+<pb n="193"/>
+This Physick purging potion, I have taken,
+</l>
+<l>Will bring consumption, or an Ague quaking,</l>
+<l>Unless some Cordial, thou fetch from high,</l>
+<l>Which present help may ease my malady.</l>
+<l>
+If I decease, dost think thou shalt survive?
+</l>
+<l>Or by my wasting state dost think to thrive?</l>
+<l>Then weigh our case, if 't be not justly sad;</l>
+<l>Let me lament alone, while thou art glad.</l>
+</sp>
+<sp>
+<speaker>New-England.</speaker>
+<l>And thus (alas) your state you much deplore</l>
+<l>In general terms, but will not say wherefore:</l>
+<l>What medicine shall I seek to cure this woe,</l>
+<l>If th' wound so dangerous I may not know.</l>
+<l>But you perhaps, would have me ghess it out:</l>
+<l>
+What hath some
+<hi rend="italic">
+Hengist
+</hi>
+like that
+<hi rend="italic">Saxon</hi>
+stout
+</l>
+<l>By fraud or force usurp'd thy flowring crown,</l>
+<l>
+Or by tempestuous warrs thy fields trod down?
+</l>
+<l>
+Or hath
+<hi rend="italic">Canutus,</hi>
+that brave valiant
+<hi>Dane</hi>
+</l>
+<l>The Regal peacefull Scepter from thee tane?</l>
+<l>
+Or is't a
+<hi>Norman,</hi>
+whose victorious hand
+</l>
+<l>With English blood bedews thy conquered land?</l>
+<l>Or is't Intestine warrs that thus offend?</l>
+<l>
+Do
+<hi rend="italic">Maud</hi>
+and
+<hi rend="italic">Stephen</hi>
+for the crown contend?
+</l>
+<l>Do Barons rise and side against their King,</l>
+<l>And call in foraign aid to help the thing?</l>
+<l>
+Must
+<hi rend="italic">Edward</hi>
+be depos'd? or is't the hour
+</l>
+<l>
+That second
+<hi rend="italic">Richard</hi>
+must be clapt i'th tower?
+</l>
+<l>Or is't the fatal jarre, again begun</l>
+<l>That from the red white pricking roses sprung?</l>
+<l>
+<pb n="194"/>
+Must
+<hi rend="italic">Richmonds</hi>
+aid, the Nobles now implore?
+</l>
+<l>To come and break the Tushes of the Boar,</l>
+<l>If none of these dear Mother, what's your woe?</l>
+<l>
+Pray do you fear
+<hi rend="italic">Spains</hi>
+bragging
+<hi rend="italic">Armado</hi>
+?
+</l>
+<l>
+Doth your Allye, fair
+<hi rend="italic">France,</hi>
+conspire your wrack,
+</l>
+<l>
+Or do the
+<hi rend="italic">Scots</hi>
+play false, behind your back?
+</l>
+<l>
+Doth
+<hi rend="italic">Holland</hi>
+quit you ill for all your love?
+</l>
+<l>Whence is the storm from Earth or Heaven above?</l>
+<l>Is't drought, is't famine, or is't pestilence?</l>
+<l>Dost feel the smart, or fear the Consequence?</l>
+<l>Your humble Child intreats you, shew your grief,</l>
+<l>Though Arms, nor Purse she hath for your relief,</l>
+<l>
+Such is her poverty:
+yet shall be found
+</l>
+<l>A Suppliant for your help, as she is bound.</l>
+</sp>
+<sp>
+<speaker>Old England.</speaker>
+<l>I must confess some of those sores you name,</l>
+<l>My beauteous body at this present maime;</l>
+<l>But forreign foe, nor feigned friend I fear,</l>
+<l>
+For they have work enough (thou knowst) else-
+where
+</l>
+<l>
+Nor is it
+<hi rend="italic">Alcies</hi>
+Son, nor
+<hi rend="italic">Henryes</hi>
+daughter;
+</l>
+<l>Whose proud contention cause this slaughter,</l>
+<l>
+Nor Nobles siding, to make
+<hi rend="italic">John</hi>
+no King,
+</l>
+<l>French Jews unjustly to the Crown to bring;</l>
+<l>
+No
+<hi rend="italic">Edward, Richard,</hi>
+to lose rule and life,
+</l>
+<l>
+Nor no
+<hi rend="italic">Lancastrians</hi>
+to renew old strife:
+</l>
+<l>
+No Duke of
+<hi rend="italic">
+York,
+</hi>
+nor Earl of
+<hi rend="italic">March</hi>
+to soyle
+</l>
+<l>Their hands in kindreds blood whom they did foil</l>
+<l>No crafty Tyrant now usurps the Seat.</l>
+<l>Who Nephews slew that so he might be great;</l>
+<l>
+<pb n="195"/>
+No need of
+<hi rend="italic">Tudor,</hi>
+Roses to unite,
+</l>
+<l>None knows which is the red, or which the white;</l>
+<l>
+<hi rend="italic">Spains</hi>
+braving Fleet a second time is sunk,
+</l>
+<l>
+<hi rend="italic">France</hi>
+knows how oft my fury she hath drunk:
+</l>
+<l>
+By
+<hi rend="italic">Edward</hi>
+third and
+<hi rend="italic">Henry</hi>
+fifth of fame.
+</l>
+<l>Her Lillies in mine Arms avouch the same.</l>
+<l>
+My Sister
+<hi rend="italic">Scotland</hi>
+hurts me now no more.
+</l>
+<l>Though she hath been injurious heretofore;</l>
+<l>
+What
+<hi rend="italic">Holland</hi>
+is I am in some suspence?
+</l>
+<l>But trust not much unto his excellence.</l>
+<l>For wants, sure some I feel, but more I fear,</l>
+<l>And for the Pestilence, who knows how near;</l>
+<l>Famine and Plague, two Sisters of the Sword,</l>
+<l>Destruction to a Land, doth soon afford:</l>
+<l>They're for my punishment ordain'd on high,</l>
+<l>Unless our tears prevent it speedily.</l>
+<l>But yet I Answer not what you demand.</l>
+<l>To shew the grievance of my troubled Land?</l>
+<l>Before I tell th' Effect, I'le shew the Cause</l>
+<l>Which are my sins the breach of sacred Laws,</l>
+<l>Idolatry supplanter of a Nation,</l>
+<l>With foolish Superstitious Adoration,</l>
+<l>Are lik'd and countenanc'd by men of might,</l>
+<l>
+The Gospel troden down and hath no right:
+</l>
+<l>Church Offices were sold and bought for gain,</l>
+<l>
+That Pope had hope to find,
+<hi rend="italic">Rome</hi>
+here again,
+</l>
+<l>For Oaths and Blasphemies, did ever Ear.</l>
+<l>
+From
+<hi rend="italic">Belzebub</hi>
+himself such language hear;
+</l>
+<l>What scorning of the Saints of the most high?</l>
+<l>What injuries did daily on them lye?</l>
+<l>
+<pb n="196"/>
+What false reports, what nick-names did they take
+</l>
+<l>Not for their own, but for their Masters sake?</l>
+<l>And thou poor soul, wert jeer'd among the rest,</l>
+<l>Thy flying for the truth was made a jest.</l>
+<l>For Sabbath-breaking, and for drunkenness,</l>
+<l>Did ever land profaness more express?</l>
+<l>From crying blood yet cleansed am not I,</l>
+<l>Martyres and others, dying causelesly.</l>
+<l>
+How many princely heads on blocks laid down
+</l>
+<l>For nought but title to a fading crown?</l>
+<l>'Mongst all the crueltyes by great ones done</l>
+<l>
+Of
+<hi rend="italic">Edwards</hi>
+youths, and
+<hi rend="italic">Clarence</hi>
+hapless son,
+</l>
+<l>
+O
+<hi rend="italic">Jane</hi>
+why didst thou dye in flowring prime?
+</l>
+<l>Because of royal stem, that was thy crime.</l>
+<l>For bribery Adultery and lyes.</l>
+<l>
+Where is the nation, I can't parallize.
+</l>
+<l>With usury, extortion and oppression,</l>
+<l>
+These be the
+<hi rend="italic">Hydraes</hi>
+of my stout transgression.
+</l>
+<l>These be the bitter fountains, heads and roots,</l>
+<l>Whence flow'd the source, the sprigs, the boughs  &amp; fruits</l>
+<l>Of more then thou canst hear or I relate,</l>
+<l>That with high hand I still did perpetrate:</l>
+<l>For these were threatned the wofull day,</l>
+<l>I mockt the Preachers, put it far away;</l>
+<l>The Sermons yet upon Record do stand</l>
+<l>That cri'd destruction to my wicked land:</l>
+<l>I then believ'd not, now I feel and see,</l>
+<l>The plague of stubborn incredulity.</l>
+<l>Some lost their livings, some in prison pent,</l>
+<l>Some fin'd from house  &amp; friends to exile went.</l>
+<l>
+<pb n="197"/>
+Their silent tongues to heaven did vengeance cry.
+</l>
+<l>Who saw their wrongs  &amp; hath judg'd righteously</l>
+<l>And will repay it seven-fold in my lap:</l>
+<l>
+This is fore-runner of my Afterclap.
+</l>
+<l>Nor took I warning by my neighbours falls,</l>
+<l>
+I saw sad
+<hi rend="italic">Germanyes</hi>
+dismantled walls,
+</l>
+<l>I saw her people famish'd, Nobles slain,</l>
+<l>Her fruitfull land, a barren Heath remain.</l>
+<l>I saw unmov'd, her Armyes foil'd and fled,</l>
+<l>Wives forc'd, babes toss'd, her houses calcined.</l>
+<l>
+I saw strong
+<hi rend="italic">Rochel</hi>
+yielded to her Foe,
+</l>
+<l>Thousands of starved Christians there also.</l>
+<l>
+I saw poor
+<hi rend="italic">Ireland</hi>
+bleeding out her last,
+</l>
+<l>Such crueltyes as all reports have past;</l>
+<l>Mine heart obdurate stood not yet agast.</l>
+<l>Now sip I of that cup, and just't may be</l>
+<l>The bottome dreggs reserved are for me.</l>
+</sp>
+<sp>
+<speaker>New-England.</speaker>
+<l>To all you've said, sad Mother I assent.</l>
+<l>Your fearfull sins great cause there's to lament,</l>
+<l>My guilty hands in part, hold up with you,</l>
+<l>A Sharer in your punishment's my due.</l>
+<l>But all you say amounts to this effect,</l>
+<l>Not what you feel, but what you do expect,</l>
+<l>Pray in plain terms, what is your present grief?</l>
+<l>Then let's joyn heads  &amp; hearts for your relief.</l>
+</sp>
+<sp>
+<pb n="198" facs="tcp:54553:107"/>
+<speaker>Old England.</speaker>
+<l>Well to the matter then, there's grown of late</l>
+<l>'Twixt King and Peers a Question of State,</l>
+<l>Which is the chief, the Law, or else the King.</l>
+<l>One said, it's he, the other no such thing.</l>
+<l>'Tis said, my beter part in Parliament</l>
+<l>To ease my grouning Land, shew'd their intent,</l>
+<l>To crush the proud, and right to each man deal.</l>
+<l>To help the Church, and stay the Common-weal.</l>
+<l>So many Obstacles came in their way,</l>
+<l>As puts me to a stand what I should say;</l>
+<l>Old customes, new Prerogatives stood on,</l>
+<l>
+Had theyot held Law fast, all had been gone:
+</l>
+<l>Which by their prudence stood them in such stead</l>
+<l>
+They took high
+<hi rend="italic">
+Strafford
+</hi>
+lower by the head.
+</l>
+<l>
+And to their
+<hi rend="italic">Laud</hi>
+be't spoke, they held i'th tower
+</l>
+<l>
+All
+<hi rend="italic">Englands</hi>
+Metropolitane that hour;
+</l>
+<l>This done, an act they would have passed fain,</l>
+<l>No Prelate should his Bishoprick retain;</l>
+<l>Here tugg'd they hard (indeed,) for all men saw</l>
+<l>
+This must be done by Gospel
+not by Law.
+</l>
+<l>Next the Militia they urged sore,</l>
+<l>This was deny'd, (I need not say wherefore)</l>
+<l>
+The King displeas'd at
+<hi rend="italic">York,</hi>
+himself absents,
+</l>
+<l>They humbly beg return, shew their intents;</l>
+<l>The writing, printing, posting too and fro,</l>
+<l>Shews all was done, I'le therefore let it go.</l>
+<l>But now I come to speak of my disaster,</l>
+<l>Contention grown, 'twixt Subjects  &amp; their Master;</l>
+<l>
+<pb n="199"/>
+They worded it so long, they fell to blows,
+</l>
+<l>That thousands lay on heaps, here bleeds my woes,</l>
+<l>I that no wars so many years have known,</l>
+<l>Am now destroy'd and slaught'red by mine own;</l>
+<l>
+But could the Field alone this strife decide,
+</l>
+<l>One Battel two or three I might abide:</l>
+<l>But these may be beginnings of more woe</l>
+<l>Who knows, but this may be my overthrow.</l>
+<l>Oh pity me in this sad perturbation,</l>
+<l>My plundred Towns, my houses devastation,</l>
+<l>My weeping Virgins and my young men slain;</l>
+<l>My wealthy trading fall'n, my dearth of grain.</l>
+<l>The seed-times come, but ploughman hath no hope</l>
+<l>Because he knows not, who shall inn his Crop:</l>
+<l>The poor they want their pay, their children bread,</l>
+<l>Their woful Mothers tears unpittied,</l>
+<l>If any pity in thy heart remain,</l>
+<l>Or any child-like love thou dost retain,</l>
+<l>For my relief, do what there lyes in thee,</l>
+<l>And recompence that good I've done to thee.</l>
+</sp>
+<sp>
+<speaker>New-England.</speaker>
+<l>Dear Mother cease complaints,  &amp; wipe your eyes,</l>
+<l>Shake off your dust, chear up, and now arise,</l>
+<l>You are my Mother Nurse, and I your flesh,</l>
+<l>Your sunken bowels gladly would refresh,</l>
+<l>Your griefs I pity, but soon hope to see,</l>
+<l>Out of your troubles much good fruit to be;</l>
+<l>To see those latter dayes of hop'd for good,</l>
+<l>Though now beclouded all with tears and blood:</l>
+<l>
+<pb n="200"/>
+After dark Popery the day did clear,
+</l>
+<l>But now the Sun in's brightness shall appear.</l>
+<l>Blest be the Nobles of thy noble Land,</l>
+<l>With ventur'd lives for Truths defence that stand.</l>
+<l>Blest be thy Commons, who for common good,</l>
+<l>And thy infringed Laws have boldly stood.</l>
+<l>Blest be thy Counties, who did aid thee still,</l>
+<l>With hearts and States to testifie their will.</l>
+<l>
+Blest be thy Preachers, who do chear thee on,
+</l>
+<l>
+O cry the Sword of God and
+<hi rend="italic">
+Gideon
+</hi>;
+</l>
+<l>
+And shall I not on them wish
+<hi rend="italic">
+Mero
+</hi>
+'s curse,
+</l>
+<l>That help thee not with prayers, Arms and purse?</l>
+<l>And for my self let miseries abound,</l>
+<l>If mindless of thy State I e're be found.</l>
+<l>These are the dayes the Churches foes to crush,</l>
+<l>To root out Popelings head, tail, branch and rush;</l>
+<l>
+Let's bring
+<hi rend="italic">Baals</hi>
+vestments forth to make a fire,
+</l>
+<l>Their Mytires, Surplices, and all their Tire,</l>
+<l>Copes, Rotchets, Crossiers, and such empty trash,</l>
+<l>And let their Names consume, but let the flash</l>
+<l>Light Christendome, and all the world to see</l>
+<l>
+We hate
+<hi rend="italic">Romes</hi>
+whore, with all her trumpery.
+</l>
+<l>
+Go on brave
+<hi rend="italic">Essex</hi>
+with a Loyal heart,
+</l>
+<l>Not false to King, nor to the better part;</l>
+<l>But those that hurt his people and his Crown,</l>
+<l>As duty binds, expel and tread them down.</l>
+<l>And ye brave Nobles chase away all fear,</l>
+<l>And to this hopeful Cause closely adhere;</l>
+<l>O Mother can you weep, and have such Peers,</l>
+<l>When they are gone, then drown your self in tears</l>
+<l>
+<pb n="201"/>
+If now you weep so much, that then no more
+</l>
+<l>The briny Ocean will o'reflow your shore.</l>
+<l>
+These, these are they I trust, with
+<hi rend="italic">Charles</hi>
+our King,
+</l>
+<l>Out of all mists such glorious dayes shall bring;</l>
+<l>That dazled eyes beholding much shall wonder</l>
+<l>At that thy setled peace, thy wealth and splendor.</l>
+<l>
+Thy Church and weal establish'd in such manner,
+</l>
+<l>That all shall joy, that thou display'dst thy Banner;</l>
+<l>And discipline erected so I trust,</l>
+<l>That nursing Kings shall come and lick thy dust:</l>
+<l>Then Justice shall in all thy Courts take place,</l>
+<l>Without respect of person, or of case;</l>
+<l>Then Bribes shall cease,  &amp; Suits shall not stick long</l>
+<l>Patience and purse of Clients oft to wrong:</l>
+<l>Then high Commissions shall fall to decay,</l>
+<l>And Pursivants, and Catchpoles want their pay.</l>
+<l>So shall thy happy Nation ever flourish,</l>
+<l>When truth  &amp; righteousnes they thus shall nourish</l>
+<l>When thus in peace, thine Armies brave send out,</l>
+<l>
+To sack proud
+<hi rend="italic">Rome,</hi>
+and all her Vassals rout;
+</l>
+<l>There let thy Name, thy fame, and glory shine,</l>
+<l>
+As did thine Ancestors in
+<hi rend="italic">Palestine</hi>:
+</l>
+<l>And let her spoyls full pay, with Interest be,</l>
+<l>Of what unjustly once she poll'd from thee.</l>
+<l>Of all the woes thou canst, let her be sped,</l>
+<l>And on her pour the vengeance threatned;</l>
+<l>Bring forth the Beast that rul'd the World with's beck,</l>
+<l>And tear his flesh,  &amp;c; set your feet on's neck;</l>
+<l>And make his filthy Den so desolate,</l>
+<l>To th' stonishment of all that knew his state:</l>
+<l>
+<pb n="202"/>
+This done with brandish'd Swords to
+<hi rend="italic">Turky</hi>
+goe,
+</l>
+<l>For then what is't, but English blades dare do,</l>
+<l>And lay her waste for so's the sacred Doom,</l>
+<l>
+And do to
+<hi rend="italic">Gog</hi>
+as thou hast done to
+<hi rend="italic">Rome.</hi>
+</l>
+<l>
+Oh
+<hi rend="italic">Abraham</hi>
+'s seed lift up your heads on high,
+</l>
+<l>For sure the day of your Redemption's nigh;</l>
+<l>The Scales shall fall from your long blinded eyes,</l>
+<l>And him you shall adore who now despise,</l>
+<l>Then fulness of the Nations in shall flow,</l>
+<l>And Jew and Gentile to one worship go;</l>
+<l>
+Then follows dayes of happiness and rest;
+</l>
+<l>Whose lot doth fall to live therein is blest:</l>
+<l>No Canaanite shall then be found i'th' Land,</l>
+<l>And holiness on horses bells shall stand.</l>
+<l>If this make way thereto, then sigh no more,</l>
+<l>But if at all, thou didst not see't before;</l>
+<l>Farewel dear Mother, rightest cause prevail,</l>
+<l>And in a while, you'le tell another tale.</l>
+</sp>
+                
+                
+            </div>
+        </body>
+    </text>
+    
+</TEI>
+
+
+
+
+
+
+
+
+
+
+
