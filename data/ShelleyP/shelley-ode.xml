@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shelley-ode">
+   
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Ode to the West Wind</title>
+            <author>
+                <persName type="lcnaf" key="n79054060">
+                 
+                  <name>
+                     
+                     <forename>Percy Bysshe</forename> 
+                     <surname>Shelley</surname>
+                  </name>
+              
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0001-6453-8721">
+                  <name ref="editors.xml#TH">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#JOB"
+                  >Students and Staff at the University of Virginia</name>
+              
+            </respStmt>
+
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
+               <addrLine>Address line 2</addrLine>
+               <addrLine>Address line 3</addrLine>
+               <addrLine>Address line 4</addrLine>
+               <addrLine>Email</addrLine>
+               <!-- cut unused or add additional addrLines -->
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title>"Ode to the West Wind"></title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Percy Bysshe</forename>
+                        <surname>Shelley</surname>
+                        
+                     </name>
+                  </author>
+
+                  <title>Prometheus Unbound: A Lyrical Drama, in Four Acts, With Other Poems</title>
+
+                  <imprint>
+                     <pubPlace>
+                         <placeName type="tgn" key="77011781"
+                           >London</placeName>
+                     </pubPlace>
+                     <publisher>C. and J. Ollier</publisher>
+                     <date when="1820">1820</date>
+                     <note>"Ode to the West Wind" was first printed in a volume entitled <hi rend="italic">Prometheus Unbound: A Lyrical Drama, in Four Acts, With Other Poems</hi>, published by the London publishing partnership of the brothers Charles and James Ollier. We have taken our edition and page images from the Google Books version of that first print edition. </note>
+                     
+                  </imprint>
+
+                 
+
+                  <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                  <biblScope>188-192</biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+        
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2024-02-19" who="editors.xml#JOB"
+            >created Literature in Context Edition</change>
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+     
+      <body>
+       
+         <div type="poem">
+            
+            
+         
+         </div>
+         <pb n="188"/>
+         
+         
+
+         <head type="title">ODE TO THE WEST WIND.<ref target="Ode_" corresp="Ode">*</ref> <note xml:id="Ode" target="Ode_" type="authorial"><p>*This poem was conceived and chiefly written in a wood that skirts the Arno, near Florence, and on a day when that tempestuous wind, whose temperature is at once mild and animating, was collecting the vapours which pour down the autumnal rains. They began, as I foresaw, at sunset with a violent tempest of hail and rain, attended by that magnificent thunder and lightning peculiar to the Cisalpine regions.</p>
+            <p>The phenomenon alluded to at the conclusion of the third stanza is well known to naturalists. The vegetation at the bottom of the sea, of rivers, and of lakes, sympathises with that of the land in the change of seasons, and is consequently influenced by the winds which announce it. [Author's note]</p></note></head>
+         <head> <ref target="Audio_" corresp="Audio">[Audio File]</ref><note xml:id="Audio" target="Audio_"><graphic url="https://lic-assets-staging.s3.amazonaws.com/shelley-ode/shelleyselectedpoems_03_shelley.mp3"></graphic>Librivox recording of "Ode to the West Wind," read by Leonard Wilson</note></head>
+          <div type="canto" n="1">
+              <head type="sub">I.</head>
+              <lg met="iambic pentameter">
+
+          <l n="1">O, wild West Wind, thou breath of Autumn's being,</l>
+                 <l n="2">Thou, from whose unseen presence the leaves dead</l>
+                 <l n="3">Are driven, like ghosts from an enchanter fleeing,</l></lg>
+
+             <pb n="189"/><lg>
+             <l n="4">Yellow, and black, and pale, and hectic red,</l>
+                <l n="5">Pestilence-stricken multitudes: O, thou,</l>
+                <l n="6">Who chariotest to their dark wintry bed</l></lg>
+
+             <lg><l n="7">The winged seeds, where they lie cold and low,</l>
+                <l n="8">Each like a corpse within its grave, until</l>
+                <l n="9">Thine azure sister of the spring shall blow</l></lg>
+
+             <lg><l n="10">Her clarion o'er the dreaming earth, and fill</l>
+                <l n="11">(Driving sweet buds like flocks to feed in air)</l>
+                <l n="12">With living hues and odours plain and hill:</l></lg>
+
+             <lg><l n="13">Wild Spirit, which art moving every where;</l>
+                <l n="14">Destroyer and preserver; hear, O, hear!</l></lg></div>
+
+                  <div type="canto" n="2">
+                      <head type="sub">II.</head>
+
+<lg>
+   <l n="15">Thou on whose stream, 'mid the steep sky's commotion,</l>
+   <l n="16">Loose clouds like earth's decaying leaves are shed,</l>
+   <l n="17">Shook from the tangled boughs of Heaven and Ocean,</l></lg>
+    <lg>
+       <l n="18">Angels of rain and lightning: there are spread</l>
+       <l n="19">On the blue surface of thine airy surge,</l>
+       <l n="20">Like the bright hair uplifted from the head</l></lg>
+        <lg>
+           <pb n="190"/>
+           <l n="21">Of some fierce Mænad, even from the dim verge</l>
+           <l n="22">Of the horizon to the zenith's height</l>
+           <l n="23">The locks of the approaching storm. Thou dirge</l></lg>
+            <lg>
+               <l n="24">Of the dying year, to which this closing night</l>
+               <l n="25">Will be the dome of a vast sepulchre,</l>
+               <l n="26">Vaulted with all thy congregated might</l></lg>
+
+                     <lg><l n="27">Of vapours, from whose solid atmosphere</l>
+                        <l n="28">Black rain, and fire, and hail will burst: O, hear!</l></lg></div>
+
+                      <div type="canto" n="3">
+                          <head type="sub">III.</head>
+
+                          <lg>
+                             <l n="29">Thou who didst waken from his summer dreams</l>
+                             <l n="30">The blue Mediterranean, where he lay,</l>
+                             <l n="31">Lulled by the coil of his crystalline streams,</l></lg>
+                              <lg>
+                                 <l n="32">Beside a pumice isle in Baiæ's bay,</l>
+                                 <l n="33">And saw in sleep old palaces and towers</l>
+                                 <l n="34">Quivering within the wave's intenser day,</l></lg>
+                                  <lg>
+                                     <l n="35">All overgrown with azure moss and flowers</l>
+                                     <l n="36">So sweet, the sense faints picturing them! Thou</l>
+                                     <l n="37">For whose path the Atlantic's level powers</l></lg>
+                                      <lg>
+                                         
+                                         <pb n="191"/>
+                                         <l n="38">Cleave themselves into chasms, while far below</l>
+                                         <l n="39">The sea-blooms and the oozy woods which wear</l>
+                                         <l n="40">The sapless foliage of the ocean, know</l></lg>
+
+                                          <lg>
+                                             <l n="41">Thy voice, and suddenly grow grey with fear,</l>
+                                             <l n="42">And tremble and despoil themselves: O, hear!</l></lg></div>
+
+                          <div type="canto" n="4">
+                              <head type="sub">IV.</head>
+
+                              <lg>
+                                 <l n="43">If I were a dead leaf thou mightest bear;</l>
+                                 <l n="44">If I were a swift cloud to fly with thee;</l>
+                                 <l n="45">A wave to pant beneath thy power, and share</l></lg>
+                                  <lg>
+                                     <l n="46">The impulse of thy strength, only less free</l>
+                                     <l n="47">Than thou, O, uncontroulable! If even</l>
+                                     <l n="48">I were as in my boyhood, and could be</l></lg>
+                                      <lg>
+                                         <l n="49">The comrade of thy wanderings over heaven,</l>
+                                         <l n="50">As then, when to outstrip thy skiey speed</l>
+                                         <l n="51">Scarce seemed a vision; I would ne'er have striven</l>
+                                         <l n="52">As thus with thee in prayer in my sore need.</l></lg>
+                             <lg><l n="53">Oh! lift me as a wave, a leaf, a cloud!</l>
+                                <l n="54">I fall upon the thorns of life! I bleed!</l></lg>
+                                                                                                                                                                                                                          <lg>
+                                                                                                                                                                                                                             <pb n="192"/> 
+                                                                                                                                                                                                                             <l n="55">A heavy weight of hours has chained and bowed</l>
+                                                                                                                                                                                                                             <l n="56">One too like thee: tameless, and swift, and proud.</l></lg></div>
+
+
+                                                                                                                                                                                                                          <div type="canto" n="5">
+                                                                                                                                                                                                                              <head type="sub">V.</head>
+
+
+                                                                                                                                                                                                                             <lg>                                                                                                                                                                                                      <l n="57">Make me thy lyre, even as the forest is:</l>
+                                                                                                                                                                                                                                <l n="58">What if my leaves are falling like its own!</l>
+                                                                                                                                                                                                                                <l n="59">The tumult of thy mighty harmonies</l></lg>
+
+                                                                                                                                                                                                                             <lg>                                                                                                                                                                                                       <l n="60">Will take from both a deep, autumnal tone,</l>
+                                                                                                                                                                                                                                <l n="61">Sweet though in sadness. Be thou, spirit fierce,</l>
+                                                                                                                                                                                                                                <l n="62">My spirit! Be thou me, impetuous one!</l></lg>
+
+                                                                                                                                                                                                                             <lg>                                                                                                                                                                                                          <l n="63">Drive my dead thoughts over the universe</l>
+                                                                                                                                                                                                                                <l n="64">Like withered leaves to quicken a new birth!</l>
+                                                                                                                                                                                                                                <l n="65">And, by the incantation of this verse,</l></lg>
+
+                                                                                                                                                                                                                             <lg>                                                                                                                                                                                                      <l n="66">Scatter, as from an unextinguished hearth</l>
+                                                                                                                                                                                                                                <l n="67">Ashes and sparks, my words among mankind!</l>
+                                                                                                                                                                                                                                <l n="68">Be through my lips to unawakened earth</l></lg>
+
+                                                                                                                                                                                                                             <lg>                                                                                                                                                                                                       <l n="69">The trumpet of a prophecy! O, wind,</l>
+                                                                                                                                                                                                                                <l n="70">If Winter comes, can Spring be far behind?</l></lg></div>
+       
+      </body>
+
+   </text>
+</TEI>
+
+
+

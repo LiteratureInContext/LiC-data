@@ -13,6 +13,7 @@
                   </name>
                </persName>
             </author>
+
             
             
             <editor>
@@ -20,26 +21,28 @@
                   <name ref="editors.xml#JOB">
                      <forename>John</forename>
                      <surname>O'Brien</surname>
+
                   </name>
                </persName>
             </editor>
             
-            <respStmt>
-               
+
+            <respStmt>               
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#StudStaff">Students and Staff of the University of
                   Virginia</name>
-               
+               <name ref="editors.xml#RR">Rachel Retica</name>
             </respStmt>
-            
-            
+
+
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
          </titleStmt>
-         
+
          <publicationStmt>
             <publisher>Literature in Context</publisher>
-            
+
+
             <address>
                <addrLine>University of Virginia Department of English</addrLine>
                <addrLine>P. O. Box 400121</addrLine>
@@ -49,23 +52,24 @@
                <addrLine>lic.open.anthology@gmail.com</addrLine>
             </address>
             <availability status="free">
-               
+
                <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
                   Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
                   License </licence>
             </availability>
          </publicationStmt>
-         
+
+
          <sourceDesc>
-            
+
             <biblStruct>
-               
+
                <analytic>
-                  
+
                   <title>"Holy Sonnet: Batter my heart, three person'd God"</title>
-                  
+
                </analytic>
-               
+
                <monogr>
                   <author>
                      <name>
@@ -73,9 +77,11 @@
                         <surname>Donne</surname>
                      </name>
                   </author>
+
                   
                   <title>Poems, by J. D., With Elegies on the Authors Death</title>
                   
+
                   <imprint>
                      <pubPlace>
                         <placeName type="tgn" key="7011781">London</placeName>
@@ -88,34 +94,41 @@
                         Donne's poems circulated in manuscript during his life time, and were not
                         issued in a print version until this edition, which came out after Donne's
                         death in 1632. The long "s" of the original has been modernized, but we have
-                        otherwise kept the original spelling. The title page has been sourced from <ref target="https://specialcollections.princeton.edu/2023/05/a-donne-deal/">Princeton University Special Collections</ref>.</note>
-                     
-                     
+
+                        otherwise kept the original spelling. The title page has been sourced from
+                           <ref
+                           target="https://specialcollections.princeton.edu/2023/05/a-donne-deal/"
+                           >Princeton University Special Collections</ref>.</note>
+
+
                   </imprint>
-                  
-                  
-                  
+
+
+
                   <extent/>
                   <biblScope>200</biblScope>
                   <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
-                  
+
                </monogr>
-               
+
             </biblStruct>
-            
+
          </sourceDesc>
-         
+
       </fileDesc>
-      
+
+
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
+
          
          <creation/>
          
          <textDesc n="poem">
             
+
             <channel mode="w">print</channel>
             <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
             <constitution type="single">single poem</constitution>
@@ -128,6 +141,7 @@
             <purpose type="entertain" degree="high"/>
             <!-- interpretation in the textDesc will be necessary -->
          </textDesc>
+
          
          <settingDesc>
             
@@ -142,6 +156,7 @@
          </settingDesc>
       </profileDesc>
       
+
       <encodingDesc>
          <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
          <projectDesc>
@@ -197,12 +212,27 @@
             </taxonomy>
          </classDecl>
       </encodingDesc>
-      
+
       <revisionDesc>
          <change when="2024-06-13" who="editors.xml#RR">Rachel Retica created LIC edition.</change>
       </revisionDesc>
    </teiHeader>
-   
+
+   <text>
+      <front>
+         <pb n="[TP]" facs="pageImages/Donne_poems_cover.jpg"/>
+         <titlePage>
+
+            <titlePart>POEMS,<lb/><hi rend="italic">By </hi>J. D[onne].<lb/>WITH<lb/>ELEGIES<lb/>ON
+               THE AUTHOR'S<lb/>Death.<lb/><lb/></titlePart>
+            <docImprint><pubPlace><placeName type="tgn" key="7011781"
+                  >LONDON.<lb/></placeName></pubPlace>
+               <publisher>Printed by <hi rend="italic">M. F. </hi>for [J]OHN MARRIOT,<lb/>and are to
+                  be sold at his shop in St <hi rend="italic">Dunstans</hi><lb/>Church-yard in <hi
+                     rend="italic">Fleet-street.
+               </hi></publisher><docDate>1633.</docDate></docImprint>
+
+
    <text>
       <front><pb n="[TP]" facs="pageImages/Donne_poems_cover.jpg"/>
          <titlePage>
@@ -212,27 +242,35 @@
                <publisher>Printed by <hi rend="italic">M. F. </hi>for [J]OHN MARRIOT,<lb/>and are to be sold at his shop in St <hi rend="italic">Dunstans</hi><lb/>Church-yard in <hi rend="italic">Fleet-street. </hi></publisher><docDate>1633.</docDate></docImprint>
             
             
+
          </titlePage>
       </front>
       <body>
          <div type="poem">
 
-               <head>X.</head>
+                  <head><ref target="numbering_" corresp="numbering">10. (XIV)</ref></head>
+               <note xml:id="numbering" target="numbering_" type="editorial" resp="editors.xml#RR">
+                  The first number comes from Helen Gardner's renumbering of the Sonnets in her 1952
+                  edition of <hi rend="italic">The Divine Poems</hi>, and the Roman numeral in
+                  parentheses retains the sequence given in editions printed from 1635 to 1669.
+               </note>
+            
             <l n="1">Batter my heart, three person'd God; for, you</l>
             <l n="2">As yet but knocke, breathe, shine, and seeke to mend;</l>
-            <l n="3">That I may rise, and stand, o'erthrow mee, 'and bend</l>
+            <l n="3">That I may rise, and stand, o'erthrow mee, and bend</l>
             <l n="4">Your force, to breake, blowe, burn and make me new,</l>
-            <l n="5">I, like an usurpt towne, to'another due,</l>
-            <l n="6">Labour to'admit you, but Oh, to no end,</l>
+            <l n="5">I, like an usurpt towne, to another due,</l>
+            <l n="6">Labour to admit you, but Oh, to no end,</l>
             <l n="7">Reason your viceroy in mee, mee should defend,</l>
             <l n="8">But is captiv'd, and proves weake or untrue,</l>
-            <l n="9">Yet dearely'I love you, and would be lov'd faine,</l>
+            <l n="9">Yet dearely I love you, and would be lov'd faine,</l>
             <l n="10">But am betroth'd unto your enemie,</l>
-            <l n="11">Divorce mee, 'untie, or breake that knot againe,</l>
+            <l n="11">Divorce mee, untie, or breake that knot againe,</l>
             <l n="12">Take mee to you, imprison mee, for I</l>
-            <l n="13">Except you'enthral mee, never shall be free,</l>
+            <l n="13">Except you enthral mee, never shall be free,</l>
             <l n="14">Nor ever chast, except you ravish mee.</l>
-            </div>
+         </div>
+
       </body>
    </text>
 </TEI>

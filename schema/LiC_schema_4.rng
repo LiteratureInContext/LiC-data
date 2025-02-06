@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar ns="http://www.tei-c.org/ns/1.0" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+<grammar ns="http://www.tei-c.org/ns/1.0" xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
   <start>
     <element name="TEI">
       <attribute>
@@ -363,13 +364,6 @@
                                 <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
                                 <data type="NCName"/>
                               </attribute>
-                              <oneOrMore>
-                                <choice>
-                                  <text/>
-                                  <ref name="note"/>
-                                  <ref name="ref"/>
-                                </choice>
-                              </oneOrMore>
                             </element>
                           </choice>
                         </optional>
@@ -377,6 +371,9 @@
                           <choice>
                             <ref name="bibl"/>
                             <ref name="lb"/>
+                            <text/>
+                            <ref name="note"/>
+                            <ref name="ref"/>
                           </choice>
                         </zeroOrMore>
                       </element>
@@ -400,6 +397,37 @@
         </optional>
         <ref name="body"/>
         <optional>
+          <element name="epigraph">
+            <optional>
+              <attribute>
+                <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+                <data type="NCName"/>
+              </attribute>
+            </optional>
+            <optional>
+              <ref name="cit"/>
+            </optional>
+            <optional>
+              <choice>
+                <ref name="quote"/>
+                <element name="q">
+                  <attribute>
+                    <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+                    <data type="NCName"/>
+                  </attribute>
+                </element>
+              </choice>
+            </optional>
+            <zeroOrMore>
+              <choice>
+                <ref name="bibl"/>
+                <ref name="lb"/>
+                <text/>
+                <ref name="note"/>
+                <ref name="ref"/>
+              </choice>
+            </zeroOrMore>
+          </element>
           <element name="back">
             <choice>
               <oneOrMore>
@@ -1148,17 +1176,17 @@
     <element name="graphic">
       <optional>
         <attribute name="alt">
-          <data type="string"></data>
+          <data type="string"/>
         </attribute>
       </optional>
       <optional>
         <attribute name="desc">
-          <data type="string"></data>
+          <data type="string"/>
         </attribute>
       </optional>
       <optional>
         <attribute name="source">
-          <data type="anyURI"></data>
+          <data type="anyURI"/>
         </attribute>
       </optional>
       <optional>
