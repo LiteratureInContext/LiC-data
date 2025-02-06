@@ -14,16 +14,19 @@
                </persName>
             </author>
 
-
+            
+            
             <editor>
-               <persName>
-                  <name ref="editors.xml#RR">
-                     <forename>Rachel</forename>
-                     <surname>Retica</surname>
+               <persName type="orcid" key="000000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+
                   </name>
                </persName>
             </editor>
             
+
             <respStmt>               
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#StudStaff">Students and Staff of the University of
@@ -38,6 +41,7 @@
 
          <publicationStmt>
             <publisher>Literature in Context</publisher>
+
 
             <address>
                <addrLine>University of Virginia Department of English</addrLine>
@@ -54,6 +58,7 @@
                   License </licence>
             </availability>
          </publicationStmt>
+
 
          <sourceDesc>
 
@@ -73,7 +78,9 @@
                      </name>
                   </author>
 
+                  
                   <title>Poems, by J. D., With Elegies on the Authors Death</title>
+                  
 
                   <imprint>
                      <pubPlace>
@@ -87,6 +94,7 @@
                         Donne's poems circulated in manuscript during his life time, and were not
                         issued in a print version until this edition, which came out after Donne's
                         death in 1632. The long "s" of the original has been modernized, but we have
+
                         otherwise kept the original spelling. The title page has been sourced from
                            <ref
                            target="https://specialcollections.princeton.edu/2023/05/a-donne-deal/"
@@ -109,14 +117,17 @@
 
       </fileDesc>
 
+
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
 
+         
          <creation/>
-
+         
          <textDesc n="poem">
+            
 
             <channel mode="w">print</channel>
             <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
@@ -131,18 +142,20 @@
             <!-- interpretation in the textDesc will be necessary -->
          </textDesc>
 
+         
          <settingDesc>
-
+            
             <setting>
                <name type="tgn" key="7011781">London, England</name>
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-
+               
                <time from="1600" to="1633">Early 17th Century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
             </setting>
-
+            
          </settingDesc>
       </profileDesc>
+      
 
       <encodingDesc>
          <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
@@ -220,18 +233,28 @@
                </hi></publisher><docDate>1633.</docDate></docImprint>
 
 
+   <text>
+      <front><pb n="[TP]" facs="pageImages/Donne_poems_cover.jpg"/>
+         <titlePage>
+            
+            <titlePart>POEMS,<lb/><hi rend="italic">By </hi>J. D[onne].<lb/>WITH<lb/>ELEGIES<lb/>ON THE AUTHOR'S<lb/>Death.<lb/><lb/></titlePart>
+            <docImprint><pubPlace><placeName type="tgn" key="7011781">LONDON.<lb/></placeName></pubPlace>
+               <publisher>Printed by <hi rend="italic">M. F. </hi>for [J]OHN MARRIOT,<lb/>and are to be sold at his shop in St <hi rend="italic">Dunstans</hi><lb/>Church-yard in <hi rend="italic">Fleet-street. </hi></publisher><docDate>1633.</docDate></docImprint>
+            
+            
+
          </titlePage>
       </front>
       <body>
          <div type="poem">
-               <l><ref target="numbering_" corresp="numbering">10. (XIV)</ref></l>
+
+                  <head><ref target="numbering_" corresp="numbering">10. (XIV)</ref></head>
                <note xml:id="numbering" target="numbering_" type="editorial" resp="editors.xml#RR">
                   The first number comes from Helen Gardner's renumbering of the Sonnets in her 1952
                   edition of <hi rend="italic">The Divine Poems</hi>, and the Roman numeral in
                   parentheses retains the sequence given in editions printed from 1635 to 1669.
                </note>
-            <!-- Attempting to add a note to the title, which I can't figure out how to do if it's marked <head>. So instead I've used <l> and a line break for the numbers so that I can attach a reference to them. -->
-               <lb/>
+            
             <l n="1">Batter my heart, three person'd God; for, you</l>
             <l n="2">As yet but knocke, breathe, shine, and seeke to mend;</l>
             <l n="3">That I may rise, and stand, o'erthrow mee, and bend</l>
@@ -247,6 +270,7 @@
             <l n="13">Except you enthral mee, never shall be free,</l>
             <l n="14">Nor ever chast, except you ravish mee.</l>
          </div>
+
       </body>
    </text>
 </TEI>

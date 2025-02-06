@@ -1,4 +1,6 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="wilde-earnest">
    <teiHeader xml:lang="en">
@@ -26,7 +28,9 @@
             <respStmt>
                <!-- edit this content to reflect this digital edition -->
                <resp>Transcription, correction, and markup</resp>
+
                <name ref="editors.xml#GMUStudStaff">Students, Staff, and Faculty at George Mason University</name><name ref="editors.xml#UVAStudStaff"> and the
+
                   University of Virginia</name>
                <name ref="editors.xml#JSF">Jen Fehsenfeld</name>
                <name ref="editors.xml#SHG">Stephanie Grimm</name>
@@ -80,10 +84,12 @@
                      </pubPlace>
                      <publisher>Leonard Smithers and Co</publisher>
                      <date when="1899">1899</date>
+
                      <note><p><hi rend="italic">The Importance of Being Earnest</hi> was first performed on Valentine's Day, 1895. At this time, Wilde was in a relationship with poet and journalist Lord Alfred Douglas (Bosie), then 17 years of age, which enraged his father, the Marquess of Queensbury. The Marquess frequently harrassed Wilde in public, naming him a "sodomite," and Wilde--against the advice of friends and legal counsel--sued him for libel. Wilde lost the libel case, and he was then himself sued by Queensbury on charges of "gross indecency" under Section 11 of the Criminal Law Amendment Act of 1885, which was meant to protect young women under the age of 16 from sexual assault. Same-sex sodomy was only decriminalized in England in 1967. Wilde was found guilty, after several trials, and sentenced to two years of hard labor in prison, which he served from 1895 to 1897. This was the maximum sentence for the charge. Wilde wrote <hi rend="italic">De Profundus</hi>while in prison; it was published in 1905, after his death. Wilde died in Paris in 1900, shortly after his release, never to return to either Ireland or Great Britain. On the premiere of <hi rend="italic">Earnest</hi>, Queensbury had planned to pepper the stage with rotten vegetables, but the plot was avoided and the play opened successfully and secured Wilde's artistic status even as he went to prison. The first edition of the play, which we use for this digital edition, was printed in 1899--Wilde's authorship is not noted on the titlepage, or anywhere else in the text, though another small printing of a signed limited edition bearing the author's name was released later in the same year.</p></note>
                      <!-- Add additional NOTE elements as needed  -->
                      <note><p>This digital edition was produced during a one-day edit-a-thon with partners at George Mason University and The University of Virginia, held on July 25, 2024. Facsimile page images, courtesy of the Small Special Collections Library at The University of Virginia, show that this book was number 335 of a small printing of 1000. The transcription was created from the facsimile page images fed through OpenAI by Christine Ruotolo. </p></note> 
                      <note><p>We have located stage directions associated specifically with a particular speaker inside the speech tag for that speech, and otherwise, outside. Em dashes have been replaced with two hyphens.</p></note>
+
                   </imprint>
                   
                   <extent>[15], 151, [1] p. 22 cm.</extent>
@@ -189,10 +195,12 @@
       </encodingDesc>
 
       <revisionDesc>
+
          <change when="2024-07-25" who="editors.xml#TH"
             >First pass partial markup</change>
          <change when="2024-07-30" who="editors.xml#TH">Added remaining pages in XML and placenames, as well as minor updates to the header.</change>
          <change when="2024-08-01" who="editors.xml#TH">Proofreading and minor corrections for pagination and page images.</change>
+
       </revisionDesc>
 
    </teiHeader>
@@ -206,22 +214,27 @@
             <pb n="[Title Page]" facs="pageImages/ii-titlepage.jpg"/>
 
             <titlePart><?oxy-placeholder content="Include line by line as indicated on title page"?>THE<lb/>IMPORTANCE
+
                OF BEING EARNEST<lb/></titlePart>
             <titlePart>A TRIVIAL COMEDY FOR<lb/>SERIOUS PEOPLE<lb/></titlePart>
             <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
             <titlePart>BY<lb/>THE AUTHOR OF<lb/>LADY WINDERMERE'S
                   FAN<lb/><lb/><lb/><lb/>
+
                <!-- note the formula for adding annotations; text in <ref> will become the link to the annotation. Any images used must be accessible, reliable, and properly licensed. Include provenance information and links to sources in the annotation. -->
                
             </titlePart>
             <docImprint>
+
                <pubPlace><placeName type="tgn" key="7011781"/>London</pubPlace>
                <lb/> Printed by <publisher>LEONARD SMITHERS AND CO<lb/></publisher>
                <pubPlace>5 Old Bond Street W</pubPlace>, <docDate><lb/>MDCCCXCIX</docDate>. <lb/><lb/>
+
             </docImprint>
          </titlePage>
          <pb n="[Dedication]" facs="pageImages/iv-dedication.jpg"/>
          <div type="dedication">
+
             <head type="sub">TO<lb/><persName type="lcnaf" key="n82041096">ROBERT BALDWIN ROSS</persName><lb/>IN APPRECIATION<lb/>IN
                AFFECTION<lb/></head>
          </div>
@@ -229,10 +242,12 @@
          <div type="note">
             <p><hi rend="italic">One thousand copies of this edition have been printed,<lb/>of which
                   this is No. 335</hi></p>
+
          </div>
 
          <pb n="[Castlist]" facs="pageImages/ix-castlist.jpg"/>
          <div type="castlist">
+
             <head type="sub">LONDON: ST. JAMES'S THEATRE<lb/><hi rend="italic">Lessee and Manager:
                   Mr. George Alexander<lb/>February 14th, 1895</hi><lb/></head>
             <castList>
@@ -254,6 +269,7 @@
                         Millard</persName></hi></actor></castItem>
                <castItem><role>MISS PRISM (Governess)</role><actor xml:id="xxx"><hi rend="italic"
                   ><persName type="lcnaf" key="n82201194" cert="medium">Mrs. George Canninge</persName></hi></actor></castItem>
+
             </castList>
          </div>
 
@@ -344,7 +360,10 @@
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
-                  <l><stage>[Languidly.]</stage> I don’t know that I am much interested in your
+
+                  <l>
+                            <stage>[Languidly.]</stage> I don’t know that I am much interested in your
+
                      family life, Lane. </l>
                </sp>
 
@@ -414,12 +433,14 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[Airily.]</stage> Oh, neighbours, neighbours.</l>
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
                   <l>Got nice neighbours in your part of <placeName type="tgn" key="7012034"
                         >Shropshire</placeName>?</l>
+
                </sp>
                <sp>
                   <speaker>JACK</speaker>
@@ -508,7 +529,9 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[Advancing to table and helping himself.]</stage> And very good bread
+
                      and butter it is too. </l>
                </sp>
                <sp>
@@ -563,7 +586,9 @@
                </sp>
                <sp>
                   <speaker>LANE</speaker>
+
                   <l>Yes, sir. <stage>[Lane goes out.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>JACK</speaker>
@@ -643,7 +668,9 @@
                      matter that surely an aunt may be allowed to decide for herself. You seem to
                      think that every aunt should be exactly like your aunt! That is absurd! For
                      Heaven's sake give me back my cigarette case. <stage>[Follows Ernest round the
+
                         room.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
@@ -666,7 +693,9 @@
                      of them. Taking it from case. "Mr. Ernest Worthing, B.4, The Albany." I'll keep
                      this as a proof that your name is Ernest if ever you attempt to deny it to me,
                      or to Gwendolen, or to anyone else.<stage> [Puts the card in his
+
                         pocket.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>JACK</speaker>
@@ -675,8 +704,10 @@
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
+
                   <l>Yes, but that does not account for the fact that <pb n="13"
                         facs="pageImages/wilde-013.jpg"/> your small Aunt Cecily, who lives at
+
                      <placeName type="tgn" key="7011676">Tunbridge Wells</placeName>, calls you her dear uncle. Come, old boy, you had much better
                      have the thing out at once.</l>
                </sp>
@@ -711,7 +742,9 @@
                <sp>
                   <speaker>ALGERNON</speaker>
                   <l>Here it is. <stage>[Hands cigarette case.]</stage> Now produce your
+
                      explanation, and pray make it improbable. <stage>[Sits on sofa.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>JACK</speaker>
@@ -829,8 +862,10 @@
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
+
                   <l>Nothing will induce me to part with Bunbury, and <pb n="18"
                         facs="pageImages/wilde-018.jpg"/> if you ever get married, which seems to me
+
                      extremely problematic, you will be very glad to know Bunbury. A man who marries
                      without knowing Bunbury has a very tedious time of it. </l>
                </sp>
@@ -1098,7 +1133,9 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[<hi rend="italic">Nervously</hi>.]</stage> Miss Fairfax, ever since I
+
                      met you I have admired you more than any girl . . . I have ever met since . . .
                      I met you. </l>
                </sp>
@@ -1149,7 +1186,9 @@
                </sp>
                <sp>
                   <speaker>GWENDOLEN</speaker>
+
                   <l><stage>[<hi rend="italic">Glibly</hi>.]</stage> Ah! that is clearly a
+
                      metaphysical speculation, and like most metaphysical speculations has very
                      little reference at all to the actual facts of real life, as we know them. </l>
                </sp>
@@ -1190,7 +1229,9 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[<hi rend="italic">Astounded</hi>.]</stage> Well . . . surely. You know
+
                      that I love you, and you led me to believe, Miss Fairfax, that you were not
                      absolutely indifferent to me. </l>
                </sp>
@@ -1284,7 +1325,9 @@
                </sp>
                <sp>
                   <speaker>GWENDOLEN</speaker>
+
                   <l><stage>[<hi rend="italic">Reproachfully</hi>.]</stage> Mamma! </l>
+
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
@@ -1302,7 +1345,9 @@
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[<hi rend="italic">Sitting down</hi>.]</stage> You can take a seat, Mr.
+
                      Worthing. </l>
                   <stage>[<hi rend="italic">Looks in her pocket for note-book and
                      pencil</hi>.]</stage>
@@ -1314,7 +1359,9 @@
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[<hi rend="italic">Pencil and note-book in hand</hi>.]</stage> I feel
+
                      bound to tell you that you are not down on my list of eligible young men,
                      although I have the same list as the dear Duchess of Bolton has. We work
                      together, in fact. However, I am quite ready to enter your name, should your
@@ -1327,8 +1374,10 @@
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
                   <l>I am glad to hear it. A man should always have an occupation of some kind.
+
                      There are far too many idle men in <placeName type="tgn" key="7011781"
                         >London</placeName> as it is. How old are you? </l>
+
                </sp>
                <sp>
                   <speaker>JACK</speaker>
@@ -1343,6 +1392,7 @@
 
 
                <!-- 33-41 Jen! -->
+
                <pb n="33" facs="pageImages/033.jpg>"/>
 
 
@@ -1379,7 +1429,9 @@
                   <speaker>LADY BRACKNELL</speaker>
                   <l> That is satisfactory. What between the duties expected of one during one's
                      lifetime, and the duties exacted from one after one's death, land has ceased
+
                         <pb n="34" facs="pageImages/034.jpg>"/> to be either a profit or a pleasure.
+
                      It gives one position, and prevents one from keeping it up. That's all that can
                      be said about land. </l>
                </sp>
@@ -1675,7 +1727,9 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[In a very patronising manner.]</stage> My dear fellow, the truth isn’t
+
                      quite the sort of thing one tells to a nice sweet refined girl. What
                      extraordinary ideas you have about the way to behave to a woman!</l>
                </sp>
@@ -1758,7 +1812,9 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[Irritably.]</stage> Oh! it always is nearly seven.</l>
+
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
@@ -1916,7 +1972,9 @@
                   <l>Yes, sir. <stage>[Jack and Gwendolen go off.]</stage>
                      <stage>[Lane presents several letters on a salver to Algernon.] [It is to be
                         surmised that they are bills, as Algernon after looking at the envelopes,
+
                         tears them up.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
@@ -1942,7 +2000,9 @@
                <pb n="50" facs="pageImages/wilde-050.jpg"/>
                <sp>
                   <speaker>LANE</speaker>
+
                   <l>Yes, sir. <stage>[Handing sherry.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
@@ -1992,7 +2052,9 @@
                <stage>[Jack looks indignantly at him, and leaves the room. Algernon lights a
                   cigarette, reads his shirt-cuff, and smiles.]</stage>
             </div>
+
             <closer>ACT-DROP.</closer>
+
          </div>
          <div type="act" n="2">
             <pb n="[53]" facs="pageImages/wilde-053.jpg"/>
@@ -2007,14 +2069,18 @@
                   flowers.]</stage>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Calling.]</stage> Cecily, Cecily! Surely such a utilitarian occupation
+
                      as the watering of flowers is rather Moulton’s duty than yours? Especially at a
                      moment when intellectual pleasures await you. Your German grammar is on the
                      table. Pray open it at page fifteen. We will repeat yesterday’s lesson.</l>
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l><stage>[Coming over very slowly.]</stage> But I don’t like German. It isn’t at
+
                      all a becoming language. I know perfectly well that I look quite plain after my
                      German lesson.</l>
                </sp>
@@ -2033,7 +2099,9 @@
                </sp>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Drawing herself up.]</stage> Your guardian enjoys the best of health,
+
                      and his gravity of demeanour is especially to be commended in one so
                      comparatively young as he is. I know no one who has a higher sense of duty and
                      responsibility.</l>
@@ -2068,7 +2136,9 @@
                </sp>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Shaking her head.]</stage> I do not think that even I could produce any
+
                      effect on a character that according to his own brother's admission is
                      irretrievably weak and vacillating. Indeed I am not sure that I would desire to
                      reclaim him. I am not in favour of this modern mania for turning bad people
@@ -2087,8 +2157,10 @@
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l>Yes, but it usually chronicles the things that have <pb n="58"
                         facs="pageImages/wilde-058.jpg"/> never happened, and couldn't possibly have
+
                      happened. I believe that Memory is responsible for nearly all the three-volume
                      novels that Mudie sends us.</l>
                </sp>
@@ -2118,14 +2190,18 @@
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l><stage>[Smiling.] </stage> But I see dear Dr. Chasuble coming up through the
+
                      garden.</l>
                </sp>
                <pb n="59" facs="pageImages/wilde-059.jpg"/>
 
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Rising and advancing.] </stage> Dr. Chasuble! This is indeed a
+
                      pleasure.</l>
                </sp>
                <stage>[Enter Canon Chasuble.]</stage>
@@ -2171,8 +2247,10 @@
                </sp>
                <sp>
                   <speaker>CHASUBLE</speaker>
+
                   <l>Ah yes, he usually likes to spend his Sunday in <placeName type="tgn"
                         key="7011781">London</placeName>. He is not one of those whose sole aim is
+
                      enjoyment, as, by all accounts, that unfortunate young man his brother seems to
                      be. But I must not disturb Egeria and her pupil any longer. </l>
                </sp>
@@ -2182,7 +2260,9 @@
                </sp>
                <sp>
                   <speaker>CHASUBLE</speaker>
+
                   <l><stage>[Bowing.]</stage> A classical allusion merely, drawn from the Pagan
+
                      authors. I shall see you both no doubt at Evensong?</l>
                </sp>
                <sp>
@@ -2218,7 +2298,9 @@
                <sp>
                   <speaker>CECILY</speaker>
 
+
                   <l><stage>[Takes the card and reads it.]</stage>“Mr. Ernest Worthing, B. 4 The
+
                      Albany, W." Uncle Jack’s brother! Did you tell him Mr. Worthing was in
                      town?</l>
                   <pb n="62" facs="pageImages/wilde-062.jpg"/>
@@ -2252,13 +2334,16 @@
                <sp>
                   <speaker>ALGERNON</speaker>
 
+
                   <l><stage>[Raising his hat.] </stage>You are my little cousin Cecily, I’m sure.
+
                   </l>
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
                   <l> You are under some strange mistake. I am not little. In fact, I believe I am
                      more than usually tall for my age. <stage>[Algernon is rather taken
+
                         aback.]</stage> But I am your cousin Cecily. You, I see from your <pb n="63"
                         facs="pageImages/wilde-063.jpg"/> card, are Uncle Jack’s brother, my cousin
                      Ernest, my wicked cousin Ernest. </l>
@@ -2314,6 +2399,7 @@
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l>Couldn’t you miss it anywhere but in <placeName type="tgn" key="7011781"
                         >London</placeName>. </l>
                </sp>
@@ -2321,6 +2407,7 @@
                   <speaker>ALGERNON</speaker>
                   <l>No: the appointment is in <placeName type="tgn" key="7011781"
                         >London</placeName>. </l>
+
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
@@ -2353,11 +2440,14 @@
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
+
                   <l><placeName type="tgn" key="7000490">Australia</placeName>! I’d sooner die.</l>
+
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
                   <l>Well, he said at dinner on Wednesday night, that you would have to choose
+
                      between this world, the next world, and <placeName type="tgn" key="7000490"
                         >Australia</placeName>.</l>
                </sp>
@@ -2365,6 +2455,7 @@
                   <speaker>ALGERNON</speaker>
                   <l>Oh, well! The accounts I have received of <placeName type="tgn" key="7000490"
                         >Australia</placeName> and the next world, are not particularly encouraging.
+
                      This world is good enough for me, cousin Cecily.</l>
                </sp>
                <sp>
@@ -2417,7 +2508,9 @@
                <pb n="67" facs="pageImages/wilde-67.jpg"/>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l> A Maréshale Niel?<stage>[Picks up scissors.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
@@ -2425,7 +2518,9 @@
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l>Why?<stage>[Cuts a flower.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
@@ -2604,8 +2699,10 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l>No. He seemed to have expressed a desire to be buried in <placeName type="tgn"
                         key="7008038">Paris</placeName>.</l>
+
                </sp>
                <sp>
                   <speaker>CHASUBLE</speaker>
@@ -2653,6 +2750,7 @@
                </sp>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Bitterly.]</stage> People who live entirely for pleasure usually
                      are.</l>
                </sp>
@@ -2768,7 +2866,9 @@
                   <l>Oh, don’t say that. However badly he may have behaved to you in the past he is
                      still your brother. You couldn’t be so heartless as to disown him. I’ll tell
                      him to come out. And you will shake hands with him, won’t you, Uncle Jack?
+
                         <stage>[Runs back into the house.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>CHASUBLE</speaker>
@@ -2934,6 +3034,7 @@
                </sp>
                <sp>
                   <speaker>MERRIMAN</speaker>
+
                   <l>Yes, sir. <stage>[Goes back into the house.]</stage></l>
                </sp>
                <sp>
@@ -3014,7 +3115,9 @@
                   <l>Your vanity is ridiculous, your conduct an outrage, and your presence in my
                      garden utterly absurd. However, you have got to catch the four-five, and I hope
                      you will have a pleasant journey back to town. This Bunburying, as you call it,
+
                      has not been a great success for you. <stage>[Goes into the house.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
@@ -3110,12 +3213,15 @@
                <pb n="86" facs="pageImages/wilde-086.jpg"/>
                <sp>
                   <speaker>ALGERNON</speaker>
+
                   <l><stage>[Somewhat taken aback.] </stage>Ahem! Ahem!</l>
+
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
                   <l>Oh, don’t cough, Ernest. When one is dictating one should speak fluently and
                      not cough. Besides, I don’t know how to spell a cough. <stage>[Writes as
+
                         Algernon speaks.] </stage></l>
                </sp>
                <sp>
@@ -3148,6 +3254,7 @@
                </sp>
                <sp>
                   <speaker>MERRIMAN</speaker>
+
                   <l><stage>[Looks at Cecily, who makes no sign.]</stage> Yes, sir. </l>
                </sp>
                <stage>[Merriman retires.]</stage>
@@ -3243,6 +3350,7 @@
                <sp>
                   <speaker>CECILY</speaker>
                   <l>Of course it was. On the 22nd of last March. You can see the entry if you like.
+
                         <stage>[Shows diary.]</stage></l>
 
                </sp>
@@ -3298,7 +3406,9 @@
                </sp>
                <sp>
                   <speaker>ALGERNON</speaker>
+
                   <l>Yes, of course. <stage>[Nervously.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
@@ -3379,7 +3489,9 @@
                <sp>
                   <speaker>ALGERNON</speaker>
                   <l> I’ll be back in no time. <stage>[Kisses her and rushes down the
+
                         garden.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
@@ -3508,7 +3620,9 @@
                </sp>
                <sp>
                   <speaker>GWENDOLEN</speaker>
+
                   <l><stage>[Severely.] </stage>Really? Your mother, no doubt, or some female
+
                      relative of advanced years, resides here also?</l>
                </sp>
                <sp>
@@ -3734,8 +3848,10 @@
                <sp>
                   <speaker>CECILY</speaker>
                   <l>Ah! This is what the newspapers call agricultural depression, is it not? I
+
                      believe the aristocracy are suffering very much from it just at present. It <pb
                         n="104" facs="pageImages/wilde-earnest-104.jpg"/> is almost an epidemic
+
                      amongst them, I have been told. May I offer you some tea, Miss Fairfax?</l>
                </sp>
                <sp>
@@ -3757,16 +3873,20 @@
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l><stage>[Severely.]</stage> Cake or bread and butter?</l>
                </sp>
                <sp>
                   <speaker>GWENDOLEN</speaker>
                   <l><stage>[In a bored manner.]</stage> Bread and butter, please. Cake is rarely
+
                      seen at the best houses nowadays.</l>
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l><stage>[Cuts a very large slice of cake, and puts it on the tray.]</stage> Hand
+
                      that to Miss Fairfax. </l>
                </sp>
                <stage>[Merriman does so, and goes out with footman. Gwendolen drinks the tea and
@@ -3993,7 +4113,9 @@
                <sp>
                   <speaker>GWENDOLEN</speaker>
                   <l>I am afraid it is quite clear, Cecily, that neither of us is engaged to be
+
                      married to anyone. </l></sp>
+
                <sp>
                   <speaker>CECILY</speaker>
                   <l>It is not a very pleasant position for a young girl suddenly to find herself
@@ -4125,6 +4247,7 @@
                      am in really great trouble, as anyone who knows me intimately will tell you, I
                      refuse everything except food and drink. At the present moment I am eating
                      muffins because I am unhappy. Besides, I am particularly fond of muffins.
+
                         <stage>[Rising.]</stage></l>
                </sp>
                <sp>
@@ -4135,6 +4258,7 @@
                <sp>
                   <speaker>ALGERNON</speaker>
                   <l><stage>[Offering tea-cake.]</stage> I wish you would have tea-cake instead. I
+
                      don’t like tea-cake.</l>
                </sp>
 
@@ -4155,7 +4279,9 @@
                <sp>
                   <speaker>ALGERNON</speaker>
                   <l>That may be. But the muffins are the same. <stage>[He seizes the muffin-dish
+
                         from Jack.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>JACK</speaker>
@@ -4209,7 +4335,9 @@
                </sp>
                <sp>
                   <speaker>JACK </speaker>
+
                   <l><stage>[Picking up the muffin-dish.]</stage> Oh, that is nonsense; you are
+
                      always talking nonsense.</l>
                </sp>
                <sp>
@@ -4241,9 +4369,11 @@
                </sp>
                <stage>[Jack groans, and sinks into a chair. Algernon still continues
                   eating.]</stage>
+
                
             </div>
             <closer>ACT-DROP.</closer>
+
          </div>
       
          <div type="act" n="3">
@@ -4268,7 +4398,9 @@
                </sp>
                <sp>
                   <speaker>GWENDOLEN </speaker>
+
                   <l><stage>[After a pause.]</stage> They don’t seem to notice us at all. Couldn’t
+
                      you cough?</l>
                </sp>
                <sp>
@@ -4429,8 +4561,10 @@
                </sp>
                <sp>
                   <speaker>GWENDOLEN</speaker>
+
                   <l> How absurd to talk of the equality of the sexes! <pb n="126"
                         facs="pageImages/wilde-126.jpg"/> Where questions of self-sacrifice are
+
                      concerned, men are infinitely beyond us.</l>
                </sp>
                <sp>
@@ -4577,6 +4711,7 @@
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[<hi rend="italic">With a shiver, crossing to the sofa and sitting
                            down</hi>.]</stage> I do not know whether there is anything peculiarly
                      exciting in the air of this particular part of <placeName type="tgn"
@@ -4586,6 +4721,7 @@
                      not be out of place. Mr. Worthing, is Miss Cardew at all connected with any of
                      the larger railway stations in <placeName type="tgn" key="7011781"
                         >London</placeName>? I merely desire information. Until yesterday I had no
+
                      idea that there were any families or persons whose origin was a Terminus.
                            
                   </l>
@@ -4594,7 +4730,9 @@
                   himself.]</stage>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[<hi rend="italic">In a clear, cold voice</hi>.]</stage> Miss Cardew is
+
                      the granddaughter of the late Mr. Thomas Cardew of 149, Belgrave Square, S.W.;
                      Gervase Park, <placeName type="tgn" key="7011732">Dorking</placeName>,
                         <placeName type="tgn" key="7008175">Surrey</placeName>; and the Sporran,
@@ -4613,7 +4751,9 @@
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[<hi rend="italic">Grimly</hi>.]</stage> I have known strange errors in
+
                      that publication. </l>
                </sp>
                <sp>
@@ -4628,7 +4768,9 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[<hi rend="italic">Very irritably</hi>.]</stage> How extremely kind of
+
                      you, Lady Bracknell! I have also in my possession, you will be pleased to hear,
                      certificates of Miss Cardew's birth, baptism, whooping cough, registration,
                      vaccination, confirmation, and the measles; both the German and the English
@@ -4636,6 +4778,7 @@
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l>Ah! A life crowded with incident, I see; though <pb n="132"
                         facs="pageImages/wilde-132.jpg"/> perhaps somewhat too exciting for a young
                      girl. I am not myself in favour of premature experiences. <stage>[<hi
@@ -4651,7 +4794,9 @@
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[<hi rend="italic">Sitting down again</hi>.]</stage> A moment, Mr.
+
                      Worthing. A hundred and thirty thousand pounds! And in the Funds! Miss Cardew
                      seems to me a most attractive young lady, now that I look at her. Few girls of
                      the present day have any really solid qualities, any of the qualities that
@@ -4666,13 +4811,17 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[<hi rend="italic">Aside</hi>.]</stage> And after six months nobody knew
+
                      her </l>
                </sp>
                <pb n="133" facs="pageImages/wilde-133.jgp"/>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[<hi rend="italic">Glares at Jack for a few moments. Then bends, with a
+
                            practised smile, to Cecily</hi>.]</stage> Kindly turn round, sweet child.
                            <stage>[<hi rend="italic">Cecily turns completely round</hi>.]</stage>
                      No, the side view is what I want. <stage>[<hi rend="italic">Cecily presents her
@@ -4700,8 +4849,10 @@
                   <l>Never speak disrespectfully of Society, Algernon. Only people who can't get
                      into it do that. <stage>[<hi rend="italic">To Cecily</hi>.]</stage> Dear child,
                      of course you know that Algernon has nothing but his debts to depend upon. But
+
                      I do not approve of mercenary marriages.<pb n="134"
                         facs="pageImages/wilde-134.jpg"/> When I married Lord Bracknell I had no
+
                      fortune of any kind. But I never dreamed for a moment of allowing that to stand
                      in my way. Well, I suppose I must give my consent. </l>
                </sp>
@@ -4715,7 +4866,9 @@
                </sp>
                <sp>
                   <speaker>CECILY</speaker>
+
                   <l><stage>[<hi rend="italic">Kisses her</hi>.]</stage> Thank you, Lady Bracknell.
+
                   </l>
                </sp>
                <sp>
@@ -4765,8 +4918,10 @@
                      character. I suspect him of being untruthful. 
                   </l>
                </sp>
+
                <stage>[<hi rend="italic"
                   >Algernon and Cecily look at him in indignant amazement</hi>.]</stage>
+
                <pb n="136" facs="pageImages/wilde-136.jpg"/>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
@@ -4794,12 +4949,14 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l>That is very generous of you, Lady Bracknell. <pb n="137"
                         facs="pageImages/wilde-137.jpg"/> My own decision, however, is unalterable.
                      I decline to give my consent. </l>
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[<hi rend="italic">To Cecily</hi>.]</stage> Come here, sweet child.
                            <stage>[<hi rend="italic">Cecily goes over</hi>.]</stage> How old are
                      you, dear? </l>
@@ -4874,6 +5031,7 @@
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[<hi rend="italic">Rising and drawing herself up</hi>.]</stage> You must
                      be quite aware that what you propose is out of the question. </l>
                </sp>
@@ -4893,6 +5051,7 @@
                <!-- 140-147 -->
 
                <pb n="140" facs="pageImages/wilde-140.jpg"/>
+
                miss any more might expose us to comment on the platform.</l></sp>
                <stage>[Enter Dr. Chasuble.]</stage>
                <sp>
@@ -4905,6 +5064,7 @@
                </sp>
                <sp>
                   <speaker>CHASUBLE</speaker>
+
                   <l><stage>[Looking rather puzzled, and pointing to Jack and Algernon.]</stage>
                      Both these gentlemen have expressed a desire for immediate baptism.</l>
                </sp>
@@ -4937,6 +5097,7 @@
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[Starting.]</stage> Miss Prism! Did I hear you mention a Miss Prism?</l>
                </sp>
                <sp>
@@ -4951,7 +5112,9 @@
                </sp>
                <sp>
                   <speaker>CHASUBLE</speaker>
+
                   <l><stage>[Somewhat indignantly.]</stage> She is the most cultivated of ladies,
+
                      and the very picture of respectability.</l>
 
 
@@ -4964,11 +5127,13 @@
                </sp>
                <sp>
                   <speaker>CHASUBLE</speaker>
+
                   <l><stage>[Severely.]</stage> I am a celibate, madam.</l>
                </sp>
                <sp>
                   <speaker>JACK</speaker>
                   <l><stage>[Interposing.]</stage>Miss Prism, Lady Bracknell, has been for the last
+
                      three years Miss Cardew's esteemed governess and valued companion. </l>
                </sp>
                <sp>
@@ -4978,7 +5143,9 @@
                </sp>
                <sp>
                   <speaker>CHASUBLE</speaker>
+
                   <l><stage>[Looking off.]</stage> She approaches; she is nigh.</l>
+
 
                </sp>
                <stage>[Enter Miss Prism hurriedly.]</stage>
@@ -4994,7 +5161,9 @@
                <pb n="143" facs="pageImages/wilde-143.jpg"/>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
+
                   <l><stage>[In a severe, judicial voice.]</stage> Prism! <stage>[Miss Prism bows
+
                         her head in shame.]</stage> Come here, Prism! <stage>[Miss Prism approaches
                         in a humble manner.]</stage> Prism! Where is that baby? <stage>[General
                         consternation. The Canon starts back in horror. Algernon and Jack pretend to
@@ -5020,14 +5189,18 @@
                      that is for ever branded on my memory, I prepared as usual to take the baby out
                      in its perambulator. I had also with me a somewhat old, but capacious hand-bag
                      in which I had intended to place the manuscript of a work of fiction that I had
+
                      written during my few unoccupied hours. <pb n="144"
                         facs="pageImages/wilde-144.jpg"/> In a moment of mental abstraction, for
+
                      which I never can forgive myself, I deposited the manuscript in the bassinette,
                      and placed the baby in the hand-bag. </l>
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[Who has been listening attentively.]</stage> But where did you deposit
+
                      the hand-bag? </l>
                </sp>
                <sp>
@@ -5041,8 +5214,10 @@
                </sp>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l>I left it in the cloak room of one of the larger railway stations in <placeName
                         type="tgn" key="7011781">London</placeName>.</l>
+
                </sp>
                <sp>
                   <speaker>JACK</speaker>
@@ -5050,8 +5225,10 @@
                </sp>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Quite crushed.]</stage> Victoria. The Brighton line. <stage>[Sinks into
                         a chair.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>JACK</speaker>
@@ -5096,8 +5273,10 @@
 
                <sp>
                   <speaker>CHASUBLE</speaker>
+
                   <l><stage>[Looking up.]</stage> It has stopped now. <stage>[The noise is
                         redoubled.]</stage></l>
+
                </sp>
                <sp>
                   <speaker>LADY BRACKNELL</speaker>
@@ -5111,12 +5290,15 @@
                <stage>[Enter Jack with a hand-bag of black leather in his hand.]</stage>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[Rushing over to Miss Prism.]</stage> Is this the hand-bag, Miss Prism?
+
                      Examine it carefully before you speak. The happiness of more than one life
                      depends on your answer.</l>
                </sp>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Calmly.]</stage> It seems to be mine. Yes, here is the injury it
                      received through the upsetting of a Gower Street omnibus in younger and happier
                      days. Here is the stain on the lining caused by the explosion of a temperance
@@ -5129,11 +5311,14 @@
                <pb n="142" facs="pageImages/wilde-147.jpg"/>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[In a pathetic voice.]</stage> Miss Prism, more is restored to you than
+
                      this hand-bag. I was the baby you placed in it.</l>
                </sp>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Amazed.]</stage> You?</l>
                </sp>
                <sp>
@@ -5143,6 +5328,7 @@
                <sp>
                   <speaker>MISS PRISM</speaker>
                   <l><stage>[Recoiling in indignant astonishment.]</stage> Mr. Worthing! I am
+
                      unmarried!</l>
                </sp>
                <sp>
@@ -5155,13 +5341,17 @@
                </sp>
                <sp>
                   <speaker>MISS PRISM</speaker>
+
                   <l><stage>[Still more indignant.]</stage> Mr. Worthing, there is some error.
+
                         <stage>[Pointing to Lady Bracknell.]</stage> There is the lady who can tell
                      you who you really are.</l>
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l><stage>[After a pause.]</stage> Lady Bracknell, I hate to seem</l>
+
                </sp>
 
 
@@ -5191,11 +5381,13 @@
                <sp>
                   <speaker>ALGERNON</speaker>
                   <l> Well, not till to-day, old boy, I admit. I did my best, however, though I was
+
                      out of practice. <stage>[Shakes hands.]</stage></l>
                </sp>
                <sp>
                   <speaker>GWENDOLEN</speaker>
                   <l><stage>[To Jack.]</stage> My own! But what own are you? What is your Christian
+      
                      name, now that you have become someone else?</l>
                </sp>
 
@@ -5270,8 +5462,10 @@
                </sp>
                <sp>
                   <speaker>JACK</speaker>
+
                   <l>The Army Lists of the last forty years are here. <pb n="151"
                         facs="pageImages/wilde-151.jpg"/> These delightful records should have been
+
                      my constant study. <stage>[Rushes to bookcase and tears the books out.]</stage>
                      M. Generals . . . . Mallam, Maxbohm, Magley, what ghastly names they have--Markby,
                      Migsby, Mobbs, Moncrieff! Lieutenant 1840, Captain, Lieutenant-Colonel,
@@ -5307,6 +5501,7 @@
                <pb n="152" facs="pageImages/wilde-152.jpg"/>
                <sp>
                   <speaker>CHASUBLE</speaker>
+
                   <l><stage>[To Miss Prism.]</stage> Laetitia! <stage>[Embraces her.]</stage></l>
                </sp>
                <sp>
@@ -5332,14 +5527,12 @@
                </sp>
 
 
+
                
 
 
-
-
-
-
             </div>
+
          <closer>TABLEAU.<lb/></closer>
          </div>
          <closer>CURTAIN.</closer>
@@ -5349,3 +5542,4 @@
 
    </text>
 </TEI>
+

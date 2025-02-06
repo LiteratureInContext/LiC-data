@@ -8,35 +8,42 @@
             <author>
                <persName type="lcnaf" key="79069876">
                   <name>
+
                      <forename>John</forename>
+
                      <surname>Donne</surname>
                   </name>
                </persName>
             </author>
 
 
-           <editor>
-            <persName>
-               <name ref="editors.xml#RR">
-                  <forename>Rachel</forename>
-                  <surname>Retica</surname>
-               </name>
-            </persName>
+
+  
+            
+            <editor>
+               <persName type="orcid" key="000000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+                  </name>
+               </persName>
             </editor>
             
-            <respStmt>
+          <respStmt>
                <resp>Transcription, correction, editorial commentary, and markup</resp>
                <name ref="editors.xml#StudStaff">Students and Staff of the University of
                   Virginia</name>
                <name ref="editors.xml#RR">Rachel Retica</name>
             </respStmt>
-
+            
+            
             <sponsor/>
             <funder>National Endowment for the Humanities</funder>
          </titleStmt>
-
+         
          <publicationStmt>
             <publisher>Literature in Context</publisher>
+            
 
             <address>
                <addrLine>University of Virginia Department of English</addrLine>
@@ -48,11 +55,14 @@
             </address>
             <availability status="free">
 
+               
+
                <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
                   Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
                   License </licence>
             </availability>
          </publicationStmt>
+
 
          <sourceDesc>
 
@@ -64,6 +74,7 @@
 
                </analytic>
 
+
                <monogr>
                   <author>
                      <name>
@@ -72,7 +83,9 @@
                      </name>
                   </author>
 
+
                   <title>Poems, by J. D., With Elegies on the Authors Death</title>
+
 
                   <imprint>
                      <pubPlace>
@@ -86,36 +99,37 @@
                         Donne's poems circulated in manuscript during his life time, and were not
                         issued in a print version until this edition, which came out after Donne's
                         death in 1632. The long "s" of the original has been modernized, but we have
-                        otherwise kept the original spelling. The title page has been sourced from
-                           <ref
-                           target="https://specialcollections.princeton.edu/2023/05/a-donne-deal/"
-                           >Princeton University Special Collections</ref>.</note>
 
-
+                        otherwise kept the original spelling. The title page has been sourced from <ref target="https://specialcollections.princeton.edu/2023/05/a-donne-deal/">Princeton University Special Collections</ref>.</note>
+                     
+                     
                   </imprint>
-
-
-
+                  
+                  
+                  
                   <extent/>
                   <biblScope>200</biblScope>
                   <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
-
+                  
                </monogr>
-
+               
             </biblStruct>
-
+            
          </sourceDesc>
-
+         
       </fileDesc>
+      
 
       <profileDesc>
          <langUsage>
             <language ident="en">English</language>
          </langUsage>
 
+         
          <creation/>
-
+         
          <textDesc n="poem">
+            
 
             <channel mode="w">print</channel>
             <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
@@ -131,17 +145,18 @@
          </textDesc>
 
          <settingDesc>
-
+            
             <setting>
                <name type="tgn" key="7011781">London, England</name>
                <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
-
+               
                <time from="1600" to="1633">Early 17th Century</time>
                <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
             </setting>
-
+            
          </settingDesc>
       </profileDesc>
+      
 
       <encodingDesc>
          <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
@@ -224,17 +239,17 @@
     
       <body>
          <div type="poem">
-            <l rend="aligncenter"> <ref target="numbering_" corresp="numbering">6. (X)</ref></l>
+           <head type="main"><ref target="numbering_" corresp="numbering">6. (X)</ref></head>
             <note xml:id="numbering" target="numbering_" type="editorial" resp="editors.xml#RR">
                The first number comes from Helen Gardner's renumbering of the Sonnets in her 1952
                edition of <hi rend="italic">The Divine Poems</hi>, and the Roman numeral in
                parentheses retains the sequence given in editions printed from 1635 to 1669.
             </note>
-            <!--Attempting to add a note to the title, which I can't figure out how to do if it's marked <head>. So instead I've used <l> and a line break for the numbers so that I can attach a reference to them.-->
          <lb/>
             <l n="1">Death be not proud, though some have called thee</l>
             <l n="2">Mighty and dreadfull, for thou art not soe,</l>
             <l n="3">For those whom thou think'st, thou dost overthrow,</l>
+
             <l n="4">Die not, poore death, nor yet canst thou kill mee;</l>
             <l n="5">From rest and sleepe, which but thy pictures bee,</l>
             <l n="6">Much pleasure, then from thee, much more must flow,</l>
@@ -245,8 +260,10 @@
             <l n="11">And poppie, or charmes can make us sleepe as well,</l>
             <l n="12">And better then thy stroake; why swell'st thou then?</l>
             <l n="13">One short sleepe past, wee wake eternally,</l>
+
             <l n="14">And death shall be no more, death, thou shalt die.</l>
          </div>
       </body>
    </text>
 </TEI>
+
