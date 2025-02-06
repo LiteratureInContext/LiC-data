@@ -83,7 +83,7 @@
                                                   <date when="1843">1843</date>
                                                   <note>Our edition is adapted from the Project
                                                   Gutenberg edition, prepared by Jose Menendez and
-                                                  David Widger. </note>
+                                                  David Widger. It is compared and corrected according to the HathiTrust and Internet Archive versions, noted below, . </note>
                                                 </imprint>
                                                 <imprint>
                                                   <pubPlace>Online</pubPlace>
@@ -94,8 +94,7 @@
                                                   Leech, are drawn <ref
                                                   target="https://archive.org/details/1843christmascar00dickuoft/page/n11/mode/2up"
                                                   >from The Internet Archive's facsimile of the 1843
-                                                  edition</ref>, which is a reprinting 
-                                                  of the first edition.. </note>
+                                                          edition</ref>, which seems to the third issue, according to <ref target="https://catalog.hathitrust.org/Record/102843606">the HathiTrust copy from McGill University</ref>, which has the same pagination and printer's note (Bradbury and Evans, Printers, Whitefriars) following the title page.</note>
                                                 </imprint>
                                                 <imprint>
                                                   <pubPlace>Online</pubPlace>
@@ -111,8 +110,8 @@
 
                                                 </imprint>
 
-                                                <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
-                                                <biblScope><?oxy-placeholder content="if document contained in another document, include page span here, as in 'pp 62-64'."?></biblScope>
+                                                <extent>166 pages, 4 unnumbered leaves of plates : illustrations (4 color) ; 17 cm</extent>
+
                                                 <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
 
                                         </monogr>
@@ -134,7 +133,7 @@
                                 <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
                                 <channel mode="w">print</channel>
                                 <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
-                                <constitution type="single">novel</constitution>
+                                <constitution type="single">novella</constitution>
                                 <derivation type="original"/>
                                 <domain/>
                                 <factuality type="inapplicable"/>
@@ -221,9 +220,9 @@
                 </encodingDesc>
 
                 <revisionDesc>
-                        <change when="0000-00-00" who="editors.xml#XX"
-                                ><?oxy-placeholder content="Indicate date and individual responsible for major milestone changes"?></change>
-                        <change when="0000-00-00" who="xxxx"/>
+                        <change when="2024-12-01" who="editors.xml#CO"
+                                >First pass XML</change>
+                        <change when="2025-02-06" who="editors.xml#TH">Corrected text, added facsimile page images, updated header</change>
                 </revisionDesc>
 
         </teiHeader>
@@ -238,14 +237,14 @@
                         <titlePage>
                                 <pb facs="pageImages/titlepage.png" n="[Title Page]"/>
 
-                                <titlePart>A CHRISTMAS CAROL<lb/> IN PROSE<lb/> BEING<lb/> A Ghost
-                                        Story of Christmas<lb/> by Charles Dickens</titlePart>
-
-                        </titlePage>
+                                <titlePart>A CHRISTMAS CAROL.<lb/> IN PROSE.<lb/> BEING<lb/> A Ghost
+                                        Story of Christmas.<lb/> BY<lb/>CHARLES DICKENS.<lb/></titlePart>
+<titlePart>WITH ILLUSTRATIONS BY JOHN LEECH.</titlePart>
+                        
+                      <titlePart>
+                                LONDON:<lb/>CHAPMAN &amp; HALL, 186, STRAND.<lb/>
+                        MDCCCXLII</titlePart></titlePage>
                         <pb facs="pageImages/printer.png" n="[Printer]"/>
-                        <div>
-                                <p>LONDON:<lb/>BRADBURY AND EVANS, PRINTERS, WHITEFRIARS.</p>
-                        </div>
                 </front>
 
 
