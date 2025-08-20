@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="owen-anthem">
+   <!-- this xml:id is important; it is the unique identifier for the text, added according to the model author-titleword, as in haywood-fantomina -->
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Anthem for Doomed Youth</title>
+            <author>
+               <persName type="lcnaf" key="n79006808"><name>
+                  <!-- The name authority and key here are important; they allow the application to pull information directly from that record. Here, the key is the unique identifier of the author from the Library of Congress Name Authority File at https://id.loc.gov/authorities/names.html-->
+                     <forename>Wilfred</forename> <!-- if an author has 3 names, as in Edgar Allan Poe, put first two in forename; if a second major identifying name, like John Wilmot, Earl of Rochester, put second major id name in addName -->
+                     <surname>Owen</surname>
+               </name>
+               </persName>
+            </author>
+
+            <editor>
+               <persName type="orcid" key="0000-0002-7400-4093">
+                  <name ref="editors.xml#TH">
+                     <forename>Tonya</forename>
+                     <surname>Howe</surname>
+                  </name>
+               </persName>
+            </editor>
+
+            <respStmt>
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#UVAStudStaff"
+                  >Students and Staff of the University of Virginia</name>
+               
+            </respStmt>
+            
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+         
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            <address>
+               <addrLine>University of Virginia</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA</addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+
+            <biblStruct>
+
+               <analytic>
+                 
+                  <title>"Anthem for Doomed Youth"</title>
+                
+               </analytic>
+                 
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>Wilfred</forename>
+                        <surname>Owen</surname>
+                        
+                     </name>
+                  </author>
+
+                  <title>Poems</title>
+
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781"
+                           >London</placeName>
+                     </pubPlace>
+                     <publisher>Chatto &amp; Windus</publisher>
+                     <date when="1920">1920</date>
+                     
+                     <!-- Add additional NOTE elements as needed  -->
+                     <note>This edition has been transcribed from the Internet Archive's edition.</note>
+                  </imprint>
+
+              
+
+                  <extent></extent>
+                  <biblScope>11</biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+
+               </monogr>
+
+            </biblStruct>
+
+         </sourceDesc>
+
+      </fileDesc>
+
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+
+         <creation/>
+
+         <textDesc n="poem">
+            <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="inform" degree="medium"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+
+         <settingDesc>
+
+            <setting>
+               <time from="1914" to="1918">Early 20th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+
+         </settingDesc>
+      </profileDesc>
+
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+
+      <revisionDesc>
+         <change when="2024-07-08" who="editors.xml#XX"
+            >transcribed for Literature in Context edition</change>
+         
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- ************************************************************************** -->
+
+   <text>
+
+      <front>
+         <titlePage>
+            <pb n="Title Page"/>
+            <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
+
+            <titlePart>POEMS<lb/>BY WILFRED OWEN<lb/>WITH AN INTRODUCTION BY<lb/>SIEGFRIED SASSOON<lb/><lb/><lb/><lb/></titlePart>
+            
+            <docImprint>
+               <pubPlace key="7011781">LONDON</pubPlace><lb/>
+               <publisher>CHATTO &amp; WINDUS<lb/></publisher> 
+               <docDate>1920</docDate>
+
+            </docImprint>
+         </titlePage>
+      </front>
+      <body>
+         <pb n="11"/>
+         <div type="poem">
+            <head type="title">ANTHEM FOR DOOMED YOUTH</head>
+
+<lg><l n="1">WHAT passing-bells for these who die as cattle?</l>
+            <l n="2" rend="indent">Only the monstrous anger of the guns.</l>
+            <l n="3" rend="indent">Only the stuttering rifles' rapid rattle</l>
+    <l n="4">Can patter out their hasty orisons.</l>
+    <l n="5">No mockeries for them; no prayers nor bells,</l>
+    <l n="6">Nor any voice of mourning save the choirs,—</l>
+    <l n="7">The shrill, demented choirs of wailing shells;</l>
+    <l n="8">And bugles calling for them from sad shires.</l>
+               </lg>
+         
+ <lg><l n="9">What candles may be held to speed them all?</l>
+    <l n="10" rend="indent">Not in the hands of boys, but in their eyes</l>
+    <l n="11">Shall shine the holy glimmers of goodbyes.</l>
+    <l n="12" rend="indent">The pallor of girls' brows shall be their pall;</l>
+    <l n="13">Their flowers the tenderness of patient minds,</l>
+    <l n="14">And each slow dusk a drawing-down of blinds.</l>
+ </lg>       
+              
+         </div>
+
+         
+      </body>
+
+   </text>
+</TEI>
+
+

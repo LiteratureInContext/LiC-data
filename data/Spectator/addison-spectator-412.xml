@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="addison-spectator-412">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Spectator, #412</title>
+                <author>
+                    <persName type="lcnaf" key="n80051828">
+                        <name>
+                            <forename>Joseph</forename>
+                            <surname>Addison</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup by Project Gutenberg and Students and Staff at the University of Virginia</resp>
+                    <name ref="editors.xml#StudStaffUVA"></name>
+                    
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"Issue 1, Thursday, March 1, 1711"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n80051828">
+                                <name>
+                                    <forename>Joseph</forename>
+                                    <surname>Addison</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title>The Spectator</title>
+                        
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="77011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Samuel Buckley</publisher>
+                            <date when="1711">1712</date>
+                            <note resp="editors.xml#JOB"> The texts for <hi rend="italic"> The
+                                Spectator</hi> are taken from Project Gutenberg's digital
+                                edition, which uses the 1891 printing of the three-volume collected
+                                edition of <hi rend="italic"> The Spectator</hi> edited by Henry
+                                Morley and printed by George Routledge and Sons. That is in turn a
+                                reprint of Morley's 1883 edition, which was published as part of <hi
+                                    rend="italic">Morley's Universal Library</hi>, a series offering
+                                inexpensive reprints of canonical texts. The annotations have been
+                                added by students and faculty at the University of Virginia. Page images have been
+                            sourced from the Huntington Library in San Marino, California.</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="essay">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="mixed"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="medium"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="77011781">London</name>
+                    <time when="1711">1711</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                    Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+    <body>
+        <div>
+            <pb n="Recto" facs="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/412r.jpg"/>
+            <head>THE SPECTATOR, #412, Monday, June 12, 1712 <lb/></head>
+    <lb/>
+            <head><ref target="Mart_" corresp="Mart"><hi rend="italic">Divisum sic breve fiet Opus.</hi>-----------Mart.</ref><note xml:id="Mart" target="Mart_">"The task, broken up, becomes shorter." from the <hi rend="italic">Epigrams</hi> of the Roman poet Martial.</note></head><lb/>
+            <head><hi rend="italic">Monday, June 23. 1712</hi></head>
+    
+            <lb/><lb/>
+            <p>I shall first consider those Pleasures of the Imagination, which arise from the actual View and Survey of outward Objects: And these, I think, all proceed from the Sight of what is <hi rend="italic">Great, Uncommon, or Beautiful</hi>. There may, indeed, be something so terrible or offensive, that the Horror or Loathsomeness of an Object may over-bear the Pleasure which results from its <hi rend="italic">Greatness, Novelty,</hi> or <hi rend="italic">Beauty</hi>; but still there will be such a Mixture of Delight in the very Disgust it gives us, as any of these three Qualifications are most conspicuous and prevailing.</p>
+    
+            <p>By <hi rend="italic">Greatness</hi>, I do not only mean the Bulk of any single Object, but the Largeness of a whole View, considered as one entire Piece. Such are the Prospects of an open Champain Country, a vast uncultivated Desart, of huge Heaps of Mountains, high Rocks and Precipices, or a wide Expanse of Waters, where we are not struck with the Novelty or Beauty of the Sight, but with that rude kind of Magnificence which appears in many of these stupendous Works of Nature. Our Imagination loves to be filled with an Object, or to grasp at any thing that is too big for its Capacity. We are flung into a pleasing Astonishment at such unbounded Views, and feel a delightful Stillness and Amazement in the Soul at the Apprehension of them. The Mind of Man naturally hates every thing that looks like a Restraint upon it, and is apt to fancy it self under a sort of Confinement, when the Sight is pent up in a narrow Compass, and shortned on every side by the Neighbourhood of Walls or Mountains. On the contrary, a spacious Horizon is an Image of Liberty, where the Eye has Room to range abroad, to expatiate at large on the Immensity of its Views, and to lose it self amidst the Variety of Objects that offer themselves to its Observation. Such wide and undetermined Prospects are as pleasing to the Fancy, as the Speculations of Eternity or Infinitude are to the Understanding. But if there be a Beauty or Uncommonness joined with this Grandeur, as in a troubled Ocean, a Heaven adorned with Stars and Meteors, or a spacious <ref target="Landskip_" corresp="Landskip">Landskip</ref><note xml:id="Landskip" target="Landskip_">Landscape</note> cut out into Rivers, Woods, Rocks, and Meadows, the Pleasure still grows upon us, as it rises from more than a single Principle.</p>
+    
+            <p> Every thing that is <hi rend="italic">new</hi> or <hi rend="italic">uncommon</hi> raises a Pleasure in the Imagination, because it fills the Soul with an agreeable Surprize, gratifies its Curiosity, and gives it an Idea of which it was not before possest. We are indeed so often conversant with one Set of Objects, and tired out with so many repeated Shows of the same Things, that whatever is new or uncommon contributes a little to vary human Life, and to divert our Minds, for a while, with the Strangeness of its Appearance: It serves us for a kind of Refreshment, and takes off from that Satiety we are apt to complain of in our usual and ordinary Entertainments. It is this that bestows Charms on a Monster, and makes even the Imperfections of Nature please us. It is this that recommends Variety, where the Mind is every Instant called off to something new, and the Attention not suffered to dwell too long, and waste it self on any particular Object. It is this, likewise, that improves what is great or beautiful, and make it afford the Mind a double Entertainment. Groves, Fields, and Meadows, are at any Season of the Year pleasant to look upon, but never so much as in the Opening of the Spring, when they are all new and fresh, with their first Gloss upon them, and not yet too much accustomed and familiar to the Eye. For this Reason there is nothing that more enlivens a Prospect than Rivers, Jetteaus, or Falls of Water, where the Scene is perpetually shifting, and entertaining the Sight every Moment with something that is new. We are quickly tired with looking upon Hills and Vallies, where every thing continues fixed and settled in the same Place and Posture, but find our Thoughts a little agitated and relieved at the Sight of such Objects as are ever in Motion, and sliding away from beneath the Eye of the Beholder.</p>
+    
+            <p>But there is nothing that makes its Way more directly to the Soul than <hi rend="italic">Beauty</hi>, which immediately diffuses a secret Satisfaction and Complacency through the Imagination, and gives a Finishing to any thing that is Great or Uncommon. The very first Discovery of it strikes the Mind with an inward Joy, and spreads a Chearfulness and Delight through all its Faculties. There is not perhaps any real Beauty or Deformity more in one Piece of Matter than another, because we might have been so made, that whatsoever now appears loathsome to us, might have shewn it self agreeable; but we find by Experience, that there are several Modifications of Matter which the Mind, without any previous Consideration, pronounces at first sight Beautiful or Deformed. Thus we see that every different Species of sensible Creatures has its different Notions of Beauty, and that each of them is most affected with the Beauties of its own Kind. This is no where more remarkable than in Birds of the same Shape and Proportion, where we often see the Male determined in his Courtship by the single Grain or Tincture of a Fea-
+                    <pb n="Verso" facs="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/412v.jpg"/>ther, and never discovering any Charms but in the Colour of its Species.</p>
+            <lg> <l><hi rend="italic"><ref target="Scit_" corresp="Scit">Scit thalamo servare fidem, sanctasque veretur</ref></hi></l>
+                <l><hi rend="italic">Connubii leges, non illum in pectore candor</hi></l>
+                <l><hi rend="italic">Sollicitat niveus; neque pravum accendit amorem</hi></l>
+                <l><hi rend="italic">Splendida Lanugo, vel honesta in vertice crista,</hi></l>
+                <l> <hi rend="italic">Purpureusve nitor pennarum; ast agmina latè</hi></l>
+                <l><hi rend="italic">Fœminea explorat cautus, maculasque requirit</hi></l>
+                <l> <hi rend="italic">Cognatas, paribusque interlita corpora guttis:</hi></l>
+                <l><hi rend="italic">Ni faceret, pictis sylvam circum undique monstris</hi></l>
+                <l><hi rend="italic">Confusam aspiceres vulgò, partusque biformes,</hi></l>
+                <l><hi rend="italic">Et genus ambiguum, et Veneris monumenta nefandæ.</hi></l>
+                <l rend="indent1"><hi rend="italic">Hinc merula in nigro se oblectat nigra marito,</hi></l>
+                <l><hi rend="italic">Hinc socium lasciva petit Philomela canorum,</hi></l>
+                <l><hi rend="italic">Agnoscitque pares sonitus, hinc Noctua tetram</hi></l>
+                <l><hi rend="italic">Canitiem alarum, et glaucos miratur ocellos.</hi></l>
+                <l><hi rend="italic">Nempe sibi semper constat, crescitque quotannis</hi></l>
+                <l><hi rend="italic">Lucida progenies, castos confessa parentes;</hi></l>
+                <l> <hi rend="italic">Dum virides inter saltus lucosque sonoros</hi></l>
+                <l><hi rend="italic">Vere novo exultat, plumasque decora Juventus</hi></l>
+                <l><hi rend="italic">Explicat ad solem, patriisque coloribus ardet.</hi></l></lg><note xml:id="Scit" target="Scit_"><p>The Latin poem is by Addison himself. The translation, by an unknown writer, comes from a 1744 edition of the <hi rend="italic">Spectator</hi>.</p><lb/>
+                    <p><lg><l>"The feather'd Husband, to his partner true,</l>
+                    <l> Preserves connubial Rites inviolate.</l>
+                    <l>With cold Indifference every Charm he sees,</l>
+                    <l>The milky Whiteness of the stately Neck, </l>
+                    <l>The shing Down, proud Crest, and purple Wings:</l>
+                    <l> But cautious with a searching Eye explores</l>
+                    <l> The female Tribes,  his proper Mate to find,</l>
+                    <l>With kindred Colours mark'd: Did he not so,</l>
+                    <l> The Grove with painted Monsters wou'd abound,</l>
+                    <l> Th'ambiguous Product of unnatural Love.</l>
+                    <l>The Black-bird hence selects her sooty Spouse:</l>
+                    <l>The Nightingale her musical Compeer,</l>
+                    <l>Lur'd by the well-known Voice: the Bird of Night,</l>
+                    <l>Smit with his dusky Wings, and greenish Eyes,</l>
+                    <l>Woos his dun Paramour. The beauteous Race</l>
+                    <l>Speak the chaste loves of their Progenitors;</l>
+                    <l>When, by the Spring invited, they exult</l>
+                    <l>In Woods and Fields, and to the Sun unfold</l>
+                        <l>Their Plumes, that with paternal Colours glow."</l></lg></p>
+                </note>
+            <p>There is a second Kind of <hi rend="italic">Beauty</hi> that we find in the several Products of Art and Nature, which does not work in the Imagination with that Warmth and Violence as the Beauty that appears in our proper Species, but is apt however to raise in us a secret Delight, and a kind of Fondness for the Places or Objects in which we discover it. This consists either in the Gaiety or Variety of Colours, in the Symmetry and Proportion of Parts, in the Arrangement and Disposition of Bodies, or in a just Mixture and Concurrence of all together. Among these several Kinds of Beauty the Eye takes most Delight in Colours. We no where meet with a more glorious or pleasing Show in Nature than what appears in the Heavens at the rising and setting of the Sun, which is wholly made up of those different Stains of Light that shew themselves in Clouds of a different Situation. For this Reason we find the Poets, who are always addressing themselves to the Imagination, borrowing more of their Epithets from Colours than from any other Topic. As the Fancy delights in every thing that is Great, Strange, or Beautiful, and is still more pleased the more it finds of these Perfections in the same Object, so is it capable of receiving a new Satisfaction by the Assistance of another Sense. Thus any continued Sound, as the Musick of Birds, or a Fall of Water, awakens every moment the Mind of the Beholder, and makes him more attentive to the several Beauties of the Place that lye before him. Thus if there arises a Fragrancy of Smells or Perfumes, they heighten the Pleasures of the Imagination, and make even the Colours and Verdure of the Landskip appear more agreeable; for the Ideas of both Senses recommend each other, and are pleasanter together than when they enter the Mind separately: As the different Colours of a Picture, when they are well disposed, set off one another, and receive an additional Beauty from the Advantage of their Situation.</p>
+    
+    
+                    <p><ref target="O_" corresp="O">O.</ref><note xml:id="O" target="O_">Addison signed each issue of the journal that he wrote with either C, L, I, O, the letters spelling the name "Clio," the muse of history.</note></p>
+                    </div>
+    </body>
+        
+            
+    </text>
+</TEI>
+
+

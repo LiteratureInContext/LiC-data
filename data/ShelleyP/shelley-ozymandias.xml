@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_3.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shelley-ozymandias">
+    
+    <teiHeader xml:lang="en">
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Ozymandias</title>
+                <author>
+                    <persName type="lcnaf" key="n79054060">
+                        
+                        <name>
+                            
+                            <forename>Percy Bysshe</forename> 
+                            <surname>Shelley</surname>
+                        </name>
+                        
+                    </persName>
+                </author>
+                
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#TH">
+                            <forename>John</forename>
+                            <surname>O'Brioen</surname>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name ref="editors.xml#JOB"
+                        >Students and Staff at the University of Virginia</name>
+                    
+                </respStmt>
+                
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                <address>
+                    <addrLine><?oxy-placeholder content="Address lines for your institution"?></addrLine>
+                    <addrLine>Address line 2</addrLine>
+                    <addrLine>Address line 3</addrLine>
+                    <addrLine>Address line 4</addrLine>
+                    <addrLine>Email</addrLine>
+                    <!-- cut unused or add additional addrLines -->
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                        License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                
+                <biblStruct>
+                    
+                    <analytic>
+                        
+                        <title>"Ode to the West Wind"></title>
+                        
+                    </analytic>
+                    
+                    <monogr>
+                        <author>
+                            <name>
+                                <forename>Percy Bysshe</forename>
+                                <surname>Shelley</surname>
+                                
+                            </name>
+                        </author>
+                        
+                        <title>The Examiner</title>
+                        
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="77011781"
+                                    >London</placeName>
+                            </pubPlace>
+                            <publisher>Leigh and John Hunt</publisher>
+                            <date when="1818">1818</date>
+                            <note>Shelley's poem "Ozymandias" was first published in a weekly newspaper called <hi rend="italic">The Examiner</hi> on January 11, 1818. <hi rend="italic">The Examiner</hi> was published in London by the brothers Leigh and John Hunt, who regularly published poetry in the pages of their journal. Our edition is transcribed from that first printing. We have, however, corrected a typographical error, adding a final quotation mark at the end of the poem that is missing in the original. The image is taken from Wikimedia Commons.</note>
+                            
+                        </imprint>
+                        
+                        
+                        
+                        <extent><?oxy-placeholder content="physical dimensions from catalog record"?></extent>
+                        <biblScope>24</biblScope>
+                        <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+                        
+                    </monogr>
+                    
+                </biblStruct>
+                
+            </sourceDesc>
+            
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            
+            <creation/>
+            
+            <textDesc n="poem">
+                <!-- common descriptors include poem, novel, novella, play, collection, letter, and so on. -->
+                <channel mode="w">print</channel>
+                <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+                <constitution type="single">single poem</constitution>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="inapplicable"/>
+                <interaction/>
+                <preparedness type="revised"/>
+                <purpose type="express"/>
+                <purpose type="inform" degree="medium"/>
+                <!-- interpretation in the textDesc will be necessary -->
+            </textDesc>
+            
+            <settingDesc>
+                
+                <setting>
+                    
+                </setting>
+                
+            </settingDesc>
+        </profileDesc>
+        
+        <encodingDesc>
+            
+            <projectDesc>
+                <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+                    project, which provides an accessible, reliable, curated, and marked-up selection of
+                    primary sources relevant to the study and the teaching of British and American
+                    literature. This project is was initially funded by the National Endowment for the
+                    Humanities and developed by faculty at The University of Virginia and Marymount
+                    University.</p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources, with
+                        links provided where possible. Annotations have also included common knowledge,
+                        defined as information that can be found in multiple reliable sources. If you
+                        notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of the
+                        word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                        not.</p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions, where
+                        possible. See the Sources section for more information.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Numbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgm">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        
+        <revisionDesc>
+            <change when="2024-02-20" who="editors.xml#JOB"
+                >created Literature in Context Edition</change>
+        </revisionDesc>
+        
+    </teiHeader>
+    
+    <!-- ************************************************************************** -->
+    
+    <text><body>
+        <head> <ref target="Audio_" corresp="Audio">[Audio File]</ref><note xml:id="Audio" target="Audio_"><graphic url="https://lic-assets-staging.s3.amazonaws.com/shelley-ozymandias/ozymandias_of_egypt_shelley_db_64kb.mp3"></graphic>Librivox recording of "Ozymandias," read by David Barnes</note></head>
+        <pb facs="pageImages/1.png"/>
+        <div type="poem">
+        
+        <head>OZYMANDIAS</head>
+            <lg met="sonnet">
+            <l n="1">I met a Traveller from an antique land,</l>
+            <l n="2">Who said, “Two vast and trunkless legs of stone</l>
+            <l n="3">Stand in the desart. Near them, on the sand,</l>
+            <l n="4">Half sunk a shattered visage lies, whose frown,</l>
+            <l n="5">And wrinkled lip, and sneer of cold command,</l>
+            <l n="6">Tell that its sculptor well those passions read</l>
+            <l n="7">Which yet survive, stamped on these lifeless things,</l>
+            <l n="8">The hand that mocked them, and the heart that fed;</l>
+            <l n="9">And on the pedestal, these words appear:</l>
+            <l n="10">'My name is OZYMANDIAS, King of Kings;</l>
+            <l n="11">Look on my works, ye Mighty, and despair!'</l>
+            <l n="12">Nothing beside remains. Round the decay</l>
+            <l n="13">Of that Colossal Wreck, boundless and bare</l>
+            <l n="14">The lone and level sands stretch far away."</l></lg>
+            <signed><ref target="Glirastes_" corresp="Glirastes">GLIRASTES.</ref><note xml:id="Glirastes" target="Glirastes_">"Glirastes," the made-up name by which Shelley signed this poem in its first printing in <hi rend="italic">The Examiner</hi> on January 11, 1818, is an inside joke and a note of affection for his wife Mary Shelley. (Remarkably, Mary Shelley's novel <ref target="https://anthology.lib.virginia.edu/work/Shelley/shelley-frankenstein-1818"><hi rend="italic">Frankenstein: or, the Modern Prometheus</hi></ref>, had been published less than two weeks earlier, on January 1.) Percy Shelley's pet name for Mary was (for reasons unknown) "dormouse." "Glirastes" is a compound word that Shelley made up, combining the the Latin word "gliradae," the scientific name for dormice, and the Greek "erastes," meaning "lover of." Hence "lover of dormouse"--an affectionate, coded gesture to Mary.</note></signed>
+            
+           
+            </div>
+        </body>
+    </text>
+</TEI>
+

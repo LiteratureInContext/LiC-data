@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="addison-spectator-418">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Spectator, Issue 418, Monday, June 30, 1712</title>
+                <author>
+                    <persName type="lcnaf" key="n80051828">
+                        <name>
+                            <forename>Joseph</forename>
+                            <surname>Addison</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Project Gutenberg and Staff and Research Assistants at The University of Virginia</name>
+                    
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>The Spectator, #418</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n80051828">
+                                <name>
+                                    <forename>Joseph</forename>
+                                    <surname>Addison</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title>The Spectator</title>
+                        
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="77011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Samuel Buckley</publisher>
+                            <date when="1711">1712</date>
+                            <note resp="editors.xml#JOB"> The texts for <hi rend="italic"> The
+                                Spectator</hi> are taken from Project Gutenberg's digital
+                                edition, which uses the 1891 printing of the three-volume collected
+                                edition of <hi rend="italic"> The Spectator</hi> edited by Henry
+                                Morley and printed by George Routledge and Sons. That is in turn a
+                                reprint of Morley's 1883 edition, which was published as part of <hi
+                                    rend="italic">Morley's Universal Library</hi>, a series offering
+                                inexpensive reprints of canonical texts. The annotations have been
+                                added by students and faculty at the University of Virginia. The page images
+                                have been sourced from the Huntington Library in San Marino, California.</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="essay">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="mixed"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="medium"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="77011781">London</name>
+                    <time when="1712">1712</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                    Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2024-03" who="editors.#JOB"
+                >John O'Brien created LiC edition</change>
+            <change when="0000-00-00" who="xxxx"/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div><pb n="Recto" facs="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/418r.jpg"/>
+                <head>THE SPECTATOR, #418</head><lb/>
+                <head type="sub"> <hi rend="italic">----<ref target="ferat_" corresp="ferat">ferat &amp; rubus asper amomum.</ref><note xml:id="ferat" target="ferat_">"Let the bramble bear spices." from the <hi rend="italic">Eclogues</hi> by Virgil. Translation from Loeb Classical Library.</note></hi>   Virg.    </head><lb/>
+                <head type="sub"><hi rend="italic">Monday, June 30,</hi> 1712.</head>
+                <lb/><lb/>
+                <p>The Pleasures of these Secondary Views of the Imagination, are of a wider and more Universal Nature than those it has when joined with Sight; for not only what is Great, Strange or Beautiful, but any Thing that is Disagreeable when looked upon, pleases us in an apt Description. Here, therefore, we must enquire after a new Principle of Pleasure, which is nothing else but the Action of the Mind, which <hi rend="italic">compares</hi> the Ideas that arise from Words, with the Ideas that arise from the Objects themselves; and why this Operation of the Mind is attended with so much Pleasure, we have before considered. For this Reason therefore, the Description of a Dunghill is pleasing to the Imagination, if the Image be represented to our Minds by suitable Expressions; tho' perhaps, this may be more properly called the Pleasure of the Understanding than of the Fancy, because we are not so much delighted with the Image that is contained in the Description, as with the Aptness of the Description to excite the Image.</p>
+                
+                <p>But if the Description of what is Little, Common, or Deformed, be acceptable to the Imagination, the Description of what is Great, Surprising or Beautiful, is much more so; because here we are not only delighted with <hi rend="italic">comparing</hi> the Representation with the Original, but are highly pleased with the Original itself. Most Readers, I believe, are more charmed with <hi rend="italic">Milton'</hi>s Description of Paradise, than of Hell; they are both, perhaps, equally perfect in their Kind, but in the one the Brimstone and Sulphur are not so refreshing to the Imagination, as the Beds of Flowers and the Wilderness of Sweets in the other.</p>
+                
+                    <p> There is yet another Circumstance which recommends a Description more than all the rest, and that is if it represents to us such Objects as are apt to raise a secret Ferment in the Mind of the Reader, and to work, with Violence, upon his Passions. For, in this Case, we are at once warmed and enlightened, so that the Pleasure becomes more Universal, and is several ways qualified to entertain us. Thus in Painting, it is pleasant to look on the Picture of any Face, where the Resemblance is hit, but the Pleasure increases, if it be the Picture of a Face that is Beautiful, and is still greater, if the Beauty be softened with an Air of Melancholy or Sorrow. The two leading Passions which the more serious Parts of Poetry endeavour to stir up in us, are Terror and Pity. And here, by the way, one would wonder how it comes to pass, that such Passions as are very unpleasant at all other times, are very agreeable when excited by proper Descriptions. It is not strange, that we should take Delight in such Passions as are apt to produce Hope, Joy, Admiration, Love, or the like Emotions in us, because they never rise in the Mind without an inward Pleasure which attends them. But how comes it to pass, that we should take delight in being terrified or dejected by a Description, when we find so much Uneasiness in the Fear or Grief which we receive from any other Occasion?</p>
+                
+                        <p>If we consider, therefore, the Nature of this Pleasure, we shall find that it does not arise so properly from the Description of what is terrible, as from the Reflection we make on our selves at the time of reading it. When we look on such hideous Objects, we are not a little pleased to think we are in no Danger of them. We consider them at the same time, as Dreadful and Harmless; so that the more frightful Appearance they make, the greater is the Pleasure we receive from the Sense of our own Safety. In short, we look upon the Terrors of a Description, with the same Curiosity and Satisfaction that we survey a dead Monster.</p>
+                <lg><l><hi rend="italic">------------------------<ref target="Informe_" corresp="Informe">Informe cadaver</ref><note xml:id="Informe" target="Informe_">"and dragged forth by the feet the shapeless corpse of the foul monster slain. The people gazed insatiate on the grewsome eyes, the breast of bristling shag, the face both beast and man and that fire-blasted throat where breathed no more the extinguished flame." from book VIII of Virgil's <hi rend="italic">Aeneid</hi>. Perseus Classical Library translation.</note></hi></l>
+                    <l><hi rend="italic">Protrahitur, nequeunt expleri corda tuendo</hi></l>
+                    <l><hi rend="italic">Terribiles oculos: vultum, villosaque satis</hi></l>
+                    <l><hi rend="italic">Pectora semiferi, atque extinctos faucibus ignes.</hi> Virg.</l></lg>
+                
+                            <p>It is for the same Reason that we are delighted with the reflecting upon Dangers that are past, or in looking on a Precipice at a distance, which would fill us with a different kind of Horror, if we saw it hanging over our Heads.</p>
+                
+                                <p>In the like manner, when we read of Torments, Wounds, Deaths, and the like dismal Accidents, our Pleasure does not flow so properly from the Grief which such melancholy Descriptions give us, as from the secret Comparison which we make between our selves and the Person who suffers. Such Representations teach us to set a just Value upon our own Condition, and make us prize our good Fortune, which exempts us from the like Calamities. This is, however, such a kind of Pleasure as we are not capable of receiving, when we see a Person actually lying under the Tortures that we meet with in a Description; because in this case, the Object presses too close upon our Senses, and bears so hard upon us, that it does not give us Time or Leisure to reflect on our selves. Our Thoughts are so intent upon the Miseries of the Sufferer, that we cannot turn them upon our own Happiness. Whereas, on the contrary, we consider the Misfortunes we read in History or Poetry, either as past, or as fictitious,
+                                    <pb n="Verso" facs="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/418v.jpg"/>so that the Reflection upon our selves rises in us insensibly, and over-bears the Sorrow we conceive for the Sufferings of the Afflicted.</p>
+                
+                                    <p>But because the Mind of Man requires something more perfect in Matter, than what it finds there, and can never meet with any Sight in Nature which sufficiently answers its highest Ideas of Pleasantness; or, in other Words, because the Imagination can fancy to it self Things more Great, Strange, or Beautiful, than the Eye ever saw, and is still sensible of some Defect in what it has seen; on this account it is the part of a Poet to humour the Imagination in its own Notions, by mending and perfecting Nature where he describes a Reality, and by adding greater Beauties than are put together in Nature, where he describes a Fiction.</p>
+                
+                <p>He is not obliged to attend her in the slow Advances which she makes from one Season to another, or to observe her Conduct, in the successive Production of Plants and Flowers. He may draw into his Description all the Beauties of the Spring and Autumn, and make the whole Year contribute something to render it the more agreeable. His Rose-trees, Wood-bines, and Jessamines may flower together, and his Beds be cover'd at the same time with Lillies, Violets, and Amaranths. His Soil is not restrained to any particular Sett of Plants, but is proper either for Oaks or Mirtles, and adapts itself to the Products of every Climate. Oranges may grow wild in it; Myrrh may be met with in every Hedge, and if he thinks it proper to have a Grove of Spices, he can quickly command Sun enough to raise it. If all this will not furnish out an agreeable Scene, he can make several new Species of Flowers, with richer Scents and higher Colours than any that grow in the Gardens of Nature. His Consorts of Birds may be as full and harmonious, and his Woods as thick and gloomy as he pleases. He is at no more Expence in a long Vista, than a short one, and can as easily throw his Cascades from a Precipice of half a Mile high, as from one of twenty Yards. He has his Choice of the Winds, and can turn the Course of his Rivers in all the Variety of <hi rend="italic">Meanders</hi>, that are most delightful to the Reader's Imagination. In a word, he has the modelling of Nature in his own Hands, and may give her what Charms he pleases, provided he does not reform her too much, and run into Absurdities, by endeavouring to excel.</p>
+                
+           
+                
+                <p>O.</p>
+            </div>
+        </body>
+        
+    </text>
+</TEI>
+
+

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="addison-spectator-414">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"The Spectator Issue 414, Wednesday, June 25, 1712"</title>
+                <author>
+                    <persName type="lcnaf" key="n80051828">
+                        <name>
+                            <forename>Joseph</forename>
+                            <surname>Addison</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Project Gutenberg and Staff and Research Assistants at The University of Virginia</name>
+                    
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"Issue 414, Wednesday, June 25, 1712"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n80051828">
+                                <name>
+                                    <forename>Joseph</forename>
+                                    <surname>Addison</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title>The Spectator</title>
+                        
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="77011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Samuel Buckley</publisher>
+                            <date when="1711">1711</date>
+                            <note resp="editors.xml#JOB"> The texts for <hi rend="italic"> The
+                                Spectator</hi> are taken from Project Gutenberg's digital
+                                edition, which uses the 1891 printing of the three-volume collected
+                                edition of <hi rend="italic"> The Spectator</hi> edited by Henry
+                                Morley and printed by George Routledge and Sons. That is in turn a
+                                reprint of Morley's 1883 edition, which was published as part of <hi
+                                    rend="italic">Morley's Universal Library</hi>, a series offering
+                                inexpensive reprints of canonical texts. The annotations have been
+                                added by students and faculty at the University of Virginia. Page images have been 
+                            souced from the Huntington Library in San Marino, California.</note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="essay">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="mixed"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="medium"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="77011781">London</name>
+                    <time when="1711">1712</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        
+        
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                    Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+            <pb n="Recto" facs="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/414r.jpg"/>
+            <head>THE SPECTATOR #414</head>
+        <lb/>
+            <head type="sub"><ref target="Avia_" corresp="Avia"><hi rend="italic"> --------------—Alterius sic<lb/>
+                                                    Altera poscit opem res et conjurat amicè.</hi></ref><note
+                                                        xml:id="Avia" target="Avia_">"Each demands the help of another." From the Roman poet Horace, <hi rend="italic">Ars Poetica.</hi></note></head><lb/>
+          
+            <head type="sub"><hi rend="italic">Wednesday June 25.</hi> 1712.</head>
+                <lb/><lb/>
+ <div type="essay">
+            <p>If we consider the Works of Nature and Art, as they are qualified to entertain the Imagination, we shall find the last very defective, in Comparison of the former; for though they may sometimes appear as Beautiful or Strange, they can have nothing in them of that Vastness and Immensity, which afford so great an Entertainment to the Mind of the Beholder. The one may be as Polite and Delicate as the other, but can never shew her self so August and Magnificent in the Design. There is something more bold and masterly in the rough careless Strokes of Nature, than in the nice Touches and Embellishments of Art. The Beauties of the most stately Garden or Palace lie in a narrow Compass, the Imagination immediately runs them over, and requires something else to gratifie her; but, in the wide Fields of Nature, the Sight wanders up and down without Confinement, and is fed with an infinite variety of Images, without any certain Stint or Number. For this Reason we always find the Poet in Love with a Country-Life, where Nature appears in the greatest Perfection, and furnishes out all those Scenes that are most apt to delight the Imagination.</p>
+            <div type="poem">
+                <floatingText>
+                    <body>
+                        <div type="poem">
+                            <lg><l><hi rend="italic">Scriptorum chorus omnis amat nemus &amp; fugit Urbes.</hi></l> </lg>
+                            <signed><ref target="Hor__" corresp="Hor">Hor.</ref><note xml:id="Hor" target="Hor_">"Every chorus of writers loves the grove and flees the cities." from one of the <hi rend="italic">Epistles</hi> by the Latin poet Horace.</note></signed>
+                         
+                        </div>
+                    </body>
+                </floatingText>
+            </div>
+            
+            <div type="poem">
+                <floatingText>
+                    <body>
+                        <div type="poem">
+                           
+                            <lg><l><hi rend="italic">Hic Secura quies, &amp; nescia fallere vita,</hi></l>
+                                <l><hi rend="italic">Dives opum variarum; hic latis otia fundis,</hi></l>
+                                <l><hi rend="italic">Speluncæ, vivique lacus, hic frigida Tempe,</hi></l>
+                                <l><hi rend="italic">Mugitusque boum, mollesque sub arbore somni.</hi></l></lg>
+                            <signed><ref target="Virg_" corresp="Virg"> Virg.</ref><note xml:id="Virg" target="Virg_">"The peace of broad domains, caverns, and natural lakes, and cool vales--all are theirs." from book II of the <hi rend="italic">Georgics</hi> by the Roman poet Virgil. Loeb Classical Library translation.</note></signed>                
+                        </div>
+                    </body>
+                </floatingText>
+            </div>
+            <p>But tho' there are several of these wild Scenes, that are more delightful than any artificial Shows; yet we find the Works of Nature still more pleasant, the more they resemble those of Art: For in this case our Pleasure rises from a double Principle; from the Agreeableness of the Objects to the Eye, and from their Similitude to other Objects: We are pleased as well with comparing their Beauties, as with surveying them, and can represent them to our Minds, either as Copies or Originals. Hence it is that we take Delight in a Prospect which is well laid out, and diversified with Fields and Meadows, Woods and Rivers; in those accidental <ref target="Landskips_" corresp="Landskips">Landskips</ref><note xml:id="Landskips" target="Landskips_">Landscapes</note> of Trees, Clouds and Cities, that are sometimes found in the Veins of Marble; in the curious Fret-work of Rocks and Grottos; and, in a Word, in any thing that hath such a Variety or Regularity as may seem the Effect of Design, in what we call the Works of Chance.</p>
+    
+            <p>If the Products of Nature rise in Value, according as they more or less resemble those of Art, we may be sure that artificial Works receive a greater Advantage from their Resemblance of such as are natural; because here the Similitude is not only pleasant, but the Pattern more perfect. <ref target=" camera_" corresp="camera">The prettiest Landskip I ever saw, was one drawn on the Walls of a dark Room, which stood opposite on one side to a navigable River, and on the other to a Park. The Experiment is very common in Opticks.</ref><note xml:id="camera" target="camera_">Landscape. Addison is describing a <hi rend="italic">camera obscura</hi>, a dark room or a box with a pinhole on one side through which light is let in; on the opposite side or wall, an image of what is outside the room or box appears, upside -down, as in this image. <graphic url="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/camera_obscura.jpg"  width="300px" style="float:right" alt="engraving of an eighteenth-century camera obscura" source="Welcome Collection" desc="Camera obscura, 1752. Source: Wellcome Collection"/> The phenonemon has been known since antiquity, and there was a great deal of interest in it in the seventeenth and eighteenth centuries, when optics was becoming a modern science. Artists, for example, used them to achieve greater realism in when painting landscape scenes. The experiments with the camera obscura in this period ultimately led to the development of modern photography in the first decades of the nineteenth century. A modern photographic camera is in essence a small <hi rend="italic">camera obscura</hi> with a means of making a permanent record, chemical or digital, of the image projected through a lens. </note> Here you might discover the Waves and Fluctuations of the Water in strong and proper Colours, with the Picture of a Ship entering at one end, and sailing by Degrees through the whole Piece. On another there appeared the Green Shadows of Trees, waving to and fro with the Wind, and Herds of Deer among them in Miniature, leaping about upon the Wall. I must confess, the Novelty of such a Sight may be one occasion of its Pleasantness to the Imagination, but certainly the chief Reason is its near Resemblance to Nature, as it does not only, like other Pictures, give the Colour and Figure, but the Motion of the Things it represents.</p>
+    
+            <p>We have before observed, that there is generally in Nature something more Grand and August, than what we meet with in the Curiosities of Art. When therefore, we see this imitated in any measure, it gives us a nobler and more exalted kind of Pleasure than what we receive from the nicer and more accurate Productions of Art. On this Account our <hi rend="italic">English Gardens</hi> are not so entertaining to the Fancy as those in <hi rend="italic">France</hi> and <hi rend="italic">Italy</hi>, where we see a large Extent of Ground covered over with an agreeable mixture of Garden and Forest, which represent every where an artificial Rudeness, much more charming than that Neatness and Elegancy 
+                <pb n="Verso" facs="https://lic-assets-staging.s3.amazonaws.com/addison-steele-spectator/414v.jpg"/>
+                
+                which we meet with in those of our own Country. It might, indeed, be of ill Consequence to the Publick, as well as unprofitable to private Persons, to alienate so much Ground from Pasturage, and the Plow, in many Parts of a Country that is so well peopled, and cultivated to a far greater Advantage. But why may not a whole Estate be thrown into a kind of Garden by frequent Plantations, that may turn as much to the Profit, as the Pleasure of the Owner? A Marsh overgrown with Willows, or a Mountain shaded with Oaks, are not only more beautiful, but more beneficial, than when they lie bare and unadorned. Fields of Corn make a pleasant Prospect, and if the Walks were a little taken care of that lie between them, if the natural Embroidery of the Meadows were helpt and improved by some small Additions of Art, and the several Rows of Hedges set off by Trees and Flowers, that the Soil was capable of receiving, a Man might make a pretty Landskip of his own Possessions.</p>
+    
+            <p>Writers who have given us an Account of <hi rend="italic">China</hi>, tell us the Inhabitants of that Country laugh at the Plantations of our <hi rend="italic">Europeans</hi>, which are laid out by the Rule and Line; because, they say, any one may place Trees in equal Rows and uniform Figures. They chuse rather to shew a Genius in Works of this Nature, and therefore always conceal the Art by which they direct themselves. They have a Word, it seems, in their Language, by which they express the particular Beauty of a Plantation that thus strikes the Imagination at first Sight, without discovering what it is that has so agreeable an Effect. Our <hi rend="italic">British</hi> Gardeners, on the contrary, instead of humouring Nature, love to deviate from it as much as possible. Our Trees rise in Cones, Globes, and Pyramids. We see the Marks of the Scissars upon every Plant and Bush. I do not know whether I am singular in my Opinion, but, for my own part, I would rather look upon a Tree in all its Luxuriancy and Diffusion of Boughs and Branches, than when it is thus cut and trimmed into a Mathematical Figure; and cannot but fancy that an Orchard in Flower looks infinitely more delightful, than all the little Labyrinths of the more finished Parterre. But as our great Modellers of Gardens have their Magazines of Plants to dispose of, it is very natural for them to tear up all the beautiful Plantations of Fruit Trees, and contrive a Plan that may most turn to their own Profit, in taking off their Evergreens, and the like Moveable Plants, with which their Shops are plentifully stocked.</p>
+    
+            <p>O.</p>
+ </div>
+            </div>
+    </body>
+    </text>
+</TEI>

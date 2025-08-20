@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="williams_wheelbarrow">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="williams-wheelbarrow">
    <teiHeader xml:lang="en">
       <fileDesc>
          <titleStmt>
@@ -75,7 +75,7 @@
                      <date when="1923">1923</date>
                      <note><?oxy-placeholder content="Add notes as needed. Be sure to include all relevant notes about this first edition useful for helping students understand its material reality in history."?></note>
                      <!-- Add additional NOTE elements as needed  -->
-                     <note>The poem entitled the "Red Wheelbarrow" appears on p. 74. Interestingly, it has no title. Instead, it is numbered XXII. Page images have been sourced from <ref target="https://search.lib.virginia.edu/sources/uva_library/items/u863455">the first edition, housed in the Special Collections at The University of Virginia</ref>. The first edition was printed in a small run of 300 copies by Maurice Darantiere, a well-known modernist printer, at his press in Dijon.</note> 
+                     <note>The poem now known as "The Red Wheelbarrow" was first published in <hi rend="italic">Spring and All</hi> (1923) under the numerical heading "XXII". <hi rend="italic">Spring and All</hi> was a highly influential, experimental work in the imagist movement, containing segments of both prose and poetry. Imagism is an early 20th century aesthetic movement characterized by free verse (a verse form that rejects traditional poetic forms) and an economical directness of expression that sought to capture perceptions in precise images--a reaction to the efflorescensce of much Romantic and Victorian verse. Page images are provided courtesy of <ref target="https://search.lib.virginia.edu/sources/uva_library/items/u863455">the first edition</ref>, housed in the Clifton Waller Barrett Library of American Literature, Special Collections, University of Virginia, Charlottesville, VA. The first edition was printed in a small run of 300 copies by Maurice Darantiere, a well-known modernist printer, at his press in Dijon.</note> 
                   </imprint>
 
                   
@@ -193,12 +193,12 @@
 
       <front>
          <titlePage>
-            <pb n="[TP]"/>
+            <pb n="[TP]" facs="pageImages/TP.jpg"/>
             <!-- Note the formula for adding page beginnings; indicate pages without numbers using square brackets. Be sure to include the filename for each page image in the FACS attribute. -->
-            <titlePart><hi rend="italic">Spring and All</hi><lb/></titlePart>
-            <titlePart/>
+            <titlePart><hi rend="italic">Spring and All</hi><lb/><lb/></titlePart>
+            <titlePart><hi rend="italic">by</hi><lb/></titlePart>
             <!-- Italics and annotations, etc., to be added as usual. Cut anything not needed. -->
-            <titlePart><lb/>
+            <titlePart><hi rend="italic">William Carlos Williams</hi>
             </titlePart>
             <docImprint>
                
@@ -208,7 +208,7 @@
       <body>
          <!-- use the TEI guidelines to help you with details of encoding. If the choices you make are not supported by the LiC schema, make a note and contact a representative of the project. -->
 
-<pb n="74"/>
+<pb n="74" facs="pageImages/74.jpg"/>
          <div type="poem">
             <!-- Note structure for prose; div type can be chapter, story, and so on. There may be standard attribute content; use your best judgement, and we can look at it later! -->
             <head type="main">XXII [The Red Wheelbarrow]</head>

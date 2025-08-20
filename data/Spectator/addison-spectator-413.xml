@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="addison-spectator-413">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Spectator, Issue 413, Tuesday, June 24, 1712</title>
+                <author>
+                    <persName type="lcnaf" key="n80051828">
+                        <name>
+                            <forename>Joseph</forename>
+                            <surname>Addison</surname>
+                        </name>
+                    </persName>
+                </author>
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name ref="editors.xml#JOB">
+                            <surname>O'Brien</surname>
+                            <forename>John</forename>
+                        </name>
+                    </persName>
+                </editor>
+                
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Project Gutenberg and Staff and Research Assistants at The University of Virginia</name>
+                </respStmt>
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+                
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+                
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"Issue 413, Tuesday, June 24, 1712"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <persName type="lcnaf" key="n80051828">
+                                <name>
+                                    <forename>Joseph</forename>
+                                    <surname>Addison</surname>
+                                </name>
+                            </persName>
+                        </author>
+                        <title>The Spectator</title>
+                        
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="tgn" key="77011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Samuel Buckley</publisher>
+                            <date when="1711">1712</date>
+                            <note resp="editors.xml#JOB"> The texts for <hi rend="italic"> The
+                                Spectator</hi> are taken from Project Gutenberg's digital
+                                edition, which uses the 1891 printing of the three-volume collected
+                                edition of <hi rend="italic"> The Spectator</hi> edited by Henry
+                                Morley and printed by George Routledge and Sons. That is in turn a
+                                reprint of Morley's 1883 edition, which was published as part of <hi
+                                    rend="italic">Morley's Universal Library</hi>, a series offering
+                                inexpensive reprints of canonical texts. The annotations have been
+                                added by students and faculty at the University of Virginia. </note>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <creation/>
+            <textDesc n="essay">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="mixed"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+                <purpose type="inform" degree="medium"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="77011781">London</name>
+                    <time when="1711">1711</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                    Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+        <text>
+            <body><div>
+                <head>The Spectator, No. 413</head> <lb/>
+                <head type="sub">Tuesday, June 24, 1712</head><lb/>
+                    <head><ref target="Ovid_" corresp="Ovid"></ref><hi rend="italic"> —Causa latet, vis est notissima—
+        
+        Ovid.</hi><note xml:id="Ovid" target="Ovid_">"The cause is hidden; the result is notable." from Ovid's <hi rend="italic">Metamorphoses</hi>, IV.</note></head> 
+                <lb/><lb/>
+        
+        <p>Though in Yesterday's Paper we considered how every thing that is Great, New, or Beautiful, is apt to affect the Imagination with Pleasure, we must own that it is impossible for us to assign the necessary Cause of this Pleasure, because we know neither the Nature of an Idea, nor the Substance of a Human Soul, which might help us to discover the Conformity or Disagreeableness of the one to the other; and therefore, for want of such a Light, all that we can do in Speculations of this kind is to reflect on those Operations of the Soul that are most agreeable, and to range under their proper Heads, what is pleasing or displeasing to the Mind, without being able to trace out the several necessary and efficient Causes from whence the Pleasure or Displeasure arises.</p>
+        
+        <p>Final Causes lye more bare and open to our Observation, as there are often a great Variety that belong to the same Effect; and these, tho' they are not altogether so satisfactory, are generally more useful than the other, as they give us greater Occasion of admiring the Goodness and Wisdom of the first Contriver.</p>
+        
+        <p>One of the Final Causes of our Delight, in any thing that is great, may be this. The Supreme Author of our Being has so formed the Soul of Man, that nothing but himself can be its last, adequate, and proper Happiness. Because, therefore, a great Part of our Happiness must arise from the Contemplation of his Being, that he might give our Souls a just Relish of such a Contemplation, he has made them naturally delight in the Apprehension of what is Great or Unlimited. Our Admiration, which is a very pleasing Motion of the Mind, immediately rises at the Consideration of any Object that takes up a great deal of Room in the Fancy, and by Consequence, will improve into the highest Pitch of Astonishment and Devotion when we contemplate his Nature, that is neither circumscribed by Time nor Place, nor to be comprehended by the largest Capacity of a Created Being.</p>
+        
+        <p>He has annexed a secret Pleasure to the Idea of any thing that is new or uncommon, that he might encourage us in the Pursuit after Knowledge, and engage us to search into the Wonders of his Creation; for every new Idea brings such a Pleasure along with it, as rewards any Pains we have taken in its Acquisition, and consequently serves as a Motive to put us upon fresh Discoveries.</p>
+        
+        <p>He has made every thing that is beautiful in our own Species pleasant, that all Creatures might be tempted to multiply their Kind, and fill the World with Inhabitants; for 'tis very remarkable that where-ever Nature is crost in the Production of a Monster (the Result of any unnatural Mixture) the Breed is incapable of propagating its Likeness, and of founding a new Order of Creatures; so that unless all Animals were allured by the Beauty of their own Species, Generation would be at an End, and the Earth unpeopled.</p>
+        
+        <p>In the last Place, he has made every thing that is beautiful in all other Objects pleasant, or rather has made so many Objects appear beautiful, that he might render the whole Creation more gay and delightful. He has given almost every thing about us the Power of raising an agreeable Idea in the Imagination: So that it is impossible for us to behold his Works with Coldness or Indifference, and to survey so many Beauties without a secret Satisfaction and Complacency. Things would make but a poor Appearance to the Eye, if we saw them only in their proper Figures and Motions: And what Reason can we assign for their exciting in us many of those Ideas which are different from any thing that exists in the Objects themselves, (for such are Light and Colours) were it not to add Supernumerary Ornaments to the Universe, and make it more agreeable to the Imagination? We are every where entertained with pleasing Shows and Apparitions, we discover Imaginary Glories in the Heavens, and in the Earth, and see some of this Visionary Beauty poured out upon the whole Creation; but what a rough unsightly Sketch of Nature should we be entertained with, did all her Colouring disappear, and the several Distinctions of Light and Shade vanish? In short, our Souls are at present delightfully lost and bewildered in a pleasing Delusion, and we walk about like the enchanted Hero of a Romance, who sees beautiful Castles, Woods and Meadows; and at the same time hears the warbling of Birds, and the purling of Streams; but upon the finishing of some secret Spell, the fantastick Scene breaks up, and the disconsolate Knight finds himself on a barren Heath, or in a solitary Desart. It is not improbable that something like this may be the State of the Soul after its first Separation, in respect of the Images it will receive from Matter; tho indeed the Ideas of Colours are so pleasing and beautiful in the Imagination, that it is possible the Soul will not be deprived of them, but perhaps find them excited by some other Occasional Cause, as they are at present by the different Impressions of the subtle Matter on the Organ of Sight.</p>
+        
+        <p>I have here supposed that my Reader is acquainted with that great Modern Discovery, which is at present universally acknowledged by all the Enquirers into Natural Philosophy: Namely, that Light and Colours, as apprehended by the Imagination, are only Ideas in the Mind, and not Qualities that have any Existence in Matter. As this is a Truth which has been proved incontestably by many Modern Philosophers, and is indeed one of the finest Speculations in that Science, if the English Reader would see the Notion explained at large, he may find it in the Eighth Chapter of the second Book of Mr. Lock's Essay on Human Understanding.</p>
+        
+        <p>O.</p>
+        
+        
+        <p>Mr. Spectator,</p>
+        
+        <p>I would not divert the Course of your Discourses, when you seem bent upon obliging the World with a train of Thinking, which, rightly attended to, may render the Life of every Man who reads it, more easy and happy for the future. The Pleasures of the Imagination are what bewilder Life, when Reason and Judgment do not interpose; It is therefore a worthy Action in you to look carefully into the Powers of Fancy, that other Men, from the Knowledge of them, may improve their Joys and allay their Griefs, by a just use of that Faculty: I say, Sir, I would not interrupt you in the progress of this Discourse; but if you will do me the Favour of inserting this Letter in your next Paper, you will do some Service to the Public, though not in so noble a way of Obliging, as that of improving their Minds. Allow me, Sir, to acquaint you with a Design (of which I am partly Author), though it tends to no greater a Good than that of getting Money. I should not hope for the Favour of a Philosopher in this Matter, if it were not attempted under all the Restrictions which you Sages put upon private Acquisitions.</p>
+        
+        <p>The first Purpose which every good Man is to propose to himself, is the Service of his Prince and Country; after that is done, he cannot add to himself, but he must also be beneficial to them. This Scheme of Gain is not only consistent with that End, but has its very Being in Subordination to it; for no Man can be a Gainer here but at the same time he himself, or some other, must succeed in their Dealings with the Government. It is called the Multiplication Table, and is so far calculated for the immediate Service of Her Majesty, that the same Person who is fortunate in the Lottery of the State, may receive yet further Advantage in this Table. And I am sure nothing can be more pleasing to Her gracious Temper than to find out additional Methods of increasing their good Fortune who adventure anything in Her Service, or laying Occasions for others to become capable of serving their Country who are at present in too low Circumstances to exert themselves. The manner of executing the Design is, by giving out Receipts for half Guineas received, which shall entitle the fortunate Bearer to certain Sums in the Table, as is set forth at large in the Proposals Printed the 23rd instant. There is another Circumstance in this Design, which gives me hopes of your Favour to it, and that is what Tully advises, to wit, that the Benefit is made as diffusive as possible. Every one that has half a Guinea is put into a possibility, from that small Sum, to raise himself an easy Fortune; when these little parcels of Wealth are, as it were, thus thrown back again into the Redonation of Providence, we are to expect that some who live under Hardship or Obscurity, may be produced to the World in the Figure they deserve by this means. I doubt not but this last Argument will have Force with you, and I cannot add another to it, but what your Severity will, I fear, very little regard; which is, that</p>
+        
+        <p>I am, Sir, Your greatest Admirer,</p>
+                <p>Richard Steele.</p>
+            </div>
+      </body>
+      </text>
+</TEI>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="donne-sunnerising">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title type="main">"The Canonization"</title>
+            <author>
+               <persName type="lcnaf" key="79069876">
+                  <name>
+                     <forename>John</forename>
+                     <surname>Donne</surname>
+                  </name>
+               </persName>
+            </author>
+            
+            
+            <editor>
+
+               <persName type="orcid" key="000000-0001-6453-8721">
+                  <name ref="editors.xml#JOB">
+                     <forename>John</forename>
+                     <surname>O'Brien</surname>
+
+                  </name>
+               </persName>
+            </editor>
+            
+            <respStmt>
+               
+               <resp>Transcription, correction, editorial commentary, and markup</resp>
+               <name ref="editors.xml#StudStaff">Students and Staff of the University of
+                  Virginia</name>
+               <name ref="editors.xml#RR">Rachel Retica</name>
+
+            </respStmt>
+            
+            
+            <sponsor/>
+            <funder>National Endowment for the Humanities</funder>
+         </titleStmt>
+         
+         <publicationStmt>
+            <publisher>Literature in Context</publisher>
+            
+            <address>
+               <addrLine>University of Virginia Department of English</addrLine>
+               <addrLine>P. O. Box 400121</addrLine>
+               <addrLine>Charlottesville, VA</addrLine>
+               <addrLine>22904-4121</addrLine>
+               <addrLine>jobrien@virginia.edu</addrLine>
+               <addrLine>lic.open.anthology@gmail.com</addrLine>
+            </address>
+            <availability status="free">
+               
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                  Literature in Context under a Creative Commons Attribution-ShareAlike 4.0 Unported
+                  License </licence>
+            </availability>
+         </publicationStmt>
+         
+         <sourceDesc>
+            
+            <biblStruct>
+               
+               <analytic>
+                  
+                  <title>"The Canonization"</title>
+                  
+               </analytic>
+               
+               <monogr>
+                  <author>
+                     <name>
+                        <forename>John</forename>
+                        <surname>Donne</surname>
+                     </name>
+                  </author>
+                  
+                  <title>Poems, by J. D., With Elegies on the Authors Death</title>
+                  
+                  <imprint>
+                     <pubPlace>
+                        <placeName type="tgn" key="7011781">London</placeName>
+                     </pubPlace>
+                     <publisher>M. F. for John Marriot</publisher>
+                     <date when="1633">1633</date>
+                     <note>We have taken our text from the Text Creation Partnership's digitized
+                        version of the 1633 edition of Donne's poems:
+                        https://github.com/textcreationpartnership/A69225/blob/master/A69225.xml.
+                        Donne's poems circulated in manuscript during his life time, and were not
+                        issued in a print version until this edition, which came out after Donne's
+                        death in 1632. The long "s" of the original has been modernized, but we have
+                        otherwise kept the original spelling. The title page has been sourced from <ref target="https://specialcollections.princeton.edu/2023/05/a-donne-deal/">Princeton University Special Collections</ref>.</note>
+                     
+                     
+                  </imprint>
+                  
+                  
+                  
+                  <extent/>
+                  <biblScope>200</biblScope>
+                  <!-- Indicate page numbers of the poem from the book described in this <monogr> -->
+                  
+               </monogr>
+               
+            </biblStruct>
+            
+         </sourceDesc>
+         
+      </fileDesc>
+      
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+         
+         <creation/>
+         
+         <textDesc n="poem">
+            
+            <channel mode="w">print</channel>
+            <!-- view the TEI guidelines for textDesc online at https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ -->
+            <constitution type="single">single poem</constitution>
+            <derivation type="original"/>
+            <domain/>
+            <factuality type="inapplicable"/>
+            <interaction/>
+            <preparedness type="revised"/>
+            <purpose type="express"/>
+            <purpose type="entertain" degree="high"/>
+            <!-- interpretation in the textDesc will be necessary -->
+         </textDesc>
+         
+         <settingDesc>
+            
+            <setting>
+               <name type="tgn" key="7011781">London, England</name>
+               <!-- The name authority and key here are important; they allow the application to pull information directly from that record; in this context, the application could draw GIS data from the TGN key to create a map. The key should be the unique identifier for the element currently being described. -->
+               
+               <time from="1600" to="1633">Early 17th Century</time>
+               <!-- The time setting may be somewhat interpretive, though research should tell you more. -->
+            </setting>
+            
+         </settingDesc>
+      </profileDesc>
+      
+      <encodingDesc>
+         <!-- Please keep this language, and follow these encoding guidelines. If in rare circumstances, these guidelines cannot be followed, edit them to indicate your editing guidelines. -->
+         <projectDesc>
+            <p>This text is prepared as part of the <hi rend="italic">Literature in Context</hi>
+               project, which provides an accessible, reliable, curated, and marked-up selection of
+               primary sources relevant to the study and the teaching of British and American
+               literature. This project is was initially funded by the National Endowment for the
+               Humanities and developed by faculty at The University of Virginia and Marymount
+               University.</p>
+         </projectDesc>
+         <editorialDecl>
+            <interpretation>
+               <p>Research informing these annotations draws on publicly-accessible resources, with
+                  links provided where possible. Annotations have also included common knowledge,
+                  defined as information that can be found in multiple reliable sources. If you
+                  notice an error in these annotations, please contact
+                  lic.open.anthology@gmail.com.</p>
+            </interpretation>
+            <normalization>
+               <p>Original spelling and capitalization is retained, though the long s has been
+                  silently modernized and ligatured forms are not encoded.</p>
+            </normalization>
+            <hyphenation>
+               <p>Hyphenation has not been retained, except where necessary for the sense of the
+                  word.</p>
+            </hyphenation>
+            <segmentation>
+               <p>Page breaks have been retained. Catchwords, signatures, and running headers have
+                  not.</p>
+            </segmentation>
+            <correction>
+               <p>Materials have been transcribed from and checked against first editions, where
+                  possible. See the Sources section for more information.</p>
+            </correction>
+         </editorialDecl>
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="div">Numbered divs used.</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="lcnaf">
+               <bibl>Library of Congress Name Authority File</bibl>
+            </taxonomy>
+            <taxonomy xml:id="lcc">
+               <bibl>Library of Congress Classification</bibl>
+            </taxonomy>
+            <taxonomy xml:id="tgm">
+               <bibl>Getty Thesaurus of Geographic Names</bibl>
+            </taxonomy>
+            <taxonomy xml:id="orcid">
+               <bibl>Open Researcher and Contributor ID</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      
+      <revisionDesc>
+         <change when="2024-06-13" who="editors.xml#RR">Rachel Retica created LIC edition.</change>
+      </revisionDesc>
+   </teiHeader>
+   
+   <text>
+      <front><pb n="[TP]" facs="pageImages/Donne_poems_cover.jpg"/>
+         <titlePage>
+            
+            <titlePart>POEMS,<lb/><hi rend="italic">By </hi>J. D[onne].<lb/>WITH<lb/>ELEGIES<lb/>ON THE AUTHOR'S<lb/>Death.<lb/><lb/></titlePart>
+            <docImprint><pubPlace><placeName type="tgn" key="7011781">LONDON.<lb/></placeName></pubPlace>
+               <publisher>Printed by <hi rend="italic">M. F. </hi>for [J]OHN MARRIOT,<lb/>and are to be sold at his shop in St <hi rend="italic">Dunstans</hi><lb/>Church-yard in <hi rend="italic">Fleet-street. </hi></publisher><docDate>1633.</docDate></docImprint>
+            
+            
+         </titlePage>
+      </front>
+      <body>
+<div type="poem">
+            <head>The Canonization.</head>
+            <lg>
+               <l n="1">FOr Godsake hold your tongue, and let me love,</l>
+               <l rend = "indent" n="2">Or chide my palsie, or my gout,</l>
+               <l n="3">My five gray haires, or ruin'd fortune flout,</l>
+               <l rend="indent" n="4">With wealth your state, your minde with Arts improve</l>
+               <l rend="indent2" n="5">Take you a course, get you a place,</l>
+               <l rend="indent2" n="6">Observe his honour, or his grace,</l>
+               <l n="7">Or the Kings reall, or his stamped face</l>
+               <l rend="indent" n="8">Contemplate, what you will, approve,</l>
+               <l rend="indent" n="9">So you will let me love.</l>
+            </lg>
+            <lg>
+               <l n="10">Alas, alas, who's injur'd by my love?</l>
+               <l rend="indent" n="11">What merchants ships have my sighs drown'd?</l>
+               <l n="12">Who saies my teares have overflow'd his ground?</l>
+               <l rend="indent" n="13">When did my colds a forward spring remove?</l>
+               <l rend="indent2" n="14">When did the heats which my veines fill</l>
+               <l rend="indent2" n="15">Adde one more, to the plaguie Bill?</l>
+               <l n="16">Soldiers finde warres, and Lawyers finde out still</l>
+               <l rend="indent" n="17">Litigious men, which quarrels move,</l>
+               <l rend="indent" n="18">Though she and I do love.</l>
+            </lg>
+            <lg>
+               <l n="19">Call us what you will, wee are made such by love;</l>
+               <l rend="indent" n="20">Call her one, mee another flye,</l>
+               <l n="21">We'are Tapers too, and at our owne cost die,</l>
+               <l rend="indent" n="22">And wee in us finde the'Eagle and the dove,</l>
+               <l rend="indent2" n="23">The Phoenix ridle hath more wit</l>
+               <l rend="indent2" n="24">By us, we two being one, are it.</l>
+               <l n="25">So, to one neutrall thing both sexes fit.</l>
+               <l rend="indent" n="26">Wee dye and rise the same, and prove</l>
+               <l rend="indent" n="27">Mysterious by this love.</l>
+            </lg>
+            <lg>
+               <l n="28">Wee can dye by it, if not live by love,</l>
+               <l rend="indent" n="29">And if unfit for tombes and hearse</l>
+               <l n="30">Our legends bee, it will be fit for verse;</l>
+               <l rend="indent" n="31">And if no peece of Chronicle wee prove,</l>
+               <l rend="indent2" n="32">We'll build in sonnets pretty roomes;</l>
+               <l rend="indent2" n="33">As well a well wrought urne becomes</l>
+               <l n="34">The greatest ashes, as halfe-acre tombes,</l>
+               <l rend="indent" n="35">And by these hymnes, all shall approve</l>
+               <l rend="indent" n="36">Us Canoniz'd for Love.</l>
+            </lg>
+             <lg>
+                <l n="37">And thus invoke us; You whom reverend love</l>
+                <l rend="indent" n="38">Made one anothers hermitage;</l>
+                <l n="39">You, to whom love was peace, that now is rage,</l>
+                <l rend="indent" n="40">Who did the whole worlds soule contract, &amp; drove</l>
+                <l rend="indent2" n="41">Into the glasses of your eyes</l>
+                <l rend="indent2" n="42">So made such mirrors, and such spies,</l>
+                <l n="43">That they did all to you epitomize,</l>
+                <l rend="indent" n="44">Countries, Townes, Courts: Beg from above</l>
+                <l rend="indent" n="45">A patterne of our love.</l>
+
+            </lg>
+         </div>
+       </body>
+   </text>
+</TEI>
