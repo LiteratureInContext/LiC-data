@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LiteratureInContext/LiC-data/development/schema/LiC_schema_4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> 
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="philips-friendship">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"Friendship's Mysteries"</title>
+
+                <author>
+                    <persName type="lcnaf" key="n83206561">
+                        <name>
+                            <forename>Katherine</forename>
+                            <surname>Philips</surname>
+                        </name>
+                    </persName>
+                </author>
+
+                <editor>
+                    <persName type="orcid" key="0000-0001-6453-8721">
+                        <name>
+                            <forename>John</forename>
+                            <surname>O'Brien</surname>
+                        </name>
+                    </persName>
+                </editor>
+
+                <respStmt>
+                    <resp>Transcription, correction, editorial commentary, and markup</resp>
+                    <name>Staff and Research Assistants at The University of Virginia</name>
+                    <name>John O'Brien</name>
+                    <name>Sara Brunstetter</name>
+                    <name>Rachel Retica</name>
+                </respStmt>
+
+                <sponsor/>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Literature in Context</publisher>
+
+                <address>
+                    <addrLine>University of Virginia Department of English</addrLine>
+                    <addrLine>P. O. Box 400121</addrLine>
+                    <addrLine>Charlottesville, VA </addrLine>
+                    <addrLine>22904-4121</addrLine>
+                    <addrLine>jobrien@virginia.edu</addrLine>
+                    <addrLine>lic.open.anthology@gmail.com</addrLine>
+                </address>
+
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Published by
+                        Literature in Context under a Creative Commons Attribution-ShareAlike 4.0
+                        Unported License </licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <title>"Death"</title>
+                    </analytic>
+                    <monogr>
+                        <author>
+                            <name>
+                                <forename>Katherine</forename>
+                                <surname>Philips</surname>
+                            </name>
+                        </author>
+                        <title type="main">Poems by the most deservedly admired Mrs. Katherine
+                            Philips, the matchless Orinda</title>
+                        <title type="sub">to which is added Monsieur Corneille's Pompey &amp;
+                            Horace, tragedies; with several other translations out of French</title>
+
+                        <imprint>
+                            <pubPlace>
+                                <placeName type="TGN" key="7011781">London</placeName>
+                            </pubPlace>
+                            <publisher>Printed by J.M. for H. Herringman</publisher>
+                            <date when="1667">1667</date>
+                            <note resp="editors.xml#JOB">This text is based on transcriptions
+                                created by the Early English Books Online Texts Creation
+                                Partnership, a library-based project directed by the University of
+                                Michigan and Oxford University. <ref
+                                    target="http://name.umdl.umich.edu/A54716.0001.001
+                                ">Their digital text</ref> was
+                                produced from the 1667 edition, published by Henry Herringman in
+                                London in 1667, three years after Philips's death, but with the
+                                collaboration of her late husband. We have also consulted <hi
+                                    rend="italics">The Collected Works of Katherine Philips</hi>,
+                                edited by Patrick Thomas (Essex: Stump Cross Books, 1990), which
+                                takes Philips's manuscript versions of her poems as its copytext.
+                                Annotations have been provided by faculty and students at the
+                                University of Virginia. For a full description of this object, see
+                                    <ref target="http://estc.bl.uk/R19299">its ESTC entry</ref>.
+                            </note>
+                        </imprint>
+                        <extent>[36], 198, [8], 112, [2] p. : port. ; 2⁰.</extent>
+                        <biblScope/>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+
+            <creation/>
+
+            <textDesc n="poem">
+                <channel mode="w">print</channel>
+                <constitution type="single"/>
+                <derivation type="original"/>
+                <domain/>
+                <factuality type="fiction"/>
+                <interaction/>
+                <preparedness type="prepared"/>
+                <purpose type="entertain" degree="high"/>
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name type="tgn" key="7011781">London, England</name>
+                    <name type="tgn" key="7001306">Dublin, Ireland</name>
+                    <time from="1631" to="1664">During her lifetime: 1631-1664.</time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+
+        <encodingDesc>
+            <projectDesc>
+                <p> This text is prepared as part of the <hi rend="italic">Literature in
+                        Context</hi> project, which provides an accessible, curated, and marked-up
+                    selection of primary sources relevant to the study and the teaching of British
+                    and American literature of the 18th century. This project is funded by the
+                    National Endowment for the Humanities and developed by faculty at The University
+                    of Virginia and Marymount University. </p>
+            </projectDesc>
+            <editorialDecl>
+                <interpretation>
+                    <p>Research informing these annotations draws on publicly-accessible resources,
+                        with links provided where possible. Annotations have also included common
+                        knowledge, defined as information that can be found in multiple reliable
+                        sources. If you notice an error in these annotations, please contact
+                        lic.open.anthology@gmail.com.</p>
+                </interpretation>
+                <normalization>
+                    <p>Original spelling and capitalization is retained, though the long s has been
+                        silently modernized and ligatured forms are not encoded.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has not been retained, except where necessary for the sense of
+                        the word.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Page breaks have been retained. Catchwords, signatures, and running headers
+                        have not. Where pages break in the middle of a word, the complete word has
+                        been indicated prior to the page beginning. </p>
+                </segmentation>
+                <correction>
+                    <p>Materials have been transcribed from and checked against first editions,
+                        where possible. See the Sources section.</p>
+                </correction>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="div">Unnumbered divs used.</tagUsage>
+                </namespace>
+            </tagsDecl>
+            <classDecl>
+                <taxonomy xml:id="lcnaf">
+                    <bibl>Library of Congress Name Authority File</bibl>
+                </taxonomy>
+                <taxonomy xml:id="lcc">
+                    <bibl>Library of Congress Classification</bibl>
+                </taxonomy>
+                <taxonomy xml:id="tgn">
+                    <bibl>Getty Thesaurus of Geographic Names</bibl>
+                </taxonomy>
+                <taxonomy xml:id="orcid">
+                    <bibl>Open Researcher and Contributor ID</bibl>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+
+
+
+
+    <text>
+        <body>
+            <div>
+
+              
+                <head type="title">Friendship's Mystery.</head>
+                <lg type="Stanza">
+                    <l n="1">Come, my <hi rend="italic"> Lucasia</hi>, since we see</l>
+                    <l n="2">That Miracles Men's faith do move,</l>
+                    <l n="3">By wonder and by prodigy</l>
+                    <l n="4">To the dull angry world let’s prove</l>
+                    <l n="5">There’s a Religion in our Love.</l>
+                </lg>
+                <lg>
+                    <l n="6">For though we were design’d t’ agree,</l>
+                    <l n="7">That Fate no liberty destroyes,</l>
+                    <l n="8">But our Election is as free</l>
+                    <l n="9">As Angels, who with greedy choice</l>  
+                    <l n="10">Are yet determin’d to their joyes.</l></lg>
+                
+                    <lg>
+                        <l n="11">Our hearts are doubled by the loss,</l>
+                        <l n="12">Here Mixture is Addition grown ;</l>
+                        <l n="13">We both diffuse, and both ingross :</l>
+                        <l n="14">And we whose minds are so much one,</l>
+                        <l n="15">Never, yet ever are alone.</l></lg>
+                        
+                        <lg>
+                            <l n="16">We court our own Captivity</l>
+                            <l n="17">Than Thrones more great and innocent :</l>
+                            <l n="18">’Twere banishment to be set free,</l>
+                            <l n="19">For they our Bodies will survive;</l>
+                            <l n="20">Not Bondage is, but Ornament.</l>
+                </lg>
+                <lg>
+                    <l n="21">Divided joyes are tedious found,</l>
+                    <l n="22">And griefs united easier grow :</l>
+                    <l n="23">We are our selves but by rebound,</l>
+                    <l n="24">And all our Titles shuffled so,</l>
+                    <l n="25">Both Princes, and both Subjects too.</l>
+                </lg>
+                <lg>
+                    <l n="26">Our Hearts are mutual Victims laid,
+                    </l>
+                    <l n="27">While they (such power in Friendship lies)</l>
+                    <l n="28">Are Altars, Priests, and Off’rings made :</l>
+                    <l n="29">And each Heart which thus kindly dies,</l>
+                    <l n="30">Grows deathless by the Sacrifice.</l>
+                </lg>
+
+            </div>
+        </body>
+    </text>
+</TEI>
