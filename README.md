@@ -8,3 +8,4 @@ This is a POC for the Literature in Context project in eXist-db. This is the dat
 - Go to http://localhost:8080/exist/apps/LiC/index.html
 
   
+# llm-text-workflows
