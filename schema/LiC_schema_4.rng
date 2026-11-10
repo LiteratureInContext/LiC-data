@@ -745,6 +745,25 @@
               </choice>
             </oneOrMore>
           </element>
+          <element name="list">
+            <oneOrMore>
+              <choice>
+                <ref name="pb"/>
+                <ref name="p"/>
+                <text/>
+                <element name="item">
+                  <oneOrMore>
+                    <choice>
+                      <text/>
+                      <ref name="hi"/>
+                      <ref name="person"/>
+                      <ref name="ref"/>
+                    </choice>
+                  </oneOrMore>
+                </element>
+              </choice>
+            </oneOrMore>
+          </element>
           <element name="ptr">
             <attribute name="target"/>
           </element>
@@ -1094,6 +1113,7 @@
           <ref name="note"/>
           <ref name="quote"/>
           <ref name="ref"/>
+          <ref name="placeName"/>
         </choice>
       </oneOrMore>
     </element>
